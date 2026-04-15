@@ -4,8 +4,8 @@ source: v2ex
 url: "https://www.v2ex.com/t/1206000"
 author: "RyanCui"
 date: 2026-04-15
-score: 78
-tags: ["Claude", "ai", "GPT", "Gemini", "Prompt", "AI"]
+score: 125
+tags: ["AI", "Claude", "Prompt", "GPT", "ai", "Gemini"]
 ---
 
 # [加群领 10U 额度 评论留 ID 再发 5U] ⛽ RootFlow AI — 高性能 AI API 加油站
@@ -74,11 +74,11 @@ RootFlow AI 是一个专注于 AI API 中转 的算力平台，提供 Claude 、
 …(内容已截断)
 
 ## 涉及话题
-- Claude
-- ai
-- GPT
-- Gemini
-- Prompt
 - AI
+- Claude
+- Prompt
+- GPT
+- ai
+- Gemini
 
 [原文链接](https://www.v2ex.com/t/1206000)
