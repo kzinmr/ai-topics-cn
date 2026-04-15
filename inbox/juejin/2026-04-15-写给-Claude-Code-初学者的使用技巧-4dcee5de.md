@@ -5,7 +5,7 @@ url: "https://juejin.cn/post/7628116434649088009"
 author: "双越AI_club"
 date: 2026-04-14
 score: 4
-tags: ["Claude", "claude", "AI编程", "Agent"]
+tags: ["claude", "Claude", "AI编程", "Agent"]
 ---
 
 # 写给 Claude Code 初学者的使用技巧
@@ -15,8 +15,8 @@ tags: ["Claude", "claude", "AI编程", "Agent"]
 > 👍 4   👁️ 0   ⭐ 7
 
 ## 涉及话题
-- Claude
 - claude
+- Claude
 - AI编程
 - Agent
 

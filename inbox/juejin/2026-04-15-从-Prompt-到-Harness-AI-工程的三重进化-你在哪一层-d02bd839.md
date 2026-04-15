@@ -5,7 +5,7 @@ url: "https://juejin.cn/post/7628556428008882202"
 author: "加瓦点灯"
 date: 2026-04-15
 score: 0
-tags: ["大模型", "GPT", "Prompt", "OpenAI"]
+tags: ["Prompt", "大模型", "GPT", "OpenAI"]
 ---
 
 # 从 Prompt 到 Harness：AI 工程的三重进化，你在哪一层？
@@ -15,9 +15,9 @@ tags: ["大模型", "GPT", "Prompt", "OpenAI"]
 > 👍 0   👁️ 0   ⭐ 0
 
 ## 涉及话题
+- Prompt
 - 大模型
 - GPT
-- Prompt
 - OpenAI
 
 [原文链接](https://juejin.cn/post/7628556428008882202)

@@ -4,8 +4,8 @@ source: v2ex
 url: "https://www.v2ex.com/t/1206034"
 author: "ChrisCurry"
 date: 2026-04-15
-score: 2
-tags: ["AI", "Anthropic", "Claude", "Cursor"]
+score: 3
+tags: ["Cursor", "Claude", "AI", "Anthropic"]
 ---
 
 # 有没有长期关注 Claude 的朋友，我建了一个 Channel 自动抓取 Claude Team 的推文
@@ -19,9 +19,9 @@ Claude 经过了这一年的验证，我自己也学习了好几门 Anthropic �
 点击可以直接加入 Discord Server
 
 ## 涉及话题
+- Cursor
+- Claude
 - AI
 - Anthropic
-- Claude
-- Cursor
 
 [原文链接](https://www.v2ex.com/t/1206034)

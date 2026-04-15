@@ -4,7 +4,7 @@ source: v2ex
 url: "https://www.v2ex.com/t/1206036"
 author: "dedemao"
 date: 2026-04-15
-score: 1
+score: 3
 tags: ["ChatGPT"]
 ---
 

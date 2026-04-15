@@ -4,7 +4,7 @@ source: v2ex
 url: "https://www.v2ex.com/t/1205942"
 author: "GaryLee"
 date: 2026-04-15
-score: 63
+score: 67
 tags: ["gpt"]
 ---
 

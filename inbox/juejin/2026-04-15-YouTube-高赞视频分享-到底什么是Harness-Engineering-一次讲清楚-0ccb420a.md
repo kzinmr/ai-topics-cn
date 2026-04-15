@@ -4,7 +4,7 @@ source: juejin
 url: "https://juejin.cn/post/7628493941613314094"
 author: "子昕AI编程"
 date: 2026-04-15
-score: 0
+score: 1
 tags: ["Prompt", "AI编程"]
 ---
 
@@ -12,7 +12,7 @@ tags: ["Prompt", "AI编程"]
 
 从 Prompt 到 Context，再到 Harness—AI 工程的瓶颈已转移到模型之外。本文讲透什么是 Harness Engineering，以及它为什么决定你的 Agent 能不能做成产品。
 
-> 👍 0   👁️ 0   ⭐ 0
+> 👍 1   👁️ 0   ⭐ 1
 
 ## 涉及话题
 - Prompt

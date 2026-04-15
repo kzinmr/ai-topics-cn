@@ -5,7 +5,7 @@ url: "https://juejin.cn/post/7611432757572141096"
 author: "宅小年"
 date: 2026-02-28
 score: 221
-tags: ["Kimi", "Claude", "Cursor", "AI编程", "人工智能"]
+tags: ["Cursor", "Kimi", "Claude", "AI编程", "人工智能"]
 ---
 
 # Claude Code 换成了Kimi K2.5后，我再也回不去了
@@ -15,9 +15,9 @@ Cursor 和 Claude Code 用了也有很长的一段时间，我现在的日常大
 > 👍 221   👁️ 0   ⭐ 366
 
 ## 涉及话题
+- Cursor
 - Kimi
 - Claude
-- Cursor
 - AI编程
 - 人工智能
 
