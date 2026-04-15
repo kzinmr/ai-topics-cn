@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>中国語圏 AI Topics Monitor</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f1117; color: #e0e0e0; line-height: 1.6; }
+.container { max-width: 1200px; margin: 0 auto; padding: 1.5rem; }
+header { background: linear-gradient(135deg, #1a1d27 0%, #0f1117 100%); border-bottom: 1px solid #2a2d37; padding: 1.5rem 0; }
+header h1 { font-size: 1.5rem; font-weight: 700; }
+header h1 span { color: #ff4444; }
+header .sub { color: #888; font-size: 0.85rem; margin-top: 0.3rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.card { background: #1a1d27; border: 1px solid #2a2d37; border-radius: 8px; padding: 1.2rem; }
+.card h3 { font-size: 0.9rem; color: #ff6b6b; margin-bottom: 0.5rem; }
+.card .count { font-size: 2rem; font-weight: 700; color: #fff; }
+.card .meta { font-size: 0.75rem; color: #666; margin-top: 0.3rem; }
+.card .desc { font-size: 0.8rem; color: #888; margin-top: 0.5rem; }
+table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+th { text-align: left; padding: 0.7rem; border-bottom: 2px solid #2a2d37; color: #888; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; }
+td { padding: 0.6rem 0.7rem; border-bottom: 1px solid #1e2030; font-size: 0.85rem; }
+tr:hover { background: #1a1d27; }
+.source-badge { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 3px; font-size: 0.7rem; font-weight: 600; }
+.badge-v2ex { background: #2d4a22; color: #8bc34a; }
+.badge-juejin { background: #1a3a5c; color: #42a5f5; }
+.badge-36kr { background: #4a2d22; color: #ff7043; }
+.badge-zhihu { background: #22394a; color: #29b6f6; }
+.badge-wechat-media { background: #2d3a22; color: #66bb6a; }
+a { color: #64b5f6; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.section-title { font-size: 1.1rem; margin: 2rem 0 0.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid #2a2d37; }
+.tags { color: #888; font-size: 0.75rem; }
+.timestamp { color: #555; font-size: 0.8rem; margin-top: 1rem; text-align: right; }
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>🇨🇳 <span>中国語圏</span> AI Topics Monitor</h1>
+    <div class="sub">LLM/AI Agent 中国語圏メディア定期監視 — V2EX ・ 掘金 ・ 36氪 ・ 知乎 ・ 微信公众号</div>
+  </div>
+</header>
+<div class="container">
+
+<h2 class="section-title">📡 ソース状況</h2>
+<div class="grid">
+{{range .Sources}}
+<div class="card">
+  <h3>{{.Name}}</h3>
+  <div class="count">{{.Count}}</div>
+  <div class="meta">最終収集: {{.LastCrawl}}</div>
+  <div class="desc">{{.Description}}</div>
+</div>
+{{end}}
+</div>
+
+<h2 class="section-title">📰 最新収集記事</h2>
+<table>
+<thead>
+<tr><th>ソース</th><th>日付</th><th>タイトル</th><th>タグ</th></tr>
+</thead>
+<tbody>
+{{range .RecentItems}}
+<tr>
+  <td><span class="source-badge badge-{{.Source}}">{{.Source}}</span></td>
+  <td>{{.Date}}</td>
+  <td>{{if .URL}}<a href="{{.URL}}" target="_blank">{{.Title}}</a>{{else}}{{.Title}}{{end}}</td>
+  <td class="tags">{{.Tags}}</td>
+</tr>
+{{end}}
+</tbody>
+</table>
+
+<p class="timestamp">最終更新: {{.Now}}</p>
+
+</div>
+</body>
+</html>
