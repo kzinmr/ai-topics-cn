@@ -5,7 +5,7 @@ url: "https://juejin.cn/post/7610637031321698330"
 author: "AI袋鼠帝"
 date: 2026-02-26
 score: 157
-tags: ["Qwen", "Kimi", "OpenAI"]
+tags: ["Kimi", "Qwen", "OpenAI"]
 ---
 
 # 阿里出手了！终于不怕OpenClaw烧token啦，直接算力自由～
@@ -15,8 +15,8 @@ tags: ["Qwen", "Kimi", "OpenAI"]
 > 👍 157   👁️ 0   ⭐ 240
 
 ## 涉及话题
-- Qwen
 - Kimi
+- Qwen
 - OpenAI
 
 [原文链接](https://juejin.cn/post/7610637031321698330)
