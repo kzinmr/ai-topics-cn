@@ -4,8 +4,8 @@ source: v2ex
 url: "https://www.v2ex.com/t/1206060"
 author: "enzocc"
 date: 2026-04-15
-score: 81
-tags: ["Anthropic", "Claude"]
+score: 99
+tags: ["Claude", "Anthropic"]
 ---
 
 # Anthropic 宣布在 Claude 平台推行身份验证机制
@@ -15,7 +15,7 @@ Anthropic 正在其 Claude 平台逐步推行身份验证机制，当用户访�
 若验证后发现用户多次违反政策、来自不支持的地区或未满 18 岁，其账号仍可能被封禁。
 
 ## 涉及话题
-- Anthropic
 - Claude
+- Anthropic
 
 [原文链接](https://www.v2ex.com/t/1206060)

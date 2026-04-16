@@ -5,7 +5,7 @@ url: "https://juejin.cn/post/7628080756384038952"
 author: "刀法如飞"
 date: 2026-04-13
 score: 5
-tags: ["AI Agent", "Gemini", "程序员", "AIGC", "AI编程"]
+tags: ["Gemini", "AI Agent", "程序员", "AIGC", "AI编程"]
 ---
 
 # AI Agent实战：我用Gemini批量完成了《道德经》解读
@@ -15,8 +15,8 @@ AI Agent实战：我用Gemini批量完成了《道德经》解读 几年前，�
 > 👍 5   👁️ 0   ⭐ 3
 
 ## 涉及话题
-- AI Agent
 - Gemini
+- AI Agent
 - 程序员
 - AIGC
 - AI编程

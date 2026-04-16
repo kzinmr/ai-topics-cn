@@ -12,7 +12,7 @@ tags: ["Claude", "Kimi", "Cursor", "AI编程", "人工智能"]
 
 Cursor 和 Claude Code 用了也有很长的一段时间，我现在的日常大概是：Cursor 占 60%，Claude Code 占 40%...
 
-> 👍 224   👁️ 0   ⭐ 370
+> 👍 224   👁️ 0   ⭐ 371
 
 ## 涉及话题
 - Claude
