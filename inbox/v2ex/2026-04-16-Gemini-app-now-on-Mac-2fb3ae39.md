@@ -4,8 +4,8 @@ source: v2ex
 url: "https://www.v2ex.com/t/1206235"
 author: "Bodo"
 date: 2026-04-16
-score: 53
-tags: ["Gemini", "gemini"]
+score: 69
+tags: ["gemini", "Gemini"]
 ---
 
 # Gemini app, now on Mac
@@ -13,7 +13,7 @@ tags: ["Gemini", "gemini"]
 https://gemini.google/mac/
 
 ## 涉及话题
-- Gemini
 - gemini
+- Gemini
 
 [原文链接](https://www.v2ex.com/t/1206235)

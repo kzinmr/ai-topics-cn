@@ -5,7 +5,7 @@ url: "https://juejin.cn/post/7627818680535957556"
 author: "孟健AI编程"
 date: 2026-04-13
 score: 2
-tags: ["AI Agent", "GPT", "AI编程"]
+tags: ["GPT", "AI Agent", "AI编程"]
 ---
 
 # 我把Hermes里23个Agent全切到GLM-5.1：执行力比GPT强，但有个硬伤
@@ -15,8 +15,8 @@ tags: ["AI Agent", "GPT", "AI编程"]
 > 👍 2   👁️ 0   ⭐ 5
 
 ## 涉及话题
-- AI Agent
 - GPT
+- AI Agent
 - AI编程
 
 [原文链接](https://juejin.cn/post/7627818680535957556)

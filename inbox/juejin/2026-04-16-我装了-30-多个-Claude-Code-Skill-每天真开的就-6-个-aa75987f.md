@@ -12,7 +12,7 @@ tags: ["Claude", "AIGC"]
 
 用过Claude code 的都知道，在Claude code 里没打开marketplace的时候里面琳琅满目的Skill根本看不完。我前后装了 30 多个skill,跑了两个月，最后留下的只有这六
 
-> 👍 4   👁️ 0   ⭐ 11
+> 👍 4   👁️ 0   ⭐ 13
 
 ## 涉及话题
 - Claude
