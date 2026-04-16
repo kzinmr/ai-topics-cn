@@ -4,7 +4,7 @@ source: juejin
 url: "https://juejin.cn/post/7629167139824828442"
 author: "机器之心"
 date: 2026-04-16
-score: 0
+score: 1
 tags: ["智能体", "人工智能", "OpenAI"]
 ---
 
@@ -12,7 +12,7 @@ tags: ["智能体", "人工智能", "OpenAI"]
 
 2026 年初这几个月，随着 OpenClaw 的爆火，AI 领域也正式步入了 Harness 时代。在这股浪潮中，MiniMax 凭借其敏锐的技术嗅觉，成为了这场变革中的一大核心焦点。 其近期相继推
 
-> 👍 0   👁️ 0   ⭐ 0
+> 👍 1   👁️ 0   ⭐ 0
 
 ## 涉及话题
 - 智能体
