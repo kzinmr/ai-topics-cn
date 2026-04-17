@@ -4,7 +4,7 @@ source: juejin
 url: "https://juejin.cn/post/7628449448600600603"
 author: "小墨同学boy"
 date: 2026-04-14
-score: 6
+score: 7
 tags: ["Claude", "AIGC"]
 ---
 
@@ -12,7 +12,7 @@ tags: ["Claude", "AIGC"]
 
 用过Claude code 的都知道，在Claude code 里没打开marketplace的时候里面琳琅满目的Skill根本看不完。我前后装了 30 多个skill,跑了两个月，最后留下的只有这六
 
-> 👍 6   👁️ 0   ⭐ 14
+> 👍 7   👁️ 0   ⭐ 18
 
 ## 涉及话题
 - Claude
