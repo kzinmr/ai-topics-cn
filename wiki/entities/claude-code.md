@@ -15,9 +15,48 @@ Claude Codeは、[[anthropic]]が開発したターミナルベースのAIコー
 
 Claude Codeは従来のIDE補完型AIツール（GitHub Copilot、[[cursor]]等）とは異なり、ターミナル上でエージェント的に動作し、ファイルの読み書き・コマンド実行・Git操作などを自律的に行う。中国の開発者コミュニティでは「编程智能体」（プログラミングインテリジェントエージェント）あるいは「AI码农」（AIコーダー）として認知されている。
 
-## 最新動向（2026年4月）
+## 最新動向（2026年4月17日）
 
-### Routines（定时任务）の発表
+### Codex — OpenAIのコーディングAgentが「Codex for almost everything」に进化
+
+2026年4月16日/V2EXで「Codex 又更新了」と报告された。OpenAIはCodexを「Codex for almost everything」として定位を変え、Mac桌面应用として「超级龙虾」（超级龙虾 = Super Lobster）と稱されるほどの大规模アップデートを実施した。
+
+36krは「史诗级进化，OpenAI上线Mac版「超级龙虾」：Codex进化成赛博同事」（史詩級進化、OpenAIがMac版「超级龙虾」を上线：Codexがサイバー同事に進化）と报じた。その内容：
+
+- **Mac原生应用**: 桌面上直接运行、ターミナルとの紧密統合
+- **GPT-5.4 Harness全面開放**: 7つのサンドボックス环境がCodexにネイティブ統合
+- **「赛博同事」**: 従来の「ツール」から「同事」（同事 = 仲間/同僚）への概念変化
+
+Codexの进步は[[claude-code]]にとって直接的な竞合关系であり、SWE-bench Proでのスコア竞争が激化している ([[claude-opus-4-7]]参照)。
+
+> **出典**: V2EX — [https://www.v2ex.com/t/1206478](https://www.v2ex.com/t/1206478) [T1]
+> **出典**: 36kr — [https://36kr.com/p/3770202199323136](https://36kr.com/p/3770202199323136) [T1]
+
+### 1M Context Windowの议论
+
+Claude Codeの**100万トークンコンテキスト窓**の利用法が掘金で论议されている。掘金记事「Claude Code 的 1M Context 怎么用？」が公式资料を解读：
+
+- **长文解析**: 大规模代码base全体のコンテキストとして活用
+- ** архитектура 设计**: 数万行のコードを同時に分析して設計决策
+- ** огромный ログ处理**: ビルドログ全体をコンテキストに入れたままデバッグ
+
+この機能はCursor ([[cursor]]) 等のIDE統合型ツールとの差別化要因となっている。
+
+> **出典**: 掘金 — [https://juejin.cn/post/7629308995309322290](https://juejin.cn/post/7629308995309322290) [T2]
+
+### LangChain Security Patch — CVE-2026-4539
+
+2026年4月17日、LangChain-coreが**CVE-2026-4539**紧急セキュリティパッチをリリース。掘金の技术记事が报じた内容：
+
+- **问题根源**: `PromptTemplate.str.format_map`がユーザー入力を二次テンプレート解析に引き起こす
+- **影响範囲**: LangChainを使用する全AgentがPrompt Injection（プロンプト注入）攻击にさらわれる可能性
+- **「越狱」风险**: 悪意のあるプロンプトにより、Agentが本来禁止された操作を実行可能になる
+
+この问题是AI Agentセキュリティの新たな課題であり、Claude Code用户在LangChainベースのツールチェーン中使用する 경우에는特别注意が必要。
+
+> **出典**: 掘金 — [https://juejin.cn/post/7629308995309322290](https://juejin.cn/post/7629308995309322290) [T2]
+
+### Routines（定时任务）の発表（2026年4月前半）
 
 Anthropicは2026年4月にClaude Codeの新機能「**Routines**」を正式に発表した。Routinesにより、Claude Codeは以下のトリガーに基づいてタスクを自動実行できるようになった：
 
@@ -143,16 +182,21 @@ Claude Codeの並列処理アーキテクチャ刷新により、従来のIDE統
 - [[glm-zhipu]] — GLM-5との比較対象
 - [[kimi-moonshot]] — Kimi K2.5（中国国産代替）
 - [[cursor]] — IDE統合型競合ツール
+- [[openclaw]] — 新興エンドポイント型ツールチェーン
+- [[ai-safety-subconscious]] — AI Agentセキュリティの文脈
 
 ### 外部ソース（中国語原文）
 
 | ソース | URL | タイプ | ティア |
 |---|---|---|---|
 | 36kr（新智元）Routines報道 | 36kr.com | ニュース | T1 |
-| 36kr — キャッシュ性能問題 | [36kr.com/p/3767376468607494](https://36kr.com/p/3767376468607494) | ニュース | T1 |
-| 36kr — Opus 4.7予告 | [36kr.com/p/3767982270661126](https://36kr.com/p/3767982270661126) | ニュース | T1 |
-| 掘金 — 32 Skills + 8 MCP | [juejin.cn/post/7620060655607857178](https://juejin.cn/post/7620060655607857178) | 技術ブログ | T2 |
-| 掘金 — Hooks解説（GeraldChen） | [juejin.cn/post/7628854568780464162](https://juejin.cn/post/7628854568780464162) | 技術ブログ | T2 |
-| 掘金 — 並列処理アーキテクチャ | [juejin.cn/post/7628827972272013353](https://juejin.cn/post/7628827972272013353) | 技術ブログ | T2 |
-| 掘金 — Kimi K2.5代替 | [juejin.cn/post/7611432757572141096](https://juejin.cn/post/7611432757572141096) | 技術ブログ | T2 |
-| V2EX — 身分認証議論 | [v2ex.com/t/1206060](https://www.v2ex.com/t/1206060) | フォーラム | T2 |
+|| 36kr — 缓存性能问题 | [36kr.com/p/3767376468607494](https://36kr.com/p/3767376468607494) | ニュース | T1 |
+|| 36kr — Opus 4.7予告 | [36kr.com/p/3767982270661126](https://36kr.com/p/3767982270661126) | ニュース | T1 |
+|| 36kr — Codex超级龙虾 | [36kr.com/p/3770202199323136](https://36kr.com/p/3770202199323136) | ニュース | T1 |
+|| V2EX — Codex更新 | [v2ex.com/t/1206478](https://www.v2ex.com/t/1206478) | フォーラム | T1 |
+|| 掘金 — 32 Skills + 8 MCP | [juejin.cn/post/7620060655607857178](https://juejin.cn/post/7620060655607857178) | 技術ブログ | T2 |
+|| 掘金 — Hooks解説（GeraldChen） | [juejin.cn/post/7628854568780464162](https://juejin.cn/post/7628854568780464162) | 技術ブログ | T2 |
+|| 掘金 — 並列処理アーキテクチャ | [juejin.cn/post/7628827972272013353](https://juejin.cn/post/7628827972272013353) | 技術ブログ | T2 |
+|| 掘金 — Kimi K2.5代替 | [juejin.cn/post/7611432757572141096](https://juejin.cn/post/7611432757572141096) | 技術ブログ | T2 |
+|| 掘金 — 1M Context + LangChain CVE | [juejin.cn/post/7629308995309322290](https://juejin.cn/post/7629308995309322290) | 技術ブログ | T2 |
+|| V2EX — 身分認証議論 | [v2ex.com/t/1206060](https://www.v2ex.com/t/1206060) | フォーラム | T2 |

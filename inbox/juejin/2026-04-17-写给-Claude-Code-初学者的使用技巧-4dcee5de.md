@@ -4,7 +4,7 @@ source: juejin
 url: "https://juejin.cn/post/7628116434649088009"
 author: "双越AI_club"
 date: 2026-04-14
-score: 15
+score: 16
 tags: ["claude", "Claude", "AI编程", "Agent"]
 ---
 
@@ -12,7 +12,7 @@ tags: ["claude", "Claude", "AI编程", "Agent"]
 
 大家好，我是双越。wangEditor 作者，前百度 滴滴 资深前端工程师，慕课网金牌讲师，PMP，前端面试派作者。本文总结了很多 claude code 使用技巧，供初学者参考。
 
-> 👍 15   👁️ 0   ⭐ 23
+> 👍 16   👁️ 0   ⭐ 27
 
 ## 涉及话题
 - claude
