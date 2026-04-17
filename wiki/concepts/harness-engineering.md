@@ -1,7 +1,7 @@
 ---
 title: "Harness Engineering — AI工程の新パラダイム"
 created: 2026-04-15
-updated: 2026-04-15
+updated: 2026-04-17
 tags: [ai-agents, coding-agents, concept, technique]
 aliases: ["Harness", "Harness Engineering", "ハーネスエンジニアリング", "AI Harness"]
 source_lang: zh-CN
@@ -148,6 +148,37 @@ Vibe Coding ◄━━━━━━━━━━━━━━━━━━━━► H
 https://www.v2ex.com/t/1206029
 
 ---
+
+## 最新動向（2026-04-17更新）
+
+### OpenAI GPT-5.4のHarness全面開放
+
+36kr（新智元）が報じたところによると、OpenAIがGPT-5.4と同時に**Codex同款Harnessを全面開放**した。
+
+> "GPT-5.4真正的杀招终于落地！OpenAI连夜重写基建、原生收编七大沙盒，彻底封死第三方框架的活路"
+> （GPT-5.4の真の殺し手がついに実装！OpenAIが一晩で基盤を書き直し、7つのサンドボックスをネイティブ統合、サードパーティフレームワークの活路を完全に封殺）
+
+この動きは、Harnessが理論概念から**商用プラットフォームの競争軸**に変わったことを示す重要な転換点である。
+
+> **出典**: 36kr — [https://36kr.com/p/3769362731467272](https://36kr.com/p/3769362731467272) [Tier 1]
+
+### 投資家の参入
+
+36krは「最新风口Harness，李开复、陆奇已重金入场」（最新トレンドHarness、李開復・陸奇が大型投資で参入）と報じ、中国のトップVCがHarnessをAI産業の次の重要カテゴリとして認識し始めたことを示した。
+
+> **出典**: 36kr — [https://36kr.com/p/3768661067252483](https://36kr.com/p/3768661067252483) [Tier 1]
+
+### MiniMaxのHarness事例
+
+機器之心（Juejin経由）が「当AI迈入Harness时代：以MiniMax为样本看智能体云端新基建」を報じた。OpenClawの爆発的人気を受けて、MiniMaxがHarnessレイヤーの実装で先行している事例として注目されている。
+
+> **出典**: Juejin — [https://juejin.cn/post/7629167139824828442](https://juejin.cn/post/7629167139824828442) [Tier 2]
+
+### DeepAgentsフレームワーク
+
+Juejinで「DeepAgents 快速上手教程」が公開され、DeepAgentsを高レベルAgent Harness（総制御フレームワーク）として位置づけ、LangChain/LangGraphとの関係を整理している。
+
+> **出典**: Juejin — [https://juejin.cn/post/7629231480154816553](https://juejin.cn/post/7629231480154816553) [Tier 2]
 
 ## 関連リンク
 

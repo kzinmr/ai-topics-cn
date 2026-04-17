@@ -1,7 +1,7 @@
 ---
 title: "Claude Code — AIコーディングエージェント"
 created: 2026-04-15
-updated: 2026-04-15
+updated: 2026-04-17
 tags: [claude, ai-agents, coding-agents, tooling, closed-source]
 aliases: ["Claude Code", "CC", "claude-code"]
 source_lang: zh-CN
@@ -29,11 +29,14 @@ Anthropicは2026年4月にClaude Codeの新機能「**Routines**」を正式に�
 
 > **出典**: 36kr（新智元）[T1]、掘金 [T2]
 
-### Opus 4.7のリリース予告
+### Opus 4.7のリリース（2026-04-16）
 
-Anthropicの次期フラグシップモデル**Opus 4.7**が今週中にリリースされる見込みである。Adobe/Figmaと競合するクリエイティブ領域への進出が示唆されており、Claude Codeのバックエンドモデルとしても採用される可能性が高い。
+**[[claude-opus-4-7]]が正式リリースされた**。SWE-bench Verified 87.6%（+6.8pt）、CursorBench 70%（+12pt）と大幅な性能向上を達成。画像解像度も約3倍に向上。Claude Codeのバックエンドモデルとして直ちに利用可能となった。
 
-> **出典**: 36kr — [https://36kr.com/p/3767982270661126](https://36kr.com/p/3767982270661126) [T1]
+同時にAnthropicが導入した**強制身分認証（実名制验证）**が中国ユーザーに大きな影響を与えている。政府発行の身分証明書と手持ち自撮りが要求され、中国大陸ユーザーのアクセスが大幅に制限される事態となっている。この問題は[[kimi-moonshot]]や[[coding-plan]]への移行を加速させている。
+
+> **出典**: V2EX — [https://www.v2ex.com/t/1206484](https://www.v2ex.com/t/1206484) [T1]
+> **出典**: 36kr — [https://36kr.com/p/3768647944307458](https://36kr.com/p/3768647944307458) [T1]
 
 ### 並列処理アーキテクチャの刷新
 
