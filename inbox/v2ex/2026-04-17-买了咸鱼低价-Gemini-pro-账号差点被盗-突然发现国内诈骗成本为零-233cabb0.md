@@ -4,7 +4,7 @@ source: v2ex
 url: "https://www.v2ex.com/t/1206537"
 author: "finalcut"
 date: 2026-04-17
-score: 69
+score: 73
 tags: ["Gemini"]
 ---
 
