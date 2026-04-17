@@ -206,3 +206,67 @@ Originating conversation: Discord thread 1494591317332721704
 - 規制/コンプライアンス concept（5言及）
 - Cursor vs Claude Code comparison page
 - Claude Opus 4.7 追記（6ドルMinecraftデモ詳細）
+
+## [2026-04-17] triage-05 | 第5回トリアージ — 3ページ新規作成、2ページ更新
+
+Originating conversation: scheduled triage run
+
+### インボックス状況
+- **crawl_all.py 12:04実行**: 54アイテム収集（V2EX: 20, Juejin: 20, 36kr: 14）
+- **trending_topics.py --days 3**: 28トピック検出（前回26→28）
+- **WeChat**: 6件（復旦NLP Agent総説など）
+- Zhihu: 0件（403継続）
+
+### 趋势分析結果（04-17 12:00時点）
+全体の言及数が大幅増加。Claude 146件、AI Agent 117件。WeChat含む4ソース横断トピックが増加。
+
+| # | トピック | 言及数 | 変化 |
+|---|---------|--------|------|
+| 1 | Claude | 146 | ↑（131→146） |
+| 2 | AI Agent/智能体 | 117 | ↑↑（92→117） |
+| 3 | GPT | 56 | ↑（49→56） |
+| 4 | Anthropic | 51 | ↑（41→51） |
+| 5 | OpenAI | 46 | ↑（39→46） |
+| 6 | Gemini/Google | 33 | ↑（30→33）**ページ新規作成** |
+| 7 | Function Calling | 4 | **NEW** ページ新規作成 |
+| 8 | Vector DB | 4 | **NEW** ページ新規作成 |
+
+### 主要イベント
+1. **Opus 4.7システムプロンプト漏洩**: 新智元が速報、底層設計が完全露出
+2. **Opus 4.7「降智」論争激化**: 量子位「降智実錘了」、新智元「全網差評」
+3. **Claude Codeデスクトップ版酷評**: 極客邦科技InfoQ「100% AI 编码」の失敗
+4. **封鎖百万アカウント**: 掘金で大規模BAN + KYC複合効果の報道
+5. **Agent Skills体系化**: 万字干货記事が話題、Skills＝2026年最重要AI技能
+6. **Hermes vs OpenClaw論争**: Agent架構選択の商業矛盾が表面化
+7. **復旦NLP 80頁Agent総説**: WeChat経由で大型サーベイ論文が拡散
+8. **向量数据库選型**: 2026年版5製品比較ガイドが掘金で公開
+9. **Transformer×RNN融合**: Google研究、超長コンテキスト解放
+
+### 新規作成ページ
+| ページ | 種別 | 言及数 | 根拠 |
+|--------|------|--------|------|
+| `entities/gemini-google.md` | Entity | 33 | #6トレンド、wiki未カバー最大トピック |
+| `concepts/function-calling.md` | Concept | 4 | NEWトレンド、Agent/MCP基盤技術 |
+| `concepts/vector-db.md` | Concept | 4 | NEWトレンド、RAG基盤インフラ |
+
+### 更新ページ
+| ページ | 更新内容 |
+|--------|----------|
+| `entities/claude-opus-4-7.md` | システムプロンプト漏洩、降智論争、デスクトップ版酷評、封鎖百万アカウント、Anthropic企業動向追加 |
+| `concepts/ai-agent.md` | 言及数21→117更新、Agent Skills体系化、Hermes vs OpenClaw論争、復旦NLP総説、Function Calling基盤、OpenAI Agents SDK、Tokenコスト問題追加 |
+
+### Wiki統計
+- **Entity Pages**: 11（+1）
+- **Concept Pages**: 11（+2）
+- **Comparison Pages**: 0
+- **Total Pages**: 22（+3）
+- **Last Updated**: 2026-04-17
+
+### 次回対応候補
+- Llama/Meta entity（8言及、4ソース横断）
+- 微調/Fine-tuning concept（5言及、NEW）
+- 文心一言/Baidu entity（5言及）
+- MiniMax entity（4言及）
+- 規制/コンプライアンス concept（5言及）
+- Cursor vs Claude Code comparison page
+- Hermes Agent entity page（新興トレンド）

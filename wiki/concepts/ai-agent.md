@@ -1,7 +1,7 @@
 ---
 title: "AI Agent（智能体）— 中国語圏での議論動向"
 created: 2026-04-15
-updated: 2026-04-15
+updated: 2026-04-17
 tags: [ai-agents, llm, concept, china]
 aliases: ["AI Agent", "智能体", "AIエージェント", "Agentic AI"]
 source_lang: zh-CN
@@ -9,9 +9,10 @@ source_lang: zh-CN
 
 # AI Agent（智能体）— 中国語圏での議論動向
 
-> **トレンド順位**: #2（2026-04-15 集計）  
-> **言及数**: 21件（36kr, Juejin, V2EX）  
-> **注目度**: 🔥🔥🔥🔥
+> **トレンド順位**: #2（2026-04-17 集計）  
+> **言及数**: 117件（36kr, Juejin, V2EX, WeChat）— 4ソース横断  
+> **注目度**: 🔥🔥🔥🔥🔥  
+> **推移**: 21件(04-15) → 80件(04-16) → 92件(04-17a) → **117件**(04-17b)
 
 ## 概要
 
@@ -113,6 +114,43 @@ Juejin では「推荐几个牛逼的 AI Agent 项目（おすすめの凄い AI
 | **[[mcp|MCP]]** | Model Context Protocol。ツール連携の標準規約 | Agent 間・ツール間の通信層 |
 | **Harness** | Agent を含むシステム全体の設計枠組み | Agent の上位概念 |
 
+## 2026-04-17 更新：Agent議論の爆発的拡大
+
+前回トリアージ（04-15）21言及から**117言及**へ急増。WeChatメディアも含め4ソース横断となり、「ホットトピック」最高ランクを維持。
+
+### Agent Skillsの体系化
+- 「万字干货！Agent Skills从入门到精通」が掘金で大反響
+- 2026年最も学ぶべきAI技能としてSkillsを推奨
+- Claude Code、OpenClaw、Hermes Agent全てのAgentがSkillsに依存
+- Source: [Agent Skills入門](https://juejin.cn/post/7628903339975540763) (T1: juejin)
+
+### Agentアーキテクチャ論争：Hermes vs OpenClaw
+- 「小龙虾该换爱马仕了？」（ロブスターをエルメスに乗り換えるべき？）が暘金で話題
+- [[openclaw]]創業者Peter Steinbergerが[[anthropic|Anthropic]]に一時アカウント凍結された事件が発端
+- オープンソースAgentフレームワークの商業矛盾が表面化
+- Source: [Hermes Agent vs OpenClaw](https://juejin.cn/post/7629549824972488710) (T1: juejin)
+
+### 復旦NLPチーム80頁Agent総説
+- 復旦大学NLPチームが80ページの大規模Agent総説論文を発表
+- AI智能体の現状と将来を体系的に整理
+- WeChatメディア（機器学习算法与自然言語処理）経由で拡散
+- Source: [復旦NLP Agent総説](https://weixin.sogou.com/) (T4: WeChat)
+
+### [[function-calling]]の基盤技術としての再認識
+- 「从对话到动作：用 Function Calling 把 LLM 接到真实 API」が注目
+- Agentの核心メカニズムとしてのFunction Callingの解説が活発化
+- Source: [Function Calling実装ガイド](https://juejin.cn/post/7629289037941915667) (T1: juejin)
+
+### OpenAI Agents SDK大型アップデート
+- 沙箱執行、ファイルシステムツール、可配置記憶を追加
+- Agent開発が「動く」から「プロダクション対応」への転換点
+- Source: [OpenAI Agents SDK大升级](https://juejin.cn/post/7628623224711315465) (T1: juejin)
+
+### Tokenコスト問題
+- 「Token成本失控？两大开源方案如何重构AI编程成本结构」がAgent運用の現実的課題を提起
+- 30分のAgentセッションで大量のコンテキスト窓を消費する問題
+- Source: [Token成本失控](https://juejin.cn/post/7629598336643366958) (T1: juejin)
+
 ## 関連リンク
 
 ### 内部リンク
@@ -121,6 +159,9 @@ Juejin では「推荐几个牛逼的 AI Agent 项目（おすすめの凄い AI
 - [[claude-code]] — Anthropic のコーディングエージェント
 - [[glm-zhipu]] — 智譜 GLM シリーズ
 - [[harness-engineering]] — Harness 設計論
+- [[function-calling]] — Agentの基盤メカニズム
+- [[openclaw]] — OpenClaw Agentフレームワーク
+- [[vector-db]] — Agentの長期記憶ストア
 
 ### 外部ソース（中国語）
 
