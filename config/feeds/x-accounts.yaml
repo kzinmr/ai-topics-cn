@@ -1,0 +1,20 @@
+# X/Twitter accounts to track — Chinese AI space
+#
+# These accounts post primarily about the Chinese AI ecosystem,
+# Chinese-origin models, and related commentary.
+
+accounts:
+- handle: '@karminski3'
+  name: Karminski
+  topics:
+  - ai
+  - llm
+  - china-ai
+  notes: Chinese AI developer, active commentator on Chinese AI ecosystem
+- handle: '@teortaxestex'
+  name: Teortaxes
+  topics:
+  - ai
+  - llm
+  - china-ai
+  notes: AI researcher/commentator, Chinese AI ecosystem insights

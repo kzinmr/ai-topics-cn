@@ -1,0 +1,13 @@
+[Unit]
+Description=Shelley Wiki Health Digest (weekly) — Chinese AI
+After=network.target
+
+[Service]
+Type=oneshot
+User=exedev
+WorkingDirectory=/home/exedev/ai-topics-cn
+ExecStart=/usr/bin/shelley client chat -p 'Weekly Wiki Health Digest for Chinese AI topics. Run `python3 ~/ai-topics-cn/scripts/wiki_health.py` and present the full report to the user IN JAPANESE. Highlight notable findings: skeleton entities needing enrichment, stale pages (>30d), orphan pages not in index.md, and unprocessed inbox items. Suggest 2-3 concrete next actions.' -cwd '/home/exedev/ai-topics-cn'
+TimeoutStartSec=180
+
+[Install]
+WantedBy=multi-user.target

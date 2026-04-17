@@ -53,23 +53,48 @@ After modifying wiki files: `cd ~/ai-topics-cn && git add wiki/ inbox/ && git co
 - Always cite sources with original Chinese URLs
 - Note China-specific context (regulation, censorship, local ecosystem dynamics)
 
+## X/Twitter Account Management
+
+YAML file at `~/ai-topics-cn/config/feeds/x-accounts.yaml` (symlinked as `~/x-accounts.yaml`) lists X/Twitter accounts to track in the Chinese AI space.
+Pre-built script exists — use it, do NOT write new ones:
+- `~/ai-topics-cn/scripts/build_x_wiki.py` — parses YAML, fetches blog about pages + discovers RSS, generates skeleton entity pages under `~/wiki/entities/`.
+  - Options: `--dry-run`, `--handle @name` (single), `--enrich` (print enrichment prompt)
+  - Skeleton pages have TODO markers — enrich them by researching the person's X activity, blog posts, projects.
+- To add new X accounts: edit `~/x-accounts.yaml`, then run the script.
+- After running or enriching, commit+push: `cd ~/ai-topics-cn && git add wiki/ && git commit -m "wiki: ..." && git push`
+
+## Hot Topics / Active Crawling
+
+YAML file at `~/ai-topics-cn/config/hot-topics.yaml` defines active crawling targets.
+The `shelley-active-crawl` timer reads this file daily and expands wiki coverage for high-priority topics.
+Topics include: Chinese-origin models (DeepSeek, Qwen, ChatGLM, Kimi, Doubao), agent ecosystem, local deployment, regulation, MCP adoption, vibe coding trend.
+
 ## Data Pipeline
 
 ```
-Crawling (cron, every 6 hours):
+Crawling (systemd timer, every 6 hours):
   V2EX API    → inbox/v2ex/
   Juejin API  → inbox/juejin/
   36kr HTML   → inbox/36kr/
   Zhihu API   → inbox/zhihu/
   WeChat search → inbox/wechat-media/
 
-Triage (Hermes agent):
+Trending Topics (daily, 10:00 UTC):
+  scripts/trending_topics.py → cross-source topic detection
+
+Active Crawl (daily, 11:00 UTC):
+  config/hot-topics.yaml → deep-dive into priority topics
+
+Triage (every 12 hours):
   inbox/* → identify important articles → raw/articles/
 
-Curation (Hermes agent, llm-wiki skill):
+Curation (Hermes agent, wiki skills):
   raw/* → entities/, concepts/, comparisons/, queries/
   → index.md, log.md updated
   → git push
+
+Wiki Health (weekly, Monday 09:00 UTC):
+  scripts/wiki_health.py → health report
 ```
 
 ## Key Differentiators from English-language AI Topics

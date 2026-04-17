@@ -57,6 +57,14 @@ python3 scripts/crawl_all.py --tier 1 --limit 15
 # トレンディング分析
 python3 scripts/trending_topics.py --days 3
 
+# Wiki健全性チェック
+python3 scripts/wiki_health.py
+
+# Xアカウントからwikiスケルトン生成
+python3 scripts/build_x_wiki.py --dry-run
+python3 scripts/build_x_wiki.py --handle @karminski3
+python3 scripts/build_x_wiki.py --enrich  # Hermes enrichmentプロンプト出力
+
 # 個別クローラー
 python3 scripts/crawl_v2ex.py --limit 30
 python3 scripts/crawl_juejin.py --limit 30
@@ -83,10 +91,16 @@ ai-topics-cn/
 │   ├── 36kr/
 │   ├── zhihu/
 │   └── wechat-media/
-├── config/hermes/           # Agent設定
-│   ├── SOUL.md              # Agentペルソナ
-│   └── skills/              # Agentスキル
+├── config/
+│   ├── feeds/               # Xアカウント設定
+│   │   └── x-accounts.yaml
+│   ├── hermes/              # Agent設定
+│   │   ├── SOUL.md          # Agentペルソナ
+│   │   └── skills/          # Agentスキル (5個)
+│   └── hot-topics.yaml      # アクティブクローリング対象 (24トピック)
 ├── scripts/                 # クローラー・分析ツール
+├── systemd/                 # systemd unitファイル (参考)
+├── docs/                    # ドキュメント
 ├── srv/                     # Go Webダッシュボード
 └── bin/                     # ビルド済みバイナリ
 ```

@@ -1,0 +1,14 @@
+[Unit]
+Description=Hermes China AI Topics Triage
+
+[Service]
+Type=oneshot
+User=exedev
+Group=exedev
+WorkingDirectory=/home/exedev/ai-topics-cn
+ExecStart=shelley client chat -p 'You are Hermes, the AI knowledge agent for the Chinese AI topics wiki at ~/ai-topics-cn. This is a scheduled triage run. Read config/hermes/SOUL.md and wiki/SCHEMA.md for context. Then: 1) Check inbox/ for new crawled articles. 2) Run python3 scripts/trending_topics.py to identify hot topics. 3) For the top 3-5 trending topics, create or update wiki concept/entity pages in Japanese. 4) Update wiki/index.md and wiki/log.md. 5) Git commit and summarize what was done.' -cwd '/home/exedev/ai-topics-cn'
+Environment=HOME=/home/exedev
+Environment=USER=exedev
+StandardOutput=journal
+StandardError=journal
+TimeoutStartSec=900

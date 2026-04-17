@@ -1,0 +1,13 @@
+[Unit]
+Description=Shelley Trending Topics Detection (daily) — Chinese AI
+After=network.target
+
+[Service]
+Type=oneshot
+User=exedev
+WorkingDirectory=/home/exedev/ai-topics-cn
+ExecStart=/usr/bin/shelley client chat -p 'Daily Trending Topics notification for Chinese AI sources.\n\nStep 1: Run `python3 ~/ai-topics-cn/scripts/trending_topics.py --days 3` and present the report to the user IN JAPANESE. Focus on: (1) New Page Recommended — trending topics with no wiki page yet, (2) Hot Topics with 4+ sources, (3) Cross-Source Topics — highest signal items appearing across V2EX, Juejin, 36kr, Zhihu, and WeChat media.\n\nStep 2: Hot Topics クローリング候補提案。`cat ~/ai-topics-cn/config/hot-topics.yaml` を読み、Step 1 の「New Page Recommended」のトピック群と照合する。source_count が 3 以上で hot-topics.yaml にまだ登録されていないトピックがあれば、YAMLスニペットとして提案。' -cwd '/home/exedev/ai-topics-cn'
+TimeoutStartSec=180
+
+[Install]
+WantedBy=multi-user.target

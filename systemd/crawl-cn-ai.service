@@ -1,0 +1,14 @@
+[Unit]
+Description=Chinese AI Topics Crawler
+
+[Service]
+Type=oneshot
+User=exedev
+Group=exedev
+WorkingDirectory=/home/exedev/ai-topics-cn
+ExecStart=/home/exedev/ai-topics-cn/scripts/run_crawl.sh
+Environment=HOME=/home/exedev
+Environment=USER=exedev
+StandardOutput=journal
+StandardError=journal
+TimeoutStartSec=600

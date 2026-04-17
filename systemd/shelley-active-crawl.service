@@ -1,0 +1,13 @@
+[Unit]
+Description=Shelley Active Knowledge Crawl (daily) — Chinese AI
+After=network.target
+
+[Service]
+Type=oneshot
+User=exedev
+WorkingDirectory=/home/exedev/ai-topics-cn
+ExecStart=/usr/bin/shelley client chat -p 'Daily Active Knowledge Crawl for Chinese AI topics. あなたの目的: config/hot-topics.yaml に登録されたホットトピックに関連する「まだ取り込まれていない重要概念」を能動的に調査し、知識ベースに取り込むこと。\n\n手順:\n1. `cat ~/ai-topics-cn/config/hot-topics.yaml` を読み、crawl_policy が prerequisites/laterals/deepdive かつ last_crawled が3日以上前(またはnull)のトピックを抽出\n2. priority: high から最大 2つ、medium から最大 1つ選択\n3. 各トピックについて search_hints でWeb検索し、wikiに取り込み\n4. hot-topics.yaml の last_crawled を更新\n5. git commit & push\n6. 結果を日本語で報告' -cwd '/home/exedev/ai-topics-cn'
+TimeoutStartSec=300
+
+[Install]
+WantedBy=multi-user.target
