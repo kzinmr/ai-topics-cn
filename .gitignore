@@ -17,3 +17,6 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+
+# Hermes cron output (runtime only)
+config/hermes/cron/output/

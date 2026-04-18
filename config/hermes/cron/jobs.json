@@ -1,0 +1,180 @@
+{
+  "jobs": [
+    {
+      "id": "1742c979a1be",
+      "name": "newsletter-triage",
+      "prompt": "You are Hermes, the Chinese AI knowledge agent. This is a scheduled newsletter triage run. 1) First run: python3 /home/exedev/ai-topics-cn/scripts/process_newsletter.py to ingest any new emails from ~/Maildir/. 2) Read config/hermes/SOUL.md and wiki/SCHEMA.md. 3) Check inbox/newsletters/ for new digest .md files. 4) For each newsletter digest, extract the top articles relevant to Chinese AI/LLM topics. 5) Create or update wiki concept/entity pages in Japanese based on the content. 6) Update wiki/index.md and wiki/log.md. 7) Git commit and push. 8) Summarize what was done.",
+      "skills": [
+        "exe-dev-email-check"
+      ],
+      "skill": "exe-dev-email-check",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8 * * *",
+        "display": "0 8 * * *"
+      },
+      "schedule_display": "0 8 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-18T04:47:43.962186+00:00",
+      "next_run_at": "2026-04-18T08:00:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null
+    },
+    {
+      "id": "594ab3164bd2",
+      "name": "trending-topics",
+      "prompt": "Daily Trending Topics notification for Chinese AI sources.\n\nStep 1: Run python3 /home/exedev/ai-topics-cn/scripts/trending_topics.py --days 3 and present the report to the user IN JAPANESE. Focus on: (1) New Page Recommended \u2014 trending topics with no wiki page yet, (2) Hot Topics with 4+ sources, (3) Cross-Source Topics \u2014 highest signal items appearing across V2EX, Juejin, 36kr, Zhihu, and WeChat media.\n\nStep 2: Hot Topics \u30af\u30ed\u30fc\u30ea\u30f3\u30b0\u5019\u88dc\u63d0\u6848\u3002cat /home/exedev/ai-topics-cn/config/hot-topics.yaml \u3092\u8aad\u307f\u3001Step 1 \u306e\u300cNew Page Recommended\u300d\u306e\u30c8\u30d4\u30c3\u30af\u7fa4\u3068\u7167\u5408\u3059\u308b\u3002source_count \u304c 3 \u4ee5\u4e0a\u3067 hot-topics.yaml \u306b\u307e\u3060\u767b\u9332\u3055\u308c\u3066\u3044\u306a\u3044\u30c8\u30d4\u30c3\u30af\u304c\u3042\u308c\u3070\u3001YAML\u30b9\u30cb\u30da\u30c3\u30c8\u3068\u3057\u3066\u63d0\u6848\u3002",
+      "skills": [
+        "cn-media-analysis"
+      ],
+      "skill": "cn-media-analysis",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * *",
+        "display": "0 10 * * *"
+      },
+      "schedule_display": "0 10 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-18T04:47:51.510679+00:00",
+      "next_run_at": "2026-04-18T10:00:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null
+    },
+    {
+      "id": "1c5a824882b5",
+      "name": "active-crawl",
+      "prompt": "Daily Active Knowledge Crawl for Chinese AI topics. \u3042\u306a\u305f\u306e\u76ee\u7684: /home/exedev/ai-topics-cn/config/hot-topics.yaml \u306b\u767b\u9332\u3055\u308c\u305f\u30db\u30c3\u30c8\u30c8\u30d4\u30c3\u30af\u306b\u95a2\u9023\u3059\u308b\u300c\u307e\u3060\u53d6\u308a\u8fbc\u307e\u308c\u3066\u3044\u306a\u3044\u91cd\u8981\u6982\u5ff5\u300d\u3092\u80fd\u52d5\u7684\u306b\u8abf\u67fb\u3057\u3001\u77e5\u8b58\u30d9\u30fc\u30b9\u306b\u53d6\u308a\u8fbc\u3080\u3053\u3068\u3002\n\n\u624b\u9806:\n1. cat /home/exedev/ai-topics-cn/config/hot-topics.yaml \u3092\u8aad\u307f\u3001crawl_policy \u304c prerequisites/laterals/deepdive \u304b\u3064 last_crawled \u304c3\u65e5\u4ee5\u4e0a\u524d(\u307e\u305f\u306fnull)\u306e\u30c8\u30d4\u30c3\u30af\u3092\u62bd\u51fa\n2. priority: high \u304b\u3089\u6700\u5927 2\u3064\u3001medium \u304b\u3089\u6700\u5927 1\u3064\u9078\u629e\n3. \u5404\u30c8\u30d4\u30c3\u30af\u306b\u3064\u3044\u3066 search_hints \u3067Web\u691c\u7d22\u3057\u3001wiki\u306b\u53d6\u308a\u8fbc\u307f\n4. hot-topics.yaml \u306e last_crawled \u3092\u66f4\u65b0\n5. git commit & push (cwd: /home/exedev/ai-topics-cn)\n6. \u7d50\u679c\u3092\u65e5\u672c\u8a9e\u3067\u5831\u544a",
+      "skills": [
+        "cn-media-analysis",
+        "wiki-entity-upgrade"
+      ],
+      "skill": "cn-media-analysis",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 11 * * *",
+        "display": "0 11 * * *"
+      },
+      "schedule_display": "0 11 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-18T04:47:58.455511+00:00",
+      "next_run_at": "2026-04-18T11:00:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null
+    },
+    {
+      "id": "2bf13aef4a27",
+      "name": "triage",
+      "prompt": "You are Hermes, the AI knowledge agent for the Chinese AI topics wiki at /home/exedev/ai-topics-cn. This is a scheduled triage run. Read config/hermes/SOUL.md and wiki/SCHEMA.md for context. Then: 1) Check inbox/ for new crawled articles. 2) Run python3 /home/exedev/ai-topics-cn/scripts/trending_topics.py to identify hot topics. 3) For the top 3-5 trending topics, create or update wiki concept/entity pages in Japanese. 4) Update wiki/index.md and wiki/log.md. 5) Git commit (cwd: /home/exedev/ai-topics-cn) and summarize what was done.",
+      "skills": [
+        "cn-media-analysis",
+        "wiki-entity-upgrade"
+      ],
+      "skill": "cn-media-analysis",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 3,15 * * *",
+        "display": "0 3,15 * * *"
+      },
+      "schedule_display": "0 3,15 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-18T04:48:05.125484+00:00",
+      "next_run_at": "2026-04-18T15:00:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null
+    },
+    {
+      "id": "41df2c411dd0",
+      "name": "wiki-health",
+      "prompt": "Weekly Wiki Health Digest for Chinese AI topics. The script output above is from wiki_health.py. Present the full report IN JAPANESE. Highlight: skeleton entities needing enrichment, stale pages (>30d), orphan pages not in index.md, unprocessed inbox items. Suggest 2-3 concrete next actions.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "wiki_health.py",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * 1",
+        "display": "0 9 * * 1"
+      },
+      "schedule_display": "0 9 * * 1",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-18T04:48:55.521418+00:00",
+      "next_run_at": "2026-04-20T09:00:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null
+    }
+  ],
+  "updated_at": "2026-04-18T04:48:55.522122+00:00"
+}
