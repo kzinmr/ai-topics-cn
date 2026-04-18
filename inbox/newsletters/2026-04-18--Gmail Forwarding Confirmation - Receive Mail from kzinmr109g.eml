@@ -1,0 +1,105 @@
+Delivered-To: anything@hermes-china-digest.exe.xyz
+Authentication-Results: mail.exe.xyz; dkim=pass header.d=google.com
+ header.i=@google.com; spf=pass reason="matched ip"
+ smtp.helo=mail-dl1-f43.google.com smtp.mailfrom=google.com
+Received: from mail-dl1-f43.google.com (mail-dl1-f43.google.com
+ [74.125.82.43]) by mail.exe.xyz (envelope-sender
+ <forwarding-noreply@google.com>) with ESMTPS id d92ebc75; Sat, 18 Apr 2026
+ 03:13:38 +0000
+Received: by mail-dl1-f43.google.com with SMTP id a92af1059eb24-12c726c30efso1271235c88.1
+        for <anything@hermes-china-digest.exe.xyz>; Fri, 17 Apr 2026 20:13:38 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1776482018; cv=none;
+        d=google.com; s=arc-20240605;
+        b=gZJ7bM8wWWc9iJlYboC2SJw+gYqexS4fFihTEqxeWATgwbWa/3IbvehKulRNC56FJP
+         bCabxcZ88AhxWqgWRNKTYcL/UCDqKI47DfO1cr9k4qfF47EVuRbL20EC7ztWZljYIyG5
+         +LgpMvI83E+3pu3vnu827KR5CGtXQ1504R6+dVyId8armKTe4AA+blH9/hGOVnAPjmRF
+         L+1dw8O9lpY9STH516hV+xqVBp1vIgfbxHsB5ug0kAUuFK5wpmFQSg3AzjfFQ3sP67Io
+         H4x6HnniyS7O/QJnLO4fvNO+OqjB9QdRztdA6hpy1g8kjwMt4OtY7JzsQ6WrJtqKNPh3
+         UvJg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:from:subject:message-id:date:mime-version:dkim-signature;
+        bh=0HwWugGqlaUO/d8JGEsdIgpSchX7JH9oLf+f+tqrTZA=;
+        fh=NDIcJ7FFBXOdjlWJprx6lgs7mM2kK9fSp0LDao9BGcM=;
+        b=gXy4DVqFGyilDy8dqYH3QprxMKhApbEgG4Wmg0b1yF4FSQAoxJYU6mj6uzIlrefu+C
+         CQB+Vypp4GEFL3KAbsWss3e/8aW5R987waINalwFdjWK94RTedOlKSwq8gl2w91Yx56S
+         ttFGLAiXaRn6MZCWDuWeo+mK23sUFHrEzd+0X1s6hda957i+A3KZjbusS8cdS+qymIVQ
+         8pRFQl5mYbEG/FeCA/95g/jTjQFUCwnuCBwIbZvhoFJmgCo1reR7IUmiB4fecC8Olb7x
+         j9P2brBFxgWiyq90sc11raaJ67pZP1EK4bmpZwFU/pgwjadKGgHmfH5iOEeRD0epNWni
+         Ooxw==;
+        darn=hermes-china-digest.exe.xyz
+ARC-Authentication-Results: i=1; mx.google.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20251104; t=1776482018; x=1777086818; darn=hermes-china-digest.exe.xyz;
+        h=to:from:subject:message-id:date:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=0HwWugGqlaUO/d8JGEsdIgpSchX7JH9oLf+f+tqrTZA=;
+        b=AGs7WHbN8eoELsA9rYSo7mShbos29C7amyljaR7Y1+4GNaNnlZi+wZJ1sK1R1dcHNj
+         xBgglzyUL9zXp2zx4X3LYBaQ+cxkoZgSdG/0MduVbuk5L9rdDTbE76aCi/bidj2wD3yt
+         tE7YfknVjOXhKgJ/mo0l/XsmDS4u1PsFH3lVA0imL5mF1LAjz73a+O4T6Oe3CT6wZaIw
+         l3PQzePP5uAtRvwdWU1dpENlT5/CWxqdKJwUU2mGWOYwYAZr/H6qWDUHI7FWUwug64XO
+         21JW4uhlnmPvaeBd4JAOTYhj+8c/c8HD1SSVc3aVUrbMtNrO0YP/yObgmUVQBsKkecDE
+         QevA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20251104; t=1776482018; x=1777086818;
+        h=to:from:subject:message-id:date:mime-version:x-gm-gg
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=0HwWugGqlaUO/d8JGEsdIgpSchX7JH9oLf+f+tqrTZA=;
+        b=JHUESEpfpCk7bRSWLcAO+bAWKTyITNZJAc7nDGIR9hvFK3n9qszeFv5qmG0Njf2zlg
+         DAd5UKeXOxdQDWHN+RQG/LCR1oGdt7jyaigYbo81lwxQ/o1VRxOCIJynt38vKUugFyJy
+         JuEiZM7I7kfB1IwfHVKOgU030pU7FIhcB0zgyrzmG5qQRYlhP96o9B+BSFo8ZIMSRkAU
+         oNN/PsA70iF1WZxj//IOlEzyP/pQZQO/KBiD8ShJzaG7Mw/sqRIefnKhKS6ma5p0YRO+
+         cwLbKsq2uT7jOCYux8N9elumOYe9War+y3Q8QY+XRqCHQJxMyV4nmFctJo8nx7xp3guv
+         fBjw==
+X-Gm-Message-State: AOJu0YxnSgiIQt0o0ijJwR2D/zovU3DvXXXHtCXKp4Q8BCKXdjJNaHpI
+	SlZmfIUOCAjb5BAB6Q/11SVC/mL2JJUQaTNa+UybluSqfkVe6zNjDSYyZ0C8wyX7FtZi0r2uNpi
+	sfT2VUphPXkYBUF30mFHLe/ID2+Nx6xPO8kcRwZGM60da4JjKO1g/iexn7cA3wSI2Cg==
+X-Gm-Gg: AeBDieu1o6/7FxQZQyNbJ6VHO1aMgvAAbrXYpjJbpiF3367AqcSPHHpy0CNEhjOF4DI
+	KvAFx2lq2Wq4nrpc7/LeSoOC9Ey6Q91dLJ60lvu8S+QDWXJBnZOFqx7+MQ20ZUlJ/ucSJZlGxSc
+	oDUt9jJBQF0jrpVNMUG1+6+kxBKSKBcAddVsGNl9jISeQH1gRO1ojo1pUPrVSOHvUV7No6naCVf
+	4PT7RWTp6TEU3zIx+BNUomhewbiomLX9fauFBRs3ODmfKFxi62vqImwimiZQWTA2kkn1DMuTD4w
+	KKxjsDfTzqq4dcGDGbV1XO+KQnym
+MIME-Version: 1.0
+X-Received: by 2002:a05:7022:618c:b0:128:ce44:be90 with SMTP id
+ a92af1059eb24-12c73f9f238mr2437586c88.28.1776482017815; Fri, 17 Apr 2026
+ 20:13:37 -0700 (PDT)
+X-Google-Address-Confirmation: EZl-l3pExXv9pnlZUQ7G1mQMaNQ
+Date: Sat, 18 Apr 2026 12:13:37 +0900
+X-Gm-Features: AQROBzD4obCmLWpNvVPL7ROCkXLdvXSaDH8gF1P9n3OI1STE7YUa6goouBDH_5w
+Message-ID: <CAC0jVAweb6e__UTZeS8oUqb3FfpK=DKeVxhbUvF2f8CxLjmd-Q@mail.gmail.com>
+Subject: (Gmail Forwarding Confirmation - Receive Mail from kzinmr109@gmail.com
+From: Gmail Team <forwarding-noreply@google.com>
+To: anything@hermes-china-digest.exe.xyz
+Content-Type: text/plain; charset="UTF-8"
+
+kzinmr109@gmail.com has requested to automatically forward mail to your email
+address anything@hermes-china-digest.exe.xyz.
+
+To allow kzinmr109@gmail.com to automatically forward mail to your address,
+please click the link below to confirm the request:
+
+https://mail-settings.google.com/mail/vf-%5BANGjdJ_D9rvLDoHc3JFC7aP4ZrPfk4Szrie1dMgfjpApcijx5C6g8S_b5hYWQYfBrlpBHPFplBgSVRcO9pQ5POzkSaDO0kZJ8AOsrTeLCQ%5D-c8RcBZ_jYjlbaqcv7sbYLUxD5tQ
+
+If you click the link and it appears to be broken, please copy and paste it
+into a new browser window.
+
+Thanks for using Gmail!
+
+Sincerely,
+
+The Gmail Team
+
+If you do not approve of this request, no further action is required.
+kzinmr109@gmail.com cannot automatically forward messages to your email address
+unless you confirm the request by clicking the link above. If you accidentally
+clicked the link, but you do not want to allow kzinmr109@gmail.com to
+automatically forward messages to your address, click this link to cancel this
+verification:
+https://mail-settings.google.com/mail/uf-%5BANGjdJ8eVzMGewN9xpURuFYwc83lYTWPUREjerG5Kah6nyMNbYRqabSBpcSAanOj5rzAIxCwyS7MTZIcfA7zv_c1sQ5d1iBMKFvSVNV6LA%5D-c8RcBZ_jYjlbaqcv7sbYLUxD5tQ
+
+To learn more about why you might have received this message, please
+visit: http://support.google.com/mail/bin/answer.py?answer=184973.
+
+Please do not respond to this message. If you'd like to contact the
+Google.com Team, please log in to your account and click 'Help' at
+the top of any page. Then, click 'Contact Us' along the bottom of the
+Help Center.
