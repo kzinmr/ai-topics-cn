@@ -1,0 +1,1221 @@
+Delivered-To: anything@hermes-china-digest.exe.xyz
+Authentication-Results: mail.exe.xyz; spf=pass reason="matched ip"
+ smtp.helo=mail-dy1-f177.google.com smtp.mailfrom=gmail.com; dkim=pass
+ header.d=gmail.com header.i=@gmail.com
+Received: from mail-dy1-f177.google.com (mail-dy1-f177.google.com
+ [74.125.82.177]) by mail.exe.xyz (envelope-sender <kzinmr109@gmail.com>)
+ with ESMTPS id e34939ae; Sat, 18 Apr 2026 03:31:07 +0000
+Received: by mail-dy1-f177.google.com with SMTP id 5a478bee46e88-2b6b0500e06so2600802eec.1
+        for <anything@hermes-china-digest.exe.xyz>; Fri, 17 Apr 2026 20:31:07 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1776483065; cv=none;
+        d=google.com; s=arc-20240605;
+        b=YG8doeV7vzqsV3FwoinXXSwlgiSuYfJFqoadJ2xKzj7IMDmxEvwoeZ8vg4Av17ASNd
+         rTDLxOxbyfdcYXxkkNy4Q2MXzb4qJvNvbC8oU4SQn4vhPI1fVVTwbRp/oSTXC2xehpPU
+         XGIsKBXvZg1JVLwarDMMY9Ema+2iblr9+ZJPCsrP/qRxPTs4E4Q4zUhgHQxfyG0HiCgb
+         TrcetLn887UuM1WZTDjiadUBqF8pP3xLXhlbOuzFtbN/J6XpDjFMvs6EGH5E6ihhixzY
+         AC/BVeoyj0P2J8hNjGUXMwYgUimaEZMRvoZgLdpgBSGjy7649i1TQjCbRGOq00RNKZON
+         KUyQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=3XkOtqYMFCA5J2gOrx1C/3l2qfJ1IvuR1F5Vo6M7Qqg=;
+        fh=NDIcJ7FFBXOdjlWJprx6lgs7mM2kK9fSp0LDao9BGcM=;
+        b=Rf5yVIc7D35YsQQed6/ga/fd01CRLU3qLeSQFU+V3cz7EBwXkfQ43uOu4mSggEGXju
+         VDfVk2MlDcMmayqF/FVJyKIoXr3+9w24Gw1xSdNiBmSU0VvTn1ZVxM81z38fDFRGWEWL
+         ixYXXrmUzk4VjicQ9BhL7al9/TMqeoZFBaRFKSywAFtOpw21fpiB9clTY3kSkVuh+4M9
+         JrE482xNkebpj/o8DZgFbyGDoyvJCURrQKbsTgxrRp8VNhAxGqEEG0djD3Ker9oviDvh
+         VNGiMDYniDku2e27MxoVtQlmxTcqm06+l8/6zI8CTkxbPf7ZdX8lTFsqWuGWxVqU38WI
+         Amfg==;
+        darn=hermes-china-digest.exe.xyz
+ARC-Authentication-Results: i=1; mx.google.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20251104; t=1776483065; x=1777087865; darn=hermes-china-digest.exe.xyz;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=3XkOtqYMFCA5J2gOrx1C/3l2qfJ1IvuR1F5Vo6M7Qqg=;
+        b=SNFv6i2LHUIHoMJM8LUjRBWuE6uuROIHUHYOiVOOIWySLPUX/3hVrjKYBAWU9tdRtv
+         ftnUZUfJrwdaXtRfOEKI9o9N8GfAt/uSRqpf1UBbQ5/vJ3dTVW7SRnN8VwP3T1Vq52jQ
+         CiGjRA65psY3VVWZeg4VWBJnuTPrNzJEygy7v/1wopfhYdb/tMKJAWDs3tWbDO9VGohj
+         jlmvz6rTf/ge1utQkN2mOeBiWl3j9V5DyWbcTE1kctniKwDHijTJ5lueNwTxla4dbOXV
+         Y9ViNw1vXf91e+g4HIqn8JfUyxKWNV9JEd4TiMR9Cmr+neBtrFATH2jsI1BUP23dzm7J
+         cIXA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20251104; t=1776483065; x=1777087865;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-gg:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=3XkOtqYMFCA5J2gOrx1C/3l2qfJ1IvuR1F5Vo6M7Qqg=;
+        b=QW7fQSswguG1rieIrBIhs7qsgY8FxuBZSgylWCyzZ2wkryANBQ6ql6FWiHgsdMqBCv
+         ySqnzO+tBpNw8fSQm7Ws38J2DQD4PbhnuHaj/ly8U/XLHO6lZzxiV2gSOH0zaXy3BCpS
+         2wO1FHw6chPBKim81GcCA5N45ZseON2D1AC0I4+zC1gi/VvfinHOTJgTkH9f8gpcCncF
+         +etAIBJzu9HPRxJUKTCDrPVTvnDXhdSzYVC/dLraYXNRaz0sQKAOYLrjUPLyrEThN0Eo
+         p8r0/6+gBf9i6IMO0ZkTmGGSiP82odyIxFTwbh50+WXmqSxMiKzco/VgdU+BMM8DkXGL
+         Iqlg==
+X-Gm-Message-State: AOJu0YyYPWL9seM17sNlvnIoNDKYRTklh1KUUYL2/oMAk+mpq7zhNyGe
+	W1RHMjDO6b+cmXxcepY5jem/Gwzt+4Xgw6JJICpfy7Lvc42IxubvbLAtZzzaVPanoIr1U52uyPq
+	nziySt5F5/F2KCQuskUubgVP66Q6RaEHfgNlO
+X-Gm-Gg: AeBDietVlKwfY8A3QOPR9S6pG4rLOAp/fLCJd/criQtzsHw9uEISFOoA2SLhuDep+XW
+	mEfFWyBvfGR2/QxUkBNR6RKz9XovCNHS/3Pvy0JRCwKzd3ANGKlj7MajKJsLm5FBDa/6/K+tjPa
+	Gab/cNwEYwwC6drVq/gxkwM0/Kg2jWJU+G7oMlyXQW4o1b33LEO2B0RQk8V+CqSuA/Zjai03rbK
+	BB97NSyfrkMCIqo4y3HDhC8y5qHyGkSIAsZQN4aCBdgU5nhM+t9tJmZbjgC1dcpQoJeV3iEPcZM
+	98kFKA/+OLpv84Qj4A==
+X-Received: by 2002:a05:7300:7fa6:b0:2d9:6373:ad09 with SMTP id
+ 5a478bee46e88-2e479019158mr3385662eec.25.1776483064916; Fri, 17 Apr 2026
+ 20:31:04 -0700 (PDT)
+MIME-Version: 1.0
+References: <post-180910148@substack.com> <20251208125042.3.8d6beb48463e0cf3@mg-d1.substack.com>
+In-Reply-To: <20251208125042.3.8d6beb48463e0cf3@mg-d1.substack.com>
+From: =?UTF-8?B?56iy5p2R5ZKM5qi5?= <kzinmr109@gmail.com>
+Date: Sat, 18 Apr 2026 12:30:51 +0900
+X-Gm-Features: AQROBzD1G5l7vRXHU-ItaCprdKiak39bNWpxVphxfCcu77Lt2xMNIMpg1xe2vhg
+Message-ID: <CAC0jVAxxN58t+Tj9cCm0yVB58=Uq=7HwEM-Kiw2s2oG1r0rZZg@mail.gmail.com>
+Subject: Fwd: ChinAI #338: Model Context Protocol
+To: anything@hermes-china-digest.exe.xyz
+Content-Type: multipart/alternative; boundary="00000000000008ac67064fb3b2a2"
+
+--00000000000008ac67064fb3b2a2
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+---------- Forwarded message ---------
+From: ChinAI Newsletter <chinai@substack.com>
+Date: Mon, Dec 8, 2025 at 9:50=E2=80=AFPM
+Subject: ChinAI #338: Model Context Protocol
+To: <kzinmr109@gmail.com>
+
+
+Greetings from a world where=E2=80=A6
+=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=
+=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=
+=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=
+=CD=8F   =E2=80=87 =C2=AD=CD=8F
+=C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =
+=C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =
+=C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =
+=C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F
+=E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =
+=E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =
+=E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =
+=E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F
+  =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F =
+  =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F =
+  =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F =
+  =E2=80=87 =C2=AD=CD=8F
+=C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =
+=C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =
+=C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =
+=C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F
+=E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =
+=E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =
+=E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =
+=E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F
+  =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F =
+  =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F =
+  =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F =
+  =E2=80=87 =C2=AD=CD=8F
+=C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =
+=C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =
+=C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =
+=C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F
+=E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =
+=E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =
+=E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =
+=E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F
+  =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F =
+  =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F =
+  =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F =
+  =E2=80=87 =C2=AD=CD=8F
+=C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =
+=C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =
+=C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =
+=C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F
+=E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =
+=E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =
+=E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =
+=E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F
+  =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F =
+  =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F =
+  =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F =
+  =E2=80=87 =C2=AD=CD=8F
+=C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =
+=C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =
+=C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =
+=C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F
+=E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =
+=E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =
+=E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =
+=E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F
+  =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F =
+  =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F =
+  =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F =
+  =E2=80=87 =C2=AD=CD=8F
+=C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =
+=C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =
+=C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =
+=C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F
+=E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =
+=E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =
+=E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =
+=E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F
+  =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F =
+  =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD=CD=8F =
+  =E2=80=87 =C2=AD=CD=8F   =E2=80=87 =C2=AD
+Forwarded this email? Subscribe here
+<https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9jaGluYWkuc3Vic3RhY2suY2=
+9tL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV9jYW1wYWlnbj1lbWFpbC1zdWJzY3JpY=
+mUmcj0yZmx4NiZuZXh0PWh0dHBzJTNBJTJGJTJGY2hpbmFpLnN1YnN0YWNrLmNvbSUyRnAlMkZj=
+aGluYWktMzM4LW1vZGVsLWNvbnRleHQtcHJvdG9jb2wiLCJwIjoxODA5MTAxNDgsInMiOjI2NjA=
+sImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc2NTE5ODI1NCwiZXhwIjoyMDgwNzc0MjU0LC=
+Jpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.qod--EZsXMgiEpvGw7EJ_VIw_L=
+m2844BS1EwnCY_eq8?>
+for more
+ChinAI #338: Model Context Protocol
+<https://substack.com/app-link/post?publication_id=3D2660&post_id=3D1809101=
+48&utm_source=3Dpost-email-title&utm_campaign=3Demail-post-title&isFreemail=
+=3Dtrue&r=3D2flx6&token=3DeyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxODA5MTAxN=
+DgsImlhdCI6MTc2NTE5ODI1NCwiZXhwIjoxNzY3NzkwMjU0LCJpc3MiOiJwdWItMjY2MCIsInN1=
+YiI6InBvc3QtcmVhY3Rpb24ifQ.2QCLOGCzCz6LES76gSc2e8qrng75jA1rkl-1PEcDGLA>
+
+Jeffrey Ding <https://substack.com/@chinai>
+Dec 8
+
+<https://substack.com/app-link/post?publication_id=3D2660&post_id=3D1809101=
+48&utm_source=3Dsubstack&isFreemail=3Dtrue&submitLike=3Dtrue&token=3DeyJ1c2=
+VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxODA5MTAxNDgsInJlYWN0aW9uIjoi4p2kIiwiaWF0I=
+joxNzY1MTk4MjU0LCJleHAiOjE3Njc3OTAyNTQsImlzcyI6InB1Yi0yNjYwIiwic3ViIjoicmVh=
+Y3Rpb24ifQ.TyjaVjTo1QU-GWLFTxSZdTQV1KJLBSsHd6BKZ5xA1gE&utm_medium=3Demail&u=
+tm_campaign=3Demail-reaction&r=3D2flx6>
+<https://substack.com/app-link/post?publication_id=3D2660&post_id=3D1809101=
+48&utm_source=3Dsubstack&utm_medium=3Demail&isFreemail=3Dtrue&comments=3Dtr=
+ue&token=3DeyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxODA5MTAxNDgsImlhdCI6MTc2=
+NTE5ODI1NCwiZXhwIjoxNzY3NzkwMjU0LCJpc3MiOiJwdWItMjY2MCIsInN1YiI6InBvc3QtcmV=
+hY3Rpb24ifQ.2QCLOGCzCz6LES76gSc2e8qrng75jA1rkl-1PEcDGLA&r=3D2flx6&utm_campa=
+ign=3Demail-half-magic-comments&action=3Dpost-comment&utm_source=3Dsubstack=
+&utm_medium=3Demail>
+<https://substack.com/app-link/post?publication_id=3D2660&post_id=3D1809101=
+48&utm_source=3Dsubstack&utm_medium=3Demail&utm_content=3Dshare&utm_campaig=
+n=3Demail-share&action=3Dshare&triggerShare=3Dtrue&isFreemail=3Dtrue&r=3D2f=
+lx6&token=3DeyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxODA5MTAxNDgsImlhdCI6MTc=
+2NTE5ODI1NCwiZXhwIjoxNzY3NzkwMjU0LCJpc3MiOiJwdWItMjY2MCIsInN1YiI6InBvc3Qtcm=
+VhY3Rpb24ifQ.2QCLOGCzCz6LES76gSc2e8qrng75jA1rkl-1PEcDGLA>
+<https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS=
+9wdWIvY2hpbmFpL3AvY2hpbmFpLTMzOC1tb2RlbC1jb250ZXh0LXByb3RvY29sP3V0bV9zb3VyY=
+2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtcmVzdGFjay1j=
+b21tZW50JmFjdGlvbj1yZXN0YWNrLWNvbW1lbnQmcj0yZmx4NiZ0b2tlbj1leUoxYzJWeVgybGt=
+Jam8wTURnM05EZ3lMQ0p3YjNOMFgybGtJam94T0RBNU1UQXhORGdzSW1saGRDSTZNVGMyTlRFNU=
+9ESTFOQ3dpWlhod0lqb3hOelkzTnprd01qVTBMQ0pwYzNNaU9pSndkV0l0TWpZMk1DSXNJbk4xW=
+WlJNkluQnZjM1F0Y21WaFkzUnBiMjRpZlEuMlFDTE9HQ3pDejZMRVM3NmdTYzJlOHFybmc3NWpB=
+MXJrbC0xUEVjREdMQSIsInAiOjE4MDkxMDE0OCwicyI6MjY2MCwiZiI6dHJ1ZSwidSI6NDA4NzQ=
+4MiwiaWF0IjoxNzY1MTk4MjU0LCJleHAiOjIwODA3NzQyNTQsImlzcyI6InB1Yi0wIiwic3ViIj=
+oibGluay1yZWRpcmVjdCJ9.q7Ra_tHxA-cHvXAklax-UGGSxjFk93IShP9HGyy7E7o?&utm_sou=
+rce=3Dsubstack&utm_medium=3Demail>
+
+READ IN APP
+<https://open.substack.com/pub/chinai/p/chinai-338-model-context-protocol?u=
+tm_source=3Demail&redirect=3Dapp-store&utm_campaign=3Demail-read-in-app>
+
+
+Greetings from a world where=E2=80=A6
+
+more people should watch the show Man on the Inside
+
+=E2=80=A6As always, the searchable archive of all past issues is *here
+<https://substack.com/redirect/6305a5ba-f358-47d3-a351-ddba068235bb?j=3DeyJ=
+1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E>*.
+Please please *subscribe here
+<https://substack.com/redirect/5f6eb005-50a7-4347-8641-0f615fe9481c?j=3DeyJ=
+1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E>*
+to support ChinAI under a *Guardian*/Wikipedia-style tipping model
+(everyone gets the same content but those who can pay support access for
+all AND compensation for awesome ChinAI contributors).
+*Feature Translation: MCP Cools, just One Year after its Birth
+<https://substack.com/redirect/55723bfd-e7aa-44a9-9b5e-e667295a5013?j=3DeyJ=
+1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E>*
+
+*Context: *In November 2024, Anthropic released a technology update that
+largely escaped the headlines. Anthropic=E2=80=99s Model Context Protocol (=
+MCP)
+acts like a USB port for AI applications. Just like your computer=E2=80=99s=
+ USB
+port allows it to exchange data with other devices (e.g., a phone) as well
+as connect to add-ons (e.g., a mouse, an external monitor), MCP provides a
+*standardized* set of procedures that enable one company=E2=80=99s AI agent=
+s to
+connect to data sources and tools from other companies.
+
+The MCP standard could develop into a globally interoperable interface that
+allows AI model builders to connect with developers of complementary
+products, thereby growing the overall AI ecosystem. The potential economies
+of scale have attracted even Anthropic=E2=80=99s fiercest rivals to adopt t=
+he
+protocol. In fact, Chinese AI giants Baidu, Alibaba, and Tencent all
+embraced MCP before Google and OpenAI *followed suit
+<https://substack.com/redirect/f9158678-b939-4782-9590-7860ab0735d8?j=3DeyJ=
+1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E>*.
+There are numerous tutorials that guide users through employing MCP to link
+their main AI app with China=E2=80=99s DeepSeek R1 model and take advantage=
+ of its
+advanced reasoning capabilities.
+
+In this week=E2=80=99s translation of a Gui Xingren [=E7=A1=85=E6=98=9F=E4=
+=BA=BA] article (link to *original
+Chinese
+<https://substack.com/redirect/699ff0e7-4552-4609-a5bd-509e5ba85c0f?j=3DeyJ=
+1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E>*),
+Dongdao Li provides an one-year-in update on MCP. Previously, I=E2=80=99ve
+translated a Gui Xingren analysis of Chinese procurement data to evaluate
+the diffusion of large models to government-facing applications (*ChinAI
+#275
+<https://substack.com/redirect/a2fd43aa-fe3a-4b1d-8446-c59aa922ec95?j=3DeyJ=
+1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E>*).
+
+
+*Key Takeaways: The promise of MCP channels why technical standards are
+essential infrastructure for modular technology ecosystems. *
+
+   -
+
+   Li explains: =E2=80=9C*Before MCP, if developers wanted Claude to access=
+ Google
+   Drive, they had to write a set of code to connect to the API. If they
+   wanted it to access Slack? They had to write another API. It was even wo=
+rse
+   for IDE (integrated development environment) vendors; Cursor (popular AI
+   code editor) had to be adapted to Linear (a project management tool),
+   Windsurf (another AI coding assistant) had to be adapted to Linear, and
+   everyone was doing almost the exact same dirty work*.=E2=80=9D
+   -
+
+   In the MCP Era, Linear can just build one MCP server,, and any AI agent,
+   developed by any company, can plug in.
+
+*However, when promise meets real-world engineering implementation, MPC has
+cooled off.*
+
+   -
+
+   Li writes, =E2=80=9CEveryone knows how expensive Claude=E2=80=99s tokens=
+ are; loading
+   too many MCPs before even generating any content results in significant
+   costs.=E2=80=9D The article cites a Simon Willison blog post (linked in =
+Four to
+   Forward section), which points out that GitHub=E2=80=99s official MCP in=
+cludes 93
+   different tools that cost 55,000 tokens.
+   -
+
+   When AI agents have to call too many MCPs, they can malfunction and
+   hallucinate. In some cases, they have accidentally deleted codebases. Li
+   also references a research preprint that analyzed around 1,900 MCP serve=
+rs,
+   finding numerous issues such as lack of maintenance and exposed credenti=
+als.
+
+<https://substack.com/redirect/ee5c64ae-5dc5-4f1b-90c1-82ef141d36f5?j=3DeyJ=
+1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E>
+
+   -
+
+   The bigger picture, according to Li: =E2=80=9C*We are using deterministi=
+c
+   engineering methods to try and control a probabilistic intelligent agent=
+*.
+   *Imagine the day when a truly powerful ASI (Artificial
+   Superintelligence) emerges. Will it still need you to write an MCP serve=
+r
+   to tell it how to check the weather? No, it will open a browser and take=
+ a
+   look. It doesn=E2=80=99t need protocols because it is the adapter itself=
+.*=E2=80=9D
+
+**One last note that I thought readers might find interesting, especially
+those who use machine translation in their research. *
+
+   -
+
+   I always pop the Chinese text into Google Translate as a first pass.
+   This week, I noticed something new. Google Translate automatically added=
+ a
+   parenthetical explanation for Xiaohongshu (a Chinese social media
+   platform). This additional tag is not in the original Chinese, as most
+   Chinese readers would know the popular platform. While it helped provide
+   context in this case, Google Translate also added a parenthetical
+   explanation for the MCP acronym, but this time the addition was incorrec=
+t
+   and misleading (Multi-Channel Programming) =E2=80=94 when MCP obviously =
+refers to
+   Model Context Protocol in this case. It will be interesting to track how
+   machine translation platforms continue to change.
+
+*FULL TRANSLATION includes some cheeky WeChat comments from Chinese
+developers under the Gui Xingren public account post: MCP Cools, just One
+Year after its Birth
+<https://substack.com/redirect/55723bfd-e7aa-44a9-9b5e-e667295a5013?j=3DeyJ=
+1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E>*
+*ChinAI Links (Four to Forward)**Should-read: AAU Expresses Concerns on
+NDAA=E2=80=99s SAFE Research Act
+<https://substack.com/redirect/4fcaf9bd-e1c6-4bb3-8573-f0378f864e70?j=3DeyJ=
+1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E>*
+
+The Association of American Universities calls out yet another
+self-defeating proposal from this Congress. Supporters of things like this,
+please help me understand. Is the goal to start with something horrendous,
+hope the other side agrees to meet you in the middle, and then end up with
+something moderately counterproductive =E2=80=94 as opposed to horrendously
+counterproductive =E2=80=94 to national interests?
+
+*The SAFE Research Act would have far-ranging impacts affecting all
+research agencies, not just the Department of Defense. It would create such
+enormously broad definitions of =E2=80=9Chostile foreign entity=E2=80=9D an=
+d =E2=80=9Caffiliation=E2=80=9D
+that would apply to any agreement that a U.S. university has with any
+university in China or other defined countries at the time of application
+or in the five years prior to application. This would include collaborative
+work with any individual faculty member or former student who subsequently
+returned to China as a required condition of their U.S. visa. It would
+capture every single research agreement, every study abroad program, every
+language program, every professional conference, and every campus facility
+that a U.S. university might have in partnership with another institution
+abroad.*
+
+*Should-read: too many model context protocol servers and LLM allocations
+on the dance floor
+<https://substack.com/redirect/e2b0dc43-1043-4fcd-bfff-407b70db6424?j=3DeyJ=
+1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E>*
+
+Simon Willison=E2=80=99s blog is a great resource to keep track of nerdy
+developments in AI. This one summarizes a Geoffrey Huntley post that
+estimated the significant token costs of using MCP (including Geoffrey=E2=
+=80=99s
+experience at an event that featured a live beatbox performance about the
+protocol!).
+*Should-read: How China talks about =E2=80=98agentic AI=E2=80=99
+<https://substack.com/redirect/0896c0fd-c007-4b33-b46e-7b0c428f1d4a?j=3DeyJ=
+1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E>*
+
+Malou van Draanen Glismann and Graham Webster provide a helpful overview of
+Chinese policies and discussions about agentic AI, including summaries of
+relevant technical standards and CAICT reports.
+*Should-read: DSET event on Technology and the Rise of Great Powers
+<https://substack.com/redirect/2abbe32f-22cc-4c1a-bde0-cb9238a56cbe?j=3DeyJ=
+1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E>*
+
+If any ChinAI readers are based in Taipei, I=E2=80=99ll be giving an in-per=
+son book
+talk on December 16th organized by DSET and Acropolis (publisher of the
+Complex Chinese version of the book).
+*Thank you for reading and engaging.*
+
+***These are Jeff Ding=E2=80=99s (sometimes) weekly translations of
+Chinese-language musings on AI and related topics. Jeff is an Assistant
+Professor of Political Science at George Washington University.
+
+Check out the archive of all past issues *here
+<https://substack.com/redirect/6305a5ba-f358-47d3-a351-ddba068235bb?j=3DeyJ=
+1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E>*
+& please *subscribe here
+<https://substack.com/redirect/5f6eb005-50a7-4347-8641-0f615fe9481c?j=3DeyJ=
+1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E>*
+to support ChinAI under a *Guardian*/Wikipedia-style tipping model
+(everyone gets the same content but those who can pay for a subscription
+will support access for all).
+
+Also! Listen to narrations of the ChinAI Newsletter in podcast format *here
+<https://substack.com/redirect/3b1c1463-88bd-4881-a80b-b091fc0e4e12?j=3DeyJ=
+1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E>*
+.
+
+Any suggestions or feedback? Let me know at chinainewsletter@gmail.com or
+on Twitter at *@jjding99
+<https://substack.com/redirect/41c3c702-1e09-4b25-a39b-7fdda7be58b3?j=3DeyJ=
+1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E>*
+
+You're currently a free subscriber to ChinAI Newsletter
+<https://substack.com/redirect/5f6eb005-50a7-4347-8641-0f615fe9481c?j=3DeyJ=
+1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E>.
+For the full experience, upgrade your subscription.
+<https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9jaGluYWkuc3Vic3RhY2suY2=
+9tL3N1YnNjcmliZT91dG1fc291cmNlPXBvc3QmdXRtX2NhbXBhaWduPWVtYWlsLWNoZWNrb3V0J=
+m5leHQ9aHR0cHMlM0ElMkYlMkZjaGluYWkuc3Vic3RhY2suY29tJTJGcCUyRmNoaW5haS0zMzgt=
+bW9kZWwtY29udGV4dC1wcm90b2NvbCZyPTJmbHg2JnRva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGc=
+zTkRneUxDSnBZWFFpT2pFM05qVXhPVGd5TlRRc0ltVjRjQ0k2TVRjMk56YzVNREkxTkN3aWFYTn=
+pJam9pY0hWaUxUSTJOakFpTENKemRXSWlPaUpqYUdWamEyOTFkQ0o5LjRfVlRXYmluUjZxM1dEd=
+jB2WnhldWw5YlF4OUo1MFl4QVRwUVhQMUdBZGsiLCJwIjoxODA5MTAxNDgsInMiOjI2NjAsImYi=
+OnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc2NTE5ODI1NCwiZXhwIjoyMDgwNzc0MjU0LCJpc3M=
+iOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.6iefrSOkraHh1knoMUzmiN31AGWXWix=
+dibx2F-WAUyg?&utm_source=3Dsubstack&utm_medium=3Demail&utm_content=3Dpostct=
+a>
+
+Upgrade to paid
+<https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9jaGluYWkuc3Vic3RhY2suY2=
+9tL3N1YnNjcmliZT91dG1fc291cmNlPXBvc3QmdXRtX2NhbXBhaWduPWVtYWlsLWNoZWNrb3V0J=
+m5leHQ9aHR0cHMlM0ElMkYlMkZjaGluYWkuc3Vic3RhY2suY29tJTJGcCUyRmNoaW5haS0zMzgt=
+bW9kZWwtY29udGV4dC1wcm90b2NvbCZyPTJmbHg2JnRva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGc=
+zTkRneUxDSnBZWFFpT2pFM05qVXhPVGd5TlRRc0ltVjRjQ0k2TVRjMk56YzVNREkxTkN3aWFYTn=
+pJam9pY0hWaUxUSTJOakFpTENKemRXSWlPaUpqYUdWamEyOTFkQ0o5LjRfVlRXYmluUjZxM1dEd=
+jB2WnhldWw5YlF4OUo1MFl4QVRwUVhQMUdBZGsiLCJwIjoxODA5MTAxNDgsInMiOjI2NjAsImYi=
+OnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc2NTE5ODI1NCwiZXhwIjoyMDgwNzc0MjU0LCJpc3M=
+iOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.6iefrSOkraHh1knoMUzmiN31AGWXWix=
+dibx2F-WAUyg?&utm_source=3Dsubstack&utm_medium=3Demail&utm_content=3Dpostct=
+a>
+
+Like
+<https://substack.com/app-link/post?publication_id=3D2660&post_id=3D1809101=
+48&utm_source=3Dsubstack&isFreemail=3Dtrue&submitLike=3Dtrue&token=3DeyJ1c2=
+VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxODA5MTAxNDgsInJlYWN0aW9uIjoi4p2kIiwiaWF0I=
+joxNzY1MTk4MjU0LCJleHAiOjE3Njc3OTAyNTQsImlzcyI6InB1Yi0yNjYwIiwic3ViIjoicmVh=
+Y3Rpb24ifQ.TyjaVjTo1QU-GWLFTxSZdTQV1KJLBSsHd6BKZ5xA1gE&utm_medium=3Demail&u=
+tm_campaign=3Demail-reaction&r=3D2flx6>
+Comment
+<https://substack.com/app-link/post?publication_id=3D2660&post_id=3D1809101=
+48&utm_source=3Dsubstack&utm_medium=3Demail&isFreemail=3Dtrue&comments=3Dtr=
+ue&token=3DeyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxODA5MTAxNDgsImlhdCI6MTc2=
+NTE5ODI1NCwiZXhwIjoxNzY3NzkwMjU0LCJpc3MiOiJwdWItMjY2MCIsInN1YiI6InBvc3QtcmV=
+hY3Rpb24ifQ.2QCLOGCzCz6LES76gSc2e8qrng75jA1rkl-1PEcDGLA&r=3D2flx6&utm_campa=
+ign=3Demail-half-magic-comments&action=3Dpost-comment&utm_source=3Dsubstack=
+&utm_medium=3Demail>
+Restack
+<https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS=
+9wdWIvY2hpbmFpL3AvY2hpbmFpLTMzOC1tb2RlbC1jb250ZXh0LXByb3RvY29sP3V0bV9zb3VyY=
+2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtcmVzdGFjay1j=
+b21tZW50JmFjdGlvbj1yZXN0YWNrLWNvbW1lbnQmcj0yZmx4NiZ0b2tlbj1leUoxYzJWeVgybGt=
+Jam8wTURnM05EZ3lMQ0p3YjNOMFgybGtJam94T0RBNU1UQXhORGdzSW1saGRDSTZNVGMyTlRFNU=
+9ESTFOQ3dpWlhod0lqb3hOelkzTnprd01qVTBMQ0pwYzNNaU9pSndkV0l0TWpZMk1DSXNJbk4xW=
+WlJNkluQnZjM1F0Y21WaFkzUnBiMjRpZlEuMlFDTE9HQ3pDejZMRVM3NmdTYzJlOHFybmc3NWpB=
+MXJrbC0xUEVjREdMQSIsInAiOjE4MDkxMDE0OCwicyI6MjY2MCwiZiI6dHJ1ZSwidSI6NDA4NzQ=
+4MiwiaWF0IjoxNzY1MTk4MjU0LCJleHAiOjIwODA3NzQyNTQsImlzcyI6InB1Yi0wIiwic3ViIj=
+oibGluay1yZWRpcmVjdCJ9.q7Ra_tHxA-cHvXAklax-UGGSxjFk93IShP9HGyy7E7o?&utm_sou=
+rce=3Dsubstack&utm_medium=3Demail>
+
+
+=C2=A9 2025 Jeffrey Ding
+Unsubscribe
+<https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9jaGluYWkuc3Vic3RhY2suY2=
+9tL2FjdGlvbi9kaXNhYmxlX2VtYWlsP3Rva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDS=
+ndiM04wWDJsa0lqb3hPREE1TVRBeE5EZ3NJbWxoZENJNk1UYzJOVEU1T0RJMU5Dd2laWGh3SWpv=
+eE56azJOek0wTWpVMExDSnBjM01pT2lKd2RXSXRNalkyTUNJc0luTjFZaUk2SW1ScGMyRmliR1Z=
+mWlcxaGFXd2lmUS45S040WlNGVDZHQWxocmNXOUNfN25rVlpvd1FDbm03V3ExMUgwcmJFN0c4Ii=
+wicCI6MTgwOTEwMTQ4LCJzIjoyNjYwLCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3NjUxO=
+TgyNTQsImV4cCI6MjA4MDc3NDI1NCwiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0=
+In0.o6sPWHBj-JifznCWC1P7-QZ3SjXTz9fLU2tGDY0JFzw?>
+
+[image: Start writing]
+<https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zdWJzdGFjay5jb20vc2lnbn=
+VwP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY29udGVudD1mb290Z=
+XImdXRtX2NhbXBhaWduPWF1dG9maWxsZWQtZm9vdGVyJmZyZWVTaWdudXBFbWFpbD1remlubXIx=
+MDlAZ21haWwuY29tJnI9MmZseDYiLCJwIjoxODA5MTAxNDgsInMiOjI2NjAsImYiOnRydWUsInU=
+iOjQwODc0ODIsImlhdCI6MTc2NTE5ODI1NCwiZXhwIjoyMDgwNzc0MjU0LCJpc3MiOiJwdWItMC=
+IsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.lpAP3bRKeFhuRCbkJhtEgvZx75S-V4E22vSqrEHR2l=
+w?>
+
+--00000000000008ac67064fb3b2a2
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><br><br><div class=3D"gmail_quote gmail_quote_container"><=
+div dir=3D"ltr" class=3D"gmail_attr">---------- Forwarded message ---------=
+<br>From: <strong class=3D"gmail_sendername" dir=3D"auto">ChinAI Newsletter=
+</strong> <span dir=3D"auto">&lt;<a href=3D"mailto:chinai@substack.com">chi=
+nai@substack.com</a>&gt;</span><br>Date: Mon, Dec 8, 2025 at 9:50=E2=80=AFP=
+M<br>Subject: ChinAI #338: Model Context Protocol<br>To:  &lt;<a href=3D"ma=
+ilto:kzinmr109@gmail.com">kzinmr109@gmail.com</a>&gt;<br></div><br><br><div=
+ style=3D"font-kerning:auto"><img src=3D"https://eotrx.substackcdn.com/open=
+?token=3DeyJtIjoiPDIwMjUxMjA4MTI1MDQyLjMuOGQ2YmViNDg0NjNlMGNmM0BtZy1kMS5zdW=
+JzdGFjay5jb20-IiwidSI6NDA4NzQ4MiwiciI6Imt6aW5tcjEwOUBnbWFpbC5jb20iLCJkIjoib=
+WctZDEuc3Vic3RhY2suY29tIiwicCI6MTgwOTEwMTQ4LCJ0IjoibmV3c2xldHRlciIsImEiOiJl=
+dmVyeW9uZSIsInMiOjI2NjAsImMiOiJwb3N0IiwiZiI6dHJ1ZSwicG9zaXRpb24iOiJ0b3AiLCJ=
+pYXQiOjE3NjUxOTgyNTQsImV4cCI6MTc2Nzc5MDI1NCwiaXNzIjoicHViLTAiLCJzdWIiOiJlby=
+J9.RhTF6Csr2Zzei8WDw9zSMurSPYBz2EShWiOt1HUOYL8" alt=3D"" width=3D"1" height=
+=3D"1" border=3D"0" style=3D"height:1px!important;width:1px!important;borde=
+r-width:0!important;margin-top:0!important;margin-bottom:0!important;margin=
+-right:0!important;margin-left:0!important;padding-top:0!important;padding-=
+bottom:0!important;padding-right:0!important;padding-left:0!important"><div=
+ style=3D"display:none;font-size:1px;color:#333333;line-height:1px;max-heig=
+ht:0px;max-width:0px;opacity:0;overflow:hidden">Greetings from a world wher=
+e=E2=80=A6</div><div style=3D"display:none;font-size:1px;color:#333333;line=
+-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden">=CD=8F =
+=C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=
+=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=
+=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=
+=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=
+=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =
+=E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=
+=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=
+=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =
+=C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =
+=C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=
+=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=
+=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=
+=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=
+=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =
+=E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=
+=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=
+=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =
+=C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =
+=C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=
+=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=
+=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=
+=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=
+=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =
+=E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=
+=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=
+=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =
+=C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =
+=C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=
+=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=
+=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=
+=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=
+=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =
+=E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=
+=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=
+=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =
+=C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =
+=C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=
+=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=
+=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=
+=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=
+=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =
+=E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=
+=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=
+=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =
+=C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =
+=C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=
+=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=
+=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=
+=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=
+=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =
+=E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=
+=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=
+=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =
+=C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =
+=C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=
+=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=
+=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=
+=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=
+=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =
+=E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=
+=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=
+=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =
+=C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =
+=C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=
+=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=
+=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=
+=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=
+=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =
+=E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=
+=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=
+=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =
+=C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =
+=C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=
+=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=
+=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=
+=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=
+=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =
+=E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=
+=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=
+=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =
+=C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD=CD=8F =
+=C2=A0 =E2=80=87 =C2=AD=CD=8F =C2=A0 =E2=80=87 =C2=AD</div><table role=3D"p=
+resentation" width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+"><tbody><tr><td></td><td width=3D"550"></td><td></td></tr><tr><td></td><td=
+ width=3D"550" align=3D"left"><div style=3D"font-size:16px;line-height:26px=
+;max-width:550px;width:100%;margin:0 auto"><table role=3D"presentation" wid=
+th=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td=
+ align=3D"right" style=3D"height:20px"><table role=3D"presentation" width=
+=3D"auto" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td s=
+tyle=3D"vertical-align:middle"><span style=3D"font-family:SF Pro Text,-appl=
+e-system,system-ui,BlinkMacSystemFont,Inter,Segoe UI,Roboto,Helvetica,Arial=
+,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;font-size:13px=
+;color:unset;list-style:none;text-decoration:unset;margin:0"><div style=3D"=
+list-style:none;color:unset;text-align:right;font-size:12px;line-height:16p=
+x;text-decoration:unset;margin:0"><span style=3D"list-style:none;color:unse=
+t;text-decoration:unset;margin:0">Forwarded this email? <a href=3D"https://=
+substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9jaGluYWkuc3Vic3RhY2suY29tL3N1YnN=
+jcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV9jYW1wYWlnbj1lbWFpbC1zdWJzY3JpYmUmcj0yZm=
+x4NiZuZXh0PWh0dHBzJTNBJTJGJTJGY2hpbmFpLnN1YnN0YWNrLmNvbSUyRnAlMkZjaGluYWktM=
+zM4LW1vZGVsLWNvbnRleHQtcHJvdG9jb2wiLCJwIjoxODA5MTAxNDgsInMiOjI2NjAsImYiOnRy=
+dWUsInUiOjQwODc0ODIsImlhdCI6MTc2NTE5ODI1NCwiZXhwIjoyMDgwNzc0MjU0LCJpc3MiOiJ=
+wdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.qod--EZsXMgiEpvGw7EJ_VIw_Lm2844BS1E=
+wnCY_eq8?" style=3D"list-style:none;color:unset;text-decoration:unset;margi=
+n:0;text-decoration-line:underline" target=3D"_blank">Subscribe here</a> fo=
+r more</span></div></span></td></tr></tbody></table></td></tr></tbody></tab=
+le><div dir=3D"auto" style=3D"padding:32px 0 0 0;font-size:16px;line-height=
+:26px"><div role=3D"region" aria-label=3D"Post header" style=3D"font-size:1=
+6px;line-height:26px"><h1 dir=3D"auto" style=3D"direction:auto;text-align:s=
+tart;unicode-bidi:isolate;color:rgb(54,55,55);font-family:&#39;SF Pro Displ=
+ay&#39;,-apple-system-headline,system-ui,-apple-system,BlinkMacSystemFont,&=
+#39;Segoe UI&#39;,Roboto,Helvetica,Arial,sans-serif,&#39;Apple Color Emoji&=
+#39;,&#39;Segoe UI Emoji&#39;,&#39;Segoe UI Symbol&#39;;font-weight:bold;ma=
+rgin:0;line-height:36px;font-size:32px"><a href=3D"https://substack.com/app=
+-link/post?publication_id=3D2660&amp;post_id=3D180910148&amp;utm_source=3Dp=
+ost-email-title&amp;utm_campaign=3Demail-post-title&amp;isFreemail=3Dtrue&a=
+mp;r=3D2flx6&amp;token=3DeyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxODA5MTAxND=
+gsImlhdCI6MTc2NTE5ODI1NCwiZXhwIjoxNzY3NzkwMjU0LCJpc3MiOiJwdWItMjY2MCIsInN1Y=
+iI6InBvc3QtcmVhY3Rpb24ifQ.2QCLOGCzCz6LES76gSc2e8qrng75jA1rkl-1PEcDGLA" styl=
+e=3D"color:rgb(54,55,55);text-decoration:none" target=3D"_blank">ChinAI #33=
+8: Model Context Protocol</a></h1><table role=3D"presentation" width=3D"100=
+%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"margin:1em 0;h=
+eight:20px"><tbody><tr><td><table role=3D"presentation" width=3D"auto" bord=
+er=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td><table role=3D"=
+presentation" width=3D"auto" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0"><tbody><tr><td style=3D"vertical-align:middle"><div style=3D"list-style:=
+none;font-size:11px;line-height:20px;text-decoration:unset;color:rgb(54,55,=
+55);margin:0;font-family:&#39;SF Compact&#39;,-apple-system,system-ui,-appl=
+e-system,BlinkMacSystemFont,&#39;Segoe UI&#39;,Roboto,Helvetica,Arial,sans-=
+serif,&#39;Apple Color Emoji&#39;,&#39;Segoe UI Emoji&#39;,&#39;Segoe UI Sy=
+mbol&#39;;font-weight:500;text-transform:uppercase;letter-spacing:.2px"><a =
+style=3D"list-style:none;color:rgb(54,55,55);margin:0;font-size:11px;line-h=
+eight:20px;font-family:&#39;SF Compact&#39;,-apple-system,system-ui,-apple-=
+system,BlinkMacSystemFont,&#39;Segoe UI&#39;,Roboto,Helvetica,Arial,sans-se=
+rif,&#39;Apple Color Emoji&#39;,&#39;Segoe UI Emoji&#39;,&#39;Segoe UI Symb=
+ol&#39;;font-weight:500;text-transform:uppercase;letter-spacing:.2px;text-d=
+ecoration:none" href=3D"https://substack.com/@chinai" target=3D"_blank">Jef=
+frey Ding</a></div></td></tr></tbody></table></td></tr><tr><td><table role=
+=3D"presentation" width=3D"auto" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0"><tbody><tr><td style=3D"vertical-align:middle"><div style=3D"list-st=
+yle:none;font-size:11px;line-height:20px;text-decoration:unset;color:rgb(11=
+9,119,119);margin:0;font-family:&#39;SF Compact&#39;,-apple-system,system-u=
+i,-apple-system,BlinkMacSystemFont,&#39;Segoe UI&#39;,Roboto,Helvetica,Aria=
+l,sans-serif,&#39;Apple Color Emoji&#39;,&#39;Segoe UI Emoji&#39;,&#39;Sego=
+e UI Symbol&#39;;font-weight:500;text-transform:uppercase;letter-spacing:.2=
+px">Dec 8</div></td></tr></tbody></table></td></tr></tbody></table></td></t=
+r></tbody></table><table role=3D"presentation" width=3D"100%" border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0" style=3D"border-top:1px solid rgb(0,0,0=
+,.1);border-bottom:1px solid rgb(0,0,0,.1);min-width:100%"><tbody><tr heigh=
+t=3D"16"><td height=3D"16" style=3D"font-size:0px;line-height:0">=C2=A0</td=
+></tr><tr><td><table role=3D"presentation" width=3D"100%" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0"><tbody><tr><td><table role=3D"presentation"=
+ width=3D"auto" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr=
+><td style=3D"vertical-align:middle"><table role=3D"presentation" width=3D"=
+38" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=
+=3D"center"><a href=3D"https://substack.com/app-link/post?publication_id=3D=
+2660&amp;post_id=3D180910148&amp;utm_source=3Dsubstack&amp;isFreemail=3Dtru=
+e&amp;submitLike=3Dtrue&amp;token=3DeyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjo=
+xODA5MTAxNDgsInJlYWN0aW9uIjoi4p2kIiwiaWF0IjoxNzY1MTk4MjU0LCJleHAiOjE3Njc3OT=
+AyNTQsImlzcyI6InB1Yi0yNjYwIiwic3ViIjoicmVhY3Rpb24ifQ.TyjaVjTo1QU-GWLFTxSZdT=
+QV1KJLBSsHd6BKZ5xA1gE&amp;utm_medium=3Demail&amp;utm_campaign=3Demail-react=
+ion&amp;r=3D2flx6" style=3D"font-family:system-ui,-apple-system,BlinkMacSys=
+temFont,&#39;Segoe UI&#39;,Roboto,Helvetica,Arial,sans-serif,&#39;Apple Col=
+or Emoji&#39;,&#39;Segoe UI Emoji&#39;,&#39;Segoe UI Symbol&#39;;display:in=
+line-block;font-weight:500;border:1px solid rgb(0,0,0,.1);border-radius:999=
+9px;text-transform:uppercase;font-size:12px;line-height:1;padding:9px 0;tex=
+t-decoration:none;color:rgb(119,119,119);min-width:38px;box-sizing:border-b=
+ox;width:38px" target=3D"_blank"><img src=3D"https://substackcdn.com/image/=
+fetch/$s_!PeVs!,w_36,c_scale,f_png,q_auto:good,fl_progressive:steep/https%3=
+A%2F%2Fsubstack.com%2Ficon%2FLucideHeart%3Fv%3D4%26height%3D36%26fill%3Dnon=
+e%26stroke%3D%2523808080%26strokeWidth%3D2" width=3D"18" height=3D"18" styl=
+e=3D"border:none;vertical-align:middle;max-width:18px" alt=3D""></a></td></=
+tr></tbody></table></td><td width=3D"8" style=3D"min-width:8px"></td><td st=
+yle=3D"vertical-align:middle"><table role=3D"presentation" width=3D"38" bor=
+der=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"cente=
+r"><a href=3D"https://substack.com/app-link/post?publication_id=3D2660&amp;=
+post_id=3D180910148&amp;utm_source=3Dsubstack&amp;utm_medium=3Demail&amp;is=
+Freemail=3Dtrue&amp;comments=3Dtrue&amp;token=3DeyJ1c2VyX2lkIjo0MDg3NDgyLCJ=
+wb3N0X2lkIjoxODA5MTAxNDgsImlhdCI6MTc2NTE5ODI1NCwiZXhwIjoxNzY3NzkwMjU0LCJpc3=
+MiOiJwdWItMjY2MCIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.2QCLOGCzCz6LES76gSc2e8qrng=
+75jA1rkl-1PEcDGLA&amp;r=3D2flx6&amp;utm_campaign=3Demail-half-magic-comment=
+s&amp;action=3Dpost-comment&amp;utm_source=3Dsubstack&amp;utm_medium=3Demai=
+l" style=3D"font-family:system-ui,-apple-system,BlinkMacSystemFont,&#39;Seg=
+oe UI&#39;,Roboto,Helvetica,Arial,sans-serif,&#39;Apple Color Emoji&#39;,&#=
+39;Segoe UI Emoji&#39;,&#39;Segoe UI Symbol&#39;;display:inline-block;font-=
+weight:500;border:1px solid rgb(0,0,0,.1);border-radius:9999px;text-transfo=
+rm:uppercase;font-size:12px;line-height:1;padding:9px 0;text-decoration:non=
+e;color:rgb(119,119,119);min-width:38px;box-sizing:border-box;width:38px" t=
+arget=3D"_blank"><img src=3D"https://substackcdn.com/image/fetch/$s_!x1tS!,=
+w_36,c_scale,f_png,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack.=
+com%2Ficon%2FLucideComments%3Fv%3D4%26height%3D36%26fill%3Dnone%26stroke%3D=
+%2523808080%26strokeWidth%3D2" width=3D"18" height=3D"18" style=3D"border:n=
+one;vertical-align:middle;max-width:18px" alt=3D""></a></td></tr></tbody></=
+table></td><td width=3D"8" style=3D"min-width:8px"></td><td style=3D"vertic=
+al-align:middle"><table role=3D"presentation" width=3D"38" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"center"><a href=3D=
+"https://substack.com/app-link/post?publication_id=3D2660&amp;post_id=3D180=
+910148&amp;utm_source=3Dsubstack&amp;utm_medium=3Demail&amp;utm_content=3Ds=
+hare&amp;utm_campaign=3Demail-share&amp;action=3Dshare&amp;triggerShare=3Dt=
+rue&amp;isFreemail=3Dtrue&amp;r=3D2flx6&amp;token=3DeyJ1c2VyX2lkIjo0MDg3NDg=
+yLCJwb3N0X2lkIjoxODA5MTAxNDgsImlhdCI6MTc2NTE5ODI1NCwiZXhwIjoxNzY3NzkwMjU0LC=
+Jpc3MiOiJwdWItMjY2MCIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.2QCLOGCzCz6LES76gSc2e8=
+qrng75jA1rkl-1PEcDGLA" style=3D"font-family:system-ui,-apple-system,BlinkMa=
+cSystemFont,&#39;Segoe UI&#39;,Roboto,Helvetica,Arial,sans-serif,&#39;Apple=
+ Color Emoji&#39;,&#39;Segoe UI Emoji&#39;,&#39;Segoe UI Symbol&#39;;displa=
+y:inline-block;font-weight:500;border:1px solid rgb(0,0,0,.1);border-radius=
+:9999px;text-transform:uppercase;font-size:12px;line-height:1;padding:9px 0=
+;text-decoration:none;color:rgb(119,119,119);min-width:38px;box-sizing:bord=
+er-box;width:38px" target=3D"_blank"><img src=3D"https://substackcdn.com/im=
+age/fetch/$s_!_L14!,w_36,c_scale,f_png,q_auto:good,fl_progressive:steep/htt=
+ps%3A%2F%2Fsubstack.com%2Ficon%2FLucideShare2%3Fv%3D4%26height%3D36%26fill%=
+3Dnone%26stroke%3D%2523808080%26strokeWidth%3D2" width=3D"18" height=3D"18"=
+ style=3D"border:none;vertical-align:middle;max-width:18px" alt=3D""></a></=
+td></tr></tbody></table></td><td width=3D"8" style=3D"min-width:8px"></td><=
+td style=3D"vertical-align:middle"><table role=3D"presentation" width=3D"38=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"=
+center"><a href=3D"https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVu=
+LnN1YnN0YWNrLmNvbS9wdWIvY2hpbmFpL3AvY2hpbmFpLTMzOC1tb2RlbC1jb250ZXh0LXByb3R=
+vY29sP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW=
+1haWwtcmVzdGFjay1jb21tZW50JmFjdGlvbj1yZXN0YWNrLWNvbW1lbnQmcj0yZmx4NiZ0b2tlb=
+j1leUoxYzJWeVgybGtJam8wTURnM05EZ3lMQ0p3YjNOMFgybGtJam94T0RBNU1UQXhORGdzSW1s=
+aGRDSTZNVGMyTlRFNU9ESTFOQ3dpWlhod0lqb3hOelkzTnprd01qVTBMQ0pwYzNNaU9pSndkV0l=
+0TWpZMk1DSXNJbk4xWWlJNkluQnZjM1F0Y21WaFkzUnBiMjRpZlEuMlFDTE9HQ3pDejZMRVM3Nm=
+dTYzJlOHFybmc3NWpBMXJrbC0xUEVjREdMQSIsInAiOjE4MDkxMDE0OCwicyI6MjY2MCwiZiI6d=
+HJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzY1MTk4MjU0LCJleHAiOjIwODA3NzQyNTQsImlzcyI6=
+InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.q7Ra_tHxA-cHvXAklax-UGGSxjFk93IShP=
+9HGyy7E7o?&amp;utm_source=3Dsubstack&amp;utm_medium=3Demail" style=3D"font-=
+family:system-ui,-apple-system,BlinkMacSystemFont,&#39;Segoe UI&#39;,Roboto=
+,Helvetica,Arial,sans-serif,&#39;Apple Color Emoji&#39;,&#39;Segoe UI Emoji=
+&#39;,&#39;Segoe UI Symbol&#39;;display:inline-block;font-weight:500;border=
+:1px solid rgb(0,0,0,.1);border-radius:9999px;text-transform:uppercase;font=
+-size:12px;line-height:1;padding:9px 0;text-decoration:none;color:rgb(119,1=
+19,119);min-width:38px;box-sizing:border-box;width:38px" target=3D"_blank">=
+<img src=3D"https://substackcdn.com/image/fetch/$s_!5EGt!,w_36,c_scale,f_pn=
+g,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Ficon%2FNote=
+ForwardIcon%3Fv%3D4%26height%3D36%26fill%3Dnone%26stroke%3D%2523808080%26st=
+rokeWidth%3D2" width=3D"18" height=3D"18" style=3D"border:none;vertical-ali=
+gn:middle;max-width:18px" alt=3D""></a></td></tr></tbody></table></td></tr>=
+</tbody></table></td><td align=3D"right"><table role=3D"presentation" width=
+=3D"auto" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td s=
+tyle=3D"vertical-align:middle"><table role=3D"presentation" width=3D"auto" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"ce=
+nter"><a href=3D"https://open.substack.com/pub/chinai/p/chinai-338-model-co=
+ntext-protocol?utm_source=3Demail&amp;redirect=3Dapp-store&amp;utm_campaign=
+=3Demail-read-in-app" style=3D"font-family:system-ui,-apple-system,BlinkMac=
+SystemFont,&#39;Segoe UI&#39;,Roboto,Helvetica,Arial,sans-serif,&#39;Apple =
+Color Emoji&#39;,&#39;Segoe UI Emoji&#39;,&#39;Segoe UI Symbol&#39;;display=
+:inline-block;font-weight:500;border:1px solid rgb(0,0,0,.1);border-radius:=
+9999px;text-transform:uppercase;font-size:12px;line-height:12px;padding:9px=
+ 14px;text-decoration:none;color:rgb(119,119,119)" target=3D"_blank"><div s=
+tyle=3D"font-size:16px;line-height:26px;display:inline-block;vertical-align=
+:middle;max-width:0;min-height:18px"></div><span style=3D"vertical-align:mi=
+ddle;margin-right:4px">READ IN APP</span><img src=3D"https://substackcdn.co=
+m/image/fetch/$s_!ET-_!,w_36,c_scale,f_png,q_auto:good,fl_progressive:steep=
+/https%3A%2F%2Fsubstack.com%2Ficon%2FLucideArrowUpRight%3Fv%3D4%26height%3D=
+36%26fill%3Dnone%26stroke%3D%2523808080%26strokeWidth%3D2" width=3D"18" hei=
+ght=3D"18" style=3D"min-width:18px;min-height:18px;border:none;vertical-ali=
+gn:middle;margin-right:0;margin-left:0;max-width:18px" alt=3D""></a></td></=
+tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td=
+></tr><tr height=3D"16"><td height=3D"16" style=3D"font-size:0px;line-heigh=
+t:0">=C2=A0</td></tr></tbody></table></div></div><div dir=3D"auto" style=3D=
+"padding:32px 0 0 0;font-size:16px;line-height:26px"><div dir=3D"auto" styl=
+e=3D"text-align:initial;font-size:16px;line-height:26px;width:100%;word-bre=
+ak:break-word;margin-bottom:16px"><p style=3D"margin:0 0 20px 0;color:rgb(5=
+4,55,55);line-height:26px;font-size:16px;margin-top:0">Greetings from a wor=
+ld where=E2=80=A6</p><p style=3D"margin:0 0 20px 0;color:rgb(54,55,55);line=
+-height:26px;font-size:16px">more people should watch the show Man on the I=
+nside </p><p style=3D"margin:0 0 20px 0;color:rgb(54,55,55);line-height:26p=
+x;font-size:16px"><span>=E2=80=A6As always, the searchable archive of all p=
+ast issues is </span><strong><a href=3D"https://substack.com/redirect/6305a=
+5ba-f358-47d3-a351-ddba068235bb?j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSr=
+s1hMpJpoODTUJm_FAk3tf6E" rel=3D"" style=3D"color:rgb(54,55,55);text-decorat=
+ion:underline" target=3D"_blank">here</a></strong><span>. Please please </s=
+pan><strong><a href=3D"https://substack.com/redirect/5f6eb005-50a7-4347-864=
+1-0f615fe9481c?j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FA=
+k3tf6E" rel=3D"" style=3D"color:rgb(54,55,55);text-decoration:underline" ta=
+rget=3D"_blank">subscribe here</a></strong><span> to support ChinAI under a=
+ </span><em>Guardian</em><span>/Wikipedia-style tipping model (everyone get=
+s the same content but those who can pay support access for all AND compens=
+ation for awesome ChinAI contributors).</span></p><h2 style=3D"font-family:=
+&#39;SF Pro Display&#39;,-apple-system-headline,system-ui,-apple-system,Bli=
+nkMacSystemFont,&#39;Segoe UI&#39;,Roboto,Helvetica,Arial,sans-serif,&#39;A=
+pple Color Emoji&#39;,&#39;Segoe UI Emoji&#39;,&#39;Segoe UI Symbol&#39;;fo=
+nt-weight:bold;margin:1em 0 0.625em 0;color:rgb(54,55,55);line-height:1.16e=
+m;font-size:1.625em"><strong><span>Feature Translation: </span><a href=3D"h=
+ttps://substack.com/redirect/55723bfd-e7aa-44a9-9b5e-e667295a5013?j=3DeyJ1I=
+joiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E" rel=3D"" style=
+=3D"color:rgb(54,55,55);text-decoration:underline" target=3D"_blank">MCP Co=
+ols, just One Year after its Birth</a></strong></h2><p style=3D"margin:0 0 =
+20px 0;color:rgb(54,55,55);line-height:26px;font-size:16px"><strong>Context=
+: </strong><span>In November 2024, Anthropic released a technology update t=
+hat largely escaped the headlines. Anthropic=E2=80=99s Model Context Protoc=
+ol (MCP) acts like a USB port for AI applications. Just like your computer=
+=E2=80=99s USB port allows it to exchange data with other devices (e.g., a =
+phone) as well as connect to add-ons (e.g., a mouse, an external monitor), =
+MCP provides a </span><em>standardized</em><span> set of procedures that en=
+able one company=E2=80=99s AI agents to connect to data sources and tools f=
+rom other companies.</span></p><p style=3D"margin:0 0 20px 0;color:rgb(54,5=
+5,55);line-height:26px;font-size:16px"><span>The MCP standard could develop=
+ into a globally interoperable interface that allows AI model builders to c=
+onnect with developers of complementary products, thereby growing the overa=
+ll AI ecosystem. The potential economies of scale have attracted even Anthr=
+opic=E2=80=99s fiercest rivals to adopt the protocol. In fact, Chinese AI g=
+iants Baidu, Alibaba, and Tencent all embraced MCP before Google and OpenAI=
+ </span><strong><a href=3D"https://substack.com/redirect/f9158678-b939-4782=
+-9590-7860ab0735d8?j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJ=
+m_FAk3tf6E" rel=3D"" style=3D"color:rgb(54,55,55);text-decoration:underline=
+" target=3D"_blank">followed suit</a></strong><span>. There are numerous tu=
+torials that guide users through employing MCP to link their main AI app wi=
+th China=E2=80=99s DeepSeek R1 model and take advantage of its advanced rea=
+soning capabilities.</span></p><p style=3D"margin:0 0 20px 0;color:rgb(54,5=
+5,55);line-height:26px;font-size:16px"><span>In this week=E2=80=99s transla=
+tion of a Gui Xingren [=E7=A1=85=E6=98=9F=E4=BA=BA] article (link to </span=
+><strong><a href=3D"https://substack.com/redirect/699ff0e7-4552-4609-a5bd-5=
+09e5ba85c0f?j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3t=
+f6E" rel=3D"" style=3D"color:rgb(54,55,55);text-decoration:underline" targe=
+t=3D"_blank">original Chinese</a></strong><span>), Dongdao Li provides an o=
+ne-year-in update on MCP. Previously, I=E2=80=99ve translated a Gui Xingren=
+ analysis of Chinese procurement data to evaluate the diffusion of large mo=
+dels to government-facing applications (</span><strong><a href=3D"https://s=
+ubstack.com/redirect/a2fd43aa-fe3a-4b1d-8446-c59aa922ec95?j=3DeyJ1IjoiMmZse=
+DYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E" rel=3D"" style=3D"color:=
+rgb(54,55,55);text-decoration:underline" target=3D"_blank">ChinAI #275</a><=
+/strong><span>). </span></p><p style=3D"margin:0 0 20px 0;color:rgb(54,55,5=
+5);line-height:26px;font-size:16px"><strong>Key Takeaways: The promise of M=
+CP channels why technical standards are essential infrastructure for modula=
+r technology ecosystems. </strong></p><ul style=3D"margin-top:0;padding:0">=
+<li style=3D"margin:8px 0 0 32px"><p style=3D"color:rgb(54,55,55);line-heig=
+ht:26px;margin-bottom:0;box-sizing:border-box;padding-left:4px;font-size:16=
+px;margin:0"><span>Li explains: =E2=80=9C</span><em>Before MCP, if develope=
+rs wanted Claude to access Google Drive, they had to write a set of code to=
+ connect to the API. If they wanted it to access Slack? They had to write a=
+nother API. It was even worse for IDE (integrated development environment) =
+vendors; Cursor (popular AI code editor) had to be adapted to Linear (a pro=
+ject management tool), Windsurf (another AI coding assistant) had to be ada=
+pted to Linear, and everyone was doing almost the exact same dirty work</em=
+><span>.=E2=80=9D</span></p></li><li style=3D"margin:8px 0 0 32px"><p style=
+=3D"color:rgb(54,55,55);line-height:26px;margin-bottom:0;box-sizing:border-=
+box;padding-left:4px;font-size:16px;margin:0">In the MCP Era, Linear can ju=
+st build one MCP server,, and any AI agent, developed by any company, can p=
+lug in.</p></li></ul><p style=3D"margin:0 0 20px 0;color:rgb(54,55,55);line=
+-height:26px;font-size:16px"><strong>However, when promise meets real-world=
+ engineering implementation, MPC has cooled off.</strong></p><ul style=3D"m=
+argin-top:0;padding:0"><li style=3D"margin:8px 0 0 32px"><p style=3D"color:=
+rgb(54,55,55);line-height:26px;margin-bottom:0;box-sizing:border-box;paddin=
+g-left:4px;font-size:16px;margin:0">Li writes, =E2=80=9CEveryone knows how =
+expensive Claude=E2=80=99s tokens are; loading too many MCPs before even ge=
+nerating any content results in significant costs.=E2=80=9D The article cit=
+es a Simon Willison blog post (linked in Four to Forward section), which po=
+ints out that GitHub=E2=80=99s official MCP includes 93 different tools tha=
+t cost 55,000 tokens. </p></li><li style=3D"margin:8px 0 0 32px"><p style=
+=3D"color:rgb(54,55,55);line-height:26px;margin-bottom:0;box-sizing:border-=
+box;padding-left:4px;font-size:16px;margin:0">When AI agents have to call t=
+oo many MCPs, they can malfunction and hallucinate. In some cases, they hav=
+e accidentally deleted codebases. Li also references a research preprint th=
+at analyzed around 1,900 MCP servers, finding numerous issues such as lack =
+of maintenance and exposed credentials.</p></li></ul><div style=3D"font-siz=
+e:16px;line-height:26px;margin:32px auto"><table width=3D"100%" border=3D"0=
+" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"text-align:ce=
+nter"></td><td align=3D"left" width=3D"394" style=3D"text-align:center"><a =
+href=3D"https://substack.com/redirect/ee5c64ae-5dc5-4f1b-90c1-82ef141d36f5?=
+j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E" rel=3D"=
+" style=3D"padding:0;width:auto;height:auto;border:none;text-decoration:non=
+e;display:block;margin:0" target=3D"_blank"><img alt=3D"" width=3D"394" hei=
+ght=3D"394" src=3D"https://substackcdn.com/image/fetch/$s_!T4rj!,w_394,c_li=
+mit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-med=
+ia.s3.amazonaws.com%2Fpublic%2Fimages%2F78778cfc-f8c2-49b6-acdd-2479a500b61=
+a_1080x1080.png" style=3D"border:none!important;vertical-align:middle;displ=
+ay:block;height:auto;margin-bottom:0;width:auto!important;max-width:100%!im=
+portant;margin:0 auto"></a></td><td style=3D"text-align:center"></td></tr><=
+/tbody></table></div><ul style=3D"margin-top:0;padding:0"><li style=3D"marg=
+in:8px 0 0 32px"><p style=3D"color:rgb(54,55,55);line-height:26px;margin-bo=
+ttom:0;box-sizing:border-box;padding-left:4px;font-size:16px;margin:0"><spa=
+n>The bigger picture, according to Li: =E2=80=9C</span><em>We are using det=
+erministic engineering methods to try and control a probabilistic intellige=
+nt agent</em><span>. </span><em>Imagine the day when a truly powerful ASI (=
+Artificial Superintelligence) emerges. Will it still need you to write an M=
+CP server to tell it how to check the weather? No, it will open a browser a=
+nd take a look. It doesn=E2=80=99t need protocols because it is the adapter=
+ itself.</em><span>=E2=80=9D</span></p></li></ul><p style=3D"margin:0 0 20p=
+x 0;color:rgb(54,55,55);line-height:26px;font-size:16px"><strong>*One last =
+note that I thought readers might find interesting, especially those who us=
+e machine translation in their research. </strong></p><ul style=3D"margin-t=
+op:0;padding:0"><li style=3D"margin:8px 0 0 32px"><p style=3D"color:rgb(54,=
+55,55);line-height:26px;margin-bottom:0;box-sizing:border-box;padding-left:=
+4px;font-size:16px;margin:0">I always pop the Chinese text into Google Tran=
+slate as a first pass. This week, I noticed something new. Google Translate=
+ automatically added a parenthetical explanation for Xiaohongshu (a Chinese=
+ social media platform). This additional tag is not in the original Chinese=
+, as most Chinese readers would know the popular platform. While it helped =
+provide context in this case, Google Translate also added a parenthetical e=
+xplanation for the MCP acronym, but this time the addition was incorrect an=
+d misleading (Multi-Channel Programming) =E2=80=94 when MCP obviously refer=
+s to Model Context Protocol in this case. It will be interesting to track h=
+ow machine translation platforms continue to change.</p></li></ul><p style=
+=3D"margin:0 0 20px 0;color:rgb(54,55,55);line-height:26px;font-size:16px">=
+<strong><span>FULL TRANSLATION includes some cheeky WeChat comments from Ch=
+inese developers under the Gui Xingren public account post: </span><a href=
+=3D"https://substack.com/redirect/55723bfd-e7aa-44a9-9b5e-e667295a5013?j=3D=
+eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E" rel=3D"" st=
+yle=3D"color:rgb(54,55,55);text-decoration:underline" target=3D"_blank">MCP=
+ Cools, just One Year after its Birth</a></strong></p><h2 style=3D"font-fam=
+ily:&#39;SF Pro Display&#39;,-apple-system-headline,system-ui,-apple-system=
+,BlinkMacSystemFont,&#39;Segoe UI&#39;,Roboto,Helvetica,Arial,sans-serif,&#=
+39;Apple Color Emoji&#39;,&#39;Segoe UI Emoji&#39;,&#39;Segoe UI Symbol&#39=
+;;font-weight:bold;margin:1em 0 0.625em 0;color:rgb(54,55,55);line-height:1=
+.16em;font-size:1.625em"><strong>ChinAI Links (Four to Forward)</strong></h=
+2><h3 style=3D"font-family:&#39;SF Pro Display&#39;,-apple-system-headline,=
+system-ui,-apple-system,BlinkMacSystemFont,&#39;Segoe UI&#39;,Roboto,Helvet=
+ica,Arial,sans-serif,&#39;Apple Color Emoji&#39;,&#39;Segoe UI Emoji&#39;,&=
+#39;Segoe UI Symbol&#39;;font-weight:bold;margin:1em 0 0.625em 0;color:rgb(=
+54,55,55);line-height:1.16em;font-size:1.375em"><strong><span>Should-read: =
+</span><a href=3D"https://substack.com/redirect/4fcaf9bd-e1c6-4bb3-8573-f03=
+78f864e70?j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6=
+E" rel=3D"" style=3D"color:rgb(54,55,55);text-decoration:underline" target=
+=3D"_blank">AAU Expresses Concerns on NDAA=E2=80=99s SAFE Research Act</a><=
+/strong></h3><p style=3D"margin:0 0 20px 0;color:rgb(54,55,55);line-height:=
+26px;font-size:16px">The Association of American Universities calls out yet=
+ another self-defeating proposal from this Congress. Supporters of things l=
+ike this, please help me understand. Is the goal to start with something ho=
+rrendous, hope the other side agrees to meet you in the middle, and then en=
+d up with something moderately counterproductive =E2=80=94 as opposed to ho=
+rrendously counterproductive =E2=80=94 to national interests?</p><blockquot=
+e style=3D"border-left:4px solid #4dd0e1;margin:20px 0;padding:0"><p style=
+=3D"margin:0 0 20px 0;color:rgb(54,55,55);margin-left:20px;line-height:26px=
+;font-size:16px"><em>The SAFE Research Act would have far-ranging impacts a=
+ffecting all research agencies, not just the Department of Defense. It woul=
+d create such enormously broad definitions of =E2=80=9Chostile foreign enti=
+ty=E2=80=9D and =E2=80=9Caffiliation=E2=80=9D that would apply to any agree=
+ment that a U.S. university has with any university in China or other defin=
+ed countries at the time of application or in the five years prior to appli=
+cation. This would include collaborative work with any individual faculty m=
+ember or former student who subsequently returned to China as a required co=
+ndition of their U.S. visa. It would capture every single research agreemen=
+t, every study abroad program, every language program, every professional c=
+onference, and every campus facility that a U.S. university might have in p=
+artnership with another institution abroad.</em></p></blockquote><h3 style=
+=3D"font-family:&#39;SF Pro Display&#39;,-apple-system-headline,system-ui,-=
+apple-system,BlinkMacSystemFont,&#39;Segoe UI&#39;,Roboto,Helvetica,Arial,s=
+ans-serif,&#39;Apple Color Emoji&#39;,&#39;Segoe UI Emoji&#39;,&#39;Segoe U=
+I Symbol&#39;;font-weight:bold;margin:1em 0 0.625em 0;color:rgb(54,55,55);l=
+ine-height:1.16em;font-size:1.375em"><strong><span>Should-read: </span><a h=
+ref=3D"https://substack.com/redirect/e2b0dc43-1043-4fcd-bfff-407b70db6424?j=
+=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E" rel=3D""=
+ style=3D"color:rgb(54,55,55);text-decoration:underline" target=3D"_blank">=
+too many model context protocol servers and LLM allocations on the dance fl=
+oor</a></strong></h3><p style=3D"margin:0 0 20px 0;color:rgb(54,55,55);line=
+-height:26px;font-size:16px">Simon Willison=E2=80=99s blog is a great resou=
+rce to keep track of nerdy developments in AI. This one summarizes a Geoffr=
+ey Huntley post that estimated the significant token costs of using MCP (in=
+cluding Geoffrey=E2=80=99s experience at an event that featured a live beat=
+box performance about the protocol!).</p><h3 style=3D"font-family:&#39;SF P=
+ro Display&#39;,-apple-system-headline,system-ui,-apple-system,BlinkMacSyst=
+emFont,&#39;Segoe UI&#39;,Roboto,Helvetica,Arial,sans-serif,&#39;Apple Colo=
+r Emoji&#39;,&#39;Segoe UI Emoji&#39;,&#39;Segoe UI Symbol&#39;;font-weight=
+:bold;margin:1em 0 0.625em 0;color:rgb(54,55,55);line-height:1.16em;font-si=
+ze:1.375em"><strong><span>Should-read: </span><a href=3D"https://substack.c=
+om/redirect/0896c0fd-c007-4b33-b46e-7b0c428f1d4a?j=3DeyJ1IjoiMmZseDYifQ.6O_=
+iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E" rel=3D"" style=3D"color:rgb(54,55=
+,55);text-decoration:underline" target=3D"_blank">How China talks about =E2=
+=80=98agentic AI=E2=80=99</a></strong></h3><p style=3D"margin:0 0 20px 0;co=
+lor:rgb(54,55,55);line-height:26px;font-size:16px">Malou van Draanen Glisma=
+nn and Graham Webster provide a helpful overview of Chinese policies and di=
+scussions about agentic AI, including summaries of relevant technical stand=
+ards and CAICT reports.</p><h3 style=3D"font-family:&#39;SF Pro Display&#39=
+;,-apple-system-headline,system-ui,-apple-system,BlinkMacSystemFont,&#39;Se=
+goe UI&#39;,Roboto,Helvetica,Arial,sans-serif,&#39;Apple Color Emoji&#39;,&=
+#39;Segoe UI Emoji&#39;,&#39;Segoe UI Symbol&#39;;font-weight:bold;margin:1=
+em 0 0.625em 0;color:rgb(54,55,55);line-height:1.16em;font-size:1.375em"><s=
+trong><span>Should-read: </span><a href=3D"https://substack.com/redirect/2a=
+bbe32f-22cc-4c1a-bde0-cb9238a56cbe?j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrH=
+zSrs1hMpJpoODTUJm_FAk3tf6E" rel=3D"" style=3D"color:rgb(54,55,55);text-deco=
+ration:underline" target=3D"_blank">DSET event on Technology and the Rise o=
+f Great Powers</a></strong></h3><p style=3D"margin:0 0 20px 0;color:rgb(54,=
+55,55);line-height:26px;font-size:16px">If any ChinAI readers are based in =
+Taipei, I=E2=80=99ll be giving an in-person book talk on December 16th orga=
+nized by DSET and Acropolis (publisher of the Complex Chinese version of th=
+e book). </p><h2 style=3D"font-family:&#39;SF Pro Display&#39;,-apple-syste=
+m-headline,system-ui,-apple-system,BlinkMacSystemFont,&#39;Segoe UI&#39;,Ro=
+boto,Helvetica,Arial,sans-serif,&#39;Apple Color Emoji&#39;,&#39;Segoe UI E=
+moji&#39;,&#39;Segoe UI Symbol&#39;;font-weight:bold;margin:1em 0 0.625em 0=
+;color:rgb(54,55,55);line-height:1.16em;font-size:1.625em"><strong>Thank yo=
+u for reading and engaging.</strong></h2><p style=3D"margin:0 0 20px 0;colo=
+r:rgb(54,55,55);line-height:26px;font-size:16px"><em>*</em><span>These are =
+Jeff Ding=E2=80=99s (sometimes) weekly translations of Chinese-language mus=
+ings on AI and related topics. Jeff is an Assistant Professor of Political =
+Science at George Washington University.</span></p><p style=3D"margin:0 0 2=
+0px 0;color:rgb(54,55,55);line-height:26px;font-size:16px"><span>Check out =
+the archive of all past issues </span><strong><a href=3D"https://substack.c=
+om/redirect/6305a5ba-f358-47d3-a351-ddba068235bb?j=3DeyJ1IjoiMmZseDYifQ.6O_=
+iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E" rel=3D"" style=3D"color:rgb(54,55=
+,55);text-decoration:underline" target=3D"_blank">here</a></strong><span> &=
+amp; please </span><strong><a href=3D"https://substack.com/redirect/5f6eb00=
+5-50a7-4347-8641-0f615fe9481c?j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1=
+hMpJpoODTUJm_FAk3tf6E" rel=3D"" style=3D"color:rgb(54,55,55);text-decoratio=
+n:underline" target=3D"_blank">subscribe here</a></strong><span> to support=
+ ChinAI under a </span><em>Guardian</em><span>/Wikipedia-style tipping mode=
+l (everyone gets the same content but those who can pay for a subscription =
+will support access for all).</span></p><p style=3D"margin:0 0 20px 0;color=
+:rgb(54,55,55);line-height:26px;font-size:16px"><span>Also! Listen to narra=
+tions of the ChinAI Newsletter in podcast format </span><strong><a href=3D"=
+https://substack.com/redirect/3b1c1463-88bd-4881-a80b-b091fc0e4e12?j=3DeyJ1=
+IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E" rel=3D"" style=
+=3D"color:rgb(54,55,55);text-decoration:underline" target=3D"_blank">here</=
+a></strong><span>.</span></p><p style=3D"margin:0 0 20px 0;color:rgb(54,55,=
+55);line-height:26px;font-size:16px;margin-bottom:0"><span>Any suggestions =
+or feedback? Let me know at <a href=3D"mailto:chinainewsletter@gmail.com" t=
+arget=3D"_blank">chinainewsletter@gmail.com</a> or on Twitter at </span><st=
+rong><a href=3D"https://substack.com/redirect/41c3c702-1e09-4b25-a39b-7fdda=
+7be58b3?j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E"=
+ rel=3D"" style=3D"color:rgb(54,55,55);text-decoration:underline" target=3D=
+"_blank">@jjding99</a></strong></p></div></div><div style=3D"margin:32px 0 =
+0;width:100%;box-sizing:border-box;border-top:1px solid #e6e6e6;font-size:1=
+6px;line-height:26px"></div><div style=3D"text-align:initial;word-break:bre=
+ak-word;margin-bottom:32px;margin:32px 0;font-size:16px;line-height:26px"><=
+p style=3D"color:rgb(54,55,55);margin:0 auto 20px;text-align:center;width:9=
+0%;line-height:26px;font-size:16px;margin-top:0"><span style=3D"list-style:=
+none;color:unset;text-decoration:unset;margin:0">You&#39;re currently a fre=
+e subscriber to <a href=3D"https://substack.com/redirect/5f6eb005-50a7-4347=
+-8641-0f615fe9481c?j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJ=
+m_FAk3tf6E" style=3D"color:rgb(54,55,55);text-decoration:underline" target=
+=3D"_blank">ChinAI Newsletter</a>. For the full experience, <a href=3D"http=
+s://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9jaGluYWkuc3Vic3RhY2suY29tL3N=
+1YnNjcmliZT91dG1fc291cmNlPXBvc3QmdXRtX2NhbXBhaWduPWVtYWlsLWNoZWNrb3V0Jm5leH=
+Q9aHR0cHMlM0ElMkYlMkZjaGluYWkuc3Vic3RhY2suY29tJTJGcCUyRmNoaW5haS0zMzgtbW9kZ=
+WwtY29udGV4dC1wcm90b2NvbCZyPTJmbHg2JnRva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRn=
+eUxDSnBZWFFpT2pFM05qVXhPVGd5TlRRc0ltVjRjQ0k2TVRjMk56YzVNREkxTkN3aWFYTnpJam9=
+pY0hWaUxUSTJOakFpTENKemRXSWlPaUpqYUdWamEyOTFkQ0o5LjRfVlRXYmluUjZxM1dEdjB2Wn=
+hldWw5YlF4OUo1MFl4QVRwUVhQMUdBZGsiLCJwIjoxODA5MTAxNDgsInMiOjI2NjAsImYiOnRyd=
+WUsInUiOjQwODc0ODIsImlhdCI6MTc2NTE5ODI1NCwiZXhwIjoyMDgwNzc0MjU0LCJpc3MiOiJw=
+dWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.6iefrSOkraHh1knoMUzmiN31AGWXWixdibx2=
+F-WAUyg?&amp;utm_source=3Dsubstack&amp;utm_medium=3Demail&amp;utm_content=
+=3Dpostcta" style=3D"color:rgb(54,55,55);text-decoration:underline" target=
+=3D"_blank">upgrade your subscription.</a></span></p><p style=3D"color:rgb(=
+54,55,55);margin:0 auto 20px;width:90%;line-height:26px;font-size:16px;marg=
+in-bottom:0;text-align:center;margin-left:auto;margin-right:auto"><a role=
+=3D"button" href=3D"https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9jaGl=
+uYWkuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPXBvc3QmdXRtX2NhbXBhaWduPW=
+VtYWlsLWNoZWNrb3V0Jm5leHQ9aHR0cHMlM0ElMkYlMkZjaGluYWkuc3Vic3RhY2suY29tJTJGc=
+CUyRmNoaW5haS0zMzgtbW9kZWwtY29udGV4dC1wcm90b2NvbCZyPTJmbHg2JnRva2VuPWV5SjFj=
+MlZ5WDJsa0lqbzBNRGczTkRneUxDSnBZWFFpT2pFM05qVXhPVGd5TlRRc0ltVjRjQ0k2TVRjMk5=
+6YzVNREkxTkN3aWFYTnpJam9pY0hWaUxUSTJOakFpTENKemRXSWlPaUpqYUdWamEyOTFkQ0o5Lj=
+RfVlRXYmluUjZxM1dEdjB2WnhldWw5YlF4OUo1MFl4QVRwUVhQMUdBZGsiLCJwIjoxODA5MTAxN=
+DgsInMiOjI2NjAsImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc2NTE5ODI1NCwiZXhwIjoy=
+MDgwNzc0MjU0LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.6iefrSOkraHh=
+1knoMUzmiN31AGWXWixdibx2F-WAUyg?&amp;utm_source=3Dsubstack&amp;utm_medium=
+=3Demail&amp;utm_content=3Dpostcta" style=3D"font-family:system-ui,-apple-s=
+ystem,BlinkMacSystemFont,&#39;Segoe UI&#39;,Roboto,Helvetica,Arial,sans-ser=
+if,&#39;Apple Color Emoji&#39;,&#39;Segoe UI Emoji&#39;,&#39;Segoe UI Symbo=
+l&#39;;display:inline-block;box-sizing:border-box;border:none;height:40px;b=
+order-radius:8px;font-size:14px;line-height:20px;font-weight:600;text-align=
+:center;padding:10px 20px;margin:0;opacity:1;outline:none;white-space:nowra=
+p;color:#ffffff!important;text-decoration:none!important;background-color:#=
+4dd0e1" target=3D"_blank">Upgrade to paid</a></p></div><table role=3D"prese=
+ntation" width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" st=
+yle=3D"border-top:1px solid rgb(0,0,0,.1);border-bottom:1px solid rgb(0,0,0=
+,.1);min-width:100%"><tbody><tr height=3D"16"><td height=3D"16" style=3D"fo=
+nt-size:0px;line-height:0">=C2=A0</td></tr><tr><td><table role=3D"presentat=
+ion" width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody=
+><tr><td><table role=3D"presentation" width=3D"auto" border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0" style=3D"margin:0 auto"><tbody><tr><td style=3D"=
+vertical-align:middle"><table role=3D"presentation" width=3D"auto" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"center">=
+<a href=3D"https://substack.com/app-link/post?publication_id=3D2660&amp;pos=
+t_id=3D180910148&amp;utm_source=3Dsubstack&amp;isFreemail=3Dtrue&amp;submit=
+Like=3Dtrue&amp;token=3DeyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxODA5MTAxNDg=
+sInJlYWN0aW9uIjoi4p2kIiwiaWF0IjoxNzY1MTk4MjU0LCJleHAiOjE3Njc3OTAyNTQsImlzcy=
+I6InB1Yi0yNjYwIiwic3ViIjoicmVhY3Rpb24ifQ.TyjaVjTo1QU-GWLFTxSZdTQV1KJLBSsHd6=
+BKZ5xA1gE&amp;utm_medium=3Demail&amp;utm_campaign=3Demail-reaction&amp;r=3D=
+2flx6" style=3D"font-family:system-ui,-apple-system,BlinkMacSystemFont,&#39=
+;Segoe UI&#39;,Roboto,Helvetica,Arial,sans-serif,&#39;Apple Color Emoji&#39=
+;,&#39;Segoe UI Emoji&#39;,&#39;Segoe UI Symbol&#39;;display:inline-block;f=
+ont-weight:500;border:1px solid rgb(0,0,0,.1);border-radius:9999px;text-tra=
+nsform:uppercase;font-size:12px;line-height:12px;padding:9px 14px;text-deco=
+ration:none;color:rgb(119,119,119)" target=3D"_blank"><img src=3D"https://s=
+ubstackcdn.com/image/fetch/$s_!PeVs!,w_36,c_scale,f_png,q_auto:good,fl_prog=
+ressive:steep/https%3A%2F%2Fsubstack.com%2Ficon%2FLucideHeart%3Fv%3D4%26hei=
+ght%3D36%26fill%3Dnone%26stroke%3D%2523808080%26strokeWidth%3D2" width=3D"1=
+8" height=3D"18" style=3D"margin-right:8px;min-width:18px;min-height:18px;b=
+order:none;vertical-align:middle;max-width:18px" alt=3D""><span style=3D"ve=
+rtical-align:middle">Like</span></a></td></tr></tbody></table></td><td widt=
+h=3D"8" style=3D"min-width:8px"></td><td style=3D"vertical-align:middle"><t=
+able role=3D"presentation" width=3D"auto" border=3D"0" cellspacing=3D"0" ce=
+llpadding=3D"0"><tbody><tr><td align=3D"center"><a href=3D"https://substack=
+.com/app-link/post?publication_id=3D2660&amp;post_id=3D180910148&amp;utm_so=
+urce=3Dsubstack&amp;utm_medium=3Demail&amp;isFreemail=3Dtrue&amp;comments=
+=3Dtrue&amp;token=3DeyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxODA5MTAxNDgsIml=
+hdCI6MTc2NTE5ODI1NCwiZXhwIjoxNzY3NzkwMjU0LCJpc3MiOiJwdWItMjY2MCIsInN1YiI6In=
+Bvc3QtcmVhY3Rpb24ifQ.2QCLOGCzCz6LES76gSc2e8qrng75jA1rkl-1PEcDGLA&amp;r=3D2f=
+lx6&amp;utm_campaign=3Demail-half-magic-comments&amp;action=3Dpost-comment&=
+amp;utm_source=3Dsubstack&amp;utm_medium=3Demail" style=3D"font-family:syst=
+em-ui,-apple-system,BlinkMacSystemFont,&#39;Segoe UI&#39;,Roboto,Helvetica,=
+Arial,sans-serif,&#39;Apple Color Emoji&#39;,&#39;Segoe UI Emoji&#39;,&#39;=
+Segoe UI Symbol&#39;;display:inline-block;font-weight:500;border:1px solid =
+rgb(0,0,0,.1);border-radius:9999px;text-transform:uppercase;font-size:12px;=
+line-height:12px;padding:9px 14px;text-decoration:none;color:rgb(119,119,11=
+9)" target=3D"_blank"><img src=3D"https://substackcdn.com/image/fetch/$s_!x=
+1tS!,w_36,c_scale,f_png,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubs=
+tack.com%2Ficon%2FLucideComments%3Fv%3D4%26height%3D36%26fill%3Dnone%26stro=
+ke%3D%2523808080%26strokeWidth%3D2" width=3D"18" height=3D"18" style=3D"mar=
+gin-right:8px;min-width:18px;min-height:18px;border:none;vertical-align:mid=
+dle;max-width:18px" alt=3D""><span style=3D"vertical-align:middle">Comment<=
+/span></a></td></tr></tbody></table></td><td width=3D"8" style=3D"min-width=
+:8px"></td><td style=3D"vertical-align:middle"><table role=3D"presentation"=
+ width=3D"auto" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr=
+><td align=3D"center"><a href=3D"https://substack.com/redirect/2/eyJlIjoiaH=
+R0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS9wdWIvY2hpbmFpL3AvY2hpbmFpLTMzOC1tb2RlbC1jb=
+250ZXh0LXByb3RvY29sP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1f=
+Y2FtcGFpZ249ZW1haWwtcmVzdGFjay1jb21tZW50JmFjdGlvbj1yZXN0YWNrLWNvbW1lbnQmcj0=
+yZmx4NiZ0b2tlbj1leUoxYzJWeVgybGtJam8wTURnM05EZ3lMQ0p3YjNOMFgybGtJam94T0RBNU=
+1UQXhORGdzSW1saGRDSTZNVGMyTlRFNU9ESTFOQ3dpWlhod0lqb3hOelkzTnprd01qVTBMQ0pwY=
+zNNaU9pSndkV0l0TWpZMk1DSXNJbk4xWWlJNkluQnZjM1F0Y21WaFkzUnBiMjRpZlEuMlFDTE9H=
+Q3pDejZMRVM3NmdTYzJlOHFybmc3NWpBMXJrbC0xUEVjREdMQSIsInAiOjE4MDkxMDE0OCwicyI=
+6MjY2MCwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzY1MTk4MjU0LCJleHAiOjIwODA3Nz=
+QyNTQsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.q7Ra_tHxA-cHvXAklax-=
+UGGSxjFk93IShP9HGyy7E7o?&amp;utm_source=3Dsubstack&amp;utm_medium=3Demail" =
+style=3D"font-family:system-ui,-apple-system,BlinkMacSystemFont,&#39;Segoe =
+UI&#39;,Roboto,Helvetica,Arial,sans-serif,&#39;Apple Color Emoji&#39;,&#39;=
+Segoe UI Emoji&#39;,&#39;Segoe UI Symbol&#39;;display:inline-block;font-wei=
+ght:500;border:1px solid rgb(0,0,0,.1);border-radius:9999px;text-transform:=
+uppercase;font-size:12px;line-height:12px;padding:9px 14px;text-decoration:=
+none;color:rgb(119,119,119)" target=3D"_blank"><img src=3D"https://substack=
+cdn.com/image/fetch/$s_!5EGt!,w_36,c_scale,f_png,q_auto:good,fl_progressive=
+:steep/https%3A%2F%2Fsubstack.com%2Ficon%2FNoteForwardIcon%3Fv%3D4%26height=
+%3D36%26fill%3Dnone%26stroke%3D%2523808080%26strokeWidth%3D2" width=3D"18" =
+height=3D"18" style=3D"margin-right:8px;min-width:18px;min-height:18px;bord=
+er:none;vertical-align:middle;max-width:18px" alt=3D""><span style=3D"verti=
+cal-align:middle">Restack</span></a></td></tr></tbody></table></td></tr></t=
+body></table></td><td align=3D"right"><table role=3D"presentation" width=3D=
+"auto" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr></tr></t=
+body></table></td></tr></tbody></table></td></tr><tr height=3D"16"><td heig=
+ht=3D"16" style=3D"font-size:0px;line-height:0">=C2=A0</td></tr></tbody></t=
+able><div style=3D"color:rgb(119,119,119);text-align:center;font-size:16px;=
+line-height:26px;padding:24px0"><div style=3D"font-size:16px;line-height:26=
+px;padding-bottom:24px"><p style=3D"list-style:none;font-family:system-ui,-=
+apple-system,BlinkMacSystemFont,&#39;Segoe UI&#39;,Roboto,Helvetica,Arial,s=
+ans-serif,&#39;Apple Color Emoji&#39;,&#39;Segoe UI Emoji&#39;,&#39;Segoe U=
+I Symbol&#39;;padding-bottom:0;font-size:12px;line-height:16px;margin:0;col=
+or:rgb(119,119,119);text-decoration:unset">=C2=A9 2025 <span>Jeffrey Ding</=
+span> <br><a href=3D"https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9jaG=
+luYWkuc3Vic3RhY2suY29tL2FjdGlvbi9kaXNhYmxlX2VtYWlsP3Rva2VuPWV5SjFjMlZ5WDJsa=
+0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3hPREE1TVRBeE5EZ3NJbWxoZENJNk1UYzJOVEU1=
+T0RJMU5Dd2laWGh3SWpveE56azJOek0wTWpVMExDSnBjM01pT2lKd2RXSXRNalkyTUNJc0luTjF=
+ZaUk2SW1ScGMyRmliR1ZmWlcxaGFXd2lmUS45S040WlNGVDZHQWxocmNXOUNfN25rVlpvd1FDbm=
+03V3ExMUgwcmJFN0c4IiwicCI6MTgwOTEwMTQ4LCJzIjoyNjYwLCJmIjp0cnVlLCJ1Ijo0MDg3N=
+DgyLCJpYXQiOjE3NjUxOTgyNTQsImV4cCI6MjA4MDc3NDI1NCwiaXNzIjoicHViLTAiLCJzdWIi=
+OiJsaW5rLXJlZGlyZWN0In0.o6sPWHBj-JifznCWC1P7-QZ3SjXTz9fLU2tGDY0JFzw?" style=
+=3D"text-decoration:underline;color:rgb(119,119,119)" target=3D"_blank"><sp=
+an style=3D"color:rgb(119,119,119);text-decoration:underline">Unsubscribe</=
+span></a></p></div><p style=3D"padding:0 24px;font-size:12px;line-height:20=
+px;margin:0;color:rgb(119,119,119);font-family:system-ui,-apple-system,Blin=
+kMacSystemFont,&#39;Segoe UI&#39;,Roboto,Helvetica,Arial,sans-serif,&#39;Ap=
+ple Color Emoji&#39;,&#39;Segoe UI Emoji&#39;,&#39;Segoe UI Symbol&#39;;pad=
+ding-bottom:0;margin-top:0"><a href=3D"https://substack.com/redirect/2/eyJl=
+IjoiaHR0cHM6Ly9zdWJzdGFjay5jb20vc2lnbnVwP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21=
+lZGl1bT1lbWFpbCZ1dG1fY29udGVudD1mb290ZXImdXRtX2NhbXBhaWduPWF1dG9maWxsZWQtZm=
+9vdGVyJmZyZWVTaWdudXBFbWFpbD1remlubXIxMDlAZ21haWwuY29tJnI9MmZseDYiLCJwIjoxO=
+DA5MTAxNDgsInMiOjI2NjAsImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc2NTE5ODI1NCwi=
+ZXhwIjoyMDgwNzc0MjU0LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.lpAP=
+3bRKeFhuRCbkJhtEgvZx75S-V4E22vSqrEHR2lw?" style=3D"color:rgb(119,119,119);t=
+ext-decoration:none;display:inline-block;margin:0 4px" target=3D"_blank"><i=
+mg src=3D"https://substackcdn.com/image/fetch/$s_!LkrL!,w_270,c_limit,f_aut=
+o,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Fimg%2Femail=
+%2Fpublish-button%402x.png" width=3D"135" alt=3D"Start writing" height=3D"4=
+0" style=3D"max-width:550px;border:none!important;vertical-align:middle"></=
+a></p></div></div></td><td></td></tr></tbody></table><img src=3D"https://eo=
+trx.substackcdn.com/open?token=3DeyJtIjoiPDIwMjUxMjA4MTI1MDQyLjMuOGQ2YmViND=
+g0NjNlMGNmM0BtZy1kMS5zdWJzdGFjay5jb20-IiwidSI6NDA4NzQ4MiwiciI6Imt6aW5tcjEwO=
+UBnbWFpbC5jb20iLCJkIjoibWctZDEuc3Vic3RhY2suY29tIiwicCI6MTgwOTEwMTQ4LCJ0Ijoi=
+bmV3c2xldHRlciIsImEiOiJldmVyeW9uZSIsInMiOjI2NjAsImMiOiJwb3N0IiwiZiI6dHJ1ZSw=
+icG9zaXRpb24iOiJib3R0b20iLCJpYXQiOjE3NjUxOTgyNTQsImV4cCI6MTc2Nzc5MDI1NCwiaX=
+NzIjoicHViLTAiLCJzdWIiOiJlbyJ9.Wg56fpqSeMNos-XZGqL46SZ1hYyNC6Yu2jkK_cXltuw"=
+ alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px!importa=
+nt;width:1px!important;border-width:0!important;margin-top:0!important;marg=
+in-bottom:0!important;margin-right:0!important;margin-left:0!important;padd=
+ing-top:0!important;padding-bottom:0!important;padding-right:0!important;pa=
+dding-left:0!important"><img width=3D"1" height=3D"1" alt=3D"" src=3D"https=
+://email.mg-d1.substack.com/o/eJxE0EuO8yAQBODThN1vNbhNYMFZLB4dB8VAxCO_PKcfO=
+Yk022p16VN522kr9TDP0joLZtYOlJeMDL_KhWslFsko2bivG2WqtlNYbf-7otbA7kZLXMCSl0SI=
+V4lacWt1kDMGoTkAi0aAWLgAxcUCKKZ5UkE6cqhQzgT-Nl8Q0vYv8KkN17r1j8mXxGJbb5XeBNP=
+rIHZKVztCpOzJ0IvqUfI3jsFwBZoDR_VJ-vEkk-l_26l3quw53OpLSiPHfqyUrdspfIuH26O3PZ=
+Z8FgkpgVXz-Ik5VQ76grCdireqDRdKsjEbf4_ZRtY_C45G9XxGUFdUgr2M-A0AAP__Yyh0Yw"><=
+/div>
+</div></div>
+
+--00000000000008ac67064fb3b2a2--
