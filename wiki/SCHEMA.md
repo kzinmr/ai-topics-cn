@@ -45,6 +45,7 @@ Immutable source material. The agent reads but never modifies.
 - **`inbox/36kr/`** — 36kr crawl results
 - **`inbox/zhihu/`** — Zhihu crawl results
 - **`inbox/wechat-media/`** — WeChat public account articles
+- **`inbox/newsletters/`** — Newsletter email digests and .eml copies
 
 #### Layer 2 — Curated Knowledge
 - **`entities/`** — People, companies, models, organizations

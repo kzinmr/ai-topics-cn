@@ -37,3 +37,21 @@ See README.md for full details, docs/MIGRATION-RUNBOOK.md for setup.
 3. `shelley-trending-topics.timer` — Daily trending topics detection
 4. `shelley-active-crawl.timer` — Daily active knowledge crawling
 5. `shelley-wiki-health.timer` — Weekly wiki health digest
+6. `email-watcher.service` — Watch Maildir for incoming newsletter emails (inotify, real-time)
+7. `shelley-newsletter-triage.timer` — Daily newsletter → wiki triage (08:00 UTC)
+
+## Newsletter Email Pipeline
+
+Email receiving is enabled via exe.dev: `*@hermes-china-digest.exe.xyz`
+
+1. Newsletters arrive in `~/Maildir/new/`
+2. `email-watcher` detects new files via inotify, runs `process_newsletter.py`
+3. Script extracts links, scrapes articles, saves:
+   - `.eml` copy → `inbox/newsletters/`
+   - Digest `.md` → `inbox/newsletters/`
+   - Raw articles → `wiki/raw/articles/`
+4. Daily `shelley-newsletter-triage` timer triages digests into wiki pages
+5. Processed emails moved to `~/Maildir/processed/`
+
+To subscribe: forward newsletters to `newsletter@hermes-china-digest.exe.xyz`
+(or any address `*@hermes-china-digest.exe.xyz`)

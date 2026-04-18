@@ -1,0 +1,15 @@
+[Unit]
+Description=Newsletter Email Watcher (ai-topics-cn)
+After=network-online.target
+
+[Service]
+Type=simple
+User=exedev
+ExecStart=/home/exedev/ai-topics-cn/scripts/email_watcher.sh
+Restart=always
+RestartSec=10
+Environment=HOME=/home/exedev
+Environment=PATH=/home/exedev/.local/bin:/usr/local/bin:/usr/bin:/bin
+
+[Install]
+WantedBy=multi-user.target

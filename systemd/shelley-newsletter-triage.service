@@ -1,0 +1,14 @@
+[Unit]
+Description=Hermes Newsletter Triage (ai-topics-cn)
+
+[Service]
+Type=oneshot
+User=exedev
+Group=exedev
+WorkingDirectory=/home/exedev/ai-topics-cn
+ExecStart=shelley client chat -p 'You are Hermes, the Chinese AI knowledge agent. This is a scheduled newsletter triage run. 1) First run: python3 scripts/process_newsletter.py to ingest any new emails from ~/Maildir/. 2) Read config/hermes/SOUL.md and wiki/SCHEMA.md. 3) Check inbox/newsletters/ for new digest .md files. 4) For each newsletter digest, extract the top articles relevant to Chinese AI/LLM topics. 5) Create or update wiki concept/entity pages in Japanese based on the content. 6) Update wiki/index.md and wiki/log.md. 7) Git commit and push. 8) Summarize what was done.' -cwd '/home/exedev/ai-topics-cn'
+Environment=HOME=/home/exedev
+Environment=USER=exedev
+StandardOutput=journal
+StandardError=journal
+TimeoutStartSec=900
