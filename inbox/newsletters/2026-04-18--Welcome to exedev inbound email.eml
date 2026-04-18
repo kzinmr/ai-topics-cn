@@ -1,0 +1,15 @@
+Delivered-To: welcome@hermes-china-digest.exe.xyz
+From: exe.dev <support@exe.dev>
+To: <anything@hermes-china-digest.exe.xyz>
+Subject: Welcome to exe.dev inbound email
+Date: Sat, 18 Apr 2026 03:11:27 +0000
+Content-Type: text/plain; charset=utf-8
+
+Inbound email is now enabled for your VM.
+
+Any email sent to *@hermes-china-digest.exe.xyz will be delivered to ~/Maildir/new/
+
+For documentation, visit: https://exe.dev/docs/receive-email
+
+---
+exe.dev
