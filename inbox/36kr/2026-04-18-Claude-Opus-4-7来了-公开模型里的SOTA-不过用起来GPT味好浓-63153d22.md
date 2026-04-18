@@ -5,7 +5,7 @@ url: "https://36kr.com/p/3770495848727300"
 author: "量子位"
 date: 2026-04-17
 score: 0
-tags: ["Anthropic", "GPT", "Claude"]
+tags: ["Claude", "GPT", "Anthropic"]
 ---
 
 # Claude Opus 4.7来了，公开模型里的SOTA，不过用起来GPT味好浓
@@ -13,8 +13,8 @@ tags: ["Anthropic", "GPT", "Claude"]
 是Anthropic的“稳稳接住”型选手
 
 ## 涉及话题
-- Anthropic
-- GPT
 - Claude
+- GPT
+- Anthropic
 
 [原文链接](https://36kr.com/p/3770495848727300)
