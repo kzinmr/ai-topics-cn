@@ -1,120 +1,58 @@
-# 中国語圏 LLM & AI Agent Knowledge Wiki
+# AI Topics China Wiki — Index
 
-中国語圏のLLM/AI Agent技術議論を追跡するナレッジベース。
-V2EX、掘金(Juejin)、36氪、知乎、微信公众号（机器之心、PaperWeekly、新智元）から収集・キュレーション。
+最終更新: 2026-04-18
+エンティティ: 26, コンセプト: 14, 比較: 0, 生記事: 1
 
-Last updated: 2026-04-18 | Total pages: 36
+## エンティティ (Entities)
 
-## Entity Pages
+- [anthropic](entities/anthropic.md)
+- [baichuan-ai](entities/baichuan-ai.md)
+- [biren-technology](entities/biren-technology.md)
+- [cambricon](entities/cambricon.md)
+- [Claude Code — AIコーディングエージェント](entities/claude-code.md)
+- [Claude Opus 4.7 — Anthropic最新フラグシップモデル](entities/claude-opus-4-7.md)
+- [cursor](entities/cursor.md)
+- [deepseek](entities/deepseek.md)
+- [豆包/ByteDance（Doubao）— 字節跳動のAIモデル・コーディングプラットフォーム](entities/doubao-bytedance.md)
+- [doubao](entities/doubao.md)
+- [Gemini/Google — Google AI基盤モデルとオープンソースGemma](entities/gemini-google.md)
+- [智谱GLM（ChatGLM）— 中国最大級オープンソースLLM](entities/glm-zhipu.md)
+- [horizon-robotics](entities/horizon-robotics.md)
+- [iflytek](entities/iflytek.md)
+- [Kimi（月之暗面/Moonshot AI）— Claude Code代替として急成長する中国国産LLM](entities/kimi-moonshot.md)
+- [metax](entities/metax.md)
+- [minimax](entities/minimax.md)
+- [moore-threads](entities/moore-threads.md)
+- [openai](entities/openai.md)
+- [openclaw](entities/openclaw.md)
+- [qwen](entities/qwen.md)
+- [rockchip](entities/rockchip.md)
+- [sensetime](entities/sensetime.md)
+- [stepfun](entities/stepfun.md)
+- [tencent-ai](entities/tencent-ai.md)
+- [verisilicon](entities/verisilicon.md)
 
-| ページ | タイトル | タグ |
-|--------|---------|------|
-| [[claude-code]] | Claude Code — AIコーディングエージェント | claude, ai-agents, coding-agents, tooling |
-| [[claude-opus-4-7]] | Claude Opus 4.7 — Anthropic最新フラグシップモデル | llm, model, claude, anthropic |
-| [[glm-zhipu]] | 智谱GLM（ChatGLM）— 中国最大級オープンソースLLM | llm, model, china, open-source-ai |
-| [[kimi-moonshot]] | Kimi（月之暗面）— Claude Code代替として急成長 | llm, model, china, coding-agents |
-| [[cursor]] | Cursor — IDE統合型AIコーディングツール | ai-agents, coding-agents, tooling |
-| [[openclaw]] | OpenClaw — AI Agentエンドポイントツールチェーン | ai-agents, open-source-ai, tooling |
-| [[anthropic]] | Anthropic — AI研究企業 | company, lab, ai-safety, claude |
-| [[openai]] | OpenAI — AI研究企業 | company, lab, gpt, codex |
-| [[deepseek]] | DeepSeek — 中国オープンソースLLM企業 | company, llm, china, open-source-ai |
-| [[qwen]] | Qwen（通义千问）— 阿里云オープンソースLLM | llm, model, china, alibaba |
-| [[gemini-google]] | Gemini/Google — Google AI基盤モデルとGemma | llm, model, google, gemini, gemma |
-| [[doubao-bytedance]] | 豆包/ByteDance（Doubao）— 字節跳動のAIモデル・コーディング | llm, model, china, coding-agents, bytedance | **NEW**
+## コンセプト (Concepts)
 
+- [Agent Skills — AIエージェントのモジュール型能力システム](concepts/agent-skills.md)
+- [AI Agent（智能体）— 中国語圏での議論動向](concepts/ai-agent.md)
+- [ai-safety-subconscious](concepts/ai-safety-subconscious.md)
+- [china-ai-superapp-race](concepts/china-ai-superapp-race.md)
+- [china-palantir](concepts/china-palantir.md)
+- [Coding Plan（编程计划）— 中国発AIコーディングサブスクリプションモデル](concepts/coding-plan.md)
+- [Function Calling（関数呼び出し）— LLMと外部APIを接続する核心メカニズム](concepts/function-calling.md)
+- [Harness Engineering — AI工程の新パラダイム](concepts/harness-engineering.md)
+- [langchain](concepts/langchain.md)
+- [MCP（Model Context Protocol）— AIツール連携の標準規格](concepts/mcp.md)
+- [open-source-death](concepts/open-source-death.md)
+- [rag](concepts/rag.md)
+- [Vector DB（向量数据库）— RAG・AI検索の基盤インフラ](concepts/vector-db.md)
+- [Vibe Coding（氛围编程）— AIネイティブなソフトウェア開発手法](concepts/vibe-coding.md)
 
-| [[cambricon]] | Cambricon (寒武纪) — 中国AIチップ首位企業（6,300億元） | company, ai-chip, china | **NEW**
-| [[moore-threads]] | Moore Threads (摩尔线程) — 中国国産GPU首位（3,100億元） | company, ai-chip, gpu, china | **NEW**
-| [[metax]] | MetaX (沐曦) — 中国高端GPU企業（2,500億元） | company, ai-chip, gpu, china | **NEW**
-| [[horizon-robotics]] | Horizon Robotics (地平线) — 自動運転AIチップ企業 | company, ai-chip, autonomous-driving, china | **NEW**
-| [[biren-technology]] | Biren Technology (壁仞科技) — GPUスタートアップ | company, gpu, ai-chip, china | **NEW**
-| [[sensetime]] | SenseTime (商汤) — コンピュータビジョンAI最大手 | company, computer-vision, llm, china | **NEW**
-| [[iflytek]] | iFlytek (科大讯飞) — 音声認識AI最大手 | company, voice, llm, china | **NEW**
-| [[minimax]] | MiniMax (稀宇科技) — マルチモーダル生成AI | company, multimodal, llm, china | **NEW**
-| [[baichuan-ai]] | Baichuan AI (百川智能) — 大モデルLLMスタートアップ | company, llm, china, startup | **NEW**
-| [[stepfun]] | StepFun (阶跃星辰) — 大モデルLLMスタートアップ | company, llm, china, startup | **NEW**
-| [[verisilicon]] | VeriSilicon (芯原股份) — 半導体IP企業 | company, semiconductor, ai-chip, china | **NEW**
-| [[rockchip]] | Rockchip (瑞芯微) — AIoT SoC企業 | company, soc, ai-chip, china | **NEW**
+## 比較 (Comparisons)
 
-## Concept Pages
+- （まだありません）
 
-| ページ | タイトル | タグ |
-|--------|---------|------|
-| [[ai-agent]] | AI Agent（智能体）— 中国語圏での議論動向 | ai-agents, llm, concept |
-| [[mcp]] | MCP（Model Context Protocol）— AIツール連携の標準規格 | mcp, tooling, ai-agents |
-| [[harness-engineering]] | Harness Engineering — AI工程の新パラダイム | ai-agents, coding-agents, concept |
-| [[coding-plan]] | Coding Plan（编程计划）— 中国発AIコーディングサブスクリプション | coding-agents, tooling, china |
-| [[vibe-coding]] | Vibe Coding（氛围编程）— AIネイティブな開発手法 | coding-agents, concept, technique |
-| [[ai-safety-subconscious]] | AI安全 — Anthropic Nature誌「潜在意識伝染」論文 | ai-safety, llm, research |
-| [[open-source-death]] | オープンソースの終焉 — モデル抽出リスクと閉源化動向 | open-source-ai, llm, trend |
-| [[langchain]] | LangChain — LLMアプリケーションフレームワーク | framework, tooling, security |
-| [[rag]] | RAG（Retrieval-Augmented Generation）— 検索拡張生成 | concept, architecture, retrieval |
-| [[function-calling]] | Function Calling（関数呼び出し）— LLMと外部API接続 | concept, technique, llm, function-calling |
-| [[vector-db]] | Vector DB（向量数据库）— RAG・AI検索の基盤 | concept, infrastructure, vector-db, rag |
-| [[agent-skills]] | Agent Skills — AIエージェントのモジュール型能力システム | ai-agents, coding-agents, concept, skills | **NEW**
+## 最新生記事 (Recent Raw Articles)
 
-## Comparison Pages
-
-_(未作成)_
-
-## トレンディング (2026-04-18 00:02更新)
-
-直近3日間のクロスソース分析（V2EX + 掘金 + 36氪 + WeChat）による注目トピック（**28トピック検出**）:
-
-| # | トピック | 言及数 | 変化 | ソース種別 | Wiki |
-|---|---------|--------|------|-----------|------|
-| 1 | Claude | 171 | ↑(146→171) | 36kr, juejin, v2ex | [[claude-code]] [[claude-opus-4-7]] [[anthropic]] |
-| 2 | AI Agent/智能体 | 135 | ↑↑(117→135) | 36kr, juejin, v2ex, wechat | [[ai-agent]] [[agent-skills]] |
-| 3 | GPT | 63 | ↑(56→63) | 36kr, juejin, v2ex | [[openai]] |
-| 4 | Anthropic | 62 | ↑(51→62) | 36kr, juejin, v2ex | [[anthropic]] |
-| 5 | OpenAI | 55 | ↑(46→55) | 36kr, juejin, v2ex, wechat | [[openai]] |
-| 6 | Gemini/Google | 35 | ↑(33→35) | 36kr, juejin, v2ex | [[gemini-google]] |
-| 7 | Cursor | 31 | ↑(30→31) | juejin, v2ex | [[cursor]] |
-| 8 | MCP | 31 | ↑(26→31) | 36kr, juejin, v2ex | [[mcp]] |
-| 9 | OpenClaw | 20 | ↑(19→20) | 36kr, juejin, v2ex | [[openclaw]] |
-| 10 | Kimi/Moonshot | 16 | ↑(13→16) | 36kr, juejin, v2ex | [[kimi-moonshot]] |
-| 11 | Qwen/通义千问 | 15 | ↑(14→15) | 36kr, juejin, v2ex | [[qwen]] |
-| 12 | RAG | 15 | ↑(14→15) | juejin, v2ex, wechat | [[rag]] |
-| 13 | Vibe Coding | 13 | ↑(12→13) | juejin, v2ex | [[vibe-coding]] |
-| 14 | ChatGLM/智谱 | 12 | ↑(11→12) | juejin, v2ex | [[glm-zhipu]] |
-| 15 | DeepSeek | 11 | →(11) | 36kr, juejin, v2ex | [[deepseek]] |
-| 16 | Llama/Meta | 8 | →(8) | 36kr, juejin, v2ex, wechat | — |
-| 17 | AI安全 | 7 | ↑(5→7) | 36kr, v2ex | [[ai-safety-subconscious]] |
-| 18 | 文心一言/Baidu | 6 | ↑(5→6) | 36kr, juejin, v2ex | — |
-| 19 | Function Calling | 5 | ↑(4→5) | juejin, v2ex | [[function-calling]] |
-| 20 | MiniMax | 5 | ↑(4→5) | juejin, v2ex | — |
-| 21 | RLHF/対齐 | 5 | NEW | v2ex | — |
-| 22 | Vector DB | 5 | ↑(4→5) | juejin, v2ex | [[vector-db]] |
-| 23 | オープンソースモデル | 5 | ↑(4→5) | juejin, v2ex | [[open-source-death]] |
-| 24 | 微調/Fine-tuning | 5 | →(5) | juejin, v2ex | — |
-| 25 | 規制/コンプライアンス | 5 | →(5) | 36kr, v2ex | — |
-| 26 | 多模態 | 4 | NEW | 36kr, juejin | — |
-| 27 | 豆包/ByteDance | 4 | NEW | juejin, v2ex | [[doubao-bytedance]] **NEW** |
-| 28 | 量化/Quantization | 2 | NEW | juejin | — |
-
-## Source Index
-
-### Tier 1: フォーラム型
-| ソース | 特徴 | 英語圏相当 |
-|---------|------|---------------|
-| V2EX | シニアエンジニアの実務的議論 | Hacker News |
-| 掘金 (Juejin) | コードレベルの深掘り | Dev.to + Reddit |
-| 36氪 | テック業界ニュース | TechCrunch |
-
-### Tier 2: 深掘りメディア
-| ソース | 特徴 | アクセス方法 |
-|---------|------|---------------|
-| 机器之心 | 中国#1 AIメディア、論文解説 | WeChat/搜狗検索 |
-| PaperWeekly | 論文寄り、実装批評 | WeChat/搜狗検索 |
-| 新智元 | 業界動向、中国モデル比較 | WeChat/搜狗検索 |
-
-### Tier 3: 専門家知識
-| ソース | 特徴 | アクセス方法 |
-|---------|------|---------------|
-| 知乎 (ターゲット) | 特定専門家の回答 | API/HTML |
-
-### Tier 4: ダークフォレスト (参考)
-| ソース | 特徴 | アクセス |
-|---------|------|--------|
-| WaytoAGI | 中国最大AGIコミュニティ | 飛書(Feishu)公開ドキュメント |
-| OSSプロジェクト群 | Qwen/DeepSeek/ChatGLM | 飛書コミュニティ |
+- [Confirmation](raw/articles/mail-settings.google.com--mail-uf-5bangjdj8evzmgewn9xpurufywc83lytwpurejerg5kah6nymnby--9f10bfda.md)

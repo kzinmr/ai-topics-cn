@@ -342,3 +342,53 @@ Scheduled triage run.
 - Hermes Agent entity（V2EX展開加速）
 - Cursor vs Claude Code comparison page
 - Token成本 concept（AI編程コスト構造問題）
+
+## [2026-04-18] triage-07 | ニュースレター定期トリアージ — 2件更新、4件新規作成
+
+Scheduled newsletter triage run (cron). ChinAI #336, #345, #348, #352 の4通を処理。
+
+### メールインボックス状況
+- **Maildir/new/**: 4通のChinAIニュースレター（#336, #345, #348, #352）
+- **Maildir/cur/**: 11通
+- **Maildir/processed/**: 1通（#336）
+- **inbox/newsletters/**: `.md` digestファイルなし、`.eml`ファイル4通
+- **scripts/process_email.py**: 新規URL抽出、記事保存は未実施（メール本文が直接ニュースレター）
+
+### 処理済みニュースレター
+
+| # | タイトル | 日付 | 主要テーマ |
+|---|---------|------|-----------|
+| #336 | MiniMax as China's OpenAI | 2026-01 | MiniMax M1/M2、$100M ARR、資本効率 |
+| #345 | China's AI Super-App Race | 2026-03 | ByteDance/Doubao vs Alibaba/Qwen vs Tencent |
+| #348 | China's Compute Year in Review | 2025-12 | GPU制約、中国半導体動向 |
+| #352 | China's Palantir Wannabes | 2026-04 | MiningLamp、4Paradigm、構造的要因 |
+
+### 新規作成ページ
+| ページ | 種別 | 根拠 |
+|--------|------|------|
+| `entities/doubao.md` | Entity | ChinAI #345、ByteDanceのAIチャット戦略 |
+| `entities/tencent-ai.md` | Entity | ChinAI #345、WeChat×AI統合戦略 |
+| `concepts/china-ai-superapp-race.md` | Concept | ChinAI #345、3Way競争分析 |
+| `concepts/china-palantir.md` | Concept | ChinAI #352、エンタープライズAI分析 |
+
+### 更新ページ
+| ページ | 更新内容 |
+|--------|----------|
+| `entities/minimax.md` | ChinAI #336統合：M1/M2モデル、$100M ARR、資本効率分析、OpenAI比較 |
+| `entities/qwen.md` | ChinAI #345追加：AIスーパーアプリ競争、Alibabaのフルスタック戦略、3Way比較表 |
+| `wiki/index.md` | 新4ページ追加、統計更新 |
+| `wiki/log.md` | 本トリアージ記録追加 |
+
+### Wiki統計
+- **Entity Pages**: 14（+2: doubao, tencent-ai）
+- **Concept Pages**: 14（+2: china-ai-superapp-race, china-palantir）
+- **Comparison Pages**: 0
+- **Total Pages**: 28（+4）
+- **Last Updated**: 2026-04-18
+
+### 次回対応候補
+- ChinAI #348（Compute Year in Review）の概念ページ化
+- MiniMax vs Moonshot/Kimi 比較ページ
+- 中国半導体/GPU制限 concept（H20、制裁影響）
+- Llama/Meta entity（8言及継続）
+- 文心一言/Baidu entity（6言及継続）
