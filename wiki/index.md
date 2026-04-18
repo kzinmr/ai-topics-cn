@@ -3,7 +3,7 @@
 中国語圏のLLM/AI Agent技術議論を追跡するナレッジベース。
 V2EX、掘金(Juejin)、36氪、知乎、微信公众号（机器之心、PaperWeekly、新智元）から収集・キュレーション。
 
-Last updated: 2026-04-18 | Total pages: 24
+Last updated: 2026-04-18 | Total pages: 36
 
 ## Entity Pages
 
@@ -21,6 +21,20 @@ Last updated: 2026-04-18 | Total pages: 24
 | [[qwen]] | Qwen（通义千问）— 阿里云オープンソースLLM | llm, model, china, alibaba |
 | [[gemini-google]] | Gemini/Google — Google AI基盤モデルとGemma | llm, model, google, gemini, gemma |
 | [[doubao-bytedance]] | 豆包/ByteDance（Doubao）— 字節跳動のAIモデル・コーディング | llm, model, china, coding-agents, bytedance | **NEW**
+
+
+| [[cambricon]] | Cambricon (寒武纪) — 中国AIチップ首位企業（6,300億元） | company, ai-chip, china | **NEW**
+| [[moore-threads]] | Moore Threads (摩尔线程) — 中国国産GPU首位（3,100億元） | company, ai-chip, gpu, china | **NEW**
+| [[metax]] | MetaX (沐曦) — 中国高端GPU企業（2,500億元） | company, ai-chip, gpu, china | **NEW**
+| [[horizon-robotics]] | Horizon Robotics (地平线) — 自動運転AIチップ企業 | company, ai-chip, autonomous-driving, china | **NEW**
+| [[biren-technology]] | Biren Technology (壁仞科技) — GPUスタートアップ | company, gpu, ai-chip, china | **NEW**
+| [[sensetime]] | SenseTime (商汤) — コンピュータビジョンAI最大手 | company, computer-vision, llm, china | **NEW**
+| [[iflytek]] | iFlytek (科大讯飞) — 音声認識AI最大手 | company, voice, llm, china | **NEW**
+| [[minimax]] | MiniMax (稀宇科技) — マルチモーダル生成AI | company, multimodal, llm, china | **NEW**
+| [[baichuan-ai]] | Baichuan AI (百川智能) — 大モデルLLMスタートアップ | company, llm, china, startup | **NEW**
+| [[stepfun]] | StepFun (阶跃星辰) — 大モデルLLMスタートアップ | company, llm, china, startup | **NEW**
+| [[verisilicon]] | VeriSilicon (芯原股份) — 半導体IP企業 | company, semiconductor, ai-chip, china | **NEW**
+| [[rockchip]] | Rockchip (瑞芯微) — AIoT SoC企業 | company, soc, ai-chip, china | **NEW**
 
 ## Concept Pages
 

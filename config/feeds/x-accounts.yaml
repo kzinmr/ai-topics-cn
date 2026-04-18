@@ -17,4 +17,303 @@ accounts:
   - ai
   - llm
   - china-ai
-  notes: AI researcher/commentator, Chinese AI ecosystem insights
+  notes: AI research/commentator, Chinese AI ecosystem insights
+- handle: '@zephyr_z9'
+  name: Zephyr
+  topics:
+  - ai
+  - semiconductor
+  - ai-infra
+  - china
+  - stocks
+  notes: Tech/AI/semiconductor analyst, cited by TrendForce & Notebookcheck for China EUV intel
+- handle: '@jukan05'
+  name: Jukan
+  topics:
+  - semiconductor
+  - ai-infra
+  - memory
+  - hbm
+  - dram
+  notes: Citrini Research semiconductor analyst, 80K+ followers, memory cycle specialist
+- handle: '@aleabitoreddit'
+  name: Serenity
+  topics:
+  - stocks
+  - semiconductor
+  - materials
+  - ai-infra
+  - finance
+  notes: Ex-WSB trader, ex-RISC-V ISA committee, ex-AI research scientist, 100K+ followers
+- handle: '@bboczeng'
+  name: 勃勃OC
+  topics:
+  - stocks
+  - china
+  - finance
+  - commentary
+  notes: Chinese US-stock commentator, runs boist.org daily market analysis
+- handle: '@arronwei3n'
+  name: Aaron
+  topics:
+  - semiconductor
+  - ai-infra
+  - taiwan
+  - tsmc
+  - stocks
+  notes: Taiwan-based semiconductor analyst. Covers TSMC packaging (CoWoS/CoPoS), Tesla AI chips, Google TPU
+- handle: '@fxtrader'
+  name: 外汇交易员
+  topics:
+  - forex
+  - macro
+  - geopolitics
+  - china
+  - stocks
+  notes: Chinese FX trader. Real-time macro news, geopolitics, policy changes, market-moving events
+- handle: '@haohong_cfa'
+  name: 洪灝 (Hao Hong)
+  topics:
+  - economics
+  - china
+  - stocks
+  - commodities
+  - macro
+  notes: CIO at Lotus Asset Mgmt. 3x Economist of the Year. China macro, HK stocks, commodities strategy
+- handle: '@svwang1'
+  name: 硅谷王川 (Chuan)
+  topics:
+  - trading
+  - philosophy
+  - investment
+  - psychology
+  notes: Silicon Valley-based investor. Taoist market philosophy, trading principles, high engagement
+- handle: '@_forab'
+  name: AB Kuai.Dong (快抖)
+  topics:
+  - web3
+  - crypto
+  - ai
+  - japan-relocation
+  - ai-agents
+  notes: Tokyo-based Web3/AI commentator. Ex-BlockBeats, Reddio APAC, Skyland Ventures. Day1Global podcast host. Covers AI+Web3 convergence, creator economy, Japan tech migration.
+- handle: '@ruanyf'
+  name: 阮一峰 (Ruan Yifeng)
+  topics:
+  - frontend
+  - open-source
+  - education
+  - ai-tools
+  - developer-tools
+  notes: China's most influential tech blogger. 科技爱好者周刊 curator. Covers AI code generation, developer tools (Claude Code, SWE-rebench), knowledge economy shifts. High educational impact.
+- handle: '@plantegg'
+  name: plantegg (成都下水道)
+  topics:
+  - dba
+  - ai-agent
+  - alibaba
+  - tech-culture
+  - ai-hiring
+  notes: Ex-Alibaba DBA (10 years). Builds AI-powered DBA agents with Claude. Experiments with AI in hiring. Critical analyst of Chinese tech company culture. Blends tech and social commentary.
+- handle: '@yuxiyou'
+  name: 尤雨溪 (Evan You)
+  topics:
+  - frontend
+  - vue.js
+  - open-source
+  - ai-development
+  - developer-tools
+  notes: Creator of Vue.js. Pioneering AI-assisted framework development. Shares practical insights on using Claude/GPT for complex code tasks. Developing @voidzerodev project. High technical authority.
+- handle: '@zenmoore1'
+  name: Zekun Wang (ZenMoore)
+  topics:
+  - llm
+  - mllm
+  - genai
+  - reinforcement-learning
+  - video-generation
+  notes: LLM/MLLM/GenAI researcher @Kling_ai Beijing. Tree of Thoughts & CoALA co-author. Born 1999.
+- handle: '@danielhanchen'
+  name: Daniel Han
+  topics:
+  - llm
+  - fine-tuning
+  - open-source-ai
+  - quantization
+  - gpu-optimization
+  - unsloth
+  notes: Founder & CEO @UnslothAI. YC S24. Ex-NVIDIA ML. Making fine-tuning accessible with 10GB VRAM. 31.9K followers.
+- handle: '@winglian'
+  name: Wing Lian (caseus)
+  topics:
+  - open-source-ai
+  - axolotl
+  - dflash
+  - agent-frameworks
+  - llm
+  - gpu-optimization
+  notes: @axolotl_ai OSS maintainer & founder. ARC Agent Remote Control, DFlash developer. Permissive open source advocate. 10.7K followers.
+- handle: '@shunyuyao12'
+  name: Shunyu Yao
+  topics:
+  - language-agents
+  - tree-of-thoughts
+  - llm
+  - ai-research
+  notes: Language agents researcher. τ-bench, CoALA, Tree of Thoughts. CUA/Operator at Google DeepMind. USC ISI speaker. 25.5K followers.
+- handle: '@huybery'
+  name: Binyuan Hui
+  topics:
+  - llm
+  - qwen
+  - alibaba
+  - china-ai
+  notes: Former Alibaba Qwen team member. Key contributor to Qwen1.5 and Qwen3.5 releases. Announced departure from Qwen in 2026. 43.9K followers.
+- handle: '@justinlin610'
+  name: Junyang Lin (林俊洋)
+  topics:
+  - llm
+  - qwen
+  - alibaba
+  - china-ai
+  - model-evaluation
+  - reasoning
+  notes: Lead researcher on Qwen series at Alibaba. Announced stepping down from Qwen in early 2026. Active in reasoning model discussions and agent perf evaluation. 86.4K followers.
+- handle: '@hwchung27'
+  name: Hyung Won Chung (정형원)
+  topics:
+  - ai-research
+  - world-modeling
+  - meta
+  - openai
+  - google-brain
+  - ai-leverage
+  notes: AI Research Scientist at Meta Superintelligence Labs. Past: OpenAI, Google Brain, MIT PhD. Lectures at Stanford CS 25 and Cornell on AI leverage and reasoning. 38.2K followers.
+- handle: '@drjimfan'
+  name: Jim Fan (范晨晨)
+  topics:
+  - robotics
+  - physical-agi
+  - nvidia
+  - world-models
+  - humanoid-robots
+  - open-source
+  - stanford
+  notes: NVIDIA Director of Robotics & Distinguished Scientist. Co-Lead GEAR lab. Stanford PhD, OpenAI's 1st intern. Projects: CaP-X, DreamDojo, SONIC, EgoScale. 387K followers.
+- handle: '@lilianweng'
+  name: Lilian Weng (汪梦涵)
+  topics:
+  - ai-safety
+  - ai-agents
+  - llm
+  - alignment
+  - research
+  - robotics
+  notes: Co-founder Thinking Machines Lab. Ex-VP AI Safety & Robotics at OpenAI. Pioneered "Agent = LLM + memory + planning + tool use" framework. Ex-OpenAI board member.
+- handle: '@chipro'
+  name: Chip Huyen
+  topics:
+  - ml-education
+  - open-source
+  - ai-tools
+  - context-engineering
+  - industry-analysis
+  notes: ML educator and author. Built platform tracking 14K+ open source AI repos, 145K+ developers. Writes about AI hiring, automation, and industry trends.
+- handle: '@scottwu46'
+  name: Scott Wu
+  topics:
+  - ai-coding
+  - ai-agents
+  - dev-tools
+  - startup
+  - cognition
+  - math-olympiad
+  notes: Founder/CEO Cognition AI (Devin). Math Olympiad background. Connected to Perplexity, Pika founders. Focus on agent-native development and AI security.
+- handle: '@_jasonwei'
+  name: Jason Wei
+  topics:
+  - chain-of-thought
+  - llm-reasoning
+  - ai-research
+  - google-brain
+  - research-methodology
+  notes: Co-author of Chain-of-Thought reasoning. Ex-Google Brain (2020-2023), 10K+ citations. Left as field shifted from "publish or perish" to "publish and perish." Now building AI stack at new venture.
+- handle: '@ekzhang1'
+  name: Eric Zhang
+  topics:
+  - computer-systems
+  - ai-infrastructure
+  - oss-ai
+  - gpu-economics
+  - real-time-collaboration
+  - interaction-design
+  notes: Co-founder Thinking Machines Lab, ex-founding engineer @ Modal Labs. Deep OSS AI infra expertise (sglang/vllm). Computer systems & interaction design. 20.9K followers.
+- handle: '@eugeneyan'
+  name: Eugene Yan
+  topics:
+  - ml-engineering
+  - ai-coding-workflows
+  - rag-search
+  - applied-research
+  - mlops
+  - industry-papers
+  notes: @AnthropicAI. Ex-Principal Applied Scientist @ Amazon, led ML @ Alibaba, Healthtech. 500+ industry papers repository. AI coding workflow pioneer. 26.2K followers.
+- handle: '@jxnlco'
+  name: Jason Liu
+  topics:
+  - ai-development
+  - ai-investment
+  - tool-experimentation
+  - trading
+  - health-ai
+  - a16z
+  notes: @openai developer, @a16z scout. Experiments with AI tools in finance/trading. Very active (34.5K posts). Focus on practical AI applications. 54.7K followers.
+- handle: '@infwinston'
+  name: Wei-Lin Chiang
+  topics:
+  - llm-evaluation
+  - chatbot-arena
+  - ai-research
+  - prompt-engineering
+  - uc-berkeley
+  - human-preference
+  notes: Building @Arena (Chatbot Arena), PhD AI & Systems @ UC Berkeley. Created Prompt-to-Leaderboard system trained on 2M human preference votes. LLM evaluation methodology specialist. 5.2K followers.
+- handle: '@hitw93'
+  name: Tw93
+  topics:
+  - ai-coding
+  - developer-tools
+  - open-source
+  - ai-agents
+  - claude-code
+  notes: Creator of Kaku, Mole, Pake, MiaoYan. Active in AI coding agent workflows, Waza skill design series. 137.5K followers.
+- handle: '@waylybaye'
+  name: Baye
+  topics:
+  - indie-dev
+  - ai-tools
+  - developer-tools
+  - consumer-ai
+  - remote-work
+  notes: Independent developer making a living selling apps. Creator of 熊猫吃短信 (Panda SMS), ServerCat, OpenCat, Miley. Traveling the world while building products. Critical AI consumer perspective. 156.8K followers.
+- handle: '@manjusaka_lee'
+  name: NadeshikoManju (Manjusaka)
+  topics:
+  - python
+  - devops
+  - kubernetes
+  - containerd
+  - open-source
+  - cloud-infra
+  - photography-tools
+  notes: Python/Java developer, PyCon China organizer, @pythonhunter__ co-founder, containerd CTL maintainer. Creator of PicImpact, Mega (Google Piper OSS implementation), kubekey. Critical analyst of cloud infra EOL policies. 36.2K followers.
+- handle: '@disksing'
+  name: 象牙山刘能
+  topics:
+  - commentary
+  - tech-culture
+  - ai
+  - chinese-tech
+  - social-media
+  - audio-journalism
+  notes: Parody/comedy account with serious audio journalism work. "Send a voice recorder when others are in the rain." Backup account: @shadiaofriend. High engagement with 45K followers.

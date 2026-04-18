@@ -1,0 +1,191 @@
+accounts:
+- handle: '@karminski3'
+  name: karminski-牙医/張旭紅
+  wiki: karminski.md
+  category: entrepreneur-researcher
+  followers: 36.2K
+  focus:
+  - hardware+LLM intersection
+  - open-source hardware
+  - KCORES LLM Arena
+  - VRAM tier lists
+  - benchmarking
+  projects:
+  - KCORES
+  - AlphaArea
+  - vector-db-bench
+  - OCR SOTA
+  notable: KCORES co-founder, ex-IllaSoft/KingsoftOffice/Juejin director
+  affiliation: KCORES
+  language: Chinese/English
+- handle: '@teortaxesTex'
+  name: Teortaxes
+  wiki: teortaxes.md
+  category: researcher-commentator
+  followers: 59.7K
+  focus:
+  - DeepSeek advocacy
+  - open-source AI
+  - MoE architectures
+  - matrix multiplication optimizations
+  projects:
+  - DeepSeek analysis
+  notable: DeepSeek superfan since 2023, technical analysis with "rant" style commentary
+  affiliation: Independent
+  language: Chinese/English
+- handle: '@fi56622380'
+  name: fin
+  wiki: fin.md
+  category: analyst
+  followers: 22.7K
+  focus:
+  - Arm vs RISC-V licensing
+  - AI infrastructure
+  - ASIC/CPX/LPU
+  - mobile shipment forecasts
+  projects:
+  - semiconductor analysis
+  notable: Hardware/semiconductor analyst focusing on AI infrastructure
+  affiliation: Independent analyst
+  language: Chinese/English
+- handle: '@lidangzzz'
+  name: 立党
+  wiki: lidang.md
+  category: commentator
+  followers: 86.2K
+  focus:
+  - Chinese tech commentary
+  - AI models
+  - real estate analysis
+  - economic trends
+  projects:
+  - tech criticism
+  notable: '"全网劝人卖房、劝人学CS、劝人等着买OpenAI和Anthropic第一人"'
+  affiliation: Independent commentator
+  language: Chinese/English
+- handle: '@jiayuan_jy'
+  name: Jiayuan (JY) Zhang
+  wiki: jiayuan_jy.md
+  category: entrepreneur
+  followers: 108K
+  focus:
+  - AI Agent platforms
+  - developer tools
+  - open-source AI
+  - managed agents
+  projects:
+  - Multica (multica-ai/multica)
+  - devv.ai
+  - Copilot Hub
+  notable: Founder & CEO of devv.ai (AI search engine), building Multica (open-source managed agents platform, 15.5k GitHub stars)
+  affiliation: Ex-TikTok US, Shanghai-based startup
+  language: Chinese/English
+- handle: '@sivil_taram'
+  name: Qian Liu
+  wiki: sivil_taram.md
+  category: researcher-engineer
+  followers: 4.9K
+  focus:
+  - GPU kernel optimization
+  - RL for code generation
+  - AI systems
+  projects:
+  - Dr. Kernel
+  notable: xAI coder working on GPU kernel optimization and reinforcement learning
+  affiliation: xAI (current), previously TikTok AI research and Sea AI Lab
+  language: Chinese/English
+- handle: '@shizhediao'
+  name: Shizhe Diao
+  wiki: shizhediao.md
+  category: researcher
+  followers: 6.5K
+  focus:
+  - LLM post-training
+  - agentic RL
+  - model optimization
+  - SSM architectures
+  projects:
+  - LMFlow
+  - Nemotron 3 Super
+  - ProRL Agent
+  - R-Tuning
+  - Nemotron-CLIMBMix
+  - Golden Goose
+  notable: Senior Research Scientist at NVIDIA, PhD from HKUST under Tong Zhang
+  affiliation: NVIDIA Research (Learning and Perception Research Group)
+  language: Chinese/English
+- handle: '@qx_dong'
+  name: Qingxiu Dong
+  wiki: qx_dong.md
+  category: researcher
+  followers: 2.5K
+  focus:
+  - Reinforcement Learning
+  - In-context Learning
+  - LLM pre-training
+  - multimodal reasoning
+  projects:
+  - Reinforcement Pre-Training
+  - In-context Learning Survey
+  notable: PhD student at Peking University, published survey on in-context learning
+  affiliation: Peking University (PhD), previously Microsoft Research Asia (intern)
+  language: Chinese/English
+- handle: '@handotdev'
+  name: Han Wang
+  wiki: handotdev.md
+  category: entrepreneur
+  followers: 9.6K
+  focus:
+  - developer documentation
+  - AI knowledge platforms
+  - MDX documentation tools
+  - startup growth
+  projects:
+  - Mintlify
+  notable: Co-founder of Mintlify (AI docs platform, $45M Series B at $500M valuation led by a16z/SalesforceVC, powers docs for 20K+ companies)
+  affiliation: Mintlify (ex-Meta, ex-Cornell)
+  language: English
+- handle: '@itsyuhao'
+  name: Yuhao Yang
+  wiki: itsyuhao.md
+  category: researcher-engineer
+  followers: 1.6K
+  focus:
+  - CLI/Computer-Use agents
+  - agent-native software
+  - graph language models
+  - autonomous trading agents
+  projects:
+  - CLI-Anything (31.3k stars)
+  - AI-Trader (13.5k stars)
+  - ClawWork (8k stars)
+  - Aria-UI (402 stars)
+  - GraphGPT (828 stars)
+  notable: HKU CS PhD student, creator of CLI-Anything and AI-Trader, previously at Aria/Rhymes AI, 01.AI, Tencent/WeChat
+  affiliation: HKU Data Science (PhD)
+  language: Chinese/English
+- handle: '@songjunkr'
+  name: 송준 Jun Song
+  wiki: songjunkr.md
+  category: researcher-engineer
+  followers: 5.5K
+  focus:
+  - Local LLM fine-tuning
+  - MLX optimization
+  - GGUF quantization
+  - unrefused models
+  - agent infrastructure
+  projects:
+  - Super-Tune
+  notable: Local LLM specialist, gemma4-26b fine-tuning (0/100 refusal, 90% faster prompt processing), MLX/Mac optimization advocate
+  affiliation: Independent (Seoul, South Korea)
+  language: Korean/English
+total_tracked: 11
+last_updated: '2026-04-18'
+sources:
+- Yahoo Search (site:x.com/HANDLE)
+- X/Twitter profiles
+- GitHub
+- Google Scholar
+- Personal websites
+workflow: 1) crawl_all.py → 2) trending_topics.py --days 3 → 3) triage inbox → 4) update wiki

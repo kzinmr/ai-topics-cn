@@ -1,7 +1,7 @@
 ---
 title: "Karminski (karminski-牙医)"
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-18
 tags: [person, china, llm, open-source-ai, tooling]
 aliases: ["karminski3", "karminski-牙医", "張旭紅", "AlphaArea"]
 source_lang: zh-CN
@@ -92,6 +92,32 @@ source_lang: zh-CN
 - AI、LLM、オープンソースハードウェアに関する議論の場
 - 中国語圏の技術コミュニティとして機能
 
+## 最近のポスト（2026年）
+
+### PaddleOCR-VL: CVPR 2026入选
+> "开年就入选CVPR, 0.9B小模型如何拿下OCR SOTA? ... 这次 Paddle 团队入选的一篇《PaddleOCR-VL: Boosting Document Parsing Efficiency and Performance with Coarse-to-Fine Visual Processing》,思路非常棒"
+
+- OmniDocBench v1.5で0.9Bパラメータ+2.5K视觉トークンで92.62の総合スコアを達成
+- テキスト/数式/表/読み取りの各カテゴリで高精度
+
+### vector-db-bench: LLMバックエンドコード能力テスト
+> "主流大模型都跑完了，给大家正式带来大模型后端代码能力测试——vector-db-bench!"
+
+- LLMがベクトルデータベース実装を書く能力をベンチマーク
+- perf打火焰図をLLMに自動生成させるAgentを実装
+- Gemini 3.1 Proの性能劣化を指摘: "gemini-3.1-pro performs significantly worse than gemini-3.0-pro"
+- Gemini 3.1 ProはAgentタスクを早期に終了させる傾向がある
+
+### MiMo-V2シリーズ分析
+> "MiMo-V2-Pro の Agent 能力相比 MiMo-V2-Flash 提升主要体现在面向日..."
+
+- MiMo-V2-Omniはオフィスシーン向け最適化
+- Word、スプレッドシート、PPT生成を「ほぼ最終稿レベル」で実行
+- 2026年高考志願智能填报デモを作成
+
+### M2.7 オープンウェイト予告
+> "M2.7 open weights coming in ~2 weeks. still actively iterating just updated a new version on yesterday — noticeably better on OpenClaw."
+
 ## 投稿スタイル・特徴
 
 - 技術的な詳細を重視した実用的なコンテンツ
@@ -99,6 +125,7 @@ source_lang: zh-CN
 - オープンソース/ハードウェア愛好家コミュニティ（"垃圾佬"＝ジャンクPC愛好家）との接点
 - 中国語圏の開発者視点からのAIエコシステム評論
 - BilibiliやYouTubeでの動画コンテンツも制作
+- ベンチマーク主導: 自らテスト環境を構築し定量比較
 
 ## 関連ページ
 

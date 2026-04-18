@@ -1,7 +1,7 @@
 ---
 title: "Teortaxes"
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-18
 tags: [person, china, llm, deepseek, open-source-ai]
 aliases: ["teortaxesTex", "Teortaxes"]
 source_lang: en
@@ -62,16 +62,31 @@ source_lang: en
 - オープン開発の重要性を強調
 - 「It's not USA vs China but humans and AGIs vs ape power centralization」
 
-## 最近のポスト（2026年）
+## 最近のポスト（2026年4月更新）
 
 ### DeepSeek V4 リリース予測
 - 2026年3月4日頃にV4（少なくとも1バージョン）が正式発表・リリースされると予測
 - 「Wednesday, March 4th 2026, I think is when V4 (at least one version) is officially announced and released」
+- 清明節（4月5日）前のリリースパターンを指摘: "DeepSeek tends to schedule major releases before Chinese public holidays, on Monday or Wednesday"
 
 ### AIME 2026 評価
 - 新モデルがAIME 2026で53分でfailedしたことを指摘
 - 「instant failed AIME 2026 in 53 minutes... But Step 3.5, GLM-5.1, Qwen 397B, can solve it. So, pretty disappointing」
 - 「I repeat that Instant often thinks more than Expert. It's the same model」
+- DeepSeek-v3.2-Exp (Think) の成功も確認: "in fairness, DeepSeek-v3.2-Exp (Think) had one success too"
+
+### DeepSeek V4-Lite デプロイ（2026年2月）
+- 2月11日（水曜日）、春節4日前にV4-liteをデプロイ
+- 「V4-lite was deployed on Feb 11, Wednesday, 4 days before Spring Festival」
+
+### DeepSeek Mode Capability Gain（2026年3月）
+- 「Oh, the first definite Capability Gain after the Great Whale Outage of March 2026. They're switched back DeepSeek Mode and enhanced it. It's active by default, responsive to strategy tips, reads a ton, and it details web searches. This is neat.」
+- 2026年3月の大規模障害後の機能回復と強化を観測
+
+### GPT-Image-2 と DeepSeek-V4 CodeForcesスコア分析
+- DeepSeek-V4のCodeForcesスコア2767ポイントを指摘（Specialeは2701）
+- SWE-Bench V/R: 59.6、LCB: 72.1（V3.2は70と83）
+- 「I suspect this is a GPT-Image-2 slop flex」—AI生成画像の信頼性に疑問
 
 ### 中国LLMエコシステム分析
 - インドがNvidiaのNemotronスタックとDeepSeek-MoEデザインを再利用して最新のLLMを作成した方法を解説
