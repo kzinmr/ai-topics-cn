@@ -270,3 +270,75 @@ Originating conversation: scheduled triage run
 - 規制/コンプライアンス concept（5言及）
 - Cursor vs Claude Code comparison page
 - Hermes Agent entity page（新興トレンド）
+
+## [2026-04-18] triage-06 | 第6回トリアージ — 2ページ新規作成、3ページ更新
+
+Scheduled triage run.
+
+### インボックス状況
+- **inbox/v2ex/**: 20件（04-18クロール分）、累計約260件
+- **inbox/juejin/**: 20件（04-18クロール分）、累計約170件
+- **inbox/36kr/**: 12件（04-17/18分）、累計約90件
+- **inbox/wechat/**: 12件蓄積
+- **inbox/zhihu/**: 0件（403継続）
+- **daily-digest**: 04-17, 04-18の2件追加（計4件）
+- **新規ファイル数**: 106件（前回トリアージ以降）
+
+### 趋势分析結果（04-18 00:02時点）
+`trending_topics.py --days 3` で28トピック検出。Claude 171件（前回146、+17%）、AI Agent 135件（前回117、+15%）。
+
+| # | トピック | 言及数 | 変化 |
+|---|---------|--------|------|
+| 1 | Claude | 171 | ↑（146→171、+17%） |
+| 2 | AI Agent/智能体 | 135 | ↑（117→135、+15%） |
+| 3 | GPT | 63 | ↑（56→63） |
+| 4 | Anthropic | 62 | ↑（51→62） |
+| 5 | OpenAI | 55 | ↑（46→55） |
+| 6 | Gemini/Google | 35 | ↑（33→35） |
+| 7 | MCP | 31 | ↑（26→31） |
+| 8 | Cursor | 31 | ↑（30→31） |
+| NEW | 豆包/ByteDance | 4 | NEW — ページ新規作成 |
+| NEW | RLHF/対齐 | 5 | NEW |
+
+### 主要イベント
+1. **Opus 4.7全面的否定評価の深化**: 「全網差評」「降智実錘」「桌面版烂爆了」の三重苦。Pro+限定＋7.5x消費のコスト問題も表面化
+2. **Opus 4.7「GPT味」批判**: 量子位「公開モデルのSOTAだがGPT味が濃い」＝個性喪失への不満
+3. **開発者による非推奨表明**: 掘金エンジニアが「Opus 4.7は升级を勧めない」と明言
+4. **Claude Design発表**: V2EXで新プロダクト「Claude Design」の情報
+5. **OpenAI Codex「独立鼠标」**: 完全リストラクチャリング、バックグラウンドで独立実行
+6. **1300億NVIDIA代替**: OpenAIがNVIDIA依存脱却に1300億投資の報道
+7. **Codexサブスク不正問題の激化**: 低価格悪用がOpenAI公式に通報、V2EXで大炎上
+8. **豆包2.0 + Trae無料化**: ByteDanceがDoubao-Seed-2.0をリリース、中国版Trae無料提供
+9. **Agent Skillsエコシステム本格化**: 「万字干貨」ガイド、32 Skills + 8 MCP実践記事
+10. **Hermes Agent中国展開**: V2EXでWindows一鍵部署ガイドが話題
+
+### 新規作成ページ
+| ページ | 種別 | 言及数 | 根拠 |
+|--------|------|--------|------|
+| `entities/doubao-bytedance.md` | Entity | 4 | NEWトレンド、ByteDanceのAI戦略・Trae無料化 |
+| `concepts/agent-skills.md` | Concept | — | Agent概念の細分化、2026年最重要AI技能として浮上 |
+
+### 更新ページ
+| ページ | 更新内容 |
+|--------|----------|
+| `entities/claude-opus-4-7.md` | 04-18追加報道（全面否定深化、Pro+限定7.5x問題、GPT味批判、Claude Design）、トレンド171言及に更新 |
+| `entities/openai.md` | 04-18追加動向（Codex「独立鼠标」再構築、1300億NVIDIA代替、サブスク不正激化、Codexバグ）、トレンド55言及に更新 |
+| `concepts/ai-agent.md` | 04-18更新（Agentエコシステム拡大、Skills新ページリンク、Hermes Agent展開、Open Computer Use、n8n統合） |
+
+### Wiki統計
+- **Entity Pages**: 12（+1）
+- **Concept Pages**: 12（+1）
+- **Comparison Pages**: 0
+- **Total Pages**: 24（+2）
+- **Last Updated**: 2026-04-18
+
+### 次回対応候補
+- Llama/Meta entity（8言及、4ソース横断）
+- MiniMax entity（5言及）
+- 文心一言/Baidu entity（6言及）
+- RLHF/対齐 concept（5言及、NEW）
+- 多模態 concept（4言及、NEW）
+- 規制/コンプライアンス concept（5言及）
+- Hermes Agent entity（V2EX展開加速）
+- Cursor vs Claude Code comparison page
+- Token成本 concept（AI編程コスト構造問題）

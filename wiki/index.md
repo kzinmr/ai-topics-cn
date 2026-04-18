@@ -3,7 +3,7 @@
 中国語圏のLLM/AI Agent技術議論を追跡するナレッジベース。
 V2EX、掘金(Juejin)、36氪、知乎、微信公众号（机器之心、PaperWeekly、新智元）から収集・キュレーション。
 
-Last updated: 2026-04-17 | Total pages: 22
+Last updated: 2026-04-18 | Total pages: 24
 
 ## Entity Pages
 
@@ -20,6 +20,7 @@ Last updated: 2026-04-17 | Total pages: 22
 | [[deepseek]] | DeepSeek — 中国オープンソースLLM企業 | company, llm, china, open-source-ai |
 | [[qwen]] | Qwen（通义千问）— 阿里云オープンソースLLM | llm, model, china, alibaba |
 | [[gemini-google]] | Gemini/Google — Google AI基盤モデルとGemma | llm, model, google, gemini, gemma |
+| [[doubao-bytedance]] | 豆包/ByteDance（Doubao）— 字節跳動のAIモデル・コーディング | llm, model, china, coding-agents, bytedance | **NEW**
 
 ## Concept Pages
 
@@ -36,41 +37,46 @@ Last updated: 2026-04-17 | Total pages: 22
 | [[rag]] | RAG（Retrieval-Augmented Generation）— 検索拡張生成 | concept, architecture, retrieval |
 | [[function-calling]] | Function Calling（関数呼び出し）— LLMと外部API接続 | concept, technique, llm, function-calling |
 | [[vector-db]] | Vector DB（向量数据库）— RAG・AI検索の基盤 | concept, infrastructure, vector-db, rag |
+| [[agent-skills]] | Agent Skills — AIエージェントのモジュール型能力システム | ai-agents, coding-agents, concept, skills | **NEW**
 
 ## Comparison Pages
 
 _(未作成)_
 
-## トレンディング (2026-04-17 12:00更新)
+## トレンディング (2026-04-18 00:02更新)
 
 直近3日間のクロスソース分析（V2EX + 掘金 + 36氪 + WeChat）による注目トピック（**28トピック検出**）:
 
 | # | トピック | 言及数 | 変化 | ソース種別 | Wiki |
 |---|---------|--------|------|-----------|------|
-| 1 | Claude | 146 | ↑(131→146) | 36kr, juejin, v2ex | [[claude-code]] [[claude-opus-4-7]] [[anthropic]] |
-| 2 | AI Agent/智能体 | 117 | ↑↑(92→117) | 36kr, juejin, v2ex, wechat | [[ai-agent]] |
-| 3 | GPT | 56 | ↑(49→56) | 36kr, juejin, v2ex | [[openai]] |
-| 4 | Anthropic | 51 | ↑(41→51) | 36kr, juejin, v2ex | [[anthropic]] |
-| 5 | OpenAI | 46 | ↑(39→46) | 36kr, juejin, v2ex, wechat | [[openai]] |
-| 6 | Gemini/Google | 33 | ↑(30→33) | 36kr, juejin, v2ex | [[gemini-google]] **NEW** |
-| 7 | Cursor | 30 | ↑(28→30) | juejin, v2ex | [[cursor]] |
-| 8 | MCP | 26 | →(26) | 36kr, juejin, v2ex | [[mcp]] |
-| 9 | OpenClaw | 19 | ↑(17→19) | 36kr, juejin, v2ex | [[openclaw]] |
-| 10 | Qwen/通义千问 | 14 | ↑(11→14) | 36kr, juejin, v2ex | [[qwen]] |
-| 11 | RAG | 14 | ↑(12→14) | juejin, v2ex, wechat | [[rag]] |
-| 12 | Kimi/Moonshot | 13 | ↑(12→13) | 36kr, juejin, v2ex | [[kimi-moonshot]] |
-| 13 | Vibe Coding | 12 | ↑(9→12) | juejin, v2ex | [[vibe-coding]] |
-| 14 | ChatGLM/智谱 | 11 | →(11) | juejin, v2ex | [[glm-zhipu]] |
-| 15 | DeepSeek | 11 | ↑(9→11) | 36kr, juejin, v2ex | [[deepseek]] |
-| 16 | Llama/Meta | 8 | ↑(5→8) | 36kr, juejin, v2ex, wechat | — |
-| 17 | AI安全 | 5 | ↑(4→5) | 36kr, v2ex | [[ai-safety-subconscious]] |
-| 18 | 微調/Fine-tuning | 5 | NEW | juejin, v2ex | — |
-| 19 | 文心一言/Baidu | 5 | ↑(4→5) | 36kr, juejin, v2ex | — |
-| 20 | 規制/コンプライアンス | 5 | →(5) | 36kr, v2ex | — |
-| 21 | Function Calling | 4 | NEW | juejin, v2ex | [[function-calling]] **NEW** |
-| 22 | MiniMax | 4 | →(4) | juejin, v2ex | — |
-| 23 | Vector DB | 4 | NEW | juejin, v2ex | [[vector-db]] **NEW** |
-| 24 | オープンソースモデル | 4 | NEW | juejin, v2ex | [[open-source-death]] |
+| 1 | Claude | 171 | ↑(146→171) | 36kr, juejin, v2ex | [[claude-code]] [[claude-opus-4-7]] [[anthropic]] |
+| 2 | AI Agent/智能体 | 135 | ↑↑(117→135) | 36kr, juejin, v2ex, wechat | [[ai-agent]] [[agent-skills]] |
+| 3 | GPT | 63 | ↑(56→63) | 36kr, juejin, v2ex | [[openai]] |
+| 4 | Anthropic | 62 | ↑(51→62) | 36kr, juejin, v2ex | [[anthropic]] |
+| 5 | OpenAI | 55 | ↑(46→55) | 36kr, juejin, v2ex, wechat | [[openai]] |
+| 6 | Gemini/Google | 35 | ↑(33→35) | 36kr, juejin, v2ex | [[gemini-google]] |
+| 7 | Cursor | 31 | ↑(30→31) | juejin, v2ex | [[cursor]] |
+| 8 | MCP | 31 | ↑(26→31) | 36kr, juejin, v2ex | [[mcp]] |
+| 9 | OpenClaw | 20 | ↑(19→20) | 36kr, juejin, v2ex | [[openclaw]] |
+| 10 | Kimi/Moonshot | 16 | ↑(13→16) | 36kr, juejin, v2ex | [[kimi-moonshot]] |
+| 11 | Qwen/通义千问 | 15 | ↑(14→15) | 36kr, juejin, v2ex | [[qwen]] |
+| 12 | RAG | 15 | ↑(14→15) | juejin, v2ex, wechat | [[rag]] |
+| 13 | Vibe Coding | 13 | ↑(12→13) | juejin, v2ex | [[vibe-coding]] |
+| 14 | ChatGLM/智谱 | 12 | ↑(11→12) | juejin, v2ex | [[glm-zhipu]] |
+| 15 | DeepSeek | 11 | →(11) | 36kr, juejin, v2ex | [[deepseek]] |
+| 16 | Llama/Meta | 8 | →(8) | 36kr, juejin, v2ex, wechat | — |
+| 17 | AI安全 | 7 | ↑(5→7) | 36kr, v2ex | [[ai-safety-subconscious]] |
+| 18 | 文心一言/Baidu | 6 | ↑(5→6) | 36kr, juejin, v2ex | — |
+| 19 | Function Calling | 5 | ↑(4→5) | juejin, v2ex | [[function-calling]] |
+| 20 | MiniMax | 5 | ↑(4→5) | juejin, v2ex | — |
+| 21 | RLHF/対齐 | 5 | NEW | v2ex | — |
+| 22 | Vector DB | 5 | ↑(4→5) | juejin, v2ex | [[vector-db]] |
+| 23 | オープンソースモデル | 5 | ↑(4→5) | juejin, v2ex | [[open-source-death]] |
+| 24 | 微調/Fine-tuning | 5 | →(5) | juejin, v2ex | — |
+| 25 | 規制/コンプライアンス | 5 | →(5) | 36kr, v2ex | — |
+| 26 | 多模態 | 4 | NEW | 36kr, juejin | — |
+| 27 | 豆包/ByteDance | 4 | NEW | juejin, v2ex | [[doubao-bytedance]] **NEW** |
+| 28 | 量化/Quantization | 2 | NEW | juejin | — |
 
 ## Source Index
 

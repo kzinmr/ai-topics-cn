@@ -1,7 +1,7 @@
 ---
 title: "AI Agent（智能体）— 中国語圏での議論動向"
 created: 2026-04-15
-updated: 2026-04-17
+updated: 2026-04-18
 tags: [ai-agents, llm, concept, china]
 aliases: ["AI Agent", "智能体", "AIエージェント", "Agentic AI"]
 source_lang: zh-CN
@@ -9,10 +9,10 @@ source_lang: zh-CN
 
 # AI Agent（智能体）— 中国語圏での議論動向
 
-> **トレンド順位**: #2（2026-04-17 集計）  
-> **言及数**: 117件（36kr, Juejin, V2EX, WeChat）— 4ソース横断  
+> **トレンド順位**: #2（2026-04-18 集計）  
+> **言及数**: 135件（36kr, Juejin, V2EX, WeChat）— 4ソース横断  
 > **注目度**: 🔥🔥🔥🔥🔥  
-> **推移**: 21件(04-15) → 80件(04-16) → 92件(04-17a) → **117件**(04-17b)
+> **推移**: 21件(04-15) → 80件(04-16) → 92件(04-17a) → 117件(04-17b) → **135件(04-18)**
 
 ## 概要
 
@@ -151,6 +151,49 @@ Juejin では「推荐几个牛逼的 AI Agent 项目（おすすめの凄い AI
 - 30分のAgentセッションで大量のコンテキスト窓を消費する問題
 - Source: [Token成本失控](https://juejin.cn/post/7629598336643366958) (T1: juejin)
 
+## 04-18更新 — Agentエコシステムの拡大（2026-04-18）
+
+前回（04-17b）117言及から**135言及**へ増加（**+15%**）。4ソース横断（Juejin, V2EX, 36kr, WeChat）を維持しつつ、議論の重心が「Agent とは何か」という定義論から、**Skills エコシステム・デプロイメント・実用ワークフロー**へと明確にシフトしている。
+
+> **言及数推移**: 21件(04-15) → 80件(04-16) → 92件(04-17a) → 117件(04-17b) → **135件(04-18)**
+
+### Agent Skills エコシステムの本格化
+
+「万字干货！Agent Skills从入门到精通」（沃垠AI）が掘金で大きな反響を得ており、**「2026年最值得学习的AI技能是Skills（2026年に最も学ぶ価値のあるAI技能はSkillsだ）」**と明確に宣言している[^10]。前回更新で指摘した Skills の体系化トレンドがさらに加速し、独立した概念ページとして切り出す規模に達した。
+
+→ 詳細は [[agent-skills]] を参照
+
+### Hermes Agent（Nous Research）の中国語圏への浸透
+
+Nous Research がオープンソースで公開した **Hermes Agent** が、中国語圏で急速に注目を集めている。
+
+- Juejin で「一天一个开源项目（第75篇）」シリーズとして紹介され、**自己進化型 AI Agent（自我进化 AI Agent）**として位置づけられた[^11]
+- V2EX では「Windows 一键部署 Hermes AI Agent」と題したデプロイガイドが複数投稿され、**個人開発者によるローカルデプロイメント**のハードルが急速に下がっている
+- 前回更新の「Hermes vs OpenClaw」論争と合わせ、オープンソース Agent フレームワークの選択肢として定着しつつある
+
+### Open Computer Use — オープンソース Computer Agent
+
+V2EX で「开源 Open Computer Use」が共有された[^12]。デスクトップ操作を自律的に実行するコンピュータエージェントのオープンソース実装であり、Anthropic の Computer Use やOpenAI の Operator に対するオープンソース代替として議論されている。端侧 Agent（端末側エージェント）の流れと合流し、**GUI 操作の自動化**が Agent の主要ユースケースとして確立しつつある。
+
+### n8n ワークフロー × Agent の統合
+
+「n8n工作流：一键把复杂知识变成小红书科普卡片（n8nワークフロー：ワンクリックで複雑な知識を小紅書の科普カードに変換）」が掘金で紹介された[^13]。ノーコード/ローコードのワークフロー自動化ツール n8n と Agent を組み合わせ、コンテンツ生成パイプラインを構築する実践例である。Agent が単体ツールから**ワークフロー・オーケストレーションの構成要素**へと進化している傾向を示す。
+
+### AI時代のキラーアプリ議論
+
+V2EX で「什么会成为 AI 时代的杀手级应用？（AI時代のキラーアプリは何になるか？）」というスレッドが立ち[^14]、Agent 関連の議論が展開されている。単一の「キラーアプリ」ではなく、**Agent を基盤としたエコシステム全体**が次世代のプラットフォームになるという見方が主流であり、Skills・Harness・MCP といった本ページで追跡してきた概念群がそのまま議論のフレームワークとして参照されている点が注目に値する。
+
+### 04-18 時点の傾向まとめ
+
+| 傾向 | 04-17b | 04-18 | 変化 |
+|------|--------|-------|------|
+| 総言及数 | 117 | 135 | +15% |
+| 定義・概念論 | 主流 | 継続 | 新規参入者向け記事が持続 |
+| Skills エコシステム | 萌芽 | **本格化** | 独立概念ページ化 |
+| デプロイメント実践 | 散発 | **急増** | Hermes Agent 中心 |
+| ワークフロー統合 | — | **新出** | n8n 等との連携事例 |
+| Computer Agent | 端侧Agent言及 | **OSS実装共有** | Open Computer Use |
+
 ## 関連リンク
 
 ### 内部リンク
@@ -161,6 +204,8 @@ Juejin では「推荐几个牛逼的 AI Agent 项目（おすすめの凄い AI
 - [[harness-engineering]] — Harness 設計論
 - [[function-calling]] — Agentの基盤メカニズム
 - [[openclaw]] — OpenClaw Agentフレームワーク
+- [[agent-skills]] — Agent Skillsエコシステム
+- [[hermes-agent]] — Nous Research の自己進化型 Agent
 - [[vector-db]] — Agentの長期記憶ストア
 
 ### 外部ソース（中国語）
@@ -176,6 +221,11 @@ Juejin では「推荐几个牛逼的 AI Agent 项目（おすすめの凄い AI
 | 7 | Agent 用于 AI 编程（GLM-5.1 実践） | Juejin（掘金） | Tier-2 技術コミュニティ | https://juejin.cn/post/7627818680535957556 |
 | 8 | 端侧 Agent（Zero-Copy スクリーン知覚） | Juejin（掘金） | Tier-2 技術コミュニティ | — |
 | 9 | RAG + Agent 実践（Chat2Report） | V2EX | Tier-2 技術フォーラム | — |
+| 10 | 万字干货！Agent Skills从入门到精通 | Juejin（掘金） | Tier-2 技術コミュニティ | https://juejin.cn/post/7628903339975540763 |
+| 11 | 一天一个开源项目（第75篇）：Hermes Agent | Juejin（掘金） | Tier-2 技術コミュニティ | https://juejin.cn/post/7629561452530237459 |
+| 12 | 开源 Open Computer Use | V2EX | Tier-2 技術フォーラム | https://www.v2ex.com/t/1206760 |
+| 13 | n8n工作流：复杂知识→小红书科普カード | Juejin（掘金） | Tier-2 技術コミュニティ | — |
+| 14 | 什么会成为 AI 时代的杀手级应用？ | V2EX | Tier-2 技術フォーラム | https://www.v2ex.com/t/1206768 |
 
 ---
 
@@ -188,3 +238,8 @@ Juejin では「推荐几个牛逼的 AI Agent 项目（おすすめの凄い AI
 [^7]: 「Agent 用于 AI 编程」GLM-5.1 マルチエージェント実践報告. Juejin, 2026. https://juejin.cn/post/7627818680535957556
 [^8]: 端侧 Agent・Zero-Copy スクリーン知覚. Juejin, 2026.
 [^9]: RAG + Agent 実践「Chat2Report」. V2EX, 2026.
+[^10]: 「万字干货！Agent Skills从入门到精通」沃垠AI. Juejin, 2026. https://juejin.cn/post/7628903339975540763
+[^11]: 「一天一个开源项目（第75篇）：Hermes Agent - Nous Research 开源的自我进化 AI Agent」 Juejin, 2026. https://juejin.cn/post/7629561452530237459
+[^12]: 「开源 Open Computer Use」 V2EX, 2026. https://www.v2ex.com/t/1206760
+[^13]: 「n8n工作流：一键把复杂知识变成小红书科普卡片」 Juejin, 2026.
+[^14]: 「什么会成为 AI 时代的杀手级应用？」 V2EX, 2026. https://www.v2ex.com/t/1206768
