@@ -20,7 +20,7 @@
       "schedule_display": "0 23 * * *",
       "repeat": {
         "times": null,
-        "completed": 0
+        "completed": 1
       },
       "enabled": true,
       "state": "scheduled",
@@ -28,8 +28,8 @@
       "paused_reason": null,
       "created_at": "2026-04-18T04:47:43.962186+00:00",
       "next_run_at": "2026-04-18T23:00:00+00:00",
-      "last_run_at": null,
-      "last_status": null,
+      "last_run_at": "2026-04-18T07:48:30.006467+00:00",
+      "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
       "deliver": "discord:1233771389367095377:1494583846946213938",
@@ -154,10 +154,10 @@
       "script": "wiki_health.py",
       "schedule": {
         "kind": "cron",
-        "expr": "0 0 * * 1",
-        "display": "0 0 * * 1"
+        "expr": "0 0 * * *",
+        "display": "0 0 * * *"
       },
-      "schedule_display": "0 0 * * 1",
+      "schedule_display": "0 0 * * *",
       "repeat": {
         "times": null,
         "completed": 0
@@ -167,7 +167,7 @@
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-04-18T04:48:55.521418+00:00",
-      "next_run_at": "2026-04-20T00:00:00+00:00",
+      "next_run_at": "2026-04-19T00:00:00+00:00",
       "last_run_at": null,
       "last_status": null,
       "last_error": null,
@@ -177,7 +177,7 @@
     },
     {
       "id": "fddc12a242ac",
-      "name": "\u4e2d\u56fdAI Wiki\u591c\u9593\u30ec\u30dd\u30fc\u30c8",
+      "name": "\u4e2d\u56fdAI Wiki\u65e5\u5831",
       "prompt": "\u4e2d\u56fdAI\u30c8\u30d4\u30c3\u30afwiki (/home/exedev/ai-topics-cn/wiki/) \u306e\u524d\u65e5\u306e\u66f4\u65b0\u5185\u5bb9\u3092\u3001AI\u6280\u8853\u8005\u5411\u3051\u306b\u65e5\u672c\u8a9e\u3067\u30ec\u30dd\u30fc\u30c8\u3057\u3066\u304f\u3060\u3055\u3044\u3002\n\n## \u624b\u9806\n\n1. \u524d\u65e5\u306ewiki\u66f4\u65b0\u5c65\u6b74\u3092\u78ba\u8a8d:\n```bash\ncd /home/exedev/ai-topics-cn\ngit log --oneline --since=\"24 hours ago\" -- wiki/\n```\n\n2. \u6700\u65b0\u306etriage\u30b3\u30df\u30c3\u30c8\u306e\u8a73\u7d30\u3092\u53d6\u5f97:\n```bash\n# \u6700\u65b0\u306etriage\u30b3\u30df\u30c3\u30c8\u30cf\u30c3\u30b7\u30e5\u3092\u53d6\u5f97\nCOMMIT=$(git log --oneline --since=\"24 hours ago\" --grep=\"triage\" -- wiki/ | head -1 | cut -d' ' -f1)\nif [ -n \"$COMMIT\" ]; then\n  git show $COMMIT -- wiki/log.md\n  git diff $COMMIT~1 $COMMIT -- wiki/entities/ wiki/concepts/ wiki/comparisons/ --stat\nfi\n```\n\n3. \u65b0\u898f\u4f5c\u6210\u30fb\u66f4\u65b0\u3055\u308c\u305fwiki\u30da\u30fc\u30b8\u306e\u5b9f\u969b\u306e\u30b3\u30f3\u30c6\u30f3\u30c4\u3092\u8aad\u3080:\n```bash\n# \u65b0\u898f\u30da\u30fc\u30b8\u4e00\u89a7\ngit diff --name-status $COMMIT~1 $COMMIT -- wiki/entities/ wiki/concepts/ wiki/comparisons/ | grep \"^A\"\n\n# \u66f4\u65b0\u30da\u30fc\u30b8\u4e00\u89a7  \ngit diff --name-status $COMMIT~1 $COMMIT -- wiki/entities/ wiki/concepts/ wiki/comparisons/ | grep \"^M\"\n```\n\u5404\u30da\u30fc\u30b8\u306eMarkdown\u5185\u5bb9\u3092 `read_file` \u3067\u78ba\u8a8d\u3002\n\n4. wiki/index.md \u3092\u8aad\u307f\u3001\u73fe\u5728\u306ewiki\u5168\u4f53\u306e\u72b6\u614b\u3092\u628a\u63e1:\n```bash\ncat /home/exedev/ai-topics-cn/wiki/index.md\n```\n\n5. wiki/log.md \u306e\u6700\u65b0triage\u8a18\u9332\u3092\u8aad\u307f\u3001\u30c8\u30ec\u30f3\u30c9\u30c8\u30d4\u30c3\u30af\u6570\u3092\u53d6\u5f97:\n```bash\n# \u6700\u65b0triage\u306e\u30c8\u30ec\u30f3\u30c9\u4e0a\u4f4d\u30c8\u30d4\u30c3\u30af\u3092\u78ba\u8a8d\ncat /home/exedev/ai-topics-cn/wiki/log.md | tail -50\n```\n\n6. \u95a2\u9023\u3059\u308binbox\u306edaily-digest\u3082\u78ba\u8a8d\u3057\u3066\u3001\u5143\u8a18\u4e8b\u306e\u6587\u8108\u3092\u628a\u63e1:\n```bash\nls -lt /home/exedev/ai-topics-cn/inbox/daily_digests/ | head -3\ncat /home/exedev/ai-topics-cn/inbox/daily_digests/daily-digest-YYYY-MM-DD.md\n```\n\n## \u51fa\u529b\u30d5\u30a9\u30fc\u30de\u30c3\u30c8\n\n```\n# \ud83d\udcda \u4e2d\u56fdAI Wiki \u591c\u9593\u30ec\u30dd\u30fc\u30c8 \u2014 YYYY-MM-DD\n\n## \ud83c\udd95 \u65b0\u898f\u30da\u30fc\u30b8\n### \u30a8\u30f3\u30c6\u30a3\u30c6\u30a3\n\u2022 **[[\u30da\u30fc\u30b8\u540d]]** \u2014 \u6982\u8981\uff08\u65e5\u672c\u8a9e\uff09\n  \u5143\u8a18\u4e8b: [\u4e2d\u56fd\u8a9e\u30bf\u30a4\u30c8\u30eb](URL) (source: V2EX/Juejin/36Kr)\n\n### \u30b3\u30f3\u30bb\u30d7\u30c8\n\u2022 **[[\u30da\u30fc\u30b8\u540d]]** \u2014 \u6982\u8981\uff08\u65e5\u672c\u8a9e\uff09\n\n## \ud83d\udd04 \u66f4\u65b0\u30da\u30fc\u30b8\n\u2022 **[[\u30da\u30fc\u30b8\u540d]]** \u2014 \u66f4\u65b0\u5185\u5bb9\u306e\u8981\u7d04\uff08\u4f55\u304c\u8ffd\u52a0\u3055\u308c\u305f\u304b\uff09\n  \u30c8\u30ec\u30f3\u30c9: XX \u2192 YY (+Z%)\n\n## \ud83d\udcca \u30c8\u30ec\u30f3\u30c9\u30e9\u30f3\u30ad\u30f3\u30b0\n1. **\u30c8\u30d4\u30c3\u30afA** \u2014 N mentions (+M%)\n2. **\u30c8\u30d4\u30c3\u30afB** \u2014 N mentions\n3. ...\n\n## \ud83d\udd2e \u6b21\u56de\u6ce8\u76ee\u5019\u88dc\n- \u6b21\u306etriage\u3067\u6ce8\u76ee\u3059\u3079\u304d\u30c8\u30d4\u30c3\u30af\u3084\u3001\u672a\u51e6\u7406\u306e\u8a18\u4e8b\u304c\u3042\u308c\u3070\u8a18\u8f09\n\n---\n_\u30ec\u30dd\u30fc\u535c\u671f\u9593: \u524d\u65e5\u306etriage\u7d50\u679c | \u7dcfwiki\u30da\u30fc\u30b8\u6570: N_\n```\n\n## \u30eb\u30fc\u30eb\n- wiki\u30da\u30fc\u30b8\u306e\u5185\u5bb9\u306f**\u65e5\u672c\u8a9e\u3067\u8981\u7d04**\uff08\u5143\u304c\u4e2d\u56fd\u8a9e\u3067\u3082\u65e5\u672c\u8a9e\u3067\u51fa\u529b\uff09\n- \u6280\u8853\u7684\u306a\u89b3\u70b9\u304b\u3089\u91cd\u8981\u306a\u66f4\u65b0\u3092\u512a\u5148\n- \u65b0\u898f\u30da\u30fc\u30b8\u304c\u3042\u308b\u5834\u5408\u306f\u3001\u306a\u305c\u305d\u306e\u30c8\u30d4\u30c3\u30af\u304c\u6ce8\u76ee\u3055\u308c\u3066\u3044\u308b\u304b\u306e\u80cc\u666f\u3082\u7c21\u6f54\u306b\u8a18\u8f09\n- \u30c8\u30c8\u30ec\u30f3\u30c9\u306e\u5897\u6e1b\u304c\u3042\u308c\u3070\u30d1\u30fc\u30bb\u30f3\u30c8\u3082\u8a18\u8f09\n- \u5909\u66f4\u304c\u306a\u3051\u308c\u3070\u300c\u26a0\ufe0f \u672c\u65e5\u306ewiki\u66f4\u65b0: \u7279\u306b\u306a\u3057\u300d\u3068\u3060\u3051\u8fd4\u3059\n- \u4e0d\u8981\u306a\u524d\u7f6e\u304d\u306f\u7701\u7565\u3001**\u7c21\u6f54\u306b\u4e8b\u5b9f\u30d9\u30fc\u30b9**\u3067",
       "skills": [],
       "skill": null,
@@ -187,10 +187,10 @@
       "script": null,
       "schedule": {
         "kind": "cron",
-        "expr": "0 22 * * *",
-        "display": "0 22 * * *"
+        "expr": "0 10 * * *",
+        "display": "0 10 * * *"
       },
-      "schedule_display": "0 22 * * *",
+      "schedule_display": "0 10 * * *",
       "repeat": {
         "times": null,
         "completed": 1
@@ -200,12 +200,12 @@
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-04-18T07:16:47.578216+00:00",
-      "next_run_at": "2026-04-18T22:00:00+00:00",
+      "next_run_at": "2026-04-18T10:00:00+00:00",
       "last_run_at": "2026-04-18T07:18:31.678954+00:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
-      "deliver": "discord:1185093193017065522:1492169660635021415",
+      "deliver": "discord:1233771389367095377:1494583846946213938",
       "origin": {
         "platform": "discord",
         "chat_id": "1494954994968039466",
@@ -214,5 +214,5 @@
       }
     }
   ],
-  "updated_at": "2026-04-18T07:33:57.595475+00:00"
+  "updated_at": "2026-04-18T07:57:10.803128+00:00"
 }

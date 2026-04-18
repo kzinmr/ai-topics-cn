@@ -72,8 +72,9 @@ func (s *Server) HandleDashboard(w http.ResponseWriter, r *http.Request) {
 		{Name: "V2EX", Description: "HN相当 — シニアエンジニア議論"},
 		{Name: "Juejin", Description: "掘金 — Dev.to相当、実践的コード"},
 		{Name: "36kr", Description: "36氪 — テック業界ニュース"},
-		{Name: "Zhihu", Description: "知乎 — 専門家回答"},
 		{Name: "WeChat Media", Description: "微信公众号 — 深層メディア"},
+		{Name: "Newsletters", Description: "メール購読 — AIニュースレター"},
+		{Name: "RSS-Scans", Description: "RSS/Atomフィード — テックブログ"},
 	}
 
 	// Count files in each inbox
@@ -201,7 +202,12 @@ func (s *Server) HandleInboxItem(w http.ResponseWriter, r *http.Request) {
 func (s *Server) getRecentItems(limit int) []inboxItem {
 	var items []inboxItem
 
-	sourceDirs := []string{"v2ex", "juejin", "36kr", "zhihu", "wechat-media"}
+	sourceDirs := []string{"v2ex", "juejin", "36kr", "wechat-media", "newsletters", "rss-scans"}
+
+	// x-posts dir may not exist yet — add it if present
+	if _, err := os.Stat(filepath.Join(s.InboxDir, "x-posts")); err == nil {
+		sourceDirs = append(sourceDirs, "x-posts")
+	}
 
 	type fileEntry struct {
 		source  string

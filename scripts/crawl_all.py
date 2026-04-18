@@ -20,7 +20,7 @@ from datetime import datetime
 from pathlib import Path
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
-INBOX = ROOT_DIR / "inbox"
+INBOX = ROOT_DIR / "inbox" / "daily_digests"
 
 # Available crawlers
 CRAWLERS = {
