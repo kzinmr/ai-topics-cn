@@ -134,6 +134,31 @@ V2EXで「**Codex 运行 Python 测试后，仓库根目录出现大量 4 字节
 
 > **出典**: V2EX — [https://www.v2ex.com/t/1206745](https://www.v2ex.com/t/1206745) [T1]
 
+### CLI純チャットモードへの不満 — エディタ不在の課題
+
+V2EX（スコア32）で「**没有编辑器，CLI 纯聊天写代码的方式有点儿难适应**」（エディタがない、CLI純チャットでのコード書き方は少し慣れにくい）との声が投稿された。主な不満点：
+
+- **コードが見えない不安感**: CLIチャットでは生成コードを直接視認できない
+- **行番号での精密なコンテキスト指定が困難**: エディタのように「この行を修正」といった指示がやりにくい
+- **なぜこんなに多くの人が使っているのか理解できない**: 既存IDEユーザーにとってのUXギャップ
+
+これはCodexや[[claude-code]]が推進するCLIベースの開発パラダイムに対する、現場開発者からの率直なフィードバックとして注目される。
+
+> **出典**: V2EX — [https://www.v2ex.com/t/1206751](https://www.v2ex.com/t/1206751)（スコア32）[T1]
+
+### Open Computer Use — オープンソース版Computer Use実装
+
+V2EXで「**开源 Open Computer Use**」が公開された。OpenAIのCodex Computer Useに触発され、**Accessibility API**ベースの非独占的CUA（Computer Use Agent）能力をオープンソース化したもの。
+
+- **MCPプロトコルにパッケージ済み**: 全てのAIエージェントまたはMCPクライアントが即座に呼び出し可能
+- **macOS対応**: macOS上のComputer Use能力をオープンソースで再現
+- **動機**: OpenAI Codex Computer UseがAccessibilityベースで非独占的CUAを実現可能だと気づき、オープンソース版を構築することを決意
+
+Computer Useのオープンソース化は、エージェントのGUI操作能力を民主化する動きとして注目される。
+
+> **出典**: V2EX — [https://www.v2ex.com/t/1206760](https://www.v2ex.com/t/1206760) [T1]
+> **リポジトリ**: [github.com/iFurySt/open-codex-computer-use](https://github.com/iFurySt/open-codex-computer-use)
+
 ## 04-18後半追加動向（2026-04-18 12:00クロール分）
 
 ### 高层人事震荡 — 首席战略官・首席产品官同日离职

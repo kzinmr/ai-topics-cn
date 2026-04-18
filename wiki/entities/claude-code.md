@@ -305,6 +305,8 @@ policySettings（managedエージェント）が最も高い優先度を持ち�
 - [[ai-safety-subconscious]] — AI Agentセキュリティの文脈
 - [[claude-design]] — Claude CodeとのDesign-to-Code連携
 - [[claude-opus-4-7]] — バックエンド最新モデル
+- [[cc-monitor]] — コミュニティ製リアルタイムToken消費モニター
+- [[claude-code-router]] — モデル切り替えルーター（ccr）
 
 ### 外部ソース（中国語原文）
 

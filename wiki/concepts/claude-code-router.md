@@ -57,12 +57,24 @@ ccr switch claude-opus-4.5
 3. **モデル比較**: 同じプロンプトで複数モデルの出力を比較
 4. **フェイルオーバー**: 某モデルがダウン時に別モデルに自動切り替え
 
+## 関連ツール
+
+### cc-monitor
+
+[[cc-monitor]]はClaude CodeのJSONLログとPostToolUse Hookを活用したリアルタイムToken消費モニター。複数プロジェクトのコストを同時に監視できる。
+
+### Skillエコシステム
+
+掘金で「别再裸用 Claude Code 了！32 个亲测Skills + 8 个 MCP」という記事が434いいね・1,087スターを獲得。Claude Codeのカスタマイズが中国開発者コミュニティで定着しつつある。
+
 ## 関連リンク
 
 ### 内部リンク
 - [[claude-code]] — ルーターの対象ツール
 - [[kimi-moonshot]] — 主要な代替モデル
 - [[glm-zhipu]] — GLM-5もAPI互換で利用可能
+- [[cc-monitor]] — Claude Code用リアルタイムToken消費モニター
+- [[ollama-criticism]] — Ollama批判論争（ローカルLLM倫理）
 
 ### 外部ソース
 | ソース | URL | ティア |
