@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Auto-sync Hermes cron jobs before commit.
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+SYNC="$REPO_ROOT/scripts/sync_cron.sh"
+
+if [ -f "$SYNC" ] && [ -f "$HOME/.hermes/cron/jobs.json" ]; then
+  "$SYNC" pull
+  git add "$REPO_ROOT/config/hermes/cron/jobs.json"
+fi
