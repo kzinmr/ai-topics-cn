@@ -172,6 +172,125 @@ Claude Codeの並列処理アーキテクチャ刷新により、従来のIDE統
 
 > **出典**: 掘金 [T2]
 
+## Subagent & Agent Teams（2026-04-18更新）
+
+掘金（唐旺仔）の「手撕 Claude Code-5：Subagent 与 Agent Teams」により、Claude Codeのマルチエージェントアーキテクチャが詳細に分析された。
+
+### 3つのマルチエージェントモード
+
+| モード | 説明 |
+|--------|------|
+| **普通 Subagent** | 指定タイプのサブエージェントを独立して生成。`subagent_type: 'general-purpose'`など。 |
+| **Fork Subagent** | 親エージェントの完全なコンテキスト（会話履歴、システムプロンプト、ツールリスト）を継承。`subagent_type`を省略すると発動。 |
+| **Agent Teams** | 複数のin-processチームメンバーを並列実行。mailbox通信と権限同期により協調動作。 |
+
+### 技術的特徴
+
+- **Async Generator**: サブエージェントは`async function*`で実装され、`for await...of`でリアルタイム進行を監視可能
+- **AsyncLocalStorage隔離**: サブエージェントごとに独立したコンテキスト（agentId、Todoリスト、ツール権限）
+- **Fork Subagent**: システムプロンプトのバイト級コピーにより再構築コストを回避。`permissionMode: 'bubble'`で権限要求を親に伝播
+- **Agent Teams**: `TeamCreate → in-process teammates → mailbox communication`の3段階
+- **Prompt Cache最適化**: Forkサブエージェントはバイトレベルで同一のメッセージプレフィックスを持つため、キャッシュ効率が劇的に向上
+- **omitClaudeMd設計**: Explore/Plan等の読取専用エージェントはCLAUDE.mdを省略。1回 spawn 毎に 5-15 Gtok 節約、3,400万+ spawn で有意な効果
+
+### アーキテクチャ階層
+
+```
+built-in → plugin → userSettings → projectSettings → flagSettings → policySettings
+```
+
+policySettings（managedエージェント）が最も高い優先度を持ち、全てのカスタムエージェントをオーバーライド可能。
+
+### エージェント定義の4つのソース
+
+| ソース | 説明 | 優先度 |
+|--------|------|--------|
+| `built-in` | Claude Codeに組み込み | 最下位 |
+| `plugin` | プラグインシステム経由 | ↑ |
+| `userSettings` | ユーザーの.claude/agents/ | ↑ |
+| `projectSettings` | プロジェクト固有設定 | ↑ |
+| `flagSettings` | 機能フラグ制御 | ↑ |
+| `policySettings` | 管理者ポリシー（最上位） | 最上位 |
+
+### Forkサブエージェントの発動条件
+
+`isForkSubagentEnabled()` が true を返す3つの条件（すべて必要）：
+1. `feature('FORK_SUBAGENT')` コンパイル時ゲートが有効
+2. `!isCoordinatorMode()` — Coordinatorモードと排他
+3. `!getIsNonInteractiveSession()` — 対話セッションでのみ有効
+
+> **出典**: 掘金（唐旺仔）— [手撕 Claude Code-5](https://juejin.cn/post/7629598396504784948) [T2]
+
+## Opus 4.7の品質問題とデスクトップ版批判（2026-04-18更新）
+
+### デスクトップ版「100% AIコーディング」神話の崩壊
+
+36kr（极客邦科技InfoQ）は「**Claude Code 桌面版烂爆了，Anthropic 终于把 "100% AI 编码"演砸了**」（Claude Codeデスクトップ版が酷すぎる、Anthropicは遂に"100% AIコーディング"を演じきった）と報じた。
+
+**主要なBug報告（Theoの1時間試用で40+）**:
+- iOS版でキーボードが突然フリーズ、入力欄が頻繁に消失
+- Windows版で頻繁なクラッシュとフリーズ
+- チャットウィンドウの点滅、ボタン位置の不備
+- Routinesがデータベースに接続できない
+- 分割画面でterminalが別のウィンドウに表示される
+- 音声モードで全入力欄に同時入力される
+- 「ファイルを開く」が実際に開かない
+
+**コード品質問題**:
+- `print.ts`: 1つの関数が**3,167行**、486個の分岐判断、ネスト深度12層
+- `QueryEngine.ts`: 46,000行
+- `Tool.ts`: 30,000行近く
+- `commands.ts`: 25,000行
+- `main.tsx`: 単一ファイル785KB
+- 感情認識に正規表現 `\b(wtf|shit|fuck|horrible|awful|terrible)\b/i` を使用
+
+**「100% AIコーディング」の変遷**:
+| 日付 | 発言者 | 主張 |
+|---|---|---|
+| 2025年3月 | Dario Amodei（CEO） | 「3-6ヶ月でAIが90%のコードを書く」 |
+| 2025年5月 | Boris Cherny | 「全体で80-90%がClaude製」 |
+| 2025年9月 | Dario Amodei | 「70%、80%、90%」（幅を持たせる） |
+| 2025年10月 | Dario Amodei | 「90%達成。ただし全てではない」 |
+| 2025年12月 | Boris Cherny | 「100%」 |
+| 2026年2月 | Mike Krieger（CPO） | 「大多数の製品が基本的に100%」 |
+| 2026年3月 | Boris Cherny | 「Claude Codeは100% Claude Code製」 |
+
+36krの批判:
+> 「AIは元々のものを拡大するだけ。元々エンジニアリング規律があればより良い成果に、元々規律がなければ技術的負債をマシンの速度で拡大する」
+> 「もし'构建未来'の会社で'100% AIコーディング'が486分岐・3167行の関数を意味するなら、その未来に必要なのはより速いエンジニアリングではなく、より良いエンジニアリングだ」
+
+> **出典**: 36kr（极客邦科技InfoQ）— [https://36kr.com/p/3770700408701447](https://36kr.com/p/3770700408701447) [T1]
+> **出典**: X — [@theo](https://x.com/theo/status/2044680030706663726)
+
+### Opus 4.7性能低下と変相値上げ
+
+36kr（量子位）は「**Claude降智实锤了，还变相涨价，Opus跌下神坛**」（Claudeの性能低下が確定、事実上の値上げ、Opusは神壇から転落）と報じた。
+
+**AMD高级总监Stella Laurenzoの分析**:
+- 6,852セッションファイル、17,871思考ブロック、230,000+ツール呼び出しを監査
+- 2026年2月から推理深度が**断崖的に低下**
+- BridgeBenchスコア: Opus 4.6が83.3%→68.3%に急落
+- ランキング: 2位→10位に転落
+
+**原因と背景**:
+- Anthropicはモデルのデフォルト「努力レベル」を**85点の「中等努力」モード**に設定
+- 公式説明: 速度とコストのバランスのため
+- 思考プロセスの表示を2月に非表示化（キャッシュ節約のためと推測）
+- 提示詞キャッシュ有効時間: **1時間→5分**に短縮
+- 長会話中のキャッシュ失効でトークン消費が急増
+
+**Enterprise価格改定**:
+- 月額$200固定→ $20基本料+使用量課金へ変更
+- 一部チームで支出が**3倍に急増**
+- 原因: モデル推理コストが前年比3倍
+- OpenClaw等高消費Agentツールの呼び出し制限も開始
+
+**競合の動き**:
+- OpenAIが$100のCodexサブスクリプションを投入（Anthropicからの顧客奪取狙い）
+
+> **出典**: 36kr（量子位）— [https://36kr.com/p/3770641574838793](https://36kr.com/p/3770641574838793) [T1]
+> **出典**: VentureBeat, The Information
+
 ## 関連リンク
 
 ### 内部リンク
@@ -184,19 +303,25 @@ Claude Codeの並列処理アーキテクチャ刷新により、従来のIDE統
 - [[cursor]] — IDE統合型競合ツール
 - [[openclaw]] — 新興エンドポイント型ツールチェーン
 - [[ai-safety-subconscious]] — AI Agentセキュリティの文脈
+- [[claude-design]] — Claude CodeとのDesign-to-Code連携
+- [[claude-opus-4-7]] — バックエンド最新モデル
 
 ### 外部ソース（中国語原文）
 
 | ソース | URL | タイプ | ティア |
 |---|---|---|---|
 | 36kr（新智元）Routines報道 | 36kr.com | ニュース | T1 |
-|| 36kr — 缓存性能问题 | [36kr.com/p/3767376468607494](https://36kr.com/p/3767376468607494) | ニュース | T1 |
-|| 36kr — Opus 4.7予告 | [36kr.com/p/3767982270661126](https://36kr.com/p/3767982270661126) | ニュース | T1 |
-|| 36kr — Codex超级龙虾 | [36kr.com/p/3770202199323136](https://36kr.com/p/3770202199323136) | ニュース | T1 |
-|| V2EX — Codex更新 | [v2ex.com/t/1206478](https://www.v2ex.com/t/1206478) | フォーラム | T1 |
-|| 掘金 — 32 Skills + 8 MCP | [juejin.cn/post/7620060655607857178](https://juejin.cn/post/7620060655607857178) | 技術ブログ | T2 |
-|| 掘金 — Hooks解説（GeraldChen） | [juejin.cn/post/7628854568780464162](https://juejin.cn/post/7628854568780464162) | 技術ブログ | T2 |
-|| 掘金 — 並列処理アーキテクチャ | [juejin.cn/post/7628827972272013353](https://juejin.cn/post/7628827972272013353) | 技術ブログ | T2 |
-|| 掘金 — Kimi K2.5代替 | [juejin.cn/post/7611432757572141096](https://juejin.cn/post/7611432757572141096) | 技術ブログ | T2 |
-|| 掘金 — 1M Context + LangChain CVE | [juejin.cn/post/7629308995309322290](https://juejin.cn/post/7629308995309322290) | 技術ブログ | T2 |
-|| V2EX — 身分認証議論 | [v2ex.com/t/1206060](https://www.v2ex.com/t/1206060) | フォーラム | T2 |
+| 36kr — 缓存性能问题 | [36kr.com/p/3767376468607494](https://36kr.com/p/3767376468607494) | ニュース | T1 |
+| 36kr — Opus 4.7予告 | [36kr.com/p/3767982270661126](https://36kr.com/p/3767982270661126) | ニュース | T1 |
+| 36kr — Codex超级龙虾 | [36kr.com/p/3770202199323136](https://36kr.com/p/3770202199323136) | ニュース | T1 |
+| 36kr — Claude Codeデスクトップ版批判 | [36kr.com/p/3770700408701447](https://36kr.com/p/3770700408701447) | ニュース | T1 |
+| 36kr — Claude降智・変相値上げ | [36kr.com/p/3770641574838793](https://36kr.com/p/3770641574838793) | ニュース | T1 |
+| V2EX — Codex更新 | [v2ex.com/t/1206478](https://www.v2ex.com/t/1206478) | フォーラム | T1 |
+| 掘金 — 32 Skills + 8 MCP | [juejin.cn/post/7620060655607857178](https://juejin.cn/post/7620060655607857178) | 技術ブログ | T2 |
+| 掘金 — Hooks解説（GeraldChen） | [juejin.cn/post/7628854568780464162](https://juejin.cn/post/7628854568780464162) | 技術ブログ | T2 |
+| 掘金 — 並列処理アーキテクチャ | [juejin.cn/post/7628827972272013353](https://juejin.cn/post/7628827972272013353) | 技術ブログ | T2 |
+| 掘金 — Subagent & Agent Teams | [juejin.cn/post/7629598396504784948](https://juejin.cn/post/7629598396504784948) | 技術ブログ | T2 |
+| 掘金 — Kimi K2.5代替 | [juejin.cn/post/7611432757572141096](https://juejin.cn/post/7611432757572141096) | 技術ブログ | T2 |
+| 掘金 — 1M Context + LangChain CVE | [juejin.cn/post/7629308995309322290](https://juejin.cn/post/7629308995309322290) | 技術ブログ | T2 |
+| V2EX — 身分認証議論 | [v2ex.com/t/1206060](https://www.v2ex.com/t/1206060) | フォーラム | T2 |
+| X — @theo（デスクトップ版Bug報告） | [x.com/theo/status/2044680030706663726](https://x.com/theo/status/2044680030706663726) | SNS | T2 |

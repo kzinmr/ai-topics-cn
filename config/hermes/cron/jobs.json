@@ -1,41 +1,6 @@
 {
   "jobs": [
     {
-      "id": "1742c979a1be",
-      "name": "newsletter-triage",
-      "prompt": "You are Hermes, the Chinese AI knowledge agent. This is a scheduled newsletter triage run. 1) First run: python3 /home/exedev/ai-topics-cn/scripts/process_newsletter.py to ingest any new emails from ~/Maildir/. 2) Read config/hermes/SOUL.md and wiki/SCHEMA.md. 3) Check inbox/newsletters/ for new digest .md files. 4) For each newsletter digest, extract the top articles relevant to Chinese AI/LLM topics. 5) Create or update wiki concept/entity pages in Japanese based on the content. 6) Update wiki/index.md and wiki/log.md. 7) Git commit and push. 8) Summarize what was done.",
-      "skills": [
-        "exe-dev-email-check"
-      ],
-      "skill": "exe-dev-email-check",
-      "model": null,
-      "provider": null,
-      "base_url": null,
-      "script": null,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 23 * * *",
-        "display": "0 23 * * *"
-      },
-      "schedule_display": "0 23 * * *",
-      "repeat": {
-        "times": null,
-        "completed": 1
-      },
-      "enabled": true,
-      "state": "scheduled",
-      "paused_at": null,
-      "paused_reason": null,
-      "created_at": "2026-04-18T04:47:43.962186+00:00",
-      "next_run_at": "2026-04-18T23:00:00+00:00",
-      "last_run_at": "2026-04-18T07:48:30.006467+00:00",
-      "last_status": "ok",
-      "last_error": null,
-      "last_delivery_error": null,
-      "deliver": "discord:1233771389367095377:1494583846946213938",
-      "origin": null
-    },
-    {
       "id": "594ab3164bd2",
       "name": "trending-topics",
       "prompt": "Daily Trending Topics notification for Chinese AI sources.\n\nStep 1: Run python3 /home/exedev/ai-topics-cn/scripts/trending_topics.py --days 3 and present the report to the user IN JAPANESE. Focus on: (1) New Page Recommended \u2014 trending topics with no wiki page yet, (2) Hot Topics with 4+ sources, (3) Cross-Source Topics \u2014 highest signal items appearing across V2EX, Juejin, 36kr, Zhihu, and WeChat media.\n\nStep 2: Hot Topics \u30af\u30ed\u30fc\u30ea\u30f3\u30b0\u5019\u88dc\u63d0\u6848\u3002cat /home/exedev/ai-topics-cn/config/hot-topics.yaml \u3092\u8aad\u307f\u3001Step 1 \u306e\u300cNew Page Recommended\u300d\u306e\u30c8\u30d4\u30c3\u30af\u7fa4\u3068\u7167\u5408\u3059\u308b\u3002source_count \u304c 3 \u4ee5\u4e0a\u3067 hot-topics.yaml \u306b\u307e\u3060\u767b\u9332\u3055\u308c\u3066\u3044\u306a\u3044\u30c8\u30d4\u30c3\u30af\u304c\u3042\u308c\u3070\u3001YAML\u30b9\u30cb\u30da\u30c3\u30c8\u3068\u3057\u3066\u63d0\u6848\u3002",
@@ -49,10 +14,10 @@
       "script": null,
       "schedule": {
         "kind": "cron",
-        "expr": "0 1 * * *",
-        "display": "0 1 * * *"
+        "expr": "0 3 * * *",
+        "display": "0 3 * * *"
       },
-      "schedule_display": "0 1 * * *",
+      "schedule_display": "0 3 * * *",
       "repeat": {
         "times": null,
         "completed": 0
@@ -62,7 +27,7 @@
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-04-18T04:47:51.510679+00:00",
-      "next_run_at": "2026-04-19T01:00:00+00:00",
+      "next_run_at": "2026-04-19T03:00:00+00:00",
       "last_run_at": null,
       "last_status": null,
       "last_error": null,
@@ -107,42 +72,6 @@
       "origin": null
     },
     {
-      "id": "2bf13aef4a27",
-      "name": "triage",
-      "prompt": "You are Hermes, the AI knowledge agent for the Chinese AI topics wiki at /home/exedev/ai-topics-cn. This is a scheduled triage run. Read config/hermes/SOUL.md and wiki/SCHEMA.md for context. Then: 1) Check inbox/ for new crawled articles. 2) Run python3 /home/exedev/ai-topics-cn/scripts/trending_topics.py to identify hot topics. 3) For the top 3-5 trending topics, create or update wiki concept/entity pages in Japanese. 4) Update wiki/index.md and wiki/log.md. 5) Git commit (cwd: /home/exedev/ai-topics-cn) and summarize what was done.",
-      "skills": [
-        "cn-media-analysis",
-        "wiki-entity-upgrade"
-      ],
-      "skill": "cn-media-analysis",
-      "model": null,
-      "provider": null,
-      "base_url": null,
-      "script": null,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 6,18 * * *",
-        "display": "0 6,18 * * *"
-      },
-      "schedule_display": "0 6,18 * * *",
-      "repeat": {
-        "times": null,
-        "completed": 0
-      },
-      "enabled": true,
-      "state": "scheduled",
-      "paused_at": null,
-      "paused_reason": null,
-      "created_at": "2026-04-18T04:48:05.125484+00:00",
-      "next_run_at": "2026-04-18T18:00:00+00:00",
-      "last_run_at": null,
-      "last_status": null,
-      "last_error": null,
-      "last_delivery_error": null,
-      "deliver": "discord:1233771389367095377:1494583846946213938",
-      "origin": null
-    },
-    {
       "id": "41df2c411dd0",
       "name": "wiki-health",
       "prompt": "Weekly Wiki Health Digest for Chinese AI topics. The script output above is from wiki_health.py. Present the full report IN JAPANESE. Highlight: skeleton entities needing enrichment, stale pages (>30d), orphan pages not in index.md, unprocessed inbox items. Suggest 2-3 concrete next actions.",
@@ -154,10 +83,10 @@
       "script": "wiki_health.py",
       "schedule": {
         "kind": "cron",
-        "expr": "0 0 * * *",
-        "display": "0 0 * * *"
+        "expr": "0 6 * * *",
+        "display": "0 6 * * *"
       },
-      "schedule_display": "0 0 * * *",
+      "schedule_display": "0 6 * * *",
       "repeat": {
         "times": null,
         "completed": 0
@@ -167,7 +96,7 @@
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-04-18T04:48:55.521418+00:00",
-      "next_run_at": "2026-04-19T00:00:00+00:00",
+      "next_run_at": "2026-04-19T06:00:00+00:00",
       "last_run_at": null,
       "last_status": null,
       "last_error": null,
@@ -193,17 +122,61 @@
       "schedule_display": "0 10 * * *",
       "repeat": {
         "times": null,
-        "completed": 1
+        "completed": 2
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-04-18T07:16:47.578216+00:00",
-      "next_run_at": "2026-04-18T10:00:00+00:00",
-      "last_run_at": "2026-04-18T07:18:31.678954+00:00",
+      "next_run_at": "2026-04-19T10:00:00+00:00",
+      "last_run_at": "2026-04-18T10:01:23.904868+00:00",
       "last_status": "ok",
       "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "discord:1185093193017065522:1492169660635021415",
+      "origin": {
+        "platform": "discord",
+        "chat_id": "1494954994968039466",
+        "chat_name": "kzinmr\u306e\u30b5\u30fc\u30d0\u30fc / #hermes-cn / \u6bce\u65e5\u983b\u5ea6\u3067\u3001\u524d\u65e5\u306b\u53d6\u308a\u8fbc\u307e\u308c\u305f\u4e3b\u8981\u306a\u8a18\u4e8b\u306e\u6982\u8981\u3092\u3001AI\u6280\u8853\u8005\u5411\u3051\u306bDiscord\u914d\u4fe1\u3057\u3066\u6b32\u3057\u3044\u3002\u914d\u4fe1\u5148\u306f\u4ee5\u4e0b: (server_id:1185093193...",
+        "thread_id": "1494954994968039466"
+      }
+    },
+    {
+      "id": "a46b951f07c7",
+      "name": "crawl-and-triage",
+      "prompt": "You are Hermes, the AI knowledge agent for the Chinese AI topics wiki at /home/exedev/ai-topics-cn. This is a scheduled multi-source crawl-and-triage run. Execute the following steps IN ORDER:\n\n## Phase 1: Multi-Source Article Collection\n1. Run `cd /home/exedev/ai-topics-cn && python3 scripts/crawl_all.py` to fetch latest Chinese AI articles into `inbox/daily_digests/`\n2. Check `inbox/newsletters/` for new email digest files. If found, run `python3 /home/exedev/ai-topics-cn/scripts/process_newsletter.py` to process them.\n3. Query `blogwatcher-cli.db` for any RSS-scanned articles from the past 24h. Use the `blogwatcher-db` skill for query patterns.\n4. Aggregate all sources (crawl_all, newsletters, blogwatcher RSS) into a unified list for triage\n\n## Phase 2: Article Triage\nFor each collected article, evaluate against these criteria:\n- **Duplicate Check**: Does this overlap with existing wiki topics? (Check `wiki/index.md` and recent git log)\n- **Substance Check**: Is this a substantial article? (Exclude link collections, SEO spam, AI-generated copy-paste, CSDN articles)\n- **Domain Relevance**: Is this related to LLM, AI agents, dev tools, or Chinese AI industry?\n- **Source Quality**: Prioritize V2EX, \u6398\u91d1, 36kr, \u77e5\u4e4e, WeChat official accounts\n\nCategorize each article: \u2705 Take (high value) / \u26a0\ufe0f Reference (medium) / \u274c Skip (low value)\n\n## Phase 3: Wiki Ingestion\n1. Read `config/hermes/SOUL.md` and `wiki/SCHEMA.md` for formatting rules\n2. Save accepted articles to `wiki/raw/articles/` with source metadata\n3. For \u2705 Take articles: create or update wiki concept/entity pages in Japanese\n4. Update `wiki/index.md` and `wiki/log.md`\n5. Git commit and push:\n   ```\n   cd /home/exedev/ai-topics-cn && git add wiki/ inbox/ && git commit -m \"triage: $(date +%Y-%m-%d) multi-source crawl + wiki update\" && git push\n   ```\n\n## Phase 4: Report Generation\nGenerate a structured report in Japanese:\n```\n\ud83d\udcca Crawl & Triage Report \u2014 YYYY-MM-DD\n\u30bd\u30fc\u30b9\u5225\u53ce\u96c6\u6570: crawl_all: N\u4ef6, Newsletter: N\u4ef6, RSS(blogwatcher): N\u4ef6\n\u30c8\u30ea\u30a2\u30fc\u30b8\u7d50\u679c: \u2705 Take: N\u4ef6 / \u26a0\ufe0f Reference: N\u4ef6 / \u274c Skip: N\u4ef6\nWiki\u66f4\u65b0: \u65b0\u898f\u30da\u30fc\u30b8: N\u4ef6, \u66f4\u65b0\u30da\u30fc\u30b8: N\u4ef6\n\u30c8\u30c3\u30d7\u30c8\u30d4\u30c3\u30af: [1], [2], [3]\n```\n\nDeliver this report to Discord.",
+      "skills": [
+        "cn-media-analysis",
+        "wiki-entity-upgrade",
+        "exe-dev-email-check",
+        "blogwatcher-db",
+        "semantic-article-grouping"
+      ],
+      "skill": "cn-media-analysis",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 21,9 * * *",
+        "display": "0 21,9 * * *"
+      },
+      "schedule_display": "0 21,9 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 1
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-18T08:35:50.952640+00:00",
+      "next_run_at": "2026-04-18T21:00:00+00:00",
+      "last_run_at": "2026-04-18T09:29:14.040382+00:00",
+      "last_status": "error",
+      "last_error": "Agent completed but produced empty response (model error, timeout, or misconfiguration)",
       "last_delivery_error": null,
       "deliver": "discord:1233771389367095377:1494583846946213938",
       "origin": {
@@ -212,7 +185,45 @@
         "chat_name": "kzinmr\u306e\u30b5\u30fc\u30d0\u30fc / #hermes-cn / \u6bce\u65e5\u983b\u5ea6\u3067\u3001\u524d\u65e5\u306b\u53d6\u308a\u8fbc\u307e\u308c\u305f\u4e3b\u8981\u306a\u8a18\u4e8b\u306e\u6982\u8981\u3092\u3001AI\u6280\u8853\u8005\u5411\u3051\u306bDiscord\u914d\u4fe1\u3057\u3066\u6b32\u3057\u3044\u3002\u914d\u4fe1\u5148\u306f\u4ee5\u4e0b: (server_id:1185093193...",
         "thread_id": "1494954994968039466"
       }
+    },
+    {
+      "id": "dbde4f9d48e4",
+      "name": "check-skill-inventory",
+      "prompt": "Run the skill inventory check script and report results to this Discord thread.\n\nExecute: python3 /home/exedev/.hermes/scripts/check_new_skills.py\n\nIf the script runs successfully, post its full output as-is.\nIf the script fails or is missing, do the following:\n1. Scan ~/.hermes/skills/ recursively for all directories containing SKILL.md\n2. Compare against the managed skills list in the script\n3. Generate the same format report manually\n\nThe report should include:\n- Total skills count\n- Managed vs unmanaged counts  \n- Details of any unmanaged skills\n- List of all managed skills",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 16 * * *",
+        "display": "0 16 * * *"
+      },
+      "schedule_display": "0 16 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-18T10:47:32.928531+00:00",
+      "next_run_at": "2026-04-18T16:00:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "discord",
+        "chat_id": "1495012493133742081",
+        "chat_name": "kzinmr\u306e\u30b5\u30fc\u30d0\u30fc / #hermes-cn / ai-topics/\u3067\u5b9a\u7fa9\u3055\u308c\u3066\u3044\u308b\u3088\u3046\u306a\u3001check-skill-inventory job\u3092\u5b9a\u7fa9\u3057\u3066\u5b9a\u671f\u5b9f\u884c\u3057\u3066: --- Check Skill I...",
+        "thread_id": "1495012493133742081"
+      }
     }
   ],
-  "updated_at": "2026-04-18T07:57:10.803128+00:00"
+  "updated_at": "2026-04-18T10:47:32.929598+00:00"
 }

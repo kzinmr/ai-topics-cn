@@ -94,3 +94,57 @@ AnthropicはClaude Codeに**Routines**（定时任务）と**Hooks**（フック
 | 36kr — 安全承諾 | [36kr.com/p/3770223251866372](https://36kr.com/p/3770223251866372) | T1 | AI安全の逆説 |
 | 36kr — 身分認証分析 | [36kr.com/p/3769358632497922](https://36kr.com/p/3769358632497922) | T1 | KYC問題の深層 |
 | V2EX — KYC議論 | [v2ex.com/t/1206627](https://www.v2ex.com/t/1206627) | T1 | ユーザー反応 |
+
+
+## 04-18追加動向（2026-04-18クロール分）
+
+> **トレンド更新**: Anthropic 41→**60言及**（+46%）、Claude Design/Figmaで新規トレンド
+
+### Claude Design — Figmaキラーの衝撃
+
+Anthropic Labsが**Claude Design**（[[claude-design]]）をリリース。Figma/Canva競合のAIネイティブデザインツールとして発表された。
+
+36kr（极客公园）は「Anthropic 要亲手杀死 Figma 了吗？」（AnthropicはFigmaを手にかけようとしているのか？）と報道。「从卖模型到做产品，Anthropic 这一步走得比所有人预想的都快」（モデル販売から製品構築へ、Anthropicの歩みは誰の予想より速い）と評された。
+
+Figma株価は12ヶ月で約50%下落、Claude Design発表後に追加6.84%下落（$20.32→$18.84）。V2EXでは「看上去挺牛逼的」（かなり凄そうだ）と簡潔に評価された。
+
+**Mike Kriegerの関与**:
+- Instagram共同創業者、2024年5月にAnthropic入社・CPO就任
+- 2026年4月14日にFigma取締役会を辞任（発表の3日前）
+- 36krは「このタイミングは偶然ではない」と分析
+- Claude Designの製品ビジョンにKriegerのFigma/Instagram経験が反映されている
+
+→ 詳細は [[claude-design]] を参照
+
+> **出典**: 36kr（极客公园）— [https://36kr.com/p/3771736819647233](https://36kr.com/p/3771736819647233) [T1]
+> **出典**: V2EX — [https://www.v2ex.com/t/1206766](https://www.v2ex.com/t/1206766) [T1]
+
+### AI国有化論
+
+36kr（日经中文网）は「**Anthropic引发AI国有化论**」（AnthropicがAI国有化論を誘発）と報道。AnthropicのMythosモデル発表後、AI安全が国家安全保障レベルの管控に引き上げられる動きが加速している。
+
+AIモデルの安全基準が国家レベルの規制対象となりつつあり、中国の生成AI管理弁法との連携も予想される状況。
+
+> **出典**: 36kr（日经中文网）— [https://36kr.com/p/3770633728623111](https://36kr.com/p/3770633728623111) [T1]
+
+### 算力巨头がAnthropic獲得に殺到
+
+36kr（半导体产业纵横）は「**算力巨头排好队，只为"拿下"Anthropic**」（算力巨头が列をなしてAnthropic獲得を狙う）と報道。GPU/チップサプライチェーンの上位企業がAnthropicとの提携・買収を競っている状況。
+
+AIインフラにおける垂直統合の動きが加速し、Anthropicがモデル→製品→インフラの全バリューチェーンを掌握しようとする戦略が明らかになっている。
+
+> **出典**: 36kr（半导体产业纵横）— [https://36kr.com/p/3770793732276741](https://36kr.com/p/3770793732276741) [T1]
+
+### Claude Code 桌面版への批判
+
+36kr（极客邦科技InfoQ）は「**Claude Code 桌面版烂爆了，Anthropic 终于把 "100% AI 编码"演砸了**」（Claude Codeデスクトップ版が酷すぎる、Anthropicは遂に"100% AIコーディング"を演じきった）と報じた。Claude Codeのデスクトップ版の品質問題が指摘され、「如果这就是一家正在把行业往前带的公司所代表的质量标准，那这个方向本身是有问题的」（これが業界を牽引する企業の品質基準なら、方向性自体に問題がある）と批判された。
+
+→ 詳細は [[claude-code]] を参照
+
+> **出典**: 36kr（极客邦科技InfoQ）— [https://36kr.com/p/3770700408701447](https://36kr.com/p/3770700408701447) [T1]
+
+### Claude Opus 4.7評価
+
+量子位は「**Claude Opus 4.7来了，公开模型里的SOTA，不过用起来GPT味好浓**」（Claude Opus 4.7到来、公開モデルのSOTA、ただしGPTの味が濃い）と報じた。Anthropicの「稳稳接住」（着実に受け止める）型モデルとして位置づけられている。
+
+> **出典**: 36kr（量子位）— [https://36kr.com/p/3770495848727300](https://36kr.com/p/3770495848727300) [T1]
