@@ -5,7 +5,7 @@ url: "https://www.v2ex.com/t/1206874"
 author: "SIFT2009"
 date: 2026-04-18
 score: 0
-tags: ["claude", "Ai", "ai", "Claude"]
+tags: ["Claude", "claude", "ai", "Ai"]
 ---
 
 # 写了一个 Claude Code 实时 token 消耗监控器，按项目聚合
@@ -36,9 +36,9 @@ TUI 长这样
 …(内容已截断)
 
 ## 涉及话题
-- claude
-- Ai
-- ai
 - Claude
+- claude
+- ai
+- Ai
 
 [原文链接](https://www.v2ex.com/t/1206874)

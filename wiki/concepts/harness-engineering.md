@@ -1,199 +1,76 @@
 ---
-title: "Harness Engineering — AI工程の新パラダイム"
-created: 2026-04-15
-updated: 2026-04-17
-tags: [ai-agents, coding-agents, concept, technique]
-aliases: ["Harness", "Harness Engineering", "ハーネスエンジニアリング", "AI Harness"]
+title: "Harness Engineering — LLM Agentの外化（Externalization）パターン"
+created: 2026-04-18
+updated: 2026-04-18
+tags: [ai-agents, coding-agents, framework, llm, mcp]
+aliases: ["エージェントハーネス", "LLM外化パターン", "Externalization in LLM Agents"]
 source_lang: zh-CN
 ---
 
-# Harness Engineering — AI工程の新パラダイム
+# Harness Engineering — LLM Agentの外化（Externalization）パターン
+
+LLM Agent開発における**Harness（ハーネス）**パターン。モデル内部の能力を外部環境に「外化（Externalization）」することで、複雑なタスクを単純なタスクに変換する設計思想。
 
 ## 概要
 
-Harness Engineeringとは、LLMエージェントを取り巻くシステム全体の設計・統合・運用を指す新興概念である。単なるプロンプトの最適化やエージェント単体の構築を超え、外部ツール・メモリ・プロトコル・評価機構を含む**包括的なオーケストレーション層**として位置づけられる。
+2026年4月、arXiv論文「[Externalization in LLM Agents](https://arxiv.org/abs/2604.08224)」（54ページ）が発表された。認知科学のドナルド・ノーマン（Donald Norman）の「認知制品（Cognitive Artifacts）」理論をLLM Agentの設計に応用し、Memory・Skills・Protocols・Harnessといった各エンジニアリングトレンドを統一フレームワークで説明する。
 
-2026年4月時点で、中国語圏の開発者コミュニティ（V2EX、掘金など）において急速に議論が広がっており、arXiv論文 `2604.08224` "Externalization in LLM Agents" の登場を契機に、理論的枠組みとしての整理が進んでいる。
+> **TLDR: 外部ツールはモデルを強くするのではなく、難しいタスクを簡単なタスクに変える。** — [fennu2333/V2EX](https://www.v2ex.com/t/1206029)
 
-> "harness 这个词多少有点造词炒热度的味道"
-> （「harness」という語には、多少バズワード的な造語・過熱の気配がある）
-> — V2EX ユーザー fennu2333
+## 認知制品理論の応用
 
----
+ノーマンの洞察：外部ツールは能力を向上させるのではなく、**タスクの性質を変える**。
 
-## 認知科学的基盤
+- **例: 買い物リスト** — 記憶力を高めるのではなく、「思い出す（recall）」タスクを「見る（recognition）」タスクに変換。認識は recall より格段に簡単。
+- **LLM Agentへの応用** — Tool Use / Function Calling / MCP は、モデルに新しい能力を与えるのではなく、推論タスクを環境との相互作用タスクに変換する。
 
-Harness Engineeringの理論的支柱は、認知科学者ドナルド・ノーマン（Donald Norman）の**「認知的人工物」（cognitive artifact）理論**に基づく。arXiv 2604.08224の54ページにわたるサーベイ論文で体系的に整理された。
+## Harnessの核心
 
-核心的な洞察は以下の通りである：
+Harness（ハーネス）はAgentの**実行フレームワーク**で、以下の責務を持つ：
 
-> **外部ツールはモデルを強くするのではなく、難しいタスクを簡単なタスクに変換する。**
+1. **タスク分解** — 複雑な目標を小さなステップに分割
+2. **Tool呼び出しの管理** — MCP・Function Callingなどの外部ツール呼び出しをオーケストレーション
+3. **状態の外部化** — Agentの内部状態を外部環境（ファイルシステム、データベース、API）に保存
+4. **エラー回復** — 失敗時のリトライ・フォールバック戦略
+5. **フィードバックループ** — Tool実行結果を次の推論ステップに反映
 
-原文の比喩が極めて明快である：
+## 代表的なHarness実装
 
-> "购物清单不是让你记忆力变好了，它做的事情是把回忆(recall)变成了识别(recognition)"
-> （買い物リストは記憶力を向上させるのではない。それがやっていることは、**想起（recall）を認識（recognition）に変換する**ことである）
+| プロジェクト | 説明 | ソース |
+|---|---|---|
+| **Chorus** | coding agent用Harness。外部化論文の著者が開発 | [chorus-ai.dev](https://chorus-ai.dev/zh/blog/externalization-in-llm-agents/) |
+| **Claude Code** | Anthropicのコーディングエージェント。ファイルシステム・シェル・gitをHarnessとして統合 | [[claude-code]] |
+| **OpenClaw** | MCPプロトコルをベースとしたオープンソースAgent Harness | [[openclaw]] |
 
-この枠組みに従えば、[[ai-agent]]に対する外部ツールの設計とは、エージェントの内在的能力を高めることではなく、**タスクの認知的要求を構造的に変換する**ことに他ならない。
-
-**出典**: V2EX — fennu2333によるサーベイ要約 [Tier 2: コミュニティ投稿]
-https://www.v2ex.com/t/1206029
-
----
-
-## 三層進化モデル
-
-掘金（Juejin）の解説記事「从 Prompt 到 Harness：AI 工程の三重進化」では、AI工程の発展を三層モデルで整理している：
-
-### Layer 1: Prompt Engineering（プロンプトエンジニアリング）
-
-LLMへの入力テキストを工夫する段階。
-
-> "有人还停留在多加几个词就能让GPT听话的阶段"
-> （GPTに言うことを聞かせるために単語を増やせば良い、という段階に留まっている人もいる）
-
-### Layer 2: Agent Engineering（エージェントエンジニアリング）
-
-体系的なコンテキスト管理と情報フローの設計。[[ai-agent]]の構築、[[mcp]]のようなプロトコル層の活用が含まれる。
-
-### Layer 3: Harness Engineering（ハーネスエンジニアリング）
-
-システム全体のオーケストレーション。メモリ管理、スキル定義、プロトコル統合、評価機構を包括する最上位の設計パラダイム。
+## Harnessと既存概念の関係
 
 ```
-Prompt Engineering → Agent Engineering → Harness Engineering
-   （言葉の工夫）     （構造の設計）       （系全体の統合）
+Harness Engineering
+├── Memory（記憶の外部化） → Vector DB [[vector-db]]
+├── Skills（能力のモジュール化） → Agent Skills [[agent-skills]]
+├── Protocols（通信規約） → MCP [[mcp]]
+└── Tool Use（関数呼び出し） → Function Calling [[function-calling]]
 ```
 
-**出典**: 掘金 [Tier 2: 技術ブログプラットフォーム]
-https://juejin.cn/post/7628556428008882202
+Harnessは個別の技術を**統合する実行フレームワーク**。Agent Harness論文は、これらがバラバラに見えたトレンドを「外化」という単一原理で説明する。
 
----
+## 中国語圏での議論動向
 
-## 外化フレームワーク
+- V2EXで高い関心（スコア463+）。Harnessは「造詞炒作」という批判もあるが、実装パターンとしての価値は認知されている
+- 李開復（創新工場）、陸奇（奇绩創壇）がHarness関連プロジェクトに投資 reportedly
+- 36kr報道によれば「小氷（Xiaoice）元チーム」がHarnessベースの「小蘭島」プロジェクトを発表予定
 
-arXiv 2604.08224 "Externalization in LLM Agents" では、エージェントの外部化メカニズムを統一的な枠組み（**Externalization Framework**）として以下の4要素に整理している：
+## 関連ページ
 
-| 要素 | 説明 | 例 |
-|------|------|-----|
-| **Memory**（記憶） | エージェントの長期・短期記憶の外部化 | ベクトルDB、会話履歴管理 |
-| **Skills**（スキル） | 再利用可能な能力モジュール | ツール呼び出し、コード実行 |
-| **Protocols**（プロトコル） | エージェント間・ツール間の通信規約 | [[mcp]]、A2Aプロトコル |
-| **Harness**（ハーネス） | 上記すべてを統合する実行環境・制御層 | Chorus、[[claude-code]]等 |
+- [[ai-agent]] — AI智能体（Agent）全般
+- [[mcp]] — Model Context Protocol（Harnessの通信基盤）
+- [[agent-skills]] — エージェントのモジュール化スキル
+- [[claude-code]] — Harness実装の代表例
+- [[openclaw]] — オープンソースHarness実装
 
-この枠組みの意義は、従来バラバラに議論されてきた技術群を**「外化」（externalization）**という統一原理で説明できる点にある。ハーネスはこの4要素の最上位に位置し、他の3要素を組み合わせて動作するメタレイヤーである。
+## 出典
 
-**出典**: arXiv 2604.08224 / V2EX要約 [Tier 1: 学術論文 / Tier 2: コミュニティ要約]
-https://www.v2ex.com/t/1206029
-
----
-
-## 実践事例
-
-### Chorus — コーディングエージェント用ハーネス
-
-arXiv 2604.08224の著者が構築中のコーディングエージェント向けハーネス。外化フレームワークの理論を実装に落とし込む試みとして注目される。[[claude-code]]などの既存コーディングエージェントとの関係性は今後の議論に委ねられる。
-
-### Harness自己評価スコアリング
-
-掘金の記事「给 AI codegen 流水线装一个体温計」では、AIコード生成パイプラインにおけるHarnessの自己評価機構について解説されている。
-
-核心的な課題認識：
-
-> "AI 跑完了，你其实不知道它好不好"
-> （AIの実行が終わっても、実際にそれが良いかどうかは分からない）
-
-具体的な問題として、Cursorのようなツールではdiffが提示され、ユーザーはaccept/rejectを選択するが、**品質を客観的に判断する手段が欠如**している。Harnessはこの問題に対し、パイプライン内に測定・評価機構（「体温計」）を組み込むことで、コード生成の品質を定量化するアプローチを提案する。
-
-**出典**: 掘金 [Tier 2: 技術ブログプラットフォーム]
-https://juejin.cn/post/7628114539187666980
-
----
-
-## Vibe Codingとの関係
-
-[[vibe-coding]]とHarness Engineeringは、AIを用いたソフトウェア開発における**同一スペクトラム上の両端**として理解できる：
-
-```
-Vibe Coding ◄━━━━━━━━━━━━━━━━━━━━► Harness Engineering
-（非形式的・直感的）                    （形式的・工学的）
-```
-
-- **Vibe Coding**: LLMと対話しながら直感的にコードを書く。プロセスの厳密な制御は行わない。
-- **Harness Engineering**: ツール群、メモリ、プロトコル、評価機構を含むシステム全体を形式的に設計・制御する。
-
-両者は対立するものではなく、開発のフェーズや目的に応じて使い分けるものであり、Harnessの枠組みの中でVibe Codingが一つの作業モードとして位置づけられる可能性もある。
-
-**出典**: 掘金 [Tier 2: 技術ブログプラットフォーム]
-
----
-
-## 中国語圏での受容
-
-2026年4月中旬時点で、Harness Engineeringに対する中国語圏の反応は**関心と懐疑が並存**する状態である。
-
-### 肯定的反応
-
-- arXivサーベイ論文の外化フレームワークが理論的に整理されている点は高く評価されている
-- 三層進化モデルは直感的に理解しやすいとして、掘金で複数の解説記事が出ている
-- YouTubeの解説動画「到底什么是Harness Engineering？一次讲清楚」が掘金でもシェアされ、概念の普及に貢献
-
-### 懐疑的反応
-
-- V2EXユーザーから「harnessという語はバズワード臭がある」との率直な指摘
-- 「当前类似于 Harness/SDD 各种思想、工具好多好多」（現在Harness/SDD的な思想・ツールが多すぎる）という声があり、開発者は**概念の乱立に疲弊**している側面がある
-- 既存のエージェント設計パターンとの差異が本質的なものなのか、単なるリブランディングなのか、という議論が継続中
-
-**出典**: V2EX [Tier 2: コミュニティ掲示板]
-https://www.v2ex.com/t/1206029
-
----
-
-## 最新動向（2026-04-17更新）
-
-### OpenAI GPT-5.4のHarness全面開放
-
-36kr（新智元）が報じたところによると、OpenAIがGPT-5.4と同時に**Codex同款Harnessを全面開放**した。
-
-> "GPT-5.4真正的杀招终于落地！OpenAI连夜重写基建、原生收编七大沙盒，彻底封死第三方框架的活路"
-> （GPT-5.4の真の殺し手がついに実装！OpenAIが一晩で基盤を書き直し、7つのサンドボックスをネイティブ統合、サードパーティフレームワークの活路を完全に封殺）
-
-この動きは、Harnessが理論概念から**商用プラットフォームの競争軸**に変わったことを示す重要な転換点である。
-
-> **出典**: 36kr — [https://36kr.com/p/3769362731467272](https://36kr.com/p/3769362731467272) [Tier 1]
-
-### 投資家の参入
-
-36krは「最新风口Harness，李开复、陆奇已重金入场」（最新トレンドHarness、李開復・陸奇が大型投資で参入）と報じ、中国のトップVCがHarnessをAI産業の次の重要カテゴリとして認識し始めたことを示した。
-
-> **出典**: 36kr — [https://36kr.com/p/3768661067252483](https://36kr.com/p/3768661067252483) [Tier 1]
-
-### MiniMaxのHarness事例
-
-機器之心（Juejin経由）が「当AI迈入Harness时代：以MiniMax为样本看智能体云端新基建」を報じた。OpenClawの爆発的人気を受けて、MiniMaxがHarnessレイヤーの実装で先行している事例として注目されている。
-
-> **出典**: Juejin — [https://juejin.cn/post/7629167139824828442](https://juejin.cn/post/7629167139824828442) [Tier 2]
-
-### DeepAgentsフレームワーク
-
-Juejinで「DeepAgents 快速上手教程」が公開され、DeepAgentsを高レベルAgent Harness（総制御フレームワーク）として位置づけ、LangChain/LangGraphとの関係を整理している。
-
-> **出典**: Juejin — [https://juejin.cn/post/7629231480154816553](https://juejin.cn/post/7629231480154816553) [Tier 2]
-
-## 関連リンク
-
-### 一次ソース
-
-| ソース | URL | Tier | 概要 |
-|--------|-----|------|------|
-| arXiv 2604.08224 | — | Tier 1: 学術論文 | "Externalization in LLM Agents" 54ページサーベイ |
-| V2EX 論文要約 | https://www.v2ex.com/t/1206029 | Tier 2: コミュニティ | fennu2333による論文要約・議論 |
-| 掘金: 三重進化 | https://juejin.cn/post/7628556428008882202 | Tier 2: 技術ブログ | Prompt→Agent→Harness進化モデル |
-| 掘金: 解説・自己評価 | https://juejin.cn/post/7628114539187666980 | Tier 2: 技術ブログ | Harness概念解説・codegen自己評価 |
-
-### 関連ページ
-
-- [[ai-agent]] — エージェントの基本概念
-- [[claude-code]] — コーディングエージェントの代表例
-- [[mcp]] — エージェント間プロトコル
-- [[vibe-coding]] — 非形式的AI開発手法
+- [V2EX: 啃了那篇54页的Agent Harness综述, 给大伙讲个省流版](https://www.v2ex.com/t/1206029) — fennu2333 (2026-04-15)
+- [arXiv: Externalization in LLM Agents (2604.08224)](https://arxiv.org/abs/2604.08224) — Harness Engineering 論文
+- [Chorus AI Blog: Externalization in LLM Agents](https://chorus-ai.dev/zh/blog/externalization-in-llm-agents/) — 詳細解説
+- [36kr: 最新风口Harness，李开复、陆奇已重金入场](https://36kr.com/p/3768661067) — 中国投資動向 (2026-04-16)

@@ -4,7 +4,7 @@ source: v2ex
 url: "https://www.v2ex.com/t/1206873"
 author: "xxyangyoulin"
 date: 2026-04-18
-score: 0
+score: 3
 tags: ["claude"]
 ---
 

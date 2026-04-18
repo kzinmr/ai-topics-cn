@@ -390,5 +390,38 @@ Scheduled newsletter triage run (cron). ChinAI #336, #345, #348, #352 の4通を
 - ChinAI #348（Compute Year in Review）の概念ページ化
 - MiniMax vs Moonshot/Kimi 比較ページ
 - 中国半導体/GPU制限 concept（H20、制裁影響）
-- Llama/Meta entity（8言及継続）
+- Llama/Meta entity（6言及継続）
 - 文心一言/Baidu entity（6言及継続）
+
+## [2026-04-18] triage-04 | 第4回トリアージ — 10ページ作成、inbox 618件処理
+
+### 処理概要
+inbox内の618件未処理記事（V2EX: 283, Juejin: 186, 36kr: 93, WeChat: 27, Newsletters: 29）から、スパム・求人・広告を除外し、技術的価値の高い40件を特定。10件の新規Wikiページを作成。
+
+### 新規作成ページ
+| ページ | 種別 | 根拠 |
+|--------|------|------|
+| `concepts/harness-engineering.md` | Concept | arXiv 2604.08224、Agent外化パターン |
+| `entities/creatorweave.md` | Entity | ローカル優先ブラウザ創作ワークスペース |
+| `concepts/ai-inner-os.md` | Concept | AI CLIインナーモノローグ可視化 |
+| `concepts/ai-video-generation.md` | Concept | 一人開発・短视频自動生成パイプライン |
+| `concepts/gomcp.md` | Concept | Go言語MCP Serverフレームワーク |
+| `concepts/mcp-security.md` | Concept | OpenClaw事件・MSB安全基準 |
+| `entities/soul-killer.md` | Entity | Claude Code用Galgame Agent作成器 |
+| `entities/echoic.md` | Entity | オープンソースAI口语練習ツール |
+| `concepts/transpec.md` | Concept | 仕様駆動開発フレームワーク間変換 |
+| `entities/fudan-nlp-agent-survey.md` | Entity | 復旦大学80ページAgent総論 |
+
+### 更新ページ
+| ページ | 更新内容 |
+|--------|----------|
+| `wiki/index.md` | 63ページに更新、全Entity/Concept反映 |
+| `wiki/log.md` | 本トリアージ記録追加 |
+
+### Wiki統計
+- **Entity Pages**: 33（+5: creatorweave, soul-killer, echoic, fudan-nlp-agent-survey, baidu-ernie, llama-meta, claude-design）
+- **Concept Pages**: 29（+11: harness-engineering, ai-inner-os, ai-video-generation, gomcp, mcp-security, transpec, beike-ai-customer-service, cc-monitor, chinai-348-compute-year-review, claude-code-router, glory-ai-phone, gpu-sanctions-china, ollama-criticism, page-index, spokenwoz）
+- **Comparison Pages**: 1（minimax-vs-kimi-moonshot）
+- **Total Pages**: 63（+35）
+- **Raw Articles**: 23（アーカイブ済み）
+- **Last Updated**: 2026-04-18
