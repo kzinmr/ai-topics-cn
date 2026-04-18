@@ -1,164 +1,152 @@
 ---
 name: x-account-enrichment
-description: Enrich skeleton X/Twitter entity pages for Chinese AI space accounts from x-accounts.yaml
+description: Enrich skeleton X/Twitter account entity pages to full quality (8-15KB), matching antirez-com.md / simon-willison.md depth.
 category: wiki
-version: 1.0.0
-author: hermes
-license: MIT
-metadata:
-  hermes:
-    tags: [Wiki, Enrichment, X-Accounts, Chinese-AI, Entity]
 ---
 
-# X Account Enrichment（中国語AIスペース版）
+# X Account Enrichment
 
-## Purpose
+Enrich skeleton entity pages for X/Twitter accounts tracked in `~/x-accounts.yaml`.
 
-`config/feeds/x-accounts.yaml` に登録された中国語AIスペースのX/Twitterアカウントのスケルトンエンティティページを、充実したフルページにエンリッチする。中国のAI研究者、開発者、エンジニア、メディア関係者のX活動、ブログ投稿、プロジェクト、貢献内容を調査し、日本語で記述する。
+## Workflow
 
-## Steps
+1. **Audit current state:**
+   ```bash
+   python3 -c "
+   import os, yaml
+   with open(os.path.expanduser('~/x-accounts.yaml')) as f:
+       accounts = [a['handle'].lstrip('@') for a in yaml.safe_load(f)['accounts']]
+   entity_dir = os.path.expanduser('~/wiki/entities')
+   for handle in accounts:
+       path = os.path.join(entity_dir, f'{handle}.md')
+       if os.path.exists(path):
+           with open(path) as f: content = f.read()
+           skeleton = 'status: skeleton' in content
+           enriched = 'Core Ideas' in content
+           print(f'  {handle}: skeleton={skeleton}, enriched={enriched}')
+       else:
+           print(f'  {handle}: MISSING')
+   "
+   ```
 
-### 1. 現状監査
+2. **Prioritize by tiers:**
+   - Tier 1: High-impact AI researchers, open-source leaders, known bloggers
+   - Tier 2: ML engineers, startup founders, educators
+   - Tier 3: Contributors, emerging voices
 
-```bash
-# x-accounts.yamlのアカウント一覧とエンティティページの状態確認
-python3 -c "
-import os, yaml
-with open(os.path.expanduser('~/ai-topics-cn/config/feeds/x-accounts.yaml')) as f:
-    data = yaml.safe_load(f)
-    accounts = data.get('accounts', data) if isinstance(data, dict) else data
-entity_dir = os.path.expanduser('~/ai-topics-cn/wiki/entities')
-for acct in accounts:
-    handle = acct['handle'].lstrip('@')
-    name = acct.get('name', handle)
-    path = os.path.join(entity_dir, f'{handle}.md')
-    if os.path.exists(path):
-        with open(path) as f: content = f.read()
-        skeleton = 'status: skeleton' in content or len(content) < 2000
-        print(f'  {handle} ({name}): skeleton={skeleton}, size={len(content)}B')
-    else:
-        print(f'  {handle} ({name}): MISSING')
-"
-```
+## Batch process 2 per subagent (4 parallel max):
+   - Split entities across 4 parallel subagents, 2 per subagent
+   - Provide exact filenames in the goal (absolute paths: `/home/exedev/wiki/entities/{name}.md`)
+   - Include the format template in the prompt
+   - 8 entities processed this way = ~6 minutes total (vs 15+ minutes sequential)
 
-### 2. 優先度付け
+4. **Post-batch verification:**
+   ```bash
+   # Check file sizes
+   ls -la ~/wiki/entities/*.md | sort -k5 -n -r | head -30
+   
+   # Find remaining skeletons
+   grep -l 'status: skeleton' ~/wiki/entities/*.md
+   
+   # Find duplicates (skeleton + enriched for same person)
+   # Common pattern: full-name-slug.md vs handle.md
+   ```
 
-以下のティアで優先順位を決定する：
+5. **Cleanup duplicates:**
+   ```bash
+   # Delete skeleton duplicates after confirming enriched version exists
+   rm ~/wiki/entities/ethan-mollick.md      # → emollick.md
+   rm ~/wiki/entities/chip-huyen.md          # → chipro.md
+   rm ~/wiki/entities/lilian-weng.md         # → lilianweng.md
+   rm ~/wiki/entities/eugene-yan.md          # → eugeneyan.md
+   rm ~/wiki/entities/samuel-colvin.md       # → samuelcolvin.md (also empty)
+   rm ~/wiki/entities/benjamin-clavi.md      # → bclavie.md
+   rm ~/wiki/entities/cl-mentine-fourrier.md # → clefourrier.md
+   rm ~/wiki/entities/late-interaction.md    # concept, not person
+   ```
 
-| ティア | 対象 | 例 |
-|------|------|------|
-| Tier-1 | 中国AIの重要人物、主要企業のCTO/研究リード | 李沐（Li Mu）、張俊林、DeepSeek/MoonshotのCTO |
-| Tier-2 | MLエンジニア、AIコメンテーター、スタートアップ創業者 | 中国AIエコシステムの活発な発信者 |
-| Tier-3 | コントリビューター、新興の声 | 中国AIに関するインサイトを提供する新興アカウント |
+6. **Commit and push:**
+   ```bash
+   cd ~/ai-topics-cn && git add wiki/ && git commit -m "wiki: enrich X accounts (batch N)" && git push
+   ```
 
-### 3. リサーチ戦略
-
-各アカウントについて以下を調査：
-
-1. **X/Twitter活動**: 最近のツイート、主要な意見、ディスカッションテーマ
-2. **ブログ/個人サイト**: 記事、技術ノート（知乎コラム、WeChat記事含む）
-3. **GitHubリポジトリ**: 作成・コントリビュートしたプロジェクト
-4. **中国AIコミュニティでの影響力**: V2EX、Juejin、Zhihuでの言及状況
-5. **講演、インタビュー、ポッドキャスト**: 公開発言
-6. **他wikiエンティティとの接点**: [[deepseek]], [[glm-zhipu]], [[kimi-moonshot]] 等との関係
-
-#### 中国語圏特有の調査ポイント
-
-- 知乎の専門家プロフィール（回答数、フォロワー数、主要回答テーマ）
-- WeChat公众号（運営している場合）
-- Bilibili/動画プラットフォームでの活動
-- 中国国内企業との関係（阿里、バイトダンス、テンセント、バイドゥ、清華大学等）
-
-### 4. エンリッチフォーマット
+## Enrichment Format Template
 
 ```yaml
 ---
-title: "氏名（中国語名/英語名）"
+title: "Full Name"
 handle: "@twitter_handle"
-created: YYYY-MM-DD
-updated: YYYY-MM-DD
-tags: [person, 関連タグ]
-aliases: ["中国語名", "英語名", "handle"]
-source_lang: zh-CN
+created: 2026-04-10
+updated: 2026-04-10
+tags: [person, topic1, topic2]
+aliases: ["handle", "alt-name"]
 ---
 
-# 氏名 (@handle)
+# Full Name (@handle)
 
 | | |
 |---|---|
 | **X** | [@handle](https://x.com/handle) |
-| **知乎** | [プロフィール](URL) |
+| **Blog** | [URL](URL) |
 | **GitHub** | [username](https://github.com/username) |
-| **所属** | 企業名 / 役職 |
-| **代表業績** | 主要な貢献 |
-| **概要** | 2〓3文の背景説明 |
+| **Role** | Job title |
+| **Known for** | Key contributions |
+| **Bio** | 2-3 sentence background |
 
-## 概要
+## Overview
 
-2〓3段落の紹介。人物背景、AI領域での重要性、中国AIエコシステムでの位置づけ。
+2-3 paragraph introduction of who they are, their background, and why they matter in AI.
 
-## 核心的な主張（Core Ideas）
+## Core Ideas
 
-中国AIに関する主要な見解、理論、意見。サブセクションで各テーマを整理。実際の投稿/記事を可能な限り引用。
-中国語原文は原文のまま保持し、日本語訳を併記。
+Their key viewpoints, theories, and opinions on LLM/AI Agent technologies. Use subsections for each major theme. Quote their actual posts/articles where possible.
 
-### [テーマ1]
-分析 + エビデンス
+## Key Work
 
-### [テーマ2]
-分析 + エビデンス
+- Project/tool/library they created
+- Papers published
+- Notable blog posts
+- Talks and presentations
 
-## 主要業績（Key Work）
+## Blog / Recent Posts
 
-- 作成したプロジェクト/ツール/ライブラリ
-- 発表論文
-- 著名なブログ記事 / 知乎回答
-- 講演・プレゼンテーション
+Key articles they've written with dates and summaries.
 
-## 最近の活動（Recent Posts）
+## Related People
 
-主要な記事/ツイートを日付付きで記載。
+Connections to other wiki entities.
 
-## 関連人物（Related People）
+## X Activity Themes
 
-他wikiエンティティとの接点。
-
-## X活動テーマ（X Activity Themes）
-
-最も頻繁にツイートするトピック。
+What they tweet about most frequently.
 ```
 
-### 5. バッチ処理
+## Quality Targets
 
-- サブエージェントあたり2アカウント（並列最大4）
-- 絶対パスを指定: `/home/exedev/ai-topics-cn/wiki/entities/{name}.md`
-- バッチ後にファイルサイズとスケルトン状態を検証
+- **Size**: 8-15KB per page minimum
+- **Content**: Actual quotes, specific examples, real blog post links
+- **Sections**: Core Ideas (with subsections), Key Work, Blog/Recent Posts, Related People, X Activity Themes
+- **Frontmatter**: No `status: skeleton` tag
+- **Cross-references**: Link to other wiki entities using `[[entity-name]]` format
 
-### 6. コミット
+## Known Subagent Pitfalls
 
-```bash
-cd ~/ai-topics-cn && git add wiki/ && git commit -m "wiki: enrich X accounts (batch N)" && git push
-```
+1. **Filename aliasing**: Subagents create files with different names than specified (e.g., `hynek-schlawack.md` instead of `hynek.md`). Always audit post-batch for duplicates.
 
-## Output
+2. **Budget exhaustion**: 50-iteration budget per subagent. When processing 5 entities, subagent may hit limit and skip writing some files. Check `exit_reason: max_iterations` in results.
 
-- エンリッチ済みエンティティページ（8-15KB目標）
-- 実際の引用、具体的な例、実在のリンクを含む
-- `[[deepseek]]`, `[[glm-zhipu]]`, `[[kimi-moonshot]]` 等への相互リンク
-- wiki/index.md と wiki/log.md の更新
+3. **Path confusion**: delegate_task subagents write to `~/.hermes/hermes-agent/wiki/entities/` (agent home) instead of `~/wiki/entities/` (symlink to `~/ai-topics-cn/wiki/entities/`). ALWAYS provide the full absolute path `/home/exedev/wiki/entities/` in subagent prompts, and verify files were written there after completion. If subagents wrote to the wrong location, copy enriched files from the agent home path to the correct path.
 
-## 品質目標
+4. **Status cleanup needed**: Even when subagents write content successfully, `status: skeleton` in frontmatter is often NOT removed. Always verify and manually replace with `status: complete` if needed.
 
-- **サイズ**: 8-15KB以上（glm-zhipu.mdレベルを参考）
-- **内容**: 実際の引用、具体的な例、実在のURL
-- **セクション**: 核心的な主張（サブセクション付き）、主要業績、最近の活動、関連人物、X活動テーマ
-- **フロントマター**: `source_lang: zh-CN`、`status: skeleton`タグなし
-- **相互参照**: `[[entity-name]]` 形式で他エンティティをリンク
-- **言語**: 日本語で記述、中国語原文は引用時に保持
+5. **Successful pattern confirmed (2026-04-10)**: 8 entities enriched in 4 parallel batches of 2 each, completed in ~6 minutes with file sizes 12.5-18.7KB (exceeding 8-15KB target). This confirms the 2-per-subagent batching strategy works well.
 
-## 既知の注意点
+## Research Strategy
 
-1. **ファイル名エイリアス**: サブエージェントが指定と異なるファイル名で作成することがある。バッチ後に必ず重複チェック。
-2. **バジェット枚渇**: 50イテレーション制限。バッチ後に全ファイルが書き込まれたか検証。
-3. **パス混乱**: サブエージェントが誤ったディレクトリに書き込むことがある。常に絶対パス `/home/exedev/ai-topics-cn/wiki/entities/` を指定すること。
-4. **statusクリーンアップ**: エンリッチ後も `status: skeleton` が残ることがある。手動で確認・削除。
+For each person:
+1. Search X/Twitter for their recent activity and key opinions
+2. Check their blog/personal site for articles
+3. Look up GitHub repositories they've created
+4. Find interviews, talks, or presentations
+5. Search for mentions in AI community discussions
+6. Cross-reference with other wiki entities for related connections
