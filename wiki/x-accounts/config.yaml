@@ -180,8 +180,32 @@ accounts:
   notable: Local LLM specialist, gemma4-26b fine-tuning (0/100 refusal, 90% faster prompt processing), MLX/Mac optimization advocate
   affiliation: Independent (Seoul, South Korea)
   language: Korean/English
-total_tracked: 11
-last_updated: '2026-04-18'
+- handle: '@yifan_zhang_'
+  name: Yifan Zhang
+  wiki: yifan_zhang_.md
+  category: researcher-engineer
+  followers: 8.3K
+  focus:
+  - LLM Reasoning & Reinforcement Learning
+  - Attention Mechanisms (TPA, GRAPE)
+  - Mathematical Theorem Proving (MathCode, Lean 4)
+  - Model Architecture Design
+  - General Preference Models
+  projects:
+  - MathCode
+  - TPA (Tensor Product Attention)
+  - GRAPE
+  - RPG (KL-Regularized Policy Gradient)
+  - Deep Delta Learning
+  - AutoMathText
+  - Cumulative Reasoning
+  - GPM (General Preference Model)
+  - FlashSampling
+  notable: Princeton AI Lab Fellow, multiple NeurIPS/ICLR/ICML/AACL papers, creator of MathCode autonomous math proving agent
+  affiliation: Princeton University (PhD), previously ByteDance Seed Team
+  language: Chinese/English
+total_tracked: 12
+last_updated: '2026-04-19'
 sources:
 - Yahoo Search (site:x.com/HANDLE)
 - X/Twitter profiles
