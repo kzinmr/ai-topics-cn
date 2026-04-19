@@ -166,15 +166,15 @@
       "schedule_display": "0 21,9 * * *",
       "repeat": {
         "times": null,
-        "completed": 1
+        "completed": 2
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-04-18T08:35:50.952640+00:00",
-      "next_run_at": "2026-04-18T21:00:00+00:00",
-      "last_run_at": "2026-04-18T09:29:14.040382+00:00",
+      "next_run_at": "2026-04-19T09:00:00+00:00",
+      "last_run_at": "2026-04-18T21:05:40.489597+00:00",
       "last_status": "error",
       "last_error": "Agent completed but produced empty response (model error, timeout, or misconfiguration)",
       "last_delivery_error": null,
@@ -198,10 +198,10 @@
       "script": null,
       "schedule": {
         "kind": "cron",
-        "expr": "0 16 * * *",
-        "display": "0 16 * * *"
+        "expr": "0 16 * * 0",
+        "display": "0 16 * * 0"
       },
-      "schedule_display": "0 16 * * *",
+      "schedule_display": "0 16 * * 0",
       "repeat": {
         "times": null,
         "completed": 1
@@ -216,7 +216,7 @@
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
-      "deliver": "origin",
+      "deliver": "discord:1494583846946213938",
       "origin": {
         "platform": "discord",
         "chat_id": "1495012493133742081",
@@ -225,5 +225,5 @@
       }
     }
   ],
-  "updated_at": "2026-04-18T16:00:45.439896+00:00"
+  "updated_at": "2026-04-18T21:05:40.490462+00:00"
 }
