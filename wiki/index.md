@@ -1,7 +1,7 @@
 # AI Topics China Wiki — Index
 
 最終更新: 2026-04-19
-エンティティ: 33, コンセプト: 37, 比較: 1
+エンティティ: 33, コンセプト: 41, 比較: 1
 
 ## エンティティ (Entities)
 
@@ -59,6 +59,7 @@
 - [[gomcp|GoMCP — Go言語MCP Serverフレームワーク]]
 - [[gpu-sanctions-china|中国GPU制裁・半導体輸出制限 — 米中AI競争と国産化動向]]
 - [[harness-engineering|Harness Engineering — LLM Agentの外化（Externalization）パターン]]
+- [[implicit-structure-collapse|隐性结构塌缩 — LLM出力が平均的構造に塌縮する現象と対策]]
 - [[langchain|langchain]]
 - [[mcp-security|MCPセキュリティ — OWASP Top 10とMSB安全基準]]
 - [[mcp|MCP（Model Context Protocol）— AIツール連携の標準規格]]
@@ -85,6 +86,9 @@
 
 ## 最新生記事 (Recent Raw Articles)
 
+- [[AI 周刊 2026.04.13-04.19] 中美差距减小、Claude Opus 4.7发布、国产算力突围](raw/articles/2026-04-19-AI-Weekly-2026.04.13-04.19-中美差距-Claude-Opus-4.7-国产算力突围.md)
+- [[大模型输出的隐性结构塌缩问题及对策] 码事漫谈](raw/articles/2026-04-19-大模型输出隐性结构塌缩问题及对策-码事漫谈.md)
+- [[安全专家纷纷离职谁为AI竞赛踩刹车] 36kr](raw/articles/2026-04-18-安全专家纷纷离职谁为AI竞赛踩刹车-36kr.md)
 - [[开源分享] transpec，开发框架转换工具](raw/articles/2026-04-18-开源分享-transpec-开发框架转换工具-29836536.md)
 - [一个人搞了两个月，聊聊用 AI 做短视频自动生成的技术方案和踩坑](raw/articles/2026-04-18-一个人搞了两个月-聊聊用-AI-做短视频自动生成的技术方案和踩坑-dcd7d775.md)
 - [复旦NLP团队发布80页大模型Agent综述,一文纵览AI智能体的现状与未来](raw/articles/2026-04-17-复旦NLP团队发布80页大模型Agent综述-一文纵览AI智能体的现状与未来-357bad68.md)

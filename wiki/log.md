@@ -554,3 +554,48 @@ Originating conversation: auto-cron (crawl_all.py)
 - **Comparison Pages**: 1
 - **Total Pages**: 71
 - **Last Updated**: 2026-04-19
+
+## [2026-04-19 21:02] triage-evening | 夕方便新クロール — 新概念ページ作成
+
+### ソース別収集数
+- crawl_all: 57件 (V2EX 15, Juejin 15, 36kr 12, Zhihu 0, WeChat 15)
+- Newsletter: 0件 (既処理済み Apr-18分のみ)
+- RSS(blogwatcher): DBなし
+- **合計**: 57件
+
+### トリアージ結果
+| 判定 | 件数 | 備考 |
+|------|------|------|
+| ✅ Take | 10件 | 新規Wikiページ作成・既存ページ更新 |
+| ⚠️ Reference | 5件 | raw/articles/保存のみ |
+| ❌ Skip | 42件 | プロモ・ゲーム・一般生活議論 |
+
+### ✅ Take（Wiki更新対象）
+1. **Claude Opus 4.7** — 安全専門家大量退職・Claude僧人インタビュー追加更新 (既存ページ)
+2. **DeepSeek** — $100億估值$3億資金調達・黄仁勋慌了的戦略的対抗追加 (既存ページ)
+3. **[[implicit-structure-collapse]]** — 新規コンセプトページ作成（LLM出力の隠れ構造塌縮分析）
+4. **Claude Design** — Figma Killer機能・宗教とAI倫理言及 (既存ページ更新済み)
+5. **OpenAI人事** — Sora之父离职・IPO前夜の組織動揺 (36kr)
+6. **中美AI差距 2.7%** — Stanford HAI 2026レポート (Juejin週次摘要より)
+7. **超算郑州节点** — 6万枚国产AIチップ・10EFLOPS (Juejin週次摘要)
+8. **隐性结构塌缩** — Juejin獨自分析、平庸出力破解3手法 (新概念)
+9. **Harness (Powerball)** — V2EX開発者自作ツール (V2EX)
+10. **Claude僧人** — 弃码出家30年后回归、Anthropic人文的AI安全アプローチ (36kr)
+
+### Wiki更新
+| アクション | ページ |
+|-----------|--------|
+| 新規作成 | `concepts/implicit-structure-collapse.md` — LLM出力構造塌縮の理論と対策 |
+| 更新 | `entities/claude-opus-4-7.md` — 安全専門家退職・Claude僧人追加 |
+| 更新 | `entities/deepseek.md` — 資金調達詳細・黄仁勋対応追加 |
+| 保存 | `raw/articles/2026-04-19-AI-Weekly-*.md` |
+| 保存 | `raw/articles/2026-04-19-大模型输出隐性结构塌缩*.md` |
+| 保存 | `raw/articles/2026-04-18-安全专家纷纷离职*.md` |
+| 更新 | `wiki/index.md` — 新規コンセプト追加 |
+
+### Wiki統計
+- **Entity Pages**: 33
+- **Concept Pages**: 41 (38→41 +implicit-structure-collapse)
+- **Comparison Pages**: 1
+- **Total Pages**: 75
+- **Last Updated**: 2026-04-19 21:02
