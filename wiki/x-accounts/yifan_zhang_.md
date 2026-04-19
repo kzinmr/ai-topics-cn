@@ -60,6 +60,19 @@ bio: "PhD at @Princeton University, Princeton AI Lab Fellow. LLM Reasoning & RL,
 - 2025年、arXiv: 2601.00417
 - 共著: Yifan Zhang, Yifeng Liu, Mengdi Wang, Quanquan Gu (Princeton & UCLA)
 
+### MiniMax M2 技術分析 (Oct 2025)
+- 230Bパラメータ、10BアクティブパラメータのSparse MoEモデル (Hailuo AI)
+- **GPT-OSS類似構造**: Full AttentionとSliding Window Attention (SWA)のインターリーブ
+  - グローバルコンテキストとローカルウィンドウの併用による効率化
+  - Gemma 3と同様のアプローチ
+- **Per-layer QK Norm**: 各attentionヘッドが固有の学習可能RMSNormを持つ
+  - Sebastian Raschkaが「LLM Architecture Gallery」で独立項目として言及
+  - 従来の共有QK-Normからヘッド固有への進化
+- **独立したRoPE設定**: Full Attention部とSWA部がそれぞれ独自のRoPE theta設定
+- **FlashAttentionの優位性**: 低精度学習・推論（FP8/FP4）においてFlashAttentionが線形Attentionより効果的であることを強調
+- 投稿は439Kビュー、584いいね、313ブックマークを獲得
+- 「AI Labs are doing real science, instead of Pride and Prejudice!」
+
 ### AutoMathText
 - ACL 2025 Findings 採択
 - Zero-shot生成的分類器による数学テキストの自律的データ選択
@@ -89,8 +102,8 @@ bio: "PhD at @Princeton University, Princeton AI Lab Fellow. LLM Reasoning & RL,
 
 ## 最近の投稿傾向 (2026年4月時点)
 
-- **Minimax M2 技術分析**: GPT-OSS類似構造（Full Attention + Sliding Window Attention）、QK Norm、各attentionヘッド固有のlearnable RMSNormについて詳細解説 (Oct 2026)
-- **TPA NeurIPS Spotlight 発表**: Tensor Product Attentionの採択を報告 (Oct 2026)
+- **Minimax M2 技術分析**: GPT-OSS類似構造（Full Attention + Sliding Window Attentionのインターリーブ）、各attentionヘッド固有のlearnable RMSNorm (per-layer QK-Norm)、Full/SWA部で独立したRoPE theta設定、低精度(FP8/FP4)でのFlashAttention優位性を指摘。439K views, 584 likes, 313 bookmarks
+- **TPA NeurIPS Spotlight 発表**: Tensor Product Attentionの採択を報告 (Oct 2025)
 - **MathCode V4**: "V4, next week" — 次世代数学証明エージェントのリリース予告 (pinned post, 393 likes, 615K views)
 - **Gram Newton-Schulz**: Muonの最適化手法を2倍高速化した数学的等価計算手法の紹介
 - **数学的形式証明**: 「Math is the frontier of superintelligence. It always has been, and it always will be.」— 自律型理論研究エージェントへのビジョン発信
