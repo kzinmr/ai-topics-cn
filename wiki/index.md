@@ -1,7 +1,7 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-04-18
-エンティティ: 33, コンセプト: 29, 比較: 1
+最終更新: 2026-04-19
+エンティティ: 33, コンセプト: 37, 比較: 1
 
 ## エンティティ (Entities)
 
@@ -70,6 +70,14 @@
 - [[transpec|Transpec — 仕様駆動開発フレームワーク間変換ツール]]
 - [[vector-db|Vector DB（向量数据库）— RAG・AI検索の基盤インフラ]]
 - [[vibe-coding|Vibe Coding（氛围编程）— AIネイティブなソフトウェア開発手法]]
+- [[china-ai-agent-ecosystem|中国AI智能体生态 — 2026年プラットフォーム・アーキテクチャ・市場動向]]
+- [[china-local-deployment|中国大模型本地部署 — 量子化・VRAM最適化・消費者GPUでの推論]]
+- [[china-ai-regulation|中国AI监管政策 — 生成AI管理弁法、算法备案、データ安全規制]]
+- [[china-coding-agents|中国编程Agent工具 — コーディングAIエージェントの生態系]]
+- [[coze|扣子 (Coze) — ByteDanceのノーコードAI Agentプラットフォーム]]
+- [[dify|Dify — オープンソースLLMOpsプラットフォーム]]
+- [[china-ai-landscape|中国AI全景 — BAT + ByteDance + スタートアップのエコシステムマップ]]
+- [[china-open-source-ai|中国开源AI社区 — ModelScope、HuggingFace中国、Giteeエコシステム]]
 
 ## 比較 (Comparisons)
 

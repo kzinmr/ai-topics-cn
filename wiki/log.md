@@ -479,3 +479,33 @@ MiniMax entityページおよびMiniMax vs Kimi比較ページをM2.5/M2.7モデ
 - **Comparison Pages**: 1（更新: minimax-vs-kimi-moonshot）
 - **Total Pages**: 66
 - **Last Updated**: 2026-04-19
+
+## [2026-04-19] hot-topic-wiki-fill | ホットトピック分析で指摘されたwiki未作成トピックを8件作成
+
+### 作成背景
+ホットトピック分析で指摘されていた未作成の重要概念ページをまとめて作成。
+
+### 新規作成ページ
+| ページ | 種別 | 重要度 | 根拠 |
+|--------|------|--------|------|
+| `concepts/china-ai-agent-ecosystem.md` | Concept | 🔥🔥🔥 HIGH | 中国AIプラットフォーム全体図 |
+| `concepts/china-local-deployment.md` | Concept | 🔥🔥🔥 HIGH | 国産モデルの本地部署エコシステム |
+| `concepts/china-ai-regulation.md` | Concept | 🔥🔥🔥 HIGH | AI监管政策・算法备案・データ安全 |
+| `concepts/china-coding-agents.md` | Concept | 🔥🔥🔥 HIGH | 中国プログラミングAgentツール比較 |
+| `concepts/coze.md` | Concept | 🔥🔥 MEDIUM | ByteDanceのノーコードAgentプラットフォーム |
+| `concepts/dify.md` | Concept | 🔥🔥 MEDIUM | オープンソースLLMOpsプラットフォーム |
+| `concepts/china-ai-landscape.md` | Concept | 🔥🔥 MEDIUM | BAT + ByteDance + スタートアップ全景 |
+| `concepts/china-open-source-ai.md` | Concept | 🔥🔥 MEDIUM | 中国OSS AIコミュニティ生態系 |
+
+### 更新ページ
+| ページ | 更新内容 |
+|--------|----------|
+| `wiki/index.md` | 8件新規コンセプト追加、カウント29→37に更新 |
+| `wiki/log.md` | 本トリアージ記録追加 |
+
+### Wiki統計
+- **Entity Pages**: 33
+- **Concept Pages**: 37（+8）
+- **Comparison Pages**: 1
+- **Total Pages**: 71（+8）
+- **Last Updated**: 2026-04-19

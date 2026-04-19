@@ -1,0 +1,117 @@
+---
+title: "Dify — オープンソースLLMOpsプラットフォーム"
+created: 2026-04-19
+updated: 2026-04-19
+tags: [llmops, open-source, agent-platform, rag, workflow, china]
+aliases: ["Dify", "Dify.ai", "Dify平台", "开源LLMOps"]
+source_lang: zh-CN
+---
+
+# Dify — オープンソースLLMOpsプラットフォーム
+
+> **重要度**: 🔥🔥 MEDIUM — 中国発OSS Agent/RAGプラットフォームの代表格
+> **関連概念**: [[china-ai-agent-ecosystem]], [[rag]], [[mcp]], [[agent-skills]], [[coze]]
+> **関連エンティティ**: [[qwen]], [[deepseek]], [[openclaw]]
+
+## 概要
+
+**Dify**は中国発の**オープンソースLLMアプリケーション開発プラットフォーム**。GitHubスター数50,000超、フォーク3,000以上（2026年4月時点）。扣子（Coze）の「ローコード」志向に対し、Difyは**「開発者向け宣言的アプローチ」**を掲げ、YAML/JSONによるAgent定義・API-first設計・CI/CD統合を特徴とする。
+
+## 核心機能
+
+### 1. アプリケーション構築
+- **Chat App**: 会話型AI（カスタムプロンプト + 知識庫）
+- **Workflow App**: 条件分岐・ループ・並列実行を含むビジネスロジック
+- **Agent App**: ツール呼び出し・自己修正・複数モデル協調
+
+### 2. RAGパイプライン
+DifyのRAGは業界最高水準の柔軟性：
+- **ドキュメント処理**: PDF/Word/Excel/Webスクレイピング → テキスト抽出 → 分割 → エンベディング
+- **検索戦略**: ハイブリッド検索（BM25 + ベクトル）、再ランキング（Cross-Encoder）、クエリ拡張
+- **エンベディングモデル**: OpenAI/BGE（智源）/m3e（阿里）など複数選択可能
+
+### 3. モデル管理
+- **マルチプロバイダ**: OpenAI, Anthropic, Google, 智谱, 百度, 阿里, MiniMax, 月之暗面
+- **ローカルモデル**: Ollama/vLLM/SGLang統合、GGUF/GPTQ/AWQ対応
+- **フォールバック**: プライマリモデル失敗時にセカンダリへ自動切替
+
+### 4. 観測・評価
+- **ログ**: 全リクエスト/レスポンスの追跡（ユーザーID・セッションID・モデル・トークン数）
+- **評価**: ヒューマン評価（1〜5点）+ 自動評価（回答精度・応答時間・トークンコスト）
+- **分析**: ダッシュボードで利用傾向・コスト推移・モデル性能比較
+
+## 開発者向けエコシステム
+
+### Plugin Architecture
+Dify Pluginは**Python製ツール**をAgentに追加可能。2026年4月時点でコミュニティPlugin数1,200超：
+- **データソース**: MySQL/PostgreSQL/Redis/MongoDB
+- **API連携**: WeChat Work/Feishu/DingTalk/Trello/Jira
+- **AIツール**: 画像生成(Stable Diffusion)/音声合成(TTS)/動画生成
+
+### API-first Design
+```yaml
+# Dify Agent定義例
+app:
+  name: "カスタマーサポートAgent"
+  mode: "chat"
+  model:
+    provider: "qwen"
+    name: "qwen2.5-72b"
+  prompt_template: |
+    あなたは企業のカスタマーサポートAgentです。
+    知識庫の情報を参照し、丁寧に回答してください。
+  tools:
+    - type: "knowledge_retrieval"
+      name: "FAQデータベース"
+    - type: "api_call"
+      name: "注文照会API"
+      url: "https://api.example.com/orders"
+  workflow:
+    - step: "ユーザー入力"
+    - step: "知識庫検索"
+      condition: "score > 0.7"
+    - step: "LLM回答生成"
+```
+
+## 企業導入事例
+
+| 企業 | 規模 | 用途 |
+|------|------|------|
+| **途牛 (Tuniu)** | 旅行プラットフォーム | 顧客サポートAgent（Dify + Qwen） |
+| **跨境电商A社** | 年商50億円 | 商品情報抽出Agent（Dify RAG + GPT-4） |
+| **金融B社** | 地方銀行 | リスクレポート自動生成（Dify Workflow + GLM） |
+
+## 扣子 (Coze) との比較
+
+| 次元 | Dify | 扣子 (Coze) |
+|------|------|-------------|
+| **ライセンス** | オープンソース (Apache 2.0) | クローズド（ByteDance proprietary） |
+| **対象ユーザー** | 開発者・エンジニア | ノンテクニカル・ビジネス |
+| **構築方法** | YAML/API/コード | ドラッグ&ドロップ |
+| **カスタマイズ性** | 非常に高い | 制限あり |
+| **モデル選択肢** | 自由（ローカル含む） | プラットフォーム提供のみ |
+| **デプロイ** | セルフホスト/クラウド | クラウドのみ |
+| **コスト** | 無料（インフラ費のみ） | 無料枠→有料プラン |
+
+## 課題
+
+1. **学習曲線**: YAML/API設定は技術者向け。ノンテクニカルユーザーには敷居が高い
+2. **ドキュメント**: 中国語ドキュメントは充実しているが、日本語・英語版は遅れ気味
+3. **サポート**: コミュニティベース。エンタープライズSLAは提供中だが、中国国内中心
+
+## 関連リンク
+
+### 内部リンク
+- [[china-ai-agent-ecosystem]] — 中国Agentプラットフォーム全景
+- [[rag]] — 検索拡張生成
+- [[mcp]] — Model Context Protocol
+- [[coze]] — 扣子プラットフォーム
+- [[agent-skills]] — Agentスキル定義
+
+### 外部ソース
+| ソース | URL | ティア | 概要 |
+|--------|-----|--------|------|
+| Dify公式サイト | [dify.ai](https://dify.ai) | T1 | プラットフォーム本体 |
+| GitHub | [github.com/langgenius/dify](https://github.com/langgenius/dify) | T1 | OSSリポジトリ |
+| 掘金 — Dify RAG活用 | [juejin.cn](https://juejin.cn) | T2 | ハンズオン記事 |
+| IT之家 — 企业级AI智能体解析 | [ithome.com](https://www.ithome.com) | T2 | 業界分析 |
