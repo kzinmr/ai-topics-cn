@@ -509,3 +509,48 @@ MiniMax entityページおよびMiniMax vs Kimi比較ページをM2.5/M2.7モデ
 - **Comparison Pages**: 1
 - **Total Pages**: 71（+8）
 - **Last Updated**: 2026-04-19
+
+---
+
+## [2026-04-19] crawl-triage-04-19 | Multi-source crawl + wiki update
+
+Originating conversation: auto-cron (crawl_all.py)
+
+### 収集サマリー
+| ソース | 収集数 |
+|--------|--------|
+| crawl_all (v2ex + juejin + 36kr + wechat) | 57件 |
+| Newsletter ( inbox/newsletters/) | 0件 (すべて04-18以前) |
+| blogwatcher RSS | DB利用不可 |
+| **合計** | **57件** |
+
+### トリアージ結果
+| 判定 | 件数 | 備考 |
+|------|------|------|
+| ✅ Take | 19件 |  высокоприоритетные статьи |
+| ⚠️ Reference | 11件 | 中優先度・補完的 |
+| ❌ Skip | 1件 | SEO/低品質 |
+
+### 主要✅ホットトピック
+1. **Claude Design → Figma Killer** — 36kr×3件、AnthropicがデザインSaaSに参入、株安
+2. **DeepSeek、梁文锋が\$100B估值で\$3億調達検討** — 36kr報道、商業化転換
+3. **Claude Opus 4.7「全网差评」** — 中国開発者コミュニティで酷評継続
+4. **Claude Code Skills + MCP実践** — Juejin高票(466👍) статья
+5. **Kimi K2.5代替Claude Code** — Juejin 225👍、中国シフト
+6. **OpenAI人事危機（Sora之父离职）** — 36kr報道
+7. **Anthropic安全専門家大量退職** — 36kr「谁为AI竞赛踩刹车」
+8. **智谱GLM-5开源** — 中国国産の強い競争力
+
+### Wiki更新
+| アクション | ページ |
+|-----------|--------|
+| 更新 | `entities/deepseek.md` — 資金調達・NVIDIA緊張関係追加 |
+| 更新 | `entities/claude-opus-4-7.md` — Claude Design Figmaキラー・OpenAI危機・安全専門家退職追加 |
+| 保存 | `raw/articles/daily-digest-2026-04-19.md` |
+
+### Wiki統計
+- **Entity Pages**: 33
+- **Concept Pages**: 37
+- **Comparison Pages**: 1
+- **Total Pages**: 71
+- **Last Updated**: 2026-04-19
