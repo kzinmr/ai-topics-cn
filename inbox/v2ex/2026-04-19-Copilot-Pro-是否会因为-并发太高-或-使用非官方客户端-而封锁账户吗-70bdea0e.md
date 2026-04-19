@@ -4,8 +4,8 @@ source: v2ex
 url: "https://www.v2ex.com/t/1206998"
 author: "Leon6868"
 date: 2026-04-19
-score: 1
-tags: ["gpt", "Copilot", "Claude"]
+score: 6
+tags: ["gpt", "Claude", "Copilot"]
 ---
 
 # Copilot Pro 是否会因为“并发太高”或“使用非官方客户端”而封锁账户吗？
@@ -14,7 +14,7 @@ tags: ["gpt", "Copilot", "Claude"]
 
 ## 涉及话题
 - gpt
-- Copilot
 - Claude
+- Copilot
 
 [原文链接](https://www.v2ex.com/t/1206998)

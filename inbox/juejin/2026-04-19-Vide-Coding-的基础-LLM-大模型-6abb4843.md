@@ -5,7 +5,7 @@ url: "https://juejin.cn/post/7629677576905310223"
 author: "Karl_wei"
 date: 2026-04-18
 score: 4
-tags: ["大模型", "LLM", "AI编程", "领域驱动设计"]
+tags: ["LLM", "大模型", "AI编程", "领域驱动设计"]
 ---
 
 # Vide Coding 的基础：LLM  大模型
@@ -15,8 +15,8 @@ tags: ["大模型", "LLM", "AI编程", "领域驱动设计"]
 > 👍 4   👁️ 0   ⭐ 1
 
 ## 涉及话题
-- 大模型
 - LLM
+- 大模型
 - AI编程
 - 领域驱动设计
 
