@@ -102,6 +102,27 @@ git config user.name "Hermes Agent"
 git config user.email "hermes@hermes-china-digest.exe.xyz"
 ```
 
+### 3.1 GitHub 認証の設定（HTTPS push 用）
+
+リポジトリをクローン後、**Classic PAT（Personal Access Token）**を作成して認証を通す。
+
+```bash
+# GitHub で Classic PAT を取得
+# Settings → Developer settings → Personal access tokens → Tokens (classic)
+# Scope: ☑ repo (Full control of private repositories)
+
+# ~/.netrc に認証情報を保存（git push時に自動使用）
+cat >> ~/.netrc << 'EOF'
+machine github.com login <GitHubユーザー名> password <Classic PAT>
+EOF
+chmod 600 ~/.netrc
+
+# 動作確認
+cd ~/ai-topics-cn && git push origin main
+```
+
+> **注意**: Fine-grained PAT（`github_pat_`で始まるtoken）はリポジトリ単位の許可が必要で、HTTPS pushには使用できない。Classic PATを使用すること。
+
 ---
 
 ## 4. シンボリックリンクの作成
@@ -183,7 +204,7 @@ sudo systemctl enable --now shelley-wiki-health.timer
 ### リポジトリ
 
 - [ ] `cd ~/ai-topics-cn && git status` → クリーン
-- [ ] `git push` → 成功
+- [ ] `git push origin main` → 成功（HTTPS認証確認）
 - [ ] `ls ~/wiki/SCHEMA.md` → 存在
 
 ### シンボリックリンク
