@@ -457,4 +457,25 @@ Scheduled active crawl (shelley-active-crawl). hot-topics.yamlから priority:hi
 ### Wiki統計
 - **Concept Pages**: 31（+3: deepseek, vibe-coding-china, mcp-china）
 - **Total Pages**: 66（+3）
+
+## [2026-04-19] update | MiniMaxモデル情報拡充
+
+MiniMax entityページおよびMiniMax vs Kimi比較ページをM2.5/M2.7モデル詳細で大幅更新。
+
+### 更新ページ
+| ページ | 更新内容 |
+|--------|---------|
+| `entities/minimax.md` | M2.5/M2.7追加、セルフ進化モデル特性、Vals AIベンチマーク、コスト比較、Token PlanマルチモーダルAPI一覧、実ユーザー課題報告 |
+| `comparisons/minimax-vs-kimi-moonshot.md` | モデル比較をM2.7ベースに更新、中国主要モデル横断比較表（MiniMax/Kimi/Qwen/GLM/Claude）、タイムライン拡充 |
+
+### 主要発見
+1. **M2.7セルフ進化**: OpenClawフレームワーク上で100+自律訓練サイクル、人間介入なしに30%性能向上。初の「自己改善型」モデル
+2. **コスト破壊力**: 10BアクティブパラメでOpus 4.6に肉薄、入力は1/50($0.30/M)、出力は1/60($1.20/M)、速度は3倍(100 TPS)
+3. **実用上の課題**: V2EX報告で複雑な指示追従に弱点。「新兵蛋子のように突っ走る」傾向。単純タスクでは優秀
+4. **マルチモーダル統合**: Token PlanでTTS(speech-2.8-hd)・音楽生成・画像生成・VLM・検索を一括提供
+
+### Wiki統計
+- **Entity Pages**: 33（更新: minimax）
+- **Comparison Pages**: 1（更新: minimax-vs-kimi-moonshot）
+- **Total Pages**: 66
 - **Last Updated**: 2026-04-19

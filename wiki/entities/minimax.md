@@ -1,8 +1,8 @@
 ---
 title: MiniMax (稀宇科技) — 中国マルチモーダル生成AI企業
 created: 2026-04-18
-updated: 2026-04-18
-tags: [company, ai, llm, china, multimodal, startup]
+updated: 2026-04-19
+tags: [company, ai, llm, china, multimodal, startup, model]
 aliases: ["MiniMax", "稀宇科技", "MiniMax AI"]
 source_lang: zh-CN
 ---
@@ -20,11 +20,68 @@ source_lang: zh-CN
 
 MiniMax（稀宇科技）は、中国のマルチモーダル生成AI企業。胡润AI50強の**トップ10入り**。テキスト・音声・画像のマルチモーダル生成に強み。ChinAI #336では「中国のOpenAI」として詳細に分析された。
 
-## M1/M2 モデル
+## モデルラインナップ
 
-- **MiniMax-M1** (2025年1月): 混合エキスパート(MoE)アーキテクチャ、456Bパラメータ（アクティブ4.6B）、OpenCompassで1位
-- **MiniMax-M2** (2025年8月): M1の後継、マルチモーダル強化
-- **音声モデル**: テキスト→音声変換で業界トップクラスの品質
+### M1 / M2 / M2.5 / M2.7
+
+| モデル | リリース | アーキテクチャ | パラメータ | コンテキスト | ライセンス |
+|--------|---------|--------------|-----------|-------------|-----------|
+| **MiniMax-M1** | 2025年1月 | MoE | 456B（アクティブ4.6B） | — | — |
+| **MiniMax-M2** | 2025年8月 | MoE | — | — | — |
+| **MiniMax-M2.5** | 2026年2月12日 | MoE (256E/8A) | 230B（アクティブ**10B**） | 197K | Open weights |
+| **MiniMax-M2.7** | 2026年3月17日 | MoE (proprietary) | 非公開（アクティブ**10B**） | ~200K | Proprietary API |
+
+### M2.7 — セルフ進化エージェントモデル
+
+M2.7はMiniMaxの次世代フラッグシップテキストモデル。**OpenClaw（Agent Harness）フレームワーク**上で訓練中に100回以上のスクaffold最適化サイクルを自律実行し、内部評価で30%の性能向上を達成。人間の介入なしに自己改善する初のモデル。
+
+- **SWE-Pro**: 56.22%（Claude Opus 4.6の~57%に肉薄）
+- **SWE-bench Verified**: 78%（Opus 4.6の55%を大きく上回る）
+- **Terminal Bench 2**: 57.0%
+- **VIBE-Pro**（エンドツーエンドプロジェクト配信）: 55.6%
+- **GDPval-AA**（オフィス業務）: ELO 1495（オープンソースモデル中最上位）
+- **スキル遵守率**: 40以上の複雑タスク（各2000トークン超）で97%
+- **MLE-Bench Lite**: メダル率66.6%（Gemini 3.1と並ぶ、GPT-5.4の71.2%に迫る）
+
+### M2.5 vs 他モデル（Vals AIベンチマーク）
+
+| ベンチマーク | Claude Opus 4.6 | M2.5 | M2.7 |
+|-------------|----------------|------|------|
+| Vals Index | **65.98%** | 53.57% | 59.58% |
+| SWE-bench | **79.20%** | 70.40% | 73.80% |
+| Terminal-Bench 2.0 | **58.43%** | 41.57% | 47.19% |
+| LiveCodeBench v6 | **84.68%** | 79.21% | 79.93% |
+
+M2.7はアクティブパラメータ10Bという小型モデルでありながら、Tier-1性能クラスの他モデルと同等かそれ以上のスコアを達成。
+
+### コストパフォーマンス — 真の破壊力
+
+| 指標 | M2.7 | Claude Opus 4.6 | GPT-5 |
+|------|------|----------------|-------|
+| 推論速度 | **100 TPS** | ~33 TPS | ~40 TPS |
+| 入力コスト | **$0.30/M** | $15/M | $10/M |
+| 出力コスト | **$1.20/M** | $75/M | $30/M |
+| 実効コスト（キャッシュ利用）| **$0.06/M** | — | — |
+
+M2.7はOpus 4.6の**1/50の入力コスト、1/60の出力コスト**で同等のSWE-Proスコア。3倍高速。エージェント大量実行における経済性が桁違い。
+
+### マルチモーダルAPI（Token Plan）
+
+MiniMax Token Planで利用可能な機能（2026年4月時点）:
+
+- **Text-to-Speech HD**: speech-2.8-hd — 中国語多音字の正確率で業界最高評価。AI動画生成で主力採用
+- **music-2.6**: 音楽生成
+- **music-cover**: 楽曲カバー生成
+- **lyrics_generation**: 歌詞生成
+- **image-01**: 画像生成
+- **coding-plan-vlm**: Vision-Language Model（コーディング用）
+- **coding-plan-search**: 検索拡張コーディング
+
+V2EXでの実ユーザー報告: Hermes Agentと組み合わせてブログ自動生成・画像生成・音楽制作の全パイプラインをMiniMax単体で構築した事例あり（[[harness-engineering]]）。ただし複雑なエージェントタスクでは「新兵蛋子（新兵）」のように要求を無視して突っ走る傾向も報告され、GPTに切り替えて10分で解決したケースもある。
+
+> [!warning] M2.7の実用上の課題]
+> V2EXユーザー(superfat)の報告: 「claudecode+minimax2.7を使っていたが、少し複雑な要求だと対応できない。菜鸟（ひよっこ）のようにとにかく突っ走る。GPTに切り替えて10分で解決」
+> → エージェントHarnessでの使用には注意が必要。単純タスクでは優秀だが、複雑な指示追従で課題。
 
 ## 資金調達とバリュエーション
 
@@ -53,5 +110,12 @@ ChinAI #336の分析によると:
 
 ## 関連企業
 
-- **月之暗面** (Kimi): AIGC大模型企業（トップ50入り）
+- **月之暗面** (Kimi): AIGC大模型企業（トップ50入り） — [[minimax-vs-kimi-moonshot]]
 - **阶跃星辰**: AIGC大模型企業（2023年設立）
+
+## 関連ページ
+
+- [[minimax-vs-kimi-moonshot]] — MiniMax vs Kimi/Moonshot詳細比較
+- [[harness-engineering]] — M2.7がOpenClawフレームワークで自己進化訓練
+- [[coding-plan]] — MiniMaxもToken Planでコーディングサービス提供
+- [[ai-video-generation]] — speech-2.8-hdがTTS主力として採用

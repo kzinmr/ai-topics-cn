@@ -1,8 +1,8 @@
 ---
 title: "MiniMax vs Moonshot/Kimi — 中国生成AIスタートアップ比較"
 created: 2026-04-18
-updated: 2026-04-18
-tags: [comparison, china, llm, company, startup, multimodal, ai-agents]
+updated: 2026-04-19
+tags: [comparison, china, llm, company, startup, multimodal, ai-agents, model]
 aliases: ["MiniMax vs Kimi", "稀宇科技 vs 月之暗面", "MiniMax Moonshot comparison"]
 source_lang: ja
 ---
@@ -30,22 +30,40 @@ source_lang: ja
 
 ## モデル比較
 
-| 項目 | **MiniMax-M1/M2** | **Kimi K2.5/K2.6** |
+| 項目 | **MiniMax-M2.7** | **Kimi K2.5/K2.6** |
 |------|-------------------|-------------------|
-| **アーキテクチャ** | MoE（456Bパラメータ、アクティブ4.6B） | 長文脈LLM |
-| **OpenCompass順位** | 1位（2025年1月） | 未公表 |
-| **推論性能** | マルチモーダル（テキスト・音声・画像） | コーディング能力に強み |
-| **Claude Code代替** | 非対応 | ◎ K2.5/K2.6がClaude Code代替として人気 |
-| **アクセス容易性** | 中国国内から容易 | 中国国内から容易 |
-| **コスト** | 未公表 | Claude Proより低コスト |
+| **アーキテクチャ** | MoE (256E/8A、アクティブ10B) | MoE (384E/8A、アクティブ32B) |
+| **コンテキスト** | ~200K | 262K |
+| **SWE-bench** | 73.80% | 未公表 |
+| **推論性能** | セルフ進化エージェント、マルチモーダルAPI | コーディングエージェントに強み |
+| **Claude Code代替** | △ 複雑な指示追従に課題報告あり | ◎ K2.5/K2.6がClaude Code代替として人気 |
+| **推論速度** | 100 TPS | 未公表 |
+| **APIコスト** | $0.30/M入力（Opusの1/50） | Claude Proより低コスト |
+
+## 中国主要モデル横断比較（2026年3月時点）
+
+| 指標 | MiniMax M2.7 | Kimi K2.5 | Qwen 3.5 | GLM-5 | Claude Opus 4.6 |
+|------|-------------|-----------|----------|-------|----------------|
+| **アクティブパラメータ** | **10B** | 32B | 17B | 40B | 非公開 |
+| **総パラメータ** | 非公開 | **1T** | 397B | 744B | 非公開 |
+| **コンテキスト長** | ~200K | 262K | **991K** | 137K | 200K |
+| **Vals Index** | 59.58% | 未測定 | 未測定 | 未測定 | **65.98%** |
+| **SWE-bench** | 73.80% | 未測定 | 未測定 | 未測定 | **79.20%** |
+| **推論速度(TPS)** | **100** | 未公表 | 未公表 | 未公表 | ~33 |
+| **API入力コスト** | **$0.30/M** | 未公表 | 未公表 | 未公表 | $15/M |
+
+MiniMax M2.7の最大の特色は**「最小アクティブパラメータでTier-1性能」**。10BアクティブでOpus 4.6に肉薄し、コストは1/50。Kimi K2.5は1T総パラメ・32Bアクティブで長文脈に強み。Qwen 3.5は991Kコンテキストで文脈長が突出。GLM-5は744B総パラメでオープンソースMITライセンス。
 
 ## 市場ポジショニング
 
 ### MiniMaxの強み
-- **マルチモーダル生成**: テキスト・音声・画像の統合生成に優れる
+- **マルチモーダル生成**: テキスト・音声・画像・音楽の統合API（Token Plan）
 - **資本効率**: OpenAIの1/20〜1/50のリソースで同等の製品体験
-- ** ARR**: 中国生成AI企業で最高水準の$100M
+- **ARR**: 中国生成AI企業で最高水準の$100M
 - **OpenAI的ビジネスモデル**: 中国で最も「OpenAIに近い」と評価
+- **M2.7のセルフ進化**: 訓練中に自律的にスクaffold最適化、人間の介入不要
+- **コスト破壊力**: $0.30/M入力（Opusの1/50）、100 TPSで3倍高速
+- **TTS品質**: speech-2.8-hdが中国語多音字正確率で業界最高
 
 ### Moonshot/Kimiの強み
 - **長文脈処理**: Kimi Chatで高い知名度
@@ -59,6 +77,9 @@ source_lang: ja
 - 2025年1月: M1モデルリリース、OpenCompassで1位
 - 2025年8月: M2モデルリリース、マルチモーダル強化
 - 2025年2月: $700M以上の資金調達（General Catalyst, Alibabaリード）
+- 2026年2月12日: **M2.5リリース** — MoE (256E/8A)、230B総パラメ・10Bアクティブ、Open weights
+- 2026年3月17日: **M2.7リリース** — セルフ進化エージェントモデル、100+自律訓練サイクル、SWE-Pro 56.22%
+- 2026年4月: Token PlanにTTS・音楽生成・画像生成・VLM・検索機能を追加
 
 ### Moonshot/Kimi
 - 2026年4月: K2.6-code-previewを全サブスクリプションユーザー向けにリリース
@@ -89,7 +110,11 @@ source_lang: ja
 - [[kimi-moonshot]] — Kimi/Moonshot詳細ページ
 - [[deepseek]] — オープンソース競合
 - [[baidu-ernie]] — Baiduの文心一言
+- [[qwen]] — Alibaba Qwen 3.5
+- [[glm-zhipu]] — Zhipu GLM-5
 - [[coding-plan]] — Kimiがバンドル提供されるサブスクリプション
+- [[harness-engineering]] — M2.7のセルフ進化訓練フレームワーク
+- [[ai-video-generation]] — MiniMax TTSが主力採用
 
 ### 外部ソース
 | ソース | URL | ティア | 概要 |
