@@ -37,7 +37,7 @@ topics:
       - concepts/deepseek
     notes: "中国発オープンウェイトモデルの代表格。V3/R1のMoEアーキテクチャ、推論能力で世界的注目。Zhihu・V2EX・Juejinで活発に議論される"
     added: 2026-04-17
-    last_crawled: null
+    last_crawled: 2026-04-19
 
   - slug: qwen
     title: "Qwen (通义千问) — Alibaba"
@@ -259,7 +259,7 @@ topics:
       - concepts/mcp-china
     notes: "Anthropic MCP（Model Context Protocol）の中国での採用状況。Qwen/DeepSeek等のMCP対応、中国独自のMCPサーバー・ツール"
     added: 2026-04-17
-    last_crawled: null
+    last_crawled: 2026-04-19
 
   - slug: mcp-chinese-tools
     title: "Chinese MCP Tools & Servers (中国MCP工具)"
@@ -290,7 +290,7 @@ topics:
       - concepts/vibe-coding-china
     notes: "Karpathy提唱のvibe codingが中国開発者コミュニティでどう受容されているか。V2EX/Juejin/Zhihuでの議論"
     added: 2026-04-17
-    last_crawled: null
+    last_crawled: 2026-04-19
 
   - slug: china-ai-coding-assistants
     title: "Chinese AI Coding Assistants (国产AI编程助手)"

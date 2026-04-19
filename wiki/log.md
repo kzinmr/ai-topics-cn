@@ -422,6 +422,39 @@ inbox内の618件未処理記事（V2EX: 283, Juejin: 186, 36kr: 93, WeChat: 27,
 - **Entity Pages**: 33（+5: creatorweave, soul-killer, echoic, fudan-nlp-agent-survey, baidu-ernie, llama-meta, claude-design）
 - **Concept Pages**: 29（+11: harness-engineering, ai-inner-os, ai-video-generation, gomcp, mcp-security, transpec, beike-ai-customer-service, cc-monitor, chinai-348-compute-year-review, claude-code-router, glory-ai-phone, gpu-sanctions-china, ollama-criticism, page-index, spokenwoz）
 - **Comparison Pages**: 1（minimax-vs-kimi-moonshot）
-- **Total Pages**: 63（+35）
-- **Raw Articles**: 23（アーカイブ済み）
-- **Last Updated**: 2026-04-18
+| **Total Pages**: 63（+35）
+| **Raw Articles**: 23（アーカイブ済み）
+| **Last Updated**: 2026-04-18
+
+## [2026-04-19] active-crawl-01 | 第1回アクティブクローリング — 3ページ新規作成
+
+Scheduled active crawl (shelley-active-crawl). hot-topics.yamlから priority:high + last_crawled: null のトピックを抽出。
+
+### 対象トピック（priority: high、deepdive）
+1. **deepseek** — DeepSeek-V4 1Tパラメータ、Engram記憶、華為昇騰対応
+2. **vibe-coding-china** — Karpathy「Vibe Coding終焉」宣言とAgentic Engineeringへの移行
+3. **mcp-china** — MCP+A2Aプロトコル、中国Agent生態系の標準化
+
+### 新規作成ページ
+| ページ | 種別 | 根拠 |
+|--------|------|------|
+| `concepts/deepseek.md` | Concept | DeepSeek-V4（1T MoE、Engram、mHC、昇騰910C、$0.30/MTok）|
+| `concepts/vibe-coding-china.md` | Concept | Vibe Coding→Agentic Engineering、Karpathy 2/4宣言、Cursor $293B |
+| `concepts/mcp-china.md` | Concept | MCP+A2A標準化、Linux Foundation寄贈、Dify/Coze/百煉対応状況 |
+
+### 主要発見
+1. **DeepSeek-V4**: 1TパラメータMoE、Engram条件記憶（計算と記憶の分離）、mHC流形制約超連接。華為昇騰910C + Cambricon MLUで訓練（Nvidia非依存）。内部ベンチ: HumanEval 90%、SWE-bench 80%+（未検証）。Apache 2.0予定。
+2. **Vibe Coding → Agentic Engineering**: 2026.2.4 KarpathyがVibe Coding終焉を宣言。中国メディアは「范式切换（パラダイムシフト）」として報道。「プロンプト書きだけ」の開発者は淘汰され、「エージェント群を指揮するアーキテクト」が新種として登場。Cursor估值$293B、Replit $90B期待。
+3. **MCP中国生態**: 2025.12にLinux Foundation傘下AAIFへ寄贈、グローバル中立ガバナンスへ移行。DifyはMCP原生統合（消費者・提供者両対応）。A2AプロトコルがAgent間水平協同を標準化。途牛、電商跨境など業界適用が開始。
+4. **阶跃星辰 Step 3.5 Flash**: 196B総パラメータ、11B活性化、MTP-3（3路並列予測）、256kコンテキスト。Agent専用最適化モデルとして注目。
+5. **国産AI编程助手**: 通義灵码(Alibaba)、CodeGeeX(Zhipu)、MarsCode(ByteDance)、文心快码(Baidu)、腾讯云AI代码助手の5強。Agent協作時代へ移行、本地デプロイ需要急増。
+
+### hot-topics.yaml 更新
+- `deepseek`: last_crawled → 2026-04-19
+- `mcp-china`: last_crawled → 2026-04-19
+- `vibe-coding-china`: last_crawled → 2026-04-19
+
+### Wiki統計
+- **Concept Pages**: 31（+3: deepseek, vibe-coding-china, mcp-china）
+- **Total Pages**: 66（+3）
+- **Last Updated**: 2026-04-19
