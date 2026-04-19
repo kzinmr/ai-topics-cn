@@ -5,7 +5,7 @@ url: "https://juejin.cn/post/7614205951297732654"
 author: "苏三说技术"
 date: 2026-03-07
 score: 113
-tags: ["MCP", "Prompt", "后端"]
+tags: ["Prompt", "MCP", "后端"]
 ---
 
 # Prompt、Agent、Function Call、Skill、MCP，傻傻分不清楚？
@@ -15,8 +15,8 @@ tags: ["MCP", "Prompt", "后端"]
 > 👍 113   👁️ 0   ⭐ 233
 
 ## 涉及话题
-- MCP
 - Prompt
+- MCP
 - 后端
 
 [原文链接](https://juejin.cn/post/7614205951297732654)
