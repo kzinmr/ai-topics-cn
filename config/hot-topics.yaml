@@ -51,7 +51,7 @@ topics:
       - concepts/qwen
     notes: "Alibaba Cloud発。Qwen2.5シリーズ、Qwen-Agent。中国クラウドAI基盤の柱"
     added: 2026-04-17
-    last_crawled: null
+    last_crawled: 2026-04-20
 
   - slug: chatglm
     title: "ChatGLM (智谱清言) — Zhipu AI"
@@ -65,7 +65,7 @@ topics:
       - concepts/chatglm
     notes: "清華大学系スタートアップZhipu AI。GLM-4シリーズ、学術寄りのアプローチ"
     added: 2026-04-17
-    last_crawled: null
+    last_crawled: 2026-04-20
 
   - slug: kimi
     title: "Kimi — Moonshot AI (月之暗面)"
@@ -124,7 +124,7 @@ topics:
       - concepts/china-ai-agent-ecosystem
     notes: "Baidu AgentBuilder、Alibaba Agent、ByteDance Coze (扣子) 等。中国独自のAgent生態系の全体像"
     added: 2026-04-17
-    last_crawled: null
+    last_crawled: 2026-04-20
 
   - slug: coze
     title: "Coze (扣子) — ByteDance Agent Platform"
