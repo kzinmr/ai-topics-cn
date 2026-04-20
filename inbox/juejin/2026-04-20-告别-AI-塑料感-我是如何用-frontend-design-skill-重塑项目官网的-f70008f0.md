@@ -4,7 +4,7 @@ source: juejin
 url: "https://juejin.cn/post/7630018111996936232"
 author: "雨夜寻晴天"
 date: 2026-04-19
-score: 8
+score: 9
 tags: ["LLM", "大语言模型", "AI编程", "Trae", "前端"]
 ---
 
@@ -12,7 +12,7 @@ tags: ["LLM", "大语言模型", "AI编程", "Trae", "前端"]
 
 这篇文章记录了我为开源项目 `mini-cc` 重新设计官方网站的全过程，探讨了大语言模型（LLM）的“廉价审美（AI Slop）”问题，以及如何通过系统级的 Skill（技能）来改变 AI 的设计思
 
-> 👍 8   👁️ 0   ⭐ 7
+> 👍 9   👁️ 0   ⭐ 9
 
 ## 涉及话题
 - LLM
