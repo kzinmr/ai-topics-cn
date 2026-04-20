@@ -714,3 +714,39 @@ Originating conversation: (scheduled cron)
 - [Zhipu AI](https://www.zhipuai.cn/zh)
 - [BigModel.cn](https://open.bigmodel.cn/)
 - [TechGG: 2026是Agent生死之年](https://www.techgg.com/article/237-1.html)
+
+## [2026-04-20] triage-02 | 夜間クロール・トリアージ
+
+Originating conversation: (scheduled cron)
+
+### Phase 1: ソース別収集数
+| ソース | 件数 | 備考 |
+|--------|------|------|
+| crawl_all | 57件 | 5ソース合計（v2ex:15, juejin:15, 36kr:12, wechat:15） |
+| Newsletter | 2件 | 新規（ChinAI #355, Zhihu Frontier Weekly） |
+| RSS(blogwatcher) | — | DB不存在 |
+
+### Phase 2: トリアージ結果
+- **✅ Take**: 14件（高価値）
+  - Juejin: 9件（Claude/GLM比較、Codex攻略、GLM-5初体験、GLM-5开源、OpenAI Eval手法、Enterprise Vibe Coding、LangChain Agent実装、Skill作成、n8nワークフロー）
+  - 36kr: 2件（CLAUDE.md現象、Mythos架构逆推开源）
+  - WeChat: 3件（LLM-Agent包括解説、复旦80頁Agentサーベイ、Meta持続事前訓練）
+- **⚠️ Reference**: 4件（中価値）
+  - 36kr: Codex+终身记忆、Claude Mythos开源
+  - WeChat: Agentエンジニア技術指南、AI软件演进成功率13.37%
+
+### Phase 3: 発見事項
+- **Newsletter処理失敗**: `process_newsletter.py` → ModuleNotFoundError: readability
+- **blogwatcher DB不存在**: ~/.blogwatcher-cli/blogwatcher-cli.db なし
+- **既存Wikiとの重複**:  معظم記事が前日までに処理済み
+
+### Phase 4: ホットトピック（本日）
+1. **CLAUDE.md現象** — Karpathy源流、GitHub TRENDING1位
+2. **Mythos架构逆推** — 22歳天才がDeepSeek技術取り込みオープンソース
+3. **LLM-Agent関係 包括的議論** — 中国全土でAgent定義議論が沸騰
+4. **GLM-5开源** — 智谱のコード生成能力への警戒
+
+### 次のアクション
+- `pip install readability-lxml` でprocess_newsletter.py修復
+- Mythos架构 → concepts/mythos-engineering.md 新規作成推奨
+- CLAUDE.md現象 → concepts/claude-md.md 新規作成推奨
