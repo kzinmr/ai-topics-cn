@@ -4,7 +4,7 @@ created: 2026-04-18
 updated: 2026-04-18
 tags: [person, finance, philosophy, trading, investment, china]
 aliases: ["svwang1", "硅谷王川", "Chuan"]
-source_lang: zh
+source_lang: zh-CN
 ---
 
 # 硅谷王川 Chuan (@Svwang1)

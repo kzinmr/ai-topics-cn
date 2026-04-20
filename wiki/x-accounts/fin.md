@@ -4,7 +4,7 @@ created: 2026-04-18
 updated: 2026-04-18
 tags: [person, semiconductor, hardware, ai-infra, china]
 aliases: ["fi56622380", "fin"]
-source_lang: en
+source_lang: zh-CN
 ---
 
 # fin (@fi56622380)

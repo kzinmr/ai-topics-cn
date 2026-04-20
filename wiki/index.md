@@ -1,7 +1,7 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-04-19
-エンティティ: 33, コンセプト: 41, 比較: 1
+最終更新: 2026-04-20
+エンティティ: 33, コンセプト: 44, 比較: 1
 
 ## エンティティ (Entities)
 
@@ -48,6 +48,7 @@
 - [[ai-video-generation|AI短视频自动生成 — 一人開発の技術スタックと実践知]]
 - [[beike-ai-customer-service|贝壳AI客服 — MCP + Skillを活用したAIカスタマーサービス]]
 - [[cc-monitor|cc-monitor — Claude Code リアルタイムToken消費モニター]]
+- [[chatglm|ChatGLM (智谱清言) — Zhipu AIの中国語圏事情]]
 - [[china-ai-superapp-race|china-ai-superapp-race]]
 - [[china-palantir|china-palantir]]
 - [[chinai-348-compute-year-review|ChinAI #348 — 2025年中国計算力産業回顧：熱狂、成長の痛み、価値回帰]]
@@ -61,8 +62,9 @@
 - [[harness-engineering|Harness Engineering — LLM Agentの外化（Externalization）パターン]]
 - [[implicit-structure-collapse|隐性结构塌缩 — LLM出力が平均的構造に塌縮する現象と対策]]
 - [[langchain|langchain]]
-- [[mcp-security|MCPセキュリティ — OWASP Top 10とMSB安全基準]]
 - [[mcp|MCP（Model Context Protocol）— AIツール連携の標準規格]]
+- [[mcp-china|MCP中国生態 — 中国での採用状況と独自の発展パターン]]
+- [[mcp-security|MCPセキュリティ — OWASP Top 10とMSB安全基準]]
 - [[ollama-criticism|Ollama批判論争 — オープンソース倫理と代替ツール]]
 - [[open-source-death|open-source-death]]
 - [[page-index|PageIndex — ベクトルなし推論ベースRAGフレームワーク]]
@@ -71,6 +73,7 @@
 - [[transpec|Transpec — 仕様駆動開発フレームワーク間変換ツール]]
 - [[vector-db|Vector DB（向量数据库）— RAG・AI検索の基盤インフラ]]
 - [[vibe-coding|Vibe Coding（氛围编程）— AIネイティブなソフトウェア開発手法]]
+- [[vibe-coding-china|Vibe Coding中国 — 氛围编程受容とAgentic Engineeringへの進化]]
 - [[china-ai-agent-ecosystem|中国AI智能体生态 — 2026年プラットフォーム・アーキテクチャ・市場動向]]
 - [[china-local-deployment|中国大模型本地部署 — 量子化・VRAM最適化・消費者GPUでの推論]]
 - [[china-ai-regulation|中国AI监管政策 — 生成AI管理弁法、算法备案、データ安全規制]]

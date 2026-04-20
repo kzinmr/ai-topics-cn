@@ -4,7 +4,7 @@ created: 2026-04-18
 updated: 2026-04-18
 tags: [china, compute, gpu, semiconductor, industry-analysis, newsletter]
 aliases: ["ChinAI #348", "China Compute Year in Review 2025", "中国算力産業2025年回顧"]
-source_lang: en (translating zh-CN source)
+source_lang: zh-CN
 ---
 
 # ChinAI #348 — 2025年中国計算力産業回顧：熱狂、成長の痛み、価値回帰

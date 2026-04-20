@@ -4,7 +4,7 @@ created: 2026-04-18
 updated: 2026-04-18
 tags: [person, language-agents, tree-of-thoughts, llm, cogsci, ai-research]
 aliases: ["ShunyuYao12", "Shunyu Yao", "ysymyth"]
-source_lang: en
+source_lang: zh-CN
 ---
 
 # Shunyu Yao (@ShunyuYao12)

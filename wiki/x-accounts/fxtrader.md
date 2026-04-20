@@ -4,7 +4,7 @@ created: 2026-04-18
 updated: 2026-04-18
 tags: [person, finance, forex, macro, geopolitics, china]
 aliases: ["fxtrader", "外汇交易员"]
-source_lang: zh
+source_lang: zh-CN
 ---
 
 # 外汇交易员 (@fxtrader)

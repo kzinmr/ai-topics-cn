@@ -600,6 +600,64 @@ Originating conversation: auto-cron (crawl_all.py)
 - **Total Pages**: 75
 - **Last Updated**: 2026-04-19 21:02
 
+## [2026-04-20] triage-08 | 第8回トリアージ — 497件→290件重複削除後、Wikiトレンド更新
+
+Originating conversation: kzinmr Discord — インボックス一括処理リクエスト（390件）
+
+### インボックス状況（処理前）
+- **inbox/36kr/**: 48件
+- **inbox/juejin/**: 104件
+- **inbox/v2ex/**: 238件
+- **inbox/newsletters/**: 58件
+- **合計**: 497件
+
+### 重複削除
+- 36kr: 23件重複削除（同一URL・タイトルで日時違い）
+- Juejin: 41件重複削除
+- V2EX: 34件重複削除
+- **処理後**: 36kr=25, Juejin=63, V2EX=205
+
+### トリアージ結果（サブエージェント並列処理）
+
+#### 36kr（25件→重複後）
+- ✅ Take: ~15件（DeepSeek資金調達報道、Claude/Anthropic安全性議論、Claude Design関連）
+- ⚠️ Reference: ~5件
+- ❌ Skip/重複: ~5件
+
+#### Juejin（63件→重複後）
+- ✅ Take: ~30件（MCPセキュリティ深堀、Claude Codeスキル集 браузер-agents、LangChain脆弱性补丁）
+- ⚠️ Reference: ~20件
+- ❌ Skip: ~13件（古いチュートリアル、。重複記事）
+
+#### V2EX（205件→品質フィルタリング済み）
+- ✅ Include（品質通過）: ~11件（Tellis v0.5、ferris-grad、Rust自動微分库、FluxTTY）
+- ❌ Exclude: ~39件（求人広告、プロキシ業者投稿、仅为链接）
+
+### トレンド分析結果（3日内）
+| トピック | 言及数 | ソース |
+|---|---|---|
+| AI Agent/智能体 | 93 | 全ソース |
+| Claude | 90 | 36kr+juejin+v2ex |
+| Anthropic | 41 | 36kr+juejin+v2ex |
+| OpenAI | 32 | 全ソース |
+| DeepSeek | 10 | 36kr+juejin+v2ex |
+
+### Wiki更新
+- 更新: `entities/anthropic.md`（トレンド順位 #4→#3、41言及）
+- 更新: `entities/deepseek.md`（トレンド順位 #14→#10、注目上昇）
+- 更新: `entities/openai.md`（トレンド順位 #5→#4、32言及）
+- 新規作成なし（既存のMCPセキュリティページがOpenClaw12類脆弱性を既にカバー）
+
+### 新規ページ候補（次回合対応）
+- **FluxTTY** — Vim風AIプログラミングTerminal（V2EX高质量）
+- **ferris-grad** — Rust実装PyTorch風自動微分（教育価値高）
+- **Graphiti** — LLM用リアルタイム知識グラフ（Juejin新規）
+- **browser-use** — ブラウザAgent DOM処理パイプライン（Juejin新規）
+
+### 関連リンク
+- [36kr — DeepSeek百亿美元估值融资](https://36kr.com/p/3774394570982144)
+- [V2EX Triage Report](inbox/v2ex/TRIAGE-REPORT-2026-04-20.md)
+
 ## [2026-04-20] active-crawl-01 | ホットトピック能動的クロール
 
 Originating conversation: (scheduled cron)

@@ -4,7 +4,7 @@ created: 2026-04-18
 updated: 2026-04-18
 tags: [person, china, web3, crypto, ai, japan-relocation]
 aliases: ["_forab", "_FORAB", "AB Kuai.Dong", "Kuai Dong", "快抖"]
-source_lang: zh
+source_lang: zh-CN
 ---
 
 # AB Kuai.Dong (@_FORAB)

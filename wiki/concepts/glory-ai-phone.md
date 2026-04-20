@@ -4,7 +4,7 @@ created: 2026-04-18
 updated: 2026-04-18
 tags: [honor, ai-phone, edge-ai, magicos, yoyo-agent, multimodal, agent-execution]
 aliases: ["荣耀AI手机", "Honor-AI-Phone", "李向东专访", "MagicOS", "YOYO智能体", "AI手机三要素"]
-source_lang: zh
+source_lang: zh-CN
 ---
 
 # 荣耀AI手机专访 — 端侧AIのキャリアと未来

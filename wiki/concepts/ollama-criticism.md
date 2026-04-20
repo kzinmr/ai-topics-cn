@@ -4,7 +4,7 @@ created: 2026-04-18
 updated: 2026-04-18
 tags: [ollama, open-source, ethics, local-llm, controversy]
 aliases: ["Ollama批判", "ollama-criticism", "Ollamaオープンソース倫理"]
-source_lang: en
+source_lang: zh-CN
 ---
 
 # Ollama批判論争 — オープンソース倫理と代替ツール

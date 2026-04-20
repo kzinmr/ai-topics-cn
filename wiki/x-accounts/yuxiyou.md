@@ -4,7 +4,7 @@ created: 2026-04-18
 updated: 2026-04-18
 tags: [person, china, frontend, vue.js, open-source, ai-development]
 aliases: ["yuxiyou", "尤雨溪", "Evan You"]
-source_lang: zh
+source_lang: zh-CN
 ---
 
 # 尤雨溪 (@yuxiyou)

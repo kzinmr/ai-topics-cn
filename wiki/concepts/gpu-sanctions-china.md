@@ -4,7 +4,7 @@ created: 2026-04-18
 updated: 2026-04-18
 tags: [china, semiconductor, gpu, regulation, sanctions, nvidia, huawei, compute, geopolitics]
 aliases: ["GPU制裁", "中国半導体輸出制限", "米中AIチップ競争", "中国GPU自主化"]
-source_lang: ja
+source_lang: zh-CN
 ---
 
 # 中国GPU制裁・半導体輸出制限 — 米中AI競争と国産化動向

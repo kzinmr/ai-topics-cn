@@ -4,6 +4,7 @@ type: concept
 tags: [vibe-coding, ai-coding, chinese-ai, karpathy, agentic-engineering, paradigm-shift]
 created: 2026-04-17
 updated: 2026-04-19
+source_lang: zh-CN
 ---
 
 # Vibe Coding（氛围编程 / 感觉编程）

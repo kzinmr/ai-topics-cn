@@ -4,7 +4,7 @@ created: 2026-04-18
 updated: 2026-04-18
 tags: [person, semiconductor, hardware, ai-infra, taiwan, stocks]
 aliases: ["arronwei3n", "Aaron"]
-source_lang: en
+source_lang: zh-CN
 ---
 
 # Aaron (@Arronwei3n)

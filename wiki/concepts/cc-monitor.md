@@ -4,7 +4,7 @@ created: 2026-04-18
 updated: 2026-04-18
 tags: [claude-code, token-monitoring, cost-estimation, developer-tools, tui]
 aliases: ["cc-monitor", "Claude-Code-Token-Monitor", "Claude-Code-コスト監視"]
-source_lang: zh
+source_lang: zh-CN
 ---
 
 # cc-monitor — Claude Code リアルタイムToken消費モニター

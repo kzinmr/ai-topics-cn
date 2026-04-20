@@ -4,6 +4,7 @@ type: concept
 tags: [mcp, chinese-ai, agent-protocol, a2a, standardization, tool-integration]
 created: 2026-04-17
 updated: 2026-04-19
+source_lang: zh-CN
 ---
 
 # MCP中国生态（Model Context Protocol 中国採用状況）

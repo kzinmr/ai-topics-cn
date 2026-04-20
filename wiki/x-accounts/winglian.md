@@ -4,7 +4,7 @@ created: 2026-04-18
 updated: 2026-04-18
 tags: [person, open-source-ai, axolotl, dflash, llm, agent-frameworks, gpu-optimization]
 aliases: ["winglian", "Wing Lian", "caseus", "axolotl_ai"]
-source_lang: en
+source_lang: zh-CN
 ---
 
 # Wing Lian (caseus) (@winglian)

@@ -4,7 +4,7 @@ created: 2026-04-18
 updated: 2026-04-19
 tags: [comparison, china, llm, company, startup, multimodal, ai-agents, model]
 aliases: ["MiniMax vs Kimi", "稀宇科技 vs 月之暗面", "MiniMax Moonshot comparison"]
-source_lang: ja
+source_lang: zh-CN
 ---
 
 # MiniMax vs Moonshot/Kimi — 中国生成AIスタートアップ比較

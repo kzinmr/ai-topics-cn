@@ -4,6 +4,7 @@ type: concept
 tags: [LLM, chinese-ai, open-source, MoE, reasoning, coding-agent]
 created: 2026-04-17
 updated: 2026-04-19
+source_lang: zh-CN
 ---
 
 # DeepSeek（深度求索）
