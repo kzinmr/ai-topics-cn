@@ -1,0 +1,1938 @@
+Delivered-To: anything@hermes-china-digest.exe.xyz
+Authentication-Results: mail.exe.xyz; spf=pass reason="matched ip"
+ smtp.helo=mail-yw1-f175.google.com smtp.mailfrom=gmail.com; dkim=pass
+ header.d=mg-d0.substack.com header.i=@mg-d0.substack.com; dkim=pass
+ header.d=mailgun.org header.i=@mailgun.org
+Received: from mail-yw1-f175.google.com (mail-yw1-f175.google.com
+ [209.85.128.175]) by mail.exe.xyz (envelope-sender
+ <kzinmr109+caf_=anything=hermes-china-digest.exe.xyz@gmail.com>) with
+ ESMTPS id 1a563043; Mon, 20 Apr 2026 11:37:26 +0000
+Received: by mail-yw1-f175.google.com with SMTP id 00721157ae682-794719afcd4so29517757b3.1
+        for <anything@hermes-china-digest.exe.xyz>; Mon, 20 Apr 2026 04:37:26 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1776685045; cv=pass;
+        d=google.com; s=arc-20240605;
+        b=CvBFQh+f29m/Yj7Rb5GNOeL+NX4vxWdR9SZQyREv05sdWos9h/g2dScXhr/0jyw4Pr
+         uk5v3Ot+knZmPtobTsGWRZ7R7QP8U0jMlyHUfneFOxVffNsOfD2hkhsHu2ZHPdD1dXoQ
+         V6qNsoCVETNu5MlIXupMQ7xVUOAB0f5Wdw44/Q8LwevXdci82jSdGqqhfsSKLzGhGhwO
+         3L9Iy3G9ZwtjI0CiVYoFqdIvBxA9LTWcqeRbl59W3Fcmf2JLb4VuJoZpEoVYqmM3ws2O
+         IwNUIEXUibz6h8ICADQkFCY47S/MDz7YS566rjMKQDgpQvB2J1mM5lJlB6Yy5P5Y48ie
+         5Yrw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=list-unsubscribe-post:list-unsubscribe:list-post:list-id
+         :list-archive:list-url:list-owner:reply-to:in-reply-to:references
+         :sender:feedback-id:date:message-id:to:from:subject:mime-version
+         :dkim-signature:dkim-signature:delivered-to;
+        bh=1TCDlaAZcoofb0ot45n5ntsZ1Jzn8AIjkeOu268pb7M=;
+        fh=bB5UsQbPOKRFUYVVEXRvE9XjOLRJiVHXFSad4+5Z1sY=;
+        b=W1AOiW2r/GVaYBnM08TkrwJuF+rYxDmVLmnG9nec439IvUsgzNVAWIYIhNPWkZfF6e
+         ALgpe1Cjk2Yo4OTq8raQKc1Dl4bVy9Dv8h1nMzeS5yAYnGvILydcDhOxh67dbOnNlnG7
+         +sRVDL+Q702ZfFeSLJD/DJpEwwVW4TPngXK6XI16oaSrFLTcDNDuLupgNWyAlnXb3Tp2
+         7HbQo1Pk1PUMYwYJflOV1QzlFX6jfr/6vxxq4NVLe7dOFj2FZcMG6Z1wyQXhaIeSjeHI
+         bIr/cQUmq0XsjipXrCMmoWoV3u4w3WYBomLRns7rwuDI6AfpHQ3Cdsxb1Q4FhXfZHq7R
+         SVaQ==;
+        darn=hermes-china-digest.exe.xyz
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@mg-d0.substack.com header.s=mailo header.b=sYtdb4n9;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=M4XXFxMX;
+       spf=pass (google.com: domain of bounce+e54603.63af5d-kzinmr109=gmail.com@mg-d0.substack.com designates 159.112.244.34 as permitted sender) smtp.mailfrom="bounce+e54603.63af5d-kzinmr109=gmail.com@mg-d0.substack.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=substack.com
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20251104; t=1776685045; x=1777289845;
+        h=list-unsubscribe-post:list-unsubscribe:list-post:list-id
+         :list-archive:list-url:list-owner:reply-to:in-reply-to:references
+         :sender:feedback-id:date:message-id:to:from:subject:mime-version
+         :dkim-signature:dkim-signature:delivered-to:x-forwarded-for
+         :x-forwarded-to:x-gm-message-state:from:to:cc:subject:date
+         :message-id:reply-to;
+        bh=1TCDlaAZcoofb0ot45n5ntsZ1Jzn8AIjkeOu268pb7M=;
+        b=dgD3TcmmWGuvHK9WcsoXq95/5FFb23L4gyYQN86Hud/DbFDVi87QOUoQcEqgP0d/vu
+         tNO5w9cfUYrQ3GiT78u8ciatBwj9wvWBxaQjUepAz/vibgdtiDhkooR1b08UF2JWNi0h
+         m1viBNs0suEyID+kGICDyqlXVeo2GycA/8U/GksjfJOhAvj4OfI9Yfkpr87w7ipGifrZ
+         /I29J1Wb4aCBZHdxvCnSTYYTF1ZR5Kkj8amDHtq/jofk2L4GR6HmoOUcJNo2wysaajqA
+         PVKyZgP2fxlWQmOWE/asuza2jy1zwfujf3QKfpc9mXnkfewiIdNQpzcPzpYDahlE+64D
+         /rKw==
+X-Forwarded-Encrypted: i=2; AFNElJ/tbhhywb8BN3bUE3Lf72ruDzSowk5Jfheb+ByxzZEvmBt35YlXw35An6jEET3vXjaHD+VJ+eIbwA==@hermes-china-digest.exe.xyz
+X-Gm-Message-State: AOJu0Yw78+HJkY1rkCNx9pRrRh9LrZjGRaMM250sCNiexD3Urz4/uBPM
+	kLgnes8qCOmgRXJ6sQIRZmNa2Zlcj39fHvA/spSVgce5rCmU3vv07Z2oUZoXvC9ZyozS6QAPggw
+	E0yc321JV0iJQpUes4ZuatqhV92ImuqWIawj+58upzQUQmR9cFcyrtypCWzgQLQ==
+X-Received: by 2002:a05:690c:e3e9:b0:7b4:6f40:635 with SMTP id 00721157ae682-7b9ecebda50mr137872627b3.16.1776685045530;
+        Mon, 20 Apr 2026 04:37:25 -0700 (PDT)
+X-Forwarded-To: anything@hermes-china-digest.exe.xyz
+X-Forwarded-For: kzinmr109@gmail.com anything@hermes-china-digest.exe.xyz
+Delivered-To: kzinmr109@gmail.com
+Received: by 2002:a05:7000:aa23:b0:84b:223b:7b3f with SMTP id ie35csp1575732mab;
+        Mon, 20 Apr 2026 04:37:23 -0700 (PDT)
+X-Received: by 2002:a05:620a:2916:b0:8cd:8320:3359 with SMTP id af79cd13be357-8e78ec68746mr1868691585a.9.1776685043507;
+        Mon, 20 Apr 2026 04:37:23 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1776685043; cv=none;
+        d=google.com; s=arc-20240605;
+        b=JtyRHsDmaYWlFlmlyBS/vm/CUx3DxSMFiAEJo6DJxW4vdhq+hGKb5mx9NGopMeNUQo
+         /FQ3+4WG2O2EkqAolwRkpFSAWxEbT3l/sefWyxgrZj50talAurnH54Fq6LRMPr/xCEvt
+         G3lzr8dXKwHDl6LPY3V+UGk2XIQKFBPGDz0NEjGLTAwA5DiiHCvdiuZfYuKTjOhpp+ev
+         owc8nDFqCuMYk1G8n7rOj9Yfj5u1X/17TJjbx32j1hhZlkiAkZWV1CI5/8yZo1KE3KTB
+         W4D9EN2q0Mr1tST4LZLv+JhqX8Pd4zDoNsZoTece61zSVFo65rl3CkEOsncexmoJa3Nv
+         HJoQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=list-unsubscribe-post:list-unsubscribe:list-post:list-id
+         :list-archive:list-url:list-owner:reply-to:in-reply-to:references
+         :sender:feedback-id:date:message-id:to:from:subject:mime-version
+         :dkim-signature:dkim-signature;
+        bh=1TCDlaAZcoofb0ot45n5ntsZ1Jzn8AIjkeOu268pb7M=;
+        fh=blEXKU2csNzrHL0SGGRepYFwgELja8fRbuzGaULoMXM=;
+        b=XPtNUC9PbBEPkvUc/gXTh6eX/F97+fEjmnQts6XEK3h0Dox1WUKpjPrjq5q3Ymz5yM
+         XZcXdlJ8COF47XcDcKQCZQadIqq292cnQVhNsSsqdBCavPAjADniGRvcLe4J8u+Qu9Wt
+         zB2IkloetSNApU6T1mMQD20XNfNYGDXLdMQ8AW3Mj1HEYlRLLKectM24JFiGvN2txOmK
+         ja0FGBWGgiyIcW0M9PmJ8ahcI8LzTFBAXRuyZJJs62FcsOPpjpv9U/aUH3/wPPTOLzHn
+         7ThRi7K4CDZgft1gNzAlbzy80N6O954K/3djFJtwAgvRprCEaAKznFmqps2iHE8HG+Dy
+         dx0A==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mg-d0.substack.com header.s=mailo header.b=sYtdb4n9;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=M4XXFxMX;
+       spf=pass (google.com: domain of bounce+e54603.63af5d-kzinmr109=gmail.com@mg-d0.substack.com designates 159.112.244.34 as permitted sender) smtp.mailfrom="bounce+e54603.63af5d-kzinmr109=gmail.com@mg-d0.substack.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=substack.com
+Return-Path: <bounce+e54603.63af5d-kzinmr109=gmail.com@mg-d0.substack.com>
+Received: from v534.v5375b7fa.use4.send.mailgun.net (v534.v5375b7fa.use4.send.mailgun.net. [159.112.244.34])
+        by mx.google.com with UTF8SMTPS id af79cd13be357-8eab9ed6d40si321092185a.461.2026.04.20.04.37.23
+        for <kzinmr109@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 20 Apr 2026 04:37:23 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce+e54603.63af5d-kzinmr109=gmail.com@mg-d0.substack.com designates 159.112.244.34 as permitted sender) client-ip=159.112.244.34;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mg-d0.substack.com header.s=mailo header.b=sYtdb4n9;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=M4XXFxMX;
+       spf=pass (google.com: domain of bounce+e54603.63af5d-kzinmr109=gmail.com@mg-d0.substack.com designates 159.112.244.34 as permitted sender) smtp.mailfrom="bounce+e54603.63af5d-kzinmr109=gmail.com@mg-d0.substack.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=substack.com
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg-d0.substack.com; q=dns/txt; s=mailo; t=1776685042; x=1776692242;
+ h=List-Unsubscribe-Post: List-Unsubscribe: List-Post: List-Id: List-Archive: List-Owner: Reply-To: In-Reply-To: References: Sender: Sender: Date: Message-Id: To: To: From: From: Subject: Subject: Content-Type: Mime-Version: X-Feedback-Id;
+ bh=1TCDlaAZcoofb0ot45n5ntsZ1Jzn8AIjkeOu268pb7M=;
+ b=sYtdb4n9kgSQh3Q9ZE980zpti4GYJQ/w2o6gfVCoZ7y6l0KesAhO9EpzJix4ZPsz1OJXkPCc+8hI1uv6zrwAwNJ9Jorlwe27W/x8qkraZftKEqkdSwSBlWGF5bAtYhM8b04NoiSB945Gx5i1ZEHbwvcf2g9nOMP8Na1fZiC55A0=
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mailgun.org; q=dns/txt; s=mg; t=1776685042; x=1776692242;
+ h=List-Unsubscribe-Post: List-Unsubscribe: List-Post: List-Id: List-Archive: List-Owner: Reply-To: In-Reply-To: References: Sender: Sender: Date: Message-Id: To: To: From: From: Subject: Subject: Content-Type: Mime-Version: X-Feedback-Id;
+ bh=1TCDlaAZcoofb0ot45n5ntsZ1Jzn8AIjkeOu268pb7M=;
+ b=M4XXFxMX9v6ri8PfFQIejkUQQoEQAwOSEgpCq1s/BLn71goDu+1kyu9d0fL2YgUSZREncyGwNizTSznGnso+7j7z1kAD+JurhH43Tg04dxx9sj2qn3BdshZ0Kpbwc4tREpMN9k8+d5pB8Slr5YxHgXTWwS3exht/MJrHr2vxKO0=
+X-Mailgun-Sid: WyI1ZGRjYyIsImt6aW5tcjEwOUBnbWFpbC5jb20iLCI2M2FmNWQiXQ==
+X-Feedback-Id: postmaster@mg-d0.substack.com:post:6148c7d8a45790427cda307f:mailgun
+Received: by 406463a10b85bd3af9dfe0035bd5b4adbd9a081c96d8ffeff1fa7323e6848daf with HTTP
+ id 69e60ff2b35d0202afd8ea92; Mon, 20 Apr 2026 11:37:22 GMT
+X-Mailgun-Sending-Ip: 159.112.244.34
+X-Mailgun-Batch-Id: 69e60ff25e23c1bb1967ee04
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="e1871ee59c99a72e1bd58afea308cd75482e29304996e38658da0a775d1b"
+Subject: ChinAI #355: An Alliance for AI's "Harness Era" -MiniMax + Alibaba Cloud
+From: ChinAI Newsletter <chinai@substack.com>
+To: kzinmr109@gmail.com
+X-Mailgun-Tag: post
+X-Mailgun-Track-Clicks: false
+Message-Id: <20260420113709.3.62e44583f7a4c484@mg-d0.substack.com>
+Date: Mon, 20 Apr 2026 11:37:09 +0000
+Feedback-Id: post-194618013:cat-post:pub-2660:substack
+Sender: ChinAI Newsletter <chinai@substack.com>
+References: <post-194618013@substack.com>
+In-Reply-To: <post-194618013@substack.com>
+Reply-To: ChinAI Newsletter
+ <reply+37vc7x&2flx6&&80a3c53050ef631633f3ac6f1f25c140929bb3298170625ef355badeb303d83b@mg1.substack.com>
+List-Owner: <mailto:chinai@substack.com>
+List-Url: <https://chinai.substack.com/>
+List-Archive: <https://chinai.substack.com/archive>
+List-Id: <chinai.substack.com>
+List-Post: <https://chinai.substack.com/p/chinai-355-an-alliance-for-ais-harness>
+List-Unsubscribe: <https://chinai.substack.com/action/disable_email/disable?token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQ2MTgwMTMsImlhdCI6MTc3NjY4NTA0MiwiZXhwIjoxODA4MjIxMDQyLCJpc3MiOiJwdWItMjY2MCIsInN1YiI6ImRpc2FibGVfZW1haWwifQ.cqhd-wk4LtWvjn7FTy7uIvJGpL2mizoD8sDds9LUsZw&all_sections=true>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-Mailgun-Variables: {"category": "post", "email_generated_at": "1776685042471", "is_freemail":
+ "true", "post_audience": "everyone", "post_id": "194618013", "post_type":
+ "newsletter", "pub_community_enabled": "true", "publication_id": "2660",
+ "subdomain": "chinai", "user_id": "4087482"}
+
+--e1871ee59c99a72e1bd58afea308cd75482e29304996e38658da0a775d1b
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+View this post on the web at https://chinai.substack.com/p/chinai-355-an-al=
+liance-for-ais-harness
+
+Greetings from a world where=E2=80=A6
+Jeopardy is appointment viewing during this streak
+=E2=80=A6As always, the searchable archive of all past issues is here [ htt=
+ps://substack.com/redirect/957cce14-6b0f-4e51-87b3-1fa7358f53f5?j=3DeyJ1Ijo=
+iMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E ]. Please please su=
+bscribe here [ https://substack.com/redirect/38ffc73b-5781-4141-b3d0-9f0667=
+c8143e?j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E ]=
+ to support ChinAI under a Guardian/Wikipedia-style tipping model (everyone=
+ gets the same content but those who can pay support access for all AND com=
+pensation for awesome ChinAI contributors).
+Feature Translation: When AI Enters the Harness Era: MiniMax as a Case Stud=
+y for the New Cloud Infrastructure of AI Agents [ https://substack.com/redi=
+rect/888b5405-265c-4492-b00d-66b04cf41836?j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GWC=
+zChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E ]
+Context: In February, a small OpenAI team disclosed the results of a five-m=
+onth experiment: =E2=80=9Cbuilding and shipping an internal beta of a softw=
+are product with 0 lines of manually-written code [ https://substack.com/re=
+direct/746fd728-b325-4392-b5a1-9f328e9eff3e?j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_G=
+WCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E ].=E2=80=9D Using OpenAI=E2=80=99s soft=
+ware engineering agent Codex, the three person-team used a =E2=80=9Charness=
+ engineering=E2=80=9D approach, summed up in four words: =E2=80=9CHumans st=
+eer. Agents execute.=E2=80=9D In this world, human AI engineering skills ha=
+ve shifted from merely designing context-rich or helpful prompts:
+=E2=80=9COur most difficult challenges now center on designing environments=
+, feedback loops, and control systems that help agents accomplish our goal=
+=E2=80=A6=E2=80=9D
+In this week=E2=80=99s feature translation of a jiqizhixin  [ https://subst=
+ack.com/redirect/97cdff2f-6493-4b17-95bb-7b8e94ad3f20?j=3DeyJ1IjoiMmZseDYif=
+Q.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E ](Synced) article [ https://s=
+ubstack.com/redirect/97cdff2f-6493-4b17-95bb-7b8e94ad3f20?j=3DeyJ1IjoiMmZse=
+DYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E ], we dig into how Chines=
+e companies are adapting to the Harness era. This article focuses on an int=
+eresting partnership between the Chinese AI start-up MiniMax=E2=80=99s AI a=
+gent (MaxClaw) and Alibaba Cloud.
+Key Takeaways: MiniMax=E2=80=99s MaxClaw agent is in the first tier of Open=
+Claw-based adaptations, but how does it deal with fundamental engineering b=
+arriers? Remember, the Harness approach gives AI agents significant autonom=
+y and access to high-risk privileges.
+The article describes the core problem set: =E2=80=9CWhen hundreds of thous=
+ands of agents concurrently execute these complex tasks with highly strict =
+access privileges and multiple steps, traditional system architectures freq=
+uently struggle to cope=E2=80=A6How does MiniMax manage to withstand the ma=
+ssive traffic surges generated by MaxClaw and MaxHermes while ensuring busi=
+ness stability?=E2=80=9D
+Synced highlights four =E2=80=9Cchasms=E2=80=9D that limit the diffusion of=
+ AI agents into enterprise-grade production environments: 1) security bound=
+aries =E2=80=94 since agents are increasingly running directly on top of lo=
+cal operating systems, they have high-risk privileges (e.g., deleting key f=
+iles); 2) state volatility involved in executing long-running tasks; 3) nee=
+d for scheduling multiple agents; and 4) tension between cost consumption a=
+nd drastic workload fluctuations.
+Enter MiniMax=E2=80=99s partnership with Alibaba Cloud=E2=80=99s Container =
+Service for Kubernetes (ACK) and Container Compute Service (ACS), which tri=
+es to address those four engineering challenges associated with large-scale=
+ harnessing of agents.
+On the security challenges, Agent execution occurs in the ACS Agent Sandbox=
+, which isolates and contains the risk of prompt injection or privilege esc=
+alation attacks. Per Synced, =E2=80=9Cthe scope of the resulting risk is st=
+rictly contained within that specific instance, making lateral movement or =
+container escape extremely difficult.=E2=80=9D
+To handle unpredictable computational demands =E2=80=94 AI agents sometimes=
+ have relatively idle periods, punctuated by sudden spikes of  workload =E2=
+=80=94 Alibaba Cloud supports elastic scheduling of compute.
+MiniMax=E2=80=99s evolution points toward the importance of cloud computing=
+ platforms as =E2=80=9CAI super computers.=E2=80=9D
+Citing an IDC survey that finds AI inference accounts for 47% of all token =
+usage and API calls, the article notes that the AI industry is undergoing =
+=E2=80=9Ctransition into a phase of large-scale post-training and inference=
+ execution, as the focus of computing power rapidly shifts toward Agent-cen=
+tric scenarios.=E2=80=9D
+If enterprises collectively operate hundreds of thousands of AI agents, rou=
+nd-the-clock seven days a week, then cloud computing platforms and modern c=
+ontainer services like Alibaba Cloud=E2=80=99s ACK and ACS will serve as =
+=E2=80=9Ccloud-native operating systems=E2=80=9D for AI supercomputers.
+FULL TRANSLATION: When AI Enters the Harness Era: MiniMax as a Case Study f=
+or the New Cloud Infrastructure of AI Agents [ https://substack.com/redirec=
+t/888b5405-265c-4492-b00d-66b04cf41836?j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GWCzCh=
+nbrHzSrs1hMpJpoODTUJm_FAk3tf6E ]
+ChinAI Links (Four to Forward)
+Must-read: 27 Years Later, Still Bombing the Wrong Targets [ https://substa=
+ck.com/redirect/fc0e585e-d14a-4cbc-b8fc-d08a3ae7321e?j=3DeyJ1IjoiMmZseDYifQ=
+=2E6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E ]
+Jon Lindsay is an Associate Professor at Georgia Tech, where he researches =
+the impact of information technology on military power. I=E2=80=99ve really=
+ enjoyed his Substack posts lately. This one analyzes the U.S.=E2=80=99s mi=
+staken strike of an Iranian elementary school, drawing on his previous expe=
+rience as an intelligence officer when the U.S. military accidentally attac=
+ked the Chinese Embassy in Belgrade:=20
+I thought so because I had seen something like this before. Almost three de=
+cades ago, I served as an intelligence officer during Operation Allied Forc=
+e, the Kosovo Air War of 1999. During that war, the US military accidentall=
+y blew up the Chinese Embassy in Belgrade. A mistake of that magnitude seem=
+ed unimaginable at the time. How could we possibly not know what we were hi=
+tting, and then hit that of all things? Anyone who walked by the street in =
+Belgrade would plainly see it was an embassy, but US analysts only looked a=
+t overhead satellite imagery. The Chinese had told their counterparts in th=
+e US Department of State that they had relocated to that new building a yea=
+r before, but that info had not been input into the military database.
+Should-read: (Alibaba=E2=80=99s) DingTalk and (ByteDance=E2=80=99s) Feishu =
+collectively pivot to CLI: Is MCP dead? Is GUI on its way out? [ https://su=
+bstack.com/redirect/d3dcc1ee-be26-443e-a3f3-355b9af91840?j=3DeyJ1IjoiMmZseD=
+YifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E ] (in Chinese)
+How should AI agents interact with computers, data sources, and humans? Xia=
+ochai Ye [=E5=8F=B6=E5=B0=8F=E9=92=97], a developer with previous experienc=
+e at Tencent, Ctrip, and Baidu, shares thoughts on why some Chinese enterpr=
+ise AI platforms prefer the Command-Line Interface over the Model Context P=
+rotocol.
+Should-read: Xiaoice=E2=80=99s [=E5=B0=8F=E5=86=B0] =E2=80=9CUnicorn=E2=80=
+=9D Illusion (in Chinese) [ https://substack.com/redirect/8e277692-1c58-404=
+1-835a-9943c445afd2?j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTU=
+Jm_FAk3tf6E ]
+Back in December 2023 (ChinAI #248 [ https://substack.com/redirect/8eacd390=
+-f4cb-4d63-bd3a-04f07cca1818?j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1h=
+MpJpoODTUJm_FAk3tf6E ]), we deep-dived into the history of Xiaoice, previou=
+sly China=E2=80=99s most popular chatbot and first incubated in Microsoft b=
+efore being spun off. Two and a half years later, Xiaoice has been shut dow=
+n. What happened? This Leiphone article tries to explain.
+Should-read: China=E2=80=99s robot champion has everything to lose [ https:=
+//substack.com/redirect/f528b651-02f3-42fd-be8e-adad1176f92b?j=3DeyJ1IjoiMm=
+ZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E ]
+For Reuters Breakingviews, Robyn Mak profiles China=E2=80=99s Unitree, whic=
+h recently applied to go public on China=E2=80=99s STAR market.
+Thank you for reading and engaging.
+These are Jeff Ding=E2=80=99s (sometimes) weekly translations of Chinese-la=
+nguage musings on AI and related topics. Jeff is an Assistant Professor of =
+Political Science at George Washington University.
+Check out the archive of all past issues here [ https://substack.com/redire=
+ct/957cce14-6b0f-4e51-87b3-1fa7358f53f5?j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GWCzC=
+hnbrHzSrs1hMpJpoODTUJm_FAk3tf6E ] & please subscribe here [ https://substac=
+k.com/redirect/38ffc73b-5781-4141-b3d0-9f0667c8143e?j=3DeyJ1IjoiMmZseDYifQ.=
+6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E ] to support ChinAI under a Gua=
+rdian/Wikipedia-style tipping model (everyone gets the same content but tho=
+se who can pay for a subscription will support access for all).
+Any suggestions or feedback? Let me know at chinainewsletter@gmail.com or o=
+n Twitter at @jjding99 [ https://substack.com/redirect/aa452d89-6ea6-4699-b=
+0b5-53f4047c6269?j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_=
+FAk3tf6E ]
+
+Unsubscribe https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9jaGluYWkuc3V=
+ic3RhY2suY29tL2FjdGlvbi9kaXNhYmxlX2VtYWlsP3Rva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRG=
+czTkRneUxDSndiM04wWDJsa0lqb3hPVFEyTVRnd01UTXNJbWxoZENJNk1UYzNOalk0TlRBME1pd=
+2laWGh3SWpveE9EQTRNakl4TURReUxDSnBjM01pT2lKd2RXSXRNalkyTUNJc0luTjFZaUk2SW1S=
+cGMyRmliR1ZmWlcxaGFXd2lmUS5jcWhkLXdrNEx0V3ZqbjdGVHk3dUl2SkdwTDJtaXpvRDhzRGR=
+zOUxVc1p3IiwicCI6MTk0NjE4MDEzLCJzIjoyNjYwLCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYX=
+QiOjE3NzY2ODUwNDIsImV4cCI6MjA5MjI2MTA0MiwiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rL=
+XJlZGlyZWN0In0._59Ig25EDLHMIgSUhMPnUB1HABGKicsvDMSLzrE0CyE?
+--e1871ee59c99a72e1bd58afea308cd75482e29304996e38658da0a775d1b
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html lang=3D"en" dir=3D"ltr" style=3D"scrollbar-width: thin;scrollbar-colo=
+r: rgb(219,219,219)rgb(255,255,255);"><head><meta charset=3D"utf-8"><title>=
+ChinAI #355: An Alliance for AI's "Harness Era" -MiniMax + Alibaba Cloud</t=
+itle><style>
+@media (max-width: 1024px) {
+  .typography .pullquote-align-left,
+  .typography.editor .pullquote-align-left,
+  .typography .pullquote-align-right,
+  .typography.editor .pullquote-align-right,
+  .typography .pullquote-align-wide,
+  .typography.editor .pullquote-align-wide,
+  .typography .pullquote-align-center,
+  .typography.editor .pullquote-align-center {
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .typography .markup table.image-wrapper img,
+  .typography.editor .markup table.image-wrapper img,
+  .typography .markup table.kindle-wrapper img,
+  .typography.editor .markup table.kindle-wrapper img {
+    max-width: 550px;
+  }
+}
+@media (min-width: 1024px) {
+  .typography:not(:has(#toc)) .captioned-image-container figure:has(> a.ima=
+ge2-offset-left),
+  .typography.editor:not(:has(#toc)) .captioned-image-container figure:has(=
+> a.image2-offset-left) {
+    margin-left: var(--image-offset-margin);
+  }
+  .typography:not(:has(#toc)) .captioned-image-container figure:has(> a.ima=
+ge2-offset-right),
+  .typography.editor:not(:has(#toc)) .captioned-image-container figure:has(=
+> a.image2-offset-right) {
+    margin-right: var(--image-offset-margin);
+  }
+}
+@media (min-width: 1300px) {
+  .typography .captioned-image-container figure:has(> a.image2-offset-left)=
+,
+  .typography.editor .captioned-image-container figure:has(> a.image2-offse=
+t-left) {
+    margin-left: var(--image-offset-margin);
+  }
+  .typography .captioned-image-container figure:has(> a.image2-offset-right=
+),
+  .typography.editor .captioned-image-container figure:has(> a.image2-offse=
+t-right) {
+    margin-right: var(--image-offset-margin);
+  }
+}
+@media (max-width: 1024px) {
+  .typography,
+  .typography.editor {
+    /* Disable offset on mobile/tablet */
+  }
+  .typography .captioned-image-container figure:has(> a.image2-align-left),
+  .typography.editor .captioned-image-container figure:has(> a.image2-align=
+-left),
+  .typography .captioned-image-container figure:has(> a.image2-align-right)=
+,
+  .typography.editor .captioned-image-container figure:has(> a.image2-align=
+-right) {
+    float: none;
+    margin: 1em auto;
+    max-width: 100%;
+    width: auto;
+    padding: 0;
+  }
+  .typography .captioned-image-container figure:has(> a.image2-align-left.t=
+hefp),
+  .typography.editor .captioned-image-container figure:has(> a.image2-align=
+-left.thefp),
+  .typography .captioned-image-container figure:has(> a.image2-align-right.=
+thefp),
+  .typography.editor .captioned-image-container figure:has(> a.image2-align=
+-right.thefp) {
+    margin: 1em auto;
+  }
+  .typography .captioned-image-container figure:has(> a.image2-offset-left)=
+,
+  .typography.editor .captioned-image-container figure:has(> a.image2-offse=
+t-left),
+  .typography .captioned-image-container figure:has(> a.image2-offset-right=
+),
+  .typography.editor .captioned-image-container figure:has(> a.image2-offse=
+t-right) {
+    margin: 1em auto;
+  }
+  .typography .captioned-image-container figure:has(> a.image2-align-left) =
+=2Eimage2-inset,
+  .typography.editor .captioned-image-container figure:has(> a.image2-align=
+-left) .image2-inset,
+  .typography .captioned-image-container figure:has(> a.image2-align-right)=
+ .image2-inset,
+  .typography.editor .captioned-image-container figure:has(> a.image2-align=
+-right) .image2-inset {
+    display: block;
+    justify-content: initial;
+  }
+}
+@media (max-width: 768px) {
+  .typography .markup div.sponsorship-campaign-embed,
+  .typography.editor .markup div.sponsorship-campaign-embed {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .typography .markup div.sponsorship-campaign-embed:first-child,
+  .typography.editor .markup div.sponsorship-campaign-embed:first-child {
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .typography .markup div.youtube-overlay,
+  .typography.editor .markup div.youtube-overlay,
+  .typography .markup div.vimeo-overlay,
+  .typography.editor .markup div.vimeo-overlay {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 370px) {
+  .typography .markup div.tiktok-wrap,
+  .typography.editor .markup div.tiktok-wrap {
+    width: calc(95vw - 32px);
+    height: calc((95vw - 32px - 2px) / 0.485714);
+  }
+}
+@media screen and (max-width: 650px) {
+  .typography .markup div.embedded-publication-wrap .embedded-publication.s=
+how-subscribe,
+  .typography.editor .markup div.embedded-publication-wrap .embedded-public=
+ation.show-subscribe {
+    padding: 24px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .typography .markup div.subscription-widget-wrap .subscription-widget.sho=
+w-subscribe,
+  .typography.editor .markup div.subscription-widget-wrap .subscription-wid=
+get.show-subscribe,
+  .typography .markup div.subscription-widget-wrap-editor .subscription-wid=
+get.show-subscribe,
+  .typography.editor .markup div.subscription-widget-wrap-editor .subscript=
+ion-widget.show-subscribe,
+  .typography .markup div.captioned-button-wrap .subscription-widget.show-s=
+ubscribe,
+  .typography.editor .markup div.captioned-button-wrap .subscription-widget=
+=2Eshow-subscribe {
+    padding: 0px 24px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .typography .markup div.subscription-widget-wrap .subscription-widget.sho=
+w-subscribe .subscription-widget-subscribe .button,
+  .typography.editor .markup div.subscription-widget-wrap .subscription-wid=
+get.show-subscribe .subscription-widget-subscribe .button,
+  .typography .markup div.subscription-widget-wrap-editor .subscription-wid=
+get.show-subscribe .subscription-widget-subscribe .button,
+  .typography.editor .markup div.subscription-widget-wrap-editor .subscript=
+ion-widget.show-subscribe .subscription-widget-subscribe .button,
+  .typography .markup div.captioned-button-wrap .subscription-widget.show-s=
+ubscribe .subscription-widget-subscribe .button,
+  .typography.editor .markup div.captioned-button-wrap .subscription-widget=
+=2Eshow-subscribe .subscription-widget-subscribe .button {
+    padding: 10px 12px;
+    min-width: 110px;
+  }
+}
+@media (max-width: 650px) {
+  .typography .markup .twitter-embed,
+  .typography.editor .markup .twitter-embed,
+  .typography .markup .tweet,
+  .typography.editor .markup .tweet {
+    padding: 12px;
+  }
+}
+@media (max-width: 650px) {
+  .typography .markup .twitter-embed .tweet-text,
+  .typography.editor .markup .twitter-embed .tweet-text,
+  .typography .markup .tweet .tweet-text,
+  .typography.editor .markup .tweet .tweet-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 650px) {
+  .typography .markup .twitter-embed .tweet-photos-container.two,
+  .typography.editor .markup .twitter-embed .tweet-photos-container.two,
+  .typography .markup .tweet .tweet-photos-container.two,
+  .typography.editor .markup .tweet .tweet-photos-container.two,
+  .typography .markup .twitter-embed .tweet-photos-container.three,
+  .typography.editor .markup .twitter-embed .tweet-photos-container.three,
+  .typography .markup .tweet .tweet-photos-container.three,
+  .typography.editor .markup .tweet .tweet-photos-container.three,
+  .typography .markup .twitter-embed .tweet-photos-container.four,
+  .typography.editor .markup .twitter-embed .tweet-photos-container.four,
+  .typography .markup .tweet .tweet-photos-container.four,
+  .typography.editor .markup .tweet .tweet-photos-container.four {
+    height: 200px;
+  }
+}
+@media (max-width: 650px) {
+  .typography .markup .twitter-embed a.expanded-link .expanded-link-img,
+  .typography.editor .markup .twitter-embed a.expanded-link .expanded-link-=
+img,
+  .typography .markup .tweet a.expanded-link .expanded-link-img,
+  .typography.editor .markup .tweet a.expanded-link .expanded-link-img {
+    max-height: 180px;
+  }
+}
+@media (max-width: 650px) {
+  .typography .markup .twitter-embed a.expanded-link .expanded-link-descrip=
+tion,
+  .typography.editor .markup .twitter-embed a.expanded-link .expanded-link-=
+description,
+  .typography .markup .tweet a.expanded-link .expanded-link-description,
+  .typography.editor .markup .tweet a.expanded-link .expanded-link-descript=
+ion {
+    display: none;
+  }
+}
+@media screen and (max-width: 650px) {
+  .typography .markup .apple-podcast-container,
+  .typography.editor .markup .apple-podcast-container {
+    width: unset;
+  }
+}
+@media (max-width: 420px) {
+  .typography .markup .install-substack-app-embed img.install-substack-app-=
+embed-img,
+  .typography.editor .markup .install-substack-app-embed img.install-substa=
+ck-app-embed-img {
+    margin: 0 auto 16px auto;
+  }
+}
+@media (max-width: 420px) {
+  .typography .markup .install-substack-app-embed .install-substack-app-emb=
+ed-text,
+  .typography.editor .markup .install-substack-app-embed .install-substack-=
+app-embed-text {
+    margin: 0 0 12px 0;
+    max-width: 100%;
+    width: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 420px) {
+  .typography .markup .install-substack-app-embed .install-substack-app-emb=
+ed-link,
+  .typography.editor .markup .install-substack-app-embed .install-substack-=
+app-embed-link {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 481px) {
+  .share-button-container {
+    height: 38px;
+  }
+}
+@media screen and (min-width: 481px) {
+  .share-button-container a.comment {
+    height: 38px;
+    line-height: 38px;
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .share-button-container .separator {
+    display: block;
+    margin: 0;
+    height: 8px;
+    border-left: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .share-button-container a.share.first img {
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 481px) {
+  .share-button-container a.mobile {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 541px) {
+  .settings-add-pub-modal-wrapper .container .add-recommending-pub-modal-co=
+ntainer {
+    padding: 36px;
+    height: 680px;
+  }
+}
+@media screen and (min-width: 541px) {
+  .settings-add-pub-modal-wrapper .container .add-recommending-pub-modal-co=
+ntainer .footer {
+    position: absolute;
+    bottom: 36px;
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .header-anchor-parent {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .post {
+    padding: 16px 0 0 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .post .post-header .post-label {
+    margin-top: 8px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .post .post-header .meta-author-wrap.alternative-meta .meta-right-column =
+=2Epost-meta {
+    margin-top: 6px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .post .footer-facepile-container {
+    height: 64px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .post .post-footer.use-separators {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 650px) {
+  .post .post-footer.next-prev {
+    height: 64px;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 650px) {
+  .post-contributor-footer .post-contributor-bio-table {
+    display: block;
+  }
+  .post-contributor-footer .post-contributor-bio-table-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .post-contributor-footer .post-contributor-bio-userhead-cell,
+  .post-contributor-footer .post-contributor-bio-body-cell {
+    display: block;
+  }
+  .post-contributor-footer .post-contributor-bio-body-cell {
+    flex-grow: 1;
+  }
+  .post-contributor-footer .post-contributor-bio-body-table {
+    display: block;
+  }
+  .post-contributor-footer .post-contributor-bio-body-table-row {
+    display: block;
+  }
+  .post-contributor-footer .post-contributor-bio-copy-cell,
+  .post-contributor-footer .post-contributor-bio-controls-cell {
+    display: block;
+  }
+  .post-contributor-footer .post-contributor-bio-copy-cell {
+    margin: 0 0 16px 0;
+  }
+  .post-contributor-footer .post-contributor-bio-controls-cell {
+    width: auto;
+  }
+  .post-contributor-footer .post-contributor-bio-controls {
+    margin: auto;
+  }
+  .post-contributor-footer .post-contributor-bio-controls .button.primary {
+    width: 100%;
+  }
+  .post-contributor-footer .post-contributor-bio-text {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .post-silhouette {
+    padding: 32px 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .post-silhouette .post-silhouette-title {
+    margin-top: 10.44225025px;
+    height: 120px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .post-silhouette .post-silhouette-meta {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .post-silhouette .post-silhouette-meta.with-byline-image {
+    margin: 20px 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .use-theme-bg .post-meta.alternative-meta .post-meta-item,
+  .post-meta.alternative-meta .post-meta-item {
+    padding-right: 16px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .use-theme-bg .post-meta.alternative-meta .post-meta-item,
+  .post-meta.alternative-meta .post-meta-item {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .use-theme-bg .post-meta.alternative-meta .post-meta-item.guest-author-pu=
+blication,
+  .post-meta.alternative-meta .post-meta-item.guest-author-publication {
+    display: none;
+  }
+}
+@media screen and (max-width: 370px) {
+  .post-meta .post-meta-item .post-meta-button {
+    height: 36px !important;
+    /* important to override in-line height style on emails */
+  }
+  .post-meta .post-meta-item .post-meta-button .meta-button-label {
+    display: none;
+  }
+  .post-meta .post-meta-item .post-meta-button > svg {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 370px) {
+  .post-meta .post-meta-item {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .post .floating-subscribe-button {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  body .pullquote-align-left,
+  body .pullquote-align-right,
+  body .pullquote-align-wide,
+  body .pullquote-align-center {
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  body .markup table.image-wrapper img,
+  body .markup table.kindle-wrapper img {
+    max-width: 550px;
+  }
+}
+@media (min-width: 1024px) {
+  body:not(:has(#toc)) .captioned-image-container figure:has(> a.image2-off=
+set-left) {
+    margin-left: var(--image-offset-margin);
+  }
+  body:not(:has(#toc)) .captioned-image-container figure:has(> a.image2-off=
+set-right) {
+    margin-right: var(--image-offset-margin);
+  }
+}
+@media (min-width: 1300px) {
+  body .captioned-image-container figure:has(> a.image2-offset-left) {
+    margin-left: var(--image-offset-margin);
+  }
+  body .captioned-image-container figure:has(> a.image2-offset-right) {
+    margin-right: var(--image-offset-margin);
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    /* Disable offset on mobile/tablet */
+  }
+  body .captioned-image-container figure:has(> a.image2-align-left),
+  body .captioned-image-container figure:has(> a.image2-align-right) {
+    float: none;
+    margin: 1em auto;
+    max-width: 100%;
+    width: auto;
+    padding: 0;
+  }
+  body .captioned-image-container figure:has(> a.image2-align-left.thefp),
+  body .captioned-image-container figure:has(> a.image2-align-right.thefp) =
+{
+    margin: 1em auto;
+  }
+  body .captioned-image-container figure:has(> a.image2-offset-left),
+  body .captioned-image-container figure:has(> a.image2-offset-right) {
+    margin: 1em auto;
+  }
+  body .captioned-image-container figure:has(> a.image2-align-left) .image2=
+-inset,
+  body .captioned-image-container figure:has(> a.image2-align-right) .image=
+2-inset {
+    display: block;
+    justify-content: initial;
+  }
+}
+@media (max-width: 768px) {
+  body .markup div.sponsorship-campaign-embed {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  body .markup div.sponsorship-campaign-embed:first-child {
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 650px) {
+  body .markup div.youtube-overlay,
+  body .markup div.vimeo-overlay {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 370px) {
+  body .markup div.tiktok-wrap {
+    width: calc(95vw - 32px);
+    height: calc((95vw - 32px - 2px) / 0.485714);
+  }
+}
+@media screen and (max-width: 650px) {
+  body .markup div.embedded-publication-wrap .embedded-publication.show-sub=
+scribe {
+    padding: 24px;
+  }
+}
+@media screen and (max-width: 650px) {
+  body .markup div.subscription-widget-wrap .subscription-widget.show-subsc=
+ribe,
+  body .markup div.subscription-widget-wrap-editor .subscription-widget.sho=
+w-subscribe,
+  body .markup div.captioned-button-wrap .subscription-widget.show-subscrib=
+e {
+    padding: 0px 24px;
+  }
+}
+@media screen and (max-width: 650px) {
+  body .markup div.subscription-widget-wrap .subscription-widget.show-subsc=
+ribe .subscription-widget-subscribe .button,
+  body .markup div.subscription-widget-wrap-editor .subscription-widget.sho=
+w-subscribe .subscription-widget-subscribe .button,
+  body .markup div.captioned-button-wrap .subscription-widget.show-subscrib=
+e .subscription-widget-subscribe .button {
+    padding: 10px 12px;
+    min-width: 110px;
+  }
+}
+@media (max-width: 650px) {
+  body .markup .twitter-embed,
+  body .markup .tweet {
+    padding: 12px;
+  }
+}
+@media (max-width: 650px) {
+  body .markup .twitter-embed .tweet-text,
+  body .markup .tweet .tweet-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 650px) {
+  body .markup .twitter-embed .tweet-photos-container.two,
+  body .markup .tweet .tweet-photos-container.two,
+  body .markup .twitter-embed .tweet-photos-container.three,
+  body .markup .tweet .tweet-photos-container.three,
+  body .markup .twitter-embed .tweet-photos-container.four,
+  body .markup .tweet .tweet-photos-container.four {
+    height: 200px;
+  }
+}
+@media (max-width: 650px) {
+  body .markup .twitter-embed a.expanded-link .expanded-link-img,
+  body .markup .tweet a.expanded-link .expanded-link-img {
+    max-height: 180px;
+  }
+}
+@media (max-width: 650px) {
+  body .markup .twitter-embed a.expanded-link .expanded-link-description,
+  body .markup .tweet a.expanded-link .expanded-link-description {
+    display: none;
+  }
+}
+@media screen and (max-width: 650px) {
+  body .markup .apple-podcast-container {
+    width: unset;
+  }
+}
+@media (max-width: 420px) {
+  body .markup .install-substack-app-embed img.install-substack-app-embed-i=
+mg {
+    margin: 0 auto 16px auto;
+  }
+}
+@media (max-width: 420px) {
+  body .markup .install-substack-app-embed .install-substack-app-embed-text=
+ {
+    margin: 0 0 12px 0;
+    max-width: 100%;
+    width: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 420px) {
+  body .markup .install-substack-app-embed .install-substack-app-embed-link=
+ {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 500px) {
+  body .header a.logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+  }
+}
+@media screen and (max-width: 420px) {
+  body .subscription-receipt table:first-of-type .subscription-amount .subs=
+cription-discount {
+    width: 72px !important;
+  }
+}
+@media screen and (min-width: 481px) {
+  body .share-button-container {
+    height: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .share-button-container .separator {
+    display: block !important;
+    margin: 0 !important;
+    height: 8px !important;
+    border-left: none !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .digest .item .post-meta-item.audience {
+    display: none;
+  }
+}
+@media screen and (min-width: 500px) {
+  .digest-publication .logo img {
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .comments-page .container .comment-list .collapsed-reply {
+    margin-left: calc(10 + 32px - 24px);
+  }
+}
+@media screen and (max-width: 650px) {
+  .comment > .comment-list {
+    padding-left: 24px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .finish-magic-login-modal .modal-content .container {
+    padding: 24px 0;
+  }
+}
+@media (max-width: 650px) {
+  .reader2-text-b3 {
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .reader2-text-h4 {
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 541px) {
+  .user-profile-modal {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .subscribe-widget form.form .sideBySideWrap button.rightButton {
+    padding: 10px 12px;
+  }
+}
+@media screen and (min-width: 541px) {
+  .pub-icon:hover .logo-hover,
+  .feed-item-icon:hover .logo-hover {
+    display: block;
+  }
+}
+@media screen and (max-width: 650px) {
+  .post-ufi.single-full-width-button .post-ufi-button-wrapper {
+    width: 100%;
+    padding: 16px;
+  }
+  .post-ufi.single-full-width-button .post-ufi-button-wrapper:empty {
+    display: none;
+  }
+  .post-ufi.single-full-width-button .post-ufi-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .file-embed-wrapper {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .file-embed-wrapper-editor {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .file-embed-wrapper-editor:active {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .file-embed-button.wide,
+  .file-embed-error-button.wide {
+    display: none;
+  }
+}
+@media only screen and (min-width: 630px) {
+  .file-embed-button.narrow,
+  .file-embed-error-button.narrow {
+    display: none;
+  }
+}
+@media screen and (min-width: 541px) {
+  .audio-player-wrapper .audio-player {
+    min-width: 500px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .audio-player-wrapper .audio-player .audio-player-progress {
+    border-left-width: 16px;
+    border-right-width: 16px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .audio-player-wrapper .audio-player .audio-player-progress .audio-player-=
+progress-bar .audio-player-progress-bar-popup {
+    top: -54px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .audio-player-wrapper-fancy .audio-player .audio-player-progress {
+    border-left-width: 16px;
+    border-right-width: 16px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .audio-player-wrapper-fancy .audio-player .audio-player-progress .audio-p=
+layer-progress-bar .audio-player-progress-bar-popup {
+    top: -54px;
+  }
+}
+@media (min-width: 250px) {
+  .audio-player-wrapper-fancy .audio-player {
+    padding: 32px;
+  }
+  .audio-player-wrapper-fancy .audio-player .btn-group {
+    display: flex;
+  }
+  .audio-player-wrapper-fancy .audio-player .btn-group .button:last-of-type=
+ {
+    display: block;
+  }
+}
+@media (min-width: 300px) {
+  .audio-player-wrapper-fancy .audio-player .btn-group {
+    display: block;
+  }
+  .audio-player-wrapper-fancy .audio-player .btn-group .button:first-of-typ=
+e {
+    display: block;
+  }
+}
+@media (min-width: 350px) {
+  .audio-player-wrapper-fancy .audio-player .audio-player-substack-logo {
+    display: block;
+  }
+  .audio-player-wrapper-fancy .audio-player .audio-player-title {
+    margin-top: 16px;
+  }
+  .audio-player-wrapper-fancy .audio-player .audio-player-hero-image-contai=
+ner {
+    padding-top: 15%;
+    width: 15%;
+    display: block;
+  }
+  .audio-player-wrapper-fancy .audio-player .btn-group .button:first-of-typ=
+e {
+    display: block;
+  }
+  .audio-player-wrapper-fancy .audio-player .audio-player-substack-logo {
+    display: block;
+  }
+}
+@media (min-width: 350px) {
+  .audio-player-wrapper-fancy .audio-player .audio-player-hero-image-contai=
+ner {
+    padding-top: 25%;
+    width: 25%;
+    display: block;
+  }
+  .audio-player-wrapper-fancy .audio-player .btn-group {
+    display: flex;
+  }
+  .audio-player-wrapper-fancy .audio-player .btn-group .button:first-of-typ=
+e {
+    display: block;
+  }
+}
+@media (min-width: 400px) {
+  .audio-player-wrapper-fancy .audio-player .audio-player-hero-image-contai=
+ner {
+    padding-top: 40%;
+    width: 40%;
+  }
+}
+@media (max-width: 400px) {
+  .audio-player-wrapper-fancy .audio-player .btn-group {
+    margin-top: 12px;
+  }
+  .audio-player-wrapper-fancy .audio-player .btn-group .button {
+    font-size: 13px;
+    padding: 6px 12px;
+    height: auto;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 600px) {
+  .audio-player-wrapper-fancy .audio-player .audio-player-hero-image-contai=
+ner {
+    padding-top: 55%;
+    width: 55%;
+  }
+}
+@media (max-width: 650px) {
+  .poll-editor-modal {
+    min-width: calc(100% - 20px);
+  }
+}
+@media (max-width: 750px) {
+  .poll-embed .poll-anchor-target .poll-anchor-copy-button {
+    left: 8px;
+    top: 45px;
+  }
+}</style></head><body class=3D"email-body" style=3D"font-kerning: auto;--im=
+age-offset-margin: -120px;"><img src=3D"https://eotrx.substackcdn.com/o/7f3=
+5025410fa9b6d/p.gif?token=3DeyJtIjoiPDIwMjYwNDIwMTEzNzA5LjMuNjJlNDQ1ODNmN2E=
+0YzQ4NEBtZy1kMC5zdWJzdGFjay5jb20-IiwidSI6NDA4NzQ4MiwiciI6Imt6aW5tcjEwOUBnbW=
+FpbC5jb20iLCJkIjoibWctZDAuc3Vic3RhY2suY29tIiwicCI6MTk0NjE4MDEzLCJ0IjoibmV3c=
+2xldHRlciIsImEiOiJldmVyeW9uZSIsInMiOjI2NjAsImMiOiJwb3N0IiwiZiI6dHJ1ZSwicG9z=
+aXRpb24iOiJ0b3AiLCJpYXQiOjE3NzY2ODUwNDIsImV4cCI6MTc3OTI3NzA0MiwiaXNzIjoicHV=
+iLTAiLCJzdWIiOiJlbyJ9.2O9PlBHvRUrIJjvmPYGV9VnlvLq0U_CrA2BkOxXloP4" alt=3D""=
+ width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px !important;width=
+:1px !important;border-width:0 !important;margin-top:0 !important;margin-bo=
+ttom:0 !important;margin-right:0 !important;margin-left:0 !important;paddin=
+g-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;p=
+adding-left:0 !important;"/><div class=3D"preview" style=3D"display:none;fo=
+nt-size:1px;color:#333333;line-height:1px;max-height:0px;max-width:0px;opac=
+ity:0;overflow:hidden;">Greetings from a world where&#8230;</div><div class=
+=3D"preview" style=3D"display:none;font-size:1px;color:#333333;line-height:=
+1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">&#847; &nbsp; =
+&#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847=
+; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#=
+173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &=
+#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847;=
+ &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#1=
+73;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#=
+8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; =
+&nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#17=
+3;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8=
+199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &=
+nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173=
+;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#81=
+99; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &n=
+bsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;=
+&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#819=
+9; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nb=
+sp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&=
+#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199=
+; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbs=
+p; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#=
+847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199;=
+ &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp=
+; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#8=
+47; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; =
+&#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp;=
+ &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#84=
+7; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &=
+#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; =
+&#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847=
+; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#=
+173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &=
+#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847;=
+ &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#1=
+73;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#=
+8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; =
+&nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#17=
+3;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8=
+199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &=
+nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173=
+;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#81=
+99; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &n=
+bsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;=
+&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#819=
+9; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nb=
+sp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&=
+#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199=
+; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbs=
+p; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#=
+847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199;=
+ &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp=
+; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#8=
+47; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; =
+&#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp;=
+ &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#84=
+7; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &=
+#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; =
+&#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847=
+; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#=
+173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &=
+#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847;=
+ &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#1=
+73;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#=
+8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; =
+&nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#17=
+3;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8=
+199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &=
+nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173=
+;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#81=
+99; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &n=
+bsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;=
+&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#819=
+9; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nb=
+sp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&=
+#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199; &#173;&#847; &nbsp; &#8199=
+; &#173;&#847; &nbsp; &#8199; &#173;</div><table class=3D"email-body-contai=
+ner" role=3D"presentation" width=3D"100%" border=3D"0" cellspacing=3D"0" ce=
+llpadding=3D"0"><tbody><tr><td></td><td class=3D"content" width=3D"550"></t=
+d><td></td></tr><tr><td></td><td class=3D"content" width=3D"550" align=3D"l=
+eft"><div style=3D"font-size: 16px;line-height: 26px;max-width: 550px;width=
+: 100%;margin: 0 auto;overflow-wrap: break-word;"><table role=3D"presentati=
+on" width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody>=
+<tr><td align=3D"right" style=3D"height:20px;"><table role=3D"presentation"=
+ width=3D"auto" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr=
+><td style=3D"vertical-align:middle;"><span class=3D"pencraft pc-reset rese=
+t-IxiVJZ tw-font-body tw-text-ssm tw-text-substack-secondary" style=3D"font=
+-family: SF Pro Text, -apple-system, system-ui, BlinkMacSystemFont, Inter, =
+Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI=
+ Emoji, Segoe UI Symbol;font-size: 13px;color: unset;list-style: none;text-=
+decoration: unset;margin: 0;"><div class=3D"pencraft pc-reset align-right-V=
+JbKw5 size-12-mmZ61m reset-IxiVJZ" style=3D"list-style: none;color: unset;t=
+ext-align: right;font-size: 12px;line-height: 16px;text-decoration: unset;m=
+argin: 0;"><span class=3D"pencraft pc-reset reset-IxiVJZ" translated=3D"" s=
+tyle=3D"list-style: none;color: unset;text-decoration: unset;margin: 0;">Fo=
+rwarded this email? <a class=3D"pencraft pc-reset decoration-underline-ClTk=
+Yc reset-IxiVJZ" href=3D"https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly=
+9jaGluYWkuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV9jYW1wY=
+Wlnbj1lbWFpbC1zdWJzY3JpYmUmcj0yZmx4NiZuZXh0PWh0dHBzJTNBJTJGJTJGY2hpbmFpLnN1=
+YnN0YWNrLmNvbSUyRnAlMkZjaGluYWktMzU1LWFuLWFsbGlhbmNlLWZvci1haXMtaGFybmVzcyI=
+sInAiOjE5NDYxODAxMywicyI6MjY2MCwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzc2Nj=
+g1MDQyLCJleHAiOjIwOTIyNjEwNDIsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjd=
+CJ9.DPfrS9ReagISsAUHoiIOVnosctGu62Rk1ugRPsXjmv0?" style=3D"list-style: none=
+;color: unset;text-decoration: unset;margin: 0;-webkit-text-decoration-line=
+: underline;text-decoration-line: underline;">Subscribe here</a> for more</=
+span></div></span></td></tr></tbody></table></td></tr></tbody></table><div =
+class=3D"post typography" dir=3D"auto" style=3D"--image-offset-margin: -120=
+px;padding: 32px 0 0 0;font-size: 16px;line-height: 26px;"><div class=3D"po=
+st-header" role=3D"region" aria-label=3D"Post header" style=3D"font-size: 1=
+6px;line-height: 26px;"><h1 class=3D"post-title published title-X77sOw" dir=
+=3D"auto" style=3D"direction: auto;text-align: start;unicode-bidi: isolate;=
+color: rgb(54,55,55);font-family: 'SF Pro Display',-apple-system-headline,s=
+ystem-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial=
+,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-wei=
+ght: bold;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: anti=
+aliased;-webkit-appearance: optimizelegibility;-moz-appearance: optimizeleg=
+ibility;appearance: optimizelegibility;margin: 0;line-height: 36px;font-siz=
+e: 32px;"><a href=3D"https://substack.com/app-link/post?publication_id=3D26=
+60&post_id=3D194618013&utm_source=3Dpost-email-title&utm_campaign=3Demail-p=
+ost-title&isFreemail=3Dtrue&r=3D2flx6&token=3DeyJ1c2VyX2lkIjo0MDg3NDgyLCJwb=
+3N0X2lkIjoxOTQ2MTgwMTMsImlhdCI6MTc3NjY4NTA0MiwiZXhwIjoxNzc5Mjc3MDQyLCJpc3Mi=
+OiJwdWItMjY2MCIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.oTGZyweOmLikgmVOeR7tYthBxH4f=
+PE_wj9j5X7owmDw" style=3D"color: rgb(54,55,55);text-decoration: none;">Chin=
+AI #355: An Alliance for AI's "Harness Era" -MiniMax + Alibaba Cloud</a></h=
+1><table class=3D"post-meta" role=3D"presentation" width=3D"100%" border=3D=
+"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"margin: 1em 0;height: 20px=
+;align-items: center;"><tbody><tr><td><table role=3D"presentation" width=3D=
+"auto" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td><tab=
+le role=3D"presentation" width=3D"auto" border=3D"0" cellspacing=3D"0" cell=
+padding=3D"0"><tbody><tr><td style=3D"vertical-align:middle;"><div class=3D=
+"pencraft pc-reset color-primary-zABazT line-height-20-t4M0El font-meta-MWB=
+umP size-11-NuY2Zx weight-medium-fw81nC transform-uppercase-yKDgcq reset-Ix=
+iVJZ meta-EgzBVA custom-css-email-post-author" style=3D"list-style: none;fo=
+nt-size: 11px;line-height: 20px;text-decoration: unset;color: rgb(54,55,55)=
+;margin: 0;font-family: 'SF Compact',-apple-system,system-ui,-apple-system,=
+BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Colo=
+r Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight: 500;text-transform=
+: uppercase;letter-spacing: .2px;"><a class=3D"pencraft pc-reset color-prim=
+ary-zABazT line-height-20-t4M0El font-meta-MWBumP size-11-NuY2Zx weight-med=
+ium-fw81nC transform-uppercase-yKDgcq reset-IxiVJZ meta-EgzBVA" style=3D"li=
+st-style: none;color: rgb(54,55,55);margin: 0;font-size: 11px;line-height: =
+20px;font-family: 'SF Compact',-apple-system,system-ui,-apple-system,BlinkM=
+acSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoj=
+i','Segoe UI Emoji','Segoe UI Symbol';font-weight: 500;text-transform: uppe=
+rcase;letter-spacing: .2px;text-decoration: none" href=3D"https://substack.=
+com/@chinai">Jeffrey Ding</a></div></td></tr></tbody></table></td></tr><tr>=
+<td><table role=3D"presentation" width=3D"auto" border=3D"0" cellspacing=3D=
+"0" cellpadding=3D"0"><tbody><tr><td style=3D"vertical-align:middle;"><div =
+class=3D"pencraft pc-reset color-secondary-ls1g8s line-height-20-t4M0El fon=
+t-meta-MWBumP size-11-NuY2Zx weight-medium-fw81nC transform-uppercase-yKDgc=
+q reset-IxiVJZ meta-EgzBVA" style=3D"list-style: none;font-size: 11px;line-=
+height: 20px;text-decoration: unset;color: rgb(119,119,119);margin: 0;font-=
+family: 'SF Compact',-apple-system,system-ui,-apple-system,BlinkMacSystemFo=
+nt,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe =
+UI Emoji','Segoe UI Symbol';font-weight: 500;text-transform: uppercase;lett=
+er-spacing: .2px;"><time datetime=3D"2026-04-20T11:37:09.581Z">Apr 20</time=
+></div></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbod=
+y></table><table class=3D"email-ufi-2-top" role=3D"presentation" width=3D"1=
+00%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-top: =
+1px solid rgb(0,0,0,.1);border-bottom: 1px solid rgb(0,0,0,.1);min-width: 1=
+00%;"><tbody><tr height=3D"16"><td height=3D"16" style=3D"font-size:0px;lin=
+e-height:0;">&nbsp;</td></tr><tr><td><table role=3D"presentation" width=3D"=
+100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td><tabl=
+e role=3D"presentation" width=3D"auto" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0"><tbody><tr><td style=3D"vertical-align:middle;"><table role=3D=
+"presentation" width=3D"38" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+"><tbody><tr><td align=3D"center"><a class=3D"email-icon-button" href=3D"ht=
+tps://substack.com/app-link/post?publication_id=3D2660&post_id=3D194618013&=
+utm_source=3Dsubstack&isFreemail=3Dtrue&submitLike=3Dtrue&token=3DeyJ1c2VyX=
+2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQ2MTgwMTMsInJlYWN0aW9uIjoi4p2kIiwiaWF0Ijox=
+Nzc2Njg1MDQyLCJleHAiOjE3NzkyNzcwNDIsImlzcyI6InB1Yi0yNjYwIiwic3ViIjoicmVhY3R=
+pb24ifQ.uxYIAjzO2LGwzxbCAOp4NI-pzXHrCq9NA9IKWVZzWV0&utm_medium=3Demail&utm_=
+campaign=3Demail-reaction&r=3D2flx6" style=3D"font-family: system-ui,-apple=
+-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Ap=
+ple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';display: inline-block;f=
+ont-weight: 500;border: 1px solid rgb(0,0,0,.1);border-radius: 9999px;text-=
+transform: uppercase;font-size: 12px;line-height: 1;padding: 9px 0;text-dec=
+oration: none;color: rgb(119,119,119);min-width: 38px;box-sizing: border-bo=
+x;width: 38px"><img class=3D"icon" src=3D"https://substackcdn.com/image/fet=
+ch/$s_!PeVs!,w_36,c_scale,f_png,q_auto:good,fl_progressive:steep/https%3A%2=
+F%2Fsubstack.com%2Ficon%2FLucideHeart%3Fv%3D4%26height%3D36%26fill%3Dnone%2=
+6stroke%3D%2523808080%26strokeWidth%3D2" width=3D"18" height=3D"18" style=
+=3D"border: none;vertical-align: middle;max-width: 18px" alt=3D""></a></td>=
+</tr></tbody></table></td><td width=3D"8" style=3D"min-width:8px;"></td><td=
+ style=3D"vertical-align:middle;"><table role=3D"presentation" width=3D"38"=
+ border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"c=
+enter"><a class=3D"email-icon-button" href=3D"https://substack.com/app-link=
+/post?publication_id=3D2660&post_id=3D194618013&utm_source=3Dsubstack&utm_m=
+edium=3Demail&isFreemail=3Dtrue&comments=3Dtrue&token=3DeyJ1c2VyX2lkIjo0MDg=
+3NDgyLCJwb3N0X2lkIjoxOTQ2MTgwMTMsImlhdCI6MTc3NjY4NTA0MiwiZXhwIjoxNzc5Mjc3MD=
+QyLCJpc3MiOiJwdWItMjY2MCIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.oTGZyweOmLikgmVOeR=
+7tYthBxH4fPE_wj9j5X7owmDw&r=3D2flx6&utm_campaign=3Demail-half-magic-comment=
+s&action=3Dpost-comment&utm_source=3Dsubstack&utm_medium=3Demail" style=3D"=
+font-family: system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,H=
+elvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Sy=
+mbol';display: inline-block;font-weight: 500;border: 1px solid rgb(0,0,0,.1=
+);border-radius: 9999px;text-transform: uppercase;font-size: 12px;line-heig=
+ht: 1;padding: 9px 0;text-decoration: none;color: rgb(119,119,119);min-widt=
+h: 38px;box-sizing: border-box;width: 38px"><img class=3D"icon" src=3D"http=
+s://substackcdn.com/image/fetch/$s_!x1tS!,w_36,c_scale,f_png,q_auto:good,fl=
+_progressive:steep/https%3A%2F%2Fsubstack.com%2Ficon%2FLucideComments%3Fv%3=
+D4%26height%3D36%26fill%3Dnone%26stroke%3D%2523808080%26strokeWidth%3D2" wi=
+dth=3D"18" height=3D"18" style=3D"border: none;vertical-align: middle;max-w=
+idth: 18px" alt=3D""></a></td></tr></tbody></table></td><td width=3D"8" sty=
+le=3D"min-width:8px;"></td><td style=3D"vertical-align:middle;"><table role=
+=3D"presentation" width=3D"38" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0"><tbody><tr><td align=3D"center"><a class=3D"email-icon-button" href=
+=3D"https://substack.com/app-link/post?publication_id=3D2660&post_id=3D1946=
+18013&utm_source=3Dsubstack&utm_medium=3Demail&utm_content=3Dshare&utm_camp=
+aign=3Demail-share&action=3Dshare&triggerShare=3Dtrue&isFreemail=3Dtrue&r=
+=3D2flx6&token=3DeyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQ2MTgwMTMsImlhdC=
+I6MTc3NjY4NTA0MiwiZXhwIjoxNzc5Mjc3MDQyLCJpc3MiOiJwdWItMjY2MCIsInN1YiI6InBvc=
+3QtcmVhY3Rpb24ifQ.oTGZyweOmLikgmVOeR7tYthBxH4fPE_wj9j5X7owmDw" style=3D"fon=
+t-family: system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helv=
+etica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbo=
+l';display: inline-block;font-weight: 500;border: 1px solid rgb(0,0,0,.1);b=
+order-radius: 9999px;text-transform: uppercase;font-size: 12px;line-height:=
+ 1;padding: 9px 0;text-decoration: none;color: rgb(119,119,119);min-width: =
+38px;box-sizing: border-box;width: 38px"><img class=3D"icon" src=3D"https:/=
+/substackcdn.com/image/fetch/$s_!_L14!,w_36,c_scale,f_png,q_auto:good,fl_pr=
+ogressive:steep/https%3A%2F%2Fsubstack.com%2Ficon%2FLucideShare2%3Fv%3D4%26=
+height%3D36%26fill%3Dnone%26stroke%3D%2523808080%26strokeWidth%3D2" width=
+=3D"18" height=3D"18" style=3D"border: none;vertical-align: middle;max-widt=
+h: 18px" alt=3D""></a></td></tr></tbody></table></td><td width=3D"8" style=
+=3D"min-width:8px;"></td><td style=3D"vertical-align:middle;"><table role=
+=3D"presentation" width=3D"38" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0"><tbody><tr><td align=3D"center"><a class=3D"email-icon-button" href=
+=3D"https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmN=
+vbS9wdWIvY2hpbmFpL3AvY2hpbmFpLTM1NS1hbi1hbGxpYW5jZS1mb3ItYWlzLWhhcm5lc3M_dX=
+RtX3NvdXJjZT1zdWJzdGFjayZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1lbWFpbC1yZ=
+XN0YWNrLWNvbW1lbnQmYWN0aW9uPXJlc3RhY2stY29tbWVudCZyPTJmbHg2JnRva2VuPWV5SjFj=
+MlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3hPVFEyTVRnd01UTXNJbWxoZENJNk1=
+UYzNOalk0TlRBME1pd2laWGh3SWpveE56YzVNamMzTURReUxDSnBjM01pT2lKd2RXSXRNalkyTU=
+NJc0luTjFZaUk2SW5CdmMzUXRjbVZoWTNScGIyNGlmUS5vVEdaeXdlT21MaWtnbVZPZVI3dFl0a=
+EJ4SDRmUEVfd2o5ajVYN293bUR3IiwicCI6MTk0NjE4MDEzLCJzIjoyNjYwLCJmIjp0cnVlLCJ1=
+Ijo0MDg3NDgyLCJpYXQiOjE3NzY2ODUwNDIsImV4cCI6MjA5MjI2MTA0MiwiaXNzIjoicHViLTA=
+iLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0.gsSdR43a4MgLei9SxZOvCo0UKvYvTa0QpUTQr27Z47=
+U?&utm_source=3Dsubstack&utm_medium=3Demail" style=3D"font-family: system-u=
+i,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-s=
+erif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';display: inline=
+-block;font-weight: 500;border: 1px solid rgb(0,0,0,.1);border-radius: 9999=
+px;text-transform: uppercase;font-size: 12px;line-height: 1;padding: 9px 0;=
+text-decoration: none;color: rgb(119,119,119);min-width: 38px;box-sizing: b=
+order-box;width: 38px"><img class=3D"icon" src=3D"https://substackcdn.com/i=
+mage/fetch/$s_!ubXF!,w_36,c_scale,f_png,q_auto:good,fl_progressive:steep/ht=
+tps%3A%2F%2Fsubstack.com%2Ficon%2Fnotes__NoteRestackIcon%3Fv%3D4%26height%3=
+D36%26fill%3Dnone%26stroke%3D%2523808080%26strokeWidth%3D2%26strokeLinecap%=
+3Dround%26strokeLinejoin%3Dround" width=3D"18" height=3D"18" alt=3D"" style=
+=3D"max-width: 550px;border: none !important;vertical-align: middle;"></a><=
+/td></tr></tbody></table></td></tr></tbody></table></td><td align=3D"right"=
+><table role=3D"presentation" width=3D"auto" border=3D"0" cellspacing=3D"0"=
+ cellpadding=3D"0"><tbody><tr><td style=3D"vertical-align:middle;"><table r=
+ole=3D"presentation" width=3D"auto" border=3D"0" cellspacing=3D"0" cellpadd=
+ing=3D"0"><tbody><tr><td align=3D"center"><a class=3D"email-button-outline"=
+ href=3D"https://open.substack.com/pub/chinai/p/chinai-355-an-alliance-for-=
+ais-harness?utm_source=3Demail&redirect=3Dapp-store&utm_campaign=3Demail-re=
+ad-in-app" style=3D"font-family: system-ui,-apple-system,BlinkMacSystemFont=
+,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI=
+ Emoji','Segoe UI Symbol';display: inline-block;font-weight: 500;border: 1p=
+x solid rgb(0,0,0,.1);border-radius: 9999px;text-transform: uppercase;font-=
+size: 12px;line-height: 12px;padding: 9px 14px;text-decoration: none;color:=
+ rgb(119,119,119);"><div class=3D"email-button-spacer" style=3D"font-size: =
+16px;line-height: 26px;display: inline-block;vertical-align: middle;max-wid=
+th: 0;min-height: 18px;"></div><span class=3D"email-button-text" style=3D"v=
+ertical-align: middle;margin-right: 4px">READ IN APP</span><img class=3D"ic=
+on text-icon" src=3D"https://substackcdn.com/image/fetch/$s_!ET-_!,w_36,c_s=
+cale,f_png,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Fic=
+on%2FLucideArrowUpRight%3Fv%3D4%26height%3D36%26fill%3Dnone%26stroke%3D%252=
+3808080%26strokeWidth%3D2" width=3D"18" height=3D"18" style=3D"min-width: 1=
+8px;min-height: 18px;border: none;vertical-align: middle;margin-right: 0;ma=
+rgin-left: 0;max-width: 18px" alt=3D""></a></td></tr></tbody></table></td><=
+/tr></tbody></table></td></tr></tbody></table></td></tr><tr height=3D"16"><=
+td height=3D"16" style=3D"font-size:0px;line-height:0;">&nbsp;</td></tr></t=
+body></table></div></div><div class=3D"post typography" dir=3D"auto" style=
+=3D"--image-offset-margin: -120px;padding: 32px 0 0 0;font-size: 16px;line-=
+height: 26px;"><div class=3D"body markup" dir=3D"auto" style=3D"text-align:=
+ initial;font-size: 16px;line-height: 26px;width: 100%;word-break: break-wo=
+rd;margin-bottom: 16px;"><p style=3D"margin: 0 0 20px 0;color: rgb(54,55,55=
+);line-height: 26px;font-size: 16px;margin-top: 0;">Greetings from a world =
+where&#8230;</p><p style=3D"margin: 0 0 20px 0;color: rgb(54,55,55);line-he=
+ight: 26px;font-size: 16px;">Jeopardy is appointment viewing during this st=
+reak</p><p style=3D"margin: 0 0 20px 0;color: rgb(54,55,55);line-height: 26=
+px;font-size: 16px;"><span>&#8230;As always, the searchable archive of all =
+past issues is </span><strong><a href=3D"https://substack.com/redirect/957c=
+ce14-6b0f-4e51-87b3-1fa7358f53f5?j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzS=
+rs1hMpJpoODTUJm_FAk3tf6E" style=3D"color: rgb(54,55,55);text-decoration: un=
+derline;">here</a></strong><span>. Please please </span><strong><a href=3D"=
+https://substack.com/redirect/38ffc73b-5781-4141-b3d0-9f0667c8143e?j=3DeyJ1=
+IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E" style=3D"color:=
+ rgb(54,55,55);text-decoration: underline;">subscribe here</a></strong><spa=
+n> to support ChinAI under a </span><em>Guardian</em><span>/Wikipedia-style=
+ tipping model (everyone gets the same content but those who can pay suppor=
+t access for all AND compensation for awesome ChinAI contributors).</span><=
+/p><h2 class=3D"header-anchor-post" style=3D"position: relative;font-family=
+: 'SF Pro Display',-apple-system-headline,system-ui,-apple-system,BlinkMacS=
+ystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji',=
+'Segoe UI Emoji','Segoe UI Symbol';font-weight: bold;-webkit-font-smoothing=
+: antialiased;-moz-osx-font-smoothing: antialiased;-webkit-appearance: opti=
+mizelegibility;-moz-appearance: optimizelegibility;appearance: optimizelegi=
+bility;margin: 1em 0 0.625em 0;color: rgb(54,55,55);line-height: 1.16em;fon=
+t-size: 1.625em;"><strong><span>Feature Translation: </span><a href=3D"http=
+s://substack.com/redirect/888b5405-265c-4492-b00d-66b04cf41836?j=3DeyJ1Ijoi=
+MmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E" style=3D"color: rgb=
+(54,55,55);text-decoration: underline;">When AI Enters the Harness Era: Min=
+iMax as a Case Study for the New Cloud Infrastructure of AI Agents</a></str=
+ong></h2><p style=3D"margin: 0 0 20px 0;color: rgb(54,55,55);line-height: 2=
+6px;font-size: 16px;"><strong>Context: </strong><span>In February, a small =
+OpenAI team disclosed the results of a five-month experiment: &#8220;</span=
+><em><strong><a href=3D"https://substack.com/redirect/746fd728-b325-4392-b5=
+a1-9f328e9eff3e?j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_F=
+Ak3tf6E" style=3D"color: rgb(54,55,55);text-decoration: underline;">buildin=
+g and shipping an internal beta of a software product with 0 lines of manua=
+lly-written code</a></strong></em><span>.&#8221; Using OpenAI&#8217;s softw=
+are engineering agent Codex, the three person-team used a &#8220;harness en=
+gineering&#8221; approach, summed up in four words: &#8220;Humans steer. Ag=
+ents execute.&#8221; In this world, human AI engineering skills have shifte=
+d from merely designing context-rich or helpful prompts:</span></p><blockqu=
+ote style=3D"border-left: 4px solid #4dd0e1;margin: 20px 0;padding: 0;"><p =
+style=3D"margin: 0 0 20px 0;color: rgb(54,55,55);margin-left: 20px;line-hei=
+ght: 26px;font-size: 16px;"><span>&#8220;Our most difficult challenges now =
+center on designing environments, feedback loops, and control systems that =
+help agents accomplish our goal&#8230;&#8221;</span><span class=3D"footnote=
+-anchor-email" data-component-name=3D"FootnoteAnchorToDOMStatic" style=3D"f=
+ont-size: 20px;">&#185;</span></p></blockquote><p style=3D"margin: 0 0 20px=
+ 0;color: rgb(54,55,55);line-height: 26px;font-size: 16px;"><span>In this w=
+eek&#8217;s feature translation of a </span><em><strong><a href=3D"https://=
+substack.com/redirect/97cdff2f-6493-4b17-95bb-7b8e94ad3f20?j=3DeyJ1IjoiMmZs=
+eDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E" style=3D"color: rgb(54,=
+55,55);text-decoration: underline;">jiqizhixin </a></strong></em><strong><a=
+ href=3D"https://substack.com/redirect/97cdff2f-6493-4b17-95bb-7b8e94ad3f20=
+?j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E" style=
+=3D"color: rgb(54,55,55);text-decoration: underline;">(Synced) article</a><=
+/strong><span>, we dig into how Chinese companies are adapting to the Harne=
+ss era. This article focuses on an interesting partnership between the Chin=
+ese AI start-up MiniMax&#8217;s AI agent (MaxClaw) and Alibaba Cloud.</span=
+></p><div class=3D"captioned-image-container-static" style=3D"font-size: 16=
+px;line-height: 26px;margin: 32px auto;"><figure style=3D"width: 100%;margi=
+n: 0 auto;"><table class=3D"image-wrapper" width=3D"100%" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0" data-component-name=3D"Image2ToDOMStatic" s=
+tyle=3D"mso-padding-alt: 1em 0 1.6em;"><tbody><tr><td style=3D"text-align: =
+center;"></td><td class=3D"content" align=3D"left" width=3D"1080" style=3D"=
+text-align: center;"><a class=3D"image-link" target=3D"_blank" href=3D"http=
+s://substack.com/redirect/ea861797-068b-47e9-b348-d48adc28bba7?j=3DeyJ1Ijoi=
+MmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E" style=3D"position: =
+relative;flex-direction: column;align-items: center;padding: 0;width: auto;=
+height: auto;border: none;text-decoration: none;display: block;margin: 0;">=
+<img class=3D"wide-image" data-attrs=3D"{&quot;src&quot;:&quot;https://subs=
+tack-post-media.s3.amazonaws.com/public/images/a173565d-2d0d-4576-8e0e-fffa=
+9e0d1208_1080x215.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscree=
+n&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:215,&quot;width&=
+quot;:1080,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&qu=
+ot;:null,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null=
+,&quot;belowTheFold&quot;:false,&quot;topImage&quot;:true,&quot;internalRed=
+irect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quo=
+t;offset&quot;:false}" alt=3D"" width=3D"550" height=3D"109.49074074074075"=
+ src=3D"https://substackcdn.com/image/fetch/$s_!y258!,w_1100,c_limit,f_auto=
+,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amaz=
+onaws.com%2Fpublic%2Fimages%2Fa173565d-2d0d-4576-8e0e-fffa9e0d1208_1080x215=
+=2Epng" style=3D"border: none !important=
+;vertical-align: middle;display: bloc=
+k;-ms-interpolation-mode: bicubic;height: auto;margin-bottom: 0;width: auto=
+ !important;max-width: 100% !important;margin: 0 auto;"></a></td><td style=
+=3D"text-align: center;"></td></tr></tbody></table></figure></div><p style=
+=3D"margin: 0 0 20px 0;color: rgb(54,55,55);line-height: 26px;font-size: 16=
+px;"><strong>Key Takeaways: MiniMax&#8217;s MaxClaw agent is in the first t=
+ier of OpenClaw-based adaptations, but how does it deal with fundamental en=
+gineering barriers? </strong><span>Remember, the Harness approach gives AI =
+agents significant autonomy and access to high-risk privileges.</span></p><=
+ul style=3D"margin-top: 0;padding: 0;"><li style=3D"margin: 8px 0 0 32px;ms=
+o-special-format: bullet;"><p style=3D"color: rgb(54,55,55);line-height: 26=
+px;margin-bottom: 0;box-sizing: border-box;padding-left: 4px;font-size: 16p=
+x;margin: 0;"><span>The article describes the core problem set: </span><str=
+ong>&#8220;</strong><em>When hundreds of thousands of agents concurrently e=
+xecute these complex tasks with highly strict access privileges and multipl=
+e steps, traditional system architectures frequently struggle to cope&#8230=
+;How does MiniMax manage to withstand the massive traffic surges generated =
+by MaxClaw and MaxHermes while ensuring business stability?&#8221;</em></p>=
+</li></ul><ul style=3D"margin-top: 0;padding: 0;"><li style=3D"margin: 8px =
+0 0 32px;mso-special-format: bullet;"><p style=3D"color: rgb(54,55,55);line=
+-height: 26px;margin-bottom: 0;box-sizing: border-box;padding-left: 4px;fon=
+t-size: 16px;margin: 0;">Synced highlights four &#8220;chasms&#8221; that l=
+imit the diffusion of AI agents into enterprise-grade production environmen=
+ts: 1) security boundaries &#8212; since agents are increasingly running di=
+rectly on top of local operating systems, they have high-risk privileges (e=
+=2Eg., deleting key files); 2) state vo=
+latility involved in executing long-ru=
+nning tasks; 3) need for scheduling multiple agents; and 4) tension between=
+ cost consumption and drastic workload fluctuations.</p></li></ul><p style=
+=3D"margin: 0 0 20px 0;color: rgb(54,55,55);line-height: 26px;font-size: 16=
+px;"><strong>Enter MiniMax&#8217;s partnership with Alibaba Cloud&#8217;s C=
+ontainer Service for Kubernetes (ACK) and Container Compute Service (ACS), =
+which tries to address those four engineering challenges associated with la=
+rge-scale harnessing of agents.</strong></p><ul style=3D"margin-top: 0;padd=
+ing: 0;"><li style=3D"margin: 8px 0 0 32px;mso-special-format: bullet;"><p =
+style=3D"color: rgb(54,55,55);line-height: 26px;margin-bottom: 0;box-sizing=
+: border-box;padding-left: 4px;font-size: 16px;margin: 0;"><span>On the sec=
+urity challenges, Agent execution occurs in the ACS Agent Sandbox, which is=
+olates and contains the risk of prompt injection or privilege escalation at=
+tacks. Per Synced</span><em>, &#8220;the scope of the resulting risk is str=
+ictly contained within that specific instance, making lateral movement or c=
+ontainer escape extremely difficult</em><span>.&#8221;</span></p></li><li s=
+tyle=3D"margin: 8px 0 0 32px;mso-special-format: bullet;"><p style=3D"color=
+: rgb(54,55,55);line-height: 26px;margin-bottom: 0;box-sizing: border-box;p=
+adding-left: 4px;font-size: 16px;margin: 0;">To handle unpredictable comput=
+ational demands &#8212; AI agents sometimes have relatively idle periods, p=
+unctuated by sudden spikes of  workload &#8212; Alibaba Cloud supports elas=
+tic scheduling of compute.</p></li></ul><p style=3D"margin: 0 0 20px 0;colo=
+r: rgb(54,55,55);line-height: 26px;font-size: 16px;"><strong>MiniMax&#8217;=
+s evolution points toward the importance of cloud computing platforms as &#=
+8220;AI super computers.&#8221;</strong></p><ul style=3D"margin-top: 0;padd=
+ing: 0;"><li style=3D"margin: 8px 0 0 32px;mso-special-format: bullet;"><p =
+style=3D"color: rgb(54,55,55);line-height: 26px;margin-bottom: 0;box-sizing=
+: border-box;padding-left: 4px;font-size: 16px;margin: 0;"><span>Citing an =
+IDC survey that finds AI inference accounts for 47% of all token usage and =
+API calls, the article notes that the AI industry is undergoing &#8220;</sp=
+an><em>transition into a phase of large-scale post-training and inference e=
+xecution, as the focus of computing power rapidly shifts toward Agent-centr=
+ic scenarios</em><span>.&#8221;</span></p></li><li style=3D"margin: 8px 0 0=
+ 32px;mso-special-format: bullet;"><p style=3D"color: rgb(54,55,55);line-he=
+ight: 26px;margin-bottom: 0;box-sizing: border-box;padding-left: 4px;font-s=
+ize: 16px;margin: 0;">If enterprises collectively operate hundreds of thous=
+ands of AI agents, round-the-clock seven days a week, then cloud computing =
+platforms and modern container services like Alibaba Cloud&#8217;s ACK and =
+ACS will serve as &#8220;cloud-native operating systems&#8221; for AI super=
+computers.</p></li></ul><p style=3D"margin: 0 0 20px 0;color: rgb(54,55,55)=
+;line-height: 26px;font-size: 16px;"><strong><span>FULL TRANSLATION: </span=
+><a href=3D"https://substack.com/redirect/888b5405-265c-4492-b00d-66b04cf41=
+836?j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E" sty=
+le=3D"color: rgb(54,55,55);text-decoration: underline;">When AI Enters the =
+Harness Era: MiniMax as a Case Study for the New Cloud Infrastructure of AI=
+ Agents</a></strong></p><h2 class=3D"header-anchor-post" style=3D"position:=
+ relative;font-family: 'SF Pro Display',-apple-system-headline,system-ui,-a=
+pple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif=
+,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight: bold;-=
+webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: antialiased;-we=
+bkit-appearance: optimizelegibility;-moz-appearance: optimizelegibility;app=
+earance: optimizelegibility;margin: 1em 0 0.625em 0;color: rgb(54,55,55);li=
+ne-height: 1.16em;font-size: 1.625em;"><strong>ChinAI Links (Four to Forwar=
+d)</strong></h2><h3 class=3D"header-anchor-post" style=3D"position: relativ=
+e;font-family: 'SF Pro Display',-apple-system-headline,system-ui,-apple-sys=
+tem,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple =
+Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight: bold;-webkit-f=
+ont-smoothing: antialiased;-moz-osx-font-smoothing: antialiased;-webkit-app=
+earance: optimizelegibility;-moz-appearance: optimizelegibility;appearance:=
+ optimizelegibility;margin: 1em 0 0.625em 0;color: rgb(54,55,55);line-heigh=
+t: 1.16em;font-size: 1.375em;"><strong><span>Must-read: </span><a href=3D"h=
+ttps://substack.com/redirect/fc0e585e-d14a-4cbc-b8fc-d08a3ae7321e?j=3DeyJ1I=
+joiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E" style=3D"color: =
+rgb(54,55,55);text-decoration: underline;">27 Years Later, Still Bombing th=
+e Wrong Targets</a></strong></h3><p style=3D"margin: 0 0 20px 0;color: rgb(=
+54,55,55);line-height: 26px;font-size: 16px;">Jon Lindsay is an Associate P=
+rofessor at Georgia Tech, where he researches the impact of information tec=
+hnology on military power. I&#8217;ve really enjoyed his Substack posts lat=
+ely. This one analyzes the U.S.&#8217;s mistaken strike of an Iranian eleme=
+ntary school, drawing on his previous experience as an intelligence officer=
+ when the U.S. military accidentally attacked the Chinese Embassy in Belgra=
+de: </p><blockquote style=3D"border-left: 4px solid #4dd0e1;margin: 20px 0;=
+padding: 0;"><p style=3D"margin: 0 0 20px 0;color: rgb(54,55,55);margin-lef=
+t: 20px;line-height: 26px;font-size: 16px;"><em><span>I thought so because =
+I had seen something like this before. Almost three decades ago, I served a=
+s an intelligence officer during Operation Allied Force, the Kosovo Air War=
+ of 1999. During that war, the US military accidentally blew up the Chinese=
+ Embassy in Belgrade. A mistake of that magnitude seemed unimaginable at th=
+e time. How could we possibly not know what we were hitting, and then hit <=
+/span><strong>that</strong><span> of all things? Anyone who walked by the s=
+treet in Belgrade would plainly see it was an embassy, but US analysts only=
+ looked at overhead satellite imagery. The Chinese had told their counterpa=
+rts in the US Department of State that they had relocated to that new build=
+ing a year before, but that info had not been input into the military datab=
+ase.</span></em></p></blockquote><h3 class=3D"header-anchor-post" style=3D"=
+position: relative;font-family: 'SF Pro Display',-apple-system-headline,sys=
+tem-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,s=
+ans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weigh=
+t: bold;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: antial=
+iased;-webkit-appearance: optimizelegibility;-moz-appearance: optimizelegib=
+ility;appearance: optimizelegibility;margin: 1em 0 0.625em 0;color: rgb(54,=
+55,55);line-height: 1.16em;font-size: 1.375em;"><strong><span>Should-read: =
+</span><a href=3D"https://substack.com/redirect/d3dcc1ee-be26-443e-a3f3-355=
+b9af91840?j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6=
+E" style=3D"color: rgb(54,55,55);text-decoration: underline;">(Alibaba&#821=
+7;s) DingTalk and (ByteDance&#8217;s) Feishu collectively pivot to CLI: Is =
+MCP dead? Is GUI on its way out?</a><span> (in Chinese)</span></strong></h3=
+><p style=3D"margin: 0 0 20px 0;color: rgb(54,55,55);line-height: 26px;font=
+-size: 16px;">How should AI agents interact with computers, data sources, a=
+nd humans? Xiaochai Ye [&#21494;&#23567;&#38039;], a developer with previou=
+s experience at Tencent, Ctrip, and Baidu, shares thoughts on why some Chin=
+ese enterprise AI platforms prefer the Command-Line Interface over the Mode=
+l Context Protocol.</p><h3 class=3D"header-anchor-post" style=3D"position: =
+relative;font-family: 'SF Pro Display',-apple-system-headline,system-ui,-ap=
+ple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,=
+'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight: bold;-w=
+ebkit-font-smoothing: antialiased;-moz-osx-font-smoothing: antialiased;-web=
+kit-appearance: optimizelegibility;-moz-appearance: optimizelegibility;appe=
+arance: optimizelegibility;margin: 1em 0 0.625em 0;color: rgb(54,55,55);lin=
+e-height: 1.16em;font-size: 1.375em;"><strong><span>Should-read: </span><a =
+href=3D"https://substack.com/redirect/8e277692-1c58-4041-835a-9943c445afd2?=
+j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E" style=
+=3D"color: rgb(54,55,55);text-decoration: underline;">Xiaoice&#8217;s [&#23=
+567;&#20912;] &#8220;Unicorn&#8221; Illusion (in Chinese)</a></strong></h3>=
+<p style=3D"margin: 0 0 20px 0;color: rgb(54,55,55);line-height: 26px;font-=
+size: 16px;"><span>Back in December 2023 (</span><strong><a href=3D"https:/=
+/substack.com/redirect/8eacd390-f4cb-4d63-bd3a-04f07cca1818?j=3DeyJ1IjoiMmZ=
+seDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E" style=3D"color: rgb(54=
+,55,55);text-decoration: underline;">ChinAI #248</a></strong><span>), we de=
+ep-dived into the history of Xiaoice, previously China&#8217;s most popular=
+ chatbot and first incubated in Microsoft before being spun off. Two and a =
+half years later, Xiaoice has been shut down. What happened? This Leiphone =
+article tries to explain.</span></p><h3 class=3D"header-anchor-post" style=
+=3D"position: relative;font-family: 'SF Pro Display',-apple-system-headline=
+,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Ari=
+al,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-w=
+eight: bold;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: an=
+tialiased;-webkit-appearance: optimizelegibility;-moz-appearance: optimizel=
+egibility;appearance: optimizelegibility;margin: 1em 0 0.625em 0;color: rgb=
+(54,55,55);line-height: 1.16em;font-size: 1.375em;"><strong><span>Should-re=
+ad: </span><a href=3D"https://substack.com/redirect/f528b651-02f3-42fd-be8e=
+-adad1176f92b?j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk=
+3tf6E" style=3D"color: rgb(54,55,55);text-decoration: underline;">China&#82=
+17;s robot champion has everything to lose</a></strong></h3><p style=3D"mar=
+gin: 0 0 20px 0;color: rgb(54,55,55);line-height: 26px;font-size: 16px;"><s=
+pan>For </span><em>Reuters Breakingviews</em><span>, Robyn Mak profiles Chi=
+na&#8217;s Unitree, which recently applied to go public on China&#8217;s ST=
+AR market.</span></p><h2 class=3D"header-anchor-post" style=3D"position: re=
+lative;font-family: 'SF Pro Display',-apple-system-headline,system-ui,-appl=
+e-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'A=
+pple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight: bold;-web=
+kit-font-smoothing: antialiased;-moz-osx-font-smoothing: antialiased;-webki=
+t-appearance: optimizelegibility;-moz-appearance: optimizelegibility;appear=
+ance: optimizelegibility;margin: 1em 0 0.625em 0;color: rgb(54,55,55);line-=
+height: 1.16em;font-size: 1.625em;"><strong>Thank you for reading and engag=
+ing.</strong></h2><p style=3D"margin: 0 0 20px 0;color: rgb(54,55,55);line-=
+height: 26px;font-size: 16px;">These are Jeff Ding&#8217;s (sometimes) week=
+ly translations of Chinese-language musings on AI and related topics. Jeff =
+is an Assistant Professor of Political Science at George Washington Univers=
+ity.</p><p style=3D"margin: 0 0 20px 0;color: rgb(54,55,55);line-height: 26=
+px;font-size: 16px;"><span>Check out the archive of all past issues </span>=
+<strong><a href=3D"https://substack.com/redirect/957cce14-6b0f-4e51-87b3-1f=
+a7358f53f5?j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf=
+6E" style=3D"color: rgb(54,55,55);text-decoration: underline;">here</a></st=
+rong><span> &amp; please </span><strong><a href=3D"https://substack.com/red=
+irect/38ffc73b-5781-4141-b3d0-9f0667c8143e?j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GW=
+CzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E" style=3D"color: rgb(54,55,55);text-deco=
+ration: underline;">subscribe here</a></strong><span> to support ChinAI und=
+er a </span><em>Guardian</em><span>/Wikipedia-style tipping model (everyone=
+ gets the same content but those who can pay for a subscription will suppor=
+t access for all).</span></p><p style=3D"margin: 0 0 20px 0;color: rgb(54,5=
+5,55);line-height: 26px;font-size: 16px;"><span>Any suggestions or feedback=
+? Let me know at chinainewsletter@gmail.com or on Twitter at </span><strong=
+><a href=3D"https://substack.com/redirect/aa452d89-6ea6-4699-b0b5-53f4047c6=
+269?j=3DeyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E" sty=
+le=3D"color: rgb(54,55,55);text-decoration: underline;">@jjding99</a></stro=
+ng></p><div class=3D"footnote" data-component-name=3D"FootnoteToDOMStatic" =
+style=3D"line-height: 26px;display: flex;border-top: solid 1px rgb(0,0,0,.1=
+);padding-top: 1.5em;font-size: 90%;flex-direction: row;align-items: baseli=
+ne;margin-bottom: 0;"><span class=3D"footnote-number" style=3D"display: blo=
+ck;margin-right: 6px;min-width: 24px;">1</span><div class=3D"footnote-conte=
+nt" style=3D"font-size: 16px;line-height: 26px;display: block;"><p style=3D=
+"margin: 0 0 20px 0;color: rgb(54,55,55);line-height: 26px;font-size: 16px;=
+min-width: 10px;">I&#8217;ve gathered some additional notes from the blog. =
+On the novel problems produced by full agent autonomy: &#8220;Initially, hu=
+mans addressed this manually. Our team used to spend every Friday (20% of t=
+he week) cleaning up &#8220;AI slop.&#8221; Unsurprisingly, that didn&#8217=
+;t scale.&#8221; The solution required some level of human taste: &#8220;In=
+stead, we started encoding what we call &#8220;golden principles&#8221; dir=
+ectly into the repository and built a recurring cleanup process. These prin=
+ciples are opinionated, mechanical rules that keep the codebase legible and=
+ consistent for future agent runs.&#8221; Source: https://openai.com/index/=
+harness-engineering/</p></div></div></div></div><div class=3D"container-bor=
+der" style=3D"margin: 32px 0 0;width: 100%;box-sizing: border-box;border-to=
+p: 1px solid #e6e6e6;font-size: 16px;line-height: 26px;"></div><div class=
+=3D"post-cta typography markup" style=3D"--image-offset-margin: -120px;text=
+-align: initial;word-break: break-word;margin-bottom: 32px;margin: 32px 0;f=
+ont-size: 16px;line-height: 26px;"><p style=3D"color: rgb(54,55,55);margin:=
+ 0 auto 20px;text-align: center;width: 90%;line-height: 26px;font-size: 16p=
+x;margin-top: 0;"><span class=3D"pencraft pc-reset reset-IxiVJZ" translated=
+=3D"" style=3D"list-style: none;color: unset;text-decoration: unset;margin:=
+ 0;">You're currently a free subscriber to <a href=3D"https://substack.com/=
+redirect/38ffc73b-5781-4141-b3d0-9f0667c8143e?j=3DeyJ1IjoiMmZseDYifQ.6O_iC1=
+_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E" style=3D"color: rgb(54,55,55);text-d=
+ecoration: underline;">ChinAI Newsletter</a>. For the full experience, <a h=
+ref=3D"https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9jaGluYWkuc3Vic3Rh=
+Y2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPXBvc3QmdXRtX2NhbXBhaWduPWVtYWlsLWNoZWN=
+rb3V0Jm5leHQ9aHR0cHMlM0ElMkYlMkZjaGluYWkuc3Vic3RhY2suY29tJTJGcCUyRmNoaW5haS=
+0zNTUtYW4tYWxsaWFuY2UtZm9yLWFpcy1oYXJuZXNzJnI9MmZseDYmdG9rZW49ZXlKMWMyVnlYM=
+mxrSWpvME1EZzNORGd5TENKcFlYUWlPakUzTnpZMk9EVXdORElzSW1WNGNDSTZNVGMzT1RJM056=
+QTBNaXdpYVhOeklqb2ljSFZpTFRJMk5qQWlMQ0p6ZFdJaU9pSmphR1ZqYTI5MWRDSjkua0hhcHl=
+UQ0JUY2g3T3FZZy1adlZtZHN0Slp2SEFmbjJDMThDeVpRa1ZXSSIsInAiOjE5NDYxODAxMywicy=
+I6MjY2MCwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzc2Njg1MDQyLCJleHAiOjIwOTIyN=
+jEwNDIsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.o7k4eEUlBwSpVzSNWbU=
+9bqzlmQZ0owWOJpBDr-vePeo?&utm_source=3Dsubstack&utm_medium=3Demail&utm_cont=
+ent=3Dpostcta" style=3D"color: rgb(54,55,55);text-decoration: underline;">u=
+pgrade your subscription.</a></span></p><p class=3D"cta-box" style=3D"color=
+: rgb(54,55,55);margin: 0 auto 20px;width: 90%;line-height: 26px;font-size:=
+ 16px;margin-bottom: 0;text-align: center;margin-left: auto;margin-right: a=
+uto;"><a class=3D"button primary" role=3D"button" href=3D"https://substack.=
+com/redirect/2/eyJlIjoiaHR0cHM6Ly9jaGluYWkuc3Vic3RhY2suY29tL3N1YnNjcmliZT91=
+dG1fc291cmNlPXBvc3QmdXRtX2NhbXBhaWduPWVtYWlsLWNoZWNrb3V0Jm5leHQ9aHR0cHMlM0E=
+lMkYlMkZjaGluYWkuc3Vic3RhY2suY29tJTJGcCUyRmNoaW5haS0zNTUtYW4tYWxsaWFuY2UtZm=
+9yLWFpcy1oYXJuZXNzJnI9MmZseDYmdG9rZW49ZXlKMWMyVnlYMmxrSWpvME1EZzNORGd5TENKc=
+FlYUWlPakUzTnpZMk9EVXdORElzSW1WNGNDSTZNVGMzT1RJM056QTBNaXdpYVhOeklqb2ljSFZp=
+TFRJMk5qQWlMQ0p6ZFdJaU9pSmphR1ZqYTI5MWRDSjkua0hhcHlUQ0JUY2g3T3FZZy1adlZtZHN=
+0Slp2SEFmbjJDMThDeVpRa1ZXSSIsInAiOjE5NDYxODAxMywicyI6MjY2MCwiZiI6dHJ1ZSwidS=
+I6NDA4NzQ4MiwiaWF0IjoxNzc2Njg1MDQyLCJleHAiOjIwOTIyNjEwNDIsImlzcyI6InB1Yi0wI=
+iwic3ViIjoibGluay1yZWRpcmVjdCJ9.o7k4eEUlBwSpVzSNWbU9bqzlmQZ0owWOJpBDr-vePeo=
+?&utm_source=3Dsubstack&utm_medium=3Demail&utm_content=3Dpostcta" style=3D"=
+font-family: system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,H=
+elvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Sy=
+mbol';display: inline-block;box-sizing: border-box;cursor: pointer;border: =
+none;height: 40px;border-radius: 8px;font-size: 14px;line-height: 20px;font=
+-weight: 600;text-align: center;padding: 10px 20px;margin: 0;opacity: 1;out=
+line: none;white-space: nowrap;color: #ffffff !important;text-decoration: n=
+one !important;background-color: #4dd0e1;">Upgrade to paid</a></p></div><ta=
+ble class=3D"email-ufi-2-bottom" role=3D"presentation" width=3D"100%" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-top: 1px solid =
+rgb(0,0,0,.1);border-bottom: 1px solid rgb(0,0,0,.1);min-width: 100%;"><tbo=
+dy><tr height=3D"16"><td height=3D"16" style=3D"font-size:0px;line-height:0=
+;">&nbsp;</td></tr><tr><td><table role=3D"presentation" width=3D"100%" bord=
+er=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td><table role=3D"=
+presentation" width=3D"auto" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" style=3D"margin:0 auto;"><tbody><tr><td style=3D"vertical-align:middle;"=
+><table role=3D"presentation" width=3D"auto" border=3D"0" cellspacing=3D"0"=
+ cellpadding=3D"0"><tbody><tr><td align=3D"center"><a class=3D"email-button=
+-outline" href=3D"https://substack.com/app-link/post?publication_id=3D2660&=
+post_id=3D194618013&utm_source=3Dsubstack&isFreemail=3Dtrue&submitLike=3Dtr=
+ue&token=3DeyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQ2MTgwMTMsInJlYWN0aW9u=
+Ijoi4p2kIiwiaWF0IjoxNzc2Njg1MDQyLCJleHAiOjE3NzkyNzcwNDIsImlzcyI6InB1Yi0yNjY=
+wIiwic3ViIjoicmVhY3Rpb24ifQ.uxYIAjzO2LGwzxbCAOp4NI-pzXHrCq9NA9IKWVZzWV0&utm=
+_medium=3Demail&utm_campaign=3Demail-reaction&r=3D2flx6" style=3D"font-fami=
+ly: system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,=
+Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';dis=
+play: inline-block;font-weight: 500;border: 1px solid rgb(0,0,0,.1);border-=
+radius: 9999px;text-transform: uppercase;font-size: 12px;line-height: 12px;=
+padding: 9px 14px;text-decoration: none;color: rgb(119,119,119);"><img clas=
+s=3D"icon" src=3D"https://substackcdn.com/image/fetch/$s_!PeVs!,w_36,c_scal=
+e,f_png,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Ficon%=
+2FLucideHeart%3Fv%3D4%26height%3D36%26fill%3Dnone%26stroke%3D%2523808080%26=
+strokeWidth%3D2" width=3D"18" height=3D"18" style=3D"margin-right: 8px;min-=
+width: 18px;min-height: 18px;border: none;vertical-align: middle;max-width:=
+ 18px" alt=3D""><span class=3D"email-button-text" style=3D"vertical-align: =
+middle;">Like</span></a></td></tr></tbody></table></td><td width=3D"8" styl=
+e=3D"min-width:8px;"></td><td style=3D"vertical-align:middle;"><table role=
+=3D"presentation" width=3D"auto" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0"><tbody><tr><td align=3D"center"><a class=3D"email-button-outline" hr=
+ef=3D"https://substack.com/app-link/post?publication_id=3D2660&post_id=3D19=
+4618013&utm_source=3Dsubstack&utm_medium=3Demail&isFreemail=3Dtrue&comments=
+=3Dtrue&token=3DeyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQ2MTgwMTMsImlhdCI=
+6MTc3NjY4NTA0MiwiZXhwIjoxNzc5Mjc3MDQyLCJpc3MiOiJwdWItMjY2MCIsInN1YiI6InBvc3=
+QtcmVhY3Rpb24ifQ.oTGZyweOmLikgmVOeR7tYthBxH4fPE_wj9j5X7owmDw&r=3D2flx6&utm_=
+campaign=3Demail-half-magic-comments&action=3Dpost-comment&utm_source=3Dsub=
+stack&utm_medium=3Demail" style=3D"font-family: system-ui,-apple-system,Bli=
+nkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color E=
+moji','Segoe UI Emoji','Segoe UI Symbol';display: inline-block;font-weight:=
+ 500;border: 1px solid rgb(0,0,0,.1);border-radius: 9999px;text-transform: =
+uppercase;font-size: 12px;line-height: 12px;padding: 9px 14px;text-decorati=
+on: none;color: rgb(119,119,119);"><img class=3D"icon" src=3D"https://subst=
+ackcdn.com/image/fetch/$s_!x1tS!,w_36,c_scale,f_png,q_auto:good,fl_progress=
+ive:steep/https%3A%2F%2Fsubstack.com%2Ficon%2FLucideComments%3Fv%3D4%26heig=
+ht%3D36%26fill%3Dnone%26stroke%3D%2523808080%26strokeWidth%3D2" width=3D"18=
+" height=3D"18" style=3D"margin-right: 8px;min-width: 18px;min-height: 18px=
+;border: none;vertical-align: middle;max-width: 18px" alt=3D""><span class=
+=3D"email-button-text" style=3D"vertical-align: middle;">Comment</span></a>=
+</td></tr></tbody></table></td><td width=3D"8" style=3D"min-width:8px;"></t=
+d><td style=3D"vertical-align:middle;"><table role=3D"presentation" width=
+=3D"auto" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td a=
+lign=3D"center"><a class=3D"email-button-outline" href=3D"https://substack.=
+com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS9wdWIvY2hpbmFpL3Av=
+Y2hpbmFpLTM1NS1hbi1hbGxpYW5jZS1mb3ItYWlzLWhhcm5lc3M_dXRtX3NvdXJjZT1zdWJzdGF=
+jayZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1lbWFpbC1yZXN0YWNrLWNvbW1lbnQmYW=
+N0aW9uPXJlc3RhY2stY29tbWVudCZyPTJmbHg2JnRva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczT=
+kRneUxDSndiM04wWDJsa0lqb3hPVFEyTVRnd01UTXNJbWxoZENJNk1UYzNOalk0TlRBME1pd2la=
+WGh3SWpveE56YzVNamMzTURReUxDSnBjM01pT2lKd2RXSXRNalkyTUNJc0luTjFZaUk2SW5CdmM=
+zUXRjbVZoWTNScGIyNGlmUS5vVEdaeXdlT21MaWtnbVZPZVI3dFl0aEJ4SDRmUEVfd2o5ajVYN2=
+93bUR3IiwicCI6MTk0NjE4MDEzLCJzIjoyNjYwLCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiO=
+jE3NzY2ODUwNDIsImV4cCI6MjA5MjI2MTA0MiwiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJl=
+ZGlyZWN0In0.gsSdR43a4MgLei9SxZOvCo0UKvYvTa0QpUTQr27Z47U?&utm_source=3Dsubst=
+ack&utm_medium=3Demail" style=3D"font-family: system-ui,-apple-system,Blink=
+MacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emo=
+ji','Segoe UI Emoji','Segoe UI Symbol';display: inline-block;font-weight: 5=
+00;border: 1px solid rgb(0,0,0,.1);border-radius: 9999px;text-transform: up=
+percase;font-size: 12px;line-height: 12px;padding: 9px 14px;text-decoration=
+: none;color: rgb(119,119,119);"><img class=3D"icon" src=3D"https://substac=
+kcdn.com/image/fetch/$s_!ubXF!,w_36,c_scale,f_png,q_auto:good,fl_progressiv=
+e:steep/https%3A%2F%2Fsubstack.com%2Ficon%2Fnotes__NoteRestackIcon%3Fv%3D4%=
+26height%3D36%26fill%3Dnone%26stroke%3D%2523808080%26strokeWidth%3D2%26stro=
+keLinecap%3Dround%26strokeLinejoin%3Dround" width=3D"18" height=3D"18" alt=
+=3D"" style=3D"margin-right: 8px;min-width: 18px;min-height: 18px;max-width=
+: 550px;border: none !important;vertical-align: middle;"><span class=3D"ema=
+il-button-text" style=3D"vertical-align: middle;">Restack</span></a></td></=
+tr></tbody></table></td></tr></tbody></table></td><td align=3D"right"><tabl=
+e role=3D"presentation" width=3D"auto" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0"><tbody><tr></tr></tbody></table></td></tr></tbody></table></td=
+></tr><tr height=3D"16"><td height=3D"16" style=3D"font-size:0px;line-heigh=
+t:0;">&nbsp;</td></tr></tbody></table><div class=3D"footer footer-ZM59BM" s=
+tyle=3D"color: rgb(119,119,119);text-align: center;font-size: 16px;line-hei=
+ght: 26px;padding: 24px0;"><div style=3D"font-size: 16px;line-height: 26px;=
+padding-bottom: 24px"><p class=3D"pencraft pc-reset color-secondary-ls1g8s =
+size-12-mmZ61m reset-IxiVJZ small meta-B2bqa5" style=3D"list-style: none;fo=
+nt-family: system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Hel=
+vetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symb=
+ol';padding-bottom: 0;font-size: 12px;line-height: 16px;margin: 0;color: rg=
+b(119,119,119);text-decoration: unset;">&#169; 2026 <span>Jeffrey Ding</spa=
+n> <br><a href=3D"https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9jaGluY=
+Wkuc3Vic3RhY2suY29tL2FjdGlvbi9kaXNhYmxlX2VtYWlsP3Rva2VuPWV5SjFjMlZ5WDJsa0lq=
+bzBNRGczTkRneUxDSndiM04wWDJsa0lqb3hPVFEyTVRnd01UTXNJbWxoZENJNk1UYzNOalk0TlR=
+BME1pd2laWGh3SWpveE9EQTRNakl4TURReUxDSnBjM01pT2lKd2RXSXRNalkyTUNJc0luTjFZaU=
+k2SW1ScGMyRmliR1ZmWlcxaGFXd2lmUS5jcWhkLXdrNEx0V3ZqbjdGVHk3dUl2SkdwTDJtaXpvR=
+DhzRGRzOUxVc1p3IiwicCI6MTk0NjE4MDEzLCJzIjoyNjYwLCJmIjp0cnVlLCJ1Ijo0MDg3NDgy=
+LCJpYXQiOjE3NzY2ODUwNDIsImV4cCI6MjA5MjI2MTA0MiwiaXNzIjoicHViLTAiLCJzdWIiOiJ=
+saW5rLXJlZGlyZWN0In0._59Ig25EDLHMIgSUhMPnUB1HABGKicsvDMSLzrE0CyE?" style=3D=
+"text-decoration: underline;color: rgb(119,119,119);"><span style=3D"color:=
+ rgb(119,119,119);text-decoration: underline;">Unsubscribe</span></a></p></=
+div><p class=3D"footerSection-EHR0jG small powered-by-substack" style=3D"pa=
+dding: 0 24px;font-size: 12px;line-height: 20px;margin: 0;color: rgb(119,11=
+9,119);font-family: system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',R=
+oboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Sego=
+e UI Symbol';padding-bottom: 0;margin-top: 0;"><a href=3D"https://substack.=
+com/redirect/2/eyJlIjoiaHR0cHM6Ly9zdWJzdGFjay5jb20vc2lnbnVwP3V0bV9zb3VyY2U9=
+c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY29udGVudD1mb290ZXImdXRtX2NhbXBhaWd=
+uPWF1dG9maWxsZWQtZm9vdGVyJmZyZWVTaWdudXBFbWFpbD1remlubXIxMDlAZ21haWwuY29tJn=
+I9MmZseDYiLCJwIjoxOTQ2MTgwMTMsInMiOjI2NjAsImYiOnRydWUsInUiOjQwODc0ODIsImlhd=
+CI6MTc3NjY4NTA0MiwiZXhwIjoyMDkyMjYxMDQyLCJpc3MiOiJwdWItMCIsInN1YiI6Imxpbmst=
+cmVkaXJlY3QifQ.yKU46N_ti3Pg8dAjPjOsvA-IteBkaCNoCjPCadJjLB4?" style=3D"color=
+: rgb(119,119,119);text-decoration: none;display: inline-block;margin: 0 4p=
+x;"><img src=3D"https://substackcdn.com/image/fetch/$s_!LkrL!,w_270,c_limit=
+,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Fimg%2=
+Femail%2Fpublish-button%402x.png" srcset=3D"https://substackcdn.com/image/f=
+etch/$s_!wgfj!,w_135,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%=
+3A%2F%2Fsubstack.com%2Fimg%2Femail%2Fpublish-button.png, https://substackcd=
+n.com/image/fetch/$s_!LkrL!,w_270,c_limit,f_auto,q_auto:good,fl_progressive=
+:steep/https%3A%2F%2Fsubstack.com%2Fimg%2Femail%2Fpublish-button%402x.png 2=
+x, https://substackcdn.com/image/fetch/$s_!KjtY!,w_405,c_limit,f_auto,q_aut=
+o:good,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Fimg%2Femail%2Fpubl=
+ish-button%403x.png 3x" width=3D"135" alt=3D"Start writing" height=3D"40" s=
+tyle=3D"max-width: 550px;border: none !important;vertical-align: middle;"><=
+/a></p></div></div></td><td></td></tr></tbody></table><img src=3D"https://e=
+otrx.substackcdn.com/o/eede38210e69e103/p.gif?token=3DeyJtIjoiPDIwMjYwNDIwM=
+TEzNzA5LjMuNjJlNDQ1ODNmN2E0YzQ4NEBtZy1kMC5zdWJzdGFjay5jb20-IiwidSI6NDA4NzQ4=
+MiwiciI6Imt6aW5tcjEwOUBnbWFpbC5jb20iLCJkIjoibWctZDAuc3Vic3RhY2suY29tIiwicCI=
+6MTk0NjE4MDEzLCJ0IjoibmV3c2xldHRlciIsImEiOiJldmVyeW9uZSIsInMiOjI2NjAsImMiOi=
+Jwb3N0IiwiZiI6dHJ1ZSwicG9zaXRpb24iOiJib3R0b20iLCJpYXQiOjE3NzY2ODUwNDIsImV4c=
+CI6MTc3OTI3NzA0MiwiaXNzIjoicHViLTAiLCJzdWIiOiJlbyJ9.AWMEQkVnmia7togUxT-7Wsx=
+KHcrvKR_ZHRn7vuiEnXM" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=
+=3D"height:1px !important;width:1px !important;border-width:0 !important;ma=
+rgin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;=
+margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !importa=
+nt;padding-right:0 !important;padding-left:0 !important;"/><img width=3D"1"=
+ height=3D"1" alt=3D"" src=3D"https://email.mg-d0.substack.com/o/eJxM0DmO6z=
+AQBNDTmNkXmrsU8CwCl5ZMWCQNLv7QnH4g28Gk1ejCQ3nbcS_1NM_SOglGcbvJQNBQrZWaJQhGM=
+Nl4rDtmrLZjWG3_cxWakrtxVEqQki8ygKScK3QBvd4CVWrjIZBoGDAFggGlXMMy8UkxFELOfNNW=
+eDGLm4C0_wswteFat_4x-ZJIbOtW8U0wvQ4kF3S1I0TMHg2-sJ4lf-MYDF2EojNQ_kn6-UST8X8=
+7sHes5Dnc6ktKI8d-rpitOzB8i4c7orc9lnwVMaWAVPP4iTlVCstNwH4p3qo2XCjJxmz8PWYbSf=
+8MOBrW61nArMXMyMuw3wAAAP__Thd0UQ"></body></html>
+--e1871ee59c99a72e1bd58afea308cd75482e29304996e38658da0a775d1b--
