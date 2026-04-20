@@ -5,7 +5,7 @@ url: "https://www.v2ex.com/t/1207027"
 author: "StepfenShawn"
 date: 2026-04-19
 score: 0
-tags: ["ai", "gpt", "GPT"]
+tags: ["GPT", "ai", "gpt"]
 ---
 
 # 1000 行 rust 实现一个类似于 pytorch 的轻量级自动微分库
@@ -55,8 +55,8 @@ GitHub 仓库地址: https://github.com/StepfenShawn/ferris-grad
 …(内容已截断)
 
 ## 涉及话题
+- GPT
 - ai
 - gpt
-- GPT
 
 [原文链接](https://www.v2ex.com/t/1207027)

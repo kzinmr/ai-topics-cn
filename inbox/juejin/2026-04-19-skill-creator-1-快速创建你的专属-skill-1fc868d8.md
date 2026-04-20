@@ -12,7 +12,7 @@ tags: ["Anthropic", "AIGC", "人工智能"]
 
 skill-creator 是 Anthropics 官方的技能工厂，能帮你快速将模糊想法转化为结构完整、可测试的 AI skill，解决传统开发耗时耗力的问题。
 
-> 👍 0   👁️ 0   ⭐ 0
+> 👍 0   👁️ 0   ⭐ 1
 
 ## 涉及话题
 - Anthropic

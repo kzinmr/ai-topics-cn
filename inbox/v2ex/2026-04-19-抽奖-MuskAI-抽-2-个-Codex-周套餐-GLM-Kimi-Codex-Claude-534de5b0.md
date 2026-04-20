@@ -5,7 +5,7 @@ url: "https://www.v2ex.com/t/1207035"
 author: "wtcoder"
 date: 2026-04-19
 score: 4
-tags: ["ai", "Kimi", "Claude", "AI"]
+tags: ["Kimi", "AI", "ai", "Claude"]
 ---
 
 # [抽奖] MuskAI 抽 2 个 Codex 周套餐， GLM & Kimi & Codex & Claude
@@ -22,9 +22,9 @@ https://muskapi.com/
 https://codepen.io/xueqi/pen/zYagXvB
 
 ## 涉及话题
-- ai
 - Kimi
-- Claude
 - AI
+- ai
+- Claude
 
 [原文链接](https://www.v2ex.com/t/1207035)

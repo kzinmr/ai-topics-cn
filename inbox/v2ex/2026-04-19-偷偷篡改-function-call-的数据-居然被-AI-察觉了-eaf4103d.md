@@ -5,7 +5,7 @@ url: "https://www.v2ex.com/t/1207032"
 author: "jacketma"
 date: 2026-04-19
 score: 0
-tags: ["RAG", "GPT", "GPt", "AI"]
+tags: ["GPt", "AI", "GPT", "RAG"]
 ---
 
 # 偷偷篡改 function call 的数据，居然被 AI 察觉了😮
@@ -17,9 +17,9 @@ tags: ["RAG", "GPT", "GPt", "AI"]
 表现最好是 GPt5.4 ，米饭里惨老鼠屎给它居然闻到臭了
 
 ## 涉及话题
-- RAG
-- GPT
 - GPt
 - AI
+- GPT
+- RAG
 
 [原文链接](https://www.v2ex.com/t/1207032)

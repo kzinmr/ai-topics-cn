@@ -5,7 +5,7 @@ url: "https://juejin.cn/post/7628894338689024015"
 author: "吴佳浩Alben"
 date: 2026-04-15
 score: 3
-tags: ["llama", "Qwen", "人工智能", "LLM"]
+tags: ["Qwen", "llama", "人工智能", "LLM"]
 ---
 
 # Hermes Agent Windows 完整安装与本地模型配置教程（实战版）
@@ -15,8 +15,8 @@ Hermes Agent Windows 完整安装与本地模型配置教程（实战版） 作 
 > 👍 3   👁️ 0   ⭐ 7
 
 ## 涉及话题
-- llama
 - Qwen
+- llama
 - 人工智能
 - LLM
 
