@@ -599,3 +599,60 @@ Originating conversation: auto-cron (crawl_all.py)
 - **Comparison Pages**: 1
 - **Total Pages**: 75
 - **Last Updated**: 2026-04-19 21:02
+
+## [2026-04-20] active-crawl-01 | ホットトピック能動的クロール
+
+Originating conversation: (scheduled cron)
+
+### 対象トピック選択基準
+- crawl_policy: prerequisites / laterals / deepdive
+- last_crawled: null（未取得）
+- priority: high 2件 + medium 1件
+
+### 選択トピック
+| slug | priority | crawl_policy | 選択理由 |
+|------|----------|--------------|---------|
+| qwen | high | deepdive | null、Alibabaの旗艦モデル |
+| china-ai-agent-ecosystem | high | deepdive | null、中国Agent市場動向 |
+| chatglm | medium | deepdive | null、Zhipu AI(GLM-5) |
+
+### クロール結果
+
+#### qwen — Qwen3.5 シリーズ新規追加
+- **Qwen3.5-Plus** (开源): 3970B総パラメータ/MoE、170B活性化、原生多模态
+- MMLU-Pro 87.8点（GPT-5.2超）、GPQA 88.4点（Claude 4.5超）
+- API価格: **0.8元/MTok**（約$0.11）
+- **Qwen3.5-Max** (旗舰推理)、Qwen3.6-Plus/Flash/VL最新系列
+- **购物Agent**: 2026年1月发布、春節6日間で1.2億笔注文処理
+- 累計10億ダウンロード、衍生モデル20万+
+- **Qwen-Coder** (2025年4月): 119言語、235B MoE、Apache 2.0
+- 混合思考模式（思考/非思考智能切替）
+- 対応言語201種類に扩展
+
+#### china-ai-agent-ecosystem — BATB四強戦略セクション追加
+- **字节（豆包）**: MAU 2億突破、1600亿元投入、春晚独家、AIスマート眼鏡(Ola Friend)量产
+- **阿里（通义千问）**: MAU 1億突破、购物Agent世界初大规模商业化验证、AgentKit
+- **腾讯（元宝）**: 微信深度埋め込み、10亿现金推广、社交裂变戦略
+- **百度（文心）**: 文心5.0上线、专业化戦略、几十万活跃Agent
+- 「AI墙内竞争」時代の始まり（字节のApp调用に対して阿里・腾讯が护城河防御）
+
+#### chatglm — GLM-5シリーズ・智谱の現状新規追加
+- **GLM-5** / **GLM-5.1**: SWE-bench Verified开源SOTA、比肩 Claude Opus 4.5
+- **AutoClaw（澳龙）**: PC一键安装Agent客户端、50+ Skills内置
+- **AutoGLM**: 自主规划・推理・执行、长步骤・跨app対応
+- **GLM-PC**: CogAgent-9B开源、画面截图のみでPC操作自动化
+- 香港上場（02513.HK）— 中国大型独立LLM厂商初
+- bigmodel.cn: 智能体市场・MCP対応・模型微调十分钟完了
+
+### Wiki更新
+- 新規作成: `concepts/qwen.md`（6382 bytes）
+- 新規作成: `concepts/chatglm.md`（5378 bytes）
+- 更新: `concepts/china-ai-agent-ecosystem.md`（BATB四強セクション追加、updated日付更新）
+- 設定ファイル: `config/hot-topics.yaml` last_crawled 更新3件
+
+### 関連リンク
+- [阿里云开发者: Qwen3.5发布](https://developer.aliyun.com/article/1713691)
+- [Qwen3-Coder公式サイト](https://www.qwen3coder.com/zh)
+- [Zhipu AI](https://www.zhipuai.cn/zh)
+- [BigModel.cn](https://open.bigmodel.cn/)
+- [TechGG: 2026是Agent生死之年](https://www.techgg.com/article/237-1.html)
