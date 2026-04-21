@@ -851,3 +851,41 @@ Originating conversation: (scheduled cron)
 - GoMCP（MCP Server框架）→ 既存gomcp.mdと統合
 - Codex Computer Use权限交互复刻
 - AI视频生成技术讨论 → 既存ai-video-generation.mdと統合
+
+## [2026-04-21] cn-media-trend-041 | 中国語AIメディアトレンド — Kimi K2.6がトレンド
+
+Originating conversation: (scheduled cron)
+
+### ソース別収集数
+- crawl_all: 55件 (V2EX:15, Juejin:15, 36kr:10, Zhihu:0, WeChat:15)
+- Newsletter: 0件（ChinAI #355は前回処理済み）
+- RSS(blogwatcher): DB不存在
+
+### ホットトピック
+1. **Kimi K2.6开源** — 杨植麟が300个Agent指挥の旗舰模型を発表
+2. **Opus 4.7批判** — 「Anthropicの野心、输给了拉胯工程」
+3. **Google布林「追杀队」** — DeepMindにClaude追杀专队设置
+4. **Claude Code中囼封号** — IP検出の议论（V2EXで続く）
+5. **Hermes+K2.6 Agent军团** — 掘金で実践ガイドが即座に投稿
+
+### ソース間比較: Kimi K2.6
+| ソース | 論調 | フォーカス |
+|--------|------|-----------|
+| 36kr | 好意的・産業分析 | 开源戦略、Agent集群能力 |
+| 掘金 | 実践的・肯定 | K2.6+Hermesで7x24hワークフロー構築 |
+| V2EX | 技術検証待ち | まだ话题になっていない |
+
+### 温度差
+- **36kr**: 「Anthropic vs Google」竞争激化報道、Opus 4.7批判
+- **V2EX**: Claude Code封号・KYC问题が продолжается（数日起き続き）
+- **掘金**: LangChain教程连载、K2.6実践ガイド即投稿
+
+### Wiki更新
+- 新規: `concepts/kimi-k2-6.md`
+- 追加: 4件生記事raw保存
+- 更新: index.mdにK2.6ページ追加
+
+### 次回対応
+- Opus 4.7の批判的具体的内容深掘り（36kr記事の詳細解析）
+- Claude Code封号事件の时间線整理
+- 36kr Anthropic/Google布林記事の詳細解析
