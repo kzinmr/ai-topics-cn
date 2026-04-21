@@ -480,7 +480,64 @@ MiniMax entityページおよびMiniMax vs Kimi比較ページをM2.5/M2.7モデ
 - **Total Pages**: 66
 - **Last Updated**: 2026-04-19
 
-## [2026-04-19] hot-topic-wiki-fill | ホットトピック分析で指摘されたwiki未作成トピックを8件作成
+## [2026-04-21] triage-juejin | Juejinインボックストリアージ — 9ページ新規作成
+
+Originating conversation: 手动トリアージ
+
+### インボックス状況
+- **inbox/juejin/**: 129件（的重複あり）
+- **サイズフィルター**: 1500バイト以下はスタブと判定しスキップ
+- **实质的コンテンツ**: 约65件（スタブ约64件）
+
+### 处理结果
+
+#### ❌ Skip（ короткие stubs / 純粋プロモ / 低品質）
+- n8n工作流自动化连载（重复）
+- n8n工作流-知识卡片（低score）
+- AI-周刊（既存raw保存済み）
+- Vibe Coding概念大全（既存concept覆盖済み）
+- 深入浅出LLM大语言模型（2024年古い記事）
+- Vite Coding基础（既存concept覆盖済み）
+- LangChain 30天教程连载（参考程度）
+- 试用了很多Go框架（AIとは无関系）
+- Gmail/Gemini登录问题（トラブシューティングtips）
+- 各类Skill连载（低score重复）
+
+#### ✅ Take（Wiki新規作成）
+
+| ページ | 種別 | 根拠 |
+|--------|------|------|
+| `entities/mini-cc.md` | Entity | Claude Code解析シリーズ作者の自作ツール、雨夜寻晴天の核心プロジェクト |
+| `entities/springai-alibaba.md` | Entity | 阿里开源Java AI框架、80いいね・137收藏、Java Agent開発の標準ツール |
+| `entities/openmythos.md` | Entity | 22歳天才がMythos逆推、MoE+DeepSeek技術統合、量子位報道 |
+| `concepts/android-cli.md` | Concept | Google Agent-first開発時代向けAndroid CLI、新トレンド |
+| `concepts/browser-use.md` | Concept | 86k StarsブラウザAgent DOM処理パイプライン |
+| `concepts/graphiti.md` | Concept | LLMリアルタイム知識グラフ、新しい記憶システム |
+| `concepts/mini-cc-claude-code-analysis-series.md` | Concept | Claude Code解析9章シリーズ、アーキテクチャ理解に 필수 |
+| `concepts/openai-eval-skill-validation.md` | Concept | OpenAI Eval体系によるSkill検証方法論 |
+| `concepts/prompt-agent-function-call-skill-mcp.md` | Concept | 用語整理高評価記事（118いいね）、AI Engineer必須知識 |
+
+#### Raw Articles保存
+- `2026-04-21-Prompt-Agent-Function-Call-Skill-MCP-傻傻分不清楚.md`
+- `2026-04-21-别再裸用-Claude-Code-了-32-个亲测Skills.md`
+- `2026-04-21-SpringAI-Alibaba-阿里又开源了一个顶级Java项目.md`
+
+### Wiki統計
+- **Entity Pages**: 36（+3: mini-cc, openmythos, springai-alibaba）
+- **Concept Pages**: 58（+5: android-cli, browser-use, graphiti, openai-eval-skill-validation, prompt-agent-function-call-skill-mcp）
+- **Concept Pages新規**: 1（mini-cc-claude-code-analysis-series）
+- **Comparison Pages**: 1
+- **Total Pages**: 95（+9）
+- **Raw Articles**: 157（+3）
+- **Last Updated**: 2026-04-21
+
+### 主要发现
+
+1. **mini-cc + Claude Code解析シリーズ**: 雨夜寻晴天の9章構成解析はClaude Code内部構造理解の最高資料
+2. **Prompt/Agent/Function Call/Skill/MCP混乱**: 118いいねでAI Engineer必須の用語整理
+3. **SpringAI Alibaba**: Java Agent開発的事实上標準、LangChain比对で企業適用优势
+4. **OpenMythos**: 22歳天才のMythos逆推、DeepSeek技術統合の象徴
+5. **browser-use / Graphiti**: LLM应用の新しい抽象化レイヤー
 
 ### 作成背景
 ホットトピック分析で指摘されていた未作成の重要概念ページをまとめて作成。
@@ -750,3 +807,47 @@ Originating conversation: (scheduled cron)
 - `pip install readability-lxml` でprocess_newsletter.py修復
 - Mythos架构 → concepts/mythos-engineering.md 新規作成推奨
 - CLAUDE.md現象 → concepts/claude-md.md 新規作成推奨
+
+## [2026-04-21] triage-v2ex-04 | V2EXインボックストリアージ — 8ページ新規作成
+
+Originating conversation: (scheduled cron)
+
+### インボックス状況
+- **inbox/v2ex/**: 292件（2026-04-15〜21クロール分）
+
+### トリアージフィルター
+- **INCLUDE**: 技術的AI/LLM議論、開発者ツール、中国AI業界分析
+- **EXCLUDE**: 求人広告、ベンダー広告/SPAM、リンクだけ、汎用ツール共有
+
+### 趋势分析結果
+ топ тем из 292件:
+1. **Claude Code** — アイデンティティ検証、KYC問題
+2. **MCP** — プロトコル採用拡大、GoMCPフレームワーク
+3. **Harness Engineering** — 概念の定着と実践
+4. **RAG** — 実践での課題（幻觉、结构理解）
+5. **Vibe Coding** — 開発パラダイムとしての定着
+
+### 新規作成ページ
+| ページ | 種別 | 根拠 |
+|--------|------|------|
+| `concepts/llm-hallucination-handling.md` | Concept | 大模型表格结构理解の限界に関する深い分析 |
+| `concepts/specflow-ai-development.md` | Concept | AI时代设计驱动开发新范式 |
+| `concepts/local-model-token-formula.md` | Concept | 本地部署VRAM/带宽计算实用公式 |
+| `concepts/karpathy-obsidian-llm-wiki.md` | Concept | Karpathy LLM Wiki方法论实际落地 |
+| `concepts/mini-cc-lightweight-coding-agent.md` | Concept | 轻量级TS编程Agent框架 |
+| `concepts/vibe-coding-harness-synergy.md` | Concept | Harness适用场景与Blind Vibe Coding分析 |
+| `concepts/clipimg-agent-cli-tool.md` | Concept | Agent CLI工具分享 |
+| `concepts/claude-code-ip-ban-analysis.md` | Concept | Claude封号IP检测深度复盘 |
+
+### 除外した主なカテゴリー
+- AI中转站广告（OneXModel等）- ベンダー広告
+- Claude/Plus订阅折扣广告 - ベンダー広告
+- 求职帖子（AI相关求职除外） - 求人広告
+- 金融/投资建议帖 - SPAM范畴
+- 链接分享无实质内容 - リンクだけ
+
+### 次回対応候補
+- Kimi2Moon工具（Kimi接入Hermes-Agent）
+- GoMCP（MCP Server框架）→ 既存gomcp.mdと統合
+- Codex Computer Use权限交互复刻
+- AI视频生成技术讨论 → 既存ai-video-generation.mdと統合

@@ -1,7 +1,7 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-04-20
-エンティティ: 33, コンセプト: 44, 比較: 1
+最終更新: 2026-04-21
+エンティティ: 36, コンセプト: 58, 比較: 1
 
 ## エンティティ (Entities)
 
@@ -17,8 +17,11 @@
 - [[cursor|cursor]]
 - [[deepseek|deepseek]]
 - [[doubao-bytedance|豆包/ByteDance（Doubao）— 字節跳動のAIモデル・コーディングプラットフォーム]]
-- [[doubao|doubao]]
-- [[echoic|Echoic — オープンソースAI口语練習ツール]]
+|- [[doubao|doubao]]
+|- [[echoic|Echoic — オープンソースAI口语練習ツール]]
+|- [[mini-cc|mini-cc — 轻量级AI编程智能体]]
+|- [[openmythos|OpenMythos — Claude Mythosアーキテクチャ逆推开源]]
+|- [[springai-alibaba|SpringAI Alibaba — Java向けAI Agent開発フレームワーク]]
 - [[fudan-nlp-agent-survey|复旦NLP — 80ページ大模型Agent総合論文]]
 - [[gemini-google|Gemini/Google — Google AI基盤モデルとオープンソースGemma]]
 - [[glm-zhipu|智谱GLM（ChatGLM）— 中国最大級オープンソースLLM]]
@@ -73,7 +76,13 @@
 - [[transpec|Transpec — 仕様駆動開発フレームワーク間変換ツール]]
 - [[vector-db|Vector DB（向量数据库）— RAG・AI検索の基盤インフラ]]
 - [[vibe-coding|Vibe Coding（氛围编程）— AIネイティブなソフトウェア開発手法]]
-- [[vibe-coding-china|Vibe Coding中国 — 氛围编程受容とAgentic Engineeringへの進化]]
+|- [[vibe-coding-china|Vibe Coding中国 — 氛围编程受容とAgentic Engineeringへの進化]]
+|- [[android-cli|Android CLI — Google Agent-first開発時代向けAndroid開発ツール]]
+|- [[browser-use|browser-use — ブラウザAgentのDOM処理パイプライン]]
+|- [[graphiti|Graphiti — LLM用リアルタイム知識グラフ]]
+|- [[mini-cc-claude-code-analysis-series|Claude Code源码解析シリーズ — 雨夜寻晴天]]
+|- [[openai-eval-skill-validation|OpenAI Eval — Agent Skill系统化検証方法論]]
+|- [[prompt-agent-function-call-skill-mcp|Prompt・Agent・Function Call・Skill・MCP — 用語整理]]
 - [[china-ai-agent-ecosystem|中国AI智能体生态 — 2026年プラットフォーム・アーキテクチャ・市場動向]]
 - [[china-local-deployment|中国大模型本地部署 — 量子化・VRAM最適化・消費者GPUでの推論]]
 - [[china-ai-regulation|中国AI监管政策 — 生成AI管理弁法、算法备案、データ安全規制]]
@@ -82,6 +91,14 @@
 - [[dify|Dify — オープンソースLLMOpsプラットフォーム]]
 - [[china-ai-landscape|中国AI全景 — BAT + ByteDance + スタートアップのエコシステムマップ]]
 - [[china-open-source-ai|中国开源AI社区 — ModelScope、HuggingFace中国、Giteeエコシステム]]
+- [[clipimg-agent-cli-tool|ClipImg — Agent CLI图片粘贴ツール]]
+- [[llm-hallucination-handling|LLM幻觉処理 — 構造化ドキュメント理解の限界と解法]]
+- [[karpathy-obsidian-llm-wiki|Karpathy式LLM Wiki — Obsidianで知识库を構築する方法論]]
+- [[local-model-token-formula|本地模型部署 — Token出力性能計算公式]]
+- [[mini-cc-lightweight-coding-agent|mini-cc — 軽量级AI编程智能体フレームワーク]]
+- [[specflow-ai-development|SpecFlow — AI時代の設計駆動開発パラダイム]]
+- [[vibe-coding-harness-synergy|HarnessとBlind Vibe Coding — 適用境界の分析]]
+- [[claude-code-ip-ban-analysis|Claude Code封号分析 — IP検出メカニズム深掘り]]
 
 ## 比較 (Comparisons)
 
