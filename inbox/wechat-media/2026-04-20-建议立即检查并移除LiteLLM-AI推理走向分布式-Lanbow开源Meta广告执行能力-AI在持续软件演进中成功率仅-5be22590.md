@@ -1,11 +1,11 @@
 ---
 title: "建议立即检查并移除LiteLLM;AI推理走向分布式;Lanbow开源Meta广告执行能力;AI在持续软件演进中成功率仅13.37%等"
 source: wechat-media
-url: "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS41G0hdxSu6adj4hPJI0YTCyEB4MlNl_NFqXa8Fplpd9weRwjs78G5prSwoHcX12MXtSykudqPqxwyxVwZ_EVxOzIiIrJrlfVjx8SqbHuxGrYSjGCW53Sv2SVDmAfwgFoSST3P6MXxA6boAahA_U0GcAIlSgz4pg-e9segLX_ioetKfbaQh_FJ01co2VHlLUX1PF0L_DKsKDa6w0LOYtqDANGbbB75bUeA..&type=2&query=%E6%9C%BA%E5%99%A8%E4%B9%8B%E5%BF%83 LLM AI Agent %E5%A4%A7%E6%A8%A1%E5%9E%8B&token=DB32421ACFDED30824256CC4B2BADB8C247D199A69E5EBD7"
+url: "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS8IVpwxFmtoxrOkEZMu-nu2PnhqPUIZ2r1qXa8Fplpd9n452H8eZ1BahU0IGqj41YqYoq4i9RP4u5H83sYMgzYHek9177O5Y75L6lhAQ9CLpDu-K_2iIRhqiimtzZK_H5a-ESTxz3HE1pewoeJHXJ-cfGchzst80502oGVZ23cxyBAkwif8pXeTQJ2eIIsnkotF6Z8t4rld0tpm9szcrA7hj3x9Nw6p-Fg..&type=2&query=%E6%9C%BA%E5%99%A8%E4%B9%8B%E5%BF%83 LLM AI Agent %E5%A4%A7%E6%A8%A1%E5%9E%8B&token=DFA61E7CEDFDF12D00074FEB9BF5B598016CB5D269E69449"
 author: "AI闪讯"
 date: 2026-03-26
 score: 0
-tags: ["LLM", "推理", "大模型"]
+tags: ["推理", "大模型", "LLM"]
 ---
 
 # 建议立即检查并移除LiteLLM;AI推理走向分布式;Lanbow开源Meta广告执行能力;AI在持续软件演进中成功率仅13.37%等
@@ -15,8 +15,8 @@ tags: ["LLM", "推理", "大模型"]
 推理效率提升与价格战或为破局关键文章讨论AI大模型中Token消...机器之心| 发布时间: 2026-03-25 11:58:087. 建议立即检查并移除...
 
 ## 涉及话题
-- LLM
 - 推理
 - 大模型
+- LLM
 
-[原文链接](https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS41G0hdxSu6adj4hPJI0YTCyEB4MlNl_NFqXa8Fplpd9weRwjs78G5prSwoHcX12MXtSykudqPqxwyxVwZ_EVxOzIiIrJrlfVjx8SqbHuxGrYSjGCW53Sv2SVDmAfwgFoSST3P6MXxA6boAahA_U0GcAIlSgz4pg-e9segLX_ioetKfbaQh_FJ01co2VHlLUX1PF0L_DKsKDa6w0LOYtqDANGbbB75bUeA..&type=2&query=%E6%9C%BA%E5%99%A8%E4%B9%8B%E5%BF%83 LLM AI Agent %E5%A4%A7%E6%A8%A1%E5%9E%8B&token=DB32421ACFDED30824256CC4B2BADB8C247D199A69E5EBD7)
+[原文链接](https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS8IVpwxFmtoxrOkEZMu-nu2PnhqPUIZ2r1qXa8Fplpd9n452H8eZ1BahU0IGqj41YqYoq4i9RP4u5H83sYMgzYHek9177O5Y75L6lhAQ9CLpDu-K_2iIRhqiimtzZK_H5a-ESTxz3HE1pewoeJHXJ-cfGchzst80502oGVZ23cxyBAkwif8pXeTQJ2eIIsnkotF6Z8t4rld0tpm9szcrA7hj3x9Nw6p-Fg..&type=2&query=%E6%9C%BA%E5%99%A8%E4%B9%8B%E5%BF%83 LLM AI Agent %E5%A4%A7%E6%A8%A1%E5%9E%8B&token=DFA61E7CEDFDF12D00074FEB9BF5B598016CB5D269E69449)

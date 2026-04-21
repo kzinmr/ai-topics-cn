@@ -5,7 +5,7 @@ url: "https://36kr.com/p/3774954107650568"
 author: "新智元"
 date: 2026-04-20
 score: 0
-tags: ["Claude", "推理", "DeepSeek"]
+tags: ["推理", "DeepSeek", "Claude"]
 ---
 
 # Claude Mythos核心架构开源，22岁天才一人破解，融合DeepSeek思路
@@ -13,8 +13,8 @@ tags: ["Claude", "推理", "DeepSeek"]
 Claude Mythos核心架构，竟被一个22岁天才扒了个精光！OpenMythos现已全开源，不靠堆参数，原地「循环思考」16次就能推理。闭源实验室的护城河，真的还在吗？
 
 ## 涉及话题
-- Claude
 - 推理
 - DeepSeek
+- Claude
 
 [原文链接](https://36kr.com/p/3774954107650568)

@@ -5,7 +5,7 @@ url: "https://www.v2ex.com/t/1207289"
 author: "lev1s"
 date: 2026-04-20
 score: 1
-tags: ["transformer", "AI", "MCP", "推理", "Transformer"]
+tags: ["推理", "transformer", "MCP", "AI", "Transformer"]
 ---
 
 # 如果你做过 segmentation，可能默认用了太久 argmax
@@ -18,10 +18,10 @@ tags: ["transformer", "AI", "MCP", "推理", "Transformer"]
 …(内容已截断)
 
 ## 涉及话题
-- transformer
-- AI
-- MCP
 - 推理
+- transformer
+- MCP
+- AI
 - Transformer
 
 [原文链接](https://www.v2ex.com/t/1207289)
