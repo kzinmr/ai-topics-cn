@@ -4,7 +4,7 @@ source: v2ex
 url: "https://www.v2ex.com/t/1207329"
 author: "CRH"
 date: 2026-04-21
-score: 0
+score: 64
 tags: ["ai"]
 ---
 

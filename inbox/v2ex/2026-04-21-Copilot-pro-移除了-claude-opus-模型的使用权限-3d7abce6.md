@@ -4,8 +4,8 @@ source: v2ex
 url: "https://www.v2ex.com/t/1207361"
 author: "sentinelK"
 date: 2026-04-21
-score: 104
-tags: ["copilot", "claude", "Copilot"]
+score: 106
+tags: ["copilot", "Copilot", "claude"]
 ---
 
 # Copilot pro 移除了 claude opus 模型的使用权限
@@ -19,7 +19,7 @@ https://github.blog/changelog/2026-04-20-changes-to-github-copilot-plans-for-ind
 
 ## 涉及话题
 - copilot
-- claude
 - Copilot
+- claude
 
 [原文链接](https://www.v2ex.com/t/1207361)
