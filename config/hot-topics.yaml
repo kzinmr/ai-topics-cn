@@ -104,9 +104,9 @@ topics:
       - "火山引擎 Volcano Engine AI"
     wiki_pages:
       - concepts/doubao
-    notes: "ByteDance発。中国国内DAU最大級のAIアプリ。Volcano Engine (火山引擎) でAPI提供"
-    added: 2026-04-17
-    last_crawled: null
+notes: "ByteDance発。中国国内DAU最大級のAIアプリ。Volcano Engine (火山引擎) でAPI提供"
+  added: 2026-04-17
+  last_crawled: 2026-04-21
 
   # =========================================================
   # 2. Chinese AI Agent Ecosystem (中国AIエージェント)
@@ -148,9 +148,9 @@ topics:
       - "Dify AI agent workflow RAG"
     wiki_pages:
       - concepts/dify
-    notes: "中国発オープンソースLLMOps。RAG・Agent・Workflow統合プラットフォーム。GitHub stars急増中"
-    added: 2026-04-17
-    last_crawled: null
+notes: "中国発オープンソースLLMOps。RAG・Agent・Workflow統合プラットフォーム。GitHub stars急増中"
+  added: 2026-04-17
+  last_crawled: 2026-04-21
 
   # =========================================================
   # 3. Local Deployment & Quantization (ローカル展開・量子化)
@@ -212,9 +212,9 @@ topics:
       - "China AI regulation filing policy 2026"
     wiki_pages:
       - concepts/china-ai-regulation
-    notes: "生成式AI管理弁法、大模型備案制度、データセキュリティ法との交差。政策動向をdeep dive"
-    added: 2026-04-17
-    last_crawled: null
+notes: "生成式AI管理弁法、大模型備案制度、データセキュリティ法との交差。政策動向をdeep dive"
+  added: 2026-04-17
+  last_crawled: 2026-04-21
 
   - slug: china-ai-model-filing
     title: "AI Model Filing System (大模型备案制度)"
