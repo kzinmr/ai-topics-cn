@@ -5,7 +5,7 @@ url: "https://juejin.cn/post/7631022614798975030"
 author: "Csvn"
 date: 2026-04-21
 score: 0
-tags: ["RAG", "LangChain"]
+tags: ["LangChain", "RAG"]
 ---
 
 # 🌟 LangChain 30 天保姆级教程 · Day 26｜RAG 评估实战！用 TruLens + 自定义指标，科学衡量你的 AI 回答质量！
@@ -15,7 +15,7 @@ tags: ["RAG", "LangChain"]
 > 👍 0   👁️ 0   ⭐ 0
 
 ## 涉及话题
-- RAG
 - LangChain
+- RAG
 
 [原文链接](https://juejin.cn/post/7631022614798975030)

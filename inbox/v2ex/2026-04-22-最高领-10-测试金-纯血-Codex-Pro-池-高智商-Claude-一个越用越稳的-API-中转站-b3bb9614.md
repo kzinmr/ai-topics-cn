@@ -4,8 +4,8 @@ source: v2ex
 url: "https://www.v2ex.com/t/1207367"
 author: "312ybj"
 date: 2026-04-21
-score: 419
-tags: ["claude", "Claude", "Cursor"]
+score: 423
+tags: ["claude", "Cursor", "Claude"]
 ---
 
 # 💥 [最高领 $10 测试金] 纯血 Codex Pro 池 + 高智商 Claude！一个越用越稳的 API 中转站
@@ -29,7 +29,7 @@ tags: ["claude", "Claude", "Cursor"]
 
 ## 涉及话题
 - claude
-- Claude
 - Cursor
+- Claude
 
 [原文链接](https://www.v2ex.com/t/1207367)

@@ -5,7 +5,7 @@ url: "https://juejin.cn/post/7631022614798942262"
 author: "Csvn"
 date: 2026-04-21
 score: 0
-tags: ["向量数据库", "RAG", "LangChain"]
+tags: ["LangChain", "RAG", "向量数据库"]
 ---
 
 # 🌟 LangChain 30 天保姆级教程 · Day 25｜向量数据库进阶！Milvus vs PGVector，打造千万级 RAG 引擎！
@@ -15,8 +15,8 @@ tags: ["向量数据库", "RAG", "LangChain"]
 > 👍 0   👁️ 0   ⭐ 0
 
 ## 涉及话题
-- 向量数据库
-- RAG
 - LangChain
+- RAG
+- 向量数据库
 
 [原文链接](https://juejin.cn/post/7631022614798942262)

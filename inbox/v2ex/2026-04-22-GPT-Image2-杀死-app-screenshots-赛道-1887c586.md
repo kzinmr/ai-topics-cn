@@ -4,7 +4,7 @@ source: v2ex
 url: "https://www.v2ex.com/t/1207614"
 author: "mobinf"
 date: 2026-04-21
-score: 6
+score: 7
 tags: ["GPT"]
 ---
 
