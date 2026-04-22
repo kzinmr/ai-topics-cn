@@ -67,19 +67,19 @@ topics:
     added: 2026-04-17
     last_crawled: 2026-04-20
 
-  - slug: kimi
-    title: "Kimi — Moonshot AI (月之暗面)"
-    crawl_policy: deepdive
-    priority: high
-    search_hints:
-      - "Kimi 月之暗面 Moonshot AI 2026"
-      - "Kimi 长文本 long context"
-      - "Kimi chat 最新功能"
-    wiki_pages:
-      - concepts/kimi
-    notes: "長コンテキスト（200万tokens）で差別化。中国C向けAIチャットで急成長"
-    added: 2026-04-17
-    last_crawled: null
+- slug: kimi
+  title: "Kimi — Moonshot AI (月之暗面)"
+  crawl_policy: deepdive
+  priority: high
+  search_hints:
+  - "Kimi 月之暗面 Moonshot AI 2026"
+  - "Kimi 长文本 long context"
+  - "Kimi chat 最新功能"
+  wiki_pages:
+  - concepts/kimi
+  notes: "長コンテキスト（200万tokens）で差別化。中国C向けAIチャットで急成長。2026-04-21にK2.6を発表・オープンソース化"
+  added: 2026-04-17
+  last_crawled: 2026-04-22
 
   - slug: yi
     title: "Yi (零一万物) — 01.AI"
@@ -126,18 +126,18 @@ notes: "ByteDance発。中国国内DAU最大級のAIアプリ。Volcano Engine (
     added: 2026-04-17
     last_crawled: 2026-04-20
 
-  - slug: coze
-    title: "Coze (扣子) — ByteDance Agent Platform"
-    crawl_policy: laterals
-    priority: medium
-    search_hints:
-      - "Coze 扣子 字节跳动 智能体"
-      - "Coze agent platform workflow"
-    wiki_pages:
-      - concepts/coze
-    notes: "ByteDanceのノーコードAgent構築プラットフォーム。プラグイン・ワークフロー機能"
-    added: 2026-04-17
-    last_crawled: null
+- slug: coze
+  title: "Coze (扣子) — ByteDance Agent Platform"
+  crawl_policy: laterals
+  priority: medium
+  search_hints:
+  - "Coze 扣子 字节跳动 智能体"
+  - "Coze agent platform workflow"
+  wiki_pages:
+  - concepts/coze
+  notes: "ByteDanceのノーコードAgent構築プラットフォーム。Plugin・ワークフロー機能"
+  added: 2026-04-17
+  last_crawled: 2026-04-22
 
   - slug: dify
     title: "Dify — Open-Source LLMOps Platform"
@@ -310,19 +310,19 @@ notes: "生成式AI管理弁法、大模型備案制度、データセキュリ�
   # 7. Chinese Coding Agent Tools (中国コーディングエージェント)
   # =========================================================
 
-  - slug: china-coding-agents
-    title: "Chinese Coding Agent Tools (中国编程Agent工具)"
-    crawl_policy: deepdive
-    priority: high
-    search_hints:
-      - "中国 编程Agent 工具 2026"
-      - "Coding Plan AI编程 自动化"
-      - "Chinese coding agent tools comparison"
-    wiki_pages:
-      - concepts/china-coding-agents
-    notes: "Coding Plan等の中国発コーディングエージェント。Claude Code/Cursor/Devinの中国での採用状況も含む"
-    added: 2026-04-17
-    last_crawled: null
+- slug: china-coding-agents
+  title: "Chinese Coding Agent Tools (中国编程Agent工具)"
+  crawl_policy: deepdive
+  priority: high
+  search_hints:
+  - "中国 编程Agent 工具 2026"
+  - "Coding Plan AI编程 自动化"
+  - "Chinese coding agent tools comparison"
+  wiki_pages:
+  - concepts/china-coding-agents
+  notes: "Coding Plan等の中国発コーディングエージェント。Claude Code/Cursor/Devinの中国での採用状況も含む"
+  added: 2026-04-17
+  last_crawled: 2026-04-22
 
   - slug: coding-plan
     title: "Coding Plan (编程计划)"
