@@ -43,6 +43,46 @@ Originating conversation: cDIL7LE
 - Vibe Coding概念ページ
 - Claude Mythos / OpenAI Spudの安全性議論
 
+## [2026-04-22] triage-03 | 第3回トリアージ — 2ページ新規作成
+
+Originating conversation: 定期Cron実行
+
+### インボックス状況
+- **inbox/v2ex/**: ~40件（04-22クロール分）
+- **inbox/juejin/**: ~40件
+- **inbox/36kr/**: 50件+
+- **Newsletter**: ChinAI #347-354（04-18處理済み）、ChinAI #355（04-20、記事未取得）
+- **Maildir**: 空（email-watcher処理済み）
+
+### トレンド分析結果（04-22日次ダイジェスト51件）
+1. **Claude Code** — 8件（Skills/MCP/封号論）
+2. **DeepSeek** — 7件（設立後初の資金調達報道：100億估值・3億ドル）
+3. **Kimi K2.6** — 4件（开源旗舰Agent軍団）
+4. **Codex** — 3件（风评超過の声）
+5. **GPT Images 2.0** — 2件（設計業界への影響）
+
+### DeepSeek資金調達報道の文脈
+36kr2件：
+- 「DeepSeek的『下一步』」— 資金調達+商業化への転身
+- 「梁文锋还是太保守了」— 100億估值3億ドルの報道解説
+
+### 新規ページ作成
+| ページ | 種別 | 根拠 |
+|--------|------|------|
+| `entities/kimi-k2-6.md` | Entity | K2.6开源旗舰Agent軍団指揮能力 |
+| `entities/qwopus-3-5.md` | Entity | Qwen3.5-27B社区微调、Reasoning SFT |
+
+### 既存ページ更新
+| ページ | 更新内容 |
+|--------|----------|
+| `entities/deepseek.md` | トレンド順位6位へ上昇、04-22資金調達報道追加（トレンド15件） |
+| `wiki/index.md` | エンティティ38に更新、kimi-k2-6追加 |
+
+### Newsletter処理状況
+- ChinAI #347-354: 04-18に処理済み（.eml/.mdファイルのみ存在、スクレイピングなし）
+- ChinAI #355: 04-20着信、記事内容未取得
+- blogwatcher DB: 未存在（スキップ）
+
 ## [2026-04-17] triage-02 | 第2回トリアージ — 4ページ新規作成、2ページ更新
 
 Originating conversation: cDIL7LE

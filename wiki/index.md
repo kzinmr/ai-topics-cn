@@ -1,7 +1,7 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-04-21
-エンティティ: 36, コンセプト: 58, 比較: 1
+最終更新: 2026-04-22
+エンティティ: 38, コンセプト: 58, 比較: 1
 
 ## エンティティ (Entities)
 
@@ -29,6 +29,7 @@
 - [[iflytek|iflytek]]
 - [[kimi-moonshot|Kimi（月之暗面/Moonshot AI）— Claude Code代替として急成長する中国国籍LLM]]
 - [[kimi-k2-6|Kimi K2.6 — 月之暗面开源旗舰模型]]
+- [[qwopus-3-5|Qwopus 3.5 — Qwen3.5-27Bベース社区微调モデル]]
 - [[llama-meta|Llama（Meta）— Meta AIのオープンソースLLMファミリ]]
 - [[metax|metax]]
 - [[minimax|minimax]]
