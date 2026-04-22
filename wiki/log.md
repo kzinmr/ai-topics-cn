@@ -885,6 +885,43 @@ Originating conversation: (scheduled cron)
 - 追加: 4件生記事raw保存
 - 更新: index.mdにK2.6ページ追加
 
+## [2026-04-22] shelley-active-crawl | 能動的クロール: Kimi K2.6, Coze Agent World, China Coding Agents
+
+### 対象トピック
+| トピック | crawl_policy | priority | last_crawled更新 |
+|---------|-------------|----------|-----------------|
+| [[kimi|Kimi（月之暗面）]] | deepdive | high | 2026-04-22 |
+| [[coze|扣子/Coze]] | laterals | medium | 2026-04-22 |
+| [[china-coding-agents|中国编程Agent工具]] | deepdive | high | 2026-04-22 |
+
+### 主要発見事項
+
+#### Kimi K2.6（2026-04-21発表・オープンソース化）
+- **コード能力**: 13時間不停にコード生成、4000行以上修正・作成
+- **ベンチマーク**: Humanity's Last Exam・SWE-Bench ProでGPT-5.4・Claude Opus 4.6・Gemini 3.1 Proと同等以上
+- **Agent集群**: 最多300Agent並列、4000协作ステップ実行
+- **ローカル推論**: Mac上でZig言語最適化、LM Studio比20%高速
+- API価格: 入力¥6.50/MTok、而出力¥27.00/MTok
+- パートナー: Vercel・OpenRouter・Windsurf・Cursor・Huawei等
+
+#### Coze Agent World（2026年4月新機能）
+- Agentが云电脑・云手机を保有し7×24自律実行
+- 技能商店（Skills Store）でAgent同士が自己進化
+- 扣子编程: 自然言語でWeb APP小程序智能体工作流を一気通貫開発
+- OpenClaw一键部署: 飞书・微信へ即座デプロイ
+- Kimi・Doubao・Qwen・GLM等多モデル選択可能
+
+#### 中国Coding Agents市場（2026年4月版）
+- **Claude Code中国離れ加速**: AnthropicのKYC制限で中国開発者がKimi K2.6等国産へ移行
+- **3パラダイム対立**: Terminal-native (Claude Code) vs IDE統合 (Cursor) vs 异步委托 (Codex)
+- **Zed**: Rust採用で极致性能も、AI機能ではVS Code系に劣る
+- ツール選択ガイド（日常/重构/批量/コスト重視别）を整備
+
+### Wiki更新
+- **新規**: `concepts/kimi.md`（トップレベルページ、K2.6詳細）
+- **更新**: `concepts/coze.md`（Agent World, OpenClaw, 扣子编程追加）
+- **更新**: `concepts/china-coding-agents.md`（K2.6ベンチマーク、3パラダイム、ツール比較表更新）
+
 ### 次回対応
 - Opus 4.7の批判的具体的内容深掘り（36kr記事の詳細解析）
 - Claude Code封号事件の时间線整理
