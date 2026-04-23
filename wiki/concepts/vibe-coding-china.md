@@ -1,9 +1,9 @@
 ---
 title: "Vibe Coding（氛围编程）— 中国での受容とAgentic Engineeringへの進化"
-type: concept
-tags: [vibe-coding, ai-coding, chinese-ai, karpathy, agentic-engineering, paradigm-shift]
 created: 2026-04-17
-updated: 2026-04-19
+updated: 2026-04-23
+tags: [vibe-coding, ai-coding, chinese-ai, karpathy, agentic-engineering, paradigm-shift, intent-coding]
+aliases: ["氛围编程", "vibe coding", "意图编程", "Wish Coding"]
 source_lang: zh-CN
 ---
 
@@ -16,12 +16,15 @@ source_lang: zh-CN
 | **定義** | 自然言語プロンプトでAIにコードを書かせる開発手法 |
 | **提唱日** | 2025年2月（Karpathyのツイート） |
 | **転換点** | 2026年2月4日 Karpathy「Vibe Coding終焉」宣言 |
+| **2026年4月最新** | 蚂蚁灵光「闪应用」— 3000万アプリ生成、意图编程へ進化 |
 
 ## 概要
 
-Vibe Coding（氛围编程）は、Andrej Karpathyが2025年2月に提唱した「感覚でコードを書く」開発パラダイム。人間が自然言語で要件をAIに伝え、AIがコードを生成する。中国のV2EX・掘金・知乎で大きな議論を巻き起こし、2025年を通じて中国開発者コミュニティの中心的トピックとなった。
+Vibe Coding（氛围编程）は、Andrej Karpathyが2025年2月に提唱した「感覚でコードを書く」開発パラダイム。人間が自然言語で要件をAIに伝え、AIがコードを生成する。中国のV2EX・掘金・知乎・36kr・WeChatで大きな議論を巻き起こし、2025年を通じて中国開発者コミュニティの中心的トピックとなった。
 
 2026年2月4日、Karpathy自身が「Vibe Codingは終わった」と宣言し、**Agentic Engineering（智能体工程）**へのパラダイムシフトを発表。中国メディアはこれを「范式切换（パラダイムシフト）」として大々的に報じた。
+
+2026年4月、**蚂蚁灵光**が「闪应用」を3000万個生成し、**意图编程（Wish Coding）**の概念を提案。Vibe Codingの限界を乗り越え、さらに一歩進んだ「自然言語→直接実行可能アプリ」へ進化している。
 
 ## Vibe Codingの定義と受容
 
@@ -39,6 +42,8 @@ Vibe Coding（氛围编程）は、Andrej Karpathyが2025年2月に提唱した�
 ### 中国特有の受容構造
 中国開発者コミュニティでは、英語を使わずに自然言語（中国語）でAIにコード指示できる点が特に注目された。Vibe Codingの民主化効果（「人人都能编程」＝誰もがプログラミングできる）が強調され、36krではビジネス機会としての報道が目立った。
 
+2026年4月、知乎・36krで「**Vibe Coding 的边界：3000 万开发者，实现不了80 亿人的灵光**」という標題の論説が投稿され、Vibe Codingの真の市場サイズに関する議論が再燃。全全球プログラマー数3000万人に対し、80億人の「灵光一闪」をどう実現するか。
+
 ## パラダイムシフト: Vibe Coding → Agentic Engineering
 
 ### Karpathyの「終焉」宣言（2026年2月4日）
@@ -48,6 +53,7 @@ KarpathyはX上で以下のように述べた:
 - **Agentic Engineering**という新範疇が必要
 
 ### 定義の比較
+
 | | Vibe Coding (2025) | Agentic Engineering (2026-) |
 |---|---|---|
 | 人間の役割 | プロンプト作成者、微調整 | 仕様定義者、検証ゲート、アーキテクト |
@@ -76,6 +82,7 @@ KarpathyはX上で以下のように述べた:
 ## 中国AIプログラミングツール市場
 
 ### 国産プログラミングアシスタント
+
 | ツール | 開発元 | 特徴 |
 |--------|--------|------|
 | **通义灵码** | Alibaba | 中国語対応、VS Code/JetBrains統合、エンタープライズ向け |
@@ -83,6 +90,17 @@ KarpathyはX上で以下のように述べた:
 | **MarsCode** | ByteDance | 豆包エコシステム統合、C向けUI重視 |
 | **文心快码** | Baidu | 文心大モデルベース、百度エコシステム統合 |
 | **腾讯云AI代码助手** | Tencent | 企業微信（WeCom）統合、エンタープライズ向け |
+| **Trae** | ByteDance | AI原生编程工具、無料・国内ネットワーク友好、600万+ユーザー |
+
+### ツール比較（2026年版）
+
+| ツール | タイプ | 価格 | 強み | 中国向け特徴 |
+|--------|--------|------|------|-------------|
+| **Claude Code** | 端末CLI | $20/月 | 強（自主計画+実行） | 国内ネットワーク・レート制限の問題 |
+| **Cursor** | IDE | $20/月 | 強（SOLO自主開発） | 補完+Composer双模式 |
+| **Trae** | IDE | **無料** | 強（SOLO自主開発） | **無料・国内ネットワーク友好** |
+| **GitHub Copilot** | IDE插件 | $10-19/月 | 強（Workspace） | 生態最广 |
+| **Windsurf** | IDE | 無料/$15/月 | 強（Cascade流式） | - |
 
 ### 市場動向
 2026年3月時点での国内AI Codingツールレポート（AtomGit）によると:
@@ -91,15 +109,49 @@ KarpathyはX上で以下のように述べた:
 - 国産ツールの「インテリジェント能力」が急速に向上
 - 本地デプロイ（ローカル展開）需要が急増、データセキュリティ懸念から
 
-## 「餐馆」比喩: 中国メディアのビジネス解釈
+## 「意图编程」: 蚂蚁灵光による次のステージ（2026年4月20日）
 
-知乎と36krで広まった比喩:
+**蚂蚁灵光**のアップデートがVibe Codingの次の進化を示している:
 
-> **旧范式（2024以前）**: 街頭で野菜を売る — ツール（IDE、Copilot）を$10-20/月で売る
-> **Vibe Coding早期**: 浄菜（下処理済み野菜）を売る — AIがコード補完
-> **新范式（2025末-2026）**: 餐馆（レストラン） — AIがフルスタックで開発、人間は注文するだけ
+### 闪应用（Flash App）
+- **30秒でアプリ生成・生成即デプロイ**
+- 2026年4月20日にアップデート: 手机端原生能力を深度統合
+  - カメラ・陀螺儀・LBS・マイク・振動などのハードウェアアクセス
+- **3000万以上の闪应用**が既に作成済み
+- 互动游戏・情緒減圧・言語打刻・待办清单など日常生活の多方面をカバー
 
-この比喩は、**「単位経済モデルが完全不同」**であることを強調し、資本がVibe Coding企業に「次の海底捞（大成功したチェーン店）」の估值を付けている状況を説明している。
+### 灵光圈（Lingguang Circle）
+- 闪应用のための**分发・協同コミュニティ**
+- 手搓の闪应用を一键共有（閲覧・使用・点赞・評論）
+- **二次創作対応**: 誰でも原版をForkし、自然言語で修正指示→全新版本生成
+- Forkする対象は「代码」ではなく**「意图」**（意図）
+
+> **出典**: [腾讯新闻 — Vibe Codingの边界](https://news.qq.com/rain/a/20260421A04EXW00)
+
+### Wish Coding（意图编程）の概念
+
+蚂蚁灵光が提唱する「Wish Coding」:
+- **说话で直接実行可能ソフトを生成**
+- IDEやコード界面不要、構築・部署概念不要
+- 「**想要什么**」を言うだけで実行可能なアプリが得られる
+- シモニュイが描いた「意図から実装への自動化層」をAIが実現
+
+> 灵光がしている本質は、AIをSimonyiが描いた「意図から実装への自動化層」として使うこと — 専門開発者ではなく、**自然語言で需求を表達できるすべての人**を対象にしている。
+
+## 国内Vibe Codingの二大ハードル
+
+### 1. ネットワーク接続
+Claude Code・Cursor API・Gemini CLIのデフォルトエンドポイントは海外。国内直結は低速または接続不可。
+
+**解決策**: API仲介プラットフォーム（ofox.ai等）の利用
+- Anthropic・OpenAI・Gemini三协议をサポート
+- 国内ネットワーク直結、支付宝・微信支付対応
+- CursorのSettings→Modelsで`https://api.ofox.ai/v1`を設定
+
+### 2. Rate Limit
+高強度Vibe Coding時のAPI呼び出し頻度でRPM制限に達し、ワークフロー中断・心流崩壊。
+
+**解決策**: API仲介プラットフォームは公式より寛容なRPM/TPM制限を提供。
 
 ## Vibe Codingの課題と将来
 
@@ -116,6 +168,16 @@ KarpathyはX上で以下のように述べた:
 - セキュリティ監査
 - コスト最適化（トークン消費管理）
 
+### 2026年「新三位一体」
+
+Vibe Codingがコード執筆を価値ゼロにしたとき、何が希少価値を持つのか:
+
+1. **架构审美力 (Architectural Taste)** — AIは完璧な関数を書けるが完璧なシステムは設計できない。「良い設計」と「過度なカプセル化」を見抜く直感
+2. **問題定義能力 (Prompt Engineering++)** — 模糊な業務需求を正確な技術原子へ分解する能力
+3. **调试と兜底能力 (The Debugger)** — AIが断念したとき、ソースレベルに潜り込んで問題を特定する能力。「能为AI擦屁股」が未来5年で最も高給のスキルタグ
+
+> 「Vibe Codingは洪水猛兽ではない。それは蒸気機関だ。蒸気機関が登場したとき、力仕事をしていた者は職を失ったが、機械を操作するエンジニアが誕生した。」
+
 ## 関連エンティティ
 
 - [[concepts/deepseek]] — DeepSeek-V4のコーディング能力
@@ -123,6 +185,8 @@ KarpathyはX上で以下のように述べた:
 - [[concepts/china-coding-agents]] — 中国のコーディングエージェント
 - [[concepts/mcp-china]] — MCP+A2Aによるエージェント標準化
 - [[concepts/ai-agent]] — AIエージェントの一般概念
+- [[entities/qwen]] — Qwen3-Coderのコーディング競争
+- [[openclaw]] — Agent HarnessとしてのOpenClaw
 
 ## 出典
 
@@ -130,4 +194,7 @@ KarpathyはX上で以下のように述べた:
 - [氛围编程将死！谷歌总监警告 (智源社区)](https://hub.baai.ac.cn/view/52137)
 - [人人都能编程的时代来了吗？ (新浪財經)](https://finance.sina.com.cn/wm/2026-03-18/doc-inhrknay3413362.shtml)
 - [Vibe Coding 维基百科化 (知乎专栏)](https://zhuanlan.zhihu.com/p/1991964230526710358)
-- [2026年编程的门槛彻底塌了 (Facebook/中国メディア)](https://www.facebook.com/jooymedia/posts/2026%E5%B9%B4%E7%BC%96%E7%A8%8B%E7%9A%84%E9%97%A8%E6%A7%8B%E5%BD%BB%E5%BA%95%E5%A1%8C%E4%BA%86%E8%BF%99%E5%B0%B1%E6%98%AF%E6%9C%80%E8%BF%91%E7%81%AB%E9%81%8D%E5%85%A8%E7%BD%91%E7%9A%84-vibe-coding%E6%B0%9B%E5%9B%B4%E7%BC%96%E7%A8%8B%E4%BB%A5%E5%89%8D%E7%BC%96%E7%A8%8B%E6%98%AF%E5%92%8C%E5%A4%8D%E6%9D%82%E7%9A%84%E8%AF%AD%E6%B3%95bug-%E6%90%8F%E6%96%97%E7%8E%B0%E5%9C%A8%E7%BC%96%E7%A8%8B%E6%98%AF%E6%8A%8A%E4%BD%A0%E7%9A%84%E6%83%B3%E6%B3%95%E5%92%8C%E6%84%9F%E8%A7%89%E7%99%BD%E8%AF%9D%E7%9A%84%E6%96%B9%E5%BC%8F%E5%91%8A%E8%AF%89-ai/1500045672126091/)
+- [Vibe Coding 的边界：3000 万开发者，实现不了80 亿人的灵光 (腾讯新闻)](https://news.qq.com/rain/a/20260421A04EXW00)
+- [Vibe Coding 完全指南 (ofox.ai)](https://ofox.ai/zh/blog/vibe-coding-ai-workflow-guide-2026/)
+- [Vibe Coding AI全栈开发实战 (腾讯云开发者社区)](https://cloud.tencent.com/developer/article/2644912)
+- [Vibe Coding 席卷 GitHub (WeChat公众号)](https://mp.weixin.qq.com/s/PD4l5elVrDvnq4lvNYD7-w)

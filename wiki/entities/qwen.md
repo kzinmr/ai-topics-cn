@@ -1,68 +1,90 @@
 ---
-title: Qwen（通义千问）— 阿里云オープンソースLLM
+title: Qwen（通义千问）— 阿里云大模型旗舰
 created: 2026-04-17
-updated: 2026-04-17
-tags: [llm, model, china, open-source-ai, alibaba, qwen]
-aliases: ["Qwen", "通义千问", "qwen", "Qwen3.5", "Qwen3-Coder"]
+updated: 2026-04-23
+tags: [llm, model, china, open-source-ai, alibaba, qwen, agentic-coding]
+aliases: ["Qwen", "通义千问", "qwen", "Qwen3.5", "Qwen3-Coder", "Qwen3.6"]
 source_lang: zh-CN
 ---
 
-# Qwen（通义千问）— 阿里云オープンソースLLM
+# Qwen（通义千问）— 阿里云大模型旗舰
 
-> **トレンド順位**: #12（2026-04-17集計、11言及）
-> **ソース**: 36kr, Juejin, V2EX（3ソース）
-> **重要度**: 中 — 阿里云エコシステムの中核モデル
+> **トレンド順位**: #12（2026-04-17集計）→ 2026年4月最新で急上昇
+> **ソース**: 36kr, Juejin, V2EX, WeChat, Zhihu（5ソース）
+> **重要度**: 高 — 中国企業級大モデル呼び出し量シェア第1位（32.1%）
 
 ## 概要
 
-Qwen（通义千问）は、**阿里巴巴（Alibaba Group）**が開発するオープンソース大規模言語モデルシリーズ。中国語圏において最も認知度の高い国産LLMの一つであり、阿里云のAIサービスエコシステムの中核を担う。
+Qwen（通义千问）は、**阿里巴巴（Alibaba Group）**が開発する大規模言語モデルシリーズ。2026年4月現在、中国エンタープライズ市場において大モデル呼び出し量シェア**32.1%**を占め、沙利文報告により**中国企业级大模型调用量第1位**に位置づけられている。
 
-2026年4月現在、**Qwen3.5**（次世代汎用モデル）と**Qwen3-Coder**（コーディング特化モデル）が主要バージョンとして議論されている。トレンド集計で**11件の言及**、3つの情報源すべてからカバーされており、安定した注目度を維持している。
+Apache 2.0ライセンスでオープンソースリリースを推進し、Qwen3シリーズ（0.6B〜235B）をHugging Face Hubで公開。 proprietaryモデルではQwen3.6 Plusが2026年4月2日にリリースされ、1Mコンテキストとalways-on chain-of-thoughtを備える。
 
-## 最新動向（2026年4月17日）
+## 最新動向（2026年4月22日時点）
 
-### Qwen3.5 — 次世代汎用モデル
+### Qwen3.6 Plus — 新 proprietary Flagship（2026年4月2日）
 
-Qwen3.5は阿里云の次世代汎用LLMとして位置づけられている。36krの報道では、阿里云の「**Qwen3.5を基座としたAIサービス群**」が発表され、中国エンタープライズ市場での採用が加速している。
+- **1M native context**（2,000ページ相当のテキストを1プロンプトで処理）
+- **Always-on chain-of-thought**（思考/非思考トグル廃止、全プロンプトでデフォルト推論）
+- **Agentic coding**に最適化（MCPMark、DeepPlanningで業界首位）
+- **マルチモーダル推論**: 画像・動画・テキスト統一処理
+- **推論速度**: ~158 tok/s（Claude Opus 4.6の1.7倍、GPT-5.4の2倍）
+- **価格**: $0.325/M入力、$1.95/M出力（Claude Opus 4.6の約17分の1）
+- OpenRouterで無料プレビュー期間（2026年3月30-31日）
 
-主な特徴：
-- 中国語・英語のバイリンガル性能の向上
-- エンタープライズ向けファインチューニングサポート
-- 阿里云Model Studioとのネイティブ統合
+### Qwen3.6-Max-Preview — 最大旗舰预览版（2026年4月20日頃）
 
-> **出典**: 36kr — [https://36kr.com/p/3769362609783560](https://36kr.com/p/3769362609783560) [T1]
+**五大核心升级**:
+1. **世界知识大幅增强** — 幻觉显著降低、長文本知識推理強化
+2. **指令遵循能力质变** — 複雑長指令・多步骤任务・严格格式出力が安定
+3. **智能体Agent能力大幅提升** — 長程計画・多輪工具呼び出し・複雑任務分解
+4. **编程能力飞跃** — コード理解・プロジェクト開発・Debug・多言語工程化が全球第一梯队レベル
+5. **新增思考保留功能（preserve_thinking）** — モデルの全程推論思考チェーンを完全保存（エージェント・長任務・監査復習に適用）
 
-### Qwen3-Coder — コーディング特化モデル
+SWE-bench Pro、Terminal-Bench 2.0、SkillsBench、QwenClawBench、QwenWebBench、SciCodeの**6項主要プログラミングベンチマーク**でQwen3.6-Plusを全面超越。
 
-Qwen3-Coderは、コード生成・理解に特化したバージョン。掘金では「**Qwen3-Coder、Claude Codeにどこまで迫れるか**」という比較記事が投稿され、中国開発者コミュニティで議論されている。
+> **出典**: [新浪新闻 — 阿里通义千问发布新一代旗舰](https://www.sina.cn/news/detail/5289894780869670.html)
 
-CodingPlan（[[coding-plan]]）において、Qwen3-CoderはKimi K2.5およびGLM-4.7と並んでバンドル提供されており、阿里云のAIコーディング戦略の中核を担う。
+### Qwen3.6-35B-A3B — オープンソース稀疏MoE（2026年4月16日）
 
-### 阿里云との統合強化
+- **35B total / ~3B active**（256 experts、8 routed + 1 shared）
+- **Native 262,144 token** context（YaRNで~1Mへ拡張）
+- **Apache 2.0**（商用利用自由）
+- **Claude Opus 4.7の~82%**の集計パフォーマンス
+- **MCP Atlasツール使用**: 62%（知識タスク: 97%）
+- **Ollama、LM Studio、Jan.ai、llama.cpp、vLLM**でローカル実行可能
+- **AMD Instinct GPU** Day-0サポート
 
-2026年4月、阿里云はOpenClawユーザー向けにQwenモデルの直接アクセスを発表（[[openclaw]]参照）。これにより「**算力自由**」（計算力の自由）が実現し、Qwenエコシステムの拡大が期待されている。
+### Qwen3.6-27B — オープンソース密型（2026年4月22日）
+
+- **27B密型アーキテクチャ**
+- **Gated DeltaNet線形注意 + 伝統的自己注意のハイブリッド**
+- **Thinking Preservation**メカニズム（新機能）
+- **Qwen3.5-397B-A17BおよびQwen.6.6をagentic codingベンチマークで超越**
+- BF16およびFP8量子化版をHugging Face Hubで公開
+- **SGLang**互換
+
+### Qwen3-Coder — コーディング特化（480B MoE / 35B active）
+
+コード生成・理解に特化したバージョン。Claude Code、Cursorと比較する記事が掘金・V2EXで多数投稿。CodingPlan（[[coding-plan]]）においてKimi K2.6およびGLM-4.7と並んでバンドル提供。
+
+### 価格競争 — Qwen3-Max 50%値下げ
+
+2026年の中国AI価格戦争でQwen3-Maxの料金が最大50%引き下げ。 trillion-parameter閉鎖モデルながら、競争激化により価格破壊を起こしている。
 
 ## Qwenの中国AIエコシステムでの位置づけ
 
 | 次元 | Qwen | 競合 |
 |------|------|------|
 | 開発元 | 阿里巴巴 | 智谱AI（[[glm-zhipu]]）、月之暗面（[[kimi-moonshot]]） |
-| OSS方針 | 全面オープンソース | GLM-4.7は一部OSS、Kimiはクローズド |
-| 阿里云統合 | ネイティブ | 他社は提携関係 |
-| コーディング | Qwen3-Coder | Kimi K2.5/K2.6、GLM-5.1 |
-| 中国市場シェア | トップ3 | GLM、Kimiと拮抗 |
-
-## V2EXでの議論
-
-V2EXでは「阿里云的Qwen生态，到底能不能打？（阿里云のQwenエコシステム、結局戦えるのか？）」というスレッドが立ち、以下の論点が議論されている：
-
-- Qwen3.5の性能はGPT-4レベルに到達したか
-- 阿里云のエンタープライズサポートが強み
-- オープンソース戦略の持続可能性
+| OSS方針 | 全面オープンソース（Apache 2.0） | GLM一部OSS、Kimiクローズド |
+| 企業級呼び出しシェア | **第1位（32.1%）** | 第2位以下 |
+| エンタープライズ統合 | 阿里云Model Studio・钉钉・ERP | 他社は提携関係 |
+| コーディング | Qwen3-Coder（480B MoE） | Kimi K2.6、GLM-5.1 |
+| 価格競争 | Qwen3-Max 50%値下げ | 各社価格破壊競争 |
 
 ## AIスーパーアプリ競争 (ChinAI #345)
 
-ChinAI #345「China's AI Super-App Race」によると、AlibabaはQwenを中核とした**フルスタックAI戦略**を展開：
+AlibabaはQwenを中核とした**フルスタックAI戦略**を展開：
 
 - **モデル**: Qwenシリーズ（オープンソース最強力）
 - **インフラ**: Alibaba Cloud（中国クラウドシェア1位）
@@ -72,26 +94,56 @@ ChinAI #345「China's AI Super-App Race」によると、AlibabaはQwenを中核
 - **課題**: ユーザーエンゲージメントでByteDanceに劣る
 
 ### 3Way競争
+
 | 企業 | AIモデル | エコシステム | 課題 |
 |------|---------|-------------|------|
 | Alibaba/Qwen | 自社開発（最強） | EC+クラウド+決済 | ユーザー時間 |
 | ByteDance/Doubao | 移行中 | コンテンツ+推薦 | モデル技術 |
 | Tencent | 追従中 | WeChat（最大） | AI人材・技術 |
 
+## 具身ロボティクスへの進出（2026年4月19日）
+
+阿里巴巴のAmap（高德地图）が北京Humanoid Robot Half Marathonで**初の人型ロボット**をデビュー。四足ロボットはAmapの新embodied-intelligence部門が開発し、Alibabaの**ABot-Worldモデル**（AGIbot World ChallengeおよびWorld Arenaベンチマーク首位）で駆動。これによりQwenは基盤モデルから**自法人型ロボット**への拡張を示した。
+
+## 中国開発者コミュニティでの議論
+
+### V2EX
+- 「阿里云的Qwen生态，到底能不能打？」— Qwenエコシステムの実力評価
+- Qwen3.6-Max-Previewのpreserve_thinking機能に関する議論
+- Qwen3.6-35B-A3Bのローカルデプロイ体験（Ollama・vLLM）
+
+### 掘金
+- Qwen3-Coder vs Claude Codeのコーディング比較
+- Qwen3.6 Plusのagentic coding実装ガイド
+- Qwen3.6-27Bのベンチマーク分析
+
+### 36kr
+- Qwenが企業級大モデル呼び出し量第1位獲得の分析
+- 50%値下げが中国AI価格戦争に与える影響
+- Qwen3.6-Max-Previewの五大核心 upgrades解説
+
+### WeChat機器之心
+- Qwen3.6 Plusのアーキテクチャ解説（線形注意＋MoEハイブリッド）
+- Qwen3.6-27BのGated DeltaNet技術分析
+- ABot-Worldロボティクスモデルの展望
+
 ## 関連リンク
 
 ### 内部リンク
 
-- [[openai]] — GPTシリーズとの競合関係
 - [[claude-code]] — コーディングエージェントとしての競合
 - [[coding-plan]] — Qwenがバンドルされるサブスクリプション
 - [[glm-zhipu]] — 中国OSS LLM競合
 - [[kimi-moonshot]] — 中国代替モデル
 - [[openclaw]] — 阿里云統合パートナー
+- [[china-ai-agent-ecosystem]] — 中国AI Agentエコシステム全体
+- [[vibe-coding-china]] — Vibe CodingとQwenのコーディング競争
 
 ### 外部ソース
 
 | ソース | URL | ティア | 概要 |
 |---|---|---|---|
-| 36kr — Qwen3.5発表 | [36kr.com/p/3769362609783560](https://36kr.com/p/3769362609783560) | T1 | 次世代モデル |
-| 掘金 — Qwen3-Coder比較 | [juejin.cn/post/7628854568781545506](https://juejin.cn/post/7628854568781545506) | T2 | Claude Codeとの比較 |
+| 新浪 — Qwen3.6-Max-Preview | [sina.cn/news/5289894780869670](https://www.sina.cn/news/detail/5289894780869670.html) | T1 | 五大核心升级 |
+| MarkTechPost — Qwen3.6-27B | [marktechpost.com/...](https://www.marktechpost.com/2026/04/22/alibaba-qwen-team-releases-qwen3-6-27b-a-dense-open-weight-model-outperforming-397b-moe-on-agentic-coding-benchmarks/) | T1 | 密型Agentic Codingモデル |
+| Aipedia — Qwenレビュー | [aipedia.wiki/tools/qwen](https://aipedia.wiki/tools/qwen/) | T2 | 2026年4月時点完全レビュー |
+| Yahoo Finance — 企業戦略 | [finance.yahoo.com/...](https://finance.yahoo.com/markets/stocks/articles/alibaba-qwen3-6-plus-targets-070714378.html) | T2 | エンタープライズ向け戦略分析 |

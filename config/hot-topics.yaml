@@ -44,14 +44,14 @@ topics:
     crawl_policy: deepdive
     priority: high
     search_hints:
-      - "Qwen 通义千问 阿里巴巴 2026"
-      - "Qwen2.5 Qwen3 开源模型"
-      - "Qwen-Agent 通义千问 最新"
+      - "Qwen 通义千问 Alibaba latest update April 2026"
+      - "Qwen3.6 Qwen3.6-Max-Preview Qwen3.6-35B"
+      - "通义灵码 阿里云 大模型 2026"
     wiki_pages:
-      - concepts/qwen
-    notes: "Alibaba Cloud発。Qwen2.5シリーズ、Qwen-Agent。中国クラウドAI基盤の柱"
+      - entities/qwen
+    notes: "Alibaba Cloud発。Qwen3.6 Plus/Max-Preview/35B-A3B/27Bのリリース。preserve_thinking新機能、Qwen3-Max 50%値下げ、Amap人型ロボットdebut"
     added: 2026-04-17
-    last_crawled: 2026-04-20
+    last_crawled: "2026-04-23"
 
   - slug: chatglm
     title: "ChatGLM (智谱清言) — Zhipu AI"
@@ -67,19 +67,19 @@ topics:
     added: 2026-04-17
     last_crawled: 2026-04-20
 
-- slug: kimi
-  title: "Kimi — Moonshot AI (月之暗面)"
-  crawl_policy: deepdive
-  priority: high
-  search_hints:
-  - "Kimi 月之暗面 Moonshot AI 2026"
-  - "Kimi 长文本 long context"
-  - "Kimi chat 最新功能"
-  wiki_pages:
-  - concepts/kimi
-  notes: "長コンテキスト（200万tokens）で差別化。中国C向けAIチャットで急成長。2026-04-21にK2.6を発表・オープンソース化"
-  added: 2026-04-17
-  last_crawled: 2026-04-22
+  - slug: kimi
+    title: "Kimi — Moonshot AI (月之暗面)"
+    crawl_policy: deepdive
+    priority: high
+    search_hints:
+      - "Kimi 月之暗面 Moonshot AI 2026"
+      - "Kimi 长文本 long context"
+      - "Kimi chat 最新功能"
+    wiki_pages:
+      - concepts/kimi
+    notes: "長コンテキスト（200万tokens）で差別化。中国C向けAIチャットで急成長。2026-04-21にK2.6を発表・オープンソース化"
+    added: 2026-04-17
+    last_crawled: 2026-04-22
 
   - slug: yi
     title: "Yi (零一万物) — 01.AI"
@@ -104,7 +104,7 @@ topics:
       - "火山引擎 Volcano Engine AI"
     wiki_pages:
       - concepts/doubao
-notes: "ByteDance発。中国国内DAU最大級のAIアプリ。Volcano Engine (火山引擎) でAPI提供"
+    notes: "ByteDance発。中国国内DAU最大級のAIアプリ。Volcano Engine (火山引擎) でAPI提供"
   added: 2026-04-17
   last_crawled: 2026-04-21
 
@@ -117,27 +117,27 @@ notes: "ByteDance発。中国国内DAU最大級のAIアプリ。Volcano Engine (
     crawl_policy: deepdive
     priority: high
     search_hints:
-      - "中国 AI智能体 Agent 生态 2026"
-      - "智能体平台 百度 阿里 字节"
-      - "China AI agent platform landscape"
+      - "中国 AI智能体 Agent 生态 2026年最新进展 竞争格局"
+      - "龙虾大战 OpenClaw-CN 腾讯QClaw 字节DeerFlow"
+      - "中国AI Agent市场 580亿元 CR4 巨头格局"
     wiki_pages:
       - concepts/china-ai-agent-ecosystem
-    notes: "Baidu AgentBuilder、Alibaba Agent、ByteDance Coze (扣子) 等。中国独自のAgent生態系の全体像"
+    notes: "OpenClaw龙虾大战9社同時リリース。DeerFlow 2.0 Super Agent Harness 52K星。ClawHub 13700+Skill/341悪意Skill。MiniMax M2.5月8.1兆Token。金智维Ki-AgentS企業級底座。580亿元市場CR4 78%。"
     added: 2026-04-17
-    last_crawled: 2026-04-20
+    last_crawled: "2026-04-23"
 
-- slug: coze
-  title: "Coze (扣子) — ByteDance Agent Platform"
-  crawl_policy: laterals
-  priority: medium
-  search_hints:
-  - "Coze 扣子 字节跳动 智能体"
-  - "Coze agent platform workflow"
-  wiki_pages:
-  - concepts/coze
-  notes: "ByteDanceのノーコードAgent構築プラットフォーム。Plugin・ワークフロー機能"
-  added: 2026-04-17
-  last_crawled: 2026-04-22
+  - slug: coze
+    title: "Coze (扣子) — ByteDance Agent Platform"
+    crawl_policy: laterals
+    priority: medium
+    search_hints:
+      - "Coze 扣子 字节跳动 智能体"
+      - "Coze agent platform workflow"
+    wiki_pages:
+      - concepts/coze
+    notes: "ByteDanceのノーコードAgent構築プラットフォーム。Plugin・ワークフロー機能"
+    added: 2026-04-17
+    last_crawled: 2026-04-22
 
   - slug: dify
     title: "Dify — Open-Source LLMOps Platform"
@@ -148,7 +148,7 @@ notes: "ByteDance発。中国国内DAU最大級のAIアプリ。Volcano Engine (
       - "Dify AI agent workflow RAG"
     wiki_pages:
       - concepts/dify
-notes: "中国発オープンソースLLMOps。RAG・Agent・Workflow統合プラットフォーム。GitHub stars急増中"
+    notes: "中国発オープンソースLLMOps。RAG・Agent・Workflow統合プラットフォーム。GitHub stars急増中"
   added: 2026-04-17
   last_crawled: 2026-04-21
 
@@ -168,7 +168,7 @@ notes: "中国発オープンソースLLMOps。RAG・Agent・Workflow統合プ�
       - concepts/china-local-deployment
     notes: "VRAM最適化、量子化テクニック（GPTQ/AWQ/GGUF）、消費者GPU（RTX 4090等）でのDeepSeek/Qwen展開"
     added: 2026-04-17
-    last_crawled: null
+    last_crawled: 2026-04-23
 
   - slug: censorship-bypass
     title: "Censorship Bypass & Uncensored Models (审查绕过/去审查模型)"
@@ -196,7 +196,7 @@ notes: "中国発オープンソースLLMOps。RAG・Agent・Workflow統合プ�
       - concepts/vram-optimization
     notes: "前提: PagedAttention, KV-cache圧縮, speculative decoding, flash attention等"
     added: 2026-04-17
-    last_crawled: null
+    last_crawled: 2026-04-23
 
   # =========================================================
   # 4. Chinese Regulatory Landscape (中国AI規制)
@@ -212,7 +212,7 @@ notes: "中国発オープンソースLLMOps。RAG・Agent・Workflow統合プ�
       - "China AI regulation filing policy 2026"
     wiki_pages:
       - concepts/china-ai-regulation
-notes: "生成式AI管理弁法、大模型備案制度、データセキュリティ法との交差。政策動向をdeep dive"
+    notes: "生成式AI管理弁法、大模型備案制度、データセキュリティ法との交差。政策動向をdeep dive"
   added: 2026-04-17
   last_crawled: 2026-04-21
 
@@ -283,14 +283,14 @@ notes: "生成式AI管理弁法、大模型備案制度、データセキュリ�
     crawl_policy: deepdive
     priority: high
     search_hints:
-      - "vibe coding 氛围编程 中国 2026"
-      - "AI编程 自然语言编程 中国开发者"
-      - "Karpathy vibe coding 中文讨论"
+      - "氛围编程 vibe coding 中国 2026年4月 最新进展"
+      - "意图编程 Wish Coding 蚂蚁灵光 闪应用 3000万"
+      - "Vibe Coding 终焉 Agentic Engineering 范式切换"
     wiki_pages:
       - concepts/vibe-coding-china
-    notes: "Karpathy提唱のvibe codingが中国開発者コミュニティでどう受容されているか。V2EX/Juejin/Zhihuでの議論"
+    notes: "Karpathy 2026-02-04 Vibe Coding终焉宣言。蚂蚁灵光闪应用3000万生成・意图编程提唱。Cursor 23億ドルDラウンド估值293億ドル。Trae 600万+ユーザー。国内二大ハードル: ネットワーク接続・Rate Limit。"
     added: 2026-04-17
-    last_crawled: 2026-04-19
+    last_crawled: "2026-04-23"
 
   - slug: china-ai-coding-assistants
     title: "Chinese AI Coding Assistants (国产AI编程助手)"
@@ -310,19 +310,19 @@ notes: "生成式AI管理弁法、大模型備案制度、データセキュリ�
   # 7. Chinese Coding Agent Tools (中国コーディングエージェント)
   # =========================================================
 
-- slug: china-coding-agents
-  title: "Chinese Coding Agent Tools (中国编程Agent工具)"
-  crawl_policy: deepdive
-  priority: high
-  search_hints:
-  - "中国 编程Agent 工具 2026"
-  - "Coding Plan AI编程 自动化"
-  - "Chinese coding agent tools comparison"
-  wiki_pages:
-  - concepts/china-coding-agents
-  notes: "Coding Plan等の中国発コーディングエージェント。Claude Code/Cursor/Devinの中国での採用状況も含む"
-  added: 2026-04-17
-  last_crawled: 2026-04-22
+  - slug: china-coding-agents
+    title: "Chinese Coding Agent Tools (中国编程Agent工具)"
+    crawl_policy: deepdive
+    priority: high
+    search_hints:
+      - "中国 编程Agent 工具 2026"
+      - "Coding Plan AI编程 自动化"
+      - "Chinese coding agent tools comparison"
+    wiki_pages:
+      - concepts/china-coding-agents
+    notes: "Coding Plan等の中国発コーディングエージェント。Claude Code/Cursor/Devinの中国での採用状況も含む"
+    added: 2026-04-17
+    last_crawled: 2026-04-22
 
   - slug: coding-plan
     title: "Coding Plan (编程计划)"

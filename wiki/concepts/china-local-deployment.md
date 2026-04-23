@@ -70,12 +70,26 @@ NVIDIA制裁の影響で、国産チップのローカル推論対応が加速�
 - **AWQ**: 活性化重視量子化、VRAM使用量削減効果大。モバイル/エッジ向け
 - **GGUF (K-Quants)**: CPU/GPUハイブリッド、Mac Siliconで最高性能
 - **FP8 / INT8**: 訓練後量子化（PTQ）、推論速度最大化
+- **Unsloth Dynamic 2.0**: モデル特化逐層差異化量子化。標準imatrix量子化を凌駕するKL散度性能。MoEモデルにMXFP4_MOEフォーマット対応
+
+### Unsloth Dynamic 2.0 — 2026年新トレンド
+
+Unslothチームの**Dynamic 2.0**量子化は、中国開発者コミュニティで急速に採用が広がっている：
+
+1. **逐層差異化量子化**: アテンション層・FFN初期層は8-bit/16-bitを保持。他の層を低精度に圧縮
+2. **モデル特化設計**: GEMMA 3とMiniMax-M2.7では異なる重要層の位置。各モデルに個別に量子化マップを生成
+3. **高品質キャリブレーション**: Wikipediaだけでなく、150万トークン以上の対話データセットをハンドキュレーション
+4. **MoE対応**: MXFP4_MOEフォーマットでDeepSeek/R1/MiniMax-M2.7等のMoEアーキテクチャを最適化
+
+**MiniMax-M2.7のUnsloth Dynamic 2.0量子化版**（2026年4月）は、UD-Q4_K_XLが「スイートスポット」として推奨される。オリジナルモデルとの正確度低下は6.0ポイントのみ、エラー増加率は+22.8%。
 
 ### VRAM最適化テクニック
 - **PagedAttention**: vLLMの核心技術。KVキャッシュをページ単位で管理し、メモリフラグメンテーションを解消
 - **Speculative Decoding**: 小モデルで草案生成→大モデルで検証。2〜3倍の推論速度向上
 - **FlashAttention-3**: 注意力計算のメモリ効率化。長文コンテキスト（128k+）で必須
 - **KV Cache圧縮**: 対話履歴を要約ベクトルに変換し、キャッシュサイズを削減
+- **KVキャッシュ量子化**: Ollamaの`OLLAMA_KV_CACHE_TYPE=q4_0`でRTX 4060 8GBでも32Kコンテキスト対応
+- **TriAttention**（2026年4月）: MIT・NVIDIA・浙江大学の研究。フルAttentionの精度を維持しつつ2.5倍スループット、10.7倍KVメモリ削減
 
 ## コミュニティとエコシステム
 
@@ -90,7 +104,7 @@ NVIDIA制裁の影響で、国産チップのローカル推論対応が加速�
 ## 課題と展望
 
 ### 1. 大規模モデルのVRAM壁
-70B以上のモデルを低VRAMで動かすには**量子化による精度低下**が避けられない。2026年後半には**MoE（Mixture of Experts）アーキテクチャ**のローカル最適化が焦点に。活性化パラメータのみをVRAMに載せる方式（DeepSeek-V4: 1T総パラメータ/11B活性化）が消費者GPUでも実行可能になりつつある。
+70B以上のモデルを低VRAMで動かすには**量子化による精度低下**が避けられない。Unsloth Dynamic 2.0のようなモデル特化量子化で改善が進んでいるが、MoE（Mixture of Experts）アーキテクチャのローカル最適化が2026年後半の焦点に。活性化パラメータのみをVRAMに載せる方式（DeepSeek-V4: 1T総パラメータ/11B活性化）が消費者GPUでも実行可能になりつつある。
 
 ### 2. 国産チップのソフトウェア生態系
 ハードウェア性能は向上しているが、**CUDAエコシステムとの互換性**が依然として課題。PyTorch/TensorFlowの直接サポート、vLLM/llama.cppの安定動作が今後の普及の鍵。
@@ -98,10 +112,13 @@ NVIDIA制裁の影響で、国産チップのローカル推論対応が加速�
 ### 3. 規制のグレーゾーン
 ローカルで動作する国産モデルでも、**生成コンテンツの審査責任**は利用者に課される可能性。2026年3月の「生成AIサービス管理弁法」改正で、ローカルデプロイ事業者への届出義務が議論されている。
 
+### 4. KVキャッシュの次世代最適化
+TriAttention（MIT/NVIDIA/浙大）等新研究により、KVキャッシュの10倍圧縮が可能に。2026年後半には**実装レベルでの採用**が始まる見込み。Ollamaの`OLLAMA_KV_CACHE_TYPE=q4_0`で既にINT4 KVキャッシュ量子化が利用可能。
+
 ## 関連リンク
 
 ### 内部リンク
-- [[vram-optimization]] — 显存最適化技術
+- [[vram-optimization]] — 显存最適化技術（KVキャッシュ圧縮・TriAttention等）
 - [[gguf-quantization]] — GGUF量子化フォーマット
 - [[llama-cpp]] — CPU推論エンジン
 - [[deepseek]] — DeepSeekモデルアーキテクチャ
@@ -114,6 +131,9 @@ NVIDIA制裁の影響で、国産チップのローカル推論対応が加速�
 ### 外部ソース
 | ソース | URL | ティア | 概要 |
 |--------|-----|--------|------|
-| 掘金 — RTX4090本地部署指南 | [juejin.cn/post/7598123456789012](https://juejin.cn) | T2 | ハンズオンチュートリアル |
+| 163 — MiniMax-M2.7量子化 | [163.com/dy/article/KQB87POB0519EA27](https://www.163.com/dy/article/KQB87POB0519EA27.html) | T3 | Unsloth Dynamic 2.0・MLX量子化版 |
+| 掘金 — Ollama+Qwen2026 | [juejin.cn/post/7603677143214473231](https://juejin.cn/post/7603677143214473231) | T1 | 2026最新版Ollama部署ガイド |
+| 阿里云 — 本地AI革命 | [cloud.baidu.com/article/4358934](https://cloud.baidu.com/article/4358934) | T2 | Ollama零依赖部署総合ガイド |
+| 谢先斌 — Ollama設定 | [xiexianbin.cn/ai/ollama](https://www.xiexianbin.cn/ai/ollama/index.html) | T2 | Ollama環境変数・最適化・トラブルシューティング |
 | V2EX — 本地vsAPIコスト比較 | [v2ex.com/t/1208901](https://www.v2ex.com/t/1208901) | T1 | TCO分析スレッド |
 | ModelScope — 量子化モデル一覧 | [modelscope.cn/models](https://modelscope.cn/models) | T1 | GGUF/GPTQ/AWQモデル |
