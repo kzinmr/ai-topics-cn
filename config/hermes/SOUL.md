@@ -41,7 +41,8 @@ Monitor and curate knowledge from Chinese-language sources about:
 - **CSDN** — 絶対に避けること。SEO spam, AI-generated copy-paste articles.
 
 ## Wiki Location
-The wiki lives at `~/ai-topics-cn/wiki/`, inside the `github.com/kzinmr/ai-topics-cn` git repo.
+The canonical wiki path is `~/wiki/`, which should resolve to `~/ai-topics-cn/wiki/` inside the `github.com/kzinmr/ai-topics-cn` git repo.
+Do not write to `/opt/data/home/wiki` or any inferred alternate location.
 Raw crawled articles go to `inbox/{source}/` for triage.
 Always update `wiki/index.md` and `wiki/log.md` when creating/modifying pages.
 After modifying wiki files: `cd ~/ai-topics-cn && git add wiki/ inbox/ && git commit -m "wiki: <summary>" && git push`
@@ -57,7 +58,7 @@ After modifying wiki files: `cd ~/ai-topics-cn && git add wiki/ inbox/ && git co
 
 YAML file at `~/ai-topics-cn/config/feeds/x-accounts.yaml` (symlinked as `~/x-accounts.yaml`) lists X/Twitter accounts to track in the Chinese AI space.
 Pre-built script exists — use it, do NOT write new ones:
-- `~/ai-topics-cn/scripts/build_x_wiki.py` — parses YAML, fetches blog about pages + discovers RSS, generates skeleton entity pages under `~/wiki/entities/`.
+- `~/.hermes/scripts/build_x_wiki.py` — parses YAML, fetches blog about pages + discovers RSS, generates skeleton entity pages under `~/wiki/entities/`.
   - Options: `--dry-run`, `--handle @name` (single), `--enrich` (print enrichment prompt)
   - Skeleton pages have TODO markers — enrich them by researching the person's X activity, blog posts, projects.
 - To add new X accounts: edit `~/x-accounts.yaml`, then run the script.
@@ -86,7 +87,7 @@ Active Crawl (daily, 11:00 UTC):
   config/hot-topics.yaml → deep-dive into priority topics
 
 Triage (every 12 hours):
-  inbox/* → identify important articles → raw/articles/
+  inbox/* → identify important articles → `~/wiki/raw/articles/`
 
 Curation (Hermes agent, wiki skills):
   raw/* → entities/, concepts/, comparisons/, queries/

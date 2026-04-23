@@ -326,4 +326,74 @@ policySettings（managedエージェント）が最も高い優先度を持ち�
 | 掘金 — Kimi K2.5代替 | [juejin.cn/post/7611432757572141096](https://juejin.cn/post/7611432757572141096) | 技術ブログ | T2 |
 | 掘金 — 1M Context + LangChain CVE | [juejin.cn/post/7629308995309322290](https://juejin.cn/post/7629308995309322290) | 技術ブログ | T2 |
 | V2EX — 身分認証議論 | [v2ex.com/t/1206060](https://www.v2ex.com/t/1206060) | フォーラム | T2 |
-| X — @theo（デスクトップ版Bug報告） | [x.com/theo/status/2044680030706663726](https://x.com/theo/status/2044680030706663726) | SNS | T2 |
+|| X — @theo（デスクトップ版Bug報告） | [x.com/theo/status/2044680030706663726](https://x.com/theo/status/2044680030706663726) | SNS | T2 |
+
+## 04-23追加動向（2026-04-23クロール分）
+
+### Claude Code Pro — サブスクリプションモデルの転換信号
+
+36krは**「Anthropic偷偷移除Pro用户Claude Code访问权」**と報道。AnthropicがClaude CodeをProサブスクリプションページから一時的に削除し、開発者から大きな反発を招いた。数時間後に撤回（小規模テストの2%のみ）。
+
+**重要な示唆**:
+- **Claude Code**の長時間・多ターン・プロジェクトレベル使用は、Pro固定月額コストを大幅に超える
+- Anthropicは既に「サブスク枠」と「実消費量」をExtra Usageで分離
+- **エンタープライズ**: セート料金 + API使用量、分離課金
+- **チームプラン**: $100追加セート、高い枠を付与
+- **2026年3月**: Anthropicは無料/Pro/Max/Teamの5時間制限をオフピークに2倍化
+- **2026年4月**: OpenClawの第三者ツールアクセス制限も開始
+
+> 「これはAIプログラミングツールの『無制限月額サブスク』の終焉の始まりである」
+> — 分析コメント
+
+> **出典**: 36kr — [https://36kr.com/p/3777836165223426](https://36kr.com/p/3777836165223426) [T1]
+
+### Claude Code → Kimi K2.5 / GLM-4.7 へのモデル切替
+
+掘金的な実証記事が大きな反響を呼んだ：**「Claude Code 换成了Kimi K2.5后，再也回不去」**（Claude CodeをKimi K2.5に切り替えた後、もう戻れなくなった）。
+
+**設定方法**（Anthropic公式API互換エンドポイント）:
+```
+GLM-4.7: ANTHROPIC_BASE_URL=https://open.bigmodel.cn/api/anthropic
+         ANTHROPIC_MODEL=GLM-4.7
+Kimi K2.5: ANTHROPIC_BASE_URL=https://api.moonshot.cn/anthropic
+           ANTHROPIC_MODEL=kimi-k2.5
+```
+
+**切り替えツール**: `claude-code-router`（ccr use kimi / ccr use glm / ccr use claude）
+
+**主なメリット**:
+- 身分認証（KYC）不要
+- 安定性向上（アカウント停止・タイムアウトが解消）
+- パフォーマンス: Kimi K2.5はOpenRouterとOpenClawのベンチで**No.1**
+- コスト: Claude Proより低コスト
+
+**切り替え後のワークフロー変化**:
+- 従来: Cursor 60% + Claude Code 40% → 切り替え後: Claude Code + 国産モデルに統一
+
+> **出典**: 掘金 — [https://juejin.cn/post/7611432757572141096](https://juejin.cn/post/7611432757572141096) [T2]
+
+### Skills + MCPエコシステムの進化 — 32 Skills + 8 MCP完全ガイド
+
+掘金的な包括的ガイドがClaude Codeエコシステムの成熟を象徴している：
+
+**Skillsのインストール**: `npx skills add <repo> -y -g`（-gでグローバル）
+
+**主要Skillsカテゴリ**:
+- **フロントエンド**: frontend-design, web-artifacts-builder, vercel-react-best-practices
+- **ドキュメント**: technical-writer, docx/pptx/xlsx/pdf
+- **アーキテクチャ**: planning-with-files, requesting-code-review, architecture-patterns
+- **メモリ**: memory-intake, memory-audit
+- **デバッグ**: systematic-debugging
+
+**主要MCPサーバー**:
+- Neural Memory（長期的構造化メモリ）
+- Filesystem（ローカルファイルアクセス）
+- Playwright（ブラウザ自動化/E2Eテスト）
+- Figma（デザイン仕様の統合）
+
+**注意点**:
+- 20個以上のSkillsを同時にインストールしない（コンテキスト負荷増加）
+- Skillsインストール後は必ずClaude Codeを再起動
+- Filesystem MCPへのアクセスはルートディレクトリには許可しない
+
+> **出典**: 掘金 — [https://juejin.cn/post/7620060655607857178](https://juejin.cn/post/7620060655607857178) [T2]

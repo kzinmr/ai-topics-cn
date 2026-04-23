@@ -1,7 +1,7 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-04-22
-エンティティ: 38, コンセプト: 58, 比較: 1
+最終更新: 2026-04-23
+エンティティ: 38, コンセプト: 59, 比較: 1
 
 ## エンティティ (Entities)
 
@@ -78,6 +78,7 @@
 - [[transpec|Transpec — 仕様駆動開発フレームワーク間変換ツール]]
 - [[vector-db|Vector DB（向量数据库）— RAG・AI検索の基盤インフラ]]
 - [[vibe-coding|Vibe Coding（氛围编程）— AIネイティブなソフトウェア開発手法]]
+- [[in-context-learning|In-context Learning（ICL）— コンテキスト内学習]]
 |- [[vibe-coding-china|Vibe Coding中国 — 氛围编程受容とAgentic Engineeringへの進化]]
 |- [[android-cli|Android CLI — Google Agent-first開発時代向けAndroid開発ツール]]
 |- [[browser-use|browser-use — ブラウザAgentのDOM処理パイプライン]]
@@ -119,3 +120,7 @@
 - [CreatorWeave：一个本地优先的浏览器创作工作空间（工作区并行 + 多智能体探索）](raw/articles/2026-04-16-CreatorWeave-一个本地优先的浏览器创作工作空间-工作区并行-多智能体探索-1b65a1df.md)
 - [啃了那篇 54 页的 Agent Harness 综述, 给大伙讲个省流版](raw/articles/2026-04-15-啃了那篇-54-页的-Agent-Harness-综述-给大伙讲个省流版-f121e212.md)
 - [Claude Code 也能玩 Galgame —— 灵魂杀手 Agent 及 skill 创建器](raw/articles/2026-04-15-Claude-Code-也能玩-Galgame-灵魂杀手-Agent-及-skill-创建器-0ec16492.md)
+- [RAG 架构设计深度解析：从向量数据库选型到生产级检索系统](raw/articles/2026-04-23-RAG-架构设计深度解析-从向量数据库选型到生产级检索系统-22c6986e.md)
+- [从Claude Code泄露源码看工程架构：第九章 — Claude Code 与架构的总结展望](raw/articles/2026-04-21-从Claude-Code泄露源码看工程架构-第九章-Claude-Code-与架构的总结展望-aced9f43.md)
+- [大模型根本不是“学会了”，它只是会“看例子”：一文讲透 In-context Learning（ICL）](raw/articles/2026-04-20-大模型根本不是-学会了-它只是会-看例子-一文讲透-In-context-Learning-ICL-bdfa5625.md)
+- [大模型训练全流程实战指南工具篇（十一）—— 大模型训练参数调优实战](raw/articles/2026-04-19-大模型训练全流程实战指南工具篇-十一-大模型训练参数调优实战-从小白到调参高手-1995371e.md)

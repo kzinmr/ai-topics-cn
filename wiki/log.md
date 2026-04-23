@@ -988,3 +988,32 @@ Originating conversation: (scheduled cron)
 - multimodal-ai (high priority)
 - rlhf-alignment (medium priority)
 - fine-tuning (medium priority)
+
+## 2026-04-23 Triage — Raw Articles + Wiki Pages
+
+### インボックス状況
+- **inbox/juejin/**: 200件（クロール済み、一部重複）
+- **inbox/36kr/**: 94件（全件rawに保存済み）
+- **inbox/v2ex/**: 384件（未処理、スパム率高）
+- **inbox/wechat-media/**: 90件（未処理）
+- **inbox/newsletters/**: 32件（未処理）
+
+### Raw Articles 追加
+- **7件**を `wiki/raw/articles/` に追加（Juejin 7件）
+  - 大模型训练参数调优（912B）
+  - RAG架构设计深度解析（824B）
+  - Claude Code架构总结展望（831B）
+  - In-context Learning ICL解説（800B）
+  - LangChain RAG安全加固（822B）
+  - LangChain RAG评估实战（815B）
+  - LangChain Agent Function Calling（816B）
+
+### Wiki Pages 作成・更新
+- **新規**: `concepts/in-context-learning.md` — ICLの基本概念解説ページ
+- **更新**: `concepts/rag.md` — 掘金RAG架构设计深度解析記事を外部ソーステーブルに追加
+
+### 次回対応
+- V2EXトリアージ（20%フィルター適用、スパム・求人情報・広告を除外）
+- Newsletters（58件）の処理
+- WeChat media（28件）の処理
+- 多模态/Multimodal AIの概念ページ作成（cn-media-analysis recommendation）
