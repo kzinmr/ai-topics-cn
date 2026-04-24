@@ -1230,3 +1230,43 @@ Originating conversation: (scheduled cron)
 ### 温度差検出
 1. **DeepSeek V4価格問題**: 36krは「成本暴降73%」とポジティブだが、V2EXは「太贵了、早点出coding plan」と実利用者の価格不満。国産モデルのマーケティング vs 実力ギャップ
 2. **GPT-5.5 vs Claude**: V2EXでは「天下苦Claude久矣」とClaudeユーザーのGPT-5.5への移行関心が強い。JuejinではKimi K2.5をClaude Codeの代替として実践検証
+
+## [2026-04-24] cn-media-analysis | DeepSeek V4 / GPT-5.5 同時リリース — 3モデル比較分析
+
+### インボックス状況（スクリプトエラーあり）
+- **checkpoint**: 失敗（ok=false — JSONパースエラー）
+- **収集数**: V2EX:40, Juejin:38, 36kr:39, WeChat:17, 総計:134件（Daily Digest: 60件）
+
+### 主要トピック
+| トピック | ボリューム | 主要ソース |
+|----------|-----------|------------|
+| **DeepSeek V4リリース** | 50+件 | 全ソース（V2EX/Juejin/36kr/WeChat） |
+| **GPT-5.5リリース** | 30+件 | 36kr/Juejin/V2EX |
+| **3モデル同時アップデート** | 15+件 | V2EX |
+| **Claude Code制限/Pro排除** | 5件 | Juejin/V2EX |
+| **昇騰950対応** | 3件 | 36kr/V2EX |
+| **Kimi K2.5代替** | 2件 | Juejin |
+| **GPT-Image-2** | 3件 | Juejin/36kr |
+
+### ソース間温度差
+
+**1. DeepSeek V4価格問題**: 36krは「成本暴降73%」と超肯定的だが、V2EXは「V4变强了，但是也太贵了」と実利用者の価格不満。国産モデルのマーケティング vs 実力ギャップが顕在化。
+
+**2. GPT-5.5 vs Claudeユーザー離れ**: V2EXで「天下苦Claude久矣」— Claudeの価格/制限問題に苦しんだユーザーがGPT-5.5に期待。Juejinで「手握GLM,MiniMax一堆Key，却只开一个Claude？太亏了」— 国産モデル活用の現実的提案。
+
+**3. 昇騰エコシステム**: 36krで「黄仁勋说这是"灾难"」「DeepSeek-V4明确支持华为昇腾950芯片」— 米国GPU依存からの脱却を戦略的意義として強調。V2EXでは「之前难产真是适配昇腾?」— V4遅延の昇騰要因説が浮上。
+
+### Wiki更新
+| ページ | 更新内容 |
+|--------|---------|
+| `entities/deepseek.md` | V4技術特長（百万字コンテキスト、Agent能力、昇騰950）、データ品質懸念、ソース間比較表追加 |
+| `entities/claude-code.md` | Proユーザー排除懸念、Kimi K2.5代替事例、OpenClaw IP Ban問題追記 |
+
+### トレンド伝播パターン
+
+| トピック | 初出ソース | 初出日 | 拡散先 | 変容 |
+|----------|-----------|--------|--------|------|
+| DeepSeek V4 | WeChat/36kr | 04-24 | Juejin→V2EX | 公式発表→ベンチマーク→実使用感 |
+| GPT-5.5 | 36kr | 04-24 | Juejin→V2EX | ニュース→技術検証→比較論 |
+| Claude Code制限 | Juejin | 04-24 | V2EX | 実践報告→懸念共有 |
+| Kimi K2.5代替 | Juejin | 04-24 | — | 孤立トピック（エコーチェンバー懸念） |
