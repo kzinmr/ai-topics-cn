@@ -2,6 +2,44 @@
 
 Chronological record of wiki operations.
 
+## [2026-04-25] active-crawl-01 | アクティブ知識 crawl — 5ページ更新 + 新規作成
+
+### 更新ページ（4件）
+1. **china-ai-regulation.md** — 2026年4月新規定追加:
+   - AI科技伦理审查与服务办法（试行）: 2026.04.02发布
+   - AI拟人化互动服务管理暂行办法: 2026.07.15施行
+   - テーブル形式統一（|| → |）
+
+2. **coding-plan.md** — 阿里云 Coding Plan 最新比較追加:
+   - Qwen-3.5 + Kimi-K2.5 + GLM-4.7 vs 火山云 Doubao-Seed-2.0-Code + GLM-4.7
+   - リクエスト課金モデル vs 従量課金モデル比較
+   - Claude Code顔認証強化で海外からCoding Plan需要急増
+
+3. **chatglm.md** — GLM-5.1詳細追加:
+   - GLM-5.1: 2000万Tokens無料登録、GLM Proプラン(120元/月)統合
+   - z.aiプラットフォーム: MCP/RAG/智能体市场統合
+   - GLM-5.1 codingベンチ: SWE-bench VerifiedでClaude Opus 4.5同等
+
+4. **doubao.md** — 大規模追加（2026.04.16以降）:
+   - Dola海外版累計2億ダウンロード突破（2026年Q1、7200万/单季）
+   - 豆包股虚拟制度: 首次回购13.08美元（+30%）
+   - Doubao-Seed-2.0 ベンチマーク: GPT-5を9基準で凌駕
+   - 中国模型周间调用量2026年2月に米国モデルを初めて逆転（4.12万亿 vs 2.94万亿）
+
+### 新規作成ページ（1件）
+5. **china-ai-model-filing.md** — 大模型备案制度:
+   - 大模型备案 + 大模型登记 + 算法备案 の3類型
+   - 796款备案済み（2025.02時点）。北京225款で全国30%首位
+   - 双备案制度、备案流程6ステップ詳細化
+   - 2026年7月新標準施行
+
+### hot-topics.yaml更新
+- chatglm: last_crawled 2026-04-20 → 2026-04-25
+- doubao: last_crawled 2026-04-21 → 2026-04-25
+- coding-plan: last_crawled null → 2026-04-25
+- china-ai-regulation: last_crawled 2026-04-21 → 2026-04-25
+- china-ai-model-filing: last_crawled null → 2026-04-25
+
 ## [2026-04-15] init | Wiki initialized
 
 Created wiki structure for Chinese-language AI topics monitoring.
