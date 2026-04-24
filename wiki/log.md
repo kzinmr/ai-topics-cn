@@ -1,6 +1,108 @@
 # Wiki Log
 
-Chronological record of wiki operations.
+Chronological record
+## [2026-04-24] triage-09 | OpenClaw/MCPセキュリティ記事の確認
+
+### インボックス状況
+- **checkpoint**: 20260424T042656Z (ok=true)
+- **総カウント**: 36kr:109, juejin:215, v2ex:411, wechat:106, newsletters:63, daily_digests:10
+
+### 処理結果
+- **take**: 1件（OpenClaw/MCPセキュリティ）→ **既に取り込み済み**。既存wiki `concepts/mcp-security.md` に統合済み、raw記事も `index.md` 参照済み
+- **wiki新規**: 0 / **wiki更新**: 0
+ of wiki operations.
+
+## [2026-04-24] triage-08 | 概念ページ5件新規作成 — GPT, 多模态, 量化, 微调, RLHF/对齐
+
+### インボックス状況
+- **inbox/v2ex/**: トレンド集計済み（2026-04-10〜24、59日分）
+- **inbox/juejin/**: トレンド集計済み
+- **inbox/36kr/**: トレンド集計済み
+- **inbox/wechat/**: トレンド集計済み
+
+### trending-topics分析結果（2026-04-10〜24、59日分）
+
+| # | トピック | 言及数 | 変化 | 対応 |
+|---|---------|--------|------|------|
+| 1 | Claude | 106 | 安定 | 既存entity更新済み |
+| 2 | AI Agent/智能体 | 111 | ↑ | 既存concept更新済み |
+| 3 | GPT | 74 | ⬆️ 上昇 | **新規concept** |
+| 4 | 量化/Quantization | 59 | ⬇️ 低下 | **新規concept** |
+| 5 | 微调/Fine-tuning | 59 | ⬇️ 低下 | **新規concept** |
+| 6 | RLHF/对齐 | 59 | ⬇️ 低下 | **新規concept** |
+| 7 | 多模态/Multimodal | 44 | ⬆️ 上昇 | **新規concept** |
+| 8 | MCP | 42 | ⬆️ 上昇 | 既存concept |
+| 9 | Gemini | 39 | 安定 | 既存entity |
+| 10 | Cursor | 35 | 安定 | 既存entity |
+| 11 | DeepSeek | 32 | 安定 | 既存entity |
+| 12 | Vibe Coding | 31 | 安定 | 既存concept |
+| 13 | ChatGLM | 30 | 安定 | 既存entity |
+| 14 | Llama | 27 | 安定 | 既存entity |
+| 15 | OpenClaw | 25 | 安定 | 既存entity |
+
+### 新規作成ページ
+
+| ページ | 種別 | 言及数 | 主要トピック |
+|--------|------|--------|-------------|
+| `concepts/gpt.md` | Concept | 74 | GPT-5.5漏洩、ChatGPT Images 2.0、GPT Pro速度4倍、Codex統合 |
+| `concepts/quantization.md` | Concept | 59 | GGUF/GPTQ/AWQ、FP8/FP4新規格、GPU Cloud、HuggingFace Hub |
+| `concepts/fine-tuning.md` | Concept | 59 | LoRA/QLoRA、Axolotl、Unsloth、TRL、GRPO微调 |
+| `concepts/rlhf-alignment.md` | Concept | 59 | RLHF/DPO/GRPO、安全对齐、中国規制 |
+| `concepts/multimodal.md` | Concept | 44 | GPT Image 2.0、Sora/Kling、Qwen3.5 VL、多模态理解 |
+
+### trending-topicsの主要イベント（GPT, 多模态, 量化, 微调, RLHF/对齐）
+
+#### GPT関連（74言及）
+- **GPT-5.5漏洩事件（04-23）**: Codex内部テスト環境からGPT-5.5、「风速狗（Arcanine）」「海森堡」「Glacier」がリーク。Sam Altmanの「Transformerを超えるアーキテクチャ」発言と相まって巨大話題
+- **ChatGPT Images 2.0（04-22）**: GPT-5の生図能力がChatGPTに統合。Nano Bananaを凌駕、デザイナー業界に衝撃
+- **GPT Pro速度4倍（04-20）**: 「神级操作」で速度向上、GPT-5.5早期説浮上
+- **Codex重构（04-15）**: GPT-5.4 HarnessがCodexに7つのサンドボックスとして統合
+- **GPT低価格サブスク**: アングラ流通サブスクが公式に露見、V2EXで大炎上
+- **GPT vs Claude Opus 4.6（04-16）**: コーディング比較でGPT-4oがClaudeに劣る報告
+- **GPT Images生图性能（04-18）**: V2EXで「gpt-image-2 生图确实很顶啊」
+
+#### 多模态関連（44言及）
+- **GPT Image 2.0**: Nano Banana比較、大米刻字機能
+- **Kling: 快手2026年最强视频生成**: 快手動画生成モデル
+- **Sora vs Sora 2**: 動画生成進化
+- **Sora 3D**: 3D動画生成
+- **多模态AI産業応用**: 産業への統合
+- **Qwen3.5 VL**: 通义千问のVision Languageバージョン
+- **音频理解**: 音声理解技術
+- **Sora**: OpenAI動画生成モデル
+- **Qwen VL**: V2EX議論
+
+#### 量化関連（59言及）
+- **LLM推理优化**: 36krで推理最適化の包括的分析
+- **GPU Cloud**: 中国GPUクラウドインフラ
+- **GGUF/GPTQ**: ローカルLLM推論の主流フォーマット
+- **FP8新規格**: 2026年の新量化形式
+
+#### 微调関連（59言及）
+- **微调: 从基础到高级**: 36krで微调の包括的解説
+- **Qwen3.5微调**: 通义千问の社区微调
+- **Qwen3.5 GRPO微调**: GRPOを活用した对齐
+- **微调的産業応用**: 産業への適用
+- **LoRA/QLoRA**: 低コスト微调手法
+
+#### RLHF/对齐関連（59言及）
+- **微调: 从基础到高级**: RLHF/DPO/GRPOの包括的分析
+- **对齐: 安全与道德**: 安全对齐の議論
+- **Qwen3.5 GRPO对齐**: GRPOを活用した对齐
+
+### index.md更新
+- 最終更新: 2026-04-23 → 2026-04-24
+- エンティティ: 38 → 38
+- コンセプト: 59 → 64（+5）
+- 比較: 1 → 1
+- 5新conceptリンク追加（gpt, quantization, fine-tuning, rlhf-alignment, multimodal）
+
+### Wiki統計
+- **Entity Pages**: 38（+0）
+- **Concept Pages**: 64（+5: gpt, quantization, fine-tuning, rlhf-alignment, multimodal）
+- **Comparison Pages**: 1（+0）
+- **Total Pages**: 103（+5）
+- **Last Updated**: 2026-04-24
 
 ## [2026-04-25] active-crawl-01 | アクティブ知識 crawl — 5ページ更新 + 新規作成
 

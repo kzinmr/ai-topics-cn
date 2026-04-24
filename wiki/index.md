@@ -1,7 +1,7 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-04-23
-エンティティ: 38, コンセプト: 59, 比較: 1
+最終更新: 2026-04-24
+エンティティ: 38, コンセプト: 64, 比較: 1
 
 ## エンティティ (Entities)
 
@@ -61,6 +61,11 @@
 - [[claude-design|Claude Design — Anthropicのデザインツール（Figma/Canva競合）]]
 - [[coding-plan|Coding Plan（编程计划）— 中国発AIコーディングサブスクリプションモデル]]
 - [[function-calling|Function Calling（関数呼び出し）— LLMと外部APIを接続する核心メカニズム]]
+- [[gpt|GPT — OpenAIの言語モデルシリーズ]]
+- [[multimodal|多模态/Multimodal — 複数のモダリティを統合するAI]]
+- [[quantization|量化/Quantization — LLMの効率的な推論技術]]
+- [[rlhf-alignment|RLHF/对齐 — 人間のフィードバックによるLLMの対話最適化]]
+- [[fine-tuning|微调/Fine-tuning — 大規模モデルの特定ドメイン適応]]
 - [[glory-ai-phone|荣耀AI手机专访 — 端侧AIのキャリアと未来]]
 - [[gomcp|GoMCP — Go言語MCP Serverフレームワーク]]
 - [[gpu-sanctions-china|中国GPU制裁・半導体輸出制限 — 米中AI競争と国産化動向]]
