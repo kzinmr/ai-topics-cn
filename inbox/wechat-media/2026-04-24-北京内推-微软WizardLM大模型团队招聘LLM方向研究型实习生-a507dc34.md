@@ -1,7 +1,7 @@
 ---
 title: "北京内推 | 微软WizardLM大模型团队招聘LLM方向研究型实习生"
 source: wechat-media
-url: "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS2-dmXm7jGpkfv3QlKJfbxZYT-Pkd4vx7lqXa8Fplpd9jKlzGL_mlqJxKQD5mptFCg4TpZ9XvJ1DjfA3yp-6XXLhAQGGwbY4AHlupAroWz6j1zzN6hwCwfobNbn5KcgwbPV_VD9ZMkkUPZiFWRDhskebEN4SdkvuxOKWHrkDr69b1gXeC97Q56f6SzbFoa2lY4I4_4Y_wrq3QH4w_T-YjYLs46dn8Efgxg..&type=2&query=PaperWeekly LLM AI Agent %E5%A4%A7%E6%A8%A1%E5%9E%8B&token=FD8A8A7168F3399DA7A1F78B8D388D36A74E7E3669EAF108"
+url: "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS2-dmXm7jGpk9A1TtIx2-w1YT-Pkd4vx7lqXa8Fplpd9jKlzGL_mlqJxKQD5mptFCg4TpZ9XvJ1DjfA3yp-6XXLhAQGGwbY4ACAQn6gQfcl3o-K0maiYIBgkeX7OdUwILhxTL-C9HqMgTpWlxjkojpZsuVQBLLlRuL9ah-ChHfHoRP-_YYmGsfGmZxjPvFqaOUXm8npjZrUN7KX7t5_QnC-rCDCayYmfpA..&type=2&query=PaperWeekly LLM AI Agent %E5%A4%A7%E6%A8%A1%E5%9E%8B&token=FF4A0557D842892C171046261489FAD6178429B269EB3186"
 author: "PaperWeekly"
 date: 2024-01-09
 score: 0
@@ -18,4 +18,4 @@ tags: ["大模型", "LLM"]
 - 大模型
 - LLM
 
-[原文链接](https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS2-dmXm7jGpkfv3QlKJfbxZYT-Pkd4vx7lqXa8Fplpd9jKlzGL_mlqJxKQD5mptFCg4TpZ9XvJ1DjfA3yp-6XXLhAQGGwbY4AHlupAroWz6j1zzN6hwCwfobNbn5KcgwbPV_VD9ZMkkUPZiFWRDhskebEN4SdkvuxOKWHrkDr69b1gXeC97Q56f6SzbFoa2lY4I4_4Y_wrq3QH4w_T-YjYLs46dn8Efgxg..&type=2&query=PaperWeekly LLM AI Agent %E5%A4%A7%E6%A8%A1%E5%9E%8B&token=FD8A8A7168F3399DA7A1F78B8D388D36A74E7E3669EAF108)
+[原文链接](https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS2-dmXm7jGpk9A1TtIx2-w1YT-Pkd4vx7lqXa8Fplpd9jKlzGL_mlqJxKQD5mptFCg4TpZ9XvJ1DjfA3yp-6XXLhAQGGwbY4ACAQn6gQfcl3o-K0maiYIBgkeX7OdUwILhxTL-C9HqMgTpWlxjkojpZsuVQBLLlRuL9ah-ChHfHoRP-_YYmGsfGmZxjPvFqaOUXm8npjZrUN7KX7t5_QnC-rCDCayYmfpA..&type=2&query=PaperWeekly LLM AI Agent %E5%A4%A7%E6%A8%A1%E5%9E%8B&token=FF4A0557D842892C171046261489FAD6178429B269EB3186)

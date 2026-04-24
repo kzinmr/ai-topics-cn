@@ -1182,3 +1182,51 @@ Originating conversation: (scheduled cron)
 - Newsletters（58件）の処理
 - WeChat media（28件）の処理
 - 多模态/Multimodal AIの概念ページ作成（cn-media-analysis recommendation）
+
+## 2026-04-24 Triage — Crawl & Triage + Media Trend Analysis
+
+### チェックポイント
+- **Run ID**: 20260424T090205Z
+- **収集候補**: 15件（V2EX 9, Juejin 7, 36kr 1）
+
+### トリアージ結果
+| アクション | 件数 | 詳細 |
+|------------|------|------|
+| ✅ Take | 4件 | V2EX: 3件, 36kr: 1件 |
+| ⚠️ Reference | 3件 | V2EX: 3件（GPT-6.0噂、Deep Research、GPT Plus） |
+| ❌ Skip | 8件 | Juejin旧記事再生成5件、V2EX重複3件 |
+
+### Wiki Pages 更新
+1. **`concepts/ai-safety-subconscious.md`** — V2EX star7th氏による「開発者のAIプライバシー無関心」議論を追加（2026-04-24）
+   - 開発者心理学としての意義（慣れによる安心感の誤認、便益とリスクの非対称評価）
+   - 「防君子不防小人」論 — 形式的安全対策への不信
+2. **`pages/openai-codex-infrastructure.md`** — SSH远程开发の「偷偷加了」透明性懸念を明記
+3. **`concepts/mcp-security.md`** — 既知のトピック（OpenClaw 12隐患、GPT脆弱性）を既にカバー済
+
+### Raw Articles 追加
+- **1件**: `wiki/raw/articles/2026-04-24-v2ex-star7th-ai-privacy-concern.md`
+
+### 本日の主要トピック（Daily Digest 2026-04-24）
+
+| トピック | ボリューム | 主要ソース |
+|----------|-----------|------------|
+| **DeepSeek V4リリース** | 15+件 | V2EX, Juejin, 36kr, WeChat |
+| **GPT-5.5リリース** | 10+件 | 36kr, Juejin, V2EX |
+| **Claude→Kimi K2.5置換** | 3-5件 | Juejin |
+| **OpenClawセキュリティ** | 2-3件 | 36kr, Juejin |
+| **MCPプロトコル** | 3件 | Juejin |
+| **AIプライバシー意識** | 1件 | V2EX（星7th） |
+| **华为昇騰950対応** | 2件 | 36kr |
+| **Coding Plan** | 2件 | V2EX |
+
+### ソース間比較 — DeepSeek V4 vs GPT-5.5 同時リリース
+
+| 指標 | V2EX（開発者） | Juejin（実装者） | 36kr（ビジネス） | WeChat（深層分析） |
+|------|---------------|------------------|-------------------|-------------------|
+| **DeepSeek V4** | 「V4变强了，但是也太贵了」「早点出coding plan」— コスト懸念強 | 「天下苦Token久矣，DeepSeekV4终于来了」— 歓迎論 | 「成本暴降73%」「华为昇腾950明示支持」— 産業分析 | AIAgent関連の文脈で言及 |
+| **GPT-5.5** | 「天下苦Claude久矣，GPT就出招了」— Claudeユーザーの移行 | 「全榜第一碾压Opus 4.7」— ベンチマーク重視 | 「不卖Token了」「最强模型不是嘴炮」— ビジネスモデル変革 | Vision Bananaの生成理解 |
+| **温度差** | コストと実使用感に焦点 | 実践的価値に焦点 | 市場インパクトに焦点 | 技術的新規性 |
+
+### 温度差検出
+1. **DeepSeek V4価格問題**: 36krは「成本暴降73%」とポジティブだが、V2EXは「太贵了、早点出coding plan」と実利用者の価格不満。国産モデルのマーケティング vs 実力ギャップ
+2. **GPT-5.5 vs Claude**: V2EXでは「天下苦Claude久矣」とClaudeユーザーのGPT-5.5への移行関心が強い。JuejinではKimi K2.5をClaude Codeの代替として実践検証

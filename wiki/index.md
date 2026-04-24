@@ -3,6 +3,10 @@
 最終更新: 2026-04-24
 エンティティ: 38, コンセプト: 76, ダイエスト: 7, 比較: 1, ページ: 1
 
+### 本日更新（2026-04-24）
+- `concepts/ai-safety-subconscious.md` — V2EX開発者のAIプライバシー意識セクション追加
+- `pages/openai-codex-infrastructure.md` — SSH「偷偷加了」透明性懸念明記
+
 ## エンティティ (Entities)
 
 - [[anthropic|anthropic]]
