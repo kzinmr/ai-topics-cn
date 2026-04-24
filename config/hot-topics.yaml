@@ -63,9 +63,9 @@ topics:
       - "Zhipu AI ChatGLM latest"
     wiki_pages:
       - concepts/chatglm
-    notes: "清華大学系スタートアップZhipu AI。GLM-4シリーズ、学術寄りのアプローチ"
+    notes: "清華大学系スタートアップZhipu AI。GLM-4シリーズ、学術寄りのアプローチ。GLM-5.1は2000万Tokens無料登録、GLM Proプラン(120元/月)に統合。z.aiプラットフォームでMCP/RAG/智能体市场を統合。"
     added: 2026-04-17
-    last_crawled: 2026-04-20
+    last_crawled: 2026-04-25
 
   - slug: kimi
     title: "Kimi — Moonshot AI (月之暗面)"
@@ -104,9 +104,9 @@ topics:
       - "火山引擎 Volcano Engine AI"
     wiki_pages:
       - concepts/doubao
-    notes: "ByteDance発。中国国内DAU最大級のAIアプリ。Volcano Engine (火山引擎) でAPI提供"
+    notes: "ByteDance発。中国国内DAU最大級のAIアプリ。Doubao-Seed-2.0リリース（2026.02）。Dola海外版累計2億ダウンロード突破（2026.04）。豆包股仮想制度。Seed-CodeがGPT-5を9基準で凌駕。"
   added: 2026-04-17
-  last_crawled: 2026-04-21
+  last_crawled: 2026-04-25
 
   # =========================================================
   # 2. Chinese AI Agent Ecosystem (中国AIエージェント)
@@ -212,9 +212,9 @@ topics:
       - "China AI regulation filing policy 2026"
     wiki_pages:
       - concepts/china-ai-regulation
-    notes: "生成式AI管理弁法、大模型備案制度、データセキュリティ法との交差。政策動向をdeep dive"
+    notes: "生成式AI管理弁法、大模型備案制度、データセキュリティ法との交差。2026年新規: AI拟人化互动服务管理暂行办法（7月施行）、AI科技伦理审查与服务办法（4月施行）。政策動向をdeep dive"
   added: 2026-04-17
-  last_crawled: 2026-04-21
+  last_crawled: 2026-04-25
 
   - slug: china-ai-model-filing
     title: "AI Model Filing System (大模型备案制度)"
@@ -225,9 +225,9 @@ topics:
       - "中国 AI模型 上线审批"
     wiki_pages:
       - concepts/china-ai-model-filing
-    notes: "中国独自のAIモデル登録制度。横方向: アルゴリズム推薦管理規定、データ越境規制との関連"
+    notes: "中国独自のAIモデル登録制度。横方向: アルゴリズム推薦管理規定、データ越境規制との関連。2025年2月時点で796款备案済み。北京が225款で全国約30%首位。2026年7月新標準施行。"
     added: 2026-04-17
-    last_crawled: null
+    last_crawled: 2026-04-25
 
   - slug: china-gpu-restrictions
     title: "GPU Export Restrictions & China's Response (芯片出口管制)"
@@ -333,9 +333,9 @@ topics:
       - "Coding Plan agent 中国"
     wiki_pages:
       - concepts/coding-plan
-    notes: "中国発コーディングエージェントツール。機能・ユースケースの深掘り"
+    notes: "中国発コーディングエージェントツール。機能・ユースケースの深掘り。阿里云Qwen-3.5+Kimi-K2.5+GLM-4.7、火山云Doubao-Seed-2.0-Code+GLM-4.7の比較。リクエスト課金モデルでClaude Code代替として海外から需要急増。"
     added: 2026-04-17
-    last_crawled: null
+    last_crawled: 2026-04-25
 
   - slug: cursor-china-adoption
     title: "Cursor Adoption in China (Cursor中国使用情况)"

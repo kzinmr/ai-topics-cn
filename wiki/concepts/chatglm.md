@@ -3,8 +3,8 @@ title: "ChatGLM (智谱清言) — Zhipu AI"
 type: concept
 tags: [LLM, chinese-ai, open-source, agent, zhipu, multimodal]
 created: 2026-04-20
-updated: 2026-04-20
-aliases: ["智谱清言", "GLM-4", "GLM-5", "Zhipu AI", "智谱AI"]
+updated: 2026-04-25
+aliases: ["智谱清言", "GLM-4", "GLM-5", "GLM-5.1", "GLM-5-Turbo", "Zhipu AI", "智谱AI"]
 source_lang: zh-CN
 ---
 
@@ -17,8 +17,9 @@ source_lang: zh-CN
 | **上場** | 香港交易所 02513.HK |
 | **代表モデル** | GLM-5, GLM-5.1, GLM-4.7, GLM-4.6V, GLM-PC |
 | **アーキテクチャ** | GLM（General Language Model）独自アーキテクチャ |
-| **开源** | GLM-4.7, GLM-4.6V, CogAgent-9B 等开源済み |
-| **プラットフォーム** | [chatglm.cn](https://chatglm.cn/), [open.bigmodel.cn](https://open.bigmodel.cn/) |
+| **开源** | GLM-4.7、GLM-4.6V、CogAgent-9B 等开源済み |
+| **最新モデル** | GLM-5、GLM-5.1、GLM-5-Turbo |
+| **プラットフォーム** | [chatglm.cn](https://chatglm.cn/)、[open.bigmodel.cn](https://open.bigmodel.cn/)、[z.ai](https://z.ai) |
 | **ウェブサイト** | [zhipuai.cn](https://www.zhipuai.cn/zh) |
 
 ## 概要
@@ -35,12 +36,15 @@ source_lang: zh-CN
   - **开源**: 权重公开済み
 
 - **GLM-5.1**: GLM-5の改良版
-  - 新旗舰として注册即享2000万Tokens提供
+  - 新旗舰として注册即享2000万Tokens提供（無料）
   - Coding・智能体・数理推理・PPT生成の全能型
+  - GLM Proプランに統合（120元/月）で提供
+  - **コーディングベンチマーク**: SWE-bench VerifiedでClaude Opus 4.5と同等のスコア
 
 - **GLM-5-Turbo**: 龙虾场景（AutoClaw）向け
   - Agent核心能力の训练層深層最適化
   - 工具调用能力と长链路実行能力特化
+  - コーディングAgentに最適化
 
 ### GLM-4.7（2024年主力开源モデル）
 
@@ -92,6 +96,11 @@ source_lang: zh-CN
 - 智谱の新しい統一プラットフォーム
 - GLM-5旗舰モデル、薄切りAPI服务
 - AutoClaw・智谱清言・AutoGLM・Zread.ai等を統合
+- 2026年4月時点で運用開始
+- MCP（Model Context Protocol）対応を公式サポート
+- RAG統合の知识库機能
+- 10分钟で完了するモデル微调サービス
+- 智能体市场で精选智能体、千行百业対応
 
 ## 上市公司としての智谱
 
@@ -106,15 +115,16 @@ GLM-5のコーディング能力は开源モデル最高の座を争う:
 
 - **SWE-bench Verified**: 开源SOTA、Claude Opus 4.5比肩
 - **Terminal Bench 2.0**: 智能体编程核心榜单开源SOTA
+- **GLM-5.1**: 2000万Tokens無料登録でCoding・智能体・数理推理・PPT生成の全能型
 - CodeGeeX（智谱発）も同時に展开 — Intelとの協業でAIPC版提供済み
 
-## プラットフォーム機能（bigmodel.cn）
+## プラットフォーム機能（bigmodel.cn / z.ai）
 
 | 機能 | 説明 |
 |------|------|
 | **智能体市场** | 精选智能体、千行百业対応 |
 | **联网搜索** | リアルタイムWeb検索統合 |
-| **MCP** | Model Context Protocol対応 |
+| **MCP** | Model Context Protocol対応（2026年4月正式サポート） |
 | **知识库** | RAG統合 |
 | **模型微调** | 十分钟で微调完了 |
 

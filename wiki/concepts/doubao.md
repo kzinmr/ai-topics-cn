@@ -1,7 +1,7 @@
 ---
 title: "豆包 (Doubao) — ByteDance AIアシスタント"
 created: 2026-04-19
-updated: 2026-04-21
+updated: 2026-04-25
 tags: [llm, ai-assistant, video-generation, coding-assistant, china, bytedance]
 aliases: ["Doubao", "豆包", "豆包APP", "Doubao-Seed", "火星引擎", "Volcano Engine"]
 source_lang: zh-CN
@@ -27,6 +27,11 @@ Doubaoは単なるチャットボットではなく、**テキスト生成・画
 - **Seedance 2.0 統合**: アプリ内で直接AI動画生成（5秒/10秒）
 - **分身動画**: 真人検証による個人AIアバター生成
 - **「専門家」モード**: 専門領域での深掘り対話
+- **方言サポート**: 20種以上の中国地方言に天然対応
+- **日活ユーザー**: 2026年4月時点で国内AIアプリDAU第一位
+
+> **最新動向（2026.04.16）**: 豆包は2025年Q4に月活2.27億を記録。月間投流費用をQ1の1.61億元からQ3の0.65億元へ大幅削減しながらも月活を拡大。30日留存率44.5%（Kimiの32.1%を大幅上回り）。日均Token使用量は50万亿に到達し、OpenRouterデータで中国モデルの周間呼び出し量が2026年2月に初めて米国モデル（4.12万亿 vs 2.94万亿）を逆転。
+> **出典**: 钛媒体 — [字节豆包海外下载破2亿](https://www.tmtpost.com/7955423.html) [Tier-1]
 
 ### 2. Seedance 2.0（動画生成）
  SeedanceはByteDanceの動画生成モデルシリーズ。**Seedance 2.0**（2026年2月リリース）：
@@ -108,6 +113,49 @@ Doubaoの差別化要因は**テキスト・画像・视频・音声の浑然一
 - 「MarsCode的功能还是太基础，不如Cursor和Copilot」— 掘金レビュー
 - 「字节的AI产品线太分散了，没有一个统一的入口」— Zhihu回答
 
+## 国際展開（Dola/Cici）
+
+2023年8月に「Cici」として海外リリース。2025年12月に「Dola」にブランド変更。
+
+| 指標 | 数値 |
+|------|------|
+| 累計ダウンロード | 2億回（2026年Q1） |
+| 単季ダウンロード | 7200万回（2026年Q1、+47%环比） |
+| 平均DAU | 1200万（2026年3月） |
+| 月活 | 5593万（2025年12月） |
+| UK月活 | 100万超（2025年12月） |
+| 主要市場 | 東南アジア、ラテンアメリカ、中東、英国 |
+| 未参入 | 北米（地政学リスク）、EU |
+
+**戦略**: TikTokの既存ユーザー基盤・コンテンツエコロジーを活用した低コスト拡散。北米・EUではなく、新規参入障壁が低い新興市場で「先圈地、后盖楼」戦略。
+
+> **最新動向（2026.04.16）**: Sensor Towerデータによると、Dolaの累計ダウンロードが2026年Q1に2億回を突破。TikTokが同レベルに達するのにかかった5年に対して、わずか2年11ヶ月。ただし、Dolaは無料で収益化していない。DAUは1200万に近づいているが、収益はゼロ。ByteDanceの戦略は「免費換規模、用數據餵模型、再用模型拿企業大客戶」。
+> **出典**: 钛媒体 — [字节豆包海外下载破2亿](https://www.tmtpost.com/7955423.html) [Tier-1]
+
+## 企業・技術動向（2026年4月）
+
+### 「豆包股」仮想株式制度（2026.04）
+- 2025年Q4から内部试点、「豆包長期激励計画」
+- 豆包関連の大模型業務に「虚拟股」机制
+- **2026年4月16日**: 首次回购価格13.08ドル（授予価格10ドルから+30%）
+- 3月1日以降入社员工は13.08ドルで計算
+- 目的: 大模型人材の長期吸引・激励
+
+> **出典**: 科创板日报 → 新浪财经 — [加码绑定AI人才！字节启动"豆包股"首次回购](https://finance.sina.com.cn/jjxw/2026-04-16/doc-inhusenn4146654.shtml) [Tier-2]
+
+### 豆包AI手机（2025.12→2026年H2）
+- 初代: 努比亚 M153（2025年12月、3499元、骁龙8 Elite）
+- 特徴: 系统级豆包統合、语音対話（非ASR+TTS）、跨アプリ自動操作
+- 二代: 2026年Q2中〜下旬に予定
+
+### Doubao-Seed-2.0 ベンチマーク
+- **SuperGPQA**: GPT-5.2を上回る
+- **IMO/CMO数学オリンピック金牌**
+- **HLE-text**: 54.2点（人類の最終試験）、GPT-5.2・Gemini 3 Pro相当
+- **Doubao-Seed-Code**: GPT-5を9項目で凌駕（Terminal-Bench 27% vs 13%、AI智能指数34 vs 22）
+- **健康Bench**: 第一位
+- **価格**: GPT-4比50倍安、業界平均比62.7%安
+
 ## 関連リンク
 
 ### 内部リンク
@@ -126,3 +174,6 @@ Doubaoの差別化要因は**テキスト・画像・视频・音声の浑然一
 | MarsCode | [marscode.cn](https://www.marscode.cn) | T1 | コーディングツール |
 | Seedance 2.0 | [seed.bytedance.com](https://seed.bytedance.com) | T1 | 動画生成 |
 | 知乎 — MarsCode紹介 | [zhuanlan.zhihu.com](https://zhuanlan.zhihu.com/p/29175342477) | T2 | ユーザー評価 |
+| 钛媒体 — Dola海外2億ダウンロード | [tmtpost.com/7955423](https://www.tmtpost.com/7955423.html) | T1 | 海外展開分析 |
+| 新浪财经 — 豆包股回购 | [finance.sina.com.cn/jjxw/2026-04-16/doc-inhusenn4146654.shtml](https://finance.sina.com.cn/jjxw/2026-04-16/doc-inhusenn4146654.shtml) | T2 | 人材激励制度 |
+| DataGlobeHub — Doubao指標比較 | [dataglobehub.com/zh/doubao-metrics](https://dataglobehub.com/zh/doubao-metrics/) | T2 | GPT-5対比ベンチ |

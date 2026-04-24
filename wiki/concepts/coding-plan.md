@@ -1,7 +1,7 @@
 ---
 title: "Coding Plan（编程计划）— 中国発AIコーディングサブスクリプションモデル"
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-25
 tags: [coding-agents, tooling, china, product, concept]
 aliases: ["Coding Plan", "编程计划", "コーディングプラン", "CodingPlan"]
 source_lang: zh-CN
@@ -13,7 +13,7 @@ source_lang: zh-CN
 
 **Coding Plan（编程计划）**は、中国のクラウドプラットフォーム各社が提供するAIコーディングツールのサブスクリプションサービスの総称である。複数のLLMモデルをバンドルし、**トークン単位ではなくリクエスト単位で課金**する中国市場独自のプロダクトカテゴリとして急速に普及している。
 
-2026年4月現在、Anthropicの身分認証強化（[[claude-opus-4-7]]参照）を契機に、中国国内のCoding Planへの需要が急増。机器之心は以下の対比を鮮明に描写した：
+2026年4月現在、Anthropicの身分認証強化を契機に、中国国内のCoding Planへの需要が急増。机器之心は以下の対比を鮮明に描写した：
 
 > "太反差了！那边Claude强制「刷脸」认证，这边国内Coding Plan被外国人疯抢"
 > （なんという対比！Claudeが顔認証を強制する一方、国内のCoding Planは外国人にすら争奪されている）
@@ -40,6 +40,36 @@ source_lang: zh-CN
 
 > **出典**: Juejin — [https://juejin.cn/post/7610637031321698330](https://juejin.cn/post/7610637031321698330) [Tier-2]（158いいね・240スター）
 
+### 最新動向（2026.04.24）— 阿里云 vs 火山云 Coding Plan比較
+
+2026年4月24日、阿里云と火山云（ByteDance）の両社がそれぞれCoding Planのモデルバンドル構成を公式に発表。36krおよび掘金で比較分析が掲載された。
+
+| プロバイダー | メインモデル | サブモデル | 価格帯 |
+|---|---|---|---|
+| **阿里云** | Qwen-3.5（阿里自社） | Kimi-K2.5、GLM-4.7 | 中〜高 |
+| **火山云** | Doubao-Seed-2.0-Code（ByteDance） | GLM-4.7（補助） | 低〜中 |
+
+**阿里云の評価:**
+- Qwen-3.5が主力で、Kimi-K2.5とGLM-4.7を補助にバンドル
+- リクエスト単位課金で「算力自由」（算力の自由）を謳う
+- V2EXでは「抢不到」（購入困難）の声多数
+
+**火山云の評価:**
+- Doubao-Seed-2.0-Codeが主力、GLM-4.7は補助的位置づけ
+- ByteDanceのDouBaо生态と統合
+- 価格面で阿里云より競争力あるとの評価
+
+V2EXユーザーは以下のように比較した：
+
+> "阿里Coding Plan vs 火山云Coding Plan，哪个更值？"
+> （阿里Coding Planと火山云Coding Plan、どちらがコスパ良いか？）
+
+Claudeの身分認証強化（電話番号+顔認証）を契機に、両社のCoding Planへの需要が急増。特に海外からのユーザーが阿里云Coding Planを購入しようとする動きが顕著。
+
+> "那边Claude强制「刷脸」认证，这边国内Coding Plan被外国人疯抢"
+> （向こうではClaudeが顔認証を強制する一方、ここでは国内のCoding Planが外国人に狂乱で奪われている）
+> — 机器之心 [Tier-2]
+
 ### 智谱GLM コーディングプラン
 
 智谱AI（Zhipu AI）が提供するGLMモデルベースのコーディングプラン。
@@ -55,6 +85,16 @@ source_lang: zh-CN
 - **退款**（返金問題）: カスタマーサポートの対応不備
 
 V2EXユーザーは「智谱最近风评太差」（智谱の最近の評判が悪すぎる）と指摘しつつも、ピーク時間外の利用ではアカウント停止を回避できているケースを報告している。
+
+**最新動向（2026.04.24）— GLM Pro新機能:**
+V2EXで報告されたGLM Proのアップデート：
+- **APIキーの期限切れ問題**が解消され、自動更新に対応
+- **GLM-5.1**が新モデルとして追加予定（2000万Tokens無料）
+- **長文生成の改善**: 128Kコンテキスト窗での品質向上が報告
+- **MCP対応**が追加され、外部ツールとの連携が強化
+
+> "GLM Pro的API key过期了，但智谱已开启自动续期"
+> （GLM ProのAPIキーが期限切れ、だが智谱が自動更新を始めた）
 
 > **出典**: V2EX — [https://www.v2ex.com/t/1206473](https://www.v2ex.com/t/1206473) [Tier-1]
 
@@ -134,3 +174,5 @@ Coding Planの台頭は、中国AI市場の以下の構造的特徴を反映し�
 | Juejin — 阿里CodingPlan | [juejin.cn/post/7610637031321698330](https://juejin.cn/post/7610637031321698330) | Tier-2 | 158いいね、リクエスト課金の革新 |
 | Juejin — 中国市場との対比 | [juejin.cn/post/7629169106099011622](https://juejin.cn/post/7629169106099011622) | Tier-2 | Claude vs 国内Coding Plan |
 | V2EX — 予算最適化議論 | [v2ex.com/t/1206473](https://www.v2ex.com/t/1206473) | Tier-1 | 開発者の実際のツール選定 |
+| 36kr — 阿里云 vs 火山云比較 | 36kr 2026.04.24 | Tier-1 | Coding Planベンダー比較 |
+| Juejin — Volcengine Coding Plan | Juejin 2026.04.24 | Tier-2 | 火山云モデルバンドル |
