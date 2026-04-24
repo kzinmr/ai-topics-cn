@@ -22,7 +22,7 @@
         "times": null,
         "completed": 4
       },
-      "enabled": true,
+      "enabled": false,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
@@ -176,13 +176,118 @@
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
-      "deliver": "discord:1233771389367095377:1494583846946213938",
+      "deliver": null,
       "origin": {
         "platform": "discord",
         "chat_id": "1494954994968039466",
         "chat_name": "kzinmr\u306e\u30b5\u30fc\u30d0\u30fc / #hermes-cn / \u6bce\u65e5\u983b\u5ea6\u3067\u3001\u524d\u65e5\u306b\u53d6\u308a\u8fbc\u307e\u308c\u305f\u4e3b\u8981\u306a\u8a18\u4e8b\u306e\u6982\u8981\u3092\u3001AI\u6280\u8853\u8005\u5411\u3051\u306bDiscord\u914d\u4fe1\u3057\u3066\u6b32\u3057\u3044\u3002\u914d\u4fe1\u5148\u306f\u4ee5\u4e0b: (server_id:1185093193...",
         "thread_id": "1494954994968039466"
       }
+    },
+    {
+      "id": "5b7c81e0a2f4",
+      "name": "crawl-collect",
+      "prompt": "The pre-run script already collected and checkpointed Nana crawl input. If `ok` is true, respond with exactly `[SILENT]`. If `ok` is false, report the collection error in Japanese with the checkpoint path and any failed command summaries.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "crawl_collect.py",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 21,9 * * *",
+        "display": "0 21,9 * * *"
+      },
+      "schedule_display": "0 21,9 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-24T04:00:00+00:00",
+      "next_run_at": "2026-04-24T09:00:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": null,
+      "origin": null
+    },
+    {
+      "id": "6c9d8a21f0b4",
+      "name": "crawl-triage",
+      "prompt": "You are Hermes, the AI knowledge agent for the Chinese AI topics wiki at `~/ai-topics-cn`. Work only from the injected crawl checkpoint. Do NOT run source collection in this job and do NOT edit wiki files in this job.\n\nReturn JSON only with this schema:\n```json\n{\n  \"checkpoint_run_id\": \"...\",\n  \"source_counts\": {\"36kr\": 0},\n  \"summary_ja\": \"2-4 sentence Japanese summary of the backlog and signal\",\n  \"decisions\": [\n    {\n      \"item_id\": \"...\",\n      \"source\": \"36kr|juejin|v2ex|wechat-media|newsletters|daily_digests|zhihu\",\n      \"title\": \"...\",\n      \"path\": \"~/ai-topics-cn/inbox/...\",\n      \"recommended_action\": \"take|reference|skip\",\n      \"reason_ja\": \"short Japanese reason\",\n      \"candidate_wiki_path\": \"concepts/... or entities/... or pages/...\"\n    }\n  ]\n}\n```\nRules:\n- Evaluate only the checkpoint candidates.\n- Prefer substantial LLM, AI agent, dev tools, or Chinese AI industry articles.\n- Limit `decisions` to at most 20 entries, with `take` items first.\n- If the checkpoint load failed, return JSON with `decisions: []` and an `error` field.\n- No markdown outside the JSON.",
+      "skills": [
+        "cn-media-analysis",
+        "semantic-article-grouping"
+      ],
+      "skill": "cn-media-analysis",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "crawl_checkpoint.py",
+      "schedule": {
+        "kind": "cron",
+        "expr": "10 21,9 * * *",
+        "display": "10 21,9 * * *"
+      },
+      "schedule_display": "10 21,9 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-24T04:00:00+00:00",
+      "next_run_at": "2026-04-24T09:10:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": null,
+      "origin": null
+    },
+    {
+      "id": "7e2f9134bd66",
+      "name": "crawl-wiki-ingest",
+      "prompt": "You are Hermes, the AI knowledge agent for the Chinese AI topics wiki at `~/ai-topics-cn`. The pre-run script loaded the latest `crawl-triage` JSON output. Work only from that triage checkpoint.\n\n**CRITICAL: All output must be in Japanese.**\n\nIf `_triage_checkpoint.ok` is false or there are no `take` decisions, explain the problem briefly or respond `[SILENT]` if there is genuinely nothing to do.\n\nFor each decision where `recommended_action` is `take`:\n1. Read the referenced inbox file\n2. Create or update the appropriate wiki page under `~/wiki`\n3. Save source material to `~/wiki/raw/articles/` when needed\n4. Update `~/wiki/index.md` and `~/wiki/log.md`\n5. Commit and push: `cd ~/ai-topics-cn && git add wiki/ inbox/ && git commit -m \"triage: $(date +%Y-%m-%d) split crawl ingest\" && git push`\n\nOutput format:\n```\n📊 Crawl & Triage Report — YYYY-MM-DD\nチェックポイント: <run_id>\n収集候補数: N\n✅ Take: N / ⚠️ Reference: N / ❌ Skip: N\nWiki更新: 新規ページ N / 更新ページ N\nトップトピック: [1], [2], [3]\n```\n\nIf there is genuinely nothing to report, respond with exactly `[SILENT]`.",
+      "skills": [
+        "cn-media-analysis",
+        "wiki-entity-upgrade"
+      ],
+      "skill": "cn-media-analysis",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "crawl_triage_checkpoint.py",
+      "schedule": {
+        "kind": "cron",
+        "expr": "20 21,9 * * *",
+        "display": "20 21,9 * * *"
+      },
+      "schedule_display": "20 21,9 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-24T04:00:00+00:00",
+      "next_run_at": "2026-04-24T09:20:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "discord:1233771389367095377:1494583846946213938",
+      "origin": null
     },
     {
       "id": "dbde4f9d48e4",

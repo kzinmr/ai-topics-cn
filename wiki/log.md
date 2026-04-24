@@ -1,6 +1,31 @@
 # Wiki Log
 
 Chronological record
+## [2026-04-24] triage-10 | GPT-5.5正式評価・DeepSeek V4・MCPセキュリティ更新
+
+### インボックス状況
+- **checkpoint**: 20260424T042656Z (ok=true)
+- **総カウント**: 36kr:109, juejin:215, v2ex:411, wechat:106, newsletters:63, daily_digests:10
+
+### 処理結果
+- **take**: 4件（Codex SSH, 低价GPT漏洞, GPT 6.0待機, 试用的路子）
+- **reference**: 2件（Deep Research効果, Plusユーザー体験）
+- **skip**: 4件（LangChain旧記事, LLM入門旧記事, 学習ルート記事, LLM安全入門旧記事）
+
+### Wiki更新
+| ページ | 更新内容 |
+|--------|---------|
+| `concepts/gpt.md` | GPT-5.5正式評価（全榜第一・Opus 4.7圧倒）、GPT 6.0待機議論追記 |
+| `concepts/mcp-security.md` | GPTサブスクリプション脆弱性問題、Codex SSH機能の透明性懸念追記 |
+| `entities/deepseek.md` | DeepSeek V4正式リリース、华为昇騰協業、GPT5.5/Opus4.6/V4同時アップデート追記 |
+| `pages/openai-codex-infrastructure.md` | SSH远程开发機能のV2EX発見日追記 |
+
+### メディアトレンド分析
+- **GPT-5.5 vs Opus 4.7**: 36krが「更强更快更贵」と報じ、GPT-5.5が全榜第一でOpus 4.7を圧倒。V2EXはコスト増懸念
+- **DeepSeek V4**: 华为昇騰協業で国産モデルの地位確立。昇騰适配がV4の遅延要因との推測
+- **GPT 6.0待機**: V2EXでOpenAIのリリースペースへの不満が顕在化
+- **ソース間温度差**: V2EX（実使用感・コスト）vs 36kr（戦略的意義・性能）で明確な乖離
+
 ## [2026-04-24] triage-09 | OpenClaw/MCPセキュリティ記事の確認
 
 ### インボックス状況
