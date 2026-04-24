@@ -4,7 +4,7 @@ created: 2026-04-18
 updated: 2026-04-18
 tags: [china, llm, company, search, multimodal, erenie, open-source-ai]
 aliases: ["百度", "文心一言", "ERNIE", "Wenxin", "WenXin Yiyan", "文心", "文小言", "Baidu AI"]
-source_lang: ja
+source_lang: zh-CN
 ---
 
 # Baidu（百度）— 文心一言/ERNIEと中国AI検索大手

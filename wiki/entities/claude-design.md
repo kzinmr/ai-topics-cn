@@ -4,7 +4,7 @@ created: 2026-04-18
 updated: 2026-04-18
 tags: [product, design, anthropic, claude, figma, ai-tool]
 aliases: ["Claude Design", "claude-design"]
-source_lang: en
+source_lang: zh-CN
 ---
 
 # Claude Design — AnthropicのAIネイティブデザインツール

@@ -1,7 +1,7 @@
 # AI Topics China Wiki — Index
 
 最終更新: 2026-04-24
-エンティティ: 38, コンセプト: 64, 比較: 1, ページ: 1
+エンティティ: 38, コンセプト: 76, ダイエスト: 7, 比較: 1, ページ: 1
 
 ## エンティティ (Entities)
 
@@ -54,6 +54,7 @@
 - [[beike-ai-customer-service|贝壳AI客服 — MCP + Skillを活用したAIカスタマーサービス]]
 - [[cc-monitor|cc-monitor — Claude Code リアルタイムToken消費モニター]]
 - [[chatglm|ChatGLM (智谱清言) — Zhipu AIの中国語圏事情]]
+- [[china-ai-model-filing|中国AI模型备案制度 — 大模型备案・算法备案]]
 - [[china-ai-superapp-race|china-ai-superapp-race]]
 - [[china-palantir|china-palantir]]
 - [[chinai-348-compute-year-review|ChinAI #348 — 2025年中国計算力産業回顧：熱狂、成長の痛み、価値回帰]]
@@ -83,14 +84,16 @@
 - [[transpec|Transpec — 仕様駆動開発フレームワーク間変換ツール]]
 - [[vector-db|Vector DB（向量数据库）— RAG・AI検索の基盤インフラ]]
 - [[vibe-coding|Vibe Coding（氛围编程）— AIネイティブなソフトウェア開発手法]]
+- [[vram-optimization|显存优化（VRAM Optimization）— KVキャッシュ圧縮・量子化・推論効率化]]
 - [[in-context-learning|In-context Learning（ICL）— コンテキスト内学習]]
-|- [[vibe-coding-china|Vibe Coding中国 — 氛围编程受容とAgentic Engineeringへの進化]]
-|- [[android-cli|Android CLI — Google Agent-first開発時代向けAndroid開発ツール]]
-|- [[browser-use|browser-use — ブラウザAgentのDOM処理パイプライン]]
-|- [[graphiti|Graphiti — LLM用リアルタイム知識グラフ]]
-|- [[mini-cc-claude-code-analysis-series|Claude Code源码解析シリーズ — 雨夜寻晴天]]
-|- [[openai-eval-skill-validation|OpenAI Eval — Agent Skill系统化検証方法論]]
-|- [[prompt-agent-function-call-skill-mcp|Prompt・Agent・Function Call・Skill・MCP — 用語整理]]
+||- [[vibe-coding-china|Vibe Coding中国 — 氛围编程受容とAgentic Engineeringへの進化]]
+||- [[android-cli|Android CLI — Google Agent-first開発時代向けAndroid開発ツール]]
+||- [[browser-use|browser-use — ブラウザAgentのDOM処理パイプライン]]
+||- [[graphiti|Graphiti — LLM用リアルタイム知識グラフ]]
+||- [[mini-cc-claude-code-analysis-series|Claude Code源码解析シリーズ — 雨夜寻晴天]]
+||- [[openai-eval-skill-validation|OpenAI Eval — Agent Skill系统化検証方法論]]
+||- [[prompt-agent-function-call-skill-mcp|Prompt・Agent・Function Call・Skill・MCP — 用語整理]]
+- [[yi|Yi（零一万物）— 01.AI]]
 - [[china-ai-agent-ecosystem|中国AI智能体生态 — 2026年プラットフォーム・アーキテクチャ・市場動向]]
 - [[china-local-deployment|中国大模型本地部署 — 量子化・VRAM最適化・消費者GPUでの推論]]
 - [[china-ai-regulation|中国AI监管政策 — 生成AI管理弁法、算法备案、データ安全規制]]
@@ -107,6 +110,16 @@
 - [[specflow-ai-development|SpecFlow — AI時代の設計駆動開発パラダイム]]
 - [[vibe-coding-harness-synergy|HarnessとBlind Vibe Coding — 適用境界の分析]]
 - [[claude-code-ip-ban-analysis|Claude Code封号分析 — IP検出メカニズム深掘り]]
+
+## ダイエスト (Daily Digests)
+
+- [[daily-digest-2026-04-15|2026-04-15 — 52件]]
+- [[daily-digest-2026-04-16|2026-04-16 — 45件]]
+- [[daily-digest-2026-04-17|2026-04-17 — 52件]]
+- [[daily-digest-2026-04-18|2026-04-18 — 57件]]
+- [[daily-digest-2026-04-19|2026-04-19 — 57件]]
+- [[daily-digest-2026-04-20|2026-04-20 — 57件]]
+- [[daily-digest-2026-04-21|2026-04-21 — 52件]]
 
 ## 比較 (Comparisons)
 
