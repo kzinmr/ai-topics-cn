@@ -79,7 +79,7 @@ topics:
       - concepts/kimi
     notes: "長コンテキスト（200万tokens）で差別化。中国C向けAIチャットで急成長。2026-04-21にK2.6を発表・オープンソース化"
     added: 2026-04-17
-    last_crawled: 2026-04-22
+    last_crawled: 2026-04-25
 
   - slug: yi
     title: "Yi (零一万物) — 01.AI"
@@ -150,7 +150,7 @@ topics:
       - concepts/dify
     notes: "中国発オープンソースLLMOps。RAG・Agent・Workflow統合プラットフォーム。GitHub stars急増中"
   added: 2026-04-17
-  last_crawled: 2026-04-21
+  last_crawled: 2026-04-25
 
   # =========================================================
   # 3. Local Deployment & Quantization (ローカル展開・量子化)
@@ -322,7 +322,7 @@ topics:
       - concepts/china-coding-agents
     notes: "Coding Plan等の中国発コーディングエージェント。Claude Code/Cursor/Devinの中国での採用状況も含む"
     added: 2026-04-17
-    last_crawled: 2026-04-22
+    last_crawled: 2026-04-25
 
   - slug: coding-plan
     title: "Coding Plan (编程计划)"
