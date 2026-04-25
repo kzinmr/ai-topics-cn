@@ -1,11 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-04-24
-エンティティ: 38, コンセプト: 76, ダイエスト: 7, 比較: 1, ページ: 1
+最終更新: 2026-04-25
+エンティティ: 38, コンセプト: 76, ダイエスト: 8, 比較: 1, ページ: 2
 
-### 本日更新（2026-04-24）
-- `concepts/ai-safety-subconscious.md` — V2EX開発者のAIプライバシー意識セクション追加
-- `pages/openai-codex-infrastructure.md` — SSH「偷偷加了」透明性懸念明記
+### 本日更新（2026-04-25）
+- `pages/industry-trends.md` — DeepSeek V4リリース（13+本36kr記事）、昇騰エコシステム進展、中国AI「寒武纪大爆发」、CodingPlan/阿里悟空/GLM-5追加
+- `concepts/gpt.md` — 低価格GPT脆弱性議論更新（V2EX #1207040）
+- `pages/openai-codex-infrastructure.md` — Codex App SSH「偷偷加了」透明性懸念確認済み
 
 ## エンティティ (Entities)
 
@@ -115,6 +116,11 @@
 - [[vibe-coding-harness-synergy|HarnessとBlind Vibe Coding — 適用境界の分析]]
 - [[claude-code-ip-ban-analysis|Claude Code封号分析 — IP検出メカニズム深掘り]]
 
+## ページ (Pages)
+
+- [[industry-trends|行业趋势 — 中国AI業界動向・モデル競争・開発ツールトレンド]]
+- [[openai-codex-infrastructure|OpenAI Codex — Mac版「超级龙虾」のインフラと機能進化]]
+
 ## ダイエスト (Daily Digests)
 
 - [[daily-digest-2026-04-15|2026-04-15 — 52件]]
@@ -124,6 +130,7 @@
 - [[daily-digest-2026-04-19|2026-04-19 — 57件]]
 - [[daily-digest-2026-04-20|2026-04-20 — 57件]]
 - [[daily-digest-2026-04-21|2026-04-21 — 52件]]
+- [[daily-digest-2026-04-25|2026-04-25 — 58件]]
 
 ## 比較 (Comparisons)
 
@@ -131,6 +138,10 @@
 
 ## 最新生記事 (Recent Raw Articles)
 
+- [Codex App が偷偷にSSH远程开发機能を追加 — V2EX透明度懸念](raw/articles/v2ex-2026-04-25/codex-ssh-功能.md)
+- [低价GPTの脆弱性議論 — 封じてまだ残る — V2EX](raw/articles/v2ex-2026-04-25/低价GPT-漏洞議論.md)
+- [GPT-6.0何时发布 — 中国社区の期待と不安 — V2EX](raw/articles/v2ex-2026-04-25/gpt-6-0-待機議論.md)
+- [Daily Digest 2026-04-25 — 58件の中国AIニュース](raw/articles/digests-2026-04-25/daily-digest-2026-04-25.md)
 - [[AI 周刊 2026.04.13-04.19] 中美差距减小、Claude Opus 4.7发布、国产算力突围](raw/articles/2026-04-19-AI-Weekly-2026.04.13-04.19-中美差距-Claude-Opus-4.7-国产算力突围.md)
 - [[大模型输出的隐性结构塌缩问题及对策] 码事漫谈](raw/articles/2026-04-19-大模型输出隐性结构塌缩问题及对策-码事漫谈.md)
 - [[安全专家纷纷离职谁为AI竞赛踩刹车] 36kr](raw/articles/2026-04-18-安全专家纷纷离职谁为AI竞赛踩刹车-36kr.md)

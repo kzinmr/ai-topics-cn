@@ -1,6 +1,88 @@
 # Wiki Log
 
 Chronological record
+## [2026-04-25] triage-11 | DeepSeek V4「寒武纪大爆发」、Codex SSH透明性、昇騰エコシステム
+
+### インボックス状況
+- **checkpoint**: 20260425T090223Z (ok=true)
+- **総カウント**: v2ex:15, juejin:15, 36kr:13, wechat:15, newsletters:64, daily_digests:11
+
+### 処理結果
+- **take**: 4件（Codex SSH透明性、GPT 6.0待機議論、低价GPT脆弱性、daily-digest-2026-04-25）
+- **reference**: 2件（Deep Research効果、Plusユーザー体験）
+- **skip**: 9件（WeChat stale Sogou検索:2017〜2023年旧記事、Juejin stale:2023年旧記事）
+
+### Wiki更新
+| ページ | 更新内容 |
+|--------|---------|
+| `pages/industry-trends.md` | **Section 1.5 新規**: DeepSeek V4リリース（36kr 13+本記事一覧）、昇騰（Ascend）エコシステム進展、中国AI「寒武纪大爆发」。CodingPlan/阿里悟空/GLM-5/V2EX DeepSeek V4市場影響を追記 |
+| `concepts/gpt.md` | 低価格GPT脆弱性議論確認済み（V2EX #1207040） |
+| `pages/openai-codex-infrastructure.md` | SSH「偷偷加了」透明性懸念確認済み |
+| `index.md` | ページセクション新規作成、ダイjest 2026-04-25追記、raw articles追記 |
+
+### メディアトレンド分析
+
+**🔥 DeepSeek V4 — 最大級のトレンドトピック**
+
+36krでは13本以上の記事がDeepSeek V4関連で発表され、中国AIコミュニティで**最大級のトピック**となった。主な報道ライン：
+
+| メディア | 記事 | 視点 |
+|----------|------|------|
+| 鏡相工作室 | 「DeepSeek-V4发布，黄仁勋的担忧成真了」 | NVIDIA対抗の現実化 |
+| NEXT趋势 | 「黄仁勋说这是\"灾难\"：DeepSeek在华为芯片上跑通」 | **昇騰エコシステム**進展 |
+| 新立场pro | 「DeepSeek V4、GPT5.5会师：通向AGI的门票只有Coding？」 | AGI論争 |
+| 硅基星芒 | 「DeepSeek-V4：中国AI应用寒武纪大爆发奇点降临」 | **中国AIの新時代**宣言 |
+| 最话FunTalk | 「不只DeepSeek，大厂都想\"抛弃\"英伟达」 | **去NVIDIA化**の潮流 |
+
+**昇騰（Ascend）エコシステムの進展：**
+
+黄仁勲（ジェン・ハーン）が「灾难」と表現した事実は、**DeepSeekが華為昇騰チップ上で正常に動作した**ことを意味する。これは以下の点で重要：
+
+1. **NVIDIA依存からの脱却** — 中国AI企業が開発モデルを昇騰エコシステムにポート可能
+2. **地政学的リスク低減** — 米中貿易摩擦によるGPU輸出制限の影響を緩和
+3. **昇騰ハードウェアの成熟** — 実際のモデル動作検証により昇騰エコシステムの信頼性向上
+
+**掘金的な新着トピック：**
+
+- **DeepSeek V4 + Claude Code実測** — 「夯爆了还是拉完了？」結果は「夯爆了」（非常に強力）
+- **GLM-5开源** — 「让高级程序员也危险了…」コード生成能力が高級プログラマーの仕事を脅かす可能性
+- **阿里「悟空」MCP** — 「我想把电脑里的龙虾换掉了」Codex代替の有力候補
+- **Claude Code 32 Skills + 8 MCP** — 「别再裸用Claude Code了！」実装ガイド
+
+**Codex Appの透明性懸念：**
+
+V2EXで「**以防你不知道 Codex App 偷偷加了 SSH 远程开发功能**」（V2EX #1207253）が報告された。「偷偷加了」（内密に追加）はOpenAIの透明性問題の新たな事例として重要。
+
+**V2EXコミュニティの温度：**
+
+- GPT-6.0待機議論：「gpt 6.0 到底什么时候发布呀」— 毎日のように噂が流れるがActualなリリースなし
+- 低价GPT脆弱性：「怎么封了还有」— OpenAIが脆弱性を封じても新たな抜け道が発見される「猫と鼠」ゲーム
+
+### ソース間温度差
+
+| トピック | V2EX | 掘金 | 36kr |
+|----------|------|------|------|
+| DeepSeek V4 | 市場影響予測（美股冲击） | 実測評価（夯爆了） | 戦略分析・新時代宣言 |
+| GPT 6.0 | 公開時期への不満・期待 | — | 公式発表待ち |
+| CodingPlan/阿里悟空 | — | 実測「真NB」 | — |
+| 低价GPT | セキュリティ脆弱性 | Token価格議論 | — |
+
+### 新着信号（daily-digest-2026-04-25）
+
+58件の収集候補を確認。実質的な新着信号は以下の通り：
+- **V2EX**: Codex SSH、GPT 6.0待機、低价GPT脆弱性、DeepSeek V4美股冲击予測
+- **掘金**: DeepSeek V4実測、GLM-5开源、阿里悟空MCP、Claude Code 32 Skills
+- **36kr**: DeepSeek V4関連13本記事、黄仁勲「灾难」発言、中国AI「寒武纪大爆发」
+- **WeChat**: 大半がstale Sogou検索アーティファクト（2017〜2023年）
+
+### 中国特有の動向
+
+- **昇騰エコシステム**: DeepSeekが华为昇騰チップ上で動作 — NVIDIA依存からの脱却が現実的な選択肢に
+- **国産モデル競争**: Qwen/Kimi/GLM/DeepSeekの多角的競争が「寒武纪大爆发」状態
+- **Token価格戦**: 阿里云CodingPlanの按请求计费、Qwen按量计费 — Tokenコスト競争が激化
+
+---
+
 ## [2026-04-24] triage-10 | GPT-5.5正式評価・DeepSeek V4・MCPセキュリティ更新
 
 ### インボックス状況
