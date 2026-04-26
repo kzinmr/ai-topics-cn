@@ -1,13 +1,14 @@
 # AI Topics China Wiki — Index
 
 最終更新: 2026-04-26
-エンティティ: 38, コンセプト: 79, ダイジェスト: 8, 比較: 1, ページ: 2
+エンティティ: 39, コンセプト: 79, ダイジェスト: 8, 比較: 1, ページ: 2
 
 ### 本日更新（2026-04-26）
+- `entities/coze.md` — **新規**: Coze 2.5 / Agent Worldの技術詳細（云电脑・云手机・独立身份・parallel web）、OpenClaw OSSエコシステム分析
+- `entities/deepseek.md` — 36kr 15+件のV4関連記事を反映（梁文锋の转身、中国AIの默契、华尔街反応、GLM-5比較等）
 - `concepts/token-pricing-trend.md` — **新規**: Token価格上昇トレンド（計算力インフレ、按量计费移行、Copilot Opus排除）
 - `concepts/wukong.md` — **新規**: 阿里悟空（Wukong）企業級AIエージェントプラットフォーム（RealDoc、OPTスキル、セキュリティ）
 - `concepts/coding-plan.md` — Wukong関連情報追記
-- `entities/deepseek.md` — 36kr 15+件のV4関連記事を反映（梁文锋の转身、中国AIの默契、华尔街反応、GLM-5比較等）
 - `config/hot-topics.yaml` — deepseek/qwen/coze/wukong/token-pricing last_crawled更新（2026-04-26）
 
 ## エンティティ (Entities)
@@ -20,6 +21,7 @@
 - [[claude-code|Claude Code — AIコーディングエージェント]]
 - [[claude-design|claude-design]]
 - [[claude-opus-4-7|Claude Opus 4.7 — Anthropic最新フラグシップモデル]]
+- [[coze|Coze（扣子）— Agent WorldプラットフォームとOSSエージェントエコシステム]]
 - [[creatorweave|CreatorWeave — ローカル優先のブラウザ創作ワークスペース]]
 - [[cursor|cursor]]
 - [[deepseek|deepseek]]
