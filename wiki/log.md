@@ -1,4 +1,23 @@
 
+## [2026-04-26] entity-update-01 | Qwen — AlibabaのAI戦略大幅更新
+
+### 更新ページ（1件）
+
+1. **entities/qwen.md** — 大幅更新（Alibaba AI戦略 + Qwen3.6市場影響）:
+   - **3800億元（$69B）3か年AI投資計画**の詳細追加
+   - **Zhenwu AIチップ**: 中国电信と10,000チップデータセンター（広東省韶関市）、計画スケール100,000チップ
+   - **フルスタック4層垂直統合**（シリコン→クラウド→モデル→アプリケーション）の構造図追加
+   - **S字カーブ分析**: AlibabaのAI投資はS字カーブ早期段階、$200 vs $100株価予測
+   - **Qwen3.6-Plus**詳細追加: agentic coding最適化、1Mコンテキスト、397B MoE（17B active）、Terminal-Bench 65.4%
+   - **Qwen3.6-Max-Preview**詳細: 五大核心升级、6項ベンチマークでPlusを超越
+   - **Qwen3.6-27B**詳細追加: denseモデル、SWE-bench Verified 77.2%、Terminal-Bench 2.0 59.3%（Opus 4.6と同等）、Thinking Preservation機能
+   - **Qwen3.6-35B-A3B**詳細: sparse MoE、262K context、Claude Opus 4.7の~82%
+   - **Qwen3-Coder**追加: 480B MoE / 35B active
+   - **中国AIスーパーアプリ競争**（3Way: Alibaba vs ByteDance vs Tencent）の表追加
+   - **価格競争**: Qwen3-Max 50%値下げ
+   - **具身ロボティクス**: ABot-Worldモデル、Humanoid Robot Half Marathonデビュー
+   - **関連リンク**: alibaba-cloud追加、外部ソース6件追加（Bitget, Simply Wall St, Silicon Report）
+
 ## [2026-04-26] active-crawl-02 | DeepSeek V4正式リリース / Qwen3.6シリーズ / Coze 2.5 — 3ページ更新
 
 ### 更新ページ（3件）
