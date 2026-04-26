@@ -4,6 +4,7 @@
 エンティティ: 38, コンセプト: 76, ダイジェスト: 8, 比較: 1, ページ: 2
 
 ### 本日更新（2026-04-26）
+- `entities/qwen.md` — 通义实验室 (Tongyi Lab) 詳細追加（沿革・2026年4月組織再編・研究アウトプット）
 - `entities/qwen.md` — AlibabaのAI戦略大幅更新（3800億元投資、Zhenwu AIチップ10,000デプロイ、$69B 3か年計画、フルスタック垂直統合、S字カーブ分析）
 - `concepts/deepseek.md` — DeepSeek-V4正式リリース（4/24）、ベンチマーク詳細（SWE-bench 92.3%）、mHC+Engram統合、Webインターフェース新機能
 - `concepts/qwen.md` — Qwen3.6シリーズ追加（Max-Preview/Plus/Flash/VL-Plus/Coder）、preserve_thinking機能、235B-Coder詳細

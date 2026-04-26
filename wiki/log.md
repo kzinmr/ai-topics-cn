@@ -1,4 +1,13 @@
 
+## [2026-04-26] tongyi-lab-update | 通义实验室 (Tongyi Lab) 詳細追加
+
+### 更新ページ（1件）
+
+1. **entities/qwen.md** — 通义实验室セクション追加:
+   - **沿革**: iDST (2014) → 达摩院 (2017) → 通义实验室 (2022) → M6プロジェクト (10兆パラメータ)。
+   - **2026年4月組織再編**: 通义大模型事业部へ昇格。周靖人 (Zhou Jingren) を責任者に迎えた集团技术委员会 (Eddie Wu議長) の設立。
+   - **研究アウトプット**: DeepResearch, Qwen-Agent, FunAudio, Qwen3-VL-Embedding (2026年1月)。
+
 ## [2026-04-26] entity-update-01 | Qwen — AlibabaのAI戦略大幅更新
 
 ### 更新ページ（1件）
