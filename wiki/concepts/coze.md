@@ -1,7 +1,7 @@
 ---
 title: "扣子 (Coze) — ByteDanceのノーコードAI Agentプラットフォーム"
 created: 2026-04-19
-updated: 2026-04-22
+updated: 2026-04-26
 tags: [agent-platform, low-code, bytedance, china, workflow, plugin, openclaw]
 aliases: ["Coze", "扣子", "字节跳动Coze", "Coze平台", "Agent World"]
 source_lang: zh-CN
@@ -21,9 +21,12 @@ source_lang: zh-CN
 
 2026年4月、Cozeは「**Agent World**」を発表。Agentが云电脑（クラウドPC）・云手机（クラウドスマホ）を保有し、7×24小时自律実行する新しいパラダイムを迎えた。
 
-## Agent World — 2026年新機能
+## Coze 2.5 — 2026年4月最新リリース
 
-Agent Worldは、Agentが単なるツールではなく**独立したデジタル存在**として行動するプラットフォーム拡張：
+2026年4月、Coze 2.5がリリース。以下の新機能を含む:
+
+### Agent World — デジタル存在の時代
+Agentが単なるツールではなく**独立したデジタル存在**として行動するプラットフォーム拡張：
 
 | 機能 | 説明 |
 |------|------|
@@ -35,55 +38,25 @@ Agent Worldは、Agentが単なるツールではなく**独立したデジタ�
 
 > 「**满配就位，不止Claw**」— Cozeのスローガン。「Claw」以外のAgent形態への進化を示唆。
 
-## 核心機能
+### 扣子罗盘（Coze Compass）
+专业开发者向けの新ツール：**观测・评测・Prompt開発调试**を一体化。Agentの品質管理を一元化。
 
-### 1. ビジュアルワークフローエディタ
-ドラッグ&ドロップで**条件分岐・API呼び出し・データベース連携・LLM推論**を組み合わせ。ノードベースのUIで複雑なビジネスロジックをコードなしで構築可能。
-
-- **トリガー**: スケジュール/イベント/手動実行
-- **アクション**: HTTPリクエスト、DBクエリ、ファイル操作、LLM呼び出し
-- **分岐**: 条件判定、ループ、エラーハンドリング
-
-### 2. Pluginマーケットプレイス
-1,000+の公式・コミュニティPluginが利用可能：
-- **検索**: 百度搜索、Sogou、Bing
-- **SNS**: WeChat公式アカウント、微博、小紅書
-- **業務**: 飛書、DingTalk（釘釘）、企業微信
-- **データ**: 天気、株価、翻訳、OCR
-
-### 3. 知識庫（ナレッジベース）
-PDF・Word・Excel・Webページをアップロードし、**RAG（检索增强生成）**でAgentの知識を拡張。中国語特化のエンベディングモデル使用。
-
-### 4. マルチモデル対応
-Coze自体はモデルを提供せず、**バックエンドモデルを選択可能**：
-- **Doubao**（ByteDance自社モデル）
-- **Kimi**（Moonshot AI）
-- **Qwen**（Alibaba）
-- **GLM**（Zhipu AI）
-- GPT（OpenAI、接続制限あり）
-- Claude（Anthropic、KYC制限あり）
-
-### 5. 扣子编程 (Coze Programming)
-2026年に追加された新機能。自然言語でWebアプリ・APP・小程序・智能体・ワークフロー・技能を一気通貫開発：
+### OpenClaw Studio — コーディング環境のオープンソース化
+CozeのAI開発・调试ツールが**オープンソース化**（[[openclaw|OpenClaw]]）：
 
 - **云端IDE + CLI**を提供
 - **前后端全栈開発**対応
 - **一键部署**（默认ドメインまたはカスタムドメイン）
 - **OpenClaw一键部署**: 飞书・微信への即座デプロイ
 
-### 6. 扣子罗盘
-专业开发者向け：**观测・评测・Prompt開発调试**于一身的ツール。
-
-## OpenClaw — 扣子开源
-
-CozeのAI開発・调试ツールが**オープンソース化**されている（[[openclaw|OpenClaw]]）：
-
-```bash
-# OpenClaw CLIでのデプロイ例
-openclaw deploy --platform feishu --wechat
-```
-
 V2EXでは「OpenClawに自作Skillを追加する」教程が話題を呼び、スキルの自作と共有がカジュアルにできる環境として注目。
+
+### 扣子编程（Coze Programming）
+自然言語でWebアプリ・APP・小程序・智能体・ワークフロー・技能を一気通貫開発：
+- 前端: React、Vue
+- 后端: Node.js、Python
+- データベース: MySQL、MongoDB、PostgreSQL
+- **一键部署**: 默认ドメインまたはカスタムドメイン
 
 ## WeChat Integration（2026年主流）
 

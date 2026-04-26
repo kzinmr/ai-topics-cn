@@ -37,7 +37,7 @@ topics:
       - concepts/deepseek
     notes: "中国発オープンウェイトモデルの代表格。V3/R1のMoEアーキテクチャ、推論能力で世界的注目。Zhihu・V2EX・Juejinで活発に議論される"
     added: 2026-04-17
-    last_crawled: 2026-04-23
+    last_crawled: 2026-04-26
 
   - slug: qwen
     title: "Qwen (通义千问) — Alibaba"
@@ -51,7 +51,7 @@ topics:
       - entities/qwen
     notes: "Alibaba Cloud発。Qwen3.6 Plus/Max-Preview/35B-A3B/27Bのリリース。preserve_thinking新機能、Qwen3-Max 50%値下げ、Amap人型ロボットdebut"
     added: 2026-04-17
-    last_crawled: "2026-04-23"
+    last_crawled: "2026-04-26"
 
   - slug: chatglm
     title: "ChatGLM (智谱清言) — Zhipu AI"
@@ -137,7 +137,7 @@ topics:
       - concepts/coze
     notes: "ByteDanceのノーコードAgent構築プラットフォーム。Plugin・ワークフロー機能"
     added: 2026-04-17
-    last_crawled: 2026-04-22
+    last_crawled: 2026-04-26
 
   - slug: dify
     title: "Dify — Open-Source LLMOps Platform"

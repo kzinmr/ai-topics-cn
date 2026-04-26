@@ -1,3 +1,139 @@
+
+## [2026-04-26] active-crawl-02 | DeepSeek V4正式リリース / Qwen3.6シリーズ / Coze 2.5 — 3ページ更新
+
+### 更新ページ（3件）
+
+1. **concepts/deepseek.md** — 大規模更新（2026年4月24日V4リリース対応）:
+   - DeepSeek-V4正式リリース日: 2026年4月24日（V4 Preview）
+   - ベンチマーク詳細追加: MMLU 93.9、HumanEval 96.2、SWE-bench Verified 92.3、AIME 90.7、GPQA-Diamond 96.4
+   - SWE-bench Verified 92.3%がClaude Opus 4.6 (80.9%)を大幅上回ることを明記
+   - Webインターフェース新機能: 高速モード（快速模式）+ 専門家モード（专家模式）
+   - mHC + Engramアーキテクチャの詳細をV4セクションに統合（既存セクションを削除、V4サブセクションに統一）
+   - 核心人材流動: 羅福莉→Xiaomi、郭达雅→ByteDance
+   - 2026年Q1大モデル資金調達前年比72%減少の追記
+   - 価格戦略: $0.30/MTok推定
+
+2. **concepts/qwen.md** — Qwen3.6シリーズ追加（2026年4月24日〜25日）:
+   - Qwen3.6-Max-Preview: 旗舰预览版、preserve_thinking機能追加（DeepSeek-V4 Deep Thinkingに対抗）
+   - Qwen3.6-Plus: 视觉语言モデル。Vibe Coding体験大幅改善
+   - Qwen3.6-Flash: 高速・低成本定位。数学・コード推理・空間知性強化
+   - Qwen3-VL-Plus: 视觉理解特化。空間認知・マルチモーダル思考強化
+   - Qwen3-Coder: 235B（MoE 30B活性化）、119言語、36兆token訓練データ、混合思考模式
+   - Qwen3.5-Plus: MMLU-Pro 87.8（GPT-5.2超）、GPQA 88.4（Claude 4.5超）、IFBench 76.5
+   - 累計オープンソースモデル400+、グローバルダウンロード10億回突破、衍生モデル20万+
+   - Qwen3.5の価格: 0.8元/MTok（約0.11ドル）
+
+3. **concepts/coze.md** — Coze 2.5リリース対応（2026年4月）:
+   - Coze 2.5正式リリースを明記
+   - Agent World機能の詳細: 云电脑+云手机、7×24运转、技能商店、独立身份+长期记忆、多渠道连接
+   - 扣子罗盘（Coze Compass）新ツール追加
+   - OpenClaw Studioのオープンソース化詳細
+   - 扣子编程の詳細（前端: React/Vue、后端: Node.js/Python、DB: MySQL/MongoDB/PostgreSQL）
+   - WeChat統合教程（知更Ai）を維持
+
+### hot-topics.yaml更新
+- deepseek: last_crawled 2026-04-23 → 2026-04-26
+- qwen: last_crawled 2026-04-23 → 2026-04-26
+- coze: last_crawled 2026-04-22 → 2026-04-26
+
+### メディアトレンド分析
+
+**🔥 DeepSeek V4正式リリース — 最大のトレンド**
+
+2026年4月24日、DeepSeekがV4 Previewを正式リリース。主要36kr記事（13+件）で以下が報じられた：
+
+| メディア | 記事タイトル | 視点 |
+|----------|-------------|------|
+| 鏡相工作室 | 「DeepSeek-V4发布，黄仁勋的担忧成真了」 | NVIDIA依存からの脱却の現実化 |
+| NEXT趋势 | 「黄仁勋说这是"灾难"：DeepSeek在华为芯片上跑通」 | 昇騰エコシステムの成熟 |
+| 新立场pro | 「DeepSeek V4、GPT5.5会师：通向AGI的门票只有Coding？」 | AGI論争 |
+| 硅基星芒 | 「DeepSeek-V4：中国AI应用寒武纪大爆发奇点降临」 | 新時代宣言 |
+| 机器之心 | 「翻完DeepSeek报告，我们发现了中国AI的默契」 | 産業分析 |
+| 豹变 | 「DeepSeek V4背后，梁文锋的转身」 | 企業戦略分析 |
+
+**SWE-bench Verified 92.3%**はClaude Opus 4.6の80.9%を11.4ポイント上回り、コーディング能力で業界新記録。
+
+**36krの論調**: 産業インパクト重視。「成本暴降73%」「寒武紀大爆发の奇点」と超肯定的。昇騰910C対応を中国AIの自立象徴として強調。
+
+**V2EXの反応**: 「V4变强了，但是也太贵了」— コスト/実利用者の現実感ギャップが顕在化。
+
+**Juejinの実測**: 「夯爆了还是拉完了？」結果は「夯爆了」（非常に強力）。OpenClawとの比較で「体验完阿里悟空，想把龙虾换掉了」。
+
+**Coze 2.5 + Agent World**: ByteDanceのAgentプラットフォームが「满配就位，不止Claw」スローガンでデジタル存在の時代へ。扣子编程（Coze Programming）で全栈開発を自然言語で実現。
+
+### Wiki統計
+- **Entity Pages**: 38
+- **Concept Pages**: 64（+0 — 更新のみ）
+- **Comparison Pages**: 1
+- **Total Pages**: 103
+- **Last Updated**: 2026-04-26
+
+---
+
+## [2026-04-25] cn-media-analysis | DeepSeek V4波及 / Codex透明度問題 / Token価格転換期
+
+### チェックポイント: 20260425T210141Z
+- **収集数**: V2EX:15, Juejin:15, 36kr:13, WeChat:15, Zhihu:0, 総計:58件（Daily Digest: 58件）
+- **Triage decisions**: ✅Take:1 / ⚠️Skip:10 / ⚠️Reference:0
+
+### Take処理済み
+| アイテム | ソース | Wiki更新 |
+|----------|--------|---------|
+| Codex App SSH偷偷機能追加 | V2EX (#1207253) | `pages/openai-codex-infrastructure.md` 既に2.4節に反映済み（透明度懸念） |
+
+### スキップ要因
+- WeChat 10件: Sogou検索による旧記事再生（2023〜2024年）— 機器之心/AI00月間榜单等
+- V2EX 4件: 内容極薄（269〜477byte）の噂/雑談スレ — GPT-6.0噂、低价GPT漏洞、Plus状態確認
+
+### 主要トレンド（Daily Digestベース）
+
+**1. DeepSeek V4波及（36kr中心）**
+- 13件中8件がDeepSeek V4関連（機器之心、豹変、智谷趨勢、镜相工作室等）
+- 核心トピック: 「黄仁勋说这是"灾难"」「华为芯片上跑通」「中国AIの協調パターン」「成本暴降」
+- 36krの論調: 産業インパクト重視。昇騰950対応を中国AIの自立象徴として強調
+
+**2. Juejin実践トレンド**
+- AI Agentエンジニアリング: n8n工作流、Agent自主决策、Git思考
+- 国産モデル競争: GLM-5开源、豆包2.0（中国版Trae）、阿里算力（OpenClaw対策）
+- Token価格転換期: 「Copilot下架opus、Qwen按量计费、GLM限制非代码使用、Token都在涨价」
+- RAG言説変化: 「为什么现在RAG越来越少提及了」— Agent→RAG言説の転換示唆
+
+**3. V2EX開発者温度**
+- GPT-5.5 vs Opus 4.7比較: 「天下苦Claude久矣、GPT就出招了」
+- GPT-Image-2生图: 多数の実測報告。韩文promptの生成検証
+- 最优化問題に御三家全军覆灭: 大模型の理論的限界議論
+- Coding Plan/订阅コスト: 「一个月上班要用多少token」— コスト意識の顕在化
+
+### ソース間温度差
+1. **DeepSeek V4**: 36krは「成本暴降73%」「寒武紀大爆発の奇点」と超肯定的。V2EXは「V4变强了，但是也太贵了」— コスト/実利用者の現実感ギャップ
+2. **Agent vs RAG**: WeChat/Juejinは「Agentは超级员工」とAgent言説を推進。Juejinで「RAG越来越少提及」と言説転換の兆し
+3. **国産モデル価格**: Juejinが「Token都在涨价」と価格転換の警鐘。V2EXも「一个月多少token」とコスト意識。36krは価格議論より産業分析に集中
+
+### 新興トレンド
+- **豆包2.0/豆包MarsCode**: Juejinで「中国版Trae免费用」として紹介。ByteDanceのCodingプラン展開
+- **阿里悟空（MCP）**: Juejinで「体验完阿里悟空，想把龙虾换掉」。MCPエコシステム競争
+- **CopilotのOpus排除**: Juejin/V2EXで「Copilot下架opus」— Microsoftのモデル戦略変更
+- **Token価格上昇**: Juejinで「人还比Token便宜吗？」— 価格転換期の象徴的議論
+- **GPT-Image-2生图**: V2EXで多数の実測報告。韩文prompt対応検証
+
+### 中国特有トレンド指標
+| 指標 | 状態 | 説明 |
+|------|------|------|
+| 価格戦 | 🔴激化 | 「Token涨价」「一个月多少token」— GPT/Claude/Copilotの価格転換 |
+| 开源熱度 | 🟡安定 | GLM-5开源のみ。DeepSeek V4は閉源（coding plan方式） |
+| 出海指数 | 🟢上昇 | GPT-5.5無料使用方法の共有（海外認知の中国内拡散） |
+| 监管温度 | 🟠上昇 | 支付宝の余额宝/花呗に対する金融規制新方針（V2EX「天塌了」） |
+| 国产替代度 | 🟡中 | 豆包2.0、阿里悟空、GLM-5— 多角的な国産代替案 |
+| 昇騰エコシステム | 🟢上昇 | 「黄仁勋灾难」言説、华为昇騰950対応を中国AI自立の象徴 |
+
+### Wiki更新推奨
+- `pages/openai-codex-infrastructure.md`: SSH偷偷機能は既に反映済み（確認済）
+- `entities/deepseek.md`: 36krの新着DeepSeek V4関連記事（10件以上）の追加検討
+- `entities/gpt-5-5.md`: GPT-5.5の実測レポート追加（V2EX: 韩文prompt検証等）
+- `entities/gpt-image-2.md`: 生图実測レポートの追加（V2EX: 多数の実測報告）
+- `entities/claude-code.md`: CopilotのOpus排除、Token価格転換の影響追記
+- `entities/openclaw.md`: 阿里算力によるOpenClaw対策記事の検討
+
 # Wiki Log
 
 Chronological record

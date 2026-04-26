@@ -3,7 +3,7 @@ title: "Qwen (通义千问) — Alibaba Cloud LLM"
 type: concept
 tags: [LLM, chinese-ai, open-source, multimodal, coding-agent, alibaba]
 created: 2026-04-20
-updated: 2026-04-20
+updated: 2026-04-26
 aliases: ["通义千问", "Qwen3", "Qwen3.5", "Qwen-Coder"]
 source_lang: zh-CN
 ---
@@ -54,11 +54,35 @@ Qwen（通义千问）はAlibaba Cloudが開発する大規模言語モデルシ
 
 ### Qwen3.6シリーズ（2026年最新）
 
-| モデル | 定位 | 特徴 |
-|--------|------|------|
-| **Qwen3.6-Plus** | 视觉语言 | Vibe Coding体験显著提升 |
-| **Qwen3.6-Flash** | 高速・低成本 | 数学・コード推理・空間知性強化 |
-| **Qwen3-VL-Plus** | 视觉理解 | 空間認知・マルチモーダル思考強化 |
+#### リリース概要（2026年4月24日〜25日）
+Qwen3.6シリーズは、Alibabaの次世代モデル群。Qwen3.5-Plusの3970億パラメータ（MoE 3970B総/170B活性化）からさらに進化。
+
+#### Qwen3.6-Max-Preview（旗舰预览版）
+- Qwen3.6シリーズの旗舰モデル（商用API経由で提供中）
+- Qwen3.5-Maxの後継。より複雑な推論・分析任務に特化
+- 「preserve_thinking」機能: 推論過程をユーザーに開示（DeepSeek-V4のDeep Thinkingに対抗）
+
+#### Qwen3.6-Plus
+- 视觉语言モデル。Vibe Coding体験が大幅に改善
+- Qwen3.5-Plusの後継。より高速な推論
+
+#### Qwen3.6-Flash
+- 高速・低成本定位
+- 数学・コード推理・空間知性が強化
+- API価格: Qwen3.5-Plusよりさらに低く設定（0.8元/MTok以下）
+
+#### Qwen3-VL-Plus
+- 视觉理解特化。空間認知・マルチモーダル思考が強化
+
+#### Qwen3-Coderシリーズ
+- **最大パラメータ**: 235B（MoE、30B活性化）、最小0.6Bまで展開
+- **対応言語**: 119言語・方言
+- **訓練データ**: 36兆token（Qwen2.5比2倍）
+- **License**: Apache 2.0
+- **混合思考模式（核心功能）**:
+  - **思考模式**: 複雑アルゴリズム・架构設計時に深度段階的推理
+  - **非思考模式**: 简单コード生成時にミリ秒級応答
+  - **智能切替**: 任務复杂度に応じて自動切り替え
 
 ### Qwen3-Max（旗舰モデル / 未开源）
 - Qwen3-Max-Thinkingとして登場

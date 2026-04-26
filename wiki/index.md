@@ -1,12 +1,13 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-04-25
-エンティティ: 38, コンセプト: 76, ダイエスト: 8, 比較: 1, ページ: 2
+最終更新: 2026-04-26
+エンティティ: 38, コンセプト: 76, ダイジェスト: 8, 比較: 1, ページ: 2
 
-### 本日更新（2026-04-25）
-- `pages/industry-trends.md` — DeepSeek V4リリース（13+本36kr記事）、昇騰エコシステム進展、中国AI「寒武纪大爆发」、CodingPlan/阿里悟空/GLM-5追加
-- `concepts/gpt.md` — 低価格GPT脆弱性議論更新（V2EX #1207040）
-- `pages/openai-codex-infrastructure.md` — Codex App SSH「偷偷加了」透明性懸念確認済み
+### 本日更新（2026-04-26）
+- `concepts/deepseek.md` — DeepSeek-V4正式リリース（4/24）、ベンチマーク詳細（SWE-bench 92.3%）、mHC+Engram統合、Webインターフェース新機能
+- `concepts/qwen.md` — Qwen3.6シリーズ追加（Max-Preview/Plus/Flash/VL-Plus/Coder）、preserve_thinking機能、235B-Coder詳細
+- `concepts/coze.md` — Coze 2.5リリース（Agent World、扣子罗盘、OpenClaw Studioオープンソース化、扣子编程）
+- `config/hot-topics.yaml` — deepseek/qwen/coze last_crawled更新（2026-04-26）
 
 ## エンティティ (Entities)
 
