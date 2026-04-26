@@ -1,7 +1,7 @@
 ---
 title: "机器之心「AI00」十一月榜单:OpenAI科学家创立Embodied Intelligence"
 source: wechat-media
-url: "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS5mzpYPP6Wb5Kc0kwMU7WQdf7gSTqvdqXFqXa8Fplpd9LfYTEGzOMCLKC_R74noh1bhrFjgHhYpbc28eZ1HIKQCtN_VwGKAyyQRDPNvQMcaMdncl8A2zZvH1nek5S_UsKBLKNAoISWUZ0MzK9A_3DjNKD4X_N9RMFPnZbVQ9_-5ZQWl71EMLCmgcjJVibWcWEznzKB2Fk9GoGBNHUXvSoGS54z_tGSZTqA..&type=2&query=%E6%9C%BA%E5%99%A8%E4%B9%8B%E5%BF%83&token=100CB4F01F854EEAD1D7818890FF60B9D151CF2369EDD487"
+url: "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS7_-inpqY9u1vZqwqpGEcFQa2V8GB4qV_VqXa8Fplpd9bbOcbcwwEUBhWaBaA-htpXG_erIOHXlJnWEh-eZIZ7Aa2RMKd4nIkVahIexhdLVbLRssWePjOr23XqxoT4IMD6IvWotJtlUJ-8g2pYZ_vxozfv2v0tMk0KFe-pk9TYY3acSt5Igu4I3jQ8BQrdX2bCb0kRm7ZhvYhPhgArIDn0jyPfCoem7FzA..&type=2&query=%E6%9C%BA%E5%99%A8%E4%B9%8B%E5%BF%83&token=14548827F26FA5063C3D6B5F70A0D7243CBB992D69EE7D1D"
 author: "机器之心"
 date: 2017-12-06
 score: 0
@@ -17,4 +17,4 @@ tags: ["OpenAI"]
 ## 涉及话题
 - OpenAI
 
-[原文链接](https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS5mzpYPP6Wb5Kc0kwMU7WQdf7gSTqvdqXFqXa8Fplpd9LfYTEGzOMCLKC_R74noh1bhrFjgHhYpbc28eZ1HIKQCtN_VwGKAyyQRDPNvQMcaMdncl8A2zZvH1nek5S_UsKBLKNAoISWUZ0MzK9A_3DjNKD4X_N9RMFPnZbVQ9_-5ZQWl71EMLCmgcjJVibWcWEznzKB2Fk9GoGBNHUXvSoGS54z_tGSZTqA..&type=2&query=%E6%9C%BA%E5%99%A8%E4%B9%8B%E5%BF%83&token=100CB4F01F854EEAD1D7818890FF60B9D151CF2369EDD487)
+[原文链接](https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS7_-inpqY9u1vZqwqpGEcFQa2V8GB4qV_VqXa8Fplpd9bbOcbcwwEUBhWaBaA-htpXG_erIOHXlJnWEh-eZIZ7Aa2RMKd4nIkVahIexhdLVbLRssWePjOr23XqxoT4IMD6IvWotJtlUJ-8g2pYZ_vxozfv2v0tMk0KFe-pk9TYY3acSt5Igu4I3jQ8BQrdX2bCb0kRm7ZhvYhPhgArIDn0jyPfCoem7FzA..&type=2&query=%E6%9C%BA%E5%99%A8%E4%B9%8B%E5%BF%83&token=14548827F26FA5063C3D6B5F70A0D7243CBB992D69EE7D1D)

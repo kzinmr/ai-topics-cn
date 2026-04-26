@@ -1526,4 +1526,41 @@ Originating conversation: (scheduled cron)
 | DeepSeek V4 | WeChat/36kr | 04-24 | Juejin→V2EX | 公式発表→ベンチマーク→実使用感 |
 | GPT-5.5 | 36kr | 04-24 | Juejin→V2EX | ニュース→技術検証→比較論 |
 | Claude Code制限 | Juejin | 04-24 | V2EX | 実践報告→懸念共有 |
-| Kimi K2.5代替 | Juejin | 04-24 | — | 孤立トピック（エコーチェンバー懸念） |
+|| キミ K2.5代替 | Juejin | 04-24 | — | 孤立トピック（エコーチェンバー懸念） |
+
+## [2026-04-26] ingest-turboquant-dflash | TurboQuant + DFlash 新規概念ページ作成
+
+### 新規ページ（2件）
+
+1. **concepts/turboquant.md** — Google Researchの超高効率ベクトル量子化アルゴリズム
+   - **TurboQuant**: KVキャッシュ6×圧縮 + 精度損失ゼロ
+   - **PolarQuant**: 偏座標変換によるメイン圧縮（AISTATS 2026）
+   - **QJL**: 1ビット残余補正によるattention scoreバイアス除去（AAAI 2025）
+   - コミュニティ実装: turboquant-hf (PyPI), turboquant-model (GitHub)
+   - vLLM/llama.cpp統合は開発中（2026年4月時点）
+
+2. **concepts/dflash.md** — Z-Labのブロック拡散モデルによる6倍推論加速
+   - **ブロック拡散**: 単一フォワードパスでブロック全体を並列生成
+   - **KV注入イノベーション**: target featuresを全層のKV投影に注入（EAGLE-3の第一層注入を超える）
+   - **最大6倍加速**（Qwen3-8B、lossless）
+   - 対応モデル: Qwen3.5/3.6シリーズ、Kimi-K2.5、gpt-oss、LLaMA-3.1
+   - バックエンド: vLLM、SGLang、Transformers、MLX
+
+### Raw Articles（2件）
+
+1. **raw/articles/google-research-turboquant-2026.md**
+2. **raw/articles/z-lab-dflash-2026.md**
+
+### Index更新
+
+- コンセプト数: 79 → 81
+- `turboquant.md` と `dflash.md` をアルファベット順にConceptsセクションに追加
+
+## 2026-04-26 21:01 Triage Checkpoint (20260426T210139Z)
+
+- **総収集**: 60件（実質11件、Sogou古記事49件）
+- **Take**: 2件 — MCPセキュリティ基準（OpenClaw 12类隐患）、昇騰950対応（黄仁勋「灾难」反応）
+- **Reference**: 2件 — Codex App SSH偷偷追加、低价GPT脆弱性
+- **Skip**: 7件
+- **Wiki更新状況**: 両ページとも既に対応済み（mcp-securityは04-18作成、deepseekは04-26更新）
+- **温度差**: 36kr（新智元/NEXT趋势）がOpenClaw/MCPセキュリティとDeepSeek昇騰対応を先行報道。V2EXで実使用感ベースの評価が追従

@@ -1,7 +1,7 @@
 # AI Topics China Wiki — Index
 
 最終更新: 2026-04-26
-エンティティ: 39, コンセプト: 79, ダイジェスト: 8, 比較: 1, ページ: 2
+エンティティ: 39, コンセプト: 81, ダイジェスト: 8, 比較: 1, ページ: 2
 
 ### 本日更新（2026-04-26）
 - `entities/coze.md` — **新規**: Coze 2.5 / Agent Worldの技術詳細（云电脑・云手机・独立身份・parallel web）、OpenClaw OSSエコシステム分析
@@ -9,6 +9,8 @@
 - `concepts/token-pricing-trend.md` — **新規**: Token価格上昇トレンド（計算力インフレ、按量计费移行、Copilot Opus排除）
 - `concepts/wukong.md` — **新規**: 阿里悟空（Wukong）企業級AIエージェントプラットフォーム（RealDoc、OPTスキル、セキュリティ）
 - `concepts/coding-plan.md` — Wukong関連情報追記
+- `concepts/turboquant.md` — **新規**: Google Researchの超高効率ベクトル量子化アルゴリズム（KVキャッシュ6×圧縮、PolarQuant + QJL）
+- `concepts/dflash.md` — **新規**: Z-Labのブロック拡散モデルによる6倍推論加速（speculative decodingの新世代手法）
 - `config/hot-topics.yaml` — deepseek/qwen/coze/wukong/token-pricing last_crawled更新（2026-04-26）
 
 ## エンティティ (Entities)
@@ -75,32 +77,34 @@
 - [[chinai-348-compute-year-review|ChinAI #348 — 2025年中国計算力産業回顧：熱狂、成長の痛み、価値回帰]]
 - [[claude-code-router|claude-code-router — モデル切り替えルーター]]
 - [[claude-design|Claude Design — Anthropicのデザインツール（Figma/Canva競合）]]
-- [[coding-plan|Coding Plan（编程计划）— 中国発AIコーディングサブスクリプションモデル]]
-- [[function-calling|Function Calling（関数呼び出し）— LLMと外部APIを接続する核心メカニズム]]
-- [[gpt|GPT — OpenAIの言語モデルシリーズ]]
-- [[multimodal|多模态/Multimodal — 複数のモダリティを統合するAI]]
-- [[quantization|量化/Quantization — LLMの効率的な推論技術]]
-- [[rlhf-alignment|RLHF/对齐 — 人間のフィードバックによるLLMの対話最適化]]
-- [[fine-tuning|微调/Fine-tuning — 大規模モデルの特定ドメイン適応]]
-- [[glory-ai-phone|荣耀AI手机专访 — 端侧AIのキャリアと未来]]
-- [[gomcp|GoMCP — Go言語MCP Serverフレームワーク]]
-- [[gpu-sanctions-china|中国GPU制裁・半導体輸出制限 — 米中AI競争と国産化動向]]
-- [[harness-engineering|Harness Engineering — LLM Agentの外化（Externalization）パターン]]
-- [[implicit-structure-collapse|隐性结构塌缩 — LLM出力が平均的構造に塌縮する現象と対策]]
-- [[langchain|langchain]]
-- [[mcp|MCP（Model Context Protocol）— AIツール連携の標準規格]]
-- [[mcp-china|MCP中国生態 — 中国での採用状況と独自の発展パターン]]
-- [[mcp-security|MCPセキュリティ — OWASP Top 10とMSB安全基準]]
-- [[ollama-criticism|Ollama批判論争 — オープンソース倫理と代替ツール]]
-- [[open-source-death|open-source-death]]
-- [[page-index|PageIndex — ベクトルなし推論ベースRAGフレームワーク]]
-- [[rag|rag]]
-- [[spokenwoz|SpokenWOZ — 达摩院Dialogue Agents基盤]]
-- [[transpec|Transpec — 仕様駆動開発フレームワーク間変換ツール]]
-- [[vector-db|Vector DB（向量数据库）— RAG・AI検索の基盤インフラ]]
-- [[vibe-coding|Vibe Coding（氛围编程）— AIネイティブなソフトウェア開発手法]]
-- [[vram-optimization|显存优化（VRAM Optimization）— KVキャッシュ圧縮・量子化・推論効率化]]
-- [[in-context-learning|In-context Learning（ICL）— コンテキスト内学習]]
+|- [[coding-plan|Coding Plan（编程计划）— 中国発AIコーディングサブスクリプションモデル]]
+|- [[dflash|DFlash — ブロック拡散モデルによる6倍推論加速（speculative decodingの新世代手法）]]
+|- [[function-calling|Function Calling（関数呼び出し）— LLMと外部APIを接続する核心メカニズム]]
+|- [[gpt|GPT — OpenAIの言語モデルシリーズ]]
+|- [[multimodal|多模态/Multimodal — 複数のモダリティを統合するAI]]
+|- [[quantization|量化/Quantization — LLMの効率的な推論技術]]
+|- [[rlhf-alignment|RLHF/对齐 — 人間のフィードバックによるLLMの対話最適化]]
+|- [[fine-tuning|微调/Fine-tuning — 大規模モデルの特定ドメイン適応]]
+|- [[glory-ai-phone|荣耀AI手机专访 — 端侧AIのキャリアと未来]]
+|- [[gomcp|GoMCP — Go言語MCP Serverフレームワーク]]
+|- [[gpu-sanctions-china|中国GPU制裁・半導体輸出制限 — 米中AI競争と国産化動向]]
+|- [[harness-engineering|Harness Engineering — LLM Agentの外化（Externalization）パターン]]
+|- [[implicit-structure-collapse|隐性结构塌缩 — LLM出力が平均的構造に塌縮する現象と対策]]
+|- [[langchain|langchain]]
+|- [[mcp|MCP（Model Context Protocol）— AIツール連携の標準規格]]
+|- [[mcp-china|MCP中国生態 — 中国での採用状況と独自の発展パターン]]
+|- [[mcp-security|MCPセキュリティ — OWASP Top 10とMSB安全基準]]
+|- [[ollama-criticism|Ollama批判論争 — オープンソース倫理と代替ツール]]
+|- [[open-source-death|open-source-death]]
+|- [[page-index|PageIndex — ベクトルなし推論ベースRAGフレームワーク]]
+|- [[rag|rag]]
+|- [[spokenwoz|SpokenWOZ — 达摩院Dialogue Agents基盤]]
+|- [[transpec|Transpec — 仕様駆動開発フレームワーク間変換ツール]]
+|- [[turboquant|TurboQuant — Google Researchの超高効率ベクトル量子化アルゴリズム（KVキャッシュ6×圧縮）]]
+|- [[vector-db|Vector DB（向量数据库）— RAG・AI検索の基盤インフラ]]
+|- [[vibe-coding|Vibe Coding（氛围编程）— AIネイティブなソフトウェア開発手法]]
+|- [[vram-optimization|显存优化（VRAM Optimization）— KVキャッシュ圧縮・量子化・推論効率化]]
+|- [[in-context-learning|In-context Learning（ICL）— コンテキスト内学習]]
 ||- [[vibe-coding-china|Vibe Coding中国 — 氛围编程受容とAgentic Engineeringへの進化]]
 ||- [[android-cli|Android CLI — Google Agent-first開発時代向けAndroid開発ツール]]
 ||- [[browser-use|browser-use — ブラウザAgentのDOM処理パイプライン]]
