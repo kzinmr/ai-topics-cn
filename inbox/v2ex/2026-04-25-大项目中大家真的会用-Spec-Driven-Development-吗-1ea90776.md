@@ -4,8 +4,8 @@ source: v2ex
 url: "https://www.v2ex.com/t/1208418"
 author: "CodeY99"
 date: 2026-04-25
-score: 22
-tags: ["openai", "AI"]
+score: 39
+tags: ["AI", "openai"]
 ---
 
 # 大项目中大家真的会用 Spec-Driven Development 吗？
@@ -21,7 +21,7 @@ openspec 会自己生成一堆 design & propsoal 很多都是正确的废话，�
 请教一下大家日常怎么实践的？
 
 ## 涉及话题
-- openai
 - AI
+- openai
 
 [原文链接](https://www.v2ex.com/t/1208418)

@@ -1,7 +1,7 @@
 ---
 title: "LLM浪潮下的AIAgent众生相"
 source: wechat-media
-url: "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS5mzpYPP6Wb5Nczdkjpni1YCEdcFurQLC1qXa8Fplpd937ZlDqh6i5Q5Jlcz3s-tArLyTAcYr_aKNT-ZuEkbma0joZh0iSZ40dvPsohEAy2kfxugxCfc6pxQy1eaZVO8iEPIHn515twB8zFJsy2YdrkXsSAhvMDFtqbPMM0Bs8kcWNPrueMkeVx5mnGSbLJ_66BuEWMKof6x59f0ZUvjw9kYJSSFPgfogQ..&type=2&query=%E6%9C%BA%E5%99%A8%E4%B9%8B%E5%BF%83 LLM AI Agent %E5%A4%A7%E6%A8%A1%E5%9E%8B&token=07EDF19660FA3095AFA9FEEA8D271677AFD31D4169EC830F"
+url: "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS5mzpYPP6Wb5NJZPA9waFWzciAkyZKSlSlqXa8Fplpd9wjav03ov2f6A6yHuh3GVP3D59xDcGC8AtBWXySqSaYrPZN6sn3s6xn8LuhnwYTgPujeVqsEb9On92t0r0YFY-tHEO1aWR-G6RyMvsxgIMq-ZwvLdjI6uBBy1pTKIiTI-DtAIuFFrMf1D9Uub7DujHbB4fijseN1JiewYRZW973JQ_LeJW-Rhtg..&type=2&query=%E6%9C%BA%E5%99%A8%E4%B9%8B%E5%BF%83 LLM AI Agent %E5%A4%A7%E6%A8%A1%E5%9E%8B&token=0C1382127FE52C8BB1B4E2FD9C4BEB11B2CF270D69ED2BA4"
 author: "机器之心"
 date: 2023-10-29
 score: 0
@@ -17,4 +17,4 @@ tags: ["LLM"]
 ## 涉及话题
 - LLM
 
-[原文链接](https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS5mzpYPP6Wb5Nczdkjpni1YCEdcFurQLC1qXa8Fplpd937ZlDqh6i5Q5Jlcz3s-tArLyTAcYr_aKNT-ZuEkbma0joZh0iSZ40dvPsohEAy2kfxugxCfc6pxQy1eaZVO8iEPIHn515twB8zFJsy2YdrkXsSAhvMDFtqbPMM0Bs8kcWNPrueMkeVx5mnGSbLJ_66BuEWMKof6x59f0ZUvjw9kYJSSFPgfogQ..&type=2&query=%E6%9C%BA%E5%99%A8%E4%B9%8B%E5%BF%83 LLM AI Agent %E5%A4%A7%E6%A8%A1%E5%9E%8B&token=07EDF19660FA3095AFA9FEEA8D271677AFD31D4169EC830F)
+[原文链接](https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS5mzpYPP6Wb5NJZPA9waFWzciAkyZKSlSlqXa8Fplpd9wjav03ov2f6A6yHuh3GVP3D59xDcGC8AtBWXySqSaYrPZN6sn3s6xn8LuhnwYTgPujeVqsEb9On92t0r0YFY-tHEO1aWR-G6RyMvsxgIMq-ZwvLdjI6uBBy1pTKIiTI-DtAIuFFrMf1D9Uub7DujHbB4fijseN1JiewYRZW973JQ_LeJW-Rhtg..&type=2&query=%E6%9C%BA%E5%99%A8%E4%B9%8B%E5%BF%83 LLM AI Agent %E5%A4%A7%E6%A8%A1%E5%9E%8B&token=0C1382127FE52C8BB1B4E2FD9C4BEB11B2CF270D69ED2BA4)

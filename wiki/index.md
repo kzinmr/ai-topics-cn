@@ -1,15 +1,14 @@
 # AI Topics China Wiki — Index
 
 最終更新: 2026-04-26
-エンティティ: 38, コンセプト: 76, ダイジェスト: 8, 比較: 1, ページ: 2
+エンティティ: 38, コンセプト: 79, ダイジェスト: 8, 比較: 1, ページ: 2
 
 ### 本日更新（2026-04-26）
-- `entities/qwen.md` — 通义实验室 (Tongyi Lab) 詳細追加（沿革・2026年4月組織再編・研究アウトプット）
-- `entities/qwen.md` — AlibabaのAI戦略大幅更新（3800億元投資、Zhenwu AIチップ10,000デプロイ、$69B 3か年計画、フルスタック垂直統合、S字カーブ分析）
-- `concepts/deepseek.md` — DeepSeek-V4正式リリース（4/24）、ベンチマーク詳細（SWE-bench 92.3%）、mHC+Engram統合、Webインターフェース新機能
-- `concepts/qwen.md` — Qwen3.6シリーズ追加（Max-Preview/Plus/Flash/VL-Plus/Coder）、preserve_thinking機能、235B-Coder詳細
-- `concepts/coze.md` — Coze 2.5リリース（Agent World、扣子罗盘、OpenClaw Studioオープンソース化、扣子编程）
-- `config/hot-topics.yaml` — deepseek/qwen/coze last_crawled更新（2026-04-26）
+- `concepts/token-pricing-trend.md` — **新規**: Token価格上昇トレンド（計算力インフレ、按量计费移行、Copilot Opus排除）
+- `concepts/wukong.md` — **新規**: 阿里悟空（Wukong）企業級AIエージェントプラットフォーム（RealDoc、OPTスキル、セキュリティ）
+- `concepts/coding-plan.md` — Wukong関連情報追記
+- `entities/deepseek.md` — 36kr 15+件のV4関連記事を反映（梁文锋の转身、中国AIの默契、华尔街反応、GLM-5比較等）
+- `config/hot-topics.yaml` — deepseek/qwen/coze/wukong/token-pricing last_crawled更新（2026-04-26）
 
 ## エンティティ (Entities)
 

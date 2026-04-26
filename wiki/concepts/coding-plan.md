@@ -176,3 +176,4 @@ Coding Planの台頭は、中国AI市場の以下の構造的特徴を反映し�
 | V2EX — 予算最適化議論 | [v2ex.com/t/1206473](https://www.v2ex.com/t/1206473) | Tier-1 | 開発者の実際のツール選定 |
 | 36kr — 阿里云 vs 火山云比較 | 36kr 2026.04.24 | Tier-1 | Coding Planベンダー比較 |
 | Juejin — Volcengine Coding Plan | Juejin 2026.04.24 | Tier-2 | 火山云モデルバンドル |
+| Juejin — Copilot下架opus Qwen按量计费 | Juejin 2026.04.22 | Tier-1 | トークン価格上昇トレンド |

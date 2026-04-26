@@ -5,7 +5,7 @@ url: "https://juejin.cn/post/7631027768982503478"
 author: "恋猫de小郭"
 date: 2026-04-22
 score: 24
-tags: ["Qwen", "Copilot", "前端", "AI编程", "人工智能"]
+tags: ["Copilot", "Qwen", "前端", "AI编程", "人工智能"]
 ---
 
 #  Copilot 下架 opus ，Qwen 开始按量计费，GLM 限制非代码使用，Token都在涨价，人还比 Token 便宜吗？
@@ -15,8 +15,8 @@ tags: ["Qwen", "Copilot", "前端", "AI编程", "人工智能"]
 > 👍 24   👁️ 0   ⭐ 11
 
 ## 涉及话题
-- Qwen
 - Copilot
+- Qwen
 - 前端
 - AI编程
 - 人工智能
