@@ -40,7 +40,35 @@ Or run:
 python3 scripts/trending_topics.py --days 1
 ```
 
-### 2. Identify high-value articles
+### 2. Pre-filter spam, recruitment & duplicates
+
+Run before identifying high-value articles:
+
+```bash
+# Create archive dirs
+mkdir -p wiki/raw/articles/archive/{spam,duplicates}
+
+# Spam/recruitment → archive/spam/
+# Categories: recruitment ads, crypto promos, lotteries, invite links, VPN sellers
+grep -rlE '招聘|内推|求人|直招|募集中|採用|Bitget|Uカード|U卡|crypto|NFT|エアドロップ|ブロックチェーン|抽選|discord\\.gg|加微信|扫码|QQ群' inbox/ --include='*.md' | while read f; do
+  if [ "$(wc -c < "$f")" -gt 1500 ] && grep -qE 'RAG|LLM|Agent|Claude|DeepSeek|Qwen|MCP|vLLM|GGUF' "$f" 2>/dev/null; then
+    echo "KEEP (technical): $(basename $f)"  # Has real AI discussion
+  else
+    mv "$f" wiki/raw/articles/archive/spam/
+  fi
+done
+
+# Deduplicate by hash suffix (keep newest)
+for hash in $(find inbox -type f | sed 's/.*-//' | sort | uniq -d); do
+  files=($(find inbox -type f -name "*-$hash" | sort))
+  keep="${files[${#files[@]}-1]}"
+  for f in "${files[@]}"; do
+    [ "$f" != "$keep" ] && mv "$f" wiki/raw/articles/archive/duplicates/
+  done
+done
+```
+
+### 3. Identify high-value articles
 
 Prioritize articles that:
 - Appear across **2+ sources** (cross-source signal)
