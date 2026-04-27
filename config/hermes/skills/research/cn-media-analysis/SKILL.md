@@ -1,6 +1,6 @@
 ---
 name: cn-media-analysis
-description: Analyze Chinese AI media trends and compare discourse across V2EX, Juejin, 36kr, Zhihu, and WeChat sources
+description: Analyze Chinese AI media, newsletter, and crawl items for durable trends, source differences, and wiki actions
 category: research
 version: 1.0.0
 author: hermes
@@ -10,164 +10,68 @@ metadata:
     tags: [Media-Analysis, Chinese-AI, Trend-Detection, Cross-Source]
 ---
 
-# 中国語AI メディアトレンド分析
+# Chinese AI Media Analysis
 
-## Purpose
+Use this skill for Chinese AI media, newsletter, or crawl triage when the task asks for source comparison, trend detection, or wiki update recommendations. Unless the task says otherwise, write the final analysis in Japanese.
 
-中国語圏の主要AI情報ソース（V2EX、掘金、36kr、知乎、WeChat公众号）を横断的に分析し、ソース間の言説の違い・温度差・トレンドの伝播パターンを明らかにする。各ソースの読者層と編集方針の違いが、同一トピックに対してどのように異なる視点を生み出しているかを可視化する。出力は日本語。
+## Core Workflow
 
-## Steps
+1. Read the script-provided checkpoint or digest before scanning raw files.
+2. For checkpoint jobs, treat `decisions` as the work queue and process `recommended_action: take` items first.
+3. Use metadata such as source, publisher, title, date, URL, summary, and proposed wiki target together; do not infer importance from volume alone.
+4. Cluster related items by durable topic: company, model, project, research result, product capability, regulation, business event, or developer practice.
+5. Compare source perspectives only when multiple sources cover the same durable topic.
+6. Recommend wiki work only when the item adds stable, reusable information or materially changes an existing page.
+7. If there is no actionable work and the cron prompt allows silence, return `[SILENT]`.
 
-### 1. ソースプロファイル確認
+## Source Lens
 
-各ソースの特性を分析の前提として把握する：
+| Source | Use For | Caveat |
+| --- | --- | --- |
+| V2EX | Developer reaction, practical friction, pricing/API complaints, deployment experience | Forum tone can overrepresent acute pain points |
+| Juejin | Implementation details, code-level validation, framework integration | Search results can resurface old articles |
+| 36kr | Business context, financing, market structure, company positioning | Separate publisher/editorial voice from cited facts |
+| Zhihu | Expert explanations, technical arguments, research context | Distinguish expert answers from generic discussion |
+| WeChat public accounts | Long-form explainers, research summaries, sector commentary | Source quality varies by account; name the account |
+| Newsletters | Curated item lists and summaries | Treat as triage inputs, not primary evidence when stronger sources exist |
 
-| ソース | 読者層 | 言説の特徴 | 信頼度 |
-|--------|--------|------------|--------|
-| **V2EX** | シニアエンジニア、スタートアップ | 率直な技術評価、コスト意識、実体験ベース | Tier-1 |
-| **掘金 (Juejin)** | 実装寄りエンジニア | コードレベルの検証、ハンズオン、パフォーマンス比較 | Tier-1 |
-| **36kr** | ビジネス層、投資家、経営者 | 産業分析、資金調達、市場シェア、競争構図 | Tier-1 |
-| **知乎 (Zhihu)** | 研究者、学生、専門家 | 学術的分析、原理解説、論文レビュー | Tier-3 (専門家回答のみ高品質) |
-| **WeChat公众号** | 幅広い技術者層 | 深層分析、論文速報（機器之心等）、総合解説 | Tier-2 (メディアにより差大) |
+Exclude CSDN from analysis unless explicitly requested.
 
-### 2. トレンド抽出
+## Analysis Rules
 
-```bash
-# 日付別の記事ボリューム確認
-for src in v2ex juejin 36kr zhihu wechat-media; do
-  echo "=== $src ==="
-  ls ~/ai-topics-cn/inbox/$src/ 2>/dev/null | \
-    sed 's/^\([0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}\).*/\1/' | \
-    sort | uniq -c | sort -rn | head -5
-done
-```
+- Prefer durable facts and stable implications over short-lived hype, rankings, or engagement metrics.
+- Do not invent article counts, dates, first appearances, source coverage, or confidence levels.
+- Preserve Chinese proper nouns in their original form; add Japanese explanations when useful.
+- Quote Chinese text only when it materially supports the conclusion, and include a short Japanese explanation.
+- Clearly separate source-observed facts from your inference.
+- Check for source disagreement, but do not force a cross-source comparison when the evidence is single-source.
+- When judging wiki relevance, prioritize technical novelty, entity significance, regulatory or business impact, ecosystem adoption, and whether the information changes an existing wiki page.
 
-各ソースの記事タイトルから頻出キーワードを抽出：
-- **モデル名**: DeepSeek, Qwen/通义千问, GLM/智谱, Kimi, Doubao/豆包, MiniMax, Yi/零一万物, Hunyuan/混元
-- **技術概念**: RAG, Agent/智能体, MCP, Fine-tuning/微调, 量化/Quantization, 长文本
-- **産業キーワード**: 开源, 降价/价格战, 合规/备案, 出海
-- **ツール**: Claude Code, Cursor, Coding Plan, Copilot
+## Newsletter And Crawl Cron Defaults
 
-### 3. ソース間比較分析
+- Newsletter triage: decide which newsletter items deserve wiki work; deduplicate overlapping items and ignore transient mentions.
+- Newsletter wiki ingest: follow checkpoint decisions and use wiki skills for writing; do not rerun broad media analysis unless the prompt explicitly asks for it.
+- Crawl triage: use the checkpoint or digest as the primary input; raw inbox files are secondary evidence for verification.
+- Crawl wiki ingest: preserve the triage decision and add only stable facts to `~/wiki`.
 
-同一トピックについて、各ソースでの扱いを比較する：
+## Output Shapes
 
-#### 分析フレームワーク
-
-```markdown
-### トピック: [トピック名]
-
-#### V2EX（開発者視点）
-- 記事数: N件
-- 主な論調: [ポジティブ/ネガティブ/中立]
-- 特徴的な意見: 「[中国語原文]」→ [日本語訳]
-- フォーカス: [例: コスト、API安定性、実使用感]
-
-#### 掘金（実践視点）
-- 記事数: N件
-- 主な論調: [ポジティブ/ネガティブ/中立]
-- 特徴的な意見: 「[中国語原文]」→ [日本語訳]
-- フォーカス: [例: ベンチマーク、コード例、統合方法]
-
-#### 36kr（ビジネス視点）
-- 記事数: N件
-- 主な論調: [ポジティブ/ネガティブ/中立]
-- 特徴的な意見: 「[中国語原文]」→ [日本語訳]
-- フォーカス: [例: 市場影響、競争優位性、資金調達]
-
-#### 知乎（学術視点）
-- 記事数: N件
-- 主な論調: [ポジティブ/ネガティブ/中立]
-- 特徴的な意見: 「[中国語原文]」→ [日本語訳]
-- フォーカス: [例: 技術的新規性、論文との関連、理論的根拠]
-
-#### WeChat（深層分析視点）
-- 記事数: N件
-- 主な論調: [ポジティブ/ネガティブ/中立]
-- 特徴的な意見: 「[中国語原文]」→ [日本語訳]
-- フォーカス: [例: 包括的解説、業界インサイト、予測]
-```
-
-### 4. 温度差検出
-
-以下のパターンに注目する：
-
-- **ソース間の意見乖離**: V2EXで批判的だが36krでは好意的（例: 国産モデルのマーケティング vs 実力）
-- **タイムラグ**: どのソースが先行してトレンドを拾うか
-  - 典型パターン: WeChat(機器之心) → 36kr → Juejin → V2EX → Zhihu
-- **エコーチェンバー効果**: 特定ソース内でのみ盛り上がるトピック
-- **中国 vs 海外の認識ギャップ**: 中国国内での評価と海外での評価の違い
-
-### 5. トレンド伝播パターン分析
+Use compact structured output suited to the job:
 
 ```markdown
-### トレンド伝播マップ
+## Triage
+- take: ...
+- skip: ...
+- park: ...
 
-| トピック | 初出ソース | 初出日 | 拡散先 | 拡散日 | 変容 |
-|----------|-----------|--------|--------|--------|------|
-| [Topic A] | 36kr | 04-15 | V2EX→Juejin | 04-16→04-17 | ビジネスニュース→技術検証 |
-| [Topic B] | WeChat(機器之心) | 04-15 | Juejin→Zhihu | 04-15→04-16 | 論文速報→実装ガイド→理論議論 |
+## Topic Clusters
+- ...
+
+## Source Caveats
+- ...
+
+## Wiki Actions
+- ...
 ```
 
-### 6. 中国AI固有のトレンド指標
-
-以下の中国語圏特有の指標を追跡する：
-
-- **价格战指数**: 国産モデルの価格競争の激しさ（API価格下落率、無料枠拡大）
-- **开源热度**: オープンソースリリースに対するコミュニティ反応
-- **出海指数**: 中国AIの海外展開に関する議論量
-- **监管温度**: 規制関連の議論の頻度と深刻度
-- **国产替代度**: 海外ツール（Claude, GPT等）から国産ツールへの移行議論
-- **昇騰エコシステム**: 华为昇騰（Ascend）チップへの最適化動向と国産GPU代替の議論
-
-### 実運用上の注意点
-
-- **Triage checkpoint JSONを先に読む**: スクリプトが生成するJSONの`decisions`フィールドに`recommended_action`が`take`のアイテムが実際の処理対象。`source_counts`で各ソースのボリュームを把握できる
-- **daily_digests.mdを主要情報源として使う**: inbox/ディレクトリ配下のファイルはスキャニング候補に過ぎず、daily_digestsに当日の主要ニュース要約がある
-- **Juejinは古い記事再生に注意**: 2023〜2024年の旧記事がSogou検索で再生されていることが多く、日付でフィルタリングが必要。実際の新着はdaily_digestから参照すべき
-- **36krのメディア名を明記**: 量子位、機器之心、新智元、字母AIなど、36kr内のメディアごとに信頼度と論調が異なる
-- **V2EXの「偷偷」表現**: 「偷偷加了」「偷偷」などの表現は、外部に非通知で機能追加されたことを示すセキュリティ/透明性の懸念材料として重要
-- **3モデル同時アップデート現象**: GPT-5.5、Opus 4.6、DeepSeek V4が相次いでリリースされるようなケースでは、V2EXで「很难评」系の複雑な評価が生まれる
-
-### 7. 週次・日次レポート生成
-
-```markdown
-# 中国語AI メディアトレンドレポート — [日付]
-
-## 📊 サマリー
-- 分析期間: [開始日] 〜 [終了日]
-- 総記事数: N件（V2EX: n, Juejin: n, 36kr: n, Zhihu: n, WeChat: n）
-- トレンドトピック上位5:
-
-## 🔥 ホットトピック
-### 1. [トピック名]
-[ソース間比較分析]
-
-## 🔄 ソース間温度差
-[乖離が大きかったトピックの詳細]
-
-## 📈 新興トレンド
-[前回レポートにはなかった新しいトピック]
-
-## 🇨🇳 中国特有の動向
-[規制、国産モデル競争、エコシステム変化]
-
-## 📋 Wiki更新推奨
-[分析結果に基づくwikiページの作成・更新提案]
-```
-
-## Output
-
-- メディアトレンド分析レポート（日本語）
-- ソース間比較マトリクス
-- トレンド伝播パターンの可視化
-- wiki更新推奨リスト（`semantic-article-grouping`スキルと連携）
-- wiki/log.md への分析記録追記
-
-## 注意事項
-
-- **CSDN記事は分析対象から完全に除外する** — SEOスパム・AI生成コピペが氾濫
-- 知乎は「専門家回答」と「一般回答」を明確に区別する
-- WeChat公众号はメディアの質に大きな差があるため、ソース名（機器之心、PaperWeekly、新智元、量子位等）を常に明記する
-- 中国語原文の引用は原文のまま保持し、日本語訳を併記する（SCHEMA.md準拠）
-- 固有名詞は中国語原表記を優先する（例: 通义千问/Qwen、智谱/Zhipu）
+For a long-form, ad hoc media report, load `references/analysis-guide.md` only when the task explicitly asks for detailed cross-source reporting.
