@@ -1,9 +1,10 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-04-26
-エンティティ: 39, コンセプト: 81, ダイジェスト: 8, 比較: 1, ページ: 2
+最終更新: 2026-04-27
+エンティティ: 53, コンセプト: 86, ダイジェスト: 8, 比較: 1, ページ: 2
 
-### 本日更新（2026-04-26）
+### 本日更新（2026-04-27）
+- `entities/gpt-5-5.md` — **孤立ページ対応**: GPT-5.5ページをindex.mdエンティティ表に追加、関連エンティティ・コンセプトページへ相互リンク設定完了
 - `entities/coze.md` — **新規**: Coze 2.5 / Agent Worldの技術詳細（云电脑・云手机・独立身份・parallel web）、OpenClaw OSSエコシステム分析
 - `entities/deepseek.md` — 36kr 15+件のV4関連記事を反映（梁文锋の转身、中国AIの默契、华尔街反応、GLM-5比較等）
 - `concepts/token-pricing-trend.md` — **新規**: Token価格上昇トレンド（計算力インフレ、按量计费移行、Copilot Opus排除）
@@ -38,8 +39,9 @@
 ||- [[springai-alibaba|SpringAI Alibaba — Java向けAI Agent開発フレームワーク]]
 |- [[fudan-nlp-agent-survey|复旦NLP — 80ページ大模型Agent総合論文]]
 |- [[gemini-google|Gemini/Google — Google AI基盤モデルとオープンソースGemma]]
-|- [[glm-zhipu|智谱GLM（ChatGLM）— 中国最大級オープンソースLLM]]
-|- [[horizon-robotics|horizon-robotics]]
+||- [[glm-zhipu|智谱GLM（ChatGLM）— 中国最大級オープンソースLLM]]
+||- [[gpt-5-5|GPT-5.5 — OpenAI最新フラグシップモデル（2026年4月）]]
+||- [[horizon-robotics|horizon-robotics]]
 |- [[iflytek|iflytek]]
 |- [[kimi-moonshot|Kimi（月之暗面/Moonshot AI）— Claude Code代替として急成長する中国国籍LLM]]
 |- [[kimi-k2-6|Kimi K2.6 — 月之暗面开源旗舰模型]]

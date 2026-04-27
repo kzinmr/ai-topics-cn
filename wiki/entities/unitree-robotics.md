@@ -63,6 +63,20 @@ Unitree Robotics（宇树科技）は、2016年に王興興により杭州で創
 - **王興興の警言**: 「同质化競争が非常に深刻化。理性競争を、悪意・無効な内巻を避ける。亏损卖机器人は業界を崩す。」
 - **課題**: 具身智能大脑の汎用性不足、工業シーン比率20%未満、灵巧手の壊れやすさ（部品コスト15%）
 
+## 最新動向（2026年4月）
+
+### 10 m/s高速走行達成
+
+2026年4月、Unitreeは**時速10m/s（時速36km）の高速走行**を達成し、人型ロボットが「高ダイナミック走行時代」に入ったことを示した。
+
+Zhihu Frontier Weeklyの報道によると:
+- **技術的特徴**: 足の配置制御、脚の協調、衝撃吸収、姿勢安定化、高周波衝撃下でのハードウェア耐久性
+- **比較**: 2026年2月、上海スタートアップMirrorMe TechnologyがBoltでトレッドミル上10m/sを達成。Unitreeは実際のトラックで達成した点で優位
+- **設計思想**: ロボットは頭部モジュールなしでも走行可能。IMUは胴体、力センサーは脚に配置。Motion controlとvisionの完全デカップリングを実現
+
+> **出典**: Zhihu Frontier Weekly — [Unitree hits 10 m/s sprint](https://www.zhihu.com/question/2026580932996456466) [T1]
+> **出典**: Substack — [Zhihu Frontier Weekly](https://substack.com/app-link/post?publication_id=6222474&post_id=194786861) [T2]
+
 ## 関連企業
 
 - **AgiBot（智元机器人）**: 中国の人形ロボットNo.2（5,168台/2025年）

@@ -113,9 +113,52 @@ ChinAI #336の分析によると:
 - **月之暗面** (Kimi): AIGC大模型企業（トップ50入り） — [[minimax-vs-kimi-moonshot]]
 - **阶跃星辰**: AIGC大模型企業（2023年設立）
 
+## Alibaba Cloud × MiniMax — Harness Eraのインフラ（2026-04）
+
+ChinAI #355で報じられた、MiniMaxとAlibaba Cloudの戦略的パートナーシップ。MaxClaw・MaxHermesエージェントの**クラウド実行基盤**をAlibaba ACK/ACSで再構築した事例。
+
+### 4つの企業級鴻沟とAlibabaの破局策
+
+| 鴻沟 | 課題 | Alibaba ACK/ACSの解決策 |
+|------|------|------------------------|
+| **安全境界** | OpenClaw/Hermesは直接ホストOSで実行、Shell権限・ファイル读写・prompt injectionリスク（CVE 82件） | ACS Agent Sandboxで**MicroVMレベルの隔离**。各インスタンス独立カーネル、ESSD暗号化ストレージ、TrafficPolicyデフォルト拒否 |
+| **状態揮発性** | 長時間タスクでコンテキスト消失、インスタンス再起動で進捗ロスト | 階層型永続化: ESSD（設定/キー/短期記憶）+ NAS共有（Skills/ワークフロー）+ PolarDB/Tair（構造化データ） |
+| **大規模クラスター運用** | 数十万Agentの統一调度が单机フレームワークでは不可能 | ACK（制御面）+ ACS（実行面）の分離。メッセージ配信・タスク編成・ポリシー下发・状態管理を統一プラットフォーム化 |
+| **コスト対負荷変動** | 常駐Agentのidleコスト + 突发時のCPU/Memory急増 | ACS**カスタムテンプレート预热**（20-40msインスタンス供給）、**最大15,000沙箱/分**の弾性スケール。タスク終了時自動解放 |
+
+### アーキテクチャ概要
+
+```
+制御面 (ACK)
+├── メッセージ配信
+├── タスク編成
+├── ポリシー下发
+├── 状態管理
+└── 運行観測
+
+実行面 (ACS Agent Sandbox)
+├── MicroVM隔离（各インスタンス独立カーネル）
+├── ESSD暗号化ストレージ
+├── NAS共有スペース（Skills/ワークフロー）
+├── 独立弾性NIC
+└── ランタイムCheckpoint
+```
+
+### IDC/Gartner予測との関連
+
+- **IDC FutureScape 2026**: 2027年までに全球2000強企業のAgent使用量**10倍増**、Token/API调用負荷**1000倍増**。推論が最大AIワークロード（47%）
+- **Gartner**: 2028年までに新規AIデプロイの**95%**がKubernetes環境で実行
+- Alibaba ACK/ACSは「**AI超級計算機のクラウドネイティブOS**」として位置づけ
+
+### 出典
+
+- [ChinAI #355: An Alliance for AI's "Harness Era" — MiniMax + Alibaba Cloud](https://substack.com/home/post/p-194618013) — Jeff Ding
+- [机器之心: MiniMax + 阿里云 — AI Agent基础设施重构](https://mp.weixin.qq.com) — 技術深度解析
+
 ## 関連ページ
 
 - [[minimax-vs-kimi-moonshot]] — MiniMax vs Kimi/Moonshot詳細比較
-- [[harness-engineering]] — M2.7がOpenClawフレームワークで自己進化訓練
+- [[harness-engineering]] — M2.7がOpenClawフレームワークで自己進化訓練、MaxClaw/MaxHermesのクラウド運用
 - [[coding-plan]] — MiniMaxもToken Planでコーディングサービス提供
 - [[ai-video-generation]] — speech-2.8-hdがTTS主力として採用
+- [[xiaoice]] — Microsoft系AI人材の中国エコシステム

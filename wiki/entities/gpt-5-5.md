@@ -113,6 +113,13 @@ V2EXでは「**GPT5.5在codex中credit消耗量相比5.4翻倍**」（GPT5.5はC
 - [[kimi-moonshot]] — Kimi K2.6
 - [[glm-zhipu]] — GLM-5
 - [[openclaw]] — MCPセキュリティ
+- [[concepts/token-pricing-trend]] — Token価格上昇トレンド（OpenAI課金体系変化の背景）
+- [[concepts/ai-agent]] — AI Agent（Computer Use機能）
+- [[concepts/harness-engineering]] — Harness Engineering（Agent外化パターン）
+- [[concepts/multimodal]] — 多模态/Multimodal（GPT-Image 2含む）
+- [[concepts/mcp-security]] — MCPセキュリティ（OpenClaw関連）
+- [[concepts/vibe-coding-china]] — Vibe Coding中国（コーディング生態）
+- [[openai-codex-基础设施]] — OpenAI Codex（Mac版「超级龙虾」）
 
 ### 外部ソース
 

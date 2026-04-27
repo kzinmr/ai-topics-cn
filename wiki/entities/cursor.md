@@ -101,6 +101,43 @@ Opus 4.7のCursorBench 70%達成は重要：
 
 > **出典**: 36kr — [https://36kr.com/p/3770121995911944](https://36kr.com/p/3770121995911944) [T1]
 
+## 最新動向（2026年4月22日）
+
+### SpaceXがCursorに$60Bの買収オプション — Agentプラットフォームへの転換
+
+36kr（字母AI）は**「SpaceX百亿锁定Cursor — 博的是IPO那1.75万亿」**と報道。SpaceXがCursorに対して戦略的な「コールオプション」を確保:
+
+- **取引内容**: 2026年末までに$60Bで買収、または$10Bの協力費
+- **Cursorの前回評価**: $29B → 事実上$60Bへ倍増
+- **Colossusスーパーコンピュータ**: 約20万台のH100 GPUアクセス権をCursorに提供
+- **Cursorの市場シェア**: AIコードエディタ市場で約25%（GitHub Copilot 37%に次ぐ2位）
+- **Enterprise顧客**: 2025年に25%→60%へ急成長
+- **Cursor Composer 2**: Terminal-Benchで61.7点（Claude Opus 4.6の58.0点を上回る）
+- **xAIへの人材流入**: Cursorのシニアエンジニアリングリード2名がすでにxAIに参加
+- **xAIのGPU利用率**: わずか11% — Cursorがアイドルcomputeを埋める役割
+
+36kr（字母AI）の別記事**「开出600亿美元价码，马斯克和Grok看中Cursor的不是Coding，而是Agent？」**では:
+
+- Cursorは単なるコーディングツールではなく、**AGIへの橋渡しとしてのAgentプラットフォーム**
+- Cursor 3はシンプルなエディタから、ローカル/クラウドAgentとマルチリポジトリ管理を統合したワークベンチへ進化
+- コーディングはGeneral AI Agentsへの最も実現可能なパス（コードは検証容易）
+- 「モデルをラップするだけの時代は終わる。Cursorは自らモデルを訓練しないとモートが消えると早期に気づいた」
+- **統合シナリオ**:
+  1. 独立ブランド: CursorはマルチモデルプラットフォームとしてGrok/SpaceX computeで稼働
+  2. 垂直統合: Cursorが「GrokのCodexモーメント」に — モデル+Agent+IDEの最適化スタック
+
+**競合状況**:
+
+| 企業 | 製品 | 収益 |
+|------|------|------|
+| Anthropic | Claude Code / Cowork | $30B 年率 |
+| Cursor | Composer 2.5 | $2B ARR(2月) → 2026年に$6B |
+| OpenAI | Codex (macOS) | Agentプラットフォームへ進化 |
+| Google | Antigravity (Gemini) | 遅れを取る; Brinがエリートチームを編成 |
+
+> **出典**: 36kr（字母AI）— [SpaceX百亿锁定Cursor](https://36kr.com/p/3777834249564677) [T1]
+> **出典**: 36kr（字母AI）— [开出600亿美元价码](https://36kr.com/p/3777822587777796) [T1]
+
 ## 関連リンク
 
 ### 内部リンク

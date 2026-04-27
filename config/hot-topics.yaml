@@ -105,8 +105,8 @@ topics:
     wiki_pages:
       - concepts/doubao
     notes: "ByteDance発。中国国内DAU最大級のAIアプリ。Doubao-Seed-2.0リリース（2026.02）。Dola海外版累計2億ダウンロード突破（2026.04）。豆包股仮想制度。Seed-CodeがGPT-5を9基準で凌駕。"
-  added: 2026-04-17
-  last_crawled: 2026-04-25
+    added: 2026-04-17
+    last_crawled: 2026-04-25
 
   # =========================================================
   # 2. Chinese AI Agent Ecosystem (中国AIエージェント)
@@ -149,8 +149,8 @@ topics:
     wiki_pages:
       - concepts/dify
     notes: "中国発オープンソースLLMOps。RAG・Agent・Workflow統合プラットフォーム。GitHub stars急増中"
-  added: 2026-04-17
-  last_crawled: 2026-04-25
+    added: 2026-04-17
+    last_crawled: 2026-04-25
 
   # =========================================================
   # 3. Local Deployment & Quantization (ローカル展開・量子化)
@@ -213,8 +213,8 @@ topics:
     wiki_pages:
       - concepts/china-ai-regulation
     notes: "生成式AI管理弁法、大模型備案制度、データセキュリティ法との交差。2026年新規: AI拟人化互动服务管理暂行办法（7月施行）、AI科技伦理审查与服务办法（4月施行）。政策動向をdeep dive"
-  added: 2026-04-17
-  last_crawled: 2026-04-25
+    added: 2026-04-17
+    last_crawled: 2026-04-25
 
   - slug: china-ai-model-filing
     title: "AI Model Filing System (大模型备案制度)"
