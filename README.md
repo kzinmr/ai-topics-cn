@@ -1,114 +1,143 @@
-# 🇨🇳 AI Topics CN — 中国語圏 AI/LLM ナレッジベース
+# AI Topics CN
 
-中国語圏のLLM/AI Agentに関する深い議論を定期監視し、日本語でキュレーションするAI Agentシステム。
+AI Topics CN is the knowledge base repository maintained by Hermes Agent for Chinese-language LLM and AI Agent discourse.
 
-[Karpathyのllm-wiki構成](https://github.com/kzinmr/ai-topics)に準拠し、Hermes Agentがクローリング・トリアージ・キュレーションを自動実行。
+This README describes the repository layout and stable responsibilities only. Operationally volatile details, such as source counts, cron schedules, current job state, generated report dates, and recent topic lists, should be read from the relevant config files or generated reports instead.
 
-## ソース階層
+## Path Policy
 
-| Tier | ソース | 相当 | アクセス方法 |
-|------|---------|------|---------------|
-| T1 | **V2EX** | Hacker News | API + HTML |
-| T1 | **掘金 (Juejin)** | Dev.to + Reddit | API |
-| T1 | **36氪** | TechCrunch | HTML (initialState) |
-| T2 | **知乎** | Quora (ターゲット) | API + HTML |
-| T2 | **微信公众号** | Medium + Newsletter | 搜狗検索 |
-| T3 | **知乎専門家** | 特定研究者の回答 | ターゲットフォロー |
-| T4 | **WaytoAGI** | Discord | 飛書公開ドキュメント |
+- Treat `~/ai-topics-cn` as the repository root.
+- The canonical wiki path is `~/wiki`. Use this path in Hermes prompts and skills.
+- The wiki content lives in this repository under `wiki/`, but prompts and skills should refer to destinations as `~/wiki/...`.
+- Use `~/.hermes/scripts/...` in examples for Hermes-managed scripts. Cron script paths are interpreted relative to `~/.hermes/scripts`.
+- Do not add environment-specific absolute paths or new alternate compatibility paths.
 
-### 監視対象WeChat公众号
-- 机器之心 — #1 AIメディア、論文解説
-- PaperWeekly — 論文+実装批評
-- 新智元 — 業界動向、中国モデル比較
-- 量子位 — トレンド追跡
+## Repository Layout
 
-### 除外ソース
-- **CSDN** — SEOスパムとAI生成コピペ記事が氾濫、絶対に使用禁止
-
-## アーキテクチャ
-
-```
-Layer 1: Raw Sources (inbox/)
-  クローラー → inbox/{v2ex,juejin,36kr,zhihu,wechat-media}/
-  6時間ごとに自動実行 (systemd timer)
-
-Layer 2: Curated Wiki (wiki/)
-  Hermes Agent → entities/, concepts/, comparisons/
-  12時間ごとにトリアージ (shelley timer)
-
-Layer 3: Dashboard
-  Go web server → https://hermes-china-digest.exe.xyz:8000/
-```
-
-## コマンド
-
-```bash
-# 全ソースクロール
-python3 scripts/crawl_all.py
-
-# 特定ソースのみ
-python3 scripts/crawl_all.py --source v2ex --limit 20
-python3 scripts/crawl_all.py --source juejin --limit 20
-python3 scripts/crawl_all.py --source 36kr --limit 20
-
-# Tier 1のみ
-python3 scripts/crawl_all.py --tier 1 --limit 15
-
-# トレンディング分析
-python3 scripts/trending_topics.py --days 3
-
-# Wiki健全性チェック
-python3 scripts/wiki_health.py
-
-# Xアカウントからwikiスケルトン生成
-python3 scripts/build_x_wiki.py --dry-run
-python3 scripts/build_x_wiki.py --handle @karminski3
-python3 scripts/build_x_wiki.py --enrich  # Hermes enrichmentプロンプト出力
-
-# 個別クローラー
-python3 scripts/crawl_v2ex.py --limit 30
-python3 scripts/crawl_juejin.py --limit 30
-python3 scripts/crawl_36kr.py --limit 30 --no-detail
-python3 scripts/crawl_zhihu.py --limit 20
-python3 scripts/crawl_wechat_media.py --account "机器之心"
-```
-
-## ディレクトリ構成
-
-```
+```text
 ai-topics-cn/
-├── wiki/                    # Layer 2: キュレート済みナレッジ
-│   ├── entities/            # 人物・企業・モデル
-│   ├── concepts/            # 技術・手法
-│   ├── comparisons/         # 比較分析
-│   ├── raw/articles/        # キュレート済み原文
-│   ├── index.md             # Wikiインデックス
-│   ├── log.md               # 操作ログ
-│   └── SCHEMA.md            # Wikiスキーマ定義
-├── inbox/                   # Layer 1: クロール結果
-│   ├── v2ex/
-│   ├── juejin/
-│   ├── 36kr/
-│   ├── zhihu/
-│   └── wechat-media/
-├── config/
-│   ├── feeds/               # Xアカウント設定
-│   │   └── x-accounts.yaml
-│   ├── hermes/              # Agent設定
-│   │   ├── SOUL.md          # Agentペルソナ
-│   │   └── skills/          # Agentスキル (5個)
-│   └── hot-topics.yaml      # アクティブクローリング対象 (24トピック)
-├── scripts/                 # クローラー・分析ツール
-├── systemd/                 # systemd unitファイル (参考)
-├── docs/                    # ドキュメント
-├── srv/                     # Go Webダッシュボード
-└── bin/                     # ビルド済みバイナリ
+|-- README.md
+|-- AGENTS.md
+|-- Makefile
+|-- go.mod
+|-- go.sum
+|-- .githooks/
+|   `-- pre-commit
+|
+|-- cmd/
+|   `-- srv/
+|
+|-- srv/
+|   |-- server.go
+|   |-- templates/
+|   `-- static/
+|
+|-- db/
+|   |-- migrations/
+|   |-- queries/
+|   `-- dbgen/
+|
+|-- inbox/
+|   |-- 36kr/
+|   |-- daily_digests/
+|   |-- juejin/
+|   |-- newsletters/
+|   |-- v2ex/
+|   `-- wechat-media/
+|
+|-- wiki/
+|   |-- SCHEMA.md
+|   |-- index.md
+|   |-- log.md
+|   |-- concepts/
+|   |-- entities/
+|   |-- comparisons/
+|   |-- pages/
+|   |-- reports/
+|   |-- raw/
+|   |   |-- articles/
+|   |   `-- archive/
+|   `-- x-accounts/
+|
+|-- config/
+|   |-- feeds/
+|   |-- hermes/
+|   |   |-- SOUL.md
+|   |   |-- cron/
+|   |   `-- skills/
+|   `-- hot-topics.yaml
+|
+|-- scripts/
+|-- systemd/
+`-- docs/
 ```
 
-## 中国語圏の特徴
+## Main Areas
 
-1. **中国産モデルが議論の中心**: Qwen, DeepSeek, ChatGLM, Yi, Kimi, 豆包
-2. **ローカルデプロイ重視**: VRAM最適化、量子化、検閲回避
-3. **規制コンテキスト**: コンテンツモデレーション、データローカリゼーション
-4. **WeChatエコシステム**: 最も深い議論は非公開WeChatグループ内
-5. **スピード**: 中国メディアは英語論文を数時間以内に翻訳・解説
+`inbox/` stores automatically collected inputs before wiki curation. Source-specific crawl outputs, daily digests, and newsletter artifacts are staged here for triage.
+
+`wiki/` is the curated knowledge base. Follow `wiki/SCHEMA.md` for raw sources, concepts, entities, comparisons, pages, reports, and X account notes. When creating or updating pages, update `index.md` and `log.md` as well.
+
+`wiki/raw/` stores source material and archived raw inputs so later wiki pages can cite the original material. Claims should retain links to original Chinese sources where available.
+
+`config/` stores source definitions, Hermes configuration, cron definitions, and active crawl targets. Project-specific local skills live under `config/hermes/skills/`.
+
+`scripts/` stores automation for crawling, newsletter processing, trend analysis, wiki health checks, X account page generation, cron sync, and git hook installation. When describing these scripts in Hermes runtime contexts, use `~/.hermes/scripts/...`.
+
+`cmd/`, `srv/`, and `db/` contain the Go dashboard application and its database access layer. Build and test entry points are defined in `Makefile`.
+
+`systemd/` stores unit and timer files for host integration. The actual enabled service state belongs to the runtime environment.
+
+`docs/` stores setup, migration, and operational documentation.
+
+## Data Flow
+
+```text
+Configuration
+  config/feeds/
+  config/hot-topics.yaml
+        |
+        v
+Collection and preprocessing
+  cron jobs
+  ~/.hermes/scripts/...
+        |
+        |-- inbox/<source>/
+        |-- inbox/daily_digests/
+        |-- inbox/newsletters/
+        `-- ~/wiki/raw/...
+                |
+                v
+Curation
+  Hermes Agent
+        |
+        |-- ~/wiki/concepts/
+        |-- ~/wiki/entities/
+        |-- ~/wiki/comparisons/
+        |-- ~/wiki/pages/
+        |-- ~/wiki/reports/
+        `-- ~/wiki/x-accounts/
+                |
+                v
+Index and history
+  ~/wiki/index.md
+  ~/wiki/log.md
+```
+
+## Cron and Config Sync
+
+The versioned copy of Hermes cron state lives at `config/hermes/cron/jobs.json`. Use `scripts/sync_cron.sh` to sync it with the runtime cron state.
+
+`.githooks/pre-commit` pulls the Hermes cron state into the repository before each commit when the runtime cron file exists. Run `scripts/install_hooks.sh` once in a new clone to install the hook.
+
+When running Hermes cron commands from outside Docker, use the wrapper under the Hermes root. For Nana, use `bin/hermes-nana`; do not run `docker exec ... hermes ...` directly.
+
+## Wiki Update Rules
+
+- Wiki pages, summaries, and reports are written in Japanese.
+- Preserve Chinese source text or terms when they matter, and translate or synthesize them in Japanese.
+- Follow `wiki/SCHEMA.md` frontmatter, naming, source attribution, and classification rules for new pages and substantial updates.
+- If raw source material exists, keep references under `~/wiki/raw/...`.
+- Add new pages to `~/wiki/index.md`.
+- Record changes in `~/wiki/log.md`.
+- Use `~/wiki/...` as the wiki destination path in prompts, skills, SOUL files, and runbooks.
