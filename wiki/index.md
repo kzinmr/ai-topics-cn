@@ -4,15 +4,9 @@
 エンティティ: 53, コンセプト: 86, ダイジェスト: 8, 比較: 1, ページ: 2
 
 ### 本日更新（2026-04-27）
-- `entities/gpt-5-5.md` — **孤立ページ対応**: GPT-5.5ページをindex.mdエンティティ表に追加、関連エンティティ・コンセプトページへ相互リンク設定完了
-- `entities/coze.md` — **新規**: Coze 2.5 / Agent Worldの技術詳細（云电脑・云手机・独立身份・parallel web）、OpenClaw OSSエコシステム分析
-- `entities/deepseek.md` — 36kr 15+件のV4関連記事を反映（梁文锋の转身、中国AIの默契、华尔街反応、GLM-5比較等）
-- `concepts/token-pricing-trend.md` — **新規**: Token価格上昇トレンド（計算力インフレ、按量计费移行、Copilot Opus排除）
-- `concepts/wukong.md` — **新規**: 阿里悟空（Wukong）企業級AIエージェントプラットフォーム（RealDoc、OPTスキル、セキュリティ）
-- `concepts/coding-plan.md` — Wukong関連情報追記
-- `concepts/turboquant.md` — **新規**: Google Researchの超高効率ベクトル量子化アルゴリズム（KVキャッシュ6×圧縮、PolarQuant + QJL）
-- `concepts/dflash.md` — **新規**: Z-Labのブロック拡散モデルによる6倍推論加速（speculative decodingの新世代手法）
-- `config/hot-topics.yaml` — deepseek/qwen/coze/wukong/token-pricing last_crawled更新（2026-04-26）
+- `concepts/mcp-china.md` — **大幅更新**: MCP月間DL 97M突破、GitHub公式MCP Server v1.0.2、GLM-5.1 MCP Atlas世界首位（71.8%）、MCP Auth標準化、Streamable HTTP、Docker MCP Toolkit、Azure MCP 2.0.0、Qwen3.6-35B-A3B MCPMark 37.0%
+- `concepts/china-ai-agent-ecosystem.md` — **大幅更新**: 「百蝦大戦」深水区、Coding Agent OS基盤化、CLI復活トレンド、Hermes Agent中国急成長、マルチAgent主流化、市場データ（12.96兆Token/週）、3層構造確定版
+- `concepts/mcp-chinese-tools.md` — **新規**: 中国MCPツールエコシステム（钉钉公式MCP OpenAPI/12 Profile、飞书MCP 8ツール、企微MCP、OpenClaw China 7チャネル、picoclaw MCP）
 
 ## エンティティ (Entities)
 

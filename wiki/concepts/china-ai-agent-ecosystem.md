@@ -1,8 +1,8 @@
 ---
 title: "中国AI智能体生态 — 2026年プラットフォーム・アーキテクチャ・市場動向"
 created: 2026-04-19
-updated: 2026-04-23
-tags: [ai-agents, platform, china, ecosystem, low-code, enterprise, openclaw, harness]
+updated: 2026-04-27
+tags: [ai-agents, platform, china, ecosystem, low-code, enterprise, openclaw, harness, coding-agent, cli-revival]
 aliases: ["中国AI智能体生态", "中国Agentプラットフォーム", "Baidu AgentBuilder", "腾讯元器", "Coze", "Dify", "OpenClaw-CN", "龙虾大战"]
 source_lang: zh-CN
 ---
@@ -173,6 +173,102 @@ Karpathyが提唱する「Vibe Codingの終焉とAgentic Engineeringへの移行
 - 頭部プラットフォームがAgent応用市場・協同ネットワークへ進化
 - 能力のプラグ&プレイと価値の再利用
 - BPM・低コードと深度統合
+
+## 2026年4月下旬動向：「百蝦大戦」が深水区へ
+
+2026年4月、中国AI Agent業界は「百蝦大戦（数百のロブスター戦争）」と呼ばれる競争の**第二フェーズ**に突入。OpenClawに端を発した「ロブスター」熱が3月に爆発した後、4月は**製品完成度（Delivery Completeness）**が新たな競争軸に。
+
+### 1. 4月の主要プレイヤー動向
+
+| 企業 | 製品・動き | 日付 | 戦略的意義 |
+|------|-----------|------|-----------|
+| **ByteDance** | 火山引擎ArkClaw + HiAgent（敏態・稳态並行） | 4/2 | 企業Agent建設方法論の体系化 |
+| **ByteDance** | 扣子（Coze）2.5 — Agent Word開放生態 | 4/7 | IMライクなUI + エコシステム戦略 |
+| **Tencent** | WorkBuddy微信小程序（雲沙箱+リモート実行） | 3/30 | 微信経由での使いやすさ重視 |
+| **Tencent** | TencentDB Agent Memory（長期記憶サービス） | 4/3 | OpenClawにネイティブ長期記憶を提供 |
+| **Tencent** | QQ Browser QBotClaw（初のブラウザ「ロブスター」） | 4/8 | 検索+Agentの融合 |
+| **Alibaba Qwen** | QwenPaw完全オープンソース化 | 4月 | 軽量カスタムモデル・マルチAgent協調 |
+| **Alibaba DingTalk** | 「悟空」AIネイティブワークプラットフォーム | 4月 | 企業智能体を中核に据えた再設計 |
+| **NetEase** | 有道LobsterAI — 国内初100%フルオープンソースAgent | 3-4月 | 5,000+スキル、マルチAgent、27万訪問 |
+
+### 2. Coding Agentが次世代AgentのOS基盤に
+
+業界のコンセンサスとして、**Coding Agent**が次世代Agentの**オペレーティングシステム基盤（OS Base）**に進化しつつある：
+
+- ClaudeのCowork、TencentのWorkBuddy、ByteDanceの扣子2.5はいずれもCoding Agentを実行基盤として採用
+- 競争の焦点：「LLM + Coding Agent + Harness Engineering」を一貫して提供できる**システム完成度**
+- 鍵は「誰が最もデリバリー可能な統合システムを構築できるか」
+
+### 3. CLIの復活 — 旧世界と新世界の接続
+
+2026年4月の重要なトレンド：
+
+- Agentの発展は **GUI（人間向け）** と **CLI（Agent向け）** の二分化へ
+- **DingTalk CLI**: 全オフィス機能のCLI化 → Agentが直接呼び出せる実行層へ
+- **Feishu CLI**: コラボレーション機能のインターフェース化 → 「人間とAI Agentがともに操作できるCLI」へ
+- **微信・企業微信・飛書・钉钉**: 人間-Agentコミュニケーションの**チャネル**としての役割に特化
+
+### 4. Hermes Agentの爆発的成長（中国）
+
+2026年2月のオープンソース化以降、Hermes Agentが中国で急成長：
+
+- **腾讯云**: Hermes Agentのワンクリッククラウドデプロイを提供（軽量サーバー2コア4G対応）
+- **Xiaomi**: MiMo-V2シリーズ大模型の公式統合を発表。Nous Portal経由で無料トライアル（4/8-4/22）
+- **マルチIM対応**: 飛書・企業微信・钉钉への統合ガイドが公開。15+メッセージプラットフォーム対応
+- コンセプト：「自己進化型Agent」— 記憶・スキル自動抽出・ワークフロー最適化
+
+### 5. マルチAgentアーキテクチャの主流化
+
+2026年4月時点で、マルチAgentシステムがAIアプリケーションの上限を決定するという**業界コンセンサス**が確立：
+
+- **有道LobsterAI**: 持続Agent（長期分業）と子Agent（一時的ワーカー）を分離。2つの持続Agent（業務・生活）運用が可能
+- **OpenClaw**: 3層構造（Tools / Agent / Channels）— スケジューリング、推論、実行を分離
+- **MCP + A2A**: Agent間通信プロトコルの標準化が進み、マルチAgentの基盤が成熟
+- **単一Agent問題**: システムプロンプト肥大化、推論ドリフト、コスト増加を解決
+
+### 6. 市場データ
+
+| 指標 | 数値 | 出典 |
+|------|------|------|
+| 中国AI大模型週間Token使用量 | 12.96兆（米国の4倍超） | OpenRouter |
+| 中国企業級AI Agent市場規模 | 2024年: 56億元、2029年: 591億元（CAGR 60.2%） | 中商産業研究院 |
+| 2026年予測市場規模 | 101億元 | IDC/中国信通院 |
+| 企業Agent導入率目標 | 2027年: 70%、2030年: 90%超 | 国務院 |
+| 運営効率向上 | 平均38% | 権威機関報告 |
+| コア業務コスト削減 | 平均25% | 権威機関報告 |
+
+### 7. 企業Agentプラットフォーム3層構造（2026年確定版）
+
+```
+第一層: テックジャイアント（生態統合型）
+  - Alibaba Cloud百煉（Model Studio） — 千問32.1%シェア、钉钉連携
+  - Tencent Cloud ADP 3.0 — 微信公众号・QQ・微信客服への配信
+  - Baidu AgentBuilder — 知識QA・文書処理強、検索基盤活用
+
+第二層: 垂直領域特化
+  - 百融智能（Results Cloud） — RaaSモデル、金融特化
+  - 金山WPS AI — オフィス深耕
+  - 神州問学 — OpenClaw連携、流程智能体
+
+第三層: スタートアップ/オープンソース
+  - Kimi智能体 — マルチモーダル+AgentSwarm
+  - Dify — オープンソースLLMOps
+  - 实在Agent — 全栈業務クローズドループ
+```
+
+### 8. 新規ソース追加
+
+| ソース | URL | ティア | 概要 |
+|--------|-----|--------|------|
+| 新浪财经 — 龙虾大战深水区 | [finance.sina.com.cn/jjxw/2026-04-18/doc-inhuwssh5803024.shtml](https://finance.sina.com.cn/jjxw/2026-04-18/doc-inhuwssh5803024.shtml) | T1 | 4月龙虾戦争分析、CLI復活、Coding Agent OS化 |
+| 新浪新闻 — 2026龙虾大战 | [cj.sina.cn/articles/7857201856/1d45362c001902teo2](https://cj.sina.cn/articles/7857201856/1d45362c001902teo2) | T1 | 4大玩家格局、第2梯队分析 |
+| 网易 — 有道龙虾多Agent | [163.com/dy/article/KQLJBB020556BJF1.html](https://www.163.com/dy/article/KQLJBB020556BJF1.html) | T2 | LobsterAI多Agent実装詳細 |
+| 腾讯云 — Hermes Agent部署 | [cloud.tencent.com/developer/article/2653752](https://cloud.tencent.com/developer/article/2653752) | T2 | 腾讯云一键部署ガイド |
+| 腾讯云 — Hermes Agent IM連携 | [cloud.tencent.com/developer/article/2654156](https://cloud.tencent.com/developer/article/2654156) | T2 | 飛書・企微・钉钉連携 |
+| InfoQ — 2026企業Agent市场 | [xie.infoq.cn/article/98465edc034a6c97c8dd1f480](https://xie.infoq.cn/article/98465edc034a6c97c8dd1f480) | T1 | 101亿元規模予測 |
+| 新浪财经 — AI应用与智能体 | [finance.sina.com.cn/wm/2026-04-18/doc-inhuxymv9921597.shtml](https://finance.sina.com.cn/wm/2026-04-18/doc-inhuxymv9921597.shtml) | T1 | Token消費量12.96兆 |
+| 掘金 — 2026 Agent厂商拆解 | [juejin.cn/post/7628784778843209780](https://juejin.cn/post/7628784778843209780) | T2 | 三大赛道、百融智能RaaS |
+| 腾讯新闻 — AI Agent選型 | [news.qq.com/rain/a/20260403A01HZY00](https://news.qq.com/rain/a/20260403A01HZY00) | T2 | 企業Agent分階段導入戦略 |
 
 ## 課題と展望
 

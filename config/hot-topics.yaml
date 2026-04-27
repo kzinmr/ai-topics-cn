@@ -124,7 +124,7 @@ topics:
       - concepts/china-ai-agent-ecosystem
     notes: "OpenClaw龙虾大战9社同時リリース。DeerFlow 2.0 Super Agent Harness 52K星。ClawHub 13700+Skill/341悪意Skill。MiniMax M2.5月8.1兆Token。金智维Ki-AgentS企業級底座。580亿元市場CR4 78%。"
     added: 2026-04-17
-    last_crawled: "2026-04-23"
+    last_crawled: "2026-04-27"
 
   - slug: coze
     title: "Coze (扣子) — ByteDance Agent Platform"
@@ -259,7 +259,7 @@ topics:
       - concepts/mcp-china
     notes: "Anthropic MCP（Model Context Protocol）の中国での採用状況。Qwen/DeepSeek等のMCP対応、中国独自のMCPサーバー・ツール"
     added: 2026-04-17
-    last_crawled: 2026-04-23
+    last_crawled: 2026-04-27
 
   - slug: mcp-chinese-tools
     title: "Chinese MCP Tools & Servers (中国MCP工具)"
@@ -272,7 +272,7 @@ topics:
       - concepts/mcp-chinese-tools
     notes: "WeChat/Feishu/DingTalk MCP統合、中国SaaS向けMCPサーバー、中国語対応ツール"
     added: 2026-04-17
-    last_crawled: null
+    last_crawled: 2026-04-27
 
   # =========================================================
   # 6. Vibe Coding Trend in China (中国のVibe Coding)

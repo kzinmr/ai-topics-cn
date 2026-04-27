@@ -1,5 +1,38 @@
 
-## [2026-04-26] tongyi-lab-update | 通义实验室 (Tongyi Lab) 詳細追加
+## [2026-04-27] active-crawl-03 | MCP中国・AI Agent生态・MCPツール 最新動向
+
+### 更新ページ（3件）
+
+1. **concepts/mcp-china.md** — 4月下旬アップデート追加（セクション新設）:
+   - GitHub公式MCP Server（v1.0.2, 29K Stars, Goフルスクラッチ）
+   - MCP月間DL 97M到達、公開サーバー10,000+突破
+   - 「プロトコル戦争」終結 — 全主要AIプラットフォームがMCPをネイティブサポート
+   - GLM-5.1がMCP Atlasベンチマーク首位（71.8%）
+   - MCP Auth標準化 & Streamable HTTP仕様アップデート
+   - Docker MCP Toolkit, Microsoft Azure MCP Server 2.0.0
+   - MCP Serverエコシステム内訳（DevTools 35%, Data 22%, Cloud 18%等）
+   - Qwen3.6-35B-A3B MCPMark 37.0%（Gemma 4の2倍）
+   - MCP成熟化：Perplexity CTO批判と中国コミュニティ評価
+
+2. **concepts/china-ai-agent-ecosystem.md** — 2026年4月下旬動向セクション新設:
+   - 「百蝦大戦」深水区 — 製品完成度が新競争軸に
+   - 主要プレイヤー動向（ByteDance/Coze 2.5, Tencent/WorkBuddy/QBotClaw, Alibaba/QwenPaw/悟空, NetEase/LobsterAI）
+   - Coding Agentが次世代AgentのOS基盤に
+   - CLI復活（DingTalk CLI, Feishu CLI, Agent向けチャネル分化）
+   - Hermes Agent中国での爆発的成長（腾讯云、Xiaomi連携、15+IM）
+   - マルチAgentアーキテクチャ主流化
+   - 市場データ（12.96兆Token/週, 101億RMB市場, CAGR 60.2%）
+   - 企業Agentプラットフォーム3層構造確定版
+   - 9件の新規外部ソース追加
+
+3. **concepts/mcp-chinese-tools.md** — **新規作成**（初回クロール）:
+   - 飞书MCP Server（コミュニティ版、8ツール）
+   - 钉钉MCP Server（公式open-dingtalk版、12 Profile/機能）
+   - 企业微信MCP Server（Webhook + 企業アプリモード）
+   - OpenClaw China IMチャネル拡張（7プラットフォーム対応）
+   - picoclaw MCP統合（Go, 15MB軽量バイナリ）
+   - 中国MCPツール生態の特徴分析（IMハブ、OSS主導、認証複雑性）
+   - 中国モデルのMCPツール呼び出し優位性（Qwen/GLM-5.1）
 
 ### 更新ページ（1件）
 

@@ -1,9 +1,9 @@
 ---
 title: "MCP中国生态（Model Context Protocol在中国的采用状況）"
 type: concept
-tags: [mcp, chinese-ai, agent-protocol, a2a, standardization, tool-integration]
+tags: [mcp, chinese-ai, agent-protocol, a2a, standardization, tool-integration, github, enterprise]
 created: 2026-04-17
-updated: 2026-04-23
+updated: 2026-04-27
 source_lang: zh-CN
 ---
 
@@ -134,6 +134,78 @@ AnthropicのMCP公式ロードマップは4つの柱:
 ### コンテキストウィンドウの冗長問題解消
 
 中国でのMCPツール検索（MCP Tool Search）の導入により、コンテキストウィンドウを冗長なツール定義で占有する問題が解消された。遅延読込（Lazy Loading）により、必要なツール定義のみオンデマンドで取得可能。
+
+## 2026年4月下旬アップデート — エコシステム成熟期へ
+
+### 1. GitHub公式MCP Serverリリース（2026年4月）
+
+GitHubがAnthropicと共同開発した**公式MCP Server（github-mcp-server）**をGo言語でフルスクラッチ再実装。v1.0.2（2026-04-22リリース）時点で**29K+ GitHub Stars**を獲得。以下の全機能をカバー：
+
+- リポジトリ・コードファイルの読み取り
+- Issues・PRの管理
+- コード解析・ワークフロー自動化
+- 自然言語インターフェースでのGitHub操作
+
+GitHubの公式サポートによりMCPは「コミュニティのおもちゃ」から**「プラットフォーム級インフラ」**へ正式に昇格。GitLab・Bitbucketの追従が予測される。
+
+### 2. MCP月間ダウンロード97M、公開サーバー10,000+へ
+
+2026年3月、MCP SDK月間ダウンロードが**9,700万回**、アクティブ公開MCPサーバーが**10,000以上**に到達（Anthropic発表）。16ヶ月で200万→9,700万へ**47.5倍増**。全主要AIラボがMCPをネイティブサポート：
+
+| プラットフォーム | MCP対応時期 |
+|----------------|------------|
+| ChatGPT (OpenAI) | 2025年4月 |
+| Claude (Anthropic) | 2024年11月（初始） |
+| Gemini (Google DeepMind) | 2026年3月 |
+| Microsoft Copilot | 2025年7月 |
+| Cursor | 2025年 |
+| VS Code | 2025年7月 |
+| Meta AI | 2026年4月（Connect発表） |
+
+### 3. 「プロトコル戦争」終結宣言
+
+MCPの97Mダウンロード達成により、各社が独自に推進していたツール呼び出し形式の**「プロトコル戦争」は実質終結**。OpenAI・Google・Microsoft・AWS・Cloudflareの全社がMCPを支持。開発者にとっては「Write Once, Run Everywhere」が現実のものに。
+
+### 4. GLM-5.1がMCP Atlasベンチマーク首位
+
+Z.AI（智譜AI）の**GLM-5.1**がMCP Atlasベンチマークで**71.8%**を記録し、GPT-5.4（67.2%）を上回る。MCPツール呼び出し精度で事実上のトップ。無料Flashティアが提供されており、中国国外での評価が急上昇中。
+
+### 5. MCP Auth標準化 & Streamable HTTP
+
+2026年3月26日、MCP仕様が重要なアップデート：
+- **Auth認証メカニズム**: 草案から正式仕様へ。企業レベルの権限制御が標準化
+- **Streamable HTTP**: SSE（Server-Sent Events）を置き換え、ブラウザ環境でのネイティブ動作を実現
+
+### 6. Docker MCP Toolkit & Microsoft Azure MCP Server
+
+- **Docker**: MCP Toolkitをリリース。コンテナ環境でのMCPサーバー運用を標準化
+- **Microsoft**: Azure MCP Server 2.0.0（2026-04-10）— C#実装、Azure全サービスをカバー
+- **Microsoft MCP Serverカタログ**: GitHub 2,954 Stars、84リリース
+
+### 7. MCP Serverエコシステムの内訳
+
+| カテゴリ | 割合 | 代表例 |
+|---------|------|--------|
+| 開発ツール | 35% | GitHub, GitLab, Linear, Notion, Sentry |
+| データ基盤 | 22% | Postgres, Snowflake, Databricks, BigQuery |
+| クラウドサービス | 18% | AWS, GCP, Azure, Cloudflare |
+| SaaSアプリ | 15% | Slack, Stripe, Figma, Zapier |
+| 内部/カスタム | 10% | エンタープライズ内製サーバー |
+
+247+のオープンソースMCP Server実装が存在。
+
+### 8. 中国QwenのMCPツール呼び出し性能
+
+Qwen3.6-35B-A3B（2026-04-16リリース）が**MCPMark 37.0%**を記録 — Gemma 4-31B（18.1%）の**2倍以上**。Qwen3.6 Plus（2026-03-31リリース）は128Kコンテキスト、SWE-bench 78.8%のフラッグシップ。中国モデルがMCPツール呼び出し領域で急成長。
+
+### 9. MCP成熟化：批判と現実
+
+2026年4月の中国技術コミュニティでは「MCPは沈静化したが、それは死ではなく成熟」との評価が主流：
+
+- **肯定的**: 大企業（Alibaba Cloud、Tencent Cloud、Meta、Docker）は黙々と実装を進めている
+- **批判的**: Perplexity CTO Denis Yaratsが「MCPの複雑さが解決する問題を上回る」と発言、CLI回帰を主張
+- **現実**: ScaleKitベンチマークでMCPの8%タスクが失敗（タイムアウト・接続不安定）
+- **結論**: MCPは「USB-C」の道を歩む — 最も熱い時期ではなく、最も重要な時期にある
 
 ## 関連エンティティ
 
