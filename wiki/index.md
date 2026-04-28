@@ -1,10 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-04-27
-エンティティ: 53, コンセプト: 86, ダイジェスト: 8, 比較: 1, ページ: 2
+最終更新: 2026-04-28
+エンティティ: 53, コンセプト: 87, ダイジェスト: 8, 比較: 1, ページ: 2
 
 ### 本日更新（2026-04-28）
-- `pages/chinese-ai-ecosystem.md` — **大幅更新**: DeepSeek V4技術詳細（Zhihu Frontier実測分析）、V4 Proコーディング特性・トークン消費分析・低コスト推論競争軸、Kimi K2.6競争力、Qwen3.6-35B-A3Bローカルデプロイ、Tencent Hunyuan追従、Tongyi/MiniMax/GLM競争環境、K2.5/K2.6価格戦略
+- `concepts/kimi.md` — **K2.6 GAセクション追加**: 1T MoE/384Experts/32B activated、SWE-Bench Pro 58.6%・Ver 80.2%・HLE 54.0など7ベンチマーク、CodeBuddy/Vercel等パートナー採用、アーキテクチャ詳細（MoonViT/MuonClip/256K）、Claw Groups研究プレビュー、K3(3-4T)開発中。日経XTech・gihyo.jp評価
+- `concepts/doubao.md` — **北京車展2026車載AIセクション追加**: 火山引擎Agentic AIソリューション（AI座舱套件/座舱助手）、700万台搭載・50+ブランド・145車種、奇瑞(Chery)戦略提携（小奇同学統合）、3大エンジンアーキテクチャ（対話推論/目標駆動/学習成長）
+- `concepts/china-ai-coding-assistants.md` — **新規**: 中国四大AIコーディングアシスタント比較。Trae(MAU100万+/$10/mo/中国版無料)、通义灵码(Gartner挑戦者/Qwen-Coder-Qoder/Quest Agent)、CodeGeeX(唯一OSS/100万ユーザー)、文心快码。2026.04時点の詳細比較表・市場動向分析
 
 ### 前日更新（2026-04-27）
 - `concepts/mcp-china.md` — **大幅更新**: MCP月間DL 97M突破、GitHub公式MCP Server v1.0.2、GLM-5.1 MCP Atlas世界首位（71.8%）、MCP Auth標準化、Streamable HTTP、Docker MCP Toolkit、Azure MCP 2.0.0、Qwen3.6-35B-A3B MCPMark 37.0%
@@ -112,8 +114,9 @@
 ||- [[openai-eval-skill-validation|OpenAI Eval — Agent Skill系统化検証方法論]]
 ||- [[prompt-agent-function-call-skill-mcp|Prompt・Agent・Function Call・Skill・MCP — 用語整理]]
 - [[yi|Yi（零一万物）— 01.AI]]
-- [[china-ai-agent-ecosystem|中国AI智能体生态 — 2026年プラットフォーム・アーキテクチャ・市場動向]]
-- [[china-local-deployment|中国大模型本地部署 — 量子化・VRAM最適化・消費者GPUでの推論]]
+|- [[china-ai-agent-ecosystem|中国AI智能体生态 — 2026年プラットフォーム・アーキテクチャ・市場動向]]
+|- [[china-ai-coding-assistants|国产AI编程助手 — Trae・通义灵码・CodeGeeX・文心快码]]
+|- [[china-local-deployment|中国大模型本地部署 — 量子化・VRAM最適化・消費者GPUでの推論]]
 - [[china-ai-regulation|中国AI监管政策 — 生成AI管理弁法、算法备案、データ安全規制]]
 - [[china-coding-agents|中国编程Agent工具 — コーディングAIエージェントの生態系]]
 - [[coze|扣子 (Coze) — ByteDanceのノーコードAI Agentプラットフォーム]]

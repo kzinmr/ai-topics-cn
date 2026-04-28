@@ -77,9 +77,9 @@ topics:
       - "Kimi chat 最新功能"
     wiki_pages:
       - concepts/kimi
-    notes: "長コンテキスト（200万tokens）で差別化。中国C向けAIチャットで急成長。2026-04-21にK2.6を発表・オープンソース化"
+    notes: "長コンテキスト（200万tokens）で差別化。K2.6 GAリリース（2026.04.21）: 1T MoE/384Experts/32B activated、SWE-Bench Pro 58.6%・SWE-Bench Ver 80.2%でオープンソースSOTA。Agent Swarm(300Agent/4000steps)、Claw Groups研究プレビュー。CodeBuddy・Vercel等パートナー採用開始。日経XTech/gihyo.jpが日本メディアで評価。K3(3-4Tパラメータ)開発中。"
     added: 2026-04-17
-    last_crawled: 2026-04-25
+    last_crawled: 2026-04-28
 
   - slug: yi
     title: "Yi (零一万物) — 01.AI"
@@ -104,9 +104,9 @@ topics:
       - "火山引擎 Volcano Engine AI"
     wiki_pages:
       - concepts/doubao
-    notes: "ByteDance発。中国国内DAU最大級のAIアプリ。Doubao-Seed-2.0リリース（2026.02）。Dola海外版累計2億ダウンロード突破（2026.04）。豆包股仮想制度。Seed-CodeがGPT-5を9基準で凌駕。"
+    notes: "ByteDance発。中国国内DAU最大級のAIアプリ。Doubao-Seed-2.0リリース（2026.02）。Dola海外版累計2億ダウンロード突破（2026.04）。豆包股仮想制度。Seed-CodeがGPT-5を9基準で凌駕。2026.04.24北京車展でAgentic AI車載ソリューション発表：700万台搭載・50+ブランド・145車種・奇瑞と戦略提携。AI座舱套件+座舱助手の2大方案。"
     added: 2026-04-17
-    last_crawled: 2026-04-25
+    last_crawled: 2026-04-28
 
   # =========================================================
   # 2. Chinese AI Agent Ecosystem (中国AIエージェント)
@@ -300,11 +300,14 @@ topics:
       - "国产 AI编程助手 代码补全 2026"
       - "通义灵码 CodeGeeX 豆包MarsCode"
       - "Chinese AI coding assistant comparison"
+      - "Trae 2.0 SOLO mode Builder mode 2026"
+      - "通义灵码 Qwen-Coder-Qoder Quest Agent"
+      - "CodeGeeX4-All-9B オープンソース"
     wiki_pages:
       - concepts/china-ai-coding-assistants
-    notes: "通義霊码 (Alibaba)、CodeGeeX (Zhipu)、MarsCode (ByteDance) 等の国産コーディングアシスタント"
+    notes: "中国四大AIコーディングアシスタントの包括的比較。Trae(ByteDance)国際版$10/mo・中国版無料、月間100万MAU・60億行コード生成。通义灵码(Alibaba)がGartner挑戦者象限（中国唯一）。Qwen-Coder-QoderモデルでCursor Composer-1を凌駕。CodeGeeX(Zhipu)は唯一のオープンソース。2026.04時点の全ツール比較表を作成・wiki反映済み。"
     added: 2026-04-17
-    last_crawled: null
+    last_crawled: 2026-04-28
 
   # =========================================================
   # 7. Chinese Coding Agent Tools (中国コーディングエージェント)

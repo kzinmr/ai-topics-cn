@@ -1,4 +1,45 @@
 
+
+## [2026-04-28] active-crawl-04 | Kimi K2.6 GA / Doubao車載AI / コーディングアシスタント比較
+
+### 更新ページ（2件）
+
+1. **concepts/kimi.md** — K2.6 GAセクション追加:
+   - 2026.04.21正式リリース。1T MoE（384Experts, 32B activated）
+   - ベンチマーク: SWE-Bench Pro 58.6%, SWE-Bench Ver 80.2%, HLE 54.0%, Codeforces 9,595
+   - アーキテクチャ: 256Kコンテキスト, MoonViT, MuonClip optimizer, Ring Attention
+   - パートナー採用: CodeBuddy, Vercel, Greptile, Hex Labs等
+   - Kimi CLIリリース（Agentic Loop + Vercel連携）
+   - Claw Groups研究プレビュー（分散マルチエージェントcollaboration）
+   - K3（3-4Tパラメータ）開発中
+
+2. **concepts/doubao.md** — 2026北京車展セクション追加:
+   - 火山引擎Agentic AI車載ソリューション（2026.04.24発表）
+   - AI座舱套件 + 座舱助手の2大方案
+   - 700万台搭載実績（50+ブランド、145車種）
+   - 奇瑞(Chery)戦略提携: 小奇同学に豆包統合
+   - 3大エンジン: 対話推論/目標駆動/学習成長
+   - 多層防御安全機構（1200+専門家テスター）
+
+### 新規作成ページ（1件）
+
+3. **concepts/china-ai-coding-assistants.md** — **新規**:
+   - 中国四大AIコーディングアシスタントの包括的比較
+   - **Trae** (ByteDance): 国際版$10/mo、中国版無料、月間100万MAU、60億行コード生成
+   - **通义灵码** (Alibaba): Gartner挑戦者象限（中国唯一）、Qwen-Coder-Qoder Quest Agent
+   - **CodeGeeX** (Zhipu): 唯一のオープンソース路線、CodeGeeX4-All-9B、100万ユーザー
+   - **文心快码** (Baidu): エンタープライズ特化
+   - Trae 2.0のマイルストーン: SOLO mode→Builder mode→Agent mode進化
+   - 通义灵码RAG検索速度2-3倍向上
+   - 中国コーディングアシスタント市場の競争構造と今後の展望
+
+### hot-topics.yaml更新
+- kimi: last_crawled 2026-04-25 → 2026-04-28（search_hints拡充・notes更新）
+- doubao: last_crawled 2026-04-25 → 2026-04-28（notesに車載AI情報追記）
+- china-ai-coding-assistants: last_crawled null → 2026-04-28（search_hints・notes大幅拡充）
+
+---
+
 ## [2026-04-27] active-crawl-03 | MCP中国・AI Agent生态・MCPツール 最新動向
 
 ### 更新ページ（3件）
