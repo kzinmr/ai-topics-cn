@@ -3,7 +3,10 @@
 最終更新: 2026-04-27
 エンティティ: 53, コンセプト: 86, ダイジェスト: 8, 比較: 1, ページ: 2
 
-### 本日更新（2026-04-27）
+### 本日更新（2026-04-28）
+- `pages/chinese-ai-ecosystem.md` — **大幅更新**: DeepSeek V4技術詳細（Zhihu Frontier実測分析）、V4 Proコーディング特性・トークン消費分析・低コスト推論競争軸、Kimi K2.6競争力、Qwen3.6-35B-A3Bローカルデプロイ、Tencent Hunyuan追従、Tongyi/MiniMax/GLM競争環境、K2.5/K2.6価格戦略
+
+### 前日更新（2026-04-27）
 - `concepts/mcp-china.md` — **大幅更新**: MCP月間DL 97M突破、GitHub公式MCP Server v1.0.2、GLM-5.1 MCP Atlas世界首位（71.8%）、MCP Auth標準化、Streamable HTTP、Docker MCP Toolkit、Azure MCP 2.0.0、Qwen3.6-35B-A3B MCPMark 37.0%
 - `concepts/china-ai-agent-ecosystem.md` — **大幅更新**: 「百蝦大戦」深水区、Coding Agent OS基盤化、CLI復活トレンド、Hermes Agent中国急成長、マルチAgent主流化、市場データ（12.96兆Token/週）、3層構造確定版
 - `concepts/mcp-chinese-tools.md` — **新規**: 中国MCPツールエコシステム（钉钉公式MCP OpenAPI/12 Profile、飞书MCP 8ツール、企微MCP、OpenClaw China 7チャネル、picoclaw MCP）
