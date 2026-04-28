@@ -1,9 +1,13 @@
 # AI Topics China Wiki — Index
 
 最終更新: 2026-04-28
-エンティティ: 53, コンセプト: 87, ダイジェスト: 8, 比較: 1, ページ: 2
+エンティティ: 55, コンセプト: 87, ダイジェスト: 8, 比較: 1, ページ: 2
 
 ### 本日更新（2026-04-28）
+- `entities/tencent-hunyuan.md` — **新規**: 混元(Hunyuan)大モデル詳細ページ。Hy3 Preview（295B MoE/21B活性/256Kコンテキスト/SWE-bench 74.4%）、姚順雨リーダーシップ、HY2.0シリーズ、統合先（元宝/CodeBuddy/WorkBuddy）、ベンチマーク比較。
+- `entities/tencent-qclaw.md` — **新規**: QClaw Agent詳細ページ。OpenClawベース、10日で100万ユーザー、微信小程序/WhatsApp/Telegram対応、V2マルチAgent（无不言/林且慢/代可行）、海外版ベータ。
+- `entities/tencent-ai.md` — **大幅更新**: 姚順雨首席AI科学家招聘、Hunyuan/QClaw製品ポートフォリオ、WeChat×AI戦略、2026年度業績公告初公開、Hy3/QClaw詳細ページへの内部リンク追加。
+- `entities/baidu-ernie.md` — **大幅更新**: ERNIE-Image（8B DiT）セクション追加。Apache 2.0 OSS、ComfyUI/Unsloth GGUF対応、LongText-Bench 0.9733（SOTAクラス）、多言語テキストレンダリング、競合比較表。
 - `concepts/kimi.md` — **K2.6 GAセクション追加**: 1T MoE/384Experts/32B activated、SWE-Bench Pro 58.6%・Ver 80.2%・HLE 54.0など7ベンチマーク、CodeBuddy/Vercel等パートナー採用、アーキテクチャ詳細（MoonViT/MuonClip/256K）、Claw Groups研究プレビュー、K3(3-4T)開発中。日経XTech・gihyo.jp評価
 - `concepts/doubao.md` — **北京車展2026車載AIセクション追加**: 火山引擎Agentic AIソリューション（AI座舱套件/座舱助手）、700万台搭載・50+ブランド・145車種、奇瑞(Chery)戦略提携（小奇同学統合）、3大エンジンアーキテクチャ（対話推論/目標駆動/学習成長）
 - `concepts/china-ai-coding-assistants.md` — **新規**: 中国四大AIコーディングアシスタント比較。Trae(MAU100万+/$10/mo/中国版無料)、通义灵码(Gartner挑戦者/Qwen-Coder-Qoder/Quest Agent)、CodeGeeX(唯一OSS/100万ユーザー)、文心快码。2026.04時点の詳細比較表・市場動向分析
@@ -56,7 +60,9 @@
 |- [[sensetime|sensetime]]
 |- [[soul-killer|Soul Killer — Claude Code用Galgame Agent & Skill作成器]]
 |- [[stepfun|stepfun]]
-|- [[tencent-ai|tencent-ai]]
+||- [[tencent-ai|tencent-ai]]
+||- [[tencent-hunyuan|腾讯混元 (Tencent Hunyuan) — 混元3.0/Hy3大模型、295B MoE架构]]
+||- [[tencent-qclaw|Tencent QClaw — OpenClawベースの極簡AIエージェントプラットフォーム]]
 |- [[ubtech-robotics|UBTECH Robotics（优必选）— 中国初の人形ロボット上場企業（HK.9566、1,079台/2025年）]]
 |- [[unitree-robotics|Unitree Robotics（宇树科技）— 世界No.1二足歩行ロボットメーカー（5,500台/2025年）]]
 |- [[verisilicon|verisilicon]]

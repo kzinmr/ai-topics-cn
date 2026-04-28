@@ -1,7 +1,7 @@
 ---
 title: "Baidu（百度）— 文心一言/ERNIEと中国AI検索大手"
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-04-28
 tags: [china, llm, company, search, multimodal, erenie, open-source-ai]
 aliases: ["百度", "文心一言", "ERNIE", "Wenxin", "WenXin Yiyan", "文心", "文小言", "Baidu AI"]
 source_lang: zh-CN
@@ -43,6 +43,7 @@ ERNIE（Enhanced Representation through kNowledge IntEgration）は、Baiduが20
 | **ERNIE 4.5** | 2025年3月 | 454B（MoE, アクティブ38B） | 10種類のバリエーション、マルチモーダル対応 |
 | **ERNIE X1** | 2025年3月 | — | 推論特化モデル、DeepSeek-R1に対抗 |
 | **ERNIE 5.0** | 2026年1月 | **2.4兆（2.4T）** | 原生全模態大モデル、40以上のベンチマークでSOTA |
+| **ERNIE-Image** | 2026年4月 | **8B DiT** | オープンソース、Apache 2.0、テキストレンダリングSOTA、ComfyUI対応 |
 
 ## ERNIE 5.0（文心5.0）— 2026年の主力モデル
 
@@ -80,6 +81,53 @@ ERNIE（Enhanced Representation through kNowledge IntEgration）は、Baiduが20
 - **動画生成**: 業界リーディングレベル
 - **音声理解**: TUT2017等で業界最佳
 - **テキスト→音声**: 競争力ある性能
+
+## ERNIE-Image（2026年4月リリース）
+
+2026年4月15日に**Apache 2.0**でオープンソース化された8Bパラメータのテキスト→画像生成モデル。
+
+### アーキテクチャ
+
+- **単一ストリームDiffusion Transformer (DiT)**: テキストトークンと画像パッチを第1レイヤーから同一Transformerで処理
+- **Prompt Enhancer (PE)**: 短い入力をリッチな構造化説明に拡張する軽量モジュール
+- **2つのバリアント**:
+  - ERNIE-Image: 50ステップ推論、CFG=4.0、高品質汎用
+  - ERNIE-Image-Turbo: 8ステップ推論、CFG=1.0、高速・DMD+RL最適化
+
+### 性能
+
+| 指標 | 値 |
+|------|-----|
+| パラメータ | 8B DiT |
+| VRAM要件 | 24GB（コンシューマーGPUで動作） |
+| LongText-Bench-EN | 0.9804（w/ PE） |
+| LongText-Bench-ZH | 0.9661（w/ PE） |
+| T2I-CompBench Overall | 0.8728（w/ PE） |
+| ライセンス | Apache 2.0 |
+
+### 特徴
+
+- **テキストレンダリング**: 密集・長文・レイアウト依存テキストでオープンソースSOTA
+- **多言語対応**: 中国語、英語、日本語、韓国語の生成対応
+- **マルチパネルレイアウト**: ポスター、インフォグラフィック、コミックに最適
+- **エコシステム対応**: ComfyUIワークフロー、Unsloth GGUF量子化、AI-Toolkit微調整
+
+### 競合比較（LongText-Bench平均）
+
+| モデル | 平均 |
+|--------|------|
+| Seedream 4.5 | 0.9882 |
+| **ERNIE-Image (w/ PE)** | **0.9733** |
+| GLM-Image | 0.9656 |
+| ERNIE-Image-Turbo (w/ PE) | 0.9655 |
+| Nano Banana 2.0 | 0.9650 |
+| Qwen-Image | 0.9445 |
+| FLUX.2-klein-9B | 0.5413 |
+
+### 内部テスト
+
+- リリース前に30社以上の企業と20名のアートデザイナーが2週間の内部テストを実施
+- コンシューマーGPUでの実用性を検証済み
 
 ## 文心アプリのブランド変遷
 
