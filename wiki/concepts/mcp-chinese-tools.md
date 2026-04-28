@@ -222,3 +222,53 @@ Juejinで「MCP神器推薦：Claude Codeに画像閲覧・検索・ドキュメ
 | MCP公式Spec | [modelcontextprotocol.io](https://modelcontextprotocol.io) | プロトコル仕様 |
 | TokenMix - MCP 2026 | [tokenmix.ai](https://tokenmix.ai/blog/mcp-protocol-guide-2026) | 97M DL, 10K Server分析 |
 | MCP Playground | [mcpplaygroundonline.com](https://mcpplaygroundonline.com) | MCP Agent Studio |
+
+
+## MCP Server実践開発ガイド（2026-04-28更新）
+
+### 30分PDFリーダーMCP Server構築チュートリアル
+
+Juejin開発者「HelloDong」が**30分で実用的なPDF読み取りMCP Server**を構築する手順を公開。以下の技術スタックを使用：
+
+**使用技術**:
+- `@modelcontextprotocol/sdk`: MCPプロトコルのTypeScript実装
+- `pdf-parse`: PDFファイル解析ライブラリ（CJSモジュール）
+- TypeScript (ESM): 型安全な開発環境
+
+**核心ポイント**:
+1. **StdioServerTransport**: MCP Serverは標準入出力で通信
+2. **Tool登録**: `ListToolsRequestSchema`でAIに利用可能ツールを通知
+3. **CallTool処理**: `CallToolRequestSchema`で実際のツール実行をハンドリング
+4. **CJS/ESM互換**: `createRequire`でCJSモジュールをESMプロジェクトで利用
+
+**提供ツール**:
+- `read_pdf`: PDF全文抽出
+- `get_pdf_info`: PDFメタデータ取得（タイトル、著者、ページ数）
+- `search_in_pdf`: PDF内全文検索（大文字小文字区別オプション）
+
+**重要注意点**:
+- MCP Serverのログは**必ず`console.error`**を使用（`console.log`はstdio通信を破壊）
+- ESMプロジェクトでCJSモジュールを使用する場合は`createRequire`でブリッジ
+- `capabilities: { tools: {} }`でMCPクライアントに機能通知
+
+```typescript
+// 最小MCP Serverの骨格
+import { Server } from "@modelcontextprotocol/sdk/server/index.js";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+
+const server = new Server(
+  { name: "mcp-pdf-reader", version: "1.0.0" },
+  { capabilities: { tools: {} } }
+);
+
+// Tool登録と処理はここで定義
+async function main() {
+  const transport = new StdioServerTransport();
+  await server.connect(transport);
+  console.error("MCP PDF Reader server running on stdio");
+}
+
+main().catch(console.error);
+```
+
+> **出典**: Juejin — [手把手写一个 MCP Server：从零到能用，只要 30 分钟](https://juejin.cn/post/7604881286038028340)（1いいね）[T2]

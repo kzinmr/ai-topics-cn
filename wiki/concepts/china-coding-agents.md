@@ -156,6 +156,41 @@ Spring Boot・Vue.js・Uni-app・微信小程序等、中国市場固有のフ�
 ### 外部ソース
 | ソース | URL | ティア |
 |--------|-----|-------|
+
+
+## JetBrains IDEAでのClaude Code統合（2026-04-21更新）
+
+Juejin開発者「前端小A」が、**JetBrains IDEAでClaude Codeを実用的に使用する方法**を詳細に解説。
+
+### 統合方法
+1. **claude-code-acpアダプターインストール**:
+   ```bash
+   npm i -g claude-code-acp
+   ```
+
+2. **IDEA MCP設定**:
+   - `Settings → Tools → MCP Servers → Add Local`
+   - Commandに`claude`を指定
+   - Environment VariablesにAnthropic API Keyを設定
+
+3. **利用可能機能**:
+   - `@`メンションでファイル・フォルダ参照
+   - `/`コマンドでSkills一覧表示・実行
+   - MCPツール完全対応（ファイル操作、検索、外部API呼び出し）
+
+### Plan/Act独立モード
+- `plan`モード: 実装計画のみ出力（コード実行なし）
+- `act`モード: 実際のコード生成・ファイル操作
+- 第三者APIエンドポイント経由でのClaude Code利用も可能
+
+### 中国開発者コミュニティの反応
+- IDEAユーザー待望の機能として大きな反響
+- Cursorと比較して「IDE統合の完成度が段違い」と評価
+- 2026年4月時点で「IDEA里终于能爽用Claude Code了」（IDEAでようやくClaude Codeを快適に使える）と表現されるほどの改善
+
+> **出典**: Juejin — [IDEA 里终于能爽用 Claude Code了！](https://juejin.cn/post/7605885766167806004) [T2]
+
+
 | 博客园 — AI编程工具横评（2026-04-14） | [cnblogs.com](https://www.cnblogs.com/deali/p/19864809) | T2 |
 | 腾讯云 — Claude Code vs Cursor vs Codex（2026-04-21） | [cloud.tencent.com](https://cloud.tencent.com/developer/article/2657589) | T2 |
 | 知乎 — 2026年最好用的AI编程工具（要ログイン） | [zhihu.com](https://zhuanlan.zhihu.com/p/2025899805084251627) | T3 |

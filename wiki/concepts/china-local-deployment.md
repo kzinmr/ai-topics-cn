@@ -132,6 +132,30 @@ TriAttention（MIT/NVIDIA/浙大）等新研究により、KVキャッシュの1
 | ソース | URL | ティア | 概要 |
 |--------|-----|--------|------|
 | 163 — MiniMax-M2.7量子化 | [163.com/dy/article/KQB87POB0519EA27](https://www.163.com/dy/article/KQB87POB0519EA27.html) | T3 | Unsloth Dynamic 2.0・MLX量子化版 |
+
+
+## 国内でのCodexローカルインストール（2026-04-24更新）
+
+中国国内のネットワーク環境下で**GPT-5-Codexをローカルにインストールして直接使用する**方法がJuejinで共有された。
+
+### 背景と動機
+- 中国国内からのOpenAI API直接アクセスが不安定
+- プロキシ経由での利用はレイテンシ・コストの問題
+- ローカルインストールにより安定した開発環境を構築
+
+### 実装アプローチ
+- `codex-cli`パッケージをローカル環境にインストール
+- 代替エンドポイント経由でのAPI接続設定
+- 国内ネットワーク環境に最適化された設定パラメータ
+
+### 中国開発者コミュニティの意義
+- 規制環境下でのAIツール利用の実践的解決策
+- ローカル実行によるデータプライバシー確保
+- コスト最適化の一環としての位置づけ
+
+> **出典**: Juejin — [本地安装Codex，国内直接使用GPT-5-Codex](https://juejin.cn/post/7620060655607857178) [T2]
+
+
 | 掘金 — Ollama+Qwen2026 | [juejin.cn/post/7603677143214473231](https://juejin.cn/post/7603677143214473231) | T1 | 2026最新版Ollama部署ガイド |
 | 阿里云 — 本地AI革命 | [cloud.baidu.com/article/4358934](https://cloud.baidu.com/article/4358934) | T2 | Ollama零依赖部署総合ガイド |
 | 谢先斌 — Ollama設定 | [xiexianbin.cn/ai/ollama](https://www.xiexianbin.cn/ai/ollama/index.html) | T2 | Ollama環境変数・最適化・トラブルシューティング |

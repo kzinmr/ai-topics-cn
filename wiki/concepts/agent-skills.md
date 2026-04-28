@@ -188,6 +188,59 @@ Prompt、Agent、Function Call、Skill、MCPといった概念の乱立に対し
 
 Skillsは**再利用可能な能力モジュール**として、MemoryやProtocols（[[mcp]]等）と並ぶ外化メカニズムの一要素である。Harnessはこれら全てを統合する最上位の実行環境・制御層として機能する。
 
+
+
+## 「Prompt已死、Skill当立」パラダイムシフト（2026-04-28更新）
+
+2026年初頭、中国AI開発者コミュニティで**「PromptからSkillへ」**の転換議論が活発化。Juejin開発者「isArray」が提唱したこの概念は、以下の変遷を指す：
+
+### Prompt Engineeringの限界
+- **属人化**: 優れたプロンプトは特定の開発者に依存
+- **再利用性低い**: 似たタスクでも毎回プロンプトを再構築
+- **品質不安定**: 小さな変更で出力が大きく変動
+- **スケーラビリティ欠如**: チーム全体で共有・管理が困難
+
+### Skill時代の到来
+- **再利用可能**: 一度定義すれば複数プロジェクトで共有
+- **バージョン管理**: GitでSkillsの履歴を追跡可能
+- **チーム標準化**: 組織全体で統一されたSkillsを採用
+- **自動検証**: Skillの実行結果をテスト可能
+
+> 「继续堆 Prompt，真的不如早点学 Skill」
+> （Promptを積み続けるより、早めにSkillを学んだ方が良い）
+> — isArray, Juejin（62いいね・97スター）
+
+### 中国コミュニティの反応
+- 「Prompt已死、Skill当立」（Promptは死に、Skillが立つ）というスローガンが拡散
+- Claude Codeコミュニティで特に支持が高い
+- 既存のPrompt Engineering知識をSkill定義に体系化する動きが加速
+
+> **出典**: Juejin — [继续堆 Prompt，真的不如早点学 Skill](https://juejin.cn/post/7598433254128205864) [T2]
+
+
+
+## Cursor AI Skills × Flutter 自動生成実戦（2026-04-26更新）
+
+Juejin開発者が**Cursor AI Skillsを使用してFlutterアプリのページ・コード・ドキュメントを自動生成**する実践レポートを公開。
+
+### 実装概要
+- CursorのAI Skills機能でFlutterページを自動生成
+- UIコンポーネントのコード生成
+- 関連ドキュメントの自動作成
+- ワンクリックでのワークフロー実行
+
+### Skills活用の意義
+- **フレームワーク固有Skill**: Flutterに特化したSkill定義
+- **自動化パイプライン**: ページ生成→コード生成→ドキュメント生成の一連フロー
+- **開発効率化**: 手作業でのボイラープレート作成を大幅削減
+
+### 中国Flutterコミュニティの反応
+- Flutter開発者にとってSkillsは「学習コスト以上のリターン」
+- 既存のFlutter知識をSkill定義に体系化する動き
+- CursorとClaude CodeのSkills機能比較議論も活発化
+
+> **出典**: Juejin — [Cursor AI Skills 实战：自动生成 Flutter 页面、代码与文档](https://juejin.cn/post/7627948981355888676) [T2]
+
 ## 関連リンク
 
 ### 中国語圏の一次ソース
@@ -200,7 +253,60 @@ Skillsは**再利用可能な能力モジュール**として、MemoryやProtoco
 | 什么是Skill以及和MCP的区别 | 掘金 | — |
 | 我装了30多个Claude Code Skill，每天真开的就6个 | 掘金 | — |
 
-### 関連ページ
+#
+
+## 「Prompt已死、Skill当立」パラダイムシフト（2026-04-28更新）
+
+2026年初頭、中国AI開発者コミュニティで**「PromptからSkillへ」**の転換議論が活発化。Juejin開発者「isArray」が提唱したこの概念は、以下の変遷を指す：
+
+### Prompt Engineeringの限界
+- **属人化**: 優れたプロンプトは特定の開発者に依存
+- **再利用性低い**: 似たタスクでも毎回プロンプトを再構築
+- **品質不安定**: 小さな変更で出力が大きく変動
+- **スケーラビリティ欠如**: チーム全体で共有・管理が困難
+
+### Skill時代の到来
+- **再利用可能**: 一度定義すれば複数プロジェクトで共有
+- **バージョン管理**: GitでSkillsの履歴を追跡可能
+- **チーム標準化**: 組織全体で統一されたSkillsを採用
+- **自動検証**: Skillの実行結果をテスト可能
+
+> 「继续堆 Prompt，真的不如早点学 Skill」
+> （Promptを積み続けるより、早めにSkillを学んだ方が良い）
+> — isArray, Juejin（62いいね・97スター）
+
+### 中国コミュニティの反応
+- 「Prompt已死、Skill当立」（Promptは死に、Skillが立つ）というスローガンが拡散
+- Claude Codeコミュニティで特に支持が高い
+- 既存のPrompt Engineering知識をSkill定義に体系化する動きが加速
+
+> **出典**: Juejin — [继续堆 Prompt，真的不如早点学 Skill](https://juejin.cn/post/7598433254128205864) [T2]
+
+
+
+## Cursor AI Skills × Flutter 自動生成実戦（2026-04-26更新）
+
+Juejin開発者が**Cursor AI Skillsを使用してFlutterアプリのページ・コード・ドキュメントを自動生成**する実践レポートを公開。
+
+### 実装概要
+- CursorのAI Skills機能でFlutterページを自動生成
+- UIコンポーネントのコード生成
+- 関連ドキュメントの自動作成
+- ワンクリックでのワークフロー実行
+
+### Skills活用の意義
+- **フレームワーク固有Skill**: Flutterに特化したSkill定義
+- **自動化パイプライン**: ページ生成→コード生成→ドキュメント生成の一連フロー
+- **開発効率化**: 手作業でのボイラープレート作成を大幅削減
+
+### 中国Flutterコミュニティの反応
+- Flutter開発者にとってSkillsは「学習コスト以上のリターン」
+- 既存のFlutter知識をSkill定義に体系化する動き
+- CursorとClaude CodeのSkills機能比較議論も活発化
+
+> **出典**: Juejin — [Cursor AI Skills 实战：自动生成 Flutter 页面、代码与文档](https://juejin.cn/post/7627948981355888676) [T2]
+
+## 関連ページ
 
 - [[claude-code]] — Skillsの主要実装環境。`CLAUDE.md`によるSkills定義が中核
 - [[mcp]] — Skillsと補完的な外部ツール接続プロトコル。「知識 vs 接続口」の関係

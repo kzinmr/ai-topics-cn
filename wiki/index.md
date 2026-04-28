@@ -3,17 +3,20 @@
 最終更新: 2026-04-28
 エンティティ: 55, コンセプト: 88, ダイジェスト: 8, 比較: 1, ページ: 2
 
-### 本日更新（2026-04-28）
-- `concepts/agent-team-swarm/index.md` — **新規**: AI Agentチーム・スワームパターン。Claude Codeで4AIの協調開発実例（163いいね・258スター）、単一Agentの限界（コンテキスト膨張・タスク競合）、役割分担パターン、協調メカニズム、V2EX/Juejinコミュニティ反応
-- `entities/openai.md` — **セクション追加**: OpenAI科学者のEmbodied Intelligence設立（机器之心「AI00」十一月榜单報道）、言語モデルから物理世界相互作用への展開
-- `entities/doubao.md` — **更新**: Doubao-Seed-2.0プログラミングモデル（Pro/Lite/Mini）、Agent能力・視覚理解・Skills対応、中国版Trae無料
-- `entities/glm-zhipu.md` — **更新不要**: 既存ページがGLM-5（744B、SWE-bench 77.8）を既に包括的にカバー
-- `concepts/coding-plan.md` — **更新不要**: 既存ページが阿里云CodingPlan（リクエスト課金、Qwen-3.5/Kimi-K2.5/GLM-4.7統合）を既に詳細に記述
-- `concepts/cli-agent-patterns.md` — **更新済み**: Codexローカル導入、GPT-5-Codex国内利用、SSHリモート開発機能
-- `concepts/mcp-chinese-tools.md` — **更新済み**: Claude CodeのMCPツール統合実例（画像認識・検索・ドキュメント参照）
-- `concepts/skills.md` — **更新済み**: PromptからSkillへのパラダイムシフト、Cursor Skills実践例
-- `concepts/agent.md` — **更新済み**: 清華NLPプロセス自動化新范式、Codex SSH機能統合
-
+### 本日更新（2026-04-28 Triage Batch 2）
+- `concepts/agent-team-swarm/index.md` — **セクション追加**: 4AIチーム協調開発の実装パターン詳細（ファイルシステム通信、強制チェックポイント、Token節約75%、agentGroupディレクトリ構造）
+- `concepts/mcp-chinese-tools.md` — **セクション追加**: MCP Server実践開発ガイド（30分PDFリーダー構築、TypeScript+pdf-parse、StdioServerTransport、CJS/ESM互換処理）
+- `concepts/agent-skills.md` — **セクション追加**: 「Prompt已死、Skill当立」パラダイムシフト議論、Cursor AI Skills×Flutter自動生成実戦
+- `pages/industry-trends.md` — **セクション追加**: Claude 4.6 vs GLM-5「毒題」チャレンジ、Kimi→GLM→Claude競争図変化分析
+- `concepts/china-coding-agents.md` — **セクション追加**: JetBrains IDEAでのClaude Code統合（claude-code-acp、Plan/Actモード、MCPツール対応）
+- `concepts/china-ai-agent-ecosystem.md` — **セクション追加**: n8n自動化ワークフロー（複雑知識→小红书科普カード→ローカル保存）
+- `concepts/china-local-deployment.md` — **セクション追加**: 中国国内でのGPT-5-Codexローカルインストール実用ガイド
+- `entities/glm-zhipu.md` — **セクション追加**: GLM-4.7フロントエンド生成能力実測レビュー
+- `concepts/model-pricing.md` — **セクション追加**: 複数LLMキー管理の経済性分析（GLM/MiniMax/Claude最適化）
+- `entities/claude-code.md` — **セクション追加**: Claude Code効率化Tips 10選（Skills最適活用、コンテキスト境界、バッチ処理等）
+- `concepts/vibe-coding.md` — **セクション追加**: Vibe Coding概念大全（LLM/ファインチューニング/推論文脈での位置づけ）
+- `pages/rag-vector-db.md` — **セクション追加**: RAG技术全栈指南第一章（検索拡張生成の基礎と実装）
+- `entities/tencent-ai.md` — **セクション追加**: 騰訊のAI不安と10年前のQQボット戦略分析
 ### 前日更新（2026-04-27）
 - `concepts/mcp-china.md` — **大幅更新**: MCP月間DL 97M突破、GitHub公式MCP Server v1.0.2、GLM-5.1 MCP Atlas世界首位（71.8%）、MCP Auth標準化、Streamable HTTP、Docker MCP Toolkit、Azure MCP 2.0.0、Qwen3.6-35B-A3B MCPMark 37.0%
 - `concepts/china-ai-agent-ecosystem.md` — **大幅更新**: 「百蝦大戦」深水区、Coding Agent OS基盤化、CLI復活トレンド、Hermes Agent中国急成長、マルチAgent主流化、市場データ（12.96兆Token/週）、3層構造確定版

@@ -1,4 +1,48 @@
 
+## [2026-04-28] crawl-triage-02-batch2 | 4AIチーム/MCP Server/Prompt→Skill/Claude vs GLM/IDEA統合/n8n/Codex国内/GLM-4.7/LLMキー経済/Claude Code Tips/Vibe Coding/RAG指南/騰訊AI分析
+
+### チェックポイント: 20260428T210202Z
+- **収集数**: v2ex:482, juejin:241, 36kr:153, wechat-media:50, newsletters:65, daily_digests:14, zhihu:0
+- **Triage decisions**: ✅Take:15 / ⚠️Reference:3 / ❌Skip:2（本バッチ処理分）
+- **処理済み**: 15件すべて wiki セクション追加として反映
+
+### Take処理済み（15件）
+
+| # | アイテム | ソース | Wiki更新 |
+|---|----------|--------|---------|
+| 1 | 我用Claude Code搭了个四个AI的团队 | juejin | `concepts/agent-team-swarm/index.md` → 実装パターン詳細追加 |
+| 2 | 手把手写一个 MCP Server：30分钟 | juejin | `concepts/mcp-chinese-tools.md` → 実践開発ガイド追加 |
+| 3 | 继续堆 Prompt，真的不如早点学 Skill | juejin | `concepts/agent-skills.md` → パラダイムシフト議論追加 |
+| 4 | Claude4.6还是牛，给GLM5出了10个毒题 | juejin | `pages/industry-trends.md` → 最新動向追加 |
+| 5 | IDEA 里终于能爽用 Claude Code了 | juejin | `concepts/china-coding-agents.md` → IDE統合追加 |
+| 6 | Kimi成小甜甜，GLM变牛夫人 | juejin | `pages/industry-trends.md` → 競争図変化追加 |
+| 7 | n8n工作流：一键变小红书科普卡片 | juejin | `concepts/china-ai-agent-ecosystem.md` → 自動化WF追加 |
+| 8 | 本地安装Codex，国内直接使用GPT-5-Codex | juejin | `concepts/china-local-deployment.md` → 国内利用追加 |
+| 9 | GLM-4.7 上手初测：前端审美确实能打 | juejin | `entities/glm-zhipu.md` → 実測レビュー追加 |
+| 10 | 手握GLM,MiniMax 一堆 Key，却只开一个 Claude | juejin | `concepts/model-pricing.md` → 経済性分析追加 |
+| 11 | Cursor AI Skills 实战：自动生成 Flutter | juejin | `concepts/agent-skills.md` → Flutter実戦追加 |
+| 12 | RAG 技术全栈指南 第一章 | juejin | `pages/rag-vector-db.md` → 実践ガイド追加 |
+| 13 | 腾讯的 AI 焦虑，藏在十年前的 QQ 机器人里 | juejin | `entities/tencent-ai.md` → 戦略分析追加 |
+| 14 | Claude Code 效率翻倍指南:10个隐藏更新 | juejin | `entities/claude-code.md` → Tips追加 |
+| 15 | Vibe Coding 概念大全 | juejin | `concepts/vibe-coding.md` → 概念リファレンス追加 |
+
+### Reference処理済み（3件）
+- 复旦NLP 80ページAgent総説 → `entities/fudan-nlp-agent-survey.md`（既存ページ確認済み、内容重複の可能性）
+- 达摩院SpokenWOZ → `concepts/spokenwoz.md`（既存ページ確認済み、2023年記事で新規価値限定）
+- LLM安全入門 → `concepts/ai-safety-subconscious.md`（既存ページ確認済み、2024年記事で情報古い可能性）
+
+### Skip処理済み（2件）
+- OpenSolon v3.8リリース → JavaフレームワークAIトピック無関係
+- V2EX Plusサブスクリプション不満 → 一時的雑談、持続的wiki価値なし
+
+### トップトピック
+1. **4AIチーム協調開発** — Claude Codeでのマルチエージェント協調実装パターン（ファイル通信・チェックポイント・Token節約75%）
+2. **Prompt→Skillパラダイムシフト** — 「Prompt已死、Skill当立」中国開発者コミュニティで拡散
+3. **MCP Server実戦開発** — 30分PDFリーダー構築チュートリアル（TypeScript+pdf-parse）
+4. **中国LLM競争図変化** — Kimi優位→GLM下降→Claude追越、Claude 4.6 vs GLM-5毒題チャレンジ
+5. **IDE統合の進化** — JetBrains IDEAでのClaude Code実用化（claude-code-acpアダプター）
+
+
 
 ## [2026-04-28] crawl-triage-01 | GLM-5开源/Doubao-Seed-2.0/CodingPlan/Codexローカル/MCP/Prompt vs Skill/Agent Swarm
 
