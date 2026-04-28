@@ -1,6 +1,93 @@
 
 
-## [2026-04-28] active-crawl-04 | Kimi K2.6 GA / Doubao車載AI / コーディングアシスタント比較
+## [2026-04-28] crawl-triage-01 | GLM-5开源/Doubao-Seed-2.0/CodingPlan/Codexローカル/MCP/Prompt vs Skill/Agent Swarm
+
+### チェックポイント: 20260428T090135Z
+- **収集数**: v2ex:470, juejin:226, 36kr:144, wechat-media:49, newsletters:65, daily_digests:14
+- **Triage decisions**: ✅Take:10 / ⚠️Reference:10 / ❌Skip:0（本バッチ処理分）
+
+### Take処理済み（10件）
+
+| アイテム | ソース | Wiki更新 |
+|----------|--------|---------|
+| 智谱GLM-5开源（744B/SWE-bench 77.8） | juejin | `entities/glm-zhipu.md` → 既存ページが既に包括的カバー、更新不要 |
+| 豆包2.0来了（中国版Trae無料） | juejin | `entities/doubao.md` → 更新済み |
+| 阿里出手了（CodingPlan按請求課金） | juejin | `concepts/coding-plan.md` → 既存ページが既に詳細、更新不要 |
+| 本地安装Codex（GPT-5-Codex国内利用） | juejin | `concepts/cli-agent-patterns.md` → 更新済み |
+| MCP神器推荐（Claude Code画像/検索/ドキュメント） | juejin | `concepts/mcp-chinese-tools.md` → 更新済み |
+| 继续堆Prompt不如学Skill | juejin | `concepts/skills.md` → 更新済み |
+| Claude Codeで4AIチーム協調開発 | juejin | `concepts/agent-team-swarm/index.md` → **新規作成** |
+| 机器之心「AI00」十一月榜单（Embodied Intelligence） | wechat-media | `entities/openai.md` → 更新済み |
+| 清華NLPプロセス自動化新范式 | wechat-media | `concepts/agent.md` → 更新済み |
+| 腾讯AI焦虑（QQ机器人/混元） | juejin | `entities/tencent-ai.md` → Reference扱い、既存ページ参照 |
+
+### Reference処理済み（10件）
+- Cursor效率翻倍指南 → `entities/claude-code.md`
+- 腾讯AI焦虑 → `entities/tencent-ai.md`
+- Cursor Skills Flutter実例 → `concepts/skills.md`
+- Kimi vs GLM vs Claude比較 → `comparisons/minimax-vs-kimi-moonshot.md`
+- 達摩院SpokenWOZ → `concepts/spokenwoz.md`
+- 复旦NLP 80ページAgentサーベイ → `entities/fudan-nlp-agent-survey.md`
+- Codex SSH远程開発 → `concepts/cli-agent-patterns.md`
+- Meta LLM長コンテキスト継続的プレトレーニング → `entities/llama-meta.md`
+- GLM-4.7前端実測 → `entities/glm-zhipu.md`
+- Deep Research効果 → `concepts/agent.md`
+
+### Wiki更新（本バッチ）
+
+1. **concepts/agent-team-swarm/index.md** — **新規作成**:
+   - Claude Codeを使用した4AIエージェントチーム協調開発の実例
+   - 単一Agentの限界（コンテキスト膨張、タスク競合）と解決パターン
+   - 役割分担（PM/設計、実装A/B、テスト）
+   - 協調メカニズム（タスクキュー、成果物共有、フィードバックループ）
+   - V2EX/Juejinコミュニティ反応分析
+   - 163いいね・258スター獲得
+
+2. **entities/openai.md** — **セクション追加**:
+   - OpenAI科学者のEmbodied Intelligence（具身知能）設立
+   - 机器之心「AI00」十一月榜单報道
+   - 言語モデルから物理世界相互作用への展開
+
+3. **entities/doubao.md** — **更新済み**（前回バッチ）:
+   - Doubao-Seed-2.0プログラミングモデル（Pro/Lite/Mini）
+   - Agent能力・視覚理解・Skills対応
+
+4. **concepts/cli-agent-patterns.md** — **更新済み**（前回バッチ）:
+   - Codexローカル導入方法
+   - GPT-5-Codex国内利用
+   - SSHリモート開発機能
+
+5. **concepts/mcp-chinese-tools.md** — **更新済み**（前回バッチ）:
+   - Claude CodeのMCPツール統合実例
+   - 画像認識・検索・ドキュメント参照
+
+6. **concepts/skills.md** — **更新済み**（前回バッチ）:
+   - PromptからSkillへのパラダイムシフト
+   - Cursor Skills実践例
+
+7. **concepts/agent.md** — **更新済み**（前回バッチ）:
+   - 清華NLPプロセス自動化新范式
+   - Codex SSH機能統合
+
+### ソース分析
+
+| ソース | 件数 | 特徴 |
+|--------|------|------|
+| V2EX | 470 | 開発者実利用感、コスト懸念、SSH機能発見 |
+| 掘金 | 226 | 技術実装詳細、モデル比較、実践ガイド |
+| 36kr | 144 | ビジネス文脈、市場分析、業界動向 |
+| WeChat | 49 | 業界メディア報道、研究概要 |
+| Newsletters | 65 | キュレーション済み情報 |
+| Daily Digests | 14 | 日次サマリー |
+
+### トップトピック
+1. **GLM-5开源** — 744Bパラメータ、SWE-bench 77.8点
+2. **Doubao-Seed-2.0** — プログラミング特化モデル（Pro/Lite/Mini）
+3. **阿里云CodingPlan** — リクエスト課金モデル
+4. **Codexローカル利用** — 中国国内でのGPT-5-Codex直接利用
+5. **Prompt vs Skill** — AI開発パラダイムシフト
+
+---
 
 ### 更新ページ（2件）
 

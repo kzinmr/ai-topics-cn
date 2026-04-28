@@ -70,6 +70,17 @@ V2EXで「买了咸鱼低价 Gemini pro，账号差点被盗。突然发现国�
 
 また、「现在 Google 的 Gemini 和 AI 模式降智的厉害啊」（最近のGoogle GeminiとAIモードの性能低下がひどい）との声も。
 
+### Embodied Intelligence設立（2017年/2026年注目）
+
+机器之心「AI00」十一月榜单で、**OpenAI出身の科学者がEmbodied Intelligence（具身知能）企業を設立**したことが報じられた。
+
+> 「前OpenAI科学家辞职创立智能机器人公司,我们和他们的CEO聊了聊」
+> （元OpenAI科学者が退職してスマートロボット会社を設立、CEOにインタビュー）
+
+これはAI研究の最前線が**言語モデルから物理世界との相互作用（具身知能）**へ拡がりつつあることを示唆する。OpenAI出身者がロボティクス分野で起業する動きは、AI業界の人材流動性と技術進化の方向性を示す重要な指標。
+
+📎 出典: [机器之心「AI00」十一月榜单](https://weixin.sogou.com) `[Tier-2: 微信公众号/業界メディア]`
+
 ## 関連リンク
 
 ### 内部リンク
@@ -134,9 +145,9 @@ V2EXで「**Codex 运行 Python 测试后，仓库根目录出现大量 4 字节
 
 > **出典**: V2EX — [https://www.v2ex.com/t/1206745](https://www.v2ex.com/t/1206745) [T1]
 
-### CLI純チャットモードへの不満 — エディタ不在の課題
+## CLI純チャットモードへの不満 — エディタ不在の課題
 
-V2EX（スコア32）で「**没有编辑器，CLI 纯聊天写代码的方式有点儿难适应**」（エディタがない、CLI純チャットでのコード書き方は少し慣れにくい）との声が投稿された。主な不満点：
+V2EX（スコア32）で「没有编辑器，CLI 纯聊天写代码的方式有点儿难适应」（エディタがない、CLI純チャットでのコード書き方は少し慣れにくい）との声が投稿された。主な不満点：
 
 - **コードが見えない不安感**: CLIチャットでは生成コードを直接視認できない
 - **行番号での精密なコンテキスト指定が困難**: エディタのように「この行を修正」といった指示がやりにくい
@@ -148,7 +159,7 @@ V2EX（スコア32）で「**没有编辑器，CLI 纯聊天写代码的方式�
 
 ### Open Computer Use — オープンソース版Computer Use実装
 
-V2EXで「**开源 Open Computer Use**」が公開された。OpenAIのCodex Computer Useに触発され、**Accessibility API**ベースの非独占的CUA（Computer Use Agent）能力をオープンソース化したもの。
+V2EXで「开源 Open Computer Use」が公開された。OpenAIのCodex Computer Useに触発され、**Accessibility API**ベースの非独占的CUA（Computer Use Agent）能力をオープンソース化したもの。
 
 - **MCPプロトコルにパッケージ済み**: 全てのAIエージェントまたはMCPクライアントが即座に呼び出し可能
 - **macOS対応**: macOS上のComputer Use能力をオープンソースで再現
@@ -159,7 +170,22 @@ Computer Useのオープンソース化は、エージェントのGUI操作能�
 > **出典**: V2EX — [https://www.v2ex.com/t/1206760](https://www.v2ex.com/t/1206760) [T1]
 > **リポジトリ**: [github.com/iFurySt/open-codex-computer-use](https://github.com/iFurySt/open-codex-computer-use)
 
-## 04-18後半追加動向（2026-04-18 12:00クロール分）
+## GPT-5-Codexの国内（中国）利用
+
+2025年9月、Juejin開発者「哪吒编程」が**Codexのローカルインストール方法**を公開。中国国内から直接GPT-5-Codexを利用するための手順を詳細に解説している。
+
+### 背景
+中国国内の開発者がOpenAIのサービスに直接アクセスするには、通常VPNや海外決済手段が必要。しかしCodexをローカルにインストールすることで、これらの障壁を回避して利用可能になる。
+
+### 主なポイント
+- **ローカルインストール**: Codex CLIをローカル環境に導入し、API経由で利用
+- **SSHリモート開発**: Codex AppにSSH機能が追加され、リモートサーバーでの開発も可能に
+- **代替選択肢として**: Cursor→Claude Code→Codexへの移行経験を持つ開発者が、最終的にCodexを主力に据えている
+
+📎 出典: [Juejin — Codexローカルインストール](https://juejin.cn/post/7554270339796336678) `[Tier-2: 掘金/技術コミュニティ]`
+📎 出典: [V2EX — Codex SSH機能](https://www.v2ex.com/t/1206760) `[Tier-1: V2EX/フォーラム]`
+
+## 04-18追加動向（2026-04-18クロール分）
 
 ### 高层人事震荡 — 首席战略官・首席产品官同日离职
 

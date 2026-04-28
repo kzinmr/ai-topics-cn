@@ -30,6 +30,29 @@ Skillsは以下の要素で構成される：
 
 ## 最新動向（2026年4月）
 
+### 「PromptよりSkill」のパラダイムシフト
+
+2026年1-4月にかけて、中国AIコミュニティ（特にClaude Code/Juejin）で**「Skill」**が大きなトレンドとなっている。
+
+> 「继续堆 Prompt，真的不如早点学 Skill」
+> （Promptを積み続けるより、とっととSkillを学んだほうがいい）
+
+この議論の核心は以下の通り：
+
+1. **Promptエンジニアリングの限界**: プロンプトの量と複雑さが増すにつれて、メンテナンスコストが跳ね上がる
+2. **Skillの再利用性**: 一度定義したSkillは複数のプロジェクト・タスクで使い回せる
+3. **ワークフローの標準化**: SkillはSOP（標準作業手順）として機能し、チーム開発にも適している
+
+Juejinの記事は62いいね・97スターを獲得し、開発者コミュニティでSkillへの関心が高いことを示している。
+
+📎 出典: [Juejin — Prompt vs Skill](https://juejin.cn/post/7598433254128205864)（62いいね・97スター）`[Tier-1: 掘金/技術コミュニティ]`
+
+### Cursor AI Skillsの実践例
+
+Flutter開発において、CursorのSkills機能を使用してページ生成・コード作成・ドキュメント生成を自動化した事例が報告されている。これはSkillsが単なる概念ではなく、実際の開発ワークフローに組み込まれている証拠。
+
+📎 出典: [Juejin — Cursor AI Skills実践](https://juejin.cn/post/7629863917262471203)（Cursor Skills Flutter自動化）`[Tier-2: 掘金/技術コミュニティ]`
+
 ### Zero Guideの発表
 
 Juejinで**「Skills Guide Zero」**という記事が公開され、AI Agentのスキル設計に関する基本的な考え方が整理された。

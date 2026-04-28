@@ -164,7 +164,19 @@ aliases: ["中国MCP工具生态", "China MCP Servers", "中文MCP服务器"]
 }
 ```
 
-### 6. その他の注目MCP Server
+### 6. Claude Code MCPツール統合実例（2026年4月）
+
+Juejinで「MCP神器推薦：Claude Codeに画像閲覧・検索・ドキュメント参照を可能にする」という記事が公開された。Claude Codeに複数のMCPサーバーを統合し、以下の能力を付与した具体例：
+
+- **画像認識**: 視覚情報に基づくコード生成・デバッグ
+- **Web検索**: リアルタイムの情報取得とコンテキスト補完
+- **ドキュメント参照**: APIドキュメントや技術資料の自動検索
+
+これはMCPプロトコルが単なる仕様ではなく、実際の開発ワークフローに即座に統合可能な「ツールバス」として機能していることを示す好例。
+
+📎 出典: [Juejin — MCP神器推薦](https://juejin.cn/post/7597709339982708776)（10いいね・23スター）`[Tier-2: 掘金/技術コミュニティ]`
+
+### 7. その他の注目MCP Server
 
 - **GitHub MCP Server**（github/github-mcp-server）: Go実装、29K Stars、Anthropic共同開発。中国開発者にも広く利用されている
 - **Microsoft MCP Serverカタログ**: Azure MCP Server 2.0.0（2026-04-10）、84リリース

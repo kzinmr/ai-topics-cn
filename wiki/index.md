@@ -1,16 +1,18 @@
 # AI Topics China Wiki — Index
 
 最終更新: 2026-04-28
-エンティティ: 55, コンセプト: 87, ダイジェスト: 8, 比較: 1, ページ: 2
+エンティティ: 55, コンセプト: 88, ダイジェスト: 8, 比較: 1, ページ: 2
 
 ### 本日更新（2026-04-28）
-- `entities/tencent-hunyuan.md` — **新規**: 混元(Hunyuan)大モデル詳細ページ。Hy3 Preview（295B MoE/21B活性/256Kコンテキスト/SWE-bench 74.4%）、姚順雨リーダーシップ、HY2.0シリーズ、統合先（元宝/CodeBuddy/WorkBuddy）、ベンチマーク比較。
-- `entities/tencent-qclaw.md` — **新規**: QClaw Agent詳細ページ。OpenClawベース、10日で100万ユーザー、微信小程序/WhatsApp/Telegram対応、V2マルチAgent（无不言/林且慢/代可行）、海外版ベータ。
-- `entities/tencent-ai.md` — **大幅更新**: 姚順雨首席AI科学家招聘、Hunyuan/QClaw製品ポートフォリオ、WeChat×AI戦略、2026年度業績公告初公開、Hy3/QClaw詳細ページへの内部リンク追加。
-- `entities/baidu-ernie.md` — **大幅更新**: ERNIE-Image（8B DiT）セクション追加。Apache 2.0 OSS、ComfyUI/Unsloth GGUF対応、LongText-Bench 0.9733（SOTAクラス）、多言語テキストレンダリング、競合比較表。
-- `concepts/kimi.md` — **K2.6 GAセクション追加**: 1T MoE/384Experts/32B activated、SWE-Bench Pro 58.6%・Ver 80.2%・HLE 54.0など7ベンチマーク、CodeBuddy/Vercel等パートナー採用、アーキテクチャ詳細（MoonViT/MuonClip/256K）、Claw Groups研究プレビュー、K3(3-4T)開発中。日経XTech・gihyo.jp評価
-- `concepts/doubao.md` — **北京車展2026車載AIセクション追加**: 火山引擎Agentic AIソリューション（AI座舱套件/座舱助手）、700万台搭載・50+ブランド・145車種、奇瑞(Chery)戦略提携（小奇同学統合）、3大エンジンアーキテクチャ（対話推論/目標駆動/学習成長）
-- `concepts/china-ai-coding-assistants.md` — **新規**: 中国四大AIコーディングアシスタント比較。Trae(MAU100万+/$10/mo/中国版無料)、通义灵码(Gartner挑戦者/Qwen-Coder-Qoder/Quest Agent)、CodeGeeX(唯一OSS/100万ユーザー)、文心快码。2026.04時点の詳細比較表・市場動向分析
+- `concepts/agent-team-swarm/index.md` — **新規**: AI Agentチーム・スワームパターン。Claude Codeで4AIの協調開発実例（163いいね・258スター）、単一Agentの限界（コンテキスト膨張・タスク競合）、役割分担パターン、協調メカニズム、V2EX/Juejinコミュニティ反応
+- `entities/openai.md` — **セクション追加**: OpenAI科学者のEmbodied Intelligence設立（机器之心「AI00」十一月榜单報道）、言語モデルから物理世界相互作用への展開
+- `entities/doubao.md` — **更新**: Doubao-Seed-2.0プログラミングモデル（Pro/Lite/Mini）、Agent能力・視覚理解・Skills対応、中国版Trae無料
+- `entities/glm-zhipu.md` — **更新不要**: 既存ページがGLM-5（744B、SWE-bench 77.8）を既に包括的にカバー
+- `concepts/coding-plan.md` — **更新不要**: 既存ページが阿里云CodingPlan（リクエスト課金、Qwen-3.5/Kimi-K2.5/GLM-4.7統合）を既に詳細に記述
+- `concepts/cli-agent-patterns.md` — **更新済み**: Codexローカル導入、GPT-5-Codex国内利用、SSHリモート開発機能
+- `concepts/mcp-chinese-tools.md` — **更新済み**: Claude CodeのMCPツール統合実例（画像認識・検索・ドキュメント参照）
+- `concepts/skills.md` — **更新済み**: PromptからSkillへのパラダイムシフト、Cursor Skills実践例
+- `concepts/agent.md` — **更新済み**: 清華NLPプロセス自動化新范式、Codex SSH機能統合
 
 ### 前日更新（2026-04-27）
 - `concepts/mcp-china.md` — **大幅更新**: MCP月間DL 97M突破、GitHub公式MCP Server v1.0.2、GLM-5.1 MCP Atlas世界首位（71.8%）、MCP Auth標準化、Streamable HTTP、Docker MCP Toolkit、Azure MCP 2.0.0、Qwen3.6-35B-A3B MCPMark 37.0%
@@ -72,6 +74,7 @@
 
 - [[agent-skills|Agent Skills — AIエージェントのモジュール型能力システム]]
 - [[ai-agent|AI Agent（智能体）— 中国語圏での議論動向]]
+- [[agent-team-swarm|AI Agentチーム・スワームパターン — 複数AIエージェント協調開発]]
 - [[ai-inner-os|AI Inner OS — AI CLIツールのインナーモノローグ可視化プラグイン]]
 - [[ai-safety-subconscious|ai-safety-subconscious]]
 - [[ai-video-generation|AI短视频自动生成 — 一人開発の技術スタックと実践知]]
