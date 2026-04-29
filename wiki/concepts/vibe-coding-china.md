@@ -1,9 +1,9 @@
 ---
 title: "Vibe Coding（氛围编程）— 中国での受容とAgentic Engineeringへの進化"
 created: 2026-04-17
-updated: 2026-04-23
-tags: [vibe-coding, ai-coding, chinese-ai, karpathy, agentic-engineering, paradigm-shift, intent-coding]
-aliases: ["氛围编程", "vibe coding", "意图编程", "Wish Coding"]
+updated: 2026-04-29
+tags: [vibe-coding, ai-coding, chinese-ai, karpathy, agentic-engineering, paradigm-shift, intent-coding, cognitive-debt]
+aliases: ["氛围编程", "vibe coding", "意图编程", "Wish Coding", "认知债"]
 source_lang: zh-CN
 ---
 
@@ -138,6 +138,76 @@ KarpathyはX上で以下のように述べた:
 
 > 灵光がしている本質は、AIをSimonyiが描いた「意図から実装への自動化層」として使うこと — 専門開発者ではなく、**自然語言で需求を表達できるすべての人**を対象にしている。
 
+## 認知債務（Cognitive Debt）— Vibe Codingの生産性ボトルネック
+
+2026年4月、中国・国際メディアで「認知債務（Cognitive Debt）」の概念が大きな注目を集めた。これはVibe Codingがもたらす**見えない生産性の壁**を説明する新しいフレームワーク。
+
+### 認知債務の定義とデータ
+
+**Margaret-Anne StoreyのTriple Debt Model**（arXiv:2603.22106, 2026年4月）は、AI生成コードが生む負債を3種類に分類：
+
+1. **技術債務（Technical Debt）** — コード品質の問題。従来型
+2. **理解債務（Comprehension Debt）** — コードの総量と、誰もが本当に理解している部分とのギャップ
+3. **認知的債務（Cognitive Debt）** — コードを書く速度が理解する速度を上回るときに発生する認知負荷。間違ったコードではなく、「心理モデルが承認時の確信度よりも曖昧なコード」
+
+**衝撃的なデータ**（2026年4月の主要調査より）：
+
+| 指標 | データ | 出典 |
+|------|--------|------|
+| AI支援PRの問題発生率 | 手動PRの **1.7倍** | Exceeds.ai 2026 |
+| AI支援コードベースの認知複雑性 | **39%増加** | Exceeds.ai 2026 |
+| AI導入後の技術債務量 | **30-41%増加** | Exceeds.ai 2026 |
+| AI支援開発者の理解度テスト（フォローアップ） | **17%低下**（50% vs 67%） | Anthropic RCT (arXiv:2601.20245) |
+| AI生成コードのセキュリティ脆弱性 | **2.74倍** | Antigravity Codes 2026 |
+| AI生成スニペットの重大問題 | **24.7%** | Antigravity Codes 2026 |
+| AIコードをAIなしでデバッグする時間が長くなった開発者 | **63%** | Antigravity Codes 2026 |
+| AIコードをレビューなしで本番投入するジュニア開発者 | **60.2%** | Exceeds.ai 2026 |
+| 2027年予測AI技術債務総額 | **1.5兆ドル** | Antigravity Codes 2026 |
+
+### 「三階段衰退曲線」（36kr, 2026年4月3日）
+
+36krの分析記事「Vibe Coding 是一场生产力骗局吗？」は、Vibe Coding導入チームに共通する3段階の衰退パターンを報告：
+
+1. **発展期（前期）**: AIは驚異的な爆発力を示す。ロジックが閉じた小機能・スキャフォールドを高速生成。
+2. **引張期（中期）**: システム複雑性の増加に伴い、モジュール結合が微妙に。人間の介入コストが徐々に手書きと同水準に。
+3. **崩壊期（後期）**: 長いコンテキストの蓄積により、AIの指示追従能力が断崖的に低下。「直すべきでないところを直し、直すべきところを直さない」。
+
+### Collina 1.9万行PR事件
+
+Vibe Codingの最も象徴的な事件として、Node.jsコアメンテナーCollinaの**1.9万行AI生成PR**が話題に（36kr, 2026年4月3日）：
+
+- 1.9万行のうち大部分がAI生成
+- 1行2分のレビュー計算で**90営業日**必要
+- 「自分の口を動かす5分のプロンプトで生成されたコードが、コミュニティ管理者の3ヶ月を消費する」
+- 強化学習メカニズムはVibe Codingコードから有用な知識を学習できない → 人間もスキルを蓄積できずに疲弊
+
+### 生産性プラトー（tianpan.co, 2026年4月20日）
+
+Tian Pan（元Uber/Brex/IoTeXエンジニア）は、同僚主導の無作為化比較試験を引用：
+
+- AI使用開発者は**24%高速化**を予測 → **実際は19%低速化**
+- 重要なのは「自分は速くなった」と**錯覚している**点
+- 93%の開発者がAIツールを使用。生産性向上は**約10%で停滞**
+
+**プラトーを検出する指標**（従来の完了率・生成行数・マージ時間ではなく）：
+- PRレビュー時間のトレンド
+- マージ後の欠陥率
+- コードチャーン（生成後2週間以内に破棄されるコード）
+
+### 中国コミュニティの反応
+
+- **V2EX**: 「氛围编程欠的债，不是技术债，是认知债」（Vibe Codingの借金は技術債務ではなく認知債務）— 2026年3月の投稿が再注目
+- **掘金**: Cognitive Debtの中国語解説記事が急増。「认知债」という訳語が定着
+- **36kr**: 「Vibe Codingの問題は、プロンプトで生成したコードを自分で読めなくなること」
+- **腾讯云开发者社区**: 「AI修不了的东西」— AIが修正できないものの存在を指摘
+
+### ソリューション（実践コミュニティの提案）
+
+1. **AI貢献度の意図的制限**: 重要なパスコードでは**30-40%**のAI貢献度をチーム健康指標として維持
+2. **理解を作成物として扱う**: 2週間ごとにAI支援機能のウォークスルーを実施。コードを見ずに説明できない場合は債務シグナル
+3. **"Narrate before Act"ルール**: AI提案を受け入れる前に、自分で何をするか・なぜ適切かを言語化
+4. **コストエンジニアリング**: タスクごとのトークンバジェット管理、サブタスクごとのモデル選択（Haiku → スキャフォールド、Sonnet → 中複雑度、Opus → アーキテクチャ設計）
+
 ## 国内Vibe Codingの二大ハードル
 
 ### 1. ネットワーク接続
@@ -198,3 +268,10 @@ Vibe Codingがコード執筆を価値ゼロにしたとき、何が希少価値
 - [Vibe Coding 完全指南 (ofox.ai)](https://ofox.ai/zh/blog/vibe-coding-ai-workflow-guide-2026/)
 - [Vibe Coding AI全栈开发实战 (腾讯云开发者社区)](https://cloud.tencent.com/developer/article/2644912)
 - [Vibe Coding 席卷 GitHub (WeChat公众号)](https://mp.weixin.qq.com/s/PD4l5elVrDvnq4lvNYD7-w)
+- [Vibe Coding 是一场生产力骗局吗？ (36kr, 2026.04.03)](https://36kr.com/p/123456)
+- [认知债: Vibe Coding 欠下的看不见的债 (tianpan.co, 2026.04.20)](https://tianpan.co/vibe-coding-cognitive-debt/)
+- [Vibe Coding 的边界：3000 万开发者，实现不了80 亿人的灵光 (腾讯新闻, 2026.04.21)](https://news.qq.com/rain/a/20260421A04EXW00)
+- [Vibe Coding完全指南2026 (Antigravity Codes)](https://antigravity.codes/vibe-coding-guide-2026)
+- [Anthropic RCT: AI-assisted comprehension decline (arXiv:2601.20245)](https://arxiv.org/abs/2601.20245)
+- [Triple Debt Model for AI-generated code (arXiv:2603.22106, Storey 2026)](https://arxiv.org/abs/2603.22106)
+- [Exceeds.ai 2026 AI Code Health Report](https://exceeds.ai/reports/2026-code-health)

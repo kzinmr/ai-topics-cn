@@ -212,9 +212,9 @@ topics:
       - "China AI regulation filing policy 2026"
     wiki_pages:
       - concepts/china-ai-regulation
-    notes: "生成式AI管理弁法、大模型備案制度、データセキュリティ法との交差。2026年新規: AI拟人化互动服务管理暂行办法（7月施行）、AI科技伦理审查与服务办法（4月施行）。政策動向をdeep dive"
+    notes: "生成式AI管理弁法、大模型備案制度、データセキュリティ法との交差。2026年新規: AI拟人化互动服务管理暂行办法（7月施行、世界初のAI情感陪伴専用規制、禁止行為8条・未成年人保護）、AI科技伦理审查与服务办法（4月施行、十部門連名・4段階審査・3類型高リスク活動）。政策動向をdeep dive済み。倫理審査の4段階（一般/简易/专家复核/应急72時間）と罰則体系をwiki反映。"
     added: 2026-04-17
-    last_crawled: 2026-04-25
+    last_crawled: 2026-04-29
 
   - slug: china-ai-model-filing
     title: "AI Model Filing System (大模型备案制度)"
@@ -288,9 +288,9 @@ topics:
       - "Vibe Coding 终焉 Agentic Engineering 范式切换"
     wiki_pages:
       - concepts/vibe-coding-china
-    notes: "Karpathy 2026-02-04 Vibe Coding终焉宣言。蚂蚁灵光闪应用3000万生成・意图编程提唱。Cursor 23億ドルDラウンド估值293億ドル。Trae 600万+ユーザー。国内二大ハードル: ネットワーク接続・Rate Limit。"
+    notes: "Karpathy 2026-02-04 Vibe Coding终焉宣言。蚂蚁灵光闪应用3000万生成・意图编程提唱。Cursor 23億ドルDラウンド估值293億ドル。Trae 600万+ユーザー。国内二大ハードル: ネットワーク接続・Rate Limit。【2026.04.29更新】认知债(Cognitive Debt)が主要課題に。36kr三段階衰退曲線、Anthropic RCT(AI支援で理解低下)、Triple Debt Model。Agentic Engineeringへのパラダイム遷移加速。Collina 1.9万行PR事件。"
     added: 2026-04-17
-    last_crawled: "2026-04-23"
+    last_crawled: "2026-04-29"
 
   - slug: china-ai-coding-assistants
     title: "Chinese AI Coding Assistants (国产AI编程助手)"
@@ -380,6 +380,6 @@ topics:
       - "Chinese open source AI models community"
     wiki_pages:
       - concepts/china-open-source-ai
-    notes: "ModelScope (魔搭)、HuggingFace中国ミラー、GiteeベースのAIプロジェクト。横方向の関連エコシステム"
+    notes: "ModelScope (魔搭)、HuggingFace中国ミラー、GiteeベースのAIプロジェクト。横方向の関連エコシステム。【2026.04.29更新】4月後半のモデルリリースラッシュを反映：DeepSeek V4 Preview(1M ctx/MoE/Ascend対応, 4/24)、腾讯Hy3 Preview(295B MoE, 4/23)、Qwen3.6-35B-A3B(4/16)・Qwen3.6-27B(4/22)、MiniMax 2.7(4/12)、**Qwen3 全8モデル(4/29、AIME25=81.5でオープンソースSOTA)**。中国OSS勢力図（Alibaba vs DeepSeekの二極化）をwiki反映。"
     added: 2026-04-17
-    last_crawled: null
+    last_crawled: 2026-04-29

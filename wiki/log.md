@@ -1,5 +1,38 @@
 
-## [2026-04-28] crawl-triage-02-batch2 | 4AIチーム/MCP Server/Prompt→Skill/Claude vs GLM/IDEA統合/n8n/Codex国内/GLM-4.7/LLMキー経済/Claude Code Tips/Vibe Coding/RAG指南/騰訊AI分析
+## [2026-04-29] active-crawl-29 | Vibe Coding认知债/規制詳細/オープンソースモデルラッシュ
+
+### 処理概要
+- **トリガー**: hot-topics.yaml active-crawl (11:00 JST)
+- **処理トピック**: vibe-coding-china (high), china-ai-regulation (high), china-open-source-ai (medium)
+- **更新/作成ページ**: 3ページ更新
+
+### Wiki更新
+
+1. **concepts/vibe-coding-china.md** — 更新（認知債務セクション追加）:
+   - 認知債務（Cognitive Debt）の定義とフレームワーク追加
+   - 36kr三段階衰退曲線（探索期→プラトー→衰退期）
+   - Anthropic RCT: AI支援でコード理解が1.7倍低下
+   - Triple Debt Model（Storey 2026, arXiv:2603.22106）
+   - Collina 1.9万行PR事件（Node.jsメンテナー）
+   - 中国コミュニティの反応（V2EX/Juejin/WeChat）
+
+2. **concepts/china-ai-regulation.md** — 更新（新規2規制の詳細追加）:
+   - AI拟人化互动服务管理暂行办法（2026.07.15施行）: 世界初のAI情感陪伴専用規制
+     - 禁止行為8条、未成年人保護（虚拟亲属/伴侣禁止）、罰則体系
+   - AI科技伦理审查与服务办法（工信部联科〔2026〕75号）: 十部門連名
+     - 4段階審査（一般/简易/专家复核/应急72時間）
+     - 3類型高リスク活動（人機融合・社会輿論誘導・高度自主意思決定）
+     - 国家科技倫理登記プラットフォーム
+
+3. **concepts/china-open-source-ai.md** — 更新（4月後半リリースラッシュ追加）:
+   - DeepSeek V4 Preview (4/24): 1M ctx/MoE/Ascend対応/オープンソース
+   - 腾讯混元 Hy3 Preview (4/23): 295B MoE/256K ctx/全製品即時展開
+   - Qwen3.6-35B-A3B (4/16): SWE-Bench 73.4/RTX4090動作
+   - MiniMax 2.7 (4/12): SWE-Pro 56.22%/オープンソース
+   - **Qwen3 全8モデル (4/29)**: 235B/30B/32B/14B/8B/4B/1.7B/0.6B
+     - AIME25 81.5（オープンソース新SOTA）
+     - ルールベースRL（GRPO非依存）/36兆トークン事前訓練
+   - 中国OSS勢力図（Alibaba vs DeepSeek二極化）
 
 ### チェックポイント: 20260428T210202Z
 - **収集数**: v2ex:482, juejin:241, 36kr:153, wechat-media:50, newsletters:65, daily_digests:14, zhihu:0

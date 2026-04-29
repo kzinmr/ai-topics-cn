@@ -1,9 +1,13 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-04-28
+最終更新: 2026-04-29
 エンティティ: 55, コンセプト: 88, ダイジェスト: 8, 比較: 1, ページ: 2
 
-### 本日更新（2026-04-28 Triage Batch 2）
+### 本日更新（2026-04-29 Active Crawl: 认知债/規制詳細/OSSラッシュ）
+- `concepts/vibe-coding-china.md` — **大幅更新**: 認知債務（Cognitive Debt）セクション追加。36kr三段階衰退曲線、Anthropic RCT（理解1.7倍低下）、Triple Debt Model（arXiv:2603.22106）、Collina 1.9万行PR事件
+- `concepts/china-ai-regulation.md` — **大幅更新**: AI拟人化互动服务管理暂行办法（7/15施行）詳細：禁止行為8条・未成年保護・罰則体系。AI科技伦理审查与服务办法（工信部联科75号）詳細：4段階審査・3類型高リスクAI活動・国家科技倫理登記
+- `concepts/china-open-source-ai.md` — **大幅更新**: 4月後半モデルリリースラッシュ追加。DeepSeek V4 Preview(1M ctx/Ascend)、腾讯Hy3(295B MoE)、Qwen3.6-35B-A3B、Qwen3(8モデル/4/29公開/AIME25=81.5 SOTA)、MiniMax 2.7。中国OSS勢力図（Alibaba vs DeepSeek二極化）
+### 前日更新（2026-04-28 Triage Batch 2）
 - `concepts/agent-team-swarm/index.md` — **セクション追加**: 4AIチーム協調開発の実装パターン詳細（ファイルシステム通信、強制チェックポイント、Token節約75%、agentGroupディレクトリ構造）
 - `concepts/mcp-chinese-tools.md` — **セクション追加**: MCP Server実践開発ガイド（30分PDFリーダー構築、TypeScript+pdf-parse、StdioServerTransport、CJS/ESM互換処理）
 - `concepts/agent-skills.md` — **セクション追加**: 「Prompt已死、Skill当立」パラダイムシフト議論、Cursor AI Skills×Flutter自動生成実戦
