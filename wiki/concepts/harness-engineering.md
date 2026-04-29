@@ -147,3 +147,4 @@ Harness Engineeringの文脈において、CLI・MCP・GUIの役割分担が明�
 - [ChinAI #355: An Alliance for AI's "Harness Era" — MiniMax + Alibaba Cloud](https://substack.com/home/post/p-194618013) — Jeff Ding (2026-04-18)
 - [机器之心: MiniMax + 阿里云 — AI Agent基础设施重构](https://mp.weixin.qq.com) — 深度技術解析 (2026-04)
 - [叶小钗: CLI vs MCP vs GUI — AI時代のコマンドラインの復権](https://substack.com) — 開発者考察記事 (2026-04)
+- [机器之心: 被OpenAI带火的Agent如何解放人力?清华NLP实验室发布流程自动化新范式](wechat-media/2026-04-20-被OpenAI带火的Agent如何解放人力-清华NLP实验室发布流程自动化新范式-8df67f31.md) — 清华NLPワークフロー自動化新范式 (2026-04-20)

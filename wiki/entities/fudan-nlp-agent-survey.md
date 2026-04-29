@@ -46,6 +46,7 @@ source_lang: zh-CN
 
 - [WeChatメディア: 复旦NLP团队发布80页大模型Agent综述](wechat-media/2026-04-17-复旦NLP团队发布80页大模型Agent综述-一文纵览AI智能体的现状与未来-357bad68.md)
 - [WeChatメディア: 复旦NLP团队发布80页大模型Agent综述](wechat-media/2026-04-18-复旦NLP团队发布80页大模型Agent综述-一文纵览AI智能体的现状与未来-357bad68.md)
+- [WeChatメディア: 复旦NLP团队发布80页大模型Agent综述](wechat-media/2026-04-26-复旦NLP团队发布80页大模型Agent综述-一文纵览AI智能体的现状与未来-357bad68.md)（再取り上げ、2026-04-26）
 
 > [!warning] ソースティア
 > WeChatメディア記事はSogouプロキシリンクスタブの可能性があり、原文の内容が完全に抽出されていない場合がある。論文の詳細は直接arXivまたは復旦大学NLPチームの公式発表を確認すること。

@@ -82,6 +82,7 @@ Juejinで**Vibe Codingの包括的概念リファレンス**が公開された�
 - 若手開発者を中心に支持が拡大
 
 > **出典**: Juejin — [Vibe Coding 概念大全](https://juejin.cn/post/7602191709389176874) [T2]
+> **出典**: Juejin — [Vibe Coding 概念大全](juejin/2026-04-24-Vibe-Coding-概念大全-a8e1d486.md) (2026-04-24) [T2] — 包括的概念リファレンス記事
 
 | ソース | URL | ティア |
 |---|---|---|

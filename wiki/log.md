@@ -1,5 +1,86 @@
 
-## [2026-04-29] crawl-triage-02 | OpenAI戦略転換/Codex SSH/MCP統合/騰讯AI不安
+## [2026-04-29] crawl-triage-03 | 复旦Agent総説/清华Harness/MCP実用/Skill転換/GLM-4.7/騰訊AI/Meta長文脈/Codex国内/VibeCoding/ClaudeCode効率化
+
+### チェックポイント: 20260429T210136Z
+- **収集数**: v2ex:508, juejin:270, 36kr:173, wechat-media:66, newsletters:65, daily_digests:15, zhihu:0
+- **Triage decisions**: ✅Take:10 / ⚠️Reference:7 / ❌Skip:3
+
+### Wiki更新
+
+1. **entities/fudan-nlp-agent-survey.md** — 更新:
+   - 复旦NLP团队80ページAgent総説の出典追加
+   - AI智能体の現状と未来に関する包括的レビュー
+
+2. **concepts/harness-engineering.md** — 更新:
+   - 清华NLP実験室による流程自動化新范式の出典追加
+   - Agentによる人力解放の具体的手法
+
+3. **pages/mcp-protocol.md** — 更新:
+   - Claude Code×MCPツール実用ガイド出典追加
+   - 画像認識・検索・ドキュメント参照の統合方法
+
+4. **concepts/agent-skills.md** — 更新:
+   - 「Prompt已死、Skill当立」議論出典追加（isArray, Juejin 62いいね）
+   - Cursor AI Skills×Flutter自動生成実戦出典追加
+
+5. **entities/glm-zhipu.md** — 更新:
+   - GLM-4.7前端実測レビュー出典追加（AI袋鼠帝, Juejin 17いいね）
+   - 「前端审美确实能打」開発者評価の反映
+
+6. **entities/tencent-ai.md** — 更新:
+   - 騰訊AI不安・QQボット戦略分析出典追加
+   - 10億元投資の混元大モデル vs ユーザーは旧QQボットを好むパラドックス
+
+7. **concepts/in-context-learning.md** — 更新:
+   - Meta版ChatGPT長文脈継続的プレトレーニング出典追加
+   - 基礎LLMの長文脈処理改善手法
+
+8. **pages/openai-codex-infrastructure.md** — 更新:
+   - 中国国内Codexローカルインストール・GPT-5-Codex利用出典追加
+   - V2EX SSH遠隔開発機能情報の確認
+
+9. **concepts/vibe-coding.md** — 更新:
+   - Vibe Coding概念大全出典追加（包括的概念リファレンス記事）
+
+10. **entities/claude-code.md** — 更新:
+    - Claude Code効率化10選出典追加
+
+### Take処理済み（10件）
+
+| # | アイテム | ソース | Wiki更新 |
+|---|----------|--------|----------|
+| 1 | 复旦NLP团队发布80页大模型Agent综述 | wechat-media | `entities/fudan-nlp-agent-survey.md` → 出典追加 |
+| 2 | 清华NLP实验室发布流程自动化新范式 | wechat-media | `concepts/harness-engineering.md` → 出典追加 |
+| 3 | MCP 神器推荐：让 Claude Code 能看图 | juejin | `pages/mcp-protocol.md` → 出典追加 |
+| 4 | 继续堆 Prompt，真的不如早点学 Skill | juejin | `concepts/agent-skills.md` → 出典追加 |
+| 5 | GLM-4.7 上手初测：前端审美确实能打 | juejin | `entities/glm-zhipu.md` → 出典追加 |
+| 6 | 腾讯的 AI 焦虑，藏在十年前的 QQ 机器人里 | juejin | `entities/tencent-ai.md` → 出典追加 |
+| 7 | Meta版ChatGPT背后的技术: 持续预训练 | wechat-media | `concepts/in-context-learning.md` → 出典追加 |
+| 8 | 本地安装Codex，国内直接使用GPT-5-Codex | juejin | `pages/openai-codex-infrastructure.md` → 出典追加 |
+| 9 | Vibe Coding 概念大全 | juejin | `concepts/vibe-coding.md` → 出典追加 |
+| 10 | Claude Code 效率翻倍指南:10个隐藏更新 | juejin | `entities/claude-code.md` → 出典追加 |
+
+### Reference処理済み（7件）
+- Cursor AI Skills×Flutter実戦 → `concepts/agent-skills.md`（補足材料）
+- Cursor実践者年次振り返り → `concepts/china-ai-coding-assistants.md`（参考）
+- JetBrains IDEAでのClaude Code統合 → `entities/claude-code.md`（参考）
+- RAG技术全栈指南第一章 → `concepts/rag.md`（基礎内容重複）
+- Codex詳細攻略入門 → `pages/openai-codex-infrastructure.md`（ローカルインストール記事と重複）
+- Codex App SSH機能追加 → `pages/openai-codex-infrastructure.md`（開発者コミュニティ反応）
+- LLM安全入門 → `concepts/mcp-security.md`（基礎的内容）
+
+### Skip処理済み（3件）
+- deep research生成報告品質議論 → V2EX雑談スレッド、wiki価値なし
+- OpenAI论坛Google UK Plus濫用举报 → 中国AIエコシステム無関係
+- （その他断片的意見交換）
+
+### トップトピック
+1. **复旦NLP 80ページAgent総説** — AI智能体の現状と未来に関する包括的レビュー
+2. **清华NLP流程自動化新范式** — Agentによる人力解放の具体的手法
+3. **Prompt→Skillパラダイムシフト** — 「Prompt已死、Skill当立」中国開発者コミュニティで拡散
+4. **GLM-4.7前端実測** — 智譜AIのフロントエンド生成能力が高評価
+
+## [2026-04-29] crawl-triage-02 | OpenAI戦略転換/Codex SSH/MCP統合/騰訊AI不安
 
 ### チェックポイント: 20260429T090212Z
 - **収集数**: v2ex:497, juejin:256, 36kr:168, wechat-media:65, newsletters:65, daily_digests:15, zhihu:0

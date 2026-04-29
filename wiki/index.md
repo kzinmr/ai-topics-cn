@@ -3,7 +3,18 @@
 最終更新: 2026-04-29
 エンティティ: 55, コンセプト: 88, ダイジェスト: 8, 比較: 1, ページ: 2
 
-### 本日更新（2026-04-29 Triage: OpenAI戦略転換/Codex SSH/MCP統合/騰訊AI不安）
+### 本日更新（2026-04-29 Triage Batch 2: 复旦Agent総説/清华Harness/MCP実用/Skill転換/GLM-4.7/騰訊AI/Meta長文脈/Codex国内利用/VibeCoding/ClaudeCode効率化）
+- `entities/fudan-nlp-agent-survey.md` — **更新**: 80ページAgent総説の再取り上げ出典追加（2026-04-26）
+- `concepts/harness-engineering.md` — **更新**: 清华NLP流程自動化新范式の出典追加（2026-04-20）
+- `pages/mcp-protocol.md` — **更新**: Claude Code×MCPツール実用ガイド出典追加（画像認識・検索・ドキュメント）
+- `concepts/agent-skills.md` — **更新**: 「Prompt已死、Skill当立」議論出典追加（isArray, Juejin 62いいね）、Cursor AI Skills×Flutter実戦出典追加
+- `entities/glm-zhipu.md` — **更新**: GLM-4.7前端実測レビュー出典追加（AI袋鼠帝, Juejin 17いいね）
+- `entities/tencent-ai.md` — **更新**: 騰訊AI不安・QQボット戦略分析出典追加（10億元投資のパラドックス）
+- `concepts/in-context-learning.md` — **更新**: Meta版ChatGPT長文脈継続的プレトレーニング出典追加
+- `pages/openai-codex-infrastructure.md` — **更新**: 中国国内Codexローカルインストール・GPT-5-Codex利用出典追加
+- `concepts/vibe-coding.md` — **更新**: Vibe Coding概念大全出典追加（包括的概念リファレンス）
+- `entities/claude-code.md` — **更新**: Claude Code効率化10選出典追加
+### 前日更新（2026-04-29 Triage: OpenAI戦略転換/Codex SSH/MCP統合/騰訊AI不安）
 - `entities/openai.md` — **大幅更新**: OpenAIのクラウド戦略転換（Microsoft Azure独占権終了→Amazon AWS移行）、AnthropicとのARR逆転（$25B vs $30B+）、OpenRouter Token使用量比較（ClaudeがGPTを32%上回る）、GPT-5.5リリース、Amazonとの$1,380億/8年契約
 - `pages/openai-codex-infrastructure.md` — **セクション追加**: Codex AppのSSH遠隔開発機能（V2EX発見情報、`~/.codex/config.toml`設定）、中国国内でのCodexローカルインストールとGPT-5-Codex利用ガイド（`npm install -g @openai/codex`）
 - `concepts/mcp.md` — **セクション追加**: Z.AI（智譜AI）製MCPサーバー（zai-mcp-server/GLM-4.6Vベース画像認識、web-reader、web-search-prime）のClaude Code統合事例

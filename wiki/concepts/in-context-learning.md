@@ -55,3 +55,4 @@ In-context Learning（ICL、コンテキスト内学習）は、大規模言語�
 | ソース | URL | 概要 |
 |---|---|---|
 | 掘金 — ICL解説 | [juejin.cn/post/7630730075692449855](https://juejin.cn/post/7630730075692449855) | ICLの基本概念解説 |
+| WeChatメディア — Meta版ChatGPT長文脈継続的プレトレーニング解説 | [wechat-media/2026-04-26-Meta版ChatGPT-背后的技术-想让基础LLM更好地处理长上下文-只需持续预训练-fdcb9807.md](wechat-media/2026-04-26-Meta版ChatGPT-背后的技术-想让基础LLM更好地处理长上下文-只需持续预训练-fdcb9807.md) | 継続的プレトレーニングによる長文脈処理改善手法 |

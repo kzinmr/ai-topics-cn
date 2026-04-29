@@ -440,4 +440,6 @@ Juejin開発者が**Claude Codeの10個の隠し機能・効率化テクニッ�
 
 > **出典**: Juejin — [Claude Code 效率翻倍指南:你可能错过的10个隐藏更新](https://juejin.cn/post/7608759940800544818) [T2]
 
+> **出典**: Juejin — [Claude Code 效率翻倍指南:你可能错过的10个隐藏更新](juejin/2026-04-19-Claude-Code-效率翻倍指南-你可能错过的10个隐藏更新-40a17a43.md) (2026-04-19) [T2]
+
 > **出典**: 掘金 — [https://juejin.cn/post/7620060655607857178](https://juejin.cn/post/7620060655607857178) [T2]

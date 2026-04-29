@@ -310,3 +310,4 @@ AI アプリケーション開発の五層構造（Prompt → Function Call → 
 | 7 | 第九章：Claude Code CLI 安全沙盒与指令拦截机制 | 掘金 | https://juejin.cn/post/7629290989707837455 |
 | 8 | LangChain 安全补丁 CVE-2026-4539 | 掘金 | https://juejin.cn/post/7629308995309322290 |
 | 9 | Claude Code 重构：并行化或终结 IDE 时代 | 36kr | — |
+| 10 | MCP 神器推荐：让 Claude Code 能看图、能搜索、能查文档 | 掘金 | https://juejin.cn/post/7598433254128205864 |
