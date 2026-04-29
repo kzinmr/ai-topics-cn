@@ -1,4 +1,70 @@
 
+## [2026-04-29] crawl-triage-02 | OpenAI戦略転換/Codex SSH/MCP統合/騰讯AI不安
+
+### チェックポイント: 20260429T090212Z
+- **収集数**: v2ex:497, juejin:256, 36kr:168, wechat-media:65, newsletters:65, daily_digests:15, zhihu:0
+- **Triage decisions**: ✅Take:5 / ⚠️Reference:5 / ❌Skip:10（本バッチ処理分）
+
+### Wiki更新
+
+1. **entities/openai.md** — 大幅更新:
+   - OpenAIのクラウド戦略転換（Microsoft Azure独占権終了→Amazon AWS移行）
+   - AnthropicとのARR逆転（OpenAI $25B vs Anthropic $30B+、2026年3月）
+   - 企業評価比較（OpenAI $8,530億 vs Anthropic $1兆）
+   - OpenRouter Token使用量比較（GPT 28.24兆/11.2% vs Claude 37.27兆/14.8%）
+   - GPT-5.5リリース（4/23）、Amazonとの$1,380億/8年契約
+   - 業界構造への影響（Azure売上10%依存、AWS首位堅持）
+
+2. **pages/openai-codex-infrastructure.md** — セクション追加:
+   - Codex AppのSSH遠隔開発機能（V2EX発見情報）
+   - `~/.codex/config.toml`設定方法（`[features] remote_connections = true`）
+   - 中国国内でのCodexローカルインストールガイド（`npm install -g @openai/codex`）
+   - GPT-5-Codex直接利用方法
+
+3. **concepts/mcp.md** — セクション追加:
+   - Z.AI（智譜AI）製MCPサーバー（zai-mcp-server/GLM-4.6Vベース）
+   - web-reader、web-search-primeツールのClaude Code統合
+   - 画像認識MCPサーバーの実践例
+
+4. **entities/tencent-ai.md** — セクション追加:
+   - 騰訊のAI不安と10年前のQQボット戦略分析
+   - 10億元投資の混元大モデル vs ユーザーは旧QQボットを好むパラドックス
+   - 微信群への混元大モデル投入とユーザー反応のギャップ
+
+### Take処理済み（5件）
+
+| # | アイテム | ソース | Wiki更新 |
+|---|----------|--------|----------|
+| 1 | 被Anthropic超车的OpenAI-正在远离微软-靠近亚马逊 | 36kr | `entities/openai.md` → クラウド戦略転換詳細追加 |
+| 2 | 本地安装Codex，国内直接使用GPT-5-Codex | juejin | `pages/openai-codex-infrastructure.md` → ローカルインストールガイド追加 |
+| 3 | 以防你不知道 Codex App 偷偷加了 SSH 远程开发功能 | v2ex | `pages/openai-codex-infrastructure.md` → SSH機能追加 |
+| 4 | MCP 神器推荐：让 Claude Code 能看图、能搜索、能查文档 | juejin | `concepts/mcp.md` → Z.AI MCPサーバー統合追加 |
+| 5 | 腾讯的 AI 焦虑，藏在十年前的 QQ 机器人里 | juejin | `entities/tencent-ai.md` → AI不安分析追加 |
+
+### Reference処理済み（5件）
+- 复旦NLP 80ページAgent総説 → `entities/fudan-nlp-agent-survey.md`（既存ページ確認済み）
+- 达摩院SpokenWOZ → `concepts/spokenwoz.md`（既存ページ確認済み）
+- Meta LLM長コンテキスト継続的プレトレーニング → `entities/llama-meta.md`（既存ページ確認済み）
+- Cursor AI Skills×Flutter実戦 → `concepts/agent-skills.md`（補足材料）
+- n8n自動化ワークフロー → `concepts/china-ai-agent-ecosystem.md`（参考事例）
+
+### Skip処理済み（10件）
+- deep research品質議論 → 断片的意見交換、wiki価値低い
+- GPT 6.0リリース噂 → 信頼性低く、wiki記録対象外
+- 低价GPT脆弱性議論 → 具体的な技術情報なし
+- AI00ランキング記事 → 日次重複（4/26〜4/29に4回）、詳細技術情報なし
+- AI Agent入門解説 → 日次重複、既存ページでカバー済み
+- LLM浪潮下的AIAgent众生相 → 日次重複、一般的な総説
+- Microsoft WizardLMインターン募集 → 採用情報、wiki対象外
+- LangChain入門記事（2023年）→ 古く、既存ページでカバー済み
+- Vibe Coding概念大全 → 既存ページで包括的にカバー済み
+
+### トップトピック
+1. **OpenAIクラウド戦略転換** — Azure独占権喪失、Amazon AWSへの$1,380億契約、AnthropicとのARR逆転
+2. **Codex実機能進化** — SSH遠隔開発機能追加、中国国内ローカルインストール可能に
+3. **MCP実統合** — Z.AI製MCPサーバー（画像認識/検索/読込）のClaude Code連携
+4. **騰訊AI不安** — 10億元投資の混元大モデル vs ユーザーは旧QQボットを好むパラドックス
+
 ## [2026-04-29] active-crawl-29 | Vibe Coding认知债/規制詳細/オープンソースモデルラッシュ
 
 ### 処理概要

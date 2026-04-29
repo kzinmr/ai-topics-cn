@@ -140,6 +140,22 @@ MCPは **Externalization（外在化）の Protocol層** に位置づけられ�
 
 > **出典**: [V2EX — 花了$5000 刀使用 AI 开发了一套 AI 客服系统](https://www.v2ex.com/t/1206840) [T1]
 
+### Z.AI製MCPサーバー — Claude Code拡張の実践（2026-04-26更新）
+
+JuejinでZ.AI（智譜AI）の4つのMCPサーバーをClaude Codeに統合する実践ガイドが公開された（10いいね・23スター）。これによりClaude Codeが「**能看图、能搜索、能查文档**」（画像認識・検索・ドキュメント参照が可能）に拡張される。
+
+| MCPサーバー | 提供元 | 機能 | ベースモデル |
+|---|---|---|---|
+| **zai-mcp-server** | Z.AI | 画像分析、OCR、UI→コード、エラー診断 | GLM-4.6V |
+| **web-reader** | Z.AI | 网页抓取→Markdown変換、広告除去 | - |
+| **web-search-prime** | Z.AI | リアルタイムWeb検索、時間範囲フィルター | 複数エンジン対応 |
+| **zread** | zread.ai | GitHubドキュメント検索、日中バイリンガル | - |
+
+また、公式MCPサーバーとして **mcp-fetch**（HTTP取得）、**mcp-filesystem**（ファイルシステム）、**mcp-memory**（知識グラフ記憶）、**mcp-github**（GitHub操作）、**mcp-router**（MCP統合管理）も紹介されている。
+
+> **出典**: [Juejin — MCP 神器推荐：让 Claude Code 能看图、能搜索、能查文档](https://juejin.cn/post/7597709339982708776) [T2]
+> **注**: 記事日付は2026-01-22だが、2026-04-26にJuejinで再クロール・言及された
+
 ## 関連リンク
 
 ### 中国語圏の一次ソース

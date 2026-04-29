@@ -3,7 +3,12 @@
 最終更新: 2026-04-29
 エンティティ: 55, コンセプト: 88, ダイジェスト: 8, 比較: 1, ページ: 2
 
-### 本日更新（2026-04-29 Active Crawl: 认知债/規制詳細/OSSラッシュ）
+### 本日更新（2026-04-29 Triage: OpenAI戦略転換/Codex SSH/MCP統合/騰訊AI不安）
+- `entities/openai.md` — **大幅更新**: OpenAIのクラウド戦略転換（Microsoft Azure独占権終了→Amazon AWS移行）、AnthropicとのARR逆転（$25B vs $30B+）、OpenRouter Token使用量比較（ClaudeがGPTを32%上回る）、GPT-5.5リリース、Amazonとの$1,380億/8年契約
+- `pages/openai-codex-infrastructure.md` — **セクション追加**: Codex AppのSSH遠隔開発機能（V2EX発見情報、`~/.codex/config.toml`設定）、中国国内でのCodexローカルインストールとGPT-5-Codex利用ガイド（`npm install -g @openai/codex`）
+- `concepts/mcp.md` — **セクション追加**: Z.AI（智譜AI）製MCPサーバー（zai-mcp-server/GLM-4.6Vベース画像認識、web-reader、web-search-prime）のClaude Code統合事例
+- `entities/tencent-ai.md` — **セクション追加**: 騰訊のAI不安と10年前のQQボット戦略分析、10億元投資の混元大モデル vs ユーザーは旧QQボットを好むパラドックス
+### 前日更新（2026-04-29 Active Crawl: 认知债/規制詳細/OSSラッシュ）
 - `concepts/vibe-coding-china.md` — **大幅更新**: 認知債務（Cognitive Debt）セクション追加。36kr三段階衰退曲線、Anthropic RCT（理解1.7倍低下）、Triple Debt Model（arXiv:2603.22106）、Collina 1.9万行PR事件
 - `concepts/china-ai-regulation.md` — **大幅更新**: AI拟人化互动服务管理暂行办法（7/15施行）詳細：禁止行為8条・未成年保護・罰則体系。AI科技伦理审查与服务办法（工信部联科75号）詳細：4段階審査・3類型高リスクAI活動・国家科技倫理登記
 - `concepts/china-open-source-ai.md` — **大幅更新**: 4月後半モデルリリースラッシュ追加。DeepSeek V4 Preview(1M ctx/Ascend)、腾讯Hy3(295B MoE)、Qwen3.6-35B-A3B、Qwen3(8モデル/4/29公開/AIME25=81.5 SOTA)、MiniMax 2.7。中国OSS勢力図（Alibaba vs DeepSeek二極化）

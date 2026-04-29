@@ -81,6 +81,49 @@ V2EXで「买了咸鱼低价 Gemini pro，账号差点被盗。突然发现国�
 
 📎 出典: [机器之心「AI00」十一月榜单](https://weixin.sogou.com) `[Tier-2: 微信公众号/業界メディア]`
 
+## OpenAIのクラウド戦略転換 — Microsoft→Amazon（2026-04-29更新）
+
+### 独占権の終了とAWSへの移行
+
+2026年4月27日、OpenAIとMicrosoftは同時に、**Microsoft AzureがOpenAI製品の独占権を持たない**ことを発表。翌4月28日、OpenAIとAmazonは、OpenAIのGPTモデルとCodex製品が**Amazon AWS経由で利用可能**になることを発表した。
+
+この転換は、以下の4つの重要な節目を経て段階的に進行した：
+
+| 日付 | 出来事 |
+|------|--------|
+| 2025-10-28 | OpenAIとMicrosoftが7年$2,500億のクラウドサービス契約。MicrosoftはOpenAIの**独占的クラウド権**を失う |
+| 2025-11-03 | OpenAIとAmazonが7年$380億の計算力契約を締結 |
+| 2026-03-01 | OpenAIが$1,100億の資金調達を完了。Amazonが$500億を出資（第1期$150億、条件付きで$350億追加）。8年$1,380億の計算力契約も締結 |
+| 2026-04-28 | Microsoft Azureの独占権終了とAWSへのOpenAIモデル提供を同時発表 |
+
+### Anthropicとの競争劣勢
+
+OpenAIがAmazonに接近する背景には、**Anthropicへの競争劣勢**がある：
+
+- **ARR（年度経常収入）**: OpenAI $250億超（2026年2月） vs Anthropic $300億超（2026年3月）— **Anthropicが逆転**
+- **企業評価**: OpenAI $8,530億（2026年4月） vs Anthropic $1兆 — **Anthropicが$1,000億上回る**
+- **ClaudeのDAU急成長**: 2026年1月400万 → 3月1,130万（Similarweb）
+- **OpenRouter Token使用量（1月-4月）**: GPTシリーズ 28.24兆（11.2%） vs Claudeシリーズ 37.27兆（14.8%）— **ClaudeがGPTを32%上回る**
+
+Anthropicが優位に立つ主要因は**Coding能力**。エンタープライズ顧客は、コード生成ツールに月額$200〜$2,000を支払い、API経由では$2,000〜$20,000/月に達する。Agent時代において、Coding能力の差は指数級的に増幅される。
+
+### OpenAIの対応策
+
+- **GPT-5.5リリース（4/23）**: 自社ベンチマークでCoding能力がClaude Opus 4.7を超過
+- **AWS Bedrock経由の販売**: AWSの10万+企業顧客にリーチ可能。以前BedrockにはAnthropicのモデルしかなかった
+- **クラウド支出の多元化**: 2025年のクラウド支出は$163億（Stanford AI Index）。Azureに$100億+、AWSに数億ドル
+
+### 業界構造への影響
+
+- **Microsoft Azure**: OpenAIはAzure売上の10%超を占める。独占権喪失で成長鈍化の可能性
+- **Amazon AWS**: OpenAIの$1,380億契約が実現すれば、年間$100-200億の新規収入。AWSはクラウド市場での首位位置を堅持
+- **OpenAI**: 単一ベンダー依存からの脱却。計算力不足が最大の成長制約因子
+
+> **出典**: 36kr（半熟财经）— [被Anthropic超车的OpenAI，正在远离微软、靠近亚马逊](https://36kr.com/p/3787391989226499) [T1]
+> **出典**: Stanford HAI — [2026 AI Index Report](https://aiindex.stanford.edu) [T1]
+> **出典**: Similarweb — Claude DAU推移 [T2]
+> **出典**: OpenRouter — Token消耗統計 [T2]
+
 ## 関連リンク
 
 ### 内部リンク
