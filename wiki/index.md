@@ -1,7 +1,7 @@
 # AI Topics China Wiki — Index
 
 最終更新: 2026-04-30
-エンティティ: 55, コンセプト: 88, ダイジェスト: 8, 比較: 1, ページ: 2
+エンティティ: 56, コンセプト: 88, ダイジェスト: 8, 比較: 1, ページ: 2
 
 ### 本日更新（2026-04-30 Active Crawl: DeepSeek V4値下げ・増資・CAICT / Tencent Hunyuan OpenRouter1位・組織再編 / ChatGLM-5.1詳細・決算）
 - `concepts/deepseek.md` — **更新**: V4全系列API大幅値下げ(キャッシュ¥0.02/百万tokens業界最安)、増資・梁文鋒出資比率34%上昇、CAICT国産化適合テスト開始、株式市場への影響
@@ -66,6 +66,7 @@
 |- [[iflytek|iflytek]]
 |- [[kimi-moonshot|Kimi（月之暗面/Moonshot AI）— Claude Code代替として急成長する中国国籍LLM]]
 |- [[kimi-k2-6|Kimi K2.6 — 月之暗面开源旗舰模型]]
+|- [[kilo|Kilo（キロコード）— オープンソースAIコーディングプラットフォーム、2.3M+開発者、500+モデル]]
 |- [[qwopus-3-5|Qwopus 3.5 — Qwen3.5-27Bベース社区微调モデル]]
 |- [[llama-meta|Llama（Meta）— Meta AIのオープンソースLLMファミリ]]
 |- [[metax|metax]]

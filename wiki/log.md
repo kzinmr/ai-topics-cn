@@ -1,4 +1,9 @@
 
+## [2026-04-30] wiki-entity-create | Kilo（キロコード）— オープンソースAIコーディングプラットフォーム
+
+### エンティティ新規作成
+- **entities/kilo.md** — 新規: Kilo Code Inc.のプロフィール、主要プロダクト（Kilo Code/KiloClaw/Kilo Gateway/PinchBench）、経営哲学「Kilo Speed」、資金調達状況（$8Mシード/2025年12月）、競合比較表
+
 ## [2026-04-30] active-crawl-02 | DeepSeek V4値下げ・増資・CAICTテスト / Tencent Hunyuan OpenRouter1位・組織再編 / ChatGLM-5.1詳細・決算・Z.ai
 
 ### Wiki更新
