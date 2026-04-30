@@ -1,5 +1,35 @@
 
-## [2026-04-29] crawl-triage-03 | 复旦Agent総説/清华Harness/MCP実用/Skill転換/GLM-4.7/騰訊AI/Meta長文脈/Codex国内/VibeCoding/ClaudeCode効率化
+## [2026-04-30] active-crawl-02 | DeepSeek V4値下げ・増資・CAICTテスト / Tencent Hunyuan OpenRouter1位・組織再編 / ChatGLM-5.1詳細・決算・Z.ai
+
+### Wiki更新
+
+1. **concepts/deepseek.md** — 更新:
+   - V4全系列API価格大幅引き下げ（キャッシュ¥0.02/百万tokens、業界最安）
+   - DeepSeek増資（1000万→1500万元）・梁文鋒出資比率34%上昇（間接含む84.29%）
+   - CAICT国産化適合テスト正式開始（華為昇騰・寒武紀対応）
+   - 株式市場への影響：競合株下落・算力株急騰
+
+2. **entities/tencent-hunyuan.md** — 更新:
+   - OpenRouter全球API呼び出し量1位獲得（2026年4月29日）
+   - 和平精英AI NPC統合詳細
+   - 姚順雨5大ブロック組織再編（事前/事後/Infra/評価/Frontier）
+   - 50+実業務評価Benchmark独自構築・業界標準放棄
+   - Hy3.0正式版5-6月リリース予定
+   - 月額28元〜個人プラン・内製Inference
+
+3. **concepts/chatglm.md** — 更新:
+   - GLM-5.1詳細（744B MoE/200K ctx/128K出力/MIT/8h自律実行/655反復/SWE-bench Pro 58.4%）
+   - GLM-5V-Turboリリース（視覚→コード生成マルチモーダル）
+   - 2025年度決算（収入7.24億元+132%/MaaS ARR約17億60倍増/API粗利18.9%）
+   - Q1 API値上げ83%→呼び出し量400%増
+   - Coding Plan無制限週次クォータ廃止（2026.04.30）
+   - Z.aiブランディング・OpenClaw/Hermes/SillyTavern正式対応
+   - DeepSeek V4競合の株価影響
+
+### hot-topics.yaml 更新
+- deepseek: last_crawled → 2026-04-30
+- chatglm: last_crawled → 2026-04-30
+- tencent-hunyuan: last_crawled → 2026-04-30
 
 ### チェックポイント: 20260429T210136Z
 - **収集数**: v2ex:508, juejin:270, 36kr:173, wechat-media:66, newsletters:65, daily_digests:15, zhihu:0

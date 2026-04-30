@@ -35,9 +35,9 @@ topics:
       - "DeepSeek MoE reasoning model"
     wiki_pages:
       - concepts/deepseek
-    notes: "中国発オープンウェイトモデルの代表格。V3/R1のMoEアーキテクチャ、推論能力で世界的注目。Zhihu・V2EX・Juejinで活発に議論される"
+    notes: "2026.04.30更新: V4全系列API大幅値下げ(キャッシュ¥0.02/百万tokens)、Liang Wenfeng直接出資比率34%に上昇、CAICT国産化適合テスト開始。OpenRouter呼び出し量過去最高。競合株価下落・算力株急騰。"
     added: 2026-04-17
-    last_crawled: 2026-04-26
+    last_crawled: 2026-04-30
 
   - slug: qwen
     title: "Qwen (通义千问) — Alibaba"
@@ -63,9 +63,9 @@ topics:
       - "Zhipu AI ChatGLM latest"
     wiki_pages:
       - concepts/chatglm
-    notes: "清華大学系スタートアップZhipu AI。GLM-4シリーズ、学術寄りのアプローチ。GLM-5.1は2000万Tokens無料登録、GLM Proプラン(120元/月)に統合。z.aiプラットフォームでMCP/RAG/智能体市场を統合。"
+    notes: "2026.04.30更新: GLM-5.1詳細(744B MoE/200K ctx/128K出力/MIT/8h自律実行/655反復/6Kツールコール/SWE-bench Pro 58.4%)、2025年度決算(収入7.24億元+132%/MaaS ARR~17億/60倍増)、Q1 API値上げ83%→400%増、Z.aiブランディング、GLM-5V-Turboリリース、Coding Plan無制限廃止。DeepSeek V4競合で株価影響。"
     added: 2026-04-17
-    last_crawled: 2026-04-25
+    last_crawled: 2026-04-30
 
   - slug: kimi
     title: "Kimi — Moonshot AI (月之暗面)"
@@ -107,6 +107,21 @@ topics:
     notes: "ByteDance発。中国国内DAU最大級のAIアプリ。Doubao-Seed-2.0リリース（2026.02）。Dola海外版累計2億ダウンロード突破（2026.04）。豆包股仮想制度。Seed-CodeがGPT-5を9基準で凌駕。2026.04.24北京車展でAgentic AI車載ソリューション発表：700万台搭載・50+ブランド・145車種・奇瑞と戦略提携。AI座舱套件+座舱助手の2大方案。"
     added: 2026-04-17
     last_crawled: 2026-04-28
+
+  - slug: tencent-hunyuan
+    title: "混元 (Hunyuan) — Tencent AI"
+    crawl_policy: deepdive
+    priority: high
+    search_hints:
+      - "腾讯混元 Hunyuan 2026"
+      - "Hy3 Hy3-Preview 混元大模型"
+      - "Tencent AI 元宝 Yuanbao 智能体"
+    wiki_pages:
+      - entities/tencent-ai
+      - entities/tencent-hunyuan
+    notes: "2026.04.30更新: Hy3 PreviewがOpenRouter API呼び出し量全球1位(2026.04.29)。和平精英AI NPC統合。姚順雨5ブロック再編(事前/事後/Infra/評価/Frontier)。50+実業務Benchmark独自構築。Hy3.0正式版5-6月リリース予定(大幅大規模)。月額28元〜の個人プラン。他社から核心人材大量獲得。内製Inferenceパイプライン。"
+    added: 2026-04-29
+    last_crawled: 2026-04-30
 
   # =========================================================
   # 2. Chinese AI Agent Ecosystem (中国AIエージェント)
