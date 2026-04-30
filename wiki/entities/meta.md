@@ -3,6 +3,7 @@ title: Meta — 中国AIエコシステムにおける位置付け
 description: MetaのAI開発動向、中国AIコミュニティとの関係、オープンソース貢献。
 status: active
 category: entity
+source_lang: zh-CN
 ---
 
 # Meta（Meta Platforms）

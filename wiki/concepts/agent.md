@@ -3,6 +3,7 @@ title: AI Agent — 大規模言語モデルを活用した自律型エージェ
 description: AI Agentの基本概念、技術スタック、中国エコシステムでの発展状況。
 status: active
 category: concept
+source_lang: zh-CN
 ---
 
 # AI Agent（人工知能エージェント）

@@ -6,6 +6,7 @@ category: concept
 created: 2026-04-28
 updated: 2026-04-28
 tags: [ai-agent, collaboration, swarm, claude-code, multi-agent]
+source_lang: zh-CN
 ---
 
 # AI Agentチーム・スワームパターン

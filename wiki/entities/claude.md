@@ -3,6 +3,7 @@ title: Claude（Anthropic）— 中国AIエコシステムにおける位置付�
 description: Anthropic製Claudeシリーズの技術特徴、市場動向、中国AI開発者コミュニティでの活用状況。
 status: active
 category: entity
+source_lang: zh-CN
 ---
 
 # Claude（Anthropic）

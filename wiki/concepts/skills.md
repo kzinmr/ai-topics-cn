@@ -3,6 +3,7 @@ title: Skills — AI Agentの能力モジュール
 description: AI Agentにおけるスキルの概念、実装方法、中国エコシステムでの標準化動向。
 status: active
 category: concept
+source_lang: zh-CN
 ---
 
 # Skills（AIスキル）
