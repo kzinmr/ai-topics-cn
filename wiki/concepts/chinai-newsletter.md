@@ -5,6 +5,7 @@ updated: 2026-04-27
 tags: [newsletter, china, ai, translation, analysis]
 aliases: ["ChinAI", "Jeff Ding Newsletter", "中国AInewsletter"]
 source_lang: en
+source_url: https://chinai.substack.com/
 ---
 
 # ChinAI Newsletter — 中国AI業界動向の英語翻訳・解説
