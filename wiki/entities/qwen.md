@@ -1,7 +1,7 @@
 ---
 title: Qwen（通义千问）— 阿里云大模型旗舰
 created: 2026-04-17
-updated: 2026-04-26
+updated: 2026-05-01
 tags: [llm, model, china, open-source-ai, alibaba, qwen, agentic-coding, ai-infrastructure]
 aliases: ["Qwen", "通义千问", "qwen", "Qwen3.5", "Qwen3-Coder", "Qwen3.6", "Qwen3.6-Plus", "Qwen3.6-27B", "Qwen3.6-35B-A3B"]
 source_lang: zh-CN
@@ -123,11 +123,45 @@ Qwen3.6シリーズの**最初のdense（非MoE）モデル**。27Bパラメー�
 - **SGLang、vLLM、KTransformers、HF Transformers**互換
 - **262K native context**（YaRNで1Mへ拡張）
 
-> **出典**: [MarkTechPost — Qwen3.6-27B Release](https://www.marktechpost.com/2026/04/22/alibaba-qwen-team-releases-qwen3-6-27b-a-dense-open-weight-model-outperforming-397b-moe-on-agentic-coding-benchmarks/), [Qwen Blog — Qwen3.6-27B](https://qwen.ai/blog?id=qwen3.6-27b), [TokenMix Review](https://tokenmix.ai/blog/qwen-3-6-27b-review-dense-beats-moe-2026)
+> **出典**: [Qwen Blog — Qwen3.6-27B](https://qwen.ai/blog?id=qwen3.6-27b), [TokenMix Review](https://tokenmix.ai/blog/qwen-3-6-27b-review-dense-beats-moe-2026)
+
+### Qwen3.6-Max-Preview のクローズドウェイト転換（2026年4月20日）
+
+2026年4月20日、AlibabaはQwen3.6-Max-Previewのリリースと同時に**重要な戦略転換**を発表した：
+
+1. **クローズドウェイト化**: Qwen3.5まで継続してきたオープンソース路線を初めて転換し、Max-Previewを**プロプライエタリ専用モデル**に設定
+2. **無料ティア廃止**: Max-Preview発表と同日にQwen Codeの無料枠（Qwen OAuth無料枠）を終了。ユーザーはOpenRouter・Fireworks・阿里云百炼への移行を推奨
+3. **OpenAI/Anthropic両API互換**: OpenAI仕様とAnthropic仕様の両方でリクエストを受け付ける新API設計
+4. **コーディング6ベンチマーク首位**: SWE-bench Pro・Terminal-Bench 2.0・SkillsBench・QwenClawBench・QwenWebBench・SciCodeで首位を主張
+
+この転換は「Alibabaはオープンソース」という前提での戦略設計が通用しなくなったことを意味する。Qwen3.6シリーズのOSS提供は35B-A3B（MoE）と27B（Dense）に限定され、フラッグシップ性能はクローズドウェイトで提供される新体制に移行した。
+
+> **出典**: [Uravation — Qwen 3.6-Plus完全ガイド](https://uravation.com/media/qwen36-plus-alibaba-agent-model-guide-v2-2026/)
 
 ### Qwen3-Coder — コーディング特化（480B MoE / 35B active）
 
 コード生成・理解に特化したバージョン。Claude Code、Cursorと比較する記事が掘金・V2EXで多数投稿。CodingPlan（[[coding-plan]]）においてKimi K2.6およびGLM-4.7と並んでバンドル提供。
+
+### Qwen Code — AIエージェント開発環境（v0.14.xアップデート）
+
+2026年4月、Qwen Codeは**v0.14.0〜v0.14.5**の一連のバージョンをリリースし、AIコーディングアシスタントから「自律エージェントシステム」への進化を遂げた。
+
+**主な新機能（v0.14.3〜v0.14.5、2026年4月16日）**:
+
+1. **スマートツール並列実行**: 読み取り専用ツール（検索、ファイル読み込み等）を自動的にバッチ並列実行。書き込み操作は直列実行を維持し安全性を確保。多ツールシナリオで応答時間が大幅に短縮。
+2. **Fork子エージェント**: サブタスク分割時に子エージェントが親エージェントのコンテキストを自動継承。大規模タスクの分割実行に最適。
+3. **CJK分詞ナビゲーション**: Ctrl+左/右方向キーで中日韓文字の単語単位ジャンプ。混合入力を含むターミナル操作の体験が大幅に改善。
+4. **/review コードレビュー改善**: LLMに依存しない静的チェック（確定分析）、自動修正提案、セキュリティ強化チェックを追加。
+5. **Telegram・钉钉・WeChat統合**: チャンネル経由でサーバーをリモート制御可能に。スマートフォンからコード修正・ログ確認・スクリプト実行が可能。
+6. **Cron Jobs（/loopコマンド）**: 定期的なコードテスト・自動ビルド・ログ監視をスケジュール実行。手動crontab編集が不要。
+7. **/plan 事前計画モード**: 実行前にファイル構造と実行手順を整理し、ユーザー確認後に実行。成功率が顕著に向上。
+8. **サブエージェントのモデル分割**: 強力なモデルを全体計画に、軽量モデルを個別タスクに割り当て、トークン消費を最適化。
+9. **子エージェントの承認モード継承**: 親エージェントの承認設定を自動継承。重複設定不要。
+10. **Qwen OAuth無料枠終了**: 2026年4月15日をもって無料枠終了。OpenRouter・阿里云百炼・Fireworksへの移行を推奨。
+
+> **Qwen3.6-PlusはOpenRouterで日間1.4兆Tokenを記録**: リリース僅か1日でOpenRouter日次API呼び出しランキングで世界1位を達成。単一モデルとしての1日1.4兆TokenはOpenRouter史上最高記録（出典: 新浪科技）
+
+> **出典**: [Qwen Code 週報 (2026-04-16)](https://qwenlm.github.io/qwen-code-docs/zh/blog/weekly-update-2026-04-16/), [新浪新闻 — Qwen Code更新](https://www.sina.cn/news/detail/5286584468638183.html)
 
 ### 価格競争 — Qwen3-Max 50%値下げ
 

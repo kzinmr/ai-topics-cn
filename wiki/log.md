@@ -1,4 +1,25 @@
 
+## [2026-05-01] active-crawl-03 | Qwen3.6戦略転換・Qwen Code / 中国ローカルデプロイ最新動向 / VRAM最適化新技術
+
+### Wiki更新
+
+1. **entities/qwen.md** — 更新:
+   - Qwen3.6-Max-Previewクローズドウェイト化（Alibaba OSS→プロプライエタリ戦略転換）
+   - Qwen Code v0.14.x: 子Agent実行、Tool並列、Telegram/钉钉/WeChat統合リモート制御
+   - Qwen OAuth無料枠終了（2026.04.15）
+   - Qwen3.6-27B/35B-A3BはOllama/vLLMでローカル実行対応
+
+2. **concepts/china-local-deployment.md** — 更新:
+   - Ollama 169k Stars、v0.17.7リリース（マルチモデル同時実行）
+   - Qwen3.6-35B-A3B ローカル推論: アクティブ3B/RTX4090フル動作
+   - DeepSeek-V4 ローカル推論: 昇騰910C 8基~50tok/s
+   - 検索ヒント拡充
+
+3. **concepts/vram-optimization.md** — 更新:
+   - Qwen3.6-35B-A3B MoE VRAM特性(~12GB/Q4)、RTX 4060 Ti(8GB)でも短コンテキスト動作
+   - DeepSeek-V4 Engram Memory: 100K+トークン推論でKVキャッシュ40%削減
+   - TriAttention(MIT/NVIDIA/ZJU): 全Attention同等品質、スループット2.5倍
+
 ## [2026-04-30] wiki-entity-create | Kilo（キロコード）— オープンソースAIコーディングプラットフォーム
 
 ### エンティティ新規作成

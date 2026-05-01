@@ -47,11 +47,14 @@ topics:
       - "Qwen 通义千问 Alibaba latest update April 2026"
       - "Qwen3.6 Qwen3.6-Max-Preview Qwen3.6-35B"
       - "通义灵码 阿里云 大模型 2026"
+      - "Qwen Code Qwen-Agent 子Agent 自律実行 2026"
+      - "Qwen OAuth 無料枠 終了 クローズドウェイト"
+      - "Qwen3.6-35B-A3B MoE ローカル 推論"
     wiki_pages:
       - entities/qwen
-    notes: "Alibaba Cloud発。Qwen3.6 Plus/Max-Preview/35B-A3B/27Bのリリース。preserve_thinking新機能、Qwen3-Max 50%値下げ、Amap人型ロボットdebut"
+    notes: "2026.05.01更新: Qwen3.6-Max-Previewクローズドウェイト化、Qwen Code v0.14.x（Telegram/钉钉連携・子Agent実行）、Qwen OAuth無料枠終了。Qwen3.6-27B/35B-A3BはOllama/vLLMローカル対応。Alibaba OSS→プロプライエタリ戦略転換顕著。通义灵码CodeGeeX/MarsCodeとの競争。"
     added: 2026-04-17
-    last_crawled: "2026-04-26"
+    last_crawled: "2026-05-01"
 
   - slug: chatglm
     title: "ChatGLM (智谱清言) — Zhipu AI"
@@ -181,9 +184,9 @@ topics:
       - "ollama 国产模型 本地运行"
     wiki_pages:
       - concepts/china-local-deployment
-    notes: "VRAM最適化、量子化テクニック（GPTQ/AWQ/GGUF）、消費者GPU（RTX 4090等）でのDeepSeek/Qwen展開"
+    notes: "2026.05.01更新: Ollama 169k Stars/v0.17.7、Qwen3.6-35B-A3Bアクティブ3BでRTX4090フル動作、DeepSeek-V4ローカル推論(910C 8基~50tok/s)。Ollamaマルチモデル同時実行改善。ローカル推論の需要増加中。"
     added: 2026-04-17
-    last_crawled: 2026-04-23
+    last_crawled: 2026-05-01
 
   - slug: censorship-bypass
     title: "Censorship Bypass & Uncensored Models (审查绕过/去审查模型)"
@@ -209,9 +212,9 @@ topics:
       - "VRAM optimization Chinese models quantization"
     wiki_pages:
       - concepts/vram-optimization
-    notes: "前提: PagedAttention, KV-cache圧縮, speculative decoding, flash attention等"
+    notes: "2026.05.01更新: Qwen3.6-35B-A3B MoE VRAM特性(~12GB/Q4)、DeepSeek-V4 Engram Memory(KV最適化/40%削減)、TriAttention(MIT/NVIDIA/ZJU/スループット2.5倍)。ローカルVRAM最適化の新手法続々。"
     added: 2026-04-17
-    last_crawled: 2026-04-23
+    last_crawled: 2026-05-01
 
   # =========================================================
   # 4. Chinese Regulatory Landscape (中国AI規制)

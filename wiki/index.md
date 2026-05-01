@@ -1,13 +1,13 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-04-30
+最終更新: 2026-05-01
 エンティティ: 61, コンセプト: 93, ダイジェスト: 8, 比較: 1, ページ: 2
 
-### 本日更新（2026-04-30 Active Crawl: DeepSeek V4値下げ・増資・CAICT / Tencent Hunyuan OpenRouter1位・組織再編 / ChatGLM-5.1詳細・決算）
-- `concepts/deepseek.md` — **更新**: V4全系列API大幅値下げ(キャッシュ¥0.02/百万tokens業界最安)、増資・梁文鋒出資比率34%上昇、CAICT国産化適合テスト開始、株式市場への影響
-- `entities/tencent-hunyuan.md` — **更新**: OpenRouter全球API呼び出し量1位、和平精英AI NPC統合、姚順雨5大ブロック組織再編、Hy3.0正式版5-6月リリース予定
-- `concepts/chatglm.md` — **更新**: GLM-5.1詳細(744B MoE/128K出力/MIT/8h自律実行/SWE-bench Pro 58.4%)、GLM-5V-Turbo、2025年度決算、Q1 API値上げ83%→400%増、Z.aiブランディング、Coding Plan無制限廃止
-### 前日更新（2026-04-29 Triage: OpenAI戦略転換/Codex SSH/MCP統合/騰訊AI不安）
+### 本日更新（2026-05-01 Active Crawl: Qwen3.6戦略転換・Qwen Code / 中国ローカルデプロイ最新動向 / VRAM最適化新技術）
+- `entities/qwen.md` — **更新**: Qwen3.6-Max-Previewクローズドウェイト化、Qwen Code v0.14.x子Agent機能、Qwen OAuth無料枠終了、Alibaba OSS→プロプライエタリ戦略転換
+- `concepts/china-local-deployment.md` — **更新**: Ollama 169k Stars/v0.17.7、Qwen3.6-35B-A3Bローカル推論(アクティブ3B/RTX4090フル動作)、DeepSeek-V4 910C 8基~50tok/s
+- `concepts/vram-optimization.md` — **更新**: Qwen3.6-35B-A3B MoE VRAM特性(~12GB/Q4)、DeepSeek-V4 Engram Memory(40%削減)、TriAttention(スループット2.5倍)
+### 前日更新（2026-04-30 Active Crawl: DeepSeek V4値下げ・増資・CAICT / Tencent Hunyuan OpenRouter1位・組織再編 / ChatGLM-5.1詳細・決算）
 - `entities/openai.md` — **大幅更新**: OpenAIのクラウド戦略転換（Microsoft Azure独占権終了→Amazon AWS移行）、AnthropicとのARR逆転（$25B vs $30B+）、OpenRouter Token使用量比較（ClaudeがGPTを32%上回る）、GPT-5.5リリース、Amazonとの$1,380億/8年契約
 - `pages/openai-codex-infrastructure.md` — **セクション追加**: Codex AppのSSH遠隔開発機能（V2EX発見情報、`~/.codex/config.toml`設定）、中国国内でのCodexローカルインストールとGPT-5-Codex利用ガイド（`npm install -g @openai/codex`）
 - `concepts/mcp.md` — **セクション追加**: Z.AI（智譜AI）製MCPサーバー（zai-mcp-server/GLM-4.6Vベース画像認識、web-reader、web-search-prime）のClaude Code統合事例

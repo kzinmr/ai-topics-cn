@@ -1,7 +1,7 @@
 ---
 title: "中国大模型本地部署 — 量子化・VRAM最適化・消費者GPUでの推論"
 created: 2026-04-19
-updated: 2026-04-19
+updated: 2026-05-01
 tags: [inference, quantization, local-deployment, hardware, vram-optimization, china]
 aliases: ["本地部署", "国产模型本地运行", "VRAM优化", "量化技术", "GGUF", "GPTQ", "AWQ"]
 source_lang: zh-CN
@@ -24,7 +24,7 @@ source_lang: zh-CN
 ## 主要なローカル推論エコシステム
 
 ### 1. Ollama — 消費者向け標準
-OllamaはMac/Windows/Linuxで動作する**ワンコマンドLLMランナー**。中国コミュニティでは「**一键部署**」（ワンクリックデプロイ）として絶大な人気。Qwen2.5/3、DeepSeek-R1/V3、GLM-4、Yi-1.5など主要国産モデルが公式/コミュニティレジストリで提供されている。
+OllamaはMac/Windows/Linuxで動作する**ワンコマンドLLMランナー**。中国コミュニティでは「**一键部署**」（ワンクリックデプロイ）として絶大な人気。Qwen2.5/3/3.6、DeepSeek-R1/V3/V4、GLM-4/5、Yi-1.5など主要国産モデルが公式/コミュニティレジストリで提供されている。2026年4月時点でGitHub **169k Stars**を達成し、40,000以上のコミュニティ統合を誇る。最新バージョンはv0.17.7（2026年3月）。
 
 - **特徴**: Modelfileによるカスタマイズ、API互換エンドポイント、軽量バックエンド
 - **課題**: 大規模モデル（70B以上）のVRAM要件、並列リクエスト処理の限界
@@ -152,6 +152,12 @@ TriAttention（MIT/NVIDIA/浙大）等新研究により、KVキャッシュの1
 - 規制環境下でのAIツール利用の実践的解決策
 - ローカル実行によるデータプライバシー確保
 - コスト最適化の一環としての位置づけ
+
+## 2026年5月時点の最新動向
+
+- **Qwen3.6シリーズのローカル推論対応**: Qwen3.6-27B（Denseモデル）およびQwen3.6-35B-A3B（MoEモデル）がOllama/vLLMでローカル実行可能に。後者はアクティブパラメータが3Bであり、RTX 4090 (24GB VRAM)でフルスピード動作。Qwen3.6-Max-Previewはクローズドウェイトのためローカル非対応。
+- **Ollama v0.17.x**: マルチモデル同時実行、メモリ動的割り当て改善、DeepSeek-V4のMoE構造最適化対応。
+- **DeepSeek-V4 ローカル推論**: Ascend 910C/MLU 590での推論ベンチマークが公開。8 x 910Cで~50 tok/s (Q4)。
 
 > **出典**: Juejin — [本地安装Codex，国内直接使用GPT-5-Codex](https://juejin.cn/post/7620060655607857178) [T2]
 

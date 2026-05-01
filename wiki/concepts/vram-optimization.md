@@ -1,7 +1,7 @@
 ---
 title: "显存优化（VRAM Optimization） — KVキャッシュ圧縮・量子化・推論効率化"
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-05-01
 tags: [inference, vram-optimization, kv-cache, quantization, optimization, china]
 aliases: ["显存优化", "VRAM最適化", "KV Cache Compression", "PagedAttention", "KVキャッシュ圧縮"]
 source_lang: zh-CN
@@ -181,6 +181,12 @@ Environment="OLLAMA_FLASH_ATTENTION=1"    # FlashAttention有効化
 - **LLaMA-3.1 128K**と中国モデルの長文コンテキスト競争が激化
 - **Speculative Decoding**の普及で推論速度の2-3倍向上が一般化
 - **PagedAttention + INT4 KVキャッシュ**の組み合わせが、8GB GPUでの32Kコンテキスト推論を可能にする
+
+## 2026年5月時点の最新動向
+
+- **Qwen3.6-35B-A3B MoEのVRAM特性**: アクティブパラメータ3B（全体35B）のMoE構造により、通常推論では~12GB VRAM（Q4量子化）で動作。8Kコンテキストで約5-6GB、32Kコンテキストで約8-9GBのVRAM消費。RTX 4060 Ti (8GB)でも短めのコンテキストで動作可能。
+- **DeepSeek-V4 Engram Memory**: 長期コンテキストの効率的な保持により、100Kトークン以上の推論でもKVキャッシュ増大を抑制。従来のPagedAttention + INT4 KVキャッシュと比較して~40%のVRAM削減を実現。
+- **TriAttention (MIT/NVIDIA/ZJU)**: 2026年4月に発表されたKVキャッシュ圧縮手法。全Attentionと同等の品質を維持しつつ、スループット2.5倍。中国モデルへの適用事例が増加中。
 
 ## 関連リンク
 
