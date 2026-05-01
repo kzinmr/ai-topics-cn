@@ -1,7 +1,7 @@
 # AI Topics China Wiki — Index
 
 最終更新: 2026-05-01
-エンティティ: 61, コンセプト: 93, ダイジェスト: 8, 比較: 1, ページ: 2
+エンティティ: 61, コンセプト: 94, ダイジェスト: 8, ページ: 2
 
 ### 本日更新（2026-05-01 Active Crawl: Qwen3.6戦略転換・Qwen Code / 中国ローカルデプロイ最新動向 / VRAM最適化新技術）
 - `entities/qwen.md` — **更新**: Qwen3.6-Max-Previewクローズドウェイト化、Qwen Code v0.14.x子Agent機能、Qwen OAuth無料枠終了、Alibaba OSS→プロプライエタリ戦略転換
@@ -124,7 +124,8 @@
 - [[gpu-sanctions-china|中国GPU制裁・半導体輸出制限 — 米中AI競争と国産化動向]]
 - [[harness-engineering|Harness Engineering — LLM Agentの外化（Externalization）パターン]]
 - [[implicit-structure-collapse|隐性结构塌缩 — LLM出力が平均的構造に塌縮する現象と対策]]
-- [[langchain|langchain]]
+|- [[llm-security|LLM应用安全 — 大语言モデルセキュリティ入門]]
+|- [[langchain|langchain]]
 - [[mcp|MCP（Model Context Protocol）— AIツール連携の標準規格]]
 - [[mcp-china|MCP中国生態 — 中国での採用状況と独自の発展パターン]]
 - [[mcp-security|MCPセキュリティ — OWASP Top 10とMSB安全基準]]

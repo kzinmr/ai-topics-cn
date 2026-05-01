@@ -1,4 +1,32 @@
 
+## [2026-05-01] crawl-triage | Codex国内利用/GLM-4.7レビュー/Claude Code効率化/LLMセキュリティ入門
+
+### Wiki更新
+
+1. **concepts/china-local-deployment.md** — 更新:
+   - Codexローカルインストールの実践報告追加（Juejin: 哪吒编程）
+   - CodexがClaude Codeを人気で上回るコミュニティ評価を追加
+
+2. **entities/glm-zhipu.md** — 更新済み（2026-04-21 GLM-4.7フロントエンドレビュー既に反映済）
+
+3. **entities/claude-code.md** — 更新済み（2026-04-19 効率化10選Tips既に反映済）
+
+4. **concepts/llm-security.md** — **新規作成**:
+   - LLMアプリケーションセキュリティの4大脅威（Prompt Injection、Jailbreak、データ漏洩、出力検証）
+   - ByteDance技術チームによるLLMセキュリティ入門記事の整理
+   - CVE-2026-4539 LangChain Prompt Injection脆弱性の文脈化
+   - 中国開発者コミュニティのプライバシー意識と「防君子不防小人」議論
+   - Anthropic潜在意識伝染研究との関連性整理
+
+5. **concepts/china-coding-agents.md** — 更新済み（Codexの人気上昇動向は既存ページに反映済）
+
+### スコア
+- take: 5 / reference: 5 / skip: 10
+
+### チェックポイント
+- run_id: 20260501T090133Z
+- source_counts: juejin=313, 36kr=210, v2ex=550, wechat-media=96
+
 ## [2026-05-01] active-crawl-03 | Qwen3.6戦略転換・Qwen Code / 中国ローカルデプロイ最新動向 / VRAM最適化新技術
 
 ### Wiki更新
