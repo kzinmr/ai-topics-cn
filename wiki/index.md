@@ -1,9 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-05-01
-エンティティ: 61, コンセプト: 94, ダイジェスト: 8, ページ: 2
+最終更新: 2026-05-02
+エンティティ: 62, コンセプト: 94, ダイジェスト: 8, ページ: 2
 
-### 本日更新（2026-05-01 Active Crawl: Qwen3.6戦略転換・Qwen Code / 中国ローカルデプロイ最新動向 / VRAM最適化新技術）
+### 本日更新（2026-05-02 Newsletter Ingest: MediaTek Google TPU参入）
+- `entities/mediatek.md` — **新規作成**: Tech Taiwan独占報道。MediaTekがTSMC CoWoSベテラン人材でGoogle TPUビジネスに参入、Broadcomに対抗。株価1ヶ月で86%急騰。AI半導体サプライチェーン構造変化の重要シグナル
+### 前日更新（2026-05-01 Active Crawl: Qwen3.6戦略転換・Qwen Code / 中国ローカルデプロイ最新動向 / VRAM最適化新技術）
 - `entities/qwen.md` — **更新**: Qwen3.6-Max-Previewクローズドウェイト化、Qwen Code v0.14.x子Agent機能、Qwen OAuth無料枠終了、Alibaba OSS→プロプライエタリ戦略転換
 - `concepts/china-local-deployment.md` — **更新**: Ollama 169k Stars/v0.17.7、Qwen3.6-35B-A3Bローカル推論(アクティブ3B/RTX4090フル動作)、DeepSeek-V4 910C 8基~50tok/s
 - `concepts/vram-optimization.md` — **更新**: Qwen3.6-35B-A3B MoE VRAM特性(~12GB/Q4)、DeepSeek-V4 Engram Memory(40%削減)、TriAttention(スループット2.5倍)
@@ -70,6 +72,7 @@
 - [[qwopus-3-5|Qwopus 3.5 — Qwen3.5-27Bベース社区微调モデル]]
 - [[llama-meta|Llama（Meta）— Meta AIのオープンソースLLMファミリ]]
 - [[metax|metax]]
+- [[mediatek|MediaTek（聯発科技）— TSMC CoWoSベテラン陣営でGoogle TPU参入、Broadcomに対抗]]
 - [[minimax|minimax]]
 - [[moore-threads|moore-threads]]
 - [[openai|openai]]
@@ -188,6 +191,7 @@
 ## 比較 (Comparisons)
 
 - [[minimax-vs-kimi-moonshot|MiniMax vs Moonshot/Kimi — 中国生成AIスタートアップ比較]]
+- [[coding-harness-benchmark|AI Coding Harness & Model Compatibility Benchmark — ハーネス・モデル性能比較大全]]
 
 ## 最新生記事 (Recent Raw Articles)
 

@@ -1,4 +1,22 @@
 
+## [2026-05-02] newsletter-ingest | MediaTek Google TPU参入・Broadcom競合
+
+### Wiki更新
+
+1. **entities/mediatek.md** — **新規作成**:
+   - Tech Taiwan（胡說科技）の独占報道をエントリ化
+   - MediaTekがTSMC CoWoSベテラン人材集団でGoogle TPUビジネスに参入
+   - 株価1ヶ月で86%急騰、リミットアップ4回
+   - AI半導体サプライチェーンの構造変化（TSMC人材流出、Broadcom競合、Samsungメモリ-ファウンドリバンドリング）
+   - 関連ページ: fin.md（半導体アナリスト）、gpu-sanctions-china
+
+### スコア
+- take: 1 / reference: 0 / skip: 6
+
+### チェックポイント
+- run_id: 20260502T040008Z
+- source: newsletter (Tech Taiwan / Substack)
+
 ## [2026-05-01] crawl-triage | Codex国内利用/GLM-4.7レビュー/Claude Code効率化/LLMセキュリティ入門
 
 ### Wiki更新
