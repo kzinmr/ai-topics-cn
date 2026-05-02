@@ -1,4 +1,42 @@
 
+## [2026-05-02] active-crawl-35 | OpenClaw急成長・Cursor 3 Design Mode / 零一万物海外展開
+
+### Wiki更新
+
+1. **entities/openclaw.md** — **大幅更新**:
+   - GitHub★85K→367K急成長追跡（前回比+331%）
+   - v2026.4.25-v2026.4.29リリース反映: SOUL.md（キャラクター/ペルソナシステム）
+   - ClawHub（SHA-256完全性検証プラグインマーケットプレイス）
+   - People Wiki（キャラクターカード・関係グラフ・出典追跡）
+   - Commitments機能（ハートビート配送フォローアップリマインダー）
+   - NVIDIA/Cerebras/DeepInfraプロバイダ追加
+   - Codex Computer Use统合、QQBot/Yuanbaoチャネル対応
+   - Gateway起動高速化（25-30s→約2s）
+   - 中国移動・通信学会 公式OpenClawセキュリティガイド反映
+
+2. **concepts/china-coding-agents.md** — **更新**:
+   - Cursor 3: Design Mode（Cmd+L視覚UI選択）、Git Worktree物理分離、Agents Window並列タスク管理
+   - Cursor Composer 2: Kimi K2.5ベース構築、CursorBench 61.3、$50B評価
+   - OpenClaw→Claude Code/Codex CLI/Gemini CLIマルチAgentオーケストレーション（tmux経由）
+   - Kimi K2.6 Claw Groups: 異種Agent統括・100+ビルトインスキル
+
+3. **concepts/yi.md** — **更新**:
+   - カザフスタン大統領トカエフが李開復と会談（中央アジア進出）
+   - 香港スマートガバメントイノベーションラボ入選（A-0107）
+   - 2025年収益数倍成長確認
+   - 李開復CEOがto B営業最前線に（CSO代行）
+   - 万智2.5六大予測詳細追加（2026年=マルチエージェント元年）
+
+### スコア
+- take: 3 (全トピック処理完了)
+- openclaw: deepdive → wiki大幅更新
+- china-coding-agents: deepdive → wiki更新
+- yi: laterals → wiki更新
+
+### チェックポイント
+- run_id: 20260502T050700Z
+- source: active-crawl (hot-topics.yaml)
+
 ## [2026-05-02] newsletter-ingest | MediaTek Google TPU参入・Broadcom競合
 
 ### Wiki更新

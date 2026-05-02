@@ -1,8 +1,8 @@
 ---
 title: OpenClaw — AI Agentエンドポイントツール
 created: 2026-04-17
-updated: 2026-04-17
-tags: [ai-agents, open-source-ai, tooling, china]
+updated: 2026-05-02
+tags: [ai-agents, open-source-ai, tooling, china, releases, safety]
 aliases: [\"openclaw\", \"OpenClaw\"]
 source_lang: zh-CN
 ---
@@ -65,7 +65,7 @@ OpenClawは[[mcp]]（Model Context Protocol）ベースのセキュリティ問�
 
 | 指標 | Hermes Agent | OpenClaw |
 |------|-------------|----------|
-| GitHub Stars | 357K | 85K |
+| GitHub Stars | 388K | 367K |
 | 設計思想 | 長期記憶・自己進化 | 並列ツールチェーン |
 | アーキテクチャ | Stateful session | Stateless endpoint |
 | 中国コミュニティ人気 | 高（exe.dev統合） | 急上昇中 |
@@ -130,13 +130,88 @@ OpenClawを电商平台の后台システムに接入し、以下の業務をAge
 
 > **出典**: 掘金 — [https://juejin.cn/post/7629679767084007475](https://juejin.cn/post/7629679767084007475) [T2]
 
+## 2026年4月下旬のアップデート
+
+2026年4月下旬、OpenClawはGitHubスター数が**85Kから367Kへ**と爆発的に増加し、Hermes Agent（388K）に迫る勢いを見せた。同時期に**v2026.4.25からv2026.4.29**までの連続リリースが行われ、多数の大型機能が追加された。
+
+> **出典**: GitHub Releases — [https://github.com/openclaw/openclaw/releases](https://github.com/openclaw/openclaw/releases) [T1]
+
+### SOUL.md — キャラクター/ペルソナシステム
+
+v2026.4.25で導入された**SOUL.md**は、エージェントに人格・性格・行動パターンを定義するキャラクター設定ファイル。Hermes AgentのSOUL.mdに触発されつつ、OpenClaw独自のツールチェーン指向に最適化されている。設定例：
+
+```yaml
+# SOUL.md example
+name: "MyAgent"
+persona: "効率的で慎重なアシスタント"
+traits:
+  - タスク分割を優先
+  - エラー時は即座にユーザー報告
+  - 並列実行可能なツールを積極活用
+```
+
+> **出典**: 极莫（Jimo Studio） — [https://jimo.studio/articles/openclaw-soul](https://jimo.studio/articles/openclaw-soul) [T2]
+
+### ClawHubエコシステム
+
+エージェントツール・プラグイン・テンプレートを共有する**ClawHub**マーケットプレイスがローンチ。SHA-256による完全性検証（integrity verification）機構を標準搭載し、サードパーティ製プラグインの改ざん防止を実現。ダウンロード時に自動チェックサム検証が行われる。
+
+### セキュリティ強化 — 「一破二立三硬化」
+
+OpenClawチームは「**一破二立三硬化**」（One Break, Two Establish, Three Harden）というスローガンを掲げ、過去に指摘された12類の安全隐患を踏まえた全面的なセキュリティ強化を実施：
+- **一破（一破）**: 旧来の不安全な権限モデルを破棄
+- **二立（二立）**: 新しいMCPエンドポイント認証・承認フローの確立
+- **三硬化（三硬化）**: ツール実行・データフロー・ネットワーク通信の三層硬化
+
+> **出典**: BlockBeats — [https://www.blockbeats.cn/news/openclaw-security](https://www.blockbeats.cn/news/openclaw-security) [T1]
+
+### Active Memory — 会話IDフィルター
+
+会話セッションごとのメモリ管理を可能にする**Active Memory**機能が追加。conversation-IDフィルターにより、エージェントが過去の会話コンテキストを適切に取捨選択できるようになり、長期タスクの安定性が向上。
+
+### People Wiki
+
+エージェントが対話する人物・組織の知識を管理する**People Wiki**機能：
+- キャラクターカード（性格・役割・関係性の定義）
+- リレーションシップグラフ（人物間の関係性を視覚化）
+- プロビナンストラッキング（情報の出所と変更履歴の追跡）
+
+### Commitments — ハートビートフォローアップ
+
+エージェントがユーザーに約束したタスクを自動追跡する**Commitments**機能。一定間隔のハートビートシグナルでフォローアップリマインダーを配信し、約束した処理の未完了を通知する。
+
+### プロバイダー追加
+
+新たに**NVIDIA**（GPUクラウド）、**Cerebras**（Wafer-Scale Engine）、**DeepInfra**（高速推論API）の3プロバイダーがサポートされ、ユーザーは多様な算力環境から選択可能に。
+
+### Codex Computer Use連携
+
+**Codex**（OpenAIのコンピュータ操作AI）との連携設定が追加。Codex経由でデスクトップ操作・ブラウザ制御・ファイル管理をOpenClawのツールチェーンに統合できる。
+
+### QQBot / Yuanbaoチャンネル対応
+
+中国国内のメッセージングプラットフォームとして、**QQBot**およびテンセントの**Yuanbao（元宝）**に対応。WeChatと合わせて中国三大IMプラットフォームをカバー。
+
+### Gatewayパフォーマンス改善
+
+Gatewayサーバーの起動時間が**25〜30秒から約2秒**に大幅短縮。プラグインのホットロード対応により、新しいツールの追加が即座に反映される。
+
+### 中国移动 OpenClaw Security Guide
+
+中国移动（China Mobile）および中国通信学会が共同で**『OpenClaw AI Agentセキュリティガイド』**を発表。エンタープライズ向けの安全なOpenClaw導入ベストプラクティスを提供し、特にMCPプロトコル利用時の機密情報保護に焦点を当てている。
+
+> **出典**: 中国移动／中国通信学会 OpenClaw Security Guide — [https://security.guide/openclaw](https://security.guide/openclaw) [T1]
+
 ## 中国語圏での立ち位置
 
 OpenClawは中国語圏AI Agent市場で以下の位置づけ：
 
 - **「第二勢力」**: Claude Code ([[claude-code]])に次ぐ注目度
-- **トレンド成長**: 17言及（前回集計から増加傾向）
+- **急成長**: GitHubスター数85K→367K（4月下旬、前回比+331%）
+- **トレンド成長**: 17言及から大幅増加（継続調査中）
 - **問題提起者**: MCPプロトコルの安全問題を世界で初めて体系的に列出
+- **SOUL.mdの導入**: キャラクター/ペルソナシステムによる個別最適化
+- **中国移动安全ガイド**: 中国移动・通信学会が公式セキュリティガイドを発表
 - **阿里云との関係**: 中国市場攻略における有力パートナー
 
 ## 関連リンク

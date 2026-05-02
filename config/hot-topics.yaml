@@ -91,11 +91,13 @@ topics:
     search_hints:
       - "Yi 零一万物 01.AI 2026"
       - "Yi-Lightning Yi-Large 模型"
+      - "01.AI 万智平台 WorldWise 企业Agent"
+      - "李开复 零一万物 海外 展開"
     wiki_pages:
       - concepts/yi
-    notes: "李开复率いる01.AI。Yi-Lightningなどコスパ重視路線"
+    notes: "2026.05.02更新: カザフスタン大統領が李開復と会談(中央アジア進出)。香港スマートガバメントラボ入選(A-0107)。2025年収益数倍成長確認。李開復CEOがto B営業最前線に。万智2.5で六つ予測(2026年=マルチエージェント元年)。"
     added: 2026-04-17
-    last_crawled: 2026-04-23
+    last_crawled: 2026-05-02
 
   - slug: doubao
     title: "Doubao (豆包) — ByteDance"
@@ -143,6 +145,23 @@ topics:
     notes: "OpenClaw龙虾大战9社同時リリース。DeerFlow 2.0 Super Agent Harness 52K星。ClawHub 13700+Skill/341悪意Skill。MiniMax M2.5月8.1兆Token。金智维Ki-AgentS企業級底座。580亿元市場CR4 78%。"
     added: 2026-04-17
     last_crawled: "2026-04-27"
+
+  - slug: openclaw
+    title: "OpenClaw — オープンソースAI Agentエンドポイントツール"
+    crawl_policy: deepdive
+    priority: high
+    search_hints:
+      - "OpenClaw 开源 Agent 框架 2026"
+      - "OpenClaw SOUL.md People Wiki Commitment 功能"
+      - "OpenClaw 龙虾大战 9社 同時リリース"
+      - "OpenClaw 安全隐患 MCP 12类"
+      - "OpenClaw ClawHub 插件 市场"
+      - "OpenClaw vs Claude Code vs Hermes Agent 比较"
+    wiki_pages:
+      - entities/openclaw
+    notes: "2026.05.02更新: GitHub★367K急成長(85K→367K/≒Hermes)、SOUL.md/ClawHub/People Wiki/Commitments機能追加。NVIDIA/Cerebras/DeepInfraプロバイダ。Codex Computer Use、QQBot/Yuanbao、Gateway起動高速化(~2s)。中国移動・通信学会が公式セキュリティガイド発表。"
+    added: 2026-05-01
+    last_crawled: 2026-05-02
 
   - slug: coze
     title: "Coze (扣子) — ByteDance Agent Platform"
@@ -337,13 +356,15 @@ topics:
     priority: high
     search_hints:
       - "中国 编程Agent 工具 2026"
+      - "Cursor 3 Design Mode Worktree"
       - "Coding Plan AI编程 自动化"
       - "Chinese coding agent tools comparison"
+      - "OpenClaw 多Agent 协作 编程"
     wiki_pages:
       - concepts/china-coding-agents
-    notes: "Coding Plan等の中国発コーディングエージェント。Claude Code/Cursor/Devinの中国での採用状況も含む"
+    notes: "2026.05.02更新: Cursor 3 Design Mode/Worktree/Agents Window。Composer 2(Kimi K2.5ベース/$50B評価)。OpenClaw→Claude Code/Codex CLI/Gemini CLIマルチAgent協調。K2.6 Claw Groups。中国移動OpenClaw安全ガイド。"
     added: 2026-04-17
-    last_crawled: 2026-04-25
+    last_crawled: 2026-05-02
 
   - slug: coding-plan
     title: "Coding Plan (编程计划)"

@@ -1,7 +1,7 @@
 ---
 title: "中国编程Agent工具 — コーディングAIエージェントの生態系"
 created: 2026-04-19
-updated: 2026-04-22
+updated: 2026-05-02
 tags: [coding-agents, china, ide, automation, software-development, claude-code, cursor, openai]
 aliases: ["中国编程Agent", "编程自动化工具", "AI代码助手", "Chinese coding agents", "AI编程工具"]
 source_lang: zh-CN
@@ -24,7 +24,7 @@ source_lang: zh-CN
 | ツール | 開発元 | タイプ | ベースモデル | 価格 | 中国アクセス | 備考 |
 |--------|--------|--------|------------|------|------------|------|
 | **Claude Code** | Anthropic | CLI Agent | Claude Sonnet/Opus | $20/月 | ⚠️ KYC必需、制限厳格 | 2026年に入り中国ユーザー追い出し報道 |
-| **Cursor** | Cursor Inc. | IDE統合 | GPT-4o/Claude Opus混在 | $20/月 | ◎ 利用可能 | 生态第一位、MCP対応先行 |
+| **Cursor** | Cursor Inc. | IDE統合 | GPT-4o/Claude Opus混在 | $20/月 | ◎ 利用可能 | 生态第一位、MCP対応先行、マルチAgentオーケストレーション対応 |
 | **OpenAI Codex** | OpenAI | CLI/Web | codex-1 (o3ベース) | $20/月 | ⚠️ 连接不稳定 | 並行任务実行が特长 |
 | **Kimi K2.6** | Moonshot AI | CLI/API | Kimi K2.6 (MoE) | API従量制 | ◎ 国内最適化 | 300Agent並列対応 |
 | **通义灵码** | Alibaba | IDE Plugin | Qwen3-Coder | 無料/企業版 | ◎ 国内最適化 | CodingPlanにバンドル |
@@ -102,7 +102,8 @@ Karpathyが「Vibe Coding終焉」を宣言した影响受け、中国開発者�
 ### 市場の3大トレンド
 1. **Agent化**: 補助補完から「端到端の自律タスク実行」へ進化
 2. **垂直深化**: 特定フレームワーク（若依・Spring Security等）への最適化
-3. **合规私有化**: 企業級市場では「安全可控」が「免费」を上回る優先度
+3. **マルチAgentオーケストレーション**: OpenClawに代表される、複数Agent間の協調・役割分担・統合制御が新たなパラダイムとして台頭。Cursor 3のAgents WindowやKimi K2.6のClaw Groupsもこの流れを受けた機能。
+4. **合规私有化**: 企業級市場では「安全可控」が「免费」を上回る優先度
 
 ## ツール選択ガイド（2026年4月版）
 
@@ -131,6 +132,62 @@ Rustで构建された高性能エディタ。パフォーマンスは优秀だ�
 - **Claude Code Skills**: ユーザー定義のcustom instructions + ツール呼び出し
 - **OpenClaw Skills**: オープンソースのスキルフレームワーク。V2EXで自作Skill共有が流行
 - **中国独自**: 通义灵码の「企业规范Skill」（社内コーディング規約をAgentに学習させる機能）
+
+## 2026年4月後半の新展開
+
+### Cursor 3 Design Mode — IDE内ビジュアル操作革命
+
+2026年4月下旬、Cursor 3がリリースされ、中国開発者コミュニティで大きな話題となった：
+
+- **Design Mode（Cmd+L）**: ブラウザの要素検証ツールのように、画面上のUI要素を直接クリック選択し、自然言語でスタイルやレイアウトを変更可能。Cursorが自動的に該当するコード箇所を特定・修正する。
+- **Git Worktree物理分離**: 各Agentタスクを独立したGit Worktree上で実行。メインブランチを完全に保護し、複数のAgentタスクを安全に並列稼働できる。
+- **/best-of-n マルチモデル競争**: 同一プロンプトを複数のモデル（GPT-4o・Claude Opus・Kimi等）に同時投入し、最良の結果を自動選択。「モデル間コンペ」による品質向上が実現。
+- **Agents Window**: IDEサイドバーに専用パネルを追加。複数Agentタスクを同時に管理・監視・切り替え可能。
+
+中国V2EXでは「Cursor终于追上Agent时代了」（CursorがようやくAgent時代に追いついた）と評価されており、特にDesign Modeの直感的操作性が高く評価されている。
+
+### Cursor Composer 2 — Kimi K2.5搭載でコスト革命
+
+Cursorが新たに**Composer 2**をリリース。特筆すべきは中国企業との連携強化：
+
+- **ベースモデル**: Kimi K2.5を採用（K2.5は中国の月之暗面（Moonshot AI）開発のオープンソースモデル）
+- **性能**: CursorBenchで**61.3**を達成（従来44.2から大幅向上）
+- **コスト**: 従来比**80%削減** — 中国市場向け価格競争力を大幅強化
+- **評価**: Cursor全体の企業価値は**$50B**に達し、中国開発者の主要プラットフォームとしての地位を固めつつある
+
+> Cursor Composer 2のK2.5採用は、中国國産モデルの実用性能が海外モデルに肉薄したことを示す重要なマイルストーン
+
+### OpenClaw マルチAgentオーケストレーション
+
+**OpenClaw**が、複数のコーディングAgentを統合調整する新パラダイムとして急浮上：
+
+- **マルチAgent協調**: Claude Code + Codex CLI + Gemini CLI を tmux 上で同時実行。各Agentの強みを活かした協調作業が可能。
+- **Jimo Studio実践ガイド**: Jimo Studio（知乎の人気開発者コミュニティ）が詳細な導入ガイドを公開。OpenClaw + tmux + 各国産Agentの設定手順を網羅。
+- **役割分担モデル**: 設計Agent・実装Agent・テストAgent・レビューAgentに明確に役割を分割し、オーケストレーターが全体を統制。
+
+中国開発者の間では「Agent間の壁を越えた協業」として注目を集め、特に大規模プロジェクトでの実用性が評価されている。
+
+### Kimi K2.6 Claw Groups — 異種Agent連携の新基盤
+
+Kimi K2.6が**Claw Groups**機能を発表：
+
+- **K2.6をコーディネーターに**: 複数の異種Agent（Claude Code・Codex・Gemini CLI・通义灵码等）をK2.6が統括制御
+- **スキルシステム**: 100種類以上のビルトインスキルを搭載。各Agentに役割に応じたスキルを動的割り当て
+- **Claw Groups 小範囲内測**: 小規模な内部テスト段階だが、中国開発者コミュニティで先行評価が進行中
+- **用途**: 設計→実装→テスト→レビューのワークフローをK2.6が一貫管理
+
+### 中国移動 OpenClaw安全配置与防护指南（2026年4月28日）
+
+2026年4月28日、**中国通信学会**と**中国移動**が共同で **「OpenClaw安全配置与防护指南」** を公開。これはOpenClawの**初の公式セキュリティ標準**であり、以下を含む：
+
+- **アクセス制御**: 各Agentツールへの最小権限原則の適用方法
+- **データ隔離**: Agent間のデータ漏洩防止策
+- **監査ログ**: Agent操作の完全トレーサビリティ確保
+- **ネットワーク分離**: Agent通信の暗号化とネットワークゾーニング
+
+中国企業がOpenClawを本番環境に導入する際の**必須参照ドキュメント**として位置づけられており、これによりOpenClawのエンタープライズ採用が加速すると見られる。
+
+> **出典**: 中国通信学会・中国移動 — OpenClaw安全配置与防护指南（2026-04-28）[T1]
 
 ## 課題
 

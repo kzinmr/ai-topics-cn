@@ -3,7 +3,11 @@
 最終更新: 2026-05-02
 エンティティ: 62, コンセプト: 94, ダイジェスト: 8, ページ: 2
 
-### 本日更新（2026-05-02 Newsletter Ingest: MediaTek Google TPU参入）
+### 本日更新（2026-05-02 Active Crawl: OpenClaw急成長・Cursor 3 Design Mode / 零一万物海外展開）
+- `entities/openclaw.md` — **大幅更新**: 85K→367K★急成長追跡。SOUL.md/ClawHub/People Wiki/Commitments機能追加。NVIDIA/Cerebras/DeepInfraプロバイダ。Codex Computer Use。中国移動・通信学会公式セキュリティガイド。Gateway起動高速化(25→2s)
+- `concepts/china-coding-agents.md` — **更新**: Cursor 3 Design Mode/Git Worktree/Agents Window。Cursor Composer 2(Kimi K2.5/$50B)。OpenClaw→Claude Code/Codex CLI/Gemini CLI 3Agent協調。K2.6 Claw Groups
+- `concepts/yi.md` — **更新**: カザフスタン大統領会談。香港スマートガバメントラボ入選。2025年収益数倍成長確認。李開復CEOがto B営業最前線に
+### 前日更新（2026-05-02 Newsletter Ingest: MediaTek Google TPU参入）
 - `entities/mediatek.md` — **新規作成**: Tech Taiwan独占報道。MediaTekがTSMC CoWoSベテラン人材でGoogle TPUビジネスに参入、Broadcomに対抗。株価1ヶ月で86%急騰。AI半導体サプライチェーン構造変化の重要シグナル
 ### 前日更新（2026-05-01 Active Crawl: Qwen3.6戦略転換・Qwen Code / 中国ローカルデプロイ最新動向 / VRAM最適化新技術）
 - `entities/qwen.md` — **更新**: Qwen3.6-Max-Previewクローズドウェイト化、Qwen Code v0.14.x子Agent機能、Qwen OAuth無料枠終了、Alibaba OSS→プロプライエタリ戦略転換
