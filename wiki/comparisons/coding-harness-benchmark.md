@@ -4,7 +4,7 @@ created: 2026-05-01
 updated: 2026-05-01
 tags: [comparison, coding-agents, harness, benchmark, llm, model-compatibility]
 aliases: ["ハーネス比較", "AIコーディングツール比較", "coding-harness-benchmark", "agent-harness-comparison"]
-source_lang: ja
+source_lang: en
 ---
 
 # AI Coding Harness & Model Compatibility Benchmark

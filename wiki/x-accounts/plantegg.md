@@ -4,7 +4,7 @@ created: 2026-04-18
 updated: 2026-04-18
 tags: [person, china, dba, ai-agent, tech-commentator, alibaba]
 aliases: ["plantegg", "成都下水道"]
-source_lang: zh
+source_lang: zh-CN
 ---
 
 # plantegg (@plantegg)

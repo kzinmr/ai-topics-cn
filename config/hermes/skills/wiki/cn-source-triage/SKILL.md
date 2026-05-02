@@ -155,3 +155,64 @@ git push
 - Curated raw articles in `raw/articles/`
 - Updated `index.md` and `log.md`
 - Git commit with descriptive message
+
+## Entity Enrichment Workflow
+
+When inbox articles relate to an **existing entity page** (not new page creation):
+
+### Steps
+1. **Locate entity**: `search_files` or `grep` in `wiki/entities/` for the entity slug
+2. **Read existing page**: Note current structure, gaps, and last updated date
+3. **Scan inbox for related articles**: `grep -rl "<entity>" inbox/{juejin,36kr,v2ex,wechat-media}/`
+4. **Read & extract insights**: Read high-signal articles (T1 sources first)
+5. **Write updates in place**:
+   - Add new sections below existing content (don't restructure entire page unless necessary)
+   - Use comparison tables when competitors are mentioned (see format below)
+   - Add tier-tagged external source table at bottom
+6. **Update wiki/log.md**: Append a structured log entry (see format below)
+7. **Archive processed inbox**: `mv inbox/<source>/<article> archive/inbox/processed/`
+8. **Commit**: `git add -A && git commit -m "wiki(<entity>): <summary>"`
+
+### Comparison Table Format (for competitors)
+```markdown
+### 競合比較：EntityA vs EntityB
+
+| 項目 | EntityA | EntityB |
+|------|---------|---------|
+| **定位** | 個人開発者向け | 企業級 |
+| **強み** | 軽量アーキテクチャ | RealDocファイルシステム |
+| **生态** | ClawHub（26,000+スキル） | OPT業界Skills + 釘釘/淘寶/支付宝統合 |
+| **互換性** | — | EntityAスキル体系を完全互換 |
+
+EntityBの最大優位性は**RealDoc**（AI改変のロールバック対応）。
+一方EntityAは**並列ツール実行**が強み。
+```
+
+### Log Entry Format (for wiki/log.md)
+```markdown
+## [YYYY-MM-DD] entity-name-enrichment | inbox記事活用による拡充
+
+### Wiki更新
+1. **entities/<name>.md** — **エンリッチメント**:
+   - <new section 1> (<source>)
+   - <new section 2> (<source>)
+
+### 処理inbox記事
+- `inbox/<source>/<article1>` → <section>
+- `inbox/<source>/<article2>` → <section>
+
+### スコア
+- take: N (<entity>.md更新)
+- archive: M (関連inbox記事を処理済みアーカイブ)
+
+### チェックポイント
+- run_id: YYYYMMDDTHHMMSSZ
+- source: inbox-enrichment
+```
+
+### Key Patterns
+- **Inbox-first enrichment**: Always scan inbox BEFORE web search — inbox articles are pre-filtered by the crawl system and often contain the most relevant Chinese-language analysis
+- **Incremental updates**: Add sections, don't rewrite entire page unless structure is broken
+- **Tier attribution**: Every claim links to source with T1/T2/T3 tier
+- **Dual archive**: Both processed inbox articles AND web search results should be tracked in log.md
+- **Entity type handling**: Product/tool entities use different format than blogger entities (no "Core Ideas", "Key Quotes" — instead use "機能と設計思想", "中国語圏での立ち位置", "競合比較")

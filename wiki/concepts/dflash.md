@@ -4,7 +4,7 @@ created: 2026-04-26
 updated: 2026-04-26
 tags: [inference, speculative-decoding, diffusion-model, optimization, parallel-decoding]
 aliases: ["DFlash", "Block Diffusion", "予測デコーディング", "speculative decoding", "block diffusion"]
-source_lang: en
+source_lang: zh-CN
 ---
 
 # DFlash — ブロック拡散モデルによる高速予測デコーディング

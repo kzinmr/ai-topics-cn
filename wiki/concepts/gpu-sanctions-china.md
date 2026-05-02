@@ -88,6 +88,25 @@ source_lang: zh-CN
 - **成熟プロセスの活用**: 先端プロセスでなくてもAIアプリケーションは運用可能
 - **AI多元化輸出**: 高付加価値サプライチェーンの構築
 
+## DeepSeek V4とCUDA生態系からの脱却（2026年4月）
+
+DeepSeek V4のリリースは、中国AI企業の**NVIDIA CUDA依存からの戦略的離脱**を示す重要な転換点となった。
+
+### TileLang — クロスプラットフォームDSL
+
+DeepSeek V4の技術報告書で注目されたのが**TileLang**ドメイン固有言語（DSL）の採用。これはNVIDIAエコシステムに縛られにくい設計で、複数のチッププラットフォームにアダプト可能。中国AI企業が自社ツールの標準化を進める動きの一環。
+
+### Engramアーキテクチャ — メモリ制約の克服
+
+メモリ容量はNVIDIAがトレーニング・推論両面で強い理由の一つ（Rubin GPUは288GB、Ascend 910Bは64GB）。DeepSeekのEngramアーキテクチャは、**80GBのVRAMを必要とする長期コンテキスト推論タスクを8GBで実行可能**にすることで、ハードウェア制約をソフトウェアで克服しようとする試み。
+
+### CUDA→CANNへの移行戦略
+
+業界の慣例を破り、DeepSeek V4の開発者は**Nvidiaに早期テストアクセス権を与えず、すべての適応機会を華為（Huawei）と寒武紀（Cambricon）に優先提供**。明示的な目的は**CUDA生態系から華為のCANNフレームワークへの包括的移行**を実行すること。
+
+> **出典**: ChinAI #356 — [DeepSeek as Road Builder](https://chinai.substack.com/p/chinai-356-deepseek-as-road-builder) (2026-04-27) [T1]
+> **出典**: Huxiu — [不要高估Nvidia，也不要低估DeepSeek](https://huxiu.com) (2026-04-27) [T1]
+
 ## 関連リンク
 
 ### 内部リンク

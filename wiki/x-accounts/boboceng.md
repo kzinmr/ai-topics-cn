@@ -4,7 +4,7 @@ created: 2026-04-18
 updated: 2026-04-18
 tags: [person, stocks, china, finance, commentary]
 aliases: ["bboczeng", "勃勃OC", "Bo Bo"]
-source_lang: zh
+source_lang: zh-CN
 ---
 
 # 勃勃OC (@bboczeng)

@@ -66,9 +66,21 @@ Kimi K2.6とHermes Agentフレームワークの組み合わせがJuejinで急�
 > **出典**: Juejin — [万字保姆级教程：Hermes+Kimi K2.6 打造7x24h Agent军团](https://juejin.cn/post/7631040435458408494)
 > **出典**: 36kr — [杨植麟交卷，Kimi K2.6抢先开源，指挥300个Agent上岗](https://36kr.com/p/3777435018859011)
 
+## Zhihu Frontier Weekly 評価（2026-04-27）
+
+Zhihu Frontier Weekly（Jeff Ding翻訳）はK2.6を「**人間のようなエージェント**」（human-like agent）と評価：
+
+- **長文コンテキスト対応**: 23Kトークン以上のコンテキスト+複数会話ラウンドで16 tok/sを維持（RTX 4060 8GB VRAM環境）
+- **推論能力の向上**: 国内トップの推理能力を回復（Seedモデルに次ぐ）
+- **コスト最適化**: 非推論モードは簡易タスクで数千トークン、複雑タスクで20K-30Kトークン。推論モードは80Kトークン制限に抵触するケースあり
+- **単価上昇**: 月額あたりのコストが21から27へ小幅上昇
+
+> **出典**: Zhihu Frontier Weekly — [From DeepSeek V4 to Kimi K2.6](https://zhihufrontier.substack.com/p/from-deepseek-v4-to-kimi-k2-6) (2026-04-27) [T1]
+
 ## 関連リンク
 
 - [[kimi-moonshot]] — 親エンティティ
 - [[claude-code]] — 主要競合
 - [[minimax]] — Hermes Agent開発元
 - [[coding-plan]] — K2.6がバンドル提供される阿里云サービス
+- [[deepseek]] — 競合モデル（V4 vs K2.6の比較）

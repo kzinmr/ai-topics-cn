@@ -4,7 +4,7 @@ created: 2026-04-18
 updated: 2026-04-18
 tags: [person, china, developer, frontend, open-source, education]
 aliases: ["ruanyf", "阮一峰", "Ruan Yifeng"]
-source_lang: zh
+source_lang: zh-CN
 ---
 
 # 阮一峰 (@ruanyf)

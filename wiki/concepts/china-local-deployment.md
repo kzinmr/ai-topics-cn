@@ -115,7 +115,15 @@ Unslothチームの**Dynamic 2.0**量子化は、中国開発者コミュニテ�
 ### 4. KVキャッシュの次世代最適化
 TriAttention（MIT/NVIDIA/浙大）等新研究により、KVキャッシュの10倍圧縮が可能に。2026年後半には**実装レベルでの採用**が始まる見込み。Ollamaの`OLLAMA_KV_CACHE_TYPE=q4_0`で既にINT4 KVキャッシュ量子化が利用可能。
 
-### 05-01追加動向（2026-05-01クロール分）
+### 05-01追加動向（Zhihu Frontier Weekly統合 2026-04-27）
+
+### Qwen3.6-35B-A3B ツール呼び出しベンチマーク首位
+
+Zhihu Frontier Weeklyの構造化ツール使用評価によると、RTX 4090 (48GB)上のQwen3.6-35B-A3B-FP8が**69/72（96%精度）**を達成、レイテンシ~1024ms。GLM、Kimi、DeepSeek、StepStar、MiniMaxの中国主要5社商用APIを上回った。
+
+### ローカルデプロイ報告 — 16GB RAM + 8GB VRAMでの実用レベル
+
+Zhihu貢献者@Jon.Xiaoの報告：RTX 4060 (8GB VRAM) + 16GB RAM環境で**~23Kトークンコンテキスト、~16 tok/s**を達成。3BアクティブパラメータのMoEモデルが~27B規模のdenseモデルに匹敵する性能を示し、消費者GPUでの実用性が確認された。
 
 ### Codexローカルインストール — 中国国内直接利用の実践報告
 

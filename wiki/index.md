@@ -3,7 +3,15 @@
 最終更新: 2026-05-02
 エンティティ: 62, コンセプト: 94, ダイジェスト: 8, ページ: 2
 
-### 本日更新（2026-05-02 Active Crawl: OpenClaw急成長・Cursor 3 Design Mode / 零一万物海外展開）
+### 本日更新（2026-05-02 Wiki Health Audit: source_lang修正 + Zhihu Frontier統合）
+- `entities/mediatek.md` — **skeleton→complete**: Tech Taiwan記事統合。MediaTek TSMC人材でGoogle TPU受託、Broadcom対抗戦略
+- `entities/deepseek.md` — **enriched**: Zhihu Frontier分析統合。「修路人」メタフォア、Engram/TechLang詳細、CUDA→CANN移行戦略
+- `entities/qwen.md` — **enriched**: Qwen3.6-35B-A3Bがツール呼び出しベンチマーク首位（69/72、96%精度）
+- `entities/kimi-moonshot.md` — **enriched**: Zhihu Frontier K2.6分析統合。「人間のようなエージェント」評価、推論モード80K超過問題
+- `concepts/gpu-sanctions-china.md` — **enriched**: DeepSeek V4 TileLang/Engramセクション追加。CUDA→CANN移行戦略
+- `concepts/china-ai-landscape.md` — **enriched**: 2026年4月技術収束トレンド。基礎モデルモート消滅分析
+- `x-accounts/boboceng.md`, `x-accounts/plantegg.md`, `x-accounts/ruanyf.md` — **修正**: source_lang: zh → zh-CN
+### 前日更新（2026-05-02 Active Crawl: OpenClaw急成長・Cursor 3 Design Mode / 零一万物海外展開）
 - `entities/openclaw.md` — **大幅更新**: 85K→367K★急成長追跡。SOUL.md/ClawHub/People Wiki/Commitments機能追加。NVIDIA/Cerebras/DeepInfraプロバイダ。Codex Computer Use。中国移動・通信学会公式セキュリティガイド。Gateway起動高速化(25→2s)
 - `concepts/china-coding-agents.md` — **更新**: Cursor 3 Design Mode/Git Worktree/Agents Window。Cursor Composer 2(Kimi K2.5/$50B)。OpenClaw→Claude Code/Codex CLI/Gemini CLI 3Agent協調。K2.6 Claw Groups
 - `concepts/yi.md` — **更新**: カザフスタン大統領会談。香港スマートガバメントラボ入選。2025年収益数倍成長確認。李開復CEOがto B営業最前線に

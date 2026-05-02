@@ -94,6 +94,13 @@ SWE-bench Pro、Terminal-Bench 2.0、SkillsBench、QwenClawBench、QwenWebBench�
 
 > **出典**: [新浪新闻 — 阿里通义千问发布新一代旗舰](https://www.sina.cn/news/detail/5289894780869670.html)
 
+### Qwen3.6-35B-A3B のツール呼び出しベンチマーク首位（2026年4月）
+
+Zhihu Frontier Weeklyの構造化ツール使用評価（structured tool-use evaluation）において、**Qwen3.6-35B-A3B-FP8**が69/72（96%）の精度を記録。これはGLM、Kimi、DeepSeek、StepStar、MiniMaxを含む**中国主要5大商用APIを凌駕**する結果。RTX 4090（48GB）環境で~1024msのレイテンシを達成し、ローカル実行においても実用レベルのパフォーマンスを示した。
+
+> **出典**: Zhihu Frontier Weekly — [From DeepSeek V4 to Kimi K2.6](https://zhihufrontier.substack.com/p/from-deepseek-v4-to-kimi-k2-6) (2026-04-27) [T1]
+> **出典**: Zhihu — [Qwen3.6-35B-A3B性能分析](https://www.zhihu.com/question/2028243224301454445) [T1]
+
 ### Qwen3.6-35B-A3B — オープンソース稀疏MoE（2026年4月16日）
 
 - **35B total / ~3B active**（256 experts、8 routed + 1 shared）

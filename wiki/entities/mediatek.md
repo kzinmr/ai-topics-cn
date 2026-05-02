@@ -4,8 +4,9 @@ type: entity
 url: "https://www.mediatek.com/"
 category: semiconductor-company
 tags: [semiconductor, AI-chips, TPU, Google, Broadcom, TSMC, CoWoS]
-status: skeleton
+status: complete
 created: 2026-05-02
+source_lang: zh-CN
 ---
 
 # MediaTek（聯発科技）

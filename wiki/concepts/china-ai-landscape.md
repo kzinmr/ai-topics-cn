@@ -17,6 +17,25 @@ source_lang: zh-CN
 
 2026年の中国AI生態系は**「BAT + ByteDance + 新興スタートアップ」**の複層構造。各プレイヤーは自社の強み（検索・クラウド・社交・コンテンツ・ハードウェア）をAIに統合し、垂直統合型エコシステムを構築している。
 
+## 2026年4月最新トレンド — 急速な収束と価格競争
+
+### 基礎モデルのモート消滅と技術収束
+
+2026年4月時点で、中国AI生態系は**急速な技術収束**のフェーズに突入している。Zhihu Frontier Weeklyの分析によると：
+
+- DeepSeekが2025年初頭に方法論的貢献をした後、エコシステム全体が**急速に追従**
+- 収束パターン: Qwenが先行 → GLM/MiniMaxが再参入 → ByteDance Seedが aggressively 追随 → **Tencent Hunyuanが追いつく**
+- **基礎モデルの技術モートは消滅**し、競争は実行力とエコシステム統合力へ移行
+- 短期的にはユーザーにとって恩恵（高速な反復、低価格）
+
+> **出典**: Zhihu Frontier Weekly — [From DeepSeek V4 to Kimi K2.6](https://zhihufrontier.substack.com/p/from-deepseek-v4-to-kimi-k2-6) (2026-04-27) [T1]
+
+### CUDA生態系からの脱却 — ハードウェアレベルの競争
+
+DeepSeek V4のTileLang（クロスプラットフォームDSL）採用、Engramアーキテクチャ（メモリ効率化）、および**Nvidiaへの早期テストアクセス拒否→華為・寒武紀優先提供**という戦略は、中国AI企業がCUDA依存から脱却する動きを象徴している。これは単なるコスト削減ではなく、**サプライチェーンの安全保障戦略**として位置づけられる。
+
+詳細は[[gpu-sanctions-china]]を参照。
+
 ## メガテック4社のAI戦略
 
 ### Baidu (百度) — 「AI First」の先駆者
