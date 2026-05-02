@@ -1,4 +1,32 @@
 
+## [2026-05-02] openclaw-wiki-enrichment | inbox記事活用による大型拡充
+
+### Wiki更新
+
+1. **entities/openclaw.md** — **大幅エンリッチメント**:
+   - 阿里「悟空」との競合比較表追加（RealDocファイルシステム、企業級セキュリティ、OPT Skills、OpenClawスキル互換性）
+   - 阿里云Coding Plan統合詳細（按次課金、Qwen-3.5/Kimi-K2.5/GLM-4.7、OpenClaw設定例、sk-sp-キー形式）
+   - Agent Loopの工程論的位置づけ（推理循環 vs 永続実行、LangGraph/Temporalとの比較表）
+   - ClawHubエコシステム（26,000+スキル、SHA-256検証）
+   - SOUL.md、Active Memory、People Wiki、Commitments、プロバイダー追加、Codex Computer Use連携
+   - 中国語圏立ち位置セクション大幅拡充
+
+### 処理inbox記事
+- `inbox/juejin/2026-04-29-体験完阿里-悟空` → 悟空比較セクション
+- `inbox/juejin/2026-04-30-阿里出手了-CodingPlan` → 阿里云統合セクション
+- `inbox/juejin/2026-04-28-谁才真正拥有-Agent-Loop` → Agent Loop分析セクション
+- `inbox/juejin/2026-04-29-用-OpenClaw-实现小红书自动发帖` → ClawHub参考
+- `inbox/juejin/2026-04-22-OpenClaw-入门到放弃` → 参考
+- `inbox/juejin/2026-04-27-给openclaw龙虾造了间像素办公室` → 参考
+
+### スコア
+- take: 1 (openclaw.mdエンリッチメント)
+- archive: 14 (OpenClaw関連inbox記事を処理済みアーカイブ)
+
+### チェックポイント
+- run_id: 20260502T061500Z
+- source: inbox-enrichment
+
 ## [2026-05-02] active-crawl-35 | OpenClaw急成長・Cursor 3 Design Mode / 零一万物海外展開
 
 ### Wiki更新

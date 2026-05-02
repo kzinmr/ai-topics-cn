@@ -15,9 +15,13 @@ source_lang: zh-CN
 
 ## 概要
 
-OpenClawは、AI Agentが外部ツール・API・システムと自律的にやり取りするための**エンドポイント型ツールチェーン**フレームワークである。2025年半ばから中国語圏の開発者コミュニティで急速に注目を集め、Claude Code ([[claude-code]]) やHermes Agentとの比較対象として議論されている。
+OpenClawは、AI Agentが外部ツール・API・システムと自律的にやり取りするための**エンドポイント型ツールチェーン**フレームワークである。2025年11月にオーストリアの開発者Peter Steinberger（元PSPDFKit創設者）が「Clawdbot」の名でサイドプロジェクトとして公開。その後Anthropicからの商標クレームにより「Moltbot」を経て、2026年1月29日に「OpenClaw」に最終改名された。
 
-「[[openclaw]]」という名前通り、複数の「爪」（ツール.endpoint）を并发的に伸ばしてタスクを処理する並列実行モデルが最大の特徴。
+「[[openclaw]]」という名前通り、複数の「爪」（ツール.endpoint）を并发的に伸ばしてタスクを処理する並列実行モデルが最大の特徴。MITライセンスで完全にオープンソースであり、既存リリースのライセンスは取消不能。
+
+2026年2月14日、創設者Peter Steinbergerが**OpenAIに入社**することを発表。OpenClawは独立した**OpenClaw財団**（OpenClaw Foundation）へ移行し、OpenAIはスポンサーとして関与するのみで所有権は持たない。財団はGhostty Foundationをモデルとした「スイス型中立地帯」であり、NVIDIA、Microsoft、Red Hat、Tencent、ByteDanceといった複数企業が貢献する構造。
+
+> 「I'm a builder at heart. I did the whole creating-a-company game already... What I want is to change the world, not build a large company, and teaming up with OpenAI is the fastest way to bring this to everyone.」 — Peter Steinberger
 
 ## 機能と設計思想
 
@@ -78,14 +82,6 @@ OpenClawは[[mcp]]（Model Context Protocol）ベースのセキュリティ問�
 
 > **出典**: 掘金 — [https://juejin.cn/post/7628854568781545506](https://juejin.cn/post/7628854568781545506) [T2]
 
-## 阿里云との統合（算力自由）
-
-2026年4月16日、阿里云（Alibaba Cloud）がOpenClawユーザーが阿里云の算力（GPUインスタンス）に直接アクセスできる統合を発表した。「终于不怕OpenClaw烧token啦，直接算力自由」（もうOpenClawのトークン消費を心配しなくていい、算力が自由になった）と評されている。
-
-これはOpenClaw利用のコスト障壁を下げる Alibaba Cloudの戦略的動きと解读できる。
-
-> **出典**: 掘金 — [https://juejin.cn/post/7629308995309322290](https://juejin.cn/post/7629308995309322290) [T2]
-
 ## 电商后台接入实践（2026-04-18）
 
 掘金で「把 OpenClaw 接进电商后台之后，我对 AI 落地这件事的理解变了」（OpenClawを电商后台に接入して、AI落地への理解が変わった）と題した実践記が公開された。
@@ -130,9 +126,101 @@ OpenClawを电商平台の后台システムに接入し、以下の業務をAge
 
 > **出典**: 掘金 — [https://juejin.cn/post/7629679767084007475](https://juejin.cn/post/7629679767084007475) [T2]
 
-## 2026年4月下旬のアップデート
+## OpenClaw財団とOpenAI提携
 
-2026年4月下旬、OpenClawはGitHubスター数が**85Kから367Kへ**と爆発的に増加し、Hermes Agent（388K）に迫る勢いを見せた。同時期に**v2026.4.25からv2026.4.29**までの連続リリースが行われ、多数の大型機能が追加された。
+2026年2月14日、創設者Peter SteinbergerがOpenAIに入社。同時にOpenClawは**OpenClaw財団**へ移行した。Sam Altman（OpenAI CEO）はX上で「Peter is joining OpenAI to drive the next generation of personal agents. He is a genius with a lot of amazing ideas about the future of very smart agents interacting with each other to do very useful things for people.」と称賛した。
+
+財団はGhostty Foundationをモデルとした「スイス型中立地帯」構造であり、OpenAIはスポンサーとして関与するのみで所有権は持たない。NVIDIA、Microsoft、Red Hat、Tencent、ByteDanceといった複数企業が貢献している。MITライセンスは取消不能であり、既存リリースは永続的にオープンソースのまま。
+
+2026年4月9日の「State of the Claw」キーノート（AI Engineer Summit）で、Steinbergerは以下を報告：
+- GitHub Stars: 295,000+（5ヶ月で世界最速のオープンソース成長）
+- 貢献者: 約2,000人
+- セキュリティアドバイザリ: 1,142件（1日あたり16.6件 — Linuxカーネルの2倍）
+- 重大脆弱性: 99件（うち469件に公式対応済み、60%クローズ）
+
+> 「Running the foundation is like running the company on hard mode.」 — Peter Steinberger
+
+### 「Dreaming」機能 — アイドル時メモリ統合
+
+Steinbergerが提唱した新概念。人間が睡眠中に記憶を整理するのと同様に、エージェントがアイドル時間にセッションログを走査し、長期記憶に値するものを選択的に保持する機能。v2026.4.x系で実装済み。Anthropicも同様の概念を研究中（リークソースコードより）。
+
+## 中国での展開とセキュリティ懸念
+
+OpenClawは中国でも急速に普及し、Baiduのスマートフォンアプリからの直接アクセス、DeepSeekやQwenとの統合、WeChat/QQ/Discord/Telegram対応が実現。一方で中国工業信息部は「不適切な設定時のセキュリティリスクとデータ漏洩の危険性」について警告を発出。これを受け、中国移动と中国通信学会が共同で**『OpenClaw AI Agentセキュリティガイド』**を策定した。
+
+## 2026年4月下旬〜5月の大型アップデート
+
+OpenClawはGitHubスター数が**200K→367K**に急成長（前回wiki記載の85K→367Kは既に更新済み）。v2026.4.14からv2026.4.29まで連続リリースが行われた。
+
+### v2026.4.29（最新安定版、2026年4月30日）
+
+- **NVIDIAプロバイダー追加**: APIキーオンボーディング、モデルカタログ、モデルrefピッカー対応
+- **Bedrock Opus 4.7思考パリティ**: xhigh/adaptive/maxプロファイルをAnthropic APIと同等に
+- **OpenGrepセキュリティスキャン**: SARIF形式のGitHub Code Scanning統合、ソースルールコンパイラ
+- **DeepSeek V4 thinkingレベル対応**: xhigh/maxプロファイルをresolveThinkingProviderフックで
+- **GPT-5.4-mini suppress修正**: 古いmodels configによるassistant-turn失敗を防止
+- **IPv6 ULAオプトイン**: 信頼プロキシスタック向けweb-fetch
+
+### v2026.4.27（2026年4月29日）
+
+- **Codex Computer Use設定**: `/codex computer-use status/install`、マーケットプレイス発見、自動インストール
+- **DeepInfraプロバイダー追加**: 画像生成/編集、TTS、embeddings、text-to-video
+- **QQBotフルグループチャート**: 履歴追跡、@メンション制御、アクティベーションモード、FIFOメッセージキュー
+- **Matrix E2EE**: `openclaw matrix encryption setup` — 暗号化有効化、リカバリブートストラップ
+- **OpenCode統合**: Anthropic Opus/Sonnet 4.x thinkingレベル対応
+- **Proxyルーティング**: オペレーター管理の送信プロキシ（OPENCLAW_PROXY_URL）、strict HTTP forward-proxy検証
+
+### v2026.4.26（2026年4月28日）
+
+- **Control UI/Talk**: リアルタイム音声トランスポート契約、Google LiveブラウザTalkセッション
+- **Cerebrasプロバイダー追加**: バンドルプラグインとして
+- **Claude Code importer**: 設定ファイルのインポートとマイグレーション
+
+### v2026.4.23（2026年4月24日）
+
+- **GPT-5.5対応開始**: OpenAIが2026年4月23日にリリース。OpenClawはv2026.4.23-beta.5で即座に対応
+- **OpenAI画像生成**: Codex OAuth経由でgpt-image-2がOPENAI_API_KEYなしで動作
+
+### GPT-5.5統合詳細
+
+OpenAIのGPT-5.5（2026年4月23日リリース）はOpenClawにおいて以下のベンチマークを記録：
+- **Terminal-Bench 2.0**: 82.7%（GPT-5.4は75.1%、+7.6pt向上）
+- **SWE-Bench Pro**: 58.6%
+- **コンテキスト**: 400K、トークン効率改善
+
+OpenClawは「strict-agentic」実行コントラクト（PR A）により、GPT-5.5がプランニングだけで停止せず実際のツール実行を行うことを保証。runtime truthfulness（PR B）により、認証失敗・プロキシ問題・DNSエラーを正確に報告し、hallucinationを防止。
+
+### v2026.4.15（2026年4月16日）
+
+- **Claude Opus 4.7統合**: デフォルト選択、opusエイリアス、画像理解バンドル
+- **Google Gemini TTS**: バンドルプラグインとしてWAV/PCM出力対応
+- **Slimmer context**: バウンデッドメモリ読み取りでトークンオーバーヘッド削減
+- **Codex transport self-heal**: 不安定なネットワークでの信頼性向上
+- **Gateway security**: MEDIA:ツール結果の厳密な名前マッチング（injection防止）
+
+### v2026.4.14（2026年4月14日）
+
+- **GPT-5.4-pro前方互換**: アップストリームカタログ更新前に即座に対応
+- **Slack allowlist修正**: インタラクティブイベントのsender検証強化
+- **Ollama timeout修正**: ローカル推論のストリームタイムアウト問題解決
+- **SSRF脆弱性修正**: ブラウザルートとControl UIのセキュリティ強化
+- **Markdown-it ReDoS保護**: Control UIのパッチ
+
+### セキュリティ強化 — 「一破二立三硬化」
+
+OpenClawチームは「**一破二立三硬化**」（One Break, Two Establish, Three Harden）というスローガンを掲げ、過去に指摘された12類の安全隐患を踏まえた全面的なセキュリティ強化を実施：
+- **一破（一破）**: 旧来の不安全な権限モデルを破棄
+- **二立（二立）**: 新しいMCPエンドポイント認証・承認フローの確立
+- **三硬化（三硬化）**: ツール実行・データフロー・ネットワーク通信の三層硬化
+
+v2026.4.14以降のセキュリティ修正一覧：
+- Gateway toolのconfig.patchで`dangerouslyDisableDeviceAuth`等のフラグ新規有効化をブロック（#62006）
+- Browser SSRFポリシー enforced（#66040）
+- Microsoft Teams SSO sender allowlist（#66033）
+- Config snapshot redaction（#66030）
+- Heartbeat owner downgrade for untrusted hooks（#66031）
+- Exec approvalsのsecret redaction（#61077, #64790）
+- OpenGrep rulepack + SARIF統合（#69483）
 
 > **出典**: GitHub Releases — [https://github.com/openclaw/openclaw/releases](https://github.com/openclaw/openclaw/releases) [T1]
 
@@ -156,18 +244,13 @@ traits:
 
 エージェントツール・プラグイン・テンプレートを共有する**ClawHub**マーケットプレイスがローンチ。SHA-256による完全性検証（integrity verification）機構を標準搭載し、サードパーティ製プラグインの改ざん防止を実現。ダウンロード時に自動チェックサム検証が行われる。
 
-### セキュリティ強化 — 「一破二立三硬化」
+### SOUL.md — キャラクター/ペルソナシステム
 
-OpenClawチームは「**一破二立三硬化**」（One Break, Two Establish, Three Harden）というスローガンを掲げ、過去に指摘された12類の安全隐患を踏まえた全面的なセキュリティ強化を実施：
-- **一破（一破）**: 旧来の不安全な権限モデルを破棄
-- **二立（二立）**: 新しいMCPエンドポイント認証・承認フローの確立
-- **三硬化（三硬化）**: ツール実行・データフロー・ネットワーク通信の三層硬化
-
-> **出典**: BlockBeats — [https://www.blockbeats.cn/news/openclaw-security](https://www.blockbeats.cn/news/openclaw-security) [T1]
+v2026.4.25で導入された**SOUL.md**は、エージェントに人格・性格・行動パターンを定義するキャラクター設定ファイル。Hermes AgentのSOUL.mdに触発されつつ、OpenClaw独自のツールチェーン指向に最適化されている。
 
 ### Active Memory — 会話IDフィルター
 
-会話セッションごとのメモリ管理を可能にする**Active Memory**機能が追加。conversation-IDフィルターにより、エージェントが過去の会話コンテキストを適切に取捨選択できるようになり、長期タスクの安定性が向上。
+会話セッションごとのメモリ管理を可能にする**Active Memory**機能。conversation-IDフィルターにより、エージェントが過去の会話コンテキストを適切に取捨選択できる。
 
 ### People Wiki
 
@@ -178,15 +261,15 @@ OpenClawチームは「**一破二立三硬化**」（One Break, Two Establish, 
 
 ### Commitments — ハートビートフォローアップ
 
-エージェントがユーザーに約束したタスクを自動追跡する**Commitments**機能。一定間隔のハートビートシグナルでフォローアップリマインダーを配信し、約束した処理の未完了を通知する。
+エージェントがユーザーに約束したタスクを自動追跡する**Commitments**機能。一定間隔のハートビートシグナルでフォローアップリマインダーを配信。
 
 ### プロバイダー追加
 
-新たに**NVIDIA**（GPUクラウド）、**Cerebras**（Wafer-Scale Engine）、**DeepInfra**（高速推論API）の3プロバイダーがサポートされ、ユーザーは多様な算力環境から選択可能に。
+**NVIDIA**（GPUクラウド）、**Cerebras**（Wafer-Scale Engine）、**DeepInfra**（高速推論API）の3プロバイダーがサポート。
 
 ### Codex Computer Use連携
 
-**Codex**（OpenAIのコンピュータ操作AI）との連携設定が追加。Codex経由でデスクトップ操作・ブラウザ制御・ファイル管理をOpenClawのツールチェーンに統合できる。
+**Codex**（OpenAIのコンピュータ操作AI）との連携。デスクトップ操作・ブラウザ制御・ファイル管理をOpenClawのツールチェーンに統合。
 
 ### QQBot / Yuanbaoチャンネル対応
 
@@ -207,12 +290,60 @@ Gatewayサーバーの起動時間が**25〜30秒から約2秒**に大幅短縮�
 OpenClawは中国語圏AI Agent市場で以下の位置づけ：
 
 - **「第二勢力」**: Claude Code ([[claude-code]])に次ぐ注目度
-- **急成長**: GitHubスター数85K→367K（4月下旬、前回比+331%）
-- **トレンド成長**: 17言及から大幅増加（継続調査中）
+- **急成長**: GitHubスター数200K→367K（5ヶ月で世界最速のオープンソース成長）
+- **OpenAI傘下だが独立**: OpenClaw財団によるガバナンス、MITライセンス取消不能
 - **問題提起者**: MCPプロトコルの安全問題を世界で初めて体系的に列出
-- **SOUL.mdの導入**: キャラクター/ペルソナシステムによる個別最適化
-- **中国移动安全ガイド**: 中国移动・通信学会が公式セキュリティガイドを発表
-- **阿里云との関係**: 中国市場攻略における有力パートナー
+- **中国移动安全ガイド**: 中国移动・通信学会が公式セキュリティガイドを策定
+- **多プラットフォーム対応**: WhatsApp、Telegram、Slack、Discord、Signal、iMessage、QQBot、Yuanbao（元宝）
+- **多モデルサポート**: Claude Opus 4.7、GPT-5.5、Gemini 3.1 Pro、DeepSeek V4、Kimi K2.6、Qwen3、ローカルOllama
+- **ClawHubエコシステム**: 公式スキルマーケットプレイス（26,000+スキル）
+
+### 競合比較：OpenClaw vs 阿里「悟空」
+
+2026年3月、アリババが**「悟空（Wukong）」** — 企業級AIネイティブワークプラットフォームを発表。OpenClawの主要競合として注目されている。
+
+| 項目 | OpenClaw（龙虾） | 阿里「悟空」 |
+|------|-----------------|-------------|
+| **定位** | 個人開発者向けAgent | 企業級AIワークプラットフォーム |
+| **セキュリティ** | 12類安全隐患の指摘あり | 内建双层ルール体系、沙箱隔離 |
+| **ファイルシステム** | 標準ファイル读写 | **RealDoc** — 行単位・キーワード単位の外科的編集+スナップショット |
+| **生态** | ClawHub（26,000+スキル） | 十大OPT業界Skills + 釘釘/淘寶/支付宝/阿里云統合 |
+| **互換性** | — | OpenClawスキル体系を完全互換（ClawHubスキル直接アップロード可能） |
+| **モデル自由度** | 多プロバイダー対応 | 同上 + 自定义API接入 |
+
+悟空の最大優位性は**RealDocファイルシステム**（AIによるファイル改変のロールバック対応）と**企業級セキュリティ**にある。一方OpenClawは**並列ツール実行**と**軽量アーキテクチャ**が強み。
+
+> **出典**: 掘金 — [体験完阿里「悟空」](https://juejin.cn/post/7618418125198196779) [T1]
+
+### 阿里云Coding Planとの統合
+
+2026年2月、阿里云がOpenClaw/Claude Code向けの**Coding Plan**サービスを開始。特徴：
+- **按次課金**: トークン単位ではなくAPIリクエスト回数で課金（Agentの多ループ実行で有利）
+- **統合モデル**: Qwen-3.5、Kimi-K2.5、GLM-4.7をワンキーで利用
+- **OpenAI互換 + Anthropic互換**: 両プロトコルのAPIエンドポイントを同時提供
+- **OpenClaw設定例**: `openclaw.json`の`models.providers.bailian`セクションで阿里云APIを直接指定可能
+
+これによりOpenClawユーザーの運用コストが大幅に低減。「算力自由」（算力の自由化）と評されている。
+
+> **出典**: 掘金 — [阿里云Coding Plan](https://juejin.cn/post/7610637031321698330) [T1]
+
+### Agent Loopの工程論的位置づけ
+
+2026年4月の工程級分析記事により、OpenClawのAgent Loopは**「推理循環（reasoning loop）」**に分類されることが明確化された：
+
+```
+OpenClaw: 入力 → LLM → ツール選択 → 実行 → 結果 → 再推理（while未完成）
+```
+
+これは**タスクID・永続状態・ライフサイクル管理**を欠いており、「セッション級Agent」に留まる。対照的にLangGraphは状態機械、Temporalは永続実行（Durable Execution）を提供し「システム級Agent Loop」を実現している。
+
+> **結論**: OpenClawは**実行能力（ツールチェーン）**を提供し、Claude Codeは**連続推理**を提供し、Hermesは**記憶と進化**を提供する。
+
+> **出典**: 掘金 — [谁才真正拥有 Agent Loop?](https://juejin.cn/post/7633526424323391551) [T1]
+
+## スローガン: "Less mystery, more machinery"
+
+36krが伝えたOpenClawの公式スローガン。透明性と実用性を重視する設計哲学を表しており、ブラックボックス化したAIではなく、ユーザーが理解・制御できるエージェントを目指す姿勢を示している。
 
 ## 関連リンク
 
@@ -229,4 +360,8 @@ OpenClawは中国語圏AI Agent市場で以下の位置づけ：
 |---|---|---|---|
 | 36kr — 12類安全隐患 | [36kr.com/p/3768662327935747](https://36kr.com/p/3768662327935747) | T1 | 安全問題の体系的分析 |
 | 掘金 — Hermes vs OpenClaw | [juejin.cn/post/7628854568781545506](https://juejin.cn/post/7628854568781545506) | T2 | フレームワーク比較 |
-| 掘金 — 阿里云統合 | [juejin.cn/post/7629308995309322290](https://juejin.cn/post/7629308995309322290) | T2 | 阿里云との統合 |
+| 掘金 — 阿里云Coding Plan | [juejin.cn/post/7610637031321698330](https://juejin.cn/post/7610637031321698330) | T1 | 阿里云Coding Plan統合 |
+| 掘金 — 悟空比較 | [juejin.cn/post/7618418125198196779](https://juejin.cn/post/7618418125198196779) | T1 | 阿里「悟空」vs OpenClaw |
+| 掘金 — Agent Loop分析 | [juejin.cn/post/7633526424323391551](https://juejin.cn/post/7633526424323391551) | T1 | Agent Loopの工程論的位置づけ |
+| 掘金 — 小红书自动发帖 | [juejin.cn/post/7615379311402467354](https://juejin.cn/post/7615379311402467354) | T2 | ClawHubスキル活用例 |
+| V2EX — Agent比較議論 | [v2ex.com/t/1209907](https://www.v2ex.com/t/1209907) | T3 | 個人Agent実用性議論 |
