@@ -443,3 +443,59 @@ Juejin開発者が**Claude Codeの10個の隠し機能・効率化テクニッ�
 > **出典**: Juejin — [Claude Code 效率翻倍指南:你可能错过的10个隐藏更新](juejin/2026-04-19-Claude-Code-效率翻倍指南-你可能错过的10个隐藏更新-40a17a43.md) (2026-04-19) [T2]
 
 > **出典**: 掘金 — [https://juejin.cn/post/7620060655607857178](https://juejin.cn/post/7620060655607857178) [T2]
+
+## Harness Engineering & SDD 統合（2026-04-29更新）
+
+### Harness Engineering（驭缰工程）とは
+
+Harness Engineeringは、AI Agent時代の新しいソフトウェア工学パラダイムである。エンジニアの役割を「コード書き手」から「環境設計者」へと転換する。2026年4月現在、中国開発者コミュニティで最も注目を集めている概念の一つ。
+
+**arXiv 2604.08224「Externalization in LLM Agents」**（54頁の総合論文）は、Memory・Skills・Protocols・Harnessを認知科学的枠組みで統一。Donald Normanの「認知制品」理論に基づき、外部ツールはモデルを強化するのではなく、困難なタスクを容易なタスクに変換すると論じる（例: 回忆→認識）。
+
+> **出典**: V2EX — [啃了那篇54页的Agent Harness综述](https://www.v2ex.com/t/1206029) [T2]
+> **出典**: 掘金 — [万字讲透Agent Harness的十二大模块](https://juejin.cn/post/7632229883725545514) [T2]
+> **出典**: 掘金 — [Agent 时代的底层逻辑：Harness 即操作系统](https://juejin.cn/post/7631486527864832051) [T2]
+
+### SDD（Spec-Driven Development）の実践
+
+OpenAIが提唱するHarness Engineeringの核心は、**Spec & Planning & Tasks を git 管理する**こと。Claude CodeのRoutines・Hooks・Skillsエコシステムは、このSDDパラダイムを実装するための基盤として機能する。
+
+**Claude CodeにおけるSDD実践（双越AI_clubのレポート）**:
+- 掘金記事「长文：Claude Code 实践 Harness 工程，开发效率翻几倍」（36いいね/57スター）
+- PMP資格を持つ元百度・滴滴シニアエンジニアによる詳細な実践記録
+- Claude Code + Harness Engineeringの組み合わせで開発効率が数倍に向上
+
+**SpecFlow（設計駆動開発）との関係**:
+[[specflow-ai-development]]は「設計前置き」の開発范式。AIがコードを生成する前にspecを定義し、AIは仕様に従って実装。Claude Codeの`.claude/`設定ファイルやSkillsは、まさにこのspec-firstアプローチを具現化するもの。
+
+### コミュニティからの批判的フィードバック
+
+V2EXでの議論では、Harness/SDD実践における以下の課題が指摘されている:
+
+**OpenSpecの問題点**（V2EX, score 39）:
+- OpenSpecが生成するdesign & proposalの多くが「正しい废话（correct nonsense）」で、レビューが困難
+- 実行後にバグが残る場合、specに書き戻して修正させるのは「tricky」— AI固有の問題を人間向けドキュメントに書く違和感
+- specのdeltaマージ不一致の問題も報告
+- 結局、Planning機能 + 少量プロンプト修正の方が手軽で、spec/コードの不一致を気にしなくて良い
+
+**Blind Vibe Codingとの関係**（V2EX, score 0だが重要な洞察）:
+- Harnessは「コードをレビューしないBlind Vibe Coding」のプロジェクト腐敗を遅らせるために有効
+- 未来の技術フレームワークはコード自体だけでなく、Best Practice Spec / AGENTS.mdを含むべき
+- ただしHarnessだけで継続的なBlind Vibe Codingは不可能 — 要件の迭代/反复には人間のin-the-loop判断が不可欠
+- リファクタリングは「収束」ではなく「発散→収束」のプロセスであり、`/brainstorm`系SKILLが必要な理由
+
+> **出典**: V2EX — [大项目中大家真的会用Spec-Driven Development吗](https://www.v2ex.com/t/1208418) [T2]
+> **出典**: V2EX — [Harness的适用场景可能还是在Blind Vibe Coding](https://www.v2ex.com/t/1207269) [T2]
+
+### Claude Codeエコシステムでの位置づけ
+
+| 要素 | Harness/SDDでの役割 | Claude Codeでの実装 |
+|------|-------------------|-------------------|
+| **Spec** | 設計の公式記録 | `.claude/`, `CLAUDE.md`, AGENTS.md |
+| **Planning** | タスク分解と順序付け | Claude Codeの`/plan`、サブエージェント |
+| **Tasks** | 実行単位の追跡 | Routines + GitHubトリガー |
+| **Rules** | 制約とベストプラクティス | Hooks + Skills |
+| **Tools** | 外部機能の統合 | MCPサーバー（Filesystem, Playwright等） |
+| **Review** | 品質保証 | `requesting-code-review` Skill |
+
+Harness EngineeringはClaude Codeを「便利なコーディング補助」から「自律型開発エージェント」に昇華させる概念的基盤である。ただし、コミュニティの指摘通り、**人間のin-the-loop判断と定期的なリファクタリング**は依然として不可欠。

@@ -1,4 +1,61 @@
 
+
+## [2026-05-02] inbox-triage-batch-2 | 36kr/Juejin記事の解析・Wiki統合
+
+### Wiki更新
+1. **concepts/opencode.md** — **新規**: 94.4k StarのCLI AI開発ツール（複数モデル対応、MCP統合、中国国内利用可能）
+2. **concepts/wukong-vs-openclaw.md** — **新規**: 阿里悟空vsOpenClaw比較（企業級vs個人開発者向け、RealDoc、ClawHub互換性）
+3. **concepts/opus-4-7-regression.md** — **新規**: Claude Opus 4.7性能低下論争（自适应推理、ベンチマーク後退、幻覚問題）
+4. **concepts/claude-design.md** — **新規**: AnthropicのAIデザインツール参入（Figma株価7%下落、IPO準備、Mike Kriegerの関与）
+5. **concepts/apple-support-ai.md** — **新規**: Apple Supportアプリv5.13のClaude.md漏洩事件（双バックエンドAI/人間切替システム）
+
+### 処理inbox記事
+- `inbox/36kr/Anthropic-亲手杀死-Figma` → claude-design.md
+- `inbox/36kr/Claude-Opus-4.7-全网差评` → opus-4-7-regression.md
+- `inbox/36kr/Claude-Code-桌面版烂爆了` → opus-4-7-regression.md
+- `inbox/36kr/苹果官方App误打包Claude.md` → apple-support-ai.md
+- `inbox/36kr/马斯克翻车了-蒸馏ChatGPT` → 马斯克/ChatGPT関係は既存トピックでカバー
+- `inbox/juejin/OpenCode-94.4k-Star` → opencode.md
+- `inbox/juejin/阿里悟空vsOpenClaw` → wukong-vs-openclaw.md
+
+### index.md統計修正
+- エンティティ: 59（変動なし）、コンセプト: 95 → 113、ダイジェスト: 8 → 7、ページ: 9（変動なし）
+
+### スコア
+- take: 5（新概念5件）、archive: 0（inboxは残してURL保持）
+
+### チェックポイント
+- run_id: 20260502T220000Z
+- source: inbox-triage
+
+## [2026-05-02] wiki-health-audit | index.md統計修正 + inboxトリアージ開始
+
+### 監査結果
+- **Skeleton Entities**: 0件 — 全エンティティ充実済み ✅
+- **Stale Pages (>30日)**: 0件 — すべて最新 ✅
+- **Orphan Pages**: 0件 — index.mdと整合 ✅
+- **Raw Articles (未キュレーション)**: 0件 ✅
+- **source_lang 監査**: 5件 `en`（kilo, llama-meta, turboquant, chinai-newsletter, coding-harness-benchmark）— すべて正当（英語ソース）✅
+
+### index.md 統計修正
+- エンティティ: 62 → **57**（実数と同期）
+- コンセプト: 94 → **90**（実数と同期）
+- ダイジェスト: 8（変動なし）
+- ページ: 2（変動なし）
+
+### バックログ: Inbox 1,268件
+- juejin: 342件（🔴高優先）、36kr: 225件（🔴高優先）
+- v2ex: 592件（🟡20%通過率で厳格フィルタ）
+- wechat-media: 109件（🟠中優先）
+- newsletters: 66件、daily_digests: 18件
+
+### スコア
+- take: 0（本バッチは統計修正のみ。inboxトリアージは次フェーズ）
+
+### チェックポイント
+- run_id: 20260502T210417Z
+- source: wiki-health-audit
+
 ## [2026-05-02] openclaw-wiki-enrichment | inbox記事活用による大型拡充
 
 ### Wiki更新

@@ -1,9 +1,16 @@
 # AI Topics China Wiki — Index
 
 最終更新: 2026-05-02
-エンティティ: 62, コンセプト: 94, ダイジェスト: 8, ページ: 2
+エンティティ: 59, コンセプト: 113, ダイジェスト: 7, ページ: 9
 
-### 本日更新（2026-05-02 Wiki Health Audit: source_lang修正 + Zhihu Frontier統合）
+### 本日更新（2026-05-02 Wiki Health Audit + V2EXトリアージ + Zhihu Frontier統合）
+- `concepts/ai-coding-reality.md` — **新規**: V2EX技術議論からAIコーディングの実態（会話モード主流、Agent自律はデモ段階、古法编程の存在、生成コード保守問題）
+- `concepts/spec-driven-development.md` — **新規**: SDD実践課題（OpenSpec「正しい废话」問題、Spec-コード乖離、Harness文書矛盾）
+- `concepts/rag-reality.md` — **新規**: RAG実用性問題（IT運用知識検索の精度不足、Obsidian/AnythingLLM比較、AI産業への懐疑論）
+- `concepts/anthropic-ip-ban.md` — **新規**: AnthropicのIP封鎖実態とKYC導入（双ISP罠、ipapi.is/ipinfo矛盾、ToDesk副作用、中国政府ID認証問題）
+- `concepts/copilot-changes.md` — **新規**: Copilot ProのOpus除外、年払廃止、新規課金停止、Microsoft「龙虾计划」
+- `concepts/vibe-coding.md` — **新規**: Vibe Coding実践例（非開発者のゲーム開発、記録ツール開発、限界と展望）
+- `concepts/local-inference-optimization.md` — **新規**: 8GB VRAMで30Bモデル（7倍高速化、3→21 tok/s、GGUF最適化）
 - `entities/mediatek.md` — **skeleton→complete**: Tech Taiwan記事統合。MediaTek TSMC人材でGoogle TPU受託、Broadcom対抗戦略
 - `entities/deepseek.md` — **enriched**: Zhihu Frontier分析統合。「修路人」メタフォア、Engram/TechLang詳細、CUDA→CANN移行戦略
 - `entities/qwen.md` — **enriched**: Qwen3.6-35B-A3Bがツール呼び出しベンチマーク首位（69/72、96%精度）
@@ -183,6 +190,60 @@
 - [[specflow-ai-development|SpecFlow — AI時代の設計駆動開発パラダイム]]
 - [[vibe-coding-harness-synergy|HarnessとBlind Vibe Coding — 適用境界の分析]]
 - [[claude-code-ip-ban-analysis|Claude Code封号分析 — IP検出メカニズム深掘り]]
+
+- [[ai-uninstall-surge|ai-uninstall-surge]]
+
+- [[codex-phone-verification|codex-phone-verification]]
+
+- [[claude-perceive|claude-perceive]]
+
+- [[glm-5|glm-5]]
+
+- [[gpt-5-6|gpt-5-6]]
+
+- [[gpt-image-2|gpt-image-2]]
+
+- [[longcat|longcat]]
+
+- [[mixture-of-thought|mixture-of-thought]]
+
+- [[sense-nova-u1|sense-nova-u1]]
+
+- [[openai-agents-sdk|openai-agents-sdk]]
+
+- [[rag-reality|rag-reality]]
+
+- [[spec-driven-development|spec-driven-development]]
+
+- [[local-inference-optimization|local-inference-optimization]]
+
+- [[copilot-changes|copilot-changes]]
+
+- [[anthropic-ip-ban|anthropic-ip-ban]]
+
+- [[agent-database-problem|agent-database-problem]]
+
+- [[turing-award-criticism|turing-award-criticism]]
+
+- [[skills|skills]]
+
+- [[model-pricing|model-pricing]]
+
+- [[mcp-chinese-tools|mcp-chinese-tools]]
+
+- [[kimi|kimi]]
+
+- [[agent|agent]]
+
+- [[ai-coding-reality|ai-coding-reality]]
+
+- [[opencode|opencode]]
+
+- [[wukong-vs-openclaw|wukong-vs-openclaw]]
+
+- [[opus-4-7-regression|opus-4-7-regression]]
+
+- [[apple-support-ai|apple-support-ai]]
 
 ## ページ (Pages)
 

@@ -211,3 +211,62 @@ AIインフラにおける垂直統合の動きが加速し、Anthropicがモデ
 > — 掘金記事（中国AI開発者の苦境を象徴するQuote）
 
 > **出典**: 掘金 — [https://juejin.cn/post/7630724767642533922](https://juejin.cn/post/7630724767642533922) [T2]
+
+## 最新動向（2026年4月29日〜5月）
+
+### Anthropic估值突破$9000億、OpenAIを市場評価で逆転
+
+2026年4月29日、Anthropicは新一轮融資交渉中であり、估值が**9000億ドル**を突破する見込みと報じられた。成立すれば、OpenAIの估值王座を約4年ぶりに奪還することになる。
+
+- **估值推移**: 2025年Q1 $600億 → 2025年Q4 Google/Amazon合計$650億出資（$3500億估值）→ 2026年4月 $9000億超
+- **Secondary Market**: Forge Globalプラットフォームでは売り手が$1.05T-$1.15Tを要求
+- **OpenAIとの比較**: OpenAIは同プラットフォームで約$880億（3月資金調達の$8520億から大幅下落）
+
+### ChatGPT卸载413%急増、Claudeが米国App Store首位
+
+Sensor Towerデータによると、2026年4月のChatGPT卸载量は**前年比413%増**。ピーク時には563%増を記録した。
+
+一方Claudeは：
+- 米国App Store無料アプリランキングで**2月28日〜3月2日首位**を維持
+- 1週間のダウンロード数が**199%急増**
+- ベルギー、カナダ、ドイツ、ルクセンブルク、ノルウェー、スイスでも無料ランク上位
+
+V2EX/Reddit/HNで「**ChatGPT Plus退了、换Claude了**」が共通認識となりつつある。
+
+### Anthropic vs OpenAI 競争の構造転換
+
+| 指標 | OpenAI | Anthropic |
+|------|--------|-----------|
+| ARR | $250億超（2026年2月） | **$300億超（2026年3月）** |
+| 企业評価 | $8,530億（2026年4月） | **$9,000億〜$1兆** |
+| Claude DAU | - | 400万(1月) → **1,130万(3月)** |
+| OpenRouter Tokenシェア | GPT 28.24T (11.2%) | Claude **37.27T (14.8%)** |
+
+Anthropic優位の主要因は**Coding能力**。エンタープライズ顧客がAPI経由で月額$2,000〜$20,000を支払うAgent時代において、この差は指数級的に拡大する。
+
+### Musk vs OpenAI訴訟 — GrokのChatGPT蒸留を法廷で認める
+
+2026年4月30日、カリフォルニア州オークランド連邦法廷。Musk诉OpenAI案件の第四日目で劇的な展開。
+
+- OpenAI主席弁護士William Savittが「**xAIはOpenAIのモデルを蒸留（distill）したか？**」と質問
+- Muskは「**所有AI公司都在这么干**」（全AI企業がやっている）と回答し、一部認める形に
+- 法廷で蒸留を認めた直後、MuskはxAIを「**OpenAIの約10分の1、従業員数百人**」と表現
+- AI会社ランク付けを尋ねられ、Muskは「**Anthropic第一、OpenAI第二、谷歌第三、开源第四**」と回答、xAIは最下位
+- 法官Yvonne Gonzalez Rogersは「**AI人类灭绝リスクを語る前に、自分のAI会社で蒸留をやっているのはなぜか**」とMuskを牽制
+
+この証言はシリコンバレーの「公開された秘密」を法廷で初めて公式に認めたものとして注目されている。
+
+### Greg Brockmanの日記 — 次回証人の時限爆弾
+
+次回の法廷（月曜日）ではOpenAI共同創業者**Greg Brockman**が証言台に立つ。彼の私日記が証拠として採用されており、以下の記述が注目されている：
+
+> 「Samの物語は：我々が最後对他不诚实、关于仍然想做营利化这件事、只是不带他一起。」
+> 「从他手里偷走非营利组织是不对的。」
+> 「在没有他的情况下转成B-corp、那是道德破产、而且他真的不蠢。」
+
+> **出典**: The Verge — [Elon Musk xAI OpenAI trial distillation](https://www.theverge.com/ai-artificial-intelligence/921546/elon-musk-xai-openai-trial-model-distillation) [T1]
+> **出典**: CNBC — [OpenAI trial Elon Musk Sam Altman live updates](https://www.cnbc.com/2026/04/30/openai-trial-elon-musk-sam-altman-live-updates.html) [T1]
+> **出典**: Business Insider — [Takeaways Elon Musk OpenAI trial](https://www.businessinsider.com/takeaways-elon-musk-sam-altman-openai-federal-trial-2026-4) [T1]
+> **出典**: 36kr（新智元）— [ChatGPT卸载暴涨413%](https://36kr.com/p/3789105070873856) [T1]
+> **出典**: 36kr（新智元）— [马斯克翻车了](https://36kr.com/p/3791460373929221) [T1]
+> **出典**: Bloomberg — [Anthropic funding $900B](https://www.bloomberg.com/news/articles/2026-04-29/anthropic-considering-funding-offers-at-over-900-billion-value) [T1]
