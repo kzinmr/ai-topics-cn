@@ -80,9 +80,9 @@ topics:
       - "Kimi chat 最新功能"
     wiki_pages:
       - concepts/kimi
-    notes: "長コンテキスト（200万tokens）で差別化。K2.6 GAリリース（2026.04.21）: 1T MoE/384Experts/32B activated、SWE-Bench Pro 58.6%・SWE-Bench Ver 80.2%でオープンソースSOTA。Agent Swarm(300Agent/4000steps)、Claw Groups研究プレビュー。CodeBuddy・Vercel等パートナー採用開始。日経XTech/gihyo.jpが日本メディアで評価。K3(3-4Tパラメータ)開発中。"
+    notes: "長コンテキスト（200万tokens）で差別化。K2.6 GAリリース（2026.04.21）: 1T MoE/384Experts/32B activated、SWE-Bench Pro 58.6%・SWE-Bench Ver 80.2%でオープンソースSOTA。Agent Swarm(300Agent/4000steps)、Claw Groups研究プレビュー。CodeBuddy・Vercel等パートナー採用開始。日経XTech/gihyo.jpが日本メディアで評価。K3(2.5Tパラメータ、KDA注意機構)開発中、Q3 2026リリース予定。2026.05.03更新: OpenRouterで週間1.88兆トークン処理（全球1位）、企業指標$18B評価額・$100M ARR。K3は2.5T総パラメータでDeepSeek V4 Pro対抗。競合: DeepSeek V4 Pro（$1.74/Mトークン）・Qwen3.6 Max。"
     added: 2026-04-17
-    last_crawled: 2026-04-28
+    last_crawled: 2026-05-03
 
   - slug: yi
     title: "Yi (零一万物) — 01.AI"
@@ -109,9 +109,9 @@ topics:
       - "火山引擎 Volcano Engine AI"
     wiki_pages:
       - concepts/doubao
-    notes: "ByteDance発。中国国内DAU最大級のAIアプリ。Doubao-Seed-2.0リリース（2026.02）。Dola海外版累計2億ダウンロード突破（2026.04）。豆包股仮想制度。Seed-CodeがGPT-5を9基準で凌駕。2026.04.24北京車展でAgentic AI車載ソリューション発表：700万台搭載・50+ブランド・145車種・奇瑞と戦略提携。AI座舱套件+座舱助手の2大方案。"
+    notes: "ByteDance発。中国国内DAU最大級のAIアプリ。Doubao-Seed-2.0リリース（2026.02）。Dola海外版累計2億ダウンロード突破（2026.04）。豆包股仮想制度。Seed-CodeがGPT-5を9基準で凌駕。2026.04.24北京車展でAgentic AI車載ソリューション発表：700万台搭載・50+ブランド・145車種・奇瑞と戦略提携。AI座舱套件+座舱助手の2大方案。2026.05.03更新: 豆包4.0リリース（動画分析・ローカルオフラインAI・一発购物EC統合）。月活2.27億・リテンション率44.5%（中国AIアプリ1位）。静默アップグレードで128Kコンテキスト対応。"
     added: 2026-04-17
-    last_crawled: 2026-04-28
+    last_crawled: 2026-05-03
 
   - slug: tencent-hunyuan
     title: "混元 (Hunyuan) — Tencent AI"
@@ -375,9 +375,9 @@ topics:
       - "Coding Plan agent 中国"
     wiki_pages:
       - concepts/coding-plan
-    notes: "中国発コーディングエージェントツール。機能・ユースケースの深掘り。阿里云Qwen-3.5+Kimi-K2.5+GLM-4.7、火山云Doubao-Seed-2.0-Code+GLM-4.7の比較。リクエスト課金モデルでClaude Code代替として海外から需要急増。"
+    notes: "中国発コーディングエージェントツール。機能・ユースケースの深掘り。2026.05.03更新: 市場激変—阿里百煉Lite(¥40)完全廃止、智譜GLM二度値上げ(+40%)、火山方舟初回購入日次フラッシュセール化、MiniMax「Token Plan」リブランド、小米MiMo参入(4/3)。Kimi Code CLI料金(¥39/159/559)。最低価格帯¥29-49にシフト。おすすめ: MiniMax ¥29(予算)・火山方舟¥40-200(Claude Code)・Kimi ¥39-559(長時間)。"
     added: 2026-04-17
-    last_crawled: 2026-04-25
+    last_crawled: 2026-05-03
 
   - slug: cursor-china-adoption
     title: "Cursor Adoption in China (Cursor中国使用情况)"

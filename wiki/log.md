@@ -1,5 +1,40 @@
 
 
+## [2026-05-03] active-crawl-36 | Kimi K2.6 OpenRouter爆発 / Coding Plan市場激変 / Doubao 4.0
+
+### Wiki更新
+
+1. **concepts/kimi.md** — 大幅更新:
+   - K2.6: OpenRouter週間1.88兆トークン処理（全球1位、トークン量ベースでClaudeCode+OpenCode+Cursor+Copilot+Codex合計の341%）
+   - KVV（K2.6 Vision-enhanced Variant）新プロダクト公開
+   - PrfaaS（Preference-as-a-Service）: Preference Optimization・Test Assertion・Reward Modelパッケージ
+   - K3開発詳細: 2.5Tパラメータ・KDA(Kernel Decomposed Attention)注意機構・Q3 2026リリース予定
+   - $100M ARR / $18B評価額 / 従業員150名の企業指標
+   - 競合ポジショニング表追加（vs DeepSeek V4 Pro $1.74/Mトークン / Qwen3.6 Max）
+   - search_hints拡充
+
+2. **concepts/coding-plan.md** — 大幅更新:
+   - 2026年5月市場激変（阿里百煉Lite完全廃止、智譜GLM二度値上げ(+40%)、火山方舟日次フラッシュセール化）
+   - MiniMax「Token Plan」リブランド
+   - 小米MiMo参入（2026.04.03リリース）
+   - Kimi Code CLI料金体系（¥39/159/559）
+   - おすすめ選択肢表: MiniMax ¥29(予算)・火山方舟¥40-200(Claude Code)・Kimi ¥39-559(長時間)
+   - search_hints拡充
+
+3. **concepts/doubao.md** — 更新:
+   - 豆包4.0リリース: 動画分析・ローカルオフラインAI・一発购物EC統合
+   - 月活2.27億・リテンション率44.5%（中国AIアプリ1位）
+   - 静默アップグレードで128Kコンテキスト対応
+
+### hot-topics.yaml 更新
+- kimi: last_crawled → 2026-05-03, notes更新（K3 2.5T/KDA詳細、OpenRouter1位データ）
+- coding-plan: last_crawled → 2026-05-03, notes更新（価格競争激化の詳細）
+- doubao: last_crawled → 2026-05-03, notes更新（豆包4.0詳細）
+
+### チェックポイント
+- run_id: 20260503T051300Z
+- source: active-crawl (hot-topics.yaml)
+
 ## [2026-05-02] inbox-triage-batch-2 | 36kr/Juejin記事の解析・Wiki統合
 
 ### Wiki更新

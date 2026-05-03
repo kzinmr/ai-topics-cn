@@ -1,9 +1,13 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-05-02
+最終更新: 2026-05-03
 エンティティ: 59, コンセプト: 113, ダイジェスト: 7, ページ: 9
 
-### 本日更新（2026-05-02 Wiki Health Audit + V2EXトリアージ + Zhihu Frontier統合）
+### 本日更新（2026-05-03 Active Crawl: Kimi K2.6 OpenRouter爆発 / Coding Plan市場激変 / Doubao 4.0）
+- `concepts/kimi.md` — **大幅更新**: K2.6 OpenRouter週間1.88兆トークン処理（全球1位）。K3開発詳細（2.5Tパラメータ・KDA注意機構・Q3 2026予定）。KVV / PrfaaS新プロダクト。競合ポジショニング表（vs DeepSeek V4 Pro / Qwen3.6 Max）。企業指標（$18B評価額・$100M ARR）
+- `concepts/coding-plan.md` — **大幅更新**: 2026年5月市場激変—阿里百煉Lite(¥40)完全廃止、智譜GLM二度値上げ(+40%)、火山方舟初回購入日次フラッシュセール化、MiniMax「Token Plan」リブランド、小米MiMo参入(4/3)。Kimi Code CLI料金(¥39/159/559)。おすすめ選択肢表
+- `concepts/doubao.md` — **更新**: 豆包4.0リリース（動画分析・ローカルオフラインAI・一発购物EC統合）。月活2.27億・リテンション率44.5%（中国AIアプリ1位）。静默アップグレードで128Kコンテキスト対応
+### 前日更新（2026-05-02 Wiki Health Audit + V2EXトリアージ + Zhihu Frontier統合）
 - `concepts/ai-coding-reality.md` — **新規**: V2EX技術議論からAIコーディングの実態（会話モード主流、Agent自律はデモ段階、古法编程の存在、生成コード保守問題）
 - `concepts/spec-driven-development.md` — **新規**: SDD実践課題（OpenSpec「正しい废话」問題、Spec-コード乖離、Harness文書矛盾）
 - `concepts/rag-reality.md` — **新規**: RAG実用性問題（IT運用知識検索の精度不足、Obsidian/AnythingLLM比較、AI産業への懐疑論）
