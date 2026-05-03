@@ -1,9 +1,10 @@
 # AI Topics China Wiki — Index
 
 最終更新: 2026-05-03
-エンティティ: 59, コンセプト: 113, ダイジェスト: 7, ページ: 9
+エンティティ: 61, コンセプト: 113, ダイジェスト: 7, ページ: 9
 
-### 本日更新（2026-05-03 Active Crawl: Kimi K2.6 OpenRouter爆発 / Coding Plan市場激変 / Doubao 4.0）
+### 本日更新（2026-05-03 Wiki Health Auto-Fix: 孤児ページ2件修正）
+- `index.md` — **孤児ページ登録**: `entities/mike-stonebraker` と `entities/tffinfer` をエンティティセクションに追加（エンティティ: 59 → 61）
 - `concepts/kimi.md` — **大幅更新**: K2.6 OpenRouter週間1.88兆トークン処理（全球1位）。K3開発詳細（2.5Tパラメータ・KDA注意機構・Q3 2026予定）。KVV / PrfaaS新プロダクト。競合ポジショニング表（vs DeepSeek V4 Pro / Qwen3.6 Max）。企業指標（$18B評価額・$100M ARR）
 - `concepts/coding-plan.md` — **大幅更新**: 2026年5月市場激変—阿里百煉Lite(¥40)完全廃止、智譜GLM二度値上げ(+40%)、火山方舟初回購入日次フラッシュセール化、MiniMax「Token Plan」リブランド、小米MiMo参入(4/3)。Kimi Code CLI料金(¥39/159/559)。おすすめ選択肢表
 - `concepts/doubao.md` — **更新**: 豆包4.0リリース（動画分析・ローカルオフラインAI・一発购物EC統合）。月活2.27億・リテンション率44.5%（中国AIアプリ1位）。静默アップグレードで128Kコンテキスト対応
@@ -95,6 +96,7 @@
 - [[qwopus-3-5|Qwopus 3.5 — Qwen3.5-27Bベース社区微调モデル]]
 - [[llama-meta|Llama（Meta）— Meta AIのオープンソースLLMファミリ]]
 - [[metax|metax]]
+- [[mike-stonebraker|Mike Stonebraker（マイク・ストーンブレーカー）— データベースの父、AI Agentへの警鐘]]
 - [[mediatek|MediaTek（聯発科技）— TSMC CoWoSベテラン陣営でGoogle TPU参入、Broadcomに対抗]]
 - [[minimax|minimax]]
 - [[moore-threads|moore-threads]]
@@ -108,6 +110,7 @@
   - [[tencent-ai|tencent-ai]]
   - [[tencent-hunyuan|腾讯混元 (Tencent Hunyuan) — 混元3.0/Hy3大模型、295B MoE架构]]
   - [[tencent-qclaw|Tencent QClaw — OpenClawベースの極簡AIエージェントプラットフォーム]]
+- [[tffinfer|TFFInfer — C++製LLM推論フレームワーク]]
 - [[ubtech-robotics|UBTECH Robotics（优必选）— 中国初の人形ロボット上場企業（HK.9566、1,079台/2025年）]]
 - [[unitree-robotics|Unitree Robotics（宇树科技）— 世界No.1二足歩行ロボットメーカー（5,500台/2025年）]]
 - [[mihoyo|miHoYo（米哈游）— 中国ゲーム・AI企業]]
