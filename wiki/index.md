@@ -1,9 +1,13 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-05-03
+最終更新: 2026-05-04
 エンティティ: 61, コンセプト: 113, ダイジェスト: 7, ページ: 9
 
-### 本日更新（2026-05-03 Wiki Health Auto-Fix: 孤児ページ2件修正）
+### 本日更新（2026-05-04 Active Crawl: DeepSeek識圖模式 / Hunyuan数字中国峰会 / Dify資金調達・v1.14 RC）
+- `concepts/deepseek.md` — **大幅更新**: 識圖模式（Thinking with Visual Primitives, 7000倍圧縮）。36kr百度交渉失敗・V4学習障害・初自律収益。無錫AI基盤導入（500+模型）。WPS Office統合
+- `entities/tencent-hunyuan.md` — **更新**: 数字中国建設峰会実機初展示（WorkBuddy/QClaw/OpenClaw等5製品）。WorkBuddy: 1分WeChat Work接続。QClaw: Hermes対応/DeepSeek V4-Pro切替可能。SkillHub AI Skillsコミュニティ
+- `concepts/dify.md` — **大幅更新**: 3000万ドル調達（累計4150万ドル・評価額1.8億ドル）。v1.14 RC: Agent x Skills（Sandbox Runtime/Skill Editor）。v1.13.0: Human-in-the-Loop。v1.9.2: 双方向MCP。Creator Center。日本京進グループ協業
+### 前日更新（2026-05-03 Wiki Health Auto-Fix: 孤児ページ2件修正）
 - `index.md` — **孤児ページ登録**: `entities/mike-stonebraker` と `entities/tffinfer` をエンティティセクションに追加（エンティティ: 59 → 61）
 - `concepts/kimi.md` — **大幅更新**: K2.6 OpenRouter週間1.88兆トークン処理（全球1位）。K3開発詳細（2.5Tパラメータ・KDA注意機構・Q3 2026予定）。KVV / PrfaaS新プロダクト。競合ポジショニング表（vs DeepSeek V4 Pro / Qwen3.6 Max）。企業指標（$18B評価額・$100M ARR）
 - `concepts/coding-plan.md` — **大幅更新**: 2026年5月市場激変—阿里百煉Lite(¥40)完全廃止、智譜GLM二度値上げ(+40%)、火山方舟初回購入日次フラッシュセール化、MiniMax「Token Plan」リブランド、小米MiMo参入(4/3)。Kimi Code CLI料金(¥39/159/559)。おすすめ選択肢表

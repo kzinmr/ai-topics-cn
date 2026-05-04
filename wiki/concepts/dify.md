@@ -1,7 +1,7 @@
 ---
 title: "Dify — オープンソースLLMOpsプラットフォーム"
 created: 2026-04-19
-updated: 2026-04-19
+updated: 2026-05-04
 tags: [llmops, open-source, agent-platform, rag, workflow, china]
 aliases: ["Dify", "Dify.ai", "Dify平台", "开源LLMOps"]
 source_lang: zh-CN
@@ -50,6 +50,33 @@ LlamaFactory（GitHub 73K star）をネイティブ統合：
 - LlamaFactory微調整 → GGUFエクスポート → Difyカスタムモデル登録
 - 3Bパラメータモデルの専門分野微調整は、特定タスクでGPT-4o-miniを上回る精度
 - 推理コストを$0.15/千token → $0.003/千tokenに（50倍削減）
+
+### 6. Dify v1.14 RC：新Agent x Skills
+2026年4月、**1.14.0-rc1**（Pre-release）が公開。Agent Runtimeを完全再設計：
+- **Sandboxed Runtime**: 隔離実行環境でセキュリティ向上
+- **Skill Editor**: 再利用可能なSOPブロックをGUIで構築
+- **@メンション**: ワークフロー内でインラインツール呼び出し（例 `@send_email`）
+- **動的変数アセンブリ**: 会話履歴・外部データからの動的コンテキスト構築
+- **コラボレーションBeta**: チーム共有ワークスペース
+
+### 7. v1.13.x：Human-in-the-Loop
+2026年3月のv1.13.0で**Human Inputノード**を追加。ワークフロー実行を一時停止し、人間の承認・編集・ルーティング判断を挟む「Human-in-the-Loop」が可能に。v1.13.3で安定性向上。
+
+### 8. v1.9.2：双方向MCP対応
+v1.9.2（2025年7月頃）で、MCPサポートを双方向に拡張：外部MCP Serverをツールとして呼び出すだけでなく、Dify上のAgent/WorkflowをそのままMCP Serverとして公開可能に。Claude、Cursor等のMCPクライアントから直接呼び出せる。
+
+### 9. Creator Center & Template Marketplace
+2026年3月、**Creator Center**と**Template Marketplace**をローンチ。コミュニティ作成のワークフローテンプレートを公開・共有・ワンクリック導入。PartnerStack連携でテンプレート経由のサブスクリプション収益分配も可能。
+
+## 資金調達
+
+2026年3月、**Dify（LangGenius）は3,000万ドルのPre-Series A資金調達**を発表。リード投資家は**紅杉（HSG）**。GL Ventures、Alt-Alpha Capital、五源資本（5Y Capital）、瑞穗力合投資、NYX Venturesが参加。累計調達額は4,150万ドル。企業評価額は約1.8億ドル。
+
+Globalで140万台以上のデバイス、2,000+チーム、280社のエンタープライズに採用（マースク、Anker等）。ARRは約300万ドル。
+
+### 日本展開
+
+LangGeniusは2025年2月に日本法人（株式会社LangGenius、東京・日本橋）を設立。2026年4月より、教育・介護分野の京進グループと協業開始。Difyを活用した教育AI・介護現場のDX推進を目的とする。
 
 ## 核心機能
 
@@ -114,6 +141,7 @@ app:
 | **途牛 (Tuniu)** | 旅行プラットフォーム | 顧客サポートAgent（Dify + Qwen） |
 | **跨境电商A社** | 年商50億円 | 商品情報抽出Agent（Dify RAG + GPT-4） |
 | **金融B社** | 地方銀行 | リスクレポート自動生成（Dify Workflow + GLM） |
+| **京進グループ** | 教育・介護 | 教育AI・介護DX（2026年4月〜） |
 
 ## 扣子 (Coze) との比較
 

@@ -1,7 +1,7 @@
 ---
 title: "混元 (Hunyuan) — 騰訊自研の大規模言語モデルシリーズ"
 created: 2026-04-28
-updated: 2026-04-30
+updated: 2026-05-04
 tags: [company, llm, china, tech-giant, tencent, moe, multimodal]
 aliases: ["Hunyuan", "混元", "Tencent Hunyuan", "腾讯混元", "HY"]
 source_lang: zh-CN
@@ -110,6 +110,10 @@ source_lang: zh-CN
 ### OpenRouter API呼び出し量No.1（2026年4月29日）
 
 4月29日、OpenRouterが発表した最新の全球大模型API呼び出し量ランキングで、Hy3 Previewが総合1位を獲得。ツール呼び出しで1位、コーディングで2位。DeepSeek V4の大量安価なAPIトラフィックを上回る実績で、実際の業務ワークロードでの浸透度を示した。
+
+### Hy3 Preview、数字中国建設峰会に登場（2026年4月29日）
+
+4月29日、第九届数字中国建設峰会（福州）でHy3 previewが実機展示初披露。WorkBuddy（1分でWeChat Work接続可能なデスクトップAgent）、QClaw（OpenClawベースConsumer Agent、Hermes対応、Hy3 preview + DeepSeek V4-Pro切り替え対応）が出展。腾讯が「会話から実行へのパラダイム遷移」をテーマにAgent生態を展示。WorkBuddy/QClaw/軽量OpenClaw/云桌面Claw/ClawProの5製品が中国信通院「安全体検」認証を首批通過。AI Skills社区「SkillHub」も発表。
 
 ### 和平精英AI NPCへの統合
 

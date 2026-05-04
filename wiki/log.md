@@ -1,4 +1,40 @@
+|
 
+## [2026-05-04] active-crawl-37 | DeepSeek識圖模式 / Tencent Hunyuan数字中国峰会 / Dify資金調達・v1.14 RC
+
+### Wiki更新
+
+1. **concepts/deepseek.md** — 大幅更新:
+   - V4に識圖模式（Thinking with Visual Primitives）リリース（7000倍圧縮）
+   - 36kr報道：百度出資交渉失敗後独自調達、V4学習過程で大規模障害、創業8年目で初の自律収益
+   - 無錫市AI基盤にDeepSeek採用（500+模型・120+画像認識モデル）
+   - WPS Office×DeepSeek導入
+   - OpenRouter競合激化
+
+2. **entities/tencent-hunyuan.md** — 更新:
+   - Hy3 Previewが数字中国建設峰会で実機初展示（WorkBuddy/QClaw/OpenClaw等5製品）
+   - WorkBuddy: 1分でWeChat Work接続のデスクトップAgent
+   - QClaw: Hermes対応/DeepSeek V4-Pro切替可能コンシューマーAgent
+   - SkillHub AI Skillsコミュニティ発表
+   - 5製品が中国信通院安全認証首批通過
+
+3. **concepts/dify.md** — 大幅更新:
+   - 3000万ドルPre-Series A調達（紅杉HSG主導、累計4150万ドル、評価額1.8億ドル）
+   - v1.14 RC: 新Agent x Skills（Sandbox Runtime/Skill Editor/@mentions/Pull a Variable）
+   - v1.13.0: Human-in-the-Loop（Human Input node）
+   - v1.9.2: 双方向MCP対応（外部MCP接続＋DifyアプリをMCP Server化）
+   - Creator Center & Template Marketplace（3月）
+   - 日本: 京進グループと教育・介護AI協業
+   - Global 140万+デバイス/2000+チーム/280企業
+
+### hot-topics.yaml 更新
+- deepseek: last_crawled → 2026-05-04, notes更新（識圖模式・36kr分析・無錫導入）
+- tencent-hunyuan: last_crawled → 2026-05-04, notes更新（数字中国峰会展示・WorkBuddy/QClaw）
+- dify: last_crawled → 2026-05-04, notes更新（資金調達・v1.14 RC・日本協業）
+
+### チェックポイント
+- run_id: 20260504T050600Z
+- source: active-crawl (hot-topics.yaml)
 
 ## [2026-05-03] active-crawl-36 | Kimi K2.6 OpenRouter爆発 / Coding Plan市場激変 / Doubao 4.0
 

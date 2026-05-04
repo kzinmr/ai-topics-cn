@@ -33,11 +33,13 @@ topics:
       - "DeepSeek 深度求索 最新动态 2026"
       - "DeepSeek-V3 DeepSeek-R1 开源模型"
       - "DeepSeek MoE reasoning model"
+      - "DeepSeek 識圖模式 視覚プリミティブ"
+      - "DeepSeek V4 無錫 政府導入"
     wiki_pages:
       - concepts/deepseek
-    notes: "2026.04.30更新: V4全系列API大幅値下げ(キャッシュ¥0.02/百万tokens)、Liang Wenfeng直接出資比率34%に上昇、CAICT国産化適合テスト開始。OpenRouter呼び出し量過去最高。競合株価下落・算力株急騰。"
+    notes: "2026.05.04更新: V4に識圖模式（Thinking with Visual Primitives）リリース（7000倍圧縮）。36kr報道：百度出資交渉失敗後独自調達、V4学習過程で大規模障害、創業8年目で初の自律収益。無錫市AI基盤にDeepSeek採用（500+模型・120+画像認識モデル）。WPS Office×DeepSeek導入。OpenRouter競合激化。"
     added: 2026-04-17
-    last_crawled: 2026-04-30
+    last_crawled: 2026-05-04
 
   - slug: qwen
     title: "Qwen (通义千问) — Alibaba"
@@ -121,12 +123,14 @@ topics:
       - "腾讯混元 Hunyuan 2026"
       - "Hy3 Hy3-Preview 混元大模型"
       - "Tencent AI 元宝 Yuanbao 智能体"
+      - "数字中国建设峰会 腾讯 混元 2026"
+      - "WorkBuddy QClaw OpenClaw 腾讯 Agent"
     wiki_pages:
       - entities/tencent-ai
       - entities/tencent-hunyuan
-    notes: "2026.04.30更新: Hy3 PreviewがOpenRouter API呼び出し量全球1位(2026.04.29)。和平精英AI NPC統合。姚順雨5ブロック再編(事前/事後/Infra/評価/Frontier)。50+実業務Benchmark独自構築。Hy3.0正式版5-6月リリース予定(大幅大規模)。月額28元〜の個人プラン。他社から核心人材大量獲得。内製Inferenceパイプライン。"
+    notes: "2026.05.04更新: Hy3 Previewが数字中国建設峰会で実機初展示（WorkBuddy/QClaw/OpenClaw等5製品）。WorkBuddy（1分WeChat Work接続）、QClaw（Hermes対応/DeepSeek V4-Pro切替可能）、SkillHub AI Skillsコミュニティ発表。5製品が中国信通院安全認証首批通過。OpenRouter API呼び出し量全球1位継続。"
     added: 2026-04-29
-    last_crawled: 2026-04-30
+    last_crawled: 2026-05-04
 
   # =========================================================
   # 2. Chinese AI Agent Ecosystem (中国AIエージェント)
@@ -183,11 +187,13 @@ topics:
     search_hints:
       - "Dify 开源 LLMOps 2026"
       - "Dify AI agent workflow RAG"
+      - "Dify 融资 LangGenius 3000万"
+      - "Dify v1.14 Agent Skills Sandbox"
     wiki_pages:
       - concepts/dify
-    notes: "中国発オープンソースLLMOps。RAG・Agent・Workflow統合プラットフォーム。GitHub stars急増中"
+    notes: "2026.05.04更新: 3000万ドルPre-Series A調達（紅杉HSG主導、累計4150万ドル、評価額1.8億ドル）。v1.14 RC: 新Agent x Skills（Sandbox Runtime/Skill Editor/@mentions）。v1.13.0: Human-in-the-Loop。v1.9.2: 双方向MCP対応。Creator Center & Template Marketplace。日本: 京進グループと教育・介護AI協業。Global 140万+デバイス/2000+チーム/280企業。"
     added: 2026-04-17
-    last_crawled: 2026-04-25
+    last_crawled: 2026-05-04
 
   # =========================================================
   # 3. Local Deployment & Quantization (ローカル展開・量子化)
