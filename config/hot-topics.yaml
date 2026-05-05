@@ -144,11 +144,15 @@ topics:
       - "中国 AI智能体 Agent 生态 2026年最新进展 竞争格局"
       - "龙虾大战 OpenClaw-CN 腾讯QClaw 字节DeerFlow"
       - "中国AI Agent市场 580亿元 CR4 巨头格局"
+      - "DeepSeek V4 推論価格 0.30 Agent経済"
+      - "中国GPUレンタル価格高騰 H200 A100 2026"
+      - "Deloitte AI推論コンピューティング 2026"
+      - "OpenClaw脆弱性 12クラス SOE禁止"
     wiki_pages:
       - concepts/china-ai-agent-ecosystem
-    notes: "OpenClaw龙虾大战9社同時リリース。DeerFlow 2.0 Super Agent Harness 52K星。ClawHub 13700+Skill/341悪意Skill。MiniMax M2.5月8.1兆Token。金智维Ki-AgentS企業級底座。580亿元市場CR4 78%。"
+    notes: "2026.05.05更新: 推論がAI総需要の2/3に(Deloitte)。GPUレンタルH200+25-30%高騰。DeepSeek V4 $0.30/MTok vs GPT-5.5 $30/MTok 100倍格差で階層型Agentアーキテクチャ登場。OpenClaw12脆弱性クラス(36kr)。SOEが生OpenClaw禁止。深圳/合肥政府が一人会社に最大1000万元補助金。"
     added: 2026-04-17
-    last_crawled: "2026-04-27"
+    last_crawled: "2026-05-05"
 
   - slug: openclaw
     title: "OpenClaw — オープンソースAI Agentエンドポイントツール"
@@ -346,11 +350,13 @@ topics:
       - "Trae 2.0 SOLO mode Builder mode 2026"
       - "通义灵码 Qwen-Coder-Qoder Quest Agent"
       - "CodeGeeX4-All-9B オープンソース"
+      - "Trae SOLO独立Desktop MTCモード"
+      - "通义灵码 Agentic Ask NES Inline Chat 2026"
     wiki_pages:
       - concepts/china-ai-coding-assistants
-    notes: "中国四大AIコーディングアシスタントの包括的比較。Trae(ByteDance)国際版$10/mo・中国版無料、月間100万MAU・60億行コード生成。通义灵码(Alibaba)がGartner挑戦者象限（中国唯一）。Qwen-Coder-QoderモデルでCursor Composer-1を凌駕。CodeGeeX(Zhipu)は唯一のオープンソース。2026.04時点の全ツール比較表を作成・wiki反映済み。"
+    notes: "2026.05.05更新: Trae SOLO独立Desktop/Webアプリ化(MTCモード)。通义灵码5月アップデート(Agentic Ask/NES/Inline Chat/Lingma IDE正式版)。Lingma VS Codeプラグイン非推奨化・IDE移行推奨。VS Code 1.115標準Agent機能追加。国内ネットワーク仲介(ofox.ai)普及。"
     added: 2026-04-17
-    last_crawled: 2026-04-28
+    last_crawled: 2026-05-05
 
   # =========================================================
   # 7. Chinese Coding Agent Tools (中国コーディングエージェント)

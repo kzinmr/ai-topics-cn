@@ -27,6 +27,27 @@
 - run_id: 20260505T040059Z
 - source: newsletter-triage (Import AI 454, China AI Bulletin 3)
 
+## [2026-05-05] active-crawl-38 | China AI Agent Ecosystem / AI Coding Assistants
+
+### Wiki更新
+1. **concepts/china-ai-agent-ecosystem.md** — 更新:
+   - 2026年5月最新動向セクション追加（推論爆発・GPU逼迫・DeepSeek階層化）
+   - 推論がAI総需要の2/3に(Deloitte)、GPUレンタルH200+25-30%高騰
+   - DeepSeek V4 $0.30/MTok vs GPT-5.5 $30/MTok 100倍格差で階層型Agentアーキテクチャ
+   - OpenClaw12脆弱性クラス(36kr)・SOEが生OpenClaw禁止
+   - 深圳/合肥政府が一人会社に最大1000万元補助金
+
+2. **concepts/china-ai-coding-assistants.md** — 更新:
+   - 2026年5月最新動向セクション追加
+   - Trae SOLO独立Desktop/Webアプリ化 + MTC(More Than Coding)モード
+   - 通义灵码5月アップデート: Agentic Ask / NES / Inline Chat / Lingma IDE正式版
+   - VS Codeプラグイン非推奨化・Lingma IDE移行
+   - VS Code 1.115標準Agent機能・ofox.ai仲介普及
+
+### hot-topics.yaml更新
+- china-ai-agent-ecosystem: last_crawled → 2026-05-05, search_hints/notes更新
+- china-ai-coding-assistants: last_crawled → 2026-05-05, search_hints/notes更新
+
 ## [2026-05-04] active-crawl-37 | DeepSeek識圖模式 / Tencent Hunyuan数字中国峰会 / Dify資金調達・v1.14 RC
 
 ### Wiki更新

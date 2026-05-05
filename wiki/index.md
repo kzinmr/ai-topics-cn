@@ -2,10 +2,13 @@
 
 最終更新: 2026-05-05
 エンティティ: 61, コンセプト: 115, ダイジェスト: 7, ページ: 9
-### 本日更新（2026-05-05 Newsletter Ingest: HiFloat4 / BadSkill / Import AI 454 / China AI Bulletin 3）
+### 本日更新（2026-05-05 Active Crawl: China AI Agent Ecosystem / AI Coding Assistants）
+- `concepts/china-ai-agent-ecosystem.md` — **更新**: 2026年5月最新動向追加（推論爆発/Deloitte推論2/3/GPU高騰/DeepSeek V4 $0.30 vs GPT-5.5 $30/OpenClaw12脆弱性/SOE禁止/政府補助金1000万元）
+- `concepts/china-ai-coding-assistants.md` — **更新**: 2026年5月最新動向追加（Trae SOLO独立Desktop+MTC/通义灵码Agentic Ask+NES/Lingma IDE正式版/VS Codeプラグイン非推奨）
+
+### 前日更新（2026-05-05 Newsletter Ingest: HiFloat4 / BadSkill / Import AI 454 / China AI Bulletin 3）
 - `concepts/hifloat4-format.md` — **新規**: 華為Ascendチップ用4bit訓練フォーマット。HiFloat4 vs MXFP4比較（BF16比≈1.0% vs ≈1.5%）。RHTのみでBF16損失1%以内。輸出規制下の中国ハード効率化トレンド。
 - `concepts/badskill-agent-backdoor.md` — **新規**: AIエージェントスキルエコシステムへのサプライチェーン攻撃。Model-in-Skill Poisoning。攻撃成功率99.5%（汚染率3%）。既存プロンプトインジェクション防御では不十分。
-
 
 ### 本日更新（2026-05-04 Active Crawl: DeepSeek識圖模式 / Hunyuan数字中国峰会 / Dify資金調達・v1.14 RC）
 - `concepts/deepseek.md` — **大幅更新**: 識圖模式（Thinking with Visual Primitives, 7000倍圧縮）。36kr百度交渉失敗・V4学習障害・初自律収益。無錫AI基盤導入（500+模型）。WPS Office統合

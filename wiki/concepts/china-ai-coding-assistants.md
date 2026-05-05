@@ -1,7 +1,7 @@
 ---
 title: "中国AIコーディングアシスタント — Trae・MarsCode・通义灵码・CodeGeeX"
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-05-05
 tags: [coding-agents, tooling, china, product-comparison, ide]
 aliases: ["中国AI编程助手", "China AI Coding Assistants", "Trae", "MarsCode", "通义灵码", "CodeGeeX", "Lingma"]
 source_lang: zh-CN
@@ -167,6 +167,42 @@ Baiduの文心一言（ERNIE）をベースとするコーディングアシス�
 - ByteDanceエコシステム（Douyin/今日頭条）とのコンテンツ連携が強み
 - 企業向けはカスタマイズ・プライベートデプロイが重視される
 - 2026年4月のVS Code 1.115リリースでは標準Agent機能が追加され、サードパーティツールとの競合が激化
+
+## 2026年5月最新動向
+
+### 1. Trae SOLO獨立Desktop/Webアプリ化とMTCモード
+
+2026年3月31日、ByteDanceはTrae SOLOを**独立したDesktopアプリ・Web版**としてローンチ。従来はTrae IDE内蔵機能だったSOLOモードが、**任意の開発環境で使用可能**な独立製品に進化：
+
+- **Desktopアプリ**: macOS/Windows対応、既存の任意IDEと併用可能
+- **Web版**: ブラウザから直接SOLOモードを使用可能（登録不要のFree Tierあり）
+- **Trae IDE版**: 従来通りIDE内蔵
+
+#### MTC (More Than Coding) モード
+SOLOモードが**コード生成の枠を超え**、以下の業務にも対応：
+- UIデザイン・カンプからの実装
+- API設計書からのコード自動生成
+- プロジェクト管理タスクの自動化
+- 技術文書生成・レビュー
+- 出典: Juejin — [Trae SOLO独立Desktopアプリ発表](https://juejin.cn/post/7508138384481755172) [T2]
+
+### 2. 通义灵码（Lingma）5月アップデート
+
+Alibabaの通义灵码が2026年5月に主要アップデートを実施：
+
+- **Agentic Ask mode**: 従来のチャット対話から、**Agentが能動的に質問・確認**するモードに進化。不完全な要件でもAgentが不足情報を自律的に収集
+- **NES (Natural-language Enabled Search)**: 自然言語でコードベース全体を検索・理解
+- **Inline Chat**: IDE内でインラインコード編集（選択範囲に直接修正提案）
+- **Lingma IDE 正式版**: パブリックベータから正式版へ移行
+- **通义灵码 VS Codeプラグイン非推奨化**: 新機能はLingma IDEにのみ追加。既存ユーザーはIDEへの移行を推奨
+- 出典: 通义灵码公式 — [2026年5月更新ノート](https://lingma.aliyun.com/changelog/2026-05) [T1]
+
+### 3. 競争環境変化
+
+- **Trae $10/mo vs Cursor $20/mo**: Trae Proの価格差が国際市場で顕著な差別化要因に。中国版Trae CNは完全無料を継続
+- **VS Code 1.115 Agent機能**: 2026年4月、VS Code標準機能としてAgentモードが追加。サードパーティツール（Trae・Cursor等）との競合が新段階に
+- **国内ネットワーク問題の解決策**: ofox.ai等のAPI仲介プラットフォームがClaude Code・Cursor API・Gemini CLIの中国国内利用を可能に
+- 出典: 各種開発者フォーラム・V2EX議論 [T3]
 
 ## 出典
 - ByteDance Trae公式: [trae.ai](https://www.trae.ai) [T1]

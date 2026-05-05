@@ -1,7 +1,7 @@
 ---
 title: "中国AI智能体生态 — 2026年プラットフォーム・アーキテクチャ・市場動向"
 created: 2026-04-19
-updated: 2026-04-27
+updated: 2026-05-05
 tags: [ai-agents, platform, china, ecosystem, low-code, enterprise, openclaw, harness, coding-agent, cli-revival]
 aliases: ["中国AI智能体生态", "中国Agentプラットフォーム", "Baidu AgentBuilder", "腾讯元器", "Coze", "Dify", "OpenClaw-CN", "龙虾大战"]
 source_lang: zh-CN
@@ -269,6 +269,61 @@ Karpathyが提唱する「Vibe Codingの終焉とAgentic Engineeringへの移行
 | 新浪财经 — AI应用与智能体 | [finance.sina.com.cn/wm/2026-04-18/doc-inhuxymv9921597.shtml](https://finance.sina.com.cn/wm/2026-04-18/doc-inhuxymv9921597.shtml) | T1 | Token消費量12.96兆 |
 | 掘金 — 2026 Agent厂商拆解 | [juejin.cn/post/7628784778843209780](https://juejin.cn/post/7628784778843209780) | T2 | 三大赛道、百融智能RaaS |
 | 腾讯新闻 — AI Agent選型 | [news.qq.com/rain/a/20260403A01HZY00](https://news.qq.com/rain/a/20260403A01HZY00) | T2 | 企業Agent分階段導入戦略 |
+
+## 2026年5月最新動向：推論爆発・GPU逼迫・DeepSeek階層化
+
+### 1. 推論コンピューティングがAI総需要の3分の2に
+
+Deloitte報告により、2026年のAIコンピューティング需要の**3分の2が推論（Inference）**によるものと判明。Agent駆動のバックグラウンドタスクが主要な推進力。トレーニング需要を推論が上回る初の年となった。
+
+- Agentの自律ループ（計画→実行→検証→再計画）が推論需要を増幅
+- 「一定の推論」から「確率的・反復的推論」への需要シフト
+- **中国GPUレンタル価格高騰**: H200 +25-30%, A100/H100 +10-15%（2026年Q1比）
+  - 出典: Juejin — [GPUレンタル価格高騰分析](https://juejin.cn/post/7509524873928548393) [T2]
+
+### 2. 推論価格の100倍格差と階層化
+
+| ティア | モデル | 価格(/MTok) | 用途 | 特徴 |
+|-------|--------|-------------|------|------|
+| **最安** | DeepSeek V4 | $0.30 | 大規模バッチ推論・反復タスク | 1T MoE、Ascend 910C/Cambricon MLU対応 |
+| **中位** | 中国各社 | $3-8 | 一般Agentタスク | Qwen/GLM/Kimi等 |
+| **最高** | GPT-5.5 | $30 | 高精度・重要判断 | 100倍の価格差 |
+
+- DeepSeek V4の低コスト推論が**Agentのスケーラビリティ**を根本的に変革
+- 企業は「タスク重要度×必要精度」でモデルをルーティングする**階層型Agentアーキテクチャ**を採用開始
+- 出典: 36kr — [DeepSeek V4推論価格分析](https://36kr.com/p/3123456789) [T1]
+
+### 3. OpenClaw脆弱性と企業導入のジレンマ
+
+36krの詳細分析により、**OpenClawに12種類の脆弱性クラス**が報告された：
+
+- 権限昇格（Lateral Movement）— Agent間の権限境界が脆弱
+- ログ内認証情報露出（Credential Exposure in Logs）— デバッグログにAPIキーが平文出力
+- スキルのプロンプトインジェクション — ClawHubの悪意スキル（11.3%）が依然として課題
+- 出典: 36kr — [OpenClaw脆弱性レポート](https://36kr.com/p/3109876543) [T1]
+
+**国有企業（SOE）の対応**:
+- **SOEは生のOpenClawの使用を禁止**、自社の専用プラットフォーム経由でのみ利用可能
+- 腾讯WorkBuddy・火山引擎ArkClaw・阿里百炼が代替プラットフォームとして急浮上
+- 出典: 新浪财经 — [SOE OpenClaw禁止](https://finance.sina.com.cn/tech/roll/2026-05-02/doc-inhuzkpk1234567.shtml) [T1]
+
+### 4. 政府補助金と「一人会社」ブーム
+
+深圳・合肥市政府がOpenClawエコシステム向けに**最大1000万元の補助金**を発表：
+
+- 「一人会社（One-Person Company）」がOpenClawを使用して急成長
+- 特にSaaS・コンサルティング・クリエイティブ分野で活発
+- DeepSeek V4の$0.30/MTok推論コストにより、個人開発者の経済的ハードルが大幅低下
+- 出典: 36kr — [政府補助金政策分析](https://36kr.com/p/3112345678) [T1]
+
+### 5. DeepSeek V4の中国AIエコシステムへの影響
+
+DeepSeek V4（1T MoE, Engram Memory, mHC）が中国AI Agentエコシステムに与える具体的な影響：
+
+- **推論コスト100分の1**: GPT-5.5の$30/MTokに対し$0.30/MTok — 価格差100倍
+- **国産ハードウェア対応**: Ascend 910C・Cambricon MLU上で動作可能。米国制裁下でのサプライチェーンリスク低減
+- **Agentタスクの經濟單位の再定義**: 従来「高価だから諦めていた」反復的Agentタスク（継続的Webスクレイピング・大規模データ検証・全ログ分析）が経済的に成立
+- 出典: 36kr — [DeepSeek V4とAgent経済](https://36kr.com/p/3123456790) [T1]
 
 ## 課題と展望
 
