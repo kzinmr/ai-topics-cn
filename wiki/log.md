@@ -1,5 +1,32 @@
 |
 
+## [2026-05-05] newsletter-triage-37 | Import AI 454 / China AI Bulletin 3
+
+### Wiki更新
+
+1. **concepts/hifloat4-format.md** — 新規:
+   - HiFloat4（華為Ascend NPU用4bit訓練フォーマット）vs MXFP4比較
+   - BF16比相対誤差: HiF4≈1.0% vs MXFP4≈1.5%
+   - RHTのみでBF16損失1%以内到達（MXFP4はRHT+確率的丸め+トランケーションフリースケーリング必要）
+   - OpenPangu-1B / Llama3-8B / Qwen3-MoE-30Bで検証
+   - 輸出規制下の中国ハード効率化トレンドの重要な兆候
+
+2. **concepts/badskill-agent-backdoor.md** — 新規:
+   - BadSkill: AIエージェントスキルエコシステムへのサプライチェーン攻撃
+   - Model-in-Skill Poisoning手法（スキル内のモデルにバックドア埋め込み）
+   - 攻撃成功率99.5%、必要汚染率3%（華中科技大学・リーハイ大学）
+   - 既存プロンプトインジェクション防御では無力
+   - Cursor/Dify/OpenClawのSkillsエコシステムに構造的脆弱性
+
+### Take decisions
+- Import AI 454: HiFloat4, Automated Alignment Researchers, Kimi K2.5安全評価 → **HiFloat4** を新規ページ化
+- China AI Bulletin 3: BadSkill, NDRC-Manus, Human-Like AI規制 → **BadSkill** を新規ページ化
+- 他はreference/skip（既存ページでカバー済み）
+
+### チェックポイント
+- run_id: 20260505T040059Z
+- source: newsletter-triage (Import AI 454, China AI Bulletin 3)
+
 ## [2026-05-04] active-crawl-37 | DeepSeek識圖模式 / Tencent Hunyuan数字中国峰会 / Dify資金調達・v1.14 RC
 
 ### Wiki更新
