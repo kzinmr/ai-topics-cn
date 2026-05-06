@@ -1,6 +1,33 @@
 |
 
-## [2026-05-05] newsletter-triage-37 | Import AI 454 / China AI Bulletin 3
+## [2026-05-06] active-crawl-39 | MCP中国生態 / Vibe Coding → Agentic Engineering
+
+### Wiki更新
+1. **concepts/mcp-china.md** — **大幅更新**:
+   - Anthropic公式MCP実践ガイド（Tool Searchで85%+トークン削減、3パターン接続フレームワーク: 直連API/CLI+Skills/MCP+Skills）
+   - Cloudflare 2ツールx2500エンドポイント実装（MCPの正しい使い方の参照実装）
+   - MCP SDK月間ダウンロード3億回（年初1億→3億）
+   - 中国コミュニティ「沈静化＝成熟」評価（腾讯云开发者社区2026年5月）
+   - コミュニティ三大批判vs Anthropic回答の比較表
+   - MCP + Skillsパッケージング（Canva/Notion/Sentry）
+   - MCP+A2A+AP2+ACPエコシステム拡大、MCP成熟化フェーズ表
+
+2. **concepts/vibe-coding-china.md** — **大幅更新**:
+   - Karpathy@Sequoia AI Ascent 2026（4/30）核心メッセージ: 「思考外注可但理解不可」「LLM是幽灵不是動物」
+   - Vibe Coding第1世代 vs Agentic Engineering第2世代の比較表
+   - Ahmed E. Hassan SE 3.0 (SASE) フレームワーク: ACE/AEE/BriefingScripts/MentorScripts/MRP/CRP
+   - SE 1.0→2.0→3.0世代区分表
+   - Tony Bai「From Vibe-Coding to Agentic Engineering」(5/2) 移行3段階・7生存ルール
+   - 中国コミュニティの反響（通义灵码SE 3.0対応予告）
+
+### hot-topics.yaml 更新
+- mcp-china: last_crawled → 2026-05-06, notes更新（Anthropicガイド・Cloudflare・SDK 3億・A2A/AP2/ACP）
+- vibe-coding-china: last_crawled → "2026-05-06", notes更新（Karpathy Sequoia・SE 3.0・Tony Bai）
+- search_hints拡充（両トピック）
+
+### チェックポイント
+- run_id: 20260506T050800Z
+- source: active-crawl (hot-topics.yaml)
 
 ### Wiki更新
 

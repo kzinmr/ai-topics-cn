@@ -302,11 +302,15 @@ topics:
       - "MCP Model Context Protocol 中国 生态 2026"
       - "MCP 国产模型 接入 适配"
       - "Anthropic MCP China adoption"
+      - "MCP Tool Search token reduction 2026"
+      - "MCP vs CLI Skills comparison"
+      - "MCP A2A AP2 ACP ecosystem"
+      - "Cloudflare MCP two tools"
     wiki_pages:
       - concepts/mcp-china
-    notes: "Anthropic MCP（Model Context Protocol）の中国での採用状況。Qwen/DeepSeek等のMCP対応、中国独自のMCPサーバー・ツール"
+    notes: "2026.05.06更新: Anthropic公式MCP実践ガイド（Tool Searchで85%+トークン削減、3パターン接続フレームワーク）。Cloudflare 2ツールx2500エンドポイント実装。SDK月間DL 3億回。中国コミュニティは静けさ=成熟と評価（腾讯云开发者社区）。MCP+A2A+AP2+ACPエコシステム拡大。
     added: 2026-04-17
-    last_crawled: 2026-04-27
+    last_crawled: 2026-05-06
 
   - slug: mcp-chinese-tools
     title: "Chinese MCP Tools & Servers (中国MCP工具)"
@@ -333,11 +337,14 @@ topics:
       - "氛围编程 vibe coding 中国 2026年4月 最新进展"
       - "意图编程 Wish Coding 蚂蚁灵光 闪应用 3000万"
       - "Vibe Coding 终焉 Agentic Engineering 范式切换"
+      - "Karpathy Sequoia AI Ascent 2026 agentic engineering"
+      - "SE 3.0 SASE ACE AEE structured agentic software engineering"
+      - "Tony Bai Vibe Coding to Agentic Engineering 2026"
     wiki_pages:
       - concepts/vibe-coding-china
-    notes: "Karpathy 2026-02-04 Vibe Coding终焉宣言。蚂蚁灵光闪应用3000万生成・意图编程提唱。Cursor 23億ドルDラウンド估值293億ドル。Trae 600万+ユーザー。国内二大ハードル: ネットワーク接続・Rate Limit。【2026.04.29更新】认知债(Cognitive Debt)が主要課題に。36kr三段階衰退曲線、Anthropic RCT(AI支援で理解低下)、Triple Debt Model。Agentic Engineeringへのパラダイム遷移加速。Collina 1.9万行PR事件。"
+    notes: "2026.05.06更新: Karpathy@Sequoia AI Ascent 2026（4/30）—「思考外注可但理解不可」「LLM是幽灵不是动物」。Vibe Coding第1世代→Agentic Engineering第2世代へ移行。Ahmed E. Hassan SE 3.0(SASE: ACE+AEE+BriefingScripts+MentorScripts)体系化。Tony Bai(5/2)移行サバイバルガイド7ルール。通义灵码SE 3.0対応予告。
     added: 2026-04-17
-    last_crawled: "2026-04-29"
+    last_crawled: "2026-05-06"
 
   - slug: china-ai-coding-assistants
     title: "Chinese AI Coding Assistants (国产AI编程助手)"

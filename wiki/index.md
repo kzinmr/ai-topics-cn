@@ -1,8 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-05-05
+最終更新: 2026-05-06
 エンティティ: 61, コンセプト: 115, ダイジェスト: 7, ページ: 9
-### 本日更新（2026-05-05 Active Crawl: China AI Agent Ecosystem / AI Coding Assistants）
+### 本日更新（2026-05-06 Active Crawl: MCP 中国生態 / Vibe Coding → Agentic Engineering）
+- `concepts/mcp-china.md` — **大幅更新**: Anthropic MCP実践ガイド（Tool Search 85%+削減、3パターン接続）。Cloudflare 2ツールx2500エンドポイント。SDK月間DL 3億回。中国コミュニティ成熟評価。MCP+A2A+AP2+ACPエコシステム拡大。
+- `concepts/vibe-coding-china.md` — **大幅更新**: Karpathy@Sequoia AI Ascent 2026「思考外注可但理解不可」「LLM是幽灵不是動物」。Agentic Engineering第2世代へ移行。Ahmed E. Hassan SE 3.0(SASE)体系化。Tony Bai移行サバイバルガイド7ルール。
+
+### 前日更新（2026-05-05 Active Crawl: China AI Agent Ecosystem / AI Coding Assistants）
 - `concepts/china-ai-agent-ecosystem.md` — **更新**: 2026年5月最新動向追加（推論爆発/Deloitte推論2/3/GPU高騰/DeepSeek V4 $0.30 vs GPT-5.5 $30/OpenClaw12脆弱性/SOE禁止/政府補助金1000万元）
 - `concepts/china-ai-coding-assistants.md` — **更新**: 2026年5月最新動向追加（Trae SOLO独立Desktop+MTC/通义灵码Agentic Ask+NES/Lingma IDE正式版/VS Codeプラグイン非推奨）
 

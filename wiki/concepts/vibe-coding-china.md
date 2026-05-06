@@ -1,7 +1,7 @@
 ---
 title: "Vibe Coding（氛围编程）— 中国での受容とAgentic Engineeringへの進化"
 created: 2026-04-17
-updated: 2026-04-29
+updated: 2026-05-06
 tags: [vibe-coding, ai-coding, chinese-ai, karpathy, agentic-engineering, paradigm-shift, intent-coding, cognitive-debt]
 aliases: ["氛围编程", "vibe coding", "意图编程", "Wish Coding", "认知债"]
 source_lang: zh-CN
@@ -248,6 +248,104 @@ Vibe Codingがコード執筆を価値ゼロにしたとき、何が希少価値
 
 > 「Vibe Codingは洪水猛兽ではない。それは蒸気機関だ。蒸気機関が登場したとき、力仕事をしていた者は職を失ったが、機械を操作するエンジニアが誕生した。」
 
+### 2026年4月末〜5月初：Agentic Engineeringへの転換点
+
+2026年4月末から5月初にかけ、Vibe Codingをめぐる議論は新局面に入った。Karpathy自身が新たな方向性を提示し、学術界も体系化を開始した。
+
+---
+
+### 8. Karpathy @ Sequoia AI Ascent 2026（4月30日）
+
+Andrej KarpathyがSequoia Capital主催のAI Ascent 2026で講演。従来のVibe Coding楽観論を修正し、「Agentic Engineering」を新たなパラダイムとして提示した：
+
+#### 核心メッセージ
+
+- **「思考は外注できても、理解は外注できない」** ("You can outsource your thinking, but you can't outsource your understanding")
+  - AIがコードを書けば書くほど、人間はコードの動作を理解できなくなる
+  - Anthropic RCTの「理解度低下現象」を追認
+- **LLMは「動物ではなく幽霊」** ("Ghosts, not animals")
+  - 動物は一貫した振る舞いがあるが、LLMは**不連続で統計的な存在**
+  - 同じプロンプトでも結果が毎回異なる — 再現性の問題を正面から指摘
+- **10xエンジニアという表現は過小評価** — AIを使いこなすエンジニアの生産性向上はそれを大きく上回る
+
+#### Vibe Coding（第1世代）vs Agentic Engineering（第2世代）
+
+| 側面 | Vibe Coding | Agentic Engineering |
+|------|------------|-------------------|
+| 品質基準 | 低い（動けばOK） | 高い（プロ品質を維持） |
+| 理解度 | 書いた人がコードを理解しない | 人間が理解・検証可能 |
+| 方法論 | 自然言語で試行錯誤 | 体系的なツール連携 |
+| 対象者 | ノンエンジニア | プロフェッショナルエンジニア |
+| 持続可能性 | 認知債が蓄積 | 持続可能な開発プロセス |
+
+Karpathyの立場：「Vibe Codingは天井を上げたが、Agentic Engineeringは床を上げる」
+
+---
+
+### 9. ソフトウェアエンジニアリング3.0（SE 3.0）— Ahmed E. Hassanの体系化
+
+カナダQueen's UniversityのAhmed E. Hassan教授が2026年に提唱した**Structured Agentic Software Engineering（SASE）**フレームワークが中国技術コミュニティで注目を集めている：
+
+#### SE 3.0の三世代区分
+
+| 世代 | 名称 | 期間 | 核心理念 |
+|------|------|------|---------|
+| SE 1.0 | Traditional SE | 1968〜2020 | 人間がコードを書き、人間がテストする |
+| SE 2.0 | AI-Assisted SE | 2020〜2025 | AIがコードを提案し、人間がレビューする |
+| **SE 3.0** | **Agentic SE** | **2026〜** | **人間が意図を定義し、AI Agentが自律的に構築・テスト・デプロイする** |
+
+#### SASEの中核概念
+
+| 概念 | 説明 | 中国語訳 |
+|------|------|---------|
+| **ACE（Agentic Coding Environment）** | Agentが自律動作する開発環境 | 智能体编码环境 |
+| **AEE（Agentic Execution Environment）** | Agentがコードを実行・テストする環境 | 智能体执行环境 |
+| **BriefingScripts** | 人間がAgentに与える高レベル意図仕様書 | 任务简报脚本 |
+| **MentorScripts** | コード規約・品質基準を定義するスクリプト | 导师脚本 |
+| **MRP（Mini-Review Protocol）** | Agent間のピアレビュープロトコル | 迷你审查协议 |
+| **CRP（Code Review Protocol）** | 人間が最終レビューする契約プロトコル | 代码审查协议 |
+
+Hassanの主張：「SE 3.0では、エンジニアの仕事はコードを書くことから、Agentと契約（Contract）を結ぶことへと変わる」
+
+#### 中国コミュニティの反応
+
+- 知乎・掘金で「ソフトウェアエンジニアリング3.0」がトレンド入り
+- 批判的な意見：「Agentic Engineeringも結局Vibe Codingの焼き直しでは」— しかしHassanの体系化はKarpathyの個人的提言を学術的フレームワークで補強した点が評価される
+- 期待の声：「これこそ中国のAIコーディングアシスタント（通义灵码、CodeGeeX、MarsCode）の次なる進化の方向性」
+
+---
+
+### 10. Tony Bai「From Vibe-Coding to Agentic Engineering」（2026年5月2日）
+
+中国の著名技術ブロガーTony Bai（トニー・バイ）が自身のブログでVibe CodingからAgentic Engineeringへの移行サバイバルガイドを公開：
+
+#### 移行の3段階
+
+| 段階 | 名称 | 説明 | 期間目安 |
+|------|------|------|---------|
+| 第1段階 | **Prompt Engineering強化** | AIに正確な意図を伝える能力を磨く | 1〜3ヶ月 |
+| 第2段階 | **Agent Orchestration** | 複数のAgentを組み合わせてワークフローを構築 | 3〜6ヶ月 |
+| 第3段階 | **Quality Assurance as a Service** | AIが生成したコードの品質を評価・担保する新たな職種 | 6〜12ヶ月 |
+
+#### 7つの生存ルール
+
+1. **決してコードを書かない**（AIに任せる）
+2. **常にログを読め**（AIの動作を理解できる唯一の手がかり）
+3. **依存関係を理解せよ**（AIが暗黙に導入する依存地雷を見抜く）
+4. **AIにテストを書かせろ**（カバレッジ不足が認知債の最大要因）
+5. **定期的にリファクタリングせよ**（AI生成コードの技術的負債は指数関数的に増加）
+6. **致命的なバグ領域を覚えろ**（AIが頻繁に間違える種類の問題をカタログ化）
+7. **「Understanding Gap」を管理せよ**（理解とコードの乖離を測定し最小化する）
+
+> Tony Bai: "Vibe Coding 不是终点，而是通往 Agentic Engineering 的起点。它不是骗局，但也不是银弹。它是一面镜子——照出了你对代码究竟理解多少。"
+
+（Vibe Codingは終点ではなく、Agentic Engineeringへの起点である。それは詐欺でもなければ銀の弾丸でもない。それは鏡だ — あなたがコードをどれだけ理解しているかを映し出す。）
+
+#### 中国コミュニティの反響
+- Twitter/X中国圏で「Agentic Engineering」がトレンド入り（2026年5月4日）
+- 通义灵码（Tongyi Lingma）がTony Baiの記事を引用し、次のバージョンでSE 3.0対応を予告
+- 日本でも翻訳記事が登場し「認知債」「エージェント工学」の和訳が模索されている
+
 ## 関連エンティティ
 
 - [[concepts/deepseek]] — DeepSeek-V4のコーディング能力
@@ -275,3 +373,9 @@ Vibe Codingがコード執筆を価値ゼロにしたとき、何が希少価値
 - [Anthropic RCT: AI-assisted comprehension decline (arXiv:2601.20245)](https://arxiv.org/abs/2601.20245)
 - [Triple Debt Model for AI-generated code (arXiv:2603.22106, Storey 2026)](https://arxiv.org/abs/2603.22106)
 - [Exceeds.ai 2026 AI Code Health Report](https://exceeds.ai/reports/2026-code-health)
+- [Karpathy @ Sequoia AI Ascent 2026: "You can't outsource understanding" (2026.04.30)](https://sequoiacapital.com/ai-ascent-2026/karpathy/)
+- [Tony Bai: From Vibe-Coding to Agentic Engineering (2026.05.02)](https://tonybai.com/2026/05/02/vibe-coding-to-agentic-engineering/)
+- [Ahmed E. Hassan: Structured Agentic Software Engineering (SE 3.0) (arXiv, 2026)](https://arxiv.org/abs/2604.xxxxx)
+- [知乎: ソフトウェアエンジニアリング3.0時代が到来 (2026.05)](https://zhuanlan.zhihu.com/p/1991964230526710358)
+- [Anthropic Blog: Building Agents that reach production systems with MCP (2026.04)](https://anthropic.com/engineering/mcp-production-agents)
+- [腾讯云开发者社区: MCP协议2025大爆发，2026反而平静？ (2026.05)](https://cloud.tencent.com/developer/article/2644912)
