@@ -1,5 +1,43 @@
 |
 
+## [2026-05-07] active-crawl-40 | Qwen3.6 / Doubao Seed-2.0-lite全模态 / ChatGLM GLM-5-Turbo
+
+### Wiki更新
+1. **entities/qwen.md** — **更新**:
+   - Qwen3.6-235B-A21B-previewがDeepSeek V4超え(OpenRouterベンチマーク)
+   - Qwen Code v0.14.x Agent機能（子Agent自律実行・Telegram/钉钉連携）
+   - Qwen OAuth無料枠終了→API完全移行
+   - 通义灵码Lingma IDE独立版（VS Codeプラグイン非推奨）
+   - 百炼Platform上Agent動的ツール呼び出し
+   - Alibaba社内AI統制強化：20人CodeFreeze/OKR連動
+
+2. **concepts/doubao.md** — **更新**:
+   - Doubao-Seed-2.0-lite全模态アップグレード（5月6日）—初の全模态理解モデル
+   - 音声/動画/画像/テキスト統合、19言語音声認識、14言語翻訳
+   - HiPhO/MedXpertQA等高階学術推論でPro超え
+   - Gemini 3.1 Pro超えの音声理解
+   - GUI操作（Browser Use/Computer Use）対応
+   - 豆包有料サブスク3段階（68/200/500元月額、4月27日発表）
+   - 豆包車載AI 700万台搭載（北京車展4月24日）
+   - 月活2.27億・DAU1億突破（中国AIアプリTop1）
+   - 人材激励「豆包股」発行
+
+3. **concepts/chatglm.md** — **更新**:
+   - GLM-5-Turbo新登場（Agent/龙虾特化訓練層最適化モデル）
+   - Scaling Pain技術ブログ公開（4月30日）：Agent推論スループット132%向上
+   - 異常出力率万分の十数→万分の三未満に改善
+   - GLM-5.1: SWE-bench Pro 58.4%(GPT-5.4超え), 744B MoE, MIT
+   - Z.aiブランディング・OpenClaw/Hermes対応継続
+
+### hot-topics.yaml 更新
+- qwen: last_crawled → "2026-05-07", notes更新（Qwen3.6-235B, Lingma IDE, 社内AI統制）, search_hints拡充
+- doubao: last_crawled → 2026-05-07, notes更新（Seed-2.0-lite全模态, 有料サブスク3段階）, search_hints拡充
+- chatglm: last_crawled → 2026-05-07, notes更新（GLM-5-Turbo, Scaling Pain）, search_hints拡充
+
+### チェックポイント
+- run_id: 20260507T050800Z
+- source: active-crawl (hot-topics.yaml)
+
 ## [2026-05-06] active-crawl-39 | MCP中国生態 / Vibe Coding → Agentic Engineering
 
 ### Wiki更新

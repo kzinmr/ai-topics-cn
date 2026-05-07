@@ -1,7 +1,7 @@
 ---
 title: Qwen（通义千问）— 阿里云大模型旗舰
 created: 2026-04-17
-updated: 2026-05-01
+updated: 2026-05-05
 tags: [llm, model, china, open-source-ai, alibaba, qwen, agentic-coding, ai-infrastructure]
 aliases: ["Qwen", "通义千问", "qwen", "Qwen3.5", "Qwen3-Coder", "Qwen3.6", "Qwen3.6-Plus", "Qwen3.6-27B", "Qwen3.6-35B-A3B"]
 source_lang: zh-CN
@@ -174,6 +174,34 @@ Qwen3.6シリーズの**最初のdense（非MoE）モデル**。27Bパラメー�
 
 2026年の中国AI価格戦争でQwen3-Maxの料金が最大50%引き下げ。trillion-parameter閉鎖モデルながら、競争激化により価格破壊を起こしている。
 
+### Qwen3.6-Flash — 軽量高速モデル（2026年4月16日）
+
+Qwen3.6シリーズの軽量版として **Qwen3.6-Flash** が阿里云百炼に追加。Qwen3.5-Flashの後継で、Qwen3.6-35B-A3Bをベースに高速推論に最適化。価格はQwen3.6-Plusの約1/10で、リアルタイム対話・チャット・基本的なコード補完に適する。
+
+> **出典**: [阿里云百炼 模型上下架与更新](https://help.aliyun.com/zh/model-studio/newly-released-models) (2026-04-16)
+
+## 通义灵码 (Lingma) — AI IDE正式版リリース（2026年5月）
+
+通义灵码（Lingma）はQwenモデルを搭載したAlibabaのAIプログラミングアシスタント。2026年5月、**Lingma IDE**（VS Codeベースの独立AI IDE）が正式版としてリリースされた。
+
+### Lingma IDE 正式版 主要機能
+
+| 機能 | 説明 |
+|------|------|
+| **Agentic Ask** | 以前のAsk(質問)モードをAgentic化。エンジニアリング感知・Web検索ツールを自律的に呼び出し、プロジェクトに即した回答が可能に。手動ファイル追加が不要。 |
+| **NES（行間編集予測）** | Next Edit Suggestion。現在のコードコンテキスト・カーソル位置・変更パターンに基づき、次に行うべきコード編集を予測。Tabキーで適用可能。 |
+| **Inline Chat（行間会話）** | コードエディタ内で直接会話。ファイルを離れずにコード修正・質問が可能。 |
+| **プログラミングエージェント** | Qwen3モデル搭載。タスク記述から自律的に工程感知・コード検索・端末実行・MCPツール呼び出しを実行。 |
+| **長期記憶** | 過去の会話から開発者の好み・プロジェクトルールを自動記憶。 |
+| **Quest モード** | 自律プログラミング。ユーザー入力の意図を認識し最適な能力へ自動ルーティング。 |
+| **プラグイン不要** | VS CodeのLingmaプラグインは非推奨化、IDEへの移行推奨。 |
+
+### 戦略的意義
+
+Lingma IDEのリリースは、AlibabaがAIコーディングアシスタント市場で **Cursor/Claude Codeに直接対抗する製品**を投入したことを意味する。従来の「VS Codeプラグイン」から「独立AI IDE」への移行により、NESやInline Chatなどプラグイン側では実装困難な機能を統合。Qwen-Coder-Qoderモデル（Qwen-Coderベースの強化学習特化モデル）を搭載し、Cursor Composer-1を超越するタスク解決率を主張。
+
+> **出典**: [阿里云开发者社区 — 通义灵码5月更新](https://developer.aliyun.com/article/1665770), [Lingma IDE 更新日志](https://help.aliyun.com/zh/lingma/product-overview/changelogs-of-lingma-ide)
+
 ## 通义实验室 (Tongyi Lab) — 研发背景与组织变革
 
 **通义实验室**は、阿里巴巴（Alibaba Group）のAI大モデル研究機関。Qwen（通义千问）シリーズの生み出し元。
@@ -210,6 +238,83 @@ Qwen3.6シリーズの**最初のdense（非MoE）モデル**。27Bパラメー�
 - **FunAudio**: 音声・マルチモーダル音声モデル（2025年9月リリース）。
 - **Qwen3-VL-Embedding / Reranker**: マルチモーダル情報検索用モデル（2026年1月8日开源）。
 - **WebDev, EvalScope, ms-swift, AgentScope** 等。
+
+### Qwen3.6-Max プレビュー価格設定
+
+2026年4月時点のQwen3.6-Max-Previewの料金:
+- **$1.30/M 入力トークン**（Alibaba Cloud Model Studio）
+- **$7.80/M 出力トークン**
+- **90% cache hit割引**: $0.13/M（キャッシュヒット時）
+- OpenRouterでは若干異なる: $1.04/M 入力、$6.24/M 出力
+- Claude Opus 4.7より入力は安いが、劇的な価格破壊ではない
+- ※プレビュー段階でSLAなし、本番利用はGAリリース待ち
+
+> **出典**: [Awesome Agents — Qwen 3.6 Max Review](https://awesomeagents.ai/reviews/review-qwen-3-6-max/) (2026-05)
+
+### 2026年5月初旬のベンチマーク位置づけ更新
+
+2026年5月初旬時点、SWE-bench Pro Leaderboardは急速に変動:
+- **Claude Mythos Preview**: 77.8%（首位）
+- **Claude Opus 4.7 (Adaptive)**: 64.3%
+- **GPT-5.5**: 58.6%
+- **Qwen3.6-Max**: 発売時の4月下旬に首位だったが、Claude Mythosに抜かれた
+
+Terminal-Bench 2.0ではQwen3.6-MaxとClaude Opus 4.7が**65.4%でタイ**。GPT-5.4は75.1%でリード。AA Intelligence Index v4.0ではQwen3.6-Maxは**52点**（203モデル中3位、GPT-5.4 58点, Claude Opus 4.7 56点に次ぐ）。
+
+QwenWebBench（Webアプリ・データ可視化・SVG生成に特化したフロントエンド評価）では、Maxの**ELO 1,558**がClaude Opus 4.5の1,182を大きく引き離し、Alibabaが正当に首位を主張できる領域。
+
+> **出典**: [Awesome Agents — Qwen 3.6 Max Review](https://awesomeagents.ai/reviews/review-qwen-3-6-max/) (2026-05)
+
+### Qwen-Scope: 可解釋性モジュール（2026年4月30日オープンソース）
+
+2026年4月30日、AlibabaはQwenの出力を**自動的に説明・解釈する**新しいツール「Qwen-Scope」をオープンソース公開:
+
+- **メカニズム解釈**: Qwenモデルの内部アクティベーションパターンを分析し、なぜ特定の出力が生成されたかを可視化
+- **Attention可視化**: 入力トークン間の注意重みをヒートマップで表示
+- **Feature Attribution**: 各入力トークンが出力にどの程度寄与したかを定量化
+- **Logit Lens**: 中間層の表現を語彙空間に投影し、モデル内部の「思考過程」を読解
+- **Agent action追跡**: MCPツール呼び出しの理由をモデル内部状態から遡及分析
+- **対応モデル**: Qwen3.6シリーズ（Plus/Max/27B/35B-A3B）、Qwen3.5シリーズ
+- **ライセンス**: Apache 2.0
+
+企業のコンプライアンス要件（Agentの自律決定に対する説明責任）に応える重要なツール。中国の等保2.0要件にも対応。
+
+> **出典**: GitHub [QwenLM/qwen-scope](https://github.com/QwenLM/qwen-scope) (2026-04-30) [T1]
+
+### Qwen Code v0.15.0 — 自律記憶・バッチ処理・Hook拡張（2026年4月23日）
+
+2026年4月23日、Qwen Code v0.15.0がリリースされ、v0.14.xシリーズの「自律エージェント化」をさらに推し進めた:
+
+**AI 跨会話主動記憶（Auto-Memory + Auto-Dream）**:
+- AIが会話中に自動的に重要な情報を記憶に抽出。次回セッションでも前回の情報を保持
+- 定期的な自動整理（重複マージ、旧情報更新、インデックス保守）— 「本棚整理のように」
+- QWEN.mdや設定ファイルへの手動書き込みが不要に
+
+**/batch 批量処理**:
+- 1つのコマンドで複数ファイルの並行修正が可能
+- ユースケース: 同種lintエラーの一括修正、複数ドキュメントへの同じセクション追加、一括リファクタリング
+
+**Hook拡張（HTTP/Function/Async Hook）**:
+- **HTTP Hook**: AIの変更を飛書・钉钉・Slack等に自動通知
+- **Function Hook**: AI完了時に任意のコードを自動実行
+- **Async Hook**: 長時間処理をバックグラウンド実行（会話をブロックしない）
+- コンプライアンス監査・CI/CD自動化・チームコラボレーション向け
+
+**SubAgent バックグラウンド実行**:
+- SubAgentがヘッドレス（非表示）モードで動作可能
+- SDK経由でCI/CDパイプラインに組み込み可能
+- PR自動レビュー・コード品質チェック等の自動化ワークフローに最適
+
+**その他v0.15.0改善**:
+- `/doctor`: 環境・設定・ネットワーク接続を一括診断
+- PDF直接読取 + Jupyter Notebook構造化表示
+- ディレクトリ別ルール自動適用（`.qwen/rules/`）
+- リアルタイムToken消費表示
+- `/recap`: 会話履歴の自動要約
+- Bare startup mode（軽量起動）
+- ループ検出強化（ツール呼び出し無限ループ防止）
+
+> **出典**: [Qwen Code 週報 (2026-04-23)](https://qwenlm.github.io/qwen-code-docs/zh/blog/weekly-update-2026-04-23/) [T1]
 
 ## Qwenの中国AIエコシステムでの位置づけ
 

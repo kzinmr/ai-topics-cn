@@ -1,8 +1,13 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-05-06
+最終更新: 2026-05-07
 エンティティ: 61, コンセプト: 115, ダイジェスト: 7, ページ: 9
-### 本日更新（2026-05-06 Active Crawl: MCP 中国生態 / Vibe Coding → Agentic Engineering）
+### 本日更新（2026-05-07 Active Crawl-40: Qwen3.6 / Doubao Seed-2.0-lite全模态 / ChatGLM GLM-5-Turbo）
+- `entities/qwen.md` — **更新**: Qwen3.6-235B-A21B-preview DeepSeek V4超え(OpenRouter)。Qwen Code v0.14.x Agent機能（子Agent自律実行・Telegram/钉钉連携）。Lingma IDE独立版（VS Codeプラグイン非推奨）。百煉Platform上Agent動的ツール呼び出し。Alibaba社内AI統制強化（20人CodeFreeze/OKR連動）
+- `concepts/doubao.md` — **更新**: Seed-2.0-lite初の全模态理解モデル（5月6日: 音声/動画/画像/テキスト統合、19言語音声認識、14言語翻訳）。HiPhO/MedXpertQA Pro超え。GUI操作対応。有料サブスク3段階（68/200/500元/月）。車載AI 700万台。月活2.27億・DAU1億
+- `concepts/chatglm.md` — **更新**: GLM-5-Turbo新登場（Agent/龙虾特化訓練層最適化）。Scaling Pain技術ブログ（Agent推論スループット132%向上・異常出力率万分の三未満）。GLM-5.1 SWE-bench Pro 58.4%（GPT-5.4超え）
+
+### 前日更新（2026-05-06 Active Crawl: MCP 中国生態 / Vibe Coding → Agentic Engineering）
 - `concepts/mcp-china.md` — **大幅更新**: Anthropic MCP実践ガイド（Tool Search 85%+削減、3パターン接続）。Cloudflare 2ツールx2500エンドポイント。SDK月間DL 3億回。中国コミュニティ成熟評価。MCP+A2A+AP2+ACPエコシステム拡大。
 - `concepts/vibe-coding-china.md` — **大幅更新**: Karpathy@Sequoia AI Ascent 2026「思考外注可但理解不可」「LLM是幽灵不是動物」。Agentic Engineering第2世代へ移行。Ahmed E. Hassan SE 3.0(SASE)体系化。Tony Bai移行サバイバルガイド7ルール。
 

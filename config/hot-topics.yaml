@@ -52,11 +52,14 @@ topics:
       - "Qwen Code Qwen-Agent 子Agent 自律実行 2026"
       - "Qwen OAuth 無料枠 終了 クローズドウェイト"
       - "Qwen3.6-35B-A3B MoE ローカル 推論"
+      - "Qwen3.6-235B-A21B-preview DeepSeek V4 比較"
+      - "Lingma IDE 通义灵码 独立環境 2026"
+      - "百炼 プラットフォーム Agent 動的ツール"
     wiki_pages:
       - entities/qwen
-    notes: "2026.05.01更新: Qwen3.6-Max-Previewクローズドウェイト化、Qwen Code v0.14.x（Telegram/钉钉連携・子Agent実行）、Qwen OAuth無料枠終了。Qwen3.6-27B/35B-A3BはOllama/vLLMローカル対応。Alibaba OSS→プロプライエタリ戦略転換顕著。通义灵码CodeGeeX/MarsCodeとの競争。"
+    notes: "2026.05.07更新: Qwen3.6-Max-Previewクローズドウェイト化継続、Qwen Code v0.14.x Agent機能（Telegram/钉钉連携・子Agent自律実行）、Qwen OAuth無料枠終了→API移行。Qwen3.6-27B/35B-A3Bローカル推論対応継続。Alibaba社内AI統制強化：20人CodeFreeze/OKR連動/エンタープライズ全面展開。通义灵码Lingma IDE独立版VS Codeプラグイン後継。百炼プラットフォーム上でAgent動的ツール呼び出し。Qwen3.6-235B-A21B-previewがDeepSeek V4超えベンチマーク（OpenRouter）。"
     added: 2026-04-17
-    last_crawled: "2026-05-01"
+    last_crawled: "2026-05-07"
 
   - slug: chatglm
     title: "ChatGLM (智谱清言) — Zhipu AI"
@@ -66,11 +69,15 @@ topics:
       - "ChatGLM 智谱清言 智谱AI 2026"
       - "GLM-4 智谱 开源"
       - "Zhipu AI ChatGLM latest"
+      - "GLM-5-Turbo Agent 智谱 2026"
+      - "GLM-5.1 SWE-Bench Pro 58.4"
+      - "Scaling Pain 智谱 推理 最適化"
+      - "智谱AI 香港 IPO 2026"
     wiki_pages:
       - concepts/chatglm
-    notes: "2026.04.30更新: GLM-5.1詳細(744B MoE/200K ctx/128K出力/MIT/8h自律実行/655反復/6Kツールコール/SWE-bench Pro 58.4%)、2025年度決算(収入7.24億元+132%/MaaS ARR~17億/60倍増)、Q1 API値上げ83%→400%増、Z.aiブランディング、GLM-5V-Turboリリース、Coding Plan無制限廃止。DeepSeek V4競合で株価影響。"
+    notes: "2026.05.07更新: GLM-5詳細(744B MoE/200K ctx/128K出力/MIT/8h自律実行/655反復/6Kツールコール/SWE-bench Pro 58.4%)、GLM-5-Turbo新登場（Agent/龙虾特化訓練層最適化モデル）。2025年度決算(収入7.24億元+132%/MaaS ARR~17億/60倍増)、Q1 API値上げ83%→400%増。Z.aiブランディング。Scaling Pain技術ブログ公開（4月30日）：Agent推論スループット132%向上、異常出力率万分の十数→万分の三未満。DeepSeek V4競合で株価影響。"
     added: 2026-04-17
-    last_crawled: 2026-04-30
+    last_crawled: 2026-05-07
 
   - slug: kimi
     title: "Kimi — Moonshot AI (月之暗面)"
@@ -109,11 +116,14 @@ topics:
       - "豆包 Doubao 字节跳动 2026"
       - "ByteDance Doubao AI assistant"
       - "火山引擎 Volcano Engine AI"
+      - "Doubao-Seed-2.0-lite 全模态 理解 モデル"
+      - "豆包 有料 サブスク 月額 68 200 500"
+      - "豆包 車載 AI 北京車展 2026"
     wiki_pages:
       - concepts/doubao
-    notes: "ByteDance発。中国国内DAU最大級のAIアプリ。Doubao-Seed-2.0リリース（2026.02）。Dola海外版累計2億ダウンロード突破（2026.04）。豆包股仮想制度。Seed-CodeがGPT-5を9基準で凌駕。2026.04.24北京車展でAgentic AI車載ソリューション発表：700万台搭載・50+ブランド・145車種・奇瑞と戦略提携。AI座舱套件+座舱助手の2大方案。2026.05.03更新: 豆包4.0リリース（動画分析・ローカルオフラインAI・一発购物EC統合）。月活2.27億・リテンション率44.5%（中国AIアプリ1位）。静默アップグレードで128Kコンテキスト対応。"
+    notes: "2026.05.07更新: 豆包4シリーズ（4.0, Seed-2.0, Dola海外2億DL）。豆包有料サブスク3段階（68/200/500元月額、4月27日発表）。Doubao-Seed-2.0-lite全模态アップグレード（5月6日）—初の全模态理解モデル（音声/動画/画像/テキスト統合、19言語音声認識、14言語翻訳）。HiPhO/MedXpertQA等高階学術推論でPro超え。Gemini 3.1 Pro超えの音声理解。GUI操作（Browser Use/Computer Use）対応。豆包車載AI 700万台搭載（4月24日北京車展）。月活2.27億・DAU1億突破（中国Top1）。人材激励「豆包股」発行。"
     added: 2026-04-17
-    last_crawled: 2026-05-03
+    last_crawled: 2026-05-07
 
   - slug: tencent-hunyuan
     title: "混元 (Hunyuan) — Tencent AI"
