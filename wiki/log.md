@@ -1,5 +1,12 @@
 |
 
+## [2026-05-08] active-crawl-41 | China AI Regulation / DeepSeek V4 / Coze
+
+### Wiki更新
+1. **concepts/china-ai-regulation.md** — **更新**: 第17批深度合成服務算法备案（5月6日公開）セクション追加。CAC通過式監管モデル継続。デジタル仮想人草案パブコメ終了を反映。
+2. **concepts/deepseek.md** — **notes更新**: NVIDIA GB200 NVL72ベンチマーク(150+ tok/s)・Dig Watch分析。V4エコシステム成熟フェーズ。wikiページは5/4時点で十分に充実しており更新不要。
+3. **concepts/coze.md** — **notes更新**: 5月新規情報なし。Coze 2.5(Agent World)が現状最新。Agent World実運用事例が出揃うまで次回再評価。
+
 ## [2026-05-07] active-crawl-40 | Qwen3.6 / Doubao Seed-2.0-lite全模态 / ChatGLM GLM-5-Turbo
 
 ### Wiki更新

@@ -37,9 +37,9 @@ topics:
       - "DeepSeek V4 無錫 政府導入"
     wiki_pages:
       - concepts/deepseek
-    notes: "2026.05.04更新: V4に識圖模式（Thinking with Visual Primitives）リリース（7000倍圧縮）。36kr報道：百度出資交渉失敗後独自調達、V4学習過程で大規模障害、創業8年目で初の自律収益。無錫市AI基盤にDeepSeek採用（500+模型・120+画像認識モデル）。WPS Office×DeepSeek導入。OpenRouter競合激化。"
+    notes: "2026.05.08更新: V4エコシステム安定化・成熟フェーズに移行。NVIDIA GB200 NVL72評価で150+tok/s/ユーザー（公式技術ブログ5月6日）。Dig Watch(5/6)がV4の地政学的重要性を包括分析（Nvidia非依存による中国AI自主化）。OpenRouter V4-Flash単日814億tokens(過去最高)継続。V4技術レポート詳細（Interleaved Thinking/DSML Schema/DSec沙箱）は前回5/4カバー済みで新規追加情報なし。"
     added: 2026-04-17
-    last_crawled: 2026-05-04
+    last_crawled: 2026-05-08
 
   - slug: qwen
     title: "Qwen (通义千问) — Alibaba"
@@ -188,11 +188,14 @@ topics:
     search_hints:
       - "Coze 扣子 字节跳动 智能体"
       - "Coze agent platform workflow"
+      - "Coze 扣子 2026年5月 最新功能 アップデート"
+      - "Coze Agent World OpenClaw 新機能"
+      - "扣子 编程 Coze Programming 一键部署"
     wiki_pages:
       - concepts/coze
-    notes: "ByteDanceのノーコードAgent構築プラットフォーム。Plugin・ワークフロー機能"
+    notes: "2026.05.08更新: 5月新規情報なし。前回4/26カバー済みのCoze 2.5(Agent World/云电脑/扣子编程/OpenClaw Studio)が現状最新。WeChat知更Ai連携継続。特筆すべき新機能リリースなし。次回はAgent Worldの実運用事例が出揃った段階で再評価。"
     added: 2026-04-17
-    last_crawled: 2026-04-26
+    last_crawled: 2026-05-08
 
   - slug: dify
     title: "Dify — Open-Source LLMOps Platform"
@@ -269,9 +272,9 @@ topics:
       - "China AI regulation filing policy 2026"
     wiki_pages:
       - concepts/china-ai-regulation
-    notes: "生成式AI管理弁法、大模型備案制度、データセキュリティ法との交差。2026年新規: AI拟人化互动服务管理暂行办法（7月施行、世界初のAI情感陪伴専用規制、禁止行為8条・未成年人保護）、AI科技伦理审查与服务办法（4月施行、十部門連名・4段階審査・3類型高リスク活動）。政策動向をdeep dive済み。倫理審査の4段階（一般/简易/专家复核/应急72時間）と罰則体系をwiki反映。"
+    notes: "2026.05.08更新: 第17批深度合成服務算法备案(5月6日公開、継続的コンプライアンス監視)。清朗行動(4/30-8月末)執行中。AI拟人化互动规则(7/15施行)・AI科技伦理审查办法をwikiに詳細反映済み。デジタル仮想人草案パブリックコメント(4/3-5/6)終了。国際調和(国連/ISO/EU AI Act相互認証)は内容審査基準の違いが障壁。"
     added: 2026-04-17
-    last_crawled: 2026-04-29
+    last_crawled: 2026-05-08
 
   - slug: china-ai-model-filing
     title: "AI Model Filing System (大模型备案制度)"
