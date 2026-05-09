@@ -1,5 +1,20 @@
 |
 
+## [2026-05-09] active-crawl-42 | Kimi $20B funding / Tencent Hunyuan OpenRouter #1 repeat / Dify v1.14 GA
+
+### Wiki更新
+1. **concepts/kimi.md** — **更新**:
+   - 資金調達セクション新設：5月7日20億ドル調達完了（美团龍珠リード）、投後評価額200億ドル超
+   - ARR 4月に2億ドル突破（倍々ペース）、半年累計39億ドル調達で中国大模型スタートアップ最大
+   - 旧株主（Alibaba/Tencent/五源資本）もフォロー、IPOは香港軸検討中
+2. **entities/tencent-hunyuan.md** — **更新**:
+   - OpenRouter週間ランキング再び1位セクション追加（5月7日週）
+   - Hy3 PreviewトラフィックHy2比10倍超、CodeBuddy/WorkBuddy 16.5倍急増
+   - Tencent株価3%超上昇、高盛Buy評価・目標株価HK$700
+3. **concepts/dify.md** — **更新**:
+   - v1.14 RC→GAに更新：5月初旬v1.14.0 GA正式リリース
+   - Agent Skills/Sandbox Runtime/Skill Editor Production Ready
+
 ## [2026-05-08] active-crawl-41 | China AI Regulation / DeepSeek V4 / Coze
 
 ### Wiki更新

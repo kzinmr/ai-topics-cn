@@ -1,8 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-05-08
+最終更新: 2026-05-09
 エンティティ: 61, コンセプト: 115, ダイジェスト: 7, ページ: 9
-### 本日更新（2026-05-08 Active Crawl-41: China AI Regulation / DeepSeek V4 / Coze）
+### 本日更新（2026-05-09 Active Crawl-42: Kimi $20B funding / Tencent Hunyuan OpenRouter #1 / Dify v1.14 GA）
+- `concepts/kimi.md` — **更新**: 資金調達セクション新設（5月7日20億ドル調達完了、評価額200億ドル超、ARR 2億ドル突破、半年累計39億ドルで中国最大）
+- `entities/tencent-hunyuan.md` — **更新**: OpenRouter週間ランキング再び1位（5月7日週、Hy2比10倍超、CodeBuddy/WorkBuddy 16.5倍急増、株価3%上昇、高盛Buy評価 HK$700）
+- `concepts/dify.md` — **更新**: v1.14.0 GA正式リリース、Agent Skills/Sandbox Runtime/Skill Editor Production Ready
+### 前日更新（2026-05-08 Active Crawl-41: China AI Regulation / DeepSeek V4 / Coze）
 - `concepts/china-ai-regulation.md` — **更新**: 第17批深度合成服務算法备案（5月6日公開）セクション追加。CAC通過式監管モデル継続。デジタル仮想人草案パブコメ終了を反映。
 ### 前日更新（2026-05-07 Active Crawl-40: Qwen3.6 / Doubao Seed-2.0-lite全模态 / ChatGLM GLM-5-Turbo）
 - `entities/qwen.md` — **更新**: Qwen3.6-235B-A21B-preview DeepSeek V4超え(OpenRouter)。Qwen Code v0.14.x Agent機能（子Agent自律実行・Telegram/钉钉連携）。Lingma IDE独立版（VS Codeプラグイン非推奨）。百煉Platform上Agent動的ツール呼び出し。Alibaba社内AI統制強化（20人CodeFreeze/OKR連動）

@@ -1,7 +1,7 @@
 ---
 title: "混元 (Hunyuan) — 騰訊自研の大規模言語モデルシリーズ"
 created: 2026-04-28
-updated: 2026-05-04
+updated: 2026-05-09
 tags: [company, llm, china, tech-giant, tencent, moe, multimodal]
 aliases: ["Hunyuan", "混元", "Tencent Hunyuan", "腾讯混元", "HY"]
 source_lang: zh-CN
@@ -109,7 +109,17 @@ source_lang: zh-CN
 
 ### OpenRouter API呼び出し量No.1（2026年4月29日）
 
-4月29日、OpenRouterが発表した最新の全球大模型API呼び出し量ランキングで、Hy3 Previewが総合1位を獲得。ツール呼び出しで1位、コーディングで2位。DeepSeek V4の大量安価なAPIトラフィックを上回る実績で、実際の業務ワークロードでの浸透度を示した。
+2026年4月29日、OpenRouterが発表した最新の全球大模型API呼び出し量ランキングで、Hy3 Previewが総合1位を獲得。ツール呼び出しで1位、コーディングで2位。DeepSeek V4の大量安価なAPIトラフィックを上回る実績で、実際の業務ワークロードでの浸透度を示した。
+
+### OpenRouter週間ランキング再び1位（2026年5月7日）
+
+5月7日週のOpenRouterランキングでも、Hy3 Previewが**総合API呼び出し量1位**に返り咲き。Hy3 PreviewのトラフィックはHy2の**10倍以上**に急増、HyperCLOVA XやClaude Opus 4.6を抑えて**週間市場シェアでも1位**を獲得。
+
+**注目ポイント**:
+- **CodeBuddy・WorkBuddyでの利用が16.5倍急増** — 企業ユースケースでの採用が加速
+- **Tencent株価が3%超上昇**（5月7日）— 市場がAI戦略をポジティブに評価
+- **GaoSheng（高盛）がBuy評価・目標株価HK$700**を設定
+- 姚順雨の「モデルの価値は実ワークロード＝業務負荷」哲学が裏付けられた結果
 
 ### Hy3 Preview、数字中国建設峰会に登場（2026年4月29日）
 

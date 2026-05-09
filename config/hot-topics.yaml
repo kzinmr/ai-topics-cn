@@ -89,9 +89,9 @@ topics:
       - "Kimi chat 最新功能"
     wiki_pages:
       - concepts/kimi
-    notes: "長コンテキスト（200万tokens）で差別化。K2.6 GAリリース（2026.04.21）: 1T MoE/384Experts/32B activated、SWE-Bench Pro 58.6%・SWE-Bench Ver 80.2%でオープンソースSOTA。Agent Swarm(300Agent/4000steps)、Claw Groups研究プレビュー。CodeBuddy・Vercel等パートナー採用開始。日経XTech/gihyo.jpが日本メディアで評価。K3(2.5Tパラメータ、KDA注意機構)開発中、Q3 2026リリース予定。2026.05.03更新: OpenRouterで週間1.88兆トークン処理（全球1位）、企業指標$18B評価額・$100M ARR。K3は2.5T総パラメータでDeepSeek V4 Pro対抗。競合: DeepSeek V4 Pro（$1.74/Mトークン）・Qwen3.6 Max。"
+    notes: "2026.05.09更新: 5月7日20億ドル調達完了（美团龍珠リード）、投後評価額200億ドル超。ARR 4月に2億ドル突破（倍々ペース）。半年累計39億ドルで中国大模型スタートアップ最大。旧株主フォロー。IPO香港軸検討中。"
     added: 2026-04-17
-    last_crawled: 2026-05-03
+    last_crawled: 2026-05-09
 
   - slug: yi
     title: "Yi (零一万物) — 01.AI"
@@ -135,12 +135,13 @@ topics:
       - "Tencent AI 元宝 Yuanbao 智能体"
       - "数字中国建设峰会 腾讯 混元 2026"
       - "WorkBuddy QClaw OpenClaw 腾讯 Agent"
+      - "姚顺雨 Infty AI 混元 架构 2026"
     wiki_pages:
       - entities/tencent-ai
       - entities/tencent-hunyuan
-    notes: "2026.05.04更新: Hy3 Previewが数字中国建設峰会で実機初展示（WorkBuddy/QClaw/OpenClaw等5製品）。WorkBuddy（1分WeChat Work接続）、QClaw（Hermes対応/DeepSeek V4-Pro切替可能）、SkillHub AI Skillsコミュニティ発表。5製品が中国信通院安全認証首批通過。OpenRouter API呼び出し量全球1位継続。"
+    notes: "2026.05.09更新: Hy3 Previewが5/7週のOpenRouter週間ランキングで再び総合API呼び出し量1位（Hy2比10倍超/CodeBuddy・WorkBuddy16.5倍急増）。Tencent株価3%超上昇。高盛Buy評価・目標株価HK$700。姚順雨の実業務重視哲学が裏付け。Hy3.0正式版5-6月リリース予定。前回(5/4)カバー済みの数字中国建設峰会展示や安全認証は継続中。"
     added: 2026-04-29
-    last_crawled: 2026-05-04
+    last_crawled: 2026-05-09
 
   # =========================================================
   # 2. Chinese AI Agent Ecosystem (中国AIエージェント)
@@ -205,12 +206,12 @@ topics:
       - "Dify 开源 LLMOps 2026"
       - "Dify AI agent workflow RAG"
       - "Dify 融资 LangGenius 3000万"
-      - "Dify v1.14 Agent Skills Sandbox"
+      - "Dify v1.14 Agent Skills Sandbox GA"
     wiki_pages:
       - concepts/dify
-    notes: "2026.05.04更新: 3000万ドルPre-Series A調達（紅杉HSG主導、累計4150万ドル、評価額1.8億ドル）。v1.14 RC: 新Agent x Skills（Sandbox Runtime/Skill Editor/@mentions）。v1.13.0: Human-in-the-Loop。v1.9.2: 双方向MCP対応。Creator Center & Template Marketplace。日本: 京進グループと教育・介護AI協業。Global 140万+デバイス/2000+チーム/280企業。"
+    notes: "2026.05.09更新: v1.14.0 GA正式リリース（5月初旬）—Agent Skills/Sandbox Runtime/Skill EditorがProduction Readyに。Sandbox Runtime: 隔離実行環境でエンタープライズセキュリティ対応。Skill Editor: 再利用可能SOPブロック。前回(5/4)カバー済みの3000万ドル調達・京進グループ協業は継続中。"
     added: 2026-04-17
-    last_crawled: 2026-05-04
+    last_crawled: 2026-05-09
 
   # =========================================================
   # 3. Local Deployment & Quantization (ローカル展開・量子化)
@@ -321,7 +322,7 @@ topics:
       - "Cloudflare MCP two tools"
     wiki_pages:
       - concepts/mcp-china
-    notes: "2026.05.06更新: Anthropic公式MCP実践ガイド（Tool Searchで85%+トークン削減、3パターン接続フレームワーク）。Cloudflare 2ツールx2500エンドポイント実装。SDK月間DL 3億回。中国コミュニティは静けさ=成熟と評価（腾讯云开发者社区）。MCP+A2A+AP2+ACPエコシステム拡大。
+    notes: "2026.05.06更新: Anthropic公式MCP実践ガイド（Tool Searchで85%+トークン削減、3パターン接続フレームワーク）。Cloudflare 2ツールx2500エンドポイント実装。SDK月間DL 3億回。中国コミュニティは静けさ=成熟と評価（腾讯云开发者社区）。MCP+A2A+AP2+ACPエコシステム拡大。"
     added: 2026-04-17
     last_crawled: 2026-05-06
 
@@ -355,7 +356,7 @@ topics:
       - "Tony Bai Vibe Coding to Agentic Engineering 2026"
     wiki_pages:
       - concepts/vibe-coding-china
-    notes: "2026.05.06更新: Karpathy@Sequoia AI Ascent 2026（4/30）—「思考外注可但理解不可」「LLM是幽灵不是动物」。Vibe Coding第1世代→Agentic Engineering第2世代へ移行。Ahmed E. Hassan SE 3.0(SASE: ACE+AEE+BriefingScripts+MentorScripts)体系化。Tony Bai(5/2)移行サバイバルガイド7ルール。通义灵码SE 3.0対応予告。
+    notes: "2026.05.06更新: Karpathy@Sequoia AI Ascent 2026（4/30）—「思考外注可但理解不可」「LLM是幽灵不是动物」。Vibe Coding第1世代→Agentic Engineering第2世代へ移行。Ahmed E. Hassan SE 3.0(SASE: ACE+AEE+BriefingScripts+MentorScripts)体系化。Tony Bai(5/2)移行サバイバルガイド7ルール。通义灵码SE 3.0対応予告。"
     added: 2026-04-17
     last_crawled: "2026-05-06"
 

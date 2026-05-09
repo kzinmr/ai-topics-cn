@@ -1,7 +1,7 @@
 ---
 title: "Dify — オープンソースLLMOpsプラットフォーム"
 created: 2026-04-19
-updated: 2026-05-04
+updated: 2026-05-09
 tags: [llmops, open-source, agent-platform, rag, workflow, china]
 aliases: ["Dify", "Dify.ai", "Dify平台", "开源LLMOps"]
 source_lang: zh-CN
@@ -51,8 +51,9 @@ LlamaFactory（GitHub 73K star）をネイティブ統合：
 - 3Bパラメータモデルの専門分野微調整は、特定タスクでGPT-4o-miniを上回る精度
 - 推理コストを$0.15/千token → $0.003/千tokenに（50倍削減）
 
-### 6. Dify v1.14 RC：新Agent x Skills
-2026年4月、**1.14.0-rc1**（Pre-release）が公開。Agent Runtimeを完全再設計：
+### 6. Dify v1.14 GA：Agent Skills & Sandbox Runtime（2026年5月）
+
+2026年5月初旬、**v1.14.0 GA**（General Availability）が正式リリース。Agent Runtimeを完全再設計：
 - **Sandboxed Runtime**: 隔離実行環境でセキュリティ向上
 - **Skill Editor**: 再利用可能なSOPブロックをGUIで構築
 - **@メンション**: ワークフロー内でインラインツール呼び出し（例 `@send_email`）
