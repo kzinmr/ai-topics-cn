@@ -1,5 +1,21 @@
 |
 
+## [2026-05-10] active-crawl-43 | Qwen SAE/QwenPaw / Doubao wiki確認 / VRAM optimization確認
+
+### Wiki更新
+1. **entities/qwen.md** — **更新**:
+   - Qwen-Scope記述修正: Attention可視化→稀疏自己符号化器(SAE)ベースのModel Steering技術に修正
+   - Qwen-Scope仕様追加: 7モデル対応/14組SAE重み/3300万特徴/4応用シナリオ
+   - QwenPawセクション新設: CoPaw改名/GitHub★16.4K/v1.1.6リリース/MultiAgent協調/QwenPaw-Flash-9B
+   - `updated:`メタデータを2026-05-10に更新
+2. **concepts/doubao.md** — **更新不要**: Seedance 2.0、豆包4シリーズ、有料サブスク情報が既に十分
+3. **concepts/vram-optimization.md** — **更新不要**: TriAttention、PagedAttention、KVキャッシュ解説が既に十分
+
+### hot-topics.yaml 更新
+- qwen: last_crawled → "2026-05-10", notes更新(SAE/QwenPaw追記), search_hints変更なし
+- doubao: last_crawled → 2026-05-10, notes更新(既存コンテンツ確認記録)
+- vram-optimization: last_crawled → 2026-05-10, notes更新(既存コンテンツ確認記録)
+
 ## [2026-05-09] active-crawl-42 | Kimi $20B funding / Tencent Hunyuan OpenRouter #1 repeat / Dify v1.14 GA
 
 ### Wiki更新

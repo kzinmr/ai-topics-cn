@@ -1,8 +1,10 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-05-09
+最終更新: 2026-05-10
 エンティティ: 61, コンセプト: 115, ダイジェスト: 7, ページ: 9
-### 本日更新（2026-05-09 Active Crawl-42: Kimi $20B funding / Tencent Hunyuan OpenRouter #1 / Dify v1.14 GA）
+### 本日更新（2026-05-10 Active Crawl-43: Qwen SAE/QwenPaw / Doubao wiki確認 / VRAM optimization確認）
+- `entities/qwen.md` — **更新**: Qwen-Scope記述修正（Attention可視化→SAE Model Steeringに修正）、QwenPawセクション新設（CoPaw改名/GitHub★16.4K/v1.1.6/MultiAgent協調/QwenPaw-Flash-9B）
+### 前日更新（2026-05-09 Active Crawl-42: Kimi $20B funding / Tencent Hunyuan OpenRouter #1 / Dify v1.14 GA）
 - `concepts/kimi.md` — **更新**: 資金調達セクション新設（5月7日20億ドル調達完了、評価額200億ドル超、ARR 2億ドル突破、半年累計39億ドルで中国最大）
 - `entities/tencent-hunyuan.md` — **更新**: OpenRouter週間ランキング再び1位（5月7日週、Hy2比10倍超、CodeBuddy/WorkBuddy 16.5倍急増、株価3%上昇、高盛Buy評価 HK$700）
 - `concepts/dify.md` — **更新**: v1.14.0 GA正式リリース、Agent Skills/Sandbox Runtime/Skill Editor Production Ready

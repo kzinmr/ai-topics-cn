@@ -1,7 +1,7 @@
 ---
 title: Qwen（通义千问）— 阿里云大模型旗舰
 created: 2026-04-17
-updated: 2026-05-05
+updated: 2026-05-10
 tags: [llm, model, china, open-source-ai, alibaba, qwen, agentic-coding, ai-infrastructure]
 aliases: ["Qwen", "通义千问", "qwen", "Qwen3.5", "Qwen3-Coder", "Qwen3.6", "Qwen3.6-Plus", "Qwen3.6-27B", "Qwen3.6-35B-A3B"]
 source_lang: zh-CN
@@ -265,21 +265,53 @@ QwenWebBench（Webアプリ・データ可視化・SVG生成に特化したフ�
 
 > **出典**: [Awesome Agents — Qwen 3.6 Max Review](https://awesomeagents.ai/reviews/review-qwen-3-6-max/) (2026-05)
 
-### Qwen-Scope: 可解釋性モジュール（2026年4月30日オープンソース）
+### Qwen-Scope: 稀疏自己符号化器（SAE）による可解釋性モジュール（2026年4月30日オープンソース）
 
-2026年4月30日、AlibabaはQwenの出力を**自動的に説明・解釈する**新しいツール「Qwen-Scope」をオープンソース公開:
+2026年4月30日、AlibabaはQwenの内部機構を「X線のように」可視化する**Qwen-Scope**をオープンソース公開。従来のAttention可視化ツールとは異なり、**稀疏自己符号化器（Sparse Autoencoder, SAE）**をQwenモデルの隠れ層に挿入し訓練することで、高密度なモデル表現を**高度に解耦・低冗長・解釈可能な特徴**に分解する。
 
-- **メカニズム解釈**: Qwenモデルの内部アクティベーションパターンを分析し、なぜ特定の出力が生成されたかを可視化
-- **Attention可視化**: 入力トークン間の注意重みをヒートマップで表示
-- **Feature Attribution**: 各入力トークンが出力にどの程度寄与したかを定量化
-- **Logit Lens**: 中間層の表現を語彙空間に投影し、モデル内部の「思考過程」を読解
-- **Agent action追跡**: MCPツール呼び出しの理由をモデル内部状態から遡及分析
-- **対応モデル**: Qwen3.6シリーズ（Plus/Max/27B/35B-A3B）、Qwen3.5シリーズ
-- **ライセンス**: Apache 2.0
+**コア仕様**:
+- **7モデル対応**: Qwen3シリーズ・Qwen3.5シリーズの密型モデルとMoEモデルをカバー
+- **14組のSAE重み**: 各モデルに対応する稀疏自己符号化器の学習済み重みを公開
+- **3300万以上の特徴**: 0.5Bトークンの事前学習データから抽出された高品質特徴
+- **HuggingFace / ModelScope**で利用可能
 
-企業のコンプライアンス要件（Agentの自律決定に対する説明責任）に応える重要なツール。中国の等保2.0要件にも対応。
+**4つの応用シナリオ**:
+1. **推論結果の定向制御**: 特徴アクティベーションを直接制御し、言語・エンティティ・スタイルの定向変更をプロンプトなしで実現（Anthropicのモデルステアリング研究をオープンソースで実装）
+2. **データの分類と合成**: 毒性データ分類では少量シードデータでSAE特徴パターンを解析し、追加分類器の訓練なしで高精度分類。データ合成では未活性化の特徴を特定し、ロングテール能力を補うサンプルを定向生成（従来の15倍のデータ効率）
+3. **モデル訓練の定向最適化**: 言語混用や反復生成などの低頻度badcaseをSAE特徴で定位し、SFT段階で損失関数を設計。RL段階でのサンプリング密度を高め、異常パターンを効率的に修正
+4. **評価サンプルの冗長性分析**: 異なるベンチマーク間のSAE特徴被覆度を計算し、重複評価を排除。より高カバレッジ・低コストのテストセット選定を支援
 
-> **出典**: GitHub [QwenLM/qwen-scope](https://github.com/QwenLM/qwen-scope) (2026-04-30) [T1]
+> 従来のPrompt Engineeringに代わり、モデル内部のアクティベーションに直接介入する**Model Steering**の新時代を開く。AnthropicのSAE研究（2024年）がプロプライエタリモデル中心だったのに対し、Qwen-Scopeはオープンソースコミュニティに同レベルの透明性ツールを提供した点に意義がある。
+
+> **出典**: [Alibaba Cloud Community — Qwen-Scope Technical Blog](https://www.alibabacloud.com/blog/qwen-scope-decoding-intelligence-unleashing-potential_603083) (2026-05-06), [PANews — Qwen-Scope开源](https://www.panewslab.com/zh/articles/019dddaf-4a84-71de-99d9-098f42a57ef2) (2026-04-30), [HowAIWorks — Qwen-Scope Interpretability](https://howaiworks.ai/blog/alibaba-qwen-scope-interpretability-sae) (2026-05-01) [T1]
+
+### QwenPaw（旧CoPaw）— オープンソース個人AIアシスタント（2026年4月リブランディング）
+
+2026年4月12日、阿里云のデスクトップAgentツール**CoPaw**が**QwenPaw**（Qwen Personal Agent Workstation）へリブランディング。通義千問オープンソースエコシステムへの深度統合を宣言した。
+
+**主要特徴**:
+- **GitHub★16.4K**（2026年5月9日時点、Apache 2.0ライセンス）
+- **最新バージョン**: v1.1.6（2026年5月9日リリース）
+- **マルチチャネル対応**: 钉钉・飛書・微信・QQ・Discord・Telegram・iMessage
+- **ローカル/クラウド両対応**: 一键pipインストール・Docker・デスクトップアプリ・魔搭創空間
+- **ローカルモデル**: Ollama・llama.cpp・Apple MLX・百炼平台に対応
+- **Skills拡張**: PDF処理・Excel分析・ニュースダイジェスト等、カスタムSkills自動ロード
+- **マルチAgent協調**: AgentScopeフレームワークによる複数Agent間の通信・協業
+- **OpenClaw対抗製品**: デスクトップAgentとしてOpenClawに対抗する位置付け。OpenClawがTypeScript/pi-agent-coreベースなのに対し、QwenPawはPython/AgentScopeベースでマルチAgent協調をネイティブサポート
+- **専用軽量モデル**: QwenPaw-Flash-9BをHuggingFace公開（ツール呼び出し最適化）
+- **多言語ドキュメント**: 英語・中国語・日本語・ロシア語
+
+**v1.1.4→v1.1.5の新機能（2026年4月）**:
+- 記憶検索最適化、コンテキスト圧縮のデグレードメカニズム
+- ACP Agentの重命名・削除機能
+- QQ音声・ASRサポート
+- コンフィグファイルとSkillsリストのキャッシュ化
+- 内蔵DeepSeek V4モデル
+- 計画実行モード、Shell迂回検出の構成可能化
+
+**開発者数**: 160名のコントリビューター、10万名以上の開発者が利用（2026年4月時点）、2000以上のシーンカバー。
+
+> **出典**: [GitHub — agentscope-ai/QwenPaw](https://github.com/agentscope-ai/QwenPaw), [IT之家 — CoPaw更名QwenPaw](https://finance.sina.com.cn/tech/digi/2026-04-12/doc-inhufzfw3074234.shtml) (2026-04-12) [T1]
 
 ### Qwen Code v0.15.0 — 自律記憶・バッチ処理・Hook拡張（2026年4月23日）
 

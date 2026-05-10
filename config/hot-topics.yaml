@@ -57,9 +57,9 @@ topics:
       - "百炼 プラットフォーム Agent 動的ツール"
     wiki_pages:
       - entities/qwen
-    notes: "2026.05.07更新: Qwen3.6-Max-Previewクローズドウェイト化継続、Qwen Code v0.14.x Agent機能（Telegram/钉钉連携・子Agent自律実行）、Qwen OAuth無料枠終了→API移行。Qwen3.6-27B/35B-A3Bローカル推論対応継続。Alibaba社内AI統制強化：20人CodeFreeze/OKR連動/エンタープライズ全面展開。通义灵码Lingma IDE独立版VS Codeプラグイン後継。百炼プラットフォーム上でAgent動的ツール呼び出し。Qwen3.6-235B-A21B-previewがDeepSeek V4超えベンチマーク（OpenRouter）。"
+    notes: "2026.05.10更新: Qwen-Scope(4/30OSS)稀疏自己符号化器(SAE)によるModel Steering可解明。QwenPaw(CoPaw改名)GitHub★16.4K、v1.1.6リリース。Qwen3.6-Max-Previewクローズドウェイト継続、Agent自律実行/Qwen OAuth→API移行。Alibaba社内AI統制強化(20人CodeFreeze/OKR連動)。通义灵码Lingma IDE独立版。百炼プラットフォームAgent動的ツール。Qwen3.6-235B-A21B-preview DeepSeek V4超え。"
     added: 2026-04-17
-    last_crawled: "2026-05-07"
+    last_crawled: "2026-05-10"
 
   - slug: chatglm
     title: "ChatGLM (智谱清言) — Zhipu AI"
@@ -121,9 +121,9 @@ topics:
       - "豆包 車載 AI 北京車展 2026"
     wiki_pages:
       - concepts/doubao
-    notes: "2026.05.07更新: 豆包4シリーズ（4.0, Seed-2.0, Dola海外2億DL）。豆包有料サブスク3段階（68/200/500元月額、4月27日発表）。Doubao-Seed-2.0-lite全模态アップグレード（5月6日）—初の全模态理解モデル（音声/動画/画像/テキスト統合、19言語音声認識、14言語翻訳）。HiPhO/MedXpertQA等高階学術推論でPro超え。Gemini 3.1 Pro超えの音声理解。GUI操作（Browser Use/Computer Use）対応。豆包車載AI 700万台搭載（4月24日北京車展）。月活2.27億・DAU1億突破（中国Top1）。人材激励「豆包股」発行。"
+    notes: "2026.05.10更新: 豆包4シリーズ(4.0/Seed-2.0/Dola海外2億DL)。Doubao-Seed-2.0-lite全模态(5/6)—音声/動画/画像/テキスト統合、19言語音声認識、14言語翻訳。HiPhO/MedXpertQA高階推論Pro超え。GUI操作(BrowserUse/ComputerUse)対応。豆包有料サブスク3段階(68/200/500元/月)。豆包車載AI 700万台搭載。月活2.27億・DAU1億(中国Top1)。豆包股人材激励。"
     added: 2026-04-17
-    last_crawled: 2026-05-07
+    last_crawled: 2026-05-10
 
   - slug: tencent-hunyuan
     title: "混元 (Hunyuan) — Tencent AI"
@@ -255,9 +255,9 @@ topics:
       - "VRAM optimization Chinese models quantization"
     wiki_pages:
       - concepts/vram-optimization
-    notes: "2026.05.01更新: Qwen3.6-35B-A3B MoE VRAM特性(~12GB/Q4)、DeepSeek-V4 Engram Memory(KV最適化/40%削減)、TriAttention(MIT/NVIDIA/ZJU/スループット2.5倍)。ローカルVRAM最適化の新手法続々。"
+    notes: "2026.05.10更新: Qwen3.6-35B-A3B MoE VRAM特性(~12GB/Q4)、DeepSeek-V4 Engram Memory(KV最適化/40%削減)、TriAttention(MIT/NVIDIA/ZJU/スループット2.5倍)。ローカルVRAM最適化の新手法続々。doubao.mdとvram-optimization.mdは既存コンテンツが十分のため更新不要。qwen.mdはQwen-Scope/SAE記述修正+QwenPaw追記済み。"
     added: 2026-04-17
-    last_crawled: 2026-05-01
+    last_crawled: 2026-05-10
 
   # =========================================================
   # 4. Chinese Regulatory Landscape (中国AI規制)
