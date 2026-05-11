@@ -1,5 +1,31 @@
 |
 
+## [2026-05-11] active-crawl-44 | OpenClaw v2026.5.x / Cursor 3.3 / Kimi K2.6価格 / CodingPlan改定 / Lingma IDE独立
+
+### Wiki更新
+1. **entities/openclaw.md** — **更新**:
+   - v2026.5.7〜v2026.5.3の全5リリースを追加（SecretRef強検証/Foundation移行/OAuth修正/全文検索/file-transfer/steerコマンド/Commitments自動リフレッシュ）
+   - 36krセキュリティフォローアップ追記（サプライチェーンリスク/SOE生OpenClaw禁止/監査要求）
+   - `updated:`メタデータを2026-05-11に更新
+2. **concepts/china-coding-agents.md** — **更新**:
+   - Cursor 3.3/3.2/3.1（5月1日〜6日）全バージョン追加（Agents Window完全版/Composer 2自研MoE 4倍速/best-of-n）
+   - Kimi K2.6正式価格体系セクション追加（¥39/159/559）
+   - Trae SOLO MTCモード・独立Desktop Web版追加
+   - 通义灵码Lingma IDE独立移行セクション追加（VS Codeプラグイン廃止/Agentic Ask/NES/Inline Chat）
+   - CodingPlan価格改定セクション追加（百煉Lite廃止/Token Plan時代突入）
+   - 主要Agent比較表を2026年5月版に更新
+   - `updated:`メタデータを2026-05-11に更新
+3. **concepts/coding-plan.md** — **更新**:
+   - Cursor+Lite Plan黄金パターンセクション追加
+   - 二極分化トレンド追記
+   - GLM-5.1統合遅延情報追加
+   - `updated:`メタデータを2026-05-11に更新
+
+### hot-topics.yaml 更新
+- openclaw: last_crawled → 2026-05-11, notes更新(v2026.5.x/36kr追跡), search_hints変更なし
+- china-coding-agents: last_crawled → 2026-05-11, notes更新, search_hints拡充(Cursor 3.3/Composer 2/Trae SOLO/Lingma IDE)
+- coding-plan: last_crawled → 2026-05-11, notes更新(Kimi/K2.6価格/二極分化/GLM-5.1遅延)
+
 ## [2026-05-10] active-crawl-43 | Qwen SAE/QwenPaw / Doubao wiki確認 / VRAM optimization確認
 
 ### Wiki更新

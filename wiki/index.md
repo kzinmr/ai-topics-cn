@@ -1,8 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-05-10
-エンティティ: 61, コンセプト: 115, ダイジェスト: 7, ページ: 9
-### 本日更新（2026-05-10 Active Crawl-43: Qwen SAE/QwenPaw / Doubao wiki確認 / VRAM optimization確認）
+最終更新: 2026-05-11
+エンティティ: 61, コンセプト: 115, ダイジェスト: 7, 比較: 1, ページ: 9
+### 本日更新（2026-05-11 Active Crawl-44: OpenClaw v2026.5.x / Cursor 3.3 / Kimi K2.6価格 / CodingPlan改定 / Lingma IDE独立）
+- `entities/openclaw.md` — **更新**: v2026.5.7〜v2026.5.3全5リリース（SecretRef強検証/Foundation移行/OAuth修正/全文検索/file-transfer/steerコマンド/Commitments自動リフレッシュ）。36krセキュリティフォローアップ（サプライチェーンリスク/SOE生OpenClaw禁止/監査要求）
+- `concepts/china-coding-agents.md` — **大幅更新**: Cursor 3.3/3.2/3.1全バージョン（Agents Window/Composer 2自研MoE 4倍速/best-of-n）。Kimi K2.6正式価格（¥39/159/559）。Trae SOLO MTCモード独立Web版（シェア41.2%首位）。Lingma IDE独立移行（Agentic Ask/NES/Inline Chat）。CodingPlan改定。主要比較表2026年5月版更新
+- `concepts/coding-plan.md` — **更新**: Cursor+Lite Plan黄金パターン。二極分化（¥39-40 vs ¥99-559）。GLM-5.1統合遅延
+### 前日更新（2026-05-10 Active Crawl-43: Qwen SAE/QwenPaw / Doubao wiki確認 / VRAM optimization確認）
 - `entities/qwen.md` — **更新**: Qwen-Scope記述修正（Attention可視化→SAE Model Steeringに修正）、QwenPawセクション新設（CoPaw改名/GitHub★16.4K/v1.1.6/MultiAgent協調/QwenPaw-Flash-9B）
 ### 前日更新（2026-05-09 Active Crawl-42: Kimi $20B funding / Tencent Hunyuan OpenRouter #1 / Dify v1.14 GA）
 - `concepts/kimi.md` — **更新**: 資金調達セクション新設（5月7日20億ドル調達完了、評価額200億ドル超、ARR 2億ドル突破、半年累計39億ドルで中国最大）

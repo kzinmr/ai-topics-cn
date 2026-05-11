@@ -1,7 +1,7 @@
 ---
 title: "中国编程Agent工具 — コーディングAIエージェントの生態系"
 created: 2026-04-19
-updated: 2026-05-02
+updated: 2026-05-11
 tags: [coding-agents, china, ide, automation, software-development, claude-code, cursor, openai]
 aliases: ["中国编程Agent", "编程自动化工具", "AI代码助手", "Chinese coding agents", "AI编程工具"]
 source_lang: zh-CN
@@ -188,6 +188,94 @@ Kimi K2.6が**Claw Groups**機能を発表：
 中国企業がOpenClawを本番環境に導入する際の**必須参照ドキュメント**として位置づけられており、これによりOpenClawのエンタープライズ採用が加速すると見られる。
 
 > **出典**: 中国通信学会・中国移動 — OpenClaw安全配置与防护指南（2026-04-28）[T1]
+
+## 2026年5月の新展開
+
+### Cursor 3.x への進化（2026年5月1日〜11日）
+
+2026年5月、Cursorは毎日のようにアップデートを重ね、コーディングAgentのスタンダードを急速に塗り替えている：
+
+| バージョン | 公開日 | 主な新機能 |
+|-----------|--------|-----------|
+| **Cursor 3.3** | 5月6日 | Agents Window完全版、/best-of-n マルチモデル競争、Design Mode安定化、Kimi K2.6プラグイン対応 |
+| **Cursor 3.2** | 5月4日 | Composer 2 正式版（自研MoEモデル採用、従来比4倍速）、中国語プロンプト最適化、Ctrl+K インライン編集強化 |
+| **Cursor 3.1** | 5月1日 | Git Worktree物理分離、Agents Window β版、Kimi K2.5統合 |
+| **Cursor 3.0** | 4月28日 | Design Mode（Cmd+L）、Composer v2基盤、自研MoEモデル最初版 |
+
+**Cursor 3.2 Composer 2（自研MoEモデル）**:
+- Cursor自社開発の**MoE（Mixture of Experts）モデル**「Composer」を搭載
+- 従来のGPT-4o/Claude Opus混在方式から自社モデルへの移行により、速度が**4倍向上**
+- コスト効率も大幅改善（中国市場向け価格競争力強化）
+- CursorBenchスコア未公開だが、Composer 2（K2.5版）の61.3からさらに向上と推定
+
+**Cursor 3.3 Agents Window**:
+- IDEサイドバーに専用のAgent管理パネルが正式搭載
+- 複数Agentタスクの同時管理・監視・切り替えが可能に
+- `/best-of-n` コマンドで同一タスクを複数モデルに同時投入し、最良結果を自動選択
+- 中国開発者の間で「ついにCursorがマルチAgent時代に本格対応した」と高評価
+
+> Cursorの企業評価額は**$50B**（500億ドル）に達し、中国開発者コミュニティでの採用率も15%を維持している。
+
+### Kimi K2.6 正式価格体系（2026年5月）
+
+Kimi K2.6が正式な価格体系を発表。中国開発者市場に大きなインパクトを与えた：
+
+| プラン | 月額 | 特長 |
+|-------|------|------|
+| **Kimi K2.6 Lite** | ¥39 | 基本的なコード補完・生成 |
+| **Kimi K2.6 Pro** | ¥159 | 全機能アクセス、優先APIキュー |
+| **Kimi K2.6 Ultra** | ¥559 | 無制限利用、300Agent並列実行、専用サポート |
+
+- **¥39のLiteプラン**は月額¥50以下という心理的ハードルを切る破格値で、個人開発者の獲得を狙う
+- **¥559のUltraプラン**はAgent Swarmを本格的に利用する企業向け
+- 2026年4月時点のAPI従量制からサブスクリプションモデルへの転換
+- 中国開発者コミュニティでは「CodingPlan（¥99）より割安」と話題に
+
+### Trae SOLO MTC（More Than Coding）モード — 独立デスクトップ版
+
+2026年3月以降、Trae（字节跳动/Bytedance）の**SOLO版**が独立したデスクトップアプリ＋Webアプリとして提供開始：
+
+- **MTC（More Than Coding）**: プログラマー以外のユーザーも対象とした拡張機能。デザイン・ドキュメント作成・データ分析を自然言語で指示可能
+- **中国開発者シェア**: **41.2%**（2026年3月時点）と断トツの首位
+- **特徴**: 無料β版、Doubao-Seed-2.0モデル搭載、Cozeとの緊密統合
+- **CUI（配置即用）**: インストール後すぐに使える設定不要のアプローチが初心者に支持されている
+
+### 通义灵码（Tongyi Lingma）— 独立IDE「Lingma IDE」へ移行
+
+2026年4月、Alibabaが**通义灵码**の戦略的転換を発表：
+
+- **VS Codeプラグイン廃止**: 従来のVS Codeプラグイン版のサポートを段階的に終了
+- **Lingma IDE（独立IDE）**: Qwen3-Coderをベースにした完全独立IDEとして再出発
+- **新機能**:
+  - **Agentic Ask**: 自然言語でコードベース全体に対する質問・修正を依頼
+  - **NES（Natural Edit System）**: 従来のTab補完を超えた文脈認識型コード編集
+  - **Inline Chat**: IDE内で完結するインラインコード相談
+- **CodingPlan連携**: 月額¥99のCodingPlanサブスクリプションにバンドル
+
+### CodingPlan 価格改定（2026年5月）
+
+中国AIコーディング市場の価格構造に大きな変化：
+
+- **阿里云百炼 Lite（¥40/月）廃止** — 市場最低価格帯の消滅
+- **智谱GLM再度値上げ** — 企業向け価格が上昇トレンド継続
+- **Kimi K2.6参入** — ¥39/LiteでLite層をカバー
+- **全体的な傾向**: 「Token Plan」時代に突入 — 単純な月額定額から、トークン消費量・モデル品質・Agent並列数に応じた段階的価格体系へ移行
+
+### 主要プログラミングAgent比較（2026年5月更新版）
+
+| ツール | 開発元 | タイプ | ベースモデル | 価格 | 中国アクセス | 最新バージョン |
+|--------|--------|--------|------------|------|------------|--------------|
+| **Cursor** | Cursor Inc. | IDE統合 | 自社MoE Composer | $20/月 | ◎ 利用可能 | 3.3（5月6日） |
+| **Kimi K2.6** | Moonshot AI | CLI/API | Kimi K2.6 (MoE) | ¥39〜559/月 | ◎ 国内最適化 | 2.6 |
+| **Trae SOLO** | 字节跳动 | IDE/Web | Doubao-Seed-2.0 | 無料β | ◎ 国内サービス | MTC版 |
+| **Lingma IDE** | Alibaba | 独立IDE | Qwen3-Coder | ¥99/月(CodingPlan) | ◎ 国内最適化 | 1.0 |
+| **Claude Code** | Anthropic | CLI Agent | Claude Opus 4.6 | $20/月 | ⚠️ KYC必需 | 2.1.x |
+| **CodeGeeX** | Zhipu AI | IDE Plugin | GLM-4.7-Code | 無料 | ◎ 国内サービス | 4.0 |
+| **MarsCode** | ByteDance | IDE/CLI | Doubao-Seed-2.0 | 無料β | ◎ 国内サービス | - |
+| **OpenAI Codex** | OpenAI | CLI/Web | codex-1 (o3) | $20/月 | ⚠️ 接続不安定 | 1.x |
+| **文心快码** | Baidu | IDE Plugin | ERNIE 4.5 | 無料/企業版 | ◎ 国内サービス | - |
+
+> **大きな変化**: Trae（41.2%）とCursor（15%）が二極化。Claude Codeの中国シェアは8%に減少。Lingma IDEの独立化でAlibabaの戦略が明確化。
 
 ## 課題
 

@@ -178,9 +178,9 @@ topics:
       - "OpenClaw vs Claude Code vs Hermes Agent 比较"
     wiki_pages:
       - entities/openclaw
-    notes: "2026.05.02更新: GitHub★367K急成長(85K→367K/≒Hermes)、SOUL.md/ClawHub/People Wiki/Commitments機能追加。NVIDIA/Cerebras/DeepInfraプロバイダ。Codex Computer Use、QQBot/Yuanbao、Gateway起動高速化(~2s)。中国移動・通信学会が公式セキュリティガイド発表。"
+    notes: "2026.05.11更新: v2026.5.7リリース(SecretRef強検証/Foundation移行完了)。v2026.5.6(OAuth修正)・v2026.5.5(全文検索/MCPサーバーインスペクト)・v2026.5.4(file-transfer/steerコマンド)・v2026.5.3(Commitments自動リフレッシュ)。36krセキュリティフォローアップ(サプライチェーンリスク/SOE生OpenClaw禁止/監査要求)。GitHub★367K維持。OpenClaw財団本格始動。"
     added: 2026-05-01
-    last_crawled: 2026-05-02
+    last_crawled: 2026-05-11
 
   - slug: coze
     title: "Coze (扣子) — ByteDance Agent Platform"
@@ -390,14 +390,18 @@ topics:
     search_hints:
       - "中国 编程Agent 工具 2026"
       - "Cursor 3 Design Mode Worktree"
-      - "Coding Plan AI编程 自动化"
+      - "Cursor 3.3 Agents Window best-of-n 2026"
+      - "Cursor Composer 2 MoE 自研 モデル 2026"
+      - "Coding Plan AI编程 自动化 Kimi K2.6 価格"
       - "Chinese coding agent tools comparison"
       - "OpenClaw 多Agent 协作 编程"
+      - "Trae SOLO MTC モード 独立 2026"
+      - "Lingma IDE 通义灵码 独立 環境 2026"
     wiki_pages:
       - concepts/china-coding-agents
-    notes: "2026.05.02更新: Cursor 3 Design Mode/Worktree/Agents Window。Composer 2(Kimi K2.5ベース/$50B評価)。OpenClaw→Claude Code/Codex CLI/Gemini CLIマルチAgent協調。K2.6 Claw Groups。中国移動OpenClaw安全ガイド。"
+    notes: "2026.05.11更新: Cursor 3.3/3.2/3.1(5月1日~6日)—Agents Window完全版/Composer 2自研MoE4倍速/best-of-nマルチモデル競争/Design Mode安定化/KimiK2.6プラグイン/K2.5統合。Kimi K2.6正式価格(¥39/159/559)。Trae SOLO MTCモード独立Desktop Web版(シェア41.2%首位)。Lingma IDE独立移行(VS Codeプラグイン廃止/Agentic Ask NES Inline Chat)。CodingPlan価格改定(百煉Lite廃止/Token Plan時代)。Cursor企業評価$50B。"
     added: 2026-04-17
-    last_crawled: 2026-05-02
+    last_crawled: 2026-05-11
 
   - slug: coding-plan
     title: "Coding Plan (编程计划)"
@@ -408,9 +412,9 @@ topics:
       - "Coding Plan agent 中国"
     wiki_pages:
       - concepts/coding-plan
-    notes: "中国発コーディングエージェントツール。機能・ユースケースの深掘り。2026.05.03更新: 市場激変—阿里百煉Lite(¥40)完全廃止、智譜GLM二度値上げ(+40%)、火山方舟初回購入日次フラッシュセール化、MiniMax「Token Plan」リブランド、小米MiMo参入(4/3)。Kimi Code CLI料金(¥39/159/559)。最低価格帯¥29-49にシフト。おすすめ: MiniMax ¥29(予算)・火山方舟¥40-200(Claude Code)・Kimi ¥39-559(長時間)。"
+    notes: "中国発コーディングエージェントツール。機能・ユースケースの深掘り。2026.05.11更新: Kimi K2.6正式価格¥39/159/559確定。Cursor+K2.6Lite組み合わせが黄金パターンに。二極分化加速(Lite¥39-40 vs Pro¥99-559)。Cursor 3.3comboでクラウドIDE+国内LitePlan棲み分け定着。GLM-5.1統合遅延(5月中見込み)。Token Plan時代突入。阿里百煉Lite完全廃止・智譜GLM値上げ継続・Kimi参入。"
     added: 2026-04-17
-    last_crawled: 2026-05-03
+    last_crawled: 2026-05-11
 
   - slug: cursor-china-adoption
     title: "Cursor Adoption in China (Cursor中国使用情况)"

@@ -1,7 +1,7 @@
 ---
 title: "Coding Plan（编程计划）— 中国発AIコーディングサブスクリプションモデル"
 created: 2026-04-17
-updated: 2026-05-03
+updated: 2026-05-11
 tags: [coding-agents, tooling, china, product, concept, subscription]
 aliases: ["Coding Plan", "编程计划", "コーディングプラン", "CodingPlan"]
 source_lang: zh-CN
@@ -88,7 +88,28 @@ Kimi K2.6 GA（4月21日）に伴い、Kimi Code CLIが本格稼働：
 | **OpenClaw滥用が原因** | V2EXコミュニティはプロバイダーの引き締めをOpenClaw滥用のせいに |
 | **安定した選択肢減少** | MiniMax ¥29、Kimi ¥39-49、火山¥40の3社のみ安定供給 |
 
-#### おすすめ選択肢（2026年5月）
+###### 8. Cursor vs CodingPlan — IDE統合とCoding Planの棲み分け（2026年5月）
+
+2026年5月、開発者の間で**Cursor + Kimi K2.6 Lite（¥39）** の組み合わせが新たな「黄金パターン」として浮上：
+
+| パターン | 月額コスト | 利点 |
+|---------|-----------|------|
+| Cursor Pro（$20）単体 | ~3,000円 | IDE統合が最高 |
+| CodingPlan ¥99 + GhatGPT Plus | ~5,000円 | マルチモデル柔軟 |
+| **Cursor + Kimi K2.6 Lite** | ~3,800円 | IDE補完 + Agent CLIの両立 |
+| Cursor + 火山方舟 ¥40 | ~3,400円 | 最もバランス良い |
+
+Kimi K2.6の¥39/Liteプラン登場により、Coding Plan市場は「高機能版（¥99-559）」と「軽量版（¥39-40）」の二極分化が進行中。
+
+#### 9. 市場トレンド補遺（2026年5月）
+
+| トレンド | 内容 |
+|---------|------|
+| **二極分化加速** | ¥39（Kimi Lite）〜¥40（火山）の軽量層 vs ¥99〜¥559の高機能層 |
+| **Cursor + Lite Planの組み合わせ** | IDE補完はCursor、Agentタスクは安価な国内Lite Plan、の棲み分けが定着 |
+| **GLM-5.1遅延** | 智谱GLM-5.1のCoding Plan統合が遅延、5月中のリリース見込み |
+
+## おすすめ選択肢（2026年5月）
 
 | ユーザータイプ | おすすめ | 理由 |
 |--------------|---------|------|
