@@ -159,11 +159,15 @@ topics:
       - "中国GPUレンタル価格高騰 H200 A100 2026"
       - "Deloitte AI推論コンピューティング 2026"
       - "OpenClaw脆弱性 12クラス SOE禁止"
+      - "智能体规范应用与创新发展实施意见 2026 網信弁"
+      - "腾讯云 Book 3.0 AIステーション Agent"
+      - "BoAgent 博云科技 金融 Agent プラットフォーム"
+      - "百融智能 RaaS 硅基員工 10万"
     wiki_pages:
       - concepts/china-ai-agent-ecosystem
-    notes: "2026.05.05更新: 推論がAI総需要の2/3に(Deloitte)。GPUレンタルH200+25-30%高騰。DeepSeek V4 $0.30/MTok vs GPT-5.5 $30/MTok 100倍格差で階層型Agentアーキテクチャ登場。OpenClaw12脆弱性クラス(36kr)。SOEが生OpenClaw禁止。深圳/合肥政府が一人会社に最大1000万元補助金。"
+    notes: "2026.05.12更新: 国家Agent専項政策《智能体规范应用与创新发展实施意见》（5/8）—19典型シナリオ・2027年導入率70%目標・5都市試験運用。腾讯云全栈企業級Agent能力アップグレード（4/28）。BoAgent(博云科技/5/8)。百融智能RaaS10万硅基員工。中国日均Token消費180兆超。前回: 推論2/3/Deloitte/GPU高騰/DeepSeek V4 $0.30 vs GPT-5.5 $30/100倍格差/OpenClaw12脆弱性/SOE禁止/補助金。"
     added: 2026-04-17
-    last_crawled: "2026-05-05"
+    last_crawled: "2026-05-12"
 
   - slug: openclaw
     title: "OpenClaw — オープンソースAI Agentエンドポイントツール"
@@ -225,11 +229,14 @@ topics:
       - "国产大模型 本地部署 量化 2026"
       - "VRAM优化 显存不足 本地推理"
       - "ollama 国产模型 本地运行"
+      - "oMLX OpenMLX digua Apple Silicon inference"
+      - "LocalClaw 零配置 Agent ランタイム"
+      - "ERNIE 5.1 本地部署 GGUF GPTQ 量子化"
     wiki_pages:
       - concepts/china-local-deployment
-    notes: "2026.05.01更新: Ollama 169k Stars/v0.17.7、Qwen3.6-35B-A3Bアクティブ3BでRTX4090フル動作、DeepSeek-V4ローカル推論(910C 8基~50tok/s)。Ollamaマルチモデル同時実行改善。ローカル推論の需要増加中。"
+    notes: "2026.05.12更新: oMLX(地瓜AI/Apple Silicon推論サーバー/MLXベース30%性能向上)。LocalClaw零配置Agentランタイム(vLLM+OpenClaw+MCP/Docker Compose一行)。ERNIE 5.1ローカル用GGUF/GPTQ公開。DeepSeek-V4 TCO分析(8x910C 30万元、月100万回超で元)。前回: Ollama 169K/v0.17.7/Qwen3.6-35B-A3B RTX4090動作/DeepSeek-V4ローカル推論。"
     added: 2026-04-17
-    last_crawled: 2026-05-01
+    last_crawled: 2026-05-12
 
   - slug: censorship-bypass
     title: "Censorship Bypass & Uncensored Models (审查绕过/去审查模型)"
@@ -456,6 +463,6 @@ topics:
       - "Chinese open source AI models community"
     wiki_pages:
       - concepts/china-open-source-ai
-    notes: "ModelScope (魔搭)、HuggingFace中国ミラー、GiteeベースのAIプロジェクト。横方向の関連エコシステム。【2026.04.29更新】4月後半のモデルリリースラッシュを反映：DeepSeek V4 Preview(1M ctx/MoE/Ascend対応, 4/24)、腾讯Hy3 Preview(295B MoE, 4/23)、Qwen3.6-35B-A3B(4/16)・Qwen3.6-27B(4/22)、MiniMax 2.7(4/12)、**Qwen3 全8モデル(4/29、AIME25=81.5でオープンソースSOTA)**。中国OSS勢力図（Alibaba vs DeepSeekの二極化）をwiki反映。"
+    notes: "2026.05.12更新: 魔乐社区(MoLe)正式発足(4/29/Linux Foundation AAIF/37社・機関/4大モデル/4大国産HW)。蚂蚁Ling-2.6-1T MITオープンソース化(4/30/SWE-bench 65.2%/AIME 72.8%/128台昇腾910C)。Baidu ERNIE 5.1発表(5/9/240B MoE/マルチモーダル/ModelScope量子化モデル)。太湖共识(4/25/7大ベンダーOSS標準化合意)。中关村AI开源联盟(5/6/20社)。前回: ModelScope/魔搭/HF中国ミラー/4月後半モデルリリースラッシュ/DeepSeek V4 Preview/Qwen3全8モデル。"
     added: 2026-04-17
-    last_crawled: 2026-04-29
+    last_crawled: 2026-05-12

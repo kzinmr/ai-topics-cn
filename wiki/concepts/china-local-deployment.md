@@ -1,7 +1,7 @@
 ---
 title: "中国大模型本地部署 — 量子化・VRAM最適化・消費者GPUでの推論"
 created: 2026-04-19
-updated: 2026-05-01
+updated: 2026-05-12
 tags: [inference, quantization, local-deployment, hardware, vram-optimization, china]
 aliases: ["本地部署", "国产模型本地运行", "VRAM优化", "量化技术", "GGUF", "GPTQ", "AWQ"]
 source_lang: zh-CN
@@ -192,6 +192,15 @@ Juejin開発者「技术爬爬虾」がCodexの詳細攻略と無料使用方法
 - **DeepSeek-V4 ローカル推論**: Ascend 910C/MLU 590での推論ベンチマークが公開。8 x 910Cで~50 tok/s (Q4)。
 
 > **出典**: Juejin — [本地安装Codex，国内直接使用GPT-5-Codex](https://juejin.cn/post/7620060655607857178) [T2]
+
+
+#### 2026年5月上旬追加情報
+- **oMLX (OpenMLX)**: 地瓜AIがApple Siliconネイティブ推論サーバーoMLXをリリース。MLXフレームワークベースでQwen3.6/DeepSeek-V4のMacBook上での推論性能が30%向上。M4 Max搭載Macでは70B級モデルがQ4量子化でリアルタイム動作。
+- **LocalClaw**: 零配置Agentランタイム「LocalClaw」が登場。vLLM + OpenClaw + MCPをDocker Compose一行でデプロイ。CLI操作が苦手な中国開発者向けにWeb UIを搭載。
+- **ERNIE 5.1ローカル実行**: BaiduがERNIE 5.1のローカル実行用量子化モデル(GGUF/GPTQ)を公開。240B MoE(Q4: ~130GB VRAM)は4 x A100-80GBで動作可能。
+- **DeepSeek-V4 TCO分析**: 8 x 910Cサーバー(約30万元)の場合、API呼び出し月100万回超で元が取れる試算(V2EX議論)。
+
+> **出典**: 地瓜AI — [oMLX: Apple Silicon推論サーバー](https://digua.ai/blog/omlx-launch) [T2]; 36kr — [LocalClaw登場](https://36kr.com/p/3116543210) [T1]; V2EX — [推理成本对比分析](https://www.v2ex.com/t/1215004) [T2]
 
 
 | 掘金 — Ollama+Qwen2026 | [juejin.cn/post/7603677143214473231](https://juejin.cn/post/7603677143214473231) | T1 | 2026最新版Ollama部署ガイド |

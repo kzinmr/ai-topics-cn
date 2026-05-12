@@ -1,6 +1,7 @@
 |
 
-## [2026-05-12] newsletter-ingest: ChinAI #358 / 豆包有料化 / 面壁智能 / CAICT端側AIエージェント安全基準
+|
+|## [2026-05-12] newsletter-ingest: ChinAI #358 / 豆包有料化 / 面壁智能 / CAICT端側AIエージェント安全基準
 
 ### Wiki更新
 1. **entities/doubao.md** — **大幅更新**:
@@ -27,6 +28,22 @@
 ### inbox/newsletters/ 処理
 - `2026-05-11--ChinAI-358-Around-the-Horn-25th-episode--bc3cb609.md` — digest処理済み
 - 関連raw記事3件: 豆包有料化分析、面壁智能深度分析、CAICTセキュリティテスト
+
+---
+
+## [2026-05-12] active-crawl-45 | 国家Agent政策 / ローカル推論新ツール / 中国OSSコミュニティ最新動向
+
+### Wiki更新
+1. **concepts/china-ai-agent-ecosystem.md** — **更新**: セクション6新設「国家Agent政策とプラットフォームアップグレード」。中国初の智能体専項政策《智能体规范应用与创新发展实施意见》（5/8/網信弁・発改委・工信部/19典型シナリオ/2027年導入率70%目標/5都市試験運用）。腾讯云全栈企業級Agent能力アップグレード（4/28/Book 3.0/AIステーション 2.0）。BoAgent（博云科技/5/8/金融向け）。百融智能RaaS 10万硅基員工。中国日均Token消費180兆超
+
+2. **concepts/china-local-deployment.md** — **更新**: セクション追加「2026年5月上旬追加情報」。oMLX(地瓜AI/Apple Silicon推論サーバー/MLXベース30%性能向上)。LocalClaw零配置Agentランタイム(vLLM+OpenClaw+MCP/Docker Compose一行)。ERNIE 5.1ローカル用GGUF/GPTQ公開。DeepSeek-V4 TCO分析(8x910C 30万元、月100万回超で元)
+
+3. **concepts/china-open-source-ai.md** — **更新**: セクション新設「2026年5月最新動向：魔乐発足・Ling-2.6-1T開源・太湖共识」。魔乐社区(MoLe)正式発足(4/29/Linux Foundation AAIF/37社・機関/4大モデル/4大国産HW)。蚂蚁Ling-2.6-1T MITオープンソース化(4/30/SWE-bench 65.2%/AIME 72.8%/128台昇腾910C)。Baidu ERNIE 5.1発表(5/9/240B MoE/マルチモーダル/ModelScope量子化モデル)。太湖共识(4/25/7大ベンダーOSS標準化合意)。中关村AI开源联盟(5/6/20社)
+
+### hot-topics.yaml更新
+- china-ai-agent-ecosystem: last_crawled 2026-05-05→2026-05-12, search_hints+notes更新
+- china-local-deployment: last_crawled 2026-05-01→2026-05-12, search_hints+notes更新
+- china-open-source-ai: last_crawled新規設定（2026-05-12）, notes更新
 
 ## [2026-05-11] active-crawl-44 | OpenClaw v2026.5.x / Cursor 3.3 / Kimi K2.6価格 / CodingPlan改定 / Lingma IDE独立
 

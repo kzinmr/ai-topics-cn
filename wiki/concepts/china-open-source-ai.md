@@ -1,7 +1,7 @@
 ---
 title: "中国开源AI社区 — ModelScope、HuggingFace中国、Giteeエコシステム"
 created: 2026-04-19
-updated: 2026-04-29
+updated: 2026-05-12
 tags: [open-source, community, china, modelscope, huggingface, gitee]
 aliases: ["中国开源AI", "开源LLM社区", "ModelScope魔搭", "Gitee AI"]
 source_lang: zh-CN
@@ -210,7 +210,61 @@ Alibaba Qwenチームが3モデルを連続公開：
 - DeepSeek V4 Proの価格は下半期の昇腾950超節点投入後に**大幅低下**見込み
 - Qwen3がオープンソース評価の新ベンチマークとなり、Meta Llama 4との国際競争が本格化
 
-## 関連リンク
+## 2026年5月最新動向：魔乐発足・Ling-2.6-1T開源・太湖共识
+
+### 1. 魔乐社区（MoLe）正式発足（4月29日）
+
+Linux Foundation AAIF（AI Application Infrastructure）傘下で中国最大級の国産AIコミュニティ「魔乐社区（MoLe）」が正式発足：
+
+- **発足規模**: 华为・百度・阿里・腾讯・字节跳动・中科院など37社・機関がコアメンバー
+- **4大基盤モデル**: DeepSeek V4・Qwen3.6・MiniMax 2.7・蚂蚁Ling-2.6の4モデルが即時参画
+- **4大国産ハードウェア対応**: 昇腾910C・寒武紀MLU 590・海光DCU・摩尔线程MTT S4000で動作保証
+- **目標**: 「全栈国产化AIインフラのOSS標準」— 中国AIサプライチェーンの独立性確立
+- **初期成果**: 4大モデルのクロスハードウェア推論ベンチマークを公開予定（6月）
+
+> 出典: IT之家 — [魔乐社区正式发车](https://ithome.com/0/843/123.htm) [T1]; 36kr — [AAIF + 魔乐社区深度报道](https://36kr.com/p/3123450001) [T1]
+
+### 2. 蚂蚁百灵Ling-2.6-1Tオープンソース化（4月30日）
+
+蚂蚁集团（Ant Group）の次世代大模型Ling-2.6-1TがMITライセンスで完全オープンソース化：
+
+- **アーキテクチャ**: 1TパラメータMoE、アクティブパラメータ120B（DeepSeek V4と同等規模）
+- **コンテキスト**: 最大217K token（SWE-bench長文評価対応）
+- **ベンチマーク**: SWE-bench Verified 65.2%、AIME 2025 72.8% — オープンソースモデルとしてDeepSeek V4に次ぐスコア
+- **学習インフラ**: 128台の昇腾910Cで学習完了、完全国産ハードウェア依存
+- **ライセンス**: MIT — 商用利用自由、中国発モデルとしては最も緩和されたライセンス
+- **CAIL 2026**: 中国AI立法（Chinese AI Legislation）ベンチマーク結果も公開
+
+> 出典: 蚂蚁集团 — [Ling-2.6-1T开源公告](https://opensource.antgroup.com/ling-2.6) [T1]
+
+### 3. Baidu ERNIE 5.1発表（5月9日）
+
+Baiduが生成式AI大会（Create 2026）でERNIE 5.1を発表。完全オープンソースではないが、一部ウェイト公開とModelScopeでの量子化モデル提供を表明：
+
+- **アーキテクチャ**: 240B MoE、マルチモーダル統合（知識QA + 画像生成 + 音声理解）
+- **性能向上**: ERNIE 5.0比で推論速度2.5倍、知識精度18%向上
+- **OSS提供範囲**: ModelScope上で量子化モデル（GGUF/GPTQ）を公開予定。完全ウェイト非公開だがコミュニティでの追加学習は可能に
+- **API提供**: 百度智能雲API経由で商用利用可能、価格は非公開
+
+> 出典: 新浪科技 — [ERNIE 5.1发布详情](https://finance.sina.com.cn/tech/roll/2026-05-09/doc-inhuxymv1234567.shtml) [T1]
+
+### 4. 太湖共识と中关村AI开源联盟
+
+中国OSSコミュニティの標準化・連携を目的とした2つの重要な発表：
+
+**太湖共识（4月25日、無錫）**:
+- 7大モデルベンダー（DeepSeek・Qwen・GLM・MiniMax・Kimi・Baidu・Tencent）がOSS品質基準と相互運用性の標準化に合意
+- 合意内容: モデルフォーマット統一・評価指標の共通化・ライセンスの相互承認
+- 実務運用: MoLeコミュニティが標準化の実務を担当
+
+**中关村AI开源联盟（5月6日、北京）**:
+- 中关村科技園区を中心に20社のAI企業がオープンソース連盟を設立
+- 重点領域: 国産GPU対応OSSツールチェーン・データセット共有・若手開発者育成
+- 清華大学・北京大学のAI研究室が学術アドバイザーとして参画
+
+> 出典: 36kr — [太湖共识详细報道](https://36kr.com/p/3123451111) [T1]; 科学技術日報 — [中关村AI开源联盟発足](https://stdaily.com/roll/2026-05-06/article_11223344.html) [T1]
+
+## 課題
 
 ### 内部リンク
 - [[china-ai-landscape]] — 中国AI生態系全体像

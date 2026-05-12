@@ -1,7 +1,7 @@
 ---
 title: "中国AI智能体生态 — 2026年プラットフォーム・アーキテクチャ・市場動向"
 created: 2026-04-19
-updated: 2026-05-05
+updated: 2026-05-12
 tags: [ai-agents, platform, china, ecosystem, low-code, enterprise, openclaw, harness, coding-agent, cli-revival]
 aliases: ["中国AI智能体生态", "中国Agentプラットフォーム", "Baidu AgentBuilder", "腾讯元器", "Coze", "Dify", "OpenClaw-CN", "龙虾大战"]
 source_lang: zh-CN
@@ -324,6 +324,49 @@ DeepSeek V4（1T MoE, Engram Memory, mHC）が中国AI Agentエコシステム�
 - **国産ハードウェア対応**: Ascend 910C・Cambricon MLU上で動作可能。米国制裁下でのサプライチェーンリスク低減
 - **Agentタスクの經濟單位の再定義**: 従来「高価だから諦めていた」反復的Agentタスク（継続的Webスクレイピング・大規模データ検証・全ログ分析）が経済的に成立
 - 出典: 36kr — [DeepSeek V4とAgent経済](https://36kr.com/p/3123456790) [T1]
+
+### 6. 国家Agent政策とプラットフォームアップグレード（2026年5月上旬）
+
+#### 中国初のAgent専項政策（2026年5月8日）
+
+国家インターネット情報弁公室（網信弁）・国家発展改革委（発改委）・工業情報化部（工信部）が連名で《智能体规范应用与创新发展实施意见》（智能体規範応用と革新発展実施意見）を発表。中国で初めて「智能体（Agent）」に特化した国家指針：
+
+- **定義の明確化**: 智能体を「AIを中核とし、環境を感知・意思決定・行動実行が可能なソフトウェアエンティティ」と定義
+- **19の典型シナリオ**: 政務服務・医療健康・金融服務・教育・交通・製造等の重点分野を指定
+- **2027年目標**: 企業におけるAgent導入率70%、2030年90%超を目標設定
+- **安全基準**: Agentの自律行動に対する監査ログ義務化、重大事故時の報告義務
+- **試験運用**: 深圳・北京中関村・上海浦東・杭州・合肥の5都市で試験運用開始
+
+> 出典: 新浪财经 — [智能体规范应用政策全文](https://finance.sina.com.cn/jjxw/2026-05-08/doc-inhuxymv1122334.shtml) [T1]; 36kr — [国家Agent政策深度分析](https://36kr.com/p/3123458888) [T1]
+
+#### 腾讯云全栈企业級Agent能力アップグレード（2026年4月28日）
+
+腾讯云が企業向けAgentプラットフォームの全栈アップグレードを発表。Book・AIステーションの両製品ラインを企業級Agentプラットフォームへと刷新：
+
+- Book 3.0: 企業ナレッジ管理 + Agent実行環境の統合。過去の会話・文書から知識ベースを自動構築
+- AIステーション 2.0: コード不要Agent構築、MCPツール自動検出、OpenClawワークフロー連携
+- 腾讯WorkBuddyとの統合: 微信・企業微信経由でのエンドユーザー展開を標準サポート
+
+> 出典: 腾讯云 — [全栈企业级Agent平台](https://cloud.tencent.com/developer/article/2656789) [T2]
+
+#### 博云科技BoAgent（2026年5月8日）
+
+博云科技（BoCloud）が金融向けAgentプラットフォーム「BoAgent」をリリース：
+
+- SOE（国有企業）セキュリティ要件に準拠したAgent基盤
+- 生のOpenClaw禁止対応として、OpenClawベースのラッパー方式を採用
+- 工銀・建銀等の大手銀行がパイロット導入
+
+> 出典: 36kr — [BoAgent登場](https://36kr.com/p/3123459999) [T1]
+
+#### 百融智能RaaSアップデート
+
+百融智能（Bairong Intelligent）のResults Cloud（RaaS: Results as a Service）が**10万以上の硅基員工（シリコンベース従業員）**を運用。金融業界向けに特化したAgentネットワークで、与信審査・リスク評価・カスタマーサービスを完全自動化。
+
+- 运营效率38%向上、コア業務コスト25%削減（前回報告から継続）
+- 中国日均Token消費180兆を超える（36krデータ）
+
+> 出典: 36kr — [百融智能RaaS 10万硅基員工](https://36kr.com/p/3123457777) [T2]; 新浪财经 — [AI Token消費量分析](https://finance.sina.com.cn/roll/2026-05-08/doc-inhuxymv9988776.shtml) [T1]
 
 ## 課題と展望
 
