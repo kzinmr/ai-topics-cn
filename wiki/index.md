@@ -1,7 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-05-11
-エンティティ: 61, コンセプト: 115, ダイジェスト: 7, 比較: 1, ページ: 9
+最終更新: 2026-05-12
+エンティティ: 61, コンセプト: 116, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-05-12 Newsletter Ingest: ChinAI #358 / 豆包有料化 / 面壁智能 / CAICTセキュリティ基準）
+- `entities/doubao.md` — **大幅更新**: 有料サブスクリプション3段階発表（¥68/200/500月）。世論反応（「豆包 笨还收费」）。算力コスト圧力（日均120兆Token、年コスト数百億規模）。業界価格トレンド（智譜・騰訊は値上げ、DeepSeek・千問は無料/値下げ）。Token経済の課題。QuestMobileデータ（MAU3.45億、DAU1.5億）
+- `entities/modelbest.md` — **新規**: 「AGI五小龍」の一角。密度定律（智能密度=能力/能耗、100日倍増）。端側モデル路線（MiniCPMシリーズ）。24億→80億→90億パラメータでGPT-4o級性能。清華THUNLP連携。車載AI・具身智能商用展開。国産チップ（華為昇騰/寒武紀等）最適化
+- `concepts/on-device-ai-agent-security.md` — **新規**: CAICT AI Safety Benchmark 2026 Q1。端側AIエージェント安全基準テスト。内容安全率95%+、行為安全率に課題（実行率40%+）。1,200件テスト（6次元×2200件）。ソーシャル/EC/金融/Web検索シナリオ
+
 ### 本日更新（2026-05-11 Active Crawl-44: OpenClaw v2026.5.x / Cursor 3.3 / Kimi K2.6価格 / CodingPlan改定 / Lingma IDE独立）
 - `entities/openclaw.md` — **更新**: v2026.5.7〜v2026.5.3全5リリース（SecretRef強検証/Foundation移行/OAuth修正/全文検索/file-transfer/steerコマンド/Commitments自動リフレッシュ）。36krセキュリティフォローアップ（サプライチェーンリスク/SOE生OpenClaw禁止/監査要求）
 - `concepts/china-coding-agents.md` — **大幅更新**: Cursor 3.3/3.2/3.1全バージョン（Agents Window/Composer 2自研MoE 4倍速/best-of-n）。Kimi K2.6正式価格（¥39/159/559）。Trae SOLO MTCモード独立Web版（シェア41.2%首位）。Lingma IDE独立移行（Agentic Ask/NES/Inline Chat）。CodingPlan改定。主要比較表2026年5月版更新
