@@ -1,8 +1,13 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-05-12
+最終更新: 2026-05-13
 エンティティ: 61, コンセプト: 116, ダイジェスト: 7, 比較: 2, ページ: 9
-### 本日更新（2026-05-12 Active Crawl-45: 国家Agent政策 / ローカル推論新ツール / 中国OSSコミュニティ最新動向）
+### 本日更新（2026-05-13 Active Crawl-46: MCP中国生態 / Vibe Coding / 大模型备案制度）
+- `concepts/mcp-china.md` — **更新**: MCP 8大プラットフォーム比較（百度MCP World 56,757/魔搭10,000+/騰訊云/字節/Dify/Coze/Jina AI/FireCrawl/Tabby資産）、CVE-2026-30615、MCP Dev Summit Beijing、Gateway必須性追記
+- `concepts/vibe-coding-china.md` — **更新**: Code w/ Claude 2026（5/7）Opus 4.7 SWE-bench 82%/Claude Code全自動成功率51%、Willison融合論、Claude Code 35%/Cursor 28%/Windsurf 17%（5月シェア調査）
+- `concepts/china-ai-model-filing.md` — **大幅更新**: 清朗·整治AI应用乱象（4/30 4ヶ月行動/备案未実施第1目標）、第十七批深度合成服务算法备案（5/6 累計〜7,000件）、地方政府备案補助金7地区比較表（広州海珠/深圳各区/上海徐汇/南京玄武）、深圳市训力券年間最大1,000万元
+
+### 前日更新（2026-05-12 Active Crawl-45: 国家Agent政策 / ローカル推論新ツール / 中国OSSコミュニティ最新動向）
 - `concepts/china-ai-agent-ecosystem.md` — **更新**: セクション6新設「国家Agent政策とプラットフォームアップグレード」。中国初の智能体専項政策《智能体规范应用与创新发展实施意见》（5/8）、腾讯云全栈企業級Agent能力アップグレード（4/28）、BoAgent（5/8/金融向け）、百融智能RaaS 10万硅基員工
 - `concepts/china-local-deployment.md` — **更新**: セクション追加「2026年5月上旬追加情報」。oMLX(Apple Silicon推論サーバー/M4 Maxで70B級Q4動作)、LocalClaw零配置Agentランタイム、ERNIE 5.1ローカル用GGUF/GPTQ公開、DeepSeek-V4 TCO分析
 - `concepts/china-open-source-ai.md` — **更新**: セクション新設「2026年5月最新動向：魔乐発足・Ling-2.6-1T開源・太湖共识」。MoLeコミュニティ正式発足(4/29/Linux Foundation AAIF/37社)、蚂蚁Ling-2.6-1T MIT公開(4/30)、ERNIE 5.1発表(5/9)、太湖共识(4/25/7社)、中关村AI开源联盟(5/6/20社)

@@ -293,9 +293,9 @@ topics:
       - "中国 AI模型 上线审批"
     wiki_pages:
       - concepts/china-ai-model-filing
-    notes: "中国独自のAIモデル登録制度。横方向: アルゴリズム推薦管理規定、データ越境規制との関連。2025年2月時点で796款备案済み。北京が225款で全国約30%首位。2026年7月新標準施行。"
+    notes: "2026.05.13更新: CAC第17批深度合成服務算法备案(5/6)。清朗·整治AI应用乱象(4/30)4ヶ月行動で备案未実施摘発強化。第十六批(3/12)単批次最多779件。累計6,451件(3月時点)〜7,000件超(5月)。広州海珠(大模型最大100万/算法最大20万補助)、深圳各区(大模型50万/算法100万)、上海徐汇(最大500万)、南京玄武(20万)等18地区で备案補助金導入。深圳市训力券年間最大1,000万元。2026年7月新国標11項目施行迫る。"
     added: 2026-04-17
-    last_crawled: 2026-04-25
+    last_crawled: 2026-05-13
 
   - slug: china-gpu-restrictions
     title: "GPU Export Restrictions & China's Response (芯片出口管制)"
@@ -329,9 +329,9 @@ topics:
       - "Cloudflare MCP two tools"
     wiki_pages:
       - concepts/mcp-china
-    notes: "2026.05.06更新: Anthropic公式MCP実践ガイド（Tool Searchで85%+トークン削減、3パターン接続フレームワーク）。Cloudflare 2ツールx2500エンドポイント実装。SDK月間DL 3億回。中国コミュニティは静けさ=成熟と評価（腾讯云开发者社区）。MCP+A2A+AP2+ACPエコシステム拡大。"
+    notes: "2026.05.13更新: Baidu MCP World 56,757ツール(世界最大)、魔搭MCP广场10,000+ツール(中国2位)、騰訊云/字節跳动/Dify/Coze/百度千帆/Jina AI/FireCrawl/Tabby資産8社競争。CVE-2026-30615(MCP Sampling機能悪用RCE)発覚(Anthropic設計通りの挙動として修正見送り)。MCP Dev Summit Beijing(5月)でW3C標準化議論。Tool Search 85%+トークン削減。A2A+AP2+ACPエコシステム拡大。SDK月間DL 3億回突破。"
     added: 2026-04-17
-    last_crawled: 2026-05-06
+    last_crawled: 2026-05-13
 
   - slug: mcp-chinese-tools
     title: "Chinese MCP Tools & Servers (中国MCP工具)"
@@ -363,9 +363,9 @@ topics:
       - "Tony Bai Vibe Coding to Agentic Engineering 2026"
     wiki_pages:
       - concepts/vibe-coding-china
-    notes: "2026.05.06更新: Karpathy@Sequoia AI Ascent 2026（4/30）—「思考外注可但理解不可」「LLM是幽灵不是动物」。Vibe Coding第1世代→Agentic Engineering第2世代へ移行。Ahmed E. Hassan SE 3.0(SASE: ACE+AEE+BriefingScripts+MentorScripts)体系化。Tony Bai(5/2)移行サバイバルガイド7ルール。通义灵码SE 3.0対応予告。"
+    notes: "2026.05.13更新: Anthropic Code w/ Claude 2026(5/7)でAgent Engineering展望発表(Opus 4.7 SWE-bench 82%/Claude Code全自動タスク成功率51%)、Claude Code+Claude/Travis/API/Automata4接続点市場シェア35%。Simon Willison Vibe Coding→Agentic Engineering融合論。Claude Code 35%/Cursor 28%/Windsurf 17%(5月市場調査)。Sequoia AI Ascent 2026 Karpathy「認知債」概念。通义灵码SE 3.0対応。"
     added: 2026-04-17
-    last_crawled: "2026-05-06"
+    last_crawled: "2026-05-13"
 
   - slug: china-ai-coding-assistants
     title: "Chinese AI Coding Assistants (国产AI编程助手)"

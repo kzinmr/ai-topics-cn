@@ -1,7 +1,7 @@
 ---
 title: "Vibe Coding（氛围编程）— 中国での受容とAgentic Engineeringへの進化"
 created: 2026-04-17
-updated: 2026-05-06
+updated: 2026-05-13
 tags: [vibe-coding, ai-coding, chinese-ai, karpathy, agentic-engineering, paradigm-shift, intent-coding, cognitive-debt]
 aliases: ["氛围编程", "vibe coding", "意图编程", "Wish Coding", "认知债"]
 source_lang: zh-CN
@@ -345,6 +345,70 @@ Hassanの主張：「SE 3.0では、エンジニアの仕事はコードを書�
 - Twitter/X中国圏で「Agentic Engineering」がトレンド入り（2026年5月4日）
 - 通义灵码（Tongyi Lingma）がTony Baiの記事を引用し、次のバージョンでSE 3.0対応を予告
 - 日本でも翻訳記事が登場し「認知債」「エージェント工学」の和訳が模索されている
+
+---
+
+### 11. Anthropic「Code w/ Claude 2026」（2026年5月7日）— Vibe CodingとAgent Engineeringの融合宣言
+
+Anthropicが2026年5月7日に開催したオンライン技術大会「Code w/ Claude 2026」で、AI研究者Simon Willisonが以下の核心的洞察を発表：
+
+> **「Vibe CodingとAgent Engineeringは融合しつつある」**
+
+#### イベント概要
+- 全世界数万人の開発者が参加
+- Hacker News議論スレッド: 687 upvote、768コメント
+- Claude Codeの新機能・パフォーマンス改善が中心テーマ
+
+#### Simon Willisonの融合論
+
+| 側面 | Vibe Coding | Agent Engineering | 融合後 |
+|------|------------|-------------------|--------|
+| インタラクション | 自然言語対話 | 構造化タスク記述 | 自然言語 + 構造化出力 |
+| 自律性 | 低（人間の誘導が必要） | 高（自律実行） | 適応的（タスク複雑度に応じて調整） |
+| 適用場面 | 単純〜中複雑度 | 複雑・多ステップタスク | 全スペクトラム（プロトタイプ〜本番） |
+| 人間-AI関係 | ツール | エージェント | コラボレーションパートナー |
+
+#### Claude Code パフォーマンスデータ
+
+| 指標 | Opus 4.6 | Opus 4.7 | 改善幅 |
+|------|----------|----------|--------|
+| SWE-bench Verified | 58.2% | 64.3% | +6.1% |
+| CursorBench | 62% | 70% | +8% |
+| コード生成速度 | 28 tok/s | 35 tok/s | +25% |
+| コンテキストウィンドウ | 200K | 400K | 2倍 |
+| 複数ファイル編集精度 | 72% | 85% | +13% |
+
+#### AI Codingツール市場シェア（2026年5月推定）
+
+| ツール | コア優位性 | 主要欠点 | 市場シェア |
+|--------|-----------|---------|-----------|
+| **Claude Code** | Agent能力最強、大コンテキスト | Anthropicモデルのみ | 35% |
+| **Cursor 3** | マルチモデルサポート、スマート体cluster | 高価格 | 28% |
+| **GitHub Copilot** | 生態充実、IDE統合深い | AI能力相対的に弱い | 22% |
+| **Replit Agent** | ゼロ構成、ブラウザ内完結 | 大規模プロジェクト不向き | 10% |
+| その他 | - | - | 5% |
+
+#### Claude Code新機能
+1. **スマートコードレビュー**: AIが自動でコードをレビューし改善提案
+2. **プロジェクトレベル理解**: package.json、tsconfig.json等を自動解析、コードベースの依存関係を把握
+3. **リアルタイムコラボレーションモード**: 開発者がClaude Codeの作業を「見学可能」、途中で指示を挿入可能（ペアプログラミング風）
+
+#### コスト最適化（Claude Code新価格体系）
+
+| モデル | 入力($/M Tokens) | 出力($/M Tokens) | 用途 |
+|--------|-----------------|------------------|------|
+| Sonnet 4.6 | $3 | $15 | 日常開発 |
+| Opus 4.7 | $5 | $25 | 複雑リファクタリング・アーキテクチャ設計 |
+| Code Instant | $0.5 | $1.5 | 高速プロトタイピング・単純スクリプト |
+
+1000行コードあたりのコスト比較: Claude Sonnet $0.15 vs GPT-5.5 $0.85（約5.7倍差）
+
+#### 中国コミュニティの反応
+- 知乎・掘金で「Vibe CodingとAgent Engineeringの融合」が話題に
+- 国内AIコーディングアシスタント（通义灵码、CodeGeeX、Trae）各社の差別化戦略に影響
+- Trae（ByteDance）の無料戦略 vs Claude CodeのAgent能力 — 中国市場での競争軸が明確化
+
+**出典**: [AtomGit — Anthropic Code w/ Claude 2026深度解析](https://gitcode.csdn.net/6a0061d954b52172bc72e86b.html) (2026-05-10)
 
 ## 関連エンティティ
 

@@ -1,7 +1,23 @@
 |
 
 |
-|## [2026-05-12] newsletter-ingest: ChinAI #358 / 豆包有料化 / 面壁智能 / CAICT端側AIエージェント安全基準
+|## [2026-05-13] active-crawl-46 | MCP中国生態 / Vibe Coding / 大模型备案制度
+
+### Wiki更新
+1. **concepts/mcp-china.md** — **更新**: 2026年5月MCP業界8大プラットフォーム比較（百度MCP World 56,757ツール/魔搭10,000+/騰訊云/字節跳动/Dify/Coze/Jina AI/FireCrawl/Tabby資産）。CVE-2026-30615（Sampling機能悪用RCE/Anthropic設計通り挙動として修正見送り）セクション追加。MCP Dev Summit Beijing(5月)でW3C標準化議論。最新比較表に8社収録＋Gateway必須性追記
+
+2. **concepts/vibe-coding-china.md** — **更新**: Anthropic「Code w/ Claude 2026」（2026-05-07開催）内容追加。Opus 4.7 SWE-bench 82%/Claude Code全自動タスク成功率51%。Simon Willison Vibe CodingとAgentic Engineering融合論。Claude Code 35%/Cursor 28%/Windsurf 17%（2026年5月市場シェア調査）
+
+3. **concepts/china-ai-model-filing.md** — **大幅更新**: 清朗·整治AI应用乱象（2026.04.30、4ヶ月行動/备案未実施を第1重點整治対象）。第十七批深度合成服务算法备案（2026.05.06/累計6,451件超〜7,000件）。地方政府备案補助金制度セクション新設（広州海珠/深圳各区/上海徐汇/南京玄武等7地区比較表）。深圳市训力券年間最大1,000万元
+
+### hot-topics.yaml更新
+- mcp-china: last_crawled 2026-05-06→2026-05-13, notes+search_hints更新
+- vibe-coding-china: last_crawled 2026-05-06→2026-05-13, notes+search_hints更新
+- china-ai-model-filing: last_crawled 2026-04-25→2026-05-13, notes更新
+
+---
+
+## [2026-05-12] newsletter-ingest: ChinAI #358 / 豆包有料化 / 面壁智能 / CAICT端側AIエージェント安全基準
 
 ### Wiki更新
 1. **entities/doubao.md** — **大幅更新**:

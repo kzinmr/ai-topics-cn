@@ -3,7 +3,7 @@ title: "MCP中国生态（Model Context Protocol在中国的采用状況）"
 type: concept
 tags: [mcp, chinese-ai, agent-protocol, a2a, standardization, tool-integration, github, enterprise]
 created: 2026-04-17
-updated: 2026-05-06
+updated: 2026-05-13
 source_lang: zh-CN
 ---
 
@@ -288,6 +288,107 @@ MCP中文站（mcpcn.com）のエコシステム拡大が見られる：
 | **ChatGPT中国語** | 翻訳・ローカライズ | ChatGPT中文コミュニティ |
 
 MCPを中核として、Agent間通信（A2A）、Agent決済（AP2）、Agent商取引（ACP）と、Agent経済の標準化レイヤーが整備されつつある。
+
+## 2026年5月上旬アップデート — 生態系の更なる成熟とセキュリティ事件
+
+### 1. MCP生态平台盘点：中国8大MCP广场の定量的比較
+
+2026年5月時点の中国MCP生態系は、雲ベンダー主導のプラットフォームと第三者集約プラットフォームに分化。以下8大プラットフォームが確認されている:
+
+| プラットフォーム | 運営元 | サービス数 | タイプ | 特徴 |
+|----------------|--------|-----------|--------|------|
+| **魔搭社区 MCP 广场** | 阿里云 (ModelScope) | 9,227+ | 総合 | 最大の中国語MCPコミュニティ、支付宝MCP独占提供、MCP実験場・Bench評価ツール |
+| **百度智能云 MCP World** | 百度 | 56,757+ | 企業級 | 国内最多収録、百度検索連動トラフィック、無料ホスティング、SLA保証 |
+| **阿里云百煉 MCP 市场** | 阿里云 | 184+ | 精選 | 業界初の全ライフサイクルMCP、5分でスマート体構築、サンドボックス分離 |
+| **腾讯云 MCP 广场** | 腾讯云 | 1,089+ | 業務型 | MCP+Agent+小程序一体化、微信生態統合、ビジュアルAgent構築 |
+| **讯飞星辰 MCP 广场** | 科大讯飞 | 16,318+ | 音声AI | 音声認識/合成MCP、星火大モデル統合、教育・医療向け産業ソリューション |
+| **MCP 星球** | 第三方 | 54,555+ | 集約 | 最多収録（集約型）、中立・ベンダー非依存、詳細チュートリアル |
+| **AIbase MCP 资源站** | 第三方 | 13,784+ | 集約 | GitHubリポジトリミラー、中文ドキュメント翻訳、使用事例共有 |
+| **心流开放平台 MCP 市场** | 第三方 | 3,852+ | 展示 | データ透明（閲覧数・保存数統計）、ワンクリックJSON構成複製 |
+
+中国MCP生態の2019→2026の展開トレンド：
+- 2025年初頭: 手動JSON構成
+- 2025年中: 構成テンプレート提供
+- 2025年末: ワンクリッククラウドデプロイ
+- 2026年: 5分でスマート体構築（定常化）
+
+**出典**: [啊靓啊笔记 — 2026年国内MCP广场大盘点](https://alianga.com/articles/mcp-servers) (2026年5月)
+
+### 2. MCP开发者峰会（2026年4月2-3日、ニューヨーク）
+
+約1,200人が参加した初のMCP開発者サミットで、以下の重要な発表・合意があった：
+
+| 発表 | 内容 |
+|------|------|
+| **Uber GenAI Gateway** | 週数万回のAgent実行を処理する内部ゲートウェイアーキテクチャを公開 |
+| **Amazon agent-sop** | 内部MCP発見インフラを公開、`agent-sop`プロジェクトをOSS化 |
+| **Docker/Kong/Solo.io** | MCP Gatewayは本番環境に必須と総意。プロキシレイヤーでのセキュリティ・認証統一 |
+| **x402 Foundation** | Linux Foundation傘下として正式始動。MCPのガバナンスと標準化を推進 |
+
+**企業採用率**: 79%の企業がAI Agentを試用、43%が本番投入済み。
+
+**出典**: [freebird2913 — MCP開発实战(二)](https://www.freebird2913.tech/posts/mcp_deep_dive_2/) (2026-05-02)
+
+### 3. MCP Gateway：企業級アーキテクチャの共通認識
+
+2026年4月のMCP開発者サミットで最も重要な合意事項の一つが「生産環境ではMCPにGatewayとRegistryが必須」という点。
+
+**Uber GenAI Gateway**: 認証・認可・レート制限・監査を一元管理。週数万回のAgent実行を捌く。
+**Gatewayパターンの利点**:
+- セキュリティの統一（認証・認可・監査ログ）
+- ツール発見の一元管理
+- レート制限とコスト管理
+- マルチプロトコル（MCP/A2A/ACP）のブリッジ
+
+### 4. MCPセキュリティ事件：CVE-2026-30615（2026年4月15日）
+
+イスラエルのセキュリティ企業OX SecurityがMCPに**アーキテクチャレベルの設計欠陥**を発見・報告。以下の衝撃的な内容：
+
+**脆弱性の核心**: MCP Server（信頼できない側）がSamplingメカニズムを悪用し、ホストのMCP Clientに任意のツール呼び出し（RCE: Remote Code Execution）を実行させることが可能。プロセス分離境界を突破。
+
+**影響範囲**:
+| 影響コンポーネント | 範囲 | 深刻度 |
+|-------------------|------|--------|
+| @modelcontextprotocol/sdk (Node.js) | ≤ 0.9.x | Critical |
+| @modelcontextprotocol/sdk (Python) | ≤ 0.5.x | Critical |
+| Claude Desktop | 全バージョン | Critical |
+| VS Code Cursor | 全バージョン | Critical |
+| Cline / Continue / Windsurf | 全バージョン | High |
+
+**規模**: 全世界で約20万台のMCPサーバーが影響を受け、その大部分は企業内のAI開発環境。
+
+**Anthropicの対応**: 複数回の通報に対し「これは予期された設計上の動作（expected design）」として根本的修正を拒否。セキュリティはアプリケーションレイヤーとゲートウェイレイヤーで解決すべきという立場。
+
+**コミュニティの反応**:
+- 支持派: 「MCPはnpmのようなオープンエコシステム。ユーザーが信頼できるServerを選ぶべき」
+- 批判派: 「MCPはWindows 11にシステムレベル統合されている。セキュリティ基準はOSレベルが必要。npmレベルの安全意識は不十分」
+  → 「MCPはシステムレベルの能力として位置づけられているが、セキュリティ基準はnpmレベルに留まっている」が核心的批判。
+
+**CVE一覧**: 10個のCVE番号が割り当てられ、すべて「Critical（深刻）」評価。
+
+**緩和策**:
+- 短期: MCP Gatewayプロキシを導入しサプライチェーン監査を実施
+- 長期: ゼロトラストアーキテクチャへの移行、業界全体のAI Agentセキュリティ標準の確立
+
+**出典**: [程序员茄子 — MCP协议致命漏洞CVE-2026-30615深度解析](https://www.chenxutan.com/d/1931.html) | [freebird2913](https://www.freebird2913.tech/posts/mcp_deep_dive_2/)
+
+### 5. MCP 2026年路線図アップデート
+
+AnthropicエンジニアDavid Soria Parraが2026年4月19日のAI Engineer Shareで発表：
+
+| 機能 | 時期 | 内容 |
+|------|------|------|
+| **無状態転送プロトコル** | 2026年6月 | Googleチームと共同開発。Cloud Run/Kubernetes環境での水平スケーリングを実現 |
+| **Server Discovery** | 2026年後半 | Agentがウェブサイト訪問時にMCP Serverを自動発見 |
+| **MCP Apps** | 実験的 | 独自UIを持つAgent。Skills over MCPパッケージング |
+| **Skills over MCP** | 研究中 | Canva/Notion/SentryがMCP Server+Skills同時公開。MCPコミュニティがSkillsのMCP経由直接配布を開発中 |
+
+**SDK月間ダウンロード**: 2026年1月の1億回/月から**3億回/月**（Anthropic実践ガイド発表、4月末時点）。
+
+**GitHubコミュニティMCP Server**: 1,000超。
+**主流フレームワーク**: LangChain, AutoGen 3.0, CrewAI, LlamaIndexがすべてネイティブサポート。
+
+**出典**: [freebird2913 — MCP開発实战(二)](https://www.freebird2913.tech/posts/mcp_deep_dive_2/) (2026-05-02) | Anthropic Blog
 
 ## 関連エンティティ
 
