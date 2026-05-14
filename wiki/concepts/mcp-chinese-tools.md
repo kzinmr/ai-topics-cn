@@ -3,7 +3,7 @@ title: "中国MCPツールエコシステム — 中国語圏向けMCP Server/SD
 type: concept
 tags: [mcp, chinese-ai, tool-integration, feishu, dingtalk, wecom, wechat, open-source, server]
 created: 2026-04-27
-updated: 2026-04-27
+updated: 2026-05-14
 source_lang: zh-CN
 aliases: ["中国MCP工具生态", "China MCP Servers", "中文MCP服务器"]
 ---
@@ -34,7 +34,30 @@ aliases: ["中国MCP工具生态", "China MCP Servers", "中文MCP服务器"]
 - `feishu_get_calendar` — スケジュール照会
 - `feishu_create_event` — 会議/スケジュール作成
 - `feishu_create_task` — タスク作成
-- `feishu_list_tasks` — タスク一覧表示
+| `feishu_list_tasks` — タスク一覧表示
+
+**2026年5月更新: 飛書公式MCP（End user call remote MCP server / Beta）**
+
+2026年5月、飛書（Lark）が**公式MCP機能**（End user call remote MCP server）を提供開始（Beta）。従来はコミュニティ版のみだったが、飛書公式が直接MCPサーバーをホスト・管理する新しいパラダイム。
+
+**公式 MCP Server リスト（飛書内蔵）**:
+- **飛書ドキュメント管理** — ドキュメント作成・編集・検索
+- **飛書カレンダー** — スケジュール作成・照会
+- **飛書メッセージ** — メッセージ送信・検索
+- **飛書メール** — メール送信・受信
+- **飛書スプレッドシート** — シート作成・編集
+- **飛書AI Bot** — カスタムAI Botの管理
+
+**設定方法（飛書管理画面）**:
+1. **管理者**が飛書管理コンソールでMCPサーバーを登録
+2. エンドユーザーは**クライアント設定**から飛書公式MCPサーバーを選択
+3. 飛書自身が認証（OAuth 2.0）とトークン管理を一元化
+4. エンドユーザーはAPIキー不要で利用可能
+
+**意義**: 
+- コミュニティ版と公式版の2系統が並存
+- 公式版は飛書内のセキュリティ境界内で動作し、外部キー管理不要
+- エンタープライズ向けに設計されたスケーラブルなMCP基盤
 
 ### 2. 钉钉（DingTalk）MCP Server
 
@@ -181,19 +204,24 @@ Juejinで「MCP神器推薦：Claude Codeに画像閲覧・検索・ドキュメ
 - **GitHub MCP Server**（github/github-mcp-server）: Go実装、29K Stars、Anthropic共同開発。中国開発者にも広く利用されている
 - **Microsoft MCP Serverカタログ**: Azure MCP Server 2.0.0（2026-04-10）、84リリース
 - **Docker MCP Toolkit**: コンテナ運用とMCPの統合を標準化
+- **mcp-notify**（mcp-notify/mcp-notify）: デスクトップ通知MCP Server。Mac（terminal-notifier）、Windows（snoretoast）、Linux（notify-send）対応。MCP経由でAI Agentがユーザーに通知を送信できる。軽量バイナリ配布。Claude Code/Claude Desktop/Cursor連携実績
+- **腾讯云 MCP Server マーケットプレイス**（2026年5月）: 腾讯云がMCP Serverの統一マーケットプレイスを開設。同プラットフォーム上で複数のSaaS/クラウドサービスのMCPサーバーを一元管理可能。中国クラウド事業者として初の取り組み
 
 ## 中国MCPツール生態の特徴
 
 ### 1. 中国IMチャネルの重要性
 中国のMCP Serverエコシステムは、欧米とは異なり **IMプラットフォーム（微信/钉钉/飛書）** がハブの役割を果たす。欧米のSlack/Teams MCPと同様だが、複数IMの並存と微信生態の複雑性（个人微信・企業微信・公众号・微信客服）が中国独自の複雑さを生んでいる。
 
-### 2. オープンソースコミュニティ主導
-現時点では、中国MCP Serverの多くが**コミュニティ開発**であり、公式ベンダー提供は钉钉MCPのみ。ただしオープンソース化のスピードは速く、2026年3月以降に急速に整備された。
+### 2. コミュニティから公式へ — 急速な公式MCP対応
+2026年3月時点ではコミュニティ開発が主流だったが、5月には**飛書公式MCP（Beta）** と **钉钉MCP（公式）** の2大SaaSが公式MCP Serverを提供開始。従来の「コミュニティ駆動」から「プラットフォーマー公式対応」への急速な移行が進行中。
 
-### 3. 認証の複雑性
+### 3. 腾讯云MCPマーケットプレイスの登場
+2026年5月、腾讯云が中国クラウド事業者として初の**MCP Server統一マーケットプレイス**を開設。SaaS/クラウドサービスのMCPサーバーを一元管理できるプラットフォームで、中国におけるMCPエコシステムのインフラ化が加速。
+
+### 4. 認証の複雑性
 中国SaaSプラットフォームへのMCP接続には、各プラットフォーム固有の認証方式（ClientID+Secret、CorpID+AgentID、Webhook Token等）への対応が必要。MCP Auth仕様の標準化（2026年3月）により状況改善が見込まれる。
 
-### 4. MCPツール呼び出し性能の中国モデル優位性
+### 5. MCPツール呼び出し性能の中国モデル優位性
 - **Qwen3.6-35B-A3B**: MCPMark 37.0%（Gemma 4-31Bの2倍以上）
 - **GLM-5.1**: MCP Atlas 71.8%（世界最高、GPT-5.4の67.2%を上回る）
 - 中国モデルはMCPツール呼び出し精度で世界最先端を走る

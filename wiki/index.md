@@ -1,8 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-05-13
+最終更新: 2026-05-14
 エンティティ: 61, コンセプト: 116, ダイジェスト: 7, 比較: 2, ページ: 9
-### 本日更新（2026-05-13 Active Crawl-46: MCP中国生態 / Vibe Coding / 大模型备案制度）
+### 本日更新（2026-05-14 Active Crawl-47: DeepSeek V4.1 / MCP Chinese Tools）
+- `concepts/deepseek.md` — **大幅更新**: V4.1正式発表セクション追加（2026年6月リリース予定/全モーダル画像+音声入力/MCPネイティブ対応/エンタープライズツールチェーン）。500億元大型調達セクション追加（評価額515億ドル/梁文鋒40%出資/Tencent60億元2%出資/大基金交渉中）
+- `concepts/mcp-chinese-tools.md` — **大幅更新**: 飛書公式MCP（End user call remote MCP server/Beta）セクション追加。腾讯云MCP Serverマーケットプレイス追加。mcp-notify通知MCP Server追加。中国MCP生態の特徴を「コミュニティ→公式対応への急速移行」として更新し、番号振り直し
+
+### 前日更新（2026-05-13 Active Crawl-46: MCP中国生態 / Vibe Coding / 大模型备案制度）
 - `concepts/mcp-china.md` — **更新**: MCP 8大プラットフォーム比較（百度MCP World 56,757/魔搭10,000+/騰訊云/字節/Dify/Coze/Jina AI/FireCrawl/Tabby資産）、CVE-2026-30615、MCP Dev Summit Beijing、Gateway必須性追記
 - `concepts/vibe-coding-china.md` — **更新**: Code w/ Claude 2026（5/7）Opus 4.7 SWE-bench 82%/Claude Code全自動成功率51%、Willison融合論、Claude Code 35%/Cursor 28%/Windsurf 17%（5月シェア調査）
 - `concepts/china-ai-model-filing.md` — **大幅更新**: 清朗·整治AI应用乱象（4/30 4ヶ月行動/备案未実施第1目標）、第十七批深度合成服务算法备案（5/6 累計〜7,000件）、地方政府备案補助金7地区比較表（広州海珠/深圳各区/上海徐汇/南京玄武）、深圳市训力券年間最大1,000万元

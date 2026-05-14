@@ -1,6 +1,20 @@
 |
 
-|
+## [2026-05-14] active-crawl-47 | DeepSeek V4.1 / MCP Chinese Tools
+
+### Wiki更新
+1. **concepts/deepseek.md** — **大幅更新**: V4.1正式発表セクション追加（2026年6月リリース予定/全モーダル画像+音声入力/MCPネイティブ対応/エンタープライズツールチェーン）。500億元大型調達セクション追加（評価額515億ドル/梁文鋒40%出資/Tencent60億元2%出資/大基金交渉中）
+
+2. **concepts/mcp-chinese-tools.md** — **大幅更新**: 飛書公式MCP（End user call remote MCP server/Beta）セクション追加。腾讯云MCP Serverマーケットプレイス追加。mcp-notify通知MCP Server追加。中国MCP生態の特徴を「コミュニティ→公式対応への急速移行」として更新し、番号振り直し
+
+### hot-topics.yaml更新
+- deepseek: last_crawled 2026-05-08→2026-05-14, notes+search_hints更新
+- kimi: last_crawled 2026-05-09→2026-05-14, notes更新（新規情報なし確認）
+- mcp-chinese-tools: last_crawled 2026-04-27→2026-05-14, notes+search_hints更新
+
+---
+
+## [2026-05-13] active-crawl-46 | MCP中国生態 / Vibe Coding / 大模型备案制度
 |## [2026-05-13] active-crawl-46 | MCP中国生態 / Vibe Coding / 大模型备案制度
 
 ### Wiki更新

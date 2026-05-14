@@ -35,11 +35,14 @@ topics:
       - "DeepSeek MoE reasoning model"
       - "DeepSeek 識圖模式 視覚プリミティブ"
       - "DeepSeek V4 無錫 政府導入"
+      - "DeepSeek V4.1 マルチモーダル MCP 2026年6月"
+      - "DeepSeek 500亿元 融资 腾讯 出资 估值"
+      - "DeepSeek V4.1 全模态 语音 多模态"
     wiki_pages:
       - concepts/deepseek
-    notes: "2026.05.08更新: V4エコシステム安定化・成熟フェーズに移行。NVIDIA GB200 NVL72評価で150+tok/s/ユーザー（公式技術ブログ5月6日）。Dig Watch(5/6)がV4の地政学的重要性を包括分析（Nvidia非依存による中国AI自主化）。OpenRouter V4-Flash単日814億tokens(過去最高)継続。V4技術レポート詳細（Interleaved Thinking/DSML Schema/DSec沙箱）は前回5/4カバー済みで新規追加情報なし。"
+    notes: "2026.05.14更新: V4.1(6月リリース予定)正式発表—全モーダル(画像+音声入力)/MCPネイティブ対応/エンタープライズツールチェーン(Fine-tuning/PrivateDeploy/SecurityAudit)。500億元大型調達(評価額515億ドル/梁文鋒40%出資/Tencent60億元2%出資/大基金交渉中)。V4 Flash単日1200億tokens継続上昇。NVIDIA GB200 NVL72 150+tok/s/ユーザー。"
     added: 2026-04-17
-    last_crawled: 2026-05-08
+    last_crawled: 2026-05-14
 
   - slug: qwen
     title: "Qwen (通义千问) — Alibaba"
@@ -89,9 +92,9 @@ topics:
       - "Kimi chat 最新功能"
     wiki_pages:
       - concepts/kimi
-    notes: "2026.05.09更新: 5月7日20億ドル調達完了（美团龍珠リード）、投後評価額200億ドル超。ARR 4月に2億ドル突破（倍々ペース）。半年累計39億ドルで中国大模型スタートアップ最大。旧株主フォロー。IPO香港軸検討中。"
+    notes: "2026.05.14更新: 5月7日20億ドル調達完了（美团龍珠リード）、投後評価額200億ドル超。ARR 4月に2億ドル突破（倍々ペース）。半年累計39億ドルで中国大模型スタートアップ最大。旧株主フォロー。IPO香港軸検討中。前回(5/9)以降特筆すべき新規情報なし。"
     added: 2026-04-17
-    last_crawled: 2026-05-09
+    last_crawled: 2026-05-14
 
   - slug: yi
     title: "Yi (零一万物) — 01.AI"
@@ -340,11 +343,15 @@ topics:
     search_hints:
       - "MCP server 中文 工具 开源"
       - "MCP 微信 飞书 钉钉 集成"
+      - "飞书 公式 MCP 远程 MCP Server Beta 2026"
+      - "钉钉 DingTalk MCP AI Capacity Center"
+      - "腾讯云 MCP マーケットプレイス 2026"
+      - "mcp-notify 通知 MCP Server"
     wiki_pages:
       - concepts/mcp-chinese-tools
-    notes: "WeChat/Feishu/DingTalk MCP統合、中国SaaS向けMCPサーバー、中国語対応ツール"
+    notes: "2026.05.14更新: 飛書公式MCP(End user call remote MCP server/Beta)提供開始—6種内蔵サーバー(ドキュメント/カレンダー/メール/スプレッドシート/AI Bot)。腾讯云MCP Serverマーケットプレイス開設(中国クラウド初)。mcp-notify通知MCP Server登場。コミュニティ→公式対応への急速移行進行中。"
     added: 2026-04-17
-    last_crawled: 2026-04-27
+    last_crawled: 2026-05-14
 
   # =========================================================
   # 6. Vibe Coding Trend in China (中国のVibe Coding)
