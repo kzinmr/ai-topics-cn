@@ -1,6 +1,22 @@
 |
 
-## [2026-05-14] active-crawl-47 | DeepSeek V4.1 / MCP Chinese Tools
+## [2026-05-15] active-crawl-48 | Qwen / Doubao / ChatGLM
+
+### Wiki更新
+1. **entities/qwen.md** — **更新**: 2026年5月中旬の動向セクション追加（淘宝EC統合5/11、Qwen Code v0.15.11 5/13、Deep Research正式版5/6、overthinkingバグ5/12、QuestMobile MAU1.66億、Zhenwu AI韶関10K基）
+
+2. **concepts/doubao.md** — **更新**: 2026年5月中旬の動向セクション追加（有料サブスク全国議論5/11-15/Morgan Stanley年収1-15億ドル試算、豆包输入法Mac版5/13、火山引擎MaaSシェア49.5%、AI誤導訴訟5/14、栄威家越提携深化）
+
+3. **concepts/chatglm.md** — **更新**: 2026年5月中旬の動向セクション追加（GLM-5.1継続最適化、Z.aiブランド海外正式運用、OpenClaw論争決着/Hermes SillyTavern対応、DeepSeek競合戦略）
+
+### hot-topics.yaml更新
+- qwen: last_crawled "2026-05-10"→"2026-05-15", notes+search_hints更新
+- doubao: last_crawled 2026-05-10→2026-05-15, notes+search_hints更新
+- chatglm: last_crawled 2026-05-07→2026-05-15, notes+search_hints更新
+
+---
+
+
 
 ### Wiki更新
 1. **concepts/deepseek.md** — **大幅更新**: V4.1正式発表セクション追加（2026年6月リリース予定/全モーダル画像+音声入力/MCPネイティブ対応/エンタープライズツールチェーン）。500億元大型調達セクション追加（評価額515億ドル/梁文鋒40%出資/Tencent60億元2%出資/大基金交渉中）

@@ -1,8 +1,13 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-05-14
+最終更新: 2026-05-15
 エンティティ: 61, コンセプト: 116, ダイジェスト: 7, 比較: 2, ページ: 9
-### 本日更新（2026-05-14 Active Crawl-47: DeepSeek V4.1 / MCP Chinese Tools）
+### 本日更新（2026-05-15 Active Crawl-48: Qwen / Doubao / ChatGLM）
+- `entities/qwen.md` — **更新**: 淘宝EC統合5/11、Qwen Code v0.15.11 5/13、Deep Research正式版5/6、overthinkingバグ5/12、QuestMobile MAU1.66億、Zhenwu AI韶関10K基
+- `concepts/doubao.md` — **更新**: 有料サブスク全国議論5/11-15/Morgan Stanley年収1-15億ドル試算、豆包输入法Mac版5/13、火山引擎MaaSシェア49.5%、AI誤導訴訟5/14、栄威家越提携深化
+- `concepts/chatglm.md` — **更新**: GLM-5.1継続最適化、Z.aiブランド海外正式運用、OpenClaw論争決着/Hermes SillyTavern対応、DeepSeek競合戦略
+
+### 前日更新（2026-05-14 Active Crawl-47: DeepSeek V4.1 / MCP Chinese Tools）
 - `concepts/deepseek.md` — **大幅更新**: V4.1正式発表セクション追加（2026年6月リリース予定/全モーダル画像+音声入力/MCPネイティブ対応/エンタープライズツールチェーン）。500億元大型調達セクション追加（評価額515億ドル/梁文鋒40%出資/Tencent60億元2%出資/大基金交渉中）
 - `concepts/mcp-chinese-tools.md` — **大幅更新**: 飛書公式MCP（End user call remote MCP server/Beta）セクション追加。腾讯云MCP Serverマーケットプレイス追加。mcp-notify通知MCP Server追加。中国MCP生態の特徴を「コミュニティ→公式対応への急速移行」として更新し、番号振り直し
 

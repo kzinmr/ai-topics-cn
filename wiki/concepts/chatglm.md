@@ -3,7 +3,7 @@ title: "ChatGLM (智谱清言) — Zhipu AI"
 type: concept
 tags: [LLM, chinese-ai, open-source, agent, zhipu, multimodal]
 created: 2026-04-20
-updated: 2026-05-07
+updated: 2026-05-15
 aliases: ["智谱清言", "GLM-4", "GLM-5", "GLM-5.1", "GLM-5-Turbo", "Zhipu AI", "智谱AI"]
 source_lang: zh-CN
 ---
@@ -191,6 +191,24 @@ GLM-5のコーディング能力は开源モデル最高の座を争う:
 - 大規模Agent呼び出し時における推論の「スケーリングの痛み」に初めて包括的に対処
 
 > **出典**: 网易/财闻上海 2026.04.30 [Tier-2], Zhipu AI 公式ブログ
+
+## 2026年5月中旬の動向
+
+### GLM-5.1継続アップデートと推論最適化（5月前半）
+
+5月に入り智譜AIはGLM-5.1の安定性向上とCoding Agent性能最適化を継続的に展開:
+
+- **GLM-5.1 API安定性向上**: 8時間自律コード実行の信頼性が向上し、大規模エンタープライズ導入が加速
+- **DeepSeek V4価格競争への対応戦略**: CEO張鵬の「Tokenの質が価格を決める」方針のもと、価格競争に追随せずAgent完成度（コード実行成功率、マルチターン推論）での差別化を継続
+
+### Z.aiブランド移行と海外展開
+
+- **z.aiドメイン**を正式にグローバルブランドとして運用開始。既存のZhipu AIブランドから段階的移行を計画
+- 海外マーケットでのポジショニング: DeepSeekやQwenとの差別化として「中国発の本格エンタープライズAIプラットフォーム」を訴求
+
+### 智譜AIとOpenClaw論争の決着
+
+OpenClawプロジェクトがGLM Coding Planの正式サポート対象として認知された一方、中国オープンソースコミュニティでは智譜AIのAPIポリシー（Coding Planの週次クォータ廃止など）を巡る議論が継続。Hermes/SillyTavernの追加サポートによりコミュニティとの関係修復が進みつつある。
 
 ### DeepSeek V4との競合
 

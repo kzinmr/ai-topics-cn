@@ -1,7 +1,7 @@
 ---
 title: Qwen（通义千问）— 阿里云大模型旗舰
 created: 2026-04-17
-updated: 2026-05-10
+updated: 2026-05-15
 tags: [llm, model, china, open-source-ai, alibaba, qwen, agentic-coding, ai-infrastructure]
 aliases: ["Qwen", "通义千问", "qwen", "Qwen3.5", "Qwen3-Coder", "Qwen3.6", "Qwen3.6-Plus", "Qwen3.6-27B", "Qwen3.6-35B-A3B"]
 source_lang: zh-CN
@@ -347,6 +347,67 @@ QwenWebBench（Webアプリ・データ可視化・SVG生成に特化したフ�
 - ループ検出強化（ツール呼び出し無限ループ防止）
 
 > **出典**: [Qwen Code 週報 (2026-04-23)](https://qwenlm.github.io/qwen-code-docs/zh/blog/weekly-update-2026-04-23/) [T1]
+
+## 2026年5月中旬の動向
+
+### 千问×淘宝全面打通 — AI Shopping（2026年5月11日）
+
+2026年5月11日、AlibabaはQwenと淘宝（Taobao）の深層統合を完了。**世界初のトップAIアプリと超規模ECプラットフォームの深層統合**として報じられた。
+
+| 連携範囲 | 内容 |
+|---------|------|
+| **事前購買** | ニーズ明確化・条件フィルタリング・あいまい記述マッチング・シーンプランニング |
+| **購買実行** | AIアシスタント内でワンクリック注文 |
+| **事後** | 注文追跡・アフターサービス連携 |
+
+これによりQwenはフライ帰り・AutoNavi・Alipayに続く「消費エコシステムの最後のピース」を獲得。フルスタックAI戦略のEC応用として重要なマイルストーンとなった。
+
+> **出典**: 海克财经 via Sina Finance 2026.05.15 [Tier-1]
+
+### Qwen Code v0.15.10–v0.15.11（2026年5月10–13日）
+
+Qwen Code CLIが継続的にアップデートを実施：
+
+| 日付 | 主要アップデート |
+|------|----------------|
+| **5月10日** | セッションリストメタデータ最適化、バッファプーリング、CLI i18nカバレッジ、telemetry tracing |
+| **5月11日** | `--json-schema`構造化出力、codegraph skill（PRレビューリスク分析）、Ink 7.0.2アップグレード、Anthropicプロキシ互換 |
+| **5月12日** | Tool Searchプレフィックスキャッシング、DASHSCOPE_PROXY_BASE_URLサポート、GitHub Actions Node 24アップグレード |
+| **5月13日** | v0.15.11正式タグリリース |
+
+> **出典**: [GitHub QwenLM/qwen-code v0.15.10…v0.15.11](https://github.com/QwenLM/qwen-code/compare/v0.15.10...v0.15.11) [T1]
+
+### Qwen Deep Research 正式稼働中
+
+QwenChat上で「Deep Research（深入研究）」機能が稼働中。複数ステップのWeb検索・分析計画・包括レポート生成を自動実行。Qwenの推論・Agent・長コンテキスト・RL能力を統合し、**全ユーザーに無料提供**。
+
+> **出典**: 腾讯云开发者社区 2026.05.14 [Tier-2]
+
+### Qwen「考えすぎ」バグ報告（2026年5月12日）
+
+コミュニティテストにより、QWQ・Qwen3.6推論モデルが無限思考ループに陥る「overthinking（過剰思考）」バグが報告された。GSM8K・HotpotQAで特に顕著。Llama 3.3-70Bでは同症状が確認されず、Qwenの推論チェーン設計に固有の問題とみられる。
+
+> **出典**: 80aj.com 2026.05.12 [Tier-3]
+
+### ベンチマーク最新動向
+
+| 指標 | スコア | 順位 |
+|------|--------|------|
+| AA Intelligence Index v4.0 | **52点** | 203モデル中**3位**（GPT-5.4 58点, Claude Opus 4.7 56点） |
+| Qwen3.6-Max SWE-bench Pro | — | 4月下旬首位 → Claude Mythos(77.8%)に抜かれる |
+| Qwen3.6-Max Terminal-Bench 2.0 | 65.4% | Claude Opus 4.7と**同位** |
+| QwenWebBench ELO | **1,558** | Claude Opus 4.5(1,182)を大きくリード — Alibabaが正当に首位を主張できる領域 |
+
+### ビジネス指標（QuestMobile Q1 2026）
+
+- **2026年3月MAU**: **1.66億**（中国AIアプリ2位、Doubao 3.45億に次ぐ）
+- **前年同期比成長率**: **+4,241%** — 中国最速成長AIアプリ
+- **Q1純増MAU**: +1.26億
+- **フルスタックMAU（App+Web+PC）**: 3億超
+- **成長ドライバー**: 春節キャンペーン + 阿里ECエコシステム深層統合
+- **2026年2月グローバルMAU**: 2.03億、世界3位（ChatGPT/Doubaoに次ぐ）、**成長率552%で世界1位**
+
+> **出典**: QuestMobile/AI Product榜 2026.04–05 [Tier-1]
 
 ## Qwenの中国AIエコシステムでの位置づけ
 
