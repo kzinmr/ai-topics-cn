@@ -1,8 +1,10 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-05-15
+最終更新: 2026-05-16
 エンティティ: 61, コンセプト: 116, ダイジェスト: 7, 比較: 2, ページ: 9
-### 本日更新（2026-05-15 Active Crawl-48: Qwen / Doubao / ChatGLM）
+### 本日更新（2026-05-16 Newsletter Ingest: Tech Taiwan MediaTek T-Glass / DeepSeek V4評価）
+- `entities/mediatek.md` — **更新**: T-Glass（ガラス基板）供給囲い込み戦略セクション追加。Agentic AI台頭で基板供給逼迫、MediaTekがBroadcom/Nvidiaに先行しGoogle TPU・AI ASIC受注優位性確保
+- `concepts/gpu-sanctions-china.md` — **更新**: DeepSeek V4性能評価（米国比8ヶ月遅れ）、Ascend推論適応・Blackwell密輸学習セクション追加。T-Glass供給戦略とMediaTek先行投資セクション追加
 - `entities/qwen.md` — **更新**: 淘宝EC統合5/11、Qwen Code v0.15.11 5/13、Deep Research正式版5/6、overthinkingバグ5/12、QuestMobile MAU1.66億、Zhenwu AI韶関10K基
 - `concepts/doubao.md` — **更新**: 有料サブスク全国議論5/11-15/Morgan Stanley年収1-15億ドル試算、豆包输入法Mac版5/13、火山引擎MaaSシェア49.5%、AI誤導訴訟5/14、栄威家越提携深化
 - `concepts/chatglm.md` — **更新**: GLM-5.1継続最適化、Z.aiブランド海外正式運用、OpenClaw論争決着/Hermes SillyTavern対応、DeepSeek競合戦略

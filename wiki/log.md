@@ -1,6 +1,13 @@
 |
 
-## [2026-05-15] active-crawl-48 | Qwen / Doubao / ChatGLM
+## [2026-05-16] newsletter-ingest | Tech Taiwan MediaTek T-Glass / DeepSeek V4評価
+
+### Wiki更新
+1. **entities/mediatek.md** — **更新**: T-Glass（ガラス基板）供給囲い込み戦略セクション追加。Agentic AI台頭で基板供給逼迫、MediaTekがBroadcom/Nvidiaに先行しGoogle TPU・AI ASIC受注優位性確保
+
+2. **concepts/gpu-sanctions-china.md** — **更新**: DeepSeek V4性能評価（米国トップモデル比8ヶ月遅れ）、Ascend推論適応とBlackwell密輸学習セクション追加。T-Glass供給戦略とMediaTek先行投資セクション追加
+
+---
 
 ### Wiki更新
 1. **entities/qwen.md** — **更新**: 2026年5月中旬の動向セクション追加（淘宝EC統合5/11、Qwen Code v0.15.11 5/13、Deep Research正式版5/6、overthinkingバグ5/12、QuestMobile MAU1.66億、Zhenwu AI韶関10K基）

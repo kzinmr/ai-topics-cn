@@ -107,6 +107,28 @@ DeepSeek V4の技術報告書で注目されたのが**TileLang**ドメイン固
 > **出典**: ChinAI #356 — [DeepSeek as Road Builder](https://chinai.substack.com/p/chinai-356-deepseek-as-road-builder) (2026-04-27) [T1]
 > **出典**: Huxiu — [不要高估Nvidia，也不要低估DeepSeek](https://huxiu.com) (2026-04-27) [T1]
 
+## DeepSeek V4性能評価とBlackwell GPU密輸依存（2026年5月追記）
+
+### DeepSeek V4の性能遅延
+
+2026年5月15日、Tech Taiwan（胡說科技）の報道によれば、**DeepSeek V4の性能は米国トップモデル比で約8ヶ月遅れ**ていると評価されている。これは2025年春節期に世界を驚かせたR1からのギャップ拡大を示す。
+
+### 華為Ascendでの推論適応と学習用チップのNVIDIA依存
+
+CCTV傘下の「玉淵譚天」プラットフォームは2026年4月中旬に「**DeepSeek-V4モデルはAscendチップへの適応後、高スループット・低レイテンシの推論デプロイメントを実現した**」と報じた。注目すべきは、この表現が**推論**のみを指しており、**モデルトレーニング**については言及していない点。
+
+米トランプ政権当局者は2026年2月、Reutersに対し、DeepSeekのV4が**内モンゴルのコンピューティングセンターでNVIDIAの最新Blackwell GPUを使用してトレーニングされた**と述べた。これは当然**密輸ルート**によるものであり、地下チャネルを通じて行われるため規模は限定的——米国主要クラウドプロバイダーが展開する数万GPUには到底及ばない。
+
+それでもDeepSeekがこのルートを選択した事実は、**中国のリーディングAI企業でさえ、モデルトレーニングにおいてはNVIDIAのCUDAエコシステムへの依存から抜け出せていない**ことを示唆している。
+
+### T-Glass（ガラス基板）供給戦略とMediaTekの先行投資
+
+Agentic AIの台頭により半導体業界全体の出荷予測が急上昇する一方、**次のボトルネックは最先端チップやHBMではなく、それらをパッケージングする基板**になると予測されている。MediaTekはBroadcomやNvidiaに先んじて**T-Glass（ガラス基板）の供給囲い込み**に積極的な動きを見せており、Google TPU事業での評価向上と追加のAI ASIC受注獲得を狙っている。
+
+> **出典**: Tech Taiwan（胡說科技）— [Exclusive: Inside MediaTek's Push to Lock Up T-Glass Supply](https://substack.com/@techtaiwan) (2026-05-15) [T1]
+> **出典**: 玉淵譚天（CCTV）— Ascend適応報道 (2026-04) [T2]
+> **出典**: Reuters — 米当局のBlackwell GPU密輸指摘 (2026-02) [T1]
+
 ## 関連リンク
 
 ### 内部リンク
@@ -116,6 +138,7 @@ DeepSeek V4の技術報告書で注目されたのが**TileLang**ドメイン固
 - [[nvidia]] — NVIDIA（制裁対象の中心企業）
 - [[huawei-ascend]] — 華為のAIチップ
 - [[deepseek]] — 制裁下でも低コストモデルを実現
+- [[mediatek]] — 台湾半導体設計大手（T-Glass供給戦略）
 
 ### 外部ソース
 | ソース | URL | ティア | 概要 |
