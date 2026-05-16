@@ -1,5 +1,18 @@
 |
 
+## [2026-05-16] active-crawl | Tencent Hunyuan / AI Regulation / Yi（零一万物）
+
+### Wiki更新
+1. **concepts/yi.md** — **更新**: Pre-IPO資金調達・香港上場準備セクション追加（5/9/智譜AI・MiniMax上場後/2024年収益1億元+/2025年Q1が通年に迫る）。万智平台2.5→Super Employee 30+種/5大産業展開。棋譜元戦略:B端特化IPO経路
+2. **concepts/china-ai-regulation.md** — **更新**: 智能体规范应用与创新发展实施意见セクション追加（5/8/CAC+NDRC+MIIT/中国初Agent専用政策/19シナリオ/2027年70%目標）。国務院2026年度立法計画でAI総合立法加速(5/11/初の中国版AI法公式表明)。亞信安全Agent Trust Framework(ATF)追加
+
+### hot-topics.yaml更新
+- tencent-hunyuan: last_crawled 2026-05-09→2026-05-16（新規情報なし、追跡のみ）
+- china-ai-regulation: last_crawled 2026-05-08→2026-05-16, notes+search_hints更新
+- yi: last_crawled 2026-05-02→2026-05-16, notes+search_hints更新
+
+---
+
 ## [2026-05-16] newsletter-ingest | Tech Taiwan MediaTek T-Glass / DeepSeek V4評価
 
 ### Wiki更新

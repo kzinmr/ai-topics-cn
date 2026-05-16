@@ -112,9 +112,17 @@ topics:
       - "李开复 零一万物 海外 展開"
     wiki_pages:
       - concepts/yi
-    notes: "2026.05.02更新: カザフスタン大統領が李開復と会談(中央アジア進出)。香港スマートガバメントラボ入選(A-0107)。2025年収益数倍成長確認。李開復CEOがto B営業最前線に。万智2.5で六つ予測(2026年=マルチエージェント元年)。"
+    notes: "2026.05.16更新: 零一万物Pre-IPO融資実施中+香港上場準備中(5/9/市場報道→公司否定せず)。智譜AI(HK$4,000億)+MiniMax(HK$2,300億)上場済。2024年収益1億元超/2025年Q1が通年に迫る/2025年H1が2024年超過。万智平台2.5→Super Employee 30+種/5大産業/1+3+5+X政府体系。棋譜元戦略:B端特化→IPO経路。wiki更新済み(yi.md)。"
     added: 2026-04-17
-    last_crawled: 2026-05-02
+    last_crawled: 2026-05-16
+    search_hints:
+      - "Yi 零一万物 01.AI 2026"
+      - "Yi-Lightning Yi-Large 模型"
+      - "01.AI 万智平台 WorldWise 企业Agent"
+      - "李开复 零一万物 海外 展開"
+      - "零一万物 IPO Pre-IPO 香港 2026"
+      - "零一万物 万智2.5 Super Employee"
+      - "六小虎 港股 上市 2026"
 
   - slug: doubao
     title: "Doubao (豆包) — ByteDance"
@@ -153,7 +161,7 @@ topics:
       - entities/tencent-hunyuan
     notes: "2026.05.09更新: Hy3 Previewが5/7週のOpenRouter週間ランキングで再び総合API呼び出し量1位（Hy2比10倍超/CodeBuddy・WorkBuddy16.5倍急増）。Tencent株価3%超上昇。高盛Buy評価・目標株価HK$700。姚順雨の実業務重視哲学が裏付け。Hy3.0正式版5-6月リリース予定。前回(5/4)カバー済みの数字中国建設峰会展示や安全認証は継続中。"
     added: 2026-04-29
-    last_crawled: 2026-05-09
+    last_crawled: 2026-05-16
 
   # =========================================================
   # 2. Chinese AI Agent Ecosystem (中国AIエージェント)
@@ -292,9 +300,16 @@ topics:
       - "China AI regulation filing policy 2026"
     wiki_pages:
       - concepts/china-ai-regulation
-    notes: "2026.05.08更新: 第17批深度合成服務算法备案(5月6日公開、継続的コンプライアンス監視)。清朗行動(4/30-8月末)執行中。AI拟人化互动规则(7/15施行)・AI科技伦理审查办法をwikiに詳細反映済み。デジタル仮想人草案パブリックコメント(4/3-5/6)終了。国際調和(国連/ISO/EU AI Act相互認証)は内容審査基準の違いが障壁。"
+    notes: "2026.05.16更新: 《智能体规范应用与创新发展实施意见》(5/8/CAC+NDRC+MIIT連名/中国初AI Agent専用政策/19典型シナリオ/2027年普及率70%目標/5都市試験運用)。国務院2026年度立法工作计划でAI総合立法加速(5/11/中国版AI法初の公式表明)。亞信安全Agent Trust Framework(ATF/意向整合+Human-AI共治)発表。wiki更新済み(china-ai-regulation.md)。"
     added: 2026-04-17
-    last_crawled: 2026-05-08
+    last_crawled: 2026-05-16
+    search_hints:
+      - "中国 AI监管 政策法规 2026"
+      - "生成式AI管理办法 大模型备案"
+      - "China AI regulation filing policy 2026"
+      - "智能体规范应用与创新发展实施意见 2026"
+      - "中国AI法 立法 国務院 2026"
+      - "Agent Trust Framework ATF 亚信安全"
 
   - slug: china-ai-model-filing
     title: "AI Model Filing System (大模型备案制度)"
