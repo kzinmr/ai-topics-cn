@@ -1,7 +1,7 @@
 ---
 title: "中国AIコーディングアシスタント — Trae・MarsCode・通义灵码・CodeGeeX"
 created: 2026-04-28
-updated: 2026-05-05
+updated: 2026-05-17
 tags: [coding-agents, tooling, china, product-comparison, ide]
 aliases: ["中国AI编程助手", "China AI Coding Assistants", "Trae", "MarsCode", "通义灵码", "CodeGeeX", "Lingma"]
 source_lang: zh-CN
@@ -197,7 +197,31 @@ Alibabaの通义灵码が2026年5月に主要アップデートを実施：
 - **通义灵码 VS Codeプラグイン非推奨化**: 新機能はLingma IDEにのみ追加。既存ユーザーはIDEへの移行を推奨
 - 出典: 通义灵码公式 — [2026年5月更新ノート](https://lingma.aliyun.com/changelog/2026-05) [T1]
 
-### 3. 競争環境変化
+### 3. TRAE SOLO Mobile 三端同期リリース（2026年5月5日）
+
+2026年5月5日、ByteDanceはTRAE SOLO Mobile（モバイル版）を正式リリース。Desktop・Web・Mobileの三端が完全同期：
+
+- **App版**: iOS対応、Phone Pairing機能搭載（同アカウントのDesktopと自動ペアリング）
+- **三端ワークフロー同期**: 手機で発行したタスクがDesktopに即座に表示、Desktopの進捗も手機で確認可能
+- **Code / MTC デュアルモード**: Code（開発者向けコード・Diff・Git操作）とMTC（文書整理・データ分析・コンテンツ作成）をモバイルでも利用可能
+- **飞书連携**: 飞书ドキュメントリンクをSOLOに貼り付け→自動解析。処理結果を飛書文書に直接書き戻し可能
+- **Windows版同時リリース**: Desktop版がMacのみだった制約を解消
+- **プロモーション**: 星巴克（Starbucks）とのコラボキャンペーン（5月5日-8日）、SOLO COFFEE TALKイベント（5月6日-6月15日）
+
+> **出典**: 腾讯新闻 — [TRAE SOLO移动端全量上线](https://news.qq.com/rain/a/20260508A04MHS00) [T1]; 火山引擎开发者社区 — [TRAE SOLO移动端上线](https://developer.volcengine.com/articles/7636955544025464841) [T2]; 36kr — [TRAE SOLO龙虾化](https://www.36kr.com/p/3747994426897156) [T1]
+
+### 4. 腾讯CodeBuddy計費改定とWorkBuddy統合（2026年5月15日）
+
+- **計費方案改定**: CodeBuddy企業旗艦版が78元/人/月→198元/人/月へ値上げ。WorkBuddyとの統合サブスクリプションに移行
+- **WorkBuddy統合**: 1アカウントでCodeBuddy（プログラミング支援）とWorkBuddy（AI Workplaceデスクトップエージェント）を同時利用可能に
+- **CloudAgent新機能**: 企業がカスタムAgentをクラウド上で定義・共有可能。各メンバーに獨立サンドボックスインスタンス
+- **CodeBuddy NES（Next Edit Suggestions）**: コード補完の次世代機能。現在行だけでなく後続のコードブロック全体を予測して提案する「写一补十」方式
+- **Plan/Craft/Ask 3モード**: 複雑度に応じてPlan（自治型）、Craft（局所編集）、Ask（対話型）を切替可能
+- **CodeBuddy Skills・MCP**: ユーザー/プロジェクト設定でSkills定義、MCP経由のサードパーティツール統合に対応
+
+> **出典**: 腾讯云 — [CodeBuddy計費改定公告](https://cloud.tencent.com/announce/detail/2270) [T1]; 腾讯云 — [CodeBuddy製品概要](https://cloud.tencent.com/developer/article/2653581) [T1]; 36kr — [TRAE SOLO龙虾化](https://www.36kr.com/p/3747994426897156) [T1]
+
+### 5. 競争環境変化
 
 - **Trae $10/mo vs Cursor $20/mo**: Trae Proの価格差が国際市場で顕著な差別化要因に。中国版Trae CNは完全無料を継続
 - **VS Code 1.115 Agent機能**: 2026年4月、VS Code標準機能としてAgentモードが追加。サードパーティツール（Trae・Cursor等）との競合が新段階に

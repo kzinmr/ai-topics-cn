@@ -1,7 +1,7 @@
 ---
 title: OpenClaw — AI Agentエンドポイントツール
 created: 2026-04-17
-updated: 2026-05-11
+updated: 2026-05-17
 tags: [ai-agents, open-source-ai, tooling, china, releases, safety]
 aliases: [\"openclaw\", \"OpenClaw\"]
 source_lang: zh-CN
@@ -69,7 +69,7 @@ OpenClawは[[mcp]]（Model Context Protocol）ベースのセキュリティ問�
 
 | 指標 | Hermes Agent | OpenClaw |
 |------|-------------|----------|
-| GitHub Stars | 388K | 367K |
+| GitHub Stars | 388K | 372K |
 | 設計思想 | 長期記憶・自己進化 | 並列ツールチェーン |
 | アーキテクチャ | Stateful session | Stateless endpoint |
 | 中国コミュニティ人気 | 高（exe.dev統合） | 急上昇中 |
@@ -212,18 +212,41 @@ OpenClawは「strict-agentic」実行コントラクト（PR A）により、GPT
 
 - **SecretRef強検証（Strong Validation）**: 設定ファイル中のSecretRef（機密認証情報参照）に対して厳格な検証ロジックを実装。不正なSecretRef形式・存在しない参照先・期限切れトークンをビルド時に検出し、ランタイムエラーを未然に防止
 - **Foundation移行完了**: OpenClawプロジェクトの管理が正式に**OpenClaw財団**へ移行。Peter SteinbergerがOpenAI入社（2月14日発表）したことに伴う組織変更の完了
-- **GitHub Stars**: 367K+（v2026.4.29時点から微増、コミュニティ成熟段階に移行）
+| GitHub Stars | 372K+（2026-05-17時点、1週間で約5K増）
 - **コード品質向上**: CIパイプラインのSecretRefチェックが全PRで必須化
+
+### v2026.5.10-beta.1（2026年5月10日） — Stable Release Branch分岐
+
+- **CLIログファイル/ディレクトリ上書き防止**（#70180）: `--log-file`、`--log-dir`フラグが既存ファイルやシンボリックリンクを上書きしないよう保護
+- **ClawHub依存解決失敗の堅牢化**（#70195）: 依存関係解決エラー時、依存関係グラフをテキスト・JSON・dot形式で出力するダンプ機能を追加
+- **MCP stdioトランスポートのバッファリング改善**（#70162）: 終了シグナルを受信した際のバッファリング挙動を改善
+- **Gatewayヘルスチェック・シグナル伝搬改善**（#70186）: Gatewayプロセスの正常起動確認・シグナル伝搬のロバスト性向上
+
+### v2026.5.12-beta.1（2026年5月12日） — ユーザー設定ベースのフラグプロパゲーション
+
+- **LLMプロバイダー設定drift修正**: Nullable dynamicプロパティ（X-Grok-Flag, X-Gemini-Flag等）の設定反映問題を修正
+- **ユーザー設定ベースのフラグプロパゲーション**（#70312）: 個別設定を全プロバイダー呼び出しに伝播する新仕組み
+- **OpenCode OAuth認証機能追加**: claude_code user/tokenコマンドのOAuth認証フローを改善
+- **Flox Secret Store内SecureKey検証修正**: 特定条件下でSecureKeyが検証をパスしない問題を修正
+
+### v2026.5.14-beta.1（2026年5月14日） — 高速ログディレクトリ・パッケージタイプ保護
+
+- **高速ログディレクトリ**: `openclaw doctor --fix log-dir` — テスト内容と日次ログをGitステータスに依存せずに出力可能に
+- **パッケージ依存性解決競合の堅牢化**（#70406）: Node.jsパッケージマネージャ間の依存関係競合によるスタックトレース修正。ClawHub Skillsのパッケージタイプを型安全に管理する統合Package Managerを導入
+- **Commitmentsメッセージ修正**: ハートビートメッセージのフォーマット改善
 
 ### v2026.5.6（2026年5月6日） — OAuthリグレッション修正
 
 - **Codex OAuthリグレッション修正**: v2026.5.3〜5.5で発生したCodex TransportのOAuth認証問題を修正。特定のネットワーク条件下で認証がループするバグを解消
 - **セキュリティパッチ**: Gatewayレイヤーの軽微な脆弱性修正を含む
 
-### v2026.5.5（2026年5月5日） — 全文検索・MCPサーバーインスペクト
+### v2026.5.5（2026年5月5日） — 全文検索・MCPサーバーインスペクト・起動30%高速化
 
 - **全文検索（Full-text Search）**: エージェントメモリ・会話履歴・設定ファイルに対する全文検索機能を搭載。過去の対話や設定を素早く発見可能
 - **MCPサーバーインスペクト**: `claw mcp inspect` コマンドでMCPサーバーのエンドポイント一覧・ツール定義・スキーマを動的可視化
+- **Gateway起動30%高速化**: プラグイン発見・ランタイム検出・Cronスケジュール・Schema読込・Shutdownクリーンアップ・セッション管理・モデルメタデータ読込をすべて**lazy-load**（要求時初回読込）に変更。Gatewayのコールドスタート時間を25〜30秒から約2秒に短縮
+- **プラグインセキュリティ大改造**: 公式プラグインのインストール・アンインストール・更新・Onboarding・ClawHubロールバック・npm依存状態報告・Betaチャネル更新パスを全面的に堅牢化。外部化プラグインがファーストクラスパッケージとして正しく動作することを保証。Configセキュリティポリシー変更：無効な設定発見時にfail closed（起動拒否）へ変更
+- **ローカルモデル最適化**: ローカルOllama推論の安定性・応答性を向上
 - **パフォーマンス最適化**: 大規模ClawHubスキルストア（26,000+スキル）のキャッシュ戦略改善
 
 ### v2026.5.4（2026年5月4日） — file-transferプラグイン・/steerコマンド

@@ -1,6 +1,18 @@
 |
 
-## [2026-05-16] active-crawl | Tencent Hunyuan / AI Regulation / Yi（零一万物）
+## [2026-05-17] active-crawl | OpenClaw / China AI Agent Ecosystem / China AI Coding Assistants
+
+### Wiki更新
+1. **entities/openclaw.md** — **更新**: 5月ベータ連鎖追加（v2026.5.10/5.12/5.14 Stable Release Branch分岐/パッケージManager型安全化/Gatewayヘルスチェック改善）。GitHub Stars 367K→372Kに更新
+2. **concepts/china-ai-agent-ecosystem.md** — **更新**: 百度Create2026セクション追加（心響App/DAA指標/Token Factory/Harness Engineering接続）。36kr大分析セクション追加（中国Agentファースト戦略/Token消費階層/Alibaba ATH/腾讯Agentインフラ戦略）
+3. **concepts/china-ai-coding-assistants.md** — **更新**: Trae SOLO Mobile三端同期（iOS/PhonePairing/飞书連携/Windows版）追加。腾讯CodeBuddy計費改定（5/15企業版値上げ/WorkBuddy統合/CloudAgent/NES）追加。36kr「TRAE SOLO龙虾化」分析（ByteDance Agentワークステーション戦略）追加
+
+### hot-topics.yaml更新
+- openclaw: last_crawled 2026-05-11→2026-05-17, notes+search_hints更新
+- china-ai-agent-ecosystem: last_crawled 2026-05-12→2026-05-17, notes+search_hints更新
+- china-ai-coding-assistants: last_crawled 2026-05-05→2026-05-17, notes+search_hints更新
+
+---
 
 ### Wiki更新
 1. **concepts/yi.md** — **更新**: Pre-IPO資金調達・香港上場準備セクション追加（5/9/智譜AI・MiniMax上場後/2024年収益1億元+/2025年Q1が通年に迫る）。万智平台2.5→Super Employee 30+種/5大産業展開。棋譜元戦略:B端特化IPO経路

@@ -1,8 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-05-16
+最終更新: 2026-05-17
 エンティティ: 61, コンセプト: 116, ダイジェスト: 7, 比較: 2, ページ: 9
-### 本日更新（2026-05-16 Active Crawl: Tencent Hunyuan / AI Regulation / Yi（零一万物））
+### 本日更新（2026-05-17 Active Crawl: OpenClaw / China AI Agent Ecosystem / China AI Coding Assistants）
+- `entities/openclaw.md` — **更新**: 5月ベータ連鎖追加（v2026.5.10/5.12/5.14 Stable Release Branch分岐/パッケージManager型安全化/Gatewayヘルスチェック改善）。GitHub Stars 372K
+- `concepts/china-ai-agent-ecosystem.md` — **更新**: 百度Create2026セクション追加（心響App/DAA指標/Token Factory/Harness Engineering）。36kr Agentファースト大分析（Token階層/Alibaba ATH/腾讯Agentインフラ戦略）
+- `concepts/china-ai-coding-assistants.md` — **更新**: Trae SOLO Mobile三端同期（iOS/PhonePairing/飞书連携/Windows版）。腾讯CodeBuddy計費改定（WorkBuddy統合/CloudAgent/NES写一补十）。36kr「TRAE SOLO龙虾化」分析
+### 前日更新（2026-05-16 Active Crawl: Tencent Hunyuan / AI Regulation / Yi（零一万物））
 - `concepts/yi.md` — **更新**: Pre-IPO資金調達・香港上場準備（5/9/智譜AI・MiniMax上場後/2024年収益1億元+/2025年Q1が通年に迫る）。万智平台2.5→Super Employee 30+種/5大産業展開。棋譜元戦略:B端特化IPO経路
 - `concepts/china-ai-regulation.md` — **更新**: 智能体规范应用与创新发展实施意见追加（5/8/CAC+NDRC+MIIT/中国初Agent専用政策/19シナリオ/2027年70%目標/5都市）。国務院2026年度立法計画でAI総合立法加速(5/11/初の中国版AI法公式表明)。亞信安全Agent Trust Framework(ATF)追加
 ### 前日更新（2026-05-16 Newsletter Ingest: Tech Taiwan MediaTek T-Glass / DeepSeek V4評価）

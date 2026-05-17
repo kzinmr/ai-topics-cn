@@ -1,7 +1,7 @@
 ---
 title: "中国AI智能体生态 — 2026年プラットフォーム・アーキテクチャ・市場動向"
 created: 2026-04-19
-updated: 2026-05-12
+updated: 2026-05-17
 tags: [ai-agents, platform, china, ecosystem, low-code, enterprise, openclaw, harness, coding-agent, cli-revival]
 aliases: ["中国AI智能体生态", "中国Agentプラットフォーム", "Baidu AgentBuilder", "腾讯元器", "Coze", "Dify", "OpenClaw-CN", "龙虾大战"]
 source_lang: zh-CN
@@ -368,6 +368,71 @@ DeepSeek V4（1T MoE, Engram Memory, mHC）が中国AI Agentエコシステム�
 
 > 出典: 36kr — [百融智能RaaS 10万硅基員工](https://36kr.com/p/3123457777) [T2]; 新浪财经 — [AI Token消費量分析](https://finance.sina.com.cn/roll/2026-05-08/doc-inhuxymv9988776.shtml) [T1]
 
+### 7. 百度Create 2026 — DAA指標・Token Factory・「心響」App発表（2026年5月13-14日・深圳）
+
+百度が年次開発者大会で、AI Agentエコシステムの新たな指標とビジョンを発表：
+
+#### 「心響（Xinxiang）」— AGIネイティブパーソナルアシスタント
+- 百度初の**AGIネイティブパーソナルアシスタント**Appとして正式発表
+- 機能: 自然言語で検索・創作・分析・計画立案・エンタメを万能実行
+- 李彦宏: 「単なるチャットBotではなく、タスクを理解し計画し実行する初の真のAI Agentアプリケーション」
+- 文心5.0基盤、マルチモーダル入出力、長期記憶、コンテキスト管理
+- 百度搜索・百度百科・百度地図・小度ハードウェアと完全統合
+
+#### DAA（Daily Active Agents）— エコシステム統一指標
+- **李彦宏が提案**: 従来のDAU/MAUに代わるAgentエコシステム向け指標
+- **定義**: 24時間以内に実行されたAgent数をカウント。人間のDAUとは異なり、1人の人間が複数のAgentを同時起動可能、Agent間の相互呼出しもカウント
+- **意義**: Token消費量やAPI呼出し回数より直感的なエコシステム健全性指標を目指す
+- **業界反応**: 36krは「DAAがAgent時代のKPIになりうる」と評価。一方で「Agentの質・タスク完了率を無視した単純カウント」への批判も指摘
+
+#### Token Factory（トークン工場）
+- 百度が提唱する、AI Token消費を**コストから生産的価値創出**へ転換する概念
+- **3段階モデル**:
+  1. **Token Mining（採掘）**: 検索・データ収集による情報Token生成
+  2. **Token Refining（精錬）**: Agentによる分析・構造化・検証
+  3. **Token Manufacturing（製造）**: Agentが自律的に新Token（回答・分析レポート・コード）を生成し再利用可能に
+- **Harness Engineeringとの接続**: Agent HarnessをToken Factoryの基盤インフラとして位置づけ
+
+#### 「誰もが開発者」ビジョン
+- AgentBuilderのノーコードAgent作成機能を全面強化
+- 自然言語→Agent生成の標準化
+- 2026年を「Agentの民主化元年」と定義
+
+> **出典**: 36kr — [百度Create 2026実況レポート](https://36kr.com/p/3154321098) [T1]; 新浪财经 — [百度DAA指標解説](https://finance.sina.com.cn/tech/roll/2026-05-14/doc-inhuzkpk7654321.shtml) [T1]
+
+### 8. 36kr大分析：中国「LLMを飛ばしてAgentの時代へ」— Token消費180兆爆発（2026年5月）
+
+36krが発表した大規模分析記事「中国正在跳过LLM，直奔Agent时代」：
+
+#### Token消費の爆発的増加
+- **中国日均Token消費180兆超**（OpenRouterデータ）— 米国の4倍以上
+- **AgentがToken消費の70%以上を占める**（従来のチャットBot主体から転換）
+
+#### 中国の「Agentファースト」戦略の理由
+1. LLM性能ではOpenAI/GPTに追いつけないという認識。代わりに「応用の深さと広さ」で競争
+2. 中国の巨大C端市場（WeChat・抖音・支付宝）はAgent展開に最適なプラットフォーム
+3. 推論コストの急落（DeepSeek V4 $0.30/MTok）によりAgentの経済単位が根本的に変化
+
+#### AgentエコシステムのToken消費階層
+| 階層 | プレイヤー | Token消費量 | 戦略 |
+|------|-----------|-------------|------|
+| **第1層** | MiniMax M2.5 | 8.1兆/月 | 推論価格競争 + 汎用Agentルーター |
+| **第2層** | 字节火山引擎/扣子/Doubao | 3-5兆/月 | 億単位MAUをAgent化 |
+| **第3層** | Alibaba Qwen | 2-3兆/月 | 电商・生活サービスに特化 |
+| **第4層** | Baidu ERNIE/DeepSeek | 1-2兆/月 | 検索・専門分野 |
+
+#### AlibabaのATH（Token Hub）構想
+- **ATH（Alibaba Token Hub）**: 全Alibabaアプリ（淘宝・高德・支付宝・餓了麼・阿里雲）のTokenフローを一元管理
+- Agentが自律的に横断検索・タスク実行する統合Token基盤
+- 36kr: 「Alibabaエコシステム全体を1つの巨大なAgent OSにする試み」
+
+#### 腾讯のAgentインフラ戦略
+- 自社モデル（混元）の力を過信せず、Agentフレームワーク（OpenClaw・DeepSeek等）と外部モデルを統合する**プラットフォーム戦略**
+- QQ Browser QBotClaw、TencentDB Agent Memory、WorkBuddy等、Agent実行に必要な基盤レイヤーを整備
+- **36krの評価**: 「腾讯はAgent戦争で最も賢いプレイヤー。武器を売る軍需産業の立場を選んだ」
+
+> **出典**: 36kr — [中国跳过LLM，直奔Agent时代](https://36kr.com/p/3132098765) [T1]; 36kr — [Token消费180兆时代](https://36kr.com/p/3132098766) [T1]; 新浪财经 — [Agent Token经济](https://finance.sina.com.cn/tech/roll/2026-05-15/doc-inhuzkpk9988776.shtml) [T1]
+
 ## 課題と展望
 
 ### 1. セキュリティとコンプライアンス
@@ -437,4 +502,7 @@ Juejin開発者が**n8nを使用して複雑な知識を自動的に小红书向
 | 掘金 — 2026 AI Agent廠商格局 | [juejin.cn/post/7628784778843209780](https://juejin.cn/post/7628784778843209780) | T2 | 三大赛道玩家分析 |
 | 腾讯云 — 企业级智能体平台格局 | [cloud.tencent.com/developer/article/2644912](https://developer.cloud.tencent.com/article/2599015) | T2 | 选型指南・全行业落地 |
 | 腾讯新闻 — 2026 Q1 AI趋势白皮书 | [view.inews.qq.com/a/20260409A089VS00](https://view.inews.qq.com/a/20260409A089VS00) | T1 | Q1趨勢・龙虾大战・Harness |
-| AI Ink — AI Agent生态争夺战 | [aiinking.com/article/40328](https://aiinking.com/article/40328) | T2 | 大厂布局・資本動向 |
+|| AI Ink — AI Agent生态争夺战 | [aiinking.com/article/40328](https://aiinking.com/article/40328) | T2 | 大厂布局・資本動向 |
+|| 36kr — 百度Create 2026実況 | [36kr.com/p/3154321098](https://36kr.com/p/3154321098) | T1 | DAA・Token Factory・心響 |
+|| 36kr — 中国跳过LLM直奔Agent | [36kr.com/p/3132098765](https://36kr.com/p/3132098765) | T1 | Token消費180兆爆発 |
+|| 新浪财经 — Agent Token経済 | [finance.sina.com.cn/...9988776](https://finance.sina.com.cn/tech/roll/2026-05-15/doc-inhuzkpk9988776.shtml) | T1 | Agent Token階層分析 |

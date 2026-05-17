@@ -183,11 +183,13 @@ topics:
       - "腾讯云 Book 3.0 AIステーション Agent"
       - "BoAgent 博云科技 金融 Agent プラットフォーム"
       - "百融智能 RaaS 硅基員工 10万"
+      - "百度Create2026 DAA TokenFactory 心響"
+      - "36kr Agent Token消費180兆 Agentファースト"
     wiki_pages:
       - concepts/china-ai-agent-ecosystem
-    notes: "2026.05.12更新: 国家Agent専項政策《智能体规范应用与创新发展实施意见》（5/8）—19典型シナリオ・2027年導入率70%目標・5都市試験運用。腾讯云全栈企業級Agent能力アップグレード（4/28）。BoAgent(博云科技/5/8)。百融智能RaaS10万硅基員工。中国日均Token消費180兆超。前回: 推論2/3/Deloitte/GPU高騰/DeepSeek V4 $0.30 vs GPT-5.5 $30/100倍格差/OpenClaw12脆弱性/SOE禁止/補助金。"
+    notes: "2026.05.17更新: 百度Create2026(5/13-14)で「心響(Xinxiang)」AGIアシスタント発表/DAA(Daily Active Agents)新指標提案/Token Factory(採掘→精錬→製造)3段階モデル。36kr大分析「中国跳过LLM直奔Agent时代」—Token消費180兆超の70%+がAgent/Alibaba ATH(Token Hub)構想/腾讯Agentインフラ戦略。前回(5/12): 国家Agent政策/腾讯云全栈/BoAgent/百融RaaS。前々回: 推論2/3/Deloitte/GPU高騰/$0.30vs$30/OpenClaw12脆弱性/SOE禁止/補助金。"
     added: 2026-04-17
-    last_crawled: "2026-05-12"
+    last_crawled: "2026-05-17"
 
   - slug: openclaw
     title: "OpenClaw — オープンソースAI Agentエンドポイントツール"
@@ -200,11 +202,13 @@ topics:
       - "OpenClaw 安全隐患 MCP 12类"
       - "OpenClaw ClawHub 插件 市场"
       - "OpenClaw vs Claude Code vs Hermes Agent 比较"
+      - "OpenClaw v2026.5.14 beta package manager"
+      - "OpenClaw GitHub Stars 372K"
     wiki_pages:
       - entities/openclaw
-    notes: "2026.05.11更新: v2026.5.7リリース(SecretRef強検証/Foundation移行完了)。v2026.5.6(OAuth修正)・v2026.5.5(全文検索/MCPサーバーインスペクト)・v2026.5.4(file-transfer/steerコマンド)・v2026.5.3(Commitments自動リフレッシュ)。36krセキュリティフォローアップ(サプライチェーンリスク/SOE生OpenClaw禁止/監査要求)。GitHub★367K維持。OpenClaw財団本格始動。"
+    notes: "2026.05.17更新: v2026.5.10/5.12/5.14ベータ連続リリース(Stable Release Branch分岐/ログ上書き防止/パッケージ依存性解決Competitor→PackageManager型安全化/Gatewayヘルスチェック改善)。GitHub★372K(1週間+5K)。v2026.5.7(SecretRef強検証/Foundation移行完了)確認。v2026.5.6(OAuth修正)・v2026.5.5(全文検索/MCPサーバーインスペクト)・v2026.5.4(file-transfer/steerコマンド)。前回: 36krセキュリティフォローアップ/サプライチェーンリスク/SOE生OpenClaw禁止。"
     added: 2026-05-01
-    last_crawled: 2026-05-11
+    last_crawled: 2026-05-17
 
   - slug: coze
     title: "Coze (扣子) — ByteDance Agent Platform"
@@ -411,11 +415,13 @@ topics:
       - "CodeGeeX4-All-9B オープンソース"
       - "Trae SOLO独立Desktop MTCモード"
       - "通义灵码 Agentic Ask NES Inline Chat 2026"
+      - "Trae SOLO Mobile PhonePairing 2026"
+      - "腾讯CodeBuddy WorkBuddy計費改定 2026"
     wiki_pages:
       - concepts/china-ai-coding-assistants
-    notes: "2026.05.05更新: Trae SOLO独立Desktop/Webアプリ化(MTCモード)。通义灵码5月アップデート(Agentic Ask/NES/Inline Chat/Lingma IDE正式版)。Lingma VS Codeプラグイン非推奨化・IDE移行推奨。VS Code 1.115標準Agent機能追加。国内ネットワーク仲介(ofox.ai)普及。"
+    notes: "2026.05.17更新: Trae SOLO Mobile(5/5)三端同期リリース(iOS/PhonePairing/飞书連携/Windows版同時)。腾讯CodeBuddy計費改定(5/15)—企業版78→198元/月/人/WorkBuddy統合/CloudAgent新機能/CodeBuddy NES(写一补十)。36kr分析「TRAE SOLO龙虾化」—ByteDanceのAgentワークステーション戦略。前回(5/5): Trae SOLO独立Desktop/Web/通义灵码5月更新(AgenticAsk/NES/InlineChat/LingmaIDE正式版)/VS Code 1.115 Agent機能。"
     added: 2026-04-17
-    last_crawled: 2026-05-05
+    last_crawled: 2026-05-17
 
   # =========================================================
   # 7. Chinese Coding Agent Tools (中国コーディングエージェント)
