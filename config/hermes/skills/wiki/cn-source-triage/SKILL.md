@@ -44,6 +44,8 @@ python3 scripts/trending_topics.py --days 1
 
 Run before identifying high-value articles:
 
+**⚠️ WeChat Media Pattern**: WeChat articles are often daily re-distributions of the same 13-14 stub templates. Files with identical hash suffixes (e.g., `-aed7e3c9.md`, `-f691ec7c.md`) across different dates are duplicates. See `references/wechat-spam-pattern.md` for the full hash list and filtering guidance. When processing large WeChat backlogs (100+ files), batch-move all known spam hashes to `archive/spam/` before individual review.
+
 ```bash
 # Create archive dirs
 mkdir -p wiki/raw/articles/archive/{spam,duplicates}
@@ -129,6 +131,45 @@ git commit -m "wiki: triage — <summary>"
 git push
 ```
 
+## Large Batch Triage Workflow (300+ inbox items)
+
+When processing large backlogs (>300 items), use this optimized flow:
+
+### Phase 1: Bulk Spam Removal
+1. Identify recurring hash patterns (especially WeChat daily redistributions)
+2. Batch-move all known spam hashes to `archive/spam/`
+3. Count remaining unique articles for triage
+
+### Phase 2: Content Extraction & Wiki Creation
+1. Prioritize 36kr and Juejin sources (highest signal-to-noise ratio)
+2. Apply strict V2EX filtering (~20% pass rate — only deep technical discussions)
+3. Create concept/entity pages following SCHEMA.md
+4. Update existing entity pages with new information from articles
+
+### Phase 3: Statistics Sync & Commit
+1. Update `wiki/index.md` file counts to match actual disk state
+2. Append detailed entry to `wiki/log.md` with:
+   - New concepts created (list titles)
+   - Entity updates (list entities + what changed)
+   - Inbox cleanup stats (source: count)
+3. Commit with structured multi-line message:
+   ```
+   wiki: inbox triage batch N — <primary actions>
+
+   新規コンセプト:
+   - <concept1>.md: <description>
+   - <concept2>.md: <description>
+
+   エンティティ更新: <list>
+   index.md統計修正: <counts>
+   log.md: トリアージバッチN記録
+   ```
+
+### Subagent Delegation Rules
+- Use max 3 concurrent subagents for large batches
+- Delegate by source: one for 36kr/Juejin, one for V2EX filtering, one for WeChat cleanup
+- Consolidate results before commit
+
 ## Quality Checklist
 
 - [ ] Frontmatter includes `source_lang: zh-CN`
@@ -155,6 +196,55 @@ git push
 - Curated raw articles in `raw/articles/`
 - Updated `index.md` and `log.md`
 - Git commit with descriptive message
+
+## Newsletter Triage Workflow (Pre-run Checkpoint)
+
+When a pre-run script generates a `newsletter-triage` JSON checkpoint:
+
+### Checkpoint Format
+```json
+{
+  "checkpoint_run_id": "YYYYMMDDTHHMMSSZ",
+  "processed_count": N,
+  "summary_ja": "Japanese summary of the batch",
+  "decisions": [
+    {
+      "item_id": "hash",
+      "source": "newsletter",
+      "title": "Article Title",
+      "url": "https://...",
+      "raw_path": "~/wiki/raw/articles/...",
+      "digest_path": "~/ai-topics-cn/inbox/newsletters/...",
+      "recommended_action": "take|reference|skip",
+      "reason_ja": "Japanese justification for the decision",
+      "candidate_wiki_path": "concepts/slug or entities/slug"
+    }
+  ],
+  "_triage_checkpoint": { "ok": true, "output_path": "...", "checkpoint_path": "..." }
+}
+```
+
+### Processing Steps
+1. **Check `_triage_checkpoint.ok`**: If false, report the problem briefly and stop.
+2. **Count decisions by action**: `take`, `reference`, `skip` — report summary.
+3. **For each `take` decision**:
+   - Read `raw_path` article content
+   - Check if `candidate_wiki_path` already exists (`search_files` or `ls`)
+   - Create new wiki page (concept or entity) OR update existing page
+   - Use `reason_ja` as the Japanese justification for inclusion
+   - Follow SCHEMA.md frontmatter conventions
+4. **For `reference` decisions**: Add source URLs to existing wiki pages if relevant; no new pages needed.
+5. **For `skip` decisions**: No action — but log duplicates for awareness.
+6. **Update `wiki/index.md`**: Increment concept/entity counts, update `最終更新日`.
+7. **Update `wiki/log.md`**: Append entry with checkpoint run_id, summary_ja, and page list.
+8. **Commit**: `cd ~/ai-topics-cn && git add wiki/ inbox/newsletters/ && git commit -m "wiki: newsletter ingest YYYY-MM-DD — <key topics>" && git push`
+
+### Pitfalls
+- **Silent delivery**: If `_triage_checkpoint.ok` is false OR there are zero `take` decisions AND no useful raw/digest files, respond `[SILENT]`.
+- **Duplicate URLs**: Newsletter crawls often capture the same article via multiple URL variants (email redirects, share URLs, app links). Skip these — only process the canonical `raw_path`.
+- **Metadata stubs**: Substack app promo pages (115-357 bytes) are not real articles. Skip them.
+- **Non-entity feeds**: OPML may have 84 feeds but only ~69 are blogger entities. Companies, products, and concepts use different formats — don't force entity-page structure on them.
+- **Language consistency**: The checkpoint's `reason_ja` and `summary_ja` are in Japanese. All wiki output must be in Japanese (日本語). Keep technical terms in English.
 
 ## Entity Enrichment Workflow
 

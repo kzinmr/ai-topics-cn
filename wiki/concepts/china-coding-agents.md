@@ -1,7 +1,7 @@
 ---
 title: "中国编程Agent工具 — コーディングAIエージェントの生態系"
 created: 2026-04-19
-updated: 2026-05-11
+updated: 2026-05-18
 tags: [coding-agents, china, ide, automation, software-development, claude-code, cursor, openai]
 aliases: ["中国编程Agent", "编程自动化工具", "AI代码助手", "Chinese coding agents", "AI编程工具"]
 source_lang: zh-CN
@@ -191,13 +191,15 @@ Kimi K2.6が**Claw Groups**機能を発表：
 
 ## 2026年5月の新展開
 
-### Cursor 3.x への進化（2026年5月1日〜11日）
+### Cursor 3.1 → 3.4 への急ピッチアップデート（2026年5月1日〜13日）
 
-2026年5月、Cursorは毎日のようにアップデートを重ね、コーディングAgentのスタンダードを急速に塗り替えている：
+2026年5月、Cursorは驚異的なペースでアップデートを重ね、コーディングAgentのスタンダードを急速に塗り替えている：
 
 | バージョン | 公開日 | 主な新機能 |
 |-----------|--------|-----------|
-| **Cursor 3.3** | 5月6日 | Agents Window完全版、/best-of-n マルチモデル競争、Design Mode安定化、Kimi K2.6プラグイン対応 |
+| **Cursor 3.4** | 5月13日 | クラウドAgent開発環境、Microsoft Teams統合、Bugbot Effort Levels |
+| **Cursor 3.3** | 5月6日 | Agents Window完全版、/best-of-n マルチモデル競争、Design Mode安定化、Kimi K2.6プラグイン対応、PR Review機能 |
+| **Cursor 3.3.30** | 5月10日 | 3.3の安定版リリース。PR review体験最適化、並行Agentによる計画実行高速化、クイックアクション機能 |
 | **Cursor 3.2** | 5月4日 | Composer 2 正式版（自研MoEモデル採用、従来比4倍速）、中国語プロンプト最適化、Ctrl+K インライン編集強化 |
 | **Cursor 3.1** | 5月1日 | Git Worktree物理分離、Agents Window β版、Kimi K2.5統合 |
 | **Cursor 3.0** | 4月28日 | Design Mode（Cmd+L）、Composer v2基盤、自研MoEモデル最初版 |
@@ -215,6 +217,15 @@ Kimi K2.6が**Claw Groups**機能を発表：
 - 中国開発者の間で「ついにCursorがマルチAgent時代に本格対応した」と高評価
 
 > Cursorの企業評価額は**$50B**（500億ドル）に達し、中国開発者コミュニティでの採用率も15%を維持している。
+
+### Cursor 3.4（5月13日） クラウドAgent & Teams統合
+
+**Cursor 3.4** は3.3からわずか6日後にリリースされ、Agent機能のクラウド拡張とコラボレーション強化に焦点を当てた：
+
+- **Development Environments for Cloud Agents**: Agentをリモートクラウド環境で実行可能に。ローカルリソースを消費せず、大規模タスクをクラウドで処理。Cursor 3.0で導入された「クラウドAgent」機能を本格的な開発環境として整備。
+- **Microsoft Teams統合**: Agentのタスク結果・変更提案をTeamsチャンネルに直接通知可能。チームでのAIコードレビューワークフローを実現。
+- **Bugbot Effort Levels**: バグ修正の難易度を自動推定。開発者は「低コスト修正」から優先的に着手可能。
+- **/pr-review コマンド改善（3.3から継続）**: PRレビュー体験が大幅に向上。Reviewsタブ・Commitsタブ・ChangesタブでPR管理を一元化。
 
 ### Kimi K2.6 正式価格体系（2026年5月）
 

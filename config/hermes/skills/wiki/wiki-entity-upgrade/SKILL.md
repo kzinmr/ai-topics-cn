@@ -8,6 +8,10 @@ category: wiki
 
 Upgrade bio-only entity pages to comprehensive thought analysis format following mitchellh-com.md as reference.
 
+## Scope
+
+This skill covers upgrading entity pages **from bio-only to comprehensive analysis**. For **newsletter triage ingestion** (creating new pages from ChinAI/newsletter "take" decisions), see the `cn-media-analysis` skill and the standard ingest pipeline instead.
+
 ## Workflow
 
 1. Read existing bio-only entity page in ~/wiki/entities/
@@ -17,7 +21,7 @@ Upgrade bio-only entity pages to comprehensive thought analysis format following
 5. Update wiki/index.md and wiki/log.md
 6. Commit: `cd ~/ai-topics-cn && git add wiki/ && git commit -m "wiki: upgrade <slug> to thought analysis" && git push`
 
-## Page Format
+## Page Format (Blog Authors / Thought Analysis)
 
 ```yaml
 ---
@@ -36,34 +40,63 @@ tags: [topic1, topic2]
 | Themes | Primary writing topics |
 
 ## Overview
-Brief biographical context + writing philosophy (2-3 paragraphs)
+...
+```
 
-## Timeline
-| Year | Milestone |
-|------|-----------|
+## Page Format (Company/Product Entities)
 
-## Core Ideas
-### Idea 1 Name
-Analysis + supporting evidence from their writing
+Company and product entity pages (e.g., `modelbest.md`, `doubao.md`) use a different structure:
 
-### Idea 2 Name
-Analysis + supporting evidence
+```yaml
+---
+title: "Company Name (Chinese) — Brief descriptor"
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+tags: [company, ai, llm, china, ...]
+aliases: ["Chinese", "English", "Abbrev"]
+source_lang: zh-CN
+---
 
-## Key Quotes
-- "Notable quote 1" — [Source](url)
-- "Notable quote 2" — [Source](url)
+# Company Name (Chinese) — Brief descriptor
 
-## Recent Themes (2024–2026)
-- Theme 1 with explanation
-- Theme 2 with explanation
+> **Key stat**: value
+> **重要度**: 高/中/低 — one-line significance
 
-## Related
-- [[entities/related-author]] — connection explanation
+## 概要
+2-3 paragraph overview in Japanese
+
+## Market Data / 市場データ
+| 指標 | 値 | 出典 |
+...
+
+## 開発歴史 / Timeline
+| 時期 | マイルストーン |
+...
+
+## 技術スタック
+### Subsection per technology area
+
+## 商用展開
+Business applications and partnerships
+
+## 競合比較
+| 企業 | 路線 | 特徴 |
+...
+
+## 関連
+- [[wikilink]] — connection explanation
 
 ## Sources
-- URL 1
-- URL 2
+- URLs
 ```
+
+Key differences from thought analysis format:
+- Uses Japanese section headers (概要, 技術スタック, 商用展開, 競合比較)
+- Market data and timeline tables instead of quotes
+- Competitor comparison tables
+- No "Core Ideas" / "Key Quotes" / "Recent Themes" sections
+- `aliases` array includes both Chinese and English names
+- `tags` include company, ai, and specific domain tags
 
 ## Progress Tracking
 
@@ -86,6 +119,8 @@ for f in sorted(os.listdir(target)):
 print(f"✅ Done: {len(has_analysis)}, 📋 Remaining: {len(bio_only)}")
 for b in bio_only: print(f"  - {b}")
 ```
+
+**NOTE**: This audit script only detects blog-author thought analysis upgrades (which use `## Core Ideas` / `## Key Themes`). Company/product entity pages (e.g., `modelbest.md`, `doubao.md`) use different section headers (`## 概要`, `## 技術スタック`, `## 競合比較`) and will appear as "bio_only" even when fully written. For company pages, check manually: if the file is >5KB and has 5+ sections beyond `## 概要`, it's complete.
 
 ## Batch Processing Strategy
 

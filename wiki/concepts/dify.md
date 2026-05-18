@@ -1,7 +1,7 @@
 ---
 title: "Dify — オープンソースLLMOpsプラットフォーム"
 created: 2026-04-19
-updated: 2026-05-09
+updated: 2026-05-18
 tags: [llmops, open-source, agent-platform, rag, workflow, china]
 aliases: ["Dify", "Dify.ai", "Dify平台", "开源LLMOps"]
 source_lang: zh-CN
@@ -19,7 +19,7 @@ source_lang: zh-CN
 
 ## 2026年主要アップデート（v1.3以降）
 
-2025年末〜2026年初頭にかけ、Difyは1.0版本から重大なアーキテクチャアップグレードを経験。以下の5つが最も重要：
+2025年末〜2026年初頭にかけ、Difyは1.0版本から重大なアーキテクチャアップグレードを経験。以下のアップデートが最も重要：
 
 ### 1. 原生MCP Protocolサポート（最重要）
 AnthropicのModel Context Protocol（MCP）をネイティブサポート。600+外部ツール生态（Notion、Slack、GitHub、Stripe、Brave Search、ローカルファイル系统等）を**零コードで接続**可能。
@@ -51,22 +51,62 @@ LlamaFactory（GitHub 73K star）をネイティブ統合：
 - 3Bパラメータモデルの専門分野微調整は、特定タスクでGPT-4o-miniを上回る精度
 - 推理コストを$0.15/千token → $0.003/千tokenに（50倍削減）
 
-### 6. Dify v1.14 GA：Agent Skills & Sandbox Runtime（2026年5月）
+### 6. Dify v1.14.0：協同編集 & HITL Service API（2026年4月29日）
 
-2026年5月初旬、**v1.14.0 GA**（General Availability）が正式リリース。Agent Runtimeを完全再設計：
-- **Sandboxed Runtime**: 隔離実行環境でセキュリティ向上
-- **Skill Editor**: 再利用可能なSOPブロックをGUIで構築
-- **@メンション**: ワークフロー内でインラインツール呼び出し（例 `@send_email`）
-- **動的変数アセンブリ**: 会話履歴・外部データからの動的コンテキスト構築
-- **コラボレーションBeta**: チーム共有ワークスペース
+**v1.14.0** はDify史上最大規模のアップデートの1つ。数百のコミットを含むメジャーリリース：
 
-### 7. v1.13.x：Human-in-the-Loop
+**新機能:**
+- **リアルタイム協同編集（Collaboration）**: チームメンバーが同一ワークフローを同時編集可能。Difyが真のチーム生産性ツールに進化。
+- **Human-in-the-Loop（HITL）Service API**: プログラマティックにHITLフローを制御可能に。外部システムから人工介入プロセスを駆動する統一インターフェース。
+- **Quota v3**: 計測システムの全面刷新。Meterコンポーネント、ファイルアップロードのクォータ認識、障害回復機能を強化。
+
+**アーキテクチャ変更:**
+- **Graphon独立**: dify_graph パッケージがスタンドアロン **Graphon 0.2.2** に分離
+- **OpenAPI v2**: 自動生成スクリプト公開
+- **SQLAlchemy 2.0 select()移行**: データベースアクセス層を最新化
+- **Pydantic BaseModel移行**: コンソール・サービスレスポンスをPydantic v2化
+- **UIコンポーネント移行**: レガシーUIから `@langgenius/dify-ui` 共有コンポーネントライブラリへ大規模移行
+- **Langfuse連携**: オプションでTTFT（Time-to-First-Token）メトリクスをLangfuseに報告可能
+
+**GitHub Stars**: 142K+（v1.14.0リリース時）
+
+### 7. Dify v1.14.1：セキュリティ強化 & 安定性修正（2026年5月12日）
+
+v1.14.0の2週間後にリリースされた重要なパッチ。セキュリティ・ワークフロー・ナレッジベースの安定性向上に焦点。
+
+**セキュリティ強化:**
+- **LiteLLMアップグレード**: CVE-2026-42208を含む複数の依存関係を更新（urllib3, gunicorn, gitpython, mako, Google SDK, OpenTelemetry他）
+- **SECRET_KEY自動生成**: セルフホスト環境でSECRET_KEYが空の場合、ランタイムキーを自動生成・永続化（公開デフォルト値への依存を排除）
+- **エンドポイント保護**: `/threads`・`/db-pool-stat` エンドポイントを認証必須化
+- **IDOR修正**: `GET /account/avatar` の権限昇格脆弱性を修正
+- **テナント分離**: 組み込みツールのデフォルト資格情報クリーニングを現在のテナントに限定
+
+**ワークフロー修正（v1.14.0リグレッション）:**
+- バックエンドAPI経由のワークフローバージョン読み込みを復旧
+- 大規模アプリリストのオンラインユーザーポーリング問題を修正
+- プレビューResizeObserverの無限ループを修正
+- 変数参照セレクターがサブ変数を選択できない問題を修正
+- 問題分類子に編集可能なカテゴリラベルを追加
+- HITLフローが選択された操作値を外部に公開
+
+**ナレッジベース修正:**
+- 画像レンダリング失敗を修正
+- 空ドキュメントのベクトル埋め込みスキップ処理
+- RAG重複除去にdoc_idを使用（精度向上）
+
+**デプロイ改善:**
+- Docker環境変数を `docker/envs/**` にカテゴリ分割
+- WebSocketサービスをメインサービスから分離（デプロイの柔軟性向上）
+- SQLALCHEMY_POOL_RESET_ON_RETURN設定追加
+- Exploreアプリのカテゴリ設定・カスタムソート対応
+
+### 8. v1.13.x：Human-in-the-Loop
 2026年3月のv1.13.0で**Human Inputノード**を追加。ワークフロー実行を一時停止し、人間の承認・編集・ルーティング判断を挟む「Human-in-the-Loop」が可能に。v1.13.3で安定性向上。
 
-### 8. v1.9.2：双方向MCP対応
+### 9. v1.9.2：双方向MCP対応
 v1.9.2（2025年7月頃）で、MCPサポートを双方向に拡張：外部MCP Serverをツールとして呼び出すだけでなく、Dify上のAgent/WorkflowをそのままMCP Serverとして公開可能に。Claude、Cursor等のMCPクライアントから直接呼び出せる。
 
-### 9. Creator Center & Template Marketplace
+### 10. Creator Center & Template Marketplace
 2026年3月、**Creator Center**と**Template Marketplace**をローンチ。コミュニティ作成のワークフローテンプレートを公開・共有・ワンクリック導入。PartnerStack連携でテンプレート経由のサブスクリプション収益分配も可能。
 
 ## 資金調達

@@ -40,9 +40,9 @@ topics:
       - "DeepSeek V4.1 全模态 语音 多模态"
     wiki_pages:
       - concepts/deepseek
-    notes: "2026.05.14更新: V4.1(6月リリース予定)正式発表—全モーダル(画像+音声入力)/MCPネイティブ対応/エンタープライズツールチェーン(Fine-tuning/PrivateDeploy/SecurityAudit)。500億元大型調達(評価額515億ドル/梁文鋒40%出資/Tencent60億元2%出資/大基金交渉中)。V4 Flash単日1200億tokens継続上昇。NVIDIA GB200 NVL72 150+tok/s/ユーザー。"
+    notes: "2026.05.18更新: V4.1(6月リリース予定)正式発表—全モーダル(画像+音声入力)/MCPネイティブ対応/エンタープライズツールチェーン(Fine-tuning/PrivateDeploy/SecurityAudit)。500億元大型調達(評価額515億ドル/梁文鋒40%出資/Tencent60億元2%出資/大基金交渉中/阿里交渉決裂報道)。V4 Flash単日1200億tokens継続上昇。網新檢測V4国産化適応テスト体系的枠組み(5/15)。"
     added: 2026-04-17
-    last_crawled: 2026-05-14
+    last_crawled: 2026-05-18
 
   - slug: qwen
     title: "Qwen (通义千问) — Alibaba"
@@ -237,9 +237,9 @@ topics:
       - "Dify v1.14 Agent Skills Sandbox GA"
     wiki_pages:
       - concepts/dify
-    notes: "2026.05.09更新: v1.14.0 GA正式リリース（5月初旬）—Agent Skills/Sandbox Runtime/Skill EditorがProduction Readyに。Sandbox Runtime: 隔離実行環境でエンタープライズセキュリティ対応。Skill Editor: 再利用可能SOPブロック。前回(5/4)カバー済みの3000万ドル調達・京進グループ協業は継続中。"
+    notes: "2026.05.18更新: v1.14.0 GA正式リリース（5月初旬）—Agent Skills/Sandbox Runtime/Skill EditorがProduction Readyに。Sandbox Runtime: 隔離実行環境でエンタープライズセキュリティ対応。Skill Editor: 再利用可能SOPブロック。前回(5/4)カバー済みの3000万ドル調達・京進グループ協業は継続中。wiki→dify.md更新済み。"
     added: 2026-04-17
-    last_crawled: 2026-05-09
+    last_crawled: 2026-05-18
 
   # =========================================================
   # 3. Local Deployment & Quantization (ローカル展開・量子化)
@@ -443,9 +443,9 @@ topics:
       - "Lingma IDE 通义灵码 独立 環境 2026"
     wiki_pages:
       - concepts/china-coding-agents
-    notes: "2026.05.11更新: Cursor 3.3/3.2/3.1(5月1日~6日)—Agents Window完全版/Composer 2自研MoE4倍速/best-of-nマルチモデル競争/Design Mode安定化/KimiK2.6プラグイン/K2.5統合。Kimi K2.6正式価格(¥39/159/559)。Trae SOLO MTCモード独立Desktop Web版(シェア41.2%首位)。Lingma IDE独立移行(VS Codeプラグイン廃止/Agentic Ask NES Inline Chat)。CodingPlan価格改定(百煉Lite廃止/Token Plan時代)。Cursor企業評価$50B。"
+    notes: "2026.05.18更新: Cursor 3.3/3.2/3.1(5月1日~6日)—Agents Window完全版/Composer 2自研MoE 4倍速/best-of-nマルチモデル競争/Design Mode安定化/Kimi K2.6プラグイン/K2.5統合。Kimi K2.6正式価格(¥39/159/559)。Trae SOLO MTCモード独立Desktop/Web版(シェア41.2%首位)。Lingma IDE独立移行(VS Codeプラグイン廃止/Agentic Ask NES Inline Chat)。CodingPlan価格改定(百煉Lite廃止/Token Plan時代)。Cursor企業評価$50B。DeepSeek V4国産化適応テスト枠組み(5/15)。wiki→coding-agents.md更新済み。"
     added: 2026-04-17
-    last_crawled: 2026-05-11
+    last_crawled: 2026-05-18
 
   - slug: coding-plan
     title: "Coding Plan (编程计划)"
