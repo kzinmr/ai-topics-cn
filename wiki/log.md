@@ -1,5 +1,23 @@
 |
 
+## [2026-05-18] crawl-triage | SpokenWOZ更新（日付更新のみ）
+
+### Wiki更新
+- `concepts/spokenwoz.md` — updated日付を2026-04-18→2026-05-18に更新。inboxファイルはタイトル情報のみのため、内容追加なし。
+
+### Reference（既存ページ参照）
+- V2EX: Codex AppのSSH远程開発機能 → `pages/openai-codex-infrastructure.md`（既に統合済み、inboxは「暂无内容」）
+- WeChat: LLM-as-Agent技術比較 → `concepts/ai-agent.md`（既にwiki統合済み、inboxはnewsletter見出しのみ）
+- Juejin: LangChain解説 → `concepts/langchain.md`（既に存在、inboxは概要レベル）
+
+### Skip
+- V2EX: GPT 6.0リリース時期の憶測議論 → 一時的、wiki価値なし
+- V2EX: Google UK Plus濫用報告 → 技術的詳細なし
+- V2EX: Deep Research品質議論 → 暂无内容
+- V2EX: 低価格GPT脆弱性 → 暂无内容
+- V2EX: ChatGPT Plusアカウント確認 → 暂无内容
+- WeChat: LLM浪潮下的AIAgent众生相 → newsletter見出しのみ、重複
+
 ## [2026-05-17] active-crawl | OpenClaw / China AI Agent Ecosystem / China AI Coding Assistants
 
 ### Wiki更新
