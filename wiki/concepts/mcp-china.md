@@ -3,7 +3,7 @@ title: "MCP中国生态（Model Context Protocol在中国的采用状況）"
 type: concept
 tags: [mcp, chinese-ai, agent-protocol, a2a, standardization, tool-integration, github, enterprise]
 created: 2026-04-17
-updated: 2026-05-13
+updated: 2026-05-19
 source_lang: zh-CN
 ---
 
@@ -399,6 +399,70 @@ AnthropicエンジニアDavid Soria Parraが2026年4月19日のAI Engineer Share
 - [[concepts/china-ai-agent-ecosystem]] — 中国AI Agent生態系
 - [[concepts/dify]] — Difyプラットフォーム
 - [[concepts/coze]] — 扣子Cozeプラットフォーム
+
+## 2026年5月13日〜19日更新 — セキュリティ事件の連鎖と国家級MCP展開
+
+### 1. MCPデータベースサーバー3大脆弱性（5月13日）
+AkamaiのTomer Peledが3つのMCPデータベースサーバーの重大な脆弱性を発見（x33fconで発表予定）:
+
+| サーバー | CVE | 脆弱性 | 状態 |
+|---------|-----|--------|------|
+| **Apache Doris MCP** | CVE-2025-66335 | SQLインジェクション（`db_name`パラメータ） | パッチ済み(v0.6.1) |
+| **Apache Pinot MCP(StarTree)** | 未割当 | 認証バイパス＋SQLクエリ実行 | OAuth追加済み、SQLi残存 |
+| **Alibaba Cloud RDS MCP** | 未割当 | RAGツール認証なしアクセス | **Alibabaがパッチ拒否** |
+
+**Alibaba Cloudのパッチ拒否**は中国MCPセキュリティの分岐点。CERT/CCに報告済み。
+- **出典**: [The Register](https://www.theregister.com/security/2026/05/13/bug-hunter-tracks-down-three-serious-mcp-database-flaws-one-left-unpatched/5238916) [T1]
+
+### 2. MCP攻撃対象領域3倍拡大 — 銀行のSEC開示（2026年5月）
+CVE-2026-5058（CVSS 9.8）: コミュニティ保守のMCPサーバーにおけるコマンドインジェクション。EC2インスタンス経由でS3/DynamoDB/Lambda/IAMに横断移動可能。ある銀行が**SECにForm 8-K**を提出 — AIエージェント脆弱性に関する初のSEC開示事例。
+- **出典**: [dev.to](https://dev.to/mspro3210/may-2026-the-mcp-attack-surface-tripled-three-disclosures-and-a-banks-sec-filing-tell-you-what-23nd) [T2]
+
+### 3. Trend Micro: 露出MCPサーバー1,467台に急増（4月28日発表、5月拡散）
+前回調査(2025年7月: 492台)から**約3倍**に増加。1,227台が非推奨のSSEトランスポートを使用。70ホストで`execute_sql`ツールが露出。AWS/Azure用非公式MCPサーバーにCVSS 9.8脆弱性。19,000以上のMCPサーバーソースコードの48%が`.env`ファイルに秘密情報を平文保存。
+- **出典**: [Trend Micro](https://www.trendmicro.com/vinfo/gb/security/news/vulnerabilities-and-exploits/update-on-exposed-mcp-servers-the-threat-widens-to-the-cloud) [T1]
+
+### 4. CVEカスケードとClawHubサプライチェーン攻撃（5月）
+
+| CVE | 対象 | CVSS | 状態 |
+|-----|------|------|------|
+| CVE-2026-30623 | liteLLM MCPサーバー コマンドインジェクション | 9.8 | パッチ済み(v1.83.7) |
+| CVE-2026-23744 | MCPJam Inspector RCE | 9.8 | パッチ済み(v1.4.3) |
+| CVE-2026-7593 | command-executor-mcp-server OSインジェクション | 8.5 | **パッチなし**（プロジェクトアーカイブ済み） |
+| CVE-2025-53967 | Framelink Figma MCP | 9.1 | パッチ済み(v0.6.3) |
+| CVE-2026-6599 | LangFlow MCP | 9.8 | **パッチなし**（ベンダー応答なし） |
+
+**ClawHub（OpenClawスキルレジストリ）サプライチェーン攻撃**: 341個の悪意あるスキル（レジストリ全体の12%）がAPIキー・認証情報・機密データを窃取。
+- **出典**: [ThreatAft](https://threataft.com/articles/mcp-servers-remote-code-execution-crisis) [T2]
+
+### 5. 新华财经MCP服务矩阵 — 国家級金融MCP基盤（5月18日）⭐最重要
+国家級金融データ基盤として初の本格的MCP展開。**6大MCPサービス体系**:
+1. **リアルタイム行情**: 株式・債券・為替・商品のリアルタイムデータ
+2. **金融市場**: 銘柄分析、セクター動向、資金フロー
+3. **マクロ/業界**: GDP、CPI、PMI等マクロ指標＋業界別レポート
+4. **企業データ**: 1.5億件企業情報、45省庁監督データ
+5. **ニュース/公告**: 24時間365日ニュース速報、上場企業公告
+6. **政策/研究**: 18万件超政策法規、6,000以上の发文機関カバー
+
+**30以上のコアMCPサービス**を提供。国家金融情報プラットフォームとしての権威ある信頼性が競争優位。
+- **出典**: [新华财经](https://m.cnfin.com/hg-lb//zixun/20260518/4413883_1.html) [T1]
+
+### 6. MCP SDK月間ダウンロード1.1億回突破（5月）
+前回更新（5月13日）からの数値更新:
+- MCP SDK月間DL: **1.1億回**（xiezhixin/Anthropic発表）
+- GitHub Stars (serversレポ): **84.1k**
+- 公開MCPサーバー数: **9,400+**（前年比7.8倍）
+- エンタープライズ採用率: **78%**が本番環境にMCP対応エージェント展開
+- A2A採用組織: **150+**組織、Microsoft/AWS/Salesforce/SAP/ServiceNowが本番稼働
+- **出典**: [SiliconReport](https://www.siliconreport.com/model-context-protocol-targets-production-scaling-issues-in-2026-roadmap-e941542f3b363948) [T2]
+
+### 7. MCP 2026年ロードマップ進捗（5月14日）
+本番スケーリング問題に焦点。4優先分野:
+1. **トランスポート層進化**: 無状態トランスポート（2026年6月予定）— セッション状態と水平スケーリングの矛盾を解決
+2. **エージェント通信**: Tasksプリミティブ（SEP-1686）の実験的機能
+3. **ガバナンス成熟化**: コアメンテナーによるレビューボトルネック解消
+4. **エンタープライズ対応**: 監査、SSO統合、ゲートウェイ標準化
+- **出典**: [SiliconReport](https://www.siliconreport.com/model-context-protocol-targets-production-scaling-issues-in-2026-roadmap-e941542f3b363948) [T2]
 
 ## 出典
 

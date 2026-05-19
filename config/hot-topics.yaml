@@ -256,11 +256,14 @@ topics:
       - "oMLX OpenMLX digua Apple Silicon inference"
       - "LocalClaw 零配置 Agent ランタイム"
       - "ERNIE 5.1 本地部署 GGUF GPTQ 量子化"
+      - "Ollama v0.30 llama.cpp transition GGML deprecated"
+      - "SGLang HiSparse ShadowRadix MUSA Moore Threads"
+      - "Kaiwu 开悟 inference optimization 昇腾"
     wiki_pages:
       - concepts/china-local-deployment
-    notes: "2026.05.12更新: oMLX(地瓜AI/Apple Silicon推論サーバー/MLXベース30%性能向上)。LocalClaw零配置Agentランタイム(vLLM+OpenClaw+MCP/Docker Compose一行)。ERNIE 5.1ローカル用GGUF/GPTQ公開。DeepSeek-V4 TCO分析(8x910C 30万元、月100万回超で元)。前回: Ollama 169K/v0.17.7/Qwen3.6-35B-A3B RTX4090動作/DeepSeek-V4ローカル推論。"
+    notes: "2026.05.19更新: Ollama v0.30.0-rc17(llama.cpp移行・GGML廃止・新マルチモーダルエンジン)。SGLang DeepSeek-V4最適化(ShadowRadix/HiSparseカーネル/昇腾910B 1.6x性能向上)。Moore Threads MUSA公式SGLang統合(合併/マージ)。Kaiwu(开悟)推論最適化ツール(QQブラウザ/マルチモデル並列/昇腾デプロイ)。前回: oMLX(地瓜AI/Apple Silicon推論サーバー/MLXベース30%性能向上)。LocalClaw零配置Agentランダイム(vLLM+OpenClaw+MCP/Docker Compose一行)。ERNIE 5.1ローカル用GGUF/GPTQ公開。DeepSeek-V4 TCO分析(8x910C 30万元、月100万回超で元)。"
     added: 2026-04-17
-    last_crawled: 2026-05-12
+    last_crawled: 2026-05-19
 
   - slug: censorship-bypass
     title: "Censorship Bypass & Uncensored Models (审查绕过/去审查模型)"
@@ -358,11 +361,15 @@ topics:
       - "MCP vs CLI Skills comparison"
       - "MCP A2A AP2 ACP ecosystem"
       - "Cloudflare MCP two tools"
+      - "MCP database vulnerability Apache Doris Pinot"
+      - "Alibaba Cloud RDS MCP CVE-2026-30623"
+      - "SEC 8-K AI vulnerability disclosure"
+      - "Xinhua Finance MCP"
     wiki_pages:
       - concepts/mcp-china
-    notes: "2026.05.13更新: Baidu MCP World 56,757ツール(世界最大)、魔搭MCP广场10,000+ツール(中国2位)、騰訊云/字節跳动/Dify/Coze/百度千帆/Jina AI/FireCrawl/Tabby資産8社競争。CVE-2026-30615(MCP Sampling機能悪用RCE)発覚(Anthropic設計通りの挙動として修正見送り)。MCP Dev Summit Beijing(5月)でW3C標準化議論。Tool Search 85%+トークン削減。A2A+AP2+ACPエコシステム拡大。SDK月間DL 3億回突破。"
+    notes: "2026.05.19更新: MCPデータベース脆弱性(Apache Doris/Pinot MCP悪用で機密データ漏洩)。Alibaba Cloud RDS MCP脆弱性(CVE-2026-30623/パッチ未提供/11月公開予定)。SEC 8-KフォームでAI脆弱性開示(初/Impossible Cloud/SEC基準の暗示)。Xinhua Finance(新华社金融)MCPサービス行列公開(中国初の国家級金融MCP)。EmbeddedLLM MCP agent protocol(新種のMCPシナジー マルウェア)。前回: Baidu MCP World 56,757ツール(世界最大)。魔搭MCP广场10,000+ツール(中国2位)。CVE-2026-30615(MCP Sampling RCE)。Tool Search 85%+トークン削減。A2A+AP2+ACPエコシステム拡大。SDK月間DL 3億回突破。"
     added: 2026-04-17
-    last_crawled: 2026-05-13
+    last_crawled: 2026-05-19
 
   - slug: mcp-chinese-tools
     title: "Chinese MCP Tools & Servers (中国MCP工具)"
@@ -498,8 +505,12 @@ topics:
       - "中国 开源AI 社区 HuggingFace ModelScope 2026"
       - "ModelScope 魔搭 开源模型"
       - "Chinese open source AI models community"
+      - "MiniCPM-V 4.6 面壁"
+      - "Ring-2.6-1T open source"
+      - "LingJi OS 灵玑OS Agent OS"
+      - "LingBot VLA embodied AI"
     wiki_pages:
       - concepts/china-open-source-ai
-    notes: "2026.05.12更新: 魔乐社区(MoLe)正式発足(4/29/Linux Foundation AAIF/37社・機関/4大モデル/4大国産HW)。蚂蚁Ling-2.6-1T MITオープンソース化(4/30/SWE-bench 65.2%/AIME 72.8%/128台昇腾910C)。Baidu ERNIE 5.1発表(5/9/240B MoE/マルチモーダル/ModelScope量子化モデル)。太湖共识(4/25/7大ベンダーOSS標準化合意)。中关村AI开源联盟(5/6/20社)。前回: ModelScope/魔搭/HF中国ミラー/4月後半モデルリリースラッシュ/DeepSeek V4 Preview/Qwen3全8モデル。"
+    notes: "2026.05.19更新: MiniCPM-V 4.6公開(面壁智能/OmniMM-Agentモード/ChatGPT音声対抗/ベンチマーク上位)。蚂蚁LingBot-VLAツールチェーンオープンソース化(具現化AI/英偉達/清華大学)。Ring-2.6-1Tの特定SCOPE制限モデルオープンソース公開(5/16/昇腾対応/COIG-P个人情報削除版)。LingJi OS(灵玑OS)中国初のオープンソースAgent基盤OS(中科曙光/ソフトウェア定義Agent)。前回: 魔乐社区(MoLe)正式発足(4/29/Linux Foundation AAIF/37社・機関/4大モデル/4大国産HW)。蚂蚁Ling-2.6-1T MITオープンソース化(4/30/SWE-bench 65.2%/AIME 72.8%/128台昇腾910C)。太湖共识。中关村AI开源联盟。"
     added: 2026-04-17
-    last_crawled: 2026-05-12
+    last_crawled: 2026-05-19

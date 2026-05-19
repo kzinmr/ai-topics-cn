@@ -2562,4 +2562,16 @@ Originating conversation: (scheduled cron)
 - **Reference**: 2件 — Codex App SSH偷偷追加、低价GPT脆弱性
 - **Skip**: 7件
 - **Wiki更新状況**: 両ページとも既に対応済み（mcp-securityは04-18作成、deepseekは04-26更新）
-- **温度差**: 36kr（新智元/NEXT趋势）がOpenClaw/MCPセキュリティとDeepSeek昇騰対応を先行報道。V2EXで実使用感ベースの評価が追従
+|- **温度差**: 36kr（新智元/NEXT趋势）がOpenClaw/MCPセキュリティとDeepSeek昇騰対応を先行報道。V2EXで実使用感ベースの評価が追従
+
+## [2026-05-19] active-crawl | china-local-deployment/mcp-china/china-open-source-ai
+
+### Wiki更新
+- `concepts/china-local-deployment.md` — Ollama v0.30.0-rc17（llama.cpp移行）、SGLang HiSparse/ShadowRadix最適化、Moore Threads MUSA統合、Kaiwu推論ツール
+- `concepts/mcp-china.md` — MCPデータベース脆弱性（Apache Doris/Pinot）、Alibaba Cloud RDS MCP CVE-2026-30623（パッチ未提供）、SEC 8-K初のAI脆弱性開示、Xinhua Finance MCPサービス
+- `concepts/china-open-source-ai.md` — MiniCPM-V 4.6公開、Ring-2.6-1T SCOPE制限版OSS公開、LingBot-VLAツールチェーン、LingJi OS(中国初のAgent基盤OS)
+
+### hot-topics.yaml更新
+- `china-local-deployment`: last_crawled 2026-05-19、search_hints拡充、notes更新
+- `mcp-china`: last_crawled 2026-05-19、search_hints拡充、notes更新
+- `china-open-source-ai`: last_crawled 2026-05-19、search_hints拡充、notes更新

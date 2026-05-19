@@ -1,7 +1,7 @@
 ---
 title: "中国大模型本地部署 — 量子化・VRAM最適化・消費者GPUでの推論"
 created: 2026-04-19
-updated: 2026-05-12
+updated: 2026-05-19
 tags: [inference, quantization, local-deployment, hardware, vram-optimization, china]
 aliases: ["本地部署", "国产模型本地运行", "VRAM优化", "量化技术", "GGUF", "GPTQ", "AWQ"]
 source_lang: zh-CN
@@ -203,8 +203,68 @@ Juejin開発者「技术爬爬虾」がCodexの詳細攻略と無料使用方法
 > **出典**: 地瓜AI — [oMLX: Apple Silicon推論サーバー](https://digua.ai/blog/omlx-launch) [T2]; 36kr — [LocalClaw登場](https://36kr.com/p/3116543210) [T1]; V2EX — [推理成本对比分析](https://www.v2ex.com/t/1215004) [T2]
 
 
-| 掘金 — Ollama+Qwen2026 | [juejin.cn/post/7603677143214473231](https://juejin.cn/post/7603677143214473231) | T1 | 2026最新版Ollama部署ガイド |
-| 阿里云 — 本地AI革命 | [cloud.baidu.com/article/4358934](https://cloud.baidu.com/article/4358934) | T2 | Ollama零依赖部署総合ガイド |
-| 谢先斌 — Ollama設定 | [xiexianbin.cn/ai/ollama](https://www.xiexianbin.cn/ai/ollama/index.html) | T2 | Ollama環境変数・最適化・トラブルシューティング |
-| V2EX — 本地vsAPIコスト比較 | [v2ex.com/t/1208901](https://www.v2ex.com/t/1208901) | T1 | TCO分析スレッド |
-| ModelScope — 量子化モデル一覧 | [modelscope.cn/models](https://modelscope.cn/models) | T1 | GGUF/GPTQ/AWQモデル |
+|| 掘金 — Ollama+Qwen2026 | [juejin.cn/post/7603677143214473231](https://juejin.cn/post/7603677143214473231) | T1 | 2026最新版Ollama部署ガイド |
+|| 阿里云 — 本地AI革命 | [cloud.baidu.com/article/4358934](https://cloud.baidu.com/article/4358934) | T2 | Ollama零依赖部署総合ガイド |
+|| 谢先斌 — Ollama設定 | [xiexianbin.cn/ai/ollama](https://www.xiexianbin.cn/ai/ollama/index.html) | T2 | Ollama環境変数・最適化・トラブルシューティング |
+|| V2EX — 本地vsAPIコスト比較 | [v2ex.com/t/1208901](https://www.v2ex.com/t/1208901) | T1 | TCO分析スレッド |
+|| ModelScope — 量子化モデル一覧 | [modelscope.cn/models](https://modelscope.cn/models) | T1 | GGUF/GPTQ/AWQモデル |
+
+## 2026年5月12日〜19日更新 — 推論エンジン大変革と国産GPU生態系転換
+
+### Ollama v0.30.0-rc17 — GGML→llama.cpp直接統合への大規模アーキテクチャ変更（5月13日）
+OllamaがGGMLから**llama.cpp直接サポート**への完全移行を開始。GGUFファイル形式をネイティブ対応し、Apple SiliconではMLXアクセラレーションに対応。プリリリース段階だが、既存GGML依存モデルとの互換性に影響あり。
+- **出典**: [Ollama v0.30.0-rc17](https://github.com/ollama/ollama/releases/tag/v0.30.0-rc17) [T1]
+
+### Ollama 独自マルチモーダルエンジン（5月15日〜17日）
+llama.cpp/C++実装から独立した**独自マルチモーダルカスタムエンジン**を発表。画像処理メタデータ追加、KVCache最適化、画像キャッシュ機能。Llama 4 Scout（109B MoE）のチャンク注意機構と2D回転埋め込みに対応。NVIDIA/AMD/Qualcomm/Intel/Microsoftと協力。Ollamaがllama.cppに依存しない独自推論基盤へ進化。
+- **出典**: [CNAIPlus](https://www.cnaiplus.com/a/review/7967661.html) [T2]
+
+### SGLang + DeepSeek V4 Day-0 — ShadowRadix/HiSparse/MTP 3大革新（5月8日〜）
+SGLangがDeepSeek V4向けに3つの革新的技術を実装：
+1. **ShadowRadix**: ハイブリッド注意機構(MegaMoE)用ネイティブプレフィックスキャッシュ。3種の異種KVプール＋2種の圧縮状態プールを一貫管理
+2. **HiSparse**: 非アクティブKVをCPUにオフロード。200K入力/20K出力の長コンテキストで**ピークスループット最大3倍**
+3. **MTP投機デコード**: CUDA Graph内でメタデータ準備を完結。B200で4K〜900Kコンテキストまで**落ち幅10%未満**の平坦スループット曲線
+
+ハードウェア別Dockerイメージ（B300/B200/GB200/GB300/H200）を個別提供。FP4 MoE + FP8 attention混在チェックポイントをそのまま利用可能。各種レシピ（low-latency/balanced/max-throughput/cp/pd-disagg）を提供。
+- **出典**: [腾讯云开发者社区](https://cloud.tencent.com/developer/article/2665792) [T1]
+
+### DeepSeek V4 VRAM完全ガイド（5月1日〜8日）
+- **V4-Flash** (284B total/13B active): FP8=160GB, Q4=80GB, Q2=40GB — RTX 5090単体でQ4動作可能圏内
+- **V4-Pro** (1.6T total/49B active): FP8=865GB, Q4=432GB — 実質8〜16枚H100クラス必須
+- 推論フレームワーク選定: SGLang（高性能推論・Agent向け）> vLLM（汎用）> llama.cpp（小規模・量子化向け）
+- 消費者GPU優先戦略: 消費級GPUでFlash/蒸留/量子化版PoC → パイプライン検証後、国産チップ群へ移行推奨
+- **出典**: [knightli.com](https://www.knightli.com/2026/05/08/deepseek-v4-local-private-deployment/) [T2]
+
+### 国産GPU生態系の大転換 — SGLang × MUSAメインライン統合（5月12日）
+摩尔线程（Moore Threads）がSGLangコア開発者を招集し、国産GPUの**オープンソース主流エコリューション参入**を宣言。
+- **SGLang MUSAバックエンド**がメインライン統合完了。`import torchada` 1行で99%のCUDAコードが動作
+- 摩尔线程のSGLang貢献: 累計47 PR提出中41件が統合済み
+- **DeepSeek V4 MUSA Day-0**: FP8行列積8.85倍加速、スパース注意機構6.01倍加速、初回トークン遅延56.7%削減、スループット23%向上
+- **TileLang**: DeepSeek V4カーネルをTileLangで記述。FlashAttentionが50行Python、性能はCUDA専門家と同等
+- **Mooncake**: RDMA P2P重み更新でKimi K2 1Tモデルの同期時間を53秒→7.2秒（7.37倍）
+- **出典**: [量子位](https://www.qbitai.com/2026/05/417791.html) [T1]
+
+### 百度 昆仑芯 + 文心5.1 訓練成功（5月13日）
+Create 2026百度AI开发者大会で発表。**昆仑芯P800**全国産クラスター上で文心5.1重要バージョンの訓練完了。訓練有効率97%、万カード規模線形拡張度85%超。**天池256カード超ノード**（6月正式発売予定）はスループット前世代比25%向上、推論効率50%改善。文心・DeepSeek・GLM・MiniMax等主流モデル対応。ネットワークHPN5.0、エンドツーエンド遅延50%最適化。
+- **出典**: [新浪财经](https://finance.sina.com.cn/jjxw/2026-05-13/doc-inhxtkrn0919271.shtml) [T1]
+
+### 砺算科技 7G100 国産6nm GPU（5月20日販売開始）
+中国初・世界4社目の**Microsoft WHQL認証**取得。自社設計TrueGPU天图アーキテクチャ、6nmプロセス。FireStrike 26800点、Steel Nomad 2268点（RTX 4060相当）。『黒神話：悟空』1080p高画質70fps安定。
+- **出典**: [新浪科技](https://finance.sina.com.cn/tech/roll/2026-05-02/doc-inhwnhak4842840.shtml) [T1]
+
+### 開物 (Kaiwu) — 8GB VRAMで30Bモデルを3→21 tok/sに高速化（2026年5月）
+中国開発者による自動LLM最適化ツール。llama.cppベースでパラメータ自動探査・決定。
+- MoEエキスパート自動識別 → attention層のみGPU、expert層はCPUへ自動オフロード → **8GB VRAMで7倍高速化**（3→21 tok/s）、VRAM 65%削減
+- KVキャッシュタイプ自動選択（f16 > q8 > iso3）
+- GQA認識によるKV cache正確推定（kv_heads認識しないと3〜4倍過大評価）
+- スロット数自動最適化（デフォルト4→1で2倍高速化）
+- 二分探索によるコンテキスト長上限自動決定
+- 2回目起動は2秒（結果キャッシュ）。OpenAI互換API。
+- **出典**: [开物](https://www.tcti.cn/tactic.html) [T3]
+
+### SGLang 2026 Q2 ロードマップ（5月12日）
+- DeepSeek V4全チェーン最適化（W4A16量子化、MegaMoE加速、スパース注意機構）
+- **jit_kernel完全移行**（TVM-FFIでコンパイル数倍高速化）
+- **Vibe Coding全面適用**: AIエージェントがプロファイラ分析→性能ボトルネック特定→PR自動作成。5月までに60以上の最適化タスク完了
+- マルチモーダル拡充（LTX2、Wan、混元ビデオ対応）
+- **出典**: [量子位](https://www.qbitai.com/2026/05/417791.html) [T1]

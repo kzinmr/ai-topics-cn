@@ -1,7 +1,7 @@
 ---
 title: "中国开源AI社区 — ModelScope、HuggingFace中国、Giteeエコシステム"
 created: 2026-04-19
-updated: 2026-05-12
+updated: 2026-05-19
 tags: [open-source, community, china, modelscope, huggingface, gitee]
 aliases: ["中国开源AI", "开源LLM社区", "ModelScope魔搭", "Gitee AI"]
 source_lang: zh-CN
@@ -278,3 +278,39 @@ Baiduが生成式AI大会（Create 2026）でERNIE 5.1を発表。完全オー�
 | Gitee AI | [gitee.com](https://gitee.com) | T1 | 国内コードホスティング |
 | HuggingFace China Mirror | [hf-mirror.com](https://hf-mirror.com) | T1 | 国内ミラー |
 | V2EX — 开源AI讨论 | [v2ex.com](https://www.v2ex.com) | T2 | 技術者コミュニティ |
+
+## 2026年5月12日〜19日更新 — MiniCPM-V 4.6・Ring-2.6-1T正式公開・灵玑OS発足
+
+### 1. MiniCPM-V 4.6 オープンソース公開（5月11日）
+面壁智能（ModelBest）× 清华大学 × OpenBMBが**MiniCPM-V 4.6**（1.3Bパラメータ）をApache 2.0で公開。端末向けマルチモーダルモデルで、6GBメモリで動作、262Kトークンコンテキスト対応。iOS/Android/HarmonyOSで利用可能。1.3B未満のオープンモデルでArtificial Analysis Intelligence Index最高スコア（13点）。
+- **出典**: [新浪科技](https://finance.sina.com.cn/tech/digi/2026-05-13/doc-inhxtqxk0808759.shtml) [T1]
+- **HuggingFace**: [openbmb/MiniCPM-V-4.6](https://huggingface.co/openbmb/MiniCPM-V-4.6)
+
+### 2. Ring-2.6-1T 正式オープンソース化（5月15日）
+蚂蚁百灵（Ant Group）が**Ring-2.6-1T**の重みをHuggingFaceとModelScopeで正式公開。Reasoning Effort（high/xhighの2モード）を導入しAgentワークフローに最適化。PinchBench 87.60点、AIME 26 95.83点を達成。「Token Efficiency（少ないトークンで高品質出力）」を重視した設計。
+- **出典**: [量子位](https://www.qbitai.com/2026/05/417961.html) [T1]
+
+### 3. LingBot-VLA 後訓練ツールチェーン オープンソース化（5月13日）
+蚂蚁灵波科技（Ant Group子会社）が具身知能基盤モデルLingBot-VLAの実機後訓練ツールチェーンを完全公開。150件のデモデータで新しいロボットに適応可能。トレーニング効率はStarVLAやOpenPIの1.5〜2.8倍。2万時間の実ロボットデータで事前訓練済み。
+- **GitHub**: [Robbyant/lingbot-vla](https://github.com/Robbyant/lingbot-vla)
+- **出典**: [ZOL](https://ai.zol.com.cn/1180/11804476.html) [T2]
+
+### 4. 灵玑OS — 国内初のオープンソースAI Agent共通インフラ（5月15日）
+北京市経済情報化局指導の下、北京通明湖信息技术応用创新中心が国内初の**オープンソースAI Agentインフラ「灵玑OS」**を発表。「連不上、干不成、管不住、控不稳」というAgent産業の4大課題を解決。2つのコア成果を公開：
+- **灵玑·织语 V2.0**: Agent協調フレームワーク
+- **灵玑·星绽 V2.0**: セキュリティ基盤
+- **出典**: [人民网](http://bj.people.com.cn/n2/2026/0517/c14540-41582491.html) [T2]; [腾讯新闻](https://news.qq.com/rain/a/20260516A01Z5F00) [T2]
+
+### 5. SenseNova-U1 オープンソース（5月5日〜）
+商汤科技が独自のNEO-Unifyアーキテクチャを採用した統合マルチモーダルモデルSenseNova-U1をApache 2.0で公開。VAEや独立ビジュアルエンコーダーを排除し、テキストと画像の双方向理解・生成を端末間で統一。8B密結合版とA3B MoE版の2種類を提供。
+- **出典**: [AIPuzi](https://www.aipuzi.cn/ai-news/sensenova-u1.html) [T3]
+
+### 6. 中国AIモデル週間API呼び出し量が米国を逆転（4月末〜5月初）
+中国の週間API呼び出し量が**7.942兆トークン**に達し、米国（3.258兆トークン）を大幅に上回った。Agent商用化元年を象徴するデータ。モデル競争の焦点も「パラメータ内戦」から「推論効率の精緻化」へシフト。
+- **出典**: [掘金](https://juejin.cn/post/7637324235342430246) [T1]
+
+### 7. 新規Wikiページ候補（laterals policy）
+以下の概念は現在独立ページがなく、今後のwiki拡張候補：
+- **灵玑OS**: 中国政府主導のオープンソースAgentインフラ。Agent産業の標準化に影響
+- **具身知能开源エコシステム**: LingBot-VLA、灵玑OS、OpenLETなど具身知能(Embodied AI)OSSが急成長中
+- **中国AI Agent开源生態**: Agent商用化元年を迎え、灵玑OS・OpenClaw等多数のAgent関連プロジェクトが出現
