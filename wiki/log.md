@@ -1,5 +1,15 @@
 |
 
+## [2026-05-20] crawl-triage | SpokenWOZ再収集（日付更新のみ）
+
+### Wiki更新
+- `concepts/spokenwoz.md` — updated日付を2026-05-18→2026-05-20に更新。WeChat再収集重複（同URL、同ハッシュ`159c78b4`、2023年記事）。inboxファイルはタイトル情報のみのため、内容追加なし。
+
+### スキップ
+- V2EX 6件: 全て「暫无内容」のためwiki価値なし
+- WeChatメディア 10件: SpokenWOZ再収集重複4件 + 复旦NLP 80頁Agent総説再収集1件 + 機器之心AI00リスト再収集2件 + 機器之心PRO会員通信ヘッダー3件
+- Juejin 1件: LangChain記事（2023年8月、古記事）— reference扱い
+
 ## [2026-05-20] active-crawl | Vibe Coding / Kimi / MCP Chinese Tools
 
 ### Wiki更新
