@@ -95,11 +95,14 @@ topics:
       - "Kimi 月之暗面 Moonshot AI 2026"
       - "Kimi 长文本 long context"
       - "Kimi chat 最新功能"
+      - "Kimi WebBridge ブラウザ Agent プラグイン"
+      - "国智投 北京人工智能基金 Kimi"
+      - "Cursor Composer 2.5 Kimi K2.5"
     wiki_pages:
       - concepts/kimi
-    notes: "2026.05.14更新: 5月7日20億ドル調達完了（美团龍珠リード）、投後評価額200億ドル超。ARR 4月に2億ドル突破（倍々ペース）。半年累計39億ドルで中国大模型スタートアップ最大。旧株主フォロー。IPO香港軸検討中。前回(5/9)以降特筆すべき新規情報なし。"
+    notes: "2026.05.20更新: Kimi WebBridgeリリース(5/15/ブラウザAgentプラグイン/ローカルファースト)。国有資本参入(5/19/国智投・北京人工智能基金・中国移動が株主/20億ドル融資クローズ)。Cursor Composer 2.5(5/18-19/Kimi K2.5ベース/Opus 4.7級性能1/10コスト)。香港IPO紅籌架构拆除開始(時価総額200億ドル)。K3開発Q3 2026予定継続。OpenRouter K2.6使用量第2位維持。"
     added: 2026-04-17
-    last_crawled: 2026-05-14
+    last_crawled: 2026-05-20
 
   - slug: yi
     title: "Yi (零一万物) — 01.AI"
@@ -382,11 +385,16 @@ topics:
       - "钉钉 DingTalk MCP AI Capacity Center"
       - "腾讯云 MCP マーケットプレイス 2026"
       - "mcp-notify 通知 MCP Server"
+      - "新华财经 MCP 服务矩阵"
+      - "支付宝 MCP Server"
+      - "同花顺 iFinD MCP"
+      - "天翼云 MCP"
+      - "华为云 Serverless MCP"
     wiki_pages:
       - concepts/mcp-chinese-tools
-    notes: "2026.05.14更新: 飛書公式MCP(End user call remote MCP server/Beta)提供開始—6種内蔵サーバー(ドキュメント/カレンダー/メール/スプレッドシート/AI Bot)。腾讯云MCP Serverマーケットプレイス開設(中国クラウド初)。mcp-notify通知MCP Server登場。コミュニティ→公式対応への急速移行進行中。"
+    notes: "2026.05.20更新: 新华财经MCP服务矩阵(5/18/中国初国家級金融MCP/6大カテゴリ30+サービス)。腾讯云MCP广场新サーバー群(TRTC实时音视频/容器TKE/且慢盈米基金/弹性伸缩AS)。钉钉MCP广场6000+企業級MCPサービス(中国最大企業向AIスキル市場/統一課金・権限管理)。支付宝MCP Server(決済MCP初/5大決済IF/蚂蚁百宝箱30+MCP)。同花顺iFinD MCP(債券/港美股/指数/板块4大データ追加4/30)。天翼云MCP托管(中国電信/3大キャリア初)。华为云Serverless+MCP(FunctionGraph統合/30秒デプロイ)。百度MCP广场1.6万+Server(中国最大)。コミュニティ→公式対応への急速移行がさらに加速。"
     added: 2026-04-17
-    last_crawled: 2026-05-14
+    last_crawled: 2026-05-20
 
   # =========================================================
   # 6. Vibe Coding Trend in China (中国のVibe Coding)
@@ -403,11 +411,15 @@ topics:
       - "Karpathy Sequoia AI Ascent 2026 agentic engineering"
       - "SE 3.0 SASE ACE AEE structured agentic software engineering"
       - "Tony Bai Vibe Coding to Agentic Engineering 2026"
+      - "Karpathy Anthropic 加入 2026"
+      - "腾讯吐司 Toast 应用宝 Vibe Coding"
+      - "灵珠 Lingzhu 二测 DeepSeek V4"
+      - "Node.js 1.9万行 AI生成 PR OpenJS"
     wiki_pages:
       - concepts/vibe-coding-china
-    notes: "2026.05.13更新: Anthropic Code w/ Claude 2026(5/7)でAgent Engineering展望発表(Opus 4.7 SWE-bench 82%/Claude Code全自動タスク成功率51%)、Claude Code+Claude/Travis/API/Automata4接続点市場シェア35%。Simon Willison Vibe Coding→Agentic Engineering融合論。Claude Code 35%/Cursor 28%/Windsurf 17%(5月市場調査)。Sequoia AI Ascent 2026 Karpathy「認知債」概念。通义灵码SE 3.0対応。"
+    notes: "2026.05.20更新: Karpathy Anthropic加入(5/19/Vibe Coding創始者/研究開発復帰/Claude事前学習研究)。腾讯吐司(Toast/应用宝)Vibe Coding製品公開(5/15〜18/真のAPK生成/蚂蚁灵光と差別化)。灵珠(Lingzhu)二测(招待コード撤廃/DS V4統合/単日Token 50億突破)。Sequoia AI Ascent Karpathy講演「锯齿状智能・認知債」—Vibe Coding→Agentic Engineering宣言。36kr三阶段衰退曲线(Node.js 1.9万行AI生成PR事件/OpenJS Foundation結論)。KDD 2026 Workshop SE 3.0定義(100万件Agent PRデータセット)。通义灵码2.5+Qwen3-Coder-Next(80B MoE/3B活性化/SWE-bench 70.6%)。V2EX「全职写代码感觉坚持不下去了」。"
     added: 2026-04-17
-    last_crawled: "2026-05-13"
+    last_crawled: "2026-05-20"
 
   - slug: china-ai-coding-assistants
     title: "Chinese AI Coding Assistants (国产AI编程助手)"

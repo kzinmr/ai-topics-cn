@@ -1,8 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-05-17
+最終更新: 2026-05-20
 エンティティ: 61, コンセプト: 116, ダイジェスト: 7, 比較: 2, ページ: 9
-### 本日更新（2026-05-17 Active Crawl: OpenClaw / China AI Agent Ecosystem / China AI Coding Assistants）
+### 本日更新（2026-05-20 Active Crawl: Vibe Coding / Kimi / MCP Chinese Tools）
+- `concepts/vibe-coding-china.md` — **更新**: Karpathy Anthropic加入(5/19)、腾讯吐司(Toast/应用宝)、灵珠二测(DS V4統合)、36kr三阶段衰退曲线(Node.js 1.9万行AI生成PR事件)、KDD 2026 Workshop SE 3.0、通义灵码2.5+Qwen3-Coder-Next
+- `concepts/kimi.md` — **更新**: Kimi WebBridgeリリース(5/15/ブラウザAgent)、国有資本参入(国智投・北京AI基金・中国移動/5/19)、Cursor Composer 2.5(Kimi K2.5ベース)、IPO紅籌架构拆除開始
+- `concepts/mcp-chinese-tools.md` — **大幅更新**: 新华财经MCP(国家級金融)、钉钉MCP广场6000+、支付宝MCP Server(初決済)、同花顺iFinD MCP、天翼云MCP托管(3大キャリア初)、华为云Serverless+MCP
+### 前日更新（2026-05-17 Active Crawl: OpenClaw / China AI Agent Ecosystem / China AI Coding Assistants）
 - `entities/openclaw.md` — **更新**: 5月ベータ連鎖追加（v2026.5.10/5.12/5.14 Stable Release Branch分岐/パッケージManager型安全化/Gatewayヘルスチェック改善）。GitHub Stars 372K
 - `concepts/china-ai-agent-ecosystem.md` — **更新**: 百度Create2026セクション追加（心響App/DAA指標/Token Factory/Harness Engineering）。36kr Agentファースト大分析（Token階層/Alibaba ATH/腾讯Agentインフラ戦略）
 - `concepts/china-ai-coding-assistants.md` — **更新**: Trae SOLO Mobile三端同期（iOS/PhonePairing/飞书連携/Windows版）。腾讯CodeBuddy計費改定（WorkBuddy統合/CloudAgent/NES写一补十）。36kr「TRAE SOLO龙虾化」分析

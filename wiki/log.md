@@ -1,5 +1,17 @@
 |
 
+## [2026-05-20] active-crawl | Vibe Coding / Kimi / MCP Chinese Tools
+
+### Wiki更新
+1. **concepts/vibe-coding-china.md** — **更新**: Karpathy Anthropic加入(5/19)、腾讯吐司(Toast/应用宝)、灵珠二测(DS V4統合)、36kr三阶段衰退曲线(Node.js 1.9万行AI生成PR事件)、KDD 2026 Workshop SE 3.0、通义灵码2.5+Qwen3-Coder-Next(80B MoE)追加
+2. **concepts/kimi.md** — **更新**: Kimi WebBridgeリリース(5/15)、国有資本参入(国智投・北京AI基金・中国移動/5/19)、Cursor Composer 2.5(Kimi K2.5ベース)、IPO紅籌架构拆除開始、K3/Q3 2026予定
+3. **concepts/mcp-chinese-tools.md** — **大幅更新**: 新华财经MCP服务矩阵(国家級金融MCP)、腾讯云MCP新サーバー群(TRTC/TKE/盈米基金/AS)、钉钉MCP广场6000+、支付宝MCP Server(初決済MCP)、同花顺iFinD MCP、天翼云MCP托管(3大キャリア初)、华为云Serverless+MCP、百度MCP广场1.6万+
+
+### hot-topics.yaml更新
+- vibe-coding-china: last_crawled 2026-05-13→2026-05-20, notes+search_hints更新
+- kimi: last_crawled 2026-05-14→2026-05-20, notes+search_hints更新
+- mcp-chinese-tools: last_crawled 2026-05-14→2026-05-20, notes+search_hints更新
+
 ## [2026-05-18] crawl-triage | SpokenWOZ更新（日付更新のみ）
 
 ### Wiki更新

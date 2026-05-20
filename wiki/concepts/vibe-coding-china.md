@@ -1,7 +1,7 @@
 ---
 title: "Vibe Coding（氛围编程）— 中国での受容とAgentic Engineeringへの進化"
 created: 2026-04-17
-updated: 2026-05-13
+updated: 2026-05-20
 tags: [vibe-coding, ai-coding, chinese-ai, karpathy, agentic-engineering, paradigm-shift, intent-coding, cognitive-debt]
 aliases: ["氛围编程", "vibe coding", "意图编程", "Wish Coding", "认知债"]
 source_lang: zh-CN
@@ -420,6 +420,65 @@ Anthropicが2026年5月7日に開催したオンライン技術大会「Code w/ 
 - [[entities/qwen]] — Qwen3-Coderのコーディング競争
 - [[openclaw]] — Agent HarnessとしてのOpenClaw
 
+## 2026-05-13 ～ 2026-05-20 最新動向
+
+### 1. 【超大ニュース】Karpathy、Anthropicに加入（2026-05-19）
+- **Andrej Karpathy**（OpenAI共同創業者、元Tesla AI責任者、「Vibe Coding」生みの親）が**Anthropic**に入社をXで発表
+- 「LLMのフロンティアにおける今後数年は特に形成的な時期。研究開発に復帰する」
+- Anthropicの**事前学習チーム**（Nick Joseph傘下）に所属、**Claude自身を使って事前学習研究を加速する**新チームを率いる
+- Polymarket確率：Anthropicが6月末に最強モデル65% vs OpenAI 4%
+- 2年以内にOpenAIからAnthropicに移った3人目の核心的人物（Jan Leike, John Schulmanに続く）
+
+### 2. 腾讯「吐司（Toast）」Vibe Codingプロダクト正式リリース（2026-05-15→18）
+- **腾讯**が自社アプリストア「应用宝」で**「吐司」**をリリース、定位は「探索型氛围编程（Vibe Coding）产品」
+- 核心機能：自然言語でアプリ説明→AIが機能分解→APKファイルにパッケージ→Android端末にインストール
+- 灵光との差別化：灵光はHTMLベースの「闪應用」、吐司は**真のAPK（ネイティブアプリ）**を生成
+- 現在の制約：プレビュー〜10分、APKパッケージング〜10分、無料5回まで
+- QQにもAI投稿機能（AI生成ツールをソーシャル投稿化）を内部テスト中
+
+### 3. 灵珠（Lingzhu）二测：完全開放 + DeepSeek V4統合（2026-05-11）
+- **招待コード制限撤廃**、誰でもログイン可能に、ポイント制に移行
+- **DeepSeek V4**全面接続：需要分析の応答時間が20秒→5秒未満（約3倍高速化）
+- **利用データ**：単日Token消費50億突破、1人あたり最高17作品、1作品あたり最高22回修正
+- **ユーザー事例**：小学生→英語アプリ、医師→「膀胱健康助手」、親→算数ゲーム
+
+### 4. Sequoia AI Ascent 2026：Karpathy「Agentic Engineering」宣言（2026-04-29 講演、5月に分析記事）
+- 「Vibe Codingは床を上げる（raising the floor）、**Agentic Engineering**は天井を守る（preserving the ceiling）」
+- **锯齿状智能（jagged intelligence）**概念：10万行リファクタできるAIが50m先の洗車場まで歩くよう提案
+- **認知債（Cognitive Debt）**：「思考は外注できても理解は外注できない」
+
+### 5. 36氷：Vibe Coding論争—Node.js 1.9万行AI生成PR事件（2026-05-07）
+- Node.js核心貢献者Matteo CollinaがClaude Codeで生成した**1.9万行のPR**を提出→コミュニティ激震
+- **三阶段衰退曲线**：前期（発展期）→中期（人間介在コスト増）→後期（長文脈で品質急落）
+- OpenJS Foundation結論：AI支援開発を禁止できない→AIワーキンググループ設立へ
+
+### 6. Tony Bai：Vibe Coding→Agentic Engineering生存戦略（2026-05-02）
+- 3つの生存法則：(1) jagged intelligenceへの警戒 (2) 「実装者」→「設計者」への転換 (3) 思考≠理解
+
+### 7. KDD 2026 Workshop: Agentic Software Engineering (SE 3.0)（2026-05-10 提案募集開始）
+- 2026年8月10日、韓国・済州島で開催
+- **AIDev Dataset**：Claude Code/OpenAI Codex/GitHub Copilotが生成した100万件以上のエージェントPRを収録
+- SE 3.0：AIエージェントが自律的「AI Teammate」としてコーディング・デバッグ・テストを実行
+- 論文締切：2026年6月1日
+
+### 8. 通义灵码 + Qwen3-Coder：Agentic Coding強化（2026年4-5月）
+- 通义灵码2.5：プログラミングエージェント機能リリース（自律判断、環境認識、ツール使用）
+- **Qwen3-Coder-Next**（2026-05-03 OSS）：80B MoE（活性化3B）、SWE-Bench 70.6%、Agentic Codingループ最適化
+
+### 9. Linux.do 五一Vibe Codingチャレンジ（2026年5月初旬）
+- 20名の開発者が21プロジェクトを提出、「先コーディング後最適化」の俊敏パラダイムを実証
+
+### 10. V2EXコミュニティ反響（2026-05-13～19）
+- **「全职写代码感觉坚持不下去了」**（5/14, スコア78）：AIに仕事を奪われた開発者のアイデンティティ不安
+- **「不要在520当天晚上vibe coding」**（5/19）：恋人→AIアシスタントに豹変するブラックユーモア
+
+### まとめ
+2026年5月中旬の中国Vibe Coding状況は三極化：
+1. **C端消費者向けプラットフォーム戦争**：腾讯吐司 vs 蚂蚁灵光 vs 灵珠——「だれでもアプリを作れる」競争が本格化
+2. **プロ開発者向けパラダイムシフト**：KarpathyのAnthropic移籍 + Agentic Engineering宣言により、Vibe Codingから工程化エージェント開発への移行が加速
+3. **業界論争**：Node.js PR事件が「AIコード品質 vs レビューコスト」問題を顕在化、業界全体の課題に
+4. **国内モデル進化**：通义灵码(Qwen3-Coder-Next全体80B/活性化3B)がAgentic Coding特化OSSモデルを発表、DeepSeek V4も実用投入
+
 ## 出典
 
 - [Vibe Coding 前沿调研报告2026 (掘金)](https://juejin.cn/post/7605416964510122011)
@@ -443,3 +502,21 @@ Anthropicが2026年5月7日に開催したオンライン技術大会「Code w/ 
 - [知乎: ソフトウェアエンジニアリング3.0時代が到来 (2026.05)](https://zhuanlan.zhihu.com/p/1991964230526710358)
 - [Anthropic Blog: Building Agents that reach production systems with MCP (2026.04)](https://anthropic.com/engineering/mcp-production-agents)
 - [腾讯云开发者社区: MCP协议2025大爆发，2026反而平静？ (2026.05)](https://cloud.tencent.com/developer/article/2644912)
+- **NEW 2026-05-13～20**:
+- [Karpathy joins Anthropic (Reuters, 2026-05-19)](https://www.reuters.com/business/autos-transportation/former-tesla-ai-executive-openai-founding-member-andrej-karpathy-joins-anthropic-2026-05-19/)
+- [Karpathy为何突然加入Anthropic (新浪财经, 2026-05-20)](https://finance.sina.com.cn/jjxw/2026-05-20/doc-inhypaet6982740.shtml)
+- [腾讯推出AI应用生成平台"吐司" (新华网, 2026-05-18)](http://www.news.cn/tech/20260518/983ced744ffe494a916f852ea04586f4/c.html)
+- [人人手搓App时代来了!腾讯吐司和蚂蚁灵光PK (雷科技, 2026-05-18)](https://www.163.com/dy/article/KT88NJLV051100B9.html)
+- [Vibe Coding赛道再升温,灵珠二测全面开放 (网易, 2026-05-11)](https://www.163.com/dy/article/KSL4A43105118HJE.html)
+- [Vibe Coding是一场生产力骗局吗？(36氪, 2026-05-07)](https://www.36kr.com/p/3750319030108935)
+- [从Vibe-Coding到Agentic Engineering: Karpathy生存法则 (Tony Bai, 2026-05-02)](https://tonybai.com/2026/05/02/from-vibe-coding-to-agentic-engineering-karpathy-survival-guide/)
+- [Karpathy戳破「锯齿状智能」(新智元/新浪, 2026-05-01)](https://finance.sina.com.cn/wm/2026-05-01/doc-inhwktzf0567891.shtml)
+- [Vibe Coding成新趋势：开发者五一假期用AI"搓"出创意 (80aj, 2026-05-06)](https://www.80aj.com/2026/05/06/vibe-coding-ai-trend/)
+- [Vibe Coding已死，Agentic Engineering到来 (腾讯云, 2026-02-10)](https://cloud.tencent.com/developer/article/2629272)
+- [Agentic SE (SE 3.0) Workshop @ KDD 2026](https://agent-se.github.io/)
+- [Qwen3-Coder-Next: 80B MoE for Agentic Coding (DataLearner, 2026-05-03)](https://www.datalearner.com/blog/qwen3-coder-next-80b-a3b-open-source)
+- [通义灵码支持Qwen3-Coder (阿里云, 2026-05)](https://developer.aliyun.com/article/1673749)
+- [全职写代码感觉坚持不下去了 (V2EX, 2026-05-14)](https://www.v2ex.com/t/1212702)
+- [不要在520当天晚上vibe coding (V2EX, 2026-05-19)](https://www.v2ex.com/t/1213851)
+- [从Vibe Coding到Wish Coding：蚂蚁灵光重构软件生产关系 (鲸林向海, 2026-04-20)](https://www.itsolotime.com/archives/31063)
+- [Anthropic 2026 Agentic Coding Trends Report](https://resources.anthropic.com/hubfs/2026%20Agentic%20Coding%20Trends%20Report.pdf)

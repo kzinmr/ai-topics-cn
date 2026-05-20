@@ -3,7 +3,7 @@ title: "中国MCPツールエコシステム — 中国語圏向けMCP Server/SD
 type: concept
 tags: [mcp, chinese-ai, tool-integration, feishu, dingtalk, wecom, wechat, open-source, server]
 created: 2026-04-27
-updated: 2026-05-14
+updated: 2026-05-20
 source_lang: zh-CN
 aliases: ["中国MCP工具生态", "China MCP Servers", "中文MCP服务器"]
 ---
@@ -198,6 +198,242 @@ Juejinで「MCP神器推薦：Claude Codeに画像閲覧・検索・ドキュメ
 これはMCPプロトコルが単なる仕様ではなく、実際の開発ワークフローに即座に統合可能な「ツールバス」として機能していることを示す好例。
 
 📎 出典: [Juejin — MCP神器推薦](https://juejin.cn/post/7597709339982708776)（10いいね・23スター）`[Tier-2: 掘金/技術コミュニティ]`
+
+## 2026年5月14日〜20日の重要アップデート
+
+### 8. 新华财经 MCP 服务矩阵（2026-05-18）
+
+| 項目 | 詳細 |
+|------|------|
+| 発表元 | 新华财经（中国金融信息网） |
+| 発表日 | 2026-05-18 |
+| ステータス | ✅ 正式公開 |
+
+2026年5月18日、新华财经（Xinhua Finance）が**MCP服务矩阵**（MCPサービス行列）を正式発表。国家級金融データインフラにMCPプロトコルを導入し、AI智能体（Agent）に権威ある金融データ基盤を提供する取り組み。
+
+**六大類MCP服务体系（6大カテゴリ、30+ MCPサービス）**:
+
+| カテゴリ | 内容 |
+|---------|------|
+| 实时行情（リアルタイム相場） | 国内外取引所のリアルタイム価格データ |
+| 金融市场（金融市場） | 株/債券/ファンド/商品データ |
+| 宏观行业（マクロ・業界） | 中国マクロ経済・世界経済・業界指標 |
+| 企业数据（企業データ） | 企業工商情報・株主構成・リスクスキャン |
+| 资讯公告（ニュース・公告） | 7×24時間ニュース速報、上場企業公告 |
+| 政策研报（政策・レポート） | 18万+政策法规、6000+発行機関、研究レポート |
+
+**五大核心应用场景（5大コアユースケース）**:
+1. **宏观研判与区域研究**: 中国マクロ・省市区県4級データを自然言語で即時取得
+2. **政策合规与风险预警**: 18万+政策法规のセマンティック検索、履歴追跡
+3. **企业全景尽调与股权穿透**: 1.5億件の企業「レッドブラックリスト」、45類部委监管データ直結
+4. **投研决策与市场交易**: 5500+沪深北上場企業、2700+香港上場企業、12000+債券発行企業対応
+5. **智能研报与资讯关联解读**: 日次1000+研報更新、業界・機関フィルタリング
+
+**意义**: 国家レベルの金融データプラットフォームがMCPを採用した初の事例。金融AIのデータコンプライアンス（データソースの追跡可能性・監査可能性）を確保する「国家的金融AIデータ合规基盤」として位置づけられる。
+
+📎 出典: [新华财经 — 解决金融AI数据合规痛点](https://m.cnfin.com/hg-lb//zixun/20260518/4413883_1.html) `[T1: 新华财经/国家級金融情報]`
+
+### 9. 腾讯云 MCP广场 新サーバー群（2026年5月）
+
+腾讯云 MCP广场に2026年5月、新たに4つのMCP Serverが追加公開された。
+
+#### 9.1 实时音视频（TRTC）MCP Server — 2026-05-19
+
+| 項目 | 詳細 |
+|------|------|
+| URL | [cloud.tencent.com/developer/mcp/server/11784](https://cloud.tencent.com/developer/mcp/server/11784) |
+| 提供元 | 腾讯云TRTC团队 |
+| パッケージ | `@tencent-rtc/mcp`（npm） |
+| 状態 | ✅ 実用可能 |
+
+Tencent RTC MCP Serverは、LLMがTRTC（Tencent Real-Time Communication）のSDK・APIを理解・操作できるようにするMCPサーバー。主な機能：
+- **TUICallKit統合ドキュメント取得**: React/Vue/Android/iOS/Flutter各プラットフォームの最新ドキュメントを取得
+- **テストUserSig生成**: SDKAppID + SecretKeyからUserSig自動生成
+- **コード生成支援**: AIが自然言語からプロジェクト初期化・SDK統合コードを自動生成
+
+**対応クライアント**: Cursor, Trae, CodeBuddy, Claude Code, Codex CLI
+
+特に注目すべきはTRTC Migration Assistant MCP（2026-04-17公開）：Agora、Zego、Twilioなどの競合RTCベンダーからの移行コードをAIが自動変換するツール。
+
+📎 出典: [腾讯云TRTC MCP Server](https://cloud.tencent.com/developer/mcp/server/11784) `[T1: 腾讯云公式]`
+
+#### 9.2 容器服务（TKE）MCP Server — 2026-05-18
+
+| 項目 | 詳細 |
+|------|------|
+| URL | [cloud.tencent.com/developer/mcp/server/11804](https://cloud.tencent.com/developer/mcp/server/11804) |
+| 提供元 | 腾讯云TKE团队 |
+| パッケージ | `tke-mcp-server`（PyPI） |
+| 状態 | ✅ 実用可能 |
+
+TKE（Tencent Kubernetes Engine）クラスタ管理のためのMCP Server。以下のツールを提供：
+- クラスタ照会: `DescribeClusters`, `DescribeClusterStatus`, `DescribeClusterKubeconfig`
+- エンドポイント管理: `CreateClusterEndpoint`, `DeleteClusterEndpoint`
+- ノードプール管理: `DescribeNodePools`
+- **動的ツール生成**: McpAPI YAMLファイルから自動ツール生成
+- **CodeBuddy Skill対応**: MCP Server不要でCodeBuddy内で直接利用可能
+
+📎 出典: [腾讯云TKE MCP Server](https://cloud.tencent.com/developer/mcp/server/11804) `[T1: 腾讯云公式]`
+
+#### 9.3 且慢MCP（盈米基金投顾）— 2026-05-18
+
+| 項目 | 詳細 |
+|------|------|
+| URL | [cloud.tencent.com/developer/mcp/server/11801](https://cloud.tencent.com/developer/mcp/server/11801) |
+| 提供元 | 盈米且慢（Qieman） |
+| 状態 | ✅ 実用可能（云托管） |
+
+且慢MCP Serverは、基金分析・資産配置・投資ポートフォリオ診断のためのMCPサーバー。特徴：
+- **云托管モード**: ローカルデプロイ不要、Streamable HTTP / SSEで直接接続
+- **主なツール**: ファンド基本情報/履歴パフォーマンス/保有構成/配当記録、資産配分最適化
+- **対応クライアント**: Claude Desktop, Cursor, Trae, Cherry Studio等
+
+📎 出典: [且慢MCP Server](https://cloud.tencent.com/developer/mcp/server/11801) `[T1: 腾讯云MCP广场]`
+
+#### 9.4 弹性伸缩（AS）MCP Server — 2026-05-07
+
+| 項目 | 詳細 |
+|------|------|
+| URL | [cloud.tencent.com/developer/mcp/server/11730](https://cloud.tencent.com/developer/mcp/server/11730) |
+| 提供元 | 腾讯云CVM团队 |
+| パッケージ | `mcp-server-as`（PyPI） |
+| 状態 | ✅ 実用可能 |
+
+Auto Scaling（AS）のMCP Server。自動スケーリンググループの完全ライフサイクル管理を提供：
+- `CreateAutoScalingGroup`, `DescribeAutoScalingGroups`, `ModifyAutoScalingGroup`
+- `EnableAutoScalingGroup`, `DisableAutoScalingGroup`
+- `ExecuteScalingPolicy`, `ModifyDesiredCapacity`
+
+📎 出典: [腾讯云AS MCP Server](https://cloud.tencent.com/developer/mcp/server/11730) `[T1: 腾讯云公式]`
+
+### 10. 钉钉（DingTalk）MCP 广场 — 6000+ 企業級MCPサービス
+
+| 項目 | 詳細 |
+|------|------|
+| URL | [mcp.dingtalk.com](https://mcp.dingtalk.com/) |
+| 公式Doc | [developers.dingtalk.com](https://developers.dingtalk.com/document/aipass/mcp-square-introduction) |
+| 状態 | ✅ 実用可能 |
+
+钉钉が**MCP广场**（MCPサービス廣場）として6000+の企業級MCPサービスを提供。中国最大規模の企業向けAIスキルマーケット。
+
+**2つの供給源**:
+1. **钉钉公式MCP**: ドキュメントAI、AI表格、会議、日程、TODO、審査など钉钉自身のSaaS機能
+2. **生态MCP广场**: サードパーティ製MCPサービス（AIGC、OCR、音声認識、契約審査など）
+
+**傳統MCP vs 钉钉MCP廣場の差別化要因**:
+
+| 観点 | 傳統MCP | 钉钉MCP广场 |
+|------|---------|------------|
+| 接続 | 各社別にAPIキー管理 | 钉钉内でワンクリック有効化 |
+| 課金 | 各社別課金 | 統一「算粒」従量課金 |
+| 試用 | 前払い必須 | 全組織に週次無料枠 |
+| 管理 | 権限・監査分散 | 統一指認・使用量管理・操作監査 |
+
+**統合方式**: ①钉钉内Deap/AI Assistantに直接統合 ②標準RESTful APIで外部Agentと連携（阿里雲百煉等）
+
+📎 出典: [钉钉开放平台 — MCP广场概述](https://developers.dingtalk.com/document/aipass/mcp-square-introduction) `[T1: 钉钉公式]`
+
+### 11. 支付宝（Alipay）MCP Server — 国内初の決済MCP
+
+| 項目 | 詳細 |
+|------|------|
+| 提供元 | 支付宝（Alipay）/ 蚂蚁集团 |
+| 発表日 | 2026-04-15（支付宝）+ 2026-04-16（蚂蚁百宝箱） |
+| 状態 | ✅ 実用可能（体験版+本番版） |
+
+2026年4月15日、支付宝が**支付MCP Server**（国内初の決済MCP）を発表。4月16日には蚂蚁智能体平台「百宝箱」でMCP专区を開設。
+
+**支付宝 MCP Server 5大核心インタフェース**:
+| ツール名 | 機能 |
+|---------|------|
+| `create-mobile-alipay-payment` | モバイル決済リンク生成（Markdown形式） |
+| `create-web-page-alipay-payment` | PC決済QRコードリンク生成 |
+| `query-alipay-payment` | 注文ステータス照会 |
+| `refund-alipay-payment` | 返金処理 |
+| `query-alipay-refund` | 返金状況照会 |
+
+**蚂蚁百宝箱 MCP专区**:
+- 支付宝・高德地图・无影（Wuying Cloud Desktop）等30+ MCPサービス
+- **2つのモード**: ①全周期托管（1分でMCP対応Agent構築）②快速部署（動的MCPロード）
+- 対応モデル: DeepSeek、通义千问、Kimi、智谱等
+- IIFAA智能体可信互联工作组によるセキュリティ連携
+
+📎 出典: [支付宝支付MCP Server（同花顺）](https://www.smcphub.com/mcp-server/43), [蚂蚁百宝箱MCP专区（东方财富）](https://finance.eastmoney.com/a/202504163378770895.html) `[T1: 公式/報道]`
+
+### 12. 同花顺 iFinD MCP（金融データMCP、2026年3月〜4月更新）
+
+| 項目 | 詳細 |
+|------|------|
+| 提供元 | 同花顺（Hithink RoyalFlush） |
+| 発表日 | 2026-03-12（初版）、2026-04-30（4大データツール追加） |
+| 状態 | ✅ 実用可能 |
+
+iFinD MCPは金融データ端末大手の同花顺が提供する金融データMCP。**4大核心モジュール**:
+- A株分析: スマート選株、日/週/月相場、財務諸表、リスクモデル（Alpha/Beta/Sharpe/VaR）、ESG評価等
+- 公募基金分析: ファンド選別、基本情報、履歴業績、保有構成、配当記録等
+- マクロ経済・業界データ: 世界/中国/地域マクロ指標、業界データ、コモディティ全チェーン
+- 公告とニュース: A株/基金/港美股公告意味検索、ニュース要約
+
+**2026-04-30アップデート**: 債券、港美股、指数、板块の4大データツールを追加。
+
+📎 出典: [同花顺 iFinD MCP正式上线（2026-03-12）](https://news.10jqka.com.cn/20260312/c675239015.shtml), [iFinD MCP新增数据工具（2026-04-30）](https://www.sina.cn/news/detail/5293360119545992.html) `[T2: 報道]`
+
+### 13. 天翼云 MCP 托管服务（2026-04-21）
+
+| 項目 | 詳細 |
+|------|------|
+| 提供元 | 天翼云（China Telecom Cloud） |
+| 更新日 | 2026-04-21 |
+| 状態 | ✅ 実用可能 |
+
+天翼云が**云原生API网关**の「MCP管理」機能を正式リリース。AI网关を通じてMCP Serverの一元管理を実現：
+- MCP服务直接代理モード（SSE / Streamable HTTP双方対応）
+- MCP接入点のドメイン・パス管理
+- MCPサービスの公開・停止・削除のライフサイクル管理
+
+中国三大キャリア（中国電信）のクラウドがMCP対応に参入したことを示す。
+
+📎 出典: [天翼云 托管MCP服务](https://www.ctyun.cn/document/11005917/11091632) `[T1: 天翼云公式]`
+
+### 14. 华为云 Serverless + MCP 融合方案
+
+| 項目 | 詳細 |
+|------|------|
+| 提供元 | 华为云 |
+| 状態 | ✅ 実用可能 |
+
+华为云が**AI原生应用运行平台 + MCP**の製品組合せ方案を発表。Serverless関数計算（FunctionGraph）とMCPを融合：
+- MCP ServerをFunctionGraphにデプロイ→ミリ秒単位の弾性スケーリング
+- 30秒でMCP Serverデプロイ（事前構築テンプレート）
+- MCP注册/配置中心（CSE）+ Nacos自動登録・発見
+- アプリケーションテンプレート: server-github等のプリセットMCP
+
+📎 出典: [华为云 Serverless与MCP融合创新（博客园）](https://www.cnblogs.com/huaweiyun/p/18844849) `[T2: 华为云博客]`
+
+### 15. その他注目アップデート
+
+#### mcp-notify（通知MCP Server）
+
+2025年末に登場した`mcp-notify`は、中国IMチャネルをネイティブサポートする通知MCP Serverとして注目を集めている。**対応チャネル**:
+- 企业微信（WeCom）: グループロボット + アプリケーション
+- 钉钉（DingTalk）: グループロボット
+- 飞书（Feishu/Lark）: グループロボット
+- Telegram, Bark, PushPlus, Ntfy, Home Assistant 等
+
+GitHubスター26。`uvx mcp-notify`で即時利用可能。中国IM対応ツールとしてClaude Code等で活用されている。
+
+📎 出典: [GitHub - iflow-mcp/mcp-notify](https://github.com/iflow-mcp/mcp-notify) `[T3: コミュニティ]`
+
+#### 百度 MCP 生態の進展
+
+百度搜索開放プラットフォーム「MCP广场」が2026年5月時点で**1.6万+のMCP Server**を収録。百度智能云千帆プラットフォームが国内最大のMCPエコシステムに成長。主なMCP Server:
+- 百度搜索MCP（文心大模型联网搜索）— 市场最高と李彦宏が主張
+- 百度地图MCP（10コアAPI、ルート最適化＋交通管制Agent連携）
+- 百度电商MCP（国内初のEC決済対応MCP）
+- 百度文库/百度网盘MCP（コンテンツ生成）
+- AI开放能力13種MCP Server（文字認識・顔認識・音声認識等70ツール）
+
+📎 出典: [36氪 — 百度搜索收录MCP server超1.6万](https://36kr.com/newsflashes/3334623759493377), [百度智能云千帆MCP广场](https://cloud.baidu.com/doc/qianfan/s/1mh4stp3t) `[T1: 公式/報道]`
 
 ### 7. その他の注目MCP Server
 
