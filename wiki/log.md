@@ -1,5 +1,17 @@
 |
 
+## [2026-05-21] active-crawl | Qwen/Doubao/ChatGLM deepdive
+
+### Wiki更新
+- `entities/qwen.md` — Qwen3.7-Max(Agent-first/5月20日)、Qoder 1.0(自律開発Desktop)、Qwen3.5-LiveTranslate-Flash(音声同時通訳)、Qwen Code v0.16.0を追記
+- `concepts/doubao.md` — MAU3.45億、Agent Plan有料サブスク(月額68/200/500)、AI誤導訴訟を追記
+- `concepts/chatglm.md` — GLM-5.1 8時間自律実行、ZCubeアーキテクチャ(推論15%向上)、「Chinese Anthropic」戦略(CEO張鵬5月13日)、時価総額5000億HKD突破を追記
+
+### hot-topics.yaml更新
+- qwen: last_crawled→2026-05-21、notesにQwen3.7-Max/Qoder 1.0/Qwen3.5-LiveTranslate-Flash追記
+- chatglm: last_crawled→2026-05-21、notesにGLM-5.1自律実行/ZCube/Chinese Anthropic戦略追記
+- doubao: last_crawled→2026-05-21、notesにMAU3.45億/Agent Plan/AI誤導訴訟追記
+
 ## [2026-05-20] crawl-triage | SpokenWOZ再収集（日付更新のみ）
 
 ### Wiki更新

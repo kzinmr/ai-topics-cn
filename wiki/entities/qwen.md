@@ -1,7 +1,7 @@
 ---
 title: Qwen（通义千问）— 阿里云大模型旗舰
 created: 2026-04-17
-updated: 2026-05-15
+updated: 2026-05-21
 tags: [llm, model, china, open-source-ai, alibaba, qwen, agentic-coding, ai-infrastructure]
 aliases: ["Qwen", "通义千问", "qwen", "Qwen3.5", "Qwen3-Coder", "Qwen3.6", "Qwen3.6-Plus", "Qwen3.6-27B", "Qwen3.6-35B-A3B"]
 source_lang: zh-CN
@@ -397,6 +397,90 @@ QwenChat上で「Deep Research（深入研究）」機能が稼働中。複数�
 | Qwen3.6-Max SWE-bench Pro | — | 4月下旬首位 → Claude Mythos(77.8%)に抜かれる |
 | Qwen3.6-Max Terminal-Bench 2.0 | 65.4% | Claude Opus 4.7と**同位** |
 | QwenWebBench ELO | **1,558** | Claude Opus 4.5(1,182)を大きくリード — Alibabaが正当に首位を主張できる領域 |
+
+## 2026年5月下旬の動向
+
+### Qwen3.7-Max — Agent-firstフラッグシップ正式発表（2026年5月20日）
+
+2026年5月20日、Alibaba Cloud Summit（杭州）で**Qwen3.7-Max**が正式発表された。同日、Qwen3.7-Plus-Previewも同時発表。
+
+| 項目 | Qwen3.7-Max | Qwen3.7-Plus-Preview |
+|------|------------|---------------------|
+| **発表日** | 2026-05-20（Alibaba Cloud Summit） | 2026-05-20 |
+| **プレビュー先行公開** | 5月18〜19日（Qwen Chat / Arena AI） | 同時 |
+| **設計思想** | **Agent-first** — 継続的・多段階自律エージェント向け | 均衡型（推論＋マルチモーダル） |
+| **コンテキスト** | 256K | 1M tokens |
+| **ライセンス** | クローズドウェイト（API専用） | Plus版は後日Apache 2.0 OSS予定 |
+| **価格** | — | ¥2/100万トークン〜 |
+
+**衝撃の自律実行デモ**:
+- 未学習の**平頭哥真武M890チップ**上で35時間連続稼働
+- **1,158回**のツールコール、**432回**のカーネル評価
+- 公式SGLang Triton実装比**10倍の推論速度向上**
+
+**ベンチマーク成績**:
+| ベンチマーク | スコア | 評価 |
+|-------------|--------|------|
+| Arena総合テキスト | **#13位** | 国内モデル最高位 |
+| Terminal-Bench 2.0-Terminus | **69.7点** | DeepSeek-V4-Pro-Max、Claude Opus 4.6超え |
+| MCP-Atlas / MCP-Mark / Skillbench | **首位** | GLM-5.1、Kimi-K2.6超え |
+| GPQA Diamond / HLE / HMMT 2026 Feb | **Opus 4.6超え** | 科学的推論でリード |
+| IFBench | **79.1点** | 新記録 |
+
+**対応エージェントハーネス**: OpenClaw、Hermes Agent、Claude Code、Qwen Paw、Qoder最適化。
+
+> **出典**: [Alibaba Cloud Blog — Alibaba Unveils New AI Chip](https://www.alibabacloud.com/blog/alibaba-unveils-new-ai-chip-flagship-model-and-rebuilt-cloud-stack-ai-for-agentic-era_603151), [新浪科技](https://finance.sina.com.cn/tech/roll/2026-05-20/doc-inhyphnp1790590.shtml), [CnTechPost](https://cntechpost.com/2026/05/19/alibaba-hints-qwen3-7-ai-model-launch-step-up-ai-race/)
+
+### Qwen3.5-LiveTranslate-Flash — リアルタイム多言語翻訳（2026年5月19日）
+
+- **公式モデルID**: `qwen3.5-livetranslate-flash-realtime-2026-05-19`
+- **基盤**: Qwen3.5-Omniベース
+- **対応言語**: **60入力言語**（うち29言語で音声出力対応）
+- **遅延**: **2.8秒**（Qwen3版の3秒から改善）
+- **ビジョン強化**: 口の動き・ジェスチャー・画面テキスト読み取りで翻訳精度向上
+- **リアルタイム声クローン**: 1文の発話で話者の声プロファイルを再現
+- **セマンティック単位予測**（Reading Units）による連続ストリーミング出力
+- **動的キーワード設定**: ドメイン固有辞書をランタイム注入可能
+- **API専用**（WebSocketベース、DashScope API経由）
+
+> **出典**: [Qwen Changelog](https://docs.qwencloud.com/changelog/models), [MarkTechPost](https://www.marktechpost.com/2026/05/20/alibaba-qwen-team-introduces-qwen3-5-livetranslate-flash-real-time-multimodal-interpretation-across-60-languages-at-2-8-second-latency/)
+
+### Qoder 1.0 — 自律開発デスクトップへ進化（2026年5月15日）
+
+AlibabaのAI IDE「Qoder」がv1.0に到達し、**自律開発デスクトップ（Autonomous Development Desktop）**へ進化：
+
+| 新機能 | 説明 |
+|--------|------|
+| **チーム知識共有エンジン**（世界初） | 分散メモリ・Wiki・知識カードを統合。コード保持率+11%、入力Token消費-40%、対話数-33% |
+| **Expertsモード** | カスタマイズ可能なエージェントチーム作成（ドメイン知識・タスクスキル・外部ツール設定） |
+| **クロスプロジェクトマルチタスク** | 複数プロジェクトのエージェントタスクを統合パネルから同時実行 |
+| **Quest機能進化** | 単一モードから独立ウィンドウシステムへ。タスク管理・ステータス追跡・成果レビュー・知識検索を統合 |
+
+- **グローバルユーザー**: 500万人超（2025年8月ローンチ以来）
+- **位置づけ**: Qwen-Coder-Qoderモデル（強化学習特化）搭載、Cursor Composer対抗
+
+> **出典**: [CnTechPost](https://cntechpost.com/2026/05/15/alibaba-launches-qoder-1-0-to-automate-software-development-ai-agents/), [GlobeNewswire](https://www.globenewswire.com/news-release/2026/05/16/3296208/0/en/Qoder-Version-1-0-Released-Full-Automation-of-Code-Generation-Verification-Delivery.html)
+
+### Alibaba Cloud Summit — ハードウェアスタック刷新（2026年5月20日）
+
+Alibaba Cloud Summitで発表された新ハードウェア群：
+
+| 製品 | スペック |
+|------|---------|
+| **真武M890チップ** | 前世代(真武810E)比**3倍性能**、144GBオンチップメモリ、800GB/sチップ間帯域幅、FP32〜FP4対応 |
+| **ICN Switch 1.0** | 25.6Tbps集約帯域幅、64アクセラレータ間輻輳フリー通信 |
+| **Panjiu AL128スーパーノードサーバー** | 128アクセラレータ、PB/s内部帯域幅 |
+| **T-Head SAILソフトウェアスタック** | 独自ハードウェア性能最大化 |
+
+**Agentic RL**（百煉プラットフォーム）: 実際のエージェントタスク結果に基づく継続的モデル改善を実現。
+
+**ARR予測**: 6月四半期に**¥100億（約$14億）**、年末までに**¥300億（約$41億）**。AI関連製品収益は約1年以内に従来のクラウドコンピュート売上を超える見込み。
+
+> **出典**: Alibaba Cloud Blog (同上)
+
+### Qwen3.5-Plus 2026-04-20 スナップショット
+
+4月20日付スナップショットでAgentic Coding能力が大幅改善。1Mトークンコンテキスト対応。4月27日より一般公開。
 
 ### ビジネス指標（QuestMobile Q1 2026）
 

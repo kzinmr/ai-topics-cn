@@ -63,9 +63,9 @@ topics:
       - "QWQ overthinking 無限ループ バグ"
     wiki_pages:
       - entities/qwen
-    notes: "2026.05.15更新: 5月11日淘宝EC統合(自然言語→商品検索/購入/在庫確認/フォロー)。Qwen Code v0.15.11(5月13日/open-in-terminal/MCP/4o-native/Telemetry)。千問Deep Research正式版(5月6日/十数分レポート)。QWQ/Qwen3.6 overthinkingバグ(5月12日/無限ループ報告)。QuestMobile 3月MAU1.66億(+4,241%/国内2位)。百煉Agent動的ツール。Qwen-Scope(SAE/OSS)/QwenPaw★16.4K/Lingma IDE。Zhenwu AI韶関10K基。Alibaba社内AI統制強化(20人CodeFreeze)。Qwen3.6-235B-A21B-preview DeepSeek V4超え。"
+    notes: "2026.05.21更新: Qwen3.7-Max(5月20日/Agent-first自律実行最適化/自律エージェント向け初モデル)。Qoder 1.0(自律開発Desktop/統合開発環境/コード自動生成と実行バイナリ直接生成)。Qwen3.5-LiveTranslate-Flash(音声同時通訳/低遅延特化)。Qwen Code v0.16.0(Agent機能・MCP統合拡張)。2026.05.15更新: 5月11日淘宝EC統合(自然言語→商品検索/購入/在庫確認/フォロー)。Qwen Code v0.15.11(5月13日/open-in-terminal/MCP/4o-native/Telemetry)。千問Deep Research正式版(5月6日/十数分レポート)。QWQ/Qwen3.6 overthinkingバグ(5月12日/無限ループ報告)。QuestMobile 3月MAU1.66億(+4,241%/国内2位)。百煉Agent動的ツール。Qwen-Scope(SAE/OSS)/QwenPaw★16.4K/Lingma IDE。Zhenwu AI韶関10K基。Alibaba社内AI統制強化(20人CodeFreeze)。Qwen3.6-235B-A21B-preview DeepSeek V4超え。"
     added: 2026-04-17
-    last_crawled: "2026-05-15"
+    last_crawled: "2026-05-21"
 
   - slug: chatglm
     title: "ChatGLM (智谱清言) — Zhipu AI"
@@ -83,9 +83,9 @@ topics:
       - "智譜AI OpenClaw 論争 Hermes SillyTavern"
     wiki_pages:
       - concepts/chatglm
-    notes: "2026.05.15更新: GLM-5.1継続安定性向上/Coding Agent最適化(5月前半)。Z.aiブランド海外正式運用開始(DeepSeek/Qwen差別化/エンタープライズ訴求)。OpenClaw論争決着(Hermes/SillyTavern追加サポート/コミュニティ関係修復)。DeepSeek V4価格競争対応(CEO張鵬'Tokenの質が価格を決める'/価格競争非追随)。Scaling Pain技術ブログ(4月30日/Agent推論132%向上)。2025年度決算(収入7.24億元+132%)。香港IPO計画。"
+    notes: "2026.05.21更新: GLM-5.1 8時間自律実行ベンチマーク(最高難度Agentタスク/複数エージェント協調)。ZCubeネットワークアーキテクチャ本格展開(推論スループット15%向上/低レイテンシ)。「Chinese Anthropic」戦略宣言(5月13日CEO張鵬/AI安全・信頼性・エンタープライズ重視路線)。時価総額5000億HKD突破(香港市場/5月中旬)。2026.05.15更新: GLM-5.1継続安定性向上/Coding Agent最適化(5月前半)。Z.aiブランド海外正式運用開始(DeepSeek/Qwen差別化/エンタープライズ訴求)。OpenClaw論争決着(Hermes/SillyTavern追加サポート/コミュニティ関係修復)。DeepSeek V4価格競争対応(CEO張鵬'Tokenの質が価格を決める'/価格競争非追随)。Scaling Pain技術ブログ(4月30日/Agent推論132%向上)。2025年度決算(収入7.24億元+132%)。香港IPO計画。"
     added: 2026-04-17
-    last_crawled: 2026-05-15
+    last_crawled: 2026-05-21
 
   - slug: kimi
     title: "Kimi — Moonshot AI (月之暗面)"
@@ -144,9 +144,9 @@ topics:
       - "栄威 家越 AI原生 自動車 火山引擎"
     wiki_pages:
       - concepts/doubao
-    notes: "2026.05.15更新: 豆包有料サブスク大議論(5月11-15日連日全国メディア議論/Morgan Stanley年収1-15億ドル/消耗式/跨端消費/デフォルト学習許諾)。豆包输入法Mac版(5月13日/V2EX話題/音声認識高評価)。火山引擎MaaSシェア49.5%(IDC/国内1位/市場Token16倍)。豆包AI誤導訴訟(5月14日/退改航ハルシネーション)。栄威家越07量産版6月Engine Force発表/提携深化。競合波及: DeepSeek V4-Pro2.5割/千問補助金/元宝文心無料継続。月活2.27億・DAU1億。豆包4シリーズ/Doubao-Seed-2.0-lite全模态(5月6日)。"
+    notes: "2026.05.21更新: 豆包MAU3.45億(訂正/前回227M→最新345M)。Agent Plan有料サブスク正式発表(月額68/200/500円/自律エージェント機能限定)。AI誤導訴訟(退改航ハルシネーション/5月14日提起)。2026.05.15更新: 豆包有料サブスク大議論(5月11-15日連日全国メディア議論/Morgan Stanley年収1-15億ドル/消耗式/跨端消費/デフォルト学習許諾)。豆包输入法Mac版(5月13日/V2EX話題/音声認識高評価)。火山引擎MaaSシェア49.5%(IDC/国内1位/市場Token16倍)。豆包AI誤導訴訟(5月14日/退改航ハルシネーション)。栄威家越07量産版6月Engine Force発表/提携深化。競合波及: DeepSeek V4-Pro2.5割/千問補助金/元宝文心無料継続。月活2.27億・DAU1億。豆包4シリーズ/Doubao-Seed-2.0-lite全模态(5月6日)。"
     added: 2026-04-17
-    last_crawled: 2026-05-15
+    last_crawled: 2026-05-21
 
   - slug: tencent-hunyuan
     title: "混元 (Hunyuan) — Tencent AI"

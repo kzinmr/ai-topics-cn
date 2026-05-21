@@ -1,8 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-05-20
+最終更新: 2026-05-21
 エンティティ: 61, コンセプト: 116, ダイジェスト: 7, 比較: 2, ページ: 9
-### 本日更新（2026-05-20 Active Crawl: Vibe Coding / Kimi / MCP Chinese Tools）
+### 本日更新（2026-05-21 Active Crawl: Qwen/Doubao/ChatGLM deepdive）
+- `entities/qwen.md` — **更新**: Qwen3.7-Max(5/20/Agent-first自律実行最適化)、Qoder 1.0(自律開発Desktop)、Qwen3.5-LiveTranslate-Flash(音声同時通訳)、Qwen Code v0.16.0
+- `concepts/doubao.md` — **更新**: MAU3.45億(訂正)、Agent Plan有料サブスク(月額68/200/500)、AI誤導訴訟(退改航)
+- `concepts/chatglm.md` — **更新**: GLM-5.1 8時間自律実行ベンチマーク、ZCubeアーキテクチャ(推論15%向上)、「Chinese Anthropic」戦略(CEO張鵬5/13)、時価総額5000億HKD
 - `concepts/vibe-coding-china.md` — **更新**: Karpathy Anthropic加入(5/19)、腾讯吐司(Toast/应用宝)、灵珠二测(DS V4統合)、36kr三阶段衰退曲线(Node.js 1.9万行AI生成PR事件)、KDD 2026 Workshop SE 3.0、通义灵码2.5+Qwen3-Coder-Next
 - `concepts/kimi.md` — **更新**: Kimi WebBridgeリリース(5/15/ブラウザAgent)、国有資本参入(国智投・北京AI基金・中国移動/5/19)、Cursor Composer 2.5(Kimi K2.5ベース)、IPO紅籌架构拆除開始
 - `concepts/mcp-chinese-tools.md` — **大幅更新**: 新华财经MCP(国家級金融)、钉钉MCP广场6000+、支付宝MCP Server(初決済)、同花顺iFinD MCP、天翼云MCP托管(3大キャリア初)、华为云Serverless+MCP
