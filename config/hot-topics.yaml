@@ -38,11 +38,13 @@ topics:
       - "DeepSeek V4.1 マルチモーダル MCP 2026年6月"
       - "DeepSeek 500亿元 融资 腾讯 出资 估值"
       - "DeepSeek V4.1 全模态 语音 多模态"
+      - "DeepSeek Agent Harness コードAgent 製品化"
+      - "DeepSeek 特殊文字 幻覚 バグ 5月"
     wiki_pages:
       - concepts/deepseek
-    notes: "2026.05.18更新: V4.1(6月リリース予定)正式発表—全モーダル(画像+音声入力)/MCPネイティブ対応/エンタープライズツールチェーン(Fine-tuning/PrivateDeploy/SecurityAudit)。500億元大型調達(評価額515億ドル/梁文鋒40%出資/Tencent60億元2%出資/大基金交渉中/阿里交渉決裂報道)。V4 Flash単日1200億tokens継続上昇。網新檢測V4国産化適応テスト体系的枠組み(5/15)。"
+    notes: "2026.05.22更新: Agent Harnessチーム募集開始(Model+Harness=Agent/Claude Code対抗DesktopコードAgent/6-12ヶ月見通し)。特殊文字幻覚問題(5/19/セキュリティ問題否定/対処的訓練中)。V4-Flash日次42.6B tokens/Pro 11.7B(OpenRouter)。V4.1の6月リリース予定変更なし。500億元調達交渉継続中(クローズ未発表)。2026.05.18更新: V4.1(6月リリース予定)正式発表—全モーダル(画像+音声入力)/MCPネイティブ対応/エンタープライズツールチェーン(Fine-tuning/PrivateDeploy/SecurityAudit)。500億元大型調達(評価額515億ドル/梁文鋒40%出資/Tencent60億元2%出資/大基金交渉中/阿里交渉決裂報道)。V4 Flash単日1200億tokens継続上昇。網新檢測V4国産化適応テスト体系的枠組み(5/15)。"
     added: 2026-04-17
-    last_crawled: 2026-05-18
+    last_crawled: 2026-05-22
 
   - slug: qwen
     title: "Qwen (通义千问) — Alibaba"
@@ -159,12 +161,15 @@ topics:
       - "数字中国建设峰会 腾讯 混元 2026"
       - "WorkBuddy QClaw OpenClaw 腾讯 Agent"
       - "姚顺雨 Infty AI 混元 架构 2026"
+      - "混元 TurboS T1 腾讯云AI产业应用峰会 5月"
+      - "Hunyuan Voice 元宝 音声通話 リアルタイム"
+      - "Hy-MT2 翻訳モデル オープンソース"
     wiki_pages:
       - entities/tencent-ai
       - entities/tencent-hunyuan
-    notes: "2026.05.09更新: Hy3 Previewが5/7週のOpenRouter週間ランキングで再び総合API呼び出し量1位（Hy2比10倍超/CodeBuddy・WorkBuddy16.5倍急増）。Tencent株価3%超上昇。高盛Buy評価・目標株価HK$700。姚順雨の実業務重視哲学が裏付け。Hy3.0正式版5-6月リリース予定。前回(5/4)カバー済みの数字中国建設峰会展示や安全認証は継続中。"
+    notes: "2026.05.22更新: 腾讯云AI产业应用峰会(5/21)で大規模発表—TurboS(Arena全球8位/中国2位)/T1/T1-Vision/Hunyuan Voice(端到端音声/1.6秒応答)/Hy-MT2翻訳33言語OSS/知識引擎→智能体開発平台全面刷新。Hy3 Preview OpenRouter4週連続1位(5/11-17週2.66兆tokens/+210%)。混元Image 2.0(5/16/ミリ秒応答リアルタイム画像生成)。元宝WeChat聊天記録要約(5/13/微信統合第一歩)。Q1決算売上1,965億元(+9%)/AI投資370億元。Hy3.0正式版5-6月予定継続。2026.05.09更新: Hy3 Previewが5/7週のOpenRouter週間ランキングで再び総合API呼び出し量1位（Hy2比10倍超/CodeBuddy・WorkBuddy16.5倍急増）。Tencent株価3%超上昇。高盛Buy評価・目標株価HK$700。姚順雨の実業務重視哲学が裏付け。Hy3.0正式版5-6月リリース予定。前回(5/4)カバー済みの数字中国建設峰会展示や安全認証は継続中。"
     added: 2026-04-29
-    last_crawled: 2026-05-16
+    last_crawled: 2026-05-22
 
   # =========================================================
   # 2. Chinese AI Agent Ecosystem (中国AIエージェント)
@@ -223,11 +228,13 @@ topics:
       - "Coze 扣子 2026年5月 最新功能 アップデート"
       - "Coze Agent World OpenClaw 新機能"
       - "扣子 编程 Coze Programming 一键部署"
+      - "火山引擎 扣子 企業交流日 導入事例 2026"
+      - "Coze 蝦評 InStreet Skills Agent World"
     wiki_pages:
       - concepts/coze
-    notes: "2026.05.08更新: 5月新規情報なし。前回4/26カバー済みのCoze 2.5(Agent World/云电脑/扣子编程/OpenClaw Studio)が現状最新。WeChat知更Ai連携継続。特筆すべき新機能リリースなし。次回はAgent Worldの実運用事例が出揃った段階で再評価。"
+    notes: "2026.05.22更新: 火山引擎「扣子企業交流日」で数万社企業導入実績確認—乐鑫科技(ハードウェア連携)/百望股份(金融Agent)/抖音电商(CS)/和府捞面(レビュー分析)/译百分(AI英語面接)。Agent Worldエコシステム数値確認: 蝦評(Xiaping)365 Skills/2万+レビュアー、InStreet 2万+Agent。Coze 2.5安定運用継続(Coze Space v2.0.4/App v1.8.1マイナー更新)。新たなメジャーバージョンなし。PPT生成・AI動画制作(Seedance 2.0)実用レベル。6/11豆包音声ポッドキャストモデル予告。Coze vs Dify補完関係定着(プロトタイプ vs 本番運用)。2026.05.08更新: 5月新規情報なし。前回4/26カバー済みのCoze 2.5(Agent World/云电脑/扣子编程/OpenClaw Studio)が現状最新。WeChat知更Ai連携継続。特筆すべき新機能リリースなし。次回はAgent Worldの実運用事例が出揃った段階で再評価。"
     added: 2026-04-17
-    last_crawled: 2026-05-08
+    last_crawled: 2026-05-22
 
   - slug: dify
     title: "Dify — Open-Source LLMOps Platform"

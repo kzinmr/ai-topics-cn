@@ -1,11 +1,23 @@
 |
 
-## [2026-05-21] active-crawl | Qwen/Doubao/ChatGLM deepdive
-
-### Wiki更新
-- `entities/qwen.md` — Qwen3.7-Max(Agent-first/5月20日)、Qoder 1.0(自律開発Desktop)、Qwen3.5-LiveTranslate-Flash(音声同時通訳)、Qwen Code v0.16.0を追記
-- `concepts/doubao.md` — MAU3.45億、Agent Plan有料サブスク(月額68/200/500)、AI誤導訴訟を追記
-- `concepts/chatglm.md` — GLM-5.1 8時間自律実行、ZCubeアーキテクチャ(推論15%向上)、「Chinese Anthropic」戦略(CEO張鵬5月13日)、時価総額5000億HKD突破を追記
+|## [2026-05-22] active-crawl | DeepSeek / Tencent Hunyuan / Coze
+|
+|### Wiki更新
+|- `concepts/deepseek.md` — Agent Harnessチーム募集(Model+Harness=Agent/Claude Code対抗)、特殊文字幻覚問題(5/19)、V4-Flash日次42.6B/Pro11.7B tokens(OpenRouter)
+|- `entities/tencent-hunyuan.md` — 腾讯云AI产业应用峰会(5/21)TurboS/T1/T1-Vision/Hunyuan Voice/Hy-MT2翻訳33言語OSS/Hy3 Preview OpenRouter4週連続1位/混元Image 2.0/元宝WeChat聊天記録要約
+|- `concepts/coze.md` — 火山引擎「扣子企業交流日」数万社導入実績/Agent Worldエコシステム数値(蝦評365 Skills/InStreet 2万+Agent)/Coze 2.5安定運用/PPT生成・AI動画実用化
+|
+|### hot-topics.yaml更新
+|- deepseek: last_crawled→2026-05-22、Agent Harness/幻覚問題/OpenRouter統計追記
+|- tencent-hunyuan: last_crawled→2026-05-22、TurboS/T1/HunyuanVoice/Hy3.0正式版/Hy-MT2追記
+|- coze: last_crawled→2026-05-22、企業交流日導入事例/Agent World数値追記
+|
+|## [2026-05-21] active-crawl | Qwen/Doubao/ChatGLM deepdive
+|
+|### Wiki更新
+|- `entities/qwen.md` — Qwen3.7-Max(Agent-first/5月20日)、Qoder 1.0(自律開発Desktop)、Qwen3.5-LiveTranslate-Flash(音声同時通訳)、Qwen Code v0.16.0を追記
+|- `concepts/doubao.md` — MAU3.45億、Agent Plan有料サブスク(月額68/200/500)、AI誤導訴訟を追記
+|- `concepts/chatglm.md` — GLM-5.1 8時間自律実行、ZCubeアーキテクチャ(推論15%向上)、「Chinese Anthropic」戦略(CEO張鵬5月13日)、時価総額5000億HKD突破を追記
 
 ### hot-topics.yaml更新
 - qwen: last_crawled→2026-05-21、notesにQwen3.7-Max/Qoder 1.0/Qwen3.5-LiveTranslate-Flash追記
