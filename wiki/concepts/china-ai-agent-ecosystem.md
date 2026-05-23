@@ -1,7 +1,7 @@
 ---
 title: "中国AI智能体生态 — 2026年プラットフォーム・アーキテクチャ・市場動向"
 created: 2026-04-19
-updated: 2026-05-17
+updated: 2026-05-23
 tags: [ai-agents, platform, china, ecosystem, low-code, enterprise, openclaw, harness, coding-agent, cli-revival]
 aliases: ["中国AI智能体生态", "中国Agentプラットフォーム", "Baidu AgentBuilder", "腾讯元器", "Coze", "Dify", "OpenClaw-CN", "龙虾大战"]
 source_lang: zh-CN
@@ -506,3 +506,216 @@ Juejin開発者が**n8nを使用して複雑な知識を自動的に小红书向
 || 36kr — 百度Create 2026実況 | [36kr.com/p/3154321098](https://36kr.com/p/3154321098) | T1 | DAA・Token Factory・心響 |
 || 36kr — 中国跳过LLM直奔Agent | [36kr.com/p/3132098765](https://36kr.com/p/3132098765) | T1 | Token消費180兆爆発 |
 || 新浪财经 — Agent Token経済 | [finance.sina.com.cn/...9988776](https://finance.sina.com.cn/tech/roll/2026-05-15/doc-inhuzkpk9988776.shtml) | T1 | Agent Token階層分析 |
+
+## 2026年5月18日〜23日 最新動向：Agent三巨頭同日発表・R2オープンソース・クラウド第五戦役
+
+### 時系列サマリー
+
+| 日付 | イベント | 企業 | 重要度 |
+|------|---------|------|--------|
+| 5/9 | 文心大模型5.1正式リリース | 百度 | ★★★ |
+| 5/11 | 火山引擎 Agent Plan 発表（業界初Agent套餐包） | 字节跳动 | ★★★ |
+| 5/13 | 腾讯Q1财报 — AI智能体核心焦点 | 腾讯 | ★★★ |
+| 5/13-14 | Create 2026百度AI开发者大会 | 百度 | ★★★★ |
+| 5/17 | OpenClaw ClawHub 14,500+ Skill到達 | OpenClaw | ★★ |
+| **5/18** | **AutoGLM 3.0 (AAOS) 発表** | **智谱AI** | **★★★★★** |
+| **5/18** | **Qwen Agent v2 + Qwen3-72B オープンソース** | **阿里巴巴** | **★★★★★** |
+| **5/18** | **DeepSeek R2 全系列オープンソース（1M Context）** | **DeepSeek** | **★★★★★** |
+| 5/20 | 2026阿里雲峰會 — 32+ Agentic Cloud新品 | 阿里巴巴 | ★★★★ |
+| 5/18 | UUMit A2A能力网络プラットフォーム発表 | UUMit | ★★ |
+| 5/13 | 360「龙虾计划」全員Token配布 | 360 | ★★ |
+| 5/22 | 36kr「中国云厂商第五战役」分析 | 36kr | ★★★★ |
+| 5/23 | 华为AgentArts SDK v0.1.2 + 5/30开源增强版予告 | 华为 | ★★★ |
+
+### 1. 【大事件】5月18日：Agent三巨頭同日発表
+
+2026年5月18日、中国AI業界で**3つのメガプラットフォームが同日に新製品を発表**し、業界最大の「Agentサミット」と化した。
+
+#### ① 智谱AI — AutoGLM 3.0 (AAOS: 自主智能体操作系统)
+- **初の「自主智能体操作系统（AAOS）」** として位置づけ
+- **月間アクティブユーザー2000万突破**（5月時点）— AutoGLMは中国最大のモバイルAgent
+- **マルチAgent協調**: 複数Agentが協調してタスクを実行するアーキテクチャを標準実装
+- **画面理解（Screen Understanding）**: Agentがスマホ画面のUI要素を直接認識し操作
+- **跨应用操作**: 外卖注文・行程計画等の複雑タスクを自動完遂
+- **企業版**: エンタープライズAgent向け管理・監査機能を追加
+- **モデル基盤**: GLM-5V-Turbo（5/11発表）のマルチモーダル視覚能力を活用
+- 出典: 智谱官網 [zhipuai.cn/news/autoglm-3-may-2026]; AI简报 [yijunzhao.cn/archives/ai-agents-kai-yuan-llm-jian-bao-2026nian-5yue-18ri]
+
+#### ② 阿里巴巴 — Qwen Agent v2 + Qwen3-72B-Instruct
+- **Qwen Agent v2**: マルチモーダル入力（テキスト+画像+音声）対応、Multi-Agent協調。
+  - 効率35%向上と発表
+- **Qwen3-72B-Instruct オープンソース**（Apache 2.0）:
+  - Hugging Face Open LLM Leaderboardで**世界1位**を獲得
+  - Llama 4 70BおよびMistral Large 3を超越
+- **通义千問×淘宝/天猫統合**: 5/11発表。40億商品データベース・20年取引データを活用し、**「ユーザー検索→AI自動意思決定」**へ転換。購買決定効率40%向上
+- **悟空Agent 規模化放量**: 阿里Q4财报で確認。企业级Agent平台が本格稼働
+- 出典: 阿里云Blog [alibabacloud.com/blog/qwen-agent-v2-may-2026]; AI简报 [yijunzhao.cn]; 腾讯云开发者社区 [cloud.tencent.com/developer/article/2668857]
+
+#### ③ DeepSeek — R2 全系列オープンソース
+- **DeepSeek R2 全系列（1.5B〜671B MoE）** をオープンソース公開
+- **1M Token コンテキスト** — DeepSeek V4の1M Context技術を推論特化で最適化
+- **API価格**: $0.14/MTok入力（GPT-5比約**89-92%安**）
+- **Hugging Face 24時間ダウンロード50万超**
+- **中英文Agentタスク**: 高度なパフォーマンスを確認
+- アーキテクチャ: MoE 685B総パラメータ／37B活性、128K〜256Kコンテキスト（R2はV4の1Mから若干縮小し価格最適化）
+- 出典: DeepSeek Blog [deepseek.com/blog/r2-open-source-may-2026]; AI简报 [yijunzhao.cn]; theplanettools.ai [theplanettools.ai/tools/deepseek-r2]
+
+#### 同日トレンド総括
+
+AI简报（yijunzhao.cn）の5月18日付分析による5大トレンド:
+1. **国产Agent三巨頭登場**（智谱/阿里/字节）🔥🔥🔥🔥🔥
+2. **开源模型集体逼近閉源**（Llama 4 / Qwen3-72B / DeepSeek R2）🔥🔥🔥🔥🔥
+3. **自主智能体操作系统概念**（AutoGLM 3.0 AAOS）🔥🔥🔥🔥🔥
+4. **超長コンテキストが標準化**（DeepSeek 1M / Llama 4 256K）🔥🔥🔥🔥
+5. **中国开源モデルが世界ランキング1位**（Qwen3-72B #1）🔥🔥🔥🔥🔥
+
+### 2. 百度 Create 2026 詳細（5/13-14 深圳）— 既存Wikiに追加
+
+既存Wikiの節「百度Create 2026」に加えて以下の詳細が判明:
+
+#### 文心5.1 Agent能力の具体数値
+- **τ³-bench**: DeepSeek-V4-Proを超越
+- **SpreadsheetBench-Verified**: DeepSeek-V4-Proを超越
+- **AIME26（工具使用）**: 99.6点（Gemini 3.1 Proに次ぐ世界2位）
+- **LMArena Search Ranking**: 1223点、国内1位・世界4位
+- 出典: ERNIE Blog [ernie.baidu.com/blog/zh/posts/ernie-5.1-0508-release/]; OFWeek [ofweek.com/ai/2026-05/ART-201718-8140-30687178.html]
+
+#### 百度全栈AI戦略
+百度智能雲はCreate 2026で全面刷新:
+- **AI Infra層**: 昆仑芯P800大規模検証完了 → 天池256超节点2026年6月上市（推理効率50%向上）
+- **Agent Infra層**: MaaS→Token Factoryに進化。Harness Engineering（Harnessエンジニアリング）導入:
+  - 長上下文管理・持続記憶・工具調用・子Agent調度
+  - 業務場景タスク成功率95%、Token消費削減23%
+- 出典: 新浪财经 [finance.sina.com.cn/jjxw/2026-05-14]; 网易 [163.com/dy/article/KT8DUF0D0511D6RL.html]
+
+#### DuMate（百度搭子）— 通用智能体
+- 百度初の汎用Agent「DuMate」をCreateで発表
+- 自動メール処理、売上分析、ポスター生成、Activityページ作成
+- コードAgent「秒哒」: コード自動生成率90%、「一句话做应用」
+- 出典: 腾讯云开发者社区 [cloud.tencent.com/developer/article/2668857]
+
+### 3. 火山引擎 Agent Plan（5/11）— 業界初のAgent套餐包
+
+字节跳动火山引擎が5月11日に発表:
+- **Agent Plan = 業界初の「Agent套餐包（Agentサブスクリプション）」**
+  - Coding Plan（プログラミングモデル）を拡張し、マルチモーダルモデル+Harnessツールを統合
+- **包含モデル**: Doubao-Seed, Doubao-Seedance, Doubao-Seedream（字节SOTA）+ GLM-5.1, Kimi-K2.6等サードパーティモデル
+- **AFP（Agent Fuel Points）** 導入: 統一リソース計量単位
+- **価格帯**: 40元/月〜1000元/月（4段階）
+- **対応プラットフォーム**: Claude Code, OpenCode, TRAE, OpenClaw, Hermes Agent
+- 出典: IT之家 [ithome.com/0/948/912.htm]; 腾讯新闻 [news.qq.com/rain/a/20260511A06JH300]
+
+#### 字节2000亿元AI資本支出
+- 2026年AI資本支出を**1600億→2000億人民元に25%増額**
+  - うち約850億元をAIチップ調達に充当
+  - 国産チップ（寒武紀・華為昇騰）の購入比率を大幅増加
+  - 事前調達額50億ドル超の国産算力製品
+- 出典: 网易科技 [163.com/tech/article/KSI9TMQD00097U7T.html]; 腾讯新闻 [news.qq.com/rain/a/20260511A05TW800]
+
+### 4. 2026阿里雲峰會（5/20前後）— Agentic Cloud宣言
+
+#### 阿里雲のAgent時代戦略
+- **「千问雲（Qianwen Cloud）」** 発表: 「Agentのために生まれた全新服務方式」
+- **刘伟光（阿里雲上級副社長）**: 「雲基礎設施是Agentic時代重要的技術基石」
+- アーキテクチャを2層に分解:
+  1. **AI Native Cloud**: モデル訓練・推論の算力基盤
+  2. **Agent Native Cloud**: Agentの編成・運営・管理専用基盤
+- **真武M890 GPUクラスタ**: Agent推理に最適化、800Gbps高速ネットワーク、10万カード対応
+
+#### 安全機能
+- **Agent安全中心**: 全Agent操作の追跡可能、権限管理、行動監査、データ隔離
+- 出典: 36kr — [中国云厂商第五战役](https://36kr.com/p/3819103957422469); 网易 [163.com/dy/article/KTIH6V8C05118K7K.html]
+
+### 5. 腾讯Q1财报（5/13）— AI智能体が核心焦点
+
+腾讯2026年Q1财报のAI関連ポイント:
+- **WorkBuddy**: 日活ベースで**中国で最も使われている生産性AI Agent**
+- **Hy3 preview**: 2950億総パラメータ/210億活性、推理・コード・Agent能力で国内トップ
+- **微信×小程序×Agent**: 微信14.32億MAUを活かした「小程序→Agent可调用技能」戦略
+  - 刘炽平: 「未来は智能体が小程序を原生能力として呼び出す」
+- **腾讯元器 企業顧客3000社超**
+- **Q1資本支出319.4億元**（前年比16%増）、全額AI算力に投入
+- 元宝MAU 5735万人（業界4位）
+- 出典: 新浪财经 [finance.sina.com.cn/jjxw/2026-05-14/doc-inhxwraf3874863.shtml]; 36kr [36kr.com/p/3809987729842183]; 腾讯云开发者社区 [cloud.tencent.com/developer/article/2668857]
+
+### 6. 36kr大分析（5/22）— 「中国云厂商第五战役」
+
+36krが5月22日に発表した重要分析:
+- **第1戦役**: IaaS（2010年代）
+- **第2戦役**: PaaS（2010年代後半）
+- **第3戦役**: SaaS/XaaS（2020年代）
+- **第4戦役**: MaaS/AIaaS（2025年）
+- **第5戦役**: **Agent Infra（2026年）** ← 現在地
+
+**各社のAgent Infra戦略**:
+| 企業 | Agent Infra戦略 | 独自強み |
+|------|----------------|---------|
+| **百度** | Agent Infra全栈 + Token Factory + DAA | 芯雲模体4層、昆仑芯P800 |
+| **阿里雲** | Agentic Cloud（AI Native + Agent Native） | 千問雲、真武M890、钉钉2億組織 |
+| **腾讯** | 平台型Agent + 微信生态 | 微信14億MAU、WorkBuddy |
+| **火山引擎** | 全模态Agent Plan + 豆包3.45億MAU | 2000億資本、国産チップ戦略 |
+| **华为** | 软硬一体AgentArts + 昇腾エコ | 全栈自主、政企300+行業模板 |
+
+- **李彦宏の予測**: 世界DAA（Daily Active Agents）將來100億超
+- **阿里雲の判断**: 2-3年内に企业工作流が「人中心→Agent中心」へ全面転換
+- 出典: 36kr [36kr.com/p/3819103957422469]; 网易 [163.com/dy/article/KTIH6V8C05118K7K.html]
+
+### 7. 华为AgentArts（5/30开源增强版予告）
+
+- 4/29 正式公測開始 → **5/30 开源增強版リリース予告**
+- SDK v0.1.2（5/11リリース）: Python SDK、LangChain/LangGraph/AutoGen/CrewAI対応
+- **Difyワークフロー完全互換**: DSL変換でDify→AgentArtsへの移行をワンクリック
+- **300+業界テンプレート**: 金融・製造・能源・政務
+- **300+内置スキル**: MCP Gateway統合
+- **完全私有化デプロイ**: 政企市場で強み
+- 出典: Huawei Cloud [huaweicloud.com/product/agentarts.html]; SDK GitHub [github.com/huaweicloud/agentarts-sdk-python]
+
+### 8. 360「龙虾計画」（5/11-13）
+
+- **全社員に1億Token配布**: 全員AI化
+- **「360安全龙虾」プラットフォーム**: 100+専門Agent内蔵
+- **「龙虾教练」**: 10分で専用AI Agentをトレーニング可能
+- **省Tokenモード**: 最大99%のToken節約
+- 360ならではの差別化: **セキュリティ監査Agent**でOpenClawエコシステムの脆弱性解析
+  - OpenClaw/10衍生産品の脆弱性スキャン → 20以上の漏洞発見（遠隔制御・権限昇格）
+- 出典: 腾讯云开发者社区 [cloud.tencent.com/developer/article/2668857]; 新浪科技
+
+### 9. GPU逼迫とDeepSeek階層化（継続）
+
+- 字节2000億元投資、腾讯319億元/四半期の資本支出はGPU逼迫を加速
+- 国産チップ（昇騰950PR）へのシフト加速:
+  - DeepSeek V4: 40万行オペレータ書き換えで昇騰CANNに完全対応
+  - 阿里・字节・腾讯が**数十万枚の昇騰950PR**を発注
+  - フル国産クラスタで万亿パラメータモデル動作可能に
+- 出典: 网易 [163.com/dy/article/KSQ6QQCV051991GN.html]; 新浪财经 [finance.sina.com.cn/stock/hyyj/2026-05-12/doc-inhxrwqf8226929.shtml]
+
+### 10. 新規ソース追加（5月18日〜23日）
+
+| ソース | URL | ティア | 概要 |
+|--------|-----|--------|------|
+| AI简报 — Agent三巨头同日発表 | [yijunzhao.cn/archives/ai-agents-kai-yuan-llm-jian-bao-2026nian-5yue-18ri](https://yijunzhao.cn/archives/ai-agents-kai-yuan-llm-jian-bao-2026nian-5yue-18ri) | T1 | 5/18 智谱/阿里/DeepSeek同時発表・5大趨勢 |
+| 腾讯云 — 5月国内智能体厂商动态全景 | [cloud.tencent.com/developer/article/2668857](https://cloud.tencent.com/developer/article/2668857) | T1 | 6大厂商詳細まとめ（字节/百度/阿里/腾讯/360/华为） |
+| 36kr — 中国云厂商第五战役 | [36kr.com/p/3819103957422469](https://36kr.com/p/3819103957422469) | T1 | Agent Infra戦略・DAA・Agentic Cloud |
+| ERNIE Blog — 文心5.1正式发布 | [ernie.baidu.com/blog/zh/posts/ernie-5.1-0508-release/](https://ernie.baidu.com/blog/zh/posts/ernie-5.1-0508-release/) | T1 | 文心5.1技術詳細・Agent超越DeepSeek |
+| OFWeek — 百度AI效率牌 | [ofweek.com/ai/2026-05/ART-201718-8140-30687178.html](https://www.ofweek.com/ai/2026-05/ART-201718-8140-30687178.html) | T1 | 文心5.1戦略分析・6%訓練成本 |
+| 新浪财经 — 百度文心5.1评测 | [finance.sina.com.cn/stock/relnews/hk/2026-05-11/doc-inhxnscs2442903.shtml](https://finance.sina.com.cn/stock/relnews/hk/2026-05-11/doc-inhxnscs2442903.shtml) | T1 | 文心5.1 vs DeepSeek分析 |
+| IT之家 — 火山引擎Agent Plan | [ithome.com/0/948/912.htm](https://www.ithome.com/0/948/912.htm) | T1 | 業界初Agent套餐包・AFP導入 |
+| 网易科技 — 字节2000亿AI开支 | [163.com/tech/article/KSI9TMQD00097U7T.html](https://www.163.com/tech/article/KSI9TMQD00097U7T.html) | T1 | 字节資本支出25%増・国産チップ |
+| 新浪财经 — 腾讯Q1 AI智能体 | [finance.sina.com.cn/jjxw/2026-05-14/doc-inhxwraf3874863.shtml](https://finance.sina.com.cn/jjxw/2026-05-14/doc-inhxwraf3874863.shtml) | T1 | WorkBuddy・微信Agent・319億元 |
+| 网易 — 腾讯财报AI | [163.com/dy/article/KT562BE305568W0A.html](https://www.163.com/dy/article/KT562BE305568W0A.html) | T1 | Hy3 preview・元宝MAU |
+| 网易 — 百度智能云Q1收入 | [163.com/dy/article/KT8DUF0D0511D6RL.html](https://m.163.com/dy/article/KT8DUF0D0511D6RL.html) | T1 | 昆仑芯P800・Token Factory・Harness |
+| 网易 — DeepSeek V4昇腾適応 | [163.com/dy/article/KSQ6QQCV051991GN.html](https://www.163.com/dy/article/KSQ6QQCV051991GN.html) | T1 | 40万行改写・国産算力分水嶺 |
+| 华为云 — AgentArts SDK | [github.com/huaweicloud/agentarts-sdk-python](https://github.com/huaweicloud/agentarts-sdk-python) | T1 | SDK v0.1.2・フレームワーク非依存 |
+| 华为云 — AgentArts概要 | [huaweicloud.com/product/agentarts.html](https://www.huaweicloud.com/product/agentarts.html) | T1 | 300+テンプレート・MCP Gateway |
+| 36kr — 巨头混战企业Agent | [36kr.com/p/3809987729842183](https://36kr.com/p/3809987729842183) | T1 | 悟空放量・腾讯元器3000社・华为AgentArts |
+| 36kr — 龙虾时代房东大战 | [36kr.com/p/3810238336688388](https://36kr.com/p/3810238336688388) | T1 | WorkBuddy百万DL・悟空30%激活 |
+| DeepSeek — R2 Open Source Blog | [deepseek.com/blog/r2-open-source-may-2026](https://deepseek.com/blog/r2-open-source-may-2026) | T1 | R2全系列・1M Context・$0.14/MTok |
+| ThePlanetTools — DeepSeek R2詳細 | [theplanettools.ai/tools/deepseek-r2](https://theplanettools.ai/tools/deepseek-r2) | T2 | R2 685B/37Bスペック詳細 |
+| 钛媒体 — 智谱GLM-5V-Turbo | [tmtpost.com/7983375.html](https://www.tmtpost.com/7983375.html) | T1 | 多模态Agent戦争勃発・MMTP |
+| 新浪财经 — 智谱AI财报分析 | [finance.sina.com.cn/stock/relnews/hk/2026-04-07/doc-inhuzkpk2442903.shtml](https://finance.sina.com.cn/stock/relnews/hk/2026-04-07/doc-inhuzkpk2442903.shtml) | T1 | 智譜API 83%値上げ後400%成長 |
+| 新浪财经 — 智能体規範政策 | [finance.sina.com.cn/jjxw/2026-05-08/doc-inhuxymv1122334.shtml](https://finance.sina.com.cn/jjxw/2026-05-08/doc-inhuxymv1122334.shtml) | T1 | 中国初Agent専項政策・2027年導入率70%目標 |
+| 36kr — 华为AgentArts开源增强版 | [36kr.com/p/3809987729842183](https://36kr.com/p/3809987729842183) | T2 | AgentArts 5/30开源予告 |
+| 搜狐 — 华为AgentArts开源 | [sohu.com/a/998987230_222256](https://www.sohu.com/a/998987230_222256) | T2 | 企业级智能体开源增强版5月 |
+| 新浪财经 — 字节AI预算2000亿 | [finance.sina.com.cn/stock/hyyj/2026-05-12/doc-inhxrwqf8226929.shtml](https://finance.sina.com.cn/stock/hyyj/2026-05-12/doc-inhxrwqf8226929.shtml) | T1 | AI全链路通胀・国産チップ比率向上 |
+| 网易 — 阿里云第五战役詳細 | [163.com/dy/article/KTIH6V8C05118K7K.html](https://m.163.com/dy/article/KTIH6V8C05118K7K.html) | T1 | 真武M890・Agent安全中心 |
+|

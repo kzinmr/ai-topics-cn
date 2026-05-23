@@ -195,9 +195,9 @@ topics:
       - "36kr Agent Token消費180兆 Agentファースト"
     wiki_pages:
       - concepts/china-ai-agent-ecosystem
-    notes: "2026.05.17更新: 百度Create2026(5/13-14)で「心響(Xinxiang)」AGIアシスタント発表/DAA(Daily Active Agents)新指標提案/Token Factory(採掘→精錬→製造)3段階モデル。36kr大分析「中国跳过LLM直奔Agent时代」—Token消費180兆超の70%+がAgent/Alibaba ATH(Token Hub)構想/腾讯Agentインフラ戦略。前回(5/12): 国家Agent政策/腾讯云全栈/BoAgent/百融RaaS。前々回: 推論2/3/Deloitte/GPU高騰/$0.30vs$30/OpenClaw12脆弱性/SOE禁止/補助金。"
+    notes: "2026.05.23更新: Agent三巨頭サミット(5/18/智譜AutoGLM 3.0+Qwen Agent v2+DeepSeek R2)でAgent能力競争激化。百度文心5.1(5/13/DAA指標/自律エージェント特化)。火山引擎Agent Plan発表。百融RaaS(硅基員工10万+)。360 Agent Studio。Agent Token消費が全Tokenの70%超に(36kr)。2026.05.17更新: 百度Create2026(5/13-14)で「心響(Xinxiang)」AGIアシスタント発表/DAA(Daily Active Agents)新指標提案/Token Factory(採掘→精錬→製造)3段階モデル。36kr大分析「中国跳过LLM直奔Agent时代」—Token消費180兆超の70%+がAgent/Alibaba ATH(Token Hub)構想/腾讯Agentインフラ戦略。前回(5/12): 国家Agent政策/腾讯云全栈/BoAgent/百融RaaS。前々回: 推論2/3/Deloitte/GPU高騰/$0.30vs$30/OpenClaw12脆弱性/SOE禁止/補助金。"
     added: 2026-04-17
-    last_crawled: "2026-05-17"
+    last_crawled: 2026-05-23
 
   - slug: openclaw
     title: "OpenClaw — オープンソースAI Agentエンドポイントツール"
@@ -299,9 +299,9 @@ topics:
       - "VRAM optimization Chinese models quantization"
     wiki_pages:
       - concepts/vram-optimization
-    notes: "2026.05.10更新: Qwen3.6-35B-A3B MoE VRAM特性(~12GB/Q4)、DeepSeek-V4 Engram Memory(KV最適化/40%削減)、TriAttention(MIT/NVIDIA/ZJU/スループット2.5倍)。ローカルVRAM最適化の新手法続々。doubao.mdとvram-optimization.mdは既存コンテンツが十分のため更新不要。qwen.mdはQwen-Scope/SAE記述修正+QwenPaw追記済み。"
+    notes: "2026.05.23更新: TriAttention v0.2.0正式リリース(5月/SGLangバックエンド追加)。Ollama v0.30.0アーキテクチャ大転換(GGML→llama.cpp直接統合/rc20-rc23/MLX加速)。SGLang v0.5.12 DeepSeek V4 HiCache正式対応(MegaMoE W4A4カーネル/PD Disaggregation)。DeepSeek V4 vLLM最適化詳細(KVキャッシュ9.62GiB@1M/ROCm/SM12x/TurboQuant)。北京大学GQLA(H100+H20両最適化/同一重み)。昇騰910C FlashAttention-NPU/CloudMatrix384 INT8。PagedEviction(ブロック単位KV追い出し/スループット3.1倍)。2026.05.10更新: Qwen3.6-35B-A3B MoE VRAM特性(~12GB/Q4)、DeepSeek-V4 Engram Memory(KV最適化/40%削減)、TriAttention(MIT/NVIDIA/ZJU/スループット2.5倍)。ローカルVRAM最適化の新手法続々。vram-optimization.mdは更新済み。"
     added: 2026-04-17
-    last_crawled: 2026-05-10
+    last_crawled: 2026-05-23
 
   # =========================================================
   # 4. Chinese Regulatory Landscape (中国AI規制)
@@ -317,9 +317,9 @@ topics:
       - "China AI regulation filing policy 2026"
     wiki_pages:
       - concepts/china-ai-regulation
-    notes: "2026.05.16更新: 《智能体规范应用与创新发展实施意见》(5/8/CAC+NDRC+MIIT連名/中国初AI Agent専用政策/19典型シナリオ/2027年普及率70%目標/5都市試験運用)。国務院2026年度立法工作计划でAI総合立法加速(5/11/中国版AI法初の公式表明)。亞信安全Agent Trust Framework(ATF/意向整合+Human-AI共治)発表。wiki更新済み(china-ai-regulation.md)。"
+    notes: "2026.05.23更新: 《人工智能应用伦理安全指引1.0》(5/19/TC260発行/中国網絡文明大会/法律+倫理の双軌機制)。国家発改委AI立法研究開始+「人工智能+」配套文件策定中(5/22/NDRC公式発表/CAC+MIIT+NDRCの3省庁AI立法関与)。工信部AI科技倫理審査先導計画(5/9通知/5/20〆切/6/1〜11/30実施)。ATH 1.0信通院+Tencent+Huawei等(5/7/MCP/A2A上位信頼層/オープンソース)。清朗行動執行: 剪映/即夢AI/猫箱摘発(4/28/字节跳动/Bytedance/初の大手摘発)。全国初AI代写种草笔记判決(5/12/杭州中院/10万元賠償/四要素判定法)。wiki更新済み(china-ai-regulation.md)。"
     added: 2026-04-17
-    last_crawled: 2026-05-16
+    last_crawled: 2026-05-23
     search_hints:
       - "中国 AI监管 政策法规 2026"
       - "生成式AI管理办法 大模型备案"
@@ -327,6 +327,8 @@ topics:
       - "智能体规范应用与创新发展实施意见 2026"
       - "中国AI法 立法 国務院 2026"
       - "Agent Trust Framework ATF 亚信安全"
+      - "人工智能应用伦理安全指引 2026"
+      - "ATH 智能体可信握手协议 2026"
 
   - slug: china-ai-model-filing
     title: "AI Model Filing System (大模型备案制度)"

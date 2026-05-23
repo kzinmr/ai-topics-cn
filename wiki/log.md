@@ -1,5 +1,17 @@
 |
 
+|## [2026-05-23] active-crawl | Agent Ecosystem / VRAM Optimization / AI Regulation
+|
+|### Wiki更新
+|- `concepts/china-ai-agent-ecosystem.md` — 718行へ拡張(720→718と微減/メタデータ修正)。Agent三巨頭サミット(5/18/智譜AutoGLM 3.0+Qwen Agent v2+DeepSeek R2)、百度文心5.1(DAA指標)、火山引擎Agent Plan、百融RaaS、360 Agent Studioを追加
+|- `concepts/vram-optimization.md` — 209→341行へ大幅拡張。TriAttention v0.2.0正式リリース、Ollama v0.30.0アーキテクチャ移行、SGLang v0.5.12 DeepSeek V4 HiCache、DeepSeek V4 vLLM最適化詳細、北大GQLA、昇騰910C FlashAttention、PagedEvictionを追加
+|- `concepts/china-ai-regulation.md` — 280→408行へ拡張。NDRC AI立法研究開始(5/22)、《人工智能应用伦理安全指引1.0》(5/19)、ATH 1.0(5/7)、清朗行動摘発・AI代写種草笔记判決を追加
+|
+|### hot-topics.yaml更新
+|- china-ai-agent-ecosystem: last_crawled→2026-05-23、Agent三巨頭サミット/百度文心5.1/火山Agent Plan/百融RaaS追記
+|- vram-optimization: last_crawled→2026-05-23、TriAttention/Ollama v0.30/SGLang v0.5.12/GQLA/PagedEviction追記
+|- china-ai-regulation: last_crawled→2026-05-23(継続更新、ノート追加済み)
+|
 |## [2026-05-22] active-crawl | DeepSeek / Tencent Hunyuan / Coze
 |
 |### Wiki更新
