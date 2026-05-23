@@ -1,8 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-05-21
+最終更新: 2026-05-23
 エンティティ: 61, コンセプト: 116, ダイジェスト: 7, 比較: 2, ページ: 9
-### 本日更新（2026-05-21 Active Crawl: Qwen/Doubao/ChatGLM deepdive）
+### 本日更新（2026-05-23 Active Crawl: Agent Ecosystem/VRAM Optimization/AI Regulation）
+- `concepts/china-ai-agent-ecosystem.md` — **更新**: Agent三巨頭サミット(5/18/智譜AutoGLM 3.0+Qwen Agent v2+DeepSeek R2)、百度文心5.1(DAA指標/自律エージェント特化)、火山引擎Agent Plan、百融RaaS(硅基員工10万+)、360 Agent Studioを追加
+- `concepts/vram-optimization.md` — **更新**: 209→341行へ大幅拡張。TriAttention v0.2.0、Ollama v0.30.0アーキテクチャ移行、SGLang v0.5.12 DeepSeek V4 HiCache、DeepSeek V4 vLLM最適化詳細、北大GQLA、昇騰910C FlashAttention、PagedEvictionを追加
+- `concepts/china-ai-regulation.md` — **更新**: NDRC AI立法研究開始(5/22)、《人工智能应用伦理安全指引1.0》(5/19)、ATH 1.0(5/7)、清朗行動摘発・AI代写種草笔记判決を追加
+### 前日更新（2026-05-21 Active Crawl: Qwen/Doubao/ChatGLM deepdive）
 - `entities/qwen.md` — **更新**: Qwen3.7-Max(5/20/Agent-first自律実行最適化)、Qoder 1.0(自律開発Desktop)、Qwen3.5-LiveTranslate-Flash(音声同時通訳)、Qwen Code v0.16.0
 - `concepts/doubao.md` — **更新**: MAU3.45億(訂正)、Agent Plan有料サブスク(月額68/200/500)、AI誤導訴訟(退改航)
 - `concepts/chatglm.md` — **更新**: GLM-5.1 8時間自律実行ベンチマーク、ZCubeアーキテクチャ(推論15%向上)、「Chinese Anthropic」戦略(CEO張鵬5/13)、時価総額5000億HKD
