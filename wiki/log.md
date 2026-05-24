@@ -1,5 +1,17 @@
 |
 
+|## [2026-05-24] active-crawl | OpenClaw / MCP China / China AI Model Filing
+|
+|### Wiki更新
+|- `entities/openclaw.md` — 更新: v2026.5.19/5.20/5.22-beta.1週3回メジャーリリース(ブラウザモーダル/Policyプラグイン/Discord音声/cron改善/プリウォーム5ms)。Hermes Agent OpenRouter日次トークン消費逆転(Hermes 458B vs OpenClaw 173B)。★374K。ClawHub 44K+。エコシステム: DigitalOcean 1-Click/MiniMax MaxClaw/Alibaba Cloud/Qwen 3.5蒸留。脆弱性: Claw Chain CVEパッチ済。
+|- `concepts/mcp-china.md` — 更新: Alibaba Cloud Summit(5/20)全製品MCP化/Qwen3.7-Max/ModelScope MCP広場千種。ByteDance火山引擎MCP Server OSS(100+MCP/271Stars)。Tencent MCP Gateway(ゼロコード)/MCP-FLOW研究(99.2%)。AAIF 43新メンバー(Stripe/U.S. Army等190組織)。MCP STDIO脆弱性(200K+server/OX Security)。Community Bank SEC 8-K初開示。エコシステム: 9,400+Server/SDK月間3億DL。
+|- `concepts/china-ai-model-filing.md` — 大幅更新: 智能体規範応用意見(5/8/3省庁/AI Agent初政策/19シーン)。清朗行動(4/30〜8月/7類問題/ByteDance3摘発)。地方政府補助金(上海徐匯最高500万/深圳模型券年200万/上海模塑申城)。擬人化互動服務管理暫行辦法(5省庁/7/15施行)。生成式AIサービス备案868件/登記530件。第17批深度合成算法备案累計6,451件。
+|
+|### hot-topics.yaml更新
+|- openclaw: last_crawled→2026-05-24、v2026.5.19-5.22-beta.1/Hermes逆転/エコシステム追記
+|- mcp-china: last_crawled→2026-05-24、Alibaba Cloud Summit/ByteDance MCP OSS/Tencent MCP Gateway/AAIF/MCP脆弱性追記
+|- china-ai-model-filing: last_crawled→2026-05-24、智能体規範意見/清朗行動/補助金/擬人化管理辦法追記
+|
 |## [2026-05-23] active-crawl | Agent Ecosystem / VRAM Optimization / AI Regulation
 |
 |### Wiki更新

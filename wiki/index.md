@@ -1,8 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-05-23
+最終更新: 2026-05-24
 エンティティ: 61, コンセプト: 116, ダイジェスト: 7, 比較: 2, ページ: 9
-### 本日更新（2026-05-23 Active Crawl: Agent Ecosystem/VRAM Optimization/AI Regulation）
+### 本日更新（2026-05-24 Active Crawl: OpenClaw/MCP China/AI Model Filing）
+- `entities/openclaw.md` — **更新**: v2026.5.19/5.20/5.22-beta.1週3回メジャーリリース(ブラウザモーダル/Policy/Discord/cron/プリウォーム5ms)。Hermes Agent OpenRouter日次トークン消費でOpenClaw逆転(458B vs 173B)。★374K。エコシステム拡大(DigitalOcean/MiniMax MaxClaw/Alibaba Cloud/Qwen 3.5蒸留)。脆弱性パッチ済み
+- `concepts/mcp-china.md` — **更新**: Alibaba Cloud Summit全製品MCP化/Qwen3.7-Max/ModelScope MCP広場千種。ByteDance火山引擎MCP Server OSS(100+MCP)。Tencent MCP Gateway(ゼロコード)/MCP-FLOW(99.2%)。AAIF 43新メンバー。MCP STDIO脆弱性(200K+server)。SEC 8-K初開示。エコシステム9,400+Server
+- `concepts/china-ai-model-filing.md` — **大幅更新**: 智能体規範応用意見(5/8/3省庁/AI Agent初政策/19シーン)。清朗行動(4/30〜8月/ByteDance3摘発)。補助金(上海徐匯最高500万/深圳模型券年200万)。擬人化互動服務管理暫行辦法(5省庁/7/15)。备案868件/登記530件
+### 前日更新（2026-05-23 Active Crawl: Agent Ecosystem/VRAM Optimization/AI Regulation）
 - `concepts/china-ai-agent-ecosystem.md` — **更新**: Agent三巨頭サミット(5/18/智譜AutoGLM 3.0+Qwen Agent v2+DeepSeek R2)、百度文心5.1(DAA指標/自律エージェント特化)、火山引擎Agent Plan、百融RaaS(硅基員工10万+)、360 Agent Studioを追加
 - `concepts/vram-optimization.md` — **更新**: 209→341行へ大幅拡張。TriAttention v0.2.0、Ollama v0.30.0アーキテクチャ移行、SGLang v0.5.12 DeepSeek V4 HiCache、DeepSeek V4 vLLM最適化詳細、北大GQLA、昇騰910C FlashAttention、PagedEvictionを追加
 - `concepts/china-ai-regulation.md` — **更新**: NDRC AI立法研究開始(5/22)、《人工智能应用伦理安全指引1.0》(5/19)、ATH 1.0(5/7)、清朗行動摘発・AI代写種草笔记判決を追加

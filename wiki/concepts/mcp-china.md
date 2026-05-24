@@ -3,7 +3,7 @@ title: "MCP中国生态（Model Context Protocol在中国的采用状況）"
 type: concept
 tags: [mcp, chinese-ai, agent-protocol, a2a, standardization, tool-integration, github, enterprise]
 created: 2026-04-17
-updated: 2026-05-19
+updated: 2026-05-24
 source_lang: zh-CN
 ---
 
@@ -463,6 +463,58 @@ CVE-2026-5058（CVSS 9.8）: コミュニティ保守のMCPサーバーにおけ
 3. **ガバナンス成熟化**: コアメンテナーによるレビューボトルネック解消
 4. **エンタープライズ対応**: 監査、SSO統合、ゲートウェイ標準化
 - **出典**: [SiliconReport](https://www.siliconreport.com/model-context-protocol-targets-production-scaling-issues-in-2026-roadmap-e941542f3b363948) [T2]
+
+## 2026年5月19日〜24日更新
+
+### 1. Alibaba Cloud Summit 2026（5月20日）— 全クラウド製品のMCP化宣言
+杭州で開催。アリババがAgent時代に向けた**全スタックのAgent化**戦略を発表:
+
+- **全クラウド製品のMCP化**: ECS/OSS/VPC/RDS等をMCP Serverに改造。Alibaba Cloud Ops MCP Server（v0.9.27, GitHub Stars 115）公開
+- **千問雲（Qianwen Cloud）新サイト**: Agent専用プロダクトサイト。トップページにAgent可読プロンプト1行。150+モデルAPIをSkills/CLIツールに標準化。OpenClaw/Hermes Agent/Claude Codeが1行指示で全機能を学習可能
+- **Qwen3.7-Max発表**: Arenaグローバル盲検テストで中国モデル首位（Kimi-K2.6/DeepSeek-v4-pro凌駕）
+- **ModelScope MCP広場**: 千種類以上のMCPサービス、支付宝/Alipay/MiniMax等独占提供
+- **トークン収益5ヶ月で15倍増**: 年内にECSを超える最大収益源見通し
+- **出典**: [澎湃新聞](https://www.thepaper.cn/newsDetail_forward_33204218) [T1]
+
+### 2. ByteDance火山引擎MCP Server OSS公開（5月19日）
+- **100+ MCP Server**: GitHub「volcengine/mcp-server」リポジトリ（Stars 271, 90 contributors, MITライセンス）
+- **三位一体アーキテクチャ**: MCP Market＋火山方舟＋Trae—ツール→モデル→デプロイのフルサイクル
+- **開発期間70%短縮、リソースコスト80%削減**
+- **日次トークン呼び出し12.7兆**（火山エンジン全AIスタック）
+- **出典**: [腾讯云开发者](https://developer.cloud.tencent.com/news/2576909) [T1]
+
+### 3. Tencent Cloud MCP製品群集中リリース（5月18日〜22日）
+- **MCP Gateway（5月21日）**: 既存RESTful APIをゼロコードでMCP Tool化。認証集中管理・監査ログ自動化
+- **MCP-FLOW研究（5月18日）**: 小規模モデルのツール呼び出し精度99.2%（Qwen3-4Bベース、1,166 Server・11,536 Tools）
+- **Tencent Docs MCP（5月22日）**: 9種ドキュメントタイプ対応MCP Server（smartcanvas含む）
+- **TKE MCP**: Kubernetesクラスタ管理用MCP Server（PyPI公開）
+- **出典**: [腾讯云开发者](https://developer.cloud.tencent.com/article/2671873) [T1]
+
+### 4. AAIF（Agentic AI Foundation）43新メンバー追加（5月18日）
+- **Gold会員**: F5, GoDaddy, Stripe, TRON（ブロックチェーン）
+- **Silver会員**: Atlassian, Fastly, Teradata, VeriSign, Avaya等27社
+- **Associate会員**: 米陸軍(U.S. Army)、Sandia国立研究所、Penn State等12団体
+- **総会員数**: 190組織に拡大（華為Huaweiは2月Gold会員済み）
+- **出典**: [AAIF](https://aaif.io/press/agentic-ai-foundation-adds-43-new-members/)
+
+### 5. MCPアーキテクチャ設計脆弱性（OX Security, 4月-5月継続）
+MCPのSTDIO転送機構に設計上のRCE脆弱性が内在。Anthropicは「期待された動作」として修正拒否。
+
+**影響範囲**: **200,000+サーバインスタンス**、**150M+ SDKダウンロード**、9/11 MCPレジストリでテストペイロード受理可能。
+
+### 6. Community Bank SEC 8-K開示（5月7日）
+従業員が未許可サードパーティAIに顧客PIIをアップロード。**AI Agent脆弱性に関する初のSEC開示事例**。MCP STDIOの権限継承モデルが銀行業界のサードパーティリスクとして浮上。
+- **出典**: [dev.to](https://dev.to/mspro3210/may-2026-the-mcp-attack-surface-tripled-three-disclosures-and-a-banks-sec-filing-tell-you-what-23nd) [T2]
+
+### 7. MCPエコシステム統計（5月時点）
+| 指標 | 数値 |
+|------|------|
+| 公開MCPサーバ全世界 | 9,400+（前年比7.8倍） |
+| SDK月間DL | **3億回**（年初1億→3億） |
+| エンタープライズ採用率 | 78%（Q1 2026） |
+| 中国AI Agent市場規模 | ¥4,490億($62B)/年（前年比+107%） |
+| npm SDKパッケージ | 53個 |
+| npmサーバパッケージ | 751個 |
 
 ## 出典
 

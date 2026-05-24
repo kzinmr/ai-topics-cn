@@ -217,11 +217,13 @@ topics:
       - "OpenClaw vs Claude Code vs Hermes Agent 比较"
       - "OpenClaw v2026.5.14 beta package manager"
       - "OpenClaw GitHub Stars 372K"
+      - "OpenClaw v2026.5.22 model auth prewarm"
+      - "Hermes Agent OpenRouter OpenClaw 逆転 2026"
     wiki_pages:
       - entities/openclaw
-    notes: "2026.05.17更新: v2026.5.10/5.12/5.14ベータ連続リリース(Stable Release Branch分岐/ログ上書き防止/パッケージ依存性解決Competitor→PackageManager型安全化/Gatewayヘルスチェック改善)。GitHub★372K(1週間+5K)。v2026.5.7(SecretRef強検証/Foundation移行完了)確認。v2026.5.6(OAuth修正)・v2026.5.5(全文検索/MCPサーバーインスペクト)・v2026.5.4(file-transfer/steerコマンド)。前回: 36krセキュリティフォローアップ/サプライチェーンリスク/SOE生OpenClaw禁止。"
+    notes: "2026.05.24更新: v2026.5.19/5.20/5.22-beta.1週3回メジャーリリース(ブラウザモーダル/Policyプラグイン/Discord音声/cron改善/モデル認証プリウォーム20s→5ms)。★374K。Hermes Agent OpenRouter日次トークン消費逆転(Hermes 458B vs OpenClaw 173B/全期間8.14T vs 7.18T)。ClawHub 44K+スキル/50+チャンネル。エコシステム拡大: DigitalOcean 1-Click/MiniMax MaxClaw/Alibaba Cloud連携/Qwen 3.5蒸留モデル。脆弱性: Claw Chain CVEパッチ(v2026.4.22)。2026.05.17更新: v2026.5.10/5.12/5.14ベータ連続/★372K/v2026.5.7 SecretRef強検証。"
     added: 2026-05-01
-    last_crawled: 2026-05-17
+    last_crawled: 2026-05-24
 
   - slug: coze
     title: "Coze (扣子) — ByteDance Agent Platform"
@@ -347,11 +349,15 @@ topics:
     search_hints:
       - "大模型备案 算法备案 2026"
       - "中国 AI模型 上线审批"
+      - "智能体规范应用意见 2026"
+      - "清朗整治AI应用乱象 2026"
+      - "拟人化互动服务管理暂行办法 2026"
+      - "上海AI备案补助金 徐汇区 2026"
     wiki_pages:
       - concepts/china-ai-model-filing
-    notes: "2026.05.13更新: CAC第17批深度合成服務算法备案(5/6)。清朗·整治AI应用乱象(4/30)4ヶ月行動で备案未実施摘発強化。第十六批(3/12)単批次最多779件。累計6,451件(3月時点)〜7,000件超(5月)。広州海珠(大模型最大100万/算法最大20万補助)、深圳各区(大模型50万/算法100万)、上海徐汇(最大500万)、南京玄武(20万)等18地区で备案補助金導入。深圳市训力券年間最大1,000万元。2026年7月新国標11項目施行迫る。"
+    notes: "2026.05.24更新: 生成式AIサービス备案868件(+72)/登記530件(+49)(4/30時点)。智能体規範応用実施意見(5/8/3省庁/AI Agent初政策/19典型シーン/高リスク分類)。清朗行動(4/30〜8月/7類問題/ByteDance3摘発/北京150社)。地方政府補助金: 上海徐匯最高500万/上海模塑申城第1批次5/8-27/深圳模型券年上限200万/深圳国産AIセンター年3,000万。擬人化互動服務管理暫行辦法(5省庁/7/15施行/备案+年度検証+アプリ確認)。第17批深度合成算法备案累計6,451件。第18批未発表(次回6月下旬〜7月上旬予想)。2026.05.13更新: 第17批5/6/清朗行動4/30/累計7,000件超/18地区補助金/深圳訓力券年間1,000万/7月新国標11項目。"
     added: 2026-04-17
-    last_crawled: 2026-05-13
+    last_crawled: 2026-05-24
 
   - slug: china-gpu-restrictions
     title: "GPU Export Restrictions & China's Response (芯片出口管制)"
@@ -387,11 +393,15 @@ topics:
       - "Alibaba Cloud RDS MCP CVE-2026-30623"
       - "SEC 8-K AI vulnerability disclosure"
       - "Xinhua Finance MCP"
+      - "Alibaba Cloud Summit 2026 MCP agent"
+      - "ByteDance volcengine mcp-server 火山引擎"
+      - "Tencent MCP Gateway 腾讯云"
+      - "AAIF 43新メンバー 2026"
     wiki_pages:
       - concepts/mcp-china
-    notes: "2026.05.19更新: MCPデータベース脆弱性(Apache Doris/Pinot MCP悪用で機密データ漏洩)。Alibaba Cloud RDS MCP脆弱性(CVE-2026-30623/パッチ未提供/11月公開予定)。SEC 8-KフォームでAI脆弱性開示(初/Impossible Cloud/SEC基準の暗示)。Xinhua Finance(新华社金融)MCPサービス行列公開(中国初の国家級金融MCP)。EmbeddedLLM MCP agent protocol(新種のMCPシナジー マルウェア)。前回: Baidu MCP World 56,757ツール(世界最大)。魔搭MCP广场10,000+ツール(中国2位)。CVE-2026-30615(MCP Sampling RCE)。Tool Search 85%+トークン削減。A2A+AP2+ACPエコシステム拡大。SDK月間DL 3億回突破。"
+    notes: "2026.05.24更新: Alibaba Cloud Summit 5/20—全クラウド製品MCP化/Qwen3.7-Max発表/ModelScope MCP広場千種類/トークン収益15倍。ByteDance火山引擎MCP Server OSS(100+MCP/271Stars/日次12.7兆tokens)。Tencent MCP Gateway(ゼロコードREST変換)/MCP-FLOW研究(99.2%)/Tencent Docs MCP/TKE MCP。AAIF 43新メンバー追加(Stripe/F5/GoDaddy/U.S. Army等190組織)。MCP STDIO設計脆弱性(200K+server/150M+SDK DL/OX Security)。Community Bank SEC 8-K初開示(5/7/サードパーティMCPリスク)。エコシステム: 9,400+公開Server(7.8倍)/SDK月間3億DL。2026.05.19更新: MCPデータベース脆弱性(AP Doris/Pinot)/Alibaba Cloud RDS MCP CVE-2026-30623/パッチ未/Xinhua Finance MCP/EmbeddedLLM MCPマルウェア。"
     added: 2026-04-17
-    last_crawled: 2026-05-19
+    last_crawled: 2026-05-24
 
   - slug: mcp-chinese-tools
     title: "Chinese MCP Tools & Servers (中国MCP工具)"

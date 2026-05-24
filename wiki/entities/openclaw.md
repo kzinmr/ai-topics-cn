@@ -1,7 +1,7 @@
 ---
 title: OpenClaw — AI Agentエンドポイントツール
 created: 2026-04-17
-updated: 2026-05-17
+updated: 2026-05-24
 tags: [ai-agents, open-source-ai, tooling, china, releases, safety]
 aliases: [\"openclaw\", \"OpenClaw\"]
 source_lang: zh-CN
@@ -409,6 +409,47 @@ OpenClaw: 入力 → LLM → ツール選択 → 実行 → 結果 → 再推理
 ## スローガン: "Less mystery, more machinery"
 
 36krが伝えたOpenClawの公式スローガン。透明性と実用性を重視する設計哲学を表しており、ブラックボックス化したAIではなく、ユーザーが理解・制御できるエージェントを目指す姿勢を示している。
+
+## 2026年5月17日〜24日更新
+
+### リリースラッシュ（週3回のメジャーリリース）
+
+| バージョン | 日付 | ハイライト |
+|-----------|------|-----------|
+| **v2026.5.19** | 2026-05-19 | ブラウザモーダルダイアログ対応、`defineToolPlugin` + CLIツール、Mac Settings UI刷新、Gateway再起動トレーサビリティ改善 |
+| **v2026.5.20** | 2026-05-21 | Discord音声セッションフォロー、Policyプラグイン（バンドル）、xAI device-code OAuth、cron改善、サブエージェントハンドオフ改善、secret警告 |
+| **v2026.5.22-beta.1** | 2026-05-23 | 100+Fixes、ドキュメント刷新、モデル認証プリウォーム（〜20s→〜5ms/4100倍高速化）、npm shrinkwrap、Windowsインストーラ改善多数 |
+
+### GitHub統計（2026年5月21日時点）
+- **Stars**: 374,000（前回372K、+2K/週だが成長速度は成熟期へ減速）
+- **Forks**: 77,601
+- **Contributors**: 2,304
+- **NPM週間DL**: 5,344,931
+- **週間新スター成長**: +1,700/週（ピーク時+40,000/週から大幅減速）
+- **Issue解決率**: 89.9%
+- **スポンサー**: 119
+
+### 競合激化: Hermes Agentに実利用で逆転される
+最大の変化は競合状況。**Hermes Agent**（Hermes v0.13.0 "Tenacity"リリース後）がOpenRouter日間トークン消費量で**458B**（OpenClaw 173Bの2.6倍）、全期間トークンでも**8.14T**（OpenClaw 7.18Tを逆転）。一方OpenClawは**ClawHub 44,000+スキル**、**50+チャンネル**でエコシステム規模では依然優勢。
+
+### セキュリティ動向
+- 「Claw Chain」脆弱性（CVE-2026-44112/44113/44115/44118）は4月23日パッチ済み。最小安全バージョン: v2026.4.22
+- **偽スター監査通過**: F/S比0.204（Flask 0.235に近く健全）
+- Policyプラグイン・secret平文警告・sandbox tool policy通知をv2026.5.20で追加
+- 公開Gatewayインスタンス: 135,000+（82ヶ国）
+
+### エコシステム拡大
+- **DigitalOcean**: OpenClawワンクリックDroplet展開
+- **MiniMax**: MaxClaw（OpenClawベースマルチエージェント）リリース
+- **Alibaba Cloud**: OpenClawマルチエージェント構築ガイド公開
+- **Qwen 3.5**: OpenClaw蒸留モデル（9B/27B/4B）公開
+- **Google I/O 2026**: Gemini Spark（OpenClaw 24/7代替競合）発表
+
+### 出典
+- [OpenClaw v2026.5.19-beta.1 Release](https://github.com/openclaw/openclaw/releases/tag/v2026.5.19-beta.1)
+- [OpenClaw v2026.5.20 Release](https://github.com/openclaw/openclaw/releases/tag/v2026.5.20)
+- [OpenClaw v2026.5.22-beta.1 Release](https://github.com/openclaw/openclaw/releases/tag/v2026.5.22-beta.1)
+- [OpenClaw Newsletter 2026-05-21](https://buttondown.com/openclaw-newsletter/archive/openclaw-newsletter-2026-05-21/)
 
 ## 関連リンク
 
