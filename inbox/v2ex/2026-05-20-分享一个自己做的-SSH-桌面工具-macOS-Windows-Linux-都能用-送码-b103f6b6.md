@@ -4,8 +4,8 @@ source: v2ex
 url: "https://www.v2ex.com/t/1213996"
 author: "dushixiang"
 date: 2026-05-20
-score: 86
-tags: ["AI", "Claude"]
+score: 90
+tags: ["Claude", "AI"]
 ---
 
 # 分享一个自己做的 SSH 桌面工具， macOS / Windows / Linux 都能用 [送码]
@@ -39,7 +39,7 @@ AI 助手：跟随当前终端上下文，支持多会话、对话历史、模�
 …(内容已截断)
 
 ## 涉及话题
-- AI
 - Claude
+- AI
 
 [原文链接](https://www.v2ex.com/t/1213996)

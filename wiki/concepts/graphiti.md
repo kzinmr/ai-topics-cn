@@ -2,7 +2,7 @@
 title: "Graphiti — LLM用リアルタイム知識グラフ"
 created: 2026-04-21
 updated: 2026-04-21
-tags: [knowledge-graph, llm-memory, rag, ai-agent, open-source]
+tags: [knowledge-graph, llm-memory, rag, ai-agents, open-source]
 aliases: ["Graphiti", "知識グラフ", "LLM記憶"]
 source_lang: zh-CN
 source: juejin

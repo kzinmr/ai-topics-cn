@@ -2,7 +2,7 @@
 title: "SpringAI Alibaba — Java向けAI Agent開発フレームワーク"
 created: 2026-04-21
 updated: 2026-04-21
-tags: [java, ai-agent, langchain, spring, alibaba, open-source]
+tags: [java, ai-agents, langchain, spring, alibaba, open-source]
 aliases: ["SpringAI Alibaba", "阿里Java AI框架", "Spring AI Alibaba"]
 source_lang: zh-CN
 source: juejin

@@ -2,7 +2,7 @@
 title: "悟空（Wukong）— 阿里企業級AIエージェントプラットフォーム"
 created: 2026-04-26
 updated: 2026-04-26
-tags: [ai-agent, enterprise, alibaba, wukong, local-agent, mcp, skills, china, tooling]
+tags: [ai-agents, enterprise, alibaba, wukong, local-agent, mcp, skills, china, tooling]
 aliases: ["悟空", "Wukong", "AI钉钉", "钉钉AI", "阿里悟空"]
 source_lang: zh-CN
 ---

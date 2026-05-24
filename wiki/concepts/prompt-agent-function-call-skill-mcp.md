@@ -2,7 +2,7 @@
 title: "Prompt・Agent・Function Call・Skill・MCP — 用語整理"
 created: 2026-04-21
 updated: 2026-04-21
-tags: [concept, terminology, prompt, function-calling, skill, mcp, ai-agent]
+tags: [concept, terminology, prompt, function-calling, skill, mcp, ai-agents]
 aliases: ["Prompt", "Agent", "Function Call", "Skill", "MCP", "用語整理", "傻傻分不清楚"]
 source_lang: zh-CN
 source: juejin

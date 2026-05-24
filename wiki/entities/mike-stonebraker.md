@@ -2,7 +2,7 @@
 title: Mike Stonebraker — データベースの父、AI Agentへの警鐘
 created: 2026-05-02
 updated: 2026-05-02
-tags: [person, database, turing-award, ai-agent, postgres, dbos, stonebraker]
+tags: [person, database, turing-award, ai-agents, postgres, dbos, stonebraker]
 aliases: ["Mike Stonebraker", "Michael Stonebraker", "石破天", "マイク・ストーンブレーカー"]
 source_lang: en
 ---

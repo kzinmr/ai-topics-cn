@@ -1,0 +1,21 @@
+---
+title: "[请教] 怎么把 OpenCode 的 Go 订阅提供给 ClaudeCode 用？"
+source: v2ex
+url: "https://www.v2ex.com/t/1214833"
+author: "zenfsharp"
+date: 2026-05-22
+score: 0
+tags: ["Claude", "DeepSeek"]
+---
+
+# [请教] 怎么把 OpenCode 的 Go 订阅提供给 ClaudeCode 用？
+
+本来用 OpenCode 还挺好的，但下午的时候使用 ClaudeCode 接了 DeepSeek 官方 API ，写了几轮需求，发现跟在 OpenCode 里用 DeepSeek 感觉完全不一样，感觉一次性把需求做好的概率高了不少。
+于是就想把 OpenCode 的 DeepSeek 接进 ClaudeCode ，但是一思考就报错。
+求教现在能接吗？要怎么接？
+
+## 涉及话题
+- Claude
+- DeepSeek
+
+[原文链接](https://www.v2ex.com/t/1214833)

@@ -2,7 +2,7 @@
 title: AI Agent最終是數據庫問題 — Turing Award受賞者の業界批判
 created: 2026-05-02
 updated: 2026-05-02
-tags: [concept, ai-agent, database, turing-award, criticism, industry-analysis]
+tags: [concept, ai-agents, database, turing-award, criticism, industry-analysis]
 aliases: ["AI Agentは最終的にデータベース問題", "Agent Database Problem", "エージェントはデータベース"]
 source_lang: zh-CN
 ---

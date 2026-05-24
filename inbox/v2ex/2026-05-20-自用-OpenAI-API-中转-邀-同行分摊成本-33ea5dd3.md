@@ -4,8 +4,8 @@ source: v2ex
 url: "https://www.v2ex.com/t/1214094"
 author: "mnoputd20adfadf3"
 date: 2026-05-20
-score: 121
-tags: ["OpenAI", "Anthropic"]
+score: 248
+tags: ["Anthropic", "OpenAI"]
 ---
 
 # 自用 OpenAI API 中转，邀 同行分摊成本 🤡 🤡 🤡
@@ -28,7 +28,7 @@ aHR0cHM6Ly81ODUwMTZkMy51M3UuZGV2
 有疑问可以翻我之前的相关帖子 👋
 
 ## 涉及话题
-- OpenAI
 - Anthropic
+- OpenAI
 
 [原文链接](https://www.v2ex.com/t/1214094)

@@ -4,7 +4,7 @@ source: v2ex
 url: "https://www.v2ex.com/t/1213965"
 author: "TAFMT"
 date: 2026-05-19
-score: 77
+score: 93
 tags: ["Gemini"]
 ---
 

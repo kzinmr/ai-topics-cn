@@ -2,7 +2,7 @@
 title: "Tencent QClaw Agent — 騰訊の極簡AIエージェントプラットフォーム"
 created: 2026-04-28
 updated: 2026-04-28
-tags: [company, ai-agent, china, tencent, open-source, agent-platform]
+tags: [company, ai-agents, china, tencent, open-source, agent-platform]
 aliases: ["QClaw", "QClaw Agent", "腾讯QClaw", "OpenClaw China"]
 source_lang: zh-CN
 ---

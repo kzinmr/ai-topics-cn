@@ -2,7 +2,7 @@
 title: "贝壳AI客服 — MCP + Skillを活用したAIカスタマーサービス"
 created: 2026-04-18
 updated: 2026-04-18
-tags: [mcp, skill, customer-service, ai-agent, rag, beike]
+tags: [mcp, skill, customer-service, ai-agents, rag, beike]
 aliases: ["贝壳AI客服", "Beike-AI-Customer-Service", "Beike-カスタマーサービス", "MCP-客服"]
 source_lang: zh-CN
 ---

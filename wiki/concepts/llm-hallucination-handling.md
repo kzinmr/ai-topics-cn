@@ -2,7 +2,7 @@
 title: "LLM幻觉处理 — 结构化文档理解的局限与解法"
 created: 2026-04-18
 updated: 2026-04-18
-tags: [llm, rag, ai-agent, tooling]
+tags: [llm, rag, ai-agents, tooling]
 aliases: ["大模型幻觉", "LLM hallucination"]
 source_lang: zh-CN
 ---

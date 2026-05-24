@@ -4,7 +4,7 @@ source: juejin
 url: "https://juejin.cn/post/7641409122263285766"
 author: "恋猫de小郭"
 date: 2026-05-20
-score: 6
+score: 8
 tags: ["Gemini", "前端", "AI编程", "人工智能"]
 ---
 
@@ -12,7 +12,7 @@ tags: ["Gemini", "前端", "AI编程", "人工智能"]
 
 在刚刚过去的 Goolge I/O，其实我觉得最有意思的就是 Antigravity 2.0，虽然大家过去一年的时间里都在吐槽 Antigravity，但是现在它被扶正了，直接干掉了 Gemini C
 
-> 👍 6   👁️ 0   ⭐ 3
+> 👍 8   👁️ 0   ⭐ 4
 
 ## 涉及话题
 - Gemini

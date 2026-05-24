@@ -2,7 +2,7 @@
 title: "Android CLI — Google Agent-first開発時代向けAndroid開発ツール"
 created: 2026-04-21
 updated: 2026-04-21
-tags: [android, cli, google, ai-agent, mobile-development]
+tags: [android, cli, google, ai-agents, mobile-development]
 aliases: ["Android CLI", "Android开发工具", "Google AI開発"]
 source_lang: zh-CN
 source: juejin

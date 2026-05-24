@@ -1,11 +1,11 @@
 ---
 title: "AGI-Eval社区招聘「AI+游戏」Agent工程师(可远程兼职)"
 source: wechat-media
-url: "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS3bQ8kIDrXJjET0h_rasOaYAtbaFyMqsiFqXa8Fplpd9c013zk-xWfvc-25nJdMCDS4bknsMYLbrIM42L22Rhm23xXuJ2EpvQqyGYSUMEWgTiol7pNFZyRgAkN92Vb4LxTC7r2mSGYEzQq_HnIpQLbmL72aFGTcQvsvMKFbZKBFhN3qx-q5B79x0Xk8NWQex2BWeaA_GDRoUVFWTW_Q8tvc5eBgmN3LoYQ..&type=2&query=PaperWeekly LLM AI Agent %E5%A4%A7%E6%A8%A1%E5%9E%8B&token=C41511CAFF64AF0A3136630D39F2E2F13178AB6D6A0D7868"
+url: "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS3cDlGhtvaklmKU2dwpGOdCmhDflFCDZi1qXa8Fplpd9J8VfL0Ncy7k9Lln6uQu2c_mN0wnjwPocIanXwqc9dnxNFEKOx2_zv4gOWQ_KM86HUoVcadERjjbrHbziAQDI7HJRX3N8U3RoCrblidKzMZemUQPndK51ZmXOLfm3J5lwYHWw8LSyZYtOazVCeMNkAXPfRaAYGySAoD5eYC0fhwnRtmyIGw2VAg..&type=2&query=PaperWeekly LLM AI Agent %E5%A4%A7%E6%A8%A1%E5%9E%8B&token=C7B388A1F861AB0F353364732E363ED6363382A56A0E214E"
 author: "PaperWeekly"
 date: 2026-05-12
 score: 0
-tags: ["AGI", "大模型", "LLM"]
+tags: ["AGI", "LLM", "大模型"]
 ---
 
 # AGI-Eval社区招聘「AI+游戏」Agent工程师(可远程兼职)
@@ -16,7 +16,7 @@ AI/Agent接入不同的娱乐内容/电子游戏/桌游;2. 优化Agent的... 对
 
 ## 涉及话题
 - AGI
-- 大模型
 - LLM
+- 大模型
 
-[原文链接](https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS3bQ8kIDrXJjET0h_rasOaYAtbaFyMqsiFqXa8Fplpd9c013zk-xWfvc-25nJdMCDS4bknsMYLbrIM42L22Rhm23xXuJ2EpvQqyGYSUMEWgTiol7pNFZyRgAkN92Vb4LxTC7r2mSGYEzQq_HnIpQLbmL72aFGTcQvsvMKFbZKBFhN3qx-q5B79x0Xk8NWQex2BWeaA_GDRoUVFWTW_Q8tvc5eBgmN3LoYQ..&type=2&query=PaperWeekly LLM AI Agent %E5%A4%A7%E6%A8%A1%E5%9E%8B&token=C41511CAFF64AF0A3136630D39F2E2F13178AB6D6A0D7868)
+[原文链接](https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS3cDlGhtvaklmKU2dwpGOdCmhDflFCDZi1qXa8Fplpd9J8VfL0Ncy7k9Lln6uQu2c_mN0wnjwPocIanXwqc9dnxNFEKOx2_zv4gOWQ_KM86HUoVcadERjjbrHbziAQDI7HJRX3N8U3RoCrblidKzMZemUQPndK51ZmXOLfm3J5lwYHWw8LSyZYtOazVCeMNkAXPfRaAYGySAoD5eYC0fhwnRtmyIGw2VAg..&type=2&query=PaperWeekly LLM AI Agent %E5%A4%A7%E6%A8%A1%E5%9E%8B&token=C7B388A1F861AB0F353364732E363ED6363382A56A0E214E)

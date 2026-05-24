@@ -24,6 +24,12 @@ Use this skill for Chinese AI media, newsletter, or crawl triage when the task a
 6. Recommend wiki work only when the item adds stable, reusable information or materially changes an existing page.
 7. If there is no actionable work and the cron prompt allows silence, return `[SILENT]`.
 
+## Common Pitfalls
+
+- **WeChat duplicate re-collection**: WeChat media crawls frequently re-collect the same articles across multiple runs (same URL, same content, different hash). If a `take` item's inbox file contains only a title + URL with no body text, the original article was likely already processed in a prior run. Update the `updated` date on the wiki page and move on — don't treat this as new content.
+- **V2EX "暂无内容" items**: V2EX forum posts often have placeholder titles but no actual body content (rendered as `暂无内容` in the inbox markdown). These provide no wiki value and can be safely skipped even if the checkpoint marks them as `take` or `reference`.
+- **Newsletter header items**: WeChat newsletter digests (e.g., 机器之心PRO 会员通讯) often appear as individual crawl items with only a header/preview line and no full article. Treat as reference only if an existing wiki page covers the topic; otherwise skip.
+
 ## Source Lens
 
 | Source | Use For | Caveat |

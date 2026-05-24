@@ -2,7 +2,7 @@
 title: "browser-use — 浏览器AgentのDOM処理パイプライン"
 created: 2026-04-21
 updated: 2026-04-21
-tags: [browser-agent, dom-processing, llm, ai-agent, open-source]
+tags: [browser-agent, dom-processing, llm, ai-agents, open-source]
 aliases: ["browser-use", "DOM処理", "ブラウザAgent"]
 source_lang: zh-CN
 source: juejin
