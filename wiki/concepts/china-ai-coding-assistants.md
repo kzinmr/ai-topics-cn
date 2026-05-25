@@ -1,9 +1,9 @@
 ---
 title: "中国AIコーディングアシスタント — Trae・MarsCode・通义灵码・CodeGeeX"
 created: 2026-04-28
-updated: 2026-05-17
+updated: 2026-05-25
 tags: [coding-agents, tooling, china, product-comparison, ide]
-aliases: ["中国AI编程助手", "China AI Coding Assistants", "Trae", "MarsCode", "通义灵码", "CodeGeeX", "Lingma"]
+aliases: ["中国AI编程助手", "China AI Coding Assistants", "Trae", "MarsCode", "通义灵码", "CodeGeeX", "Lingma", "Qoder CN"]
 source_lang: zh-CN
 ---
 
@@ -227,6 +227,24 @@ Alibabaの通义灵码が2026年5月に主要アップデートを実施：
 - **VS Code 1.115 Agent機能**: 2026年4月、VS Code標準機能としてAgentモードが追加。サードパーティツール（Trae・Cursor等）との競合が新段階に
 - **国内ネットワーク問題の解決策**: ofox.ai等のAPI仲介プラットフォームがClaude Code・Cursor API・Gemini CLIの中国国内利用を可能に
 - 出典: 各種開発者フォーラム・V2EX議論 [T3]
+
+### 6. 通义灵码 → Qoder CN リブランド（2026.05.20）
+
+**5月20日**、Alibaba（阿里巴巴）が通义灵码（Lingma）の**国際ブランド「Qoder CN」へのリブランド**を発表：
+
+- **名称変更**：通义灵码（Tongyi Lingma） → **Qoder CN**（英文ブランド名「Qoder」の中国版として位置づけ）
+- **背景**：
+  - AlibabaのQwenモデルファミリーと統合ブランド戦略
+  - 「Lingma」から「Qoder」への統一により、グローバル市場でのブランド認知向上
+  - Qoderは国際版、Qoder CNは中国国内版としての整理
+- **既存機能は継続**：Agentic Ask、NES、Inline Chat、Lingma IDE等の機能はQoder CNに引き継がれ、機能削減なし
+- **製品体系**：
+  - **Qoder CN**: 中国国内向け（旧通义灵码）。百炼プラットフォーム経由
+  - **Qoder**: 国際向け。Qwen3.7-Max搭載、グローバル展開
+  - **Lingma IDE**: ブランド名は当面維持。バックエンドはQoderに統合
+- **今後の展開**：Qoder CNはQwen3.7-Max（Agent-firstモデル）との連携を強化。自律エージェント機能が中核に
+
+> **出典**: Alibaba Cloud Summit 2026（5月20日）、36kr、量子位 [T1]
 
 ## 出典
 - ByteDance Trae公式: [trae.ai](https://www.trae.ai) [T1]

@@ -1,7 +1,7 @@
 ---
 title: "中国大模型本地部署 — 量子化・VRAM最適化・消費者GPUでの推論"
 created: 2026-04-19
-updated: 2026-05-19
+updated: 2026-05-25
 tags: [inference, quantization, local-deployment, hardware, vram-optimization, china]
 aliases: ["本地部署", "国产模型本地运行", "VRAM优化", "量化技术", "GGUF", "GPTQ", "AWQ"]
 source_lang: zh-CN
@@ -243,8 +243,6 @@ SGLangがDeepSeek V4向けに3つの革新的技術を実装：
 - **TileLang**: DeepSeek V4カーネルをTileLangで記述。FlashAttentionが50行Python、性能はCUDA専門家と同等
 - **Mooncake**: RDMA P2P重み更新でKimi K2 1Tモデルの同期時間を53秒→7.2秒（7.37倍）
 - **出典**: [量子位](https://www.qbitai.com/2026/05/417791.html) [T1]
-
-### 百度 昆仑芯 + 文心5.1 訓練成功（5月13日）
 Create 2026百度AI开发者大会で発表。**昆仑芯P800**全国産クラスター上で文心5.1重要バージョンの訓練完了。訓練有効率97%、万カード規模線形拡張度85%超。**天池256カード超ノード**（6月正式発売予定）はスループット前世代比25%向上、推論効率50%改善。文心・DeepSeek・GLM・MiniMax等主流モデル対応。ネットワークHPN5.0、エンドツーエンド遅延50%最適化。
 - **出典**: [新浪财经](https://finance.sina.com.cn/jjxw/2026-05-13/doc-inhxtkrn0919271.shtml) [T1]
 
@@ -268,3 +266,64 @@ Create 2026百度AI开发者大会で発表。**昆仑芯P800**全国産クラ�
 - **Vibe Coding全面適用**: AIエージェントがプロファイラ分析→性能ボトルネック特定→PR自動作成。5月までに60以上の最適化タスク完了
 - マルチモーダル拡充（LTX2、Wan、混元ビデオ対応）
 - **出典**: [量子位](https://www.qbitai.com/2026/05/417791.html) [T1]
+
+## 2026年5月19日〜25日更新 — ローカル推論の実用化と新たな最適化の波
+
+### llama.cpp、MTP投機的デコーディング対応（5月16日〜20日）
+
+llama.cppが**MTP（Multi-Token Prediction）**投機的デコーディングの実験的サポートをマージ：
+
+- **仕組み**: 複数のトークンを同時に予測するMTPヘッドを活用。Targetモデル（DeepSeek V4等のMTP対応モデル）が次トークン＋次々トークンを同時予測
+- **性能**: 特定条件下で**生成速度1.7〜2.2倍向上**。DeepSeek V4 FlashのMTP-v1ヘッドで検証
+- **対応モデル**: 現時点ではDeepSeek V4/V4-FlashのMTP-v1をネイティブサポート。Qwen系等の他MTPモデルは今後の対応予定
+- **制約**: 実験的機能。GPUモード（cuBLAS/vulkan）でのみ有効。CPUフォールバックなし
+- **出典**: [llama.cpp PR #11547](https://github.com/ggerganov/llama.cpp/pull/11547) [T1]
+
+### Ollama v0.24.0 + Codex App — iOS/Androidローカル推論（5月14日）
+
+Ollamaがv0.24.0を正式リリース。合わせてモバイルネイティブアプリ「**Ollama Codex App**」を発表：
+
+- **Ollama v0.24.0**: llama.cpp統合の安定化、Apple Silicon MLX加速の正式サポート、Qwen3.6-35B-A3B MoEのローカル実行最適化
+- **Codex App**: iOS/Androidでローカル推論を実行。Ollamaサーバーに接続し、スマホ単体でQwen2.5-7Bクラスまで動作。オフラインAIアシスタントとして機能
+- **戦略的意義**: Ollamaが「デスクトップ→モバイル」へ展開。中国市場ではQwen/ChatGLM等の国産小モデルをスマホで実行可能に
+- **出典**: [Ollama Blog — Codex App Launch](https://ollama.ai/blog/codex-app) [T1]; V2EX議論 [T2]
+
+### Ollama v0.30.0-rc23 — llama.cpp全面統合完了（5月23日）
+
+Ollama v0.30.0がrc20→rc23に進み、**llama.cppベースへの大規模アーキテクチャ移行が完了段階**に：
+
+- **GGML完全廃止**: 旧GGMLエンジンが削除され、llama.cpp直接サポートに一本化
+- **新マルチモーダルエンジン**: llama.cppとは独立したOllama独自のマルチモーダルカスタムエンジンを搭載。Llama 4 Scout（109B MoE）のチャンク注意機構・2D回転埋め込み対応
+- **MLXアクセラレーション**: Apple SiliconでMLXベースの高速推論。oMLX（地瓜AI）との競合・補完関係に
+- **v0.24.0からの急ピッチ**: 4月末のv0.24系から約1ヶ月で**v0.30系のプレリリース段階**まで到達。バージョン番号のジャンプはアーキテクチャ刷新を反映
+- **出典**: [Ollama GitHub Releases](https://github.com/ollama/ollama/releases) [T1]
+
+### MiniCPM-V 4.6 — オープンソースVLM新世代（5月11日）
+
+OpenBMB（THUDM）が**MiniCPM-V 4.6**をリリース：
+
+- **パラメータ**: 9.6B（アクティブ3.2B MoE）。超軽量VLM
+- **性能**: MMBench 82.3%、MathVista 68.7%、DocVQA 94.1%。**GPT-4oレベルを1/50のパラメータで達成**
+- **ローカル実行**: Q4量子化で約5GB VRAM。RTX 3060 12GBの消費者GPUで動作可能。Ollama対応
+- **ローカライズ**: 中国語・日本語・英語の3言語ネイティブ対応。マルチモーダル理解に強い
+- **OSSコミットメント**: 完全オープンソース。商用利用可能（Apache 2.0ライセンス）
+- **出典**: [OpenBMB GitHub](https://github.com/OpenBMB/MiniCPM-V) [T1]; [Hugging Face](https://huggingface.co/openbmb/MiniCPM-V-4.6) [T1]
+
+### 智譜AI GLM-5 — ローカルデプロイ戦略（5月21日）
+
+智譜AI（Zhipu AI）が**GLM-5シリーズのローカルデプロイ戦略**を発表：
+
+- **GLM-5-Turbo**: 400B MoE（40B active）。4 x A100-80GBでQ4量子化動作可能
+- **GLM-5.1**: 800B MoE。8 x A100-80GBクラス必須。Agentタスクに特化した最適化
+- **ZCubeネットワーク**: ローカル推論でもZCubeアーキテクチャによるスループット15%向上
+- **Ollama対応**: GLM-5-TurboのGGUF量子化モデルをModelScopeで公開
+- **出典**: 智譜AI公式発表（2026-05-21）[T1]
+
+### その他ローカルデプロイ周辺動向
+
+| 日付 | トピック | 詳細 |
+|------|---------|------|
+| 5月21日 | Qwen3.7-Max | Alibaba Cloud Summit発表。Agent-firstモデルだが、ローカル実行用量子化モデルは本日時点で未公開。百煉プラットフォーム経由のAPI提供が優先 |
+| 5月24日 | SGLang v0.5.12 | DeepSeek V4 HiCache正式対応。MegaMoE W4A16/W4A8カーネル、PD Disaggregation、ShadowRadix統合 |
+| 5月22日 | TriAttention v0.2.0 GA | SGLangバックエンド正式対応。スループット2.5倍向上。v0.1.0から約1ヶ月でGA到達 |
+| 5月19日 | GitHub Spark | GitHub Sparkが中国モデル（Qwen3.6）のローカル実行をサポート。ローカルAI開発の新たな選択肢 |

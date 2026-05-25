@@ -1,7 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-05-24
+最終更新: 2026-05-25
 エンティティ: 61, コンセプト: 116, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-05-25 Active Crawl: Kimi/Local Deployment/Coding Assistants）
+- `concepts/kimi.md` — **更新**: VIE構造解体正式開始(5/21-22/法務監査法人選定/A1提出Q3目標/年内上場)。さくらインターネットK2.6 API提供開始(5/20/Anthropic互換API/日本初本格展開/¥6.50-27.00 MTok)
+- `concepts/china-local-deployment.md` — **更新**: llama.cpp MTP投機的デコーディング(1.7-2.2x)。Ollama v0.24.0 Codex App(iOS/Android)。Ollama v0.30.0-rc23(GGML廃止)。MiniCPM-V 4.6(9.6B/GPT-4o級1/50)。GLM-5ローカルデプロイ(400B-Q4)。SGLang v0.5.12 HiCache。TriAttention v0.2.0 GA
+- `concepts/china-ai-coding-assistants.md` — **更新**: 通义灵码→QoderCNリブランド(5/20/Alibaba Cloud Summit)。Alibaba Cloud Summit Qwen3.7-Max発表(Agent-first/SWE-bench 70.6%)
 ### 本日更新（2026-05-24 Active Crawl: OpenClaw/MCP China/AI Model Filing）
 - `entities/openclaw.md` — **更新**: v2026.5.19/5.20/5.22-beta.1週3回メジャーリリース(ブラウザモーダル/Policy/Discord/cron/プリウォーム5ms)。Hermes Agent OpenRouter日次トークン消費でOpenClaw逆転(458B vs 173B)。★374K。エコシステム拡大(DigitalOcean/MiniMax MaxClaw/Alibaba Cloud/Qwen 3.5蒸留)。脆弱性パッチ済み
 - `concepts/mcp-china.md` — **更新**: Alibaba Cloud Summit全製品MCP化/Qwen3.7-Max/ModelScope MCP広場千種。ByteDance火山引擎MCP Server OSS(100+MCP)。Tencent MCP Gateway(ゼロコード)/MCP-FLOW(99.2%)。AAIF 43新メンバー。MCP STDIO脆弱性(200K+server)。SEC 8-K初開示。エコシステム9,400+Server

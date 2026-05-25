@@ -100,11 +100,13 @@ topics:
       - "Kimi WebBridge ブラウザ Agent プラグイン"
       - "国智投 北京人工智能基金 Kimi"
       - "Cursor Composer 2.5 Kimi K2.5"
+      - "VIE 紅籌架构拆除 Kimi 香港IPO"
+      - "さくらインターネット Kimi K2.6 API"
     wiki_pages:
       - concepts/kimi
-    notes: "2026.05.20更新: Kimi WebBridgeリリース(5/15/ブラウザAgentプラグイン/ローカルファースト)。国有資本参入(5/19/国智投・北京人工智能基金・中国移動が株主/20億ドル融資クローズ)。Cursor Composer 2.5(5/18-19/Kimi K2.5ベース/Opus 4.7級性能1/10コスト)。香港IPO紅籌架构拆除開始(時価総額200億ドル)。K3開発Q3 2026予定継続。OpenRouter K2.6使用量第2位維持。"
+    notes: "2026.05.25更新: VIE構造解体正式開始(5/21-22/法務監査法人選定完了/A1提出Q3目標/年内上場/評価200億ドル超/智譜AI MiniMaxに続く香港上場)。さくらインターネットK2.6 API提供開始(5/20/Anthropic互換API/入力¥6.50・出力¥27.00 MTok/日本初本格展開)。前回(5/20): Kimi WebBridgeリリース(5/15/ブラウザAgent/ローカルファースト)。国有資本参入(5/19/国智投・北京人工智能基金・中国移動株主/20億ドル融資)。Cursor Composer 2.5(K2.5ベース/Opus 4.7級1/10コスト)。香港IPO紅籌架构拆除開始。K3開発Q3継続。OpenRouter K2.6使用量第2位。"
     added: 2026-04-17
-    last_crawled: 2026-05-20
+    last_crawled: 2026-05-25
 
   - slug: yi
     title: "Yi (零一万物) — 01.AI"
@@ -276,11 +278,15 @@ topics:
       - "Ollama v0.30 llama.cpp transition GGML deprecated"
       - "SGLang HiSparse ShadowRadix MUSA Moore Threads"
       - "Kaiwu 开悟 inference optimization 昇腾"
+      - "llama.cpp MTP speculative decoding"
+      - "MiniCPM-V 4.6 openbmb VLM ollama"
+      - "SGLang v0.5.12 HiCache DeepSeek V4"
+      - "TriAttention v0.2.0 GA"
     wiki_pages:
       - concepts/china-local-deployment
-    notes: "2026.05.19更新: Ollama v0.30.0-rc17(llama.cpp移行・GGML廃止・新マルチモーダルエンジン)。SGLang DeepSeek-V4最適化(ShadowRadix/HiSparseカーネル/昇腾910B 1.6x性能向上)。Moore Threads MUSA公式SGLang統合(合併/マージ)。Kaiwu(开悟)推論最適化ツール(QQブラウザ/マルチモデル並列/昇腾デプロイ)。前回: oMLX(地瓜AI/Apple Silicon推論サーバー/MLXベース30%性能向上)。LocalClaw零配置Agentランダイム(vLLM+OpenClaw+MCP/Docker Compose一行)。ERNIE 5.1ローカル用GGUF/GPTQ公開。DeepSeek-V4 TCO分析(8x910C 30万元、月100万回超で元)。"
+    notes: "2026.05.25更新: llama.cpp MTP投機的デコーディング対応(5/16/DS V4 Flash 1.7-2.2x)。Ollama v0.24.0 Codex App(5/14/iOS/Androidローカル推論)。Ollama v0.30.0-rc23(5/23/GGML完全廃止/llama.cpp一本化/新マルチモーダルエンジン)。MiniCPM-V 4.6(5/11/9.6B MoE/GPT-4o級性能1/50パラメータ)。GLM-5ローカルデプロイ戦略(5/21/400B-Q4×4x A100-80GB)。SGLang v0.5.12 HiCache正式対応(5/24/MegaMoE W4A16)。TriAttention v0.2.0 GA(5/22/SGLang対応/2.5x)。GitHub Spark Qwen3.6ローカル実行対応(5/19)。前回(5/19): Ollama v0.30.0-rc17。SGLang DeepSeek-V4最適化。Moore Threads MUSA統合。Kaiwu。oMLX。LocalClaw。ERNIE 5.1 GGUF/GPTQ。DS V4 TCO。"
     added: 2026-04-17
-    last_crawled: 2026-05-19
+    last_crawled: 2026-05-25
 
   - slug: censorship-bypass
     title: "Censorship Bypass & Uncensored Models (审查绕过/去审查模型)"
@@ -465,11 +471,13 @@ topics:
       - "通义灵码 Agentic Ask NES Inline Chat 2026"
       - "Trae SOLO Mobile PhonePairing 2026"
       - "腾讯CodeBuddy WorkBuddy計費改定 2026"
+      - "通义灵码 QoderCN リブランド Alibaba"
+      - "Qwen3.7-Max Alibaba Cloud Summit 2026"
     wiki_pages:
       - concepts/china-ai-coding-assistants
-    notes: "2026.05.17更新: Trae SOLO Mobile(5/5)三端同期リリース(iOS/PhonePairing/飞书連携/Windows版同時)。腾讯CodeBuddy計費改定(5/15)—企業版78→198元/月/人/WorkBuddy統合/CloudAgent新機能/CodeBuddy NES(写一补十)。36kr分析「TRAE SOLO龙虾化」—ByteDanceのAgentワークステーション戦略。前回(5/5): Trae SOLO独立Desktop/Web/通义灵码5月更新(AgenticAsk/NES/InlineChat/LingmaIDE正式版)/VS Code 1.115 Agent機能。"
+    notes: "2026.05.25更新: 通义灵码→QoderCNリブランド(5/20/Alibaba Cloud Summit/国際ブランド統一/Qwen-Coder→Qoderシリーズ/Qoder Quest Agent新設/Qoder Viewer機能追加)。Alibaba Cloud Summit 2026(5/21)/Qwen3.7-Max発表(Agent-first/80B MoE/3B活性/SWE-bench 70.6%)。前回(5/17): Trae SOLO Mobile三端同期(5/5)。腾讯CodeBuddy計費改定(5/15)。36kr分析「TRAE SOLO龙虾化」ByteDance戦略。前々回(5/5): Trae SOLO独立Desktop。通义灵码5月更新。"
     added: 2026-04-17
-    last_crawled: 2026-05-17
+    last_crawled: 2026-05-25
 
   # =========================================================
   # 7. Chinese Coding Agent Tools (中国コーディングエージェント)
