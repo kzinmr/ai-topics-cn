@@ -1,7 +1,14 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-05-25
-エンティティ: 61, コンセプト: 116, ダイジェスト: 7, 比較: 2, ページ: 9
+最終更新: 2026-05-26
+エンティティ: 61, コンセプト: 118, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-05-26 Newsletter Ingest: Zhihu Frontier Weekly — AI推論・エージェント・インフラ競争）
+- `concepts/agentic-engineering.md` — **新規**: SE 3.0（Ahmed E. Hassan）、Tony Bai 7ルール、DeepSeek Harness `Model+Harness=Agent`、エージェント三巨頭サミット、価格階層型Agentアーキテクチャ。Vibe CodingからAgentic Engineeringへの第2世代移行を体系的に整理
+- `concepts/diffusion-language-models.md` — **新規**: トークン不要の言語モデル探求。Cola DLM（@huMAnG0d）「連続的意味状態空間」仮説、ELFプロジェクト。自己回帰の逐次生成vs拡散の並列生成。評価基準・計算効率・エコシステム互換性の課題
+- `entities/openai.md` — **更新**: OpenAI推論モデルが幾何学予想を証明（unit-distance-proof.pdf/remarks.pdf/cot.pdfの3ファイル公開）。数学界の反応（Will Sawin/Jacob Tsimerman/Daniel Litt）。「証明の希少性→潤沢性」パラダイム転換。GPT-5.5 vs DeepSeek価格戦略（非対称競争/約100倍価格差）
+- `entities/anthropic.md` — **更新**: Andrej KarpathyがAnthropicでプリトレーニング部門に復帰。「スケーリング法則は終わっていない」シグナル。エージェントはツール調整できるが、ベースモデルの深いドメイン理解がなければ表面的知識の繋ぎ合わせに留まる
+- `entities/gemini-google.md` — **更新**: Gemini 3.5 Flash発表への失望。価格が3.1 Proに近くトークン消費量も多い。コーディング能力への言及なし（LLM最大戦場で不在）。技術詳細不足
+- `concepts/deepseek.md` — **更新**: Harnessチーム設立をAgentic Engineering文脈で位置づけ。`Model + Harness = Agent` パラダイムへのリンク追加
 ### 本日更新（2026-05-25 Active Crawl: Kimi/Local Deployment/Coding Assistants）
 - `concepts/kimi.md` — **更新**: VIE構造解体正式開始(5/21-22/法務監査法人選定/A1提出Q3目標/年内上場)。さくらインターネットK2.6 API提供開始(5/20/Anthropic互換API/日本初本格展開/¥6.50-27.00 MTok)
 - `concepts/china-local-deployment.md` — **更新**: llama.cpp MTP投機的デコーディング(1.7-2.2x)。Ollama v0.24.0 Codex App(iOS/Android)。Ollama v0.30.0-rc23(GGML廃止)。MiniCPM-V 4.6(9.6B/GPT-4o級1/50)。GLM-5ローカルデプロイ(400B-Q4)。SGLang v0.5.12 HiCache。TriAttention v0.2.0 GA
@@ -207,6 +214,7 @@
 ## コンセプト (Concepts)
 
 - [[agent-skills|Agent Skills — AIエージェントのモジュール型能力システム]]
+- [[agentic-engineering|Agentic Engineering — Vibe Codingの第2世代（SE 3.0/Harness Engineering/自律開発パラダイム）]]
 - [[ai-agent|AI Agent（智能体）— 中国語圏での議論動向]]
 - [[agent-team-swarm|AI Agentチーム・スワームパターン — 複数AIエージェント協調開発]]
 - [[ai-inner-os|AI Inner OS — AI CLIツールのインナーモノローグ可視化プラグイン]]
@@ -225,6 +233,7 @@
 - [[claude-design|Claude Design — Anthropicのデザインツール（Figma/Canva競合）]]
 - [[coding-plan|Coding Plan（编程计划）— 中国発AIコーディングサブスクリプションモデル]]
 - [[dflash|DFlash — ブロック拡散モデルによる6倍推論加速（speculative decodingの新世代手法）]]
+- [[diffusion-language-models|Diffusion Language Models — トークンを越える連続潜在表現]]
 - [[function-calling|Function Calling（関数呼び出し）— LLMと外部APIを接続する核心メカニズム]]
 - [[gpt|GPT — OpenAIの言語モデルシリーズ]]
 - [[multimodal|多模态/Multimodal — 複数のモダリティを統合するAI]]

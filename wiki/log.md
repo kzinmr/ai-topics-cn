@@ -1,5 +1,24 @@
 |
 
+## [2026-05-26] newsletter-ingest | Zhihu Frontier Weekly — AI推論・エージェント・インフラ競争
+
+### Wiki更新
+1. **concepts/agentic-engineering.md** — **新規**: SE 3.0（Ahmed E. Hassan）、Tony Bai 7ルール、DeepSeek Harness `Model+Harness=Agent`、エージェント三巨頭サミット、価格階層型Agentアーキテクチャ。Vibe CodingからAgentic Engineeringへの第2世代移行を体系的に整理
+2. **concepts/diffusion-language-models.md** — **新規**: トークン不要の言語モデル探求。Cola DLM（@huMAnG0d）「連続的意味状態空間」仮説、ELFプロジェクト。自己回帰の逐次生成vs拡散の並列生成。評価基準・計算効率・エコシステム互換性の課題
+3. **entities/openai.md** — **更新**: OpenAI推論モデルが幾何学予想を証明（unit-distance-proof.pdf/remarks.pdf/cot.pdfの3ファイル公開）。数学界の反応（Will Sawin/Jacob Tsimerman/Daniel Litt）。「証明の希少性→潤沢性」パラダイム転換。GPT-5.5 vs DeepSeek価格戦略（非対称競争/約100倍価格差）
+4. **entities/anthropic.md** — **更新**: Andrej KarpathyがAnthropicでプリトレーニング部門に復帰。「スケーリング法則は終わっていない」シグナル。エージェントはツール調整できるが、ベースモデルの深いドメイン理解がなければ表面的知識の繋ぎ合わせに留まる
+5. **entities/gemini-google.md** — **更新**: Gemini 3.5 Flash発表への失望。価格が3.1 Proに近くトークン消費量も多い。コーディング能力への言及なし（LLM最大戦場で不在）。技術詳細不足
+6. **concepts/deepseek.md** — **更新**: Harnessチーム設立をAgentic Engineering文脈で位置づけ。`Model + Harness = Agent` パラダイムへのリンク追加
+
+### 処理対象newsletter
+- `inbox/newsletters/2026-05-25--Zhihu-Frontier-WeeklyOpenAI-DeepSeek-Anthropic-Google-AI-Rea--73599889.md` — digest処理済み
+- 関連raw記事: `wiki/raw/articles/substack.com--app-link-post--42d403f1.md` — 本体記事（OpenAI・DeepSeek・Anthropic・GoogleのAI推論・エージェント・インフラ競争）
+- スキップ: 同一記事のURLパラメータ違い4件、Substackプロフィール1件、アプリ宣伝1件
+
+### チェックポイント
+- run_id: 20260526T040037Z
+- source: newsletter-triage
+
 ## [2026-05-25] active-crawl | Kimi / Local Deployment / Coding Assistants
 
 ### Wiki更新

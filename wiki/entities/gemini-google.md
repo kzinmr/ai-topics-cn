@@ -66,6 +66,20 @@ Geminiは[[openai|OpenAI]]のGPTシリーズ、[[anthropic|Anthropic]]のClaude�
 - [[ai-agent]] — Geminiベースのエージェント構築
 - [[vector-db]] — Gemini Embeddingとの連携
 
+## 最新動向（2026年5月25日）
+
+### Gemini 3.5 Flash — 価格設定への失望とコーディング能力不在
+
+2026年5月、GoogleはGemini 3.5 Flashを発表したが、中国AIコミュニティからの反応は**概ね失望**に満ちたものだった。
+
+**主な批判点:**
+- **価格設定の矛盾**: Gemini 3.5 Flashの価格が3.1 Proに驚くほど近く設定されている。実務的にはタスクあたりのトークン消費量も多いため、コストパフォーマンスが疑問視されている
+- **コーディング能力の不在**: 現在LLM業界最大の戦場であるコーディング能力について、Googleはほとんど言及しなかった。開発者コミュニティはこれを「競争力不足の裏返し」と解釈
+- **技術詳細の不足**: スピード改善の曖昧な言及はあったものの、具体的な技術的詳細がほとんど提示されなかった
+
+> **出典**: 知乎 — [Gemini 3.5 Flash失望](https://www.zhihu.com/question/2040145697911956151) [T2]
+> **出典**: 知乎 Frontier Weekly — [AI Reasoning, Agents, and Infrastructure Race](https://substack.com/@zhihufrontier) [T2]
+
 ## ソース信頼性
 
 | ソース | Tier | 信頼度 |

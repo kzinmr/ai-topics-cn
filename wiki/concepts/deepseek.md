@@ -191,7 +191,15 @@ V4-Flashの¥0.02/百万tokensは、大模型業界史上最低価格。
 
 ---
 
-### ▼ 5月20日：Agent Harness チーム設立 — Claude Code直接対抗へ
+### Agentic Engineering パラダイム — Model + Harness = Agent
+
+DeepSeekのHarnessチーム設立は、より広い**Agentic Engineering（エージェントエンジニアリング）**という業界トレンドの一角をなす。このパラダイムについては → [[agentic-engineering]] を参照。
+
+核心は `Model + Harness = Agent` — 基礎モデルだけではAgentにならず、コンテキスト管理、ツール呼び出し、ファイル読み書き、端末実行、テストフィードバック、エラー訂正・収束の全サイクルを統合した**制御枠組み（Harness）**が必要という考え方。
+
+詳細は → [[agentic-engineering]] の「DeepSeek Harness」セクションを参照。
+
+### DeepSeek、Agent Harnessチーム設立 — Claude Code直接対抗へ
 
 **発生日**: 5月20日
 **報道ソース**: 第一財経、科创版日報（財聯社）、IT之家、甲子光年、雷鋒網など
