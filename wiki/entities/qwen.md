@@ -1,9 +1,9 @@
 ---
 title: Qwen（通义千问）— 阿里云大模型旗舰
 created: 2026-04-17
-updated: 2026-05-21
-tags: [llm, model, china, open-source-ai, alibaba, qwen, agentic-coding, ai-infrastructure]
-aliases: ["Qwen", "通义千问", "qwen", "Qwen3.5", "Qwen3-Coder", "Qwen3.6", "Qwen3.6-Plus", "Qwen3.6-27B", "Qwen3.6-35B-A3B"]
+updated: 2026-05-26
+tags: [llm, model, china, open-source-ai, alibaba, qwen, agentic-coding, ai-infrastructure, qwen3.7, agent-era]
+aliases: ["Qwen", "通义千问", "qwen", "Qwen3.5", "Qwen3-Coder", "Qwen3.6", "Qwen3.6-Plus", "Qwen3.6-27B", "Qwen3.6-35B-A3B", "Qwen3.7-Max", "Qwen3.7-Plus", "千问云", "Qianwen Cloud"]
 source_lang: zh-CN
 ---
 
@@ -374,8 +374,43 @@ Qwen Code CLIが継続的にアップデートを実施：
 | **5月11日** | `--json-schema`構造化出力、codegraph skill（PRレビューリスク分析）、Ink 7.0.2アップグレード、Anthropicプロキシ互換 |
 | **5月12日** | Tool Searchプレフィックスキャッシング、DASHSCOPE_PROXY_BASE_URLサポート、GitHub Actions Node 24アップグレード |
 | **5月13日** | v0.15.11正式タグリリース |
-
-> **出典**: [GitHub QwenLM/qwen-code v0.15.10…v0.15.11](https://github.com/QwenLM/qwen-code/compare/v0.15.10...v0.15.11) [T1]
+|
+|> **出典**: [GitHub QwenLM/qwen-code v0.15.10…v0.15.11](https://github.com/QwenLM/qwen-code/compare/v0.15.10...v0.15.11) [T1]
+|
+|### Qwen Code v0.16.0 — OSC 8リンク・Worktree隔離・qwen serveデーモン（2026年5月21日）
+|
+|2026年5月21日、Qwen Code v0.16.0がリリース。v0.15.xシリーズからの大規模アップデートで**80+のPR**を含む。GitHub Starsは25Kに到達。
+|
+|**主な新機能（v0.16.0, 2026年5月21日）**:
+|
+|1. **OSC 8ハイパーリンク**: マークダウンリンクがターミナルでクリック可能に
+|2. **Worktree隔離（EnterWorktree/ExitWorktree）**: Agent作業を分離された独立ワークツリーで実行、Agent間の干渉防止
+|3. **qwen serveデーモン（Stage 1）**: バックグラウンドサーバーモード、`/demo`デバッグページ付き
+|4. **/goalコマンド**: セッションスコープの目標設定とjudge駆動の継続実行
+|5. **/diff per-turn**: 各ターンの変更差分を対話的に確認
+|6. **/stuck診断スキル**: フリーズしたセッションを診断・回復
+|7. **/rewindファイル復元**: ファイル単位の巻き戻しサポート
+|8. **Auto承認モード（LLM分類器）**: 低リスク操作をAIが自動承認
+|9. **NotebookEditツール**: Jupyterノートブックの直接編集
+|10. **ステータスラインプリセット**: 対話式のUI設定ダイアログ
+|11. **ModelScope内蔵サードパーティAPIプロバイダー**: DashScopeに加えてModelScopeも選択可能に
+|12. **プログレッシブMCP**: MCP初期化が初回入力をブロックしなくなった
+|13. **バッチセッション削除**: `/delete`で複数セッションを一括削除
+|14. **フォークセッション再開フラグ**: Forkしたセッションを`--resume`で再開可能
+|15. **Ink 6→7.0.3アップグレード**: レンダリングパイプライン刷新
+|16. **Qwen3.6-35B-A3B量子化版の画像+動画サポート**
+|17. **Anthropic cache_control on tool_result blocks**
+|
+|**Telemetry Phase 2-4a**: TTFT（Time To First Token）取得、トレースツリー階層化、カスタムリソース属性、メトリックカーディナリティ制御。
+|
+|**v0.16.1 ホットフィックス（2026年5月23日）**:
+|- Windows Git Bash（MinTTY）のUIレンダリング問題を修正 — OSC 8検出をmintty v3.3以上にゲート
+|- tool_use↔tool_result不変条件の全障害パスでの修正
+|- タブインデントされたノートブック書式を保持
+|- React reconciler dev buildのPerformanceMeasureリークを防止
+|- Express 4.21.2→5.2.1に依存関係更新
+|
+|> **出典**: [GitHub QwenLM/qwen-code v0.16.0](https://github.com/QwenLM/qwen-code/releases/tag/v0.16.0), [v0.16.1](https://github.com/QwenLM/qwen-code/releases/tag/v0.16.1) [T1]
 
 ### Qwen Deep Research 正式稼働中
 
@@ -427,7 +462,53 @@ QwenChat上で「Deep Research（深入研究）」機能が稼働中。複数�
 | GPQA Diamond / HLE / HMMT 2026 Feb | **Opus 4.6超え** | 科学的推論でリード |
 | IFBench | **79.1点** | 新記録 |
 
-**対応エージェントハーネス**: OpenClaw、Hermes Agent、Claude Code、Qwen Paw、Qoder最適化。
+| **対応エージェントハーネス**: OpenClaw、Hermes Agent、Claude Code、Qwen Paw、Qoder最適化。
+|
+|| ベンチマーク | スコア | 評価 |
+||-------------|--------|------|
+|| AA Intelligence Index | **56.6**（全球5位/国産1位） | Gemini 3.5 Flash(55.3)を超越 |
+|| Terminal-Bench 2.0 Hard | **50.8%（+6.9）** | DeepSeek-V4-Pro-Max、Claude Opus 4.6超え |
+|| MCP-Atlas | **76.4** | Opus-4.6(75.8)超え |
+|| Skillsbench | **59.2** | Kimi K2.6(56.2)超え |
+|| MCP-Mark | **60.8** | GLM-5.1(57.5)超え |
+|| BFCL-V4 | **75.0** | 関数呼び出しでリード |
+|| SpreadSheetBench-v1 | **87** | オフィス自動化トップ |
+|| Kernel Bench L3 | **1.98x 中央値** | 96%勝率、GPUカーネル最適化 |
+|
+|**35時間自律実行の詳細**: 平頭哥真武M890 PPU上のExtend Attentionカーネルを自動最適化。1,158回ツールコール、432回カーネル評価、5種アーキテクチャ案を反復生成。Triton参照実装比**10倍の幾何平均高速化**。Firetheringの分析（5/25）では、GLM 5.1（7.3x）、Kimi K2.6（5x）、DeepSeek V4 Pro（3.3x）を上回ったと報告。
+|
+|### Qwen3.7-Max API正式公開（2026年5月21日〜23日）
+|
+|2026年5月21日より、Qwen3.7-MaxのAPIが順次公開開始された。
+|
+|| プロバイダー | 入力価格 | 出力価格 | キャッシュ入力 |
+||------------|---------|---------|-------------|
+|| **Alibaba Cloud Model Studio** | ¥12/百万 tokens（~$1.71） | ¥36/百万 tokens（~$5.14） | ¥1.2/百万 tokens（90%割引） |
+|| **OpenRouter** | $2.50/百万 tokens | $7.50/百万 tokens | $0.25/百万 tokens（90%割引） |
+|| **API易 (官転直連)** | $1.7140/百万 tokens | $5.1420/百万 tokens | — |
+|
+|**API仕様の特徴**:
+|- **OpenAI互換**: `openai`ライブラリで呼び出し可能（model ID: `qwen3.7-max`）
+|- **Anthropic Messages Protocol対応**: ネイティブサポート — Claude Code・OpenClawがそのまま動作。`ANTHROPIC_BASE_URL`を切り替えるだけでQwen3.7-Maxをバックエンドに指定可能
+|- **1Mトークンコンテキスト**（256K→1Mに倍増）、**65,536最大出力トークン**
+|- **明示的プロンプトキャッシング**: 繰り返しコンテキストで効率的なキャッシュ利用
+|- **2種類のAPI Key**: `sk-`（標準API）と`sk-sp-`（Token Plan専用）。別のBase URLを使用
+|
+|**主要連携**:
+|OpenRouter（5/21）、ofox.ai（5/21）、Vercel AI Gateway（5/21）、Together AI — 各社がQwen3.7-Maxのルーティングを開始。ofox.aiでは`bailian/qwen3.7-max`として提供。
+|
+|> **出典**: OpenRouter Qwen3.7-Max ページ [(link)](https://openrouter.ai/qwen/qwen3.7-max), ofox.ai Developer Guide [(link)](https://ofox.ai/blog/qwen3-7-max-developer-guide-2026/) [T1]
+|
+|### Qwen3.7-Max Qwen Chat統合（2026年5月22日）
+|
+|2026年5月22日、Qwen3.7-Maxが**千問App v6.9.7+、PCクライアント、Web版**に正式統合された。全ユーザーに無料開放。
+|
+|- Artificial Analysis Intelligence Index：**56.6点**（全球5位、国産1位）を正式発表
+|- GPQA Diamond・HLE・HMMT 2026 Feb・IMOAnswerBenchでClaude Opus 4.6および全中国モデルを超過
+|- IFBench指令遵循：**79.1点**
+|- **Token効率31%改善**: 同一問題に対する出力トークン増加は推論密度向上によるもの
+|
+|> **出典**: [中关村在线](https://ai.zol.com.cn/1185/11851769.html) [T1], [新浪新闻](https://www.sina.cn/news/detail/5301737230701416.html) [T2]
 
 > **出典**: [Alibaba Cloud Blog — Alibaba Unveils New AI Chip](https://www.alibabacloud.com/blog/alibaba-unveils-new-ai-chip-flagship-model-and-rebuilt-cloud-stack-ai-for-agentic-era_603151), [新浪科技](https://finance.sina.com.cn/tech/roll/2026-05-20/doc-inhyphnp1790590.shtml), [CnTechPost](https://cntechpost.com/2026/05/19/alibaba-hints-qwen3-7-ai-model-launch-step-up-ai-race/)
 
@@ -477,6 +558,56 @@ Alibaba Cloud Summitで発表された新ハードウェア群：
 **ARR予測**: 6月四半期に**¥100億（約$14億）**、年末までに**¥300億（約$41億）**。AI関連製品収益は約1年以内に従来のクラウドコンピュート売上を超える見込み。
 
 > **出典**: Alibaba Cloud Blog (同上)
+
+### 千问云（Qianwen Cloud）— Agent向けAI製品プラットフォーム（2026年5月20日）
+
+2026年5月20日、阿里云は**千问云（Qianwen Cloud, www.qianwenai.com）**を発表。17年目で初めて阿里云公式サイト外に独立したAI製品サイトとして開設。ホームページに製品リストやコンソールボタンはなく、**一行のコード**のみが表示される：
+
+```
+npx skills add QianWen-AI/qianwen-ai
+```
+
+これは**Agent可読なプロンプト命令**。Agent（OpenClaw、Hermes Agent、Claude Code等）がこの命令を解釈し、全機能を自律的に「学習」する。
+
+**核心アーキテクチャ**:
+
+| 構成要素 | 説明 |
+|---------|------|
+| **Skills（標準化技能）** | モデル選定・呼び出し・認証・使用量照会を構造化ファイルにカプセル化。AgentがAPIドキュメント不要でモデルを呼び出せる。9モジュール: テキスト生成/チャット、画像理解、動画理解、画像生成、動画生成、TTS、モデルセレクター、認証、使用量照会 |
+| **CLI（コマンドラインツール）** | ログイン・ステータス照会・環境診断・モデル検索・API呼び出し・使用量統計をコマンドラインで完結。スクリプトやバックグラウンドプロセスから操作可能 |
+| **MCP（Model Context Protocol）** | 全モデルサービスをMCPプロトコルで公開 |
+
+**規模**: 
+- **150+モデルシリーズ、480+モデル**：Qwen、GLM、Kimi、DeepSeek、Wan、HappyHorse等
+- **対応Agentフレームワーク**: OpenClaw、Hermes Agent、Claude Code、Qoder — 初日から対応
+- SkillsとCLIは**GitHubでオープンソース**公開
+
+**戦略的意義**:
+- 「クラウドの消費者が人間からAgentに変わる」というパラダイムシフトに対応
+- 阿里云CTO李飛飛: 「Agentワークロードは無規律弾性、短ライフサイクル、瞬時起動即終了 — 従来クラウドの定常負荷とは根本的に異なる」
+- 全球の主要クラウドベンダーで初めて、Webサイトの第一言語を**人間からAgentに変更**した事例
+
+> **出典**: [TestingCatalog](https://testingcatalog.net/alibaba-launches-qianwen-cloud-a-website-designed-for-ai-agents/) [T1], [品玩](https://www.pingwest.com/a/313885) [T1], [中关村在线](https://ai.zol.com.cn/1184/11843997.html) [T1]
+
+### Token Plan サブスクリプション — 月額定額モデル（2026年5月22日）
+
+千问雲と同時に、**Token Plan**サブスクリプションサービスが発表された。高頻度AIプログラミングおよびAgentツール向けに設計。
+
+| プラン | 月額料金 | Credits | 月換算トークン相当 |
+|-------|---------|---------|----------------|
+| **標準版** | ¥198/月 | 25,000 Credits | — |
+| **上級版** | ¥698/月 | 100,000 Credits（標準の4倍） | — |
+| **尊享版** | ¥1,398/月 | 250,000 Credits（標準の10倍） | — |
+
+**特徴**:
+- チーム共有可能なクレジット制
+- 専用API Key（`sk-sp-`接頭辞）と専用Base URL — 標準API（`sk-`）と完全隔離
+- Hermes Agent、OpenClaw、Qwen Code等のツール間でクレジット共有
+- 内蔵ツール（検索・コードインタープリター）は追加課金なし
+- 利用量しきい値アラート設定可能
+- マルチモデル対応：Qwen3.7-Max、Qwen3.6 Plus、GLM-5.1等
+
+> **出典**: [阿里云开发者社区](https://developer.aliyun.com/article/1736226) [T1], [网经社](https://100ec.cn/detail--6659499.html) [T2]
 
 ### Qwen3.5-Plus 2026-04-20 スナップショット
 
@@ -556,4 +687,4 @@ AlibabaはQwenを中核とした**フルスタックAI戦略**を展開：
 
 ### 外部ソース
 
-|| ソース | URL | ティア | 概要 ||---|---|---|---|| 新浪 — Qwen3.6-Max-Preview | [sina.cn/news/5289894780869670](https://www.sina.cn/news/detail/5289894780869670.html) | T1 | 五大核心升级 || MarkTechPost — Qwen3.6-27B | [marktechpost.com/...](https://www.marktechpost.com/2026/04/22/alibaba-qwen-team-releases-qwen3-6-27b-a-dense-open-weight-model-outperforming-397b-moe-on-agentic-coding-benchmarks/) | T1 | 密型Agentic Codingモデル || Aipedia — Qwenレビュー | [aipedia.wiki/tools/qwen](https://aipedia.wiki/tools/qwen/) | T2 | 2026年4月時点完全レビュー || Yahoo Finance — 企業戦略 | [finance.yahoo.com/...](https://finance.yahoo.com/markets/stocks/articles/alibaba-qwen3-6-plus-targets-070714378.html) | T2 | エンタープライズ向け戦略分析 || Bitget — AIインフラ戦略 | [bitget.com/news/...](https://www.bitget.com/news/detail/12560605360273) | T2 | S字カーブ投資分析 || Simply Wall St — Zhenwuクラスター | [simplywall.st/...](https://simplywall.st/stocks/us/retail/nyse-baba/alibaba-group-holding/news/will-alibabas-new-zhenwu-powered-qwen36-plus-ai-cluster-chan) | T2 | 3800億元投資計画 || Silicon Report — Zhenwuデプロイ | [siliconreport.com/...](https://www.siliconreport.com/alibaba-and-china-telecom-put-zhenwu-into-production-with-a-10-000-chip-ai-data-center-in--bee7425e2315a778) | T2 | 10,000チップ実装 |
+||| ソース | URL | ティア | 概要 ||---|---|---|---|| 新浪 — Qwen3.6-Max-Preview | [sina.cn/news/5289894780869670](https://www.sina.cn/news/detail/5289894780869670.html) | T1 | 五大核心升级 || MarkTechPost — Qwen3.6-27B | [marktechpost.com/...](https://www.marktechpost.com/2026/04/22/alibaba-qwen-team-releases-qwen3-6-27b-a-dense-open-weight-model-outperforming-397b-moe-on-agentic-coding-benchmarks/) | T1 | 密型Agentic Codingモデル || MarkTechPost — Qwen3.7-Max | [marktechpost.com/...](https://www.marktechpost.com/2026/05/21/qwen-introduces-qwen3-7-max-a-reasoning-agent-model-with-a-1m-token-context-window/) | T1 | 1Mコンテキスト・Agent永続実行 || Alibaba Cloud Blog — Qwen3.7 | [alibabacloud.com/blog/...](https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154) | T1 | Qwen3.7公式Blog (5/21) || TestingCatalog — 千问云 | [testingcatalog.net/...](https://testingcatalog.net/alibaba-launches-qianwen-cloud-a-website-designed-for-ai-agents/) | T1 | Agent向け再設計詳細 || 品玩 — Agent時代インフラ | [pingwest.com/a/313885](https://www.pingwest.com/a/313885) | T1 | 芯片〜MaaS入口全層分析 || OpenRouter — Qwen3.7-Max | [openrouter.ai/qwen/qwen3.7-max](https://openrouter.ai/qwen/qwen3.7-max) | T1 | API価格・仕様 || GitHub — Qwen Code v0.16.0 | [github.com/...](https://github.com/QwenLM/qwen-code/releases/tag/v0.16.0) | T1 | v0.16.0リリースノート || GitHub — Qwen Code v0.16.1 | [github.com/...](https://github.com/QwenLM/qwen-code/releases/tag/v0.16.1) | T1 | v0.16.1ホットフィックス || GitHub — 千问云 Skills/CLI | [github.com/QianWen-AI/...](https://github.com/QianWen-AI/qianwen-ai) | T1 | オープンソースSkills+CLI || 阿里云开发者社区 — Token Plan | [developer.aliyun.com/...](https://developer.aliyun.com/article/1736226) | T1 | Token Plan詳細 || AI Models Navi — Qwen3.7完全ガイド | [aimodelsnavi.com/...](https://aimodelsnavi.com/en/blog/qwen3-7-max-deep-dive) | T2 | リリースタイムライン・ベンチマーク || Aipedia — Qwenレビュー | [aipedia.wiki/tools/qwen](https://aipedia.wiki/tools/qwen/) | T2 | 2026年4月時点完全レビュー || Yahoo Finance — 企業戦略 | [finance.yahoo.com/...](https://finance.yahoo.com/markets/stocks/articles/alibaba-qwen3-6-plus-targets-070714378.html) | T2 | エンタープライズ向け戦略分析 || Bitget — AIインフラ戦略 | [bitget.com/news/...](https://www.bitget.com/news/detail/12560605360273) | T2 | S字カーブ投資分析 || Simply Wall St — Zhenwuクラスター | [simplywall.st/...](https://simplywall.st/stocks/us/retail/nyse-baba/alibaba-group-holding/news/will-alibabas-new-zhenwu-powered-qwen36-plus-ai-cluster-chan) | T2 | 3800億元投資計画 || Silicon Report — Zhenwuデプロイ | [siliconreport.com/...](https://www.siliconreport.com/alibaba-and-china-telecom-put-zhenwu-into-production-with-a-10-000-chip-ai-data-center-in--bee7425e2315a778) | T2 | 10,000チップ実装 |

@@ -2,6 +2,10 @@
 
 最終更新: 2026-05-26
 エンティティ: 61, コンセプト: 118, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-05-26 Active Crawl: Qwen/Vibe Coding/Dify）
+- `entities/qwen.md` — **更新**: Qwen3.7-Max API正式公開(5/21/¥12/¥36 MTok/Anthropic Messages Protocol)。Qwen Code v0.16.0/v0.16.1(worktree isolation/auto-approval/qwen serve daemon)。千問云詳細(150+モデル/480+モデル/Agent-native Skills/CLI/MCP)。Token Plan月額サブスク(¥198/698/1,398)。Firetheringカーネルベンチ(Qwen3.7-Max:GLM 5.1比10x/DS V4 Pro比3.3x)。AA Index 56.6(Global #5)
+- `concepts/vibe-coding-china.md` — **更新**: Google I/O 2026 Antigravity 2.0(Vibe Coding as Default/Android完全生成/OS in 12h)。Anthropic Mythos 93.9% SWE-bench(Glasswing 10K+脆弱性検出)。ProgramBench全モデル0%→GPT-5.5突破(0.5%/初達成)。Cursor $50B評価額($2B調達/70% Fortune 1000)。Claude Code無料枠削減(250→80 calls/Codexカウンター)。Trae(ByteDance)SOLO Mobile/Skills/600万+。36kr「Coding的中场战事」シリーズ
+- `concepts/dify.md` — **更新**: v1.14.2リリース(5/19/CVE-2026-41947認証バイパス修正/Agent Server初期実装マージ)。Imperva重大脆弱性開示(2件/サイレント修正/10M+Docker Pulls)。みずほFG全社Dify Enterprise導入(41.8%業務時間削減/若手52.2%)。賽博威(Cyberway)初公式販売パートナー。GitHub Stars 143K(+1K/2週間)
 ### 本日更新（2026-05-26 Newsletter Ingest: Zhihu Frontier Weekly — AI推論・エージェント・インフラ競争）
 - `concepts/agentic-engineering.md` — **新規**: SE 3.0（Ahmed E. Hassan）、Tony Bai 7ルール、DeepSeek Harness `Model+Harness=Agent`、エージェント三巨頭サミット、価格階層型Agentアーキテクチャ。Vibe CodingからAgentic Engineeringへの第2世代移行を体系的に整理
 - `concepts/diffusion-language-models.md` — **新規**: トークン不要の言語モデル探求。Cola DLM（@huMAnG0d）「連続的意味状態空間」仮説、ELFプロジェクト。自己回帰の逐次生成vs拡散の並列生成。評価基準・計算効率・エコシステム互換性の課題

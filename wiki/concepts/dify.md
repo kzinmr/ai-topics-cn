@@ -1,8 +1,18 @@
 ---
 title: "Dify — オープンソースLLMOpsプラットフォーム"
 created: 2026-04-19
-updated: 2026-05-18
-tags: [llmops, open-source, agent-platform, rag, workflow, china]
+updated: 2026-05-26
+tags: [llmops, open-source, agent-platform, rag, workflow, china, enterprise, security]
+search_hints:
+  - "Dify セキュリティ脆弱性 Imperva 2026"
+  - "Dify v1.14.2 CVE-2026-41947"
+  - "Dify みずほ 導入 全社展開 2026"
+  - "Dify Enterprise 日本代理店 賽博威"
+  - "Dify エージェントサーバー v1.15"
+  - "Dify Docker pulls 10M"
+  - "Dify Agent Server init"
+  - "Dify Graphon 0.4.0"
+  - "Dify Pyrefly 移行"
 aliases: ["Dify", "Dify.ai", "Dify平台", "开源LLMOps"]
 source_lang: zh-CN
 ---
@@ -15,7 +25,7 @@ source_lang: zh-CN
 
 ## 概要
 
-**Dify**は中国発の**オープンソースLLMアプリケーション開発プラットフォーム**。GitHubスター数138,000超（2026年4月）、フォーク3,000以上。扣子（Coze）の「ローコード」志向に対し、Difyは**「開発者向け宣言的アプローチ」**を掲げ、YAML/JSONによるAgent定義・API-first設計・CI/CD統合を特徴とする。
+**Dify**は中国発の**オープンソースLLMアプリケーション開発プラットフォーム**。GitHubスター数143,000超（2026年5月）、Docker pulls 10M+、フォーク21,000以上。扣子（Coze）の「ローコード」志向に対し、Difyは**「開発者向け宣言的アプローチ」**を掲げ、YAML/JSONによるAgent定義・API-first設計・CI/CD統合を特徴とする。
 
 ## 2026年主要アップデート（v1.3以降）
 
@@ -70,7 +80,45 @@ LlamaFactory（GitHub 73K star）をネイティブ統合：
 
 **GitHub Stars**: 142K+（v1.14.0リリース時）
 
-### 7. Dify v1.14.1：セキュリティ強化 & 安定性修正（2026年5月12日）
+### 7. Dify v1.14.2：セキュリティパッチ & エージェント基盤 & ワークフロー信頼性（2026年5月19日）
+
+v1.14.0の約3週間後、v1.14.1の1週間後にリリースされた緊急パッチ。セキュリティ問題（CVE-2026-41947対応含む）とワークフロー安定性に集中。
+
+**セキュリティ修正（CVE-2026-41947対応）:**
+- **テナント分離強化**: app trace-configエンドポイントおよびFilePreviewテキスト抽出にテナントスコープを適用（GHSA-48xc-wmw8-3jr3, GHSA-2qwc-c2cc-2xwv）
+- **ツール認証情報の保護**: デフォルト組み込みツール認証情報の更新をworkspace admin/ownerに制限
+- **リセット時の認証情報クリーンアップ**: `reset-encrypt-key-pair`実行時に古いテナントツール認証情報を削除
+
+**CVE-2026-41947（2026年5月18日公開）:**
+- **深刻度**: HIGH（CVSS 7.4）/ CRITICAL（CVSS 9.1、機関により評価分岐）
+- **内容**: Dify v1.14.1以前のトレース設定エンドポイントに認証バイパス脆弱性。認証済みエディターユーザーがテナント所有権チェックを迂回し、他テナントのアプリケーションのトレース設定を変更可能。被害アプリのメッセージを攻撃者管理のLLMトレースプロバイダにリダイレクト可能。
+- **修正**: v1.14.2でテナント所有権検証を追加
+
+**ワークフロー信頼性向上:**
+- HITLワークフロー再開後のトレーシング復旧
+- ワークフロー実行コールバック追跡の改善
+- メッセージ更新のデータベースラウンドトリップ削減
+- Flaskコンテキスト外でのメモリフェッチ修正
+- base64ファイルルックアップセッションの適切なクローズ
+
+**RAG/ナレッジ修正:**
+- LLMノードが取得済み知識ファイルにアクセス可能に
+- API更新後のドキュメントサマリー再生成
+- パイプラインテンプレートレンダリング修正
+- RAGパイプラインでの認証情報取得失敗のグレースフルハンドリング
+
+**エージェント基盤（v1.15の布石）:**
+- `feat(agent): init agent server` — 専用Agent Serverの初期実装をマージ（#36087）。Dify v1.15以降のAgent-nativeアーキテクチャの基盤。
+
+**デプロイ改善:**
+- plugin-daemon 0.6.1にアップグレード
+- GraphEngine最小ワーカー数のデフォルト値増加
+- 静的解析をPyrightからPyreflyに移行
+- Graphon 0.4.0にアップグレード
+
+**GitHub Stars**: 143K+（v1.14.2リリース時、2週間で+1K）
+
+### 8. Dify v1.14.1：セキュリティ強化 & 安定性修正（2026年5月12日）
 
 v1.14.0の2週間後にリリースされた重要なパッチ。セキュリティ・ワークフロー・ナレッジベースの安定性向上に焦点。
 
@@ -100,24 +148,57 @@ v1.14.0の2週間後にリリースされた重要なパッチ。セキュリテ
 - SQLALCHEMY_POOL_RESET_ON_RETURN設定追加
 - Exploreアプリのカテゴリ設定・カスタムソート対応
 
-### 8. v1.13.x：Human-in-the-Loop
+### 9. v1.13.x：Human-in-the-Loop
 2026年3月のv1.13.0で**Human Inputノード**を追加。ワークフロー実行を一時停止し、人間の承認・編集・ルーティング判断を挟む「Human-in-the-Loop」が可能に。v1.13.3で安定性向上。
 
-### 9. v1.9.2：双方向MCP対応
+### 10. v1.9.2：双方向MCP対応
 v1.9.2（2025年7月頃）で、MCPサポートを双方向に拡張：外部MCP Serverをツールとして呼び出すだけでなく、Dify上のAgent/WorkflowをそのままMCP Serverとして公開可能に。Claude、Cursor等のMCPクライアントから直接呼び出せる。
 
-### 10. Creator Center & Template Marketplace
+### 11. Creator Center & Template Marketplace
 2026年3月、**Creator Center**と**Template Marketplace**をローンチ。コミュニティ作成のワークフローテンプレートを公開・共有・ワンクリック導入。PartnerStack連携でテンプレート経由のサブスクリプション収益分配も可能。
 
 ## 資金調達
 
 2026年3月、**Dify（LangGenius）は3,000万ドルのPre-Series A資金調達**を発表。リード投資家は**紅杉（HSG）**。GL Ventures、Alt-Alpha Capital、五源資本（5Y Capital）、瑞穗力合投資、NYX Venturesが参加。累計調達額は4,150万ドル。企業評価額は約1.8億ドル。
 
-Globalで140万台以上のデバイス、2,000+チーム、280社のエンタープライズに採用（マースク、Anker等）。ARRは約300万ドル。
+Globalで140万台以上のデバイス、10M+ Docker pulls、2,000+チーム、280社のエンタープライズに採用（マースク、Anker等）。ARRは約300万ドル。
+
+### セキュリティ脆弱性の開示（2026年5月18日）
+
+Imperva Threat ResearchがDifyに2件の重大脆弱性を発見・公開：
+
+**1. ファイルアップロード経由のアカウント乗っ取り（CVE未割り当て）**
+- **影響**: Dify v1.13.0以前の全バージョン
+- **手法**: 攻撃者がバーナーアカウントで悪意のあるSVGファイルをアップロード → サブドメイン（upload.dify.ai → cloud.dify.ai）を書き換えたリンクを管理者に送信 → クリックでXSS発動 → アカウント完全乗っ取り
+- **根本原因**: Difyの全ファイルが認証なし・予測可能なURLパターンで公開。uploadサブドメインがcloud.dify.aiのDNSエイリアスだったため、サブドメイン書き換えだけで認証バイパス可能
+- **修正**: 2026年3月17日、v1.13.1でContent-Typeをapplication/octet-streamに強制（全ファイルダウンロード化）
+- **開示経緯**: 2026年1月14日にImpervaが報告 → Difyは無回答・サイレントパッチ → 2026年5月18日にImpervaが公開
+
+**2. サンドボックステナント分離バイパス**
+- **影響**: Dify v1.13.2以前
+- **内容**: Difyサンドボックスが全テナントで同一の固定UIDでPythonコードを実行。全テナントのコードが共有の/tmpに書き出される。ファイルは脆弱なVigenere暗号（64バイト繰り返し鍵）で「暗号化」されていたが、実質的に解読可能
+- **修正**: v1.13.3（2026年3月25日）でdify-sandbox 0.2.14にバンドル。実行ごとに一意のUIDを割り当て、ファイルパーミッションも0600に制限
+- **注意**: 暗号自体は改善されていない（隔離バイパスが修正されたのみ）
+
+**セキュリティ教訓**: AIプラットフォームが機能追加を急ぐあまり、セキュリティ設計が追いついていない構造的問題を示す。特にセルフホスト環境では修正後も長期間パッチ未適用のインスタンスが残存するリスクあり。
 
 ### 日本展開
 
 LangGeniusは2025年2月に日本法人（株式会社LangGenius、東京・日本橋）を設立。2026年4月より、教育・介護分野の京進グループと協業開始。Difyを活用した教育AI・介護現場のDX推進を目的とする。
+
+**みずほフィナンシャルグループ導入（2026年5月、最重要）:**
+2026年5月上旬、**みずほFG**が金融機関として初めて「Dify Enterprise」を全社展開開始。金融機関基準の厳格なガバナンスを備えたAI開発基盤を構築：
+- 非エンジニアでもAIエージェントを開発可能な環境を提供
+- 部門ごとのアクセス権限制御、SSO、利用ログ取得による統制管理基盤
+- 先行実証（法人営業領域）では平均41.8%の業務時間短縮（60分→35分）
+- 若手層では平均52.2%の時間短縮（62分→29分）を達成
+- 産業調査部：アナリスト業務のAI支援ワークフローを検証中
+- 人材・組織開発部：AIキャリアナビゲーションを構築中
+- 参考: みずほ銀行は2026年9月より対話型AIアシスタント「あおまるバンク」提供開始予定（OpenAI技術活用）
+- **出典**: [産経ニュース](https://www.sankei.com/pressrelease/prtimes/S67PWWYWSNJLPGVYGHI3OTCE5Q/)、[PR TIMES](https://prtimes.jp/main/html/rd/p/000000003.000177612.html)
+
+**Dify Enterprise日本代理店:**
+2026年5月、**賽博威（Cyberway）** がDify Enterprise版の初の公式認定販売パートナーに。大消費業界向け「AIアプリケーションファクトリー」ソリューションを提供。
 
 ## 核心機能
 
@@ -183,6 +264,8 @@ app:
 | **跨境电商A社** | 年商50億円 | 商品情報抽出Agent（Dify RAG + GPT-4） |
 | **金融B社** | 地方銀行 | リスクレポート自動生成（Dify Workflow + GLM） |
 | **京進グループ** | 教育・介護 | 教育AI・介護DX（2026年4月〜） |
+| **みずほFG** | メガバンク | 全社AI開発基盤「Dify Enterprise」（2026年5月〜、41.8%業務時間削減） |
+| **賽博威（Cyberway）** | ITソリューション | Dify Enterprise公式販売パートナー（大消費業界向け） |
 
 ## 扣子 (Coze) との比較
 
@@ -216,5 +299,11 @@ app:
 |--------|-----|--------|------|
 | Dify公式サイト | [dify.ai](https://dify.ai) | T1 | プラットフォーム本体 |
 | GitHub | [github.com/langgenius/dify](https://github.com/langgenius/dify) | T1 | OSSリポジトリ |
+| v1.14.2 Release | [GitHub Releases](https://github.com/langgenius/dify/releases/tag/1.14.2) | T1 | 最新パッチノート |
+| CVE-2026-41947 | [Feedly](https://feedly.com/cve/CVE-2026-41947) | T1 | 脆弱性詳細 |
+| Imperva開示記事 | [Cybernews](https://cybernews.com/security/dify-critical-vulnerabilities-disclosed/) | T1 | セキュリティ開示 |
+| Imperva技術詳細 | [Security Boulevard](https://securityboulevard.com/2026/05/dify-when-your-ai-platform-becomes-the-attack-surface/) | T1 | Imperva詳細分析 |
+| みずほFG導入PR | [産経ニュース](https://www.sankei.com/pressrelease/prtimes/S67PWWYWSNJLPGVYGHI3OTCE5Q/) | T1 | エンタープライズ導入事例 |
+| 賽博威パートナー発表 | [163.com](https://www.163.com/dy/article/KSAR9JC80517K28J.html) | T1 | 公式販売パートナー |
 | 掘金 — Dify RAG活用 | [juejin.cn](https://juejin.cn) | T2 | ハンズオン記事 |
 | IT之家 — 企业级AI智能体解析 | [ithome.com](https://www.ithome.com) | T2 | 業界分析 |

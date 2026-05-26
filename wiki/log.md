@@ -1,5 +1,17 @@
 |
 
+## [2026-05-26] active-crawl | Qwen / Vibe Coding / Dify
+
+### Wiki更新
+- `entities/qwen.md` — **更新**: Qwen3.7-Max API正式公開(5/21/¥12/¥36 MTok/Anthropic Messages Protocol)。Qwen Code v0.16.0/v0.16.1(worktree isolation/auto-approval)。千問云詳細(150+モデル/480+モデル/Agent-native)。Token Plan月額サブスク(¥198/698/1,398)。Firetheringカーネルベンチ(GL-5.1比10x)。AA Index 56.6(Global #5)
+- `concepts/vibe-coding-china.md` — **更新**: Google I/O 2026 Antigravity 2.0(Vibe Coding as Default/OS in 12h)。Anthropic Mythos 93.9% SWE-bench(Glasswing/10K+ vulns)。ProgramBench全モデル0%→GPT-5.5突破(0.5%)。Cursor $50B評価額($2B調達)。Claude Code無料枠削減(250→80 calls)。Trae(SOLO Mobile/600万+)。36kr「Coding的中场战事」シリーズ
+- `concepts/dify.md` — **更新**: v1.14.2リリース(5/19/CVE-2026-41947修正/Agent Server基盤)。Imperva重大脆弱性開示(2件/サイレント修正/10M+Docker Pulls)。みずほFG全社Dify Enterprise導入(業務時間41.8%削減)。賽博威(Cyberway)初公式販売パートナー。GitHub Stars 143K
+
+### hot-topics.yaml更新
+- qwen: last_crawled→2026-05-26、search_hints+5、notes更新(API正式公開/千問云/Token Plan/Firethering bm)
+- vibe-coding-china: last_crawled→2026-05-26、search_hints+6、notes更新(Google I/O/Mythos/ProgramBench/Cursor $50B)
+- dify: last_crawled→2026-05-26、search_hints+4、notes更新(v1.14.2/CVE/みずほFG/Cyberway)
+
 ## [2026-05-26] newsletter-ingest | Zhihu Frontier Weekly — AI推論・エージェント・インフラ競争
 
 ### Wiki更新

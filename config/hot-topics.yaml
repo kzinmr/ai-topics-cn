@@ -63,11 +63,16 @@ topics:
       - "淘宝 千問 AI買い物 EC統合 2026"
       - "Qwen Code v0.15.11 MCP open-in-terminal"
       - "QWQ overthinking 無限ループ バグ"
+      - "Qwen3.7-Max API pricing Anthropic プロトコル"
+      - "Qwen Code v0.16.0 v0.16.1 worktree isolation"
+      - "千問云 Qianwen Cloud Agent architecture"
+      - "Token Plan 月額 ¥198/698/1398"
+      - "Firethering kernel benchmark Qwen3.7-Max"
     wiki_pages:
       - entities/qwen
-    notes: "2026.05.21更新: Qwen3.7-Max(5月20日/Agent-first自律実行最適化/自律エージェント向け初モデル)。Qoder 1.0(自律開発Desktop/統合開発環境/コード自動生成と実行バイナリ直接生成)。Qwen3.5-LiveTranslate-Flash(音声同時通訳/低遅延特化)。Qwen Code v0.16.0(Agent機能・MCP統合拡張)。2026.05.15更新: 5月11日淘宝EC統合(自然言語→商品検索/購入/在庫確認/フォロー)。Qwen Code v0.15.11(5月13日/open-in-terminal/MCP/4o-native/Telemetry)。千問Deep Research正式版(5月6日/十数分レポート)。QWQ/Qwen3.6 overthinkingバグ(5月12日/無限ループ報告)。QuestMobile 3月MAU1.66億(+4,241%/国内2位)。百煉Agent動的ツール。Qwen-Scope(SAE/OSS)/QwenPaw★16.4K/Lingma IDE。Zhenwu AI韶関10K基。Alibaba社内AI統制強化(20人CodeFreeze)。Qwen3.6-235B-A21B-preview DeepSeek V4超え。"
+    notes: "2026.05.26更新: Qwen3.7-Max API正式公開(5/21/Alibaba Cloud Model Studio/¥12/¥36 MTok/Anthropic Messages Protocol対応)。Qwen Code v0.16.0(5/21/80+PR/worktree isolation/auto-approval/qwen serve daemon/OSC 8)/v0.16.1(5/23/Windows Git Bash修正)。千問云(Qianwen Cloud)詳細判明(150+モデルシリーズ/480+モデル/Agent-native Skills/CLI/MCP)。Token Plan月額サブスク(¥198/698/1,398/チーム共有)。Firetheringカーネルベンチ(5/25/Qwen3.7-Max:GLM 5.1比10x/K2.6比5x/DS V4 Pro比3.3x)。AA Index 56.6(Global #5)/MCP-Mark 60.8/Skillsbench 59.2。2026.05.21更新: Qwen3.7-Max(5月20日/Agent-first自律実行最適化/自律エージェント向け初モデル)。Qoder 1.0(自律開発Desktop/統合開発環境/コード自動生成と実行バイナリ直接生成)。Qwen3.5-LiveTranslate-Flash(音声同時通訳/低遅延特化)。Qwen Code v0.16.0(Agent機能・MCP統合拡張)。2026.05.15更新: 5月11日淘宝EC統合(自然言語→商品検索/購入/在庫確認/フォロー)。Qwen Code v0.15.11(5月13日/open-in-terminal/MCP/4o-native/Telemetry)。千問Deep Research正式版(5月6日/十数分レポート)。QWQ/Qwen3.6 overthinkingバグ(5月12日/無限ループ報告)。QuestMobile 3月MAU1.66億(+4,241%/国内2位)。百煉Agent動的ツール。Qwen-Scope(SAE/OSS)/QwenPaw★16.4K/Lingma IDE。Zhenwu AI韶関10K基。Alibaba社内AI統制強化(20人CodeFreeze)。Qwen3.6-235B-A21B-preview DeepSeek V4超え。"
     added: 2026-04-17
-    last_crawled: "2026-05-21"
+    last_crawled: "2026-05-26"
 
   - slug: chatglm
     title: "ChatGLM (智谱清言) — Zhipu AI"
@@ -254,9 +259,13 @@ topics:
       - "Dify AI agent workflow RAG"
       - "Dify 融资 LangGenius 3000万"
       - "Dify v1.14 Agent Skills Sandbox GA"
+      - "Dify セキュリティ脆弱性 Imperva 2026"
+      - "Dify v1.14.2 CVE-2026-41947"
+      - "Dify みずほ 導入 全社展開 2026"
+      - "Dify Enterprise 日本代理店 賽博威"
     wiki_pages:
       - concepts/dify
-    notes: "2026.05.18更新: v1.14.0 GA正式リリース（5月初旬）—Agent Skills/Sandbox Runtime/Skill EditorがProduction Readyに。Sandbox Runtime: 隔離実行環境でエンタープライズセキュリティ対応。Skill Editor: 再利用可能SOPブロック。前回(5/4)カバー済みの3000万ドル調達・京進グループ協業は継続中。wiki→dify.md更新済み。"
+    notes: "2026.05.26更新: v1.14.2リリース(5/19/CVE-2026-41947認証バイパス修正/HITLワークフロー信頼性改善/LLMノードRAGアクセス)。Impervaが2件の重大脆弱性公開(5/18/ファイルアップロードアカウント乗っ取り/サンドボックス分離バイパス/サイレント修正/10M+Docker Pulls)。みずほFG全社Dify Enterprise導入(金融機関初/業務時間41.8%削減/若手52.2%)。賽博威(Cyberway)初のDify Enterprise公式販売パートナー(大消費業界向け)。GitHub Stars 143K(+1K/2週間)。Agent Server初期実装マージ(v1.15基盤)。2026.05.18更新: v1.14.0 GA正式リリース（5月初旬）—Agent Skills/Sandbox Runtime/Skill EditorがProduction Readyに。Sandbox Runtime: 隔離実行環境でエンタープライズセキュリティ対応。Skill Editor: 再利用可能SOPブロック。前回(5/4)カバー済みの3000万ドル調達・京進グループ協業は継続中。wiki→dify.md更新済み。" 
     added: 2026-04-17
     last_crawled: 2026-05-18
 
@@ -450,11 +459,16 @@ topics:
       - "腾讯吐司 Toast 应用宝 Vibe Coding"
       - "灵珠 Lingzhu 二测 DeepSeek V4"
       - "Node.js 1.9万行 AI生成 PR OpenJS"
+      - "Google I/O Antigravity 2.0 vibe coding"
+      - "Anthropic Mythos 93.9% SWE-bench Glasswing"
+      - "ProgramBench GPT-5.5 breakthrough May 2026"
+      - "Cursor $50B valuation 2026"
+      - "Claude Code pricing free tier 80 calls"
     wiki_pages:
       - concepts/vibe-coding-china
-    notes: "2026.05.20更新: Karpathy Anthropic加入(5/19/Vibe Coding創始者/研究開発復帰/Claude事前学習研究)。腾讯吐司(Toast/应用宝)Vibe Coding製品公開(5/15〜18/真のAPK生成/蚂蚁灵光と差別化)。灵珠(Lingzhu)二测(招待コード撤廃/DS V4統合/単日Token 50億突破)。Sequoia AI Ascent Karpathy講演「锯齿状智能・認知債」—Vibe Coding→Agentic Engineering宣言。36kr三阶段衰退曲线(Node.js 1.9万行AI生成PR事件/OpenJS Foundation結論)。KDD 2026 Workshop SE 3.0定義(100万件Agent PRデータセット)。通义灵码2.5+Qwen3-Coder-Next(80B MoE/3B活性化/SWE-bench 70.6%)。V2EX「全职写代码感觉坚持不下去了」。"
+    notes: "2026.05.26更新: Google I/O 2026 Antigravity 2.0(5/19-20/Vibe Coding as Default/Android完全生成/OS in 12h)。Anthropic Mythos 93.9% SWE-bench(5/22/Glasswing 10,000+脆弱性検出)。ProgramBench全モデル0%→GPT-5.5突破(5/23-25/0.5%初達成/推論時計算スケーリング)。Cursor $50B評価額($2B調達/70% Fortune 1000/SpaceX $60Bオプション)。Claude Code無料枠削減(250→80 calls/Codexカウンター)。Trae(ByteDance)5月アップデート(SOLO Mobile/Skills/600万+ユーザー)。36kr「Coding的中场战事」シリーズ(価格戦争/CTO批判)。2026.05.20更新: Karpathy Anthropic加入(5/19/Vibe Coding創始者/研究開発復帰/Claude事前学習研究)。腾讯吐司(Toast/应用宝)Vibe Coding製品公開(5/15〜18/真のAPK生成/蚂蚁灵光と差別化)。灵珠(Lingzhu)二测(招待コード撤廃/DS V4統合/単日Token 50億突破)。Sequoia AI Ascent Karpathy講演「锯齿状智能・認知債」—Vibe Coding→Agentic Engineering宣言。36kr三阶段衰退曲线(Node.js 1.9万行AI生成PR事件/OpenJS Foundation結論)。KDD 2026 Workshop SE 3.0定義(100万件Agent PRデータセット)。通义灵码2.5+Qwen3-Coder-Next(80B MoE/3B活性化/SWE-bench 70.6%)。V2EX「全职写代码感觉坚持不下去了」。" 
     added: 2026-04-17
-    last_crawled: "2026-05-20"
+    last_crawled: "2026-05-26"
 
   - slug: china-ai-coding-assistants
     title: "Chinese AI Coding Assistants (国产AI编程助手)"

@@ -1,7 +1,7 @@
 ---
 title: "Vibe Coding（氛围编程）— 中国での受容とAgentic Engineeringへの進化"
 created: 2026-04-17
-updated: 2026-05-20
+updated: 2026-05-26
 tags: [vibe-coding, ai-coding, chinese-ai, karpathy, agentic-engineering, paradigm-shift, intent-coding, cognitive-debt]
 aliases: ["氛围编程", "vibe coding", "意图编程", "Wish Coding", "认知债"]
 source_lang: zh-CN
@@ -519,4 +519,30 @@ Anthropicが2026年5月7日に開催したオンライン技術大会「Code w/ 
 - [全职写代码感觉坚持不下去了 (V2EX, 2026-05-14)](https://www.v2ex.com/t/1212702)
 - [不要在520当天晚上vibe coding (V2EX, 2026-05-19)](https://www.v2ex.com/t/1213851)
 - [从Vibe Coding到Wish Coding：蚂蚁灵光重构软件生产关系 (鲸林向海, 2026-04-20)](https://www.itsolotime.com/archives/31063)
-- [Anthropic 2026 Agentic Coding Trends Report](https://resources.anthropic.com/hubfs/2026%20Agentic%20Coding%20Trends%20Report.pdf)
+- [Anthropic 2026 Agentic Coding Trends Report](https://resources.anthropic.com/hubbs/2026%20Agentic%20Coding%20Trends%20Report.pdf)
+- **NEW 2026-05-20～26**:
+- [Google I/O 2026: Antigravity 2.0正式リリース — "Vibe Coding as Default" (Google Blog, 2026-05-19)](https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/)
+- [Antigravity 2.0 Built an OS in 12 Hours (Digit, 2026-05-21)](https://www.digit.in/news/general/google-io-2026-google-claims-antigravity-20-created-an-operating-system-in-12-hours-brings-vibe-coding-to-android.html)
+- [Gemini 3.5 Flash + Antigravity 2.0 headlines Google I/O (PPC Land, 2026-05-21)](https://ppc.land/gemini-3-5-and-antigravity-2-0-headline-google-i-o-2026-reveal/)
+- [Project Glasswing: Initial Update — 10,000+ vulnerabilities found (Anthropic, 2026-05-22)](https://www.anthropic.com/research/glasswing-initial-update)
+- [Anthropic prepares Mythos 1 for Claude Code and Security (TestingCatalog, 2026-05-23)](https://www.testingcatalog.com/anthropic-prepares-mythos-1-for-claude-code-and-claude-security/)
+- [ProgramBench: 全AIモデル0%完成の衝撃 (36氪, 2026-05-10)](https://36kr.com/p/3798593895930888)
+- [GPT-5.5がProgramBenchを初突破 (新智元/36氪, 2026-05-25)](https://36kr.com/p/3807610197384968)
+- [ProgramBench 0% 解读 (KnightLi, 2026-05-10)](https://knightli.com/2026/05/10/programbench-ai-coding-zero-percent/)
+- [Cursor $50B valuation: SaaSの新しいプレイブック (StartupsWorld, 2026-05-17)](https://startupsworld.news/market-movers/cursor-50b-saas-playbook-dead/)
+- [Cursor raising $2B at $50B valuation (Today's Startup News, 2026-05-17)](https://www.todaysstartupnews.com/startups/cursor-is-raising-2-billion-at-a-50-billion-valuation-three-years-ago-it-did-not-exist)
+- [36氪: Codingの中場戦事 (2026-05-24)](https://36kr.com/p/3815446937820932)
+- [36氪: Claude吞噬整个AI编程栈 (2026-05-18)](https://36kr.com/p/3764989164307202)
+- [36氪: 如何正确Vibe Coding？Anthropic Erik Schluntz大师课 (2026-05-18)](https://36kr.com/p/3774648797659657)
+- [InfoQ: 外行式Vibe Coding正跟专业的Agent工程走向融合 (2026-05-20)](https://www.infoq.cn/article/uLLYdtZdZu9sCQSyUcst)
+- [卡神转投Anthropic，工作岗位是最危险的AI (36氪, 2026-05-19)](https://36kr.com/p/3817196535071624)
+- [Karpathy为何突然加入Anthropic (Odaily, 2026-05-20)](https://www.odaily.news/zh-CN/post/5210873)
+- [Trae SOLO移动端上线 (火山引擎, 2026-05-05)](https://developer.volcengine.com/articles/7636955544025464841)
+- [一文读懂Trae Skills (TRAE官方社区, 2026-05-15)](https://forum.trae.cn/t/topic/17840)
+- [Anthropic Mythos SWE-bench 93.9% Record (NxCode, 2026-05)](https://www.nxcode.io/resources/news/claude-mythos-benchmarks-93-swe-bench-every-record-broken-2026)
+- [SWE-bench Leaderboard May 2026 GPT-5.5 88.7% (marc0.dev, 2026-05)](https://www.marc0.dev/en/leaderboard)
+- [Claude Mythos 93.9% — Is SWE-bench Verified Already Dead? (AgentMarketCap, 2026-04-12)](https://agentmarketcap.ai/blog/2026/04/12/claude-mythos-93-percent-swe-bench-verified-benchmark-saturation-2026)
+- [腾讯吐司App怎么用AI做软件 (AI-Indeed, 2026-05-18)](https://www.ai-indeed.com/encyclopedia/21061.html)
+- [胡彦斌、李笑来都在Vibe Coding (发现AI, 2026-05-20)](https://www.faxai.cn/archives/8059)
+- [Claude Mythos首次破90%代码Agent leaderboard (网易, 2026-05-23)](https://www.163.com/dy/article/KT8P64C405561FZG.html)
+- [Anthropic Claude Mythos nears broader release (TechTimes, 2026-05-24)](https://www.techtimes.com/articles/317076/20260524/anthropic-moves-closer-public-claude-mythos-release-10000-critical-bugs-found-first.htm)
