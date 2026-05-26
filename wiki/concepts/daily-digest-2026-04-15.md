@@ -1,10 +1,11 @@
 ---
 title: "Daily Digest — 2026-04-15"
 created: 2026-04-15
-updated: 2026-04-15
+updated: 2026-05-26
 tags: [daily-digest, surveillance-report, llm]
 aliases: ["DD 2026-04-15", "中国語圏AI監視レポート 2026-04-15"]
 source_lang: zh-CN
+archive: true
 ---
 
 ## 概要

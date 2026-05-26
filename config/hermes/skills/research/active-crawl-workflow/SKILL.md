@@ -79,8 +79,8 @@ For each selected topic, use its `search_hints` for web research:
   - **Update `search_hints:` with newly discovered terms**: Add model names, product names, Chinese keywords, and CVE IDs discovered during the crawl. New terms go at the end of the list (before `wiki_pages:`).
 - Update `wiki/log.md` with crawl results
 - Update `wiki/index.md` statistics:
-  - **Summary table at top**: increment the concept/entity/page counts for newly created pages. The `コンセプト (概念):` row tracks `wiki/concepts/` files.
-  - **本日更新 section**: add a `- ### [topic-name]` entry under the "本日更新" heading with a brief description of what changed (new page vs content update). Keep entries concise — one line per topic unless a major restructure happened.
+  - **Summary bar at top**: update `最終更新:` date to today (YYYY-MM-DD). Increment the concept/entity/page counts only for **newly created** pages — do NOT change counts for pages that were merely updated.
+  - **本日更新 section**: create a new `### 本日更新（YYYY-MM-DD ...）` heading at the top (inserted before the previous day's section), with each changed page as a plain bullet (`- \`path/to/page.md\` — **更新/新規**: ...`). The old "本日更新" section stays unchanged with its original date — do not rewrite it to "前日更新". Keep entries to one concise bullet per topic unless a major restructure happened. Do NOT use nested `###` inside the bullet list.
   - **Check that the spacing and `|` alignment** in the summary table is preserved. Subagent patches to index.md frequently break pipe alignment or add stray `|` characters in headings.
 
 ### 5. Commit and Push

@@ -1,11 +1,11 @@
 ---
 title: "「Meta版ChatGPT」背后的技术:想让基础LLM更好地处理长上下文,只需持续预训练"
 source: wechat-media
-url: "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS--XAn_Qla1mAnlf2dfH5A9FuQCWjjaK7FqXa8Fplpd9EJxsvjaRa4r7wCfQT16-a2Ww_ORBz7M9KnWCBqINs91PsUYyUkCBGG-lSTRHQDghgSdf93iJD0aXrhJlPX3RydV7ms4WKEDffzP1XSdcUGiLC807SJatqyQYO6V_z08K5eRofn_5i7HmyugGIljwlOmzVRFbKP7fb50LrnEiLawY-UZGbO56rA..&type=2&query=%E6%9C%BA%E5%99%A8%E4%B9%8B%E5%BF%83 LLM AI Agent %E5%A4%A7%E6%A8%A1%E5%9E%8B&token=E323DB7966FD3692A9AFFB242A035741A93D4E346A12BE79"
+url: "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS--XAn_Qla1mDyZG6uT23jB8rPlIBmvz7FqXa8Fplpd9GWkxsLvYQ5ImlRk-B2tZfZgHBQjOLKART47D85bdONLiOrs-NhX3c4cCygYNJpf5G9cbhsgbNIh39aOJjalM939JBsB8lriQxlu6Tfm90P9AWLgnzEfnOymP6FPr6X1x6QOslbS6MluvFtAtAtFCP484VeZUS0FxWl95VSyiY7eE8RsmObDbtQ..&type=2&query=%E6%9C%BA%E5%99%A8%E4%B9%8B%E5%BF%83 LLM AI Agent %E5%A4%A7%E6%A8%A1%E5%9E%8B&token=E7536DAFA53FF4516B6D38FCFB78105A6B8CDCCF6A136720"
 author: "机器之心"
 date: 2023-11-27
 score: 0
-tags: ["LLaMA", "LLM", "大模型", "ChatGPT"]
+tags: ["LLM", "ChatGPT", "大模型", "LLaMA"]
 ---
 
 # 「Meta版ChatGPT」背后的技术:想让基础LLM更好地处理长上下文,只需持续预训练
@@ -15,9 +15,9 @@ tags: ["LLaMA", "LLM", "大模型", "ChatGPT"]
 机器之心报道编辑:Panda W在处理长上下文方面,LLaMA 一直... 基础大模型、AIAgent,及其在 Meta 产品线中的应用,此前曾在 ...
 
 ## 涉及话题
-- LLaMA
 - LLM
-- 大模型
 - ChatGPT
+- 大模型
+- LLaMA
 
-[原文链接](https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS--XAn_Qla1mAnlf2dfH5A9FuQCWjjaK7FqXa8Fplpd9EJxsvjaRa4r7wCfQT16-a2Ww_ORBz7M9KnWCBqINs91PsUYyUkCBGG-lSTRHQDghgSdf93iJD0aXrhJlPX3RydV7ms4WKEDffzP1XSdcUGiLC807SJatqyQYO6V_z08K5eRofn_5i7HmyugGIljwlOmzVRFbKP7fb50LrnEiLawY-UZGbO56rA..&type=2&query=%E6%9C%BA%E5%99%A8%E4%B9%8B%E5%BF%83 LLM AI Agent %E5%A4%A7%E6%A8%A1%E5%9E%8B&token=E323DB7966FD3692A9AFFB242A035741A93D4E346A12BE79)
+[原文链接](https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS--XAn_Qla1mDyZG6uT23jB8rPlIBmvz7FqXa8Fplpd9GWkxsLvYQ5ImlRk-B2tZfZgHBQjOLKART47D85bdONLiOrs-NhX3c4cCygYNJpf5G9cbhsgbNIh39aOJjalM939JBsB8lriQxlu6Tfm90P9AWLgnzEfnOymP6FPr6X1x6QOslbS6MluvFtAtAtFCP484VeZUS0FxWl95VSyiY7eE8RsmObDbtQ..&type=2&query=%E6%9C%BA%E5%99%A8%E4%B9%8B%E5%BF%83 LLM AI Agent %E5%A4%A7%E6%A8%A1%E5%9E%8B&token=E7536DAFA53FF4516B6D38FCFB78105A6B8CDCCF6A136720)
