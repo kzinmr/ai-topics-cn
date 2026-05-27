@@ -40,11 +40,15 @@ topics:
       - "DeepSeek V4.1 全模态 语音 多模态"
       - "DeepSeek Agent Harness コードAgent 製品化"
       - "DeepSeek 特殊文字 幻覚 バグ 5月"
+      - "DeepSeek V4-Pro 永久値下げ 75%オフ 恒久価格"
+      - "DeepSeek 700億元 増資 梁文鋒 自己出資 200億"
+      - "DeepSeek Agent Harness 崔添翼 Jane Street"
+      - "DeepSeek V4-Flash OpenRouter 週間1位 3.43T"
     wiki_pages:
       - concepts/deepseek
-    notes: "2026.05.22更新: Agent Harnessチーム募集開始(Model+Harness=Agent/Claude Code対抗DesktopコードAgent/6-12ヶ月見通し)。特殊文字幻覚問題(5/19/セキュリティ問題否定/対処的訓練中)。V4-Flash日次42.6B tokens/Pro 11.7B(OpenRouter)。V4.1の6月リリース予定変更なし。500億元調達交渉継続中(クローズ未発表)。2026.05.18更新: V4.1(6月リリース予定)正式発表—全モーダル(画像+音声入力)/MCPネイティブ対応/エンタープライズツールチェーン(Fine-tuning/PrivateDeploy/SecurityAudit)。500億元大型調達(評価額515億ドル/梁文鋒40%出資/Tencent60億元2%出資/大基金交渉中/阿里交渉決裂報道)。V4 Flash単日1200億tokens継続上昇。網新檢測V4国産化適応テスト体系的枠組み(5/15)。"
+    notes: "2026.05.27更新: V4-Pro永久75%値下げ(入力3元/出力6元/100万トークン/世界最安値)。資金調達700億元に拡大(梁文鋒200億元自己出資/CATL・京東・網易交渉中/騰訊参加確実)。V4-Flash OpenRouter週間3.43Tトークン世界1位(中国モデル全体9.22T/4週連続米国超過)。Agent Harnessチーム判明(崔添翼責任者/Jane Street出身9年/ByteDanceからPM獲得/6-12ヶ月製品化/DeepSeek Code命名可能性)。2026.05.22更新: Agent Harnessチーム募集開始(Model+Harness=Agent/Claude Code対抗DesktopコードAgent/6-12ヶ月見通し)。特殊文字幻覚問題(5/19/セキュリティ問題否定/対処的訓練中)。V4-Flash日次42.6B tokens/Pro 11.7B(OpenRouter)。V4.1の6月リリース予定変更なし。500億元調達交渉継続中(クローズ未発表)。2026.05.18更新: V4.1(6月リリース予定)正式発表—全モーダル(画像+音声入力)/MCPネイティブ対応/エンタープライズツールチェーン(Fine-tuning/PrivateDeploy/SecurityAudit)。500億元大型調達(評価額515億ドル/梁文鋒40%出資/Tencent60億元2%出資/大基金交渉中/阿里交渉決裂報道)。V4 Flash単日1200億tokens継続上昇。網新檢測V4国産化適応テスト体系的枠組み(5/15)。"
     added: 2026-04-17
-    last_crawled: 2026-05-22
+    last_crawled: 2026-05-27
 
   - slug: qwen
     title: "Qwen (通义千问) — Alibaba"
@@ -127,14 +131,6 @@ topics:
     notes: "2026.05.16更新: 零一万物Pre-IPO融資実施中+香港上場準備中(5/9/市場報道→公司否定せず)。智譜AI(HK$4,000億)+MiniMax(HK$2,300億)上場済。2024年収益1億元超/2025年Q1が通年に迫る/2025年H1が2024年超過。万智平台2.5→Super Employee 30+種/5大産業/1+3+5+X政府体系。棋譜元戦略:B端特化→IPO経路。wiki更新済み(yi.md)。"
     added: 2026-04-17
     last_crawled: 2026-05-16
-    search_hints:
-      - "Yi 零一万物 01.AI 2026"
-      - "Yi-Lightning Yi-Large 模型"
-      - "01.AI 万智平台 WorldWise 企业Agent"
-      - "李开复 零一万物 海外 展開"
-      - "零一万物 IPO Pre-IPO 香港 2026"
-      - "零一万物 万智2.5 Super Employee"
-      - "六小虎 港股 上市 2026"
 
   - slug: doubao
     title: "Doubao (豆包) — ByteDance"
@@ -151,11 +147,15 @@ topics:
       - "豆包输入法 Mac V2EX 2026"
       - "火山引擎 MaaS シェア IDC 49%"
       - "栄威 家越 AI原生 自動車 火山引擎"
+      - "火山劇創1.0 AIGC短劇 5月2026"
+      - "豆包 スキャン支払い Android 掃一掃"
+      - "豆包 Mobile Use Agent 火山引擎"
+      - "Nubia M153 豆包手机 予約ハルシネーション"
     wiki_pages:
       - concepts/doubao
-    notes: "2026.05.21更新: 豆包MAU3.45億(訂正/前回227M→最新345M)。Agent Plan有料サブスク正式発表(月額68/200/500円/自律エージェント機能限定)。AI誤導訴訟(退改航ハルシネーション/5月14日提起)。2026.05.15更新: 豆包有料サブスク大議論(5月11-15日連日全国メディア議論/Morgan Stanley年収1-15億ドル/消耗式/跨端消費/デフォルト学習許諾)。豆包输入法Mac版(5月13日/V2EX話題/音声認識高評価)。火山引擎MaaSシェア49.5%(IDC/国内1位/市場Token16倍)。豆包AI誤導訴訟(5月14日/退改航ハルシネーション)。栄威家越07量産版6月Engine Force発表/提携深化。競合波及: DeepSeek V4-Pro2.5割/千問補助金/元宝文心無料継続。月活2.27億・DAU1億。豆包4シリーズ/Doubao-Seed-2.0-lite全模态(5月6日)。"
+    notes: "2026.05.27更新: 火山劇創1.0正式リリース(5/21/Seedance 2.0連携/製作サイクル80%短縮)。火山方舟Agent Plan+Coding PlanがDeepSeek V4対応(5/23/最大850元節約)。Nubia社長が豆包予約ハルシネーションに実演反論。豆包Android版スキャン支払い機能追加(618商戦向け)。火山引擎Mobile Use Agent発表(TCO 40-60%削減)。Black Hat Asia 2026でAgent Miner/BoardSentinel発表(7件CVE獲得)。2026.05.21更新: 豆包MAU3.45億(訂正/前回227M→最新345M)。Agent Plan有料サブスク正式発表(月額68/200/500円/自律エージェント機能限定)。AI誤導訴訟(退改航ハルシネーション/5月14日提起)。2026.05.15更新: 豆包有料サブスク大議論(5月11-15日連日全国メディア議論/Morgan Stanley年収1-15億ドル/消耗式/跨端消費/デフォルト学習許諾)。豆包输入法Mac版(5月13日/V2EX話題/音声認識高評価)。火山引擎MaaSシェア49.5%(IDC/国内1位/市場Token16倍)。豆包AI誤導訴訟(5月14日/退改航ハルシネーション)。栄威家越07量産版6月Engine Force発表/提携深化。競合波及: DeepSeek V4-Pro2.5割/千問補助金/元宝文心無料継続。月活2.27億・DAU1億。豆包4シリーズ/Doubao-Seed-2.0-lite全模态(5月6日)。"
     added: 2026-04-17
-    last_crawled: 2026-05-21
+    last_crawled: 2026-05-27
 
   - slug: tencent-hunyuan
     title: "混元 (Hunyuan) — Tencent AI"
@@ -263,11 +263,13 @@ topics:
       - "Dify v1.14.2 CVE-2026-41947"
       - "Dify みずほ 導入 全社展開 2026"
       - "Dify Enterprise 日本代理店 賽博威"
+      - "Dify v1.14.3 CVE-2026-41947 修正"
+      - "Dify IBTimes みずほ 2026年5月"
     wiki_pages:
       - concepts/dify
-    notes: "2026.05.26更新: v1.14.2リリース(5/19/CVE-2026-41947認証バイパス修正/HITLワークフロー信頼性改善/LLMノードRAGアクセス)。Impervaが2件の重大脆弱性公開(5/18/ファイルアップロードアカウント乗っ取り/サンドボックス分離バイパス/サイレント修正/10M+Docker Pulls)。みずほFG全社Dify Enterprise導入(金融機関初/業務時間41.8%削減/若手52.2%)。賽博威(Cyberway)初のDify Enterprise公式販売パートナー(大消費業界向け)。GitHub Stars 143K(+1K/2週間)。Agent Server初期実装マージ(v1.15基盤)。2026.05.18更新: v1.14.0 GA正式リリース（5月初旬）—Agent Skills/Sandbox Runtime/Skill EditorがProduction Readyに。Sandbox Runtime: 隔離実行環境でエンタープライズセキュリティ対応。Skill Editor: 再利用可能SOPブロック。前回(5/4)カバー済みの3000万ドル調達・京進グループ協業は継続中。wiki→dify.md更新済み。" 
+    notes: "2026.05.27更新: 前日更新(5/26)分のwiki内容を確認・修正なし。みずほFG Dify EnterpriseのIBTimes JP報道(5/25/日本メディア初大規模金融導入カバレッジ)。GitHub Issue #36507 version disclosure報告。2026.05.26更新: v1.14.2リリース(5/19/CVE-2026-41947認証バイパス修正/HITLワークフロー信頼性改善/LLMノードRAGアクセス)。Impervaが2件の重大脆弱性公開(5/18/ファイルアップロードアカウント乗っ取り/サンドボックス分離バイパス/サイレント修正/10M+Docker Pulls)。みずほFG全社Dify Enterprise導入(金融機関初/業務時間41.8%削減/若手52.2%)。賽博威(Cyberway)初のDify Enterprise公式販売パートナー(大消費業界向け)。GitHub Stars 143K(+1K/2週間)。Agent Server初期実装マージ(v1.15基盤)。2026.05.18更新: v1.14.0 GA正式リリース（5月初旬）—Agent Skills/Sandbox Runtime/Skill EditorがProduction Readyに。Sandbox Runtime: 隔離実行環境でエンタープライズセキュリティ対応。Skill Editor: 再利用可能SOPブロック。前回(5/4)カバー済みの3000万ドル調達・京進グループ協業は継続中。wiki→dify.md更新済み。"
     added: 2026-04-17
-    last_crawled: 2026-05-18
+    last_crawled: 2026-05-27
 
   # =========================================================
   # 3. Local Deployment & Quantization (ローカル展開・量子化)

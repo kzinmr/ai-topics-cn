@@ -1,5 +1,18 @@
 |
 
+## [2026-05-27] active-crawl | DeepSeek / Doubao / Dify
+
+### Wiki更新
+- `concepts/deepseek.md` — **更新**: V4-Pro永久75%値下げ(入力3元/出力6元/100万トークン/世界最安値)。資金調達700億元に拡大(梁文鋒200億元自己出資/CATL・京東・網易交渉中)。V4-Flash OpenRouter週間3.43Tトークン世界1位(中国モデル全体9.22T/4週連続米国超過)。Agent Harnessチーム詳細判明(崔添翼責任者/Jane Street出身9年/ByteDanceからPM獲得/6-12ヶ月製品化/DeepSeek Code命名可能性)。
+- `concepts/doubao.md` — **更新**: 火山劇創1.0正式リリース(Seedance 2.0連携/製作サイクル80%短縮)。火山方舟Agent Plan+Coding PlanがDeepSeek V4対応。Nubia社長が豆包予約ハルシネーション実演反論。Android版スキャン支払い機能(618商戦向け)。Mobile Use Agent発表(TCO 40-60%削減)。Black Hat Asia 2026でAgent Miner/BoardSentinel(7件CVE獲得)。
+
+### hot-topics.yaml更新
+- deepseek: last_crawled→2026-05-27、search_hints+4(V4-Pro永久値下げ/700億元/崔添翼/V4-Flash 1位)、notes更新(永久値下げ/700億元/V4-Flash 1位/Agent Harnessチーム詳細)
+- doubao: last_crawled→2026-05-27、search_hints+4(火山劇創/スキャン支払い/Mobile Use Agent/Nubia豆包手机)、notes更新(火山劇創/Agent Plan V4対応/Nubia反論/スキャン支払い/Mobile Use Agent/BH Asia)
+- dify: last_crawled→2026-05-27、search_hints+2(v1.14.3/IBTimes)、notes更新(wiki確認・修正なし/IBTimes JP/Issue #36507)
+
+|
+
 ## [2026-05-27] newsletter-ingest | ChinAI #360 — Anthropicの米中AI競争論批判・輸出規制・汎用技術変革
 
 ### Wiki更新

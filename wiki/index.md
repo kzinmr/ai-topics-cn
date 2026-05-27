@@ -2,6 +2,9 @@
 
 最終更新: 2026-05-27
 エンティティ: 62, コンセプト: 119, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-05-27 Active Crawl: DeepSeek/Doubao/Dify）
+- `concepts/deepseek.md` — **更新**: V4-Pro永久75%値下げ(入力3元/出力6元/100万トークン/世界最安値)。資金調達700億元に拡大(梁文鋒200億元自己出資/CATL・京東・網易交渉中)。V4-Flash OpenRouter週間3.43Tトークン世界1位(中国モデル全体9.22T/4週連続米国超過)。Agent Harnessチーム詳細判明(崔添翼責任者/Jane Street出身9年/ByteDanceからPM獲得/6-12ヶ月製品化)
+- `concepts/doubao.md` — **更新**: 火山劇創1.0正式リリース(Seedance 2.0連携/製作サイクル80%短縮)。火山方舟Agent Plan+Coding Plan DeepSeek V4対応。Nubia社長が豆包予約ハルシネーション実演反論。Android版スキャン支払い機能(618商戦向け)。Mobile Use Agent発表(TCO 40-60%削減)。Black Hat Asia 2026 Agent Miner/BoardSentinel(7件CVE獲得)
 ### 本日更新（2026-05-27 Newsletter Ingest: ChinAI #360 — Anthropicの米中AI競争論批判・輸出規制・汎用技術変革）
 - `entities/jeff-ding.md` — **新規**: George Washington大学政治学准教授、ChinAI newsletter主宰。Anthropicの「2028 scenarios」論文を「dogma」と批判。AIエコシステムの相互依存性・輸出規制有効性・米中AI競争の4戦線を分析
 - `entities/anthropic.md` — **更新**: 「2028: Two scenarios for global AI leadership」論文詳細。Huawei vs NVIDIA computeギャップ（4%/2%）、Mythos Preview「ガトリング銃」発言、民主主義AIスタック輸出政策提言。Jeff Dingによる「フルスタック神話」批判と「Anthropic教会」メタファー
