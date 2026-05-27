@@ -1,7 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-05-26
-エンティティ: 61, コンセプト: 118, ダイジェスト: 7, 比較: 2, ページ: 9
+最終更新: 2026-05-27
+エンティティ: 62, コンセプト: 119, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-05-27 Newsletter Ingest: ChinAI #360 — Anthropicの米中AI競争論批判・輸出規制・汎用技術変革）
+- `entities/jeff-ding.md` — **新規**: George Washington大学政治学准教授、ChinAI newsletter主宰。Anthropicの「2028 scenarios」論文を「dogma」と批判。AIエコシステムの相互依存性・輸出規制有効性・米中AI競争の4戦線を分析
+- `entities/anthropic.md` — **更新**: 「2028: Two scenarios for global AI leadership」論文詳細。Huawei vs NVIDIA computeギャップ（4%/2%）、Mythos Preview「ガトリング銃」発言、民主主義AIスタック輸出政策提言。Jeff Dingによる「フルスタック神話」批判と「Anthropic教会」メタファー
+- `concepts/deepseek.md` — **更新**: 輸出規制論争セクション追加。Anthropic論文でのDeepSeek位置づけ、Jeff Dingの批判的分析、梁文鋒の「修路人」メタフォア
+- `concepts/ai-as-general-purpose-technology.md` — **新規**: AIを蒸気機関・電気・コンピュータに続く「汎用技術（GPT）」として位置づけ。軍事変革における3特徴（広範影響経路・間接的生産性向上・長期孕育期間）。電気軍事化の歴史ケーススタディ。デュアルユース技術としてのAIと「格差是正」仮説の再考
 ### 本日更新（2026-05-26 Active Crawl: Qwen/Vibe Coding/Dify）
 - `entities/qwen.md` — **更新**: Qwen3.7-Max API正式公開(5/21/¥12/¥36 MTok/Anthropic Messages Protocol)。Qwen Code v0.16.0/v0.16.1(worktree isolation/auto-approval/qwen serve daemon)。千問云詳細(150+モデル/480+モデル/Agent-native Skills/CLI/MCP)。Token Plan月額サブスク(¥198/698/1,398)。Firetheringカーネルベンチ(Qwen3.7-Max:GLM 5.1比10x/DS V4 Pro比3.3x)。AA Index 56.6(Global #5)
 - `concepts/vibe-coding-china.md` — **更新**: Google I/O 2026 Antigravity 2.0(Vibe Coding as Default/Android完全生成/OS in 12h)。Anthropic Mythos 93.9% SWE-bench(Glasswing 10K+脆弱性検出)。ProgramBench全モデル0%→GPT-5.5突破(0.5%/初達成)。Cursor $50B評価額($2B調達/70% Fortune 1000)。Claude Code無料枠削減(250→80 calls/Codexカウンター)。Trae(ByteDance)SOLO Mobile/Skills/600万+。36kr「Coding的中场战事」シリーズ

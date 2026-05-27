@@ -1,5 +1,36 @@
 |
 
+## [2026-05-27] newsletter-ingest | ChinAI #360 — Anthropicの米中AI競争論批判・輸出規制・汎用技術変革
+
+### Wiki更新
+1. **entities/jeff-ding.md** — **新規**: George Washington大学政治学准教授、ChinAI newsletter主宰。Anthropicの「2028 scenarios」論文を「dogma」と批判。AIエコシステムの相互依存性（Perplexity/Kimi K2.5/DeepSeek-R1）、輸出規制有効性再考、「Anthropic教会」メタファー、米中AI競争の4戦線分析
+2. **entities/anthropic.md** — **更新**: 「2028: Two scenarios for global AI leadership」論文詳細（Huawei vs NVIDIA computeギャップ4%/2%、Mythos Preview「ガトリング銃」発言、民主主義AIスタック輸出政策提言）。Jeff Dingによる「フルスタック神話」批判と「Anthropic教会」メタファー。日本財務省・オーストラリア準備銀行・EUの反応
+3. **concepts/deepseek.md** — **更新**: 輸出規制論争セクション追加。Anthropic論文でのDeepSeek位置づけ（5万個チップ）、Jeff Dingの批判的分析、梁文鋒の「修路人」メタフォア
+4. **concepts/ai-as-general-purpose-technology.md** — **新規**: AIを蒸気機関・電気・コンピュータに続く「汎用技術（GPT）」として位置づけ。軍事変革における3特徴（広範影響経路・間接的生産性向上・長期孕育期間）。電気軍事化の歴史ケーススタディ（19世紀末〜WWI）。デュアルユース技術としてのAIと「格差是正」仮説の再考
+
+### 処理対象newsletter
+- `inbox/newsletters/2026-05-26--ChinAI-360-Anthropics-Dogma-on-US-China-AI-Competition--00a5edd9.md` — digest処理済み
+- 関連raw記事:
+  - `wiki/raw/articles/substack.com--app-link-post--0df09655.md` — ChinAI #360本体（Jeff DingのAnthropic批判）
+  - `wiki/raw/articles/substack.com--redirect-fdff324a-993e-4774-b6b5-a11c57bdd6c8--6875498d.md` — Anthropic「2028: Two scenarios」論文（~36KB）
+  - `wiki/raw/articles/substack.com--redirect-0ace1292-2843-4b58-a5d9-64ebe2896173--6eefc6f2.md` — 「On DeepSeek and Export Controls」（~12KB）
+  - `wiki/raw/articles/substack.com--redirect-182322e1-e43f-443c-94c5-200d89161257--ebe3c925.md` — 「Engines of power: Electricity, AI, and GPT military transformations」（~49KB）
+- スキップ: 同一記事のURLパラメータ違い2件、Substackアプリ宣伝1件、宗教関連記事4件（Exvangelicals/WWIII修辞/終末論/聖書箇所）
+
+### 意思決定サマリー
+| 項目 | アクション | 対象ページ |
+|------|-----------|-----------|
+| ChinAI #360本体 | **take** | entities/jeff-ding.md（新規） |
+| Anthropic 2028シナリオ | **take** | entities/anthropic.md（更新） |
+| DeepSeek・輸出規制 | **take** | concepts/deepseek.md（更新） |
+| Engines of power (GPT軍事変革) | **take** | concepts/ai-as-general-purpose-technology.md（新規） |
+| ChinAI #298再反論 | reference | concepts/deepseek.md（既存参照） |
+| ChinAI #280 Chip War | reference | concepts/chip-war（既存参照） |
+| コメント手紙 | reference | entities/anthropic.md（既存参照） |
+| 重複URL x2 | skip | — |
+| Substackアプリ宣伝 | skip | — |
+| 宗教関連 x4 | skip | — |
+
 ## [2026-05-26] active-crawl | Qwen / Vibe Coding / Dify
 
 ### Wiki更新

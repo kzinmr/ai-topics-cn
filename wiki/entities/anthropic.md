@@ -284,3 +284,109 @@ Anthropic優位の主要因は**Coding能力**。エンタープライズ顧客�
 - **重要な洞察**: エージェントはツールとワークフローを調整できるが、根底のモデルが深いドメイン理解を持たなければ、表面的な知識を繋ぎ合わせるだけになる
 
 > **出典**: 知乎 — [Karpathy回归预训练](https://www.zhihu.com/question/2040212835037401530) [T2]
+
+## 米中AI競争シナリオ — 「2028: Two scenarios for global AI leadership」（2026年5月）
+
+### Anthropic公式論文の発表
+
+2026年5月、Anthropicは**「2028: Two scenarios for global AI leadership」**と題する政策論文を発表。米中AI競争の構造分析と、民主主義国家のAI優位維持を主張した。この論文はAnthropicのCEOを含む経営陣が直接関与しており、企業の地政学的立場を公式に表明するものとして注目された。
+
+#### 論文の核心主張
+
+Anthropicは米中AI競争を**4つの戦線**で分析：
+
+| 戦線 | 内容 | Anthropicの評価 |
+|------|------|----------------|
+| **Intelligence** | 最も高性能なAIモデルの開発 | 民主主義陣営が優位 |
+| **Domestic adoption** | 商業・公共部門でのAI統合 | 中国のAI+ Initiativeが脅威 |
+| **Global distribution** | 世界経済が依存するAIスタックのデプロイ | 米国のAI Action Planと対抗 |
+| **Resilience** | 経済移行期の政治的安定 | 両陣営に課題 |
+
+#### Computeギャップの強調
+
+論文の中心論点は**半導体（compute）における民主主義陣営の圧倒的優位**：
+
+- **Huawei vs NVIDIA**: 2026年のHuaweiの総処理性能はNVIDIAの**4%**、2027年で**2%**に過ぎない
+- **輸出規制の正当性**: 米国・同盟国の輸出規制が中国のAI発展を制限
+- **EUV/DUV技術**: 中国は極紫外線リソグラフィ技術にアクセス不能
+- **HBM製造**: 中国は高帯域幅メモリの量産に失敗
+- **推定ギャップ**: 輸出規制を強化すれば、米国は中国の**11倍**のcomputeにアクセス可能
+
+#### Mythos Preview — 「ガトリング銃」発言
+
+論文はAnthropicのProject Glasswingでリリースされた**Mythos Preview**モデルの威力を強調：
+
+> 「中国のサイバーセキュリティアナリストは『我々はまだ剣を研いでいるが、相手は突然全自动ガトリング銃を搭載した』と書いた」
+
+- Firefoxが2025年1ヶ月分で修正したセキュリティバグ数よりも多くを、Mythos Previewのアクセスにより修正
+- 中国側は「まだ剣を研いでいる間に、相手がガトリング銃を持っている」という比喩で対応
+- Anthropicは2026-2027年が「分岐点（breakaway opportunity）」と主張
+
+#### 政策提言：「民主主義のAIスタック輸出」
+
+論文はトランプ政権の**「America's AI Action Plan」**を支持し、以下の政策を提言：
+
+1. **民主主義国家のAI優位の構築・維持**
+2. **権威主義政府に対するAI技術の輸出制限**
+3. **中国のAI+ Initiativeへの対抗戦略**
+4. **「embodied intelligence」（身体化知能）における中国の優先度上昇**
+
+### Jeff Dingによる批判的分析
+
+George Washington大学の**Jeff Ding**（ChinAI newsletter主宰）は、この論文に対して体系的な批判を行った：
+
+#### 「フルスタック神話」の崩壊
+
+DingはAnthropicの「フルスタック米国AI vs フルスタック中国AI」という二項対立を「幻想（fanciful at best, purposefully ignorant at worst）」と断じた：
+
+- **Perplexity**（米国AIスタートアップ）は中国Moonshot AIの**Kimi K2.5**モデルを利用可能
+- Perplexityは以前、検閲除去版**DeepSeek-R1**をサポート
+- AIスタックは**SGLang**や推論エンジンなど複雑な相互依存関係で構成
+- 一国完結型のAIシステムは現実存在しない
+
+#### 「Anthropic教会」批判
+
+Dingは宗教的メタファーを用いてAnthropicの姿勢を批判：
+
+> 「Anthropic教会は成長しており、彼らは高額を支払う。私は不信者と呼んでくれ」
+
+- 元バイデン政権のAI政策担当者が多数Anthropicに入社
+- 「良い研究には健全な疑念が必要」— 反対視点を考慮しないのはアカデミックな失敗
+- Anthropicが「民主的AIが世界を救う」という単純化されたナラティブを政策立案者に提示
+
+#### 輸出規制の有効性再考
+
+Dingは「輸出規制は失敗した」という議論に対して：
+
+- DeepSeekが持っていたチップは約**5万個**（H100、H800、H20の混合）
+- 数百万個のチップを密輸することは物理的に困難
+- 輸出規制を強化すれば、中国が数百万個のチップを入手するのを防げる可能性
+- ただし、規制強化が技術革新を促進する逆効果の可能性も指摘
+
+### 業界の反応
+
+#### 中国AI業界
+
+- **Jeff Ding**: 「フルスタック神話」を批判、AIエコシステムの相互依存性を強調
+- **36kr**: 「Anthropicの米中競争 framing を批判的に検証」と報じる
+- **V2EX**: Anthropicの地政学的立場に対する複雑な反応
+
+#### 国際社会
+
+- **日本財務省**: 三大メガバンク（MUFG、SMBC、みずほ）とAnthropicのMythosモデルについて協議
+- **オーストラリア準備銀行**: 状況監視を表明
+- **EU**: AI Actとの整合性を検討中
+
+### 影響と含意
+
+Anthropicの「2028 scenarios」論文は以下の点で重要：
+
+1. **企業の地政学的立場の公式表明**: AI企業が国家安全保障議論に直接参画
+2. **輸出規制の正当化**: 半導体輸出制限をAI競争の文脈で再定義
+3. **米中デカップセルの加速**: AIスタックの分断が不可避との認識
+4. **「民主的AI」ナラティブ**: AI開発の価値観競争を前面に押し出す
+
+> **出典**: Anthropic — [2028: Two scenarios for global AI leadership](https://www.anthropic.com/research/2028-scenarios) [T1]
+> **出典**: ChinAI #360 — [Anthropic's Dogma on US-China AI Competition](https://chinai.substack.com/p/anthropics-dogmatic-views-on-us-china) [T1]
+> **出典**: Jeff Ding — [@jjding99](https://x.com/jjding99) [T1]
+> **出典**: [[entities/jeff-ding]] — ChinAI主宰者の詳細分析

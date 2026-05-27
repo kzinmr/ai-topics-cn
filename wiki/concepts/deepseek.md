@@ -428,6 +428,35 @@ DeepSeek多模态はV4純テキスト版リリースからわずか5日後とい
 - [[concepts/china-local-deployment]] — 国産モデルのローカル展開
 - [[concepts/vram-optimization]] — VRAM最適化技術
 
+## DeepSeek・輸出規制論争（2026年5月）
+
+### Anthropicの「2028シナリオ」とDeepSeekの位置づけ
+
+Anthropicの政策論文「2028: Two scenarios for global AI leadership」において、DeepSeekは米中AI競争の文脈で以下のように位置づけられた：
+
+- DeepSeekが使用したチップは約**5万個**（H100、H800、H20の混合）
+- H100は輸出規制対象、H800は2022年規制時に合法→2022年10月に禁止
+- Anthropicはこのチップ構成を「輸出規制が機能し適応している」証拠と主張
+
+### Jeff Dingによる批判的分析
+
+ChinAI #360でJeff Ding（George Washington大学）は、DeepSeekを巡る輸出規制議論を分析：
+
+> 「DeepSeekのチップ構成は、輸出規制が機能し適応している証拠である」
+
+- DeepSeek V4の性能達成を認めつつ、「規制失敗」論を否定
+- ただし、規制強化が技術革新を促進する逆効果の可能性も指摘
+- 中国AI企業の現実的立場を分析
+
+### DeepSeek創業者梁文鋒の「修路人」メタフォア
+
+ChinAI #356でDingは、Sihang Songの分析を引用し、DeepSeekを「**修路人（道築き手）**」と位置づけた：
+
+- 派手な機能よりも**インフラの効率化**に焦点
+- 混合注意機構、KV Cache圧縮、百万トークンコンテキスト窓の推論コスト削減
+- 国産チップ（华为昇騰950）への適応
+- 「修路人」としての戦略：NVIDIA依存からの脱却、CANNフレームワークへの移行
+
 ## 出典
 
 - [DeepSeek V4 Specs & Benchmarks (NxCode)](https://www.nxcode.io/zh/resources/news/deepseek-v4-release-specs-benchmarks-2026)
