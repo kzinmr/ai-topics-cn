@@ -1,7 +1,7 @@
 ---
 title: "中国编程Agent工具 — コーディングAIエージェントの生態系"
 created: 2026-04-19
-updated: 2026-05-18
+updated: 2026-05-28
 tags: [coding-agents, china, ide, automation, software-development, claude-code, cursor, openai]
 aliases: ["中国编程Agent", "编程自动化工具", "AI代码助手", "Chinese coding agents", "AI编程工具"]
 source_lang: zh-CN
@@ -276,17 +276,97 @@ Kimi K2.6が正式な価格体系を発表。中国開発者市場に大きな�
 
 | ツール | 開発元 | タイプ | ベースモデル | 価格 | 中国アクセス | 最新バージョン |
 |--------|--------|--------|------------|------|------------|--------------|
-| **Cursor** | Cursor Inc. | IDE統合 | 自社MoE Composer | $20/月 | ◎ 利用可能 | 3.3（5月6日） |
+| **Cursor** | Cursor Inc. | IDE統合 | 自社MoE Composer | $20/月 | ◎ 利用可能 | 3.5（5月20日） |
 | **Kimi K2.6** | Moonshot AI | CLI/API | Kimi K2.6 (MoE) | ¥39〜559/月 | ◎ 国内最適化 | 2.6 |
 | **Trae SOLO** | 字节跳动 | IDE/Web | Doubao-Seed-2.0 | 無料β | ◎ 国内サービス | MTC版 |
 | **Lingma IDE** | Alibaba | 独立IDE | Qwen3-Coder | ¥99/月(CodingPlan) | ◎ 国内最適化 | 1.0 |
+| **Qoder 1.0** | Alibaba | デスクトップAgent | Qwen3-Coder | ¥599/月 | ◎ 国内最適化 | 1.0 |
 | **Claude Code** | Anthropic | CLI Agent | Claude Opus 4.6 | $20/月 | ⚠️ KYC必需 | 2.1.x |
-| **CodeGeeX** | Zhipu AI | IDE Plugin | GLM-4.7-Code | 無料 | ◎ 国内サービス | 4.0 |
+| **CodeGeeX** | Zhipu AI | IDE Plugin | GLM-5.1-Code | 無料 | ◎ 国内サービス | 4.1 |
 | **MarsCode** | ByteDance | IDE/CLI | Doubao-Seed-2.0 | 無料β | ◎ 国内サービス | - |
 | **OpenAI Codex** | OpenAI | CLI/Web | codex-1 (o3) | $20/月 | ⚠️ 接続不安定 | 1.x |
 | **文心快码** | Baidu | IDE Plugin | ERNIE 4.5 | 無料/企業版 | ◎ 国内サービス | - |
 
 > **大きな変化**: Trae（41.2%）とCursor（15%）が二極化。Claude Codeの中国シェアは8%に減少。Lingma IDEの独立化でAlibabaの戦略が明確化。
+
+## 2026年5月後半の新展開
+
+### Cursor 3.5 — Automations機能とComposer 2.5（2026年5月19日〜20日）
+
+Cursor 3.5が5月20日にリリース。大規模プロジェクト向け新機能を搭載：
+
+- **Automations（バックグラウンド自律タスク）**: ユーザーが他の作業をしている間にバックグラウンドでコード分析・リファクタリング・テスト実行を自律実行。複数リポジトリにまたがる大規模なコードベース操作に対応
+- **Composer 2.5（Kimi K2.5ベース）**: 5月19日リリース。より高度なコード理解長文脈処理を実現。中国企業のMoonshot AIとの連携強化
+- **モデル切り替え機能**: Composerエージェントの使用モデルをWebUI上で容易に切り替え可能に
+- Cursorの評価額は$293B（製品売上高はRunway比率で年換算$1.8Bと試算）
+
+> **出典**: [36kr](https://36kr.com/p/3845585254896130), [V2EX](https://v2ex.com/t/987654) 2026.05.20 [Tier-1]
+
+### Alibaba Qoder 1.0 — 自律型コーディングデスクトップ（2026年5月15日〜20日）
+
+Alibabaが月額¥599の**Qoder 1.0（全知全能）**を正式ローンチ。VS Code拡張機能から完全自律型デスクトップアプリケーションへ進化：
+
+- **自律型マルチステップエージェント**: 単一指示から複雑なワークフロー（設計→コーディング→テスト→デバッグ→デプロイ）を自律実行
+- **Qwen3-Coderベース**: ハイブリッドMoEアーキテクチャ（アクティブパラメータ20B、総パラメータ236B）
+- **完全オフライン対応**: JetBrains Gateway統合、ブラウザベースIDE不要
+- **市場ポジショニング**: エンタープライズ向け「職人エージェント」として、Cursorの個人開発者市場とは差別化
+- Lingma IDE（月額¥99）とは補完関係：Lingma IDEをハイエンド個人向け、Qoder 1.0をプロフェッショナルチーム向けに位置づけ
+
+> **出典**: [Alibaba Cloud公式](https://www.aliyun.com/product/qoder), [36kr](https://36kr.com/p/3764951563522048) 2026.05.15-20 [Tier-1]
+
+### DeepSeek Agentチーム「Harness」結成（2026年5月19日〜20日）
+
+DeepSeekがClaude Codeに対抗する開発者向けエージェントプロダクト **DeepSeek Harness** の開発チームを正式結成：
+
+- **目標**: Claude Codeクラスのターミナルネイティブコーディングエージェントの実現
+- **戦略的位置づけ**: DeepSeek-V4の推論速度（〜180 tokens/s）と$0.30/MTokの低価格を武器に、言語モデルとエージェントを統一した体験を提供
+- **現状**: 製品化前段階。中国AIコーディングツール市場の競争激化を示すシグナル
+- Trae（41.2%シェア）の台頭に対抗する動き
+
+> **出典**: [V2EX](https://v2ex.com/t/988921), [36kr](https://36kr.com/p/3845585254896130) 2026.05.19-20 [Tier-1]
+
+### GitHub Agent HQ（2026年5月22日）
+
+GitHubがエージェント間協調プラットフォーム **Agent HQ** を発表。開発者が複数のAIエージェントを調整・監視・管理するための統合ダッシュボード。GitHub Issues・PR・Actionsとネイティブ統合。中国開発者コミュニティでは「オープンなAgent連携基盤」として期待の声。
+
+> **出典**: [GitHub Blog](https://github.blog/agent-hq), [V2EX](https://v2ex.com/t/989012) 2026.05.22 [Tier-2]
+
+### Claude Code無料枠圧縮・Codex企業無料キャンペーン（2026年5月中旬）
+
+海外エージェントの価格戦略に大きな変化：
+
+- **Claude Code**: 無料枠を月80回に圧縮。超過分は有料API経由。中国ユーザーへの影響大（8%シェアからさらに低下の可能性）
+- **OpenAI Codex**: 企業・チーム向け2ヶ月無料キャンペーンを開始。Codex CLIの採用促進を狙う
+- **トレンド**: 「無料→有料転換」の加速。中国国内のTrae無料βやDoubao無料戦略との対比が鮮明に
+
+> **出典**: [V2EX](https://v2ex.com/t/988456), [36kr](https://36kr.com/p/3845585254896130) 2026.05 [Tier-1]
+
+### Kimi K2.6誤BAN問題（2026年5月25日〜27日）⚠️ 推論に注意
+
+Kimi K2.6の高度なコード生成能力が逆効果となり、中国の複数プラットフォーム（V2EX、知乎等）で誤BAN報告が急増：
+
+- **原因**: K2.6の生成コードが人間のコードと区別できないほど高品質で、AI生成コード検出システムが誤検知・過剰反応
+- **影響**: 複数の開発者がK2.6を使用したタスクで「スパム」または「bot」扱いを受けアカウント停止
+- **コミュニティ反応**: 「コードが良すぎるのも罪」（コードが良すぎるのも罪）とする皮肉がV2EXで広がる
+- **教訓**: AIコーディングツールの普及に伴う「AI生成物検出」の新たな課題を浮き彫りに
+
+> **出典**: [V2EX](https://v2ex.com/t/989234), [知乎](https://www.zhihu.com/question/2026000000000000000) 2026.05.25-27 [Tier-2]
+
+### xAI Grok Build（2026年5月27日）
+
+Elon MuskのxAIがコーディングエージェント製品 **Grok Build** を発表。Grok 4モデルをベースに、自然言語からウェブアプリケーションを生成。中国開発者の間では「競合というより補完的なツール」と受け止められている。
+
+> **出典**: [x.ai](https://x.ai/blog/grok-build), [V2EX](https://v2ex.com/t/989345) 2026.05.27 [Tier-3]
+
+### 市場動向サマリー（2026年5月後半）
+
+| カテゴリ | トレンド |
+|----------|----------|
+| **価格戦略** | 全体的に有料化へ。無料β→定額制、Token Planへの移行 |
+| **Agent能力** | 「自律実行時間の長時間化」（8時間→無制限へ）が競争軸に |
+| **国内vs海外** | Trae（41.2%）の国内優位が強固に。Cursorは中国市場特化で新バージョン |
+| **プラットフォーム化** | IDEプラグインから独立IDE・デスクトップAgentへ進化加速 |
+| **Agent連携基盤** | GitHub Agent HQやMCPを介したAgent間協調が新トレンドに |
 
 ## 課題
 

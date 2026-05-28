@@ -1,7 +1,7 @@
 ---
 title: "Coding Plan（编程计划）— 中国発AIコーディングサブスクリプションモデル"
 created: 2026-04-17
-updated: 2026-05-11
+updated: 2026-05-28
 tags: [coding-agents, tooling, china, product, concept, subscription]
 aliases: ["Coding Plan", "编程计划", "コーディングプラン", "CodingPlan"]
 source_lang: zh-CN
@@ -109,17 +109,181 @@ Kimi K2.6の¥39/Liteプラン登場により、Coding Plan市場は「高機能
 | **Cursor + Lite Planの組み合わせ** | IDE補完はCursor、Agentタスクは安価な国内Lite Plan、の棲み分けが定着 |
 | **GLM-5.1遅延** | 智谱GLM-5.1のCoding Plan統合が遅延、5月中のリリース見込み |
 
-## おすすめ選択肢（2026年5月）
+#### 10. 2026年5月後半アップデート — 激変加速するCoding Plan市場
+
+2026年5月11日〜28日にかけて、以下の新たな動きが確認された。
+
+### 10.1 字节跳动火山引擎 Agent Plan 発表（2026.05.11）
+
+**業界初の「Agent套餐包」** として火山引擎が正式発表。Coding Planを超える全く新しいサブスクリプションカテゴリ。
+
+- **価格帯**: ¥40/月 (Small)、¥200/月 (Medium)、¥500/月 (Large)、¥1,000/月 (Max)
+- **モデル**: Doubao-Seed（字节自社SOTA）、Doubao-Seedance（動画生成）、Doubao-Seedream（画像生成）+ GLM-5.1、Kimi-K2.6
+- **Harness ツール**: 联网搜索（無料枠付き）、Doubao-embedding-vision（記憶能力）
+- **AFP（Agent Fuel Points）**: 統一的リソース計量単位を新導入
+- **対応ツール**: Claude Code、OpenCode、TRAE、OpenClaw、Hermes Agent
+- **制限**: パブリックベータ期間中、全4プラン合計で日次5500個限定販売
+- **企業版**: 同時リリース、マルチアカウント管理対応
+
+> **出典**: IT之家 — [ithome.com/0/948/912.htm](https://www.ithome.com/0/948/912.htm) [Tier-1]; 火山引擎公式 [Tier-1]
+
+### 10.2 讯飞星辰 Astron Coding Plan — 最強のディスラプター（2026.04.09〜）
+
+**業界最安値の破壊的エントリー**。¥3.9/月で無制限リクエストという前代未聞の価格設定で市場に衝撃を与えた。
+
+| プラン | 価格 | 制限 | 対象モデル |
+|-------|------|------|-----------|
+| **无忧版** | ¥3.9/月（次月¥19） | **リクエスト無制限** | Qwen3.5-35B、GLM-4.7-Flash、Qwen3-Coder-Next-FP8 |
+| **专业版** | ¥39/月 | 5h: 1,200回 / 月: 18,000回 | GLM-5、Kimi-K2.5、MiniMax-M2.5、DeepSeek-V3.2 |
+| **高效版** | ¥199/月 | 5h: 6,000回 / 月: 90,000回 | **GLM-5.1**、Qwen3-Coder-Next、Qwen3.5-397B-A17B |
+
+- 統一モデルID: `astron-code-latest`、バックエンドでワンクリック切替
+- Claude Code、Codex、OpenClaw、Cursor、TRAE SOLO全て対応
+- 3.9元でリクエスト無制限はテストでも確認済み（3時間・827回連続呼び出しOK）
+- **評価**: V2EX/掘金で非常に好意的。学生・軽量ユーザーに絶大な支持
+- 注意: 无忧版は軽量モデルのみ。ハイエンドモデルを使うには专业版以上が必要
+
+> **出典**: 讯飞官方ドキュメント [Tier-1]; 网易 2026.05.27 — [163.com/dy/article/KTTKKT2705568W0A.html](https://www.163.com/dy/article/KTTKKT2705568W0A.html) [Tier-2]
+
+### 10.3 Kimi K2シリーズ API 完全廃止（2026.05.25）
+
+- K2シリーズ全モデル（kimi-k2-0711-preview、kimi-k2-0905-preview、kimi-k2-turbo-preview、kimi-k2-thinking、kimi-k2-thinking-turbo）のAPIが **2026年5月25日** をもって完全停止
+- 全ユーザーはKimi K2.6への移行が必須
+- K2.6 API料金（確定）: 入力¥6.5/1M token（キャッシュミス）、¥1.1/1M（キャッシュヒット）、出力¥27/1M token
+- 月之暗面は2026年下期IPOを計画、K2.6は「K3への滑走路」と位置づけ
+- K2.6は1TパラメータMoE、256Kコンテキスト、300子Agent並列実行
+
+> **出典**: Kimi API公式 [Tier-1]; Techritual 2026.05.26 [Tier-2]; 区块周刊 [Tier-2]
+
+### 10.4 腾讯云 Coding Plan → Token Plan 全面移行完了
+
+- **旧Coding Plan**: 完全終了。「本次活动已结束」表示のみ
+- **新Token Plan**（3月26日発表、5月完全移行）:
+
+| 套餐 | 月額 | Tokens | 実質（重度ユーザー） |
+|------|------|-------|-------------------|
+| Lite | ¥39 | 3,500万 | 〜70回のOpenClaw会話 |
+| Standard | ¥99 | 1億 | 〜200回 |
+| Pro | ¥299 | 3.2億 | 〜640回 |
+| Max | ¥599 | 6.5億 | 〜1週間で枯渇（重度） |
+
+- **Hy Token Plan**（新）: Hy3 previewモデル専用、Agentワークロード向け
+- **2つのToken Planを同時保有可能**、API Keyは共用でModel ID自動判別
+- **ユーザー反応**: Max(¥599)が1週間しか持たず、実質コストが従来の5〜10倍に。Token Planは「消耗安全感のない計費模式」と批判
+
+> **出典**: 腾讯云公式 [Tier-1]; 掘金 — juejin.cn/post/7631394312985788467 [Tier-2]; 逸趣网 [Tier-3]
+
+### 10.5 百度千帆 Token 福利包 正式ローンチ
+
+- Coding Plan（Lite ¥40/Pro ¥200）は継続提供中
+- **新Token福利包**: Credit制の统一额度包
+  - 5万Credit/¥50 〜 80万Credit/¥800（1ヶ月有効）
+  - DeepSeek V4、GLM-5.1、Kimi-K2.5、MiniMax-M2.5、ERNIE 4.5 Turbo対応
+  - 百度搜索、百度百科、百度热搜などのSkillsも統合
+- **DeepSeek V4の倍率注意**: Proは高峰期5倍/低峰期4倍、Flashは1倍
+- **GLM-5.1倍率**: 高峰期4倍/低峰期3倍
+- **6月1日**よりDeepSeek価格が原価に戻る予告あり
+
+> **出典**: 百度千帆公式 — cloud.baidu.com/doc/qianfan/s/Smoghsq3g [Tier-1]
+
+### 10.6 阿里云百煉 — モデル未更新と品質低下で批判殺到
+
+- **Coding Plan Pro (¥200)**: 未だに **GLM-5、Kimi-K2.5** のまま。GLM-5.1、Kimi K2.6、MiniMax M2.7への更新なし
+- V2EXで「别买阿里 Token Plan [降智严重]」スレッドが炎上:
+  - Qwen3.6-Plusの品質低下を多数報告（幻觉、指示無視、Dockerコンテナ誤削除）
+  - 「Qwen3.6-Plus is garbage. Hallucinations, won't follow instructions」
+  - Token Planも同様の問題
+- Token Plan 团队版: ¥198/月〜（Credit制）
+- Pro版は依然として毎日9:30に限量補完、即完売
+
+> **出典**: V2EX — v2ex.com/t/1212661 [Tier-1]; V2EX — v2ex.com/t/1214202 [Tier-1]
+
+### 10.7 智谱GLM-5.1高速版API発表（2026.05.22）
+
+- **GLM-5.1-highspeed** 出力速度 **400 tokens/s** — 世界最速
+- **TileRTエンジン**: AOTコンパイル、Persistent Engine KernelをGPUに常駐。Runtime動的スケジューリングを完全排除
+- **ZCubeアーキテクチャ**: Spineレイヤスイッチ廃止、全ネットワークフラット化。ホップ数3→2、テイルレイテンシ40.6%低減、スイッチ/光モジュールコスト1/3削減
+- SWE-bench Pro: **58.4**（GPT-5.4、Claude Opus 4.6を超越）
+- 8時間連続自律作業能力（Linuxデスクトップをゼロから構築、655ラウンド自主最適化）
+- **ただし**: 高速版APIは **一部エンタープライズ顧客のみ** に提供。一般開発者には未開放
+- GLM Coding Plan価格: Lite ¥149/月〜、Pro ¥469/月〜（2026年中に3回の値上げ累計）
+
+> **出典**: 智谱公式 — docs.bigmodel.cn [Tier-1]; 网易 2026.05.22 — [163.com/dy/article/KTHAV21L05198ETO.html](https://www.163.com/dy/article/KTHAV21L05198ETO.html) [Tier-2]
+
+### 10.8 小米 MiMo — reasoning_content互換性問題（2026.05中旬）
+
+- 無料1ヶ月トライアル提供中だった小米MiMoのCoding Planに **重大な互換性問題** が発生
+- 2026年5月中旬、プロトコル変更によりCursor、TRAE、GitHub Copilot CLI、Roo Code、Codexで動作不能に
+- 原因: 前回のreasoning_contentフィールドの返送を強制する仕様変更。OpenAI互換プロトコルに違反
+- Claude Code、OpenCodeでは引き続き動作
+- V2EXユーザー: 「小米有点玩不起」
+
+> **出典**: V2EX — v2ex.com/t/1214101 [Tier-1]
+
+### 10.9 MiniMax Token Plan — M2.7アップデート確定
+
+- Coding PlanからToken Planへのリブランド完了（2026.03.23）
+- モデルアップデート: M2.5→**M2.7**（自己進化能力、SWE-bench Pro 56.22%）
+- 6つのプラン: Starter ¥29、Plus ¥49、Max ¥119（標準）/ Plus-極速版 ¥98、Max-極速版 ¥199、Ultra-極速版 ¥899
+- 年払いで約17%割引
+- マルチモーダル統合: テキスト + 音声 + 動画 + 画像 + 音楽
+- 高峰時限流: 平日15:00-17:30、動的制御
+- 週間制限導入: 2026.03.23以降の購入者は週間制限あり（5h枠の10倍）
+
+> **出典**: MiniMax公式 — platform.minimaxi.com/docs/guides/pricing-token-plan [Tier-1]; CodePick [Tier-3]
+
+### 10.10 二極分化のさらに進行 — 「Token Plan」が第三の軸に
+
+2026年5月時点での市場構造：
+
+| 層 | 価格帯 | 代表例 | 特徴 |
+|---|--------|--------|------|
+| **Lite層** | ¥3.9〜¥49 | 讯飞无忧¥3.9、MiniMax¥29、Kimi Lite¥39、火山¥40 | 安定供給、リクエスト単位課金 |
+| **Pro層** | ¥99〜¥599 | Kimi Pro¥159、阿里Pro¥200、智谱Pro¥469 | 高性能モデル、購入競争あり |
+| **Token Plan層** | ¥39〜¥599 | 腾讯Token¥39-599、百度Token¥50-800、阿里Token¥198〜 | 按量課金、自由度高いが高コスト |
+| **Agent Plan層** | ¥40〜¥1,000 | 火山Agent Plan（新） | モデル+ツール統合、AFP計量 |
+
+- 旧来の「入門¥7.9」帯は完全消滅
+- 讯飞の¥3.9が唯一の超低価格エントリー
+- 腾讯Token Planの登場により「定額使い放題」モデルが事実上終焉
+- 字节Agent Planが新カテゴリとして急浮上
+
+### 10.11 V2EX/掘金 ユーザー感情サマリー（2026.05）
+
+| サービス | 評判 | キーワード |
+|----------|------|-----------|
+| **讯飞Astron** | ⭐⭐⭐⭐⭐ | 「3.9元无限Token」「价格破壊」「一番お得」 |
+| **Kimi K2.6** | ⭐⭐⭐⭐ | 「買える中で最良」「安定供給」「コード品質良好」 |
+| **GLM-5.1** | ⭐⭐⭐⭐ | 「知能最高」「買えないのが問題」「跑分没輸過体験没贏過」 |
+| **火山Agent Plan** | ⭐⭐⭐⭐ | 「新コンセプト」「今後に期待」 |
+| **MiniMax** | ⭐⭐⭐ | 「速いが不正確」「返金した」 |
+| **阿里百煉** | ⭐⭐ | 「モデル更新なし」「降智」「最悪」 |
+| **小米MiMo** | ⭐⭐ | 「互換性問題」「遊び心がない」 |
+| **腾讯Token** | ⭐⭐ | 「高すぎる」「1週間で枯渇」 |
+
+### 10.12 ホットトピック — 「AI Coding古法化」と burnout
+
+V2EXでは以下のテーマが活発に議論されている：
+
+- **「感觉 AI Coding 比古法编程累多了」**: AIにより開発効率は上がったが、PMが非現実的な納期を要求、作業量は3倍以上に。開発者の燃え尽き症候群が深刻化
+- **「AI来了，反而让我想跑路了」**: 9年目フロントエンド開発者がAIによる過重労働で転職を決意。給与は2年間不変
+- **Harness Engineering流行**: 「驾驭AI」としてワークフロー最適化が話題に。ただし「claude codeさえあれば十分」との声も
+- **GPT-5.5降智**: 2026年5月第3週、GPT-5.5の品質急低下を多数報告。CodexユーザーがDeepSeekやGLM-5.1に逃避
+
+## おすすめ選択肢（2026年5月28日更新）
 
 | ユーザータイプ | おすすめ | 理由 |
 |--------------|---------|------|
-| 予算重視 | MiniMax Starter ¥29 | 最も安定した供給 |
-| Claude Code代替 | 火山方舟 ¥40-200 | 唯一のネイティブAnthropicプロトコル対応 |
-| 最高コード品質 | 智谱GLM Pro ¥149 | 入手できれば最高品質 |
-| 長時間セッション | Kimi ¥39-559 | 5時間ウィンドウ制限なし |
-| マルチモデル | 阿里百煉Pro ¥200 | 8モデル利用可能 |
+| 最安値重視 | 讯飞无忧版 ¥3.9/月 | リクエスト無制限、学生・軽量ユーザーに最適 |
+| 予算重視 | MiniMax Starter ¥29 | 最も安定した供給、M2.7モデル |
+| Claude Code代替 | 火山方舟 ¥40-200 | 唯一のネイティブAnthropicプロトコル対応、Agent Planも選択肢 |
+| 最高コード品質 | 智谱GLM Pro ¥149-469 | 入手できれば最高品質（GLM-5.1高速版） |
+| 長時間セッション | Kimi ¥39-559 | 5時間ウィンドウ制限なし、常時購入可能 |
+| マルチモデル | 阿里百煉Pro ¥200 | 8モデル利用可能（ただしモデル古い） |
+| IDE+Coding Plan併用 | Cursor Pro + 讯飞高效版 ¥199 | IDE統合+GLM-5.1の最強コンボ |
+| エージェントワークロード | 火山Agent Plan ¥40-500 | モデル+ツール統合、AFP計量（新カテゴリ） |
 
-> **出典**: coding.mcppla.net（2026.04.29更新）、V2EX複数スレッド、网易报道 [Tier-1]
+> **出典**: coding.mcppla.net（2026.04.29更新）、V2EX複数スレッド（2026.05）、网易报道 [Tier-1]; 讯飞官方文档 [Tier-1]; 火山引擎官方 [Tier-1]; 智谱官方 [Tier-1]; 腾讯云官方 [Tier-1]; 百度千帆公式 [Tier-1]; Kimi API公式 [Tier-1]; MiniMax公式 [Tier-1]; 掘金 [Tier-2]; IT之家 [Tier-2]; 36氪 [Tier-2]
 
 2026年4月24日、阿里云と火山云（ByteDance）の両社がそれぞれCoding Planのモデルバンドル構成を公式に発表。36krおよび掘金で比較分析が掲載された。
 

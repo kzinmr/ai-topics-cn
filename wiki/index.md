@@ -1,7 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-05-27
+最終更新: 2026-05-28
 エンティティ: 62, コンセプト: 119, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-05-28 Active Crawl: china-coding-agents/ChatGLM/Coding Plan）
+- `concepts/china-coding-agents.md` — **更新**: 2026年5月後半の新展開(Cursor 3.5 Automations、Qoder 1.0¥599、DS Harness結成、GitHub Agent HQ、Claude Code無料枠圧縮、Kimi K2.6誤BAN、Grok Build)。Cursor 3.3→3.5、CodeGeeX 4.1、Qoder 1.0行追加
+- `concepts/chatglm.md` — **更新**: GLM-5.1-highspeed API(400 tokens/s/TileRTエンジン)、株価1,468HKD(HSTECH指数6月8日採用)、AutoClaw iOSアプリ、株価推移表
+- `concepts/coding-plan.md` — **更新**: Cursor 3.5、CodingPlan Token Plan移行完了、CodeGeeX 4.1(GLM-5.1-Code)、Alibaba二階層戦略
 ### 本日更新（2026-05-27 Active Crawl: DeepSeek/Doubao/Dify）
 - `concepts/deepseek.md` — **更新**: V4-Pro永久75%値下げ(入力3元/出力6元/100万トークン/世界最安値)。資金調達700億元に拡大(梁文鋒200億元自己出資/CATL・京東・網易交渉中)。V4-Flash OpenRouter週間3.43Tトークン世界1位(中国モデル全体9.22T/4週連続米国超過)。Agent Harnessチーム詳細判明(崔添翼責任者/Jane Street出身9年/ByteDanceからPM獲得/6-12ヶ月製品化)
 - `concepts/doubao.md` — **更新**: 火山劇創1.0正式リリース(Seedance 2.0連携/製作サイクル80%短縮)。火山方舟Agent Plan+Coding Plan DeepSeek V4対応。Nubia社長が豆包予約ハルシネーション実演反論。Android版スキャン支払い機能(618商戦向け)。Mobile Use Agent発表(TCO 40-60%削減)。Black Hat Asia 2026 Agent Miner/BoardSentinel(7件CVE獲得)

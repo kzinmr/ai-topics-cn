@@ -1,5 +1,19 @@
 |
 
+## [2026-05-28] active-crawl | china-coding-agents / ChatGLM / Coding Plan
+
+### Wiki更新
+- `concepts/china-coding-agents.md` — **更新**: 2026年5月後半の新展開セクション追加(Cursor 3.5 Automations/Composer 2.5、Alibaba Qoder 1.0¥599、DeepSeek Agent Harnessチーム結成、GitHub Agent HQ 5/22、Claude Code無料枠圧縮、Codex企業無料、Kimi K2.6誤BAN問題、Grok Build)。Cursor 3.3→3.5、CodeGeeX 4.0→4.1(GLM-5.1)、Qoder 1.0行追加
+- `concepts/chatglm.md` — **更新**: GLM-5.1-highspeed API(400 tokens/s/TileRTエンジン/DS V4比2.2x)、株価1,468HKD(時価総額6,545億HKD/上場4ヶ月12.6倍)、HSTECH指数6月8日採用、AutoClaw iOSアプリ(5/21)、株価推移表追加
+- `concepts/coding-plan.md` — **更新**: Cursor 3.5(Automations)、CodingPlan価格体系Token Plan移行完了、CodeGeeX 4.1、Alibaba二階層戦略(Lingma IDE ¥99 + Qoder 1.0 ¥599)
+
+### hot-topics.yaml更新
+- china-coding-agents: last_crawled→2026-05-28、search_hints+6、notes更新(Cursor 3.5/Qoder 1.0/DS Harness/K2.6誤BAN/Grok Build)
+- chatglm: last_crawled→2026-05-28、search_hints+4、notes更新(GLM-5.1-highspeed/株価1,468HKD/HSTECH/AutoClaw iOS)
+- coding-plan: last_crawled→2026-05-28、notes更新(Cursor 3.5/Token Plan/CodeGeeX 4.1/Alibaba 二階層)
+
+|
+
 ## [2026-05-27] active-crawl | DeepSeek / Doubao / Dify
 
 ### Wiki更新

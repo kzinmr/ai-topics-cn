@@ -92,11 +92,15 @@ topics:
       - "智谱AI 香港 IPO 2026"
       - "Z.ai ブランド 海外展開 ChatGLM"
       - "智譜AI OpenClaw 論争 Hermes SillyTavern"
+      - "GLM-5.1-highspeed TileRT 400 tokens/s"
+      - "ZCube ネットワークトポロジ SIGCOMM"
+      - "智譜AI 時価総額 6545億 HSTECH指數"
+      - "AutoClaw iOS アプリ モバイルAgent"
     wiki_pages:
       - concepts/chatglm
-    notes: "2026.05.21更新: GLM-5.1 8時間自律実行ベンチマーク(最高難度Agentタスク/複数エージェント協調)。ZCubeネットワークアーキテクチャ本格展開(推論スループット15%向上/低レイテンシ)。「Chinese Anthropic」戦略宣言(5月13日CEO張鵬/AI安全・信頼性・エンタープライズ重視路線)。時価総額5000億HKD突破(香港市場/5月中旬)。2026.05.15更新: GLM-5.1継続安定性向上/Coding Agent最適化(5月前半)。Z.aiブランド海外正式運用開始(DeepSeek/Qwen差別化/エンタープライズ訴求)。OpenClaw論争決着(Hermes/SillyTavern追加サポート/コミュニティ関係修復)。DeepSeek V4価格競争対応(CEO張鵬'Tokenの質が価格を決める'/価格競争非追随)。Scaling Pain技術ブログ(4月30日/Agent推論132%向上)。2025年度決算(収入7.24億元+132%)。香港IPO計画。"
+    notes: "2026.05.28更新: GLM-5.1-highspeed API(5/22/400 tokens/s世界記録/TileRTエンジン/DS V4比2.2x)。株価1,468HKD(+19.76%/時価総額6,545億HKD/上場4ヶ月12.6倍)。HSTECH指数6月8日採用発表。AutoClaw iOSアプリ(5/21)。2026.05.21更新: GLM-5.1 8時間自律実行ベンチマーク(最高難度Agentタスク/複数エージェント協調)。ZCubeネットワークアーキテクチャ本格展開(推論スループット15%向上/低レイテンシ)。「Chinese Anthropic」戦略宣言(5月13日CEO張鵬/AI安全・信頼性・エンタープライズ重視路線)。時価総額5000億HKD突破(香港市場/5月中旬)。2026.05.15更新: GLM-5.1継続安定性向上/Coding Agent最適化(5月前半)。Z.aiブランド海外正式運用開始。OpenClaw論争決着。DeepSeek V4価格競争対応。Scaling Pain技術ブログ(4月30日/Agent推論132%向上)。2025年度決算(収入7.24億元+132%)。"
     added: 2026-04-17
-    last_crawled: 2026-05-21
+    last_crawled: 2026-05-28
 
   - slug: kimi
     title: "Kimi — Moonshot AI (月之暗面)"
@@ -513,11 +517,17 @@ topics:
       - "OpenClaw 多Agent 协作 编程"
       - "Trae SOLO MTC モード 独立 2026"
       - "Lingma IDE 通义灵码 独立 環境 2026"
+      - "Cursor 3.5 Automations バックグラウンドタスク"
+      - "Qoder 1.0 Alibaba 自律型デスクトップAgent"
+      - "DeepSeek Harness Agentチーム 崔添翼"
+      - "GitHub Agent HQ エージェント協調 2026"
+      - "Kimi K2.6 誤BAN 誤検知 2026"
+      - "Grok Build xAI コーディングエージェント"
     wiki_pages:
       - concepts/china-coding-agents
-    notes: "2026.05.18更新: Cursor 3.3/3.2/3.1(5月1日~6日)—Agents Window完全版/Composer 2自研MoE 4倍速/best-of-nマルチモデル競争/Design Mode安定化/Kimi K2.6プラグイン/K2.5統合。Kimi K2.6正式価格(¥39/159/559)。Trae SOLO MTCモード独立Desktop/Web版(シェア41.2%首位)。Lingma IDE独立移行(VS Codeプラグイン廃止/Agentic Ask NES Inline Chat)。CodingPlan価格改定(百煉Lite廃止/Token Plan時代)。Cursor企業評価$50B。DeepSeek V4国産化適応テスト枠組み(5/15)。wiki→coding-agents.md更新済み。"
+    notes: "2026.05.28更新: Cursor 3.5(5/20/Automations/Composer 2.5 Kimi K2.5ベース/$293B評価額)。Qoder 1.0(Alibaba/¥599/自律型DesktopAgent/Qwen3-Coder)。DeepSeek Agent Harnessチーム結成(崔添翼責任者/製品化6-12ヶ月)。GitHub Agent HQ(5/22)。Claude Code無料枠月80回圧縮。Codex企業2ヶ月無料。Kimi K2.6誤BAN問題(5/25-27)。Grok Build(xAI/5/27)。2026.05.18更新: Cursor 3.3/3.2/3.1(5月1日~6日)—Agents Window完全版/Composer 2自研MoE 4倍速/best-of-nマルチモデル競争/Design Mode安定化/Kimi K2.6プラグイン/K2.5統合。Kimi K2.6正式価格(¥39/159/559)。Trae SOLO MTCモード独立Desktop/Web版(シェア41.2%首位)。Lingma IDE独立移行。CodingPlan価格改定(百煉Lite廃止/Token Plan時代)。wiki→coding-agents.md更新済み。"
     added: 2026-04-17
-    last_crawled: 2026-05-18
+    last_crawled: 2026-05-28
 
   - slug: coding-plan
     title: "Coding Plan (编程计划)"
@@ -528,9 +538,9 @@ topics:
       - "Coding Plan agent 中国"
     wiki_pages:
       - concepts/coding-plan
-    notes: "中国発コーディングエージェントツール。機能・ユースケースの深掘り。2026.05.11更新: Kimi K2.6正式価格¥39/159/559確定。Cursor+K2.6Lite組み合わせが黄金パターンに。二極分化加速(Lite¥39-40 vs Pro¥99-559)。Cursor 3.3comboでクラウドIDE+国内LitePlan棲み分け定着。GLM-5.1統合遅延(5月中見込み)。Token Plan時代突入。阿里百煉Lite完全廃止・智譜GLM値上げ継続・Kimi参入。"
+    notes: "2026.05.28更新: Cursor 3.5(Automations/バックグラウンド自律タスク)。CodingPlan価格体系Token Plan移行完了。CodeGeeX 4.1(GLM-5.1-Codeベース)。Market status: Trae 41.2%シェア維持。Alibaba二階層戦略(Lingma IDE ¥99 + Qoder 1.0 ¥599)。中国発コーディングエージェントツール。機能・ユースケースの深掘り。2026.05.11更新: Kimi K2.6正式価格¥39/159/559確定。Cursor+K2.6Lite組み合わせが黄金パターンに。二極分化加速(Lite¥39-40 vs Pro¥99-559)。Cursor 3.3comboでクラウドIDE+国内LitePlan棲み分け定着。GLM-5.1統合遅延(5月中見込み)。Token Plan時代突入。阿里百煉Lite完全廃止・智譜GLM値上げ継続・Kimi参入。"
     added: 2026-04-17
-    last_crawled: 2026-05-11
+    last_crawled: 2026-05-28
 
   - slug: cursor-china-adoption
     title: "Cursor Adoption in China (Cursor中国使用情况)"
