@@ -3,7 +3,7 @@ title: "中国MCPツールエコシステム — 中国語圏向けMCP Server/SD
 type: concept
 tags: [mcp, chinese-ai, tool-integration, feishu, dingtalk, wecom, wechat, open-source, server]
 created: 2026-04-27
-updated: 2026-05-20
+updated: 2026-05-29
 source_lang: zh-CN
 aliases: ["中国MCP工具生态", "China MCP Servers", "中文MCP服务器"]
 ---
@@ -442,6 +442,111 @@ GitHubスター26。`uvx mcp-notify`で即時利用可能。中国IM対応ツー
 - **Docker MCP Toolkit**: コンテナ運用とMCPの統合を標準化
 - **mcp-notify**（mcp-notify/mcp-notify）: デスクトップ通知MCP Server。Mac（terminal-notifier）、Windows（snoretoast）、Linux（notify-send）対応。MCP経由でAI Agentがユーザーに通知を送信できる。軽量バイナリ配布。Claude Code/Claude Desktop/Cursor連携実績
 - **腾讯云 MCP Server マーケットプレイス**（2026年5月）: 腾讯云がMCP Serverの統一マーケットプレイスを開設。同プラットフォーム上で複数のSaaS/クラウドサービスのMCPサーバーを一元管理可能。中国クラウド事業者として初の取り組み
+
+## 2026年5月22日〜29日の重要アップデート
+
+### 16. MCPプロトコル無状態RC（Release Candidate）リリース（2026-05-21）
+
+2026年5月21日、MCP仕様の新版Release Candidateが発表され、**無状態（Stateless）アーキテクチャへの移行**が主要変更として注目を集めた。
+
+**主な変更点**:
+- **ハンドシェイク廃止**: バージョン交渉・能力ネゴシエーションを各リクエストの `_meta` フィールドに統合
+- **セッションID廃止**: ステートフルなセッション管理を完全排除 → 水平スケーリングが容易に
+- **SSE長接続 → Streamable HTTP（Multi Round-Trip）**に置き換え
+- **強制ルーティングヘッダー**: ゲートウェイがボディを解析せずにルーティング可能
+- **認証強化**: OAuth 2.1 / OIDC準拠、iss検証の強制化
+- **最終仕様**: 2026年7月28日リリース予定。12ヶ月の廃棄緩衝期間あり
+
+📎 出典: [优码云 — 协议无状态架构深度拆解](https://www.umayun.com/blog/27981151) `[T2: 技術ブログ]`
+
+中国の開発者コミュニティでもこの変更は大きな注目を集めており、stickyルーティングと共有状態ストレージがアーキテクチャから削除できる点が特に評価されている。
+
+### 17. 阿里云「芯-雲-モデル-推論」全栈Agent化（2026-05-20）
+
+2026年5月20日、阿里云峰会にてリージョンVP李飛飛が**32+のAgentic Cloud新製品**を発表。従来の雲製品をAgentが「関数呼び出しのように」使える標準化モジュールに改造：
+
+- **雲製品のSkill化・MCP化・CLI化**: Agentから直接呼び出し可能なMCP Tool化
+- **百煉（Bailian）推理平台全面開放**: 智譜GLM-5.1、MiniMax M2.7、Kimi K2.6など150+モデル統合
+- **Agentic RL**: Agent実行フィードバックに基づく強化学習メカニズム
+- **千問雲（qianwenai.com）**: 新AI製品サイト、一行の命令で全機能をAgentから呼び出し可能
+
+阿里雲が自社クラウド製品をMCP化する方針は、中国クラウド市場におけるMCP標準化競争の新たな段階を示す。
+
+📎 出典: [智東西 — 阿里李飛飛32新品](https://zhidx.com/p/559187.html), [和訊科技](https://tech.hexun.com/2026-05-20/224185662.html) `[T2: 業界報道]`
+
+### 18. 腾讯云 MCP Gateway — 既存APIをゼロコードでMCP変換（2026-05-21）
+
+腾讯云开发者社区が**MCP Gateway**を発表。RESTful APIをコード不要でMCP Toolに変換する基盤：
+
+- **AI Gatewayの一部**: プロトコル変換・アクセス制御・監査を一括処理
+- **「智能貸付顧問」**ユースケースでデモ公開
+- **同時期の新MCP Server公開**: TKE（コンテナ管理）MCP、**联网搜索MCP（標準版）**、**MySQL智能服务MCP**
+- **対応クライアント**: Cursor, Trae, CodeBuddy, Claude Code, Codex CLI
+
+既存APIをMCP Tool化する「MCPラッピング」がゼロコードで可能になった点は、企業のMCP導入ハードルを大幅に下げる。
+
+📎 出典: [腾讯云开发者社区 — MCP网关](https://developer.cloud.tencent.com.cn/article/2671873) `[T1: 腾讯云公式]`
+
+### 19. 国家政策「智能体規範応用と創新発展実施意見」（2026-05-08）
+
+2026年5月8日、国家网信办・国家発展改革委・工業情報化部の三部門が連名で**《智能体規範応用と創新発展実施意見》**を発表：
+
+- 智能体（AI Agent）を公式定義：「自主感知・記憶・意思決定・対話・実行能力を持つ智能システム」
+- **智能体相互接続プロトコル（AIP）**の国家標準・業界標準の普及を推進
+- MCPのような標準化インターフェースを国家政策の一部として位置づけ
+- 2026年は「中国智能体規模化元年」と業界認識
+
+中国初のAI Agent向け国家政策であり、MCP/AIPなどのプロトコル標準化を国家レベルで推進することを宣言した点で極めて重要。
+
+📎 出典: [中央网信办公式発表](https://www.cac.gov.cn/2026-05/08/c_1779979789523320.htm), [教育网まとめ](https://www.edu.cn/xxh/focus/zc/202605/t20260528_2738385.shtml) `[T1: 国家政策]`
+
+### 20. MCPセキュリティベンチマーク MSB — 北京郵電大学がICLR 2026で発表
+
+北京郵電大学の研究チームがMCPに特化したセキュリティベンチマーク**MSB（MCP Security Bench）**を発表（ICLR 2026採択）：
+
+- **12種類の攻撃手法**を分類：名称衝突、設定操作、プロンプトインジェクション、パラメータ範囲外要求等
+- **10の実環境シナリオ**、**405の実ツール**、**2,000攻撃インスタンス**で評価
+- GPT-5、DeepSeek-V3.1、Claude 4 Sonnet、Qwen3等10モデルをテスト
+- **平均攻撃成功率（ASR）40.35%** — 性能の高いモデルほど攻撃を受けやすい
+- 新指標 **NRP（Net Resilient Performance）** を提案：セキュリティと実用性のバランス定量化
+
+中国初のMCPセキュリティに関する学術ベンチマークであり、業界のセキュリティ実装に影響を与える可能性。
+
+📎 出典: [36氪 — MSB: MCP安全基准发布](https://36kr.com/p/3768662327935747), [arXiv論文](https://arxiv.org/pdf/2510.15994) `[T1: 学術/報道]`
+
+### 21. 钉钉「悟空」Agent OS発表（2026-05-21、成都钉峰会）
+
+2026年5月21日、钉钉が成都で钉峰会を開催し**Agent OS（悟空）**を発表：
+
+- 「人駆動からAgent駆動へ」の移行を掲げる
+- MCP广场は**6,000以上のMCP能力**をカバー（引き続き中国最大の企業MCP市場）
+- 4社（重慶富民銀行、西蔵薬業、山水集團、四川菊楽食品）と戦略契約
+- OpenClawとの連携も深化（公式ドキュメントで連携手順を提供）
+
+📎 出典: [IT之家 — 钉峰会](https://www.ithome.com/0/954/011.htm), [36氪](https://www.36kr.com/p/3610743632446728) `[T1: 報道]`
+
+### 22. 字节跳动扣子（Coze）Space MCP拡張強化（2026年5月）
+
+字节跳动のCoze SpaceがMCP拡張機能を強化：
+
+- **新MCP拡張追加**: 音楽生成、水滴信用（企業信用情報）、飛常準（航空データ）
+- **ワンクリックMCP拡張发布**: Cozeで作成したアプリを即座にMCP拡張として公開可能
+- **ワークフロー→MCPツール化**: ワークフローをMCP Tool化し汎用Agentから呼び出し可能
+- 実践チュートリアル多数公開
+
+📎 出典: [扣子官方微信](https://mp.weixin.qq.com/s/7VhruC_F8q6vknekCNmMNQ), [火山引擎開発者社区](https://developer.volcengine.com/articles/7527890176979238948) `[T1: 公式]`
+
+### 23. 中国MCPエコシステム統計（2026-05-20時点）
+
+AgentScout MCP生態周度追踪報告より：
+
+- MCPタグ付きGitHubリポジトリ：**420**（前週401から+19、週間成長率4.7%）
+- トップ30リポジトリの合計スター数：**267,845**
+- FastMCP（Python）：25,221スター、日間ダウンロード100万+
+- mcp-use（全栈フレームワーク）：9,968スターで初登場6位
+- Unity MCP統合が急成長（3つのUnity関連MCPがトップ30に）
+
+📎 出典: [AgentScout MCP生態週度追踪](https://agentscout.live/zh/tech/dev-tools/data/mcp-ecosystem-weekly-20260520/) `[T2: データ分析]`
 
 ## 中国MCPツール生態の特徴
 

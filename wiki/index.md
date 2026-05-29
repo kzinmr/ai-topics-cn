@@ -1,7 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-05-28
+最終更新: 2026-05-29
 エンティティ: 62, コンセプト: 119, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-05-29 Active Crawl: tencent-hunyuan/china-ai-regulation/mcp-chinese-tools）
+- `entities/tencent-hunyuan.md` — **更新**: Hy-Memory記憶システム(5/28/長期記憶/検索強化生成/API提供)、旧モデル廃止通知(5/22/hunyuan-lite等夏終了)、元宝微信内AIリマインダー(5/24)、姚順雨88日間再建物語
+- `concepts/china-ai-regulation.md` — **更新**: 光明日报AI訓練データ著作権議論(5/28/公開データ使用解釈)、倫理安全指引1.0応用細則(5/19-26/2万企業内部審査義務化)、教育部2026年高考AI使用禁止措置(5/25/作弊認定)
+- `concepts/mcp-chinese-tools.md` — **更新**: MCPプロトコル無状態RC(5/21/セッションID廃止/Streamable HTTP/7/28最終仕様)。阿里雲全栈Agent化(5/20/32+Agentic Cloud/百煉150+モデル)。腾讯云MCP Gateway(5/21/ゼロコードREST→MCP変換)。国家初AI Agent政策《智能体規範応用意見》(5/8/AIP標準化)。MSB MCPセキュリティベンチ(北京郵電大学/ICLR 2026/ASR 40.35%)。钉钉悟空Agent OS(5/21/6000+MCP)。Coze Space MCP拡張強化。エコシステム(GitHub 420 MCP/+19/週)
 ### 本日更新（2026-05-28 Active Crawl: china-coding-agents/ChatGLM/Coding Plan）
 - `concepts/china-coding-agents.md` — **更新**: 2026年5月後半の新展開(Cursor 3.5 Automations、Qoder 1.0¥599、DS Harness結成、GitHub Agent HQ、Claude Code無料枠圧縮、Kimi K2.6誤BAN、Grok Build)。Cursor 3.3→3.5、CodeGeeX 4.1、Qoder 1.0行追加
 - `concepts/chatglm.md` — **更新**: GLM-5.1-highspeed API(400 tokens/s/TileRTエンジン)、株価1,468HKD(HSTECH指数6月8日採用)、AutoClaw iOSアプリ、株価推移表

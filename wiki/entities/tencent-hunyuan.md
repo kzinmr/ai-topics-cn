@@ -1,7 +1,7 @@
 ---
 title: "混元 (Hunyuan) — 騰訊自研の大規模言語モデルシリーズ"
 created: 2026-04-28
-updated: 2026-05-22
+updated: 2026-05-29
 tags: [company, llm, china, tech-giant, tencent, moe, multimodal]
 aliases: ["Hunyuan", "混元", "Tencent Hunyuan", "腾讯混元", "HY"]
 source_lang: zh-CN
@@ -209,6 +209,61 @@ source_lang: zh-CN
 - **全モーダルオープンソース継続**: 画像・動画・3Dモデルの継続的公開
 - **Hunyuan-O（全モーダルモデル）**: 2026年5月26日、腾讯が初の全モーダルモデル「混元-O」計画を発表
 
+## 2026年5月22日〜29日 追加動向
+
+### 1. Hy-Memory 正式リリース（2026年5月28日）
+
+2026年5月28日、腾讯混元がAgent用長期記憶プラグイン **Hy-Memory** を正式リリース。OpenClaw等の長期協力型Agent向けに設計された記憶プラグインで、以下が特徴：
+
+- **6層記憶フレームワーク** × System1/System2 デュアルシステム × 進化チェーン
+- **性能**: 記憶量70%以上削減、情報密度45%向上、Token消費35%低減
+- **速度**: 書き込み速度はGraphiti比8倍
+- **ベンチマーク**: LongMemEval/PersonaMemの6次元中4次元で最高スコア
+- **提供形態**: OpenClawプラグインとしてnpmから5分でインストール可能。Lite/Pro/Ultraの3段階
+- **出典**: [第一财经](https://www.yicai.com/news/103206161.html), [界面新闻](https://www.163.com/dy/article/KU2668160534A4SC.html)
+
+### 2. 旧モデル大量廃止通知（2026年5月22日）
+
+2026年5月22日、腾讯云が**旧バージョンモデル廃止通知**を発表：
+- **対象**: HY2.0、hunyuan-turbos、hunyuan-t1等 **46個**の旧バージョンモデル
+- **停止日**: **2026年6月22日 00:00**（北京時間）
+- **プラットフォーム**: 旧「腾讯混元大模型平台」は**2026年9月30日**完全停止。TokenHubへの移行推奨
+- **代替モデル**: `hy3-preview`
+- **出典**: [观点网](https://www.guandian.cn/article/20260522/562810.html)
+
+### 3. 元宝「任務」機能 — 微信内リマインダー（2026年5月22日〜24日）
+
+元宝が微信内で**一言リマインダー設定**に対応：
+- 「来週の月曜に週報を出して」などの自然言語で自動認識
+- 微信サービス通知でリマインダー
+- 音声入力対応（高齢者ユーザーに配慮）
+- 前週（5/13）の微信聊天記録要約機能に続く、微信統合の第二歩
+- **出典**: [bavschool](https://dm.bavschool.com/news/628e7399298.html)
+
+### 4. 姚顺雨「88日間」特集とHy3-Preview実機評価（2026年5月）
+
+- **5月21日・36kr大特集**: 姚顺雨の88日間改革プロセスを詳細解説。1月26日の年次総会で馬化騰が混元の失敗を公認した日からHy3 preview発表（4/23）までの改革の全容。AI Lab（10年間）解散・5大ブロック再編・20人データチーム設立・ReAct/Tree of Thoughts考案者としての経歴
+- **5月26日・36kr実機レビュー**: Hy3-Previewの評価は「喜憂参半」— 表現力・創造性は実用レベルだが、厳密な正確性タスクで改善余地
+- **出典**: [36氪 姚顺雨特集](https://www.36kr.com/p/3779318312153858), [36氪 Hy3レビュー](https://www.36kr.com/p/3779538330481415)
+
+### 5. 腾讯云融合创新峰会（2026年5月20日）
+
+5月20日（AI産業応用峰会の前日）、腾讯云が**融合创新峰会**を開催：
+- **TencentOS Server AI增强版**: Agent-Ready OS
+- **ClawPro专有云版**: 企業オンプレミス向けAI Agentソリューション
+- **「一云多模」AIエンジン**: TIプラットフォーム + TokenHub + ADP（智能体開発プラットフォーム）
+- **融合創新開放連盟**: 智能化アップグレード（100+パートナー、326アプリ対応、83ソリューション）
+- **出典**: [时代周报](https://www.time-weekly.com/wap-article/329653)
+
+### 6. HY-World 2.0 オープンソース進捗
+
+| 日付 | 内容 | ソース |
+|------|------|--------|
+| **5月11日** | **HY-Pano 2.0**（テキスト/画像→360°パノラマ、~80B）オープンソース | [GitHub](https://github.com/Tencent-Hunyuan/HY-World-2.0) |
+| **5月18日** | **WorldStereo 2.0**（パノラマ→3DGS世界、~17B）+ 世界生成推論コード公開 | [HuggingFace](https://huggingface.co/tencent/HY-World-2.0) |
+
+HY-World 2.0はテキスト/単一画像/多視点画像/動画を入力として3D世界（メッシュ/3DGS）を生成・再構成。Unity/UEエンジン互換。完全オープンソース。
+
 ## 課題と展望
 
 ### 課題
@@ -234,5 +289,10 @@ source_lang: zh-CN
 - [腾讯Q1 2026決算（2026-05-13）](https://finance.ifeng.com/c/8t6EwKIjSZQ)
 - [腾讯元宝微信聊天記録要約機能（2026-05-13）](https://www.36kr.com/p/3807659049131528)
 - [姚顺雨88日間の再建物語](https://www.tmtpost.com/7964654.html)
+- [Hy-Memory リリース（2026-05-28）](https://www.yicai.com/news/103206161.html)
+- [旧モデル廃止通知（2026-05-22）](https://www.guandian.cn/article/20260522/562810.html)
+- [元宝微信内リマインダー（2026-05-24）](https://dm.bavschool.com/news/628e7399298.html)
+- [36氪 Hy3-Preview実機レビュー（2026-05-26）](https://www.36kr.com/p/3779538330481415)
+- [腾讯云融合创新峰会（2026-05-20）](https://www.time-weekly.com/wap-article/329653)
 - [HuggingFace Hy3 Preview評価](https://huggingface.co/tencent/Hy3-preview-Base)
 - [OpenRouter Hy3 previewアクティビティ](https://openrouter.ai/tencent/hy3-preview/activity)

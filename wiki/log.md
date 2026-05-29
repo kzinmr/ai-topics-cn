@@ -1,18 +1,20 @@
 |
 
-## [2026-05-28] active-crawl | china-coding-agents / ChatGLM / Coding Plan
+|## [2026-05-29] active-crawl | tencent-hunyuan / china-ai-regulation / mcp-chinese-tools
 
 ### Wiki更新
-- `concepts/china-coding-agents.md` — **更新**: 2026年5月後半の新展開セクション追加(Cursor 3.5 Automations/Composer 2.5、Alibaba Qoder 1.0¥599、DeepSeek Agent Harnessチーム結成、GitHub Agent HQ 5/22、Claude Code無料枠圧縮、Codex企業無料、Kimi K2.6誤BAN問題、Grok Build)。Cursor 3.3→3.5、CodeGeeX 4.0→4.1(GLM-5.1)、Qoder 1.0行追加
-- `concepts/chatglm.md` — **更新**: GLM-5.1-highspeed API(400 tokens/s/TileRTエンジン/DS V4比2.2x)、株価1,468HKD(時価総額6,545億HKD/上場4ヶ月12.6倍)、HSTECH指数6月8日採用、AutoClaw iOSアプリ(5/21)、株価推移表追加
-- `concepts/coding-plan.md` — **更新**: Cursor 3.5(Automations)、CodingPlan価格体系Token Plan移行完了、CodeGeeX 4.1、Alibaba二階層戦略(Lingma IDE ¥99 + Qoder 1.0 ¥599)
+- `entities/tencent-hunyuan.md` — **更新**: Hy-Memory記憶システム(5/28/長期記憶/検索強化生成/API提供)、旧モデル廃止通知(5/22/hunyuan-lite等夏終了/Hy3.0へ統合)、元宝微信内AIリマインダー(5/24)、姚順雨88日間再建物語
+- `concepts/china-ai-regulation.md` — **更新**: 光明日报AI訓練データ著作権議論(5/28/公開データ使用解釈)、倫理安全指引1.0応用細則(5/19-26/2万企業内部審査義務化)、教育部2026年高考AI使用禁止措置(5/25/作弊認定)
+- `concepts/mcp-chinese-tools.md` — **更新**: MCPプロトコル無状態RC(5/21/セッションID廃止/Streamable HTTP/7/28最終仕様)。阿里雲全栈Agent化(5/20/32+Agentic Cloud製品/百煉150+モデル)。腾讯云MCP Gateway(5/21/ゼロコードREST→MCP変換)。国家初AI Agent政策《智能体規範応用意見》(5/8/AIP標準化推進)。MSB MCPセキュリティベンチ(北京郵電大学/ICLR 2026/ASR 40.35%)。钉钉悟空Agent OS発表(5/21成都钉峰会/6000+MCP能力)。Coze Space MCP拡張強化(音楽生成/水滴信用/飛常準)。エコシステム統計(GitHub 420 MCPレポ/+19/週/FastMCP 25K★)
 
 ### hot-topics.yaml更新
-- china-coding-agents: last_crawled→2026-05-28、search_hints+6、notes更新(Cursor 3.5/Qoder 1.0/DS Harness/K2.6誤BAN/Grok Build)
-- chatglm: last_crawled→2026-05-28、search_hints+4、notes更新(GLM-5.1-highspeed/株価1,468HKD/HSTECH/AutoClaw iOS)
-- coding-plan: last_crawled→2026-05-28、notes更新(Cursor 3.5/Token Plan/CodeGeeX 4.1/Alibaba 二階層)
+- tencent-hunyuan: last_crawled→2026-05-29、search_hints+3(Hy-Memory/元宝リマインダー/旧モデル廃止)、notes更新
+- china-ai-regulation: last_crawled→2026-05-29、search_hints+3(光明日报/倫理指引細則/高考禁止)、notes更新
+- mcp-chinese-tools: last_crawled→2026-05-29、search_hints+7(MCP RC/腾讯Gateway/阿里MCP/MSB/钉钉悟空/Coze MCP/AIP標準)、notes更新
 
 |
+
+|## [2026-05-28] active-crawl | china-coding-agents / ChatGLM / Coding Plan
 
 ## [2026-05-27] active-crawl | DeepSeek / Doubao / Dify
 
