@@ -1,7 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-05-29
+最終更新: 2026-05-30
 エンティティ: 62, コンセプト: 119, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-05-30 Active Crawl: kimi/qwen/yi）
+- `concepts/kimi.md` — **更新**: K3開発(Q3リリース/2.5Tパラメータ・100万トークン目標/Polymarket確率22%)。K2.6 OpenRouterトップ10圏外転落。WebBridge v1.9.7(20Kユーザー/6Agent対応)。Dラウンド$2Bクローズ(美团Dragonballリード/JV構造/評価$20B超)。IPO VIE構造解体進行(Q3 A1提出目標)。さくらK2.6 API継続(¥0.6/万Token)。
+- `entities/qwen.md` — **更新**: Qwen3.7-Max Firethering 35h自律カーネル最適化(Extend Attention 10.0x/KernelBench L3 96%)。OpenRouter API使用量急増。BenchLM.ai 92/100(#3/117)。Qwen Code v0.16.2/v0.17.0-preview.0(`/goal`コマンド/`/branch`並列探索)。千問云シンガポール初公開。Qoder CNリブランド完了(通义灵码→Qoder/¥599 Enterprise)。百煉プラットフォーム他社モデル統合。
+- `concepts/yi.md` — **更新**: 三周年内部講話(5/28/李開復経営指標初公表:2025年受注5億・監査済み売上2.5億/累計15億突破)。AMD Cube01智算ノード共同発表。信通院最高レベル認証取得。Pre-IPO融資進行中。組織再編(DRI制度/2000万株オプション)。
 ### 本日更新（2026-05-29 Active Crawl: tencent-hunyuan/china-ai-regulation/mcp-chinese-tools）
 - `entities/tencent-hunyuan.md` — **更新**: Hy-Memory記憶システム(5/28/長期記憶/検索強化生成/API提供)、旧モデル廃止通知(5/22/hunyuan-lite等夏終了)、元宝微信内AIリマインダー(5/24)、姚順雨88日間再建物語
 - `concepts/china-ai-regulation.md` — **更新**: 光明日报AI訓練データ著作権議論(5/28/公開データ使用解釈)、倫理安全指引1.0応用細則(5/19-26/2万企業内部審査義務化)、教育部2026年高考AI使用禁止措置(5/25/作弊認定)

@@ -74,9 +74,9 @@ topics:
       - "Firethering kernel benchmark Qwen3.7-Max"
     wiki_pages:
       - entities/qwen
-    notes: "2026.05.26更新: Qwen3.7-Max API正式公開(5/21/Alibaba Cloud Model Studio/¥12/¥36 MTok/Anthropic Messages Protocol対応)。Qwen Code v0.16.0(5/21/80+PR/worktree isolation/auto-approval/qwen serve daemon/OSC 8)/v0.16.1(5/23/Windows Git Bash修正)。千問云(Qianwen Cloud)詳細判明(150+モデルシリーズ/480+モデル/Agent-native Skills/CLI/MCP)。Token Plan月額サブスク(¥198/698/1,398/チーム共有)。Firetheringカーネルベンチ(5/25/Qwen3.7-Max:GLM 5.1比10x/K2.6比5x/DS V4 Pro比3.3x)。AA Index 56.6(Global #5)/MCP-Mark 60.8/Skillsbench 59.2。2026.05.21更新: Qwen3.7-Max(5月20日/Agent-first自律実行最適化/自律エージェント向け初モデル)。Qoder 1.0(自律開発Desktop/統合開発環境/コード自動生成と実行バイナリ直接生成)。Qwen3.5-LiveTranslate-Flash(音声同時通訳/低遅延特化)。Qwen Code v0.16.0(Agent機能・MCP統合拡張)。2026.05.15更新: 5月11日淘宝EC統合(自然言語→商品検索/購入/在庫確認/フォロー)。Qwen Code v0.15.11(5月13日/open-in-terminal/MCP/4o-native/Telemetry)。千問Deep Research正式版(5月6日/十数分レポート)。QWQ/Qwen3.6 overthinkingバグ(5月12日/無限ループ報告)。QuestMobile 3月MAU1.66億(+4,241%/国内2位)。百煉Agent動的ツール。Qwen-Scope(SAE/OSS)/QwenPaw★16.4K/Lingma IDE。Zhenwu AI韶関10K基。Alibaba社内AI統制強化(20人CodeFreeze)。Qwen3.6-235B-A21B-preview DeepSeek V4超え。"
+    notes: "2026.05.30更新: Qwen3.7-Max Firethering 35h自律カーネル最適化実験(Extend Attention 10.0x/KernelBench L3 96%)。OpenRouter API使用量急増(5/21 10.3B→5/29累計226M+ prompt/91.9M+ reasoning/$2.50入力$7.50出力/90%キャッシュ割引)。BenchLM.ai 92/100(#3/117)。LMSYS Chatbot Arena Text 1475/Coding 1525。Qwen Code v0.16.2(5/27)/v0.17.0-preview.0(5/29/`/goal`コマンド/`/branch`並列探索/Tool Search prefix最適化)。千問云シンガポール初公開(5/26/Agent-native Skills/易点天下導入事例)。Qoder CNリブランド完了(通义灵码→Qoder/¥599 Enterprise/VS Codeプラグイン保守停止)。百煉プラットフォーム他社モデル統合(Googlm-5.1/MiniMax/Kimi等/顧客8倍増加)。2026.05.26更新: Qwen3.7-Max API正式公開(5/21/Alibaba Cloud Model Studio/¥12/¥36 MTok/Anthropic Messages Protocol対応)。Qwen Code v0.16.0(5/21/80+PR/worktree isolation/auto-approval/qwen serve daemon/OSC 8)/v0.16.1(5/23/Windows Git Bash修正)。千問云(Qianwen Cloud)詳細判明(150+モデルシリーズ/480+モデル/Agent-native Skills/CLI/MCP)。Token Plan月額サブスク(¥198/698/1,398/チーム共有)。Firetheringカーネルベンチ(5/25/Qwen3.7-Max:GLM 5.1比10x/K2.6比5x/DS V4 Pro比3.3x)。AA Index 56.6(Global #5)/MCP-Mark 60.8/Skillsbench 59.2。2026.05.21更新: Qwen3.7-Max(5月20日/Agent-first自律実行最適化/自律エージェント向け初モデル)。Qoder 1.0(自律開発Desktop/統合開発環境/コード自動生成と実行バイナリ直接生成)。Qwen3.5-LiveTranslate-Flash(音声同時通訳/低遅延特化)。Qwen Code v0.16.0(Agent機能・MCP統合拡張)。2026.05.15更新: 5月11日淘宝EC統合(自然言語→商品検索/購入/在庫確認/フォロー)。Qwen Code v0.15.11(5月13日/open-in-terminal/MCP/4o-native/Telemetry)。千問Deep Research正式版(5月6日/十数分レポート)。QWQ/Qwen3.6 overthinkingバグ(5月12日/無限ループ報告)。QuestMobile 3月MAU1.66億(+4,241%/国内2位)。百煉Agent動的ツール。Qwen-Scope(SAE/OSS)/QwenPaw★16.4K/Lingma IDE。Zhenwu AI韶関10K基。Alibaba社内AI統制強化(20人CodeFreeze)。Qwen3.6-235B-A21B-preview DeepSeek V4超え。"
     added: 2026-04-17
-    last_crawled: "2026-05-26"
+    last_crawled: "2026-05-30"
 
   - slug: chatglm
     title: "ChatGLM (智谱清言) — Zhipu AI"
@@ -117,9 +117,9 @@ topics:
       - "さくらインターネット Kimi K2.6 API"
     wiki_pages:
       - concepts/kimi
-    notes: "2026.05.25更新: VIE構造解体正式開始(5/21-22/法務監査法人選定完了/A1提出Q3目標/年内上場/評価200億ドル超/智譜AI MiniMaxに続く香港上場)。さくらインターネットK2.6 API提供開始(5/20/Anthropic互換API/入力¥6.50・出力¥27.00 MTok/日本初本格展開)。前回(5/20): Kimi WebBridgeリリース(5/15/ブラウザAgent/ローカルファースト)。国有資本参入(5/19/国智投・北京人工智能基金・中国移動株主/20億ドル融資)。Cursor Composer 2.5(K2.5ベース/Opus 4.7級1/10コスト)。香港IPO紅籌架构拆除開始。K3開発Q3継続。OpenRouter K2.6使用量第2位。"
+    notes: "2026.05.30更新: K3開発(Q3リリース主流見方/Polymarket 6/30確率22%/2.5Tパラメータ・100万トークン目標)。K2.6 OpenRouterトップ10圏外転落(DeepSeek-V4-Flash$0.02/MToken攻撃/Tencent Hy3無料戦略/品質Intelligence Index 54点維持)。WebBridge v1.9.7(20Kユーザー/評価5.0/6Agent対応/ローカル+クラウド版開発)。Dラウンド$2Bクローズ(美团Dragonballリード/JV構造外資維持/評価$20B超)。IPO VIE構造解体進行(Q3 A1提出目標/半年〜1年内上場)。さくらK2.6 API継続(¥0.6/万Token/Claude Code直接利用)。2026.05.25更新: VIE構造解体正式開始(5/21-22/法務監査法人選定完了/A1提出Q3目標/年内上場/評価200億ドル超/智譜AI MiniMaxに続く香港上場)。さくらインターネットK2.6 API提供開始(5/20/Anthropic互換API/入力¥6.50・出力¥27.00 MTok/日本初本格展開)。前回(5/20): Kimi WebBridgeリリース(5/15/ブラウザAgent/ローカルファースト)。国有資本参入(5/19/国智投・北京人工智能基金・中国移動株主/20億ドル融資)。Cursor Composer 2.5(K2.5ベース/Opus 4.7級1/10コスト)。香港IPO紅籌架构拆除開始。K3開発Q3継続。OpenRouter K2.6使用量第2位。"
     added: 2026-04-17
-    last_crawled: 2026-05-25
+    last_crawled: 2026-05-30
 
   - slug: yi
     title: "Yi (零一万物) — 01.AI"
@@ -132,9 +132,9 @@ topics:
       - "李开复 零一万物 海外 展開"
     wiki_pages:
       - concepts/yi
-    notes: "2026.05.16更新: 零一万物Pre-IPO融資実施中+香港上場準備中(5/9/市場報道→公司否定せず)。智譜AI(HK$4,000億)+MiniMax(HK$2,300億)上場済。2024年収益1億元超/2025年Q1が通年に迫る/2025年H1が2024年超過。万智平台2.5→Super Employee 30+種/5大産業/1+3+5+X政府体系。棋譜元戦略:B端特化→IPO経路。wiki更新済み(yi.md)。"
+    notes: "2026.05.30更新: 三周年内部講話(5/28/李開復経営指標初公表:2025年受注5億・監査済み売上2.5億/累計15億突破)。AMD Cube01智算ノード共同発表(Ryzen AI Max+ 395/128GB統一メモリ/初回1000台無料試用/17社Fortune500パイロット)。信通院最高レベル認証取得(74項目中74項目合格)。Pre-IPO融資進行中(VIE構造解体/Q3 A1提出目標)。2027年香港IPO提出目標・「中国初の黒字化AI 2.0企業」宣言。組織再編(DRI制度/2000万株オプション/CEO特別インセン)。モデル開発:Yi-Lightning(2024年10月)が最後の旗艦/アリババ統合後アプリ層に注力。2026.05.16更新: 零一万物Pre-IPO融資実施中+香港上場準備中(5/9/市場報道→公司否定せず)。智譜AI(HK$4,000億)+MiniMax(HK$2,300億)上場済。2024年収益1億元超/2025年Q1が通年に迫る/2025年H1が2024年超過。万智平台2.5→Super Employee 30+種/5大産業/1+3+5+X政府体系。棋譜元戦略:B端特化→IPO経路。wiki更新済み(yi.md)。"
     added: 2026-04-17
-    last_crawled: 2026-05-16
+    last_crawled: 2026-05-30
 
   - slug: doubao
     title: "Doubao (豆包) — ByteDance"

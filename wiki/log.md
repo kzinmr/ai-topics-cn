@@ -1,5 +1,19 @@
 |
 
+|## [2026-05-30] active-crawl | kimi / qwen / yi
+
+### Wiki更新
+- `concepts/kimi.md` — **更新**: K3開発(Q3リリース/2.5Tパラメータ・100万トークン目標/Polymarket確率22%)。K2.6 OpenRouterトップ10圏外転落(DeepSeek-V4-Flash$0.02/MToken攻撃/Tencent Hy3無料戦略/品質Intelligence Index 54点維持)。WebBridge v1.9.7(20Kユーザー/6Agent対応/ローカル+クラウド版開発)。Dラウンド$2Bクローズ(美团Dragonballリード/JV構造/評価$20B超)。IPO VIE構造解体進行(Q3 A1提出目標)。さくらK2.6 API継続(¥0.6/万Token)。
+- `entities/qwen.md` — **更新**: Qwen3.7-Max Firethering 35h自律カーネル最適化(Extend Attention 10.0x/KernelBench L3 96%)。OpenRouter API使用量急増(5/21→5/29/$2.50入力$7.50出力/90%キャッシュ割引)。BenchLM.ai 92/100(#3/117)。LMSYS Chatbot Arena Text 1475/Coding 1525。Qwen Code v0.16.2/v0.17.0-preview.0(`/goal`コマンド/`/branch`並列探索)。千問云シンガポール初公開(易点天下導入事例)。Qoder CNリブランド完了(通义灵码→Qoder/¥599 Enterprise)。百煉プラットフォーム他社モデル統合。
+- `concepts/yi.md` — **更新**: 三周年内部講話(5/28/李開復経営指標初公表:2025年受注5億・監査済み売上2.5億/累計15億突破)。AMD Cube01智算ノード共同発表(Ryzen AI Max+ 395/128GB統一メモリ/1000台無料試用/17社Fortune500パイロット)。信通院最高レベル認証取得(74項目中74項目合格)。Pre-IPO融資進行中(VIE構造解体/2027年香港IPO目標/「中国初の黒字化AI 2.0企業」宣言)。組織再編(DRI制度/2000万株オプション)。
+
+### hot-topics.yaml更新
+- kimi: last_crawled→2026-05-30、search_hints+3(K3開発/WebBridge/Dラウンド)、notes更新
+- qwen: last_crawled→2026-05-30、search_hints+5(Firethering/OpenRouter/Qwen Code/千問云/Qoder CN)、notes更新
+- yi: last_crawled→2026-05-30、search_hints+5(三周年講話/AMD Cube01/信通院認証/IPO/組織再編)、notes更新
+
+|
+
 |## [2026-05-29] active-crawl | tencent-hunyuan / china-ai-regulation / mcp-chinese-tools
 
 ### Wiki更新
