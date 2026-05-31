@@ -1,7 +1,7 @@
 ---
 title: "显存优化（VRAM Optimization） — KVキャッシュ圧縮・量子化・推論効率化"
 created: 2026-04-23
-updated: 2026-05-23
+updated: 2026-05-31
 tags: [inference, vram-optimization, kv-cache, quantization, optimization, china]
 aliases: ["显存优化", "VRAM最適化", "KV Cache Compression", "PagedAttention", "KVキャッシュ圧縮"]
 source_lang: zh-CN
@@ -188,7 +188,45 @@ Environment="OLLAMA_FLASH_ATTENTION=1"    # FlashAttention有効化
 - **DeepSeek-V4 Engram Memory**: 長期コンテキストの効率的な保持により、100Kトークン以上の推論でもKVキャッシュ増大を抑制。従来のPagedAttention + INT4 KVキャッシュと比較して~40%のVRAM削減を実現。
 - **TriAttention (MIT/NVIDIA/ZJU)**: 2026年4月に発表されたKVキャッシュ圧縮手法。全Attentionと同等の品質を維持しつつ、スループット2.5倍。中国モデルへの適用事例が増加中。
 
-## 2026年5月〜5月23日 最新アップデート
+## 2026年5月下旬最新動向
+
+### ▼ vLLM × Mooncake 分散型KVキャッシュプール（2026-05-06）
+
+vLLMとMooncake Storeを統合した分散型KVキャッシュプールが発表された。エージェントワークロード向けに設計:
+
+- **GB200 60ノードで線形スケーリング**: キャッシュヒット率92.2%（従来1.7%→92.2%）、スループット3.8倍向上、TTFT 46倍短縮、エンドツーエンドレイテンシ8.6倍改善
+- **RDMA + GPUDirect活用**: GPU HBMとCPUメモリ間の直接データ転送、SMリソース消費なし
+- **Kimi-2.5 NVFP4モデルで実証**: 1P1D構成、12 GPUで評価
+- **分散ディスクオフロード**: NVMe SSD・分散ファイルシステムへのキャッシュ階層化も進行中
+
+**出典**: [vllm.ai/blog/2026-05-06-mooncake-store](https://vllm.ai/blog/2026-05-06-mooncake-store)
+
+### ▼ OSCAR: 2-bit KVキャッシュ量子化（2026年5月）
+
+TogetherAIがOSCAR（Offline Spectral Covariance-Aware Rotation for 2-bit KV Cache Quantization）を発表:
+
+- **実用的な2-bit KVキャッシュシステム**: TurboQuantを凌駕、約2.28 bits/KV elementでBF16に近い精度
+- **SGLang統合済み**: sink token（64）とrecent window（256）はBF16保持、中間historyをINT2で保存
+- **Qwen3-4B-Thinkingで検証**: 100Kコンテキスト・単一デコードで最大3倍高速、固定VRAM予算で最大7倍スループット向上
+- **prefix cache対応**: paged KV / radix prefix cacheと互換、エージェントの長いシステムプロンプト共有に特に有効
+
+**出典**: [arXiv:2605.17757](https://arxiv.org/abs/2605.17757), [oscar-quantize.github.io](https://oscar-quantize.github.io/)
+
+### ▼ 工商银行 × 華為: 金融業界初 分散KVキャッシュマルチレベル加速（2026-05-19）
+
+中国工商銀行と華為の共同創新により、昇腾+vLLM Ascend+openYuanrongベースの分散型KVキャッシュマルチレベルキャッシュ推論加速方案が実証された:
+
+- **HBM/DRAMの异构統一メモリプール**: openYuanrong异构ストレージリソースプールでHBM・DRAMを统一管理
+- **GLMモデルで実測**: 200K/100KコンテキストでTTFT平均70%短縮、スループット40%向上
+- **RH2Dゼロコピー転送**: 単卡批量データRH2D転送スループット14+GB/s
+- **Prefill性能70%+向上**: 多輪対話・Agentic AI長程タスクで実証済み
+
+**出典**: [finance.sina.com.cn](https://finance.sina.com.cn/roll/2026-05-19/doc-inhymumi7407967.shtml)
+
+### ▼ KVキャッシュ圧縮技術動向（2026年5月追加）
+
+- **TriAttention**: 36kr報道で「32BモデルをRTX 4090 24GBでエージェントタスク実行可能」と注目。vLLMプラグインとして即利用可能、MLX（Apple Silicon）実験サポートも提供
+- **OSCAR vs TurboQuant**: OSCARはattention-aware rotationでTurboQuantの2-bit実用化を達成。SGLang統合済みで「论文から工程実装へ」のフェーズに入ったと評価
 
 ### 1. TriAttention v0.2.0 リリース（2026-04-22）— SGLangバックエンド・マルチハードウェア対応
 

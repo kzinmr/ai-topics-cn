@@ -1,5 +1,19 @@
 |
 
+|## [2026-05-31] active-crawl | DeepSeek / OpenClaw / VRAM Optimization
+
+### Wiki更新
+- `concepts/deepseek.md` — **更新**: V4.1マルチモーダル版6月リリース予定確認。テンセント追加融資(評価額700億元)。V4-Pro永久75%値下げ。Agent Harnessチーム(Cui Tianyi氏率いる/6-12ヶ月で製品化)。OpenRouter週間1位継続/3.43Tトークン
+- `entities/openclaw.md` — **更新**: v2026.5.28/5.27連続リリース。マルチプロバイダー対応(iOSアプリ/Command Workboard/ブラウザモーダル)。GitHub Stars 376K到達
+- `concepts/vram-optimization.md` — **更新**: vLLM×Mooncake分散KVキャッシュ(GB200 60ノード/ヒット率92.2%/スループット3.8倍)。OSCAR 2-bit量子化(TogetherAI/SGLang統合)。工商银行×華為分散KVマルチレベル加速(TTFT 70%短縮)
+
+### hot-topics.yaml更新
+- deepseek: last_crawled→2026-05-31、search_hints+3(V4.1マルチモーダル/Engram Memory/テンセント融資)、notes更新
+- openclaw: last_crawled→2026-05-31、search_hints+3(v2026.5.28/v2026.5.27/iOSアプリ)、notes更新
+- vram-optimization: last_crawled→2026-05-31、search_hints+7(Mooncake/OSCAR/工商银行/華為/昇騰/Cambricon/GQLA)、notes更新
+
+|
+
 |## [2026-05-30] active-crawl | kimi / qwen / yi
 
 ### Wiki更新

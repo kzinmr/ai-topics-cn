@@ -1,7 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-05-30
+最終更新: 2026-05-31
 エンティティ: 62, コンセプト: 119, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-05-31 Active Crawl: DeepSeek/OpenClaw/VRAM Optimization）
+- `concepts/deepseek.md` — **更新**: DeepSeek V4.1マルチモーダル版6月リリース予定確認(画像+音声+テキスト/MCP Agent/Engram Memory最適化)。テンセントが追加融資(評価額700億元/腾讯出資)。V4-Pro永久75%値下げ(世界最安値/入力3元)。Agent Harnessチーム崔添翼氏率いる(Jane Street出身/6-12ヶ月でDeepSeek Code製品化予定)。OpenRouter週間1位継続/3.43Tトークン。
+- `entities/openclaw.md` — **更新**: v2026.5.28/5.27連続リリース。マルチプロバイダー対応(Claude Opus 4.8/Fal Krea/NVIDIA/MiniMax/Codex Supervisor)。iOSアプリ/Command Workboard/ブラウザモーダル/Policyプラグイン。GitHub Stars 376K到達。主要開発者:@steipete/@yetval/@luoyanglang/@vincentk。
+- `concepts/vram-optimization.md` — **更新**: vLLM×Mooncake分散型KVキャッシュプール(GB200 60ノード/キャッシュヒット率92.2%/スループット3.8倍)。OSCAR 2-bit KVキャッシュ量子化(TogetherAI/SGLang統合/Qwen3-4Bで3倍高速)。工商银行×華為分散KVキャッシュマルチレベル加速(昇腾+openYuanrong/TTFT 70%短縮)。
 ### 本日更新（2026-05-30 Active Crawl: kimi/qwen/yi）
 - `concepts/kimi.md` — **更新**: K3開発(Q3リリース/2.5Tパラメータ・100万トークン目標/Polymarket確率22%)。K2.6 OpenRouterトップ10圏外転落。WebBridge v1.9.7(20Kユーザー/6Agent対応)。Dラウンド$2Bクローズ(美团Dragonballリード/JV構造/評価$20B超)。IPO VIE構造解体進行(Q3 A1提出目標)。さくらK2.6 API継続(¥0.6/万Token)。
 - `entities/qwen.md` — **更新**: Qwen3.7-Max Firethering 35h自律カーネル最適化(Extend Attention 10.0x/KernelBench L3 96%)。OpenRouter API使用量急増。BenchLM.ai 92/100(#3/117)。Qwen Code v0.16.2/v0.17.0-preview.0(`/goal`コマンド/`/branch`並列探索)。千問云シンガポール初公開。Qoder CNリブランド完了(通义灵码→Qoder/¥599 Enterprise)。百煉プラットフォーム他社モデル統合。

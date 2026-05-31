@@ -44,11 +44,14 @@ topics:
       - "DeepSeek 700億元 増資 梁文鋒 自己出資 200億"
       - "DeepSeek Agent Harness 崔添翼 Jane Street"
       - "DeepSeek V4-Flash OpenRouter 週間1位 3.43T"
+      - "DeepSeek V4.1 マルチモーダル 6月リリース 予定"
+      - "DeepSeek V4.1 Engram Memory MCP Agent"
+      - "DeepSeek テンセント 融資 700億元評価額"
     wiki_pages:
       - concepts/deepseek
-    notes: "2026.05.27更新: V4-Pro永久75%値下げ(入力3元/出力6元/100万トークン/世界最安値)。資金調達700億元に拡大(梁文鋒200億元自己出資/CATL・京東・網易交渉中/騰訊参加確実)。V4-Flash OpenRouter週間3.43Tトークン世界1位(中国モデル全体9.22T/4週連続米国超過)。Agent Harnessチーム判明(崔添翼責任者/Jane Street出身9年/ByteDanceからPM獲得/6-12ヶ月製品化/DeepSeek Code命名可能性)。2026.05.22更新: Agent Harnessチーム募集開始(Model+Harness=Agent/Claude Code対抗DesktopコードAgent/6-12ヶ月見通し)。特殊文字幻覚問題(5/19/セキュリティ問題否定/対処的訓練中)。V4-Flash日次42.6B tokens/Pro 11.7B(OpenRouter)。V4.1の6月リリース予定変更なし。500億元調達交渉継続中(クローズ未発表)。2026.05.18更新: V4.1(6月リリース予定)正式発表—全モーダル(画像+音声入力)/MCPネイティブ対応/エンタープライズツールチェーン(Fine-tuning/PrivateDeploy/SecurityAudit)。500億元大型調達(評価額515億ドル/梁文鋒40%出資/Tencent60億元2%出資/大基金交渉中/阿里交渉決裂報道)。V4 Flash単日1200億tokens継続上昇。網新檢測V4国産化適応テスト体系的枠組み(5/15)。"
+    notes: "2026.05.31更新: DeepSeek V4.1マルチモーダル版6月リリース予定(画像+音声+テキスト/MCP Agent/Engram Memory最適化)。テンセントがDeepSeekに追加融資(評価額700億元/腾讯出資)。V4-Flash OpenRouter週間1位継続/3.43Tトークン。V4-Pro永久75%値下げ(世界最安値/入力3元)。Agent Harnessチーム崔添翼氏率いる/6-12ヶ月でDeepSeek Code製品化予定。2026.05.27更新: V4-Pro永久75%値下げ(入力3元/出力6元/100万トークン/世界最安値)。資金調達700億元に拡大(梁文鋒200億元自己出資/CATL・京東・網易交渉中/騰訊参加確実)。V4-Flash OpenRouter週間3.43Tトークン世界1位(中国モデル全体9.22T/4週連続米国超過)。Agent Harnessチーム判明(崔添翼責任者/Jane Street出身9年/ByteDanceからPM獲得/6-12ヶ月製品化/DeepSeek Code命名可能性)。2026.05.22更新: Agent Harnessチーム募集開始(Model+Harness=Agent/Claude Code対抗DesktopコードAgent/6-12ヶ月見通し)。特殊文字幻覚問題(5/19/セキュリティ問題否定/対処的訓練中)。V4-Flash日次42.6B tokens/Pro 11.7B(OpenRouter)。V4.1の6月リリース予定変更なし。500億元調達交渉継続中(クローズ未発表)。2026.05.18更新: V4.1(6月リリース予定)正式発表—全モーダル(画像+音声入力)/MCPネイティブ対応/エンタープライズツールチェーン(Fine-tuning/PrivateDeploy/SecurityAudit)。500億元大型調達(評価額515億ドル/梁文鋒40%出資/Tencent60億元2%出資/大基金交渉中/阿里交渉決裂報道)。V4 Flash単日1200億tokens継続上昇。網新檢測V4国産化適応テスト体系的枠組み(5/15)。"
     added: 2026-04-17
-    last_crawled: 2026-05-27
+    last_crawled: 2026-05-31
 
   - slug: qwen
     title: "Qwen (通义千问) — Alibaba"
@@ -232,12 +235,15 @@ topics:
       - "OpenClaw v2026.5.14 beta package manager"
       - "OpenClaw GitHub Stars 372K"
       - "OpenClaw v2026.5.22 model auth prewarm"
+      - "OpenClaw v2026.5.28 376K Stars マルチプロバイダー"
+      - "OpenClaw v2026.5.27 OpenAI embedding セキュリティ"
+      - "OpenClaw iOSアプリ Pro Command Workboard"
       - "Hermes Agent OpenRouter OpenClaw 逆転 2026"
     wiki_pages:
       - entities/openclaw
-    notes: "2026.05.24更新: v2026.5.19/5.20/5.22-beta.1週3回メジャーリリース(ブラウザモーダル/Policyプラグイン/Discord音声/cron改善/モデル認証プリウォーム20s→5ms)。★374K。Hermes Agent OpenRouter日次トークン消費逆転(Hermes 458B vs OpenClaw 173B/全期間8.14T vs 7.18T)。ClawHub 44K+スキル/50+チャンネル。エコシステム拡大: DigitalOcean 1-Click/MiniMax MaxClaw/Alibaba Cloud連携/Qwen 3.5蒸留モデル。脆弱性: Claw Chain CVEパッチ(v2026.4.22)。2026.05.17更新: v2026.5.10/5.12/5.14ベータ連続/★372K/v2026.5.7 SecretRef強検証。"
+    notes: "2026.05.31更新: v2026.5.28リリース(376K Stars/マルチプロバイダーClaude Opus 4.8/Fal Krea/NVIDIA/MiniMax/Codex Supervisor/iOSアプリ/Workboard)。v2026.5.27リリース(OpenAI embedding/Pixverse動画/セキュリティ強化/QQBotフォールバック/Promptキャッシュ最適化)。@steipete@yetval@luoyanglang@vincentkらが主要開発者。2026.05.24更新: v2026.5.19/5.20/5.22-beta.1週3回メジャーリリース(ブラウザモーダル/Policyプラグイン/Discord音声/cron改善/モデル認証プリウォーム20s→5ms)。★374K。Hermes Agent OpenRouter日次トークン消費逆転(Hermes 458B vs OpenClaw 173B/全期間8.14T vs 7.18T)。ClawHub 44K+スキル/50+チャンネル。エコシステム拡大: DigitalOcean 1-Click/MiniMax MaxClaw/Alibaba Cloud連携/Qwen 3.5蒸留モデル。脆弱性: Claw Chain CVEパッチ(v2026.4.22)。2026.05.17更新: v2026.5.10/5.12/5.14ベータ連続/★372K/v2026.5.7 SecretRef強検証。"
     added: 2026-05-01
-    last_crawled: 2026-05-24
+    last_crawled: 2026-05-31
 
   - slug: coze
     title: "Coze (扣子) — ByteDance Agent Platform"

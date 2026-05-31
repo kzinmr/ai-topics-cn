@@ -3,7 +3,7 @@ title: "DeepSeek（深度求索）— 2026年最新動向"
 type: concept
 tags: [LLM, chinese-ai, open-source, MoE, reasoning, coding-agent]
 created: 2026-04-17
-updated: 2026-05-27
+updated: 2026-05-31
 source_lang: zh-CN
 ---
 
@@ -517,12 +517,59 @@ ChinAI #356でDingは、Sihang Songの分析を引用し、DeepSeekを「**修�
 - 国産チップ（华为昇騰950）への適応
 - 「修路人」としての戦略：NVIDIA依存からの脱却、CANNフレームワークへの移行
 
-## 出典
+## 2026年5月下旬最新動向
 
-- [DeepSeek V4 Specs & Benchmarks (NxCode)](https://www.nxcode.io/zh/resources/news/deepseek-v4-release-specs-benchmarks-2026)
-- [DeepSeek V4 技術前瞻 (CSDN/昇騰)](https://hwcomputing.csdn.net/69e099c254b52172bc6a500a.html)
-- [DeepSeek V4架构革命: mHCとEngram (鲸林向海)](https://www.itsolotime.com/archives/20732)
-- [DeepSeek V4 リリース予定 (GIGAZINE)](https://gigazine.net/news/20260114-deepseek-next-flagship-ai-model-v4/)
-- [DeepSeek V4 1Tパラメータ (知乎)](https://zhuanlan.zhihu.com/p/2010446486454943846)
-- [EvoLink.AI DeepSeek V4 Release Window](https://evolink.ai/zh/blog/deepseek-v4-release-window-prep)
-- [Reuters: DeepSeek to launch new AI model](https://www.reuters.com/technology/deepseek-launch-new-ai-model-focused-coding-february-information-reports-2026-01-09/)
+### ▼ DeepGEMM更新: Mega MoEとFP4 Indexer（5月27日）
+
+DeepSeekが内部推論ライブラリDeepGEMMを大幅更新。Mega MoE（大規模MoEカーネル最適化）とFP4 Indexer（MQA logits用）を導入:
+
+- **Mega MoE**: MoE効率を極限まで圧縮する試み。Chenggang Zhao（インフラチーム）らが貢献
+- **FP4 × FP8精度組み合わせ**: GEMMの再構築、JITコンパイル加速
+- **Unified Tensor Core Kernelライブラリ**: GEMM（FP8/FP4/BF16）、融合MoE（通信オーバーラップ）、MQAスコアリング、HyperConnection（HC）をCUDAコードベースに統合
+- ランタイムJITコンパイルでCUDAビルド不要に
+- **方向性**: MoEを「理論上は美しいが工学的に厄介」なアーキテクチャから「大規模高効率で稼働可能」な構造へ移行
+
+**出典**: 36kr 2026-05-27, GitHub DeepGEMM PR #304
+
+### ▼ 国家大基金リード: 700億元融資が最終段階へ（5月22-30日）
+
+DeepSeek設立以来初の外部融資が最終交渉段階に入った:
+
+- **融資規模**: 700億元（約100億ドル）— 中国AI企業史上最大
+- **投前估值**: 450億ドル（約3,057億元）— 1ヶ月で100億ドルから4.5倍に急騰
+- **梁文鋒個人出資**: 約200億元（融資額の40%）— AIスタートアップ史上最大
+- **国家大基金**（国家集成電路産業投資基金）: リード投資家（約100億元交渉）
+- **確定/有力参加者**: 騰訊（60億元で約2%）、IDG Capital、Monolith Capital（礪思資本）
+- **交渉中**: 寧徳時代/CATL、京東、網易
+- **資金使途**: 60-70%を算力クラスター建設（GPU/光モジュール/液冷等）
+- **梁文鋒の公約**: AGI追求最優先、短期商業化より技術進展、オープンソース継続
+- **国家AI産業投資基金**（大基金三期設立の600億規模ファンド）も参加交渉
+
+**戦略的意義**: 国家大基金が純粋大モデル企業に投資するのは12年史上初。DeepSeekが「国家級AI戦略プラットフォーム」に昇格するシグナル。
+
+**出典**: 36kr 2026-05-30, 財経, 彭博社 2026-05-22, 観察者網 2026-05-22, STCN 2026-05-26, 経済日報(台湾) 2026-05-22
+
+### ▼ V4-Flash OpenRouter世界1位、サービス制限と算力逼迫（5月下旬）
+
+- **5月25日週**: V4-Flashが週間3.43兆トークンでOpenRouter世界1位。DeepSeek系列全体で5.74兆トークン（2週連続Anthropic・Google超え）
+- **5月24日**: DAU 2億突破による大規模サービス不安定化
+- **5月29日**: 「重新生成」「修改消息」に回数制限導入（通常6回/セッション）。公式発表なし。算力逼迫による一時的措置と分析
+- **識圖モード**: 専門家モードでファイルアップ機能一時的停止
+- **下半期**: 華為昇騰超ノード新カード展開予定、算力大幅扩容見込み
+
+**出典**: 网易科技 2026-05-25, 36kr 2026-05-29, DEV Community 2026-05-30
+
+### ▼ V4.1 6月リリース計画: 全モーダル+MCP+エンタープライズツールチェーン
+
+次期バージョンV4.1は2026年6月リリース予定（確定日未発表）:
+
+- **全モーダル対応**: 画像入力（識圖モード統合）+ 音声入力
+- **MCPネイティブ対応**: DeepSeek史上初のModel Context Protocol標準サポート
+- **エンタープライズツールチェーン**: Fine-tuning、Private Deploy、Security Audit
+- **出力はテキストのみ**（生成型マルチモーダルへの第一歩）
+- アーキテクチャ: V4のCSA/HCA継承 + 100万トークンコンテキスト
+- DeepSeek TUI（ターミナルエージェント）などエコシステム拡大中
+
+**出典**: AIBase News 2026-05, Digital Tech Byte 2026-05
+
+## 出典
