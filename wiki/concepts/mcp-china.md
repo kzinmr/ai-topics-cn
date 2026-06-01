@@ -3,7 +3,7 @@ title: "MCP中国生态（Model Context Protocol在中国的采用状況）"
 type: concept
 tags: [mcp, chinese-ai, agent-protocol, a2a, standardization, tool-integration, github, enterprise]
 created: 2026-04-17
-updated: 2026-05-24
+updated: 2026-06-01
 source_lang: zh-CN
 ---
 
@@ -516,6 +516,83 @@ MCPのSTDIO転送機構に設計上のRCE脆弱性が内在。Anthropicは「期
 | npm SDKパッケージ | 53個 |
 | npmサーバパッケージ | 751個 |
 
+## 2026年5月24日〜6月1日更新 — 新プラットフォームと生態系の拡大
+
+### 1. 阿里「悟空」(Wukong) Agent OS + MCP広場（5月26日〜29日）⭐最重要
+
+阿里巴巴が新Agent OS「悟空」（Wukong）をリリース。OpenClaw（龙虾）に対抗するエコシステムとして位置づけられる。
+
+- **「悟空」の核心**: 釘钉（DingTalk）生態系と深く統合されたAgent OS。MCPをネイティブサポート
+- MCP広場を内包し、Agent発見・実行・管理を一元化
+- 開発者は「悟空」上でMCP Serverを公開・収益化可能
+- OpenClaw（龙虾）からの移行を促すプロモーション活動が活発化
+- **出典**: [掘金 — 体验完阿里「悟空」，我想把电脑里的龙虾换掉了](https://juejin.cn/post/7618418125198196779) (2026-05-26) [T2]
+
+### 2. Browser for AI Agent — MCPブラウザ操作ツール（5月26日）
+
+V2EXユーザーが「Browser for AI Agent」を公開。AIエージェントがブラウザのログイン状態を読み取り、Webページ上のツールをMCP経由で呼び出すことを可能に。
+
+- AIがユーザーの認証情報を共有せずにログイン済みページにアクセス
+- REST APIをMCPツールにラップ
+- **出典**: [V2EX](https://www.v2ex.com/t/1215754) (2026-05-26) [T1]
+
+### 3. Alibaba Qwen3.7Max / QwenPaw Agent（5月29日〜30日）
+
+Qwen3.7Maxが中国コミュニティでテストされ、「国产最佳、世界第二」と評価。同時にQwenPaw Agentの実装原理が掘削記事で詳細解説された。
+
+- QwenPaw AgentはMCPベースのツール呼び出しをネイティブサポート
+- **出典**: [掘金 — Qwen3.7Max測了一波](https://juejin.cn/post/7644794219849744394) [T1]
+- **出典**: [掘金 — QwenPaw Agent 实现原理深度剖析](https://juejin.cn/post/7645147490087403530) [T2]
+
+### 4. Anthropic Knowledge Work Plugins公開（5月26日）
+
+Anthropicが公式「Knowledge Work Plugins」（职能专家插件库）をリリース。MCP/Skills over MCPパッケージングの実装例として位置づけられ、各職能（人事、財務、エンジニアリング等）向けのMCP Serverテンプレートを含む。
+
+- **出典**: [掘金 — 一天一个开源项目（第112篇）](https://juejin.cn/post/7643831685151834118) (2026-05-26) [T2]
+
+### 5. AI Agent記憶システム設計比較（5月28日）
+
+「AI Agent记忆系统架构设计：OpenClaw、Claude Code、Hermes Agent深度对比」と題する詳細な比較記事が掘金で公開。3大AgentプラットフォームのMCP活用と記憶管理の差異を分析。
+
+- **出典**: [掘金](https://juejin.cn/post/7644628777114042420) (2026-05-28) [T2]
+
+### 6. LLM-as-Agent評価比較（5月30日、机器之心）
+
+机器之心が「LLM-as-Agent技术哪家强?」と題する分析記事を公開。主要LLMのMCPツール呼び出し能力を比較評価。Qwen、DeepSeek、GLM等の中国モデルのエージェント性能を測定。
+
+- **出典**: 机器之心 微信公众号 (2026-05-30) [T2]
+
+### 7. FastAPI脆弱性とAI Agentセキュリティ（5月28日、36kr）
+
+「3.25亿次周下载、FastAPI'地基'爆雷、这个Python框架曝出「致命漏洞」:一个字符，AI Agent集体"裸奔"?」— FastAPIの脆弱性がAI Agent/MCPエコシステム全体に影響を与える可能性を指摘。MCPインフラの依存関係リスクが浮き彫りに。
+
+- **出典**: [36kr](https://36kr.com/p/3828901167911812) (2026-05-28) [T1]
+
+### 8. MCP教育コンテンツの爆発的増加（5月24日〜31日）
+
+期間中、以下のMCP教育記事が継続的に出現（各日で重複掲載）:
+- 「AI Agent（写一个简易的MCP天气查询工具）」— MCP天気ツールのチュートリアル
+- 「手把手写一个MCP Server：从零到能用，只要 30 分钟」— MCP Server作成チュートリアル
+- 「一个程序员眼中的AI核心概念，讲透LLM、Agent、MCP、Skill、RAG」— 概念解説
+- 「用OpenClaw实现小红书自动发帖」— MCP + OpenClaw実践事例
+
+中国開発者コミュニティにおけるMCP学習リソースの成熟が顕著。
+
+### 9. Claude Opus 4.8リリースとAgent生態系への影響（5月28日〜29日）
+
+AnthropicがClaude Opus 4.8をリリース。Agent能力の向上（ツール呼び出し精度・長文脈処理）が中国コミュニティでも大きな話題に。MCPサーバーとの連携改善が期待される。
+
+- **出典**: [V2EX](https://www.v2ex.com/t/1216300) | [36kr](https://36kr.com/p/3829914029762434) [T1]
+
+### 10. 中国MCP生態系の総合動向（5月24日〜31日）
+
+- **DingTalk + MCP**: 阿里「悟空」Agent OSが钉钉（DingTalk）生態系とMCPを統合。WeChat/Feishuに続く3大プラットフォームのMCP化が加速
+- **QwenPaw Agent**: 阿里巴巴がQwenベースのAgent実装「QwenPaw」を公開。MCPネイティブ対応
+- **Coze（扣子）**: ByteDanceのCozeプラットフォームがKimi Code経由でMCP機能を拡張中
+- **OpenClaw発展**: 百度APPがOpenClawに正式対応（全ユーザー期間限定無料）、Rednote（小红书）との連携が注目
+- **価格競争**: DeepSeek永久値下げ、MiMo（小米）トークン無料配布など、中国MCPエコシステムのトークン価格競争が激化
+- **SEC開示余波**: Community BankのSEC 8-K開示（5月7日）に関する中国コミュニティでの議論が継続。MCP STDIO権限継承モデルのリスク認識が広まる
+
 ## 出典
 
 - [多智能体协同从概念验证到规模生产 (知乎)](https://zhuanlan.zhihu.com/p/2020234672798442229)
@@ -524,3 +601,7 @@ MCPのSTDIO転送機構に設計上のRCE脆弱性が内在。Anthropicは「期
 - [途牛MCP开放平台上线 (新浪财经)](https://finance.sina.com.cn/roll/2026-03-10/doc-inhqnmhx6391543.shtml)
 - [2026年企业级智能体平台选型指南 (BetterYeah)](https://www.betteryeah.com/blog/2026-enterprise-ai-agent-platform-selection-guide)
 - [Top 50 Most Popular MCP Servers 2026 (Reddit/中文)](https://www.reddit.com/r/mcp/comments/1s3fu45/top_50_most_popular_mcp_servers_in_2026/?tl=zh-hans)
+- [阿里悟空Agent OS (掘金)](https://juejin.cn/post/7618418125198196779)
+- [QwenPaw Agent实现原理 (掘金)](https://juejin.cn/post/7645147490087403530)
+- [AI Agent記憶システム設計比較 (掘金)](https://juejin.cn/post/7644628777114042420)
+- [FastAPI漏洞与AI Agent安全 (36kr)](https://36kr.com/p/3828901167911812)

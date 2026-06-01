@@ -1,5 +1,18 @@
 |
 
+|## [2026-06-01] active-crawl | china-ai-agent-ecosystem / mcp-china / coze
+
+### Wiki更新
+- `concepts/china-ai-agent-ecosystem.md` — **更新**: 百蝦大戦からプラットフォーマー時代へ移行。DeepSeek無料枠制限開始。MiniMax A株上場へ。阿里悟空Agent OS急浮上
+- `concepts/mcp-china.md` — **更新**: 阿里悟空MCP広場リリース。QwenPaw Agent。Anthropic Knowledge Work Plugins。Claude Opus 4.8
+- `concepts/coze.md` — **更新**: Coze 2.5静定期継続。競合阿里悟空・SenseTime動き活発化
+
+### hot-topics.yaml更新
+- china-ai-agent-ecosystem: last_crawled→2026-06-01、notes更新
+- mcp-china: last_crawled→2026-06-01、notes更新
+- coze: last_crawled→2026-06-01、notes更新
+
+|
 |## [2026-05-31] active-crawl | DeepSeek / OpenClaw / VRAM Optimization
 
 ### Wiki更新

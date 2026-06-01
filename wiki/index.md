@@ -1,7 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-05-31
+最終更新: 2026-06-01
 エンティティ: 62, コンセプト: 119, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-06-01 Active Crawl: china-ai-agent-ecosystem/mcp-china/coze）
+- `concepts/china-ai-agent-ecosystem.md` — **更新**: 百蝦大戦からプラットフォーマー時代へ移行。OpenClaw勢い減速。阿里悟空Agent OS急浮上。DeepSeek無料枠制限開始。MiniMax A株上場へ。OpenAI CodexがサードパーティAPI対応
+- `concepts/mcp-china.md` — **更新**: 阿里悟空MCP広場リリース。QwenPaw Agent。Anthropic Knowledge Work Plugins。Claude Opus 4.8。MCP教育コンテンツ急増
+- `concepts/coze.md` — **更新**: Coze 2.5静定期継続。競合阿里悟空・SenseTime動き活発化
 ### 本日更新（2026-05-31 Active Crawl: DeepSeek/OpenClaw/VRAM Optimization）
 - `concepts/deepseek.md` — **更新**: DeepSeek V4.1マルチモーダル版6月リリース予定確認(画像+音声+テキスト/MCP Agent/Engram Memory最適化)。テンセントが追加融資(評価額700億元/腾讯出資)。V4-Pro永久75%値下げ(世界最安値/入力3元)。Agent Harnessチーム崔添翼氏率いる(Jane Street出身/6-12ヶ月でDeepSeek Code製品化予定)。OpenRouter週間1位継続/3.43Tトークン。
 - `entities/openclaw.md` — **更新**: v2026.5.28/5.27連続リリース。マルチプロバイダー対応(Claude Opus 4.8/Fal Krea/NVIDIA/MiniMax/Codex Supervisor)。iOSアプリ/Command Workboard/ブラウザモーダル/Policyプラグイン。GitHub Stars 376K到達。主要開発者:@steipete/@yetval/@luoyanglang/@vincentk。

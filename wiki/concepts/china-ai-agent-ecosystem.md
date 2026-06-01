@@ -1,7 +1,7 @@
 ---
 title: "中国AI智能体生态 — 2026年プラットフォーム・アーキテクチャ・市場動向"
 created: 2026-04-19
-updated: 2026-05-23
+updated: 2026-06-01
 tags: [ai-agents, platform, china, ecosystem, low-code, enterprise, openclaw, harness, coding-agent, cli-revival]
 aliases: ["中国AI智能体生态", "中国Agentプラットフォーム", "Baidu AgentBuilder", "腾讯元器", "Coze", "Dify", "OpenClaw-CN", "龙虾大战"]
 source_lang: zh-CN
@@ -718,4 +718,14 @@ AI简报（yijunzhao.cn）の5月18日付分析による5大トレンド:
 | 搜狐 — 华为AgentArts开源 | [sohu.com/a/998987230_222256](https://www.sohu.com/a/998987230_222256) | T2 | 企业级智能体开源增强版5月 |
 | 新浪财经 — 字节AI预算2000亿 | [finance.sina.com.cn/stock/hyyj/2026-05-12/doc-inhxrwqf8226929.shtml](https://finance.sina.com.cn/stock/hyyj/2026-05-12/doc-inhxrwqf8226929.shtml) | T1 | AI全链路通胀・国産チップ比率向上 |
 | 网易 — 阿里云第五战役詳細 | [163.com/dy/article/KTIH6V8C05118K7K.html](https://m.163.com/dy/article/KTIH6V8C05118K7K.html) | T1 | 真武M890・Agent安全中心 |
-|
+| 36kr — DeepSeek制限強化 | [36kr.com/p/3831137120395271](https://36kr.com/p/3831137120395271) | T1 | DeepSeek再生・修正回数制限（5/30） |
+| 36kr — 上海大模型A株上市 | [36kr.com/p/3831159799834249](https://36kr.com/p/3831159799834249) | T1 | MiniMax推定の上海大模型企業A株上場（5/30） |
+| V2EX — Codex×DeepSeek API | [v2ex.com/t/1216862](https://www.v2ex.com/t/1216862) | T2 | CodexがDeepSeek等サードパーティAPI対応（5/31） |
+| V2EX — Hermes vs Claude Code | [v2ex.com/t/1216767](https://www.v2ex.com/t/1216767) | T2 | Hermes Agentが中国コミュニティで高評価（5/31） |
+| V2EX — MVP思维失效 | [v2ex.com/t/1216691](https://www.v2ex.com/t/1216691) | T2 | AI時代MVPパラダイム崩壊議論（5/30） |
+| V2EX — agentserver | [v2ex.com/t/1215157](https://www.v2ex.com/t/1215157) | T2 | 個人算力ネットワークOSS（5/24） |
+| V2EX — opencontext | [v2ex.com/t/1216583](https://www.v2ex.com/t/1216583) | T2 | クロスAgentコンテキストプロトコル（5/29） |
+| V2EX — 小龙虾为什么不火了 | [v2ex.com/t/1216575](https://www.v2ex.com/t/1216575) | T2 | OpenClawエコシステム冷却議論（5/29） |
+| Juejin — Kimi Code 0.4.0 | [juejin.cn/post/7645119497403858996](https://juejin.cn/post/7645119497403858996) | T2 | TypeScript化・ミリ秒起動（5/31） |
+| Juejin — DeepAgents middleware | [juejin.cn/post/7645617810041176102](https://juejin.cn/post/7645617810041176102) | T2 | マルチAgentミドルウェア（5/31） |
+||
