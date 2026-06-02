@@ -2,7 +2,7 @@
 title: "MiniMax Group（稀宇科技）— 中国AIユニコーン、Talkie・Hailuo AIでグローバル展開"
 created: 2026-06-02
 updated: 2026-06-02
-tags: [company, ai, llm, china, text-to-video, ai-character, generative-ai]
+tags: [company, ai, llm, china, text-to-video, ai-character, generative-ai, stock-100]
 aliases: ["MiniMax", "稀宇科技", "Xīyǔ Kējì", "MiniMax Group Inc."]
 source_lang: zh-CN
 ---
@@ -22,13 +22,23 @@ MiniMax Group Inc.（稀宇科技）は2021年12月に上海で設立された�
 
 2024年3月にAlibaba Groupが主導した$6億の資金調達で評価額$25億に達し、Hillhouse Investment、HongShan、IDG Capital、Tencentも参加した。2026年1月9日に香港証券取引所でIPO（SEHK:100）を果たし、中国AIスタートアップとして異例の早期上場を実現した。
 
+## 創設者
+
+| 名前 | 役職 | 背景 |
+|------|------|------|
+| 闫俊杰 (Yan Junjie) | CEO | SenseTime（商湯科技）出身のコンピュータビジョン研究者。Big Techから当初「詐欺師」呼ばわりされたが、現在の成功でその評価を覆した |
+| 杨斌 (Yang Bin) | 共同創設者 | SenseTime出身研究者 |
+| 周聿聪 (Zhou Yucong) | 共同創設者 | SenseTime出身研究者 |
+
 ## 主要製品
 
 ### Talkie / Xingye（星野）— AIキャラクターチャットアプリ
 
-MiniMaxの最初の製品は2022年10月にリリースされた**Glow**。AI仮想キャラクターとの会話アプリで、リリース4ヶ月で500万ユーザーを突破。2023年に中国アプリストアから削除された後、2つのブランドに再展開した：
+MiniMaxの最初の製品は2022年10月にリリースされた**Glow**。AI仮想キャラクターとの会話アプリで、リリース4ヶ月で500万ユーザーを突破。2023年3月に中国アプリストアから削除された。The Wire Chinaの報道によると、削除の理由はプラットフォーム上の性的コンテンツの蔓延が懸念されたためとされる（公式理由は発表されていない）。
 
-- **Talkie**（2023年6月）: 国際市場向け。2024年7月時点で米国エンタメ無料アプリTOPクラス、MAU約1,100万人。AIシミュレーション会話でDonald Trump、Taylor Swift、Elon Musk、LeBron Jamesなどのバーチャルキャラを提供
+その後、2つのブランドに再展開した：
+
+- **Talkie**（2023年6月）: 国際市場向け。2024年7月時点でWall Street Journalにより米国エンタメ無料アプリTOPクラスと報じられ、MAU約1,100万人。AIシミュレーション会話でDonald Trump、Taylor Swift、Elon Musk、LeBron Jamesなどのバーチャルキャラを提供
 - **Xingye / 星野**（2023年9月）: 中国市場向けリブランド
 
 ### Hailuo AI（海螺AI）— マルチモーダル生成プラットフォーム
@@ -41,6 +51,7 @@ MiniMaxの最初の製品は2022年10月にリリースされた**Glow**。AI仮
 | 2024年9月 | video-01発表（テキストtoビデオモデル/OpenAI Sora対抗） |
 | 2024年12月 | 英国放送局（Channel 4/5, ITV）ロゴ再現で注目 |
 | 2025年1月 | 音声機能追加 |
+| 2026年 | Hailuo 2.3リリース（最新バージョン） |
 
 ### LLMモデルシリーズ
 
@@ -54,9 +65,14 @@ MiniMaxの最初の製品は2022年10月にリリースされた**Glow**。AI仮
 | MiniMax-M2.7 | 2026年3月 | 自己改善型モデル |
 | MiniMax-M3.0 | 2026年6月 | フロントティア・コーディング、100万コンテキスト、ネイティブマルチモーダル |
 
-### MiniMax Agent
+### その他AI製品
 
-2026年に発表した自律型AIエージェント製品。
+| 製品 | バージョン | 概要 |
+|------|------------|------|
+| MiniMax Speech | 2.8 | 最新音声合成モデル |
+| MiniMax Music | 2.5+ | 音楽生成モデル |
+| MiniMax Agent | - | 自律型AIエージェント製品（2026年発表） |
+| MiniMax Talkie | - | AIキャラクターチャットアプリ |
 
 ## 開発歴史
 
@@ -115,6 +131,34 @@ AnthropicがMiniMax他2社の中国AI企業を非難。数千の不正アカウ�
 - [[Baichuan AI]] — 中国AI六小龍の一角
 - [[Kuaishou]] — Kling AIでテキストtoビデオ競合
 - [[ByteDance]] — Seedance/豆包で競合
+- [[MiHoYo]] — MiniMaxの初期出資者（原神開発元）
+- [[SenseTime]] — 創設者3名の出身企業
+
+## 業界での位置づけ
+
+### 中国AI六小龍
+
+MiniMaxは以下の5社と共に「中国AI六小龍（Six AI Tigers）」の一角を占める：
+
+| 企業 | 創設年 | 主力製品 | 特徴 |
+|------|--------|----------|------|
+| MiniMax | 2021 | Talkie, Hailuo AI, Mシリーズ | AIキャラクター + マルチモーダル |
+| Moonshot AI | 2023 | Kimi Chat | 長文脈LLM |
+| StepFun | 2023 | 躍問 | マルチモーダルLLM |
+| Baichuan AI | 2023 | 百川モデル | オープンソースLLM |
+| Zhipu AI | 2019 | GLM | 清華大学発、総合AI |
+| 01.AI | 2023 | Yiシリーズ | 李開復創業 |
+
+### 生成AIエコシステム（Wikipedia分類）
+
+| カテゴリ | MiniMax製品 | 競合 |
+|----------|-------------|------|
+| テキストモデル | M3.0, M2.7, M2.5 | GPT, Claude, Gemini, Qwen, DeepSeek |
+| 画像/ビデオ | Hailuo AI (video-01) | Sora, Kling AI, Dream Machine, Seedance |
+| 音声 | Speech 2.8 | ElevenLabs, Gemini Speech |
+| 音楽 | Music 2.5+ | Suno, Udio, Eleven Music |
+| エージェント | MiniMax Agent | Claude Code, Devin AI, Manus |
+| キャラクター | Talkie | Character.ai |
 
 ## Sources
 
