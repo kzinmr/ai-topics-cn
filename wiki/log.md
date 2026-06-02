@@ -2,17 +2,25 @@
 
 |
 
-## [2026-06-02] newsletter-triage | ChinAI #361
+|
 
-### Triage決定
-- **Take: 2** / Skip: 5
-- 1. Mary Clare McMahon「Can Huawei Take On Nvidia's CUDA?」— ChinAI #361掲載のCUDA vs CANN包括的分析（23K文字）
-- 2. 量子位「DeepSeek V4と昇騰の芯模协同」— 開発者大会2026レポート、AIGCode 65% MFU実績、銀行コアシステム99.999%稼働
+## [2026-06-02] active-crawl | china-local-deployment / vibe-coding-china
 
 ### Wiki更新
-- `concepts/gpu-sanctions-china.md` — **更新**: CANN 8.0と華為のCUDA対抗戦略セクション追加。CUDAの「三頭ヒドラ」分析、華為の三本柱戦略（CANN独自スタック、torch_npuアダプター、ONNX戦略）。AIGCodeケーススタディ（MFU 65%、CANNカバレッジ80-90%）。金融機関生産利用（初Token 500ms、日次260億Token、可用性99.999%、vLLM-Ascend 34件貢献）。開発者エコシステム規模（鯤鵬415万、昇騰410万、openEuler 1600万セット）
+- `concepts/china-local-deployment.md` — **更新**: CANN生態系成熟(鲲鹏昇腾开发者大会/70+大模型Day-0)。NVIDIA VR200冷却2ヶ月遅延。DeepSeek無料版制限強化。MiniMax M3(コーディング/100万ctx)。Qwen3.7-Max無料開放。百度APP×OpenClaw統合
+- `concepts/vibe-coding-china.md` — **更新**: 国産Agent世界第一梯队。GPT-5.5 DeepSWE逆転。Mythos Erdős予想解決。Opus 4.8(GPT-5.5敗北)。音声Vibe Coding台頭。Kimi Code 0.4.0。Codex 3rd party API対応。MiniMax M3(100万ctx)。Copilot Token課金移行
 
-## [2026-06-01] active-crawl | china-ai-agent-ecosystem / mcp-china / coze
+### hot-topics.yaml更新
+- china-local-deployment: last_crawled→2026-06-02、notes更新
+- vibe-coding-china: last_crawled→2026-06-02、notes更新
+
+|
+
+|
+
+|
+
+## [2026-06-02] newsletter-triage | ChinAI #361
 
 ### Wiki更新
 - `concepts/china-ai-agent-ecosystem.md` — **更新**: 百蝦大戦からプラットフォーマー時代へ移行。DeepSeek無料枠制限開始。MiniMax A株上場へ。阿里悟空Agent OS急浮上

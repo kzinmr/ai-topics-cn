@@ -308,9 +308,9 @@ topics:
       - "TriAttention v0.2.0 GA"
     wiki_pages:
       - concepts/china-local-deployment
-    notes: "2026.05.25更新: llama.cpp MTP投機的デコーディング対応(5/16/DS V4 Flash 1.7-2.2x)。Ollama v0.24.0 Codex App(5/14/iOS/Androidローカル推論)。Ollama v0.30.0-rc23(5/23/GGML完全廃止/llama.cpp一本化/新マルチモーダルエンジン)。MiniCPM-V 4.6(5/11/9.6B MoE/GPT-4o級性能1/50パラメータ)。GLM-5ローカルデプロイ戦略(5/21/400B-Q4×4x A100-80GB)。SGLang v0.5.12 HiCache正式対応(5/24/MegaMoE W4A16)。TriAttention v0.2.0 GA(5/22/SGLang対応/2.5x)。GitHub Spark Qwen3.6ローカル実行対応(5/19)。前回(5/19): Ollama v0.30.0-rc17。SGLang DeepSeek-V4最適化。Moore Threads MUSA統合。Kaiwu。oMLX。LocalClaw。ERNIE 5.1 GGUF/GPTQ。DS V4 TCO。"
+    notes: "2026.06.02更新: CANN生態系成熟(鲲鹏昇腾开发者大会/70+大模型Day-0)。NVIDIA VR200冷却遅延2ヶ月(中国チップ依存加速)。DeepSeek無料版制限強化(ローカル移行動機)。MiniMax M3発表(コーディング特化/100万コンテキスト)。Qwen3.7-Max無料開放。百度APP×OpenClaw統合。前回(5/25): llama.cpp MTP/Ollama v0.30/MiniCPM-V 4.6/GLM-5/SGLang HiCache/TriAttention v0.2.0。"
     added: 2026-04-17
-    last_crawled: 2026-05-25
+    last_crawled: 2026-06-02
 
   - slug: censorship-bypass
     title: "Censorship Bypass & Uncensored Models (审查绕过/去审查模型)"
@@ -491,9 +491,9 @@ topics:
       - "Claude Code pricing free tier 80 calls"
     wiki_pages:
       - concepts/vibe-coding-china
-    notes: "2026.05.26更新: Google I/O 2026 Antigravity 2.0(5/19-20/Vibe Coding as Default/Android完全生成/OS in 12h)。Anthropic Mythos 93.9% SWE-bench(5/22/Glasswing 10,000+脆弱性検出)。ProgramBench全モデル0%→GPT-5.5突破(5/23-25/0.5%初達成/推論時計算スケーリング)。Cursor $50B評価額($2B調達/70% Fortune 1000/SpaceX $60Bオプション)。Claude Code無料枠削減(250→80 calls/Codexカウンター)。Trae(ByteDance)5月アップデート(SOLO Mobile/Skills/600万+ユーザー)。36kr「Coding的中场战事」シリーズ(価格戦争/CTO批判)。2026.05.20更新: Karpathy Anthropic加入(5/19/Vibe Coding創始者/研究開発復帰/Claude事前学習研究)。腾讯吐司(Toast/应用宝)Vibe Coding製品公開(5/15〜18/真のAPK生成/蚂蚁灵光と差別化)。灵珠(Lingzhu)二测(招待コード撤廃/DS V4統合/単日Token 50億突破)。Sequoia AI Ascent Karpathy講演「锯齿状智能・認知債」—Vibe Coding→Agentic Engineering宣言。36kr三阶段衰退曲线(Node.js 1.9万行AI生成PR事件/OpenJS Foundation結論)。KDD 2026 Workshop SE 3.0定義(100万件Agent PRデータセット)。通义灵码2.5+Qwen3-Coder-Next(80B MoE/3B活性化/SWE-bench 70.6%)。V2EX「全职写代码感觉坚持不下去了」。" 
+    notes: "2026.06.02更新: 国産Agentモデル世界第一梯队。GPT-5.5 DeepSWE逆転。Mythos Erdős予想解決。Opus 4.8(GPT-5.5敗北)。音声Vibe Coding台頭。Kimi Code 0.4.0。Codex 3rd party API対応。MiniMax M3(100万ctx)。Copilot Token課金移行。前回(5/26): Google I/O Antigravity 2.0/Mythos/ProgramBench GPT-5.5/Cursor $50B/Claude Code無料枠削減。"
     added: 2026-04-17
-    last_crawled: "2026-05-26"
+    last_crawled: 2026-06-02
 
   - slug: china-ai-coding-assistants
     title: "Chinese AI Coding Assistants (国产AI编程助手)"

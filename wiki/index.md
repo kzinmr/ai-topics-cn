@@ -2,6 +2,10 @@
 
 最終更新: 2026-06-02
 エンティティ: 62, コンセプト: 119, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-06-02 Active Crawl: china-local-deployment/vibe-coding-china）
+- `concepts/china-local-deployment.md` — **更新**: CANN生態系成熟・NVIDIA VR200冷却遅延・DeepSeek無料版制限・MiniMax M3・Qwen3.7-Max無料開放・百度APP×OpenClaw統合
+- `concepts/vibe-coding-china.md` — **更新**: 国産Agent世界第一梯队・GPT-5.5 DeepSWE逆転・Mythos Erdős予想解決・Opus 4.8(GPT-5.5敗北)・音声Vibe Coding・Kimi Code 0.4.0・Codex 3rd party API・MiniMax M3・Copilot Token課金移行
+
 ### 本日更新（2026-06-02 Newsletter Ingest: ChinAI #361 — CANN vs CUDA・昇騰芯模协同）
 - `concepts/gpu-sanctions-china.md` — **更新**: ChinAI #361 Mary Clare McMahon分析（CUDAの三頭ヒドラ、CANN 8.0、torch_npuアダプター、ONNX戦略、開発者コミュニティ課題、AIGCode 65% MFU実績）。量子位「芯模协同」記事（DeepSeek V4と昇騰統合、銀行コアシステム99.999%稼働、vLLM-Ascend 34件貢献、開発者415万/410万/1600万セット）
 

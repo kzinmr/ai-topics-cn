@@ -1,7 +1,7 @@
 ---
 title: "Vibe Coding（氛围编程）— 中国での受容とAgentic Engineeringへの進化"
 created: 2026-04-17
-updated: 2026-05-26
+updated: 2026-06-02
 tags: [vibe-coding, ai-coding, chinese-ai, karpathy, agentic-engineering, paradigm-shift, intent-coding, cognitive-debt]
 aliases: ["氛围编程", "vibe coding", "意图编程", "Wish Coding", "认知债"]
 source_lang: zh-CN
@@ -420,7 +420,7 @@ Anthropicが2026年5月7日に開催したオンライン技術大会「Code w/ 
 - [[entities/qwen]] — Qwen3-Coderのコーディング競争
 - [[openclaw]] — Agent HarnessとしてのOpenClaw
 
-## 2026-05-13 ～ 2026-05-20 最新動向
+## 2026-05-26 ～ 2026-06-01 最新動向
 
 ### 1. 【超大ニュース】Karpathy、Anthropicに加入（2026-05-19）
 - **Andrej Karpathy**（OpenAI共同創業者、元Tesla AI責任者、「Vibe Coding」生みの親）が**Anthropic**に入社をXで発表
@@ -478,6 +478,114 @@ Anthropicが2026年5月7日に開催したオンライン技術大会「Code w/ 
 2. **プロ開発者向けパラダイムシフト**：KarpathyのAnthropic移籍 + Agentic Engineering宣言により、Vibe Codingから工程化エージェント開発への移行が加速
 3. **業界論争**：Node.js PR事件が「AIコード品質 vs レビューコスト」問題を顕在化、業界全体の課題に
 4. **国内モデル進化**：通义灵码(Qwen3-Coder-Next全体80B/活性化3B)がAgentic Coding特化OSSモデルを発表、DeepSeek V4も実用投入
+
+---
+
+## 2026-05-26 ～ 2026-06-01 最新動向
+
+### 1. 国産Agentモデルが世界第一梯队に突入（2026-05-26）
+- **量子位/36kr**報道：国産AgentモデルがOpenClaw、Claude Code、Hermes等に深度适配し、グローバル第一梯队入り
+- **限時無料提供**開始、Agent専用最適化モデルとして中国コミュニティで注目
+- 出典：[36kr](https://36kr.com/p/3825582437536391)
+
+### 2. GPT-5.5 vs Claude — New DeepSWE Benchmarkで逆転（2026-05-27）
+- **新智元/36kr**報道：新ベンチマーク**DeepSWE**が旧AIコーディングランキングを覆す
+- GPT-5.5がClaudeを抜いて首位に返り咲き、旧ベンチマークの信頼性に疑問符
+- GPT-5.5の価格が**2倍**、Geminiが**3倍**に高騰（2026-05-28）
+- 出典：[36kr - GPT-5.5反杀Claude](https://36kr.com/p/3827435586736777), [GPT-5.5翻倍](https://36kr.com/p/3828666972492680)
+
+### 3. Claude Mythos、Erdősの80年予想をオフライン解決（2026-05-27）
+- **新智元/36kr**：Claude Mythosがネット接続なしで**Erdős単位距離予想**を独自に証明
+- OpenAIの解法より**短く・美しい**証明を生成、数学界に衝撃
+- 出典：[36kr](https://36kr.com/p/3827354186847105)
+
+### 4. DeepSeek 研究員、AIと共同で論文執筆 — 99%がAgent生成（2026-05-27）
+- **机器之心/36kr**：DeepSeekのChen Deli（陈德里）が2つのAIエージェントと共同で**46ページの論文**を執筆
+- 論文内容の**99%がAgentによって生成**、6日間で完成
+- AIがAI自身を研究するというメタ的なパラダイムシフトを象徴
+- 出典：[36kr](https://36kr.com/p/3826918146691721)
+
+### 5. 国産AIプログラミングツールが世界第2位にランクイン（2026-05-28）
+- **愛範儿/36kr**：国産AIコーディングツール全体が世界第2位に浮上
+- 5大モデルを実機比較し、Vibe Codingにおける性能を検証
+- 出典：[36kr](https://36kr.com/p/3828430341542789)
+
+### 6. Claude Code「自癒（Self-Healing）」機能発表（2026-05-28）
+- **新智元/36kr**：Claude Codeが**自己修復機能**をリリース、開発者の6大悪夢を解決
+- AIが自身の生成コードのバグを自律的に検出・修正する新機能
+- 出典：[36kr](https://36kr.com/p/3828807269274503)
+
+### 7. Anthropic Opus 4.8 リリース（2026-05-29）
+- **AnthropicがClaude Opus 4.8**を公開、能力と推論行動のアップグレード版
+- ただしGPT-5.5に**重要な指標で敗北**（SWE-bench等）
+- **Claude Opus 4.8の特性**：
+  - 「わからない」と認める能力が向上
+  - 話し方がより人間らしく・時に辛辣に
+  - 中国語で「我是Qwen」と自己紹介するバグがV2EXで話題に
+- **Anthropic valuation**が**約1兆ドル**に接近、世界で最も価値あるAIスタートアップに
+- 出典：[36kr - Opus 4.8](https://36kr.com/p/3829696165488008), [36kr - 超越OpenAI](https://36kr.com/p/3829988427409033)
+
+### 8. 音声Vibe Codingの台頭 — 「打工人がパソコンに向かってブツブツ」（2026-05-29）
+- **36kr**：AI大モデルが音声入力を新しいオフィススタイルに変えつつある
+- 過去20年間、音声入力は補助機能だったが、AI大モデルによりVibe Codingの主要インターフェースに
+- 「越来越多打工人对着电脑嘀嘀咕咕」— 働く人々がパソコンに向かって話す新しい風景
+- 出典：[36kr](https://36kr.com/p/3830314735380096)
+
+### 9. Kimi Code 0.4.0 & 月之暗面の動き（2026-05-29）
+- **月之暗面（Moonshot AI）**が**Kimi Code 0.4.0**をリリース
+- 完全TypeScript採用、**ミリ秒級起動**を実現
+- ターミナルAIコーディングアシスタントとしてClaude Code/Codexと競合
+- 出典：[juejin](https://juejin.cn/post/7645119497403858996)
+
+### 10. CodexがDeepSeek等のサードパーティAPIをサポート（2026-05-31）
+- **V2EX報告**：OpenAI CodexがDeepSeek V4等の外部APIへの接続を解禁
+- 中国開発者がCodex上で国産モデルを利用可能に
+- 出典：[V2EX](https://www.v2ex.com/t/1216862)
+
+### 11. 「Claude CodeよりHermesの方が賢い？」— V2EXで比較議論（2026-05-31）
+- V2EXスレッド：同じモデルでもClaude Codeは途中で止まるが、**Hermes Agentは最後まで結果を出せる**
+- 中国開発者コミュニティでAI CLIツール間の知能差がホットトピックに
+- 出典：[V2EX](https://www.v2ex.com/t/1216767)
+
+### 12. MiniMax M3 リリース — 「国産モデルで最も全能工程师に近い」（2026-06-01）
+- **MiniMax**が**M3大モデル**を正式発表、以下の特徴で注目：
+  - **フロンティアCoding能力**
+  - **Agentic能力**（自律エージェント動作）
+  - **100万トークン超長コンテクスト**
+- 掘金レビュー：「这可能是国产模型里最接近'全能工程师'的一次」
+- 出典：[juejin](https://juejin.cn/post/7646060500482637862)
+
+### 13. Codex 500万ユーザー特典騒動 — Claude Codeが90%近くのTokenを消費（2026-06-01）
+- **InfoQ/36kr**：Codexが500万ユーザー向け特典を発表するも、「作秀（パフォーマンス）」と批判される
+- **Claude Code**がToken消費の**90%近く**を占める実態が判明
+- OpenAIの**無料枠縮小**（月1回リセットに変更）が更なる批判を呼ぶ
+- 出典：[36kr](https://36kr.com/p/3834335487501958)
+
+### 14. Copilot、Token課金制に正式移行（2026-06-01）
+- **V2EX報告**：GitHub CopilotがTokenベースの課金に正式移行
+- 2026年6月1日より全ユーザーに適用開始
+- 出典：[V2EX](https://www.v2ex.com/t/1216878)
+
+### 15. V2EXコミュニティの議論（2026-05-26～06-01）
+- **「現在哪个国产大模型可以拿来踏踏实实的写代码了吗？」**（6/1）— 国産モデルの実用性を問う主要スレッド
+- **「我的AI(LLM)和vibe coding使用技巧已经落伍了吗」**（5/27）— MCP・知識ベース等の新概念に取り残される不安
+- **「大家用WSL2跑CodeAgent/Harnss的话…」**（6/1）— CodeAgent実行環境の実践的議論
+- **「AI把我调教了，从0消费到月消费1200元」**（5/29）— AIツール依存とコスト増大の実体験
+- **「一文讲透企业级Harness Coding架构落地实战」**（6/1）— エンタープライズHarness Coding実践
+
+### 16. 企業向けHarness Codingの実践的議論（2026-06-01）
+- V2EXで**エンタープライズHarness Codingアーキテクチャ**の実装記事が話題に
+- AI Coding Agentの企業導入における実践的フレームワークが中国コミュニティで初めて体系的に提示された
+- 出典：[V2EX](https://www.v2ex.com/t/1217155)
+
+### 2026年5月末〜6月初頭の総括
+
+1. **モデル競争の激化**：GPT-5.5 vs Claude Mythos/Opus 4.8のベンチマーク戦争が激化。新ベンチマークDeepSWE登場で勢力図が流動化
+2. **国産モデルの躍進**：MiniMax M3、国産Agentモデル、通义灵码、Kimi Code 0.4.0と中国勢が続々と新製品を投入
+3. **Agentエコシステムの成熟**：CodexがDeepSeek対応、CopilotがToken課金化、OpenClawが百度APPに統合されるなど、Agent実行基盤が拡大
+4. **音声Vibe Codingの出現**：音声入力がVibe Codingの新インターフェースとして注目され始める
+5. **価格戦争とToken経済**：GPT-5.5の値上げ、Claude CodeのToken消費優位性、Codexの無料枠縮小など、Token経済の現実が顕在化
+6. **開発者の不安と適応**：V2EXでは「スキル陳腐化不安」「月額コスト増大」「国産モデルの実用性」など現実的な議論が活発化
 
 ## 出典
 
