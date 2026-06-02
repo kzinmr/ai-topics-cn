@@ -1,164 +1,128 @@
 ---
-title: MiniMax (稀宇科技) — 中国マルチモーダル生成AI企業
-created: 2026-04-18
-updated: 2026-04-19
-tags: [company, ai, llm, china, multimodal, startup, model]
-aliases: ["MiniMax", "稀宇科技", "MiniMax AI"]
+title: "MiniMax Group（稀宇科技）— 中国AIユニコーン、Talkie・Hailuo AIでグローバル展開"
+created: 2026-06-02
+updated: 2026-06-02
+tags: [company, ai, llm, china, text-to-video, ai-character, generative-ai]
+aliases: ["MiniMax", "稀宇科技", "Xīyǔ Kējì", "MiniMax Group Inc."]
 source_lang: zh-CN
 ---
 
-# MiniMax (稀宇科技) — 中国マルチモーダル生成AI企業
+# MiniMax Group（稀宇科技）— 中国AIユニコーン、Talkie・Hailuo AIでグローバル展開
 
-> **胡润ランク**: トップ10（2025年）
-> **拠点**: 上海
-> **ソース**: 胡润研究院《2025胡润中国人工智能企业50強》、ChinAI #336
-> **重要度**: 高 — 中国で最も「OpenAIに近い」マルチモーダル生成AI企業
-> **ARR**: ~$100M（2025年）、中国生成AI企業で最高水準
-> **推論コスト**: $3.6M/月（H20 2,000基相当）、OpenAIの1/50以下
+> **Founder**: 闫俊杰 (Yan Junjie, CEO)、杨斌 (Yang Bin)、周聿聪 (Zhou Yucong)
+> **Founded**: 2021年12月、上海
+> **Employees**: 200+ (2025)
+> **IPO**: 2026年1月9日、香港証券取引所 (SEHK:100)
+> **Valuation**: $2.5B (2024年3月/Alibabaラウンド)
+> **重要度**: 高 — 中国AI六小龍の一角。AIキャラクターチャットで世界的成功、テキストtoビデオ・LLM分野でも急成長。2026年に香港IPOを果たした数少ない中国AIスタートアップ。
 
 ## 概要
 
-MiniMax（稀宇科技）は、中国のマルチモーダル生成AI企業。胡润AI50強の**トップ10入り**。テキスト・音声・画像のマルチモーダル生成に強み。ChinAI #336では「中国のOpenAI」として詳細に分析された。
+MiniMax Group Inc.（稀宇科技）は2021年12月に上海で設立された人工知能企業。創業者の闫俊杰（Yan Junjie）CEOはSenseTime（商湯科技）出身のコンピュータビジョン研究者で、同社から楊斌、周聿聡と共に独立した。社名はゲーム理論のミニマックス法に由来する。
 
-## モデルラインナップ
+2024年3月にAlibaba Groupが主導した$6億の資金調達で評価額$25億に達し、Hillhouse Investment、HongShan、IDG Capital、Tencentも参加した。2026年1月9日に香港証券取引所でIPO（SEHK:100）を果たし、中国AIスタートアップとして異例の早期上場を実現した。
 
-### M1 / M2 / M2.5 / M2.7
+## 主要製品
 
-| モデル | リリース | アーキテクチャ | パラメータ | コンテキスト | ライセンス |
-|--------|---------|--------------|-----------|-------------|-----------|
-| **MiniMax-M1** | 2025年1月 | MoE | 456B（アクティブ4.6B） | — | — |
-| **MiniMax-M2** | 2025年8月 | MoE | — | — | — |
-| **MiniMax-M2.5** | 2026年2月12日 | MoE (256E/8A) | 230B（アクティブ**10B**） | 197K | Open weights |
-| **MiniMax-M2.7** | 2026年3月17日 | MoE (proprietary) | 非公開（アクティブ**10B**） | ~200K | Proprietary API |
+### Talkie / Xingye（星野）— AIキャラクターチャットアプリ
 
-### M2.7 — セルフ進化エージェントモデル
+MiniMaxの最初の製品は2022年10月にリリースされた**Glow**。AI仮想キャラクターとの会話アプリで、リリース4ヶ月で500万ユーザーを突破。2023年に中国アプリストアから削除された後、2つのブランドに再展開した：
 
-M2.7はMiniMaxの次世代フラッグシップテキストモデル。**OpenClaw（Agent Harness）フレームワーク**上で訓練中に100回以上のスクaffold最適化サイクルを自律実行し、内部評価で30%の性能向上を達成。人間の介入なしに自己改善する初のモデル。
+- **Talkie**（2023年6月）: 国際市場向け。2024年7月時点で米国エンタメ無料アプリTOPクラス、MAU約1,100万人。AIシミュレーション会話でDonald Trump、Taylor Swift、Elon Musk、LeBron Jamesなどのバーチャルキャラを提供
+- **Xingye / 星野**（2023年9月）: 中国市場向けリブランド
 
-- **SWE-Pro**: 56.22%（Claude Opus 4.6の~57%に肉薄）
-- **SWE-bench Verified**: 78%（Opus 4.6の55%を大きく上回る）
-- **Terminal Bench 2**: 57.0%
-- **VIBE-Pro**（エンドツーエンドプロジェクト配信）: 55.6%
-- **GDPval-AA**（オフィス業務）: ELO 1495（オープンソースモデル中最上位）
-- **スキル遵守率**: 40以上の複雑タスク（各2000トークン超）で97%
-- **MLE-Bench Lite**: メダル率66.6%（Gemini 3.1と並ぶ、GPT-5.4の71.2%に迫る）
+### Hailuo AI（海螺AI）— マルチモーダル生成プラットフォーム
 
-### M2.5 vs 他モデル（Vals AIベンチマーク）
+2024年3月に開始したテキスト・音楽生成LLMプラットフォーム。主なマイルストーン：
 
-| ベンチマーク | Claude Opus 4.6 | M2.5 | M2.7 |
-|-------------|----------------|------|------|
-| Vals Index | **65.98%** | 53.57% | 59.58% |
-| SWE-bench | **79.20%** | 70.40% | 73.80% |
-| Terminal-Bench 2.0 | **58.43%** | 41.57% | 47.19% |
-| LiveCodeBench v6 | **84.68%** | 79.21% | 79.93% |
+| 時期 | マイルストーン |
+|------|----------------|
+| 2024年3月 | Hailuo AIローンチ（テキスト・音楽生成） |
+| 2024年9月 | video-01発表（テキストtoビデオモデル/OpenAI Sora対抗） |
+| 2024年12月 | 英国放送局（Channel 4/5, ITV）ロゴ再現で注目 |
+| 2025年1月 | 音声機能追加 |
 
-M2.7はアクティブパラメータ10Bという小型モデルでありながら、Tier-1性能クラスの他モデルと同等かそれ以上のスコアを達成。
+### LLMモデルシリーズ
 
-### コストパフォーマンス — 真の破壊力
+| モデル | リリース | 概要 |
+|--------|----------|------|
+| ABAB 6.5 | 2024年4月 | MoE言語モデル |
+| MiniMax-01 | 2025年1月 | Text-01（汎用）+ VL-01（視覚対応） |
+| Speech-02 | 2025年4月 | テキストto音声（30言語以上対応、20万文字一括処理） |
+| MiniMax-M1 | 2025年6月 | DeepSeekから中国LLM王座奪取、真のオープンソース |
+| MiniMax-M2.5 | 2026年2月 | M2.5 Lightning併せ発表（Claude Opus 4.6の1/20コストでSOTA迫る） |
+| MiniMax-M2.7 | 2026年3月 | 自己改善型モデル |
+| MiniMax-M3.0 | 2026年6月 | フロントティア・コーディング、100万コンテキスト、ネイティブマルチモーダル |
 
-| 指標 | M2.7 | Claude Opus 4.6 | GPT-5 |
-|------|------|----------------|-------|
-| 推論速度 | **100 TPS** | ~33 TPS | ~40 TPS |
-| 入力コスト | **$0.30/M** | $15/M | $10/M |
-| 出力コスト | **$1.20/M** | $75/M | $30/M |
-| 実効コスト（キャッシュ利用）| **$0.06/M** | — | — |
+### MiniMax Agent
 
-M2.7はOpus 4.6の**1/50の入力コスト、1/60の出力コスト**で同等のSWE-Proスコア。3倍高速。エージェント大量実行における経済性が桁違い。
+2026年に発表した自律型AIエージェント製品。
 
-### マルチモーダルAPI（Token Plan）
+## 開発歴史
 
-MiniMax Token Planで利用可能な機能（2026年4月時点）:
+| 時期 | マイルストーン |
+|------|----------------|
+| 2021年12月 | 上海で設立（SenseTime出身研究者3名） |
+| 2022年10月 | Glow（AIキャラクターチャット）リリース |
+| 2023年3月 | Glowが中国アプリストアから削除 |
+| 2023年6月 | Talkie（国際市場）ローンチ |
+| 2023年9月 | 星野（Xingye、中国市場）ローンチ |
+| 2024年3月 | Alibaba主導$600M調達、評価額$2.5B |
+| 2024年4月 | ABAB 6.5シリーズ発表（MoE） |
+| 2024年9月 | Hailuo AI video-01発表 |
+| 2025年1月 | MiniMax-01（Text-01 + VL-01）発表 |
+| 2025年6月 | MiniMax-M1発表（オープンソース/中国LLM上位） |
+| 2025年9月 | Disney/Universal/WBDがHailuo AI著作権訴訟 |
+| 2026年1月 | **香港IPO（SEHK:100）** |
+| 2026年2月 | AnthropicがMiniMax他2社にデータ収集疑惑で非難 |
+| 2026年2月 | M2.5 + M2.5 Lightning発表 |
+| 2026年3月 | M2.7発表 |
+| 2026年6月 | M3.0発表（1Mコンテキスト/ネイティブマルチモーダル） |
 
-- **Text-to-Speech HD**: speech-2.8-hd — 中国語多音字の正確率で業界最高評価。AI動画生成で主力採用
-- **music-2.6**: 音楽生成
-- **music-cover**: 楽曲カバー生成
-- **lyrics_generation**: 歌詞生成
-- **image-01**: 画像生成
-- **coding-plan-vlm**: Vision-Language Model（コーディング用）
-- **coding-plan-search**: 検索拡張コーディング
+## 資金調達と投資家
 
-V2EXでの実ユーザー報告: Hermes Agentと組み合わせてブログ自動生成・画像生成・音楽制作の全パイプラインをMiniMax単体で構築した事例あり（[[harness-engineering]]）。ただし複雑なエージェントタスクでは「新兵蛋子（新兵）」のように要求を無視して突っ走る傾向も報告され、GPTに切り替えて10分で解決したケースもある。
+- **MiHoYo**: 初期出資（ゲーム会社「原神」の開発元）
+- **2023年6月**: Tencent支援エンティティ他から$2.5億以上調達
+- **2024年3月**: Alibaba Group主導$6億、評価額$25億（Hillhouse, HongShan, IDG Capital, Tencent参加）
+- **2026年1月**: 香港証券取引所でIPO（SEHK:100）
 
-> [!warning] M2.7の実用上の課題]
-> V2EXユーザー(superfat)の報告: 「claudecode+minimax2.7を使っていたが、少し複雑な要求だと対応できない。菜鸟（ひよっこ）のようにとにかく突っ走る。GPTに切り替えて10分で解決」
-> → エージェントHarnessでの使用には注意が必要。単純タスクでは優秀だが、複雑な指示追従で課題。
+## 法的課題
 
-## 資金調達とバリュエーション
+### 著作権訴訟（2025年9月）
 
-| 時期 | 金額 | バリュエーション | リード投資家 |
-|------|------|-----------------|-------------|
-| 2024年1月 | $600M | $2.5B | Alibaba |
-| 2025年2月 | $700M+ | — | General Catalyst, Alibaba |
+Disney、Universal Pictures、Warner Bros. Discoveryが米国でHailuo AIを相手取り著作権侵害訴訟を提起。AI生成動画における既存キャラクターの無断使用が争点。
 
-- **累計資金**: $1.3B以上
-- **2025年ARR**: ~$100M（中国生成AI企業で最高水準）
-- **OpenAI比較**: OpenAIの$13.7B ARRには及ばないが、中国トップ
+### Anthropicデータ収集疑惑（2026年2月）
 
-## 資本効率 — OpenAIとの比較
+AnthropicがMiniMax他2社の中国AI企業を非難。数千の不正アカウントを通じてClaudeと1,600万件以上のインタラクションを生成し、自社LLMの改善に「蒸留（distillation）」を使用したと主張。
 
-ChinAI #336の分析によると:
+## 競合比較
 
-- **OpenAI**: $100B+投資、$13.7B ARR（2025年）、H100 200,000基相当
-- **MiniMax**: ~$5B投資、$100M ARR、推論コスト$3.6M/月（H20 2,000基相当）
-- **効率性**: MiniMaxはOpenAIの1/20〜1/50のリソースで同等の製品体験を提供
+| 企業 | 主力製品 | 路線 |
+|------|----------|------|
+| **MiniMax** | Talkie, Hailuo AI, Mシリーズ | AIキャラクター + マルチモーダル生成 + OSS LLM |
+| **Moonshot AI (Kimi)** | Kimi Chat | 長文脈LLM、AIアシスタント |
+| **StepFun (階躍星辰)** | 躍問 | マルチモーダルLLM |
+| **Baichuan AI (百川智能)** | 百川モデル | OSS LLM |
+| **Kuaishou (快手)** | Kling AI | テキストtoビデオ |
+| **ByteDance** | Seedance / 豆包 | テキストtoビデオ + AIアシスタント |
 
-## 市場ポジション
+## 関連
 
-- 中国マルチモーダルAI分野のリーディングカンパニー
-- Kimi（月之暗面）の月間アクティブユーザー5倍の収益規模
-- 中国の生成AIスタートアップで最も「OpenAIに近い」ビジネスモデル
+- [[Anthropic]] — 2026年2月にデータ蒸留疑惑で非難
+- [[Moonshot AI]] — 中国AI六小龍の一角、Kimi開発元
+- [[StepFun]] — 同世代中国LLMスタートアップ
+- [[Baichuan AI]] — 中国AI六小龍の一角
+- [[Kuaishou]] — Kling AIでテキストtoビデオ競合
+- [[ByteDance]] — Seedance/豆包で競合
 
-## 関連企業
+## Sources
 
-- **月之暗面** (Kimi): AIGC大模型企業（トップ50入り） — [[minimax-vs-kimi-moonshot]]
-- **阶跃星辰**: AIGC大模型企業（2023年設立）
-
-## Alibaba Cloud × MiniMax — Harness Eraのインフラ（2026-04）
-
-ChinAI #355で報じられた、MiniMaxとAlibaba Cloudの戦略的パートナーシップ。MaxClaw・MaxHermesエージェントの**クラウド実行基盤**をAlibaba ACK/ACSで再構築した事例。
-
-### 4つの企業級鴻沟とAlibabaの破局策
-
-| 鴻沟 | 課題 | Alibaba ACK/ACSの解決策 |
-|------|------|------------------------|
-| **安全境界** | OpenClaw/Hermesは直接ホストOSで実行、Shell権限・ファイル读写・prompt injectionリスク（CVE 82件） | ACS Agent Sandboxで**MicroVMレベルの隔离**。各インスタンス独立カーネル、ESSD暗号化ストレージ、TrafficPolicyデフォルト拒否 |
-| **状態揮発性** | 長時間タスクでコンテキスト消失、インスタンス再起動で進捗ロスト | 階層型永続化: ESSD（設定/キー/短期記憶）+ NAS共有（Skills/ワークフロー）+ PolarDB/Tair（構造化データ） |
-| **大規模クラスター運用** | 数十万Agentの統一调度が单机フレームワークでは不可能 | ACK（制御面）+ ACS（実行面）の分離。メッセージ配信・タスク編成・ポリシー下发・状態管理を統一プラットフォーム化 |
-| **コスト対負荷変動** | 常駐Agentのidleコスト + 突发時のCPU/Memory急増 | ACS**カスタムテンプレート预热**（20-40msインスタンス供給）、**最大15,000沙箱/分**の弾性スケール。タスク終了時自動解放 |
-
-### アーキテクチャ概要
-
-```
-制御面 (ACK)
-├── メッセージ配信
-├── タスク編成
-├── ポリシー下发
-├── 状態管理
-└── 運行観測
-
-実行面 (ACS Agent Sandbox)
-├── MicroVM隔离（各インスタンス独立カーネル）
-├── ESSD暗号化ストレージ
-├── NAS共有スペース（Skills/ワークフロー）
-├── 独立弾性NIC
-└── ランタイムCheckpoint
-```
-
-### IDC/Gartner予測との関連
-
-- **IDC FutureScape 2026**: 2027年までに全球2000強企業のAgent使用量**10倍増**、Token/API调用負荷**1000倍増**。推論が最大AIワークロード（47%）
-- **Gartner**: 2028年までに新規AIデプロイの**95%**がKubernetes環境で実行
-- Alibaba ACK/ACSは「**AI超級計算機のクラウドネイティブOS**」として位置づけ
-
-### 出典
-
-- [ChinAI #355: An Alliance for AI's "Harness Era" — MiniMax + Alibaba Cloud](https://substack.com/home/post/p-194618013) — Jeff Ding
-- [机器之心: MiniMax + 阿里云 — AI Agent基础设施重构](https://mp.weixin.qq.com) — 技術深度解析
-
-## 関連ページ
-
-- [[minimax-vs-kimi-moonshot]] — MiniMax vs Kimi/Moonshot詳細比較
-- [[harness-engineering]] — M2.7がOpenClawフレームワークで自己進化訓練、MaxClaw/MaxHermesのクラウド運用
-- [[coding-plan]] — MiniMaxもToken Planでコーディングサービス提供
-- [[ai-video-generation]] — speech-2.8-hdがTTS主力として採用
-- [[xiaoice]] — Microsoft系AI人材の中国エコシステム
+- https://en.wikipedia.org/wiki/MiniMax_Group — Wikipedia記事（会社概要、製品、法的問題）
+- https://www.bloomberg.com/news/articles/2024-03-05/alibaba-backs-2-5-billion-ai-firm — Bloomberg（Alibaba $600M出資）
+- https://www.scmp.com/tech/startups/article/mini-max-chinese-ai-tiger-launches-text-to-video — SCMP（video-01発表）
+- https://www.wsj.com/tech/ai/one-of-americas-hottest-entertainment-apps-is-chinese-owned — WSJ（Talkie 11M MAU）
+- https://www.reuters.com/technology/disney-universal-warner-bros-discovery-sue-chinas-minimax-copyright-infringement — Reuters（著作権訴訟）
+- https://www.nytimes.com/2026/02/23/technology/anthropic-accuses-chinese-companies-data.html — NYT（Anthropic非難）
+- https://www.register.co.uk/2025/06/17/minimax-m1-model-claims-chinese-llm-crown — The Register（M1発表）
+- https://venturebeat.com/ai/minimax-m2-5-lightning — VentureBeat（M2.5発表）

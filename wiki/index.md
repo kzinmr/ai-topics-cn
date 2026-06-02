@@ -227,7 +227,7 @@
 - [[metax|metax]]
 - [[mike-stonebraker|Mike Stonebraker（マイク・ストーンブレーカー）— データベースの父、AI Agentへの警鐘]]
 - [[mediatek|MediaTek（聯発科技）— TSMC CoWoSベテラン陣営でGoogle TPU参入、Broadcomに対抗]]
-- [[minimax|minimax]]
+- [[minimax|MiniMax Group（稀宇科技）— 中国AI六小龍、Talkie/Hailuo AI/SEHK:100]]
 - [[moore-threads|moore-threads]]
 - [[openai|openai]]
 - [[openclaw|openclaw]]
