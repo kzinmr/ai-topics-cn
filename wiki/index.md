@@ -1,7 +1,10 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-06-01
+最終更新: 2026-06-02
 エンティティ: 62, コンセプト: 119, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-06-02 Newsletter Ingest: ChinAI #361 — CANN vs CUDA・昇騰芯模协同）
+- `concepts/gpu-sanctions-china.md` — **更新**: ChinAI #361 Mary Clare McMahon分析（CUDAの三頭ヒドラ、CANN 8.0、torch_npuアダプター、ONNX戦略、開発者コミュニティ課題、AIGCode 65% MFU実績）。量子位「芯模协同」記事（DeepSeek V4と昇騰統合、銀行コアシステム99.999%稼働、vLLM-Ascend 34件貢献、開発者415万/410万/1600万セット）
+
 ### 本日更新（2026-06-01 Active Crawl: china-ai-agent-ecosystem/mcp-china/coze）
 - `concepts/china-ai-agent-ecosystem.md` — **更新**: 百蝦大戦からプラットフォーマー時代へ移行。OpenClaw勢い減速。阿里悟空Agent OS急浮上。DeepSeek無料枠制限開始。MiniMax A株上場へ。OpenAI CodexがサードパーティAPI対応
 - `concepts/mcp-china.md` — **更新**: 阿里悟空MCP広場リリース。QwenPaw Agent。Anthropic Knowledge Work Plugins。Claude Opus 4.8。MCP教育コンテンツ急増

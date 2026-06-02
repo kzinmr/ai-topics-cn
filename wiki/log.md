@@ -1,6 +1,18 @@
 |
 
-|## [2026-06-01] active-crawl | china-ai-agent-ecosystem / mcp-china / coze
+|
+
+## [2026-06-02] newsletter-triage | ChinAI #361
+
+### Triage決定
+- **Take: 2** / Skip: 5
+- 1. Mary Clare McMahon「Can Huawei Take On Nvidia's CUDA?」— ChinAI #361掲載のCUDA vs CANN包括的分析（23K文字）
+- 2. 量子位「DeepSeek V4と昇騰の芯模协同」— 開発者大会2026レポート、AIGCode 65% MFU実績、銀行コアシステム99.999%稼働
+
+### Wiki更新
+- `concepts/gpu-sanctions-china.md` — **更新**: CANN 8.0と華為のCUDA対抗戦略セクション追加。CUDAの「三頭ヒドラ」分析、華為の三本柱戦略（CANN独自スタック、torch_npuアダプター、ONNX戦略）。AIGCodeケーススタディ（MFU 65%、CANNカバレッジ80-90%）。金融機関生産利用（初Token 500ms、日次260億Token、可用性99.999%、vLLM-Ascend 34件貢献）。開発者エコシステム規模（鯤鵬415万、昇騰410万、openEuler 1600万セット）
+
+## [2026-06-01] active-crawl | china-ai-agent-ecosystem / mcp-china / coze
 
 ### Wiki更新
 - `concepts/china-ai-agent-ecosystem.md` — **更新**: 百蝦大戦からプラットフォーマー時代へ移行。DeepSeek無料枠制限開始。MiniMax A株上場へ。阿里悟空Agent OS急浮上
