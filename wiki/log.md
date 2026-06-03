@@ -4,15 +4,25 @@
 
 |
 
-## [2026-06-03] newsletter-triage | Zhihu Frontier Weekly
-
-### Wiki更新
-- `entities/huawei.md` — **新規**: τ（タウ）法則（チップ設計新パラダイム/SkyBridge/SkyClock）、昇騰エコシステム、GPU制裁下国産化戦略、市場データ
-- `entities/deepseek.md` — **更新**: V4 Pro永久75%値下げ（SSD KVキャッシュ/キャッシュヒット99%/「聖人梁」現象）、700億元資金調達（梁文鋒200億出資/制御固定戦略）
-- `entities/xiaomi-mimo.md` — **更新**: MiMo V2.5大幅値下げ（キャッシュヒット約1%/AI API歴史的最安級/SSDキャッシュアーキテクチャ推測）、レイテンシトレードオフ
-- `concepts/ai-inference-costs.md` — **新規**: Microsoft AIコスト現実問題（Claude依存削減/スキル連鎖コスト増/AIインフレ）、中国モデル価格競争トレンド表（DeepSeek値下げvs智譜騰訊値上げ）
-
-## [2026-06-02] active-crawl | china-local-deployment / vibe-coding-china
+|## [2026-06-03] active-crawl | doubao / tencent-hunyuan / vram-optimization
+|
+|### Wiki更新
+|- `concepts/doubao.md` — **更新**: 豆包6月下旬正式課金確認(最高5,088元/年)。団購市場参入(EC→団購へ拡大)。字节AI大将顾全全離職。有料課金5,088元/年(6月下旬全面展開/国产AI免费时代終焉)
+|
+|### hot-topics.yaml更新
+|- doubao: last_crawled→2026-06-03、notes更新、search_hints追加(団購/顾全全/課金関連)
+|- tencent-hunyuan: last_crawled→2026-06-03(新規情報なし)
+|- vram-optimization: last_crawled→2026-06-03(新規情報なし)
+|
+|## [2026-06-03] newsletter-triage | Zhihu Frontier Weekly
+|
+|### Wiki更新
+|- `entities/huawei.md` — **新規**: τ（タウ）法則（チップ設計新パラダイム/SkyBridge/SkyClock）、昇騰エコシステム、GPU制裁下国産化戦略、市場データ
+|- `entities/deepseek.md` — **更新**: V4 Pro永久75%値下げ（SSD KVキャッシュ/キャッシュヒット99%/「聖人梁」現象）、700億元資金調達（梁文鋒200億出資/制御固定戦略）
+|- `entities/xiaomi-mimo.md` — **更新**: MiMo V2.5大幅値下げ（キャッシュヒット約1%/AI API歴史的最安級/SSDキャッシュアーキテクチャ推測）、レイテンシトレードオフ
+|- `concepts/ai-inference-costs.md` — **新規**: Microsoft AIコスト現実問題（Claude依存削減/スキル連鎖コスト増/AIインフレ）、中国モデル価格競争トレンド表（DeepSeek値下げvs智譜騰訊値上げ）
+|
+|## [2026-06-02] active-crawl | china-local-deployment / vibe-coding-china
 
 ### Wiki更新
 - `concepts/china-local-deployment.md` — **更新**: CANN生態系成熟(鲲鹏昇腾开发者大会/70+大模型Day-0)。NVIDIA VR200冷却2ヶ月遅延。DeepSeek無料版制限強化。MiniMax M3(コーディング/100万ctx)。Qwen3.7-Max無料開放。百度APP×OpenClaw統合

@@ -158,11 +158,14 @@ topics:
       - "豆包 スキャン支払い Android 掃一掃"
       - "豆包 Mobile Use Agent 火山引擎"
       - "Nubia M153 豆包手机 予約ハルシネーション"
+      - "豆包 団購 团购 商業化 2026"
+      - "顾全全 字节AI 離職 2026"
+      - "豆包 課金 5088 円 year 2026"
     wiki_pages:
       - concepts/doubao
-    notes: "2026.05.27更新: 火山劇創1.0正式リリース(5/21/Seedance 2.0連携/製作サイクル80%短縮)。火山方舟Agent Plan+Coding PlanがDeepSeek V4対応(5/23/最大850元節約)。Nubia社長が豆包予約ハルシネーションに実演反論。豆包Android版スキャン支払い機能追加(618商戦向け)。火山引擎Mobile Use Agent発表(TCO 40-60%削減)。Black Hat Asia 2026でAgent Miner/BoardSentinel発表(7件CVE獲得)。2026.05.21更新: 豆包MAU3.45億(訂正/前回227M→最新345M)。Agent Plan有料サブスク正式発表(月額68/200/500円/自律エージェント機能限定)。AI誤導訴訟(退改航ハルシネーション/5月14日提起)。2026.05.15更新: 豆包有料サブスク大議論(5月11-15日連日全国メディア議論/Morgan Stanley年収1-15億ドル/消耗式/跨端消費/デフォルト学習許諾)。豆包输入法Mac版(5月13日/V2EX話題/音声認識高評価)。火山引擎MaaSシェア49.5%(IDC/国内1位/市場Token16倍)。豆包AI誤導訴訟(5月14日/退改航ハルシネーション)。栄威家越07量産版6月Engine Force発表/提携深化。競合波及: DeepSeek V4-Pro2.5割/千問補助金/元宝文心無料継続。月活2.27億・DAU1億。豆包4シリーズ/Doubao-Seed-2.0-lite全模态(5月6日)。"
+    notes: "2026.06.03更新: 豆包6月下旬正式課金開始(確認/最高5,088元/年)。団購(Group Buying)市場参入(ECに続く第二の商業化/美团迂回戦略)。字节AI大将顾全全離職(方向性対立説/競合流出説)。有料課金最高5,088元/年(6月下旬全面展開/国产AI免费时代終焉)。2026.05.27更新: 火山劇創1.0正式リリース(5/21/Seedance 2.0連携/製作サイクル80%短縮)。火山方舟Agent Plan+Coding PlanがDeepSeek V4対応(5/23/最大850元節約)。Nubia社長が豆包予約ハルシネーションに実演反論。豆包Android版スキャン支払い機能追加(618商戦向け)。火山引擎Mobile Use Agent発表(TCO 40-60%削減)。Black Hat Asia 2026でAgent Miner/BoardSentinel発表(7件CVE獲得)。2026.05.21更新: 豆包MAU3.45億(訂正/前回227M→最新345M)。Agent Plan有料サブスク正式発表(月額68/200/500円/自律エージェント機能限定)。AI誤導訴訟(退改航ハルシネーション/5月14日提起)。2026.05.15更新: 豆包有料サブスク大議論(5月11-15日連日全国メディア議論/Morgan Stanley年収1-15億ドル/消耗式/跨端消費/デフォルト学習許諾)。豆包输入法Mac版(5月13日/V2EX話題/音声認識高評価)。火山引擎MaaSシェア49.5%(IDC/国内1位/市場Token16倍)。豆包AI誤導訴訟(5月14日/退改航ハルシネーション)。栄威家越07量産版6月Engine Force発表/提携深化。競合波及: DeepSeek V4-Pro2.5割/千問補助金/元宝文心無料継続。月活2.27億・DAU1億。豆包4シリーズ/Doubao-Seed-2.0-lite全模态(5月6日)。"
     added: 2026-04-17
-    last_crawled: 2026-05-27
+    last_crawled: 2026-06-03
 
   - slug: tencent-hunyuan
     title: "混元 (Hunyuan) — Tencent AI"
@@ -184,9 +187,9 @@ topics:
     wiki_pages:
       - entities/tencent-ai
       - entities/tencent-hunyuan
-    notes: "2026.05.29更新: Hy-Memory記憶システムリリース(5/28/長期記憶/検索強化生成/API提供)。旧モデル廃止通知(5/22/hunyuan-lite等複数モデル2026年夏終了/Hy3.0正式版へ統合)。元宝微信内リマインダー機能追加(5/24)。姚順雨88日間再建物語(TMTpost/5月)。2026.05.22更新: 腾讯云AI产业应用峰会(5/21)で大規模発表—TurboS(Arena全球8位/中国2位)/T1/T1-Vision/Hunyuan Voice(端到端音声/1.6秒応答)/Hy-MT2翻訳33言語OSS/知識引擎→智能体開発平台全面刷新。Hy3 Preview OpenRouter4週連続1位(5/11-17週2.66兆tokens/+210%)。混元Image 2.0(5/16/ミリ秒応答リアルタイム画像生成)。元宝WeChat聊天記録要約(5/13/微信統合第一歩)。Q1決算売上1,965億元(+9%)/AI投資370億元。Hy3.0正式版5-6月予定継続。2026.05.09更新: Hy3 Previewが5/7週のOpenRouter週間ランキングで再び総合API呼び出し量1位（Hy2比10倍超/CodeBuddy・WorkBuddy16.5倍急増）。Tencent株価3%超上昇。高盛Buy評価・目標株価HK$700。姚順雨の実業務重視哲学が裏付け。Hy3.0正式版5-6月リリース予定。前回(5/4)カバー済みの数字中国建設峰会展示や安全認証は継続中。"
+    notes: "2026.06.03更新: 新規情報なし(前回5/29から目立った動きなし/Hy3.0正式版リリース未確認)。2026.05.29更新: Hy-Memory記憶システムリリース(5/28/長期記憶/検索強化生成/API提供)。旧モデル廃止通知(5/22/hunyuan-lite等複数モデル2026年夏終了/Hy3.0正式版へ統合)。元宝微信内リマインダー機能追加(5/24)。姚順雨88日間再建物語(TMTpost/5月)。2026.05.22更新: 腾讯云AI产业应用峰会(5/21)で大規模発表—TurboS(Arena全球8位/中国2位)/T1/T1-Vision/Hunyuan Voice(端到端音声/1.6秒応答)/Hy-MT2翻訳33言語OSS/知識引擎→智能体開発平台全面刷新。Hy3 Preview OpenRouter4週連続1位(5/11-17週2.66兆tokens/+210%)。混元Image 2.0(5/16/ミリ秒応答リアルタイム画像生成)。元宝WeChat聊天記録要約(5/13/微信統合第一歩)。Q1決算売上1,965億元(+9%)/AI投資370億元。Hy3.0正式版5-6月予定継続。2026.05.09更新: Hy3 Previewが5/7週のOpenRouter週間ランキングで再び総合API呼び出し量1位（Hy2比10倍超/CodeBuddy・WorkBuddy16.5倍急増）。Tencent株価3%超上昇。高盛Buy評価・目標株価HK$700。姚順雨の実業務重視哲学が裏付け。Hy3.0正式版5-6月リリース予定。前回(5/4)カバー済みの数字中国建設峰会展示や安全認証は継続中。"
     added: 2026-04-29
-    last_crawled: 2026-05-29
+    last_crawled: 2026-06-03
 
   # =========================================================
   # 2. Chinese AI Agent Ecosystem (中国AIエージェント)
@@ -342,9 +345,9 @@ topics:
       - "FlashAttention-NPU Ascend 910C"
     wiki_pages:
       - concepts/vram-optimization
-    notes: "2026.05.23更新: TriAttention v0.2.0正式リリース(5月/SGLangバックエンド追加)。Ollama v0.30.0アーキテクチャ大転換(GGML→llama.cpp直接統合/rc20-rc23/MLX加速)。SGLang v0.5.12 DeepSeek V4 HiCache正式対応(MegaMoE W4A4カーネル/PD Disaggregation)。DeepSeek V4 vLLM最適化詳細(KVキャッシュ9.62GiB@1M/ROCm/SM12x/TurboQuant)。北京大学GQLA(H100+H20両最適化/同一重み)。昇騰910C FlashAttention-NPU/CloudMatrix384 INT8。PagedEviction(ブロック単位KV追い出し/スループット3.1倍)。2026.05.10更新: Qwen3.6-35B-A3B MoE VRAM特性(~12GB/Q4)、DeepSeek-V4 Engram Memory(KV最適化/40%削減)、TriAttention(MIT/NVIDIA/ZJU/スループット2.5倍)。ローカルVRAM最適化の新手法続々。vram-optimization.mdは更新済み。"
+    notes: "2026.06.03更新: 新規情報なし(Web検索不能のため調査不可/前回5/23からトピック更新なし)。2026.05.23更新: TriAttention v0.2.0正式リリース(5月/SGLangバックエンド追加)。Ollama v0.30.0アーキテクチャ大転換(GGML→llama.cpp直接統合/rc20-rc23/MLX加速)。SGLang v0.5.12 DeepSeek V4 HiCache正式対応(MegaMoE W4A4カーネル/PD Disaggregation)。DeepSeek V4 vLLM最適化詳細(KVキャッシュ9.62GiB@1M/ROCm/SM12x/TurboQuant)。北京大学GQLA(H100+H20両最適化/同一重み)。昇騰910C FlashAttention-NPU/CloudMatrix384 INT8。PagedEviction(ブロック単位KV追い出し/スループット3.1倍)。2026.05.10更新: Qwen3.6-35B-A3B MoE VRAM特性(~12GB/Q4)、DeepSeek-V4 Engram Memory(KV最適化/40%削減)、TriAttention(MIT/NVIDIA/ZJU/スループット2.5倍)。ローカルVRAM最適化の新手法続々。vram-optimization.mdは更新済み。"
     added: 2026-04-17
-    last_crawled: 2026-05-23
+    last_crawled: 2026-06-03
 
   # =========================================================
   # 4. Chinese Regulatory Landscape (中国AI規制)
