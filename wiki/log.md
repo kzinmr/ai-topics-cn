@@ -4,6 +4,14 @@
 
 |
 
+## [2026-06-03] newsletter-triage | Zhihu Frontier Weekly
+
+### Wiki更新
+- `entities/huawei.md` — **新規**: τ（タウ）法則（チップ設計新パラダイム/SkyBridge/SkyClock）、昇騰エコシステム、GPU制裁下国産化戦略、市場データ
+- `entities/deepseek.md` — **更新**: V4 Pro永久75%値下げ（SSD KVキャッシュ/キャッシュヒット99%/「聖人梁」現象）、700億元資金調達（梁文鋒200億出資/制御固定戦略）
+- `entities/xiaomi-mimo.md` — **更新**: MiMo V2.5大幅値下げ（キャッシュヒット約1%/AI API歴史的最安級/SSDキャッシュアーキテクチャ推測）、レイテンシトレードオフ
+- `concepts/ai-inference-costs.md` — **新規**: Microsoft AIコスト現実問題（Claude依存削減/スキル連鎖コスト増/AIインフレ）、中国モデル価格競争トレンド表（DeepSeek値下げvs智譜騰訊値上げ）
+
 ## [2026-06-02] active-crawl | china-local-deployment / vibe-coding-china
 
 ### Wiki更新

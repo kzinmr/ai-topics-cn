@@ -1,7 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-06-02
-エンティティ: 62, コンセプト: 119, ダイジェスト: 7, 比較: 2, ページ: 9
+最終更新: 2026-06-03
+エンティティ: 63, コンセプト: 120, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-06-03 Newsletter Ingest: Zhihu Frontier Weekly — Huawei τ法則・DeepSeek価格戦争・MiMo割引・Microsoft AIコスト）
+- `entities/huawei.md` — **新規**: τ（タウ）法則（チップ設計新パラダイム/SkyBridge/SkyClock）、昇騰エコシステム、GPU制裁下国産化戦略、市場データ
+- `entities/deepseek.md` — **更新**: V4 Pro永久75%値下げ（SSD KVキャッシュ/キャッシュヒット99%/「聖人梁」現象）、700億元資金調達（梁文鋒200億出資/制御固定戦略）
+- `entities/xiaomi-mimo.md` — **更新**: MiMo V2.5大幅値下げ（キャッシュヒット約1%/AI API歴史的最安級/SSDキャッシュアーキテクチャ推測）、レイテンシトレードオフ
+- `concepts/ai-inference-costs.md` — **新規**: Microsoft AIコスト現実問題（Claude依存削減/スキル連鎖コスト増/AIインフレ）、中国モデル価格競争トレンド表（DeepSeek値下げvs智譜騰訊値上げ）
 ### 本日更新（2026-06-02 Active Crawl: china-local-deployment/vibe-coding-china）
 - `concepts/china-local-deployment.md` — **更新**: CANN生態系成熟・NVIDIA VR200冷却遅延・DeepSeek無料版制限・MiniMax M3・Qwen3.7-Max無料開放・百度APP×OpenClaw統合
 - `concepts/vibe-coding-china.md` — **更新**: 国産Agent世界第一梯队・GPT-5.5 DeepSWE逆転・Mythos Erdős予想解決・Opus 4.8(GPT-5.5敗北)・音声Vibe Coding・Kimi Code 0.4.0・Codex 3rd party API・MiniMax M3・Copilot Token課金移行
