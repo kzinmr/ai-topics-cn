@@ -1,7 +1,7 @@
 ---
 title: "Kimi (月之暗面) — Moonshot AIの旗艦AIアシスタント"
 created: 2026-04-22
-updated: 2026-05-30
+updated: 2026-06-04
 tags: [llm, moonshot, long-context, agent, open-source, chinese-llm]
 aliases: ["Kimi", "月之暗面", "Moonshot AI", "Kimi Chat", "Kimi K2"]
 source_lang: zh-CN
