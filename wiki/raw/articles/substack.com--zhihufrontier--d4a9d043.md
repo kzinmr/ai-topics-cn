@@ -1,8 +1,8 @@
 ---
 title: "Zhihu Frontier | Substack"
 url: "https://substack.com/@zhihufrontier"
-fetched_at: 2026-05-26T04:00:41.366461+00:00
-source_date: 2026-05-25
+fetched_at: 2026-06-03T04:00:10.316292+00:00
+source_date: 2026-06-02
 tags: [newsletter, auto-ingested]
 source_lang: zh-CN
 ---

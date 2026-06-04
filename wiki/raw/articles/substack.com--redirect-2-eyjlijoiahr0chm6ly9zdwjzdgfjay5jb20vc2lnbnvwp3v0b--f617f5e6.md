@@ -1,0 +1,15 @@
+---
+title: "Substack | Signup"
+url: "https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zdWJzdGFjay5jb20vc2lnbnVwP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY29udGVudD1mb290ZXImdXRtX2NhbXBhaWduPWF1dG9maWxsZWQtZm9vdGVyJmZyZWVTaWdudXBFbWFpbD1remlubXIxMDlAZ21haWwuY29tJnI9MmZseDYiLCJwIjoyMDAyNjY0MDcsInMiOjYyMjI0NzQsImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc4MDM5MTA4MywiZXhwIjoyMDk1OTY3MDgzLCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.YOcN_Wv6nciDCIKQyFJvJI_t9_F1qPHUsXxHRVdUKkM?"
+fetched_at: 2026-06-03T04:00:27.012752+00:00
+source_date: 2026-06-02
+tags: [newsletter, auto-ingested]
+source_lang: zh-CN
+---
+
+# Substack | Signup
+
+Source: https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zdWJzdGFjay5jb20vc2lnbnVwP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY29udGVudD1mb290ZXImdXRtX2NhbXBhaWduPWF1dG9maWxsZWQtZm9vdGVyJmZyZWVTaWdudXBFbWFpbD1remlubXIxMDlAZ21haWwuY29tJnI9MmZseDYiLCJwIjoyMDAyNjY0MDcsInMiOjYyMjI0NzQsImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc4MDM5MTA4MywiZXhwIjoyMDk1OTY3MDgzLCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.YOcN_Wv6nciDCIKQyFJvJI_t9_F1qPHUsXxHRVdUKkM?
+
+Create your account
+Sign up now, and publishing is free forever. Once you start charging for subscriptions, you keep 90% after credit card transaction fees.

@@ -1,7 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-06-03
+最終更新: 2026-06-04
 エンティティ: 63, コンセプト: 120, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-06-04 Active Crawl: deepseek/kimi/mcp-china）
+- `entities/deepseek.md` — **更新**: Reuters報道(6/3)でDeepSeek初外部資金調達確定。50B RMB(梁文鋒20B・騰訊10B・CATL 5B)、評価額350-400B RMB
+- `concepts/kimi.md` — **更新**: OpenAI Codex互換API実装確認(Anthropic互換エンドポイント経由/Kimi K2.5)。CC-Switch/Codex++統合チュートリアル公開。ARR$100M突破(K2.5リリース後1ヶ月)
+- `concepts/mcp-china.md` — **更新**: MCP Skills実装(V2EX)。MCP/A2A/AG-UI三大プロトコル比較(掘金)。AI「第二脳」プロジェクト(Claude/Cursor/Windsurf共有記憶)。MCP Server 30分チュートリアル
 ### 本日更新（2026-06-03 Newsletter Ingest: Zhihu Frontier Weekly — Huawei τ法則・DeepSeek価格戦争・MiMo割引・Microsoft AIコスト）
 - `entities/huawei.md` — **新規**: τ（タウ）法則（チップ設計新パラダイム/SkyBridge/SkyClock）、昇騰エコシステム、GPU制裁下国産化戦略、市場データ
 - `entities/deepseek.md` — **更新**: V4 Pro永久75%値下げ（SSD KVキャッシュ/キャッシュヒット99%/「聖人梁」現象）、700億元資金調達（梁文鋒200億出資/制御固定戦略）

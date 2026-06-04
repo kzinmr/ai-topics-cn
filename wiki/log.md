@@ -4,6 +4,19 @@
 
 |
 
+|## [2026-06-04] active-crawl | deepseek / kimi / mcp-china
+|
+|### Wiki更新
+|- `entities/deepseek.md` — **更新**: Reuters報道(6/3)でDeepSeek初外部資金調達確定。50B RMB(梁文鋒20B・騰訊10B・CATL 5B)、評価額350-400B RMB
+|- `concepts/kimi.md` — **更新**: OpenAI Codex互換API実装確認(Anthropic互換エンドポイント経由/Kimi K2.5)。CC-Switch/Codex++統合チュートリアル公開。ARR$100M突破(K2.5リリース後1ヶ月)
+|- `concepts/mcp-china.md` — **更新**: MCP Skills実装(V2EX/短视频分析)。MCP/A2A/AG-UI三大プロトコル比較(掘金)。AI「第二脳」プロジェクト(Claude/Cursor/Windsurf共有記憶/MCP経由)。MCP Server 30分チュートリアル
+|
+|### hot-topics.yaml更新
+|- deepseek: last_crawled→2026-06-04、notes更新(Reuters融資確定情報追加)
+|- kimi: last_crawled→2026-06-04、notes更新(Codex互換API/ARR$100M追加)
+|- mcp-china: last_crawled→2026-06-04、notes更新(MCP Skills/第二脳/プロトコル比較追加)
+|
+|
 |## [2026-06-03] active-crawl | doubao / tencent-hunyuan / vram-optimization
 |
 |### Wiki更新

@@ -474,4 +474,31 @@ Kimi K3のリリース時期に関する市場予測が更新：
 | 2026-05-07 | 腾讯新聞（資金調達） | https://news.qq.com/rain/a/20260507A04RV200 |
 
 ---
-*最終更新: 2026-05-30*
+
+*最終更新: 2026-06-04*
+
+## 最新動向（2026年6月1日〜6月3日追記）
+
+### CodexがKimi/DeepSeek/GLMのサードパーティモデル接入に対応（2026年6月3日）
+
+OpenAI Codexでサードパーティモデル（DeepSeek、GLM、Kimi）を使用するチュートリアルが掘金で公開された（JavaGuide著）。CC-SwitchとCodex++の2つのアプローチが比較されている。
+
+- **CC-Switch**: Codexのモデルエンドポイントを置き換える方式。Anthropic互換API経由でKimi K2.6を直接Codexから呼び出せる
+- **Codex++**: Codexを拡張し、複数モデルを並行利用する方式
+- Kimi K2.6はAnthropic互換APIを提供しており、さくらインターネット経由または直接APIでCodex統合が可能
+- 中国開発者コミュニティで「国産モデル+OpenAIツール」の組み合わせが実用段階に入っていることを示唆
+
+> **出典**: 掘金 — [Codex接入第三方模型DeepSeek、GLM、Kimi教程](https://juejin.cn/post/7646622729529425960) [T1]
+> **出典**: V2EX — [Codex还是Claude cowork选择](https://www.v2ex.com/t/1217449) [T1]
+
+### Langchain.js実戦記事でKimi/K2.6言及（2026年6月2日）
+
+掘金で「Langchain.js 实战一：快速入门」記事が公開され、DeepSeekやKimiをLangchain経由で利用する実装例が紹介された。中国開発者エコシステムにおいてKimiが標準的なLLMバックエンドとして認知されつつある。
+
+> **出典**: 掘金 — [Langchain.js实战一](https://juejin.cn/post/7616702701867974682) [T1]
+
+### 月之暗面ARR$1億突破（2026年5月〜6月）
+
+36kr報道によると、Kimi K2.5リリースから1ヶ月で月之暗面のARR（年間経常収益）が**1億ドル**を突破。中国LLMスタートアップとして異例のスピードでの収益化に成功。
+
+> **出典**: 36kr — [Kimi K2.5发布一个月后，月之暗面ARR突破1亿美金](https://36kr.com) [T1]

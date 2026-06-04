@@ -1,7 +1,7 @@
 ---
 title: LangChain — LLMアプリケーションフレームワーク
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-06-03
 tags: [framework, tooling, langchain, security, cve]
 aliases: ["LangChain", "langchain", "LangChain-core"]
 source_lang: zh-CN
@@ -59,6 +59,12 @@ V2EXではLangChainの安全性について以下の議論が展開：
 | セキュリティ | CVE-2026-4539で緊急パッチ必要 |
 | 競合 | LlamaIndex、DSPy、OpenClaw |
 | トレンド | 5言及（セキュリティ問題で注目度上昇） |
+
+### LangChain基础実践記事（2023年）
+
+2023年8月の掘金記事「LangChain：打造自己的LLM应用」は、LLMアプリケーション開発におけるLangChainの基本概念を紹介。LLM分野のSpringフレームワーク、およびオープンソース版ChatGPTプラグインシステムとして位置づけられる。
+
+> **出典**: 掘金 — [京东云技術チーム](https://juejin.cn/post/7262357172508393529) [T2]
 
 ## 関連リンク
 

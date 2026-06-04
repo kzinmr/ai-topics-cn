@@ -1,9 +1,9 @@
 ---
-title: "MCP中国生态（Model Context Protocol在中国的采用状況）"
+title: "MCP中国生态（Model Context Protocol在中国的採用状況）"
 type: concept
 tags: [mcp, chinese-ai, agent-protocol, a2a, standardization, tool-integration, github, enterprise]
 created: 2026-04-17
-updated: 2026-06-01
+updated: 2026-06-04
 source_lang: zh-CN
 ---
 
@@ -592,6 +592,17 @@ AnthropicがClaude Opus 4.8をリリース。Agent能力の向上（ツール呼
 - **OpenClaw発展**: 百度APPがOpenClawに正式対応（全ユーザー期間限定無料）、Rednote（小红书）との連携が注目
 - **価格競争**: DeepSeek永久値下げ、MiMo（小米）トークン無料配布など、中国MCPエコシステムのトークン価格競争が激化
 - **SEC開示余波**: Community BankのSEC 8-K開示（5月7日）に関する中国コミュニティでの議論が継続。MCP STDIO権限継承モデルのリスク認識が広まる
+
+### 11. 中国MCP生態系の最新動向（6月1日〜3日）
+
+- **MCP Skills実装**: V2EX開発者がMCP skillsツールを公開、短视频分析機能をMCP経由で実装。実用的なMCPサーバー実装の事例が増加中
+- **MCP/A2A/AG-UIプロトコル比較**: 掘金で3大Agentプロトコルの全景解析記事が公開。MCPがツール連携、A2AがAgent間通信、AG-UIがUI統合をそれぞれ担当する住み分けが明確化
+- **MCPプロトコル標準化**: 「Agentシリーズ」記事でMCPプロトコルをツール生態系の標準化アクセスとして解説。企業レベルでのMCP採用ガイドラインが整備されつつある
+- **AI「第二脳」プロジェクト**: Claude/Cursor/Windsurfの共有記憶システムをMCP経由で実装するオープンソースプロジェクトがV2EXで話題に。複数AIツールの記憶統合という新しいユースケース
+- **OpenClaw実用記事**: 小红书自動投稿の実装ガイドが引き続き注目され、MCPサーバーの実践的な適用事例として参照されている
+- **MCP Serverチュートリアル**: 30分で使えるMCP Serverを構築するハンズオン記事が掘金で公開。開発者向けの参入障壁が低下
+
+- **出典**: [V2EX - MCP skills](https://www.v2ex.com/t/1217743) | [Juejin - MCP/A2A/AG-UI](https://juejin.cn/post/7646938869472378915) | [Juejin - MCPプロトコル](https://juejin.cn/post/7646537363406323753) | [V2EX - 第二脳](https://www.v2ex.com/t/1217451) | [Juejin - MCP Server](https://juejin.cn/post/7604881286038028340) [T1]
 
 ## 出典
 
