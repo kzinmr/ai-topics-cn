@@ -4,7 +4,22 @@
 
 |
 
-|## [2026-06-04] active-crawl | deepseek / kimi / mcp-china
+|## [2026-06-04] crawl-triage | WeChat重複収集・V2EX暂无内容
+
+### Wiki更新
+- `concepts/spokenwoz.md` — updated日付を2026-06-03→2026-06-04に更新。WeChat再収集重複（同URL、同ハッシュ`159c78b4`）。inboxファイルはタイトル情報のみのため内容追加なし。
+
+### スキップ
+- V2EX「Codex App SSH远程開発機能」: inboxが「暂无内容」。既存`pages/openai-codex-infrastructure.md`で既に統合済み（L122-138）。
+- WeChat「LLM-as-Agent技術哪家強?」: 機器之心PRO会員通讯ヘッダープレビューのみ。実質内容なし。既存`concepts/ai-agent.md`は包括的（245行）。
+- WeChat「AI00十一月榜单」: 同一ハッシュ`aafeba3f`の再収集。`wiki/archive/integrated/`に既に存在。
+- V2EX「GPT 6.0」「Deep Research品質」「低價GPT漏洞」「Plus調子」: 全て「暂无内容」またはゴシップ/憶測スレッド。wiki価値なし。
+- WeChat「20230807/0815WeeklyAIPaper精選」: 2023年記事。古すぎる。
+
+### まとめ
+チェックポイント候補12件中、take 4件は全て既処理コンテンツの再収集または内容薄のため、実質的なwiki更新はSpokenWOZ日付更新のみ。
+
+## [2026-06-04] active-crawl | deepseek / kimi / mcp-china
 |
 |### Wiki更新
 |- `entities/deepseek.md` — **更新**: Reuters報道(6/3)でDeepSeek初外部資金調達確定。50B RMB(梁文鋒20B・騰訊10B・CATL 5B)、評価額350-400B RMB
