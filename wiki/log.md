@@ -3,6 +3,22 @@
 |
 
 |
+|
+
+## [2026-06-05] active-crawl | qwen/china-coding-agents/dify
+|
+### Wiki更新
+|- `entities/qwen.md` — **更新**: Qwen3.7-Max無料化(6/1/Qwen Chat完全無料/高コスト批判即応)。funyi字幕ツールOSS(Qwen3-ASR-1.7B/ローカルリアルタイム字幕)。QwenPaw学習ガイド。DocPilot Qwen Android OSS公開
+|- `concepts/china-coding-agents.md` — **更新**: Copilot Token計費転換(6/1/$40→$300+/国内移行)。MiniMax M3(100万ctx/全能Engineer)。CodexサードパーティAPI対応(CC-Switch)。Claude Code 5月30v Workflows。OpenClaw百度APP統合。商湯Skills OSS公開。Agent Runtime議論。Kimi Code 0.4.0
+|- `concepts/dify.md` — **更新**: 5/28〜6/4静定期(新リリース/CVE/エンタープライズ導入なし)。Dify×EdgeOne DeepResearch記事(5/25/掘金)
+|
+### hot-topics.yaml更新
+|- qwen: last_crawled→"2026-06-05"、notes更新(Qwen3.7-Max無料化/OSSエコシステム拡大)
+|- china-coding-agents: last_crawled→2026-06-05、notes更新(Copilot Token/MiniMax M3/Codex API/30v)
+|- dify: last_crawled→2026-06-05、notes更新(静定期/Dify×EdgeOne)
+|
+
+## [2026-06-04] active-crawl | deepseek / kimi / mcp-china
 
 |## [2026-06-04] crawl-triage | WeChat重複収集・V2EX暂无内容
 

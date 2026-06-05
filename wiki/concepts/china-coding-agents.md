@@ -1,7 +1,7 @@
 ---
 title: "中国编程Agent工具 — コーディングAIエージェントの生態系"
 created: 2026-04-19
-updated: 2026-05-28
+updated: 2026-06-05
 tags: [coding-agents, china, ide, automation, software-development, claude-code, cursor, openai]
 aliases: ["中国编程Agent", "编程自动化工具", "AI代码助手", "Chinese coding agents", "AI编程工具"]
 source_lang: zh-CN
@@ -367,6 +367,132 @@ Elon MuskのxAIがコーディングエージェント製品 **Grok Build** を�
 | **国内vs海外** | Trae（41.2%）の国内優位が強固に。Cursorは中国市場特化で新バージョン |
 | **プラットフォーム化** | IDEプラグインから独立IDE・デスクトップAgentへ進化加速 |
 | **Agent連携基盤** | GitHub Agent HQやMCPを介したAgent間協調が新トレンドに |
+
+## 2026年5月末〜6月初の新展開
+
+### Copilot Token計費転換（2026年6月1日）
+
+GitHub Copilotが**Tokenベースの従量課金**に正式移行。中国開発者コミュニティに大きな衝撃を与えた：
+
+- **旧モデル**: GitHub Copilot Pro+（月額$40）でOpus/Sonnet無制限利用 → **廃止**
+- **新モデル**: Token Planに移行。モデル倍率は7.5倍〜15倍と高額に
+- **V2EXの反応**: 「今まで月$40で使い放題だったOpusが、新プランでは同じ量を使うと月$300超え」との試算が広がる
+- **開発者の移動先**:
+  - DeepSeek V4 Pro（最大推論強度でCopilot代替として評価）← **DeepSeek V4 ProがOpus/Codex 5.3に肉薄**との報告
+  - GPT-5.5（Codex経由、Play Store決済で安価）
+  - opencode Go経由のサブスクリプション
+  - 中国国内モデルへの切り替え加速
+
+> **出典**: [V2EX](https://www.v2ex.com/t/1216878), [V2EX](https://www.v2ex.com/t/1217619) 2026.06.01-03 [Tier-1]
+
+### MiniMax M3 — 国産「全能エンジニア」の登場（2026年6月1日）
+
+MiniMaxが**MiniMax M3**を正式発表。中国コーディングAgent市場に新たな競争軸を追加：
+
+- **特徴**: 最先端のCoding能力、Agentic能力、**100万トークン超長文脈**
+- **評価**: 「国产模型里最接近'全能工程师'的一次」（国産モデルで最も"全能エンジニア"に近い）とJuejinで高評価
+- **位置づけ**: Kimi K2.6、Qwen3-Coderに続く第三の国産コーディング専用モデルとして台頭
+- **競合との比較**: Claude Codeと比較されるが、価格面で競争力あり
+
+> **出典**: [Juejin](https://juejin.cn/post/7646060500482637862) 2026.06.01 [Tier-1]
+
+### Codex サードパーティAPI対応（2026年5月31日）
+
+OpenAI Codexが**DeepSeek・GLM・Kimi等のサードパーティモデル**をAPI経由でサポート開始：
+
+- **CC-Switchツール**（[GitHub](https://github.com/farion1231/cc-switch)）で簡単切り替え
+- **Codex++** との2方式がある
+- **中国開発者の反応**: 「DeepSeek V4 Proでも使えるのは便利だが、コスト削減効果は限定的」との声
+- **影響**: Codexをゲートウェイとして中国モデルを利用するハイブリッド戦略が可能に。OpenClawの考え方に近い
+
+> **出典**: [V2EX](https://www.v2ex.com/t/1216862), [Juejin](https://juejin.cn/post/7646622729529425960) 2026.05.31-06.03 [Tier-1]
+
+### Claude Code 5月アップデート — 30バージョンの怒涛リリース（2026年5月31日）
+
+Claude Codeが5月中に**30バージョン**（v2.1.136→v2.1.157+）をリリース：
+
+- **Workflows機能（実験的）**: `agent()` / `parallel()` / `pipeline()` / `phase()` の4プリミティブでサブAgentを**決定的に**制御
+- **ultraworkコマンド**: Workflowsの実行用新コマンド
+- **意義**: 従来のプロンプトベースのAgent制御から**コードベースの決定論的制御**への移行。V2EXでは「Claude Code终于把Agent编排从提示词里拿出来了」と高評価
+- **中国開発者の反応**: 29章のオープンソース実戦マニュアル「織经」が公開され、中国Claude Codeコミュニティで急速に普及
+
+> **出典**: [Juejin](https://juejin.cn/post/7645849125787910171), [V2EX](https://www.v2ex.com/t/1216289) 2026.05.28-31 [Tier-1]
+
+### Claude Opus 4.8混乱 — 自己同一性問題（2026年5月28〜29日）
+
+Anthropicが**Claude Opus 4.8**をリリース。性能は高いが中国コミュニティで混乱：
+
+- **中国ユーザーの報告**: Opus 4.8が自分を「Qwen」だと名乗る事例がV2EXで複数報告
+- **背景**: プロンプトプリロードや知識蒸留の痕跡かと推測されたが不明
+- **中国の反応**: 「東边产的大模型」（東の国の大モデル）と皮肉られ、Opus 4.8の中国経由のアクセス品質に対する不信感が増大
+- **AnthropicのIPO準備**: Opus 4.8公開と同時にAnthropicがIPO準備（評価額〜$1T）を進めており、中国市場の重要性が低下
+
+> **出典**: [V2EX](https://www.v2ex.com/t/1216588), [36kr](https://36kr.com/p/3829914029762434) 2026.05.28-29 [Tier-1]
+
+### OpenClaw百度統合 — 中国最大級のAgentプラットフォームへ（2026年5月30日）
+
+百度（Baidu）のメインアプリが**OpenClawを正式統合**：
+
+- **全ユーザー期間限定無料**: 百度検索アプリから直接OpenClawのAgent機能を利用可能
+- **影響**: 百度の月間アクティブユーザー（MAU）が6億を超えることを考えると、OpenClawが中国で最も広く使われるAgent Runtimeの一つに急浮上
+- **中国開発者の反応**: 「百度終於趕上Agent時代了」（百度がようやくAgent時代に追いついた）と好意的に評価
+
+> **出典**: [Juejin](https://juejin.cn/post/7606519452977152050) 2026.05.30 [Tier-1]
+
+### 商汤科技 Skills オープンソース — 企業向けAgent基盤（2026年5月28日）
+
+商汤科技（SenseTime）が**5つのオフィスシナリオ向けSkillsパック**をオープンソース化：
+
+- **リポジトリ**: [SenseNova-Skills](https://github.com/OpenSenseNova/SenseNova-Skills)
+- **提供Skills**:
+  - 情報図生成（SenseNova U1-8B-MoTベース）
+  - PPT生成（編集可能/ビジュアルの2モード）
+  - データ分析（10万行以上のExcelに対しStreaming+Parquetで効率処理）
+  - その他
+- **意義**: 中国大手AI企業がコーディングAgentのSkillsエコシステムに本格参入
+
+> **出典**: [V2EX](https://www.v2ex.com/t/1216292) 2026.05.28 [Tier-2]
+
+### Agent Runtime 課題 — 「Agentは企業に入れない」議論（2026年5月28日）
+
+V2EXでAgentのエンタープライズ導入の難しさを巡る深い議論が発生：
+
+- **核心問題**: Agent Runtimeの未熟さ — 長時間タスクのコンテキスト維持、メモリ競合、権限制御、監査、障害復旧
+- **指摘**: 「Prompt Engineeringじゃない、Runtimeの問題だ」
+- **未来予測**: 企業に必要なのは「スーパーAgent」ではなく「安定したデジタル社員システム」とRuntime基盤
+- **中国の文脈**: この議論はHarness（DeepSeek）やQoder 1.0（Alibaba）のエンタープライズ戦略にも影響
+
+> **出典**: [V2EX](https://www.v2ex.com/t/1216192) 2026.05.28 [Tier-1]
+
+### その他重要アップデート
+
+- **Kimi Code 0.4.0**: TypeScript全面採用、ミリ秒起動を実現。CLIエクスペリエンスが大幅向上
+- **Codex無料枠縮小**: ChatGPT無料ユーザーのCodexリセットが月1回に変更（6月1日〜）
+- **Xiaomi Mimo Agent**: 14日間Token無料キャンペーン開始。デスクトップ効率Agentとして中国市場に登場
+- **Claude Code + VSCode連携**: 「平替Cursor！Claude Code + VSCode = 王炸！」とJuejinで話題に
+- **DeepSeek V4 Pro評価**: Copilot移行先としてDeepSeek V4 Pro（最大推論強度）がCodex 5.3に匹敵するとの報告が複数
+
+### 価格戦略の全体マップ（2026年6月初）
+
+| ツール | 旧プラン | 新プラン | 月額(概算) | 影響 |
+|-------|---------|---------|-----------|------|
+| Copilot Pro+ | $40/月 定額 | **Token Plan** | $40〜300+/月 | 最大の値上げ、ユーザー離れ加速 |
+| Claude Code | 無料枠80回/月 | 同上 | $20〜 + API | 無料枠圧縮継続 |
+| Codex Free | 週間リセット | **月1回リセット** | 無料 | 無料ユーザー激減 |
+| OpenAI Codex Pro | $20/月 | 同上 | $20〜 | サードパーティAPI対応で価値向上 |
+| DeepSeek V4 Pro | 従量制 | 同上 | ¥0.30/MTok | Copilot離れの受け皿に |
+| Kimi K2.6 Lite | ¥39/月 | 同上 | ¥39 | 個人開発者に最も安価 |
+
+### 市場動向サマリー（2026年6月初）
+
+| カテゴリ | トレンド |
+|----------|----------|
+| **価格大変動** | Copilot Token制移行が最大のトピック。$40定額→変動制によりDeepSeek/Kimiへの移行促進 |
+| **国産モデル台頭** | MiniMax M3投入で国産コーディング専用モデルが3陣営に（Kimi K2.6, Qwen3-Coder, MiniMax M3） |
+| **OpenClaw支配拡大** | 百度統合により中国最大級のAgentプラットフォームに。OpenClawエコシステムの標準化加速 |
+| **Codex多様化** | サードパーティAPI対応でCodexがAgentゲートウェイとして進化。OpenClawと競合 |
+| **決定論的Agent制御** | Claude Code Workflowsに代表される「プロンプト脱却、コード制御」への移行 |
+| **Enterprise Runtime問題** | Agentの生産環境導入にRuntime基盤の整備が必須との認識が広がる |
 
 ## 課題
 

@@ -1,7 +1,7 @@
 ---
 title: "Dify — オープンソースLLMOpsプラットフォーム"
 created: 2026-04-19
-updated: 2026-05-26
+updated: 2026-06-05
 tags: [llmops, open-source, agent-platform, rag, workflow, china, enterprise, security]
 search_hints:
   - "Dify セキュリティ脆弱性 Imperva 2026"
@@ -13,6 +13,7 @@ search_hints:
   - "Dify Agent Server init"
   - "Dify Graphon 0.4.0"
   - "Dify Pyrefly 移行"
+  - "Dify EdgeOne DeepResearch"
 aliases: ["Dify", "Dify.ai", "Dify平台", "开源LLMOps"]
 source_lang: zh-CN
 ---
@@ -178,9 +179,22 @@ Imperva Threat ResearchがDifyに2件の重大脆弱性を発見・公開：
 - **影響**: Dify v1.13.2以前
 - **内容**: Difyサンドボックスが全テナントで同一の固定UIDでPythonコードを実行。全テナントのコードが共有の/tmpに書き出される。ファイルは脆弱なVigenere暗号（64バイト繰り返し鍵）で「暗号化」されていたが、実質的に解読可能
 - **修正**: v1.13.3（2026年3月25日）でdify-sandbox 0.2.14にバンドル。実行ごとに一意のUIDを割り当て、ファイルパーミッションも0600に制限
-- **注意**: 暗号自体は改善されていない（隔離バイパスが修正されたのみ）
+## セキュリティ教訓
 
-**セキュリティ教訓**: AIプラットフォームが機能追加を急ぐあまり、セキュリティ設計が追いついていない構造的問題を示す。特にセルフホスト環境では修正後も長期間パッチ未適用のインスタンスが残存するリスクあり。
+AIプラットフォームが機能追加を急ぐあまり、セキュリティ設計が追いついていない構造的問題を示す。特にセルフホスト環境では修正後も長期間パッチ未適用のインスタンスが残存するリスクあり。
+
+## コミュニティ活用事例（2026年5月）
+
+### Dify × EdgeOne DeepResearch再現（2026年5月25日）
+
+掘金（juejin）コミュニティにて、**Dify × EdgeOne**（Tencent Cloud CDN/Edge Computing）を組み合わせてOpenAI DeepResearchを零コードで再現するハンズオン記事が公開された：
+
+- Difyのワークフロー機能 + EdgeOne Functions（エッジ関数）でWebスクレイピング・情報集約を実装
+- 外部APIを一切書かず、Difyの標準ツールのみでDeepResearch相当の複数ソース調査パイプラインを構築
+- Difyが「アプリケーションテンプレート」としても活用され始めたことを示す事例
+- Link: [juejin.cn/post/7642996161259159558](https://juejin.cn/post/7642996161259159558)
+
+> **注**: 2026年5月28日〜6月4日の中国AIニュースダイジェストでは、Difyに関する具体的なリリース・脆弱性・エンタープライズ導入の新規言及は確認されていない。v1.14.2以降の新バージョン（v1.15等）のリリース情報は未確認。
 
 ### 日本展開
 

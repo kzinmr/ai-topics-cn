@@ -1,7 +1,7 @@
 ---
 title: Qwen（通义千问）— 阿里云大模型旗舰
 created: 2026-04-17
-updated: 2026-05-30
+updated: 2026-06-05
 tags: [llm, model, china, open-source-ai, alibaba, qwen, agentic-coding, ai-infrastructure, qwen3.7, agent-era]
 aliases: ["Qwen", "通义千问", "qwen", "Qwen3.5", "Qwen3-Coder", "Qwen3.6", "Qwen3.6-Plus", "Qwen3.6-27B", "Qwen3.6-35B-A3B", "Qwen3.7-Max", "Qwen3.7-Plus", "千问云", "Qianwen Cloud"]
 source_lang: zh-CN
@@ -578,7 +578,64 @@ OpenRouter上でのQwen3.7-Max API使用動向（5/21〜5/29）:
 
 > **出典**: [Alibaba Cloud Blog — Alibaba Unveils New AI Chip](https://www.alibabacloud.com/blog/alibaba-unveils-new-ai-chip-flagship-model-and-rebuilt-cloud-stack-ai-for-agentic-era_603151), [新浪科技](https://finance.sina.com.cn/tech/roll/2026-05-20/doc-inhyphnp1790590.shtml), [CnTechPost](https://cntechpost.com/2026/05/19/alibaba-hints-qwen3-7-ai-model-launch-step-up-ai-race/)
 
-### Qwen3.5-LiveTranslate-Flash — リアルタイム多言語翻訳（2026年5月19日）
+### Qwen3.7-Max 無料化 — Qwen Chatでの完全無料提供開始（2026年6月1日）
+
+2026年6月1日、Qwen3.7-Maxが**Qwen Chat（千问App）**で完全無料化された。5月下旬の公開当初、API・サブスクリプションともに高額（¥198〜/月のToken Plan、API $2.50/M入力）で「Qwen3.7Max 测了一波有点用不起啊」（5月29日、甲维斯）とコミュニティでコスト批判が相次いだことを受け、Alibabaは無料提供に舵を切った。
+
+- **背景**: 5月29日〜31日にかけて掘金で「Qwen3.7Max 测了一波有点用不起啊」が話題に。「能力向上は明らかだが、高すぎる」との批判が多数
+- **6月1日発表**: 甲维斯が掘金で「免费的Qwen3.7max终于来了！」を公開 — スコア16、⭐20と高いエンゲージメントを記録
+- **影響範囲**: Qwen Chat（千问App v6.9.7+、PCクライアント、Web版）で全ユーザーが無料利用可能。API・Token Planは従来通り有料
+- **コミュニティ反響**: 6月2日〜4日まで継続的に掘金で同記事が再掲載され、継続的な話題に
+
+> **出典**: [掘金 — 免费的Qwen3.7max终于来了！(6/1)](https://juejin.cn/post/7646234722919170088) [T1], [掘金 — Qwen3.7Max 测了一波有点用不起啊(5/29)](https://juejin.cn/post/7644794219849744394) [T1]
+
+### QwenPaw — オープンソース個人AIアシスタント（2026年5月30日）
+
+2026年5月30日、掘金で**QwenPaw（Qwen Personal Agent Workstation）**のソースコード学習ガイドが公開された。AgentScopeチームが開発・メンテナンスするオープンソース個人AIアシスタントプラットフォーム。
+
+- **旧称**: CoPaw
+- **開発元**: AgentScopeチーム
+- **機能**: 個人AIアシスタント（エージェント基盤）
+
+> **出典**: [掘金 — QwenPaw 源码学习指南(5/30)](https://juejin.cn/post/7645237921839874098) [T1]
+
+### オープンソースエコシステムの拡大（2026年6月2日）
+
+#### funyi — Qwen3-ASRベースのリアルタイム字幕ツール
+
+2026年6月2日、V2EXユーザーkvlが**funyi**をオープンソース公開。Qwen3-ASR-1.7Bを音声認識エンジンとして使用するローカルリアルタイム字幕ツール。
+
+- **ASRエンジン**: Qwen3-ASR-1.7B（完全ローカル推論、オフライン可）
+- **翻訳**: Hy-MT2-1.8B
+- **クライアント**: Tauri製デスクトップアプリ（Windows/macOS）
+- **サーバー**: Linux/WSL + NVIDIA CUDA GPU
+- **パフォーマンス**: RTX 4090上で**500ms**の低遅延リアルタイム表示
+- **GitHub**: [github.com/vauxe/funyi](https://github.com/vauxe/funyi)
+- **用途**: ライブ配信、動画視聴、会議のリアルタイム字幕
+
+> **出典**: [V2EX — 写了一个本地模型的实时字幕工具(6/2)](https://www.v2ex.com/t/1217448) [T1]
+
+#### DocPilot Qwen — Android向けドキュメントAIアシスタント
+
+同日、掘金で**DocPilot Qwen**がオープンソース公開された。Qwenをバックエンドに使用したAndroid向けドキュメントAIアシスタント。
+
+- **機能**: ドキュメント取込・解析・AI質問応答・要約生成・テンプレート抽出・ローカル記録管理
+- **用途**: スマートフォンでの学習資料整理、論文読解
+- **ターゲット**: Androidモバイルユーザー
+
+> **出典**: [掘金 — DocPilot Qwen正式开源(6/2)](https://juejin.cn/post/7646593427816693770) [T1]
+
+### Qwen3.7-Max エコシステム展開まとめ（2026年5月下旬〜6月）
+
+| 日付 | 出来事 | ソース |
+|------|--------|--------|
+| 5/29 | Qwen3.7Max高コスト批判が掘金で話題に | 掘金 |
+| 5/30 | QwenPaw学習ガイド公開 | 掘金 |
+| 6/1 | Qwen3.7-Max Qwen Chatで無料化 | 掘金 |
+| 6/2 | funyi字幕ツール（Qwen3-ASR）公開 | V2EX |
+| 6/2 | DocPilot QwenドキュメントAI公開 | 掘金 |
+
+
 
 - **公式モデルID**: `qwen3.5-livetranslate-flash-realtime-2026-05-19`
 - **基盤**: Qwen3.5-Omniベース
@@ -827,11 +884,17 @@ AlibabaはQwenを中核とした**フルスタックAI戦略**を展開：
 - Qwen3.6-Max-Previewのpreserve_thinking機能に関する議論
 - Qwen3.6-35B-A3Bのローカルデプロイ体験（Ollama・vLLM）
 - Zhenwuチップ実装と中国AI自立戦略に関する議論
+- **Qwen3.7-Max無料API体験共有（5/29）** — 芒果灵创の無料API期間をV2EXユーザーが共有
+- **funyiリアルタイム字幕ツール（6/2）** — Qwen3-ASR-1.7BベースのOSS字幕ツールが話題に
+- **Qwen3.7-Maxコード能力評価（5/23〜）** — 「qwen3.7-max 的代码能力提升非常大」との報告
 
 ### 掘金
 - Qwen3-Coder vs Claude Codeのコーディング比較
 - Qwen3.6 Plusのagentic coding実装ガイド
 - Qwen3.6-27Bのベンチマーク分析（dense vs MoE）
+- **Qwen3.7Max高コスト批判→無料化（5/29〜6/1）** — 甲维斯による一連の記事が大きな反響
+- **QwenPawソースコード学習ガイド（5/30）** — AgentScopeチームのOSS個人AIアシスタント
+- **DocPilot Qwenオープンソース公開（6/2）** — Android向けドキュメントAIアシスタント
 
 ### 36kr
 - Qwenが企業級大モデル呼び出し量第1位獲得の分析
@@ -860,4 +923,6 @@ AlibabaはQwenを中核とした**フルスタックAI戦略**を展開：
 
 ### 外部ソース
 
-|| ソース | URL | ティア | 概要 ||---|---|---|---|| 新浪 — Qwen3.6-Max-Preview | [sina.cn/news/5289894780869670](https://www.sina.cn/news/detail/5289894780869670.html) | T1 | 五大核心升级 || MarkTechPost — Qwen3.6-27B | [marktechpost.com/...](https://www.marktechpost.com/2026/04/22/alibaba-qwen-team-releases-qwen3-6-27b-a-dense-open-weight-model-outperforming-397b-moe-on-agentic-coding-benchmarks/) | T1 | 密型Agentic Codingモデル || MarkTechPost — Qwen3.7-Max | [marktechpost.com/...](https://www.marktechpost.com/2026/05/21/qwen-introduces-qwen3-7-max-a-reasoning-agent-model-with-a-1m-token-context-window/) | T1 | 1Mコンテキスト・Agent永続実行 || Alibaba Cloud Blog — Qwen3.7 | [alibabacloud.com/blog/...](https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154) | T1 | Qwen3.7公式Blog (5/21) || TestingCatalog — 千问云 | [testingcatalog.net/...](https://testingcatalog.net/alibaba-launches-qianwen-cloud-a-website-designed-for-ai-agents/) | T1 | Agent向け再設計詳細 || 品玩 — Agent時代インフラ | [pingwest.com/a/313885](https://www.pingwest.com/a/313885) | T1 | 芯片〜MaaS入口全層分析 || OpenRouter — Qwen3.7-Max | [openrouter.ai/qwen/qwen3.7-max](https://openrouter.ai/qwen/qwen3.7-max) | T1 | API価格・仕様 || GitHub — Qwen Code v0.16.0 | [github.com/...](https://github.com/QwenLM/qwen-code/releases/tag/v0.16.0) | T1 | v0.16.0リリースノート || GitHub — Qwen Code v0.16.1 | [github.com/...](https://github.com/QwenLM/qwen-code/releases/tag/v0.16.1) | T1 | v0.16.1ホットフィックス || GitHub — Qwen Code v0.16.2 | [github.com/...](https://github.com/QwenLM/qwen-code/releases/tag/v0.16.2) | T1 | v0.16.2リリース || GitHub — 千问云 Skills/CLI | [github.com/QianWen-AI/...](https://github.com/QianWen-AI/qianwen-ai) | T1 | オープンソースSkills+CLI || 阿里云开发者社区 — Token Plan | [developer.aliyun.com/...](https://developer.aliyun.com/article/1736226) | T1 | Token Plan詳細 || Firethering — Qwen3.7-Max 35h autonomous | [firethering.com/...](https://firethering.com/alibaba-qwen3-7-max-autonomous-agent/) | T1 | 35時間自律カーネル最適化 || BenchLM.ai — Qwen3.7-Max | [benchlm.ai/...](https://benchlm.ai/models/qwen3-7-max) | T2 | リーダーボード || DataCamp — Qwen3.7-Max | [datacamp.com/...](https://www.datacamp.com/blog/qwen3-7-max) | T2 | Features & Benchmarks || 阿里云Qoder CN产品概述 | [help.aliyun.com/...](https://help.aliyun.com/zh/lingma/qoder-cn/product-overview/what-is-xx) | T1 | Qoder CN公式ドキュメント || 阿里云Qoder CN计费说明 | [help.aliyun.com/...](https://help.aliyun.com/zh/lingma/product-overview/billing-description) | T1 | Credits価格体系 || 阿里云Qoder CN更新日志 | [help.aliyun.com/...](https://help.aliyun.com/zh/lingma/product-overview/qoder-cn-update-log) | T1 | IDE更新履歴 || 163新闻 — 通义灵码更名Qoder CN | [163.com/...](https://www.163.com/dy/article/KTHN7OVM05118UGR.html) | T1 | 更名詳細・価格改定 || 新浪 — 阿里云面向海外发布Qwen Cloud | [sina.com.cn/...](https://finance.sina.com.cn/jjxw/2026-05-26/doc-inhzfmym2236354.shtml) | T1 | Qwen Cloud海外版公開 || Alibaba Cloud Blog — Qwen Cloud Global | [alibabacloud.com/...](https://www.alibabacloud.com/blog/alibaba-cloud-launches-qwen-cloud-for-global-markets_603191) | T1 | Token Plan・Enterprise機能 || 新加坡眼 — 阿里云千问大会 | [yan.sg/...](https://www.yan.sg/20260527-the-alibaba-cloud-qwen-conference-was-held-in-singapore/) | T2 | 易点天下Agent事例 || 亿邦动力 — 阿里云发布千问云 | [ebrun.com/...](https://m.ebrun.com/669121.html) | T2 | Skills/CLI解説 || 中证网 — 千问云上线 | [cs.com.cn/...](https://www.cs.com.cn/ssgs/01/2026/05/20/detail_2026052010013156.html) | T1 | 千问云概要 || 新浪 — 百煉平台上架顶尖模型 | [sina.com.cn/...](https://finance.sina.com.cn/tech/roll/2026-05-20/doc-inhypnuh2623495.shtml) | T1 | 他社モデル開放 || AI Models Navi — Qwen3.7完全ガイド | [aimodelsnavi.com/...](https://aimodelsnavi.com/en/blog/qwen3-7-max-deep-dive) | T2 | リリースタイムライン・ベンチマーク || Aipedia — Qwenレビュー | [aipedia.wiki/tools/qwen](https://aipedia.wiki/tools/qwen/) | T2 | 2026年4月時点完全レビュー || Yahoo Finance — 企業戦略 | [finance.yahoo.com/...](https://finance.yahoo.com/markets/sto...
+|| ソース | URL | ティア | 概要 ||---|---|---|---|| 新浪 — Qwen3.6-Max-Preview | [sina.cn/news/5289894780869670](https://www.sina.cn/news/detail/5289894780869670.html) | T1 | 五大核心升级 || MarkTechPost — Qwen3.6-27B | [marktechpost.com/...](https://www.marktechpost.com/2026/04/22/alibaba-qwen-team-releases-qwen3-6-27b-a-dense-open-weight-model-outperforming-397b-moe-on-agentic-coding-benchmarks/) | T1 | 密型Agentic Codingモデル || MarkTechPost — Qwen3.7-Max | [marktechpost.com/...](https://www.marktechpost.com/2026/05/21/qwen-introduces-qwen3-7-max-a-reasoning-agent-model-with-a-1m-token-context-window/) | T1 | 1Mコンテキスト・Agent永続実行 || Alibaba Cloud Blog — Qwen3.7 | [alibabacloud.com/blog/...](https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154) | T1 | Qwen3.7公式Blog (5/21) || TestingCatalog — 千问云 | [testingcatalog.net/...](https://testingcatalog.net/alibaba-launches-qianwen-cloud-a-website-designed-for-ai-agents/) | T1 | Agent向け再設計詳細 || 品玩 — Agent時代インフラ | [pingwest.com/a/313885](https://www.pingwest.com/a/313885) | T1 | 芯片〜MaaS入口全層分析 || OpenRouter — Qwen3.7-Max | [openrouter.ai/qwen/qwen3.7-max](https://openrouter.ai/qwen/qwen3.7-max) | T1 | API価格・仕様 || GitHub — Qwen Code v0.16.0 | [github.com/...](https://github.com/QwenLM/qwen-code/releases/tag/v0.16.0) | T1 | v0.16.0リリースノート || GitHub — Qwen Code v0.16.1 | [github.com/...](https://github.com/QwenLM/qwen-code/releases/tag/v0.16.1) | T1 | v0.16.1ホットフィックス || GitHub — Qwen Code v0.16.2 | [github.com/...](https://github.com/QwenLM/qwen-code/releases/tag/v0.16.2) | T1 | v0.16.2リリース || GitHub — 千问云 Skills/CLI | [github.com/QianWen-AI/...](https://github.com/QianWen-AI/qianwen-ai) | T1 | オープンソースSkills+CLI || 阿里云开发者社区 — Token Plan | [developer.aliyun.com/...](https://developer.aliyun.com/article/1736226) | T1 | Token Plan詳細 || Firethering — Qwen3.7-Max 35h autonomous | [firethering.com/...](https://firethering.com/alibaba-qwen3-7-max-autonomous-agent/) | T1 | 35時間自律カーネル最適化 || BenchLM.ai — Qwen3.7-Max | [benchlm.ai/...](https://benchlm.ai/models/qwen3-7-max) | T2 | リーダーボード || DataCamp — Qwen3.7-Max | [datacamp.com/...](https://www.datacamp.com/blog/qwen3-7-max) | T2 | Features & Benchmarks || 阿里云Qoder CN产品概述 | [help.aliyun.com/...](https://help.aliyun.com/zh/lingma/qoder-cn/product-overview/what-is-xx) | T1 | Qoder CN公式ドキュメント || 阿里云Qoder CN计费说明 | [help.aliyun.com/...](https://help.aliyun.com/zh/lingma/product-overview/billing-description) | T1 | Credits価格体系 || 阿里云Qoder CN更新日志 | [help.aliyun.com/...](https://help.aliyun.com/zh/lingma/product-overview/qoder-cn-update-log) | T1 | IDE更新履歴 || 163新闻 — 通义灵码更名Qoder CN | [163.com/...](https://www.163.com/dy/article/KTHN7OVM05118UGR.html) | T1 | 更名詳細・価格改定 || 新浪 — 阿里云面向海外发布Qwen Cloud | [sina.com.cn/...](https://finance.sina.com.cn/jjxw/2026-05-26/doc-inhzfmym2236354.shtml) | T1 | Qwen Cloud海外版公開 || Alibaba Cloud Blog — Qwen Cloud Global | [alibabacloud.com/...](https://www.alibabacloud.com/blog/alibaba-cloud-launches-qwen-cloud-for-global-markets_603191) | T1 | Token Plan・Enterprise機能 || 新加坡眼 — 阿里云千问大会 | [yan.sg/...](https://www.yan.sg/20260527-the-alibaba-cloud-qwen-conference-was-held-in-singapore/) | T2 | 易点天下Agent事例 || 亿邦动力 — 阿里云发布千问云 | [ebrun.com/...](https://m.ebrun.com/669121.html) | T2 | Skills/CLI解説 || 中证网 — 千问云上线 | [cs.com.cn/...](https://www.cs.com.cn/ssgs/01/2026/05/20/detail_2026052010013156.html) | T1 | 千问云概要 || 新浪 — 百煉平台上架顶尖模型 | [sina.com.cn/...](https://finance.sina.com.cn/tech/roll/2026-05-20/doc-inhypnuh2623495.shtml) | T1 | 他社モデル開放 || AI Models Navi — Qwen3.7完全ガイド | [aimodelsnavi.com/...](https://aimodelsnavi.com/en/blog/qwen3-7-max-deep-dive) | T2 | リリースタイムライン・ベンチマーク || Aipedia — Qwenレビュー | [aipedia.wiki/tools/qwen](https://aipedia.wiki/tools/qwen/) | T2 | 2026年4月時点完全レビュー || Yahoo Finance — 企業戦略 | [finance.yahoo.com/...](https://finance.yahoo.com/markets/sto...|| 掘金 — Qwen3.7-Max無料化 | [juejin.cn/post/7646234722919170088](https://juejin.cn/post/7646234722919170088) | T1 | 6/1 Qwen3.7-Max無料化発表 || 掘金 — Qwen3.7Max高コスト批判 | [juejin.cn/post/7644794219849744394](https://juejin.cn/post/7644794219849744394) | T1 | 5/29 コスト批判記事 || 掘金 — QwenPaw学習ガイド | [juejin.cn/post/7645237921839874098](https://juejin.cn/post/7645237921839874098) | T1 | 5/30 QwenPaw OSS解説 || 掘金 — DocPilot Qwen | [juejin.cn/post/7646593427816693770](https://juejin.cn/post/7646593427816693770) | T1 | 6/2 DocPilot OSS公開 || V2EX — funyi字幕ツール | [v2ex.com/t/1217448](https://www.v2ex.com/t/1217448) | T1 | 6/2 Qwen3-ASR字幕ツール || V2EX — Qwen3.7-Max無料API共有 | [v2ex.com/t/1216566](https://www.v2ex.com/t/1216566) | T1 | 5/29 無料API期間共有|
+
+

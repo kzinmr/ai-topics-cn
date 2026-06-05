@@ -1,7 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-06-04
+最終更新: 2026-06-05
 エンティティ: 63, コンセプト: 120, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-06-05 Active Crawl: qwen/china-coding-agents/dify）
+- `entities/qwen.md` — **更新**: Qwen3.7-Max無料化(6/1/Qwen Chat完全無料)。funyi字幕ツールOSS(Qwen3-ASR-1.7B)。QwenPaw学習ガイド。DocPilot Qwen Android
+- `concepts/china-coding-agents.md` — **更新**: Copilot Token計費転換。MiniMax M3。Codex第三社API。Claude Code 30v。OpenClaw百度統合。商湯Skills OSS。Kimi Code 0.4.0
+- `concepts/dify.md` — **更新**: 5/28〜6/4静定期。Dify×EdgeOne DeepResearch(5/25)
 ### 本日更新（2026-06-04 Active Crawl: deepseek/kimi/mcp-china）
 - `entities/deepseek.md` — **更新**: Reuters報道(6/3)でDeepSeek初外部資金調達確定。50B RMB(梁文鋒20B・騰訊10B・CATL 5B)、評価額350-400B RMB
 - `concepts/kimi.md` — **更新**: OpenAI Codex互換API実装確認(Anthropic互換エンドポイント経由/Kimi K2.5)。CC-Switch/Codex++統合チュートリアル公開。ARR$100M突破(K2.5リリース後1ヶ月)

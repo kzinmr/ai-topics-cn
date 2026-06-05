@@ -77,9 +77,9 @@ topics:
       - "Firethering kernel benchmark Qwen3.7-Max"
     wiki_pages:
       - entities/qwen
-    notes: "2026.05.30更新: Qwen3.7-Max Firethering 35h自律カーネル最適化実験(Extend Attention 10.0x/KernelBench L3 96%)。OpenRouter API使用量急増(5/21 10.3B→5/29累計226M+ prompt/91.9M+ reasoning/$2.50入力$7.50出力/90%キャッシュ割引)。BenchLM.ai 92/100(#3/117)。LMSYS Chatbot Arena Text 1475/Coding 1525。Qwen Code v0.16.2(5/27)/v0.17.0-preview.0(5/29/`/goal`コマンド/`/branch`並列探索/Tool Search prefix最適化)。千問云シンガポール初公開(5/26/Agent-native Skills/易点天下導入事例)。Qoder CNリブランド完了(通义灵码→Qoder/¥599 Enterprise/VS Codeプラグイン保守停止)。百煉プラットフォーム他社モデル統合(Googlm-5.1/MiniMax/Kimi等/顧客8倍増加)。2026.05.26更新: Qwen3.7-Max API正式公開(5/21/Alibaba Cloud Model Studio/¥12/¥36 MTok/Anthropic Messages Protocol対応)。Qwen Code v0.16.0(5/21/80+PR/worktree isolation/auto-approval/qwen serve daemon/OSC 8)/v0.16.1(5/23/Windows Git Bash修正)。千問云(Qianwen Cloud)詳細判明(150+モデルシリーズ/480+モデル/Agent-native Skills/CLI/MCP)。Token Plan月額サブスク(¥198/698/1,398/チーム共有)。Firetheringカーネルベンチ(5/25/Qwen3.7-Max:GLM 5.1比10x/K2.6比5x/DS V4 Pro比3.3x)。AA Index 56.6(Global #5)/MCP-Mark 60.8/Skillsbench 59.2。2026.05.21更新: Qwen3.7-Max(5月20日/Agent-first自律実行最適化/自律エージェント向け初モデル)。Qoder 1.0(自律開発Desktop/統合開発環境/コード自動生成と実行バイナリ直接生成)。Qwen3.5-LiveTranslate-Flash(音声同時通訳/低遅延特化)。Qwen Code v0.16.0(Agent機能・MCP統合拡張)。2026.05.15更新: 5月11日淘宝EC統合(自然言語→商品検索/購入/在庫確認/フォロー)。Qwen Code v0.15.11(5月13日/open-in-terminal/MCP/4o-native/Telemetry)。千問Deep Research正式版(5月6日/十数分レポート)。QWQ/Qwen3.6 overthinkingバグ(5月12日/無限ループ報告)。QuestMobile 3月MAU1.66億(+4,241%/国内2位)。百煉Agent動的ツール。Qwen-Scope(SAE/OSS)/QwenPaw★16.4K/Lingma IDE。Zhenwu AI韶関10K基。Alibaba社内AI統制強化(20人CodeFreeze)。Qwen3.6-235B-A21B-preview DeepSeek V4超え。"
+    notes: "2026.06.05更新: Qwen3.7-Max無料化(6/1/Qwen Chat完全無料/高コスト批判即応)。funyi字幕ツールOSS(Qwen3-ASR-1.7B)。QwenPaw学習ガイド。DocPilot Qwen。2026.05.30更新: Qwen3.7-Max Firetheringカーネル最適化。Qwen Code v0.16.2/v0.17.0-preview。千問云SG公開。Qoder CNリブランド。2026.05.26更新: Qwen3.7-Max API正式公開。Qwen Code v0.16.0/v0.16.1。千問云詳細。Token Plan。Firethering。AA Index 56.6。2026.05.21更新: Qwen3.7-Max Agent-first。Qoder 1.0。Qwen3.5-LiveTranslate-Flash。"
     added: 2026-04-17
-    last_crawled: "2026-05-30"
+    last_crawled: "2026-06-05"
 
   - slug: chatglm
     title: "ChatGLM (智谱清言) — Zhipu AI"
@@ -283,9 +283,9 @@ topics:
       - "Dify IBTimes みずほ 2026年5月"
     wiki_pages:
       - concepts/dify
-    notes: "2026.05.27更新: 前日更新(5/26)分のwiki内容を確認・修正なし。みずほFG Dify EnterpriseのIBTimes JP報道(5/25/日本メディア初大規模金融導入カバレッジ)。GitHub Issue #36507 version disclosure報告。2026.05.26更新: v1.14.2リリース(5/19/CVE-2026-41947認証バイパス修正/HITLワークフロー信頼性改善/LLMノードRAGアクセス)。Impervaが2件の重大脆弱性公開(5/18/ファイルアップロードアカウント乗っ取り/サンドボックス分離バイパス/サイレント修正/10M+Docker Pulls)。みずほFG全社Dify Enterprise導入(金融機関初/業務時間41.8%削減/若手52.2%)。賽博威(Cyberway)初のDify Enterprise公式販売パートナー(大消費業界向け)。GitHub Stars 143K(+1K/2週間)。Agent Server初期実装マージ(v1.15基盤)。2026.05.18更新: v1.14.0 GA正式リリース（5月初旬）—Agent Skills/Sandbox Runtime/Skill EditorがProduction Readyに。Sandbox Runtime: 隔離実行環境でエンタープライズセキュリティ対応。Skill Editor: 再利用可能SOPブロック。前回(5/4)カバー済みの3000万ドル調達・京進グループ協業は継続中。wiki→dify.md更新済み。"
+    notes: "2026.06.05更新: 新規情報なし(5/28〜6/4静定期)。Dify×EdgeOne DeepResearch記事(5/25/掘金)。2026.05.27更新: みずほFG Dify Enterprise IBTimes JP報道。GitHub #36507 version disclosure。2026.05.26更新: v1.14.2(CVE-2026-41947修正)。Imperva脆弱性2件。みずほFG全社導入(41.8%削減)。賽博威販売パートナー。Stars 143K。Agent Server v1.15基盤。2026.05.18更新: v1.14.0 GA Agent Skills Production Ready。"
     added: 2026-04-17
-    last_crawled: 2026-05-27
+    last_crawled: 2026-06-05
 
   # =========================================================
   # 3. Local Deployment & Quantization (ローカル展開・量子化)
@@ -547,9 +547,9 @@ topics:
       - "Grok Build xAI コーディングエージェント"
     wiki_pages:
       - concepts/china-coding-agents
-    notes: "2026.05.28更新: Cursor 3.5(5/20/Automations/Composer 2.5 Kimi K2.5ベース/$293B評価額)。Qoder 1.0(Alibaba/¥599/自律型DesktopAgent/Qwen3-Coder)。DeepSeek Agent Harnessチーム結成(崔添翼責任者/製品化6-12ヶ月)。GitHub Agent HQ(5/22)。Claude Code無料枠月80回圧縮。Codex企業2ヶ月無料。Kimi K2.6誤BAN問題(5/25-27)。Grok Build(xAI/5/27)。2026.05.18更新: Cursor 3.3/3.2/3.1(5月1日~6日)—Agents Window完全版/Composer 2自研MoE 4倍速/best-of-nマルチモデル競争/Design Mode安定化/Kimi K2.6プラグイン/K2.5統合。Kimi K2.6正式価格(¥39/159/559)。Trae SOLO MTCモード独立Desktop/Web版(シェア41.2%首位)。Lingma IDE独立移行。CodingPlan価格改定(百煉Lite廃止/Token Plan時代)。wiki→coding-agents.md更新済み。"
+    notes: "2026.06.05更新: Copilot Token計費転換(6/1/国内モデル移行加速)。MiniMax M3(100万ctx)。Codex第三社API対応(DeepSeek/GLM/Kimi/CC-Switch)。Claude Code 5月30v(Workflows/agent/parallel/pipeline/phase)。OpenClaw百度APP統合。商湯Skills OSS。Agent Runtime議論。Kimi Code 0.4.0。2026.05.28更新: Cursor 3.5(5/20/Automations/Composer 2.5 Kimi K2.5ベース/$293B評価額)。Qoder 1.0(Alibaba/¥599/自律型DesktopAgent/Qwen3-Coder)。DeepSeek Agent Harnessチーム結成(崔添翼責任者/製品化6-12ヶ月)。GitHub Agent HQ(5/22)。Claude Code無料枠月80回圧縮。Codex企業2ヶ月無料。Kimi K2.6誤BAN問題(5/25-27)。Grok Build(xAI/5/27)。2026.05.18更新: Cursor 3.3/3.2/3.1(5月1日~6日)—Agents Window完全版/Composer 2自研MoE 4倍速/best-of-nマルチモデル競争/Design Mode安定化/Kimi K2.6プラグイン/K2.5統合。Kimi K2.6正式価格(¥39/159/559)。Trae SOLO MTCモード独立Desktop/Web版(シェア41.2%首位)。Lingma IDE独立移行。CodingPlan価格改定(百煉Lite廃止/Token Plan時代)。wiki→coding-agents.md更新済み。"
     added: 2026-04-17
-    last_crawled: 2026-05-28
+    last_crawled: 2026-06-05
 
   - slug: coding-plan
     title: "Coding Plan (编程计划)"
