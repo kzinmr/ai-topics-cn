@@ -2,6 +2,9 @@
 
 最終更新: 2026-06-06
 エンティティ: 63, コンセプト: 121, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-06-06 Crawl Triage: LLM-as-Agent技術比較 / LangChain基礎記事）
+- `concepts/agent.md` — **更新**: 機器之心PRO Week 34のLLM-as-Agent技術比較記事セクション追加。LLM-as-Agentパターンのアーキテクチャ比較知見を統合
+- `concepts/langchain.md` — **更新**: 更新日付のみ（既存ページのJuejin LangChain基礎実践記事参照済み、内容追加不要）
 ### 本日更新（2026-06-06 Active Crawl: china-ai-regulation/china-ai-agent-ecosystem/china-open-source-ai）
 - `concepts/china-ai-agent-ecosystem.md` — **更新**: 6/2-5最新動向—悟空シフト加速(阿里悟空115票/Codex Sites/DeepSeek有料化/headroom Token 95%圧縮/字节AI 4大命題/Agentセキュリティガイド)
 - `concepts/china-ai-regulation.md` — 調査のみ(新規情報なし/Exa SDK非稼働/Web検索不可/高考AI禁止フォロー不可)

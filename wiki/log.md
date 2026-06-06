@@ -5,7 +5,22 @@
 |
 |
 |
-## [2026-06-06] active-crawl | china-ai-regulation/china-ai-agent-ecosystem/china-open-source-ai
+## [2026-06-06] crawl-triage | LLM-as-Agent技術比較 / LangChain基礎記事
+
+### Wiki更新
+1. **concepts/agent.md** — **更新**: 機器之心PRO Week 34のLLM-as-Agent技術比較セクション追加。エージェントアーキテクチャの比較知見を統合。updated日付を2026-06-06に更新
+2. **concepts/langchain.md** — **更新**: updated日付のみ（2026-06-03→2026-06-06）。既存ページにJuejin LangChain基礎実践記事への参照済み、内容追加不要
+
+### スキップ
+- V2EX 6件: 5件が「暂无内容」、1件がゴシップ/憶測スレッド。wiki価値なし
+- WeChat 53件: 大半が再収集重複（AI00ハッシュ`aafeba3f`、SpokenWOZハッシュ`159c78b4`、LLM-as-Agentハッシュ`f3c823cd`）。既存ページで処理済み
+- Juejin 1件: LangChain基礎記事 → take済み
+
+### チェックポイント
+- run_id: 20260606T090211Z
+- source: crawl-triage
+
+---
 |
 ### Wiki更新
 |- `concepts/china-ai-agent-ecosystem.md` — **更新**: 6/2-5最新動向追加—悟空シフト加速(阿里悟空115票/ロブスター→悟空)。Codex Sites(6/5)。DeepSeek有料化完了。headroom Token 95%圧縮。字节AI 4大命題。Agentセキュリティガイド。低コードAgent汎用設計。DeepSeek估值+150億ドル

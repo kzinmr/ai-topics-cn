@@ -4,6 +4,7 @@ description: AI Agentの基本概念、技術スタック、中国エコシス�
 status: active
 category: concept
 source_lang: zh-CN
+updated: 2026-06-06
 ---
 
 # AI Agent（人工知能エージェント）
@@ -14,7 +15,13 @@ AI Agentは**大規模言語モデル（LLM）を核とした自律的なソフ�
 
 ### LLM vs Agent
 
-2026年4月の中国AIコミュニティでは、**「LLMは単なる"脳"であり、Agentこそが"スーパー従業員"である」**という認識が広がっている。
+2026年5月の中国AIコミュニティでは、**「LLMは単なる"脳"であり、Agentこそが"スーパー従業員"である」**という認識が広がっている。
+
+### LLM-as-Agent技術比較
+
+機器之心PRO会員通讯によるLLM-as-Agent技術比較記事。複数のエージェントアーキテクチャの実装アプローチを比較しており、既存の4大核心技术（LLM、Agentフレームワーク、RAG、Skill）にLLM-as-Agentパターンが追加されたことを示している。
+
+> **出典**: [機器之心PRO Week 34 — LLM-as-Agent技術哪家強](https://weixin.sogou.com/wechat-media/2026-05-04-LLM-as-Agent技術哪家強-f3c823cd.md) [T2: WeChat]
 
 - **LLM**: 言語理解・生成に特化した基盤モデル
 - **Agent**: LLMにツール使用、計画実行、環境認識能力を組み合わせた自律システム
