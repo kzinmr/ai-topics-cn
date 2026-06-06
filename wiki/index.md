@@ -1,7 +1,9 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-06-05
-エンティティ: 63, コンセプト: 120, ダイジェスト: 7, 比較: 2, ページ: 9
+最終更新: 2026-06-06
+エンティティ: 63, コンセプト: 121, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-06-06 Newsletter Ingest: Tech Taiwan — AI Rack War、Copper-to-Optics移行）
+- `concepts/ai-infrastructure.md` — **新規**: AIインフラの三本柱（Compute/Memory/Connectivity）。Copper Wallと光配線移行。Marvell（Inphi買収/$10B）、MediaTek、Foxconnの戦略的ポジショニング。Nvidia-Broadcom-Marvell三極構造
 ### 本日更新（2026-06-05 Active Crawl: qwen/china-coding-agents/dify）
 - `entities/qwen.md` — **更新**: Qwen3.7-Max無料化(6/1/Qwen Chat完全無料)。funyi字幕ツールOSS(Qwen3-ASR-1.7B)。QwenPaw学習ガイド。DocPilot Qwen Android
 - `concepts/china-coding-agents.md` — **更新**: Copilot Token計費転換。MiniMax M3。Codex第三社API。Claude Code 30v。OpenClaw百度統合。商湯Skills OSS。Kimi Code 0.4.0
@@ -269,6 +271,7 @@
 - [[agentic-engineering|Agentic Engineering — Vibe Codingの第2世代（SE 3.0/Harness Engineering/自律開発パラダイム）]]
 - [[ai-agent|AI Agent（智能体）— 中国語圏での議論動向]]
 - [[agent-team-swarm|AI Agentチーム・スワームパターン — 複数AIエージェント協調開発]]
+- [[ai-infrastructure|AIインフラ構造 — AI Rack War、Copper-to-Optics移行、Compute/Memory/Connectivity三本柱]]
 - [[ai-inner-os|AI Inner OS — AI CLIツールのインナーモノローグ可視化プラグイン]]
 - [[ai-safety-subconscious|ai-safety-subconscious]]
 - [[ai-video-generation|AI短视频自动生成 — 一人開発の技術スタックと実践知]]

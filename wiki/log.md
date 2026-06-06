@@ -5,6 +5,23 @@
 |
 |
 
+## [2026-06-06] newsletter-triage | Tech Taiwan — AI Rack War: Copper-to-Optics移行
+
+### Wiki更新
+1. **concepts/ai-infrastructure.md** — **新規**: AIインフラの三本柱（Compute/Memory/Connectivity）。Copper Wallと光配線移行。MarvellのInphi買収（$10B/シリコンフォトニクス）。Nvidia→Marvell出資（$2B/対Broadcom軸）。MediaTek/FoxconnのComputex 2026展示。Nvidia-Broadcom-Marvell三極構造
+
+### 処理対象newsletter
+- `inbox/newsletters/2026-06-05--Inside-the-AI-Rack-War-MediaTek-and-Foxconn-Race-Toward-the---fa3b55ff.md` — digest処理済み
+- 関連raw記事:
+  - `wiki/raw/articles/substack.com--redirect-2-eyjlijoiahr0chm6ly9jd25ld3nyb29tlnn1ynn0ywnrlmnvb--348cd548.md` — 本体記事（Tech Taiwan/胡說科技）
+- スキップ: 同一記事のURLパラメータ違い5件、Substackプロフィール1件、アプリ宣伝1件、サインアップページ1件
+
+### チェックポイント
+- run_id: 20260606T040034Z
+- source: newsletter-triage
+
+---
+
 ## [2026-06-05] active-crawl | qwen/china-coding-agents/dify
 |
 ### Wiki更新
