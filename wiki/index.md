@@ -2,6 +2,10 @@
 
 最終更新: 2026-06-06
 エンティティ: 63, コンセプト: 121, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-06-06 Active Crawl: china-ai-regulation/china-ai-agent-ecosystem/china-open-source-ai）
+- `concepts/china-ai-agent-ecosystem.md` — **更新**: 6/2-5最新動向—悟空シフト加速(阿里悟空115票/Codex Sites/DeepSeek有料化/headroom Token 95%圧縮/字节AI 4大命題/Agentセキュリティガイド)
+- `concepts/china-ai-regulation.md` — 調査のみ(新規情報なし/Exa SDK非稼働/Web検索不可/高考AI禁止フォロー不可)
+- `concepts/china-open-source-ai.md` — 調査のみ(新規情報なし/Exa SDK非稼働/18日間ギャップ埋められず)
 ### 本日更新（2026-06-06 Newsletter Ingest: Tech Taiwan — AI Rack War、Copper-to-Optics移行）
 - `concepts/ai-infrastructure.md` — **新規**: AIインフラの三本柱（Compute/Memory/Connectivity）。Copper Wallと光配線移行。Marvell（Inphi買収/$10B）、MediaTek、Foxconnの戦略的ポジショニング。Nvidia-Broadcom-Marvell三極構造
 ### 本日更新（2026-06-05 Active Crawl: qwen/china-coding-agents/dify）

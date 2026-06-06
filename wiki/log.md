@@ -1,9 +1,23 @@
 |
-
-|
-
 |
 |
+|
+|
+|
+|
+## [2026-06-06] active-crawl | china-ai-regulation/china-ai-agent-ecosystem/china-open-source-ai
+|
+### Wiki更新
+|- `concepts/china-ai-agent-ecosystem.md` — **更新**: 6/2-5最新動向追加—悟空シフト加速(阿里悟空115票/ロブスター→悟空)。Codex Sites(6/5)。DeepSeek有料化完了。headroom Token 95%圧縮。字节AI 4大命題。Agentセキュリティガイド。低コードAgent汎用設計。DeepSeek估值+150億ドル
+|- `concepts/china-ai-regulation.md` — 調査のみ(新規情報なし/Exa SDK非稼働/Web検索不可)
+|- `concepts/china-open-source-ai.md` — 調査のみ(新規情報なし/Exa SDK非稼働/18日間ギャップ埋められず)
+|
+### hot-topics.yaml更新
+|- china-ai-regulation: last_crawled→2026-06-06、notes更新(新規情報なし記録)
+|- china-ai-agent-ecosystem: last_crawled→2026-06-06、notes更新(悟空/Codex Sites/DeepSeek有料化/Token圧縮等)
+|- china-open-source-ai: last_crawled→2026-06-06、notes更新(新規情報なし記録)
+|
+---
 
 ## [2026-06-06] newsletter-triage | Tech Taiwan — AI Rack War: Copper-to-Optics移行
 
@@ -21,6 +35,8 @@
 - source: newsletter-triage
 
 ---
+
+
 
 ## [2026-06-05] active-crawl | qwen/china-coding-agents/dify
 |

@@ -220,9 +220,9 @@ topics:
       - "百融智能 RaaS 硅基員工"
     wiki_pages:
       - concepts/china-ai-agent-ecosystem
-    notes: "2026.06.01更新: 百蝦大戦からプラットフォーマー時代へ移行—OpenClaw勢い減速(V2EX議論「小龙虾为什么突然不火了」/脆弱性・SOE禁止)。阿里悟空(Wukong)Agent OSがOpenClaw代替として急浮上(セキュリティ・阿里エコシステム統合)。DeepSeek再生・修正回数制限開始(5/30/無料枠持続可能性限界/700億調達承認待ち)。上海大模型リーダー(MiniMax推定)A株上場へ(中国AI企業初大型IPO/5/30)。OpenAI CodexがDeepSeek等サードパーティAPI対応(5/31/モデルロックイン緩和)。Hermes Agentが中国V2EXコミュニティでClaude Code対比で高評価。Kimi Code 0.4.0リリース(完全TypeScript化/ミリ秒起動/誤BAN信頼問題継続)。新興OSS:agentserver(個人算力網)/opencontext(クロスAgentコンテキスト)/DeepAgents middleware。2026.05.23更新: Agent三巨頭サミット(5/18/智譜AutoGLM 3.0+Qwen Agent v2+DeepSeek R2)でAgent能力競争激化。百度文心5.1(5/13/DAA指標/自律エージェント特化)。火山引擎Agent Plan発表。百融RaaS(硅基員工10万+)。360 Agent Studio。Agent Token消費が全Tokenの70%超に(36kr)。2026.05.17更新: 百度Create2026(5/13-14)で「心響(Xinxiang)」AGIアシスタント発表/DAA(Daily Active Agents)新指標提案/Token Factory(採掘→精錬→製造)3段階モデル。36kr大分析「中国跳过LLM直奔Agent时代」—Token消費180兆超の70%+がAgent/Alibaba ATH(Token Hub)構想/腾讯Agentインフラ戦略。前回(5/12): 国家Agent政策/腾讯云全栈/BoAgent/百融RaaS。前々回: 推論2/3/Deloitte/GPU高騰/$0.30vs$30/OpenClaw12脆弱性/SOE禁止/補助金。"
+    notes: "2026.06.06更新: 悟空シフト加速(阿里悟空115票/ロブスター→悟空)。Codex Sites(6/5/内蔵Web構築)。DeepSeek有料化完了。headroom Token 95%圧縮。字节AI 4大命題。Agentセキュリティガイド。低コードAgent汎用設計。DeepSeek估值+150億ドル。2026.06.01更新: 百蝦大戦からプラットフォーマー時代へ移行—OpenClaw勢い減速(V2EX議論「小龙虾为什么突然不火了」/脆弱性・SOE禁止)。阿里悟空(Wukong)Agent OSがOpenClaw代替として急浮上(セキュリティ・阿里エコシステム統合)。DeepSeek再生・修正回数制限開始(5/30/無料枠持続可能性限界/700億調達承認待ち)。上海大模型リーダー(MiniMax推定)A株上場へ(中国AI企業初大型IPO/5/30)。OpenAI CodexがDeepSeek等サードパーティAPI対応(5/31/モデルロックイン緩和)。Hermes Agentが中国V2EXコミュニティでClaude Code対比で高評価。Kimi Code 0.4.0リリース(完全TypeScript化/ミリ秒起動/誤BAN信頼問題継続)。新興OSS:agentserver(個人算力網)/opencontext(クロスAgentコンテキスト)/DeepAgents middleware。2026.05.23更新: Agent三巨頭サミット(5/18/智譜AutoGLM 3.0+Qwen Agent v2+DeepSeek R2)でAgent能力競争激化。百度文心5.1(5/13/DAA指標/自律エージェント特化)。火山引擎Agent Plan発表。百融RaaS(硅基員工10万+)。360 Agent Studio。Agent Token消費が全Tokenの70%超に(36kr)。2026.05.17更新: 百度Create2026(5/13-14)で「心響(Xinxiang)」AGIアシスタント発表/DAA(Daily Active Agents)新指標提案/Token Factory(採掘→精錬→製造)3段階モデル。36kr大分析「中国跳过LLM直奔Agent时代」—Token消費180兆超の70%+がAgent/Alibaba ATH(Token Hub)構想/腾讯Agentインフラ戦略。前回(5/12): 国家Agent政策/腾讯云全栈/BoAgent/百融RaaS。前々回: 推論2/3/Deloitte/GPU高騰/$0.30vs$30/OpenClaw12脆弱性/SOE禁止/補助金。"
     added: 2026-04-17
-    last_crawled: 2026-06-01
+    last_crawled: 2026-06-06
 
   - slug: openclaw
     title: "OpenClaw — オープンソースAI Agentエンドポイントツール"
@@ -371,9 +371,9 @@ topics:
       - "2026年高考 AI使用禁止 教育部"
     wiki_pages:
       - concepts/china-ai-regulation
-    notes: "2026.05.29更新: 光明日报AI訓練データ著作権議論(5/28/公開データ使用解釈/管理規範策定急務)。国家网信办《人工智能伦理安全指引1.0》応用細則公表(5/19-26/2万企業対象/内部倫理審査義務化)。教育部2026年高考AI使用禁止措置(5/25/作弊認定/大学入試大規模AI不正防止)。2026.05.23更新: 《人工智能应用伦理安全指引1.0》(5/19/TC260発行/中国網絡文明大会/法律+倫理の双軌機制)。国家発改委AI立法研究開始+「人工智能+」配套文件策定中(5/22/NDRC公式発表/CAC+MIIT+NDRCの3省庁AI立法関与)。工信部AI科技倫理審査先導計画(5/9通知/5/20〆切/6/1〜11/30実施)。ATH 1.0信通院+Tencent+Huawei等(5/7/MCP/A2A上位信頼層/オープンソース)。清朗行動執行: 剪映/即夢AI/猫箱摘発(4/28/字节跳动/Bytedance/初の大手摘発)。全国初AI代写种草笔记判決(5/12/杭州中院/10万元賠償/四要素判定法)。wiki更新済み(china-ai-regulation.md)。"
+    notes: "2026.06.06更新: 新規情報なし（Web検索不可/Exa SDK非稼働/ローカルクロールデータに規制関連記事なし）。2026.05.29更新: 光明日报AI訓練データ著作権議論(5/28/公開データ使用解釈/管理規範策定急務)。国家网信办《人工智能伦理安全指引1.0》応用細則公表(5/19-26/2万企業対象/内部倫理審査義務化)。教育部2026年高考AI使用禁止措置(5/25/作弊認定/大学入試大規模AI不正防止)。2026.05.23更新: 《人工智能应用伦理安全指引1.0》(5/19/TC260発行/中国網絡文明大会/法律+倫理の双軌機制)。国家発改委AI立法研究開始+「人工智能+」配套文件策定中(5/22/NDRC公式発表/CAC+MIIT+NDRCの3省庁AI立法関与)。工信部AI科技倫理審査先導計画(5/9通知/5/20〆切/6/1〜11/30実施)。ATH 1.0信通院+Tencent+Huawei等(5/7/MCP/A2A上位信頼層/オープンソース)。清朗行動執行: 剪映/即夢AI/猫箱摘発(4/28/字节跳动/Bytedance/初の大手摘発)。全国初AI代写种草笔记判決(5/12/杭州中院/10万元賠償/四要素判定法)。wiki更新済み(china-ai-regulation.md)。"
     added: 2026-04-17
-    last_crawled: 2026-05-29
+    last_crawled: 2026-06-06
 
   # =========================================================
   # 5. Chinese-Origin Frameworks & Tools (中国発フレームワーク)
@@ -608,6 +608,6 @@ topics:
       - "LingBot VLA embodied AI"
     wiki_pages:
       - concepts/china-open-source-ai
-    notes: "2026.05.19更新: MiniCPM-V 4.6公開(面壁智能/OmniMM-Agentモード/ChatGPT音声対抗/ベンチマーク上位)。蚂蚁LingBot-VLAツールチェーンオープンソース化(具現化AI/英偉達/清華大学)。Ring-2.6-1Tの特定SCOPE制限モデルオープンソース公開(5/16/昇腾対応/COIG-P个人情報削除版)。LingJi OS(灵玑OS)中国初のオープンソースAgent基盤OS(中科曙光/ソフトウェア定義Agent)。前回: 魔乐社区(MoLe)正式発足(4/29/Linux Foundation AAIF/37社・機関/4大モデル/4大国産HW)。蚂蚁Ling-2.6-1T MITオープンソース化(4/30/SWE-bench 65.2%/AIME 72.8%/128台昇腾910C)。太湖共识。中关村AI开源联盟。"
+    notes: "2026.06.06更新: 新規情報なし（Exa SDK非稼働/18日間ギャップ/ローカルクロールデータに該当記事なし/MiniCPM-V/Ring-2.6/灵玑OS/LingBot等の進展確認不可）。2026.05.19更新: MiniCPM-V 4.6公開(面壁智能/OmniMM-Agentモード/ChatGPT音声対抗/ベンチマーク上位)。蚂蚁LingBot-VLAツールチェーンオープンソース化(具現化AI/英偉達/清華大学)。Ring-2.6-1Tの特定SCOPE制限モデルオープンソース公開(5/16/昇腾対応/COIG-P个人情報削除版)。LingJi OS(灵玑OS)中国初のオープンソースAgent基盤OS(中科曙光/ソフトウェア定義Agent)。前回: 魔乐社区(MoLe)正式発足(4/29/Linux Foundation AAIF/37社・機関/4大モデル/4大国産HW)。蚂蚁Ling-2.6-1T MITオープンソース化(4/30/SWE-bench 65.2%/AIME 72.8%/128台昇腾910C)。太湖共识。中关村AI开源联盟。"
     added: 2026-04-17
-    last_crawled: 2026-05-19
+    last_crawled: 2026-06-06
