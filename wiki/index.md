@@ -1,7 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-06-06
+最終更新: 2026-06-07
 エンティティ: 63, コンセプト: 121, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-06-07 Active Crawl: doubao/tencent-hunyuan/chatglm）
+- `concepts/doubao.md` — **更新**: 6/4-6動向追加(字节AI 4大命題/AI手机入口微信競合/「豆包不用负责」AI説明責任議論)
+- `entities/tencent-hunyuan.md` — **更新**: 姚順雨初肉声講演追加(6/5/腾讯云AI下半场/Context優位・Co-Design・AGI組織構築)
+- `concepts/chatglm.md` — **更新**: 科创板A株上場申請追加(6/1深夜公告/A+H二重上場/150億元調達/Z.AI Co.,Ltd.社名変更)
 ### 本日更新（2026-06-06 Crawl Triage: LLM-as-Agent技術比較 / LangChain基礎記事）
 - `concepts/agent.md` — **更新**: 機器之心PRO Week 34のLLM-as-Agent技術比較記事セクション追加。LLM-as-Agentパターンのアーキテクチャ比較知見を統合
 - `concepts/langchain.md` — **更新**: 更新日付のみ（既存ページのJuejin LangChain基礎実践記事参照済み、内容追加不要）

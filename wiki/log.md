@@ -5,6 +5,18 @@
 |
 |
 |
+## [2026-06-07] active-crawl | doubao / tencent-hunyuan / chatglm
+
+### Wiki更新
+|- `concepts/doubao.md` — **更新**: 6/4-6動向追加(字节AI 4大命題/AI手机入口微信競合/「豆包不用负责」AI説明責任議論)。出典:36kr/全天候科技
+|- `entities/tencent-hunyuan.md` — **更新**: 姚順雨初肉声講演追加(6/5/腾讯云AI下半场/Context優位・Co-Design・AGI組織構築15見解)。出典:36kr/字母榜
+|- `concepts/chatglm.md` — **更新**: 科创板A株上場申請追加(6/1深夜公告/A+H二重上場/150億元調達/Z.AI Co.,Ltd.社名変更)。出典:36kr/字母AI
+
+### hot-topics.yaml更新
+|- doubao: last_crawled→2026-06-07、notes更新(字节AI4大命題/AI手机入口/説明責任議論)
+|- tencent-hunyuan: last_crawled→2026-06-07、notes更新(姚順雨初肉声講演)
+|- chatglm: last_crawled→2026-06-07、notes更新(科创板A株上場申請)
+
 ## [2026-06-06] crawl-triage | LLM-as-Agent技術比較 / LangChain基礎記事
 
 ### Wiki更新
