@@ -5,6 +5,19 @@
 |
 |
 |
+|
+|## [2026-06-08] active-crawl | deepseek / mcp-china / china-ai-model-filing
+|
+|### Wiki更新
+||- `concepts/deepseek.md` — **更新**: 6/4-8最新動向追加(DeepSeek估值再涨150亿美元/Ramp企業トレンド1位/Princeton Goedel-Architect 99.2% Mini2F2/V4.1リリース6月予定のまま日程未確定)。出典:36kr/机器之心/V2EX
+||- `concepts/mcp-china.md` — **更新**: 6/4-8生態系静かな成熟期(教育コンテンツ爆発/MCP/A2A/AG-UI住み分け定着/無状態RC 7/28最終仕様予定/AI第二脳プロジェクト継続)。出典:ローカルクロールデータ(Web検索障害)
+||- `concepts/china-ai-model-filing.md` — **更新**: 5/24-6/8間新規情報なし(第17批最新/第18批6月下旬-7月上旬予想/擬人化互動服務管理暫行辦法実施細則未発表/清朗行動継続中新執行なし)。出典:ローカルクロールデータ(Web検索障害)
+|
+|### hot-topics.yaml更新
+||- deepseek: last_crawled→2026-06-08、notes更新(估值再涨150億/Ramp1位/Princeton定理証明)
+||- mcp-china: last_crawled→2026-06-08、notes更新(教育コンテンツ爆発/プロトコル住分/無状態RC進捗)
+||- china-ai-model-filing: last_crawled→2026-06-08、notes更新(新規情報なし・前回予想据置き)
+|
 ## [2026-06-07] active-crawl | doubao / tencent-hunyuan / chatglm
 
 ### Wiki更新

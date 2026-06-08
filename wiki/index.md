@@ -1,7 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-06-07
+最終更新: 2026-06-08
 エンティティ: 63, コンセプト: 121, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-06-08 Active Crawl: deepseek/mcp-china/china-ai-model-filing）
+|- `concepts/deepseek.md` — **更新**: 6/4-8最新動向(估值再涨150億/US企業トレンド1位Ramp/Princeton定理証明99.2%/V4.1未確定)
+|- `concepts/mcp-china.md` — **更新**: 6/4-8生態系静かな成熟期(教育コンテンツ爆発/プロトコル住分定着/無状態RC 7/28最終仕様予定)
+|- `concepts/china-ai-model-filing.md` — **更新**: 5/24-6/8新規情報なし(第17批最新のまま/第18批6月下旬-7月上旬予想/Web検索障害のため調査限界)
 ### 本日更新（2026-06-07 Active Crawl: doubao/tencent-hunyuan/chatglm）
 - `concepts/doubao.md` — **更新**: 6/4-6動向追加(字节AI 4大命題/AI手机入口微信競合/「豆包不用负责」AI説明責任議論)
 - `entities/tencent-hunyuan.md` — **更新**: 姚順雨初肉声講演追加(6/5/腾讯云AI下半场/Context優位・Co-Design・AGI組織構築)

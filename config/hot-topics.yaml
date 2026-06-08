@@ -49,9 +49,9 @@ topics:
       - "DeepSeek テンセント 融資 700億元評価額"
     wiki_pages:
       - concepts/deepseek
-    notes: "2026.06.04更新: Reuters報道(6/3)でDeepSeek融資確定—50B RMB(梁文鋒20B・騰訊10B・CATL 5B)、評価額350-400B RMB。初外部資金調達。V4-Pro永久値下げ継続。Agent Harness製品化予定。2026.05.31更新: DeepSeek V4.1マルチモーダル版6月リリース予定(画像+音声+テキスト/MCP Agent/Engram Memory最適化)。テンセントがDeepSeekに追加融資(評価額700億元/腾讯出資)。V4-Flash OpenRouter週間1位継続/3.43Tトークン。V4-Pro永久75%値下げ(世界最安値/入力3元)。Agent Harnessチーム崔添翼氏率いる/6-12ヶ月でDeepSeek Code製品化予定。"
+    notes: "2026.06.08更新: DeepSeek估值再涨150亿美元报道。米国企業トレンドランキング1位(Ramp)。プリンストン大学Goedel-Architect発表(V4-Flash/99.2% MiniF2F/500倍コスト削減)。V4.1リリースは6月予定のまま日程未確定。2026.06.04更新: Reuters報道(6/3)でDeepSeek融資確定—50B RMB(梁文鋒20B・騰訊10B・CATL 5B)、評価額350-400B RMB。初外部資金調達。V4-Pro永久値下げ継続。Agent Harness製品化予定。2026.05.31更新: DeepSeek V4.1マルチモーダル版6月リリース予定(画像+音声+テキスト/MCP Agent/Engram Memory最適化)。テンセントがDeepSeekに追加融資(評価額700億元/腾讯出資)。V4-Flash OpenRouter週間1位継続/3.43Tトークン。V4-Pro永久75%値下げ(世界最安値/入力3元)。Agent Harnessチーム崔添翼氏率いる/6-12ヶ月でDeepSeek Code製品化予定。"
     added: 2026-04-17
-    last_crawled: 2026-06-04
+    last_crawled: 2026-06-08
 
   - slug: qwen
     title: "Qwen (通义千问) — Alibaba"
@@ -391,9 +391,9 @@ topics:
       - "上海AI备案补助金 徐汇区 2026"
     wiki_pages:
       - concepts/china-ai-model-filing
-    notes: "2026.05.24更新: 生成式AIサービス备案868件(+72)/登記530件(+49)(4/30時点)。智能体規範応用実施意見(5/8/3省庁/AI Agent初政策/19典型シーン/高リスク分類)。清朗行動(4/30〜8月/7類問題/ByteDance3摘発/北京150社)。地方政府補助金: 上海徐匯最高500万/上海模塑申城第1批次5/8-27/深圳模型券年上限200万/深圳国産AIセンター年3,000万。擬人化互動服務管理暫行辦法(5省庁/7/15施行/备案+年度検証+アプリ確認)。第17批深度合成算法备案累計6,451件。第18批未発表(次回6月下旬〜7月上旬予想)。2026.05.13更新: 第17批5/6/清朗行動4/30/累計7,000件超/18地区補助金/深圳訓力券年間1,000万/7月新国標11項目。"
+    notes: "2026.06.08更新: 新規情報なし(5/24〜6/8間に大きな制度変更・新規备案バッチなし)。第17批(5/6)が最新のまま。第18批は6月下旬〜7月上旬と予想通り。擬人化互動服務管理暫行辦法(7/15施行)の実施細則未発表。清朗行動継続中だが新たな執行措置なし。2026.05.24更新: 生成式AIサービス备案868件(+72)/登記530件(+49)(4/30時点)。智能体規範応用実施意見(5/8/3省庁/AI Agent初政策/19典型シーン/高リスク分類)。清朗行動(4/30〜8月/7類問題/ByteDance3摘発/北京150社)。地方政府補助金: 上海徐匯最高500万/上海模塑申城第1批次5/8-27/深圳模型券年上限200万/深圳国産AIセンター年3,000万。擬人化互動服務管理暫行辦法(5省庁/7/15施行/备案+年度検証+アプリ確認)。第17批深度合成算法备案累計6,451件。第18批未発表(次回6月下旬〜7月上旬予想)。2026.05.13更新: 第17批5/6/清朗行動4/30/累計7,000件超/18地区補助金/深圳訓力券年間1,000万/7月新国標11項目。"
     added: 2026-04-17
-    last_crawled: 2026-05-24
+    last_crawled: 2026-06-08
 
   - slug: china-gpu-restrictions
     title: "GPU Export Restrictions & China's Response (芯片出口管制)"
@@ -435,9 +435,9 @@ topics:
       - "AAIF 43新メンバー 2026"
     wiki_pages:
       - concepts/mcp-china
-    notes: "2026.06.04更新: MCP Skills実装(V2EX/短视频分析)。MCP/A2A/AG-UI三大プロトコル比較記事(掘金)。AI「第二脳」プロジェクト(Claude/Cursor/Windsurf共有記憶/MCP経由)。MCP Server 30分チュートリアル。OpenClaw実用記事継続。プロトコル標準化・企業採用ガイドライン整備が進行中。2026.06.01更新: 阿里悟空(Wukong)Agent OS + MCP広場リリース(OpenClaw対抗/钉钉統合/5/26)。QwenPaw Agent(QwenベースMCPネイティブAgent/5/29-30)。Anthropic Knowledge Work Plugins職能別MCP Serverテンプレート公開(5/26)。AI Agent記憶システム比較(OpenClaw/Claude Code/Hermes AgentのMCP活用比較/5/28)。LLM-as-Agent評価:機器之心が中国モデルのMCPツール呼び出し能力比較(5/30)。FastAPI脆弱性とAI Agent安全リスク(MCPインフラ依存関係/5/28)。MCP教育コンテンツ急増(チュートリアル記事連日出現/開発者教育成熟)。Claude Opus 4.8リリース(Agent能力向上/V2EX/36krで話題/5/28)。2026.05.24更新: Alibaba Cloud Summit 5/20—全クラウド製品MCP化/Qwen3.7-Max発表/ModelScope MCP広場千種類/トークン収益15倍。ByteDance火山引擎MCP Server OSS(100+MCP/271Stars/日次12.7兆tokens)。Tencent MCP Gateway(ゼロコードREST変換)/MCP-FLOW研究(99.2%)/Tencent Docs MCP/TKE MCP。AAIF 43新メンバー追加(Stripe/F5/GoDaddy/U.S. Army等190組織)。MCP STDIO設計脆弱性(200K+server/150M+SDK DL/OX Security)。Community Bank SEC 8-K初開示(5/7/サードパーティMCPリスク)。エコシステム: 9,400+公開Server(7.8倍)/SDK月間3億DL。2026.05.19更新: MCPデータベース脆弱性(AP Doris/Pinot)/Alibaba Cloud RDS MCP CVE-2026-30623/パッチ未/Xinhua Finance MCP/EmbeddedLLM MCPマルウェア。"
+    notes: "2026.06.08更新: 6月4日〜8日は生態系の静かな成熟期。教育コンテンツ爆発(MCP天気ツール/30分MCP Server/Coding Agent全5回)。MCP/A2A/AG-UI三大プロトコル住み分け定着。AI第二脳プロジェクト継続。無状態RC(5月21日リリース/7月28日最終仕様予定)。Web検索ツール障害のため外部データ不足。2026.06.04更新: MCP Skills実装(V2EX/短视频分析)。MCP/A2A/AG-UI三大プロトコル比較記事(掘金)。AI「第二脳」プロジェクト(Claude/Cursor/Windsurf共有記憶/MCP経由)。MCP Server 30分チュートリアル。OpenClaw実用記事継続。プロトコル標準化・企業採用ガイドライン整備が進行中。2026.06.01更新: 阿里悟空(Wukong)Agent OS + MCP広場リリース(OpenClaw対抗/钉钉統合/5/26)。QwenPaw Agent(QwenベースMCPネイティブAgent/5/29-30)。Anthropic Knowledge Work Plugins職能別MCP Serverテンプレート公開(5/26)。AI Agent記憶システム比較(OpenClaw/Claude Code/Hermes AgentのMCP活用比較/5/28)。LLM-as-Agent評価:機器之心が中国モデルのMCPツール呼び出し能力比較(5/30)。FastAPI脆弱性とAI Agent安全リスク(MCPインフラ依存関係/5/28)。MCP教育コンテンツ急増(チュートリアル記事連日出現/開発者教育成熟)。Claude Opus 4.8リリース(Agent能力向上/V2EX/36krで話題/5/28)。2026.05.24更新: Alibaba Cloud Summit 5/20—全クラウド製品MCP化/Qwen3.7-Max発表/ModelScope MCP広場千種類/トークン収益15倍。ByteDance火山引擎MCP Server OSS(100+MCP/271Stars/日次12.7兆tokens)。Tencent MCP Gateway(ゼロコードREST変換)/MCP-FLOW研究(99.2%)/Tencent Docs MCP/TKE MCP。AAIF 43新メンバー追加(Stripe/F5/GoDaddy/U.S. Army等190組織)。MCP STDIO設計脆弱性(200K+server/150M+SDK DL/OX Security)。Community Bank SEC 8-K初開示(5/7/サードパーティMCPリスク)。エコシステム: 9,400+公開Server(7.8倍)/SDK月間3億DL。2026.05.19更新: MCPデータベース脆弱性(AP Doris/Pinot)/Alibaba Cloud RDS MCP CVE-2026-30623/パッチ未/Xinhua Finance MCP/EmbeddedLLM MCPマルウェア。"
     added: 2026-04-17
-    last_crawled: 2026-06-04
+    last_crawled: 2026-06-08
 
   - slug: mcp-chinese-tools
     title: "Chinese MCP Tools & Servers (中国MCP工具)"

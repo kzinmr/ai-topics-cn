@@ -3,7 +3,7 @@ title: "MCP中国生态（Model Context Protocol在中国的採用状況）"
 type: concept
 tags: [mcp, chinese-ai, agent-protocol, a2a, standardization, tool-integration, github, enterprise]
 created: 2026-04-17
-updated: 2026-06-04
+updated: 2026-06-08
 source_lang: zh-CN
 ---
 
@@ -603,6 +603,55 @@ AnthropicがClaude Opus 4.8をリリース。Agent能力の向上（ツール呼
 - **MCP Serverチュートリアル**: 30分で使えるMCP Serverを構築するハンズオン記事が掘金で公開。開発者向けの参入障壁が低下
 
 - **出典**: [V2EX - MCP skills](https://www.v2ex.com/t/1217743) | [Juejin - MCP/A2A/AG-UI](https://juejin.cn/post/7646938869472378915) | [Juejin - MCPプロトコル](https://juejin.cn/post/7646537363406323753) | [V2EX - 第二脳](https://www.v2ex.com/t/1217451) | [Juejin - MCP Server](https://juejin.cn/post/7604881286038028340) [T1]
+
+## 2026年6月4日〜8日更新 — MCP教育コンテンツの爆発的増加と生態系の静かな成熟
+
+### 1. MCP教育コンテンツの爆発的増加（6月4日〜7日）
+
+期間中、MCP教育コンテンツは中国開発者コミュニティで連日出現：
+- **6月4日**: 掘金で「AI Agent（写一个简易的MCP天气查询工具）」が公開。MCP天気ツールのハンズオンチュートリアルとして入門者向け
+- **6月7日**: 掘金で「手把手写一个MCP Server：从零到能用，只要30分钟」が公開。30分で実用的MCP Serverを構築するチュートリアルが新たに登場
+- **6月4日〜7日**: 「用OpenClaw实现小红书自动发帖」（MCP + OpenClaw実践）が連日掘金の主要記事としてランクイン
+- **Agentシリーズ**: 「实现一个Coding Agent」シリーズ（全5回、6月6日〜7日）でMCPを含むAgentアーキテクチャを詳細解説
+
+中国開発者コミュニティにおけるMCP学習リソースの成熟が顕著。参入障壁は低下し続けている。
+
+### 2. MCP/A2A/AG-UI三大プロトコル比較（6月2日〜4日）
+
+掘金で「MCP + A2A + AG-UI：三大Agent互联协议全景解析」が公開（6月2日〜4日頃）。住み分けが明確化：
+- **MCP**: ツール連携（Agent↔Toolの垂直接続）
+- **A2A**: Agent間通信（Agent↔Agentの水平協同）
+- **AG-UI**: UI統合（Agent↔User Interfaceの接続）
+
+この住み分けにより、中国開発者の間で「どのプロトコルをいつ使うか」の判断基準が整備されつつある。
+
+### 3. 「AI第二脳」共有記憶プロジェクト（6月初旬）
+
+V2EXで話題の「AI第二脳（Second Brain）」プロジェクト — Claude/Cursor/Windsurfの共有記憶システムをMCP経由で実装。複数AIツール間での記憶統合という新しいユースケース。MCP Skillsツールの短视频分析機能も同時期に公開。
+
+### 4. MCPプロトコル無状態RC進捗（5月21日発表、6月継続監視）
+
+mcp-chinese-toolsのノートによると、MCPプロトコルの**無状態RC（Stateless RC）**が**5月21日**にリリース済み：
+- セッションIDを廃止し、Streamable HTTPをベースに水平スケーリングを実現
+- **7月28日**に最終仕様リリース予定
+- Googleチームとの共同開発。Cloud Run/Kubernetes環境でのネイティブ動作に対応
+
+### 5. 生態系の静かな成熟：MCP「沈静化＝成熟」フェーズ継続
+
+中国技術コミュニティでは2026年6月現在も「MCPの沈静化は死ではなく成熟」との評価が支配的：
+- 大企業（Alibaba Cloud、Tencent Cloud、ByteDance）は前月の大規模発表後、静かに実装を進めている
+- 教育コンテンツの爆発的増加は、参入障壁の低下と開発者基盤の拡大を示す
+- 新たなセキュリティインシデントやCVEは6月4日〜8日期間に確認されず
+- 阿里悟空（Wukong）Agent OSへの移行が加速中（掘金で115票の好評価）
+
+### 6. 観測された制約：Web調査の限界
+
+本期間の調査では、Exa SDKの権限障害および主要検索エンジン（Bing/DuckDuckGo）のbot対策により、外部Web検索が不能であった。以下の情報源のみから総合判断：
+- **T1**: V2EX・掘筋のdaily digest（自動クロール）
+- **T2**: hot-topics.yamlノート（自動更新）
+- **内部**: 既存wikiページの内容
+
+新しいMCPプラットフォーム発表、CVE開示、AAIF新メンバー追加などの「ブレイキングニュース」は本期間内に確認されなかった（5月下旬の発表が最新）。
 
 ## 出典
 
