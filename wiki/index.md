@@ -2,7 +2,13 @@
 
 最終更新: 2026-06-08
 エンティティ: 63, コンセプト: 121, ダイジェスト: 7, 比較: 2, ページ: 9
-### 本日更新（2026-06-08 Active Crawl: deepseek/mcp-china/china-ai-model-filing）
+### 本日更新（2026-06-08 Crawl Triage: SpokenWOZ/LangChain実装/Agent技術スタック/OpenAI/LLM-as-Agent/LLMセキュリティ）
+|- `concepts/spokenwoz.md` — **更新**: 达摩院SpokenWOZ Dialogue Agents基盤記事参照追加（WeChat PaperWeekly）。updated→2026-06-08
+|- `concepts/langchain.md` — **更新**: 京东云技術チームLangChain基礎実践記事参照追加（Juejin）。updated→2026-06-08
+|- `concepts/agentic-engineering.md` — **更新**: WeChat「AI Agentエンジニア技術スタック」記事参照追加。updated→2026-06-08
+|- `entities/openai.md` — **更新**: 机器之心AI00榜单OpenAI出身者Embodied Intelligence設立記事参照。updated→2026-06-08
+|- `concepts/harness-engineering.md` — **更新**: 机器之心PRO「LLM-as-Agent技術比較」記事参照。updated→2026-06-08
+|- `concepts/llm-security.md` — **更新**: LiteLLMセキュリティ警告/分散推論/Meta広告実行能力OSS等複数トレンド参照。updated→2026-06-08
 |- `concepts/deepseek.md` — **更新**: 6/4-8最新動向(估值再涨150億/US企業トレンド1位Ramp/Princeton定理証明99.2%/V4.1未確定)
 |- `concepts/mcp-china.md` — **更新**: 6/4-8生態系静かな成熟期(教育コンテンツ爆発/プロトコル住分定着/無状態RC 7/28最終仕様予定)
 |- `concepts/china-ai-model-filing.md` — **更新**: 5/24-6/8新規情報なし(第17批最新のまま/第18批6月下旬-7月上旬予想/Web検索障害のため調査限界)

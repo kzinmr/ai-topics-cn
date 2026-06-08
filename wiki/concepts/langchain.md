@@ -1,7 +1,7 @@
 ---
 title: LangChain — LLMアプリケーションフレームワーク
 created: 2026-04-17
-updated: 2026-06-06
+updated: 2026-06-08
 tags: [framework, tooling, langchain, security, cve]
 aliases: ["LangChain", "langchain", "LangChain-core"]
 source_lang: zh-CN

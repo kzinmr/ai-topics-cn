@@ -1,7 +1,7 @@
 ---
 title: OpenAI — AI研究企業
 created: 2026-04-17
-updated: 2026-04-18
+updated: 2026-06-08
 tags: [company, lab, gpt, openai, codex]
 aliases: ["OpenAI", "openai", "GPT", "Codex"]
 source_lang: zh-CN

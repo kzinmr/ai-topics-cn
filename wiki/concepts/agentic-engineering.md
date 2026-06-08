@@ -3,7 +3,7 @@ title: "Agentic Engineering（エージェントエンジニアリング）— �
 type: concept
 tags: [ai-agent, software-engineering, agentic-engineering, paradigm-shift, vibe-coding, harness]
 created: 2026-05-26
-updated: 2026-05-26
+updated: 2026-06-08
 source_lang: zh-CN
 ---
 

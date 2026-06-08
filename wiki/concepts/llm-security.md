@@ -1,7 +1,7 @@
 ---
 title: "LLM应用安全 — 大语言模型セキュリティ入門"
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-06-08
 tags: [llm-security, prompt-injection, jailbreak, data-leakage, application-security, china]
 aliases: ["LLM安全", "大语言模型安全", "プロンプトインジェクション", "LLMセキュリティ"]
 source_lang: zh-CN

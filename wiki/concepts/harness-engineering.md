@@ -1,7 +1,7 @@
 ---
 title: "Harness Engineering — LLM Agentの外化（Externalization）パターン"
 created: 2026-04-18
-updated: 2026-04-27
+updated: 2026-06-08
 tags: [ai-agents, coding-agents, framework, llm, mcp]
 aliases: ["エージェントハーネス", "LLM外化パターン", "Externalization in LLM Agents"]
 source_lang: zh-CN

@@ -6,7 +6,24 @@
 |
 |
 |
-|## [2026-06-08] active-crawl | deepseek / mcp-china / china-ai-model-filing
+|## [2026-06-08] crawl-triage | SpokenWOZ/LangChain実装/Agent技術スタック/OpenAI Embodied/LLM-as-Agent/LLMセキュリティ
+
+### Take（6件 → 更新）
+|- `concepts/spokenwoz.md` — **更新**: 达摩院SpokenWOZ Dialogue Agents基盤記事参照追加（WeChat PaperWeekly）。タイトルのみ言及、内容既存ページと一致。updated→2026-06-08
+|- `concepts/langchain.md` — **更新**: 京东云技術チーム「LangChain：打造自己的LLM应用」記事参照追加（Juejin 2023-08）。LLM分野のSpringフレームワークとして位置づけ。updated→2026-06-08
+|- `concepts/agentic-engineering.md` — **更新**: 「AI Agentエンジニア技術スタックと能力培養指南」記事参照追加（WeChat）。updated→2026-06-08
+|- `entities/openai.md` — **更新**: 机器之心「AI00」十一月榜单—OpenAI出身者Embodied Intelligence設立記事参照。同一記事がWeChatで複数回再収集（ハッシュaafeba3f重複）、初回処理時の参照追加漏れ対応。updated→2026-06-08
+|- `concepts/harness-engineering.md` — **更新**: 机器之心PRO「LLM-as-Agent技術哪家強?」記事参照追加。updated→2026-06-08
+|- `concepts/llm-security.md` — **更新**: LiteLLMセキュリティ警告/分散推論アーキテクチャ/Meta広告実行能力OSS等複数トレンド参照。updated→2026-06-08
+
+### Skip（V2EX 6件 + WeChat再収集 8件）
+|- V2EX 5件: 「暂无内容」本文なし。ゴシップ/憶測スレッド1件。wiki価値なし
+|- WeChat 機器之心AI00榜单: ハッシュaafeba3f同一記事の再収集duplicate 8件。既に初回処理済み
+
+### Source Counts
+36kr: 798 | juejin: 1,367 | v2ex: 1,616 | wechat-media: 610 | zhihu: 0 | newsletters: 79 | daily_digests: 55
+
+### 本日更新（2026-06-08 Active Crawl: deepseek / mcp-china / china-ai-model-filing）
 |
 |### Wiki更新
 ||- `concepts/deepseek.md` — **更新**: 6/4-8最新動向追加(DeepSeek估值再涨150亿美元/Ramp企業トレンド1位/Princeton Goedel-Architect 99.2% Mini2F2/V4.1リリース6月予定のまま日程未確定)。出典:36kr/机器之心/V2EX
