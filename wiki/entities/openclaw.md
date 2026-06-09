@@ -1,7 +1,7 @@
 ---
 title: OpenClaw — AI Agentエンドポイントツール
 created: 2026-04-17
-updated: 2026-05-24
+updated: 2026-06-09
 tags: [ai-agents, open-source-ai, tooling, china, releases, safety]
 aliases: [\"openclaw\", \"OpenClaw\"]
 source_lang: zh-CN
@@ -445,7 +445,48 @@ OpenClaw: 入力 → LLM → ツール選択 → 実行 → 結果 → 再推理
 - **Qwen 3.5**: OpenClaw蒸留モデル（9B/27B/4B）公開
 - **Google I/O 2026**: Gemini Spark（OpenClaw 24/7代替競合）発表
 
-### 出典
+### 2026年6月: 冷却期とプラットフォーム移行
+
+6月に入り、OpenClawは明確な**冷却期**に突入した。
+
+- **新規リリースゼロ**: 5月31日〜6月9日の期間、GitHubリリースが一件もない。週3回のペースから完全停止
+- **GitHub Star成長減速**: 5月28日時点の376Kから成長が停滞。ピーク時(週+40,000)から大幅減速
+- **コミュニティ話題性低下**: V2EXで「小龙虾为什么突然不火了」議論が定着。掘金の記事も5月既存記事のリサイクル状態
+- **脆弱性問題の影響**: 12類安全隐患、SOE(国有企業)の生利用禁止、ClawHub品質問題(悪意スキル11.3%、プロンプトインジェクション36%)が響く
+
+一方で、以下のポジティブシグナルも確認されている:
+
+- **Microsoft Build 2026 (6/3)**: マイクロソフトがWindows版「龙虾」(OpenClaw for Windows)を発表。16億Windowsユーザーがエージェント時代に突入([36kr](https://36kr.com/p/3836988816094341))
+- **百度APP統合継続**: 百度AppがOpenClawを正式統合し期間限定で無料提供を継続
+- **新パラダイム提唱 (6/8)**: 36krにてClaude Codeの父(Anthropicチーム)とOpenClaw創設者Peter Steinbergerが同時に新AIプログラミングパラダイムを支持と報道。プロンプトエンジニアリングの終焉を宣言([36kr](https://36kr.com/p/3844224911346184))
+- **プラットフォーマー依存深化**: Microsoft Windows対応により、独立OSSからプラットフォーマーエコシステムの一部へと位置づけが変化
+
+### 競合状況 (6月初旬)
+
+| 競合 | 動き | OpenClawへの影響 |
+|---|---|---|
+| 阿里悟空(Wukong) | ユーザー移行加速(掘金115票) | 最大の脅威 |
+| Hermes Agent | V2EXで高評価継続、中国コミュニティ認知拡大 | トークン消費で圧倒 |
+| MiniMax M3 | 6月1日リリース(1M ctx/Coding Agent特化) | 新たな競合 |
+| Microsoft Copilot | Build 2026でWindows版OpenClaw発表 | プラットフォーマー依存深化 |
+
+### 市場構造の変化
+
+中国AI Agent市場は「フレームワーク競争」から「プラットフォーム競争」へフェーズ移行:
+| 層 | プレイヤー | 6月の動き |
+|---|---|---|
+| 第1層: テックジャイアント | 阿里(悟空/Qoder)、腾讯(WorkBuddy)、字节(火山Engine)、百度(心響/DuMate) | 悟空シフト加速、百度統合継続 |
+| 第2層: 垂直特化 | 百融(RaaS)、金智維(Ki-AgentS)、金山(WPS AI) | 大きな変化なし |
+| 第3層: OSS/初创 | Hermes Agent、agentserver、Dify | Hermes Agent認知拡大継続 |
+
+### 出典 (6月追加分)
+- [36kr — 微软Build大会全文 (6/3)](https://36kr.com/p/3836988816094341)
+- [36kr — 龙虾宇宙：微软抄了腾讯的作业 (6/3)](https://36kr.com/p/3836945345067648)
+- [36kr — 新范式：Claude Code父と龙虾创始人 (6/8)](https://36kr.com/p/3844224911346184)
+- [36kr — 16億WindowsユーザーAgent時代 (6/3)](https://36kr.com/p/3837001359947143)
+- [掘金 — 百度APP OpenClaw統合 (6/1再掲)](https://juejin.cn/post/7606519452977152050)
+
+### 出典 (5月)
 - [OpenClaw v2026.5.19-beta.1 Release](https://github.com/openclaw/openclaw/releases/tag/v2026.5.19-beta.1)
 - [OpenClaw v2026.5.20 Release](https://github.com/openclaw/openclaw/releases/tag/v2026.5.20)
 - [OpenClaw v2026.5.22-beta.1 Release](https://github.com/openclaw/openclaw/releases/tag/v2026.5.22-beta.1)

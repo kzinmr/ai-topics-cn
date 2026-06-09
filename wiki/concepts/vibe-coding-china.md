@@ -1,7 +1,7 @@
 ---
 title: "Vibe Coding（氛围编程）— 中国での受容とAgentic Engineeringへの進化"
 created: 2026-04-17
-updated: 2026-06-02
+updated: 2026-06-09
 tags: [vibe-coding, ai-coding, chinese-ai, karpathy, agentic-engineering, paradigm-shift, intent-coding, cognitive-debt]
 aliases: ["氛围编程", "vibe coding", "意图编程", "Wish Coding", "认知债"]
 source_lang: zh-CN
@@ -586,6 +586,97 @@ Anthropicが2026年5月7日に開催したオンライン技術大会「Code w/ 
 4. **音声Vibe Codingの出現**：音声入力がVibe Codingの新インターフェースとして注目され始める
 5. **価格戦争とToken経済**：GPT-5.5の値上げ、Claude CodeのToken消費優位性、Codexの無料枠縮小など、Token経済の現実が顕在化
 6. **開発者の不安と適応**：V2EXでは「スキル陳腐化不安」「月額コスト増大」「国産モデルの実用性」など現実的な議論が活発化
+
+## 2026-06-02 ～ 2026-06-08 最新動向
+
+### 1. 【超大ニュース】Claude Code、100万行リライト事件 — Bunの9日間AIリファクタリング（2026-06-08）
+- **36kr/CSDN報道**：Bun（JavaScriptランタイム）のCTO Jarred SumnerがClaude Codeを使用し、**9日間で100万行**のコードベースをリライト
+- **6755回のコミット**、**99.8%のテスト通過率**を達成
+- しかしコミュニティからは「99.8%通過率は本当に安全か？」と**品質評価方法に疑問符**
+- **史上最大のAI主導リファクタリング**としてV2EX・掘金で大議論に
+- 人間なら数ヶ月かかる作業を9日間で完了したことで、Agentic Engineeringの現実性が証明される一方、**理解債務(Cognitive Debt)**の問題が再燃
+- 出典：[36kr](https://36kr.com/p/3844285021047304)
+
+### 2. 【超大ニュース】「AI编程又变天了」— Claude Code父+龙虾創始者が新パラダイム宣言（2026-06-08）
+- **36kr/AI前线**が緊急報道：Claude Codeの創設者（Anthropic）と**龙虾（OpenClaw）の創設者**が同時に新パラダイムを支持
+- **「プロンプトエンジニアリングは死んだ」**（Kill Prompt Engineering）と明確に宣言
+- **新パラダイムの3本柱**：
+  1. 人間はプロンプト職人ではなく**Agentオーケストレーター**（監督者）になる
+  2. 投資すべきスキルが「プロンプト技巧」から「**システムアーキテクチャ設計**」にシフト
+  3. Claude Code + OpenClawエコシステムの統合によりAgent間連携が標準化
+- **Karpathyの「Agentic Engineering」宣言（2月/4月）が業界のコンバージェンスポイントに到達したことを示す歴史的な瞬間**
+- 出典：[36kr/AI前线](https://36kr.com/p/3844224911346184)
+
+### 3. Anthropic「80%コードAI自写」＆ Mythos 5の52倍高速化（2026-06-08）
+- **36kr/新智元**：Anthropic社内のプロダクションコードの**80%がAIによって生成**されていると報告
+- Anthropic自身がClaudeを使ってコード生成する**ドッグフーディングの極致**
+- **Mythos 5**のトレーニングコードが**人間比52倍の速度**で実行可能と判明
+- 「人間のブレーキは間に合うのか？」という倫理的議論を巻き起こす
+- 出典：[36kr](https://36kr.com/p/3844411705985540), [36kr-Mythos5](https://36kr.com/p/3844411514391049)
+
+### 4. OpenAIチップ責任者、Anthropicに移籍（2026-06-07）
+- **36kr/智東西**：OpenAIの半導体チームのベテランがAnthropicに移籍
+- Karpathy（5月）に続く**核心的人物の流出**
+- Polymarket確率変動：Anthropic最強モデル65% vs OpenAI 4%
+- 出典：[36kr](https://36kr.com/p/3842475940268552)
+
+### 5. DeepSeek V4、Princeton数学証明で500倍コスト優位（2026-06-07）
+- **36kr/機器之心**：プリンストン大学のGoedel-ArchitectシステムがDeepSeek V4-Flashを採用
+- MiniF2Fベンチマークで**99.2%** 達成、**500倍のコスト削減**を実現
+- DeepSeek V4の数学推論能力が学術界で認められる
+- 出典：[36kr](https://36kr.com/p/3841174468151553)
+
+### 6. Kimi Work vs Codex — 「中国版Codexではない」宣言（2026-06-08）
+- **36kr**：Kimi WorkはCodexの中国版コピーではないと明確に差別化
+- 独自のワークフロー指向Agentツールとしてポジショニング
+- 同時に**Kimi評価額2000億突破・136億追加調達・香港IPO加速**報じられる
+- 出典：[36kr-KimiWork](https://36kr.com/p/3844257852885256), [36kr-KimiIPO](https://36kr.com/p/3844092401666564)
+
+### 7. 姚顺雨（Tencent混元）初の公開講演（2026-06-05）
+- **36kr/字母榜**「15句話，總結姚順雨第一次肉身亮相」
+- 腾讯云AI下半場について15の核心見解を発表
+- Context優位・Co-Design・AGI組織構築などがキーワード
+- 出典：[36kr](https://36kr.com/p/3839948571691525)
+
+### 8. 教育コンテンツ爆発 — Coding Agent実装シリーズ（2026-06-02〜08）
+- 掘金でnuIl氏による**「实现一个Coding Agent」全5回シリーズ**が連日公開
+  - (1) 一回のLLM呼び出し
+  - (2) LLMにストリーム応答させる
+  - (3) ツール呼び出し
+  - (4) ReAct循環
+  - (5) 本物のコーディングツール
+- **AutoGen完全チュートリアル**（零から企業級マルチAgentシステムアーキテクトへ）
+- **低コードAgent汎用アーキテクチャ設計**
+- **Claude Code動的ワークフロー入門**（Claude Codeチームメンバー直接解説）
+- **Agent安全・保護シリーズ**（プロンプトインジェクション・ツール乱用・データ漏洩）
+- **headroom**: Token 95%圧縮ツール登場
+- **Git WorktreesによるマルチAI Agent並列開発**実践ガイド
+
+### 9. V2EXコミュニティ動向（2026-06-02〜08）
+| 日付 | スレッド | テーマ |
+|------|---------|--------|
+| 6/7 | 「请问各位大佬，想vibecoding前端，需要走哪里学哪些框架？」 | Vibe Coding学習需要 |
+| 6/7 | 「咨询：国内 AI 模型 哪个编程效果好？」 | 国産モデル実用評価 |
+| 6/8 | 「程序员！勇敢的拥抱 AI 时代！」 | AI適応論 |
+| 6/8 | 「给 AI Agent 造了个免费股票数据弹药库」 | Agent実践 |
+| 6/5 | 「大家是怎么使用 AI 的，真能做到不手写代码吗」 | Vibe Coding限界 |
+| 6/4 | 「进军 AI 时尚赛道，我 vibe coding 了个穿搭小程序」 | Vibe Coding実践 |
+| 6/2 | 「我给 AI 做了个「第二大脑」— Claude/Cursor/Windsurf共享記憶」 | MCP/共有記憶 |
+| 6/2 | 「100行运行你自己的 Claude Code」 | DIY Claude Code |
+
+### 10. トレンド転換点 — 「Vibe Coding」タグ減少、「Agent」主流へ
+- **36krの報道分析**：6月第1週、「Vibe Coding」「氛围编程」という用語の使用が顕著に減少
+- 代わりに「**Agent**」「**Agentic Coding**」「**AI编程**」という用語が主流に
+- 消費者向けVibe Coding（灵光・吐司・灵珠）報道は沈静化
+- プロ開発者向け**Agentic Engineering**の議論が完全に主流に
+- **Agent Token消費が全Tokenの70%超**（36kr分析継続）
+
+### 2026年6月第1週の総括
+1. **パラダイムシフトの決定的加速**：Claude Code 100万行リライト + 業界リーダーによる「プロンプトエンジニアリング終焉」宣言で、Vibe CodingからAgentic Engineeringへの移行が不可逆的に
+2. **Anthropicのドミナンス確立**：80%内製コードAI化、Mythos 5の52倍高速化、OpenAIからの人材流入 — Anthropicが事実上のAIコーディング標準に
+3. **中国国産モデルの実用フェーズ**：DeepSeek V4数学証明、Kimi Work差別化、MiniMax M3分析 — モデル競争からユースケース競争へ
+4. **教育コンテンツの爆発的充実**：Coding Agent実装シリーズが掘金で連日公開、Agent工学の体系的教育が急速に整備
+5. **Token経済の定着**：無料AIプログラミングの時代が終焉し、Tokenベース課金が標準に
 
 ## 出典
 

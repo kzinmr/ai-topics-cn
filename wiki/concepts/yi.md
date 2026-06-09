@@ -3,7 +3,7 @@ title: "Yi（零一万物）— 01.AI"
 type: concept
 tags: [LLM, chinese-ai, open-source, MoE, enterprise-ai]
 created: 2026-04-23
-updated: 2026-05-30
+updated: 2026-06-09
 source_lang: zh-CN
 ---
 

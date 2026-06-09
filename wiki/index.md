@@ -2,6 +2,11 @@
 
 最終更新: 2026-06-09
 エンティティ: 64, コンセプト: 123, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-06-09 Active Crawl: OpenClaw/Vibe-Coding/Yi）
+|- `entities/openclaw.md` — **更新**: 6月冷却期セクション追加(リリース停止/MS Build Windows版/新パラダイム提唱/競合状況)。updated→2026-06-09
+|- `concepts/vibe-coding-china.md` — **更新**: 6/2-8最新動向(Claude Code 100万行リライト/プロンプト終焉宣言/Anthropic 80%内製AI化/Agentic Engineering主流化)。updated→2026-06-09
+|- `concepts/yi.md` — **更新**: フロントマターのみ(5/30-6/9新規情報なし/沈黙期)。updated→2026-06-09
+|
 ### 本日更新（2026-06-09 Newsletter Ingest: ChinAI #362 — AI雇用影響/杭州新八駿/人工智障）
 |- `concepts/ai-employment-impact.md` — **新規**: 中国AI政策コミュニティの雇用懸念急上昇（2024年7位中6位→2026年7位中2位）。武漢ロボットタクシー事件が政策転換のきっかけ。第15次五カ年計画に雇用影響評価初明記。AI代替解雇の労働仲裁ケース。Do's & Don'ts政策フレームワーク
 |- `entities/hangzhou-xin-bajun.md` — **新規**: 杭州「新八駿」— 推論チップ・存算一体・スマートグラス・AIデータインフラ等8社のハードウェア中心テック企業。曦望（Xiwang）の推論GPU S3チップ（LPDDR6/600GB显存/PCIe Gen6）。OpenClawフィーバーによる算力需要急増。「六小龍」から「新八駿」への産業重心シフト

@@ -135,9 +135,9 @@ topics:
       - "李开复 零一万物 海外 展開"
     wiki_pages:
       - concepts/yi
-    notes: "2026.05.30更新: 三周年内部講話(5/28/李開復経営指標初公表:2025年受注5億・監査済み売上2.5億/累計15億突破)。AMD Cube01智算ノード共同発表(Ryzen AI Max+ 395/128GB統一メモリ/初回1000台無料試用/17社Fortune500パイロット)。信通院最高レベル認証取得(74項目中74項目合格)。Pre-IPO融資進行中(VIE構造解体/Q3 A1提出目標)。2027年香港IPO提出目標・「中国初の黒字化AI 2.0企業」宣言。組織再編(DRI制度/2000万株オプション/CEO特別インセン)。モデル開発:Yi-Lightning(2024年10月)が最後の旗艦/アリババ統合後アプリ層に注力。2026.05.16更新: 零一万物Pre-IPO融資実施中+香港上場準備中(5/9/市場報道→公司否定せず)。智譜AI(HK$4,000億)+MiniMax(HK$2,300億)上場済。2024年収益1億元超/2025年Q1が通年に迫る/2025年H1が2024年超過。万智平台2.5→Super Employee 30+種/5大産業/1+3+5+X政府体系。棋譜元戦略:B端特化→IPO経路。wiki更新済み(yi.md)。"
+    notes: "2026.06.09更新: 5/30〜6/9に新たな動向なし。沈黙期（Pre-IPO準備中・アプリ層集中）。Daliy Digest全ソースでYi/零一万物への言及0件。次回は6月下旬〜7月のA1提出進展または万智平台アップデートを注視。2026.05.30更新: 三周年内部講話(5/28/李開復経営指標初公表:2025年受注5億・監査済み売上2.5億/累計15億突破)。AMD Cube01智算ノード共同発表(Ryzen AI Max+ 395/128GB統一メモリ/初回1000台無料試用/17社Fortune500パイロット)。信通院最高レベル認証取得(74項目中74項目合格)。Pre-IPO融資進行中(VIE構造解体/Q3 A1提出目標)。2027年香港IPO提出目標・「中国初の黒字化AI 2.0企業」宣言。組織再編(DRI制度/2000万株オプション/CEO特別インセン)。モデル開発:Yi-Lightning(2024年10月)が最後の旗艦/アリババ統合後アプリ層に注力。"
     added: 2026-04-17
-    last_crawled: 2026-05-30
+    last_crawled: 2026-06-09
 
   - slug: doubao
     title: "Doubao (豆包) — ByteDance"
@@ -244,9 +244,9 @@ topics:
       - "Hermes Agent OpenRouter OpenClaw 逆転 2026"
     wiki_pages:
       - entities/openclaw
-    notes: "2026.05.31更新: v2026.5.28リリース(376K Stars/マルチプロバイダーClaude Opus 4.8/Fal Krea/NVIDIA/MiniMax/Codex Supervisor/iOSアプリ/Workboard)。v2026.5.27リリース(OpenAI embedding/Pixverse動画/セキュリティ強化/QQBotフォールバック/Promptキャッシュ最適化)。@steipete@yetval@luoyanglang@vincentkらが主要開発者。2026.05.24更新: v2026.5.19/5.20/5.22-beta.1週3回メジャーリリース(ブラウザモーダル/Policyプラグイン/Discord音声/cron改善/モデル認証プリウォーム20s→5ms)。★374K。Hermes Agent OpenRouter日次トークン消費逆転(Hermes 458B vs OpenClaw 173B/全期間8.14T vs 7.18T)。ClawHub 44K+スキル/50+チャンネル。エコシステム拡大: DigitalOcean 1-Click/MiniMax MaxClaw/Alibaba Cloud連携/Qwen 3.5蒸留モデル。脆弱性: Claw Chain CVEパッチ(v2026.4.22)。2026.05.17更新: v2026.5.10/5.12/5.14ベータ連続/★372K/v2026.5.7 SecretRef強検証。"
+    notes: "2026.06.09更新: 6月冷却期突入—新リリースゼロ/GitHub Stars成長停滞(376K)/コミュニティ話題性低下(V2EX小龙虾为什么不火了)/競合(阿里悟空・Hermes Agent)圧力。Microsoft Build 2026でWindows版「龙虾」発表(6/3/16億ユーザー)。百度APP統合継続。36kr(6/8)でPeter Steinbergerが新パラダイム提唱。2026.05.31更新: v2026.5.28リリース(376K Stars/マルチプロバイダーClaude Opus 4.8/Fal Krea/NVIDIA/MiniMax/Codex Supervisor/iOSアプリ/Workboard)。v2026.5.27リリース(OpenAI embedding/Pixverse動画/セキュリティ強化/QQBotフォールバック/Promptキャッシュ最適化)。@steipete@yetval@luoyanglang@vincentkらが主要開発者。2026.05.24更新: v2026.5.19/5.20/5.22-beta.1週3回メジャーリリース(ブラウザモーダル/Policyプラグイン/Discord音声/cron改善/モデル認証プリウォーム20s→5ms)。★374K。Hermes Agent OpenRouter日次トークン消費逆転(Hermes 458B vs OpenClaw 173B/全期間8.14T vs 7.18T)。ClawHub 44K+スキル/50+チャンネル。エコシステム拡大: DigitalOcean 1-Click/MiniMax MaxClaw/Alibaba Cloud連携/Qwen 3.5蒸留モデル。脆弱性: Claw Chain CVEパッチ(v2026.4.22)。"
     added: 2026-05-01
-    last_crawled: 2026-05-31
+    last_crawled: 2026-06-09
 
   - slug: coze
     title: "Coze (扣子) — ByteDance Agent Platform"
@@ -492,11 +492,14 @@ topics:
       - "ProgramBench GPT-5.5 breakthrough May 2026"
       - "Cursor $50B valuation 2026"
       - "Claude Code pricing free tier 80 calls"
+      - "Claude Code 100万行 リライト Bun 9日間 2026"
+      - "新パラダイム Claude Code父 龙虾 创始人 プロンプト終焉"
+      - "Anthropic 80% AI自写 コード Mythos 5"
     wiki_pages:
       - concepts/vibe-coding-china
-    notes: "2026.06.02更新: 国産Agentモデル世界第一梯队。GPT-5.5 DeepSWE逆転。Mythos Erdős予想解決。Opus 4.8(GPT-5.5敗北)。音声Vibe Coding台頭。Kimi Code 0.4.0。Codex 3rd party API対応。MiniMax M3(100万ctx)。Copilot Token課金移行。前回(5/26): Google I/O Antigravity 2.0/Mythos/ProgramBench GPT-5.5/Cursor $50B/Claude Code無料枠削減。"
+    notes: "2026.06.09更新: Claude Code 100万行リライト事件(Bun/9日間/6755コミット/99.8%通過率/品質論争)。Claude Code父+龙虾创始人同時「新パラダイム」宣言(プロンプトエンジニアリング終焉/Agent Orchestration時代)。Anthropic内製コード80%AI生成/Mythos 5トレーニング52倍高速化。OpenAIチップ責任者Anthropic移籍。DeepSeek V4プリンストン大数学証明500倍コスト優位。Kimi Work「中国版Codexではない」と明確化+Kimi評価額2000億突破。姚順雨初公開講演(6/5)。AGI教育コンテンツ急増(Coding Agent実装全5回/AutoGen完全チュートリアル/低コードAgent設計)。「Vibe Coding」タグ使用減少→「Agent」「Agentic Coding」主流へ。前回(6/2): 国産Agentモデル世界第一梯队/GPT-5.5 DeepSWE逆転/Mythos Erdős予想解決/Opus 4.8/音声Vibe Coding台頭/Kimi Code 0.4.0/Codex 3rd party API/MiniMax M3/Copilot Token課金移行。"
     added: 2026-04-17
-    last_crawled: 2026-06-02
+    last_crawled: 2026-06-09
 
   - slug: china-ai-coding-assistants
     title: "Chinese AI Coding Assistants (国产AI编程助手)"

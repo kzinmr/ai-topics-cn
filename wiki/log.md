@@ -6,6 +6,26 @@
 |
 |
 |
+|
+|
+|
+|
+|
+|
+|
+|
+|## [2026-06-09] active-crawl | OpenClaw/Vibe-Coding/Yi deepdive
+|
+|### Wiki更新
+|- `entities/openclaw.md` — **更新**: 6月冷却期セクション追加(リリース停止/MS Build Windows版/新パラダイム提唱/競合状況)
+|- `concepts/vibe-coding-china.md` — **更新**: 6/2-8最新動向(Claude Code 100万行リライト/プロンプト終焉宣言/Anthropic 80%内製AI化/Agentic Engineering主流化)
+|- `concepts/yi.md` — **更新**: フロントマターのみ(5/30-6/9新規情報なし/沈黙期)
+|
+|### hot-topics.yaml更新
+|- `openclaw` — last_crawled→2026-06-09/notes更新(冷却期/Windows版)
+|- `vibe-coding-china` — last_crawled→2026-06-09/notes+search_hints更新
+|- `yi` — last_crawled→2026-06-09/notes更新(新規情報なし)
+|
 |## [2026-06-09] newsletter-triage | ChinAI #362 — AI雇用影響/杭州新八駿/人工智障
 
 ### Take（3件 → 新規）
