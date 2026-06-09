@@ -6,7 +6,34 @@
 |
 |
 |
-|## [2026-06-08] crawl-triage | SpokenWOZ/LangChain実装/Agent技術スタック/OpenAI Embodied/LLM-as-Agent/LLMセキュリティ
+|## [2026-06-09] newsletter-triage | ChinAI #362 — AI雇用影響/杭州新八駿/人工智障
+
+### Take（3件 → 新規）
+|- `concepts/ai-employment-impact.md` — **新規**: 中国AI政策コミュニティの雇用懸念急上昇（2024年7位中6位→2026年7位中2位）。武漢ロボットタクシー事件が政策転換のきっかけ。第15次五カ年計画に雇用影響評価初明記。AI代替解雇の労働仲裁ケース。Do's & Don'ts政策フレームワーク
+|- `entities/hangzhou-xin-bajun.md` — **新規**: 杭州「新八駿」— 推論チップ・存算一体・スマートグラス・AIデータインフラ等8社のハードウェア中心テック企業。曦望（Xiwang）の推論GPU S3チップ（LPDDR6/600GB显存/PCIe Gen6）。OpenClawフィーバーによる算力需要急増
+|- `concepts/artificial-challenged-intelligence.md` — **新規**: 人工智障スラングの文化分析。#144（2021年初出）と#362（2026年Renwu読者投稿）。AIハルシネーションの実例集（Yuanbao/DeepSeek/Doubao）。「AIは決して黙らない」問題
+
+### Reference（2件 → 既存ページ参照用）
+|- ChinAI #144: 人工智障初出回 → `concepts/artificial-challenged-intelligence.md`に参照統合
+|- ChinAI #337: AI英語教師Jessica → `concepts/ai-education-china`候補（既存ページなし、今回は参照のみ）
+
+### Skip（4件）
+|- item_id 98e0d7754ccd0e77: #362の重複URLパラメータ
+|- item_id 5c5555d822a2aece: #362のリダイレクトURL重複
+|- item_id c1aa2a183bf6eb4e: Substackアプリ宣伝（115文字/AI無関係）
+|- item_id 5d3ac65089ac2ecc: #112 フードデリバリー労働者（AIテーマ無関係）
+
+### 処理対象newsletter
+|- `inbox/newsletters/2026-06-08--ChinAI-362-Chinese-Encounters-with-Artificial-Challenged-Int--cd89ed6e.md` — digest処理済み
+|- 関連raw記事: 9件中3件take、2件reference、4件skip
+
+### チェックポイント
+|- run_id: 20260609T040054Z
+|- source: newsletter-triage
+
+---
+
+## [2026-06-08] crawl-triage | SpokenWOZ/LangChain実装/Agent技術スタック/OpenAI Embodied/LLM-as-Agent/LLMセキュリティ
 
 ### Take（6件 → 更新）
 |- `concepts/spokenwoz.md` — **更新**: 达摩院SpokenWOZ Dialogue Agents基盤記事参照追加（WeChat PaperWeekly）。タイトルのみ言及、内容既存ページと一致。updated→2026-06-08

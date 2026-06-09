@@ -1,7 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-06-08
-エンティティ: 63, コンセプト: 121, ダイジェスト: 7, 比較: 2, ページ: 9
+最終更新: 2026-06-09
+エンティティ: 64, コンセプト: 123, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-06-09 Newsletter Ingest: ChinAI #362 — AI雇用影響/杭州新八駿/人工智障）
+|- `concepts/ai-employment-impact.md` — **新規**: 中国AI政策コミュニティの雇用懸念急上昇（2024年7位中6位→2026年7位中2位）。武漢ロボットタクシー事件が政策転換のきっかけ。第15次五カ年計画に雇用影響評価初明記。AI代替解雇の労働仲裁ケース。Do's & Don'ts政策フレームワーク
+|- `entities/hangzhou-xin-bajun.md` — **新規**: 杭州「新八駿」— 推論チップ・存算一体・スマートグラス・AIデータインフラ等8社のハードウェア中心テック企業。曦望（Xiwang）の推論GPU S3チップ（LPDDR6/600GB显存/PCIe Gen6）。OpenClawフィーバーによる算力需要急増。「六小龍」から「新八駿」への産業重心シフト
+|- `concepts/artificial-challenged-intelligence.md` — **参照**: 人工智障テーマ。#144（2021年初出）と#362（2026年）の比較参照。Renwu誌読者投稿エピソード（Yuanbaoハルシネーション、DeepSeek医療助言、Doubao AI検出不能等）
+
 ### 本日更新（2026-06-08 Crawl Triage: SpokenWOZ/LangChain実装/Agent技術スタック/OpenAI/LLM-as-Agent/LLMセキュリティ）
 |- `concepts/spokenwoz.md` — **更新**: 达摩院SpokenWOZ Dialogue Agents基盤記事参照追加（WeChat PaperWeekly）。updated→2026-06-08
 |- `concepts/langchain.md` — **更新**: 京东云技術チームLangChain基礎実践記事参照追加（Juejin）。updated→2026-06-08
