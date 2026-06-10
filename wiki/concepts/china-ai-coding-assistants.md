@@ -1,7 +1,7 @@
 ---
 title: "中国AIコーディングアシスタント — Trae・MarsCode・通义灵码・CodeGeeX"
 created: 2026-04-28
-updated: 2026-05-25
+updated: 2026-06-10
 tags: [coding-agents, tooling, china, product-comparison, ide]
 aliases: ["中国AI编程助手", "China AI Coding Assistants", "Trae", "MarsCode", "通义灵码", "CodeGeeX", "Lingma", "Qoder CN"]
 source_lang: zh-CN
@@ -245,6 +245,63 @@ Alibabaの通义灵码が2026年5月に主要アップデートを実施：
 - **今後の展開**：Qoder CNはQwen3.7-Max（Agent-firstモデル）との連携を強化。自律エージェント機能が中核に
 
 > **出典**: Alibaba Cloud Summit 2026（5月20日）、36kr、量子位 [T1]
+
+## 2026年6月上旬更新 — AIプログラミングパラダイムの大転換期
+
+### 1. AIプログラミングパラダイムの転換 — 「Vibe Coding」から「Agentic Engineering」へ（6月上旬）
+
+36kr記事（6月8日）「大人，AI编程又变天了，Claude Code之父、龙虾创始人同时力捧新范式，杀死提示词工程？」で、Claude Codeの父（所属組織）とOpenClaw（龙虾）の創設者が同時に「新パラダイム」を宣言：
+
+- **プロンプトエンジニアリングの終焉**：従来のプロンプト設計・調整の時代は終わり、**Agent Orchestration時代**に移行
+- **Claude Code 100万行リライト事件**（6月初旬）：BunのコードベースをClaude Codeで9日間・6,755コミット・99.8%テスト通過率で全書き換え
+- **Anthropic内製80%コードAI生成**：トレーニングコード52倍高速化。Mythos 5トレーニングで実証
+- **意義**：中国国内のコーディングアシスタントも、このパラダイム転換の影響を受ける。コード生成の「量」から「エージェント・ワークフロー品質」への競争軸シフト
+
+> **出典**: 36kr — [AI编程又变天了](https://36kr.com/p/3844224911346184) [T1]
+
+### 2. Kimi Work — 中国版Codexではなく「Vibe Working」ツール（6月8日）
+
+36krの詳細分析記事（6月8日）「Kimi Work不是中国版Codex」が大きな話題に：
+
+- **Kimi Work**（6月3日Beta開始）は**「中国版Codex」としての位置づけを明確に否定**
+- プログラマー向けコードエージェントではなく、**知識ワーカー向けVibe Workingツール**として差別化
+- WebBridge（ブラウザ操作）＋Agent Cluster（K2.5由来）＋専門データベース（同花順・天眼查等）を統合
+- **コアユーザー**: プログラマーではない一般知識ワーカー（マーケター、アナリスト、研究者）
+- これにより中国AIコーディングアシスタント市場は「Codex型（コード特化）」と「Kimi Work型（知識ワーク）」に二極化する可能性
+
+> **出典**: 36kr — [Kimi Work不是中国版Codex](https://36kr.com/p/3844257852885256) [T1]
+
+### 3. 豆包MarsCode — Codex統合戦略（6月8日）
+
+36kr（6月8日）「拿'Codex'当馅儿，豆包才值钱」：
+
+- ByteDanceが豆包（Doubao）の価値を高める手段としてCodex互換機能を戦略的に位置づけ
+- 豆包の商業化（有料課金）とEC/団購への拡大と並行して、AIプログラミング機能を差別化要素に
+- 豆包MarsCodeはDeepSeek V4統合による低価格路線を継続
+
+> **出典**: 36kr — [拿'Codex'当馅儿，豆包才值钱](https://36kr.com/p/3844260642634375) [T1]
+
+### 4. 開発者コミュニティの動き — Claude Code→Kimi K2.5への移行（6月上旬）
+
+- **掘金記事（6月7日）**「Claude Code换成了Kimi K2.5后，我再也回不去了」：Kimi K2.5への移行体験がホットトピックに
+- **掘金（6月7日）**「智谱GLM-5这次开源，让高级程序员也危险了」：GLM-5のオープンソース化がコード生成の民主化を加速
+- **掘金（6月9日）**「Codex大更新！不只写代码，6套职业技能，开始接手知识工作流」：Codexが知識ワーカー向けにも進化
+- **Codex第三社API対応**: CodexからDeepSeek/GLM/Kimiを直接利用可能に（6月3日確認）
+
+> **出典**: 掘金 — 各記事 [T1/T2]
+
+### 5. Trae/Qoder/CodeGeeXの6月状況
+
+6月1日〜9日期間に、**Trae SOLO、Qoder CN、CodeGeeXの目立ったメジャーアップデートはなし**：
+
+| ツール | 6月上旬の状況 |
+|--------|-------------|
+| **Trae SOLO** | 前回5月5日Mobile版リリース以降、メジャーアップデートなし。独立Desktop版・MTCモードは安定期 |
+| **Qoder CN** | 5月20日リブランド以降、新機能発表なし。Qwen3.7-Max連携強化が継続中と推定 |
+| **CodeGeeX** | GLM-5.1ベースのコード生成が掘金で話題に。新バージョンリリース情報なし |
+
+- 中国発コーディングアシスタント市場は**機能の安定化・コミュニティ浸透フェーズ**に移行
+- 代わりに**Agent Orchestrationパラダイム**や**知識ワーカー向けツール**（Kimi Work）など、競争軸の多様化が顕著
 
 ## 出典
 - ByteDance Trae公式: [trae.ai](https://www.trae.ai) [T1]

@@ -1,7 +1,7 @@
 ---
 title: "中国大模型本地部署 — 量子化・VRAM最適化・消費者GPUでの推論"
 created: 2026-04-19
-updated: 2026-06-02
+updated: 2026-06-10
 tags: [inference, quantization, local-deployment, hardware, vram-optimization, china]
 aliases: ["本地部署", "国产模型本地运行", "VRAM优化", "量化技术", "GGUF", "GPTQ", "AWQ"]
 source_lang: zh-CN
@@ -389,3 +389,81 @@ MiniMaxが**M3モデル**を正式発表：
 - 百度APPがOpenClawを正式統合、全ユーザーに期間限定無料提供
 - **意義**: 中国最大級のスーパーアプリがAgent基盤を標準搭載。ローカルモデル（DeepSeek V4等）との連携が容易に
 - 中国開発者コミュニティでは「OpenClaw + ローカルモデル + MCP」構成が2026年の主流Agentアーキテクチャとして定着しつつある
+
+## 2026年6月3日〜10日更新 — ローカル推論エコシステムの多様化と認知モデルの台頭
+
+### Odysseus AI — 新たなローカルAIワークプレイス登場（6月9日）
+
+YouTuber PewDiePieがオープンソース化した**Odysseus AI**がV2EXで話題に：
+
+- **概要**: Ollama/llama.cpp/vLLMをバックエンドとして統合するセルフホスト型AIワークベンチ
+- **特徴**: 全データローカル保存、マルチターンチャット、自律Agent、ディープリサーチ、メール/カレンダーツール統合
+- **GitHub**: pewdiepie-archdaemon/odysseus
+- **意義**: ローカルAIツールが単なるチャットUIから「総合ワークプレイス」へ進化中
+
+> **出典**: V2EX — [Odysseus AI上手体验](https://www.v2ex.com/t/1219212) [T1]
+
+### 国産GPU本地部署が現実的な議論に（6月8日）
+
+V2EXで「需要购买国产显卡本地部署大模型」スレッドがスコア95で高い関心：
+
+- **予算**: 200万元以内で国産GPUを購入して大規模モデルを本地部署
+- **中星微技術**「星光智能五号」：国産初のエッジAIチップ。5W消費電力で8チップ連携によりDeepSeek 671Bフルモデル動作可能
+- **華為昇騰**: 国内AIチップ市場40%超のシェア、2026年50%予測
+- **燧原科技**: 2026年1月科創板IPO受理（60億元調達予定）
+
+> **出典**: V2EX — [国产显卡本地部署大模型](https://www.v2ex.com/t/1218631) [T1]; 腾讯新闻 — [国产AI算力芯片2026指南](https://news.qq.com/rain/a/20260525A0AR5100) [T1]
+
+### Qwen3.6-27B vs DeepSeek V4 Flash ローカル比較議論（6月7日）
+
+V2EXで実用的比較が行われる：
+
+| モデル | 形式 | VRAM | 推論速度 |
+|--------|------|------|---------|
+| Qwen3.6-27B-MTP | GGUF Q4_K_M | ~18GB | 25-40 tok/s (RTX 4090/5090) |
+| DeepSeek V4 Flash | FP8 | 160GB | サーバークラス必須 |
+
+- 消費者GPU（RTX 4090/5090）ではQwen3.6-27BのQ4量子化版が実用的速度を達成
+- GLM-5.1（754B MoE）の全精度BF16では16×H100 80GB必須—消費者GPUでは依然大規模MoEのローカル実行は困難
+
+> **出典**: OfoxAI — [中国开源LLM本地部署硬件指南](https://ofox.ai/zh/blog/china-open-source-llm-local-deploy-hardware-guide-2026/) [T1]
+
+### MIT Attention Matching — メモリ使用量50分の1削減（6月1日）
+
+MITが提案したAttention Matching技術が36kr/機器之心で大きく報道：
+
+- **精度維持でメモリ使用量を50分の1に削減**
+- OpenClawとの連携可能性が指摘されている
+- ローカル推論のVRAM制約を根本的に緩和する可能性
+
+> **出典**: 36kr — [内存暴降50倍](https://36kr.com/p/3831272630773382) [T1]
+
+### 国産認知モデル — 4Bで端側デプロイ、GPT-5.4級性能（6月上旬）
+
+量子位報道（6月上旬）：
+
+- 僅か4Bパラメータの国産認知モデルが登場
+- **端側（エッジ）** で動作し、GPT-5.4と同等の効果
+- Andrew Karpathyが予言した「認知モデル（cognitive model）」の現実化
+- Appleが渇望する端側AIの実現に近づく
+
+> **出典**: 量子位 — [仅4B大小可端侧部署](https://www.qbitai.com/2026/06) [T1]
+
+### DeepSeek自社GW級データセンター建設（6月上旬）
+
+量子位報道：
+
+- DeepSeekが土木エンジニアを募集し、自社GW級データセンター建設を開始
+- 大規模インフラ投資へのシフトを示唆
+- ローカルデプロイとの関連：DeepSeekが大規模インフラとローカル推論の両面で戦略を展開中
+
+> **出典**: 量子位 — [DeepSeek开招土木老哥](https://www.qbitai.com/2026/06) [T1]
+
+### その他注目動向（6月3日〜10日）
+
+| 日付 | トピック | 詳細 | 出典 |
+|------|---------|------|------|
+| 6月9日 | vLLM深堀記事 | 「vLLM深入浅出：从PagedAttention到生产级大模型推理服务」— 包括的解説 | 掘金 T2 |
+| 6月1日 | MiniMax M3深度体験 | 100万トークンコンテキスト・Coding Agent・Sparse Attention | 掘金 T2 |
+| 6月9日 | DeepSeek V4-Pro価格転換 | 2.5割キャンペーン期間終了、正式価格へ移行 | 掘金 T2 |
+| 6月 | 開悟(Kaiwu)再評価 | DeepSeek制限強化後にローカル最適化ツールへの関心再燃 | V2EX T2 |

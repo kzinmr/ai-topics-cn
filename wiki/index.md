@@ -1,7 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-06-09
+最終更新: 2026-06-10
 エンティティ: 64, コンセプト: 123, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-06-10 Active Crawl: china-local-deployment/Kimi/china-ai-coding-assistants）
+- `concepts/china-local-deployment.md` — **更新**: 6/3-10最新動向追加(Odysseus AI/国産GPU本地部署/Attention Matching 50倍/4B認知モデル端側/DeepSeek DC建設)
+- `concepts/kimi.md` — **更新**: 6/5-10最新動向追加(Kimi Work Beta/Vibe Working差別化/追加$2B調達$30B目標/開発者コミュニティ定着)
+- `concepts/china-ai-coding-assistants.md` — **更新**: 6月上旬最新動向追加(Agentic Engineering転換/Kimi Work差別化/豆包Codex戦略/Trae/Qoder静定期)
+
 ### 本日更新（2026-06-09 Active Crawl: OpenClaw/Vibe-Coding/Yi）
 |- `entities/openclaw.md` — **更新**: 6月冷却期セクション追加(リリース停止/MS Build Windows版/新パラダイム提唱/競合状況)。updated→2026-06-09
 |- `concepts/vibe-coding-china.md` — **更新**: 6/2-8最新動向(Claude Code 100万行リライト/プロンプト終焉宣言/Anthropic 80%内製AI化/Agentic Engineering主流化)。updated→2026-06-09

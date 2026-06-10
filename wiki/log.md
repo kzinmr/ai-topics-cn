@@ -14,6 +14,26 @@
 |
 |
 |
+|
+|
+|
+|
+|
+|
+|
+|
+|## [2026-06-10] active-crawl | china-local-deployment/Kimi/china-ai-coding-assistants
+|
+|### Wiki更新
+|- `concepts/china-local-deployment.md` -- **更新**: 6/3-10最新動向(Odysseus AI/国産GPU本地部署/MIT Attention Matching 50倍/4B認知モデル端側/DeepSeek DC建設)
+|- `concepts/kimi.md` -- **更新**: 6/5-10最新動向(Kimi Work Beta/Vibe Working差別化/追加$2B調達$30B目標/開発者コミュニティ定着)
+|- `concepts/china-ai-coding-assistants.md` -- **更新**: 6月上旬最新動向(Agentic Engineeringパラダイム転換/Kimi Work差別化/豆包Codex戦略/静定期状況)
+|
+|### hot-topics.yaml更新
+|- `china-local-deployment` -- last_crawled(2026-06-02→2026-06-10)/notes更新
+|- `kimi` -- last_crawled(2026-06-04→2026-06-10)/notes更新
+|- `china-ai-coding-assistants` -- last_crawled(2026-05-25→2026-06-10)/notes更新
+|
 |## [2026-06-09] active-crawl | OpenClaw/Vibe-Coding/Yi deepdive
 |
 |### Wiki更新

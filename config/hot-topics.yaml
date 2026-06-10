@@ -120,9 +120,9 @@ topics:
       - "さくらインターネット Kimi K2.6 API"
     wiki_pages:
       - concepts/kimi
-    notes: "2026.06.04更新: OpenAI Codex互換API実装確認(Anthropic互換エンドポイント経由/Kimi K2.5モデル)。CC-Switch/Codex++統合チュートリアル公開。ARR$100M突破報告(K2.5リリース後1ヶ月)。2026.05.30更新: K3開発(Q3リリース主流見方/Polymarket 6/30確率22%/2.5Tパラメータ・100万トークン目標)。K2.6 OpenRouterトップ10圏外転落(DeepSeek-V4-Flash$0.02/MToken攻撃/Tencent Hy3無料戦略/品質Intelligence Index 54点維持)。WebBridge v1.9.7(20Kユーザー/評価5.0/6Agent対応/ローカル+クラウド版開発)。Dラウンド$2Bクローズ(美团Dragonballリード/JV構造外資維持/評価$20B超)。IPO VIE構造解体進行(Q3 A1提出目標/半年〜1年内上場)。さくらK2.6 API継続(¥0.6/万Token/Claude Code直接利用)。2026.05.25更新: VIE構造解体正式開始(5/21-22/法務監査法人選定完了/A1提出Q3目標/年内上場/評価200億ドル超/智譜AI MiniMaxに続く香港上場)。さくらインターネットK2.6 API提供開始(5/20/Anthropic互換API/入力¥6.50・出力¥27.00 MTok/日本初本格展開)。前回(5/20): Kimi WebBridgeリリース(5/15/ブラウザAgent/ローカルファースト)。国有資本参入(5/19/国智投・北京人工智能基金・中国移動株主/20億ドル融資)。Cursor Composer 2.5(K2.5ベース/Opus 4.7級1/10コスト)。香港IPO紅籌架构拆除開始。K3開発Q3継続。OpenRouter K2.6使用量第2位。"
+    notes: "2026.06.10更新: Kimi Work Betaローンチ(Vibe Working/中国版Codexではない)。追加$2B調達交渉中(評価額$30B目標/累計376億元)。K2.6 Intelligence Index 53.9点維持。開発者コミュニティ定着加速(Claude Code→K2.5移行事例増加)。2026.06.04更新: OpenAI Codex互換API実装確認(Anthropic互換エンドポイント/Kimi K2.5)。CC-Switch/Codex++統合。ARR$100M突破。2026.05.30更新: K3開発(Q3リリース主流)。K2.6 OpenRouterトップ10圏外(DeepSeek価格攻勢)。WebBridge v1.9.7(20Kユーザー)。Dラウンド$2Bクローズ(評価$20B超)。IPO VIE解体進行。"
     added: 2026-04-17
-    last_crawled: 2026-06-04
+    last_crawled: 2026-06-10
 
   - slug: yi
     title: "Yi (零一万物) — 01.AI"
@@ -311,9 +311,9 @@ topics:
       - "TriAttention v0.2.0 GA"
     wiki_pages:
       - concepts/china-local-deployment
-    notes: "2026.06.02更新: CANN生態系成熟(鲲鹏昇腾开发者大会/70+大模型Day-0)。NVIDIA VR200冷却遅延2ヶ月(中国チップ依存加速)。DeepSeek無料版制限強化(ローカル移行動機)。MiniMax M3発表(コーディング特化/100万コンテキスト)。Qwen3.7-Max無料開放。百度APP×OpenClaw統合。前回(5/25): llama.cpp MTP/Ollama v0.30/MiniCPM-V 4.6/GLM-5/SGLang HiCache/TriAttention v0.2.0。"
+    notes: "2026.06.10更新: Odysseus AIローカルワークプレイス登場(PewDiePie製)。国産GPU本地部署議論活性化(200万元予算/中星微技術)。MIT Attention Matching 50倍显存削減。国産4B認知モデル端側デプロイ(GPT-5.4級)。DeepSeek自社GW級データセンター建設開始。Qwen3.6-27B vs V4 Flash比較議論。2026.06.02更新: CANN生態系成熟(鲲鹏昇腾开发者大会/70+大模型Day-0)。NVIDIA VR200冷却遅延2ヶ月(中国チップ依存加速)。DeepSeek無料版制限強化(ローカル移行動機)。MiniMax M3発表。Qwen3.7-Max無料開放。百度APP×OpenClaw統合。"
     added: 2026-04-17
-    last_crawled: 2026-06-02
+    last_crawled: 2026-06-10
 
   - slug: censorship-bypass
     title: "Censorship Bypass & Uncensored Models (审查绕过/去审查模型)"
@@ -520,9 +520,9 @@ topics:
       - "Qwen3.7-Max Alibaba Cloud Summit 2026"
     wiki_pages:
       - concepts/china-ai-coding-assistants
-    notes: "2026.05.25更新: 通义灵码→QoderCNリブランド(5/20/Alibaba Cloud Summit/国際ブランド統一/Qwen-Coder→Qoderシリーズ/Qoder Quest Agent新設/Qoder Viewer機能追加)。Alibaba Cloud Summit 2026(5/21)/Qwen3.7-Max発表(Agent-first/80B MoE/3B活性/SWE-bench 70.6%)。前回(5/17): Trae SOLO Mobile三端同期(5/5)。腾讯CodeBuddy計費改定(5/15)。36kr分析「TRAE SOLO龙虾化」ByteDance戦略。前々回(5/5): Trae SOLO独立Desktop。通义灵码5月更新。"
+    notes: "2026.06.10更新: AIプログラミングパラダイム転換(Claude Code父+龙虾创始人「プロンプトエンジニアリング終焉/Agent Orchestration時代」)。Kimi Work Vibe Working差別化(中国版Codex否定)。豆包MarsCode Codex統合戦略。Claude Code→K2.5移行事例増加。Trae/Qoder/CodeGeeXは6月静定期。2026.05.25更新: 通义灵码→QoderCNリブランド(5/20/Alibaba Cloud Summit)。Qwen3.7-Max発表(Agent-first/80B MoE)。前回(5/17): Trae SOLO Mobile三端同期。"
     added: 2026-04-17
-    last_crawled: 2026-05-25
+    last_crawled: 2026-06-10
 
   # =========================================================
   # 7. Chinese Coding Agent Tools (中国コーディングエージェント)
