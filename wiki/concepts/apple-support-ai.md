@@ -1,7 +1,7 @@
 ---
 title: "Apple Support AI — Claude.md漏洩事件"
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-06-10
 tags: [concept, apple, anthropic, claude, security, vibe-coding, customer-service]
 aliases: ["Apple Claude.md Leak", "苹果Claude.md泄露", "Apple Support AI"]
 source_lang: zh-CN
@@ -44,6 +44,10 @@ MacRumorsアナリストのAaron PerrisがApple Supportアプリのv5.13バー�
 - Appleは自社サーバー上でカスタム版Claudeモデルを稼働
 - 内部コード、ドキュメント、トークンはすべてAppleインフラ内（プライバシー方針と一致）
 - Google GeminiはSiriの置き換えに使用予定だが、開発ツールとしてはClaudeを選択
+
+## Siri × Gemini統合（2026-06追記）
+2026年6月、AppleはSiriの一部機能をGoogle Geminiに統合する動きを見せた。これはAppleがClaudeを開発ツールとして採用する一方、**エンドユーザー機能ではGoogle Geminiを選択**する二重戦略を示している。
+- [[apple-gemini-siri-integration]] — SiriへのGemini統合の詳細
 
 ### 開発者コミュニティの反応
 - **Claude.mdのバージョン管理問題**: プロジェクトドキュメントとしてリポジトリに含めるべきか、IDE設定として.gitignoreに入れるべきか論争

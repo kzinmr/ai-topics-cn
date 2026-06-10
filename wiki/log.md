@@ -3008,6 +3008,22 @@ Originating conversation: (scheduled cron)
 - コンセプト数: 79 → 81
 - `turboquant.md` と `dflash.md` をアルファベット順にConceptsセクションに追加
 
+## 2026-06-10 21:01 Triage Checkpoint (20260610T210136Z)
+
+- **総収集**: 59件（実質9件、WeChat重複再収集20件、V2EX低品質5件、Juejin古記事1件）
+- **Take**: 4件 — Alibaba OCR LiteParse、Apple×Gemini統合、MCPセキュリティ基準(OpenClaw)、AI Agentエンジニア技術スタック
+- **Reference**: 3件 — Codex SSH追加、SpokenWOZ更新、AI四大核心技術解説
+- **Skip**: 8件（WeChat AI00重複×3、LLM-as-Agent重複×3、V2EX暂无内容×2）
+- **Wiki更新状況**:
+  - `entities/alibaba.md` — **新規**: 阿里巴巴エンティティページ作成（OCR LiteParse/SpokenWOZ/通義千問プロダクト一覧）
+  - `concepts/apple-gemini-siri-integration.md` — **新規**: AppleがSiriの一部機能をGoogle Geminiに統合
+  - `concepts/apple-support-ai.md` — Siri×Gemini統合セクション追加、updated→2026-06-10
+  - `concepts/mcp-security.md` — updated日付のみ（既存コンテンツでカバー済み）
+  - `concepts/agent-skills.md` — updated日付のみ（既存コンテンツでカバー済み）
+  - `concepts/spokenwoz.md` — updated日付のみ（既存コンテンツでカバー済み）
+- ⚠️ OCR LiteParse記事はinboxファイル不在（digest-to-candidate mismatch）。エンティティページ新規作成に留めた
+- **温度差**: 36krがApple×Gemini統合とMCPセキュリティを先行報道。WeChatは重複再収集が大部分（AI00リスト×3、LLM-as-Agent比較×3）。V2EXは低品質ポスト中心でwiki価値低い。Zhihuは0件（パイプライン停止の可能性）
+
 ## 2026-04-26 21:01 Triage Checkpoint (20260426T210139Z)
 
 - **総収集**: 60件（実質11件、Sogou古記事49件）

@@ -1,7 +1,7 @@
 ---
 title: "Agent Skills — AIエージェントのモジュール型能力システム"
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-06-10
 tags: [ai-agents, coding-agents, concept, technique, skills]
 aliases: ["Agent Skills", "Skills", "スキル", "agent-skills"]
 source_lang: zh-CN

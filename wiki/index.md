@@ -1,7 +1,16 @@
 # AI Topics China Wiki — Index
 
 最終更新: 2026-06-10
-エンティティ: 64, コンセプト: 123, ダイジェスト: 7, 比較: 2, ページ: 9
+エンティティ: 65, コンセプト: 124, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-06-10 Crawl Triage: Apple×Gemini/Alibaba OCR/MCP-Security/Agent-Skills）
+- `entities/alibaba.md` — **新規**: 阿里巴巴エンティティページ作成。阿里云 OCR LiteParse（スキャンPDF→RAG検索）、SpokenWOZ、通義千問のプロダクト一覧
+- `concepts/apple-gemini-siri-integration.md` — **新規**: AppleがSiriの一部機能をGoogle Geminiに統合。開発ツール(Claude) vs エンドユーザー機能(Gemini)の二重戦略
+- `concepts/apple-support-ai.md` — **更新**: Siri×Gemini統合セクション追加（2026-06追記）。updated→2026-06-10
+- `concepts/mcp-security.md` — **更新**: updated日付のみ。OpenClaw/MSB基準は既存コンテンツでカバー済み
+- `concepts/agent-skills.md` — **更新**: updated日付のみ（WeChat「AI Agentエンジニア技術スタック」記事は既存コンテンツでカバー済み）
+- `concepts/spokenwoz.md` — **更新**: updated日付のみ（达摩院SpokenWOZ記事は既存コンテンツでカバー済み）
+
+⚠️ **注意**: 阿里云 OCR LiteParse記事（36kr/dfab478c）はチェックポイントに「take」記載だが、inboxファイルが存在せず（digest-to-candidate mismatch）。エンティティページ新規作成に留める。
 ### 本日更新（2026-06-10 Active Crawl: china-local-deployment/Kimi/china-ai-coding-assistants）
 - `concepts/china-local-deployment.md` — **更新**: 6/3-10最新動向追加(Odysseus AI/国産GPU本地部署/Attention Matching 50倍/4B認知モデル端側/DeepSeek DC建設)
 - `concepts/kimi.md` — **更新**: 6/5-10最新動向追加(Kimi Work Beta/Vibe Working差別化/追加$2B調達$30B目標/開発者コミュニティ定着)

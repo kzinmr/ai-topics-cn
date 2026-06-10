@@ -1,7 +1,7 @@
 ---
 title: "MCPセキュリティ — OWASP Top 10とMSB安全基準"
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-06-10
 tags: [safety, mcp, ai-agents, framework]
 aliases: ["MCP安全基準", "MSB", "MCP OWASP", "モデルコンテキストプロトコル セキュリティ"]
 source_lang: zh-CN
