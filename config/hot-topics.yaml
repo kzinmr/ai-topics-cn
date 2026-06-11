@@ -77,9 +77,9 @@ topics:
       - "Firethering kernel benchmark Qwen3.7-Max"
     wiki_pages:
       - entities/qwen
-    notes: "2026.06.05更新: Qwen3.7-Max無料化(6/1/Qwen Chat完全無料/高コスト批判即応)。funyi字幕ツールOSS(Qwen3-ASR-1.7B)。QwenPaw学習ガイド。DocPilot Qwen。2026.05.30更新: Qwen3.7-Max Firetheringカーネル最適化。Qwen Code v0.16.2/v0.17.0-preview。千問云SG公開。Qoder CNリブランド。2026.05.26更新: Qwen3.7-Max API正式公開。Qwen Code v0.16.0/v0.16.1。千問云詳細。Token Plan。Firethering。AA Index 56.6。2026.05.21更新: Qwen3.7-Max Agent-first。Qoder 1.0。Qwen3.5-LiveTranslate-Flash。"
+    notes: "2026.06.11更新: Qwen3.6-27B vs DeepSeek V4 Flash比較議論(V2EX)。Meta VLM³がQwen3-VL-4Bを研究ベースに採用(36kr/深度推定0.9)。QwenPaw記憶対話管理アーキテクチャ解説(掘金)。千問3.6の0コスト活用チュートリアル(讯飞星辰MaaS/掘金)。Qwen Code v0.17.x正式版未リリース(6/11現在)。Qwen3.7-Max無料化後コミュニティ好評継続。2026.06.05更新: Qwen3.7-Max無料化(6/1/Qwen Chat完全無料/高コスト批判即応)。funyi字幕ツールOSS(Qwen3-ASR-1.7B)。QwenPaw学習ガイド。DocPilot Qwen。2026.05.30更新: Qwen3.7-Max Firetheringカーネル最適化。Qwen Code v0.16.2/v0.17.0-preview。千問云SG公開。Qoder CNリブランド。2026.05.26更新: Qwen3.7-Max API正式公開。Qwen Code v0.16.0/v0.16.1。千問云詳細。Token Plan。Firethering。AA Index 56.6。2026.05.21更新: Qwen3.7-Max Agent-first。Qoder 1.0。Qwen3.5-LiveTranslate-Flash。"
     added: 2026-04-17
-    last_crawled: "2026-06-05"
+    last_crawled: "2026-06-11"
 
   - slug: chatglm
     title: "ChatGLM (智谱清言) — Zhipu AI"
@@ -464,9 +464,9 @@ topics:
       - "智能体規範応用 AIP 国家標準"
     wiki_pages:
       - concepts/mcp-chinese-tools
-    notes: "2026.05.29更新: MCPプロトコル無状態RC(5/21/セッションID廃止/Streamable HTTP/7/28最終仕様予定)。阿里雲全栈Agent化・MCP化(5/20/32+Agentic Cloud製品/百煉150+モデル)。腾讯云MCP Gateway(5/21/ゼロコードREST→MCP変換)。国家初AI Agent政策《智能体規範応用意見》(5/8/AIP標準化推進)。MSB MCPセキュリティベンチマーク(北京郵電大学/ICLR 2026/ASR 40.35%)。钉钉悟空Agent OS発表(5/21成都钉峰会/6000+MCP能力)。字节Coze Space MCP拡張強化(音楽生成/水滴信用/飛常準追加)。エコシステム統計: GitHub 420 MCPレポ(+19/週)/FastMCP 25K★。wiki更新済み(mcp-chinese-tools.md)。2026.05.20更新: 新华财经MCP服务矩阵(5/18/中国初国家級金融MCP/6大カテゴリ30+サービス)。腾讯云MCP广场新サーバー群(TRTC实时音视频/容器TKE/且慢盈米基金/弹性伸缩AS)。钉钉MCP广场6000+企業級MCPサービス(中国最大企業向AIスキル市場/統一課金・権限管理)。支付宝MCP Server(決済MCP初/5大決済IF/蚂蚁百宝箱30+MCP)。同花顺iFinD MCP(債券/港美股/指数/板块4大データ追加4/30)。天翼云MCP托管(中国電信/3大キャリア初)。华为云Serverless+MCP(FunctionGraph統合/30秒デプロイ)。百度MCP广场1.6万+Server(中国最大)。コミュニティ→公式対応への急速移行がさらに加速。"
+    notes: "2026.06.11更新: 5/29〜6/11は静観・消化期間(前回リリースラッシュ後の定着期)。钉钉MCP广场・腾讯云MCP・新华财经MCP・百炼MCP化・Coze Space MCPいずれも新発表なし。コミュニティ教育記事(MCP/A2A/AG-UI比較)継続。中国メディア関心はClaude Mythos/Fable 5・Anthropic IPOに集中。Kimi Code MCP対応ユーザー報告(未確認)。2026.05.29更新
     added: 2026-04-17
-    last_crawled: 2026-05-29
+    last_crawled: 2026-06-11
 
   # =========================================================
   # 6. Vibe Coding Trend in China (中国のVibe Coding)
@@ -550,9 +550,9 @@ topics:
       - "Grok Build xAI コーディングエージェント"
     wiki_pages:
       - concepts/china-coding-agents
-    notes: "2026.06.05更新: Copilot Token計費転換(6/1/国内モデル移行加速)。MiniMax M3(100万ctx)。Codex第三社API対応(DeepSeek/GLM/Kimi/CC-Switch)。Claude Code 5月30v(Workflows/agent/parallel/pipeline/phase)。OpenClaw百度APP統合。商湯Skills OSS。Agent Runtime議論。Kimi Code 0.4.0。2026.05.28更新: Cursor 3.5(5/20/Automations/Composer 2.5 Kimi K2.5ベース/$293B評価額)。Qoder 1.0(Alibaba/¥599/自律型DesktopAgent/Qwen3-Coder)。DeepSeek Agent Harnessチーム結成(崔添翼責任者/製品化6-12ヶ月)。GitHub Agent HQ(5/22)。Claude Code無料枠月80回圧縮。Codex企業2ヶ月無料。Kimi K2.6誤BAN問題(5/25-27)。Grok Build(xAI/5/27)。2026.05.18更新: Cursor 3.3/3.2/3.1(5月1日~6日)—Agents Window完全版/Composer 2自研MoE 4倍速/best-of-nマルチモデル競争/Design Mode安定化/Kimi K2.6プラグイン/K2.5統合。Kimi K2.6正式価格(¥39/159/559)。Trae SOLO MTCモード独立Desktop/Web版(シェア41.2%首位)。Lingma IDE独立移行。CodingPlan価格改定(百煉Lite廃止/Token Plan時代)。wiki→coding-agents.md更新済み。"
+    notes: "2026.06.11更新: Claude Fable 5/Mythos 5発表(5000万行コード移行1日)。Bun 100万行Claude Code書換え(9日間/6755コミット/99.8%通過率)。Anthropic自社コード80%AI生成議論。Kimi Work発表+IPO加速(2000億元評価額)。Codex大更新(6職種スキル対応)。DeepSeek V4 Pro 2.5割正式価格。GPT-5.6初回実測。MiniMax M3深堀分析(100万トークン超長文脈)。智谱GLM-5オープンソース。Agent最後の試験(最高得点8.6%)。2026.06.05更新
     added: 2026-04-17
-    last_crawled: 2026-06-05
+    last_crawled: 2026-06-11
 
   - slug: coding-plan
     title: "Coding Plan (编程计划)"

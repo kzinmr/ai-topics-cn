@@ -22,6 +22,18 @@
 |
 |
 |
+||## [2026-06-11] active-crawl | Qwen/china-coding-agents/mcp-chinese-tools
+|
+|### Wiki更新
+|- `entities/qwen.md` -- **更新**: 6/6-11最新動向(Qwen3.6-27B vs V4 Flash比較/Meta VLM³採用/QwenPaw解説/千問3.6活用/Code v0.17.x未リリース)
+|- `concepts/china-coding-agents.md` -- **更新**: 6/6-10最新動向(Claude Fable5/Mythos5/Bun 100万行書換え/Kimi Work/Codex更新/GPT-5.6/GLM-5 OSS/Agent試験)
+|- `concepts/mcp-chinese-tools.md` -- **更新**: 5/29-6/11静観期間分析(前回リリース後消化期/大型新展開なし/教育記事継続)
+|
+|### hot-topics.yaml更新
+|- `qwen` -- last_crawled(2026-06-05→2026-06-11)/notes更新
+|- `china-coding-agents` -- last_crawled(2026-06-05→2026-06-11)/notes更新
+|- `mcp-chinese-tools` -- last_crawled(2026-05-29→2026-06-11)/notes更新
+|
 |## [2026-06-10] active-crawl | china-local-deployment/Kimi/china-ai-coding-assistants
 |
 |### Wiki更新

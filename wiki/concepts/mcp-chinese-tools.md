@@ -3,7 +3,7 @@ title: "中国MCPツールエコシステム — 中国語圏向けMCP Server/SD
 type: concept
 tags: [mcp, chinese-ai, tool-integration, feishu, dingtalk, wecom, wechat, open-source, server]
 created: 2026-04-27
-updated: 2026-05-29
+updated: 2026-06-11
 source_lang: zh-CN
 aliases: ["中国MCP工具生态", "China MCP Servers", "中文MCP服务器"]
 ---
@@ -566,6 +566,46 @@ AgentScout MCP生態周度追踪報告より：
 - **Qwen3.6-35B-A3B**: MCPMark 37.0%（Gemma 4-31Bの2倍以上）
 - **GLM-5.1**: MCP Atlas 71.8%（世界最高、GPT-5.4の67.2%を上回る）
 - 中国モデルはMCPツール呼び出し精度で世界最先端を走る
+
+## 2026年5月29日〜6月11日 — 静観期間：主要プラットフォームの新展開なし
+
+### 概要
+
+2026年5月29日から6月11日までの13日間、中国MCPツールエコシステムにおいて**主要プラットフォーム（钉钉MCP广场・腾讯云MCP・新华财经MCP・百煉・Coze Space・Alibaba Cloud MCP）に目立った新発表や大型アップデートは確認されなかった**。この期間は5月の集中的なリリース（钉钉「悟空」Agent OS発表5/21、腾讯云MCP Gateway 5/21、新华财经MCP矩阵5/18等）の後の**消化・定着期**とみられる。
+
+### 観測された軽微な動き
+
+中国の主要技術コミュニティ（掘金・36氪・V2EX等）ではMCP関連の以下のような**教育的・コミュニティレベルの活動**が継続して見られた：
+
+| 日付 | 記事/活動 | 種類 | 出典 |
+|------|----------|------|------|
+| 6/3 | 「AI Agent 进入协议时代：MCP、A2A、AG-UI 三大协议全景解析」— MCP/A2A/AG-UIの3大プロトコルを横断比較 | 教育記事 | [掘金](https://juejin.cn/post/7646938869472378915) |
+| 6/2 | 「Agent 系列（10）：MCP 协议——工具生态的标准化接入」— Agent開発シリーズとしてMCP解説 | 教育記事 | [掘金](https://juejin.cn/post/7646537363406323753) |
+| 6/1 | 「我给 AI 做了个「第二大脑」— Claude、Cursor、Windsurf 共享记忆」— MCPを使った共有記憶ツール（コミュニティ） | コミュニティOSS | [V2EX](https://www.v2ex.com/t/1217451) |
+| 5/30 | Kimi CodeがMCPをサポート — 「Kimi Code 用起来感觉还行」とMCP言及 | ユーザー言及 | [V2EX](https://www.v2ex.com/t/1216645) |
+| 6/4 | 「大伙用 ai 有没有上下文焦虑」— MCPに軽く言及 | コミュニティ議論 | [V2EX](https://www.v2ex.com/t/1218038) |
+| 6/3 | 「我开发了一个 MCP skills，可以快速分析短视频！」— コミュニティMCP Skill公開 | コミュニティ創作物 | [V2EX](https://www.v2ex.com/t/1217743) |
+| 6/5 | 「我把 Codex 里的 Skills 做成了一个 MCP，还支持分享」— Codex SkillsのMCP化 | コミュニティ創作物 | [掘金](https://juejin.cn/post/7642011610886537250) |
+
+### 注目点
+
+1. **MCP/A2A/AG-UIの3大プロトコル比較教育記事が登場**：中国開発者コミュニティにおいて、MCPを単独でなくAgent間通信プロトコル全体の中で位置づける俯瞰的な理解が進んでいることを示す。
+
+2. **Claude Mythos/Fable 5がAIニュースの主役に**：この期間、中国メディアのAI報道はClaude Mythos 5・Fable 5・Anthropic IPO・OpenAI Codexのアップデートに集中しており、中国MCPエコシステムの新展開はほとんど報じられなかった。
+
+3. **Kimi CodeがMCP対応**：月之暗面（Moonshot AI）のKimi CodeがMCPをサポートしているとのユーザー報告あり。ただし公式発表は未確認。
+
+### エコシステム全体の観測
+
+AgentScout MCP生態週度追踪（5/20時点）以降の最新統計は確認できなかった。5月末〜6月初頭の動きとしては：
+
+- **教育コンテンツの充実期**：5月の大型リリース（钉钉MCP广场6000+サービス、腾讯云MCP Gateway、新华财经MCP矩阵等）を解説する記事が多数公開され、開発者の理解が深まる段階
+- **コミュニティ創作物の活性化**：MCP Skillsの自作・共有がV2EXや掘金で散見され、コミュニティレベルでのMCPエコシステムの裾野拡大が進行中
+- **海外MCPニュースの席巻**：MCPプロトコル自体のStateless RC（5/21）の影響が中国でも議論され続けているが、中国独自のMCPツール新規リリースはこの期間確認できず
+
+**総評**: 2026年5月後半の集中的なリリースラッシュを経て、中国MCPエコシステムは現在**定着・教育・コミュニティ拡大のフェーズ**に移行している。次なる大型アップデートは7月のMCP仕様確定（Stateless仕様、7/28予定）前後に期待される。
+
+📎 出典: [AgentScout MCP生態週度追踪](https://agentscout.live/zh/tech/dev-tools/data/mcp-ecosystem-weekly-20260520/) `[T2: データ分析]`
 
 ## 関連リンク
 
