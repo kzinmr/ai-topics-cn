@@ -2,6 +2,10 @@
 
 最終更新: 2026-06-11
 エンティティ: 65, コンセプト: 124, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-06-11 Crawl Triage: Codex SSH/OpenClaw日付更新）
+- `entities/openclaw.md` — **更新**: updated日付のみ（V2EX Codex SSH遠隔開発機能ポストはinboxが「暂无内容」のため実質内容なし。既存37KB+ページで既に包括的）。updated→2026-06-11
+
+⚠️ **注意**: V2EX「Codex App SSH远程開発機能」take対象だがinboxファイルに本文なし（暂无内容）。Juejin LangChain参考記事は2023年8月のもので既存`concepts/langchain.md`参照済み。Zhihuは0件（パイプライン停止またはデータなし）。
 ### 本日更新（2026-06-11 Active Crawl: Qwen/china-coding-agents/mcp-chinese-tools）
 - `entities/qwen.md` — **更新**: 6/6-11最新動向(Qwen3.6-27B vs V4 Flash比較/Meta VLM³採用/QwenPaw解説/千問3.6活用/Code v0.17.x未リリース)
 - `concepts/china-coding-agents.md` — **更新**: 6/6-10最新動向(Claude Fable5/Mythos5/Bun 100万行書換え/Kimi Work/Codex更新/GPT-5.6/GLM-5 OSS/Agent試験)
