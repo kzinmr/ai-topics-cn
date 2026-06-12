@@ -4,8 +4,8 @@ source: v2ex
 url: "https://www.v2ex.com/t/1219504"
 author: "mndlr"
 date: 2026-06-11
-score: 356
-tags: ["Claude", "GPT", "Gemini"]
+score: 436
+tags: ["Claude", "Gemini", "GPT"]
 ---
 
 # 领赛博鸡蛋啦，自建中转，持续拉新，注册送额度 + 邀请好友首充双方返利。支持 GPT 5.5 / Claude Fable 5 / Gemini 3.5 Flash 等全系列主流模型，免费送 $50 刀永久额度
@@ -51,7 +51,7 @@ GPT 5.5 / Claude Fable 5 / Gemini 3.5 Flash 等全系列，价格美丽，多档
 
 ## 涉及话题
 - Claude
-- GPT
 - Gemini
+- GPT
 
 [原文链接](https://www.v2ex.com/t/1219504)

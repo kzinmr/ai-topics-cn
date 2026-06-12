@@ -2,6 +2,11 @@
 
 最終更新: 2026-06-12
 エンティティ: 65, コンセプト: 124, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-06-12 Crawl Triage: SpokenWOZ/LLM-as-Agent日付更新）
+- `concepts/spokenwoz.md` — **更新**: updated日付のみ（达摩院SpokenWOZ再収集記事は既存カバー済み）。updated→2026-06-12
+- `concepts/agent-team-swarm/index.md` — **更新**: updated日付のみ（LLM-as-Agent技術比較記事は既存カバー済み）。updated→2026-06-12
+
+⚠️ **注意**: V2EXの「暂无内容」記事が多数含まれており実質的なコンテンツなし。WeChat媒体の「AI00十一月榜单」記事（ハッシュaafeba3f）と「LLM-as-Agent」記事（ハッシュf3c823cd）は再収集済みで重複。36krの新着記事は本チェックポイントの候補リストには含まれておらず、次回トリアージ対象。
 ### 本日更新（2026-06-12 Active Crawl: Agent-Ecosystem/Doubao/coding-plan）
 - `concepts/china-ai-agent-ecosystem.md` — **更新**: Agent最後の試験(8.6%)、CLI+MCP+Skill三大パラダイム、Agent教育コンテンツ爆発、Fable 5影響
 - `concepts/doubao.md` — **更新**: Codexを中身とした豆包価値提案(6/8 36kr)、6月中旬静定期

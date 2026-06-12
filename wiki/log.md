@@ -31,7 +31,26 @@
 |
 |
 |
-|## [2026-06-12] active-crawl | china-ai-agent-ecosystem/Doubao/coding-plan
+|## [2026-06-12] crawl-triage | SpokenWOZ/LLM-as-Agent再収集
+
+### Take（2件 → 日付更新のみ）
+- `concepts/spokenwoz.md` — **更新**: updated日付のみ（2026-06-10→2026-06-12）。WeChat PaperWeekly「大模型剑指AIAgents,达摩院推出Dialogue Agents新基SpokenWOZ」はタイトル+URLのみ。既存ページ(2023年8月27日付)で既にカバー済み。
+- `concepts/agent-team-swarm/index.md` — **更新**: updated日付のみ（2026-04-28→2026-06-12）。WeChat「LLM-as-Agent技术哪家强?」は機器之心PRO会員通讯ヘッダープレビューのみ（ハッシュf3c823cd）。既存ページでLLM-as-Agentアーキテクチャ比較知見を統合済み。
+
+### Skip（8件）
+- WeChat 6件: 同一ハッシュf3c823cdの再収集重複（LLM-as-Agent）。既にreference処理済み。
+- WeChat 1件: 同一ハッシュaafeba3fの再収集重複（AI00十一月榜单）。`archive/integrated/`に2026-04-26登録済み。
+
+### Source Counts
+36kr: 872 | juejin: 1467 | v2ex: 1716 | wechat-media: 671 | zhihu: 0 | newsletters: 80 | daily_digests: 59
+
+### チェックポイント
+- run_id: 20260612T090151Z
+- source: crawl-triage
+
+---
+
+## [2026-06-12] active-crawl | china-ai-agent-ecosystem/Doubao/coding-plan
 |
 |### Wiki更新
 |- `concepts/china-ai-agent-ecosystem.md` — **更新**: Agent最後の試験(8.6%)、CLI+MCP+Skill三大パラダイム、Hermes vs OpenClaw比較、「Chat is dead」議論、Agent教育コンテンツ爆発(週10+本)。updated: 2026-06-12。
