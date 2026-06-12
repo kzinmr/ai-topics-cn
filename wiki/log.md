@@ -3118,3 +3118,17 @@ Originating conversation: (scheduled cron)
 - `china-local-deployment`: last_crawled 2026-05-19、search_hints拡充、notes更新
 - `mcp-china`: last_crawled 2026-05-19、search_hints拡充、notes更新
 - `china-open-source-ai`: last_crawled 2026-05-19、search_hints拡充、notes更新
+
+## [2026-06-12] triage | Codex SSH遠隔開発 / SpokenWOZ（达摩院Dialogue Agents）
+
+### 収集概要
+- **チェックポイント**: 20260612T210149Z
+- **総収集**: 60件
+- **Take**: 2件 — Codex App SSH遠隔開発機能（V2EX）、SpokenWOZ（达摩院Dialogue Agents新基準、WeChat/PaperWeekly）
+- **Reference**: 5件 — Deep Research品質、GPT 6.0時期、复旦NLP Agent総説、LLM-as-Agent比較、LangChain実践、低価格GPT脆弱性
+- **Skip**: 13件以上 — WeChat重複再収集（aafeba3f/f3c823cd/159c78b4ハッシュの複数日出現）、V2EX暂无内容/推測的投稿、2023年古い論文ダイジェスト
+- **Zhihu**: 0件（パイプライン問題の可能性）
+
+### Wiki更新
+- `entities/claude-code.md` — OpenAI CodexのSSH遠隔開発機能に関するV2EX報告を追記（本文なし、タイトル情報のみ）
+- `concepts/spokenwoz.md` — updated日を2026-06-12に更新（既存ページの確認済み）

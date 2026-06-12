@@ -1,7 +1,7 @@
 ---
 title: Claude Code — AIコーディングエージェント
 created: 2026-04-15
-updated: 2026-04-24
+updated: 2026-06-12
 tags: [claude, ai-agents, coding-agents, tooling, closed-source, ip-ban, restrictions]
 aliases: ["Claude Code", "CC", "claude-code"]
 source_lang: zh-CN
@@ -499,3 +499,11 @@ V2EXでの議論では、Harness/SDD実践における以下の課題が指摘�
 | **Review** | 品質保証 | `requesting-code-review` Skill |
 
 Harness EngineeringはClaude Codeを「便利なコーディング補助」から「自律型開発エージェント」に昇華させる概念的基盤である。ただし、コミュニティの指摘通り、**人間のin-the-loop判断と定期的なリファクタリング**は依然として不可欠。
+
+## 最新動向（2026年6月12日）
+
+### OpenAI CodexのSSH遠隔開発機能
+
+V2EXで「**以防你不知道 Codex App 偷偷加了 SSH 远程开发功能**」（あなたが知らないかもしれないが、Codex AppはこっそりSSH遠隔開発機能を追加した）との報告。OpenAI Codex AppにSSH経由でのリモート開発機能が実装された。これは[[claude-code]]のターミナルベースエージェントモデルに対する直接的な競合機能の追加であり、クラウド上のリモート環境での開発ワークフローをCodexでも可能にするもの。ただしV2EX投稿は本文なし（暂无内容）の状態であり、詳細な機能仕様は未確認。
+
+> **出典**: V2EX — [https://www.v2ex.com/t/1207253](https://www.v2ex.com/t/1207253) [T1]
