@@ -163,9 +163,9 @@ topics:
       - "豆包 課金 5088 円 year 2026"
     wiki_pages:
       - concepts/doubao
-    notes: "2026.06.07更新: 豆包6月下旬正式課金開始確定・抖音EC統合加速。団購市場参入(第2の商業化/美团迂回)。字节AI大将顾全全離職。AI手机入口を巡り微信と競合。字节AI 4大命題(有料化/EC/団購/AI手机)。「豆包不用负责」AI説明責任議論。2026.06.03更新: 豆包6月下旬正式課金開始(確認/最高5,088元/年)。団購(Group Buying)市場参入(ECに続く第二の商業化/美团迂回戦略)。字节AI大将顾全全離職(方向性対立説/競合流出説)。有料課金最高5,088元/年(6月下旬全面展開/国产AI免费时代終焉)。2026.05.27更新: 火山劇創1.0正式リリース(5/21/Seedance 2.0連携/製作サイクル80%短縮)。火山方舟Agent Plan+Coding PlanがDeepSeek V4対応(5/23/最大850元節約)。Nubia社長が豆包予約ハルシネーションに実演反論。豆包Android版スキャン支払い機能追加(618商戦向け)。火山引擎Mobile Use Agent発表(TCO 40-60%削減)。Black Hat Asia 2026でAgent Miner/BoardSentinel発表(7件CVE獲得)。2026.05.21更新: 豆包MAU3.45億(訂正/前回227M→最新345M)。Agent Plan有料サブスク正式発表(月額68/200/500円/自律エージェント機能限定)。AI誤導訴訟(退改航ハルシネーション/5月14日提起)。2026.05.15更新: 豆包有料サブスク大議論(5月11-15日連日全国メディア議論/Morgan Stanley年収1-15億ドル/消耗式/跨端消費/デフォルト学習許諾)。豆包输入法Mac版(5月13日/V2EX話題/音声認識高評価)。火山引擎MaaSシェア49.5%(IDC/国内1位/市場Token16倍)。豆包AI誤導訴訟(5月14日/退改航ハルシネーション)。栄威家越07量産版6月Engine Force発表/提携深化。競合波及: DeepSeek V4-Pro2.5割/千問補助金/元宝文心無料継続。月活2.27億・DAU1億。豆包4シリーズ/Doubao-Seed-2.0-lite全模态(5月6日)。"
+    notes: "2026.06.12更新: Codexを中身とした豆包価値提案(36kr/字母AI/6/8)。6月中旬静定期。2026.06.07更新: 豆包6月下旬正式課金開始確定・抖音EC統合加速。団購市場参入(第2の商業化/美团迂回)。字节AI大将顾全全離職。AI手机入口を巡り微信と競合。字节AI 4大命題(有料化/EC/団購/AI手机)。「豆包不用负责」AI説明責任議論。2026.06.03更新: 豆包6月下旬正式課金開始(確認/最高5,088元/年)。団購(Group Buying)市場参入(ECに続く第二の商業化/美团迂回戦略)。字节AI大将顾全全離職(方向性対立説/競合流出説)。有料課金最高5,088元/年(6月下旬全面展開/国产AI免费时代終焉)。2026.05.27更新: 火山劇創1.0正式リリース(5/21/Seedance 2.0連携/製作サイクル80%短縮)。火山方舟Agent Plan+Coding PlanがDeepSeek V4対応(5/23/最大850元節約)。Nubia社長が豆包予約ハルシネーションに実演反論。豆包Android版スキャン支払い機能追加(618商戦向け)。火山引擎Mobile Use Agent発表(TCO 40-60%削減)。Black Hat Asia 2026でAgent Miner/BoardSentinel発表(7件CVE獲得)。2026.05.21更新: 豆包MAU3.45億(訂正/前回227M→最新345M)。Agent Plan有料サブスク正式発表(月額68/200/500円/自律エージェント機能限定)。AI誤導訴訟(退改航ハルシネーション/5月14日提起)。2026.05.15更新: 豆包有料サブスク大議論(5月11-15日連日全国メディア議論/Morgan Stanley年収1-15億ドル/消耗式/跨端消費/デフォルト学習許諾)。豆包输入法Mac版(5月13日/V2EX話題/音声認識高評価)。火山引擎MaaSシェア49.5%(IDC/国内1位/市場Token16倍)。豆包AI誤導訴訟(5月14日/退改航ハルシネーション)。栄威家越07量産版6月Engine Force発表/提携深化。競合波及: DeepSeek V4-Pro2.5割/千問補助金/元宝文心無料継続。月活2.27億・DAU1億。豆包4シリーズ/Doubao-Seed-2.0-lite全模态(5月6日)。"
     added: 2026-04-17
-    last_crawled: 2026-06-07
+    last_crawled: 2026-06-12
 
   - slug: tencent-hunyuan
     title: "混元 (Hunyuan) — Tencent AI"
@@ -220,9 +220,9 @@ topics:
       - "百融智能 RaaS 硅基員工"
     wiki_pages:
       - concepts/china-ai-agent-ecosystem
-    notes: "2026.06.06更新: 悟空シフト加速(阿里悟空115票/ロブスター→悟空)。Codex Sites(6/5/内蔵Web構築)。DeepSeek有料化完了。headroom Token 95%圧縮。字节AI 4大命題。Agentセキュリティガイド。低コードAgent汎用設計。DeepSeek估值+150億ドル。2026.06.01更新: 百蝦大戦からプラットフォーマー時代へ移行—OpenClaw勢い減速(V2EX議論「小龙虾为什么突然不火了」/脆弱性・SOE禁止)。阿里悟空(Wukong)Agent OSがOpenClaw代替として急浮上(セキュリティ・阿里エコシステム統合)。DeepSeek再生・修正回数制限開始(5/30/無料枠持続可能性限界/700億調達承認待ち)。上海大模型リーダー(MiniMax推定)A株上場へ(中国AI企業初大型IPO/5/30)。OpenAI CodexがDeepSeek等サードパーティAPI対応(5/31/モデルロックイン緩和)。Hermes Agentが中国V2EXコミュニティでClaude Code対比で高評価。Kimi Code 0.4.0リリース(完全TypeScript化/ミリ秒起動/誤BAN信頼問題継続)。新興OSS:agentserver(個人算力網)/opencontext(クロスAgentコンテキスト)/DeepAgents middleware。2026.05.23更新: Agent三巨頭サミット(5/18/智譜AutoGLM 3.0+Qwen Agent v2+DeepSeek R2)でAgent能力競争激化。百度文心5.1(5/13/DAA指標/自律エージェント特化)。火山引擎Agent Plan発表。百融RaaS(硅基員工10万+)。360 Agent Studio。Agent Token消費が全Tokenの70%超に(36kr)。2026.05.17更新: 百度Create2026(5/13-14)で「心響(Xinxiang)」AGIアシスタント発表/DAA(Daily Active Agents)新指標提案/Token Factory(採掘→精錬→製造)3段階モデル。36kr大分析「中国跳过LLM直奔Agent时代」—Token消費180兆超の70%+がAgent/Alibaba ATH(Token Hub)構想/腾讯Agentインフラ戦略。前回(5/12): 国家Agent政策/腾讯云全栈/BoAgent/百融RaaS。前々回: 推論2/3/Deloitte/GPU高騰/$0.30vs$30/OpenClaw12脆弱性/SOE禁止/補助金。"
+    notes: "2026.06.12更新: Agent最後の試験(最高得点8.6%/6/10)。CLI+MCP+Skill三大パラダイム(6/11)。Hermes vs OpenClaw比較分析(6/10)。「Chat is dead」パラダイム転換議論。DeepSeek V4数学証明500倍コスト優位。Agent教育コンテンツ爆発(週10+本)。Fable 5リリースの中国エコシステムへの間接的影響。2026.06.06更新: 悟空シフト加速(阿里悟空115票/ロブスター→悟空)。Codex Sites(6/5/内蔵Web構築)。DeepSeek有料化完了。headroom Token 95%圧縮。字节AI 4大命題。Agentセキュリティガイド。低コードAgent汎用設計。DeepSeek估值+150億ドル。2026.06.01更新: 百蝦大戦からプラットフォーマー時代へ移行—OpenClaw勢い減速(V2EX議論「小龙虾为什么突然不火了」/脆弱性・SOE禁止)。阿里悟空(Wukong)Agent OSがOpenClaw代替として急浮上(セキュリティ・阿里エコシステム統合)。DeepSeek再生・修正回数制限開始(5/30/無料枠持続可能性限界/700億調達承認待ち)。上海大模型リーダー(MiniMax推定)A株上場へ(中国AI企業初大型IPO/5/30)。OpenAI CodexがDeepSeek等サードパーティAPI対応(5/31/モデルロックイン緩和)。Hermes Agentが中国V2EXコミュニティでClaude Code対比で高評価。Kimi Code 0.4.0リリース(完全TypeScript化/ミリ秒起動/誤BAN信頼問題継続)。新興OSS:agentserver(個人算力網)/opencontext(クロスAgentコンテキスト)/DeepAgents middleware。2026.05.23更新: Agent三巨頭サミット(5/18/智譜AutoGLM 3.0+Qwen Agent v2+DeepSeek R2)でAgent能力競争激化。百度文心5.1(5/13/DAA指標/自律エージェント特化)。火山引擎Agent Plan発表。百融RaaS(硅基員工10万+)。360 Agent Studio。Agent Token消費が全Tokenの70%超に(36kr)。2026.05.17更新: 百度Create2026(5/13-14)で「心響(Xinxiang)」AGIアシスタント発表/DAA(Daily Active Agents)新指標提案/Token Factory(採掘→精錬→製造)3段階モデル。36kr大分析「中国跳过LLM直奔Agent时代」—Token消費180兆超の70%+がAgent/Alibaba ATH(Token Hub)構想/腾讯Agentインフラ戦略。前回(5/12): 国家Agent政策/腾讯云全栈/BoAgent/百融RaaS。前々回: 推論2/3/Deloitte/GPU高騰/$0.30vs$30/OpenClaw12脆弱性/SOE禁止/補助金。"
     added: 2026-04-17
-    last_crawled: 2026-06-06
+    last_crawled: 2026-06-12
 
   - slug: openclaw
     title: "OpenClaw — オープンソースAI Agentエンドポイントツール"
@@ -563,9 +563,9 @@ topics:
       - "Coding Plan agent 中国"
     wiki_pages:
       - concepts/coding-plan
-    notes: "2026.05.28更新: Cursor 3.5(Automations/バックグラウンド自律タスク)。CodingPlan価格体系Token Plan移行完了。CodeGeeX 4.1(GLM-5.1-Codeベース)。Market status: Trae 41.2%シェア維持。Alibaba二階層戦略(Lingma IDE ¥99 + Qoder 1.0 ¥599)。中国発コーディングエージェントツール。機能・ユースケースの深掘り。2026.05.11更新: Kimi K2.6正式価格¥39/159/559確定。Cursor+K2.6Lite組み合わせが黄金パターンに。二極分化加速(Lite¥39-40 vs Pro¥99-559)。Cursor 3.3comboでクラウドIDE+国内LitePlan棲み分け定着。GLM-5.1統合遅延(5月中見込み)。Token Plan時代突入。阿里百煉Lite完全廃止・智譜GLM値上げ継続・Kimi参入。"
+    notes: "2026.06.12更新: 6月静定期(新規参入・価格改定なし)。DeepSeek V4 Pro 2.5割確定の間接的影響。Fable 5リリースもCoding Plan需要基盤に影響なし。2026.05.28更新: Cursor 3.5(Automations/バックグラウンド自律タスク)。CodingPlan価格体系Token Plan移行完了。CodeGeeX 4.1(GLM-5.1-Codeベース)。Market status: Trae 41.2%シェア維持。Alibaba二階層戦略(Lingma IDE ¥99 + Qoder 1.0 ¥599)。中国発コーディングエージェントツール。機能・ユースケースの深掘り。2026.05.11更新: Kimi K2.6正式価格¥39/159/559確定。Cursor+K2.6Lite組み合わせが黄金パターンに。二極分化加速(Lite¥39-40 vs Pro¥99-559)。Cursor 3.3comboでクラウドIDE+国内LitePlan棲み分け定着。GLM-5.1統合遅延(5月中見込み)。Token Plan時代突入。阿里百煉Lite完全廃止・智譜GLM値上げ継続・Kimi参入。"
     added: 2026-04-17
-    last_crawled: 2026-05-28
+    last_crawled: 2026-06-12
 
   - slug: cursor-china-adoption
     title: "Cursor Adoption in China (Cursor中国使用情况)"

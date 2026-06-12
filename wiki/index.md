@@ -1,7 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-06-11
+最終更新: 2026-06-12
 エンティティ: 65, コンセプト: 124, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-06-12 Active Crawl: Agent-Ecosystem/Doubao/coding-plan）
+- `concepts/china-ai-agent-ecosystem.md` — **更新**: Agent最後の試験(8.6%)、CLI+MCP+Skill三大パラダイム、Agent教育コンテンツ爆発、Fable 5影響
+- `concepts/doubao.md` — **更新**: Codexを中身とした豆包価値提案(6/8 36kr)、6月中旬静定期
+- `concepts/coding-plan.md` — **更新**: 6月静定期(新規参入・価格改定なし)、DeepSeek V4 Pro 2.5割確定、Coding Plan需要基盤安定
 ### 本日更新（2026-06-11 Crawl Triage: Codex SSH/OpenClaw日付更新）
 - `entities/openclaw.md` — **更新**: updated日付のみ（V2EX Codex SSH遠隔開発機能ポストはinboxが「暂无内容」のため実質内容なし。既存37KB+ページで既に包括的）。updated→2026-06-11
 

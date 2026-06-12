@@ -22,7 +22,31 @@
 |
 |
 |
-||## [2026-06-11] crawl-triage | Codex SSH/OpenClaw日付更新
+||
+|
+|
+|
+|
+|
+|
+|
+|
+|## [2026-06-12] active-crawl | china-ai-agent-ecosystem/Doubao/coding-plan
+|
+|### Wiki更新
+|- `concepts/china-ai-agent-ecosystem.md` — **更新**: Agent最後の試験(8.6%)、CLI+MCP+Skill三大パラダイム、Hermes vs OpenClaw比較、「Chat is dead」議論、Agent教育コンテンツ爆発(週10+本)。updated: 2026-06-12。
+|- `concepts/doubao.md` — **更新**: 「拿Codex当馅儿，豆包才值钱」分析(36kr/6/8)、6月中旬静定期。updated: 2026-06-12。
+|- `concepts/coding-plan.md` — **更新**: 6月静定期(新規参入・価格改定なし)、DeepSeek V4 Pro 2.5割確定、Fable 5リリース影響なし。updated: 2026-06-12。
+|
+|### hot-topics.yaml更新
+|- china-ai-agent-ecosystem: last_crawled 2026-06-12。notes更新。
+|- doubao: last_crawled 2026-06-12。notes更新(Codex価値提案追加)。
+|- coding-plan: last_crawled 2026-06-12。notes更新(静定期追記)。
+|
+|### 出典
+|- 36kr(6/4-10)、Juejin(6/7-11)、V2EX(6/7-11)、WeChat-media digests
+|- ソース: daily digest ファイル(2026-06-07〜2026-06-11)
+|## [2026-06-11] crawl-triage | Codex SSH/OpenClaw日付更新
 
 ### Take（1件 → 更新）
 - `entities/openclaw.md` — **更新**: updated日付のみ。V2EX「Codex App SSH远程開発機能」take指定だがinboxファイルは「暂无内容」のため実質コンテンツなし。既存37KB+ページで包括的。

@@ -1,7 +1,7 @@
 ---
 title: "Coding Plan（编程计划）— 中国発AIコーディングサブスクリプションモデル"
 created: 2026-04-17
-updated: 2026-05-28
+updated: 2026-06-12
 tags: [coding-agents, tooling, china, product, concept, subscription]
 aliases: ["Coding Plan", "编程计划", "コーディングプラン", "CodingPlan"]
 source_lang: zh-CN
@@ -269,6 +269,18 @@ V2EXでは以下のテーマが活発に議論されている：
 - **「AI来了，反而让我想跑路了」**: 9年目フロントエンド開発者がAIによる過重労働で転職を決意。給与は2年間不変
 - **Harness Engineering流行**: 「驾驭AI」としてワークフロー最適化が話題に。ただし「claude codeさえあれば十分」との声も
 - **GPT-5.5降智**: 2026年5月第3週、GPT-5.5の品質急低下を多数報告。CodexユーザーがDeepSeekやGLM-5.1に逃避
+
+### 10.13 2026年5月28日〜6月12日 — Coding Plan生態系の静定期
+
+2026年5月28日以降、Coding Plan市場に目立った新規参入や価格改定は確認されなかった。以下の周辺動向が確認されたのみ：
+
+- **DeepSeek V4 Pro 2.5割正式価格**: DeepSeek V4-Proの永久75%値下げが確定し、「世界最安値/入力3元」の価格がCoding Plan市場に間接的な影響。Coding Planの「お得感」に対する相対的プレッシャー。
+- **Claude Fable 5/Mythos 5リリース（6/10）**: 5000万行コード移行1日を謳うAnthropicの新世代モデル。中国開発者コミュニティでも話題だが、アクセス障壁（顔認証・外貨支払い）は変わらず、国内Coding Planの需要基盤に影響なし。
+- **Agent最後の試験（6/10/36kr）**: 最高得点8.6%という低スコアが話題に。Coding Planで利用可能なコードモデルの実力評価に間接的に関連する。
+- **字节Agent Plan**: 前回カバー済み（10.1節）の火山Engine Agent Planは引き続きパブリックベータを継続、新たな価格改定なし。
+- **Coding Planコミュニティ**: V2EX/掘金でのCoding Plan関連の議論は発言量が減少し、静定期に入った。主なトピックはClaude Fable 5やAnthropic全般の話題に移行。
+
+**結論**: 5月下旬の激変期（Token Plan移行完了・MiniMax改価・火山Agent Plan発表）を経て、6月前半は静かな消化期間。次回は6月下旬のDeepSeek V4.1リリースやK3発表（Q3予定）に伴うCoding Plan市場への影響を注視。
 
 ## おすすめ選択肢（2026年5月28日更新）
 
