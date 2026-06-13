@@ -31,6 +31,19 @@
 |
 |
 |
+|
+|## [2026-06-13] active-crawl | DeepSeek/MCP-China/VRAM-Optimization
+|
+|### Wiki更新
+|- `concepts/deepseek.md` — **更新**: V4-Pro永久2.5割確定+Claude Code統合事例(掘金6/9)、高考作文満点(36kr6/11)、W杯予想比較(36kr6/12)、小説IDE(V2EX6/12)、V4.1未リリース(6月予定未定のまま)
+|- `concepts/mcp-china.md` — **更新**: CLI+MCP+Skill三范式(米小虾/掘金6/11/⭐最重要)、AI Skills工程化(6/12)、Hermes vs OpenClaw比較(6/10)、Anthropic中国制限議論(6/12)、Viking AI Search CLI(火山引擎6/9)
+|- `concepts/vram-optimization.md` — **更新**: MiniMax M3 Sparse Attention×1M(6/8)、headroom圧縮95%(6/5)、Autocompact(6/6)、PagedAttention解説(6/9)、GGUF実践議論(V2EX6/7-8)、LPDDR動向(6/10)
+|
+|### hot-topics.yaml更新
+|- deepseek — last_crawled: 2026-06-13
+|- mcp-china — last_crawled: 2026-06-13
+|- vram-optimization — last_crawled: 2026-06-13
+|
 |## [2026-06-12] crawl-triage | SpokenWOZ/LLM-as-Agent再収集
 
 ### Take（2件 → 日付更新のみ）

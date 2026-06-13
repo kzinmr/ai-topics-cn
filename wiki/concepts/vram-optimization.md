@@ -1,7 +1,7 @@
 ---
 title: "显存优化（VRAM Optimization） — KVキャッシュ圧縮・量子化・推論効率化"
 created: 2026-04-23
-updated: 2026-05-31
+updated: 2026-06-13
 tags: [inference, vram-optimization, kv-cache, quantization, optimization, china]
 aliases: ["显存优化", "VRAM最適化", "KV Cache Compression", "PagedAttention", "KVキャッシュ圧縮"]
 source_lang: zh-CN
@@ -352,6 +352,78 @@ TogetherAIがOSCAR（Offline Spectral Covariance-Aware Rotation for 2-bit KV Cac
 - **Decode時**: 最新ブロック完了後に1ブロック全体を追い出し（フラグメンテーション最小化）
 - **パフォーマンス**: 1024 token予算でFull Cache比0.5-1.5 ROUGE差以内、スループット最大3.1倍。LLaMA-1B/3B/8Bでレイテンシ10-12%低減。
 - ソース: ACL 2026 Findings, [arxiv.org/pdf/2509.04377](https://arxiv.org/pdf/2509.04377)
+
+### 11. 6月初旬〜中旬の動向 — 新技術停滞期・教育コンテンツ中心
+
+6月1日〜12日は、前回（5月下旬）のTriAttention v0.2.0・OSCAR・GQLA等の活発な新技術発表後に「消化期」に入った。新たなVRAM最適化技術のプロダクトリリースは確認されず、教育コンテンツと実運用議論が中心。
+
+#### 11-1. MiniMax M3 — Sparse Attention × 1Mコンテキスト（6月8日）
+
+掘金「MiniMax M3 正式発表：1Mコンテキスト・マルチモーダル・Coding Agent と Sparse Attention」:
+- MiniMax M3正式発表。1Mコンテキスト対応
+- **Sparse Attention**によるKVキャッシュ最適化（長文脈推論の効率化）
+- マルチモーダル（テキスト＋画像＋音声）対応
+- Coding Agent特化機能内蔵
+- **VRAM最適化への示唆**: 1Mコンテキストで実用的な推論を実現するためには、Sparse Attention等のKVキャッシュ圧縮が不可欠。M3の実装は今後の中国モデルにおける標準的アプローチとなる可能性
+
+**出典**: 掘金 2026-06-08
+
+#### 11-2. headroom — AI Agentコンテキスト圧縮層（6月5日）
+
+掘金「headroom — AI Agentにコンテキスト圧縮層を搭載、Token最大95%削減」:
+- オープンソースプロジェクト「headroom」がAI Agent向けコンテキスト圧縮層を提供
+- Token消費を最大95%削減（間接的にKVキャッシュ・VRAM削減に寄与）
+- Agentワークロードでのメモリフットプリント低減に有効
+
+**出典**: 掘金 2026-06-05
+
+#### 11-3. Autocompact自動圧縮分析（6月6日）
+
+掘金「Autocompact（自動圧縮）メカニズム分析」:
+- Claude CodeのAutocompact機能の詳細分析
+- コンテキスト自動圧縮によりToken消費削減
+- 間接的にKVキャッシュ最適化に関連
+
+**出典**: 掘金 2026-06-06
+
+#### 11-4. ローカルデプロイ議論 — GGUF量子化実践（6月7日〜12日）
+
+複数のローカルデプロイ議論がコミュニティで活発化:
+
+- **DeepSeek V4 Flash vs Qwen3.6-27B-MTP-GGUF Q4_K_M比較（6月7日）**:
+  V2EXで実用的な比較議論。GGUF量子化フォーマットを用いた中国モデルのコンシューマGPU（RTX 4090等）での実運用に関する実践的情報。
+  **出典**: V2EX 2026-06-07
+
+- **国産GPUローカルデプロイ議論（6月8日）**:
+  V2EX「国産GPUでローカル大規模モデルをデプロイするには？」— 華為昇騰等の国産GPUでのLLMデプロイに関する議論。VRAM要件と国内ハードウェア選択がテーマ。
+  **出典**: V2EX 2026-06-08
+
+- **vLLM PagedAttention解説（6月9日）**:
+  掘金「vLLM 入門：PagedAttention から本番グレード大モデル推論サービスへ」— PagedAttention理論から実装まで包括的にカバーする中国開発者向けチュートリアル。
+  **出典**: 掘金 2026-06-09
+
+- **cc-switch + Ollama ローカル接続（6月12日）**:
+  掘金「codeX にローカル脳を搭載：cc-switch ＋ Ollama 接続全記録」— cc-switchツールを用いてOpenAI CodexにOllamaローカルモデルをバックエンドとして接続。OllamaのローカルデプロイメントとVRAM最適化の実践例。
+  **出典**: 掘金 2026-06-12
+
+#### 11-5. 推論チップメモリ技術動向（6月10日）
+
+36kr「LPDDR 逆襲：AI推理チップがなぜ一斉に「換芯」するのか？」:
+- AI推論チップのメモリ技術動向。LPDDRの台頭とメモリ帯域幅の変化
+- VRAM代替技術としてLPDDRが注目される背景を解説
+
+**出典**: 36kr 2026-06-10
+
+#### 11-6. 本期間に確認されなかったトピック
+
+| 注目トピック | ステータス |
+|---|---|
+| TriAttention 新バージョン | 新規リリースなし（v0.2.0が最新） |
+| Ollama 安定版 v0.30.0 | rc23のまま、正式版未リリース |
+| SGLang v0.5.13+ | 新バージョン確認できず |
+| OSCAR 2-bit KV量子化 | 新規記事なし |
+| 昇騰/Ascend 新動向 | 新規記事なし |
+| DeepSeek V4 コンシューマデプロイ最適化 | 議論のみ、新技術なし |
 
 ## 関連リンク
 

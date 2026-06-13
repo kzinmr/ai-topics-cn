@@ -1,7 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-06-12
+最終更新: 2026-06-13
 エンティティ: 65, コンセプト: 124, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-06-13 Active Crawl: DeepSeek/MCP-China/VRAM-Optimization）
+- `concepts/deepseek.md` — **更新**: V4-Pro永久2.5割確定+Claude Code統合事例、高考作文満点、W杯予想、小説IDE、V4.1未リリース
+- `concepts/mcp-china.md` — **更新**: CLI+MCP+Skill三范式(⭐)、AI Skills工程化、Hermes vs OpenClaw比較、Anthropic中国制限議論、Viking AI Search CLI
+- `concepts/vram-optimization.md` — **更新**: MiniMax M3 Sparse Attention、headroom圧縮95%、Autocompact、PagedAttention解説、GGUF実践議論、LPDDR動向
 ### 本日更新（2026-06-12 Crawl Triage: SpokenWOZ/LLM-as-Agent日付更新）
 - `concepts/spokenwoz.md` — **更新**: updated日付のみ（达摩院SpokenWOZ再収集記事は既存カバー済み）。updated→2026-06-12
 - `concepts/agent-team-swarm/index.md` — **更新**: updated日付のみ（LLM-as-Agent技術比較記事は既存カバー済み）。updated→2026-06-12

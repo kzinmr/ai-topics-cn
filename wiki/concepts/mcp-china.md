@@ -3,7 +3,7 @@ title: "MCP中国生态（Model Context Protocol在中国的採用状況）"
 type: concept
 tags: [mcp, chinese-ai, agent-protocol, a2a, standardization, tool-integration, github, enterprise]
 created: 2026-04-17
-updated: 2026-06-08
+updated: 2026-06-13
 source_lang: zh-CN
 ---
 
@@ -652,6 +652,67 @@ mcp-chinese-toolsのノートによると、MCPプロトコルの**無状態RC�
 - **内部**: 既存wikiページの内容
 
 新しいMCPプラットフォーム発表、CVE開示、AAIF新メンバー追加などの「ブレイキングニュース」は本期間内に確認されなかった（5月下旬の発表が最新）。
+
+### 7. 6月9日〜12日の動向 — パラダイム整理とFable 5週間
+
+6月9日〜12日も基本的に「静かな成熟」フェーズ継続。大きな新発表（AAIF、クラウドベンダーMCP展開）はなかったが、教育コンテンツと概念整理に顕著な進展があった。ただし、6月10日〜12日はClaude Fable 5/Mythos 5のローンチにメディア関心が集中。
+
+#### 7-1. パラダイム再整理 —「CLI + MCP + Skill」三范式（6月11日）⭐最重要
+
+掘金（米小虾）「CLI + MCP + Skill：2026年AI Agent开发的三大范式」:
+- 2026年のAI Agent開発における3パラダイム（CLI/MCP/Skill）を体系化
+- Anthropicの「直連API / CLI+Skills / MCP+Skills」フレームワークを解説
+- CLIとMCPは対立するものではなく適材適所で使い分けるべきと論じる
+- 中国コミュニティでのパラダイム理解の成熟を示す画期的記事
+
+**出典**: 掘金 2026-06-11
+
+#### 7-2. AI Skills工程化（6月12日）
+
+掘金（米小虾）「AI Skills 工程化：当每个开发者都有一支「AI 小队」」:
+- MCP+Skillsパラダイムの発展形として、開発者が「AIチーム」をどう管理するかを論じる
+- 「Skills over MCP」パッケージングの実践的考察
+- 2日連続で米小虾氏が高品質MCP解説記事を公開したことが注目点
+
+**出典**: 掘金 2026-06-12
+
+#### 7-3. Hermes vs OpenClaw Agent Loop比較（6月10日）
+
+掘金（吴佳浩Alben）「Hermes vs OpenClaw：基于源码的 Agent Loop 全面分析」:
+- Hermes AgentとOpenClawのAgent Loopをソースコードレベルで比較分析
+- 中国コミュニティでのエージェントフレームワーク競争の現状を示す
+
+**出典**: 掘金 2026-06-10
+
+#### 7-4. Anthropic中国制限議論（6月12日）
+
+掘金（IT乐手）「Anthropic 为何限制中国大陆使用 Claude？」:
+- MCP発祥企業Anthropicの中国戦略を分析
+- Anthropicの中国本土でのClaude利用制限理由を考察
+- MCP標準の中国採用に与える影響についてコミュニティで議論
+
+**出典**: 掘金 2026-06-12
+
+#### 7-5. 火山引擎Viking AI Search CLI（6月9日）
+
+掘金「Viking AI 搜索 CLI 正式发布」:
+- ByteDance火山引擎がViking AI Search CLIをリリース
+- CLIツールとしてMCP Skillパラダイムに適合
+- 火山引擎のMCPエコシステム（火山方舟・Trae）との連携が示唆される
+
+**出典**: 掘金 2026-06-09
+
+#### 7-6. 本期間に確認されなかったトピック
+
+| トピック | 状況 |
+|---------|------|
+| AAIF新メンバー追加 | 確認されず |
+| Alibaba Cloud百煉MCP | 新情報なし（5/20が最新） |
+| ByteDance火山引擎MCP Server OSS | 新情報なし（5/19が最新） |
+| 腾讯云MCP Gateway | 新情報なし（5/21が最新） |
+| MCP脆弱性（CVE） | 新たな報告なし |
+| A2A/AG-UIプロトコル | 言及なし |
+| MCP標準化動向 | 新たな進展なし |
 
 ## 出典
 

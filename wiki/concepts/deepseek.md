@@ -3,7 +3,7 @@ title: "DeepSeek（深度求索）— 2026年最新動向"
 type: concept
 tags: [LLM, chinese-ai, open-source, MoE, reasoning, coding-agent]
 created: 2026-04-17
-updated: 2026-06-08
+updated: 2026-06-13
 source_lang: zh-CN
 ---
 
@@ -625,5 +625,44 @@ DeepSeek設立以来初の外部融資が最終交渉段階に入った:
 - 「收费才是DeepSeek的成人礼」（6月4日/字母榜）: DeepSeekの有料化に関する分析。豆包(ByteDance)が先鞭をつけた有料サブスクリプションがDeepSeekにも波及する可能性
 - 「让AI自我构建的RSI火了，Google泼冷水，DeepSeek们摸到了边」（6月7日/雷科技）: 再帰的自己改善(RSI)技術の議論で、DeepSeekがその「端(へり)」に達していると評価
 - V4.1の6月リリース予定は**依然として確定日未発表**のまま
+
+#### F. 6月9日〜12日 — クロードFable 5週間・DeepSeek露出限定的
+
+6月10日〜12日はClaude Fable 5/Mythos 5のローンチ一色で、36krの記事の大部分（6月10日: 13件中10件、6月11日: 14件中8件、6月12日: 5件中5件）がAnthropic関連。DeepSeek関連の露出は限定的だった。
+
+**1. V4-Pro 2.5割正式価格確定 + Claude Code統合事例（6月9日）**
+
+掘金「DeepSeek-V4-Pro 官宣 2.5 折转为正式价格后，我把它接入了 Claude Code」:
+- V4-Proの永久75%値下げ（2.5割引→正式価格化）確定後、DeepSeek V4-ProをClaude Codeのバックエンドとして統合した実践記事
+- コミュニティレベルでのDeepSeek×Claude Code連携の事例
+
+**出典**: 掘金 2026-06-09
+
+**2. 高考作文満点評価（6月11日）**
+
+36kr「AI写高考作文，混元给DeepSeek-V4打了满分」:
+- GPT-5.5、Claude Fable-5、DeepSeek-V4、混元3 Previewが中国高考（大学入学試験）の作文に参加
+- DeepSeek-V4はTencent混元から**満点評価**を受けた
+- GPT-5.5やFable-5も参加した横断比較で好パフォーマンス
+
+**出典**: 36kr 2026-06-11
+
+**3. W杯予想横比較（6月12日）**
+
+36kr「AI预测世界杯大横评：豆包靠玄学，千问看数据，deepseek选黑马」:
+- 豆包、Qwen、DeepSeekなど複数AIが2026年W杯優勝予想で対決
+- DeepSeekは「ダークホースを選ぶ」傾向があると評価
+
+**出典**: 36kr 2026-06-12
+
+**4. DeepSeek専用小説IDE（6月12日）**
+
+V2EXユーザーがDeepSeek専用のAI小説作成IDEを開発したと報告。コミュニティ主導のエコシステム拡大の兆候。
+
+**出典**: V2EX 2026-06-12
+
+**V4.1ステータス**: 6月リリース予定のまま、依然として**確定日未発表**。本期間中にリリースの兆候なし。
+
+**資金調達**: 700億元調達ラウンドについて、6月4〜5日の評価額再上昇（+150億ドル）報道以降、新たな進展なし。
 
 ## 出典
