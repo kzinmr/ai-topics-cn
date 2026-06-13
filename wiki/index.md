@@ -1,7 +1,12 @@
 # AI Topics China Wiki — Index
 
 最終更新: 2026-06-13
-エンティティ: 65, コンセプト: 125, ダイジェスト: 7, 比較: 2, ページ: 9
+エンティティ: 66, コンセプト: 126, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-06-13 Wiki Health Auto-Fix: 孤児ページ2件登録 + source_lang修正）
+- `index.md` — **孤児ページ登録**: `entities/chris-miller`（エンティティセクション）、`concepts/semiconductor-packaging`（コンセプトセクション）を追加
+- `concepts/hifloat4-format.md` — **メタ修正**: `source_lang: en` → `source_lang: zh-CN`（ChinAI #358中国語記事由来のため）
+- `concepts/turboquant.md` — **スキップ**: source_lang zh-CN修正は確率的判断（0.85）のため人的対応に委譲
+
 ### 本日更新（2026-06-13 Crawl Triage: Codex SSH/Cli Agent Patterns新規 + SpokenWOZ更新）
 - `concepts/cli-agent-patterns.md` — **新規作成**: Codex App SSHリモート開発機能追加とCLI Agentパターンの台頭。V2EX言及（本文暂无内容だがトピック価値あり）
 - `concepts/spokenwoz.md` — **更新**: updated日付のみ（达摩院SpokenWOZ再収集記事は既存カバー済み）。updated→2026-06-13
@@ -284,6 +289,7 @@
 - [[baidu-ernie|Baidu（百度）— 文心一言/ERNIEと中国AI検索大手]]
 - [[biren-technology|biren-technology]]
 - [[cambricon|cambricon]]
+- [[chris-miller|Chris Miller — 『Chip War』著者・半導体地政学アナリスト]]
 - [[claude-code|Claude Code — AIコーディングエージェント]]
 - [[claude-design|claude-design]]
 - [[claude-opus-4-7|Claude Opus 4.7 — Anthropic最新フラグシップモデル]]
@@ -380,6 +386,7 @@
 - [[open-source-death|open-source-death]]
 - [[page-index|PageIndex — ベクトルなし推論ベースRAGフレームワーク]]
 - [[rag|rag]]
+- [[semiconductor-packaging|半導体先進パッケージング — EMIB vs CoWoS、Google TPU製造戦略]]
 - [[spokenwoz|SpokenWOZ — 达摩院Dialogue Agents基盤]]
 |- [[token-pricing-trend|Token価格上昇トレンド — 中国AI市場の計算力インフレ]]
 |- [[transpec|Transpec — 仕様駆動開発フレームワーク間変換ツール]]

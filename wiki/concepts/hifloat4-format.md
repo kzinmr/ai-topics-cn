@@ -4,7 +4,7 @@ created: 2026-05-05
 updated: 2026-05-05
 tags: [huawei, ascend, quantization, training, low-precision, format, concept]
 aliases: ["HiFloat4", "HiF4", "ハイフロート4"]
-source_lang: en
+source_lang: zh-CN
 ---
 
 # HiFloat4 — 華為Ascendチップ用4bit訓練フォーマット
