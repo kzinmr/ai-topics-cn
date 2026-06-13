@@ -67,8 +67,18 @@ Tech Taiwan（胡說科技）の最新独占報道によれば、Agentic AIの�
 - [[cambricon]] — 中国AIチップ設計企業
 - [[biren-technology]] — 中国GPUスタートアップ
 
+### Google TPU第9世代 — 主力パスに格上げ（2026年6月）
+
+2026年6月、Tech Taiwan（胡說科技）の報道によれば、Google第9世代TPUの製造構造がさらに明確化した：
+
+- **MediaTek共同開発版が主力パス**に、Broadcom版はコンティンジェンシー（代替手段）に格下げ
+- Broadcom CEO Hock Tan（陳福陽）がBloombergインタビューで初めてMediaTekを言及、「ankle-biter（足首に噛み付く小敵）」と揶揄。これはMediaTekの脅威を公然と認めたもの
+- **パッケージング**: Intel EMIB-T（2.5D）を採用。量産能力の成否が焦点
+- 詳細は [[semiconductor-packaging]] を参照
+
 ## Sources
 
 - Tech Taiwan（胡說科技）, "Exclusive: Backed by a TSMC CoWoS Veteran, How MediaTek Targets Google and Takes On Broadcom" (2026-05-01) — [Substack](https://substack.com/@techtaiwan)
 - MediaTek決算説明会 (2026-05-01)
 - Tech Taiwan（胡說科技）, "Exclusive: Inside MediaTek's Push to Lock Up T-Glass Supply - The Risks Behind Google's TPU Deal" (2026-05-15) — [Substack](https://substack.com/@techtaiwan)
+- Tech Taiwan（胡說科技）, "Could Google's Next TPU Shift Back to TSMC? Inside the EMIB vs. CoWoS Battle" (2026-06-12) — [Substack](https://substack.com/@techtaiwan)

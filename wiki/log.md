@@ -32,7 +32,25 @@
 |
 |
 |
-|## [2026-06-13] active-crawl | DeepSeek/MCP-China/VRAM-Optimization
+|## [2026-06-13] crawl-triage | Codex App SSH/Cli Agent Patterns新規 + SpokenWOZ更新
+
+### Take（2件）
+- `concepts/cli-agent-patterns.md` — **新規作成**: V2EX「以防你不知道 Codex App 偷偷加了 SSH 远程开发功能」より。Codex AppのSSHリモート開発機能追加とCLI Agentパターンの台頭を記録。本文は暂无内容だがトピック自体にwiki記載価値あり。
+- `concepts/spokenwoz.md` — **更新**: updated日付（2026-06-12→2026-06-13）。WeChat PaperWeekly「大模型剑指AIAgents,达摩院推出Dialogue Agents新基SpokenWOZ」はタイトル+URLのみ。既存ページで既にカバー済み。
+
+### Skip（18件）
+- WeChat再収集: `AI00十一月榜単`（ハッシュaafeba3f、5/3→5/4→5/5で同一コンテンツ）、`LLM-as-Agent技术哪家强?`（ハッシュf3c823cd、5/4→5/5→5/11→5/18→5/19→5/26→5/30→6/6で同一コンテンツ）、`202308 WeeklyAIPaper精选`（2023年記事で陳腐化）
+- V2EX暂无内容: `deep research 生成的研究报告效果如何？`、`低价 GPT 到底有多少漏洞`、`你的 plus 还好吗？` — プレースホルダー投稿
+- V2EXスキップ: `Google Plus滥用疑惑`（中国AIエコシステムへの直接影響薄）、`GPT 6.0リリース時期`（一時的憶測）
+
+### Reference（1件）
+- `concepts/langchain.md` — 2023年8月記事。既存ページへの参照として有用だが、新コンテンツなし
+
+### 収集統計
+- 候補60件中、実質Take 2件 / Reference 1件 / Skip 18件（残りはdigest/other）
+- Zhihu: 0件（パイプライン確認が必要）
+
+## [2026-06-13] active-crawl | DeepSeek/MCP-China/VRAM-Optimization
 |
 |### Wiki更新
 |- `concepts/deepseek.md` — **更新**: V4-Pro永久2.5割確定+Claude Code統合事例(掘金6/9)、高考作文満点(36kr6/11)、W杯予想比較(36kr6/12)、小説IDE(V2EX6/12)、V4.1未リリース(6月予定未定のまま)

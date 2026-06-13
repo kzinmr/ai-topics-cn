@@ -77,11 +77,30 @@ Zhihu Frontier Weeklyの報道によると:
 > **出典**: Zhihu Frontier Weekly — [Unitree hits 10 m/s sprint](https://www.zhihu.com/question/2026580932996456466) [T1]
 > **出典**: Substack — [Zhihu Frontier Weekly](https://substack.com/app-link/post?publication_id=6222474&post_id=194786861) [T2]
 
+## Nvidia×Unitree提携 — 人型ロボットプラットフォーム（2026年6月）
+
+### Computex 2026での発表
+
+2026年6月、ComputexでNvidia CEO Jensen Huang（黃仁勳）がUnitreeとの**人型ロボットリファレンスプラットフォーム**を発表：
+
+- **Unitree H2**（身長180cm、重量68kg）+ **Nvidia Jetson Thor**（BlackwellベースAIコンピュータ）+ **Sharpa製巧手**（シンガポール）
+- SCSP（米国シンクタンク）のMartijn Rasser氏：「中国製ロボットがグローバルスタンダードになる可能性」を警告
+- Boston Dynamics CLO Jason Fiorillo：「Nvidia提携は排他的ではない」と冷静視。その後Huangが韓国でHyundai/Boston Dynamicsとの協力深化も発表
+- 中国国内では「UnitreeがHuaweiではなくNvidia GPUを選択したのは愛国心がない」と批判も
+
+### 地政学的文脈
+
+Chris Miller（『Chip War』著者）は、米中サプライチェーン戦争が**Physical AI（ロボット・ドローン）**分野に波及すると指摘。台湾は電子機器製造に優れるが、電池とモーター用磁石（希土類）は中国依存のボトルネック。「EV産業でCATLに直面したジレンマをロボット時代で繰り返してはならない」と警告。
+
+詳細は [[semiconductor-packaging]] と [[chris-miller]] を参照。
+
 ## 関連企業
 
 - **AgiBot（智元机器人）**: 中国の人形ロボットNo.2（5,168台/2025年）
 - **UBTECH（优必选）**: Walker S系列、HK.9566上場済
 - **Tesla Optimus**: 米国最大の競合、自動車サプライチェーンの転用
+- **Nvidia**: Jetson Thor AIコンピュータでUnitree H2に統合。Blackwellベース
+- **Boston Dynamics（Hyundai傘下）**: 米国ロボット大手。Nvidiaとも提携（排他的ではない）
 - **Horizon Robotics（地平线）**: AIチップ分野での国内競合
 - **IFlytek（科大讯飞）**: 音声AI分野での国内競合
 
@@ -91,3 +110,5 @@ Zhihu Frontier Weeklyの報道によると:
 - 宇树科技公式 2026-01-22: 2025年出荷データ公式発表（5,500台超）
 - dothumanoid.com 2026: Unitree完全解説
 - Caixin/Scmp/Globaltimes: Unitree 2025-2026市場分析
+- Tech Taiwan（胡說科技）, "Could Google's Next TPU Shift Back to TSMC? Inside the EMIB vs. CoWoS Battle" (2026-06-12)
+- Tech Taiwan（胡說科技）, "Chris Miller：The AI Supply Chain, Huawei's 'Tao Law,' and the Next Wave of the China Model" (2026-06-12) — ポッドキャスト

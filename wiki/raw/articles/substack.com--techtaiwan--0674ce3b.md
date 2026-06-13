@@ -1,8 +1,8 @@
 ---
 title: "Tech Taiwan | Substack"
 url: "https://substack.com/@techtaiwan"
-fetched_at: 2026-06-06T04:00:40.416773+00:00
-source_date: 2026-06-05
+fetched_at: 2026-06-13T04:00:49.694839+00:00
+source_date: 2026-06-12
 tags: [newsletter, auto-ingested]
 source_lang: zh-CN
 ---

@@ -1,7 +1,12 @@
 # AI Topics China Wiki — Index
 
 最終更新: 2026-06-13
-エンティティ: 65, コンセプト: 124, ダイジェスト: 7, 比較: 2, ページ: 9
+エンティティ: 65, コンセプト: 125, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-06-13 Crawl Triage: Codex SSH/Cli Agent Patterns新規 + SpokenWOZ更新）
+- `concepts/cli-agent-patterns.md` — **新規作成**: Codex App SSHリモート開発機能追加とCLI Agentパターンの台頭。V2EX言及（本文暂无内容だがトピック価値あり）
+- `concepts/spokenwoz.md` — **更新**: updated日付のみ（达摩院SpokenWOZ再収集記事は既存カバー済み）。updated→2026-06-13
+
+⚠️ **注意**: WeChat再収集重複多数（AI00十一月榜単ハッシュaafeba3f、LLM-as-Agentハッシュf3c823cd）。V2EX暂无内容プレースホルダー投稿4件。Zhihuは0件（パイプライン確認必要）。Juejin LangChain参考記事は2023年8月のもので既存参照済み。
 ### 本日更新（2026-06-13 Active Crawl: DeepSeek/MCP-China/VRAM-Optimization）
 - `concepts/deepseek.md` — **更新**: V4-Pro永久2.5割確定+Claude Code統合事例、高考作文満点、W杯予想、小説IDE、V4.1未リリース
 - `concepts/mcp-china.md` — **更新**: CLI+MCP+Skill三范式(⭐)、AI Skills工程化、Hermes vs OpenClaw比較、Anthropic中国制限議論、Viking AI Search CLI
