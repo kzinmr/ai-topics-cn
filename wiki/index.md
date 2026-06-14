@@ -1,7 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-06-13
+最終更新: 2026-06-14
 エンティティ: 66, コンセプト: 126, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-06-14 Active Crawl: china-ai-regulation/tencent-hunyuan/coze）
+- `config/hot-topics.yaml` — **last_crawled更新のみ**: 3トピックともdigest調査の結果、実質的なwiki更新なし
+- china-ai-regulation: 6/7〜6/13 digestに規制関連記事なし（19日間静観期継続）
+- tencent-hunyuan: 混元がDeepSeek-V4にAI高考作文で満点評価(36kr6/11)。姚順雨講演後静定期
+- coze: 6月全digestでCoze/扣子への言及ゼロ（静定期継続）
 ### 本日更新（2026-06-13 Wiki Health Auto-Fix: 孤児ページ2件登録 + source_lang修正）
 - `index.md` — **孤児ページ登録**: `entities/chris-miller`（エンティティセクション）、`concepts/semiconductor-packaging`（コンセプトセクション）を追加
 - `concepts/hifloat4-format.md` — **メタ修正**: `source_lang: en` → `source_lang: zh-CN`（ChinAI #358中国語記事由来のため）

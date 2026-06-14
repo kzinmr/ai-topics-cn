@@ -50,6 +50,20 @@
 - 候補60件中、実質Take 2件 / Reference 1件 / Skip 18件（残りはdigest/other）
 - Zhihu: 0件（パイプライン確認が必要）
 
+## [2026-06-14] active-crawl | china-ai-regulation/tencent-hunyuan/coze
+|
+|### Wiki更新
+|- （新規情報なし）: 3トピックともdigest調査の結果、実質的な新情報なし
+|  - china-ai-regulation: 6/7〜6/13 digestに規制関連記事なし。19日間静観期継続。
+|  - tencent-hunyuan: 混元がDeepSeek-V4にAI高考作文で満点評価(36kr6/11)。姚順雨講演後静定期。
+|  - coze: 6月全digestでCoze/扣子への言及ゼロ。静定期継続。
+|
+|### hot-topics.yaml更新
+|- china-ai-regulation — last_crawled: 2026-06-14
+|- tencent-hunyuan — last_crawled: 2026-06-14
+|- coze — last_crawled: 2026-06-14
+|
+|
 ## [2026-06-13] active-crawl | DeepSeek/MCP-China/VRAM-Optimization
 |
 |### Wiki更新
