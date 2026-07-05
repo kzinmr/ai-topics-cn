@@ -50,6 +50,18 @@
 - 候補60件中、実質Take 2件 / Reference 1件 / Skip 18件（残りはdigest/other）
 - Zhihu: 0件（パイプライン確認が必要）
 
+## [2026-07-05] active-crawl | DeepSeek/Doubao/Dify
+
+### Wiki更新
+- `concepts/dify.md` — **更新**: v1.15.0セクション追加(6/25/UX刷新/Stars 147K+)。GitHub API確認済み。
+- `concepts/deepseek.md` — **更新なし**: 22日間ギャップ。新規情報なし。
+- `concepts/doubao.md` — **更新なし**: サブエージェント調査結果は検証不能(Web検索不可)。有料サブスク開始(未確認)、火山Engine API提供、Mobile Use Agent Android版、顧全全離職等の情報あり。
+
+### hot-topics.yaml更新
+- deepseek — last_crawled: 2026-07-05
+- doubao — last_crawled: 2026-07-05
+- dify — last_crawled: 2026-07-05
+
 ## [2026-06-14] active-crawl | china-ai-regulation/tencent-hunyuan/coze
 |
 |### Wiki更新

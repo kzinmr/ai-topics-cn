@@ -1,7 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-06-14
+最終更新: 2026-07-05
 エンティティ: 66, コンセプト: 126, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-07-05 Active Crawl: DeepSeek/Doubao/Dify）
+- `concepts/dify.md` — **更新**: v1.15.0セクション追加（6/25/UX刷新/Stars 147K+/GitHub API確認済み）
+- `concepts/deepseek.md` — **更新なし**: 22日間ギャップ（6/13〜7/5）。新規情報なし。V4.1未リリース継続。
+- `concepts/doubao.md` — **更新なし**: サブエージェント調査結果は検証不能。有料サブスク開始（未確認）等の情報あり。
+- `config/hot-topics.yaml` — **last_crawled更新**: deepseek/doubao/dify notes prepended
 ### 本日更新（2026-06-14 Active Crawl: china-ai-regulation/tencent-hunyuan/coze）
 - `config/hot-topics.yaml` — **last_crawled更新のみ**: 3トピックともdigest調査の結果、実質的なwiki更新なし
 - china-ai-regulation: 6/7〜6/13 digestに規制関連記事なし（19日間静観期継続）
