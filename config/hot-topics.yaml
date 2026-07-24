@@ -75,11 +75,13 @@ topics:
       - "千問云 Qianwen Cloud Agent architecture"
       - "Token Plan 月額 ¥198/698/1398"
       - "Firethering kernel benchmark Qwen3.7-Max"
+      - "Qwen3-TTS テキスト読み上げ Mac"
+      - "Qwen Image 3 画像生成"
     wiki_pages:
       - entities/qwen
     notes: "2026.06.11更新: Qwen3.6-27B vs DeepSeek V4 Flash比較議論(V2EX)。Meta VLM³がQwen3-VL-4Bを研究ベースに採用(36kr/深度推定0.9)。QwenPaw記憶対話管理アーキテクチャ解説(掘金)。千問3.6の0コスト活用チュートリアル(讯飞星辰MaaS/掘金)。Qwen Code v0.17.x正式版未リリース(6/11現在)。Qwen3.7-Max無料化後コミュニティ好評継続。2026.06.05更新: Qwen3.7-Max無料化(6/1/Qwen Chat完全無料/高コスト批判即応)。funyi字幕ツールOSS(Qwen3-ASR-1.7B)。QwenPaw学習ガイド。DocPilot Qwen。2026.05.30更新: Qwen3.7-Max Firetheringカーネル最適化。Qwen Code v0.16.2/v0.17.0-preview。千問云SG公開。Qoder CNリブランド。2026.05.26更新: Qwen3.7-Max API正式公開。Qwen Code v0.16.0/v0.16.1。千問云詳細。Token Plan。Firethering。AA Index 56.6。2026.05.21更新: Qwen3.7-Max Agent-first。Qoder 1.0。Qwen3.5-LiveTranslate-Flash。"
     added: 2026-04-17
-    last_crawled: "2026-06-11"
+    last_crawled: 2026-07-24
 
   - slug: chatglm
     title: "ChatGLM (智谱清言) — Zhipu AI"
@@ -99,11 +101,13 @@ topics:
       - "ZCube ネットワークトポロジ SIGCOMM"
       - "智譜AI 時価総額 6545億 HSTECH指數"
       - "AutoClaw iOS アプリ モバイルAgent"
+      - "GLM-5.2 リリース GPT-6越獸"
+      - "GLM-5.1 降智 思考強度"
     wiki_pages:
       - concepts/chatglm
     notes: "2026.05.28更新: GLM-5.1-highspeed API(5/22/400 tokens/s世界記録/TileRTエンジン/DS V4比2.2x)。株価1,468HKD(+19.76%/時価総額6,545億HKD/上場4ヶ月12.6倍)。HSTECH指数6月8日採用発表。AutoClaw iOSアプリ(5/21)。2026.05.21更新: GLM-5.1 8時間自律実行ベンチマーク(最高難度Agentタスク/複数エージェント協調)。ZCubeネットワークアーキテクチャ本格展開(推論スループット15%向上/低レイテンシ)。「Chinese Anthropic」戦略宣言(5月13日CEO張鵬/AI安全・信頼性・エンタープライズ重視路線)。時価総額5000億HKD突破(香港市場/5月中旬)。2026.05.15更新: GLM-5.1継続安定性向上/Coding Agent最適化(5月前半)。Z.aiブランド海外正式運用開始。OpenClaw論争決着。DeepSeek V4価格競争対応。Scaling Pain技術ブログ(4月30日/Agent推論132%向上)。2025年度決算(収入7.24億元+132%)。"
     added: 2026-04-17
-    last_crawled: 2026-06-07
+    last_crawled: 2026-07-24
 
   - slug: kimi
     title: "Kimi — Moonshot AI (月之暗面)"
@@ -118,11 +122,14 @@ topics:
       - "Cursor Composer 2.5 Kimi K2.5"
       - "VIE 紅籌架构拆除 Kimi 香港IPO"
       - "さくらインターネット Kimi K2.6 API"
+      - "Kimi K3 正式リリース Fable 5 比較"
+      - "Kimi K2.7 Code リリース"
+      - "Kimi 停售 算力告急"
     wiki_pages:
       - concepts/kimi
-    notes: "2026.06.10更新: Kimi Work Betaローンチ(Vibe Working/中国版Codexではない)。追加$2B調達交渉中(評価額$30B目標/累計376億元)。K2.6 Intelligence Index 53.9点維持。開発者コミュニティ定着加速(Claude Code→K2.5移行事例増加)。2026.06.04更新: OpenAI Codex互換API実装確認(Anthropic互換エンドポイント/Kimi K2.5)。CC-Switch/Codex++統合。ARR$100M突破。2026.05.30更新: K3開発(Q3リリース主流)。K2.6 OpenRouterトップ10圏外(DeepSeek価格攻勢)。WebBridge v1.9.7(20Kユーザー)。Dラウンド$2Bクローズ(評価$20B超)。IPO VIE解体進行。"
+    notes: "2026.07.24更新: Kimi K3正式リリース(7/16-17/Fable 5比較/Musk反応/大規模獲得)。K3需要過多で503崩壊・会員停售(7/18-22/算力告急)。K2.7 Codeリリース(6/11/混合評価)。追加資金調達$30B評価額目標(36kr 6/8)。匿名モデルKivineがK3の可能性(7/16)。2026.06.10更新: Kimi Work Betaローンチ(Vibe Working/中国版Codexではない)。追加$2B調達交渉中(評価額$30B目標/累計376億元)。K2.6 Intelligence Index 53.9点維持。開発者コミュニティ定着加速(Claude Code→K2.5移行事例増加)。2026.06.04更新: OpenAI Codex互換API実装確認(Anthropic互換エンドポイント/Kimi K2.5)。CC-Switch/Codex++統合。ARR$100M突破。2026.05.30更新: K3開発(Q3リリース主流)。K2.6 OpenRouterトップ10圏外(DeepSeek価格攻勢)。WebBridge v1.9.7(20Kユーザー)。Dラウンド$2Bクローズ(評価$20B超)。IPO VIE解体進行。"
     added: 2026-04-17
-    last_crawled: 2026-06-10
+    last_crawled: 2026-07-24
 
   - slug: yi
     title: "Yi (零一万物) — 01.AI"
@@ -313,7 +320,7 @@ topics:
       - concepts/china-local-deployment
     notes: "2026.06.10更新: Odysseus AIローカルワークプレイス登場(PewDiePie製)。国産GPU本地部署議論活性化(200万元予算/中星微技術)。MIT Attention Matching 50倍显存削減。国産4B認知モデル端側デプロイ(GPT-5.4級)。DeepSeek自社GW級データセンター建設開始。Qwen3.6-27B vs V4 Flash比較議論。2026.06.02更新: CANN生態系成熟(鲲鹏昇腾开发者大会/70+大模型Day-0)。NVIDIA VR200冷却遅延2ヶ月(中国チップ依存加速)。DeepSeek無料版制限強化(ローカル移行動機)。MiniMax M3発表。Qwen3.7-Max無料開放。百度APP×OpenClaw統合。"
     added: 2026-04-17
-    last_crawled: 2026-06-10
+    last_crawled: 2026-07-24
 
   - slug: censorship-bypass
     title: "Censorship Bypass & Uncensored Models (审查绕过/去审查模型)"
@@ -522,7 +529,7 @@ topics:
       - concepts/china-ai-coding-assistants
     notes: "2026.06.10更新: AIプログラミングパラダイム転換(Claude Code父+龙虾创始人「プロンプトエンジニアリング終焉/Agent Orchestration時代」)。Kimi Work Vibe Working差別化(中国版Codex否定)。豆包MarsCode Codex統合戦略。Claude Code→K2.5移行事例増加。Trae/Qoder/CodeGeeXは6月静定期。2026.05.25更新: 通义灵码→QoderCNリブランド(5/20/Alibaba Cloud Summit)。Qwen3.7-Max発表(Agent-first/80B MoE)。前回(5/17): Trae SOLO Mobile三端同期。"
     added: 2026-04-17
-    last_crawled: 2026-06-10
+    last_crawled: 2026-07-24
 
   # =========================================================
   # 7. Chinese Coding Agent Tools (中国コーディングエージェント)

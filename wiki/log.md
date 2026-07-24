@@ -32,6 +32,19 @@
 |
 |
 |
+||
+|## [2026-07-24] active-crawl | Qwen/Kimi/ChatGLM deepdive
+|
+|### Wiki更新
+|- `entities/qwen.md` — **更新**: Qwen Image 3(7月リリース)、Qwen3-TTS(7/15 Macアプリ)、Alibaba Cloud Agent Native Cloud戦略(7/20)追記。updated 2026-07-24。
+|- `concepts/kimi.md` — **更新**: Kimi K3正式リリース(7/16-17/Fable 5比較/Musk反応)、会員停售・503崩壊(7/18-22/算力告急)、K2.7 Code(6/11)、追加資金$30B評価額(6/8)追記。updated 2026-07-24。
+|- `concepts/chatglm.md` — **更新**: GLM-5.2リリース(7/22/GPT-6越獄攻撃検出)、GLM-5.1降智問題(7/22-23)、GLM購入制限(7/20-23)、科创板解禁期リスク、Anthropic追従批判、opencodex統合追記。updated 2026-07-24。
+|
+|### hot-topics.yaml更新
+|- qwen: last_crawled 2026-07-24、notes更新(Qwen Image 3/TTS/Agent Native Cloud)、search_hints追加
+|- kimi: last_crawled 2026-07-24、notes更新(K3/K2.7 Code/停售/$30B)、search_hints追加
+|- chatglm: last_crawled 2026-07-24、notes更新(GLM-5.2/降智問題/購入制限)、search_hints追加
+|
 |## [2026-06-13] crawl-triage | Codex App SSH/Cli Agent Patterns新規 + SpokenWOZ更新
 
 ### Take（2件）

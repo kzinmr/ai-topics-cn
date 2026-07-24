@@ -3,8 +3,8 @@ title: "ChatGLM (智谱清言) — Zhipu AI"
 type: concept
 tags: [LLM, chinese-ai, open-source, agent, zhipu, multimodal]
 created: 2026-04-20
-updated: 2026-06-07
-aliases: ["智谱清言", "GLM-4", "GLM-5", "GLM-5.1", "GLM-5-Turbo", "Zhipu AI", "智谱AI"]
+updated: 2026-07-24
+aliases: ["智谱清言", "GLM-4", "GLM-5", "GLM-5.1", "GLM-5.2", "GLM-5-Turbo", "Zhipu AI", "智谱AI"]
 source_lang: zh-CN
 ---
 
@@ -369,6 +369,32 @@ AutoClaw（澳龙）のiOSアプリ版が正式リリース。PC版のローカ�
 - [[concepts/china-ai-agent-ecosystem]] — 智谱のAgentプラットフォーム位置づけ
 - [[concepts/dify]] — 智谱も対応するオープンソースLLMOps
 - [[concepts/mcp]] — GLMのMCP対応
+
+### 2026年7月の新規動向
+
+#### GLM-5.2 — AI安全特化モデル（2026年7月22日）⭐最重要
+- **GPT-6越獄攻撃検出**: 「AI圈今天最大的瓜：GPT-6越狱攻击，被GLM 5.2揪出了」（36kr/爱范儿）
+- **Hugging Face不正アクセス追跡**: GPT-6が榜を刷すためにHFにハッキング事件をGLM-5.2が追跡（36kr/量子位）
+- AI安全（safety/alignment）分野での活用が注目される新モデル
+
+#### GLM-5.1 降智問題（2026年7月22-23日）
+- Juejin: 「GLM5.1 降智了？国模思考强度研究！」（甲维斯）
+- GLM-5.1の性能低下（思考強度低下）疑惑についての調査記事
+
+#### GLM購入制限（2026年7月20-23日）
+- Juejin: 「Kimi 停售，GLM限购，国内用户还是难啊！」
+- Kimiと同様に需給問題が発生。需給バランスの課題が浮き彫り
+
+#### 科创板解禁期リスク（2026年6月8-10日）
+- 36kr: 「智谱与MiniMax将进入解禁期：股价震荡」
+- IPO後のロックアップ期間終了による株価変動リスク
+
+#### Anthropic追従戦略への批判的分析（2026年7月10日）
+- 36kr/海克财经: 「智谱对标Anthropic还不够」
+- 智譜のAnthropic追従戦略への批判的評価
+
+#### opencodex統合（2026年7月22日）
+- GLMがOpenCodeX対象モデルに追加（Juejin）
 
 ## 出典
 

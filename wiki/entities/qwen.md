@@ -1,8 +1,8 @@
 ---
 title: Qwen（通义千问）— 阿里云大模型旗舰
 created: 2026-04-17
-updated: 2026-06-11
-tags: [llm, model, china, open-source-ai, alibaba, qwen, agentic-coding, ai-infrastructure, qwen3.7, agent-era]
+updated: 2026-07-24
+tags: [llm, model, china, open-source-ai, alibaba, qwen, agentic-coding, ai-infrastructure, qwen3.7, agent-era, qwen-image-3, tts]
 aliases: ["Qwen", "通义千问", "qwen", "Qwen3.5", "Qwen3-Coder", "Qwen3.6", "Qwen3.6-Plus", "Qwen3.6-27B", "Qwen3.6-35B-A3B", "Qwen3.7-Max", "Qwen3.7-Plus", "千问云", "Qianwen Cloud"]
 source_lang: zh-CN
 ---
@@ -975,6 +975,25 @@ AlibabaはQwenを中核とした**フルスタックAI戦略**を展開：
 - [[china-ai-agent-ecosystem]] — 中国AI Agentエコシステム全体
 - [[vibe-coding-china]] — Vibe CodingとQwenのコーディング競争
 - [[alibaba-cloud]] — Alibaba Cloudインフラの詳細
+
+### 2026年7月の新規動向
+
+#### Qwen Image 3 — 画像生成モデル（2026年7月）
+- 新世代画像生成モデル「Qwen Image 3」リリース。V2EX上で7月17日・21日にコミュニティ評価
+- 開発者により専用ツールサイト（qwenimage3.co）が構築されるなど、実用浸透が進む
+
+#### Qwen3-TTS — テキスト読み上げモデル（2026年7月15日）
+- Qwen3-TTSがMacアプリケーションで活用開始。V2EXユーザーがQwen3-TTSを用いた無料TTSアプリを公開
+
+#### Alibaba Cloud — Agent Native Cloud戦略（2026年7月20日）
+- 阿里云が掘金で「Agent Native Cloud」記事を公開。AI智能体を企業のネイティブ能力として位置づける戦略宣言
+
+#### Qwen Code v0.17.x — 未リリース継続
+- v0.17.0-preview.0（5/29〜）が最新のまま、安定版リリースなし
+
+#### 注目すべきAbsent
+- Qwen3.8/4.0等の次世代モデルリリースなし
+- WAIC 2026（世界人工知能大会）では目立ったQwen発表なし
 
 ### 外部ソース
 

@@ -1,7 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-07-05
+最終更新: 2026-07-24
 エンティティ: 66, コンセプト: 126, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-07-24 Active Crawl: Qwen/Kimi/ChatGLM）
+- `entities/qwen.md` — **更新**: Qwen Image 3(7月リリース)、Qwen3-TTS(7/15)、Agent Native Cloud戦略(7/20)追記
+- `concepts/kimi.md` — **更新**: Kimi K3正式リリース(7/16-17/Fable 5比較)、会員停售・503崩壊(7/18-22)、K2.7 Code、追加資金$30B追記
+- `concepts/chatglm.md` — **更新**: GLM-5.2リリース(7/22/GPT-6越獄攻撃検出)、GLM-5.1降智問題、GLM購入制限、科创板解禁期リスク追記
+- `config/hot-topics.yaml` — **last_crawled/notes更新**: qwen/kimi/chatglm 3トピック
 ### 本日更新（2026-07-05 Active Crawl: DeepSeek/Doubao/Dify）
 - `concepts/dify.md` — **更新**: v1.15.0セクション追加（6/25/UX刷新/Stars 147K+/GitHub API確認済み）
 - `concepts/deepseek.md` — **更新なし**: 22日間ギャップ（6/13〜7/5）。新規情報なし。V4.1未リリース継続。
