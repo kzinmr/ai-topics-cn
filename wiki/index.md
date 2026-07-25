@@ -1,7 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-07-24
+最終更新: 2026-07-25
 エンティティ: 66, コンセプト: 126, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-07-25 Active Crawl: DeepSeek/Doubao）
+- `concepts/deepseek.md` — **更新**: R2 OSS全シリーズ、Agent大量採用、V4满血版リーク、チップ野心、IPO議論、米国架構模倣、NVIDIA泡突き破り、梁文鋒講演、無料継続、Apple Silicon加速追記
+- `concepts/doubao.md` — **更新**: 有料サブスク正式開始、智能体/伴侶機能整理、二代手机、ByteDance再編(Seed吃肉/Flow喝湯)、分拆論、寒武紀サプライチェーン、Seedance分析追記
+- `config/hot-topics.yaml` — **last_crawled/notes更新**: deepseek/doubao 2トピック
 ### 本日更新（2026-07-24 Active Crawl: Qwen/Kimi/ChatGLM）
 - `entities/qwen.md` — **更新**: Qwen Image 3(7月リリース)、Qwen3-TTS(7/15)、Agent Native Cloud戦略(7/20)追記
 - `concepts/kimi.md` — **更新**: Kimi K3正式リリース(7/16-17/Fable 5比較)、会員停售・503崩壊(7/18-22)、K2.7 Code、追加資金$30B追記

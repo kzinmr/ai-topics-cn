@@ -33,6 +33,16 @@
 |
 |
 ||
+|## [2026-07-25] active-crawl | DeepSeek/Doubao deepdive
+|
+|### Wiki更新
+|- `concepts/deepseek.md` — **更新**: R2全シリーズOSS(5/18)、Agent大量採用(36ポジション80%Agent)、V4满血版リーク(7/19)、チップ野心(7/21)、IPO議論(7/16)、米国架構模倣(7/21)、NVIDIA泡突き破り(7/9)、梁文鋒4時間講演(7/23)、V4 Flash/MiMo長期無料(7/18)、Apple Silicon 60%加速(7/5)追記。updated 2026-07-25。
+|- `concepts/doubao.md` — **更新**: 有料サブスク正式開始確認(7/13)、智能体/伴侶機能大幅整理(7/5-14)、二代豆包手機登場(7/10-19)、ByteDance AI再編Seed吃肉/Flow喝湯(7/13)、豆包分拆論(7/15)、寒武紀サプライチェーン問題(7/9)、Seedance収益源分析(7/7)追記。updated 2026-07-25。
+|
+|### hot-topics.yaml更新
+|- deepseek: last_crawled 2026-07-25、notes更新(R2 OSS/Agent採用/V4满血版/チップ/IPO/米国模倣/NVIDIA/梁文鋒講演/無料継続/Apple Silicon)
+|- doubao: last_crawled 2026-07-25、notes更新(有料化開始/智能体整理/二代手机/ByteDance再編/分拆論/寒武紀/Seedance)
+|
 |## [2026-07-24] active-crawl | Qwen/Kimi/ChatGLM deepdive
 |
 |### Wiki更新
