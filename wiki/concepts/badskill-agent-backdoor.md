@@ -1,10 +1,10 @@
 ---
 title: "BadSkill — AIエージェントスキルへのバックドア攻撃"
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-07-26
 tags: [security, agent, backdoor, supply-chain, concept]
 aliases: ["BadSkill", "バッドスキル", "Agent Skill Backdoor", "Model-in-Skill Poisoning"]
-source_lang: en
+source_lang: zh-CN
 ---
 
 # BadSkill — AIエージェントスキルへのバックドア攻撃

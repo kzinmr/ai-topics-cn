@@ -1,9 +1,9 @@
 ---
 title: "AI雇用影響 — 中国におけるAIの雇用置換懸念と政策対応"
 created: 2026-06-09
-updated: 2026-06-09
+updated: 2026-07-26
 tags: [ai, employment, china, policy, labor, automation]
-source_lang: en
+source_lang: zh-CN
 ---
 
 # AI雇用影響 — 中国におけるAIの雇用置換懸念と政策対応
