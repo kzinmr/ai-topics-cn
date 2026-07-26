@@ -1,7 +1,7 @@
 ---
 title: "Vibe Coding（氛围编程）— 中国での受容とAgentic Engineeringへの進化"
 created: 2026-04-17
-updated: 2026-06-09
+updated: 2026-07-26
 tags: [vibe-coding, ai-coding, chinese-ai, karpathy, agentic-engineering, paradigm-shift, intent-coding, cognitive-debt]
 aliases: ["氛围编程", "vibe coding", "意图编程", "Wish Coding", "认知债"]
 source_lang: zh-CN
@@ -745,3 +745,15 @@ Anthropicが2026年5月7日に開催したオンライン技術大会「Code w/ 
 - [胡彦斌、李笑来都在Vibe Coding (发现AI, 2026-05-20)](https://www.faxai.cn/archives/8059)
 - [Claude Mythos首次破90%代码Agent leaderboard (网易, 2026-05-23)](https://www.163.com/dy/article/KT8P64C405561FZG.html)
 - [Anthropic Claude Mythos nears broader release (TechTimes, 2026-05-24)](https://www.techtimes.com/articles/317076/20260524/anthropic-moves-closer-public-claude-mythos-release-10000-critical-bugs-found-first.htm)
+- **NEW 2026-06-09～07-26**:
+- [Anthropic Claude Mythos safe version public release (The Guardian, 2026-06-09)](https://www.theguardian.com/technology/2026/jun/09/anthropic-claude-mythos-ai-model)
+- [Claude Fable 5 released (The Verge, 2026-06-09)](https://www.theverge.com/news/946725/anthropic-releases-claude-fable-5-mythos)
+- [US government approves Anthropic Mythos public release (CNBC, 2026-06-26)](https://www.cnbc.com/2026/06/26/us-government-anthropic-claude-mythos5-ai.html)
+- [SpaceX agrees to buy Cursor for $60B (WSJ, 2026-06-16)](https://www.wsj.com/business/spacex-agrees-to-buy-ai-coding-agent-cursor-for-60-billion-7a473340)
+- [SpaceX stock plunges $600B after Cursor deal (Forbes, 2026-06-18)](https://www.forbes.com/sites/tylerroush/2026/06/18/spacex-stock-plunge-wipes-out-600-billion-after-cursor-deal-spooks-investors/)
+- [DeepSWE benchmark blows up AI coding leaderboard (VentureBeat, 2026-05-27)](https://venturebeat.com/technology/deepswe-blows-up-the-ai-coding-leaderboard-crowns-gpt-5-5-and-finds-claude-opus-exploiting-a-benchmark-loophole)
+- [Claude Opus exploiting benchmark loophole (VentureBeat, 2026-05-27)](https://venturebeat.com/technology/deepswe-blows-up-the-ai-coding-leaderboard-crowns-gpt-5-5-and-finds-claude-opus-exploiting-a-benchmark-loophole)
+- [Mythos SWE-bench critical error exposed (Philosophical Hacker, 2026-04-28)](https://www.philosophicalhacker.com/post/anthropic-error/)
+- [Boris Cherny declares "Vibe Coding" hated (Business Insider, 2026-05-06)](https://www.businessinsider.com/claude-code-creator-boris-cherny-vibe-coding-anthropic-ai-2026-5)
+- [DeepSeek Reasonix — native coding agent (GitHub, 2026-05-24)](https://esengine.github.io/DeepSeek-Reasonix/)
+- [Cursor annual revenue reaches $2B (Bloomberg, 2026-03-02)](https://www.bloomberg.com/news/articles/2026-03-02/cursor-recurring-revenue-doubles-in-three-months-to-2-billion)

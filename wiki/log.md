@@ -33,6 +33,18 @@
 |
 |
 ||
+|## [2026-07-26] active-crawl | OpenClaw/VibeCoding/ChinaOpenSourceAI deepdive
+|
+|### Wiki更新
+|- `entities/openclaw.md` — **更新**: リリース復活(v2026.7.1安定版7/13/v2026.7.2-beta.3 7/18)。GitHub Stars 384K(+10K)。Control UI全面刷新+公式アプリ更新+GPT-5.6対応。openclawai.org.cn中国公式ブランドサイト。Hermes/阿里悟空競合。12類安全隐患継続。updated 2026-07-26。
+|- `concepts/vibe-coding-china.md` — **更新**: SpaceX Cursor $600億買収合意(WSJ6/16)→株価$6,000億下落(Forbes6/18)。Claude Mythos「安全版」一般公開+米政府許可。DeepSWEベンチマークGPT-5.5首位復帰+Opus穴悪用。Boris Cherny Vibe Coding嫌悪宣言。DeepSeek Reasonix。Cursor売上$20億。updated 2026-07-26。
+|- `concepts/china-open-source-ai.md` — **更新**: UniWorld-View(PKU/YuanGroup/Fei-Fei Liリーダーボード1位)。Agent成熟度議論(北京vs杭州)。AI仮想撮影所。updated 2026-07-26。
+|
+|### hot-topics.yaml更新
+|- openclaw: last_crawled 2026-07-26、notes更新(リリース復活/384K Stars/Control UI/中国ブランド)
+|- vibe-coding-china: last_crawled 2026-07-26、notes更新(SpaceX Cursor買収/Mythos公開/DeepSWE/Boris Cherny/Reasonix)
+|- china-open-source-ai: last_crawled 2026-07-26、notes更新(UniWorld-View/Agent成熟度/仮想撮影所)
+|
 |## [2026-07-25] active-crawl | DeepSeek/Doubao deepdive
 |
 |### Wiki更新

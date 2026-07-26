@@ -1,7 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-07-25
+最終更新: 2026-07-26
 エンティティ: 66, コンセプト: 126, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-07-26 Active Crawl: OpenClaw/VibeCoding/ChinaOpenSourceAI）
+- `entities/openclaw.md` — **更新**: リリース復活(v2026.7.1/v2026.7.2-beta.3)、GitHub Stars 384K、Control UI刷新+アプリ更新+GPT-5.6対応、中国公式ブランドサイト、Hermes/悟空競合、安全隐患継続追記
+- `concepts/vibe-coding-china.md` — **更新**: SpaceX Cursor $600億買収→株価$6,000億下落、Claude Mythos一般公開+米政府許可、DeepSWEベンチマーク混乱、Boris Cherny Vibe Coding嫌悪宣言、DeepSeek Reasonix、Cursor売上$20億追記
+- `concepts/china-open-source-ai.md` — **更新**: UniWorld-View(PKUワールドモデル1位)、Agent成熟度議論、AI仮想撮影所追記
+- `config/hot-topics.yaml` — **last_crawled/notes更新**: openclaw/vibe-coding-china/china-open-source-ai 3トピック
 ### 本日更新（2026-07-25 Active Crawl: DeepSeek/Doubao）
 - `concepts/deepseek.md` — **更新**: R2 OSS全シリーズ、Agent大量採用、V4满血版リーク、チップ野心、IPO議論、米国架構模倣、NVIDIA泡突き破り、梁文鋒講演、無料継続、Apple Silicon加速追記
 - `concepts/doubao.md` — **更新**: 有料サブスク正式開始、智能体/伴侶機能整理、二代手机、ByteDance再編(Seed吃肉/Flow喝湯)、分拆論、寒武紀サプライチェーン、Seedance分析追記

@@ -1,7 +1,7 @@
 ---
 title: OpenClaw — AI Agentエンドポイントツール
 created: 2026-04-17
-updated: 2026-06-11
+updated: 2026-07-26
 tags: [ai-agents, open-source-ai, tooling, china, releases, safety]
 aliases: [\"openclaw\", \"OpenClaw\"]
 source_lang: zh-CN
@@ -490,7 +490,106 @@ OpenClaw: 入力 → LLM → ツール選択 → 実行 → 結果 → 再推理
 - [OpenClaw v2026.5.19-beta.1 Release](https://github.com/openclaw/openclaw/releases/tag/v2026.5.19-beta.1)
 - [OpenClaw v2026.5.20 Release](https://github.com/openclaw/openclaw/releases/tag/v2026.5.20)
 - [OpenClaw v2026.5.22-beta.1 Release](https://github.com/openclaw/openclaw/releases/tag/v2026.5.22-beta.1)
-- [OpenClaw Newsletter 2026-05-21](https://buttondown.com/openclaw-newsletter/archive/openclaw-newsletter-2026-05-21/)
+|- [OpenClaw Newsletter 2026-05-21](https://buttondown.com/openclaw-newsletter/archive/openclaw-newsletter-2026-05-21/)
+
+## 2026年6月〜7月：リズム復活と安定成長
+
+### 「冷却期」からの復活
+
+6月初旬のwiki記載「冷却期」（5/31〜6/9リリースゼロ）は一時的であり、**6月13日から定期リリースが復活**。週2〜3回のペースで安定したリリースサイクルを維持。
+
+### リリース履歴（2026-06-09以降、GitHub API確認）
+
+| バージョン | 日付 | プレリリース |
+|-----------|------|-------------|
+| v2026.6.7-beta.1 | 2026-06-13 | ○ |
+| v2026.6.8 | 2026-06-16 | × |
+| v2026.6.8-beta.1/2 | 2026-06-14/16 | ○ |
+| v2026.6.9 | 2026-06-21 | × |
+| v2026.6.9-beta.1 | 2026-06-19 | ○ |
+| v2026.6.10 | 2026-06-24 | × |
+| v2026.6.10-beta.1/2 | 2026-06-21/22 | ○ |
+| v2026.6.11 | 2026-06-30 | × |
+| v2026.6.11-beta.1/2 | 2026-06-24/28 | ○ |
+| v2026.7.1 | 2026-07-13 | × |
+| v2026.7.1-beta.1/2/5/6 | 2026-07-02〜13 | ○ |
+| v2026.7.2-beta.1/2/3 | 2026-07-15〜18 | ○ |
+
+### v2026.7.1（2026年7月13日、最新安定版）
+
+Bing検索結果およびGitHubリリースノートより：
+- **Control UI全面刷新**: オンボーディング体験の大規模改善
+- **モバイルアプリ重大更新**: 公式iOS、Android、macOSアプリが全面的に更新
+- **GPT-5.6対応**: OpenAI GPT-5.6との互換性を追加
+- **モデル・プロバイダー拡張**: サポートするモデルとプロバイダーが拡充
+
+> **出典**: GitHub — [v2026.7.1 Release](https://github.com/openclaw/openclaw/releases/tag/v2026.7.1) [T1]
+
+### GitHub統計（2026年7月26日時点、API確認）
+
+| 指標 | 値 | 前回（5/21）との変化 |
+|------|-----|---------------------|
+| Stars | **384,136** | +10,136（+2.7%） |
+| Forks | 80,713 | +3,112 |
+| Open Issues | 7,035 | — |
+| 最終プッシュ | 2026-07-26 05:00:54Z | — |
+
+**成長率分析**: 週間スター増加は約+1,500〜2,000/週とピーク（+40,000/週）からさらに減速。成熟期の安定成長フェーズ。
+
+### 競合動向（6月〜7月）
+
+#### Hermes Agentとの差別化深化
+
+既存wiki記載のOpenRouter日間トークン消費量逆転（Hermes 458B vs OpenClaw 173B、全期間8.14T vs 7.18T）は継続。しかし**エコシステム規模ではOpenClawが優勢**：
+- ClawHub: 44,000+スキル（6月時点）→ さらに拡大中
+- チャンネル数: 50+
+- GitHub Stars: 384K（Hermes Agentは別のリポジトリ体系のため直接比較困難だが、掘金・V2EXでの議論では「Hermesは記憶と進化、OpenClawはツールチェーンと実行」と認識定着）
+
+> 「OpenClawは実行能力（ツールチェーン）を提供し、Claude Codeは連続推理を提供し、Hermesは記憶と進化を提供する」 — 掘金 [T1]
+
+#### 阿里「悟空（Wukong）」の脅威拡大
+
+阿里悟空は企業級AIネイティブワークプラットフォームとして引き続き最大の競合。掘金での比較記事が115票を獲得し、ユーザー移行が加速。RealDocファイルシステム（AI改変のロールバック対応）と企業級セキュリティが優位性。
+
+#### 龍蝦AI（openclawai.org.cn）の登場
+
+中国国内で**openclawai.org.cn**が登録。これは「龙虾AI」の公式中国語ブランドサイト。OpenClawの中国市場での商業化・ブランド化の進展を示唆。
+
+> **出典**: openclawai.org.cn（Bing検索結果）[T2]
+
+### 安全問題の影響（継続）
+
+既存wikiの12類安全隐患の影響は継続中：
+- **ClawHub品質問題**: 悪意スキル11.3%、プロンプトインジェクション36%（前回記載内容を確認）
+- **SOE生利用禁止**: 中国国有企業向けのOpenClaw生利用禁止通達は効力持続
+- **サプライチェーン監査**: MCPエンドポイント・ClawHubスキルの定期監査が推奨
+- **v2026.7.1**: Control UI・モバイルアプリ刷新でセキュリティ面も改善された可能性（リリースノートの完全取得は未了）
+
+### エンタープライズ動向
+
+- **Microsoft Build 2026 (6/3)**: Windows版OpenClaw発表後、6月〜7月もマイクロソフトとの連携は継続
+- **百度App統合**: 期間限定無料提供が継続中（掘金 6/1再掲記事）
+- **openclawai.org.cn**: 中国市場向けの公式ブランドサイト運営開始
+
+### コミュニティ感情（6月〜7月）
+
+6月初旬の「冷却期」議論（V2EX「小龙虾为什么突然不火了」）は6月13日以降のリリース復活により沈静化。ただし：
+- 掘金の記事は5月のリサイクルが多い状態が一部継続
+- 新規の実践記事（6月〜7月）は減少傾向
+- GitHub Issues（7,035件）は不少ないため、コミュニティの関与は継続
+
+### 出典（6月〜7月追加分）
+
+| ソース | URL | ティア | 概要 |
+|--------|-----|--------|------|
+| GitHub — v2026.7.1 Release | [github.com/openclaw/openclaw/releases/tag/v2026.7.1](https://github.com/openclaw/openclaw/releases/tag/v2026.7.1) | T1 | Control UI・アプリ刷新 |
+| GitHub — v2026.7.2-beta.3 | [github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.3](https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.3) | T1 | 最新ベータ |
+| GitHub API — Repo Stats | [api.github.com/repos/openclaw/openclaw](https://api.github.com/repos/openclaw/openclaw) | T1 | Stars 384,136 |
+| 36kr — Microsoft Build全文 (6/3) | [36kr.com/p/3836988816094341](https://36kr.com/p/3836988816094341) | T1 | Windows版OpenClaw |
+| 36kr — 龍蝦宇宙：微軟 (6/3) | [36kr.com/p/3836945345067648](https://36kr.com/p/3836945345067648) | T1 | プラットフォーム化分析 |
+| 36kr — 新范式 (6/8) | [36kr.com/p/3844224911346184](https://36kr.com/p/3844224911346184) | T1 | プロンプトエンジニアリング終焉宣言 |
+| 掘金 — 百度APP統合 | [juejin.cn/post/7606519452977152050](https://juejin.cn/post/7606519452977152050) | T1 | 百度App統合 |
+| openclawai.org.cn | [openclawai.org.cn](https://openclawai.org.cn) | T2 | 中国公式ブランド |
 
 ## 関連リンク
 

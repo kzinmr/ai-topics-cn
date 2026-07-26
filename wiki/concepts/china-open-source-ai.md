@@ -1,7 +1,7 @@
 ---
 title: "中国开源AI社区 — ModelScope、HuggingFace中国、Giteeエコシステム"
 created: 2026-04-19
-updated: 2026-05-19
+updated: 2026-07-26
 tags: [open-source, community, china, modelscope, huggingface, gitee]
 aliases: ["中国开源AI", "开源LLM社区", "ModelScope魔搭", "Gitee AI"]
 source_lang: zh-CN
@@ -314,3 +314,10 @@ Baiduが生成式AI大会（Create 2026）でERNIE 5.1を発表。完全オー�
 - **灵玑OS**: 中国政府主導のオープンソースAgentインフラ。Agent産業の標準化に影響
 - **具身知能开源エコシステム**: LingBot-VLA、灵玑OS、OpenLETなど具身知能(Embodied AI)OSSが急成長中
 - **中国AI Agent开源生態**: Agent商用化元年を迎え、灵玑OS・OpenClaw等多数のAgent関連プロジェクトが出現
+
+### 8. 2026年6月〜7月の追加動向（出典: 量子位）
+- **UniWorld-View**: 北京大学/YuanGroupのワールドモデルがFei-Fei Liのリーダーボードで1位を獲得。昇腾NPU対応版も公開。オープンソース。量子位(2026-07)で報道
+- **Agent成熟度議論**: 北京vs杭州でAgent産業の成熟度に関する議論が活発化（産業応用派vs学術研究派の対立構造）
+- **AI仮想撮影所**: 中国国内でAIを活用したバーチャル映画撮影所が実運用開始（量子位2026-07）
+
+- **出典**: [量子位](https://www.qbitai.com) [T3]（2026年6月〜7月）

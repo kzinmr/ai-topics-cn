@@ -251,9 +251,9 @@ topics:
       - "Hermes Agent OpenRouter OpenClaw 逆転 2026"
     wiki_pages:
       - entities/openclaw
-    notes: "2026.06.09更新: 6月冷却期突入—新リリースゼロ/GitHub Stars成長停滞(376K)/コミュニティ話題性低下(V2EX小龙虾为什么不火了)/競合(阿里悟空・Hermes Agent)圧力。Microsoft Build 2026でWindows版「龙虾」発表(6/3/16億ユーザー)。百度APP統合継続。36kr(6/8)でPeter Steinbergerが新パラダイム提唱。2026.05.31更新: v2026.5.28リリース(376K Stars/マルチプロバイダーClaude Opus 4.8/Fal Krea/NVIDIA/MiniMax/Codex Supervisor/iOSアプリ/Workboard)。v2026.5.27リリース(OpenAI embedding/Pixverse動画/セキュリティ強化/QQBotフォールバック/Promptキャッシュ最適化)。@steipete@yetval@luoyanglang@vincentkらが主要開発者。2026.05.24更新: v2026.5.19/5.20/5.22-beta.1週3回メジャーリリース(ブラウザモーダル/Policyプラグイン/Discord音声/cron改善/モデル認証プリウォーム20s→5ms)。★374K。Hermes Agent OpenRouter日次トークン消費逆転(Hermes 458B vs OpenClaw 173B/全期間8.14T vs 7.18T)。ClawHub 44K+スキル/50+チャンネル。エコシステム拡大: DigitalOcean 1-Click/MiniMax MaxClaw/Alibaba Cloud連携/Qwen 3.5蒸留モデル。脆弱性: Claw Chain CVEパッチ(v2026.4.22)。"
+    notes: "2026.07.26更新: リリース復活確認(v2026.7.1安定版7/13/v2026.7.2-beta.3 7/18)。GitHub Stars 384K(+10K/5週)。Control UI全面刷新+公式アプリ重大更新+GPT-5.6対応。openclawai.org.cn中国公式ブランドサイト登録。競合: Hermes Agentトークン消費逆転継続/阿里悟空企業セキュリティ優位。12類安全隐患・ClawHub悪意スキル11.3%問題継続。Microsoft Build Windows版+百度APP統合。成熟期安定成長フェーズ突入。2026.06.09更新: 6月冷却期突入—新リリースゼロ/GitHub Stars成長停滞(376K)/コミュニティ話題性低下(V2EX小龙虾为什么不火了)/競合(阿里悟空・Hermes Agent)圧力。Microsoft Build 2026でWindows版「龙虾」発表(6/3/16億ユーザー)。百度APP統合継続。36kr(6/8)でPeter Steinbergerが新パラダイム提唱。"
     added: 2026-05-01
-    last_crawled: 2026-06-09
+    last_crawled: 2026-07-26
 
   - slug: coze
     title: "Coze (扣子) — ByteDance Agent Platform"
@@ -504,9 +504,9 @@ topics:
       - "Anthropic 80% AI自写 コード Mythos 5"
     wiki_pages:
       - concepts/vibe-coding-china
-    notes: "2026.06.09更新: Claude Code 100万行リライト事件(Bun/9日間/6755コミット/99.8%通過率/品質論争)。Claude Code父+龙虾创始人同時「新パラダイム」宣言(プロンプトエンジニアリング終焉/Agent Orchestration時代)。Anthropic内製コード80%AI生成/Mythos 5トレーニング52倍高速化。OpenAIチップ責任者Anthropic移籍。DeepSeek V4プリンストン大数学証明500倍コスト優位。Kimi Work「中国版Codexではない」と明確化+Kimi評価額2000億突破。姚順雨初公開講演(6/5)。AGI教育コンテンツ急増(Coding Agent実装全5回/AutoGen完全チュートリアル/低コードAgent設計)。「Vibe Coding」タグ使用減少→「Agent」「Agentic Coding」主流へ。前回(6/2): 国産Agentモデル世界第一梯队/GPT-5.5 DeepSWE逆転/Mythos Erdős予想解決/Opus 4.8/音声Vibe Coding台頭/Kimi Code 0.4.0/Codex 3rd party API/MiniMax M3/Copilot Token課金移行。"
+    notes: "2026.07.26更新: SpaceXがCursorを$600億で買収合意(WSJ6/16)→SpaceX株価$6,000億下落(Forbes6/18)。Claude Mythos「安全版」一般公開(The Guardian6/9)+Fable 5リリース(The Verge6/9)+米政府Mythos公開許可(CNBC6/26)。DeepSWEベンチマークでGPT-5.5首位復帰+Claude Opusベンチマーク穴悪用発覚(VentureBeat5/27)。Mythos SWE-bench論に致命的エラー指摘(Philosophical Hacker4/28)。Boris Cherny「Vibe Coding」嫌悪宣言(Business Insider5/6)。DeepSeek Reasonix発表(5/24)。Cursor年間売上$20億到達(Bloomberg3/2)。2026.06.09更新: Claude Code 100万行リライト事件(Bun/9日間/6755コミット/99.8%通過率/品質論争)。Claude Code父+龙虾创始人同時「新パラダイム」宣言(プロンプトエンジニアリング終焉/Agent Orchestration時代)。Anthropic内製コード80%AI生成/Mythos 5トレーニング52倍高速化。"
     added: 2026-04-17
-    last_crawled: 2026-06-09
+    last_crawled: 2026-07-26
 
   - slug: china-ai-coding-assistants
     title: "Chinese AI Coding Assistants (国产AI编程助手)"
@@ -618,6 +618,6 @@ topics:
       - "LingBot VLA embodied AI"
     wiki_pages:
       - concepts/china-open-source-ai
-    notes: "2026.06.06更新: 新規情報なし（Exa SDK非稼働/18日間ギャップ/ローカルクロールデータに該当記事なし/MiniCPM-V/Ring-2.6/灵玑OS/LingBot等の進展確認不可）。2026.05.19更新: MiniCPM-V 4.6公開(面壁智能/OmniMM-Agentモード/ChatGPT音声対抗/ベンチマーク上位)。蚂蚁LingBot-VLAツールチェーンオープンソース化(具現化AI/英偉達/清華大学)。Ring-2.6-1Tの特定SCOPE制限モデルオープンソース公開(5/16/昇腾対応/COIG-P个人情報削除版)。LingJi OS(灵玑OS)中国初のオープンソースAgent基盤OS(中科曙光/ソフトウェア定義Agent)。前回: 魔乐社区(MoLe)正式発足(4/29/Linux Foundation AAIF/37社・機関/4大モデル/4大国産HW)。蚂蚁Ling-2.6-1T MITオープンソース化(4/30/SWE-bench 65.2%/AIME 72.8%/128台昇腾910C)。太湖共识。中关村AI开源联盟。"
+    notes: "2026.07.26更新: UniWorld-View(PKU/YuanGroupワールドモデル/Fei-Fei Liリーダーボード1位/昇腾NPU対応/量子位7月報道)。Agent成熟度議論(北京vs杭州/産業応用派vs学術研究派)。AI仮想撮影所実運用開始(量子位7月)。6月〜7月は検索エンジン障害のため限定的。2026.06.06更新: 新規情報なし（Exa SDK非稼働/18日間ギャップ/ローカルクロールデータに該当記事なし/MiniCPM-V/Ring-2.6/灵玑OS/LingBot等の進展確認不可）。2026.05.19更新: MiniCPM-V 4.6公開(面壁智能/OmniMM-Agentモード/ChatGPT音声対抗/ベンチマーク上位)。蚂蚁LingBot-VLAツールチェーンオープンソース化(具現化AI/英偉達/清華大学)。Ring-2.6-1Tの特定SCOPE制限モデルオープンソース公開(5/16/昇腾対応/COIG-P个人情報削除版)。LingJi OS(灵玑OS)中国初のオープンソースAgent基盤OS(中科曙光/ソフトウェア定義Agent)。"
     added: 2026-04-17
-    last_crawled: 2026-06-06
+    last_crawled: 2026-07-26
