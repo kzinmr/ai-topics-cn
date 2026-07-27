@@ -1,7 +1,7 @@
 # AI Topics China Wiki — Index
 
 最終更新: 2026-07-27
-エンティティ: 66, コンセプト: 126, ダイジェスト: 7, 比較: 2, ページ: 9
+エンティティ: 72, コンセプト: 131, ダイジェスト: 7, 比較: 2, ページ: 9
 ### 本日更新（2026-07-27 Active Crawl: tencent-hunyuan/china-ai-agent-ecosystem/vram-optimization）
 - `concepts/china-ai-agent-ecosystem.md` — **更新**: 7月セクション追加(Claude Code全面禁止/信通院Agent安全基準テスト/Kimi K3算力崩壊/OpenClaw復活/千問辦公参入/OpenAI三線障害/復旦80頁Agent綜述)
 - `entities/tencent-hunyuan.md` — **更新**: last_crawled更新のみ(43日間ギャップ/Hy3.0正式版未確認/CodeBuddy市場シェア後れ)
@@ -312,6 +312,7 @@
 
 ## エンティティ (Entities)
 
+- [[alibaba|阿里巴巴（Alibaba）— 中国AI大手企業]]
 - [[anthropic|anthropic]]
 - [[agi-bot|AgiBot（智元机器人）— 中国人形机器人出货No.1企業（5,168台/2025年）]]
 - [[baichuan-ai|baichuan-ai]]
@@ -319,6 +320,7 @@
 - [[biren-technology|biren-technology]]
 - [[cambricon|cambricon]]
 - [[chris-miller|Chris Miller — 『Chip War』著者・半導体地政学アナリスト]]
+- [[claude|Claude（Anthropic）— 中国AIエコシステムにおける位置付け]]
 - [[claude-code|Claude Code — AIコーディングエージェント]]
 - [[claude-design|claude-design]]
 - [[claude-opus-4-7|Claude Opus 4.7 — Anthropic最新フラグシップモデル]]
@@ -339,13 +341,17 @@
   - [[glm-zhipu|智谱GLM（ChatGLM）— 中国最大級オープンソースLLM]]
   - [[gpt-5-5|GPT-5.5 — OpenAI最新フラグシップモデル（2026年4月）]]
   - [[horizon-robotics|horizon-robotics]]
+- [[hangzhou-xin-bajun|杭州新八駿 — 杭州のハードウェア中心テック企業8社]]
+- [[huawei|華為（Huawei）— 中国半導体・通信機器大手、τ法則提唱]]
 - [[iflytek|iflytek]]
 - [[kimi-moonshot|Kimi（月之暗面/Moonshot AI）— Claude Code代替として急成長する中国国籍LLM]]
+- [[jeff-ding|Jeff Ding — George Washington大学政治学准教授、ChinAI主宰]]
 - [[kimi-k2-6|Kimi K2.6 — 月之暗面开源旗舰模型]]
 - [[kilo|Kilo（キロコード）— オープンソースAIコーディングプラットフォーム、2.3M+開発者、500+モデル]]
 - [[qwopus-3-5|Qwopus 3.5 — Qwen3.5-27Bベース社区微调モデル]]
 - [[llama-meta|Llama（Meta）— Meta AIのオープンソースLLMファミリ]]
 - [[metax|metax]]
+- [[meta|Meta — 中国AIエコシステムにおける位置付け]]
 - [[mike-stonebraker|Mike Stonebraker（マイク・ストーンブレーカー）— データベースの父、AI Agentへの警鐘]]
 - [[mediatek|MediaTek（聯発科技）— TSMC CoWoSベテラン陣営でGoogle TPU参入、Broadcomに対抗]]
 - [[minimax|MiniMax Group（稀宇科技）— 中国AI六小龍、Talkie/Hailuo AI/SEHK:100]]
@@ -364,6 +370,7 @@
 - [[ubtech-robotics|UBTECH Robotics（优必选）— 中国初の人形ロボット上場企業（HK.9566、1,079台/2025年）]]
 - [[unitree-robotics|Unitree Robotics（宇树科技）— 世界No.1二足歩行ロボットメーカー（5,500台/2025年）]]
 - [[mihoyo|miHoYo（米哈游）— 中国ゲーム・AI企業]]
+- [[modelbest|ModelBest (面壁智能) — 中国端側大モデルリーディングカンパニー]]
 - [[nowen-video|Nowen-Video — 軽量家庭メディアサーバー（Go+React+Docker）]]
 - [[spacex|SpaceX — 宇宙輸送・AIインフラ企業]]
 - [[verisilicon|verisilicon]]
@@ -376,11 +383,15 @@
 - [[agent-skills|Agent Skills — AIエージェントのモジュール型能力システム]]
 - [[agentic-engineering|Agentic Engineering — Vibe Codingの第2世代（SE 3.0/Harness Engineering/自律開発パラダイム）]]
 - [[ai-agent|AI Agent（智能体）— 中国語圏での議論動向]]
+- [[ai-as-general-purpose-technology|AI as General-Purpose Technology — 電気・蒸気機関に続く汎用技術変革]]
+- [[ai-employment-impact|AI雇用影響 — 中国におけるAIの雇用置換懸念と政策対応]]
 - [[agent-team-swarm|AI Agentチーム・スワームパターン — 複数AIエージェント協調開発]]
+- [[ai-inference-costs|AI推論コスト — 業界のAIインフレと推論経済の現実]]
 - [[ai-infrastructure|AIインフラ構造 — AI Rack War、Copper-to-Optics移行、Compute/Memory/Connectivity三本柱]]
 - [[ai-inner-os|AI Inner OS — AI CLIツールのインナーモノローグ可視化プラグイン]]
 - [[ai-safety-subconscious|ai-safety-subconscious]]
 - [[ai-video-generation|AI短视频自动生成 — 一人開発の技術スタックと実践知]]
+- [[apple-gemini-siri-integration|Apple × Gemini — Siri AIへの統合]]
 - [[beike-ai-customer-service|贝壳AI客服 — MCP + Skillを活用したAIカスタマーサービス]]
 - [[cc-monitor|cc-monitor — Claude Code リアルタイムToken消費モニター]]
 - [[chatglm|ChatGLM (智谱清言) — Zhipu AIの中国語圏事情]]
@@ -406,19 +417,20 @@
 - [[gpu-sanctions-china|中国GPU制裁・半導体輸出制限 — 米中AI競争と国産化動向]]
 - [[harness-engineering|Harness Engineering — LLM Agentの外化（Externalization）パターン]]
 - [[implicit-structure-collapse|隐性结构塌缩 — LLM出力が平均的構造に塌縮する現象と対策]]
-|- [[llm-security|LLM应用安全 — 大语言モデルセキュリティ入門]]
-|- [[langchain|langchain]]
+- [[llm-security|LLM应用安全 — 大语言モデルセキュリティ入門]]
+- [[langchain|langchain]]
 - [[mcp|MCP（Model Context Protocol）— AIツール連携の標準規格]]
 - [[mcp-china|MCP中国生態 — 中国での採用状況と独自の発展パターン]]
 - [[mcp-security|MCPセキュリティ — OWASP Top 10とMSB安全基準]]
 - [[ollama-criticism|Ollama批判論争 — オープンソース倫理と代替ツール]]
+- [[on-device-ai-agent-security|端側AIエージェントセキュリティ（On-Device AI Agent Security）]]
 - [[open-source-death|open-source-death]]
 - [[page-index|PageIndex — ベクトルなし推論ベースRAGフレームワーク]]
 - [[rag|rag]]
 - [[semiconductor-packaging|半導体先進パッケージング — EMIB vs CoWoS、Google TPU製造戦略]]
 - [[spokenwoz|SpokenWOZ — 达摩院Dialogue Agents基盤]]
-|- [[token-pricing-trend|Token価格上昇トレンド — 中国AI市場の計算力インフレ]]
-|- [[transpec|Transpec — 仕様駆動開発フレームワーク間変換ツール]]
+- [[token-pricing-trend|Token価格上昇トレンド — 中国AI市場の計算力インフレ]]
+- [[transpec|Transpec — 仕様駆動開発フレームワーク間変換ツール]]
 - [[turboquant|TurboQuant — Google Researchの超高効率ベクトル量子化アルゴリズム（KVキャッシュ6×圧縮）]]
 - [[vector-db|Vector DB（向量数据库）— RAG・AI検索の基盤インフラ]]
 - [[vibe-coding|Vibe Coding（氛围编程）— AIネイティブなソフトウェア開発手法]]
@@ -454,6 +466,7 @@
 - [[specflow-ai-development|SpecFlow — AI時代の設計駆動開発パラダイム]]
 - [[vibe-coding-harness-synergy|HarnessとBlind Vibe Coding — 適用境界の分析]]
 - [[claude-code-ip-ban-analysis|Claude Code封号分析 — IP検出メカニズム深掘り]]
+- [[artificial-challenged-intelligence|人工智障（Artificial Challenged Intelligence）— AI失敗・ハルシネーションの中国ネットスラング]]
 
 - [[ai-uninstall-surge|ai-uninstall-surge]]
 
