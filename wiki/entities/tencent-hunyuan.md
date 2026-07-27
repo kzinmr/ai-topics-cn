@@ -1,7 +1,7 @@
 ---
 title: "混元 (Hunyuan) — 騰訊自研の大規模言語モデルシリーズ"
 created: 2026-04-28
-updated: 2026-06-07
+updated: 2026-07-27
 tags: [company, llm, china, tech-giant, tencent, moe, multimodal]
 aliases: ["Hunyuan", "混元", "Tencent Hunyuan", "腾讯混元", "HY"]
 source_lang: zh-CN
@@ -302,10 +302,11 @@ HY-World 2.0はテキスト/単一画像/多視点画像/動画を入力とし�
 - **最高精度での差**: SWE-benchでClaude Opus 4.6に6.4ポイント差
 
 ### 展望
-- 2026年5-6月にHy3.0正式版リリース予定
+- Hy3.0正式版: 2026年5-6月予定であったが**7月27日現在リリース未確認**（43日間のクロールギャップのため詳細不明）
 - WeChatエコシステムへの全面統合が実現すれば、中国最大のAIユーザーベースを獲得
 - OpenClaw/QClawとの連携でAgentエコシステムを拡大中
 - 2026年AI投資は前年の2倍以上を見込む
+- CodeBuddyはAIコーディング市場でAlibaba Qoderに大幅に後れ（市場シェア報告）
 
 ## ソース
 

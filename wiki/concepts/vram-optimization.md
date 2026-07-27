@@ -1,7 +1,7 @@
 ---
 title: "显存优化（VRAM Optimization） — KVキャッシュ圧縮・量子化・推論効率化"
 created: 2026-04-23
-updated: 2026-06-13
+updated: 2026-07-27
 tags: [inference, vram-optimization, kv-cache, quantization, optimization, china]
 aliases: ["显存优化", "VRAM最適化", "KV Cache Compression", "PagedAttention", "KVキャッシュ圧縮"]
 source_lang: zh-CN
@@ -424,6 +424,30 @@ TogetherAIがOSCAR（Offline Spectral Covariance-Aware Rotation for 2-bit KV Cac
 | OSCAR 2-bit KV量子化 | 新規記事なし |
 | 昇騰/Ascend 新動向 | 新規記事なし |
 | DeepSeek V4 コンシューマデプロイ最適化 | 議論のみ、新技術なし |
+
+## 2026年6月中旬〜7月下旬 — 消化期継続・KTransformers注目
+
+### 12. 消化期（6/14〜7/27）— VRAM最適化のブレークスルーなし
+
+6月13日以降、VRAM最適化に関するメジャーな技術ブレークスルーは確認されなかった。この期間はモデルリリース（Kimi K3等）とAgentエコシステムの発展に注力が移り、VRAM最適化は「消化期」が継続。
+
+#### 注目ポイント
+
+- **KTransformers**: Juejin（7/20）で18.5K Stars到達が報告。CPU-GPUスケジューリング、量子化カーネル、動的Expert配置を組み合わせたMoE推論エンジン。SGLang統合パスも存在
+- **KVキャッシュ関連記事**: 掘金（7/5-6）でKVキャッシュメモリ消費とスケジューリング最適化の記事が登場。Hologres AI FunctionでのSQLネイティブKVキャッシュチューニングも紹介
+- **推論価格競争**: 36kr（7/24-26）で「大模型価格戦下半場」分析。VRAM効率が競争優位の核に
+- **超擎数智**: 36kr（7/22）で中国推論インフラ企業のCEOインタビュー。フルスタック推論ソリューション
+
+#### 継続確認が必要なトピック
+
+| トピック | 状態 |
+|---------|------|
+| KTransformers SGLang統合 | 確認中 |
+| Ollama v0.30.0安定版 | 未リリース |
+| SGLang v0.5.13+ | 未確認 |
+| TriAttention v0.3.0 | 未確認 |
+
+> **出典**: Juejin（2026-07-20）[T2]; 36kr（2026-07-22, 7/24-26）[T1]
 
 ## 関連リンク
 

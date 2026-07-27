@@ -85,6 +85,18 @@
 - 候補60件中、実質Take 2件 / Reference 1件 / Skip 18件（残りはdigest/other）
 - Zhihu: 0件（パイプライン確認が必要）
 
+## [2026-07-27] active-crawl | tencent-hunyuan/china-ai-agent-ecosystem/vram-optimization
+
+### Wiki更新
+- `concepts/china-ai-agent-ecosystem.md` — **更新**: 7月セクション追加(Claude Code全面禁止/信通院Agent安全基準テスト/Kimi K3算力崩壊/OpenClaw復活/千問辦公参入)。updated: 2026-07-27。
+- `entities/tencent-hunyuan.md` — **更新**: last_crawled更新のみ(43日間ギャップ/Hy3.0正式版未確認/CodeBuddy市場シェア後れ)。updated: 2026-07-27。
+- `concepts/vram-optimization.md` — **更新**: 7月セクション追加(消化期継続/KTransformers 18.5K Stars/KVキャッシュ関連記事)。updated: 2026-07-27。
+
+### hot-topics.yaml更新
+- tencent-hunyuan — last_crawled: 2026-07-27, notes updated
+- china-ai-agent-ecosystem — last_crawled: 2026-07-27, notes updated
+- vram-optimization — last_crawled: 2026-07-27, notes updated
+
 ## [2026-07-05] active-crawl | DeepSeek/Doubao/Dify
 
 ### Wiki更新

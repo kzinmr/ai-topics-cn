@@ -1,7 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-07-26
+最終更新: 2026-07-27
 エンティティ: 66, コンセプト: 126, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-07-27 Active Crawl: tencent-hunyuan/china-ai-agent-ecosystem/vram-optimization）
+- `concepts/china-ai-agent-ecosystem.md` — **更新**: 7月セクション追加(Claude Code全面禁止/信通院Agent安全基準テスト/Kimi K3算力崩壊/OpenClaw復活/千問辦公参入/OpenAI三線障害/復旦80頁Agent綜述)
+- `entities/tencent-hunyuan.md` — **更新**: last_crawled更新のみ(43日間ギャップ/Hy3.0正式版未確認/CodeBuddy市場シェア後れ)
+- `concepts/vram-optimization.md` — **更新**: 7月セクション追加(消化期継続/KTransformers 18.5K Stars/KVキャッシュ関連記事)
+- `config/hot-topics.yaml` — **last_crawled/notes更新**: tencent-hunyuan/china-ai-agent-ecosystem/vram-optimization 3トピック
 ### 本日更新（2026-07-26 Active Crawl: OpenClaw/VibeCoding/ChinaOpenSourceAI）
 - `entities/openclaw.md` — **更新**: リリース復活(v2026.7.1/v2026.7.2-beta.3)、GitHub Stars 384K、Control UI刷新+アプリ更新+GPT-5.6対応、中国公式ブランドサイト、Hermes/悟空競合、安全隐患継続追記
 - `concepts/vibe-coding-china.md` — **更新**: SpaceX Cursor $600億買収→株価$6,000億下落、Claude Mythos一般公開+米政府許可、DeepSWEベンチマーク混乱、Boris Cherny Vibe Coding嫌悪宣言、DeepSeek Reasonix、Cursor売上$20億追記
