@@ -1,7 +1,7 @@
 ---
 title: "中国编程Agent工具 — コーディングAIエージェントの生態系"
 created: 2026-04-19
-updated: 2026-06-11
+updated: 2026-07-28
 tags: [coding-agents, china, ide, automation, software-development, claude-code, cursor, openai]
 aliases: ["中国编程Agent", "编程自动化工具", "AI代码助手", "Chinese coding agents", "AI编程工具"]
 source_lang: zh-CN
@@ -696,4 +696,115 @@ Juejin開発者「前端小A」が、**JetBrains IDEAでClaude Codeを実用的�
 | 博客园 — AI编程工具横评（2026-04-14） | [cnblogs.com](https://www.cnblogs.com/deali/p/19864809) | T2 |
 | 腾讯云 — Claude Code vs Cursor vs Codex（2026-04-21） | [cloud.tencent.com](https://cloud.tencent.com/developer/article/2657589) | T2 |
 | 知乎 — 2026年最好用的AI编程工具（要ログイン） | [zhihu.com](https://zhuanlan.zhihu.com/p/2025899805084251627) | T3 |
-| 快科技 — Kimi K2.6发布（2026-04-21） | [新浪财经](https://finance.sina.com.cn/tech/roll/2026-04-21/doc-inhvfivi7970532.shtml) | T1 |
+|| 快科技 — Kimi K2.6发布（2026-04-21） | [新浪财经](https://finance.sina.com.cn/tech/roll/2026-04-21/doc-inhvfivi7970532.shtml) | T1 ||
+
+## 2026年6月中旬〜7月の新展開
+
+### 🔥 Kimi K3正式リリース — 世界初のオープン3Tクラスモデル（2026年7月20日〜27日）
+
+Moonshot AI（月之暗面）が**Kimi K3**を正式発表。中国AIコーディングAgent市場に再び大きな波紋を広げた：
+
+- **パラメータ**: **2.8兆（2.8T）** — 世界初のオープン3Tクラスモデル
+- **評価**: Artificial Analysis Intelligence Indexで**3位**（Claude Fable 5、GPT-5.6 Solに次ぐ）
+- **Kimi Code**: 専用CLIコーディングエージェント（カスタムハーネス）を同時発表
+- **Kimi Work 3.1.0**: デスクトップアプリ更新。WidgetsとDashboard機能追加
+- **コーディング能力**: GPUカーネル最適化、MiniTriton（Triton級コンパイラ）開発、48時間自律実行で4mm²チップ設計
+- **技術**: Kimi Delta Attention (KDA) + Attention Residuals (AttnRes)、Stable LatentMoE（896エキスパート中16アクティブ）
+- **価格**: $0.30/MTok（キャッシュヒット）、$3.00/MTok（キャッシュミス）、$15.00/MTok（出力）— K2.6比3.5倍値上げだが海外クローズドモデルより大幅に安い
+- **制限**: サブスクリプション停止（計算資源不足）、思考履歴への感度、過度な積極性
+- **K3 Maxマルチエージェント**: 20〜30のサブエージェントでmacOS 27をブラウザ内再現（6時間、月額クォータの60%使用）
+
+> **出典**: [ChinAI #368](https://substack.com/app-link/post?publication_id=2660&post_id=208550714)、[Open Frontier Intelligence](https://substack.com/redirect/bc283bb3-78bf-489c-8e40-072a8eb6b776)、[Zhihu Frontier Weekly](https://open.substack.com/pub/zhihufrontier/p/zhihu-frontier-weeklyopenai-kimi) [Tier-1]
+
+### 🔥 Claude Code バックドア問題 — 中国大手企業が事実上の使用禁止（2026年7月）
+
+2026年4月リリースのClaude Codeに**中国ユーザー識別コード**が悄然と追加されていたことが発覚。中国AI業界に大きな衝撃を与えた事件：
+
+- **発覚経緯**: Claude Codeのコードベースに中国ユーザーを識別・追跡する隠蔽コードが発見
+- **Anthropicの対応**: 蒸留対策と説明しロールバックを発表
+- **7月8日**: 中国国家脆弱性データベースがClaude Codeのセキュリティバックドアリスクを警告
+- **Alibaba**: 社内Claude全ソフトウェア削除を義務化。事実上のClaude Code禁止
+- **波及**: Zhihuで160万View、315レスポンスのスレッドが立つ。阿里巴巴が先例を作り、他社への波及が予測
+- **現実**: 公式には禁止だが、個人利用は継続。国家脆弱性データベースは「最新セキュリティバージョンにアップグレード」を推奨
+- **影響**: 国産ツール（Qoder、MarsCode、CodeBuddy、Comate）への移行が不可逆的に加速
+
+> **出典**: [ChinAI #367](https://substack.com/app-link/post?publication_id=2660&post_id=207717412) [Tier-1]
+
+### Qoder市場支配率47.6% — IDC公式レポート（2026年7月）
+
+IDC「2025中国AI编程市場份额」レポートが公開され、中国コーディングAgent市場の支配構造が明確化：
+
+- **Qoder（Alibaba）**: **47.6%**で1位 — 智谱、商湯、騰訊、百度の合計を上回る
+- **Qwen3.7-Max搭載**: SWE-Pro等でSOTA達成、Terminal Bench 2.0でも海外トップモデルに肩を並べる
+- **QoderWake（デジタル社員）**: 数字程序员、データアナリスト等のロールを提供
+- **Cloud Agents**: 2026年5月に全マネージドAIエージェント実行プラットフォームを推出
+- **Harness Engineering**: タスク実行プロセスを構造化したランタイムとして実装
+
+> **出典**: [Leiphone/IDC分析](https://substack.com/redirect/ed700c71-8eaf-4490-aadb-13da8579647e) [Tier-1]
+
+### Qwen 3.8 Max プレビュー — 2.4Tパラメータの第二のフロンティア（2026年7月下旬）
+
+Alibabaが**Qwen 3.8 Max**プレビューを公開。中国第2位のフラッグシップモデル：
+
+- **パラメータ**: **2.4兆（2.4T）**
+- **マルチモーダル対応**: ネイティブ動画理解
+- **評価**: 「GLM-5.2のマルチモーダル版」。Kimi K3には依然として劣るが速度と価格に優位
+- **オープンウェイト承诺**: 成功すれば中国初のフロンティア級パラメータ＋オープンウェイトの組み合わせ
+
+> **出典**: [Zhihu Frontier Weekly](https://open.substack.com/pub/zhihufrontier/p/zhihu-frontier-weeklyopenai-kimi) [Tier-1]
+
+### DeepSeek Harness — 「Harness Engineering」の概念定着
+
+DeepSeek Harnessチームが「**Harness Engineering**」を新たなAIインフラ層として提唱。コーディングAgentのパラダイム転換を示唆：
+
+- **Model + Harness = Agent**: 基盤モデル＋制御層＝エージェント
+- **従来のサードパーティラッパーの限界**: モデルと開発環境の分離。コンパイラログ、lintフィードバック、テスト結果をモデル最適化に直接フィードバックできない
+- **SSD-based KV cache**: DeepSeek V4 Proの価格競争力の基盤技術
+- **V4 Pro追加値下げ**: さらに約4分の1に。キャッシュヒット率99%で実質無料に近い
+- **700億元調達ラウンド**: 創業者梁文鋒が約200億元自己出資
+
+> **出典**: [Zhihu Frontier Weekly](https://open.substack.com/app-link-post--9aab09a3) [Tier-1]
+
+### MiMo V2.5 激安価格改定（2026年6月）
+
+Xiaomi MiMo V2.5モデルファミリーの価格を大幅値下げ。AI API史上最大級のコスト削減：
+
+- キャッシュヒットリクエストは標準価格の**約1%**に
+- SSD-based KV cache技術の採用示唆
+- **注意**: 応答速度が低下しDeepSeek並みに
+
+> **出典**: [Zhihu Frontier Weekly](https://open.substack.com/app-link-post--9aab09a3) [Tier-1]
+
+### GLM-5.2（智谱AI）
+
+- **$0.90/MTok** — コストパフォーマンス優位
+- Claude Codeハーネスで評価、Kimi K3との比較で一定の性能
+
+### 価格比較表（2026年7月時点）
+
+| モデル | 開発元 | 混合レート($/MTok) | 備考 |
+|--------|--------|-------------------|------|
+| **DeepSeek V4 Pro** | DeepSeek | $0.18 | 最安値、SSD cache |
+| **MiniMax M3** | MiniMax | $0.22 | 100万トークン超長文脈 |
+| **GLM-5.2** | 智谱AI | $0.90 | オープンソース |
+| **Qwen3.7 Max** | Alibaba | $1.40 | Qoder搭載モデル |
+| **Kimi K3** | Moonshot AI | $2.30 | 2.8Tパラメータ |
+| **Claude Fable 5** | Anthropic | 未公開（高額） | 中国アクセス制限 |
+| **GPT-5.6 Sol** | OpenAI | 未公開（高額） | 中国アクセス不安定 |
+
+### マーケットシェア推移（2026年7月時点）
+
+| ツール | シェア | 前回(6月)比 | 備考 |
+|--------|--------|------------|------|
+| **Qoder**（Alibaba） | **47.6%** | 急増 | IDC公式レポート |
+| **Trae**（ByteDance） | 41.2%→不明 | 減少の可能性 | Doubao-Seed-2.0搭載 |
+| **Cursor** | 15%→不明 | 減少の可能性 | Claude Code問題で影響 |
+| **Claude Code** | 8%→減少 | 急減 | バックドア問題で中国企業禁止 |
+
+### 重要なトレンド（2026年6月〜7月）
+
+1. **Kimi K3の衝撃**: 中国初のフロンティア級オープンモデル。Code Arenaでトップランキング。コーディング能力はFable 5に肉薄
+2. **Claude Code中国事実上の死亡**: バックドア問題で大手企業が禁止。国産ツールへの移行が不可逆的に加速
+3. **Harness Engineeringの概念定着**: DeepSeek、Qoder共に「Model + Harness = Agent」を提唱。単なるコーディングツールからインフラ層への進化
+4. **価格破壊の継続**: DeepSeek V4 Pro $0.18/MTok、MiMo V2.5キャッシュヒット99%オフ。コスト競争はさらに激化
+5. **Qwen 3.8の脅威**: 2.4Tパラメータのオープンウェイトモデルが出現し、Kimi K3との二頭体制が予想される

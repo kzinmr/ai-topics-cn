@@ -85,6 +85,20 @@
 - 候補60件中、実質Take 2件 / Reference 1件 / Skip 18件（残りはdigest/other）
 - Zhihu: 0件（パイプライン確認が必要）
 
+|
+
+## [2026-07-28] active-crawl | china-coding-agents/mcp-china/dify
+
+### Wiki更新
+- `concepts/china-coding-agents.md` — **更新**: 7月セクション追加(Kimi K3正式リリース/2.8Tパラメータ/Claude Codeバックドア問題/Alibaba社内禁止/Qoder市場シェア47.6%/Qwen 3.8 Maxプレビュー/DeepSeek Harness Engineering/MiMo V2.5激安価格/GLM-5.2)。updated: 2026-07-28。
+- `concepts/mcp-china.md` — **更新**: 7月セクション追加(MCP Stateless最終仕様7/28リリース予定/45日間クロールギャップ記録)。updated: 2026-07-28。
+- `concepts/dify.md` — **更新なし**: 23日間静定期(v1.15.0以降の新リリースなし)。last_crawled更新のみ。
+
+### hot-topics.yaml更新
+- china-coding-agents — last_crawled: 2026-07-28, notes/search_hints更新
+- mcp-china — last_crawled: 2026-07-28, notes更新
+- dify — last_crawled: 2026-07-28, notes更新
+
 ## [2026-07-27] active-crawl | tencent-hunyuan/china-ai-agent-ecosystem/vram-optimization
 
 ### Wiki更新

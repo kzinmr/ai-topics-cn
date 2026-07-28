@@ -3,9 +3,8 @@ title: "MCP中国生态（Model Context Protocol在中国的採用状況）"
 type: concept
 tags: [mcp, chinese-ai, agent-protocol, a2a, standardization, tool-integration, github, enterprise]
 created: 2026-04-17
-updated: 2026-06-13
+updated: 2026-07-28
 source_lang: zh-CN
----
 
 # MCP中国生态（Model Context Protocol 中国採用状況）
 
@@ -725,4 +724,38 @@ mcp-chinese-toolsのノートによると、MCPプロトコルの**無状態RC�
 - [阿里悟空Agent OS (掘金)](https://juejin.cn/post/7618418125198196779)
 - [QwenPaw Agent实现原理 (掘金)](https://juejin.cn/post/7645147490087403530)
 - [AI Agent記憶システム設計比較 (掘金)](https://juejin.cn/post/7644628777114042420)
-- [FastAPI漏洞与AI Agent安全 (36kr)](https://36kr.com/p/3828901167911812)
+|- [FastAPI漏洞与AI Agent安全 (36kr)](https://36kr.com/p/3828901167911812)
+
+## 2026年6月中旬〜7月の新展開
+
+### MCP Stateless RC 最終仕様 — 2026年7月28日リリース予定
+
+MCPプロトコルの重要なマイルストーン：**無状態（Stateless）RCの最終仕様**が2026年7月28日にリリース予定。Googleチーム（Cloud Run/Kubernetes）と共同開発：
+
+- **セッションID廃止**: 既存のセッションベース通信を排除し、クラウドネイティブ環境での水平スケーリングを実現
+- **SSE → Streamable HTTP**: Server-Sent Eventsを置き換え、ブラウザ環境でのネイティブ動作を実現
+- **必須ルーティングヘッダー**: マルチテナント環境でのリクエストルーティングを標準化
+- **OAuth 2.1 / OIDC**: 企業レベルの認証・認可を標準プロトコルで実現
+- **12ヶ月の非推奨バッファー**: 既存のSSEベースサーバーへの影響緩和
+
+**意義**: MCPの「最大の技術的課題」であったセッション状態と水平スケーリングの矛盾を解決。Kubernetes環境での本番デプロイが容易になり、企業採用が加速すると見られる。
+
+> **出典**: Anthropic MCP公式ロードマップ、SiliconReport 2026-05-14 [Tier-2]
+
+### 45日間のクロールギャップ（2026年6月13日〜7月28日）
+
+2026年6月中旬から7月28日までの間、MCP中国生態系で目立った新規プラットフォーム発表は確認されなかった。ただし、以下の既知の進展が進行中：
+
+| トピック | 状況 |
+|---------|------|
+| MCP Stateless最終仕様 | 7/28リリース予定 |
+| AAIF新メンバー | 5/18以降の追加確認なし（現在190組織） |
+| 新規CVE | 5月の波（CVE-2026-30615等）以降の新報告なし |
+| Alibaba/Tencent/ByteDance MCP | 5月下旬の発表以降の新情報なし |
+| DeepSeek V4.1 MCP対応 | 6月リリース予定のまま未確認 |
+| MCP SDK月間DL | 3億回/月（4月末時点、更新なし） |
+| 公開MCPサーバー数 | 9,400+（更新なし） |
+
+**出典**: wiki既存情報およびweb調査結果に基づく
+
+## 関連リンク

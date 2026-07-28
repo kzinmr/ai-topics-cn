@@ -290,9 +290,9 @@ topics:
       - "Dify IBTimes みずほ 2026年5月"
     wiki_pages:
       - concepts/dify
-    notes: "2026.07.05更新: v1.15.0リリース(6/25/GitHub確認/UX刷新)。Stars 147K+(+4K/5週)。v1.14.3は存在せず(サブエージェント誤報告)。Mizuho第2フェーズ等はWeb検索不可のため未確認。2026.06.05更新: 新規情報なし(5/28〜6/4静定期)。Dify×EdgeOne DeepResearch記事(5/25/掘金)。2026.05.27更新: みずほFG Dify Enterprise IBTimes JP報道。GitHub #36507 version disclosure。2026.05.26更新: v1.14.2(CVE-2026-41947修正)。Imperva脆弱性2件。みずほFG全社導入(41.8%削減)。賽博威販売パートナー。Stars 143K。Agent Server v1.15基盤。2026.05.18更新: v1.14.0 GA Agent Skills Production Ready。"
+    notes: "2026.07.28更新: 23日間クロールギャップ(7/5〜7/28)。v1.15.0以降の新リリースなし。新規CVE・脆弱性報告なし。みずほFG第2フェーズ等はWeb検索不可のため未確認。静定期継続。2026.07.05更新: v1.15.0リリース(6/25/GitHub確認/UX刷新)。Stars 147K+(+4K/5週)。v1.14.3は存在せず(サブエージェント誤報告)。Mizuho第2フェーズ等はWeb検索不可のため未確認。"
     added: 2026-04-17
-    last_crawled: 2026-07-05
+    last_crawled: 2026-07-28
 
   # =========================================================
   # 3. Local Deployment & Quantization (ローカル展開・量子化)
@@ -442,9 +442,9 @@ topics:
       - "AAIF 43新メンバー 2026"
     wiki_pages:
       - concepts/mcp-china
-    notes: "2026.06.13更新: パラダイム再整理「CLI+MCP+Skill三范式」(米小虾/掘金6/11/⭐最重要)。AI Skills工程化(米小虾/掘金6/12)。Hermes vs OpenClaw Agent Loop比較(掘金6/10)。Anthropic中国制限議論(IT乐手/掘金6/12)。Viking AI Search CLI(火山引擎/掘金6/9)。Fable5週間でMCP露出限定的。AAIF/Alibaba/ByteDance/Tencent新情報なし。2026.06.08更新: 6月4日〜8日は生態系の静かな成熟期。教育コンテンツ爆発(MCP天気ツール/30分MCP Server/Coding Agent全5回)。MCP/A2A/AG-UI三大プロトコル住み分け定着。AI第二脳プロジェクト継続。無状態RC(5月21日リリース/7月28日最終仕様予定)。Web検索ツール障害のため外部データ不足。2026.06.04更新: MCP Skills実装(V2EX/短视频分析)。MCP/A2A/AG-UI三大プロトコル比較記事(掘金)。AI「第二脳」プロジェクト(Claude/Cursor/Windsurf共有記憶/MCP経由)。MCP Server 30分チュートリアル。OpenClaw実用記事継続。プロトコル標準化・企業採用ガイドライン整備が進行中。2026.06.01更新: 阿里悟空(Wukong)Agent OS + MCP広場リリース(OpenClaw対抗/钉钉統合/5/26)。QwenPaw Agent(QwenベースMCPネイティブAgent/5/29-30)。Anthropic Knowledge Work Plugins職能別MCP Serverテンプレート公開(5/26)。AI Agent記憶システム比較(OpenClaw/Claude Code/Hermes AgentのMCP活用比較/5/28)。LLM-as-Agent評価:機器之心が中国モデルのMCPツール呼び出し能力比較(5/30)。FastAPI脆弱性とAI Agent安全リスク(MCPインフラ依存関係/5/28)。MCP教育コンテンツ急増(チュートリアル記事連日出現/開発者教育成熟)。Claude Opus 4.8リリース(Agent能力向上/V2EX/36krで話題/5/28)。2026.05.24更新: Alibaba Cloud Summit 5/20—全クラウド製品MCP化/Qwen3.7-Max発表/ModelScope MCP広場千種類/トークン収益15倍。ByteDance火山引擎MCP Server OSS(100+MCP/271Stars/日次12.7兆tokens)。Tencent MCP Gateway(ゼロコードREST変換)/MCP-FLOW研究(99.2%)/Tencent Docs MCP/TKE MCP。AAIF 43新メンバー追加(Stripe/F5/GoDaddy/U.S. Army等190組織)。MCP STDIO設計脆弱性(200K+server/150M+SDK DL/OX Security)。Community Bank SEC 8-K初開示(5/7/サードパーティMCPリスク)。エコシステム: 9,400+公開Server(7.8倍)/SDK月間3億DL。2026.05.19更新: MCPデータベース脆弱性(AP Doris/Pinot)/Alibaba Cloud RDS MCP CVE-2026-30623/パッチ未/Xinhua Finance MCP/EmbeddedLLM MCPマルウェア。"
+    notes: "2026.07.28更新: 45日間クロールギャップ(6/13〜7/28)。MCP Stateless最終仕様が7/28リリース予定(Google共同開発/セッションID廃止/SSE→Streamable HTTP)。AAIF新メンバー・新規CVE・主要プラットフォーム新発表なし。MCP SDK月間3億DL/公開サーバー9,400+維持。2026.06.13更新: パラダイム再整理「CLI+MCP+Skill三范式」(米小虾/掘金6/11/⭐最重要)。AI Skills工程化(米小虾/掘金6/12)。Hermes vs OpenClaw Agent Loop比較(掘金6/10)。Anthropic中国制限議論(IT乐手/掘金6/12)。Viking AI Search CLI(火山引擎/掘金6/9)。Fable5週間でMCP露出限定的。AAIF/Alibaba/ByteDance/Tencent新情報なし。2026.06.08更新: 6月4日〜8日は生態系の静かな成熟期。教育コンテンツ爆発(MCP天気ツール/30分MCP Server/Coding Agent全5回)。MCP/A2A/AG-UI三大プロトコル住み分け定着。AI第二脳プロジェクト継続。無状態RC(5月21日リリース/7月28日最終仕様予定)。Web検索ツール障害のため外部データ不足。"
     added: 2026-04-17
-    last_crawled: 2026-06-13
+    last_crawled: 2026-07-28
 
   - slug: mcp-chinese-tools
     title: "Chinese MCP Tools & Servers (中国MCP工具)"
@@ -555,11 +555,16 @@ topics:
       - "GitHub Agent HQ エージェント協調 2026"
       - "Kimi K2.6 誤BAN 誤検知 2026"
       - "Grok Build xAI コーディングエージェント"
+      - "Kimi K3 2.8T パラメータ コーディング"
+      - "Claude Code バックドア 中国 禁止"
+      - "Qoder 47.6% IDC 市場シェア"
+      - "Qwen 3.8 Max 2.4T パラメータ"
+      - "DeepSeek Harness Engineering"
     wiki_pages:
       - concepts/china-coding-agents
-    notes: "2026.06.11更新: Claude Fable 5/Mythos 5発表(5000万行コード移行1日)。Bun 100万行Claude Code書換え(9日間/6755コミット/99.8%通過率)。Anthropic自社コード80%AI生成議論。Kimi Work発表+IPO加速(2000億元評価額)。Codex大更新(6職種スキル対応)。DeepSeek V4 Pro 2.5割正式価格。GPT-5.6初回実測。MiniMax M3深堀分析(100万トークン超長文脈)。智谱GLM-5オープンソース。Agent最後の試験(最高得点8.6%)。2026.06.05更新
+    notes: "2026.07.28更新: Kimi K3正式リリース(7/20-27/2.8Tパラメータ/世界初オープン3Tクラス/Code Arenaトップ)。Claude Codeバックドア問題(中国ユーザー識別コード発覚/Alibaba社内禁止/国家脆弱性DB警告)。Qoder市場シェア47.6%(IDC公式/国内1位)。Qwen 3.8 Maxプレビュー(2.4Tパラメータ/マルチモーダル)。DeepSeek Harness「Harness Engineering」概念定着(Model+Harness=Agent)。MiMo V2.5激安価格改定(キャッシュヒット99%オフ)。GLM-5.2($0.90/MTok)。2026.06.11更新: Claude Fable 5/Mythos 5発表(5000万行コード移行1日)。Bun 100万行Claude Code書換え(9日間/6755コミット/99.8%通過率)。Anthropic自社コード80%AI生成議論。Kimi Work発表+IPO加速(2000億元評価額)。Codex大更新(6職種スキル対応)。DeepSeek V4 Pro 2.5割正式価格。GPT-5.6初回実測。MiniMax M3深堀分析(100万トークン超長文脈)。智谱GLM-5オープンソース。Agent最後の試験(最高得点8.6%)。2026.06.05更新
     added: 2026-04-17
-    last_crawled: 2026-06-11
+    last_crawled: 2026-07-28
 
   - slug: coding-plan
     title: "Coding Plan (编程计划)"

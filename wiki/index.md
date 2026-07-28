@@ -1,7 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-07-27
+最終更新: 2026-07-28
 エンティティ: 72, コンセプト: 131, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-07-28 Active Crawl: china-coding-agents/mcp-china/dify）
+- `concepts/china-coding-agents.md` — **更新**: 7月セクション追加(Kimi K3正式リリース/2.8Tパラメータ/Claude Codeバックドア問題/Alibaba社内禁止/Qoder市場シェア47.6%/Qwen 3.8 Maxプレビュー/DeepSeek Harness Engineering/MiMo V2.5/GLM-5.2)
+- `concepts/mcp-china.md` — **更新**: 7月セクション追加(MCP Stateless最終仕様7/28リリース予定/45日間クロールギャップ)
+- `concepts/dify.md` — **更新なし**: 23日間静定期(v1.15.0以降新リリースなし)
+- `config/hot-topics.yaml` — **last_crawled/notes/search_hints更新**: china-coding-agents/mcp-china/dify 3トピック
 ### 本日更新（2026-07-27 Active Crawl: tencent-hunyuan/china-ai-agent-ecosystem/vram-optimization）
 - `concepts/china-ai-agent-ecosystem.md` — **更新**: 7月セクション追加(Claude Code全面禁止/信通院Agent安全基準テスト/Kimi K3算力崩壊/OpenClaw復活/千問辦公参入/OpenAI三線障害/復旦80頁Agent綜述)
 - `entities/tencent-hunyuan.md` — **更新**: last_crawled更新のみ(43日間ギャップ/Hy3.0正式版未確認/CodeBuddy市場シェア後れ)
