@@ -1,7 +1,7 @@
 ---
 title: "Coding Plan（编程计划）— 中国発AIコーディングサブスクリプションモデル"
 created: 2026-04-17
-updated: 2026-06-12
+updated: 2026-07-29
 tags: [coding-agents, tooling, china, product, concept, subscription]
 aliases: ["Coding Plan", "编程计划", "コーディングプラン", "CodingPlan"]
 source_lang: zh-CN
@@ -432,3 +432,64 @@ Coding Planの台頭は、中国AI市場の以下の構造的特徴を反映し�
 | 36kr — 阿里云 vs 火山云比較 | 36kr 2026.04.24 | Tier-1 | Coding Planベンダー比較 |
 | Juejin — Volcengine Coding Plan | Juejin 2026.04.24 | Tier-2 | 火山云モデルバンドル |
 | Juejin — Copilot下架opus Qwen按量计费 | Juejin 2026.04.22 | Tier-1 | トークン価格上昇トレンド |
+
+### 2026年6月〜7月アップデート（47日間ギャップ後の更新）
+
+#### Kimi K3正式リリースと計算資源危機（2026年7月）⭐
+- **K3正式リリース**（7/20-27）: 世界初のオープン3Tクラスモデル（2.8兆パラメータ）
+- **Kimi Code**: 専用CLIコーディングエージェント同時発表
+- **Kimi Work 3.1.0**: デスクトップアプリ更新（Widgets/Dashboard追加）
+- **価格**: $0.30/MTok（キャッシュヒット）、$3.00/MTok（キャッシュミス）、$15.00/MTok（出力）
+- **制限**: サブスクリプション停止（計算資源不足）— 業界全体の供給逼迫を示唆
+- 出典: ChinAI #368, 36kr (2026-07-17, 07-20, 07-22, 07-23)
+
+#### Kimi停售・GLM限购 — 計算資源危機
+- Kimi: 計算資源不足により会員販売を停止（36kr「Kimi算力告急」）
+- GLM: 購入制限（限购）を導入
+- Juejin: 「Kimi 停售，GLM限购，国内用户还是难啊！」（7/20-23にわたり複数日掲載）
+- **影響**: Coding Plan市場の安定供給がさらに悪化
+- 出典: Juejin [juejin.cn/post/7664248618913660955](https://juejin.cn/post/7664248618913660955)
+
+#### Claude Code中国事実上の死亡（2026年7月）🔥
+- Claude Codeに「中国ユーザー識別コード」が悄然と追加されていたことが発覚
+- 7/8: 中国国家脆弱性データベースがセキュリティバックドアリスクを警告
+- **Alibaba**: 社内Claude全ソフトウェア削除を義務化。事実上のClaude Code禁止
+- 国産ツール（Qoder、MarsCode、CodeBuddy、Comate）への移行が不可逆的に加速
+- Zhihuで160万View、315レスポンスのスレッドが立つ
+- 出典: ChinAI #367
+
+#### Qoder市場支配率47.6% — IDC公式レポート（2026年7月）🔥
+- IDC「2025中国AI编程市場份额」レポート
+- **Qoder（Alibaba）**: 47.6%で1位 — 智谱、商湯、騰訊、百度の合計を上回る
+- Qwen3.7-Max搭載
+- 出典: Leiphone/IDC分析
+
+#### Qwen 3.8 Maxプレビュー（2026年7月下旬）
+- 2.4兆（2.4T）パラメータ、ネイティブ動画理解対応
+- Kimi K3との二頭体制が予想される
+- 出典: Zhihu Frontier Weekly
+
+#### GLM-5オープンソース化（2026-06-06）
+- 智谱がGLM-5を完全オープンソース化
+- CodeGeeX 4.1の次世代モデル基盤として位置づけ
+- 出典: Juejin [juejin.cn/post/7609925885416390665](https://juejin.cn/post/7609925885416390665)
+
+#### MiMo V2.5 激安価格改定
+- キャッシュヒットリクエストは標準価格の約1%
+- 応答速度が低下しDeepSeek並みに
+- 出典: Zhihu Frontier Weekly
+
+#### DeepSeek Harness — Harness Engineering概念定着
+- 「Model + Harness = Agent」提唱
+- V4 Pro追加値下げ、700億元調達ラウンド
+- 出典: Zhihu Frontier Weekly
+
+### 最新価格比較表（2026年7月時点）
+
+| モデル | 開発元 | 混合レート($/MTok) | 備考 |
+|--------|--------|-------------------|------|
+| DeepSeek V4 Pro | DeepSeek | $0.18 | 最安値、SSD cache |
+| MiniMax M3 | MiniMax | $0.22 | 100万トークン超長文脈 |
+| GLM-5.2 | 智谱AI | $0.90 | オープンソース |
+| Qwen3.7 Max | Alibaba | $1.40 | Qoder搭載モデル |
+| Kimi K3 | Moonshot AI | $2.30 | 2.8Tパラメータ |

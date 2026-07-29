@@ -79,9 +79,9 @@ topics:
       - "Qwen Image 3 画像生成"
     wiki_pages:
       - entities/qwen
-    notes: "2026.06.11更新: Qwen3.6-27B vs DeepSeek V4 Flash比較議論(V2EX)。Meta VLM³がQwen3-VL-4Bを研究ベースに採用(36kr/深度推定0.9)。QwenPaw記憶対話管理アーキテクチャ解説(掘金)。千問3.6の0コスト活用チュートリアル(讯飞星辰MaaS/掘金)。Qwen Code v0.17.x正式版未リリース(6/11現在)。Qwen3.7-Max無料化後コミュニティ好評継続。2026.06.05更新: Qwen3.7-Max無料化(6/1/Qwen Chat完全無料/高コスト批判即応)。funyi字幕ツールOSS(Qwen3-ASR-1.7B)。QwenPaw学習ガイド。DocPilot Qwen。2026.05.30更新: Qwen3.7-Max Firetheringカーネル最適化。Qwen Code v0.16.2/v0.17.0-preview。千問云SG公開。Qoder CNリブランド。2026.05.26更新: Qwen3.7-Max API正式公開。Qwen Code v0.16.0/v0.16.1。千問云詳細。Token Plan。Firethering。AA Index 56.6。2026.05.21更新: Qwen3.7-Max Agent-first。Qoder 1.0。Qwen3.5-LiveTranslate-Flash。"
+    notes: "2026.07.29更新: Qwen 3.8 Maxプレビュー(2.4Tパラメータ/ネイティブマルチモーダル/オープンウェイト化意向/ChinAI確認$1.40/MTok)。千問办公AI辦公参入(36kr7/24)。Qwen3-Coder-30B-AWQ無料提供(V2EX7/25)。QwenPaw公式ガイド公開(掘金7/27)。2026.06.11更新: Qwen3.6-27B vs DeepSeek V4 Flash比較議論(V2EX)。Meta VLM³がQwen3-VL-4Bを研究ベースに採用(36kr)。QwenPaw記憶対話管理アーキテクチャ解説(掘金)。Qwen Code v0.17.x正式版未リリース。Qwen3.7-Max無料化後コミュニティ好評継続。2026.06.05更新: Qwen3.7-Max無料化(6/1/Qwen Chat完全無料)。2026.05.30更新: Qwen3.7-Max Firetheringカーネル最適化。Qwen Code v0.16.2/v0.17.0-preview。千問云SG公開。Qoder CNリブランド。"
     added: 2026-04-17
-    last_crawled: 2026-07-24
+    last_crawled: 2026-07-29
 
   - slug: chatglm
     title: "ChatGLM (智谱清言) — Zhipu AI"
@@ -127,9 +127,9 @@ topics:
       - "Kimi 停售 算力告急"
     wiki_pages:
       - concepts/kimi
-    notes: "2026.07.24更新: Kimi K3正式リリース(7/16-17/Fable 5比較/Musk反応/大規模獲得)。K3需要過多で503崩壊・会員停售(7/18-22/算力告急)。K2.7 Codeリリース(6/11/混合評価)。追加資金調達$30B評価額目標(36kr 6/8)。匿名モデルKivineがK3の可能性(7/16)。2026.06.10更新: Kimi Work Betaローンチ(Vibe Working/中国版Codexではない)。追加$2B調達交渉中(評価額$30B目標/累計376億元)。K2.6 Intelligence Index 53.9点維持。開発者コミュニティ定着加速(Claude Code→K2.5移行事例増加)。2026.06.04更新: OpenAI Codex互換API実装確認(Anthropic互換エンドポイント/Kimi K2.5)。CC-Switch/Codex++統合。ARR$100M突破。2026.05.30更新: K3開発(Q3リリース主流)。K2.6 OpenRouterトップ10圏外(DeepSeek価格攻勢)。WebBridge v1.9.7(20Kユーザー)。Dラウンド$2Bクローズ(評価$20B超)。IPO VIE解体進行。"
+    notes: "2026.07.29更新: K3正式オープンソース化(7/27-28/2.8Tパラメータ/黄仁勳力挺/全球大使募集/開源vs閉源論争激化)。評価額$45B(3300億元)到達(36kr7/24)。OpenAI全線障害とK3开源が重なり中国モデル優位論加速。K3ユーザー評価混合(1万行リファクタ成功/修Bug越多越多)。ローカルデプロイ推定3000萬元。2026.07.24更新: Kimi K3正式リリース(7/16-17/Fable 5比較/Musk反応)。K3需要過多で503崩壊・会員停售(7/18-22)。K2.7 Codeリリース(6/11)。追加資金調達$30B評価額目標(36kr 6/8)。匿名モデルKivineがK3の可能性(7/16)。2026.06.10更新: Kimi Work Betaローンチ(Vibe Working)。追加$2B調達交渉中。K2.6 Intelligence Index 53.9点維持。"
     added: 2026-04-17
-    last_crawled: 2026-07-24
+    last_crawled: 2026-07-29
 
   - slug: yi
     title: "Yi (零一万物) — 01.AI"
@@ -575,9 +575,9 @@ topics:
       - "Coding Plan agent 中国"
     wiki_pages:
       - concepts/coding-plan
-    notes: "2026.06.12更新: 6月静定期(新規参入・価格改定なし)。DeepSeek V4 Pro 2.5割確定の間接的影響。Fable 5リリースもCoding Plan需要基盤に影響なし。2026.05.28更新: Cursor 3.5(Automations/バックグラウンド自律タスク)。CodingPlan価格体系Token Plan移行完了。CodeGeeX 4.1(GLM-5.1-Codeベース)。Market status: Trae 41.2%シェア維持。Alibaba二階層戦略(Lingma IDE ¥99 + Qoder 1.0 ¥599)。中国発コーディングエージェントツール。機能・ユースケースの深掘り。2026.05.11更新: Kimi K2.6正式価格¥39/159/559確定。Cursor+K2.6Lite組み合わせが黄金パターンに。二極分化加速(Lite¥39-40 vs Pro¥99-559)。Cursor 3.3comboでクラウドIDE+国内LitePlan棲み分け定着。GLM-5.1統合遅延(5月中見込み)。Token Plan時代突入。阿里百煉Lite完全廃止・智譜GLM値上げ継続・Kimi参入。"
+    notes: "2026.07.29更新: Kimi K3正式リリース(2.8T/計算資源危機/停售)。Claude Code中国事実上の死亡(バックドア発覚/Alibaba禁止/Qoder一層加速)。Qoder市場シェア47.6%(IDC公式/国内1位)。Qwen 3.8 Maxプレビュー(2.4T)。GLM-5 OSS化。MiMo V2.5激安改定。Harness Engineering概念定着。価格比較:DeepSeek$0.18/MiniMax$0.22/GLM-5.2$0.90/Qwen$1.40/K3$2.30。2026.06.12更新: 6月静定期(新規参入・価格改定なし)。DeepSeek V4 Pro 2.5割確定の間接的影響。"
     added: 2026-04-17
-    last_crawled: 2026-06-12
+    last_crawled: 2026-07-29
 
   - slug: cursor-china-adoption
     title: "Cursor Adoption in China (Cursor中国使用情况)"

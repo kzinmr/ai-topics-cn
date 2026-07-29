@@ -33,6 +33,18 @@
 |
 |
 ||
+|## [2026-07-29] active-crawl | Qwen/Kimi/CodingPlan deepdive
+|
+|### Wiki更新
+|- `entities/qwen.md` — **更新**: Qwen 3.8 Maxプレビュー(2.4T/ネイティブマルチモーダル/オープンウェイト化意向/$1.40/MTok)。千問办公AI辦公参入(36kr7/24)。Qwen3-Coder-30B-AWQ(7/25)。QwenPaw公式ガイド(7/27)。updated 2026-07-29。
+|- `concepts/kimi.md` — **更新**: K3正式オープンソース化(7/27-28/2.8T/黄仁勳力挺/全球大使/開源vs閉源論争)。評価額$45B到達(7/24)。K3ユーザー評価混合。OpenAI全線障害対比。36kr深度分析。updated 2026-07-29。
+|- `concepts/coding-plan.md` — **更新**: 47日間ギャップ後の更新。Kimi K3リリース/計算資源危機。Claude Code中国事実上の死亡(バックドア/Alibaba禁止)。Qoder市場シェア47.6%(IDC)。Qwen 3.8 Max/GLM-5 OSS/MiMo V2.5/Harness Engineering。価格比較表追加。updated 2026-07-29。
+|
+|### hot-topics.yaml更新
+|- qwen: last_crawled 2026-07-29、notes更新(Qwen 3.8 Max/千問办公/Qwen3-Coder AWQ/QwenPaw公式)
+|- kimi: last_crawled 2026-07-29、notes更新(K3 OSS化/2.8T/黄仁勳力挺/評価額$45B)
+|- coding-plan: last_crawled 2026-07-29、notes更新(K3/Claude Code死亡/Qoder47.6%/価格比較表)
+
 |## [2026-07-26] active-crawl | OpenClaw/VibeCoding/ChinaOpenSourceAI deepdive
 |
 |### Wiki更新

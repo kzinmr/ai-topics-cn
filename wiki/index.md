@@ -1,7 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-07-28
+最終更新: 2026-07-29
 エンティティ: 72, コンセプト: 131, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-07-29 Active Crawl: Qwen/Kimi/CodingPlan）
+- `entities/qwen.md` — **更新**: Qwen 3.8 Maxプレビュー(2.4T/マルチモーダル/オープンウェイト化/$1.40/MTok)。千問办公AI辦公参入。Qwen3-Coder-30B-AWQ。QwenPaw公式ガイド
+- `concepts/kimi.md` — **更新**: K3正式オープンソース化(7/27-28/2.8T/黄仁勳力挺/全球大使/開源vs閉源論争)。評価額$45B到達。OpenAI全線障害対比
+- `concepts/coding-plan.md` — **更新**: 47日間ギャップ後更新。K3/計算資源危機。Claude Code中国事実上死亡。Qoder市場シェア47.6%。価格比較表追加
+- `config/hot-topics.yaml` — **last_crawled/notes更新**: qwen/kimi/coding-plan 3トピック
 ### 本日更新（2026-07-28 Active Crawl: china-coding-agents/mcp-china/dify）
 - `concepts/china-coding-agents.md` — **更新**: 7月セクション追加(Kimi K3正式リリース/2.8Tパラメータ/Claude Codeバックドア問題/Alibaba社内禁止/Qoder市場シェア47.6%/Qwen 3.8 Maxプレビュー/DeepSeek Harness Engineering/MiMo V2.5/GLM-5.2)
 - `concepts/mcp-china.md` — **更新**: 7月セクション追加(MCP Stateless最終仕様7/28リリース予定/45日間クロールギャップ)

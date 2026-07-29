@@ -1,9 +1,9 @@
 ---
 title: Qwen（通义千问）— 阿里云大模型旗舰
 created: 2026-04-17
-updated: 2026-07-24
-tags: [llm, model, china, open-source-ai, alibaba, qwen, agentic-coding, ai-infrastructure, qwen3.7, agent-era, qwen-image-3, tts]
-aliases: ["Qwen", "通义千问", "qwen", "Qwen3.5", "Qwen3-Coder", "Qwen3.6", "Qwen3.6-Plus", "Qwen3.6-27B", "Qwen3.6-35B-A3B", "Qwen3.7-Max", "Qwen3.7-Plus", "千问云", "Qianwen Cloud"]
+updated: 2026-07-29
+tags: [llm, model, china, open-source-ai, alibaba, qwen, agentic-coding, ai-infrastructure, qwen3.7, qwen3.8, agent-era, qwen-image-3, tts]
+aliases: ["Qwen", "通义千问", "qwen", "Qwen3.5", "Qwen3-Coder", "Qwen3.6", "Qwen3.6-Plus", "Qwen3.6-27B", "Qwen3.6-35B-A3B", "Qwen3.7-Max", "Qwen3.7-Plus", "Qwen3.8-Max", "千问云", "Qianwen Cloud", "千問办公"]
 source_lang: zh-CN
 ---
 
@@ -991,9 +991,30 @@ AlibabaはQwenを中核とした**フルスタックAI戦略**を展開：
 #### Qwen Code v0.17.x — 未リリース継続
 - v0.17.0-preview.0（5/29〜）が最新のまま、安定版リリースなし
 
+### 2026年7月下旬の新規動向
+
+#### Qwen 3.8 Maxプレビュー（2026年7月下旬）⭐
+- **2.4兆（2.4T）パラメータ** — 中国2番目の大型フラッグシップモデル
+- **ネイティブマルチモーダル対応** — 動画理解を含む
+- **オープンウェイト化の意向** — フロントスケールパラメータ+OSSの初の中国モデルの可能性
+- Zhihuコミュニティ反応: 「本质上是GLM-5.2的多模态版」「Kimi K3より速いが安価」「K3への対抗措置」
+- 価格: **$1.40/MTok** 混合レート（ChinAI #368確認、従来$2.50から引下げ）
+- 出典: Zhihu Frontier Weekly 7/27、ChinAI #368
+
+#### 千問办公（Qwen Office）— AI辦公参入（2026年7月24日）
+- 36kr報道: Alibaba AI辦公戦略が「智能体竞速」時代に突入
+- DingTalk・千問雲・Qwen Appを統合したAIオフィスエコシステム構築
+- wiki未記載の新規プロダクトカテゴリ
+
+#### Qwen3-Coder-30B-A3B-Instruct-AWQ（2026年7月25日）
+- V2EX: 無料提供される量子化モデルバリアント。Cursor autoモードとの比較報告
+
+#### QwenPaw公式ガイド（2026年7月27日）
+- Juejin: 「部署在你本地的专属数字员工」— 公式デプロイメントチュートリアル公開
+
 #### 注目すべきAbsent
-- Qwen3.8/4.0等の次世代モデルリリースなし
-- WAIC 2026（世界人工知能大会）では目立ったQwen発表なし
+- Qwen4.0等の次世代モデルリリースなし
+- WAIC 2026では目立ったQwen発表なし
 
 ### 外部ソース
 
