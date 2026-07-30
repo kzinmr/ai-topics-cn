@@ -33,6 +33,18 @@
 |
 |
 ||
+|## [2026-07-30] active-crawl | DeepSeek/Doubao/ChatGLM deepdive
+|
+|### Wiki更新
+|- `concepts/deepseek.md` — **更新**: Agent Harness内測開始(7/29/字母AI/製品化フェーズ移行)。V4-Pro vs GLM-5.1コーディング比較5日間(掘金7/25-29)。V4+Claude Code統合事例(掘金7/25-26)。Kimi K3 vs DeepSeek二強構図。V4.1未リリース(7/30現在)。updated 2026-07-30。
+|- `concepts/doubao.md` — **更新**: 7/25〜30期間中に主要新規ニュースなし(Kimi K3発表に注目集中)。火山引擎Kimi K3 Day0適配(掘金7/29)。VeOps CLI(掘金7/16)。有料サブスク安定期。updated 2026-07-30。
+|- `concepts/chatglm.md` — **更新**: GLM-5.1 vs DeepSeek-V4-Proコーディング比較5日間連続掘金トップ(7/25-29)。GLM-5.1降智問題の継続的議論(掘金7/24)。updated 2026-07-30。
+|
+|### hot-topics.yaml更新
+|- deepseek: last_crawled 2026-07-30、notes更新(Harness内測開始/V4-Pro比較/ Claude Code統合/Kimi K3競合)
+|- doubao: last_crawled 2026-07-30、notes更新(7/25-30静定期/火山引擎Day0適配/VeOps CLI)
+|- chatglm: last_crawled 2026-07-30、notes更新(GLM-5.1コーディング比較/降智問題議論)
+|
 |## [2026-07-29] active-crawl | Qwen/Kimi/CodingPlan deepdive
 |
 |### Wiki更新

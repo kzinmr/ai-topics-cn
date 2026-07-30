@@ -3,7 +3,7 @@ title: "ChatGLM (智谱清言) — Zhipu AI"
 type: concept
 tags: [LLM, chinese-ai, open-source, agent, zhipu, multimodal]
 created: 2026-04-20
-updated: 2026-07-24
+updated: 2026-07-30
 aliases: ["智谱清言", "GLM-4", "GLM-5", "GLM-5.1", "GLM-5.2", "GLM-5-Turbo", "Zhipu AI", "智谱AI"]
 source_lang: zh-CN
 ---
@@ -395,6 +395,19 @@ AutoClaw（澳龙）のiOSアプリ版が正式リリース。PC版のローカ�
 
 #### opencodex統合（2026年7月22日）
 - GLMがOpenCodeX対象モデルに追加（Juejin）
+
+### 2026年7月25日〜30日の新規動向
+
+#### GLM-5.1 vs DeepSeek-V4-Pro コーディング比較（7/25〜29、継続的）
+- 掘金「DeepSeek-V4-Pro 写代码到底行不行？我拿 GLM-5.1 跟它硬碰硬比了一輪」（孟健AI编程）
+- 5日間通じて掘金トップランキング入り（7/25: #3、7/26: #4、7/27: #2、7/28: #2、7/29: #3）
+- GLM-5.1がコーディング用途での有力選択肢として依然注目されていることを示す
+
+#### GLM-5.1 降智問題の継続的議論（7/24）
+- 掘金「GLM5.1 降智了？国模思考强度研究！」（甲维思）
+- GLM-5.1の思考品質変動に関するコミュニティ調査記事（7/24初掲載、継続的に議論）
+
+**出典**: Juejin 2026-07-24〜29
 
 ## 出典
 

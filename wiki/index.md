@@ -1,7 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-07-29
+最終更新: 2026-07-30
 エンティティ: 72, コンセプト: 131, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-07-30 Active Crawl: DeepSeek/Doubao/ChatGLM）
+- `concepts/deepseek.md` — **更新**: Agent Harness内測開始(7/29/字母AI/製品化フェーズ移行)。V4-Pro vs GLM-5.1コーディング比較5日間(掘金)。V4+Claude Code統合事例。Kimi K3 vs DeepSeek二強構図
+- `concepts/doubao.md` — **更新**: 7/25〜30期間中に主要新規ニュースなし(静定期)。火山引擎Kimi K3 Day0適配。VeOps CLI
+- `concepts/chatglm.md` — **更新**: GLM-5.1 vs DeepSeek-V4-Proコーディング比較5日間連続掘金トップ。GLM-5.1降智問題の継続的議論
+- `config/hot-topics.yaml` — **last_crawled/notes更新**: deepseek/doubao/chatglm 3トピック
 ### 本日更新（2026-07-29 Active Crawl: Qwen/Kimi/CodingPlan）
 - `entities/qwen.md` — **更新**: Qwen 3.8 Maxプレビュー(2.4T/マルチモーダル/オープンウェイト化/$1.40/MTok)。千問办公AI辦公参入。Qwen3-Coder-30B-AWQ。QwenPaw公式ガイド
 - `concepts/kimi.md` — **更新**: K3正式オープンソース化(7/27-28/2.8T/黄仁勳力挺/全球大使/開源vs閉源論争)。評価額$45B到達。OpenAI全線障害対比

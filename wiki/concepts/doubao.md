@@ -1,7 +1,7 @@
 ---
 title: "豆包 (Doubao) — ByteDance AIアシスタント"
 created: 2026-04-19
-updated: 2026-07-25
+updated: 2026-07-30
 tags: [llm, ai-assistant, video-generation, coding-assistant, china, bytedance]
 aliases: ["Doubao", "豆包", "豆包APP", "Doubao-Seed", "火星引擎", "Volcano Engine"]
 source_lang: zh-CN
@@ -519,6 +519,14 @@ QuestMobile 2026年3月データに基づき豆包のMAUは**3.45億**（国内A
   - DeepSeek IPOの対比で、豆包の**独立分拆（スピンオフ）論**が浮上
 
 **出典**: 36kr 2026-07-13, 07-15 [Tier-1]
+
+### 2026年7月25日〜30日の状況
+
+- 7/25〜7/30期間中に豆包/Doubaoに関する主要な新規ニュースは検出されず
+- 中国AI市場はKimi K3の発表・オープンソース化に注目が集中
+- 火山引擎がKimi K3のDay0適配を表明（7/29/掘金）— 自社モデルだけでなく外部モデルもサポートする多様化戦略
+- VeOps CLI（7/16/火山引擎Agent社区）— 可観測性・排障支援ツール
+- 有料サブスクは7/13に開始済み、運用開始後の安定期
 
 #### 11.5 寒武紀—豆包サプライチェーンの問題（7月9日）
 
