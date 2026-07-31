@@ -1,7 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-07-30
+最終更新: 2026-07-31
 エンティティ: 72, コンセプト: 131, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-07-31 Active Crawl: ChinaAIRegulation/TencentHunyuan/VibeCoding）
+- `concepts/china-ai-regulation.md` — **更新**: 47日間ギャップ後更新。AI擬人化互動服務管理暫行辦法7/15施行確認。信通院Claw類安全テスト(行為有害率36%)。Claude Codeバックドア問題(Alibaba禁止/CNNVD警告)。AIGC標識10ヶ月執行分析(Oxford)。Concordia AI年次レポート(規制パラダイムシフト/Agent安全27%)。第18批备案未発表
+- `entities/tencent-hunyuan.md` — **更新**: 胡瀚(マルチモーダル理解責任者)離職・起業(7/23/後任は前OpenAI研究員田永龍)。大厂AI Agent戦略収斂(7/24)。全球大モデル調用TOP5が全て中国製品(7/28)。Hy3.0正式版は未リリース
+- `concepts/vibe-coding-china.md` — **更新**: Karpathy Anthropic離職疑惑(7/26)。Kimi K3 OSS化(7/27-28)。DeepSeek Harness Engineering内測開始(7/29)。Claude Opus 5リリース(7/26)。Anthropic Skills 80%削除→Context Engineering宣言(7/29)。Claude Code之父Harness宣言(7/30)。GCC AIコード禁止(7/30)。GPT-5.6 HFゼロデイ攻撃(7/27-29)。AlphaFold解散→Anthropic転職(7/29-30)。全球調用Top5中国製品(7/28)
+- `config/hot-topics.yaml` — **last_crawled/notes更新**: china-ai-regulation/tencent-hunyuan/vibe-coding-china 3トピック
 ### 本日更新（2026-07-30 Active Crawl: DeepSeek/Doubao/ChatGLM）
 - `concepts/deepseek.md` — **更新**: Agent Harness内測開始(7/29/字母AI/製品化フェーズ移行)。V4-Pro vs GLM-5.1コーディング比較5日間(掘金)。V4+Claude Code統合事例。Kimi K3 vs DeepSeek二強構図
 - `concepts/doubao.md` — **更新**: 7/25〜30期間中に主要新規ニュースなし(静定期)。火山引擎Kimi K3 Day0適配。VeOps CLI

@@ -194,9 +194,9 @@ topics:
     wiki_pages:
       - entities/tencent-ai
       - entities/tencent-hunyuan
-    notes: "2026.07.27更新: 43日間クロールギャップ(6/14〜7/27)。Hy3.0正式版リリース未確認(5-6月予定 Was過期)。CodeBuddy市場シェアでAlibaba Qoderに後れ。新規目立った動きなし。2026.06.14更新: 混元がDeepSeek-V4にAI高考作文で満点評価(字母AI/36kr6/11)。6月中旬も姚順雨講演後の静定期。2026.06.07更新: 姚順雨初の公の場での肉声講演(6/5/腾讯云AI下半场/15の核心見解/AI下半場本質・Context優位・Co-Design・AGI組織構築)。2026.06.03更新: 新規情報なし(前回5/29から目立った動きなし/Hy3.0正式版リリース未確認)。2026.05.29更新: Hy-Memory記憶システムリリース(5/28/長期記憶/検索強化生成/API提供)。旧モデル廃止通知(5/22/hunyuan-lite等複数モデル2026年夏終了/Hy3.0正式版へ統合)。元宝微信内リマインダー機能追加(5/24)。姚順雨88日間再建物語(TMTpost/5月)。2026.05.22更新: 腾讯云AI产业应用峰会(5/21)で大規模発表—TurboS(Arena全球8位/中国2位)/T1/T1-Vision/Hunyuan Voice(端到端音声/1.6秒応答)/Hy-MT2翻訳33言語OSS/知識引擎→智能体開発平台全面刷新。Hy3 Preview OpenRouter4週連続1位(5/11-17週2.66兆tokens/+210%)。混元Image 2.0(5/16/ミリ秒応答リアルタイム画像生成)。元宝WeChat聊天記録要約(5/13/微信統合第一歩)。Q1決算売上1,965億元(+9%)/AI投資370億元。Hy3.0正式版5-6月予定継続。2026.05.09更新: Hy3 Previewが5/7週のOpenRouter週間ランキングで再び総合API呼び出し量1位（Hy2比10倍超/CodeBuddy・WorkBuddy16.5倍急増）。Tencent株価3%超上昇。高盛Buy評価・目標株価HK$700。姚順雨の実業務重視哲学が裏付け。Hy3.0正式版5-6月リリース予定。前回(5/4)カバー済みの数字中国建設峰会展示や安全認証は継続中。"
+    notes: "2026.07.31更新: 胡瀚(マルチモーダル理解責任者)離職・起業(7/23/後任は前OpenAI研究員田永龍/世界模型特化へ転換)。大厂AI Agent戦略収斂(7/24/腾讯矩阵戦略維持/阿里巴巴入口集約)。全球大モデル調用TOP5が全て中国製品(7/28/MiMo-V2.5が1位)。Hy3.0正式版は7/31現在も未リリース。CodeBuddy市場シェアでQoderに後れ。2026.07.27更新: 43日間クロールギャップ。Hy3.0正式版未確認。新規目立った動きなし。2026.06.14更新: 混元がDeepSeek-V4にAI高考作文で満点評価。2026.06.07更新: 姚順雨初の肉声講演。2026.05.29更新: Hy-Memory記憶システムリリース。旧モデル廃止通知。元宝微信内リマインダー。wiki更新済み。"
     added: 2026-04-29
-    last_crawled: 2026-07-27
+    last_crawled: 2026-07-31
 
   # =========================================================
   # 2. Chinese AI Agent Ecosystem (中国AIエージェント)
@@ -378,9 +378,9 @@ topics:
       - "2026年高考 AI使用禁止 教育部"
     wiki_pages:
       - concepts/china-ai-regulation
-    notes: "2026.06.14更新: 新規情報なし（6/7〜6/13 digestに規制関連記事なし/引き続き静観期）。2026.05.29更新: 光明日报AI訓練データ著作権議論(5/28/公開データ使用解釈/管理規範策定急務)。国家网信办《人工智能伦理安全指引1.0》応用細則公表(5/19-26/2万企業対象/内部倫理審査義務化)。教育部2026年高考AI使用禁止措置(5/25/作弊認定/大学入試大規模AI不正防止)。2026.05.23更新: 《人工智能应用伦理安全指引1.0》(5/19/TC260発行/中国網絡文明大会/法律+倫理の双軌機制)。国家発改委AI立法研究開始+「人工智能+」配套文件策定中(5/22/NDRC公式発表/CAC+MIIT+NDRCの3省庁AI立法関与)。工信部AI科技倫理審査先導計画(5/9通知/5/20〆切/6/1〜11/30実施)。ATH 1.0信通院+Tencent+Huawei等(5/7/MCP/A2A上位信頼層/オープンソース)。清朗行動執行: 剪映/即夢AI/猫箱摘発(4/28/字节跳动/Bytedance/初の大手摘発)。全国初AI代写种草笔记判決(5/12/杭州中院/10万元賠償/四要素判定法)。wiki更新済み(china-ai-regulation.md)。"
+    notes: "2026.07.31更新: AI擬人化互動服務管理暫行辦法7/15施行確認(実施細則未公表)。信通院Claw類安全テスト(行為有害率36%/ChinAI#365)。Claude Codeバックドア問題(Alibaba社内禁止7/3/CNNVD警告7/8/147ドメイン暗号化)。AIGC標識10ヶ月執行分析(Oxford/Geopolitechs/7/13)。Concordia AI年次レポート(7/27/規制パラダイムシフト/Agent安全論文27%/企業透明性低い)。第18批备案未発表。清朗行動新規執行なし。2026.06.14更新: 新規情報なし。2026.05.29更新: 光明日报AI訓練データ論。伦理指引1.0。高考AI制限。wiki更新済み。"
     added: 2026-04-17
-    last_crawled: 2026-06-14
+    last_crawled: 2026-07-31
 
   # =========================================================
   # 5. Chinese-Origin Frameworks & Tools (中国発フレームワーク)
@@ -504,9 +504,9 @@ topics:
       - "Anthropic 80% AI自写 コード Mythos 5"
     wiki_pages:
       - concepts/vibe-coding-china
-    notes: "2026.07.26更新: SpaceXがCursorを$600億で買収合意(WSJ6/16)→SpaceX株価$6,000億下落(Forbes6/18)。Claude Mythos「安全版」一般公開(The Guardian6/9)+Fable 5リリース(The Verge6/9)+米政府Mythos公開許可(CNBC6/26)。DeepSWEベンチマークでGPT-5.5首位復帰+Claude Opusベンチマーク穴悪用発覚(VentureBeat5/27)。Mythos SWE-bench論に致命的エラー指摘(Philosophical Hacker4/28)。Boris Cherny「Vibe Coding」嫌悪宣言(Business Insider5/6)。DeepSeek Reasonix発表(5/24)。Cursor年間売上$20億到達(Bloomberg3/2)。2026.06.09更新: Claude Code 100万行リライト事件(Bun/9日間/6755コミット/99.8%通過率/品質論争)。Claude Code父+龙虾创始人同時「新パラダイム」宣言(プロンプトエンジニアリング終焉/Agent Orchestration時代)。Anthropic内製コード80%AI生成/Mythos 5トレーニング52倍高速化。"
+    notes: "2026.07.31更新: Karpathy Anthropic離職疑惑(7/26/LinkedIn修改発見)。Kimi K3 OSS化(7/27-28/2.8T/黄仁勳力挺)。DeepSeek Harness Engineering内測開始(7/29/Model+Harness=Agent)。Claude Opus 5リリース(7/26/Fable5半額)。Anthropic Skills 80%削除→Context Engineering宣言(7/29)。Claude Code之父「Harness保質期半年」(7/30)。硅谷反Anthropic(7/30/契約者強制封印)。GCC AI生成コード禁止(7/30)。MCP 4億DL(7/29)。GPT-5.6 HFゼロデイ攻撃(7/27-29)。全球調用Top5が全て中国製品(7/28)。AlphaFoldチーム解散→Anthropic転職(7/29-30)。OpenAI HW路線図リーク(7/29)。2026.07.26更新: SpaceX Cursor買収。Mythos安全版公開。Fable 5。2026.06.09更新: Claude Code 100万行リライト。新パラダイム宣言。Anthropic 80%内製コード。wiki更新済み。"
     added: 2026-04-17
-    last_crawled: 2026-07-26
+    last_crawled: 2026-07-31
 
   - slug: china-ai-coding-assistants
     title: "Chinese AI Coding Assistants (国产AI编程助手)"

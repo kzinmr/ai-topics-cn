@@ -33,6 +33,20 @@
 |
 |
 ||
+||
+||## [2026-07-31] active-crawl | ChinaAIRegulation/TencentHunyuan/VibeCoding deepdive
+||
+||### Wiki更新
+||- `concepts/china-ai-regulation.md` — **更新**: 47日間ギャップ後更新。AI擬人化互動服務管理暫行辦法7/15施行確認。信通院Claw類安全テスト(行為有害率36%)。Claude Codeバックドア問題(Alibaba禁止/CNNVD警告)。AIGC標識10ヶ月執行分析(Oxford)。Concordia AI年次レポート(規制パラダイムシフト)。updated 2026-07-31。
+||- `entities/tencent-hunyuan.md` — **更新**: 胡瀚(マルチモーダル理解責任者)離職・起業(7/23/後任は前OpenAI研究員田永龍)。大厂AI Agent戦略収斂(7/24)。全球大モデル調用TOP5が全て中国製品(7/28)。Hy3.0正式版は未リリース。updated 2026-07-31。
+||- `concepts/vibe-coding-china.md` — **更新**: Karpathy Anthropic離職疑惑(7/26)。Kimi K3 OSS化(7/27-28/2.8T)。DeepSeek Harness Engineering内測開始(7/29)。Claude Opus 5リリース(7/26)。Anthropic Skills 80%削除→Context Engineering宣言(7/29)。Claude Code之父Harness宣言(7/30)。GCC AIコード禁止(7/30)。GPT-5.6 HFゼロデイ攻撃(7/27-29)。AlphaFold解散→Anthropic転職(7/29-30)。updated 2026-07-31。
+||
+||### hot-topics.yaml更新
+||- china-ai-regulation: last_crawled 2026-07-31、notes更新(擬人化弁法施行/Claw安全テスト/Claude Codeバックドア/AIGC標識分析/Concordia AIレポート)
+||- tencent-hunyuan: last_crawled 2026-07-31、notes更新(胡瀚離職/Agent戦略収斂/全球調用Top5中国製品)
+||- vibe-coding-china: last_crawled 2026-07-31、notes更新(Karpathy離職疑惑/K3 OSS/Harness内測/Opus 5/Skills 80%削除/GCC禁止/HF攻撃)
+||
+
 |## [2026-07-30] active-crawl | DeepSeek/Doubao/ChatGLM deepdive
 |
 |### Wiki更新
