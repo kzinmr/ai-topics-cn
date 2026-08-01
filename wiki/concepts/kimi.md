@@ -1,7 +1,7 @@
 ---
 title: "Kimi (月之暗面) — Moonshot AIの旗艦AIアシスタント"
 created: 2026-04-22
-updated: 2026-07-29
+updated: 2026-08-01
 tags: [llm, moonshot, long-context, agent, open-source, chinese-llm, kimi-k3, kimi-k2-7, k3-opensource]
 aliases: ["Kimi", "月之暗面", "Moonshot AI", "Kimi Chat", "Kimi K2"]
 source_lang: zh-CN
@@ -640,3 +640,36 @@ OpenAI Codexでサードパーティモデル（DeepSeek、GLM、Kimi）を使�
 #### 36kr深度分析
 - 「Kimi带起的这场竞赛，到不了AGI」（7/27）: K3開源競争がAGI到達に寄与するか疑問視
 - 出典: [36kr](https://36kr.com/p/3913825502762885)
+
+### 2026年7月29日〜8月1日
+
+#### K3技術インフラ深掘り（2026年7月30日）
+- 36kr: 「Kimi K3公开了不少秘密，但最重要的Infra却很难抄」
+- K3の技術詳細は公開されたが、インフラ（Infra）の知見は模倣が困難
+- 世界初のオープン3Tクラスモデルとしてのインフラ的意義
+- 出典: [36kr](https://36kr.com/p/3918081073262209)
+
+#### K3「Affordable Luxury」価格戦略分析（2026年7月27日）
+- ChinAI Newsletter: 国内モデル価格上限に锚定した「手頃な贅沢品」戦略
+- 混合レート$2.30/MTok、キャッシュミス20 RMB/MTok、キャッシュヒット2 RMB/MTok
+- K2.6比で出力価格が3.5倍以上に上昇
+- 中国大モデルを「激しい価格競争」から「価値貨幣化」へ動かす戦略
+- 技術的課題: 思考履歴への感度、過剰な積極性（excessive proactivity）
+- 出典: [ChinAI #368](https://open.substack.com/pub/chinai/p/chinai-368-the-affordable-luxury)
+
+#### 火山引擎veStack K3 Day0適配（2026年7月29日）
+- 掘金: 「火山引擎混合云 veStack 智算平台 Day0 适配 Kimi K3」
+- K3リリースと同時に対応完了
+- 出典: [掘金](https://juejin.cn/post/7667849988994613282)
+
+#### コミュニティ反応まとめ（2026年7月下旬）
+| プラットフォーム | 評価傾向 |
+|-----------------|----------|
+| 掘金 | 混合的 — 1万行リファクタ成功/修Bug越多越多 |
+| V2EX | 算力不足・停售への不満 |
+| Zhihu | 開源vs閉源論争の中心 |
+
+- 「Kimi K3竟是GPT-2的22580倍」（掘金 7/29）
+- 「Kimi K3太牛了！但老板说API太贵」（掘金 7/29）
+- 評価額$45B（3300億元）到達（36kr 7/24）
+- 出典: [36kr](https://36kr.com/p/3909220125791363)

@@ -34,6 +34,19 @@
 |
 ||
 ||
+||
+|||## [2026-08-01] active-crawl | Qwen/Kimi/Yi deepdive
+|||
+|||### Wiki更新
+|||- `entities/qwen.md` — **更新**: 7/29〜8/1にQwenに関する新的な主要ニュースなし。Qwen 3.8 Maxプレビュー・千問办公等は既に記録済み。updated 2026-08-01。
+|||- `concepts/kimi.md` — **更新**: K3技術インフラ深掘り(36kr7/30/Infra模倣困難)。K3「Affordable Luxury」価格戦略分析(ChinAI#368/7/27)。火山引擎veStack K3 Day0適配完了。評価額$45B到達確認。updated 2026-08-01。
+|||- `concepts/yi.md` — **更新**: Bloomberg専路でIPO計画正式表明(7/27/2027年黒字化・香港上場明言)。政府向け収益化への戦略転換(36kr6/1)。阿里雲へのチーム統合完了(2026年1月)。業界ポジション再評価(B端特化/Palantir対标)。updated 2026-08-01。
+|||
+|||### hot-topics.yaml更新
+|||- qwen: last_crawled 2026-08-01、notes更新(7/29〜8/1に新規ニュースなし/既存記録確認済み)
+|||- kimi: last_crawled 2026-08-01、notes更新(K3インフラ深掘り/Affordable Luxury戦略/veStack Day0適配/評価額$45B確認)
+|||- yi: last_crawled 2026-08-01、notes更新(IPO計画正式表明/政府向け収益化転換/阿里雲チーム統合/B端特化再定位)
+|||
 ||## [2026-07-31] active-crawl | ChinaAIRegulation/TencentHunyuan/VibeCoding deepdive
 ||
 ||### Wiki更新

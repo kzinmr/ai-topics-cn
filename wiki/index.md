@@ -1,7 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-07-31
+最終更新: 2026-08-01
 エンティティ: 72, コンセプト: 131, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-01 Active Crawl: Qwen/Kimi/Yi）
+- `entities/qwen.md` — **更新**: 7/29〜8/1にQwenに関する新的な主要ニュースなし。既存記録確認済み
+- `concepts/kimi.md` — **更新**: K3技術インフラ深掘り(Infra模倣困難)。K3「Affordable Luxury」価格戦略分析。火山引擎veStack K3 Day0適配完了。評価額$45B到達確認
+- `concepts/yi.md` — **更新**: Bloomberg専路でIPO計画正式表明(2027年黒字化・香港上場)。政府向け収益化への戦略転換。阿里雲チーム統合完了。業界ポジション再評価
+- `config/hot-topics.yaml` — **last_crawled/notes更新**: qwen/kimi/yi 3トピック
 ### 本日更新（2026-07-31 Active Crawl: ChinaAIRegulation/TencentHunyuan/VibeCoding）
 - `concepts/china-ai-regulation.md` — **更新**: 47日間ギャップ後更新。AI擬人化互動服務管理暫行辦法7/15施行確認。信通院Claw類安全テスト(行為有害率36%)。Claude Codeバックドア問題(Alibaba禁止/CNNVD警告)。AIGC標識10ヶ月執行分析(Oxford)。Concordia AI年次レポート(規制パラダイムシフト/Agent安全27%)。第18批备案未発表
 - `entities/tencent-hunyuan.md` — **更新**: 胡瀚(マルチモーダル理解責任者)離職・起業(7/23/後任は前OpenAI研究員田永龍)。大厂AI Agent戦略収斂(7/24)。全球大モデル調用TOP5が全て中国製品(7/28)。Hy3.0正式版は未リリース

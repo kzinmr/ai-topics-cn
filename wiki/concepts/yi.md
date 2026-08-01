@@ -3,7 +3,7 @@ title: "Yi（零一万物）— 01.AI"
 type: concept
 tags: [LLM, chinese-ai, open-source, MoE, enterprise-ai]
 created: 2026-04-23
-updated: 2026-06-09
+updated: 2026-08-01
 source_lang: zh-CN
 ---
 
@@ -323,8 +323,34 @@ source_lang: zh-CN
 - 李開復博士の国際的な人脈が海外展開を加速
 
 ### 企業向けAI Agent（万智平台）への戦略シフト
-
 FDE（Frontier Deployment Engineer）モデルを採用。「コンパニオン型」のエンタープライズ顧客への手厚い対応を実施。Alibaba Cloudのインフラへの依存が戦略的リスクとも指摘される。
+
+### 2026年6月〜8月の最新動向
+
+#### 政府向け収益化への戦略転換（2026年6月1日）
+- 36kr: 「曾经最像"中国OpenAI"的公司，开始赚政府的钱」
+- 零一万物が「中国のOpenAI」から政府向けAIソリューション収益化へ転換
+- AI 1.0で十分理解できていないうちにAI 2.0が到来したとの評価
+- 出典: [36kr](https://36kr.com/p/3834301785169921)
+
+#### IPO計画の正式表明（2026年7月27日）⭐
+- 36kr: 「李开复向彭博社摊牌：明年盈利，2027港交所见」
+- Bloomberg専路で**2027年黒字化目標**を正式表明
+- **2027年 香港証券取引所上場**を明言
+- 「中国のOpenAI」から「中国のPalantir」への完全転換を宣言
+- 「換道三年」（ルート変更3年）との位置づけ
+- 出典: [36kr](https://36kr.com/p/3913256417121672)
+
+#### 阿里雲へのチーム統合完了（2026年1月）
+- 2025年の深刻な人材流出の後、2026年1月に大部分の事前学習チームとAI Infraチームを阿里雲の共同実験室に統合
+- 超大基模（超大規模モデル）の追求を完全に放棄
+- 李開復: 「現在の段階では超大基模事前学習はスタートアップにとってROIが極めて低い」
+- 出典: Substack (2026-07-06)
+
+#### 業界ポジション再評価
+- 「六小虎」時代の終了が確定（零一万物と百川智能が脱落）
+- 新たな「AGI五小龙」（智譜AI、MiniMax、月之暗面、階躍星辰、面壁智能）が登場
+- 零一万物は**B端（企業向け）特化・Palantir対标**のポジションで再定位
 
 ## 関連エンティティ
 
@@ -333,9 +359,13 @@ FDE（Frontier Deployment Engineer）モデルを採用。「コンパニオン�
 - [[concepts/china-local-deployment]] — 国産モデルのローカル展開
 - [[concepts/china-ai-agent-ecosystem]] — 中国AI Agent生態系
 
-## 出典
+### 外部ソース
 
-### 基本ソース
+#### 2026年6月〜8月の最新動向
+- [曾经最像"中国OpenAI"的公司，开始赚政府的钱 (36kr)](https://36kr.com/p/3834301785169921) — 政府向けAIソリューション収益化への転換報道（6/1）
+- [李开复向彭博社摊牌：明年盈利，2027港交所见 (36kr)](https://36kr.com/p/3913256417121672) — Bloomberg専路でIPO計画正式表明（7/27）: 2027年黒字化目標・2027年香港証券取引所上場を明言
+
+#### 基本ソース
 - [Yi 大模型全面解析：零一万物开源编程利器与生态布局 (AI问答站)](https://ai.lansai.wang/103222.html)
 - [01.AI / 零一万物 Deep Research Report (Mapping Studio)](https://mappingstudio.ai/companies/01ai/report)
 - [01.AI Official Website](https://www.01.ai/)
