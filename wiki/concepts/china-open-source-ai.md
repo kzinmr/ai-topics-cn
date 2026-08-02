@@ -1,7 +1,7 @@
 ---
 title: "中国开源AI社区 — ModelScope、HuggingFace中国、Giteeエコシステム"
 created: 2026-04-19
-updated: 2026-07-26
+updated: 2026-08-02
 tags: [open-source, community, china, modelscope, huggingface, gitee]
 aliases: ["中国开源AI", "开源LLM社区", "ModelScope魔搭", "Gitee AI"]
 source_lang: zh-CN
@@ -321,3 +321,31 @@ Baiduが生成式AI大会（Create 2026）でERNIE 5.1を発表。完全オー�
 - **AI仮想撮影所**: 中国国内でAIを活用したバーチャル映画撮影所が実運用開始（量子位2026-07）
 
 - **出典**: [量子位](https://www.qbitai.com) [T3]（2026年6月〜7月）
+
+## 2026年7月26日〜8月2日更新 — Kimi K3 OSS化・DeepSeek V4正式版・中国AI TOP5独占
+
+### 1. Kimi K3 オープンソース化（7月26〜28日）
+月之暗面（Moonshot AI）が**Kimi K3**をオープンソース化。2.8Tパラメータの大規模モデルで、NVIDIA CEO黄仁勳（Jensen Huang）が力挺（支持）を表明。評価額が**$45B（450億ドル）**に到達した。ただし、計算資源不足により**新規会員の受入を停止**する事態が発生。
+
+### 2. DeepSeek V4 正式版＆V4-Flash API公測（7月31日）
+DeepSeekが**V4正式版**と**V4-Flash**のAPI公開テスト（公測）を開始。GPT-5.6 Lunaに対して**$0.2/MTokの値下げ**を実施し、価格競争を激化。V4 Preview（4月24日公開）からの正式版移行が完了。
+
+### 3. Qwen 3.8 Maxプレビュー（7月下旬）
+Alibaba Qwenチームが**Qwen 3.8 Maxプレビュー**を公開。2.4Tパラメータ、ネイティブマルチモーダル対応。**オープンウェイト化意向**を表明しており、今後のOSS化が注目される。API価格は**$1.40/MTok**。
+
+### 4. SenseNova U1.5-Lite-Preview（7月31日）
+商湯科技（SenseTime）が**SenseNova U1.5-Lite-Preview**を公開。4K画像生成対応、ネイティブ画像編集機能を搭載。マルチモーダル分野での競争力を強化。
+
+### 5. 中国AIモデルAPI呼び出し量TOP5独占（7月28日）
+中国AIモデルの週間API呼び出し量ランキングで**中国モデルがTOP5を独占**。其中、**小米（Xiaomi）MiMo-V2.5が1位に登頂**。中国AIエコシステムの国内シフトが加速している象徴的データ。
+
+### 6. 比亜迪（BYD）AIチーム初公開（7月29日）
+自動車大手**比亜迪（BYD）**がAI研究チームを初めて公開。チームメンバーは**哈爾濱工科大学（HIT）ロボット工学科出身者**が中心。大モデル初リリースながら**SOTA（State-of-the-Art）**を達成し、自動車AI分野への参入が本格化。
+
+### 7. 復旦大学NLP 80頁Agent綜述（7月31日〜8月1日）
+復旦大学NLPチームが**AI Agentに関する80頁の包括的サーベイ論文**を発表。中国AI Agent研究の学術的基盤を強化する重要な成果。
+
+### 8. agentOS — AI Agentランタイム（8月1日）
+**agentOS**が発表。AI Agentの実行ランタイムとして、**冷起動が92倍高速化**、**メモリ使用量が47倍削減**。Agentのインフラ層における重要な進歩。
+
+**出典**: 量子位・掘金・IT之家など（2026年7月26日〜8月2日）

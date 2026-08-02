@@ -251,9 +251,9 @@ topics:
       - "Hermes Agent OpenRouter OpenClaw 逆転 2026"
     wiki_pages:
       - entities/openclaw
-    notes: "2026.07.26更新: リリース復活確認(v2026.7.1安定版7/13/v2026.7.2-beta.3 7/18)。GitHub Stars 384K(+10K/5週)。Control UI全面刷新+公式アプリ重大更新+GPT-5.6対応。openclawai.org.cn中国公式ブランドサイト登録。競合: Hermes Agentトークン消費逆転継続/阿里悟空企業セキュリティ優位。12類安全隐患・ClawHub悪意スキル11.3%問題継続。Microsoft Build Windows版+百度APP統合。成熟期安定成長フェーズ突入。2026.06.09更新: 6月冷却期突入—新リリースゼロ/GitHub Stars成長停滞(376K)/コミュニティ話題性低下(V2EX小龙虾为什么不火了)/競合(阿里悟空・Hermes Agent)圧力。Microsoft Build 2026でWindows版「龙虾」発表(6/3/16億ユーザー)。百度APP統合継続。36kr(6/8)でPeter Steinbergerが新パラダイム提唱。"
+    notes: "2026.08.02更新: 本期間OpenClaw固有リリースなし(v2026.7.1安定版7/13/v2026.7.2-beta.3 7/18)。GitHub Stars 384,136(変動なし)。Harness限界論(Claude Code之父「Harness保質期半年」/36kr7/30)。三大Agent Token効率比較(最大30倍差/機器之心7/31)。DeepSeek Harness内参開始(7/29)。memU共通メモリ層(V2EX7/30/500行)。Agent安全性問題(OpenAI 108時間制御丧失/7/31)。2026.07.26更新: リリース復活(v2026.7.1安定版7/13/v2026.7.2-beta.3 7/18)。GitHub Stars 384K(+10K/5週)。Control UI全面刷新+公式アプリ更新+GPT-5.6対応。openclawai.org.cn中国公式ブランド。12類安全隐患継続。"
     added: 2026-05-01
-    last_crawled: 2026-07-26
+    last_crawled: 2026-08-02
 
   - slug: coze
     title: "Coze (扣子) — ByteDance Agent Platform"
@@ -318,9 +318,9 @@ topics:
       - "TriAttention v0.2.0 GA"
     wiki_pages:
       - concepts/china-local-deployment
-    notes: "2026.06.10更新: Odysseus AIローカルワークプレイス登場(PewDiePie製)。国産GPU本地部署議論活性化(200万元予算/中星微技術)。MIT Attention Matching 50倍显存削減。国産4B認知モデル端側デプロイ(GPT-5.4級)。DeepSeek自社GW級データセンター建設開始。Qwen3.6-27B vs V4 Flash比較議論。2026.06.02更新: CANN生態系成熟(鲲鹏昇腾开发者大会/70+大模型Day-0)。NVIDIA VR200冷却遅延2ヶ月(中国チップ依存加速)。DeepSeek無料版制限強化(ローカル移行動機)。MiniMax M3発表。Qwen3.7-Max無料開放。百度APP×OpenClaw統合。"
+    notes: "2026.08.02更新: Kimi K3 OSS化(2.8T/KDA+AttnRes/Stable LatentMoE/MXFP4-MXFP8/1M ctx/$0.30 MTok/64 accelerator推奨)。DeepSeek V4 Flash正式版(7/31)＆V4正式版。梁文鋒秘録(GPU ~2万/昇騰950=GB300の1/4/CUDAモート崩壊論)。ローカルデプロイコスト論争(3000万元必要/36kr)。火山引擎veStack K3 Day0適配。国産大模型市場構造変化(4つのClaudeキラー/LLM Space OSS化)。2026.06.10更新: Odysseus AIローカルワークプレイス。国産GPU本地部署議論(200万元)。MIT Attention Matching 50倍削減。4B認知モデル端側。DeepSeek GW級DC建設。"
     added: 2026-04-17
-    last_crawled: 2026-07-24
+    last_crawled: 2026-08-02
 
   - slug: censorship-bypass
     title: "Censorship Bypass & Uncensored Models (审查绕过/去审查模型)"
@@ -623,6 +623,6 @@ topics:
       - "LingBot VLA embodied AI"
     wiki_pages:
       - concepts/china-open-source-ai
-    notes: "2026.07.26更新: UniWorld-View(PKU/YuanGroupワールドモデル/Fei-Fei Liリーダーボード1位/昇腾NPU対応/量子位7月報道)。Agent成熟度議論(北京vs杭州/産業応用派vs学術研究派)。AI仮想撮影所実運用開始(量子位7月)。6月〜7月は検索エンジン障害のため限定的。2026.06.06更新: 新規情報なし（Exa SDK非稼働/18日間ギャップ/ローカルクロールデータに該当記事なし/MiniCPM-V/Ring-2.6/灵玑OS/LingBot等の進展確認不可）。2026.05.19更新: MiniCPM-V 4.6公開(面壁智能/OmniMM-Agentモード/ChatGPT音声対抗/ベンチマーク上位)。蚂蚁LingBot-VLAツールチェーンオープンソース化(具現化AI/英偉達/清華大学)。Ring-2.6-1Tの特定SCOPE制限モデルオープンソース公開(5/16/昇腾対応/COIG-P个人情報削除版)。LingJi OS(灵玑OS)中国初のオープンソースAgent基盤OS(中科曙光/ソフトウェア定義Agent)。"
+    notes: "2026.08.02更新: Kimi K3 OSS化(2.8T/黄仁勳力挺/$45B/計算資源危機)。DeepSeek V4正式版＆V4-Flash API(7/31/GPT-5.6 Luna$0.2 MTok値下げ)。Qwen 3.8 Maxプレビュー(2.4T/マルチモーダル/オープンウェイト化意向/$1.40 MTok)。SenseNova U1.5-Lite-Preview(7/31/4K生成)。中国AIモデルAPI TOP5独占(MiMo-V2.5 1位/7/28)。比亜迪AIチーム初公開(7/29/SOTA)。復旦80頁Agent綜述。agentOS(冷起動92倍/メモリ47倍削減)。2026.07.26更新: UniWorld-View(PKU/Fei-Fei Liリーダーボード1位)。Agent成熟度議論。AI仮想撮影所。"
     added: 2026-04-17
-    last_crawled: 2026-07-26
+    last_crawled: 2026-08-02

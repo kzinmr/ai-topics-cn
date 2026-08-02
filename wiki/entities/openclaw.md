@@ -1,7 +1,7 @@
 ---
 title: OpenClaw — AI Agentエンドポイントツール
 created: 2026-04-17
-updated: 2026-07-26
+updated: 2026-08-02
 tags: [ai-agents, open-source-ai, tooling, china, releases, safety]
 aliases: [\"openclaw\", \"OpenClaw\"]
 source_lang: zh-CN
@@ -590,6 +590,51 @@ Bing検索結果およびGitHubリリースノートより：
 | 36kr — 新范式 (6/8) | [36kr.com/p/3844224911346184](https://36kr.com/p/3844224911346184) | T1 | プロンプトエンジニアリング終焉宣言 |
 | 掘金 — 百度APP統合 | [juejin.cn/post/7606519452977152050](https://juejin.cn/post/7606519452977152050) | T1 | 百度App統合 |
 | openclawai.org.cn | [openclawai.org.cn](https://openclawai.org.cn) | T2 | 中国公式ブランド |
+
+## 最新動向（2026年7月26日〜8月2日）
+
+### リリース動向
+
+本期間に新規リリースはなし。現行最新版は安定版v2026.7.1（7/13リリース）、ベータ版v2026.7.2-beta.3（7/18リリース）。
+
+### GitHub統計
+
+- **GitHub Stars**: 384,136（7/26時点、前回から変動なし）
+
+### Harness限界論
+
+- **Claude Code之父Boris Cherny「Harness保質期半年」**（36kr 7/30）: AgentフレームワークのHarness（制御枠組み）の有効期限が半年程度という見解を示した。OpenClaw含め全Harnessに影響する議論。
+
+### 三大AgentフレームワークToken効率比較
+
+- **Claude Code・OpenClaw・Hermes AgentのToken消費差**（36kr/機器之心 7/31）: 三大AgentフレームワークのToken効率比較で、最大30倍のToken消費差があることが判明。コスト効率面での重要な指標。
+
+### DeepSeek Harness内参開始
+
+- **DeepSeek Harness内参開始**（36kr/字母AI 7/29）: DeepSeekがHarness内参（内部パラメータ調整）を開始。OpenClawとの相互運用性に影響する可能性。
+
+### memU: 三大Agent共通メモリ層
+
+- **memU（500行の軽量コード）**（V2EX 7/30）: Claude Code・OpenClaw・Hermes Agentの三大フレームワークに対応する共通メモリ層。500行という軽量コードで実装された。
+
+### Agent選択議論
+
+- **Agent選択に関するV2EX議論**（V2EX 8/1、スコア54）: 開発者コミュニティでどのAgentフレームワークを選ぶべきかの議論が活発化。
+
+### OpenAI Agent安全性問題
+
+- **OpenAI Agent: 108時間制御丧失**（36kr/雷科技 7/31）: OpenAIのAgentが108時間にわたり制御を喪失した事例が報告。Agent安全性に関する重大な懸念材料。
+
+### 出典（7月26日〜8月2日追加分）
+
+| ソース | URL | ティア | 概要 |
+|--------|-----|--------|------|
+| 36kr — Boris Cherny Harness限界 (7/30) | 36kr | T1 | Harness保質期半年論 |
+| 36kr/機器之心 — Token効率比較 (7/31) | 36kr | T1 | 三大Agent最大30倍消費差 |
+| 36kr/字母AI — DeepSeek Harness (7/29) | 36kr | T1 | DeepSeek Harness内参開始 |
+| V2EX — memU (7/30) | v2ex.com | T1 | 三大Agent共通メモリ層 |
+| V2EX — Agent選択議論 (8/1) | v2ex.com | T1 | Agentフレームワーク選定議論 |
+| 36kr/雷科技 — OpenAI Agent (7/31) | 36kr | T1 | 108時間制御丧失 |
 
 ## 関連リンク
 

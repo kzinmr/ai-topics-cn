@@ -1,7 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-08-01
+最終更新: 2026-08-02
 エンティティ: 72, コンセプト: 131, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-02 Active Crawl: ChinaLocalDeployment/OpenClaw/ChinaOpenSourceAI）
+- `concepts/china-local-deployment.md` — **更新**: Kimi K3 OSS化(2.8T/KDA+AttnRes/MXFP4-MXFP8/1M ctx)。DeepSeek V4 Flash正式版＆V4正式版(7/31)。梁文鋒秘録(GPU ~2万/昇騰950=CGB300の1/4/CUDAモート崩壊論)。ローカルデプロイコスト論争(3000万元必要)。火山引擎veStack K3 Day0適配。9日間ギャップ後更新
+- `entities/openclaw.md` — **更新**: 7/26-8/2にOpenClaw固有リリースなし。Harness限界論(Claude Code之父「保質期半年」)。三大Agent Token効率比較(最大30倍差)。DeepSeek Harness内参開始。memU共通メモリ層。Agent安全性問題
+- `concepts/china-open-source-ai.md` — **更新**: Kimi K3 OSS化(2.8T/黄仁勳力挺/$45B)。DeepSeek V4正式版＆V4-Flash API。Qwen 3.8 Maxプレビュー(2.4T)。SenseNova U1.5-Lite-Preview。中国AIモデルAPI TOP5独占。比亜迪AIチーム初公開。agentOS
+- `config/hot-topics.yaml` — **last_crawled/notes更新**: china-local-deployment/openclaw/china-open-source-ai 3トピック
 ### 本日更新（2026-08-01 Active Crawl: Qwen/Kimi/Yi）
 - `entities/qwen.md` — **更新**: 7/29〜8/1にQwenに関する新的な主要ニュースなし。既存記録確認済み
 - `concepts/kimi.md` — **更新**: K3技術インフラ深掘り(Infra模倣困難)。K3「Affordable Luxury」価格戦略分析。火山引擎veStack K3 Day0適配完了。評価額$45B到達確認

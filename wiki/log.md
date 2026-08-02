@@ -35,6 +35,20 @@
 ||
 ||
 ||
+|
+|
+|## [2026-08-02] active-crawl | ChinaLocalDeployment/OpenClaw/ChinaOpenSourceAI
+|
+|### Wiki更新
+|- `concepts/china-local-deployment.md` — **更新**: Kimi K3 OSS化(2.8T/KDA+AttnRes/MXFP4-MXFP8/1M ctx/$0.30 MTok)。DeepSeek V4 Flash正式版＆V4正式版(7/31)。梁文鋒秘録(GPU ~2万/昇騰950/CUDAモート崩壊論)。ローカルデプロイコスト論争(3000万元)。火山引擎veStack K3 Day0適配。9日間ギャップ後更新。updated 2026-08-02。
+|- `entities/openclaw.md` — **更新**: 7/26-8/2にOpenClaw固有リリースなし。Harness限界論(Claude Code之父「保質期半年」)。三大Agent Token効率比較(最大30倍差)。DeepSeek Harness内参開始。memU共通メモリ層。Agent安全性問題。updated 2026-08-02。
+|- `concepts/china-open-source-ai.md` — **更新**: Kimi K3 OSS化(2.8T/黄仁勳力挺/$45B)。DeepSeek V4正式版＆V4-Flash API。Qwen 3.8 Maxプレビュー(2.4T)。SenseNova U1.5-Lite-Preview。中国AIモデルAPI TOP5独占。比亜迪AIチーム初公開。agentOS。updated 2026-08-02。
+|
+|### hot-topics.yaml更新
+|- china-local-deployment: last_crawled 2026-08-02、notes更新(Kimi K3 OSS/DeepSeek V4/梁文鋒秘録/コスト論争/veStack Day0)
+|- openclaw: last_crawled 2026-08-02、notes更新(リリースなし/Harness限界論/Token効率比較/DeepSeek Harness/memU)
+|- china-open-source-ai: last_crawled 2026-08-02、notes更新(Kimi K3 OSS/DeepSeek V4/Qwen 3.8/SenseNova/TOP5独占/BYD/agentOS)
+|
 |||## [2026-08-01] active-crawl | Qwen/Kimi/Yi deepdive
 |||
 |||### Wiki更新
