@@ -558,8 +558,15 @@
 
 ## ページ (Pages)
 
+- [[agent-engineering|Agent Engineering — エージェント開発プラクティス]]
+- [[chinese-ai-ecosystem|chinese-ai-ecosystem]]
+- [[claude-code-ecosystem|Claude Code Ecosystem — Claude Codeエコシステム]]
+- [[claude-design-figma|Claude Design Figma — Claude DesignとFigma]]
+- [[claude-opus-47|Claude Opus 4.7 — Anthropic最新モデル]]
 - [[industry-trends|行业趋势 — 中国AI業界動向・モデル競争・開発ツールトレンド]]
+- [[mcp-protocol|MCP Protocol — Model Context Protocol]]
 - [[openai-codex-infrastructure|OpenAI Codex — Mac版「超级龙虾」のインフラと機能進化]]
+- [[rag-vector-db|RAG Vector DB — RAGとベクトル検索基盤]]
 
 ## ダイエスト (Daily Digests)
 
