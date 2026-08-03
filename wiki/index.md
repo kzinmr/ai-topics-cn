@@ -1,7 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-08-02
+最終更新: 2026-08-03
 エンティティ: 72, コンセプト: 131, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-03 Active Crawl: ChinaAIAgentEcosystem/MCPChina）
+- `concepts/china-ai-agent-ecosystem.md` — **更新**: DeepSeek V4 Flash正式版＆V4正式版(7/31)。梁文鋒CUDAモート崩壊論(7/31)。三大Agent Token効率30倍差比較(機器之心7/31)。Harness限界論(Claude Code之父「保質期半年」)。DeepSeek Harness内測開始(7/29)。memU共通メモリ層(V2EX7/30)。OpenAI Agent 108時間制御喪失(7/31)。全球調用Top5全て中国製品(7/28)
+- `concepts/mcp-china.md` — **更新なし**: 7/28〜8/2期間にMCP固有の主要リリース・新規CVE・AAIF新メンバーなし。静定期継続
+- `config/hot-topics.yaml` — **last_crawled/notes更新**: china-ai-agent-ecosystem/mcp-china 2トピック
 ### 本日更新（2026-08-02 Active Crawl: ChinaLocalDeployment/OpenClaw/ChinaOpenSourceAI）
 - `concepts/china-local-deployment.md` — **更新**: Kimi K3 OSS化(2.8T/KDA+AttnRes/MXFP4-MXFP8/1M ctx)。DeepSeek V4 Flash正式版＆V4正式版(7/31)。梁文鋒秘録(GPU ~2万/昇騰950=CGB300の1/4/CUDAモート崩壊論)。ローカルデプロイコスト論争(3000万元必要)。火山引擎veStack K3 Day0適配。9日間ギャップ後更新
 - `entities/openclaw.md` — **更新**: 7/26-8/2にOpenClaw固有リリースなし。Harness限界論(Claude Code之父「保質期半年」)。三大Agent Token効率比較(最大30倍差)。DeepSeek Harness内参開始。memU共通メモリ層。Agent安全性問題

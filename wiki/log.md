@@ -37,6 +37,17 @@
 ||
 |
 |
+|
+|## [2026-08-03] active-crawl | ChinaAIAgentEcosystem/MCPChina
+|
+|### Wiki更新
+|- `concepts/china-ai-agent-ecosystem.md` — **更新**: DeepSeek V4 Flash正式版＆V4正式版(7/31)。梁文鋒CUDAモート崩壊論(7/31)。三大Agent Token効率30倍差比較(機器之心7/31)。Harness限界論(Claude Code之父「保質期半年」)。DeepSeek Harness内測開始(7/29)。memU共通メモリ層(V2EX7/30)。OpenAI Agent 108時間制御喪失(7/31)。全球調用Top5全て中国製品(7/28)。updated 2026-08-03。
+|- `concepts/mcp-china.md` — **更新なし**: 7/28〜8/2期間にMCP固有の主要リリース・新規CVE・AAIF新メンバーなし。MCP SDK月間3億DL/公開サーバー9,400+維持。静定期継続。updated 2026-08-03。
+|
+|### hot-topics.yaml更新
+|- china-ai-agent-ecosystem: last_crawled 2026-08-03、notes更新(V4 Flash/CUDA崩壊論/Token効率/Harness限界/Harness内測/memU/OpenAI制御喪失)
+|- mcp-china: last_crawled 2026-08-03、notes更新(新規リリースなし/SDK 3億DL維持/静定期継続)
+|
 |## [2026-08-02] active-crawl | ChinaLocalDeployment/OpenClaw/ChinaOpenSourceAI
 |
 |### Wiki更新

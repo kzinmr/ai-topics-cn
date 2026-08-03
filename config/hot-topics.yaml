@@ -227,9 +227,8 @@ topics:
       - "百融智能 RaaS 硅基員工"
     wiki_pages:
       - concepts/china-ai-agent-ecosystem
-    notes: "2026.07.27更新: 阿里Claude Code全面禁止(7/10/隠蔽ユーザー検出メカニズム発覚/147ドメイン暗号化)。信通院Claw類安全基準テスト(行為有害率36%)。Kimi K3正式リリース(7/16-17/503崩壊/算力告急)。OpenClaw復活(v2026.7.x/Stars 384K)。阿里千問辦公参入(7/24)。OpenAI三線同時障害(7/26)。復旦NLP 80頁Agent綜述。2026.06.12更新: Agent最後の試験(最高得点8.6%/6/10)。CLI+MCP+Skill三大パラダイム(6/11)。Hermes vs OpenClaw比較分析(6/10)。「Chat is dead」パラダイム転換議論。DeepSeek V4数学証明500倍コスト優位。Agent教育コンテンツ爆発(週10+本)。Fable 5リリースの中国エコシステムへの間接的影響。2026.06.06更新: 悟空シフト加速(阿里悟空115票/ロブスター→悟空)。Codex Sites(6/5/内蔵Web構築)。DeepSeek有料化完了。headroom Token 95%圧縮。字节AI 4大命題。Agentセキュリティガイド。低コードAgent汎用設計。DeepSeek估值+150億ドル。2026.06.01更新: 百蝦大戦からプラットフォーマー時代へ移行—OpenClaw勢い減速(V2EX議論「小龙虾为什么突然不火了」/脆弱性・SOE禁止)。阿里悟空(Wukong)Agent OSがOpenClaw代替として急浮上(セキュリティ・阿里エコシステム統合)。DeepSeek再生・修正回数制限開始(5/30/無料枠持続可能性限界/700億調達承認待ち)。上海大模型リーダー(MiniMax推定)A株上場へ(中国AI企業初大型IPO/5/30)。OpenAI CodexがDeepSeek等サードパーティAPI対応(5/31/モデルロックイン緩和)。Hermes Agentが中国V2EXコミュニティでClaude Code対比で高評価。Kimi Code 0.4.0リリース(完全TypeScript化/ミリ秒起動/誤BAN信頼問題継続)。新興OSS:agentserver(個人算力網)/opencontext(クロスAgentコンテキスト)/DeepAgents middleware。2026.05.23更新: Agent三巨頭サミット(5/18/智譜AutoGLM 3.0+Qwen Agent v2+DeepSeek R2)でAgent能力競争激化。百度文心5.1(5/13/DAA指標/自律エージェント特化)。火山引擎Agent Plan発表。百融RaaS(硅基員工10万+)。360 Agent Studio。Agent Token消費が全Tokenの70%超に(36kr)。2026.05.17更新: 百度Create2026(5/13-14)で「心響(Xinxiang)」AGIアシスタント発表/DAA(Daily Active Agents)新指標提案/Token Factory(採掘→精錬→製造)3段階モデル。36kr大分析「中国跳过LLM直奔Agent时代」—Token消費180兆超の70%+がAgent/Alibaba ATH(Token Hub)構想/腾讯Agentインフラ戦略。前回(5/12): 国家Agent政策/腾讯云全栈/BoAgent/百融RaaS。前々回: 推論2/3/Deloitte/GPU高騰/$0.30vs$30/OpenClaw12脆弱性/SOE禁止/補助金。"
-    added: 2026-04-17
-    last_crawled: 2026-07-27
+    notes: "2026.08.03更新: DeepSeek V4 Flash正式版＆V4正式版(7/31)。梁文鋒CUDAモート崩壊論(7/31/GPU~2万/昇騰950=GB300の1/4)。三大Agent Token効率30倍差比較(機器之心7/31)。Harness限界論(Claude Code之父「保質期半年」/7/30)。DeepSeek Harness内測開始(7/29)。memU共通メモリ層(V2EX7/30/500行)。OpenAI Agent 108時間制御喪失(7/31)。全球調用Top5全て中国製品(7/28)。ローカルデプロイコスト3000萬元論争(36kr)。2026.07.27更新: 阿里Claude Code全面禁止(7/10)。信通院Claw類安全基準テスト(行為有害率36%)。Kimi K3正式リリース(7/16-17)。OpenClaw復活(v2026.7.x)。    added: 2026-04-17
+    last_crawled: 2026-08-03
 
   - slug: openclaw
     title: "OpenClaw — オープンソースAI Agentエンドポイントツール"
@@ -442,9 +441,8 @@ topics:
       - "AAIF 43新メンバー 2026"
     wiki_pages:
       - concepts/mcp-china
-    notes: "2026.07.28更新: 45日間クロールギャップ(6/13〜7/28)。MCP Stateless最終仕様が7/28リリース予定(Google共同開発/セッションID廃止/SSE→Streamable HTTP)。AAIF新メンバー・新規CVE・主要プラットフォーム新発表なし。MCP SDK月間3億DL/公開サーバー9,400+維持。2026.06.13更新: パラダイム再整理「CLI+MCP+Skill三范式」(米小虾/掘金6/11/⭐最重要)。AI Skills工程化(米小虾/掘金6/12)。Hermes vs OpenClaw Agent Loop比較(掘金6/10)。Anthropic中国制限議論(IT乐手/掘金6/12)。Viking AI Search CLI(火山引擎/掘金6/9)。Fable5週間でMCP露出限定的。AAIF/Alibaba/ByteDance/Tencent新情報なし。2026.06.08更新: 6月4日〜8日は生態系の静かな成熟期。教育コンテンツ爆発(MCP天気ツール/30分MCP Server/Coding Agent全5回)。MCP/A2A/AG-UI三大プロトコル住み分け定着。AI第二脳プロジェクト継続。無状態RC(5月21日リリース/7月28日最終仕様予定)。Web検索ツール障害のため外部データ不足。"
-    added: 2026-04-17
-    last_crawled: 2026-07-28
+    notes: "2026.08.03更新: 7/28〜8/2期間にMCP固有の主要リリース・新規CVE・AAIF新メンバーなし。MCP SDK月間3億DL/公開サーバー9,400+維持。掘金でMCP+Claude Code連携チュートリアル多数(32 Skills+8 MCP等)。MCP無状態仕様は7/28リリース予定→実装状況不明。静定期継続。2026.07.28更新: 45日間クロールギャップ。MCP Stateless最終仕様7/28リリース予定(Google共同開発)。    added: 2026-04-17
+    last_crawled: 2026-08-03
 
   - slug: mcp-chinese-tools
     title: "Chinese MCP Tools & Servers (中国MCP工具)"
