@@ -1,7 +1,7 @@
 ---
 title: "Kimi (月之暗面) — Moonshot AIの旗艦AIアシスタント"
 created: 2026-04-22
-updated: 2026-08-01
+updated: 2026-08-04
 tags: [llm, moonshot, long-context, agent, open-source, chinese-llm, kimi-k3, kimi-k2-7, k3-opensource]
 aliases: ["Kimi", "月之暗面", "Moonshot AI", "Kimi Chat", "Kimi K2"]
 source_lang: zh-CN
@@ -642,6 +642,106 @@ OpenAI Codexでサードパーティモデル（DeepSeek、GLM、Kimi）を使�
 - 出典: [36kr](https://36kr.com/p/3913825502762885)
 
 ### 2026年7月29日〜8月1日
+
+#### K3のEpoch Capabilities Indexとベンチマーク詳細（2026年7月末〜8月3日）⭐
+
+ChinAI #369（2026-08-03）による包括的分析：
+
+**Epoch Capabilities Index（ECI）**:
+- Kimi K3のECIスコアは**中国トレンドライン上に正確に位置**（未公表の非公式結果）
+- 位置づけ: Opus 4.6とOpus 4.7の間 → **OpenAI/Anthropicから約6ヶ月遅れ**
+- Google、Meta、SpaceXはK3を下回る
+- タイムライン: Mythos Preview（4月7日）発表後3ヶ月以上が経過しており、最低3ヶ月のギャップ
+
+**主要ベンチマーク詳細**:
+| ベンチマーク | K3結果 | コメント |
+|-------------|--------|---------|
+| Epoch Capabilities Index | Opus 4.6〜4.7の間 | 中国トレンドライン完全一致 |
+| Harvey LAB-AA all-pass率 | **94.6%**（トップ） | 2位の93.6%を大きくリード |
+| Arena Frontend Code | **#1**（Fable 5・Solを上回る） | フロントエンドコーディングで最先端 |
+| Debate Benchmark | 2位（Fable 5の次） | 多ラウンド議論で知識・論理・反論能力を評価 |
+| VoxelBench（視覚推論） | 3位（Sol・Fableの次） | 視覚的理解は米国モデルに劣後 |
+| GeneBench-Pro（計算生物学） | GPT-5.5・Opusを上回る | **生物リスク観点で注目** — 前代のオープンモデルでは到達不能 |
+| CyBench | 飽和 | Opus 4.7と同様にベンチマークが飽和状態 |
+
+**実用性能の評価**:
+- エージェントコーディング: Q1 2026水準の公開フロンティアモデルと同等（Dean Ball）
+- 3D/Three.js: Fable 5・GPT-5.6を大きく上回る（Theo Jaffee）
+- Token消費: 「big model smell」— 遅く、トークンを多く消費
+- 価格: $3.00/$15.00/Mトークン（Opusと同等程度）
+- サブスクリプション: $19/$39/$99/$199/月
+
+**蒸留（Distillation）疑惑**:
+- Claude（特にFable）からの蒸留が能力向上の一因と推測
+- Ryan Greenblattの推定: 事前学習品質はOpus 4とOpus 4.5の中間（前パス計算ベース）→ 約8ヶ月遅れ
+- Moonshotは蒸留だけでなく、出力の観察と技術の模倣（fast following）も行っている
+
+**出典**: [ChinAI #369](https://open.substack.com/pub/chinai/p/chinai-369-my-boss-wants-me-to-run) [T1]
+
+#### K3のサイバー能力評価 — UK AISI/CAISI共同報告（2026年8月3日）⭐
+
+UK AI Security Instituteと米国CAISI（NIST）が共同でK3のサイバー能力を評価：
+
+**ExploitBench結果**:
+- K3: **32%**（GLM-5.2の24%を上回るが、ACE 0/41）
+- GLM-5.2（2026年6月時点最もサイバー能力の高いオープンモデル）: 24%
+- 米国閉源モデル（平均）: ACE 20/41タスクを達成
+
+**The Last Ones（TLO）サイバーレンジ**:
+- 32ステップの企業ネットワーク攻撃シミュレーション
+- K3: 平均**17ステップ**到達（10回中1回で完走）
+- GLM-5.2: 平均11ステップ
+- 米国サイバー最前線モデル: 平均**28.5ステップ**
+
+**重要な分析**:
+- K3は小型・脆弱な防御の企業システムへの自律攻撃が可能（初期ネットワークアクセスがあれば）
+- ただしTLOは実環境と異なり、防御者・セキュリティ警告がない
+- K3のConfidence Intervalは他モデルより広い（ExploitBench単一ベンチマークに基づく）
+- **米国閉源モデルとの差は依然大きく** — 32ステップ対17ステップ
+- サイバー攻撃の自動化（AI R&D自動化と並ぶ最重要懸念事項）の観点から注目
+
+**出典**: [UK AISI/CAISI](https://www.aisi.gov.uk) [T1]
+
+#### AgentENV — Moonshot AIのエージェント分散学習基盤（2026年7月末）⭐
+
+Moonshot AI（kvcache-ai）が**AgentENV（AENV）**をGitHubで公開（github.com/kvcache-ai/AgentENV）。K3のエージェントRL訓練を支える分散プラットフォーム：
+
+| 特徴 | 詳細 |
+|------|------|
+| ベース | Firecracker microVM |
+| 起動時間 | **50ms未満**（Snapshot復元）、**100ms未満**（一時停止） |
+| 画像管理 | overlaybd（OCI互換）、ローカルディスクをキャッシュとして使用 |
+| スナップショット | メモリ+ファイルシステムの増分スナップショット（100ms未満） |
+| Fork | 実行中の環境から独立サンドボックスを複数生成可能 |
+| E2B互換 | E2B Python/TypeScript SDKをそのまま利用可能 |
+| 用途 | K3のエージェント強化学習（RL）訓練 |
+
+**技術的意義**: 中国のAgent学習基盤技術として新規。K3のマルチエージェント能力（300Agent並列）の訓練インフラとして設計。
+
+**出典**: [GitHub - kvcache-ai/AgentENV](https://github.com/kvcache-ai/AgentENV) [T1]
+
+#### 株式市場への影響と米国規制動向（2026年7月末〜8月3日）⭐
+
+**株式市場**:
+- K3発表当日: Google **-4.4%**、SpaceX **-3.1%**、Nvidia **-2%超**
+- 技術株全体が翌金曜日も下落
+- 「DeepSeek Moment再来」の懸念が市場を揺るがす
+
+**米国政府の規制対応**:
+- **ホワイトハウス**: 中国フロンティアAIモデルの規制検討が再燃
+- **Commerce Department**: 中国AI研究所をEntity Listに追加する案（前年から検討中）
+- **行政命令案**: 米国企業が中国モデルをホスティングする場合、セキュリティ保証と責任負担を要求
+- **Dean Ball（元ホワイトハウス、現OpenAI）の提言**: 規制不確実性を作ることで企業が自主的に中国モデル使用を回避させる（「サプライチェーンリスク」指定）
+- **Emil Michael国防次官補**: ClaudeよりもKimi K3を政府調達で使いやすくすべきとの立場
+- **Anthropic**: 開示済みの開源モデル署名リストに未参加（2026年7月28日時点）
+
+**業界論争**:
+- 開源モデル vs 閉源モデルの第一戦としてK3开源が焦点に
+- Dean Ballの6項目分析が拡散 → OpenAI従業員としての発信に対する非難が殺到 → 公的発信を停止
+- Ethan Mollick: 「K3はDeepSeek Momentではない。期待通りの性能で、驚くべき跳躍ではない」
+- roon（OpenAI）: 「中国研究所が大幅に遅れていた時代は終わった。K3は公開フロンティアモデルと同等」
+
+**出典**: [ChinAI #369](https://open.substack.com/pub/chinai/p/chinai-369-my-boss-wants-me-to-run) [T1], Axios [T2]
 
 #### K3技術インフラ深掘り（2026年7月30日）
 - 36kr: 「Kimi K3公开了不少秘密，但最重要的Infra却很难抄」
