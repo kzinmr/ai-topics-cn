@@ -2,6 +2,12 @@
 
 最終更新: 2026-08-04
 エンティティ: 72, コンセプト: 131, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-04 Active Crawl: DeepSeek/Doubao/Coze/Dify）
+- `concepts/deepseek.md` — **更新**: V4 Flash＆V4正式版リリース(7/31)。梁文鋒CUDAモート崩壊論インタビュー(昇騰950=GB300の1/4/GPU~2万)。三大Agent Token効率30倍差比較(機器之心)。Harness限界論(Claude Code之父「保質期半年」)。V4-Flash $0.2/MTok値下げ
+- `concepts/doubao.md` — **更新**: 飛書出嫁豆包(36kr7/31/大厂AI辦公有料化/飛書×豆包AI統合深化)。豆包入力法音声口子裂開(36kr8/3/科大讯飛との音声認識市場競合開始)
+- `concepts/coze.md` — **更新**: 51日間クロールギャップ。Coze固有の新規リリース確認されず。静定期継続
+- `concepts/dify.md` — **更新**: 7日間クロールギャップ。v1.15.0以降の新リリース確認されず。静定期継続
+- `config/hot-topics.yaml` — **last_crawled/notes更新**: deepseek/doubao/coze/dify 4トピック
 ### 本日更新（2026-08-04 Newsletter Triage: ChinAI #369 Kimi K3）
 - `concepts/kimi.md` — **更新**: ChinAI #369 newsletter triage。K3 Epoch Capabilities Index（Opus 4.6〜4.7の間/中国トレンドライン完全一致）。UK AISI/CAISI共同サイバー能力評価（ExploitBench 32%/TLO 17ステップ到達）。AgentENV分散エージェントRL基盤公開（Firecracker microVM/50ms起動）。株式市場影響（Google -4.4%/SpaceX -3.1%）。米国規制検討再燃（ホワイトハウス/Commerce Department/Dean Ball提言）。蒸留疑惑（Claude Fable由来）。
 ### 本日更新（2026-08-02 Active Crawl: ChinaLocalDeployment/OpenClaw/ChinaOpenSourceAI）

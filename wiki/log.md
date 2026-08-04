@@ -38,6 +38,20 @@
 |
 |
 |
+## [2026-08-04] active-crawl | DeepSeek/Doubao/Coze/Dify
+
+### Wiki更新
+- `concepts/deepseek.md` — **更新**: V4 Flash＆V4正式版リリース(7/31)。梁文鋒CUDAモート崩壊論インタビュー(昇騰950=GB300の1/4/GPU~2万)。三大Agent Token効率30倍差比較(機器之心)。Harness限界論(Claude Code之父「保質期半年」)。V4-Flash $0.2/MTok値下げ。updated 2026-08-04。
+- `concepts/doubao.md` — **更新**: 飛書出嫁豆包(36kr7/31/大厂AI辦公有料化)。豆包入力法音声口子裂開(36kr8/3/科大讯飛との音声認識市場競合開始)。updated 2026-08-04。
+- `concepts/coze.md` — **更新なし**: 51日間クロールギャップ。Coze固有の新規リリース確認されず。静定期継続。updated 2026-08-04。
+- `concepts/dify.md` — **更新なし**: 7日間クロールギャップ。v1.15.0以降の新リリース確認されず。静定期継続。updated 2026-08-04。
+
+### hot-topics.yaml更新
+- deepseek: last_crawled 2026-08-04、notes更新(V4 Flash＆V4正式版/CUDA崩壊論/Token効率/Harness限界/V4-Flash値下げ)
+- doubao: last_crawled 2026-08-04、notes更新(飛書出嫁豆包/豆包入力法音声競合)
+- coze: last_crawled 2026-08-04、notes更新(51日間ギャップ/静定期継続)
+- dify: last_crawled 2026-08-04、notes更新(7日間ギャップ/静定期継続)
+
 |## [2026-08-04] newsletter-triage | ChinAI #369 Kimi K3
 ||
 |### Wiki更新
