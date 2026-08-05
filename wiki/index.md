@@ -1,7 +1,7 @@
 # AI Topics China Wiki — Index
 
 最終更新: 2026-08-05
-エンティティ: 72, コンセプト: 131, ダイジェスト: 7, 比較: 2, ページ: 9
+エンティティ: 65, コンセプト: 118, ダイジェスト: 7, 比較: 2, ページ: 9
 ### 本日更新（2026-08-05 Active Crawl: ChinaCodingAgents/ChatGLM/ChinaAICodingAssistants）
 - `concepts/china-coding-agents.md` — **更新**: DeepSeek Harness内測開始(7/29)。V4 Flash＆V4正式版リリース(7/31)。Cursor 3.9 Chinaアクセス問題。Agent Token効率30倍差比較。Harness寿命論。memU共通メモリ層
 - `concepts/chatglm.md` — **更新なし**: 7/28〜8/5にZhipu固有の新規リリースなし。GLM-5.2はKimi K3ベンチマーク参照として頻出
