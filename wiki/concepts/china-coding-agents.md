@@ -1,7 +1,7 @@
 ---
 title: "中国编程Agent工具 — コーディングAIエージェントの生態系"
 created: 2026-04-19
-updated: 2026-07-28
+updated: 2026-08-05
 tags: [coding-agents, china, ide, automation, software-development, claude-code, cursor, openai]
 aliases: ["中国编程Agent", "编程自动化工具", "AI代码助手", "Chinese coding agents", "AI编程工具"]
 source_lang: zh-CN
@@ -808,3 +808,86 @@ Xiaomi MiMo V2.5モデルファミリーの価格を大幅値下げ。AI API史�
 3. **Harness Engineeringの概念定着**: DeepSeek、Qoder共に「Model + Harness = Agent」を提唱。単なるコーディングツールからインフラ層への進化
 4. **価格破壊の継続**: DeepSeek V4 Pro $0.18/MTok、MiMo V2.5キャッシュヒット99%オフ。コスト競争はさらに激化
 5. **Qwen 3.8の脅威**: 2.4Tパラメータのオープンウェイトモデルが出現し、Kimi K3との二頭体制が予想される
+
+## 2026年7月28日〜8月5日の新展開
+
+### DeepSeek Harness内測開始（2026年7月29日）⭐最重要
+
+DeepSeekのコーディングAgent製品 **DeepSeek Harness** が内側テストを開始。中国AIコーディング市場に新たな主要プレイヤーが参入：
+
+- **開発チーム**: 崔添翼（元Jane Street）率いるAgentチームが5月に結成。結成からわずか2ヶ月で内測開始
+- **製品定位**: デスクトップ中心のコーディングAgent。Claude Codeとの直接対抗を狙う
+- **「Harness Engineering」の概念定着**: Model + Harness = Agent（基盤モデル＋制御層＝エージェント）。単なるモデル出力から、開発環境との密接な統合による自律エージェント実現
+- **中国開発者の反応**: DeepSeek V4の推論能力（〜180 tokens/s）とHarnessの組み合わせで、Claude Code品質に迫ると期待
+
+> **出典**: 36kr/字母AI 2026-07-29 [Tier-1]
+
+### DeepSeek V4 Flash＆V4正式版リリース（2026年7月31日）
+
+DeepSeekがV4シリーズの正式版を発表：
+
+| モデル | パラメータ | 用途 | API価格 |
+|--------|-----------|------|---------|
+| **V4 Flash** | 284B合計/13B活性化 | コスト最適化 | $0.20/MTok |
+| **V4** | 1.6T合計/49B活性化 | エンタープライズ | $0.30/MTok |
+
+- **V4 Flash**: 中国市場で最もコストパフォーマンスの高いフロンティアモデルの一つ
+- **Harness対応**: V4正式版はHarnessエコシステムの基盤モデルとして設計
+
+> **出典**: DeepSeek公式発表 2026-07-31 [Tier-1]
+
+### Cursor 3.9 Chinaアクセス問題（2026年7月下旬）
+
+Cursor 3.9リリース後、中国ユーザーにアクセス問題が発生：
+
+- **原因**: useModelParametersメカニズムが既存のプロキシ設定を破壊
+- **影響**: 上位モデル（Claude Opus等）が中国ユーザーのメニューから消滅
+- **回避策**: 3.8に一時ロールバック
+- **V2EXでの報告**: 「Cursor终于追上Agent时代了」の評価も、3.9の問題で再考
+
+> **出典**: V2EX 2026-07-28 [Tier-1]
+
+### Agent Token効率比較：最大30倍差（2026年7月31日）
+
+機器之心が3つのAgentフレームワークのToken消費効率を比較：
+
+| フレームワーク | 種類 | Token消費 | 特徴 |
+|---------------|------|----------|------|
+| **Hermes Agent** | メモリ＋自己進化型 | 最低 | 効率重視 |
+| **OpenClaw** | ツールチェーン＋並列型 | 中 | 多機能 |
+| **Claude Code** | 順次推論型 | 最高（30倍） | 品質重視 |
+
+コスティ効率がフレームワーク選択の主要競争軸に浮上。
+
+> **出典**: 36kr/機器之心 2026-07-31 [Tier-1]
+
+### Harness寿命論（2026年7月30日）
+
+Boris Cherny（Claude Codeの父）がHarness Engineeringの寿命について衝撃的な発言：
+
+- 「**Harnessの保証寿命は半年、自由にさせるべき**」
+- モデルが進化するにつれ、Harnessフレームワークの価値は限定的になると予測
+- 影響：OpenClaw、DeepSeek Harness、全てのHarnessフレームワークに波及
+
+> **出典**: 36kr/量子位 2026-07-30 [Tier-1]
+
+### memU — Agent間共通メモリ層（2026年7月30日）
+
+500行の軽量プロトコル「**memU**」が発表：
+
+- Claude Code、OpenClaw、Hermes Agent間のメモリ共有を実現
+- Agentエコシステムの相互運用性向上の第一歩
+
+> **出典**: V2EX 2026-07-30 [Tier-1]
+
+### 価格比較表（2026年8月更新）
+
+| モデル | 開発元 | 混合レート($/MTok) | 備考 |
+|--------|--------|-------------------|------|
+| **DeepSeek V4 Flash** | DeepSeek | $0.20 | 新リリース |
+| **DeepSeek V4 Pro** | DeepSeek | $0.18 | SSD cache |
+| **MiMo V2.5** | Xiaomi | キャッシュ99%オフ | 世界1位API呼び出し |
+| **MiniMax M3** | MiniMax | $0.22 | 100万トークン超長文脈 |
+| **GLM-5.2** | 智谱AI | $0.90 | AI安全特化 |
+| **Qwen 3.8 Max** | Alibaba | $1.40 | マルチモーダル |
+| **Kimi K3** | Moonshot AI | $2.30 | 2.8Tパラメータ |

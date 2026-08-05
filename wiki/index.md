@@ -1,7 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-08-04
+最終更新: 2026-08-05
 エンティティ: 72, コンセプト: 131, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-05 Active Crawl: ChinaCodingAgents/ChatGLM/ChinaAICodingAssistants）
+- `concepts/china-coding-agents.md` — **更新**: DeepSeek Harness内測開始(7/29)。V4 Flash＆V4正式版リリース(7/31)。Cursor 3.9 Chinaアクセス問題。Agent Token効率30倍差比較。Harness寿命論。memU共通メモリ層
+- `concepts/chatglm.md` — **更新なし**: 7/28〜8/5にZhipu固有の新規リリースなし。GLM-5.2はKimi K3ベンチマーク参照として頻出
+- `concepts/china-ai-coding-assistants.md` — **更新**: Qoder市場シェア47.6%(IDC公式)。Claude Codeバックドア問題。7/24〜8/5に各ツールメジャーアップデートなし
+- `config/hot-topics.yaml` — **last_crawled/notes更新**: china-coding-agents/chatglm/china-ai-coding-assistants 3トピック
 ### 本日更新（2026-08-04 Active Crawl: DeepSeek/Doubao/Coze/Dify）
 - `concepts/deepseek.md` — **更新**: V4 Flash＆V4正式版リリース(7/31)。梁文鋒CUDAモート崩壊論インタビュー(昇騰950=GB300の1/4/GPU~2万)。三大Agent Token効率30倍差比較(機器之心)。Harness限界論(Claude Code之父「保質期半年」)。V4-Flash $0.2/MTok値下げ
 - `concepts/doubao.md` — **更新**: 飛書出嫁豆包(36kr7/31/大厂AI辦公有料化/飛書×豆包AI統合深化)。豆包入力法音声口子裂開(36kr8/3/科大讯飛との音声認識市場競合開始)

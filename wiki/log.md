@@ -52,6 +52,19 @@
 - coze: last_crawled 2026-08-04、notes更新(51日間ギャップ/静定期継続)
 - dify: last_crawled 2026-08-04、notes更新(7日間ギャップ/静定期継続)
 
+|
+|## [2026-08-05] active-crawl | ChinaCodingAgents/ChatGLM/ChinaAICodingAssistants
+|
+|### Wiki更新
+|- `concepts/china-coding-agents.md` — **更新**: DeepSeek Harness内測開始(7/29/崔添翼率いるAgentチーム/結成2ヶ月で内測)。V4 Flash＆V4正式版リリース(7/31/284B+1.6T/$0.20-0.30 MTok)。Cursor 3.9 Chinaアクセス問題(useModelParameters破壊)。Agent Token効率30倍差比較(機器之心7/31)。Harness寿命論(Claude Code之父「保質期半年」/7/30)。memU共通メモリ層(V2EX7/30)。updated 2026-08-05。
+|- `concepts/chatglm.md` — **更新なし**: 7/28〜8/5にZhipu固有の新規リリースなし。GLM-5.2はKimi K3ベンチマーク参照として頻出。Concordia AIレポートで安全方針未公表指摘。updated 2026-08-05。
+|- `concepts/china-ai-coding-assistants.md` — **更新**: Qoder市場シェア47.6%(IDC公式/国内1位)。Claude Codeバックドア問題(Alibaba社内禁止/CNNVD警告)。Trae/CodeGeeX/MarsCodeは7/24〜8/5にメジャーアップデートなし。updated 2026-08-05。
+|
+|### hot-topics.yaml更新
+|- china-coding-agents: last_crawled 2026-08-05、notes更新(DeepSeek Harness内測/V4 Flash＆V4/Cursor 3.9問題/Token効率/Harness寿命論/memU)
+|- chatglm: last_crawled 2026-08-05、notes更新(新規リリースなし/GLM-5.2ベンチマーク参照/Concordia AI指摘)
+|- china-ai-coding-assistants: last_crawled 2026-08-05、notes更新(Qoder IDC 47.6%/Claude Codeバックドア/静定期)
+|
 |## [2026-08-04] newsletter-triage | ChinAI #369 Kimi K3
 ||
 |### Wiki更新

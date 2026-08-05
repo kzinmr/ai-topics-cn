@@ -1,7 +1,7 @@
 ---
 title: "中国AIコーディングアシスタント — Trae・MarsCode・通义灵码・CodeGeeX"
 created: 2026-04-28
-updated: 2026-06-10
+updated: 2026-08-05
 tags: [coding-agents, tooling, china, product-comparison, ide]
 aliases: ["中国AI编程助手", "China AI Coding Assistants", "Trae", "MarsCode", "通义灵码", "CodeGeeX", "Lingma", "Qoder CN"]
 source_lang: zh-CN
@@ -300,7 +300,14 @@ Alibabaの通义灵码が2026年5月に主要アップデートを実施：
 | **Qoder CN** | 5月20日リブランド以降、新機能発表なし。Qwen3.7-Max連携強化が継続中と推定 |
 | **CodeGeeX** | GLM-5.1ベースのコード生成が掘金で話題に。新バージョンリリース情報なし |
 
-- 中国発コーディングアシスタント市場は**機能の安定化・コミュニティ浸透フェーズ**に移行
+- **Qoder市場シェア47.6%（IDC公式）**: 2026年7月、IDC「2025中国AI编程市場份额」レポートでQoderが47.6%を獲得し国内1位を確認。智谱・商汤・腾讯・百度の合計を上回る
+- **Claude Codeバックドア問題（7月）**: 中国ユーザー識別コード発覚 → Alibaba社内全Claudeソフト禁止 → 国家脆弱性DB（CNNVD）警告。国産ツールへの移行が不可逆的に加速
+- **7/24〜8/5にTrae・CodeGeeX・MarsCodeの目立ったメジャーアップデートなし**: 各ツールは既存機能の安定運用フェーズ
+- 代わりに**Agent Orchestrationパラダイム**や**Kimi Work型知識ワーカーツール**など、競争軸の多様化が顕著
+
+> **出典**: IDC "2025中国AI编程市場份额" (2026-07), CNNVD警告 (2026-07-08), 各種開発者フォーラム
+
+中国発コーディングアシスタント市場は**機能の安定化・コミュニティ浸透フェーズ**に移行
 - 代わりに**Agent Orchestrationパラダイム**や**知識ワーカー向けツール**（Kimi Work）など、競争軸の多様化が顕著
 
 ## 出典

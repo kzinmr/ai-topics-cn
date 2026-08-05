@@ -3,7 +3,7 @@ title: "ChatGLM (智谱清言) — Zhipu AI"
 type: concept
 tags: [LLM, chinese-ai, open-source, agent, zhipu, multimodal]
 created: 2026-04-20
-updated: 2026-07-30
+updated: 2026-08-05
 aliases: ["智谱清言", "GLM-4", "GLM-5", "GLM-5.1", "GLM-5.2", "GLM-5-Turbo", "Zhipu AI", "智谱AI"]
 source_lang: zh-CN
 ---
@@ -406,6 +406,16 @@ AutoClaw（澳龙）のiOSアプリ版が正式リリース。PC版のローカ�
 #### GLM-5.1 降智問題の継続的議論（7/24）
 - 掘金「GLM5.1 降智了？国模思考强度研究！」（甲维思）
 - GLM-5.1の思考品質変動に関するコミュニティ調査記事（7/24初掲載、継続的に議論）
+
+### 2026年7月28日〜8月5日の状況
+
+- 7/28〜8/5期間中にZhipu AI固有の新規リリース・メジャーアップデートなし
+- GLM-5.2はKimi K3のベンチマーク参照として頻繁に言及される（UK AISI/CAISI評価、Zvi Mowshowitz記事）
+- GLM-5.2の価格（$0.90/MTok）はKimi K3（$2.30）比でコスト優位
+- Concordia AI年次レポートでZ.AIのフロンティアAI安全方針未公表が指摘された
+- AIニュースサイクルはKimi K3のオープンソース化（7/27-28）に集中。智谱はベンチマーク参照としてのみ登場
+
+> **出典**: Zvi Mowshowitz "On Kimi K3" (2026-08-03), UK AISI/CAISI Kimi K3 Cyber Assessment (2026-08-03), ChinAI #368 (2026-07-27)
 
 **出典**: Juejin 2026-07-24〜29
 

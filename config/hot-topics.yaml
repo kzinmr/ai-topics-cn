@@ -105,9 +105,9 @@ topics:
       - "GLM-5.1 降智 思考強度"
     wiki_pages:
       - concepts/chatglm
-    notes: "2026.07.30更新: GLM-5.1 vs DeepSeek-V4-Proコーディング比較5日間連続掘金トップ(7/25-29)。GLM-5.1降智(性能低下)問題の継続的議論(掘金7/24)。GLM-5.2はGPT-6越獄攻撃追跡に活用(7/22/既報)。GLM購入制限発生(7/20-23/需給バランス問題)。7/25〜30に新たな公式リリースなし。2026.05.28更新: GLM-5.1-highspeed API(5/22/400 tokens/s世界記録/TileRTエンジン/DS V4比2.2x)。株価1,468HKD(+19.76%/時価総額6,545億HKD/上場4ヶ月12.6倍)。HSTECH指数6月8日採用発表。AutoClaw iOSアプリ(5/21)。2026.05.21更新: GLM-5.1 8時間自律実行ベンチマーク(最高難度Agentタスク/複数エージェント協調)。ZCubeネットワークアーキテクチャ本格展開(推論スループット15%向上/低レイテンシ)。「Chinese Anthropic」戦略宣言(5月13日CEO張鵬/AI安全・信頼性・エンタープライズ重視路線)。時価総額5000億HKD突破(香港市場/5月中旬)。"
+    notes: "2026.08.05更新: 7/28〜8/5にZhipu固有の新規リリースなし。GLM-5.2はKimi K3ベンチマーク参照として頻出(UK AISI/CAISI/Zvi Mowshowitz/ChinAI)。GLM-5.2価格$0.90/MTokはKimi K3比でコスト優位。Concordia AIレポートでフロンティア安全方針未公表指摘。AIニュースはKimi K3に集中。2026.05.28更新: GLM-5.1-highspeed API(5/22/400 tokens/s世界記録/TileRTエンジン/DS V4比2.2x)。株価1,468HKD(+19.76%/時価総額6,545億HKD/上場4ヶ月12.6倍)。HSTECH指数6月8日採用発表。AutoClaw iOSアプリ(5/21)。2026.05.21更新: GLM-5.1 8時間自律実行ベンチマーク(最高難度Agentタスク/複数エージェント協調)。ZCubeネットワークアーキテクチャ本格展開(推論スループット15%向上/低レイテンシ)。「Chinese Anthropic」戦略宣言(5月13日CEO張鵬/AI安全・信頼性・エンタープライズ重視路線)。時価総額5000億HKD突破(香港市場/5月中旬)。"
     added: 2026-04-17
-    last_crawled: 2026-07-30
+    last_crawled: 2026-08-05
 
   - slug: kimi
     title: "Kimi — Moonshot AI (月之暗面)"
@@ -525,9 +525,9 @@ topics:
       - "Qwen3.7-Max Alibaba Cloud Summit 2026"
     wiki_pages:
       - concepts/china-ai-coding-assistants
-    notes: "2026.06.10更新: AIプログラミングパラダイム転換(Claude Code父+龙虾创始人「プロンプトエンジニアリング終焉/Agent Orchestration時代」)。Kimi Work Vibe Working差別化(中国版Codex否定)。豆包MarsCode Codex統合戦略。Claude Code→K2.5移行事例増加。Trae/Qoder/CodeGeeXは6月静定期。2026.05.25更新: 通义灵码→QoderCNリブランド(5/20/Alibaba Cloud Summit)。Qwen3.7-Max発表(Agent-first/80B MoE)。前回(5/17): Trae SOLO Mobile三端同期。"
+    notes: "2026.08.05更新: Qoder市場シェア47.6%(IDC公式/国内1位/智譜+商湯+腾讯+百度合計超)。Claude Codeバックドア問題(中国ユーザー識別コード/Alibaba社内禁止/CNNVD警告)。7/24〜8/5にTrae・CodeGeeX・MarsCodeの目立ったメジャーアップデートなし。Agent Orchestrationパラダイム・Kimi Work型知識ワーカーツールなど競争軸多様化。2026.05.25更新: 通义灵码→QoderCNリブランド(5/20/Alibaba Cloud Summit)。Qwen3.7-Max発表(Agent-first/80B MoE)。前回(5/17): Trae SOLO Mobile三端同期。"
     added: 2026-04-17
-    last_crawled: 2026-07-24
+    last_crawled: 2026-08-05
 
   # =========================================================
   # 7. Chinese Coding Agent Tools (中国コーディングエージェント)
@@ -560,9 +560,9 @@ topics:
       - "DeepSeek Harness Engineering"
     wiki_pages:
       - concepts/china-coding-agents
-    notes: "2026.07.28更新: Kimi K3正式リリース(7/20-27/2.8Tパラメータ/世界初オープン3Tクラス/Code Arenaトップ)。Claude Codeバックドア問題(中国ユーザー識別コード発覚/Alibaba社内禁止/国家脆弱性DB警告)。Qoder市場シェア47.6%(IDC公式/国内1位)。Qwen 3.8 Maxプレビュー(2.4Tパラメータ/マルチモーダル)。DeepSeek Harness「Harness Engineering」概念定着(Model+Harness=Agent)。MiMo V2.5激安価格改定(キャッシュヒット99%オフ)。GLM-5.2($0.90/MTok)。2026.06.11更新: Claude Fable 5/Mythos 5発表(5000万行コード移行1日)。Bun 100万行Claude Code書換え(9日間/6755コミット/99.8%通過率)。Anthropic自社コード80%AI生成議論。Kimi Work発表+IPO加速(2000億元評価額)。Codex大更新(6職種スキル対応)。DeepSeek V4 Pro 2.5割正式価格。GPT-5.6初回実測。MiniMax M3深堀分析(100万トークン超長文脈)。智谱GLM-5オープンソース。Agent最後の試験(最高得点8.6%)。2026.06.05更新
+    notes: "2026.08.05更新: DeepSeek Harness内測開始(7/29/崔添翼率いるAgentチーム/結成2ヶ月で内測)。V4 Flash＆V4正式版リリース(7/31/284B+13B活性化/1.6T+49B活性化/$0.20-0.30 MTok)。Cursor 3.9 Chinaアクセス問題(useModelParameters破壊/3.8ロールバック)。Agent Token効率30倍差比較(機器之心7/31)。Harness寿命論(Claude Code之父「保質期半年」/7/30)。memU共通メモリ層(V2EX7/30/500行)。OpenAI Agent 108時間制御喪失(7/31)。2026.06.11更新: Claude Fable 5/Mythos 5発表(5000万行コード移行1日)。Bun 100万行Claude Code書換え(9日間/6755コミット/99.8%通過率)。Anthropic自社コード80%AI生成議論。Kimi Work発表+IPO加速(2000億元評価額)。Codex大更新(6職種スキル対応)。DeepSeek V4 Pro 2.5割正式価格。GPT-5.6初回実測。MiniMax M3深堀分析(100万トークン超長文脈)。智谱GLM-5オープンソース。Agent最後の試験(最高得点8.6%)。2026.06.05更新
     added: 2026-04-17
-    last_crawled: 2026-07-28
+    last_crawled: 2026-08-05
 
   - slug: coding-plan
     title: "Coding Plan (编程计划)"
