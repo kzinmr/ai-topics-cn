@@ -53,6 +53,18 @@
 - dify: last_crawled 2026-08-04、notes更新(7日間ギャップ/静定期継続)
 
 |
+|## [2026-08-06] active-crawl | Kimi/VibeCodingChina/VRAMOptimization
+|
+|### Wiki更新
+|- `concepts/kimi.md` — **更新**: K3 AMD GPU対応(8/4/AMD MI300X×8)。AirLLM 3.7GB VRAMでK3実行可能(8/3)。K3コスト・ROI問題(60億トークン/実収益ゼロ)。K3商業化前景分析(DoNews)。OpenK3コミュニティ。updated 2026-08-06。
+|- `concepts/vibe-coding-china.md` — **更新**: Amazon Claude Code 1215万元焼失(7/31)。Token消費30倍差比較(7/31)。GitHub Agent攻撃(8/4)。Astra数学証明限界(8/1-4)。AI Engineering五代論(8/3)。Agent民主化ツール(8/4)。updated 2026-08-06。
+|- `concepts/vram-optimization.md` — **更新**: K3 OSS化でVRAM壁再認識。AMD MI300X対応(8/4)。AirLLM低VRAM実行(8/3)。DeepSeek V4 Flash正式版(7/31)。新技術ブレークスルーなし。updated 2026-08-06。
+|
+|### hot-topics.yaml更新
+|- kimi: last_crawled 2026-08-06、notes更新(K3 AMD GPU対応/AirLLM/コストROI問題/商業化分析)
+|- vibe-coding-china: last_crawled 2026-08-06、notes更新(Amazon Claude Code災難/Agent攻撃/Astra/AI Engineering五代論)
+|- vram-optimization: last_crawled 2026-08-06、notes更新(K3 VRAM壁/AMD対応/AirLLM/新技術なし)
+
 |## [2026-08-05] active-crawl | ChinaCodingAgents/ChatGLM/ChinaAICodingAssistants
 |
 |### Wiki更新

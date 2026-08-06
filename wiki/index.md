@@ -1,7 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-08-05
+最終更新: 2026-08-06
 エンティティ: 65, コンセプト: 118, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-06 Active Crawl: Kimi/VibeCodingChina/VRAMOptimization）
+- `concepts/kimi.md` — **更新**: K3 AMD GPU対応(AMD MI300X×8/「显存开始比算力更重要」)。AirLLM 3.7GB VRAMでK3実行可能。K3コスト・ROI問題(60億トークン/実収益ゼロ)。K3商業化前景分析。OpenK3コミュニティ
+- `concepts/vibe-coding-china.md` — **更新**: Amazon Claude Code 1215万元焼失事件(予算860%超過)。Token消費30倍差比較(Harness税概念定着)。GitHub Agent攻撃(プロンプトインジェクション)。Astra数学証明限界。AI Engineering五代論(Prompt→RAG→Agent→Graph)。Agent民主化ツール
+- `concepts/vram-optimization.md` — **更新**: K3 OSS化でVRAM壁再認識。AMD MI300X対応。AirLLM低VRAM実行。DeepSeek V4 Flash正式版。新技術ブレークスルーなし
+- `config/hot-topics.yaml` — **last_crawled/notes更新**: kimi/vibe-coding-china/vram-optimization 3トピック
 ### 本日更新（2026-08-05 Active Crawl: ChinaCodingAgents/ChatGLM/ChinaAICodingAssistants）
 - `concepts/china-coding-agents.md` — **更新**: DeepSeek Harness内測開始(7/29)。V4 Flash＆V4正式版リリース(7/31)。Cursor 3.9 Chinaアクセス問題。Agent Token効率30倍差比較。Harness寿命論。memU共通メモリ層
 - `concepts/chatglm.md` — **更新なし**: 7/28〜8/5にZhipu固有の新規リリースなし。GLM-5.2はKimi K3ベンチマーク参照として頻出

@@ -1,7 +1,7 @@
 ---
 title: "Vibe Coding（氛围编程）— 中国での受容とAgentic Engineeringへの進化"
 created: 2026-04-17
-updated: 2026-07-31
+updated: 2026-08-06
 tags: [vibe-coding, ai-coding, chinese-ai, karpathy, agentic-engineering, paradigm-shift, intent-coding, cognitive-debt]
 aliases: ["氛围编程", "vibe coding", "意图编程", "Wish Coding", "认知债"]
 source_lang: zh-CN
@@ -764,6 +764,56 @@ Anthropicが2026年5月7日に開催したオンライン技術大会「Code w/ 
 
 **出典**: 36kr, juejin, V2EX, ChinAI Newsletter, Zhihu Frontier (2026-07-26〜31) [T1-T2]
 
+### 2026年7月末〜8月初のパラダイムシフト深化（8/1〜8/6）
+
+#### Amazon Claude Code災難 — 1215万元焼失事件（2026-07-31）
+- Amazon従業員がClaude Codeで「小さな仕事」を依頼 → **予算の860%超過**（1215万元/約$170万）、5ヶ月後に発覚
+- Vibe Coding/Agentic Codingの最大リスク：**コスト制御の不在**を象徴する事件
+- 「過去の些細なミスがAI時代に災害的な高コストに化す」
+- 出典: [36kr](https://36kr.com/p/3919446479138441)
+
+#### Claude Code Token消費30倍差比較（2026-07-31）
+- 機器之心がClaude Code vs 代替フレームワーク3種のToken消費を比較 → **最大30倍の差**
+- 「Harness税」の概念が定着
+- 出典: [36kr/機器之心](https://36kr.com/p/3919477277666692)
+
+#### Agentセキュリティ問題の新段階（2026-08-04）
+- GitHub AI Agentが**プロンプトインジェクション**で脆弱性を突かれ、データ窃取
+- 「攻撃者はハッカーテクニックを使わず、たった1文でデータを盗める」
+- AI Agentのセキュリティ問題が現実の脅威になったことを証明
+- 出典: [36kr/AI前线](https://36kr.com/p/3924957498046852)
+
+#### OpenAI Astra — 数学証明の限界確認（2026-08-01〜04）
+- Astraモデルが「10のフィールズ賞級数学難問」を$2,000のコストで攻克
+- ただし数学者が24時間で**10件中一部を駁回** — 「AIは各文を正しく証明したが、元の猜想とは無関係になった」
+- 「AIが証明しても人間が検証できない」問題 — Vibe Codingの**理解債務（Cognitive Debt）**問題と構造的に同根
+- 出典: [36kr/機器之心](https://36kr.com/p/3920424297852291), [36kr/量子位](https://36kr.com/p/3924860175333762)
+
+#### AI Engineering五代論 — 新パラダイムフレームワーク（2026-08-03）
+- 掘金記事: 「Prompt已死、Agent只是過渡、Graph時代へ」
+- AI Engineeringの進化を**Prompt→RAG→Agent→Graph**の5世代で体系化
+- Vibe Coding→Agentic Engineering移行に続き、Graph時代が予告される
+- 出典: [掘金](https://juejin.cn/post/7669620584251129908)
+
+#### Agent民主化 — コスト数十倍削減ツール（2026-08-04）
+- LlamaFactory作者が**Agent構築コストを数十倍削減**するツールをオープンソース
+- 「0.2元で自動Agent構築」— Agent開発の民主化加速
+- 出典: [36kr/新智元](https://36kr.com/p/3925157852493960)
+
+#### 総括: 2026年7月末〜8月初の状況
+
+| テーマ | 状態 | 意義 |
+|--------|------|------|
+| **Vibe Coding → Agentic Engineering** | 不可逆に移行完了 | 7月末時点で「Vibe Coding」タグは完全に主流から離脱 |
+| **Harness Engineering → 自律Agent** | 移行プロセス中 | Claude Code之父の「保質期半年」宣言が決定打 |
+| **Token経済の現実化** | Amazon事件が証明 | Agent無制限利用のコストリスクが顕在化 |
+| **中国モデルの世界優位** | 拡大中 | 調用Top5独占、K3 OSS化、Qoder国内1位 |
+| **Agent安全問題** | 新たな脅威 | GitHub Agent攻撃、プロンプトインジェクション |
+| **AI数学証明の限界** | 確認済み | Astraの10題中駁回あり、理解債務の再確認 |
+| **「AI Engineering五代」論** | 新フレームワーク | Prompt→RAG→Agent→**Graph**時代の到来 |
+
+**出典**: 36kr, juejin, V2EX (2026-07-31〜08-06) [T1]
+
 ## 出典
 
 - [Vibe Coding 前沿调研报告2026 (掘金)](https://juejin.cn/post/7605416964510122011)
@@ -843,3 +893,15 @@ Anthropicが2026年5月7日に開催したオンライン技術大会「Code w/ 
 - [Boris Cherny declares "Vibe Coding" hated (Business Insider, 2026-05-06)](https://www.businessinsider.com/claude-code-creator-boris-cherny-vibe-coding-anthropic-ai-2026-5)
 - [DeepSeek Reasonix — native coding agent (GitHub, 2026-05-24)](https://esengine.github.io/DeepSeek-Reasonix/)
 - [Cursor annual revenue reaches $2B (Bloomberg, 2026-03-02)](https://www.bloomberg.com/news/articles/2026-03-02/cursor-recurring-revenue-doubles-in-three-months-to-2-billion)
+- **NEW 2026-07-31〜08-06**:
+- [Amazon Claude Code 1215万元焼失 — 予算の860%超過 (36kr, 2026-07-31)](https://36kr.com/p/3919446479138441)
+- [Claude Code Token消費30倍差比較 — 「Harness税」概念定着 (36kr/機器之心, 2026-07-31)](https://36kr.com/p/3919477277666692)
+- [国産大模型 vs Anthropic論争 — 4つの「Claude殺し」登場 (36kr, 2026-07-31)](https://36kr.com/p/3919217744555395)
+- [GitHub AI Agent攻撃 — プロンプトインジェクションでデータ窃取 (36kr/AI前线, 2026-08-04)](https://36kr.com/p/3924957498046852)
+- [OpenAI Astra — 10のフィールズ賞級数学難問を$2,000で攻克も一部駁回 (36kr/機器之心, 2026-08-01)](https://36kr.com/p/3920424297852291)
+- [Astra数学者駁回 — 「AIは各文を正しく証明したが、元の猜想とは無関係に」 (36kr/量子位, 2026-08-04)](https://36kr.com/p/3924860175333762)
+- [AI Engineering五代演進史 — Prompt→RAG→Agent→**Graph** (掘金, 2026-08-03)](https://juejin.cn/post/7669620584251129908)
+- [LLM智能路由 — Harness工学によるモデルコスト節約 (掘金, 2026-08-02)](https://juejin.cn/post/7668963586064269364)
+- [Agent構築コスト数十倍削減ツール — LlamaFactory作者OSS (36kr/新智元, 2026-08-04)](https://36kr.com/p/3925157852493960)
+- [Anthropic反開源問題 — Metaとの「二軌道」で孤立 (36kr, 2026-08-03)](https://36kr.com/p/3923744344971137)
+- [Claude「焚書」「越獄」問題再燃 (36kr, 2026-08-03)](https://36kr.com/p/3923744522074240)

@@ -1,7 +1,7 @@
 ---
 title: "显存优化（VRAM Optimization） — KVキャッシュ圧縮・量子化・推論効率化"
 created: 2026-04-23
-updated: 2026-07-27
+updated: 2026-08-06
 tags: [inference, vram-optimization, kv-cache, quantization, optimization, china]
 aliases: ["显存优化", "VRAM最適化", "KV Cache Compression", "PagedAttention", "KVキャッシュ圧縮"]
 source_lang: zh-CN
@@ -473,3 +473,43 @@ TogetherAIがOSCAR（Offline Spectral Covariance-Aware Rotation for 2-bit KV Cac
 | vLLM DeepSeek V4 Blog | [vllm.ai/blog/2026-04-24-deepseek-v4](https://vllm.ai/blog/2026-04-24-deepseek-v4) | T1 | KVキャッシュ9.62GiB@1M |
 | Ollama v0.30.0-rc | [github.com/ollama/ollama/releases](https://github.com/ollama/ollama/releases/tag/v0.30.0-rc23) | T1 | llama.cpp直接統合移行 |
 | 北大GQLA | [techwalker.com/2026/0522/3187912](https://www.techwalker.com/2026/0522/3187912.shtml) | T2 | H100/H20両最適化 |
+
+
+### 13. 2026年7月下旬〜8月上旬 — Kimi K3 OSS化とVRAM壁の再認識（7/28〜8/6）
+
+7月28日のKimi K3 OSS化と7月31日のDeepSeek V4 Flash正式リリースが中心テーマ。VRAM最適化技術のメジャーなブレークスルーは確認されなかったが、**「VRAM容量が計算能力を上回る制約要因」**という認識が業界全体に浸透した。
+
+#### Kimi K3 OSS化とVRAM壁（7/28〜8/4）
+- K3（2.8兆パラメータ）のOSS化により、**ローカルデプロイのVRAM要件が議論の中心に**
+- ローカルデプロイコスト試算：約3000万元（~60億円）
+- 「没两辆劳斯莱斯幻影、别想部署开源大模型」— オープンソース無料、デプロイ有料の構造
+- K3の技術Infraは公開されたが「最も重要な部分は模倣困難」
+- **AMD GPU対応**: 16枚B200必要だったK3が**AMD MI300X×8**で動作確認（8/4）
+- **「显存开始比算力更重要」** — VRAM容量が競争優位の核に
+- 出典: [36kr](https://36kr.com/p/3918081073262209), [36kr/機器之心](https://36kr.com/p/3924837964101767)
+
+#### AirLLM — 消費者向けGPUでの大規模モデル実行（8/3）
+- AirLLM量子化により**3.7GB VRAM**でK3（2.8兆パラメータ）を動作可能に
+- 4GB VRAMで70B、8GBで405Bモデルも実行可能
+- CPUオフロード+量子化の極限アプローチ（KTransformers思想のさらに先）
+- 推論速度は大幅に犠牲だが、一般ユーザー向けローカル実行の可能性を拡大
+- 出典: [掘金](https://juejin.cn/post/7669690604403130419)
+
+#### DeepSeek V4 Flash正式リリース（7/31）
+- 284B+13B活性化、$0.20/MTok — 推論コスト最適化の象徴
+- GPT-5.6 Luna大降価（80%減）に追随 → API料金競争の激化
+- VRAM効率向上の圧力がクラウドプロバイダーに直結
+- 出典: [36kr](https://36kr.com/p/3919242384043654)
+
+#### 新技術の状況（7/28〜8/6）
+
+| トピック | 状態 |
+|---------|------|
+| TriAttention v0.3.0+ | 新規リリースなし（v0.2.0が最新） |
+| SGLang v0.5.13+ | 新バージョン確認できず |
+| KTransformers新機能 | 新規記事なし（18.5K Starsは継続） |
+| 新量子化手法 | 発表なし |
+| KVキャッシュ新研究 | 発表なし |
+| Ollama v0.30.0安定版 | 未リリース |
+
+> **出典**: 36kr, 掘金, V2EX (2026-07-28〜08-06) [T1]
