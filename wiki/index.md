@@ -1,7 +1,7 @@
 # AI Topics China Wiki — Index
 
 最終更新: 2026-08-06
-エンティティ: 65, コンセプト: 118, ダイジェスト: 7, 比較: 2, ページ: 9
+エンティティ: 65, コンセプト: 123, ダイジェスト: 6, 比較: 2, ページ: 9
 ### 本日更新（2026-08-06 Active Crawl: Kimi/VibeCodingChina/VRAMOptimization）
 - `concepts/kimi.md` — **更新**: K3 AMD GPU対応(AMD MI300X×8/「显存开始比算力更重要」)。AirLLM 3.7GB VRAMでK3実行可能。K3コスト・ROI問題(60億トークン/実収益ゼロ)。K3商業化前景分析。OpenK3コミュニティ
 - `concepts/vibe-coding-china.md` — **更新**: Amazon Claude Code 1215万元焼失事件(予算860%超過)。Token消費30倍差比較(Harness税概念定着)。GitHub Agent攻撃(プロンプトインジェクション)。Astra数学証明限界。AI Engineering五代論(Prompt→RAG→Agent→Graph)。Agent民主化ツール
@@ -452,12 +452,15 @@
 - [[claude-code-router|claude-code-router — モデル切り替えルーター]]
 - [[claude-design|Claude Design — Anthropicのデザインツール（Figma/Canva競合）]]
 - [[coding-plan|Coding Plan（编程计划）— 中国発AIコーディングサブスクリプションモデル]]
+- [[deepseek|DeepSeek（深度求索）— 2026年最新動向]]
+- [[doubao|豆包 (Doubao) — ByteDance AIアシスタント]]
 - [[dflash|DFlash — ブロック拡散モデルによる6倍推論加速（speculative decodingの新世代手法）]]
 - [[diffusion-language-models|Diffusion Language Models — トークンを越える連続潜在表現]]
 - [[function-calling|Function Calling（関数呼び出し）— LLMと外部APIを接続する核心メカニズム]]
 - [[gpt|GPT — OpenAIの言語モデルシリーズ]]
 - [[multimodal|多模态/Multimodal — 複数のモダリティを統合するAI]]
 - [[quantization|量化/Quantization — LLMの効率的な推論技術]]
+- [[qwen|Qwen (通义千问) — Alibaba Cloud LLM]]
 - [[rlhf-alignment|RLHF/对齐 — 人間のフィードバックによるLLMの対話最適化]]
 - [[fine-tuning|微调/Fine-tuning — 大規模モデルの特定ドメイン適応]]
 - [[glory-ai-phone|荣耀AI手机专访 — 端侧AIのキャリアと未来]]
@@ -473,6 +476,7 @@
 - [[ollama-criticism|Ollama批判論争 — オープンソース倫理と代替ツール]]
 - [[on-device-ai-agent-security|端側AIエージェントセキュリティ（On-Device AI Agent Security）]]
 - [[open-source-death|open-source-death]]
+- [[openclaw|OpenClaw — オープンソースAIエージェント]]
 - [[page-index|PageIndex — ベクトルなし推論ベースRAGフレームワーク]]
 - [[rag|rag]]
 - [[semiconductor-packaging|半導体先進パッケージング — EMIB vs CoWoS、Google TPU製造戦略]]
@@ -504,7 +508,7 @@
 - [[china-ai-landscape|中国AI全景 — BAT + ByteDance + スタートアップのエコシステムマップ]]
 - [[china-open-source-ai|中国开源AI社区 — ModelScope、HuggingFace中国、Giteeエコシステム]]
 - [[badskill-agent-backdoor|BadSkill — AIエージェントスキルへのバックドア攻撃（サプライチェーンセキュリティ脅威）]]
-- [[china-ai-bulletin|China AI Bulletin — SAIF発行の中国AI安全保障・ガバナンス情報"]]
+
 - [[hifloat4-format|HiFloat4 — 華為Ascendチップ用4bit訓練フォーマット]]
 - [[clipimg-agent-cli-tool|ClipImg — Agent CLI图片粘贴ツール]]
 - [[llm-hallucination-handling|LLM幻觉処理 — 構造化ドキュメント理解の限界と解法]]
@@ -557,6 +561,7 @@
 - [[mcp-chinese-tools|mcp-chinese-tools]]
 
 - [[kimi|kimi]]
+- [[kimi-k2-6|Kimi K2.6 — 月之暗面开源旗舰模型]]
 
 - [[agent|agent]]
 
@@ -591,7 +596,7 @@
 - [[daily-digest-2026-04-19|2026-04-19 — 57件]]
 - [[daily-digest-2026-04-20|2026-04-20 — 57件]]
 - [[daily-digest-2026-04-21|2026-04-21 — 52件]]
-- [[daily-digest-2026-04-25|2026-04-25 — 58件]]
+
 
 ## 比較 (Comparisons)
 

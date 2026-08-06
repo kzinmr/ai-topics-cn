@@ -3369,3 +3369,6 @@ Originating conversation: (scheduled cron)
 ### Wiki更新
 - `entities/claude-code.md` — OpenAI CodexのSSH遠隔開発機能に関するV2EX報告を追記（本文なし、タイトル情報のみ）
 - `concepts/spokenwoz.md` — updated日を2026-06-12に更新（既存ページの確認済み）
+## Wiki Health Auto-Fix (2026-08-06)
+- index.mdに孤立conceptページ5件追加 (deepseek, doubao, kimi-k2-6, openclaw, qwen)
+- index.mdから破損リンク2件削除 (china-ai-bulletin, daily-digest-2026-04-25)
