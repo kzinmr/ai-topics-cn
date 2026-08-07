@@ -1,7 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-08-06
-エンティティ: 65, コンセプト: 123, ダイジェスト: 6, 比較: 2, ページ: 9
+最終更新: 2026-08-07
+エンティティ: 65, コンセプト: 125, ダイジェスト: 6, 比較: 2, ページ: 9
+### 本日更新（2026-08-07 Active Crawl: TencentHunyuan/Qwen）
+- `entities/tencent-hunyuan.md` — **更新**: 8/1〜7に腾讯固有の主要リリースなし。Hy3.0正式版未リリース(計11週目)。网易龙虾生成式AI大会(8/3-4)で混元が大模型記憶研討会参加。静定期継続
+- `entities/qwen.md` — **更新**: 8/1〜7にQwen固有の主要リリースなし。Qwen3.8 MaxプレビューがOpenCode比較記事で継続利用確認。静定期継続
+- `config/hot-topics.yaml` — **last_crawled/notes更新**: tencent-hunyuan/qwen 2トピック
 ### 本日更新（2026-08-06 Active Crawl: Kimi/VibeCodingChina/VRAMOptimization）
 - `concepts/kimi.md` — **更新**: K3 AMD GPU対応(AMD MI300X×8/「显存开始比算力更重要」)。AirLLM 3.7GB VRAMでK3実行可能。K3コスト・ROI問題(60億トークン/実収益ゼロ)。K3商業化前景分析。OpenK3コミュニティ
 - `concepts/vibe-coding-china.md` — **更新**: Amazon Claude Code 1215万元焼失事件(予算860%超過)。Token消費30倍差比較(Harness税概念定着)。GitHub Agent攻撃(プロンプトインジェクション)。Astra数学証明限界。AI Engineering五代論(Prompt→RAG→Agent→Graph)。Agent民主化ツール

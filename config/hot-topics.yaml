@@ -79,9 +79,9 @@ topics:
       - "Qwen Image 3 画像生成"
     wiki_pages:
       - entities/qwen
-    notes: "2026.08.01更新: 7/29〜8/1にQwenに関する新的な主要ニュースなし。Qwen 3.8 Maxプレビュー・千問办公等は既に記録済み。2026.07.29更新: Qwen 3.8 Maxプレビュー(2.4Tパラメータ/ネイティブマルチモーダル/オープンウェイト化意向/ChinAI確認$1.40/MTok)。千問办公AI辦公参入(36kr7/24)。Qwen3-Coder-30B-AWQ無料提供(V2EX7/25)。QwenPaw公式ガイド公開(掘金7/27)。2026.06.11更新: Qwen3.6-27B vs DeepSeek V4 Flash比較議論(V2EX)。Meta VLM³がQwen3-VL-4Bを研究ベースに採用(36kr)。QwenPaw記憶対話管理アーキテクチャ解説(掘金)。Qwen Code v0.17.x正式版未リリース。Qwen3.7-Max無料化後コミュニティ好評継続。2026.06.05更新: Qwen3.7-Max無料化(6/1/Qwen Chat完全無料)。2026.05.30更新: Qwen3.7-Max Firetheringカーネル最適化。Qwen Code v0.16.2/v0.17.0-preview。千問云SG公開。Qoder CNリブランド。"
+    notes: "2026.08.07更新: 8/1〜7にQwen固有の主要リリースなし。Qwen3.8 MaxプレビューがOpenCode比較記事で継続利用確認(Juejin8/6)。多模型AI鉴图小站(V2EX8/2)でQwen活用。Qwen4.0・Qwen Code v0.17.x安定版未リリース。静定期継続。2026.08.01更新: 7/29〜8/1にQwenに関する新的な主要ニュースなし。"
     added: 2026-04-17
-    last_crawled: 2026-08-01
+    last_crawled: 2026-08-07
 
   - slug: chatglm
     title: "ChatGLM (智谱清言) — Zhipu AI"
@@ -194,9 +194,9 @@ topics:
     wiki_pages:
       - entities/tencent-ai
       - entities/tencent-hunyuan
-    notes: "2026.07.31更新: 胡瀚(マルチモーダル理解責任者)離職・起業(7/23/後任は前OpenAI研究員田永龍/世界模型特化へ転換)。大厂AI Agent戦略収斂(7/24/腾讯矩阵戦略維持/阿里巴巴入口集約)。全球大モデル調用TOP5が全て中国製品(7/28/MiMo-V2.5が1位)。Hy3.0正式版は7/31現在も未リリース。CodeBuddy市場シェアでQoderに後れ。2026.07.27更新: 43日間クロールギャップ。Hy3.0正式版未確認。新規目立った動きなし。2026.06.14更新: 混元がDeepSeek-V4にAI高考作文で満点評価。2026.06.07更新: 姚順雨初の肉声講演。2026.05.29更新: Hy-Memory記憶システムリリース。旧モデル廃止通知。元宝微信内リマインダー。wiki更新済み。"
+    notes: "2026.08.07更新: 8/1〜7に腾讯固有の主要リリースなし。Hy3.0正式版は8/7時点で未リリース(計11週目)。网易龙虾生成式AI大会(8/3-4)で混元が大模型記憶研討会参加。新規モデル・価格改定なし。2026.07.31更新: 胡瀚離職・世界模型転換。大厂AI Agent戦略収斂。全球調用TOP5中国製品独占。CodeBuddy後れ。"
     added: 2026-04-29
-    last_crawled: 2026-07-31
+    last_crawled: 2026-08-07
 
   # =========================================================
   # 2. Chinese AI Agent Ecosystem (中国AIエージェント)

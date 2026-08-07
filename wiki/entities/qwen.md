@@ -1,7 +1,7 @@
 ---
 title: Qwen（通义千问）— 阿里云大模型旗舰
 created: 2026-04-17
-updated: 2026-08-01
+updated: 2026-08-07
 tags: [llm, model, china, open-source-ai, alibaba, qwen, agentic-coding, ai-infrastructure, qwen3.7, qwen3.8, agent-era, qwen-image-3, tts]
 aliases: ["Qwen", "通义千问", "qwen", "Qwen3.5", "Qwen3-Coder", "Qwen3.6", "Qwen3.6-Plus", "Qwen3.6-27B", "Qwen3.6-35B-A3B", "Qwen3.7-Max", "Qwen3.7-Plus", "Qwen3.8-Max", "千问云", "Qianwen Cloud", "千問办公"]
 source_lang: zh-CN
@@ -1015,6 +1015,19 @@ AlibabaはQwenを中核とした**フルスタックAI戦略**を展開：
 #### 注目すべきAbsent
 - Qwen4.0等の次世代モデルリリースなし
 - WAIC 2026では目立ったQwen発表なし
+
+### 2026年8月1日〜7日の状況
+
+#### コミュニティ利用動向
+- **Qwen3.8 Max**: JuejinのOpenCode比較記事（8/6/JavaGuide）でDeepSeek V4 Flash・GLM-5.2・GPT 5.6 Lunaと共に利用比較。Qwen3.8 Maxプレビューが開発者コミュニティで継続使用されていることを確認。
+- **多模型AI鉴图小站**: V2EX（8/2）でGemini・Qwen・GPTを組み合わせた画像鑑別ツールが公開。Qwenがマルチモデル統合ユースケースとして活用される動き。
+
+#### 注目すべきAbsent
+- Qwen4.0等の次世代モデルリリースなし
+- Qwen Code v0.17.x安定版リリースなし（プレビュー継続）
+- Alibaba/Qwen関連のメジャープレスリリースなし
+
+**出典**: daily_digest 2026-08-02/06 (Juejin/V2EX) [T1]
 
 ### 外部ソース
 

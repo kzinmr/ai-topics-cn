@@ -38,6 +38,17 @@
 |
 |
 |
+|
+|## [2026-08-07] active-crawl | TencentHunyuan/Qwen
+|
+|### Wiki更新
+|- `entities/tencent-hunyuan.md` — **更新**: 8/1〜7に腾讯固有の主要リリースなし。Hy3.0正式版未リリース(計11週目)。网易龙虾生成式AI大会(8/3-4)で混元が大模型記憶研討会参加。新規モデル・価格改定なし。updated 2026-08-07。
+|- `entities/qwen.md` — **更新**: 8/1〜7にQwen固有の主要リリースなし。Qwen3.8 MaxプレビューがOpenCode比較記事で継続利用確認(Juejin8/6)。多模型AI鉴图小站(V2EX8/2)でQwen活用。静定期継続。updated 2026-08-07。
+|
+|### hot-topics.yaml更新
+|- tencent-hunyuan: last_crawled 2026-08-07、notes更新(Hy3.0未リリース11週目/网易龙虾記憶研討会/静定期)
+|- qwen: last_crawled 2026-08-07、notes更新(主要リリースなし/Qwen3.8 Max利用確認/静定期)
+|
 ## [2026-08-04] active-crawl | DeepSeek/Doubao/Coze/Dify
 
 ### Wiki更新
