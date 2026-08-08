@@ -39,6 +39,19 @@
 |
 |
 |
+|
+|## [2026-08-08] active-crawl | OpenClaw/ChinaAIRegulation/Yi
+|
+|### Wiki更新
+|- `entities/openclaw.md` — **更新**: 8/2〜8に新規リリースなし。OpenClaw管家(Butler)概念登場。中国生成式AI大会で阿里技術提携報道。掘金コミュニティではClaude Code支配的
+|- `concepts/china-ai-regulation.md` — **更新**: 8/1〜8/7に規制発表・執行事例なし。第18批备案未発表継続。清朗行動新規執行なし。総合AI法草案公表なし
+|- `concepts/yi.md` — 新規情報なし(8/1〜8/7に言及ゼロ、Bloomberg IPO表明7/27が最新)
+|
+|### hot-topics.yaml更新
+|- openclaw: last_crawled 2026-08-08
+|- china-ai-regulation: last_crawled 2026-08-08
+|- yi: last_crawled 2026-08-08
+|
 |## [2026-08-07] active-crawl | TencentHunyuan/Qwen
 |
 |### Wiki更新

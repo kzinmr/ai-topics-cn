@@ -1,7 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-08-07
+最終更新: 2026-08-08
 エンティティ: 65, コンセプト: 118, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-08 Active Crawl: OpenClaw/ChinaAIRegulation/Yi）
+- `entities/openclaw.md` — **更新**: 8/2〜8に新規リリースなし。OpenClaw管家(Butler)概念登場。中国生成式AI大会で阿里技術提携報道。掘金コミュニティではClaude Code支配的
+- `concepts/china-ai-regulation.md` — **更新**: 8/1〜8/7に規制発表・執行事例なし。第18批备案未発表継続。清朗行動新規執行なし
+- `concepts/yi.md` — 新規情報なし(8/1〜8/7に言及ゼロ、Bloomberg IPO表明7/27が最新)
+- `config/hot-topics.yaml` — **last_crawled/notes更新**: openclaw/china-ai-regulation/yi 3トピック
 ### 本日更新（2026-08-07 Active Crawl: TencentHunyuan/Qwen）
 - `entities/tencent-hunyuan.md` — **更新**: 8/1〜7に腾讯固有の主要リリースなし。Hy3.0正式版未リリース(計11週目)。网易龙虾生成式AI大会(8/3-4)で混元が大模型記憶研討会参加。静定期継続
 - `entities/qwen.md` — **更新**: 8/1〜7にQwen固有の主要リリースなし。Qwen3.8 MaxプレビューがOpenCode比較記事で継続利用確認。静定期継続

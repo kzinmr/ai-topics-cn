@@ -1,7 +1,7 @@
 ---
 title: OpenClaw — AI Agentエンドポイントツール
 created: 2026-04-17
-updated: 2026-08-02
+updated: 2026-08-08
 tags: [ai-agents, open-source-ai, tooling, china, releases, safety]
 aliases: [\"openclaw\", \"OpenClaw\"]
 source_lang: zh-CN
@@ -635,6 +635,14 @@ Bing検索結果およびGitHubリリースノートより：
 | V2EX — memU (7/30) | v2ex.com | T1 | 三大Agent共通メモリ層 |
 | V2EX — Agent選択議論 (8/1) | v2ex.com | T1 | Agentフレームワーク選定議論 |
 | 36kr/雷科技 — OpenAI Agent (7/31) | 36kr | T1 | 108時間制御丧失 |
+
+
+### 2026年8月2日〜8日の状況
+
+- **OpenClaw管家（Butler）概念登場**: 8/5のWeChat記事で「龙虾管家（OpenClaw Butler）」が新概念として言及。Agent沙箱と並び、エンドポイントツールチェーンから「管家型（butler-type）」インタラクションへの進化を示唆（出典: 墨灵解説人AI WeChat 8/5）
+- **中国生成式AI大会**: 网易龋蟹生成式AI大会（8/3-4）でOpenClawが阿里との技術提携で登場。腾讯混元が大モデル記憶研討会に参加（出典: 智能車情報局/算力基建 WeChat 8/2-4）
+- **リリース停淀**: v2026.7.1（7/13安定版）・v2026.7.2-beta.3（7/18ベータ）から新規リリースなし。掘金コミュニティではClaude Codeが支配的でOpenClaw話題は減少傾向
+- **新規脆弱性報告なし**: 既存の12類安全際の影響は続行中（SOE生利用禁止・ClawHub品質問題）
 
 ## 関連リンク
 
