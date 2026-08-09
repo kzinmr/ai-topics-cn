@@ -1,7 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-08-08
+最終更新: 2026-08-09
 エンティティ: 65, コンセプト: 118, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-09 Active Crawl: DeepSeek/Kimi/ChinaLocalDeployment）
+- `concepts/deepseek.md` — **更新**: API価格全体値上げ公告(8/6/涨幅较大/7/31値下げから6日後の転換)。OpenCode V4 Flash 2倍値上げ(8/7)。V4.1未リリース(8/9現在)。Harness公式アップデートなし
+- `concepts/kimi.md` — **更新**: Kimi Code Computer Use対応開始(8/8/デスクトップ+モバイル/Claude Codeに近い)。TurnFlow技術解説第5弾(8/6)。DeepSeek V4 Flash vs K3比較(8/7)
+- `concepts/china-local-deployment.md` — **更新**: Kimi K3×AMD MI300Xデプロイ実証(8/4)。AirLLM 3.7GB VRAMでK3実行(8/3)。DeepSeek API値上げ予告→ローカルデプロイ加速(8/6)。Qwen3ローカル微調+Docker(8/8)。MiniMax H3オープンソース化(8/3)
+- `config/hot-topics.yaml` — **last_crawled/notes更新**: deepseek/kimi/china-local-deployment 3トピック
 ### 本日更新（2026-08-08 Active Crawl: OpenClaw/ChinaAIRegulation/Yi）
 - `entities/openclaw.md` — **更新**: 8/2〜8に新規リリースなし。OpenClaw管家(Butler)概念登場。中国生成式AI大会で阿里技術提携報道。掘金コミュニティではClaude Code支配的
 - `concepts/china-ai-regulation.md` — **更新**: 8/1〜8/7に規制発表・執行事例なし。第18批备案未発表継続。清朗行動新規執行なし

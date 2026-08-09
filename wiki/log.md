@@ -40,6 +40,19 @@
 |
 |
 |
+|
+|## [2026-08-09] active-crawl | DeepSeek/Kimi/ChinaLocalDeployment
+|
+|### Wiki更新
+|- `concepts/deepseek.md` — **更新**: API価格全体値上げ公告(8/6/涨幅较大)。OpenCode V4 Flash 2倍値上げ(8/7)。V4.1未リリース。Harness公式アップデートなし
+|- `concepts/kimi.md` — **更新**: Kimi Code Computer Use対応開始(8/8/デスクトップ+モバイル)。TurnFlow技術解説第5弾(8/6)。DeepSeek V4 Flash vs K3比較(8/7)
+|- `concepts/china-local-deployment.md` — **更新**: Kimi K3×AMD MI300Xデプロイ実証(8/4)。AirLLM 3.7GB VRAMでK3実行(8/3)。DeepSeek API値上げ予告→ローカルデプロイ加速(8/6)。Qwen3ローカル微調+Docker(8/8)。MiniMax H3オープンソース化(8/3)
+|
+|### hot-topics.yaml更新
+|- deepseek: last_crawled 2026-08-09、notes更新(API値上げ公告/OpenCode値上げ/V4.1未リリース/Harness更新なし)
+|- kimi: last_crawled 2026-08-09、notes更新(Computer Use対応/TurnFlow解説/静穏期)
+|- china-local-deployment: last_crawled 2026-08-09、notes更新(AMD MI300X/AirLLM/DeepSeek API値上げ/Qwen3微調/MiniMax H3)
+|
 |## [2026-08-08] active-crawl | OpenClaw/ChinaAIRegulation/Yi
 |
 |### Wiki更新

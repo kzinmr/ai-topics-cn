@@ -1,7 +1,7 @@
 ---
 title: "Kimi (月之暗面) — Moonshot AIの旗艦AIアシスタント"
 created: 2026-04-22
-updated: 2026-08-06
+updated: 2026-08-09
 tags: [llm, moonshot, long-context, agent, open-source, chinese-llm, kimi-k3, kimi-k2-7, k3-opensource]
 aliases: ["Kimi", "月之暗面", "Moonshot AI", "Kimi Chat", "Kimi K2"]
 source_lang: zh-CN
@@ -808,3 +808,29 @@ Moonshot AI（kvcache-ai）が**AgentENV（AENV）**をGitHubで公開（github.
 - 開発者がK3の試用・比較用の独立サイトを構築
 - K3のコミュニティエコシステム拡大の兆候
 - 出典: [V2EX](https://www.v2ex.com/t/1232120)
+
+### 2026年8月6日〜9日の動向
+
+#### Kimi Code — Computer Use対応開始（8月8日）⭐
+
+Kimi Codeが**Computer Use（PC操作）機能**をデスクトップ+モバイルのデュアルエンドでサポート開始。Claude Codeに最も近い国産ツールと評価される。
+
+- **技術的意義**: K3多モーダルモデルと組み合わせることで、ローカルAIエージェントの闭环（close-loop）が完成
+- **注目点**: Claude Codeとの類似性が指摘される（デスクトップ操作・ファイル操作・ターミナル統合）
+
+**出典**: [掘金 — 国产版"Claude Code"也支持电脑控制了](https://juejin.cn/post/7670809937196089378)（2026-08-08）[T2]
+
+#### Kimi Code TurnFlow技術解説 第5弾（8月6日）
+- 対話循環アーキテクチャの技術解の技術解説シリーズが継続
+- Kimi Codeの技術的深掘りが掘金コミュニティで進行中
+
+**出典**: [掘金](https://juejin.cn/post/7670746416008593450)（2026-08-06）[T2]
+
+#### DeepSeek V4 Flash vs K3 比較（8月7日）
+- V2EXでコストパフォーマンス中心の議論が展開
+- DeepSeek API値上げ予告（8/6）を踏まえたローカルデプロイ代替としてのK3評価
+
+**出典**: [V2EX](https://www.v2ex.com/t/1232839)（2026-08-07）[T2]
+
+#### 期間中の静穏性
+8月6-9日はK3リリース後の**利用定着期**。主な動向はKimi Code Computer Use対応と技術解説の継続のみ。大型ニュース（K3 OSS化、AMD GPU対応、$45B評価額）は全て7月末〜8/4に記録済み。

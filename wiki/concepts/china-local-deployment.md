@@ -1,7 +1,7 @@
 ---
 title: "中国大模型本地部署 — 量子化・VRAM最適化・消費者GPUでの推論"
 created: 2026-04-19
-updated: 2026-08-02
+updated: 2026-08-09
 tags: [inference, quantization, local-deployment, hardware, vram-optimization, china]
 aliases: ["本地部署", "国产模型本地运行", "VRAM优化", "量化技术", "GGUF", "GPTQ", "AWQ"]
 source_lang: zh-CN
@@ -529,4 +529,81 @@ MITが提案したAttention Matching技術が36kr/機器之心で大きく報道
 | 6月9日 | vLLM深堀記事 | 「vLLM深入浅出：从PagedAttention到生产级大模型推理服务」— 包括的解説 | 掘金 T2 |
 | 6月1日 | MiniMax M3深度体験 | 100万トークンコンテキスト・Coding Agent・Sparse Attention | 掘金 T2 |
 | 6月9日 | DeepSeek V4-Pro価格転換 | 2.5割キャンペーン期間終了、正式価格へ移行 | 掘金 T2 |
-| 6月 | 開悟(Kaiwu)再評価 | DeepSeek制限強化後にローカル最適化ツールへの関心再燃 | V2EX T2 |
+|| 6月 | 開悟(Kaiwu)再評価 | DeepSeek制限強化後にローカル最適化ツールへの関心再燃 | V2EX T2 |
+
+## 2026年8月2日〜9日の動向
+
+### Kimi K3 × AMD MI300X ローカルデプロイ実証（8月4日）⭐
+
+Kimi K3（2.8兆パラメータMoE）が**AMD MI300X 8枚**で動作確認。従来はNVIDIA B200×16が必要とされていた構成。
+
+- **技術的意義**: 「**VRAMが計算能力よりも重要に**」というパラダイムシフト。MI300Xは192GB HBM3eを搭載、8枚で1.5TBのVRAMを実現
+- **AMD vs NVIDIA**: MI300X (192GB HBM3e) は B200 (180GB HBM3e) に対してVRAM容量で優位
+- **中国市場への影響**: 独立中国モデルとしてNVIDIA依存からの脱却の可能性を示唆
+
+> **出典**: 機器之心/36kr — [16张B200才能跑的Kimi K3，8張AMD就装下了](https://36kr.com/p/3924837964101767)（2026-08-04）[T1]
+
+### AirLLM — 3.7GB VRAMでK3（2.8T）実行（8月3日）
+
+AirLLMプロジェクトが**3.7GB VRAM**で2.8兆パラメータのKimi K3を動作させると報告。
+
+- MoEアーキテクチャの特性を活かし、アクティブパラメータのみをVRAMにロード
+- 4GB VRAMで70B、8GBで405Bモデルも実行可能
+- 一般ユーザー向けローカル実行の可能性を大幅に拡大
+
+> **出典**: Juejin — [开源项目第174期：AirLLM](https://juejin.cn/post/7669690604403130419)（2026-08-03）[T2]
+
+### DeepSeek V4 Flashローカルデプロイ構成議論（8月6日）
+
+V2EXで「本地部署deepseekV4flash大概需要什么样的配置需求？」という実用的議論が展開。
+
+- V4 Flash（284B total/13B active）: FP8で160GB、Q4量子化で80GB、Q2で40GBが必要
+- RTX 5090単体でQ4動作の可能性
+- DeepSeek API値上げ予告（8/6）がローカルデプロイへのシフトを加速
+
+> **出典**: V2EX — [本地部署deepseekV4flash](https://www.v2ex.com/t/1232409)（2026-08-06）[T2]
+
+### Kimi Code Computer Use対応（8月8日）
+
+Kimi Codeが**Computer Use（PC操作）機能**をサポート開始。K3多モーダルモデルと組み合わせることでローカルAIエージェントの闭环が完成。
+
+> **出典**: Juejin — [国产版"Claude Code"也支持电脑控制了](https://juejin.cn/post/7670809937196089378)（2026-08-08）[T2]
+
+### DeepSeek API値上げ予告 — ローカルデプロイへのシフト加速（8月6日）
+
+DeepSeekがAPI料金の**大幅な値上げ**を予告。無料ユーザー・低コスト層のローカルデプロイへの移行動機がさらに加速。
+
+- 具体的な値上げ幅は未公表（「涨幅较大」）
+- 7/31のV4 Flash $0.2/MTok値下げからわずか6日後の転換
+- OpenCode V4 Flashも2倍に値上げ（8/7）
+
+> **出典**: Juejin 2026-08-06 [T2], V2EX 2026-08-06 [T2]
+
+### Qwen3ローカル微調 + Dockerデプロイ（8月8日）
+
+中国の開発者が「中医（漢方医学）」ドメイン特化のQwen3モデルをローカルで微調し、Dockerでデプロイした実践記事。
+
+- 国産モデルのドメイン特化微調→ローカルデプロイのパイプラインが一般開発者レベルで確立
+- Qwen3のローカル活用事例として注目
+
+> **出典**: Juejin — [从数据清洗到Docker部署：我在本地训练了一个中医领域Qwen3模型](https://juejin.cn/post/7671572326090293258)（2026-08-08）[T2]
+
+### MiniMax H3 — マルチモーダル新世代のローカルデプロイ（8月3-5日）
+
+MiniMaxがH3（海螺3.0）を発表・オープンソース化。「多模態のDeepSeek」を標榜。
+
+- 2K解像度、最大15秒動画生成、ネイティブ音声対応
+- V2EXで「MBP M5 32GBメモリでMiniMax H3のローカルデプロイは可能か？」という議論
+- 中国初の本格的マルチモーダルオープンモデルとしてローカル環境での検証が進行
+
+> **出典**: 36kr（字母榜）[T1], V2EX [T2]
+
+### LiteLLM脆弱性警告（8月2日）
+
+AI閃讯が「**LiteLLMを即座に検査・削除すべき**」との警告を発信。AI推論の分散化トレンドと関連。
+
+### 国産GPUエコシステム動向
+
+- **昇騰（Ascend）**: 火山引擎veStackによるKimi K3 Day-0適配完了（7月末）に続き、昇騰910C/950での安定動作が報告
+- **摩尔线程（Moore Threads）**: SGLang MUSAバックエンド統合完了（5月）後、DeepSeek V4/GLM-5のMUSA対応が安定
+- **CUDAモート崩壊論**: 7月末の梁文鋒インタビューが8月にも波及。昇騰950=GB300の1/4性能との評価が議論に
