@@ -1,7 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-08-09
+最終更新: 2026-08-10
 エンティティ: 65, コンセプト: 118, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-10 Active Crawl: ChinaAIAgentEcosystem/MCPChina/ChinaAIModelFiling）
+- `concepts/china-ai-agent-ecosystem.md` — **更新**: DeepSeek API値上げ公告(8/6)。Kimi Code Computer Use対応開始(8/8)。OpenClaw管家(Butler)概念登場(8/5)。Codexインジェクション攻撃(8/9)。Omnigentメタオーケストレーション(8/8)
+- `concepts/mcp-china.md` — **更新**: MCP理解深化期(8/3-10)。Tool/Resource/Prompt三機能の理解拡大。新規MCPサーバー多数。Agent Skills完全指南(Juejin8/8)。LiteLLM脆弱性警告(36kr8/4)
+- `concepts/china-ai-model-filing.md` — **更新**: 2ヶ月ぶりクロール。第18批备案未発表(8/10)。擬人化互動服務管理暫行辦法7/15施行済みだが実施細則未発表。清朗行動進行中だが新規執行事例なし
+- `config/hot-topics.yaml` — **last_crawled/notes更新**: china-ai-agent-ecosystem/mcp-china/china-ai-model-filing 3トピック
 ### 本日更新（2026-08-09 Active Crawl: DeepSeek/Kimi/ChinaLocalDeployment）
 - `concepts/deepseek.md` — **更新**: API価格全体値上げ公告(8/6/涨幅较大/7/31値下げから6日後の転換)。OpenCode V4 Flash 2倍値上げ(8/7)。V4.1未リリース(8/9現在)。Harness公式アップデートなし
 - `concepts/kimi.md` — **更新**: Kimi Code Computer Use対応開始(8/8/デスクトップ+モバイル/Claude Codeに近い)。TurnFlow技術解説第5弾(8/6)。DeepSeek V4 Flash vs K3比較(8/7)

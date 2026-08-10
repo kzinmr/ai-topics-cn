@@ -1,7 +1,7 @@
 ---
 title: "中国AI智能体生态 — 2026年プラットフォーム・アーキテクチャ・市場動向"
 created: 2026-04-19
-updated: 2026-08-03
+updated: 2026-08-10
 tags: [ai-agents, platform, china, ecosystem, low-code, enterprise, openclaw, harness, coding-agent, cli-revival]
 aliases: ["中国AI智能体生态", "中国Agentプラットフォーム", "Baidu AgentBuilder", "腾讯元器", "Coze", "Dify", "OpenClaw-CN", "龙虾大战"]
 source_lang: zh-CN
@@ -1174,3 +1174,42 @@ V2EX（スコア54）で**Agentフレームワーク選定に関する議論**�
 | 36kr — 全球調用Top5 | 36kr (7/28) | T1 | 全て中国製品 |
 | 36kr — ローカルデプロイコスト | 36kr (7月下旬) | T1 | 3000万元論争 |
 | V2EX — Agent選択議論 | v2ex.com (8/1) | T1 | フレームワーク選定議論 |
+
+### 2026年8月3日〜10日の動向
+
+#### DeepSeek API価格値上げ公告（8/6）
+- DeepSeekがAPIサービス全体の価格値上げを発表。「涨幅較大（大幅な値上げ）」と警告。7/31のV4 Flash値下げからわずか6日での転換
+- OpenCode V4 Flash 2倍値上げ（8/7）— 開発者向けツールでの価格増加
+- V4.1未リリース（8/9現在）
+
+#### Kimi Code Computer Use対応開始（8/8）
+- Kimi CodeがComputer Use機能を正式対応。デスクトップ＋モバイル両方でClaude Codeに近い操作能力を実現
+- TurnFlow技術解Flow技術解説第5弾（8/6）公開
+
+#### OpenClawリリース停淀、新概念登場
+- v2026.7.1（7/13安定版）から新規リリースなし
+- OpenClaw管家（Butler）概念登場（8/5 WeChat）— エンドポイントツールチェーンから「管家型」インタラクションへの進化を示唆
+- 中国生成式AI大会（8/3-4）で阿里との技術提携で登場
+- 掘金コミュニティではClaude Codeが支配的
+
+#### Agentセキュリティ問題顕在化
+- Codex中转站インジェクション攻撃（8/9 V2EX）— SSH/ApiKey窃取スクリプトが注入された報告
+- Codexファイル削除事件（8/9 V2EX）— Agentが意図せずファイルシステムを破壊
+- Agent Skills完全ガイド（8/8 Juejin）公開 — セキュリティ考慮を含むSkill管理の標準化
+
+#### Omnigent: Databricks Agentメタオーケストレーション（8/8）
+- Databricks共同創設者Matei Zaharia主導で「Omnigent」オープンソース化。Claude Code、Codex、Cursorを統一管控
+
+#### Hermes vs OpenClaw — 自己進化能力の競争
+- Juejin（8/8）で比較記事公開。Hermesは記憶と自己進化、OpenClawはツールチェーンと実行。棲み分けが明確に
+
+### 出典（8月3日〜10日追加分）
+
+| ソース | URL | ティア | 概要 |
+|--------|-----|--------|------|
+| Juejin — DeepSeek API値上げ | juejin.cn (8/6) | T1 | API全体値上げ公告/涨幅較大 |
+| wiki/kimi.md — Computer Use | wiki (8/9) | T1 | Kimi Code Computer Use対応 |
+| wiki/openclaw.md — 管家概念 | wiki (8/8) | T1 | OpenClaw管家(Butler)概念登場 |
+| V2EX — Codex攻撃報告 | v2ex.com (8/9) | T1 | 中转站インジェクション/ファイル削除 |
+| Juejin — Omnigent | juejin.cn (8/8) | T1 | Databricks Agentメタオーケストレーション |
+| Juejin — Hermes vs OpenClaw | juejin.cn (8/8) | T1 | 自己進化能力比較 |

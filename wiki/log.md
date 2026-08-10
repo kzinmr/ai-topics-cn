@@ -41,6 +41,18 @@
 |
 |
 |
+|
+|## [2026-08-10] active-crawl | ChinaAIAgentEcosystem/MCPChina/ChinaAIModelFiling
+|
+|### Wiki更新
+|- `concepts/china-ai-agent-ecosystem.md` — **更新**: DeepSeek API値上げ公告(8/6)。Kimi Code Computer Use対応開始(8/8)。OpenClaw管家(Butler)概念登場(8/5)。Codexインジェクション攻撃(8/9)。Omnigentメタオーケストレーション(8/8)。Hermes vs OpenClaw比較(8/8)
+|- `concepts/mcp-china.md` — **更新**: MCP理解深化期(8/3-10)。Tool/Resource/Prompt三機能の理解拡大。新規MCPサーバー多数。Agent Skills完全指南(Juejin8/8)。LiteLLM脆弱性警告(36kr8/4)
+|- `concepts/china-ai-model-filing.md` — **更新**: 2ヶ月ぶりクロール。第18批备案未発表(8/10)。擬人化互動服務管理暫行辦法7/15施行済みだが実施細則未発表。清朗行動進行中だが新規執行事例なし
+|
+|### hot-topics.yaml更新
+|- china-ai-agent-ecosystem: last_crawled 2026-08-10、notes更新
+|- mcp-china: last_crawled 2026-08-10、notes更新
+|- china-ai-model-filing: last_crawled 2026-08-10、notes更新
 |## [2026-08-09] active-crawl | DeepSeek/Kimi/ChinaLocalDeployment
 |
 |### Wiki更新
