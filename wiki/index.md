@@ -1,7 +1,10 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-08-10
-エンティティ: 65, コンセプト: 118, ダイジェスト: 7, 比較: 2, ページ: 9
+最終更新: 2026-08-11
+エンティティ: 65, コンセプト: 119, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-11 Newsletter Triage: ChinAI #370 米中データサプライチェーン）
+- `concepts/china-ai-landscape.md` — **更新**: 広東AI人材の台頭セクション追加（蘇剣林/陳広宇/梁文鋒/楊植麟）。深センにスター企業不在の理由分析。ビジネス思考vs政治思考のメタファー
+- `concepts/china-ai-data-supply.md` — **新規**: 米国データラベリング企業（Surge AI/Mercor/AfterQuery/Turing）が中国AI Labsに年間$5億供給。OTSデータセットによるノウハウ移転。規制空白（チップ規制vsデータ規制）
 ### 本日更新（2026-08-10 Active Crawl: ChinaAIAgentEcosystem/MCPChina/ChinaAIModelFiling）
 - `concepts/china-ai-agent-ecosystem.md` — **更新**: DeepSeek API値上げ公告(8/6)。Kimi Code Computer Use対応開始(8/8)。OpenClaw管家(Butler)概念登場(8/5)。Codexインジェクション攻撃(8/9)。Omnigentメタオーケストレーション(8/8)
 - `concepts/mcp-china.md` — **更新**: MCP理解深化期(8/3-10)。Tool/Resource/Prompt三機能の理解拡大。新規MCPサーバー多数。Agent Skills完全指南(Juejin8/8)。LiteLLM脆弱性警告(36kr8/4)

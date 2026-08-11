@@ -3421,3 +3421,14 @@ Originating conversation: (scheduled cron)
 ## Wiki Health Auto-Fix (2026-08-06)
 - index.mdに孤立conceptページ5件追加 (deepseek, doubao, kimi-k2-6, openclaw, qwen)
 - index.mdから破損リンク2件削除 (china-ai-bulletin, daily-digest-2026-04-25)
+## [2026-08-11] newsletter-triage | ChinAI #370
+
+### 収集概要
+- **チェックポイント**: 20260811T040027Z
+- **総候補**: 9件
+- **Take**: 2件 — ChinAI #370 広東AI人材分析（concepts/china-ai-landscape更新）、米国データラベリング企業×中国Labs（concepts/china-ai-data-supply新規）
+- **Skip**: 7件 — Substackリンクバリアント3件、Substackアプリプロモーション、中国都市間競争（AI関連薄い）、ロシア経済政策（無関係）、ChinAI #340再リンク（過去分）
+
+### Wiki更新
+- `concepts/china-ai-landscape.md` — 広東AI人材台頭セクション追加
+- `concepts/china-ai-data-supply.md` — 新規ページ作成（米国データラベリング×中国Labs）
