@@ -1,7 +1,7 @@
 ---
 title: "豆包 (Doubao) — ByteDance AIアシスタント"
 created: 2026-04-19
-updated: 2026-08-04
+updated: 2026-08-11
 tags: [llm, ai-assistant, video-generation, coding-assistant, china, bytedance]
 aliases: ["Doubao", "豆包", "豆包APP", "Doubao-Seed", "火星引擎", "Volcano Engine"]
 source_lang: zh-CN
@@ -563,6 +563,17 @@ QuestMobile 2026年3月データに基づき豆包のMAUは**3.45億**（国内A
 - ByteDanceのAI戦略における重要な収益源としての分析
 
 **出典**: 36kr 2026-07-07 [Tier-1]
+
+
+### 2026年8月5日〜11日の状況
+
+本期間に豆包固有の主要な公式リリースは確認されなかった（静穏期）。ただし、以下の関連動向が検出された:
+
+- **Seedance 2.5 コミュニティ利用活発化**（8/5, 8/8）: V2EXでSeedance 2.5/MiniMax H3/Kling 3.0比較ノート公開。単次30秒生成（2.0の15秒から倍増）、領域編集機能が新規。Fast版コスト$0.13/秒
+- **字節跳動「Aime」新Agent製品**（8/10）: アーキテクチャエンジニア募集。Memory（短期/長期/情景記憶）、Skill体系（プラグインエコシステム、Skill自己進化）が豆包とは異なる自律型Agent製品の可能性
+- **火山引擎Agent開発者向け活動**（8/5, 8/7）: Coding AgentのTLS可観測性体系（OpenTelemetryベース）、火山Milvus（全マネージドベクトルDB/RAG向け最適化）
+- **火山引擎API 4割引き**（8/10）: DeepSeek V4 Flashの$0.2/MTok値下げを受けた業界全体の価格競争の一環
+- **Seedance API中継市場**（8/1）: 91token.comがSeedance 2.0 API中継サービスを開始。公式APIの不安定さを補完
 
 ## 関連リンク
 

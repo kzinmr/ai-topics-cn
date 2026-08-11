@@ -1,7 +1,7 @@
 ---
 title: "中国编程Agent工具 — コーディングAIエージェントの生態系"
 created: 2026-04-19
-updated: 2026-08-05
+updated: 2026-08-11
 tags: [coding-agents, china, ide, automation, software-development, claude-code, cursor, openai]
 aliases: ["中国编程Agent", "编程自动化工具", "AI代码助手", "Chinese coding agents", "AI编程工具"]
 source_lang: zh-CN
@@ -644,6 +644,19 @@ Juejin開発者「吴佳浩Alben」が**Hermes AgentとOpenClawのAgent Loopを�
 
 ### 2. 中国特有技術スタック対応
 Spring Boot・Vue.js・Uni-app・微信小程序等、中国市場固有のフレームワークへの対応品質がAgent選定の重要な基準。
+
+
+### 2026年8月5日〜11日の状況
+
+本期間に以下の重要な新展開が確認された:
+
+- **DeepSeek API値上げ公告**（8/6）: 開放平台が「近いうちに全体的にDeepSeek APIサービスの定価を引き上げる。大幅な値上げを予定」と正式通知。V2EXで77スコアの大スレッド。V4 Flashの$0.20/MTokは依然として高コストパフォーマンスだが、長期的な値上げトレンドへの警戒が広がる
+- **Kimi Code Computer Use対応**（8/7-8）: 両端末（PC/スマホ）でComputer Use機能をサポート。「現在Claude Codeに最も似ているのはKimi Codeだ」と評価。Claude Code中国事実上死亡以降、Kimi Codeが国内エージェントの主力候補として認知度が急速に上昇
+- **Harness Engineering「二階抽象」論文**（8/8）: Agentが3つの案からCを選ぶことはできるが、「3つ全て間違っているかも」と疑うことはできない。人間のヒューリスティック・インベントリに相当するLLM向け制約の自然成長を提唱。DeepSeek HarnessやOpenClawの設計思想に対する哲学的批判
+- **Meta Muse Code発表**（8/09）: Metaが低価格でコーディング市場に参入。AIコーディング市場の価格競争がさらに激化
+- **Pi + DeepSeek V4 Flash**（8/10）: CLIコーディングAgent「Pi」とDeepSeek V4 Flashの組み合わせが高評価。低コスト・高速推論がCLI Agentの実用性を大きく向上
+- **Agent Skills完全ガイド**（8/8）: Agent Skillsの概念、ディレクトリ構造、漸進的ロードの工程実践に関する包括ガイド
+- **GPT-5.6→Opus 4.8引継ぎ失敗事例**（8/9）: Agent間のコード互換性、コンテキスト連続性の課題を浮き彫りに
 
 ## 関連リンク
 

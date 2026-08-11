@@ -42,6 +42,18 @@
 |
 |
 |
+|
+|## [2026-08-11] active-crawl | Doubao/ChatGLM/ChinaCodingAgents
+|
+|### Wiki更新
+|- `concepts/doubao.md` — **更新**: 静穏期(8/5-11に豆包固有リリースなし)。Seedance 2.5コミュニティ活発化。字節跳動「Aime」新Agent製品人材募集。火山引擎Agent開発者活動。火山引擎API4割引き
+|- `concepts/chatglm.md` — **更新**: 静穏期継続(8/5-11)。GLM-5.2がKimi K3との頻繁比較で言及継続。科创板上場申請進行中。時価総額7,000億HKD超
+|- `concepts/china-coding-agents.md` — **更新**: DeepSeek API値上げ公告(8/6)。Kimi Code Computer Use対応開始(8/7-8)。Harness二階抽象論文(8/8)。Meta Muse Code発表(8/9)。Pi+DeepSeek V4 Flash体験記(8/10)
+|
+|### hot-topics.yaml更新
+|- doubao: last_crawled 2026-08-11、notes更新
+|- chatglm: last_crawled 2026-08-11、notes更新
+|- china-coding-agents: last_crawled 2026-08-11、notes更新
 |## [2026-08-10] active-crawl | ChinaAIAgentEcosystem/MCPChina/ChinaAIModelFiling
 |
 |### Wiki更新

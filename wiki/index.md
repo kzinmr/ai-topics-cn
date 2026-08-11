@@ -2,6 +2,10 @@
 
 最終更新: 2026-08-11
 エンティティ: 65, コンセプト: 119, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-11 Active Crawl: Doubao/ChatGLM/ChinaCodingAgents）
+- `concepts/doubao.md` — **更新**: 静穏期(8/5-11)。Seedance 2.5コミュニティ活発化。字節跳動「Aime」新Agent製品人材募集。火山引擎Agent開発者活動
+- `concepts/chatglm.md` — **更新**: 静穏期継続(8/5-11)。GLM-5.2 vs Kimi K3比較言及継続。科创板上場申請進行中
+- `concepts/china-coding-agents.md` — **更新**: DeepSeek API値上げ公告(8/6)。Kimi Code Computer Use対応(8/7-8)。Harness二階抽象論文(8/8)。Meta Muse Code発表(8/9)
 ### 本日更新（2026-08-11 Newsletter Triage: ChinAI #370 米中データサプライチェーン）
 - `concepts/china-ai-landscape.md` — **更新**: 広東AI人材の台頭セクション追加（蘇剣林/陳広宇/梁文鋒/楊植麟）。深センにスター企業不在の理由分析。ビジネス思考vs政治思考のメタファー
 - `concepts/china-ai-data-supply.md` — **新規**: 米国データラベリング企業（Surge AI/Mercor/AfterQuery/Turing）が中国AI Labsに年間$5億供給。OTSデータセットによるノウハウ移転。規制空白（チップ規制vsデータ規制）

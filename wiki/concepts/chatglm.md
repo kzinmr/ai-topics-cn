@@ -3,7 +3,7 @@ title: "ChatGLM (智谱清言) — Zhipu AI"
 type: concept
 tags: [LLM, chinese-ai, open-source, agent, zhipu, multimodal]
 created: 2026-04-20
-updated: 2026-08-05
+updated: 2026-08-11
 aliases: ["智谱清言", "GLM-4", "GLM-5", "GLM-5.1", "GLM-5.2", "GLM-5-Turbo", "Zhipu AI", "智谱AI"]
 source_lang: zh-CN
 ---
@@ -427,3 +427,6 @@ AutoClaw（澳龙）のiOSアプリ版が正式リリース。PC版のローカ�
 - [GitHub: THUDM/GLM-4](https://github.com/THUDM/GLM-4)
 - [GitHub: THUDM/CogAgent](https://github.com/THUDM/CogAgent)
 - [LLM-Red-Team/glm-free-api](https://github.com/LLM-Red-Team/glm-free-api) — GLM-4-Plus逆向API
+### 2026年8月5日〜11日の状況
+
+本期間にZhipu AI固有の主要リリースは確認されなかった（静穏期）。GLM-5.2（7/22リリース）がKimi K3との比較で頻繁に言及される状況が継続。UK AISI/CAISI評価ではKimi K3（32%）がGLM-5.2（24%）を上回るが、コスト面ではGLM-5.2（$0.90/MTok）がKimi K3（$2.30）比で優位。科创板A株上場申請（150億元調達計画）は進行中。時価総額は約7,000億香港ドル超。
