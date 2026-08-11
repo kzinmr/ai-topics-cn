@@ -4,7 +4,7 @@ created: 2026-08-11
 updated: 2026-08-11
 tags: [supply-chain, data-labeling, china, us, ai-training, geopolitics]
 aliases: ["AIデータ供給", "AI Data Supply Chain", "トレーニングデータ地政学", "データ規制空白"]
-source_lang: en
+source_lang: zh-CN
 ---
 
 # 米中AIトレーニングデータサプライチェーン
