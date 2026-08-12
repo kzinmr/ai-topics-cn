@@ -1,7 +1,7 @@
 ---
 title: Qwen（通义千问）— 阿里云大模型旗舰
 created: 2026-04-17
-updated: 2026-08-07
+updated: 2026-08-12
 tags: [llm, model, china, open-source-ai, alibaba, qwen, agentic-coding, ai-infrastructure, qwen3.7, qwen3.8, agent-era, qwen-image-3, tts]
 aliases: ["Qwen", "通义千问", "qwen", "Qwen3.5", "Qwen3-Coder", "Qwen3.6", "Qwen3.6-Plus", "Qwen3.6-27B", "Qwen3.6-35B-A3B", "Qwen3.7-Max", "Qwen3.7-Plus", "Qwen3.8-Max", "千问云", "Qianwen Cloud", "千問办公"]
 source_lang: zh-CN
@@ -1028,6 +1028,24 @@ AlibabaはQwenを中核とした**フルスタックAI戦略**を展開：
 - Alibaba/Qwen関連のメジャープレスリリースなし
 
 **出典**: daily_digest 2026-08-02/06 (Juejin/V2EX) [T1]
+
+### 2026年8月7日〜12日の状況
+
+#### 静定期継続
+8月7日〜12日にQwen固有のメジャーリリース・価格改定・新規プロダクト発表はなし。
+
+#### コミュニティ利用動向
+- **Qwen3.8 Maxプレビュー**: JavaGuideのOpenCode比較記事（8/6/Juejin）で引き続き利用確認。安定版リリースは未達。
+- **中医(漢方)ドメインローカル微調**: 開発者がQwen3を中医ドメインで微調整し、Dockerデプロイ（8/8/Juejin）。
+- **VibeCoding活用**:「一行コードも書かずAIで収益化商品を作った」事例（8/8-11/Juejin）。
+
+#### 注目すべきAbsent
+- Qwen4.0等の次世代モデルリリースなし
+- Qwen Code v0.17.x安定版リリースなし（プレビュー継続、計85日目）
+- Token Plan/Lingma/Qoderの価格改定なし
+- Alibaba Cloud Summit関連の追加発表なし
+
+**出典**: daily_digest 2026-08-08/09/10/11 (Juejin/V2EX) [T1]
 
 ### 外部ソース
 

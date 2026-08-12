@@ -43,6 +43,18 @@
 |
 |
 |
+|## [2026-08-12] active-crawl | Qwen/TencentHunyuan/MCPChineseTools
+|
+|### Wiki更新
+|- `entities/qwen.md` — **更新**: 静定期継続(8/7-12)。Qwen3.8 Maxプレビュー利用確認。中医ドメイン微調整。Qwen4.0未リリース
+|- `entities/tencent-hunyuan.md` — **更新**: 静定期継続(8/7-12)。Hy3.0正式版未リリース(計13週目)。WorkBuddyコミュニティ言及
+|- `concepts/mcp-chinese-tools.md` — **更新**: 62日間クロールギャップ(6/11-8/12)。「理解深化期」に移行。MCP Stateless仕様未リリース。MCP攻撃対象3倍拡大
+|
+|### hot-topics.yaml更新
+|- slug: qwen — last_crawled 2026-08-12
+|- slug: tencent-hunyuan — last_crawled 2026-08-12
+|- slug: mcp-chinese-tools — last_crawled 2026-08-12
+|
 |## [2026-08-11] active-crawl | Doubao/ChatGLM/ChinaCodingAgents
 |
 |### Wiki更新

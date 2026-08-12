@@ -79,9 +79,9 @@ topics:
       - "Qwen Image 3 画像生成"
     wiki_pages:
       - entities/qwen
-    notes: "2026.08.07更新: 8/1〜7にQwen固有の主要リリースなし。Qwen3.8 MaxプレビューがOpenCode比較記事で継続利用確認(Juejin8/6)。多模型AI鉴图小站(V2EX8/2)でQwen活用。Qwen4.0・Qwen Code v0.17.x安定版未リリース。静定期継続。2026.08.01更新: 7/29〜8/1にQwenに関する新的な主要ニュースなし。"
+    notes: "2026.08.12更新: 8/7〜12にQwen固有のメジャーリリースなし(静定期継続)。Qwen3.8 Maxプレビュー引き続き利用確認(Juejin8/6)。中医ドメインローカル微調整+Dockerデプロイ(Juejin8/8)。VibeCoding活用事例(Juejin8/8-11)。Qwen4.0・Qwen Code v0.17.x安定版未リリース(計85日目)。Token Plan/Lingma/Qoder価格改定なし。2026.08.07更新: 8/1〜7にQwen固有の主要リリースなし。"
     added: 2026-04-17
-    last_crawled: 2026-08-07
+    last_crawled: 2026-08-12
 
   - slug: chatglm
     title: "ChatGLM (智谱清言) — Zhipu AI"
@@ -194,9 +194,9 @@ topics:
     wiki_pages:
       - entities/tencent-ai
       - entities/tencent-hunyuan
-    notes: "2026.08.07更新: 8/1〜7に腾讯固有の主要リリースなし。Hy3.0正式版は8/7時点で未リリース(計11週目)。网易龙虾生成式AI大会(8/3-4)で混元が大模型記憶研討会参加。新規モデル・価格改定なし。2026.07.31更新: 胡瀚離職・世界模型転換。大厂AI Agent戦略収斂。全球調用TOP5中国製品独占。CodeBuddy後れ。"
+    notes: "2026.08.12更新: 8/7〜12に腾讯固有の主要リリースなし(静定期継続)。Hy3.0正式版は8/12時点で未リリース(計13週目)。WorkBuddyオープンソース版推薦がV2EX(8/11)で確認(コミュニティ言及のみ)。新規モデル・価格改定なし。姚順雨新活動なし。Q2決算は8月中旬発表予定。2026.08.07更新: 8/1〜7に腾讯固有の主要リリースなし。"
     added: 2026-04-29
-    last_crawled: 2026-08-07
+    last_crawled: 2026-08-12
 
   # =========================================================
   # 2. Chinese AI Agent Ecosystem (中国AIエージェント)
@@ -469,9 +469,9 @@ topics:
       - "智能体規範応用 AIP 国家標準"
     wiki_pages:
       - concepts/mcp-chinese-tools
-    notes: "2026.06.11更新: 5/29〜6/11は静観・消化期間(前回リリースラッシュ後の定着期)。钉钉MCP广场・腾讯云MCP・新华财经MCP・百炼MCP化・Coze Space MCPいずれも新発表なし。コミュニティ教育記事(MCP/A2A/AG-UI比較)継続。中国メディア関心はClaude Mythos/Fable 5・Anthropic IPOに集中。Kimi Code MCP対応ユーザー報告(未確認)。2026.05.29更新
+    notes: "2026.08.12更新: 62日間クロールギャップ(6/11〜8/12)。「理解深化期」に移行。MCP Stateless最終仕様7/28予定だが未リリース。8大MCP広場:百度56,757+/MCP星球54,555+/讯飞16,318+等。新規MCPサーバー:iOS SandboxServer/DataZen/Linkly AI Note/codebase-memory-mcp等。MCP攻撃対象3倍拡大(Trend Micro/1,467台)。ClawHubサプライチェーン攻撃(341悪意スキル)。LiteLLM脆弱性警告(8/4/36kr)。教育コンテンツ充実期。2026.06.11更新: 5/29〜6/11は静観・消化期間。"
     added: 2026-04-17
-    last_crawled: 2026-06-11
+    last_crawled: 2026-08-12
 
   # =========================================================
   # 6. Vibe Coding Trend in China (中国のVibe Coding)

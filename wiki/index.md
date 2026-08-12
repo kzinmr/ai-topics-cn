@@ -1,7 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-08-11
+最終更新: 2026-08-12
 エンティティ: 65, コンセプト: 119, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-12 Active Crawl: Qwen/TencentHunyuan/MCPChineseTools）
+- `entities/qwen.md` — **更新**: 静定期継続(8/7-12)。Qwen3.8 Maxプレビュー利用確認。中医ドメイン微調整。VibeCoding活用事例。Qwen4.0未リリース
+- `entities/tencent-hunyuan.md` — **更新**: 静定期継続(8/7-12)。Hy3.0正式版未リリース(計13週目)。WorkBuddyコミュニティ言及。Q2決算8月中旬予定
+- `concepts/mcp-chinese-tools.md` — **更新**: 62日間クロールギャップ(6/11-8/12)。「理解深化期」に移行。MCP Stateless仕様未リリース。8大MCP広場(百度56,757+等)。MCP攻撃対象3倍拡大。ClawHubサプライチェーン攻撃
 ### 本日更新（2026-08-11 Active Crawl: Doubao/ChatGLM/ChinaCodingAgents）
 - `concepts/doubao.md` — **更新**: 静穏期(8/5-11)。Seedance 2.5コミュニティ活発化。字節跳動「Aime」新Agent製品人材募集。火山引擎Agent開発者活動
 - `concepts/chatglm.md` — **更新**: 静穏期継続(8/5-11)。GLM-5.2 vs Kimi K3比較言及継続。科创板上場申請進行中
