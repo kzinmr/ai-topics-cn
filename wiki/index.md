@@ -473,6 +473,7 @@
 - [[beike-ai-customer-service|贝壳AI客服 — MCP + Skillを活用したAIカスタマーサービス]]
 - [[cc-monitor|cc-monitor — Claude Code リアルタイムToken消費モニター]]
 - [[chatglm|ChatGLM (智谱清言) — Zhipu AIの中国語圏事情]]
+- [[china-ai-data-supply|米中AIトレーニングデータサプライチェーン]]
 - [[china-ai-model-filing|中国AI模型备案制度 — 大模型备案・算法备案]]
 - [[china-ai-superapp-race|china-ai-superapp-race]]
 - [[china-palantir|china-palantir]]
