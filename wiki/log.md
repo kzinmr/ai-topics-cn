@@ -43,6 +43,18 @@
 |
 |
 |
+|## [2026-08-13] active-crawl | DeepSeek/Kimi/CodingPlan
+|
+|### Wiki更新
+|- `concepts/deepseek.md` — **更新**: 8/9-13に新規メジャーリリースなし(静定期)。V4.1公式リリース未確認継続
+|- `concepts/kimi.md` — **更新**: 8/9-13はK3リリース後安定化期間。claude-tap・Code Agent組合テストでKimi言及
+|- `concepts/coding-plan.md` — **更新**: DeepSeek API値上げ公告(8/6)。Cursor 3.9 China問題。Meta Muse Code参入。Agent Token効率30倍差比較。Harness寿命論
+|
+|### hot-topics.yaml更新
+|- slug: deepseek last_crawled 2026-08-13
+|- slug: kimi last_crawled 2026-08-13
+|- slug: coding-plan last_crawled 2026-08-13
+|
 |## [2026-08-12] active-crawl | Qwen/TencentHunyuan/MCPChineseTools
 |
 |### Wiki更新

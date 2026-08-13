@@ -1,7 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-08-12
+最終更新: 2026-08-13
 エンティティ: 65, コンセプト: 119, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-13 Active Crawl: DeepSeek/Kimi/CodingPlan）
+- `concepts/deepseek.md` — **更新**: 8/9-13に新規メジャーリリースなし(静定期)。V4.1公式リリース未確認継続。API値上げ公告影響継続
+- `concepts/kimi.md` — **更新**: 8/9-13はK3リリース後安定化期間。claude-tap・Code Agent組合テストでKimi言及。DeepSeek V4 Pro 0813への関心シフト
+- `concepts/coding-plan.md` — **更新**: DeepSeek API値上げ公告(8/6)。Cursor 3.9 China問題。Meta Muse Code参入。Agent Token効率30倍差比較。Harness寿命論
 ### 本日更新（2026-08-12 Active Crawl: Qwen/TencentHunyuan/MCPChineseTools）
 - `entities/qwen.md` — **更新**: 静定期継続(8/7-12)。Qwen3.8 Maxプレビュー利用確認。中医ドメイン微調整。VibeCoding活用事例。Qwen4.0未リリース
 - `entities/tencent-hunyuan.md` — **更新**: 静定期継続(8/7-12)。Hy3.0正式版未リリース(計13週目)。WorkBuddyコミュニティ言及。Q2決算8月中旬予定

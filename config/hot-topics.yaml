@@ -49,9 +49,9 @@ topics:
       - "DeepSeek テンセント 融資 700億元評価額"
     wiki_pages:
       - concepts/deepseek
-    notes: "2026.08.09更新: API価格全体値上げ公告(8/6/涨幅较大/7/31値下げから6日後の転換)。OpenCode V4 Flash 2倍値上げ(8/7)。V4.1未リリース(8/9現在)。Harness公式アップデートなし。掘金でV4-Pro vs GLM-5.1比較継続(8/4-8)。2026.08.04更新: V4 Flash＆V4正式版リリース(7/31)。梁文鋒CUDAモート崩壊論インタビュー(7/31)。三大Agent Token効率30倍差比較(機器之心7/31)。Harness限界論(Claude Code之父「保質期半年」/7/30)。DeepSeek Harness内測開始(7/29)。V4-Flash $0.2/MTok値下げ(7/31)。"
+    notes: "2026.08.13更新: 8/9-13に新規メジャーリリースなし(静定期)。V4.1は依然として公式リリース未確認(6月予定)。Harness公式アップデートなし(7/29内測開始以降)。DeepSeek API値上げ公告(8/6)の影響が継続。掘金でV4-Pro vs GLM-5.1比較継続(8/4-8)。2026.08.09更新: API価格全体値上げ公告(8/6/涨幅较大/7/31値下げから6日後の転換)。OpenCode V4 Flash 2倍値上げ(8/7)。V4.1未リリース(8/9現在)。Harness公式アップデートなし。2026.08.04更新: V4 Flash＆V4正式版リリース(7/31)。梁文鋒CUDAモート崩壊論インタビュー(7/31)。三大Agent Token効率30倍差比較(機器之心7/31)。Harness限界論(Claude Code之父「保質期半年」/7/30)。DeepSeek Harness内測開始(7/29)。V4-Flash $0.2/MTok値下げ(7/31)。"
     added: 2026-04-17
-    last_crawled: 2026-08-09
+    last_crawled: 2026-08-13
 
   - slug: qwen
     title: "Qwen (通义千问) — Alibaba"
@@ -127,9 +127,9 @@ topics:
       - "Kimi 停售 算力告急"
     wiki_pages:
       - concepts/kimi
-    notes: "2026.08.09更新: Kimi Code Computer Use対応開始(8/8/デスクトップ+モバイル/Claude Codeに近い)。TurnFlow技術解Flow技術解説第5弾(8/6)。DeepSeek V4 Flash vs K3比較(8/7/V2EX)。K3リリース後静穏期。2026.08.06更新: K3 AMD GPU対応確認(8/4/16枚B200→AMD MI300X×8)。AirLLM 3.7GB VRAMでK3実行可能(8/3)。K3コスト・ROI問題顕在化。K3商業化前景分析(DoNews8/3)。OpenK3コミュニティリファレンスサイト(8/4)。2026.08.01更新: K3技術インフラ深掘り。K3「Affordable Luxury」価格戦略分析。火山引擎veStack K3 Day0適配完了。評価額$45B到達確認。"
+    notes: "2026.08.13更新: 8/9-13はK3リリース後安定化期間(利用定着期)。Kimi固有の主要リリースなし。claude-tap(16種CLI対応トラフィック分析ツール/8/11)でKimi言及。実測7套Code Agent組合(8/11/Juejin)でKimi Codeテスト対象。ChinAI #370(8/10)でK3影響言及。競争環境はDeepSeek V4 Pro 0813(8/13リリース)への関心シフト。2026.08.09更新: Kimi Code Computer Use対応開始(8/8/デスクトップ+モバイル/Claude Codeに近い)。TurnFlow技術解Flow技術解説第5弾(8/6)。DeepSeek V4 Flash vs K3比較(8/7/V2EX)。K3リリース後静穏期。2026.08.06更新: K3 AMD GPU対応確認(8/4/16枚B200→AMD MI300X×8)。AirLLM 3.7GB VRAMでK3実行可能(8/3)。K3コスト・ROI問題顕在化。K3商業化前景分析(DoNews8/3)。OpenK3コミュニティリファレンスサイト(8/4)。2026.08.01更新: K3技術インフラ深掘り。K3「Affordable Luxury」価格戦略分析。火山引擎veStack K3 Day0適配完了。評価額$45B到達確認。"
     added: 2026-04-17
-    last_crawled: 2026-08-09
+    last_crawled: 2026-08-13
 
   - slug: yi
     title: "Yi (零一万物) — 01.AI"
@@ -573,9 +573,9 @@ topics:
       - "Coding Plan agent 中国"
     wiki_pages:
       - concepts/coding-plan
-    notes: "2026.07.29更新: Kimi K3正式リリース(2.8T/計算資源危機/停售)。Claude Code中国事実上の死亡(バックドア発覚/Alibaba禁止/Qoder一層加速)。Qoder市場シェア47.6%(IDC公式/国内1位)。Qwen 3.8 Maxプレビュー(2.4T)。GLM-5 OSS化。MiMo V2.5激安改定。Harness Engineering概念定着。価格比較:DeepSeek$0.18/MiniMax$0.22/GLM-5.2$0.90/Qwen$1.40/K3$2.30。2026.06.12更新: 6月静定期(新規参入・価格改定なし)。DeepSeek V4 Pro 2.5割確定の間接的影響。"
+    notes: "2026.08.13更新: DeepSeek API値上げ公告(8/6/涨幅较大/7/31値下げから6日後の急転換)。Cursor 3.9中国アクセス問題(7月下旬/useModelParameters破壊/3.8ロールバック)。Meta Muse Code発表(8/9/低価格参入)。Agent Token効率30倍差比較(機器之心7/31)。Harness寿命論(Claude Code之父「保質期半年」/7/30)。Harness二階抽象論文(8/8/制約の自然成長)。価格再編進行中。2026.07.29更新: Kimi K3正式リリース(2.8T/計算資源危機/停售)。Claude Code中国事実上の死亡(バックドア発覚/Alibaba禁止/Qoder一層加速)。Qoder市場シェア47.6%(IDC公式/国内1位)。Qwen 3.8 Maxプレビュー(2.4T)。GLM-5 OSS化。MiMo V2.5激安改定。Harness Engineering概念定着。価格比較:DeepSeek$0.18/MiniMax$0.22/GLM-5.2$0.90/Qwen$1.40/K3$2.30。"
     added: 2026-04-17
-    last_crawled: 2026-07-29
+    last_crawled: 2026-08-13
 
   - slug: cursor-china-adoption
     title: "Cursor Adoption in China (Cursor中国使用情况)"

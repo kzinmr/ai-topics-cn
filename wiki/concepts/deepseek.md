@@ -3,7 +3,7 @@ title: "DeepSeek（深度求索）— 2026年最新動向"
 type: concept
 tags: [LLM, chinese-ai, open-source, MoE, reasoning, coding-agent]
 created: 2026-04-17
-updated: 2026-08-09
+updated: 2026-08-13
 source_lang: zh-CN
 ---
 

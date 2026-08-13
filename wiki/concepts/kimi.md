@@ -1,7 +1,7 @@
 ---
 title: "Kimi (月之暗面) — Moonshot AIの旗艦AIアシスタント"
 created: 2026-04-22
-updated: 2026-08-09
+updated: 2026-08-13
 tags: [llm, moonshot, long-context, agent, open-source, chinese-llm, kimi-k3, kimi-k2-7, k3-opensource]
 aliases: ["Kimi", "月之暗面", "Moonshot AI", "Kimi Chat", "Kimi K2"]
 source_lang: zh-CN
@@ -831,6 +831,22 @@ Kimi Codeが**Computer Use（PC操作）機能**をデスクトップ+モバイ�
 - DeepSeek API値上げ予告（8/6）を踏まえたローカルデプロイ代替としてのK3評価
 
 **出典**: [V2EX](https://www.v2ex.com/t/1232839)（2026-08-07）[T2]
+
+### 2026年8月9日〜13日の動向
+
+#### K3リリース後安定化期間
+
+8月9日〜13日の期間は、K3リリース後の利用定着期（安定化期間）に該当。Kimi固有の主要リリース・新規ニュースは確認されなかった。
+
+**コミュニティでのKimi関連言及**:
+- **8/11**: Juejinで「claude-tap」というオープンソーストラフィック分析ツールが話題。Kimi、Claude Code、Codex、Cursor、Gemini等16種のCLIツールのトラフィック分析に対応
+  - 出典: [掘金](https://juejin.cn/post/7672315735167238198)（2026-08-11）[T2]
+- **8/11**: Juejinで「实测7套 Code Agent组合」の記事が掲載。Kimi CodeがClaude Code、Cursor、Codex等と共に7種のCode Agentセットアップとしてテスト対象に
+  - 出典: [掘金](https://juejin.cn/post/7672682802169085990)（2026-08-11）[T2]
+- **ChinAI #370**（8/10）: 「Why is there No Star AI Company from Guangdong?」ニュースレターでK3の影響が言及。共同著者である蘇剣林・陳広宇が注目を集める
+  - 出典: [ChinAI](https://open.substack.com/pub/chinai/p/chinai-370-why-is-there-no-star-ai)（2026-08-10）[T1]
+
+**注目点**: 競争環境はDeepSeek V4 Pro 0813（8/13リリース）への関心が新規の中心としてシフトしつつある。
 
 #### 期間中の静穏性
 8月6-9日はK3リリース後の**利用定着期**。主な動向はKimi Code Computer Use対応と技術解説の継続のみ。大型ニュース（K3 OSS化、AMD GPU対応、$45B評価額）は全て7月末〜8/4に記録済み。
