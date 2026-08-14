@@ -43,6 +43,17 @@
 |
 |
 |
+|## [2026-08-14] active-crawl | ChinaAIAgentEcosystem/OpenClaw/Yi
+|
+|### Wiki更新
+|- `concepts/china-ai-agent-ecosystem.md` — **更新**: DeepSeek Harness OSS公開(8/13)、V4 Pro正式版(8/12-13)、永久API値下げ(8/10)、Kimi Code Computer Use対応(8/7-8)、Manus無料化(8/13)等
+|- `entities/openclaw.md` — **更新**: 8/8-14に新規リリースなし。Hermes vs OpenClaw比較深化(掘金8/8)。DeepSeek Harness新規競合(8/13)。Omnigent登場(8/8)
+|
+|### hot-topics.yaml更新
+|- slug: china-ai-agent-ecosystem last_crawled 2026-08-14
+|- slug: openclaw last_crawled 2026-08-14
+|- slug: yi last_crawled 2026-08-14
+|
 |## [2026-08-13] active-crawl | DeepSeek/Kimi/CodingPlan
 |
 |### Wiki更新

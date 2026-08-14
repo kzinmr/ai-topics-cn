@@ -1,7 +1,7 @@
 ---
 title: "中国AI智能体生态 — 2026年プラットフォーム・アーキテクチャ・市場動向"
 created: 2026-04-19
-updated: 2026-08-10
+updated: 2026-08-14
 tags: [ai-agents, platform, china, ecosystem, low-code, enterprise, openclaw, harness, coding-agent, cli-revival]
 aliases: ["中国AI智能体生态", "中国Agentプラットフォーム", "Baidu AgentBuilder", "腾讯元器", "Coze", "Dify", "OpenClaw-CN", "龙虾大战"]
 source_lang: zh-CN
@@ -1213,3 +1213,171 @@ V2EX（スコア54）で**Agentフレームワーク選定に関する議論**�
 | V2EX — Codex攻撃報告 | v2ex.com (8/9) | T1 | 中转站インジェクション/ファイル削除 |
 | Juejin — Omnigent | juejin.cn (8/8) | T1 | Databricks Agentメタオーケストレーション |
 | Juejin — Hermes vs OpenClaw | juejin.cn (8/8) | T1 | 自己進化能力比較 |
+
+## 2026年8月8日〜14日 — DeepSeek Harness正式オープンソース・V4 Pro発表・永久値下げ・Agentエコシステム加速
+
+### 38. 【最重要】DeepSeek Harness（dsh）正式オープンソース公開（8月13日）
+
+2026年8月13日、DeepSeekが初のAgent Harness製品**「DeepSeek Harness（dsh）」**をMITライセンスでオープンソース公開。7/29の内測開始からわずか2週間弱での製品化。
+
+- **バージョン**: v0.1 開発者プレビュー版
+- **設計思想**: 「連agent loop自体もプラグイン（连agent loop自己都是插件）」— 模型適配・ツール・会話ログ・Agentループ自体が全て交換可能なプラグイン構造
+- **基盤**: 機器人（Robotics）エコシステムの**Cordisフレームワーク**を借用
+- **機能**: 4つのモード（ディレクトリ対応）、MCP Gateway統合
+- **コード品質**: 万少（著者）が2万字の包括的チュートリアルを公開
+- **コミュニティ反応**: V2EX・Juejinで即日多数のスレッド・記事が投稿。4つのHarnessプラグインが即座に公開された
+- **意義**: 「Model + Harness = Agent」パラダイムのDeepSeek版実現。Claude Code/OpenClaw/Hermes Agentとの三つ巴から四つ巴へ
+
+> **出典**: Juejin — [DeepSeek Harness開発者プレビュー版](https://juejin.cn/post/7673407844636459059) [T1]; Juejin — [2万字ガイド](https://juejin.cn/post/7673390412729614390) [T1]; Juejin — [Agent Loopはプラグイン](https://juejin.cn/post/7673400662704898098) [T1]; V2EX — [DSH発表](https://www.v2ex.com/t/1234234) [T1]
+
+### 39. DeepSeek V4 Pro 正式版発表（8月12-13日）
+
+DeepSeekが**V4 Pro正式版（DeepSeek-V4-Pro-0813）**を発表。プレビュー版から正式版への移行。
+
+- **アーキテクチャ**: MoE 1.6T総パラメータ / 49B活性、**1M（100万）Tokenコンテキスト**
+- **V4 Flashとの棲み分け**: Flash（284B/13B）は安価なエコシステム推進、Pro（1.6T/49B）はエンタープライズ高精度
+- **開発者比較**: V4 Proのコード能力がGLM-5.1に肉薄（Juejin記事）
+- **影響**: DeepSeek V4 Pro + Pi Agentの組み合わせがClaude Codeを上回るComposio評価も発表
+
+> **出典**: Juejin — [DeepSeek V4 Pro発表](https://juejin.cn/post/7673295877813649444) [T1]; V2EX — [V4 Pro体験](https://www.v2ex.com/t/1233963) [T1]; Juejin — [DeepSeek+Pi Agent vs Claude Code](https://juejin.cn/post/7672956343582359561) [T1]
+
+### 40. DeepSeek永久価格改定 — API価格を1/4に（8月10日）
+
+DeepSeekが**APIサービスの永久値下げ**を実施。8/6の値上げ公告からわずか4日での大転換。
+
+- **入力**: 3元/100万Token（旧価格の約1/4）
+- **出力**: 6元/100万Token
+- **キャッシュ**: 0.025元/100万Token（ほぼ無償）
+- **効果**: 日間500万Token使用で78元→9.3元（約90%削減）
+- **意義**: Agentの自律ループによる大規模Token消費を前提とした価格戦略。競合他社への圧力を維持
+
+> **出典**: Juejin — [DeepSeek永久降价](https://juejin.cn/post/7672220244557037577) [T1]
+
+### 41. Kimi Code Computer Use正式対応（8月7-8日）
+
+Kimi Codeが**Computer Use機能**を正式対応し、Claude Codeに近いデスクトップ操作能力を実現。
+
+- **対応プラットフォーム**: デスクトップ＋モバイルの両方
+- **モデル基盤**: Kimi K3（マルチモーダル）
+- **意義**: 「国产版Claude Code」としての機能充実。K3の算力問題（7/18 503崩壊）の影響は継続
+
+> **出典**: Juejin — [国产版Claude Code也支持电脑控制](https://juejin.cn/post/7670809937196089378) [T1]
+
+### 42. Manus（Manus AI）が期間限定無料化（8月13日）
+
+中国発のAI Agentプラットフォーム**Manus**が**8月25日まで無限クレジット無料**を実施。
+
+- **意義**: 中国Agent市場でのユーザー獲得競争がさらに激化
+- **背景**: Manusは海外向けに展開する中国Agentプラットフォームとして注目を集めていた
+
+> **出典**: V2EX — [Manus 限时免费](https://www.v2ex.com/t/1234154) [T2]
+
+### 43. XiaoyaoClaw（逍遥Claw）— デスクトップ優先マルチIMエージェントプラットフォーム登場
+
+**XiaoyaoClaw**がV2EXで内測招待を開始。デスクトップローカル優先のAIアシスタント管理プラットフォーム。
+
+- **対応IM**: 飛書・Slack・Discord・微信・Telegram・钉钉・QQ・企業微信・WhatsApp（9プラットフォーム）
+- **特徴**: ローカルファースト（データ・APIキー・設定が全てローカル保存）、模型熱切替、24+スキル内蔵
+- **利用者像**: 一人会社・独立開発者・起業家
+- **基盤**: DeepSeek V4 Flash
+- **意義**: OpenClaw/Hermes Agentとは異なる「ローカルファースト×マルチIM」のポジショニング
+
+> **出典**: V2EX — [XiaoyaoClaw内测](https://www.v2ex.com/t/1234136) [T2]
+
+### 44. Pi Agent — DeepSeek V4 Flashとの相性が「革命的」と話題（8月10-13日）
+
+**Pi**（CLI型coding agent）とDeepSeek V4 Flashの組み合わせが中国コミュニティで大きな反響。
+
+- **評価**: 「用着也太爽了」（使ってて最強） — Juejinスコア26・フォロー34
+- **性能**: Composioの30項目高難度Agentコーディングベンチマークで、Pi+DeepSeek V4 FlashがClaude Codeを上回る
+- **意義**: 中国発CLI Agent×中国発推論モデルの組み合わせがClaude Code級の性能を達成
+
+> **出典**: Juejin — [Pi+DeepSeek V4 Flash](https://juejin.cn/post/7671964740780785670) [T2]; Juejin — [DeepSeek+Pi Agent vs Claude Code](https://juejin.cn/post/7672956343582359561) [T1]
+
+### 45. Agentセキュリティとインフラ基盤の議論が深化
+
+#### Agent沙箱インフラの問題（8/13）
+- 「Agentが実行を完了（exit 0）したが、機器が元の状態に戻っていない」問題が浮上
+- サイドエフェクト追跡・並列隔離・ライフサイクル管理の3大課題が議論された
+
+> **出典**: Juejin — [Agent沙箱インフラ](https://juejin.cn/post/7673135963989327898) [T2]
+
+#### Agent Skills完全ガイド（8/11）
+- Agent Skillsのディレクトリ規範から漸進的ロード（Progressive Loading）までの工学実践ガイドが公開
+- OpenClaw/Hermes Agent/Dify等のプラットフォーム横断的なスキル管理標準化
+
+> **出典**: Juejin — [Agent Skills完全ガイド](https://juejin.cn/post/7672682802169085990) [T2]
+
+### 46. Orca — YC支持の並列Coding Agent開発環境
+
+YC（Y Combinator）の支持を受ける**Orca**が発表。マルチCoding Agentの並列実行とリモート監視を実現する開発環境。
+
+- **機能**: 並列Coding Agent実行、スマートフォンからのリモート監視、Design Mode
+- **意義**: Codex/Claude Code/Kimi Codeに加える新興プレイヤー
+
+> **出典**: Juejin — [Orca AI Agent開発環境](https://juejin.cn/post/7673347280924721203) [T2]
+
+### 47. Codexアカウント額度縮小とエコシステム影響（8月13日）
+
+OpenAI Codexのリセット後に**アカウント額度が明顯に縮小**。中国開発者コミュニティで議論。
+
+- **影響**: Codex依存プロジェクトへの波及
+- **意義**: 外部Agent基盤への依存リスクの可視化。「Agent基盤の冗長性」重要性が再認識
+
+> **出典**: V2EX — [Codex额度缩水](https://www.v2ex.com/t/1233991) [T2]
+
+### 48. 普華永道・中国生成式AI大会でのAgent議論（8月3-4日）
+
+**中国生成式AI大会**（8月3-4日開催）で、以下が議論された：
+- 人超赵鑫教授リード、阿里「龙虾（OpenClaw）」技術との衝突セッション
+- 大模型記憶セミナーに腾讯混元が参加
+
+> **出典**: WeChat — [中国生成式AI大会](https://weixin.sogou.com/link?...) [T2]
+
+### 49. Pragma — オープンソース版WorkBuddy（8月11日）
+
+V2EXで**Pragma**（オープンソース版WorkBuddy）が公開。マルチAgentチーム構築ツール。
+
+- **機能**: 異なるAgent Harness × 異なるモデルの専門家チームを自動構成
+- **使い方**: デザイン=gemini+agy、方案=claude+cc、コード=chatgpt+codex、レビュー=deepseek+cc、テスト=codex
+- **特徴**: チーム記憶・チームホワイトボードの共有
+- **意義**: マルチAgentオーケストレーションの実用的パターン提示
+
+> **出典**: V2EX — [Pragma开源版WorkBuddy](https://www.v2ex.com/t/1233678) [T2]
+
+### 50. 総括：8月8日〜14日の5大トレンド
+
+1. **DeepSeek Harnessの完全製品化**: 7/29内測開始→8/13MIT公開。Model+Harness=Agentの実用的製品が揃い、「四つ巴」（Claude Code/OpenClaw/Hermes/DeepSeek Harness）時代に突入
+2. **DeepSeekの価格攻勢**: V4 Pro正式版発表（8/12-13）+ 永久API値下げ（8/10）。推論コストの競争がさらに加速し、Agent経済のインフラコストを根本的に引き下げ
+3. **Kimi Code Computer Use対応**: 中国版Claude Codeの機能充実。K3モデルとの組み合わせでデスクトップ操作Agentが中国市場で標準化
+4. **Agentエコシステムの多元分散**: XiaoyaoClaw・Pragma・Orca等の新興プラットフォームが登場し、市場が多極化
+5. **Agentセキュリティ・インフラ基盤の深化**: 沙箱インフラ・Skills管理・Codex額度問題等、エコシステムの「運用」フェーズの課題が浮上
+
+**主要データポイント**:
+- DeepSeek V4 Pro: **1.6Tパラメータ / 1Mコンテキスト**（8/13正式版）
+- DeepSeek Harness: **MITライセンス / v0.1**（8/13公開）
+- DeepSeek API入力価格: **3元/100万Token**（旧比1/4、8/10値下げ）
+- Manus無料化: **8月25日まで無限クレジット**
+- Pi+DeepSeek: **Claude Codeを上回るComposio評価**
+
+### 出典（8月8日〜14日追加分）
+
+| ソース | URL | ティア | 概要 |
+|--------|-----|--------|------|
+| Juejin — DeepSeek Harness開発者プレビュー版 | [juejin.cn/post/7673407844636459059](https://juejin.cn/post/7673407844636459059) | T1 | MIT公開・全プラグイン構造・Cordisフレームワーク |
+| Juejin — DeepSeek Harness 2万字ガイド | [juejin.cn/post/7673390412729614390](https://juejin.cn/post/7673390412729614390) | T1 | 包括的チュートリアル |
+| Juejin — Agent Loopはプラグイン | [juejin.cn/post/7673400662704898098](https://juejin.cn/post/7673400662704898098) | T1 | Cordisフレームワーク分析 |
+| Juejin — DeepSeek V4 Pro発表 | [juejin.cn/post/7673295877813649444](https://juejin.cn/post/7673295877813649444) | T1 | 1.6T/1M Conテキスト・MoE |
+| Juejin — DeepSeek永久降价 | [juejin.cn/post/7672220244557037577](https://juejin.cn/post/7672220244557037577) | T1 | API 1/4値下げ・入力3元 |
+| Juejin — Pi+DeepSeek V4 Flash | [juejin.cn/post/7671964740780785670](https://juejin.cn/post/7671964740780785670) | T2 | CLI Agent+推論モデルの相性 |
+| Juejin — DeepSeek+Pi vs Claude Code | [juejin.cn/post/7672956343582359561](https://juejin.cn/post/7672956343582359561) | T1 | Composio 30項目ベンチマーク |
+| Juejin — 国産版Claude Code PC操作 | [juejin.cn/post/7670809937196089378](https://juejin.cn/post/7670809937196089378) | T1 | Kimi Code Computer Use対応 |
+| V2EX — Manus限定無料 | [v2ex.com/t/1234154](https://www.v2ex.com/t/1234154) | T2 | 8/25まで無限クレジット |
+| V2EX — XiaoyaoClaw内測 | [v2ex.com/t/1234136](https://www.v2ex.com/t/1234136) | T2 | 9IM対応デスクトップAI助手 |
+| V2EX — Pragma WorkBuddy | [v2ex.com/t/1233678](https://www.v2ex.com/t/1233678) | T2 | オープンソースマルチAgentチーム |
+| Juejin — Orca Agent開発環境 | [juejin.cn/post/7673347280924721203](https://juejin.cn/post/7673347280924721203) | T2 | YC支援・並列Coding Agent |
+| Juejin — Agent沙箱インフラ | [juejin.cn/post/7673135963989327898](https://juejin.cn/post/7673135963989327898) | T2 | サイドエフェクト追跡・ライフサイクル管理 |
+| Juejin — Agent Skills完全ガイド | [juejin.cn/post/7672682802169085990](https://juejin.cn/post/7672682802169085990) | T2 | 7Code Agent組合テスト |
+| V2EX — Codex額度縮小 | [v2ex.com/t/1233991](https://www.v2ex.com/t/1233991) | T2 | リセット後額度減少 |
+| Juejin — Hermes vs OpenClaw自己進化 | [juejin.cn/post/7671489093491802139](https://juejin.cn/post/7671489093491802139) | T2 | 自己進化能力比較 |
+| daily_digest — 2026-08-13 | [wiki/inbox](~/ai-topics-cn/inbox/daily_digests/) | T1 | 日次45記事まとめ |

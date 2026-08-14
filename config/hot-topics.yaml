@@ -142,9 +142,9 @@ topics:
       - "李开复 零一万物 海外 展開"
     wiki_pages:
       - concepts/yi
-    notes: "2026.08.08更新: 8/1〜8/7に新規動向なし。Bloomberg IPO表明(7/27)が最新。日次ダイジェストでの言及なし。静黙期継続。2026.08.01更新: Bloomberg専路でIPO計画正式表明(7/27)。政府向け収益化戦略転換確認(36kr6/1)。阿里雲チーム統合完了(2026年1月)。業界ポジション再評価(六小虎脱落/B端特化)。2026.06.09更新: 沈黙期継続。2026.05.30更新: 三周年内部講話(5/28)。AMD Cube01発表。信通院認証取得。Pre-IPO融資進行中。2027年香港IPO目標。"
+    notes: "2026.08.14更新: 8/8〜8/14に新規動向なし(静黙期継続/IPO準備期間)。Bloomberg IPO表明(7/27)が最新。ChinAI #370(8/10)で01.AI「モデル構築競争から撤退」と言及。日次ダイジェストで零一万物言及ゼロ。2026.08.08更新: 8/1〜8/7に新規動向なし。Bloomberg IPO表明(7/27)が最新。"
     added: 2026-04-17
-    last_crawled: 2026-08-08
+    last_crawled: 2026-08-14
 
   - slug: doubao
     title: "Doubao (豆包) — ByteDance"
@@ -227,8 +227,9 @@ topics:
       - "百融智能 RaaS 硅基員工"
     wiki_pages:
       - concepts/china-ai-agent-ecosystem
-    notes: "2026.08.03更新: DeepSeek V4 Flash正式版＆V4正式版(7/31)。梁文鋒CUDAモート崩壊論(7/31/GPU~2万/昇騰950=GB300の1/4)。三大Agent Token効率30倍差比較(機器之心7/31)。Harness限界論(Claude Code之父「保質期半年」/7/30)。DeepSeek Harness内測開始(7/29)。memU共通メモリ層(V2EX7/30/500行)。OpenAI Agent 108時間制御喪失(7/31)。全球調用Top5全て中国製品(7/28)。ローカルデプロイコスト3000萬元論争(36kr)。2026.08.10更新: DeepSeek API値上げ公告(8/6/涨幅較大)。Kimi Code Computer Use対応開始(8/8)。OpenClaw管家(Butler)概念登場(8/5)。Codexインジェクション攻撃(8/9)。Omnigentメタオーケストレーション(8/8)。Hermes vs OpenClaw比較(8/8)。2026.07.27更新: 阿里Claude Code全面禁止(7/10)。信通院Claw類安全基準テスト(行為有害率36%)。Kimi K3正式リリース(7/16-17)。OpenClaw復活(v2026.7.x)。    added: 2026-04-17
-    last_crawled: 2026-08-10
+    notes: "2026.08.14更新: DeepSeek Harness(dsh)正式OSS公開(8/13/MITライセンス/v0.1開発者プレビュー/Cordisフレームワーク)。DeepSeek V4 Pro正式版(8/12-13/1.6T/1Mコンテキスト/MoE)。DeepSeek永久API値下げ(8/10/入力3元/100万Token/旧比1/4)。Kimi Code Computer Use正式対応(8/7-8)。Manus期間限定無料化(8/13/8/25まで)。Pi Agent+DeepSeek V4 Flash Composio 30項目ベンチマークでClaude Code上回る。Codexアカウント額度縮小。2026.08.10更新: DeepSeek API値上げ公告(8/6)。Kimi Code Computer Use対応開始(8/8)。OpenClaw管家(Butler)概念登場(8/5)。2026.08.03更新: DeepSeek V4 Flash正式版＆V4正式版(7/31)。"
+    added: 2026-04-17
+    last_crawled: 2026-08-14
 
   - slug: openclaw
     title: "OpenClaw — オープンソースAI Agentエンドポイントツール"
@@ -250,9 +251,9 @@ topics:
       - "Hermes Agent OpenRouter OpenClaw 逆転 2026"
     wiki_pages:
       - entities/openclaw
-    notes: "2026.08.08更新: 8/2〜8に新規リリースなし。OpenClaw管家(Butler)概念登場(8/5 WeChat)。中国生成式AI大会で阿里技術提携報道(8/3-4)。掘金コミュニティではClaude Code支配的。新規脆弱性報告なし。2026.08.02更新: 本期間OpenClaw固有リリースなし。GitHub Stars 384,136(変動なし)。本期間の話題は削減傾向。"
+    notes: "2026.08.14更新: 8/8〜8/14に新規リリースなし(v2026.7.1安定版継続/GitHub Stars 384K台)。掘金でHermes vs OpenClaw自己進化能力比較記事(8/8)。V2EXでOpenClawコンテキスト圧縮問題報告(8/8)。DeepSeek Harness OSS公開(8/13)が新規競合として台頭。Omnigent(Databricks)メタオーケストレーション登場(8/8)。龍蝦管家(Butler)概念浸透継続(8/5-11)。掘金コミュニティではClaude Code/DeepSeek Harnessが支配的でOpenClaw話題減少。2026.08.08更新: 8/2〜8に新規リリースなし。"
     added: 2026-05-01
-    last_crawled: 2026-08-08
+    last_crawled: 2026-08-14
 
   - slug: coze
     title: "Coze (扣子) — ByteDance Agent Platform"

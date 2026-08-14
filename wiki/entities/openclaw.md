@@ -1,7 +1,7 @@
 ---
 title: OpenClaw — AI Agentエンドポイントツール
 created: 2026-04-17
-updated: 2026-08-08
+updated: 2026-08-14
 tags: [ai-agents, open-source-ai, tooling, china, releases, safety]
 aliases: [\"openclaw\", \"OpenClaw\"]
 source_lang: zh-CN
@@ -643,6 +643,15 @@ Bing検索結果およびGitHubリリースノートより：
 - **中国生成式AI大会**: 网易龋蟹生成式AI大会（8/3-4）でOpenClawが阿里との技術提携で登場。腾讯混元が大モデル記憶研討会に参加（出典: 智能車情報局/算力基建 WeChat 8/2-4）
 - **リリース停淀**: v2026.7.1（7/13安定版）・v2026.7.2-beta.3（7/18ベータ）から新規リリースなし。掘金コミュニティではClaude Codeが支配的でOpenClaw話題は減少傾向
 - **新規脆弱性報告なし**: 既存の12類安全際の影響は続行中（SOE生利用禁止・ClawHub品質問題）
+
+### 2026年8月8日〜14日の状況
+
+- **新規リリースなし**: v2026.7.1安定版継続。GitHub Stars 384K台（変動なし）
+- **Hermes vs OpenClaw比較深化**: 掘金で「当AI agent学会自己进化：Hermes与OpenClaw的分野与追赶者们」が公開（8/8）。自己進化能力の比較分析。Hermesは記憶と進化、OpenClawはツールチェーンと実行という差異が更に強化された（出典: 掘金 8/8）
+- **コンテキスト圧縮問題**: V2EXでOpenClaw使用時のコンテキスト失憶問題が報告（8/8）。GPT-5.5モデル使用でタスク増加時に設定が崩れる（出典: V2EX 8/8）
+- **DeepSeek Harness OSS公開**: 8/13にDeepSeek Harness（dsh）がMITライセンスでオープンソース化。Cordisフレームワーク採用。「一切皆プラグイン」構造。新規競合として台頭（出典: V2EX 8/13）
+- **Omnigent登場**: Databricks共同創業者主導のメタオーケストレーションフレームワーク。Claude Code・Codex・Cursorを統一管理（出典: 掘金 8/8）
+- **龍蝦管家（Butler）概念浸透**: 8/5から8/11にかけて再掲され、概念が定着（出典: 微信公众号 8/5-11）
 
 ## 関連リンク
 
