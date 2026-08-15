@@ -1,7 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-08-14
+最終更新: 2026-08-15
 エンティティ: 65, コンセプト: 119, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-15 Active Crawl: VibeCoding/LocalDeployment/OpenSourceAI）
+- `concepts/vibe-coding-china.md` — **更新**: last_crawled更新のみ（web検索不可のため新規情報なし、8/6以前の動向は既掲載）
+- `concepts/china-local-deployment.md` — **更新**: DeepSeek V4 Pro正式版(8/12-13/1.6T)、Harness OSS公開(8/13/MIT)、Pi+V4 Flash実践(8/10)、KV Cache技術解説(8/10)、企業ローカルデプロイ議論(8/14)、AI推論分散化(8/8)
+- `concepts/china-open-source-ai.md` — **更新**: DeepSeek V4 Pro/Harness OSS、Kimi Code Computer Use対応(8/8)、Manus無料化(8/13-25)、Pi+V4 Flashベンチマーク、API価格動向(8/6-10)
 ### 本日更新（2026-08-14 Active Crawl: ChinaAIAgentEcosystem/OpenClaw/Yi）
 - `concepts/china-ai-agent-ecosystem.md` — **更新**: DeepSeek Harness(dsh)正式OSS公開(8/13)、V4 Pro正式版(8/12-13)、永久API値下げ(8/10)、Kimi Code Computer Use対応(8/7-8)、Manus期間限定無料化(8/13)等
 - `entities/openclaw.md` — **更新**: 8/8-14に新規リリースなし。Hermes vs OpenClaw比較深化(掘金8/8)。DeepSeek Harness新規競合(8/13)。Omnigent登場(8/8)

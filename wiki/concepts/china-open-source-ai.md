@@ -1,7 +1,7 @@
 ---
 title: "中国开源AI社区 — ModelScope、HuggingFace中国、Giteeエコシステム"
 created: 2026-04-19
-updated: 2026-08-02
+updated: 2026-08-15
 tags: [open-source, community, china, modelscope, huggingface, gitee]
 aliases: ["中国开源AI", "开源LLM社区", "ModelScope魔搭", "Gitee AI"]
 source_lang: zh-CN
@@ -349,3 +349,26 @@ Alibaba Qwenチームが**Qwen 3.8 Maxプレビュー**を公開。2.4Tパラメ
 **agentOS**が発表。AI Agentの実行ランタイムとして、**冷起動が92倍高速化**、**メモリ使用量が47倍削減**。Agentのインフラ層における重要な進歩。
 
 **出典**: 量子位・掘金・IT之家など（2026年7月26日〜8月2日）
+
+## 2026年8月3日〜15日更新 — DeepSeek V4 Pro/Harness OSS・Manus無料化
+
+### 1. DeepSeek V4 Pro正式版リリース（8月12-13日）
+DeepSeekが**V4 Pro**（1.6Tパラメータ、49B活性化、1Mコンテキスト長、MoEアーキテクチャ）を正式リリース。中国オープンソースモデル最大規模。ローカルデプロイはFP8で865GB VRAM必要。
+
+### 2. DeepSeek Harness (dsh) OSS公開（8月13日）
+DeepSeek Harness（エージェント実行基盤）のv0.1が**MITライセンス**でオープンソース化。崔添翼率いるAgent團隊が開発。「一切皆プラグイン」アーキテクチャで、エージェントループ自体がプラグイン可能。Cordisフレームワーク採用。
+
+### 3. DeepSeek API価格動向（8月6-10日）
+- **8/6**: API全体値上げ公告（7/31値下げからわずか6日後の急転換）
+- **8/10**: 永久API値下げ公告（入力3元/100万Token、旧比1/4） — 値上げ→値下げの揺れ
+
+### 4. Kimi Code Computer Use対応（8月8日）
+Moonshot AIがKimi CodeにComputer Use機能を追加（デスクトップ+モバイル）。Claude Code代替候補として注目。
+
+### 5. Manus期間限定無料化（8月13-25日）
+Manusが8月25日まで期間限定で無料化。エージェント市場でのシェア拡大を狙う。
+
+### 6. Pi + DeepSeek V4 Flash — Claude Code上回る（8月10-13日）
+Piエージェント+DeepSeek V4 Flash+Composioの組み合わせが30項目ベンチマークでClaude Codeを上回るという実測結果。低コストでのコーディングエージェント活用事例として注目。
+
+**出典**: hot-topics.yaml notes、Juejin、V2EX（2026年8月3日〜15日）

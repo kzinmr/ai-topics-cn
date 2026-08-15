@@ -43,6 +43,18 @@
 |
 |
 |
+|## [2026-08-15] active-crawl | VibeCoding/LocalDeployment/OpenSourceAI
+|
+|### Wiki更新
+|- `concepts/vibe-coding-china.md` — **更新**: last_crawled更新のみ（web検索不可のため新規情報なし）
+|- `concepts/china-local-deployment.md` — **更新**: DeepSeek V4 Pro(8/12-13)、Harness OSS(8/13)、Pi+V4 Flash(8/10)、KV Cache解説(8/10)、企業デプロイ議論(8/14)
+|- `concepts/china-open-source-ai.md` — **更新**: V4 Pro/Harness OSS、Kimi Code Computer Use(8/8)、Manus無料化(8/13)、Pi+V4 Flash
+|
+|### hot-topics.yaml更新
+|- slug: vibe-coding-china last_crawled 2026-08-15
+|- slug: china-local-deployment last_crawled 2026-08-15
+|- slug: china-open-source-ai last_crawled 2026-08-15
+|
 |## [2026-08-14] active-crawl | ChinaAIAgentEcosystem/OpenClaw/Yi
 |
 |### Wiki更新
