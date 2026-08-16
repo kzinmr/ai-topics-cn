@@ -43,6 +43,18 @@
 |
 |
 |
+|## [2026-08-16] active-crawl | DeepSeek/Qwen/ChatGLM
+|
+|### Wiki更新
+|- `concepts/deepseek.md` — **更新**: Harness(dsh) OSS公開(8/13/MIT/一切皆プラグイン/Cordis)、V4-Pro正式版(8/13/1.6T/1M)、API値上げ8/17発動(キャッシュヒット6倍)追記
+|- `entities/qwen.md` — **更新**: 8/12-16静定期継続(DataWorks Data Agent統合/Qoder IDEA実用化)追記
+|- `concepts/chatglm.md` — **更新**: 8/11-16静穏期継続(DeepSeek V4 Pro/Harness OSS影響/降智問題)追記
+|
+|### hot-topics.yaml更新
+|- deepseek: last_crawled 2026-08-16
+|- qwen: last_crawled 2026-08-16
+|- chatglm: last_crawled 2026-08-16
+|
 |## [2026-08-15] active-crawl | VibeCoding/LocalDeployment/OpenSourceAI
 |
 |### Wiki更新

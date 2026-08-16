@@ -1,7 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-08-15
+最終更新: 2026-08-16
 エンティティ: 65, コンセプト: 119, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-16 Active Crawl: DeepSeek/Qwen/ChatGLM）
+- `concepts/deepseek.md` — **更新**: Harness(dsh) OSS公開(8/13/MIT/一切皆プラグイン/Cordis)、V4-Pro正式版(8/13/1.6T/1M)、API値上げ8/17発動(キャッシュヒット6倍/ピーク/オフピーク制度)追記
+- `entities/qwen.md` — **更新**: 8/12-16静定期継続(DataWorks Data AgentへのQwen3.8-max統合/Qoder IDEA実用化)追記
+- `concepts/chatglm.md` — **更新**: 8/11-16静穏期継続(DeepSeek V4 Pro/Harness OSS影響/降智問題/科创板上場)追記
 ### 本日更新（2026-08-15 Active Crawl: VibeCoding/LocalDeployment/OpenSourceAI）
 - `concepts/vibe-coding-china.md` — **更新**: last_crawled更新のみ（web検索不可のため新規情報なし、8/6以前の動向は既掲載）
 - `concepts/china-local-deployment.md` — **更新**: DeepSeek V4 Pro正式版(8/12-13/1.6T)、Harness OSS公開(8/13/MIT)、Pi+V4 Flash実践(8/10)、KV Cache技術解説(8/10)、企業ローカルデプロイ議論(8/14)、AI推論分散化(8/8)

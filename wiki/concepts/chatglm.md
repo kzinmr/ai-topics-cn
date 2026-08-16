@@ -3,7 +3,7 @@ title: "ChatGLM (智谱清言) — Zhipu AI"
 type: concept
 tags: [LLM, chinese-ai, open-source, agent, zhipu, multimodal]
 created: 2026-04-20
-updated: 2026-08-11
+updated: 2026-08-16
 aliases: ["智谱清言", "GLM-4", "GLM-5", "GLM-5.1", "GLM-5.2", "GLM-5-Turbo", "Zhipu AI", "智谱AI"]
 source_lang: zh-CN
 ---
@@ -420,6 +420,14 @@ AutoClaw（澳龙）のiOSアプリ版が正式リリース。PC版のローカ�
 **出典**: Juejin 2026-07-24〜29
 
 ## 出典
+
+### 2026年8月11日〜16日の状況
+
+本期間にZhipu AI固有の新規リリース・公式発表は確認されなかった（静穏期の継続）。競合環境ではDeepSeek V4 Pro正式版リリース（8/12-13/1.6T）とDeepSeek Harness OSS公開（8/13/MIT）がコミュニティを席巻。GLM-5.2（$0.90/MTok）はDeepSeek V4 Pro（$0.18/MTok）比で高コストだが、Kimi K3（$2.30/MTok）比では引き続きコスト優位。科创板A株上場申請（150億元調達計画）は進行中だが、対象期間中に新たな進展はなし。コミュニティではGLM-5.1/5.2の降智（性能低下）に関する議論が継続。
+
+- **出典**: daily_digest 2026-08-12/13/14/15 (Juejin/V2EX) [T1]
+
+## 出典一覧
 
 - [Zhipu AI 公式サイト](https://www.zhipuai.cn/zh)
 - [BigModel.cn Open Platform](https://open.bigmodel.cn/)

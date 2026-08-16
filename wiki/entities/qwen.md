@@ -1,7 +1,7 @@
 ---
 title: Qwen（通义千问）— 阿里云大模型旗舰
 created: 2026-04-17
-updated: 2026-08-12
+updated: 2026-08-16
 tags: [llm, model, china, open-source-ai, alibaba, qwen, agentic-coding, ai-infrastructure, qwen3.7, qwen3.8, agent-era, qwen-image-3, tts]
 aliases: ["Qwen", "通义千问", "qwen", "Qwen3.5", "Qwen3-Coder", "Qwen3.6", "Qwen3.6-Plus", "Qwen3.6-27B", "Qwen3.6-35B-A3B", "Qwen3.7-Max", "Qwen3.7-Plus", "Qwen3.8-Max", "千问云", "Qianwen Cloud", "千問办公"]
 source_lang: zh-CN
@@ -1046,6 +1046,23 @@ AlibabaはQwenを中核とした**フルスタックAI戦略**を展開：
 - Alibaba Cloud Summit関連の追加発表なし
 
 **出典**: daily_digest 2026-08-08/09/10/11 (Juejin/V2EX) [T1]
+
+### 2026年8月12日〜16日の状況
+
+#### 静定期継続
+8月12日〜16日にQwen固有のメジャーリリース・価格改定・新規プロダクト発表はなし。静定期が継続中。
+
+#### コミュニティ利用動向
+- **DataWorks Data Agent統合**: Qwen3.8-maxがDataWorks Data Agentに統合され、Token管理・IM連携・グローバル展開が完了（8/14/Juejin）
+- **Qoder IDEAプラグイン**: IDEAでのQoder実用化事例が紹介（8/12-13/Juejin）
+- **VibeCoding**: DeepSeek V4 Pro/Harness OSS公開がコミュニティを席巻し、Qwen関連話題は相対的に減少
+
+#### 注目すべきAbsent
+- Qwen4.0等の次世代モデルリリースなし
+- Qwen Code v0.17.x安定版リリースなし（プレビュー継続、計90日目以上）
+- Token Plan/Lingma/Qoderの価格改定なし
+
+**出典**: daily_digest 2026-08-12/13/14/15 (Juejin/V2EX) [T1]
 
 ### 外部ソース
 
