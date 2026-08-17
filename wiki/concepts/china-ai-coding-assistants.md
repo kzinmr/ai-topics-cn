@@ -1,7 +1,7 @@
 ---
 title: "中国AIコーディングアシスタント — Trae・MarsCode・通义灵码・CodeGeeX"
 created: 2026-04-28
-updated: 2026-08-05
+updated: 2026-08-17
 tags: [coding-agents, tooling, china, product-comparison, ide]
 aliases: ["中国AI编程助手", "China AI Coding Assistants", "Trae", "MarsCode", "通义灵码", "CodeGeeX", "Lingma", "Qoder CN"]
 source_lang: zh-CN
@@ -309,6 +309,17 @@ Alibabaの通义灵码が2026年5月に主要アップデートを実施：
 
 中国発コーディングアシスタント市場は**機能の安定化・コミュニティ浸透フェーズ**に移行
 - 代わりに**Agent Orchestrationパラダイム**や**知識ワーカー向けツール**（Kimi Work）など、競争軸の多様化が顕著
+
+### 2026年8月5日〜17日の主な動向
+
+- **DeepSeek Harness（dsh）オープンソースリリース（8/13）**: MITライセンス、初日夜44.6K→3日で112K GitHub Stars。「万物皆プラグイン」型Agent Runtime。Cordisフレームワークベース、MCP対応、サンドボックス隔離。juejinで10本以上の解説・レビュー記事。「LangChainの喪鐘」とまで表現された
+- **Meta Muse Code（8/5）**: Meta初のコーディングエージェント。低価格で参入、Muse Spark 1.2モデル
+- **華為雲CodeArts（8/11）**: 「即興創作」から「規格先行」へ。Vibe Coding→Spec-First（仕様定義→コード生成）への移行。TCL等の大型製造企業向け
+- **DeepSeek V4-Proコード生成ベンチマーク（8/12-13）**: GLM-5.1と同等レベルとの評価
+- **DeepSeek料金改定**: 8/6値上げ公告→8/10値下げ。V2EX・juejinで大規模議論
+- **Trae/CodeGeeX/腾讯CodeBuddy**: 期間中にメジャーアップデートなし。DeepSeek Harnessとの比較で言及されるのみ
+
+> **出典**: juejin（8/5-8/16）、V2EX（8/6-8/16）、日次ダイジェスト（8/9,11,13,15,16）
 
 ## 出典
 - ByteDance Trae公式: [trae.ai](https://www.trae.ai) [T1]

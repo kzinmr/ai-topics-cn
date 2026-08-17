@@ -378,9 +378,9 @@ topics:
       - "2026年高考 AI使用禁止 教育部"
     wiki_pages:
       - concepts/china-ai-regulation
-    notes: "2026.08.08更新: 8/1〜8/7に規制発表・執行事例なし。日次ダイジェストに監管キーワード記事は皆無。第18批备案未発表継続、清朗行動新規執行なし。総合AI法草案公表されず。話題はモデルリリースとAgent技術に集中。2026.07.31更新: AI擬人化互動服務管理暫行辦法7/15施行確認(実施細則未公表)。信通院Clawテスト(行為有害率36%)。Claude Codeバックドア問題。Concordia AI年次レポート(7/27)。第18批备案未発表。2026.06.14更新: 新規情報なし。2026.05.29更新: 光明日报AI訓練データ論。wiki更新済み。"
+    notes: "2026.08.17更新: 8/8-17に規制発表なし。第18批备案未発表継続。清朗行動新規執行なし。AI擬人化管理辦法実施細則未公表。7/15施行影響:豆包/千問智能体機能下線・Apple Intelligence备案(Qwen)。Concordia AIレポート:Agent安全論文27%。2026.08.08更新: 8/1〜8/7に規制発表・執行事例なし。日次ダイジェストに監管キーワード記事は皆無。第18批备案未発表継続、清朗行動新規執行なし。総合AI法草案公表されず。話題はモデルリリースとAgent技術に集中。2026.07.31更新: AI擬人化互動服務管理暫行辦法7/15施行確認(実施細則未公表)。信通院Clawテスト(行為有害率36%)。Claude Codeバックドア問題。Concordia AI年次レポート(7/27)。第18批备案未発表。2026.06.14更新: 新規情報なし。2026.05.29更新: 光明日报AI訓練データ論。wiki更新済み。"
     added: 2026-04-17
-    last_crawled: 2026-08-08
+    last_crawled: 2026-08-17
 
   # =========================================================
   # 5. Chinese-Origin Frameworks & Tools (中国発フレームワーク)
@@ -442,8 +442,8 @@ topics:
       - "AAIF 43新メンバー 2026"
     wiki_pages:
       - concepts/mcp-china
-    notes: "2026.08.03更新: 7/28〜8/2期間にMCP固有の主要リリース・新規CVE・AAIF新メンバーなし。MCP SDK月間3億DL/公開サーバー9,400+維持。掘金でMCP+Claude Code連携チュートリアル多数(32 Skills+8 MCP等)。MCP無状態仕様は7/28リリース予定→実装状況不明。静定期継続。2026.08.10更新: MCP理解深化期(8/3-10)。Tool/Resource/Prompt三機能の理解拡大。新規MCPサーバー: iOS SandboxServer(V2EX8/4)、DataZen v0.0.8(V2EX8/7)、codebase-memory-mcp(掘金8/7)。Agent Skills完全指南(Juejin8/8)。LiteLLM脆弱性警告(36kr8/4)。新規CVEなし。2026.07.28更新: 45日間クロールギャップ。MCP Stateless最終仕様7/28リリース予定(Google共同開発)。    added: 2026-04-17
-    last_crawled: 2026-08-10
+    notes: "2026.08.17更新: 8/10-17にMCP固有の大規模リリースなし。GitMCP(CAD連携/掘金8/16)確認。DeepSeek Harness MCP対応。Stateless仕様未リリース。理解深化期継続。2026.08.10更新: 7/28〜8/2期間にMCP固有の主要リリース・新規CVE・AAIF新メンバーなし。MCP SDK月間3億DL/公開サーバー9,400+維持。掘金でMCP+Claude Code連携チュートリアル多数(32 Skills+8 MCP等)。MCP無状態仕様は7/28リリース予定→実装状況不明。静定期継続。2026.08.10更新: MCP理解深化期(8/3-10)。Tool/Resource/Prompt三機能の理解拡大。新規MCPサーバー: iOS SandboxServer(V2EX8/4)、DataZen v0.0.8(V2EX8/7)、codebase-memory-mcp(掘金8/7)。Agent Skills完全指南(Juejin8/8)。LiteLLM脆弱性警告(36kr8/4)。新規CVEなし。2026.07.28更新: 45日間クロールギャップ。MCP Stateless最終仕様7/28リリース予定(Google共同開発)。    added: 2026-04-17
+    last_crawled: 2026-08-17
 
   - slug: mcp-chinese-tools
     title: "Chinese MCP Tools & Servers (中国MCP工具)"
@@ -526,9 +526,9 @@ topics:
       - "Qwen3.7-Max Alibaba Cloud Summit 2026"
     wiki_pages:
       - concepts/china-ai-coding-assistants
-    notes: "2026.08.05更新: Qoder市場シェア47.6%(IDC公式/国内1位/智譜+商湯+腾讯+百度合計超)。Claude Codeバックドア問題(中国ユーザー識別コード/Alibaba社内禁止/CNNVD警告)。7/24〜8/5にTrae・CodeGeeX・MarsCodeの目立ったメジャーアップデートなし。Agent Orchestrationパラダイム・Kimi Work型知識ワーカーツールなど競争軸多様化。2026.05.25更新: 通义灵码→QoderCNリブランド(5/20/Alibaba Cloud Summit)。Qwen3.7-Max発表(Agent-first/80B MoE)。前回(5/17): Trae SOLO Mobile三端同期。"
+    notes: "2026.08.17更新: 8/5-17にDeepSeek Harness OSS(8/13/MIT/112KStars)が最大イベント。Meta Muse Code(8/5)低価格参入。華為CodeArts Spec-First移行(8/11)。DeepSeek V4-Proベンチマーク(8/12-13)。DeepSeek料金改定議論。Trae/CodeGeeX/CodeBuddy目立ったアップデートなし。2026.08.05更新:  Qoder市場シェア47.6%(IDC公式/国内1位/智譜+商湯+腾讯+百度合計超)。Claude Codeバックドア問題(中国ユーザー識別コード/Alibaba社内禁止/CNNVD警告)。7/24〜8/5にTrae・CodeGeeX・MarsCodeの目立ったメジャーアップデートなし。Agent Orchestrationパラダイム・Kimi Work型知識ワーカーツールなど競争軸多様化。2026.05.25更新: 通义灵码→QoderCNリブランド(5/20/Alibaba Cloud Summit)。Qwen3.7-Max発表(Agent-first/80B MoE)。前回(5/17): Trae SOLO Mobile三端同期。"
     added: 2026-04-17
-    last_crawled: 2026-08-05
+    last_crawled: 2026-08-17
 
   # =========================================================
   # 7. Chinese Coding Agent Tools (中国コーディングエージェント)

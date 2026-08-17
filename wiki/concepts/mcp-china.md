@@ -3,7 +3,7 @@ title: "MCP中国生态（Model Context Protocol在中国的採用状況）"
 type: concept
 tags: [mcp, chinese-ai, agent-protocol, a2a, standardization, tool-integration, github, enterprise]
 created: 2026-04-17
-updated: 2026-08-10
+updated: 2026-08-17
 source_lang: zh-CN
 ---
 
@@ -814,7 +814,26 @@ MCPプロトコルの重要なマイルストーン：**無状態（Stateless）
 | MCP SDK月間DL | 3億回/月（4月末時点、更新なし） |
 | 公開MCPサーバー数 | 9,400+（更新なし） |
 
-### 9. 8月上旬の全体評価：「理解深化期」
+### 9. 2026年8月10日〜17日の状況：「理解深化期」第2週目
+
+2026年8月10日〜17日のMCP中国生態は、新規プラットフォーム発表や重大CVEは確認されなかった。代わりに、以下のような**静かな質的進化**が継続:
+
+- **GitMCP（8/16）**: CAD文書連携の新ユースケース。GitHubリポジトリ文書をAI Coding Agentに接続し、CADプロジェクトでのAPI推測エラーを削減（掘金）
+- **DeepSeek Harness（8/13）**: MCPプラグインをサポート。万物皆プラグイン型Agent RuntimeとしてMCPエコシステムへの統合
+- **MCP三機能理解拡大**: Tool/Resource/Promptの使い分けが開発者コミュニティで広まる
+- **LiteLLM脆弱性継続監視**: MCP依存チェーンリスクの再認識
+- **MCP Stateless最終仕様**: 7/28リリース予定→未リリース確認（8/17現在）
+
+| 注視ポイント | 状況 |
+|-------------|------|
+| MCP Stateless最終仕様 | 7/28リリース予定→未リリース |
+| MCP SDK月間DL | 3億回/月（4月末、更新なし） |
+| 公開MCPサーバー数 | 9,400+（更新なし） |
+| AAIF新メンバー | 確認されず（5/18以降、190組織） |
+
+> **出典**: wiki既存情報、日次ダイジェスト（8/13,8/16）、掘金（8/16）
+
+### 10. 8月上旬の全体評価：「理解深化期」
 2026年8月3日〜10日のMCP中国生態は、新規プラットフォーム発表やCVE開示といった「インパクトニュース」は確認されなかった。代わりに、以下のような**静かな質的進化**が進行:
 
 1. **MCP Server開発者による自己反省**: Tool/Resource/Prompt三機能の理解が広まり、MCP Server開発の質が向上

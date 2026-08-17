@@ -1,7 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-08-16
+最終更新: 2026-08-17
 エンティティ: 65, コンセプト: 119, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-17 Active Crawl: ChinaAIRegulation/MCP-China/ChinaAICodingAssistants）
+- `concepts/china-ai-regulation.md` — **更新**: 8/8-17に規制発表なし。第18批备案未発表継続。7/15施行影響(豆包/千問智能体機能下線・Apple Intelligence备案)。Concordia AIレポート(Agent安全論文27%)
+- `concepts/mcp-china.md` — **更新**: 8/10-17にMCP固有の大規模リリースなし。GitMCP(CAD連携/掘金8/16)確認。DeepSeek Harness MCP対応。Stateless仕様未リリース
+- `concepts/china-ai-coding-assistants.md` — **更新**: DeepSeek Harness OSS(8/13/MIT/112K Stars)が最大イベント。Meta Muse Code(8/5)。華為CodeArts Spec-First移行(8/11)。DeepSeek料金改定議論
 ### 本日更新（2026-08-16 Active Crawl: DeepSeek/Qwen/ChatGLM）
 - `concepts/deepseek.md` — **更新**: Harness(dsh) OSS公開(8/13/MIT/一切皆プラグイン/Cordis)、V4-Pro正式版(8/13/1.6T/1M)、API値上げ8/17発動(キャッシュヒット6倍/ピーク/オフピーク制度)追記
 - `entities/qwen.md` — **更新**: 8/12-16静定期継続(DataWorks Data AgentへのQwen3.8-max統合/Qoder IDEA実用化)追記

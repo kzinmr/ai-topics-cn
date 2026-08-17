@@ -43,6 +43,18 @@
 |
 |
 |
+|## [2026-08-17] active-crawl | ChinaAIRegulation/MCP-China/ChinaAICodingAssistants
+|
+|### Wiki更新
+|- `concepts/china-ai-regulation.md` — **更新**: 8/8-17に規制発表なし。第18批备案未発表継続。7/15施行影響(豆包/千問智能体機能下線・Apple Intelligence备案)。Concordia AIレポート(Agent安全論文27%)
+|- `concepts/mcp-china.md` — **更新**: 8/10-17にMCP固有の大規模リリースなし。GitMCP(CAD連携/掘金8/16)確認。DeepSeek Harness MCP対応。Stateless仕様未リリース
+|- `concepts/china-ai-coding-assistants.md` — **更新**: DeepSeek Harness OSS(8/13/MIT/112K Stars)が最大イベント。Meta Muse Code(8/5)。華為CodeArts Spec-First移行(8/11)。DeepSeek料金改定議論
+|
+|### hot-topics.yaml更新
+|- china-ai-regulation: last_crawled 2026-08-17、notes更新
+|- mcp-china: last_crawled 2026-08-17、notes更新
+|- china-ai-coding-assistants: last_crawled 2026-08-17、notes更新
+|
 |## [2026-08-16] active-crawl | DeepSeek/Qwen/ChatGLM
 |
 |### Wiki更新
