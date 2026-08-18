@@ -3515,3 +3515,8 @@ Originating conversation: (scheduled cron)
 ### Wiki更新
 - `concepts/china-ai-landscape.md` — 広東AI人材台頭セクション追加
 - `concepts/china-ai-data-supply.md` — 新規ページ作成（米国データラベリング×中国Labs）
+
+## [2026-08-18] newsletter-triage | ChinAI #371
+
+### Wiki更新
+- `concepts/ai-companion-regulation-impact.md` — 新規: AI擬人化規制のユーザー影響実態（凤凰周刊冷杉RECORD）

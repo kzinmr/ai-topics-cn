@@ -1,9 +1,9 @@
 ---
 title: "智谱GLM（ChatGLM）— 中国最大級オープンソースLLM"
 created: 2026-04-15
-updated: 2026-04-15
+updated: 2026-08-18
 tags: [llm, model, china, open-source-ai, company]
-aliases: ["GLM", "ChatGLM", "智谱", "智谱AI", "Zhipu AI", "GLM-5", "GLM-4.7"]
+aliases: ["GLM", "ChatGLM", "智谱", "智谱AI", "Zhipu AI", "GLM-5", "GLM-4.7", "GLM-5.2", "GLM-5.3"]
 source_lang: zh-CN
 ---
 
@@ -11,7 +11,7 @@ source_lang: zh-CN
 
 ## 概要
 
-**智谱AI**（Zhipu AI）は、清華大学の技術を母体とする中国の大規模言語モデル企業であり、GLM（General Language Model）ファミリーを開発・公開している。初期のChatGLMシリーズから始まり、GLM-4.7、GLM-5、GLM-5.1へと急速に進化を遂げた。特筆すべきは、中国発のオープンソースLLMとして世界最大級のパラメータ規模を誇り、コード生成・エージェント制御・フロントエンドUI生成など幅広い領域で存在感を示している点である。
+**智谱AI**（Zhipu AI）は、清華大学の技術を母体とする中国の大規模言語モデル企業であり、GLM（General Language Model）ファミリーを開発・公開している。初期のChatGLMシリーズから始まり、GLM-4.7、GLM-5、GLM-5.1、GLM-5.2、GLM-5.3へと急速に進化を遂げた。特筆すべきは、中国発のオープンソースLLMとして世界最大級のパラメータ規模を誇り、コード生成・エージェント制御・フロントエンドUI生成など幅広い領域で存在感を示している点である。
 
 中国の開発者コミュニティ（掘金、V2EXなど）では、GLMシリーズへの言及が急増しており、[[deepseek]] や [[kimi-moonshot]] と並んで「国産LLM三強」の一角として議論されることが多い。
 
@@ -44,6 +44,45 @@ source_lang: zh-CN
 - エージェント制御（Agent Orchestration）に特化した最新モデル
 - マルチエージェント協調パイプラインの実行基盤として採用事例あり
 - GPTからの移行先として注目（詳細は「実戦での評価」セクション参照）
+
+### GLM-5.2（2026年6月22日リリース）
+
+- **リリース日**: 2026年6月22日
+- GLM-5.1から進化したモデルで、**スピードとシンプルさ**で開発者コミュニティから高い評価を受ける
+- AI研究者間では「ロールバックのないシンプルなモデル」として内部クラスターにデプロイする事例も
+- GLM-5.3のベースモデルとなった。Z.ai（智谱AI）のポストトレーニング（RL中心）戦略の基盤
+
+> 「GLM-5.2 was a big deal — weeks after the release, I regularly heard from AI researchers who still used the model due to its speed and simplicity」 — ChinAI Newsletter
+
+📎 出典: [ChinAI Newsletter — GLM-5.3分析記事](https://substack.com/redirect/696d448f-db3c-4982-abd4-5d210d582816) `[Newsletter]`
+
+### GLM-5.3（2026年8月発表）
+
+- **概要**: Z.ai（智谱AI）が発表した最新モデル。現時点ではコーディングプラン限定で提供中、APIとHuggingFace（オープンウェイト）は今後2週間以内に公開予定
+- **パラメータ規模**: 約**750B**（Kimi K3の約1/3）。小規模ながら多くのベンチマークでKimi K3を上回り、Claude Fable 5やGPT-5.6-Solに匹敵するスコアを記録
+- **技術的特徴**: GLM-5.2と同一ベースモデルを使用し、**ポストトレーニング（RL中心）を大幅に拡張**。Z.aiブログでは「Scaling post-training is all we did for GLM-5.3」と明言
+- **RL環境**: 「より多くの環境、より多様なタスク、より多くのコンピュートをトレーニングに費やす」というアプローチ
+- **エージェントコーディング**: フロンティア級のエージェントコーディングベンチマークで最前線の性能
+
+> 「Scaling post-training is all we did for GLM-5.3.」 — Z.ai公式ブログ
+
+**cybersecurity（サイバーセキュリティ）能力:**
+
+- GLM-5.3はZ.aiが今までで最もサイバーセキュリティタスクに適したモデルと位置づけ
+- 脆弱性発見、エクスプロイト分析、複雑なマルチステップセキュリティタスクにおいて大幅な性能向上
+- **段階的リリース戦略**: 安全パートナーがまずコントロールされた環境で評価し、その後API利用可能性を拡大、最終的にモデルウェイトを公開
+- 推論監視にはリクエスト分類器とチェーンオブソート監視を導入
+
+**中国LLM業界の構造的優位性:**
+
+- **リリースサイクルの速さ**: Z.aiのリリースは数日単位で、OpenAIやAnthropicの数ヶ月と比較して桁違いに早い。この時間差がベンチマークでの競争力を維持する最大の要因
+- **蒸留vsポストトレーニング**: 記事著者は蒸留が主因ではなく、RL環境・インフラ・アルゴリズムの組み合わせが鍵と分析
+- **RLデータ産業の台頭**: 米国企業が中国ラボにRL環境を販売するビジネスが急成長中。同じRL環境を使用しつつ、中国ラボがより早くモデルをリリースする構造
+- **清華大学との連携**: Z.aiは清華大学と密接な関係を維持し、優秀な人材プールを活用
+- **ARR 10億ドル**: オンプレミスデプロイメント事業により年間売上高10億ドルに到達したとの報告
+- **Benchmaxxing（ベンチマーク最適化）**: 記事著者は「業界標準」と指摘。米国企業も同様に戦略的にベンチマークを最適化しているが、公開タイミングの違いが中国ラボの優位性を生んでいる
+
+📎 出典: [ChinAI Newsletter — GLM-5.3: How Chinese labs keep stride with the frontier](https://substack.com/redirect/696d448f-db3c-4982-abd4-5d210d582816) `[Newsletter]`
 
 ## GLM-5オープンソースの衝撃
 
@@ -143,6 +182,7 @@ V2EXにおいて、GLMのAPIキーを [[claude-code]] デスクトップ版で�
 | Claude 4.6 vs GLM-5 | [juejin.cn/post/7605885766167806004](https://juejin.cn/post/7605885766167806004) | 比較検証 | Tier-1 |
 | 火山云 Coding Plan | [v2ex.com/t/1206049](https://www.v2ex.com/t/1206049) | エコシステム | Tier-2 |
 | Anthropic千問実験 | [36kr.com/p/3767822090777088](https://36kr.com/p/3767822090777088) | AI安全性 | Tier-1 |
+| GLM-5.3 ChinAI分析 | [substack.com/redirect/696d448f](https://substack.com/redirect/696d448f-db3c-4982-abd4-5d210d582816) | モデル分析・業界動向 | Newsletter |
 
 ### 関連Wikiページ
 

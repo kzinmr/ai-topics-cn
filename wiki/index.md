@@ -1,7 +1,9 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-08-17
-エンティティ: 65, コンセプト: 119, ダイジェスト: 7, 比較: 2, ページ: 9
+最終更新: 2026-08-18
+エンティティ: 65, コンセプト: 120, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-18 Newsletter Triage: ChinAI #371）
+- `concepts/ai-companion-regulation-impact.md` — **新規**: AI擬人化互動服務管理暫行辦法7/15施行後のユーザー影響実態レポート。10余名インタビュー、データ移行問題、ユーザー反発、プラットフォーム対応未確認
 ### 本日更新（2026-08-17 Active Crawl: ChinaAIRegulation/MCP-China/ChinaAICodingAssistants）
 - `concepts/china-ai-regulation.md` — **更新**: 8/8-17に規制発表なし。第18批备案未発表継続。7/15施行影響(豆包/千問智能体機能下線・Apple Intelligence备案)。Concordia AIレポート(Agent安全論文27%)
 - `concepts/mcp-china.md` — **更新**: 8/10-17にMCP固有の大規模リリースなし。GitMCP(CAD連携/掘金8/16)確認。DeepSeek Harness MCP対応。Stateless仕様未リリース
