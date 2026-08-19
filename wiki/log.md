@@ -43,7 +43,20 @@
 |
 |
 |
-|## [2026-08-19] crawl-triage | DeepSeek値上げ後リアクション
+|## [2026-08-19] crawl-triage split #2 | DeepSeek Harness 反響 / Qwen 3.8 開放権重 / GPT Image 2 360°全景 / Canva MCP
+|
+|### Triage判定
+|- take: 4件（agentic-engineering / qwen / gpt-image-2 / mcp-china）
+|- skip: 41件 — 36kr候補なし。V2EX 15件中4件がspam（BeefAPI中转/Markdown送码/内推/套餐），残りは短文投げかけ・非AI話題。Juejin 15件中8件が既処理トピックの低付加価値記事（OpenClaw MiniClaw/提肛助手/3Dキャンパス/AI編程ワークフロー等）。WeChat 16件中9件がアジェンタ入門リサイクル記事（aed7e3c9/f691ec7c/5c8aef97等ハッシュは既存inbox重複）、1件spam（北京内推）。aafeba3fは4/17以来の再収集で処理済み
+|
+|### Wiki更新
+|- `concepts/agentic-engineering.md` — **更新**: §価格階層のコミュニティ反響に8/19追記。DeepSeek Harness OSS(8/13)公開後初の週末に実機体験記事急増。Juejin「开源两天 9.5万 Star」で10万Star突破確認、源码实战第4章（Session日志单一事实源）が内部設計解読フェーズ入り、「强是真的强，普通用户可以再等等」が成熟度評価
+|- `entities/qwen.md` — **更新**: 8/17-19セクション追加。Qwen 3.8**オープンウェイト化**確認（Juejin 8/17「本地跑一个 Qwen 3.8，你将拥有一个 Opus 4.6」）。7月下旬プレビュー以来初の権重公開シグナル、ローカルデプロイ「Opus 4.6級」宣伝
+|- `concepts/gpt-image-2.md` — **更新**: V2EXコミュニティ反響セクションに8/19追記。自撮り1枚→360°全景生成→Google AI Studio VibeCodingでドラッグ回転インタラクティブビュー（Juejin）。単発画像生成から没入型コンテンツへの活用拡大
+|- `concepts/mcp-china.md` — **更新**: MCP+Skillsパッケージングセクションに8/19追記。Canva可画MCP中国公開(7/30)、Kimi/WorkBuddy/Qoder Work CN首批接続、「図から活稿」范式（Juejin 8/19）。中国国内AIデザインツールのMCP実装初期事例
+|
+
+## [2026-08-19] crawl-triage | DeepSeek値上げ後リアクション
 |
 |### Triage判定
 |- take: 1件（concepts/deepseek.md 値上げ後コミュニティ反応）

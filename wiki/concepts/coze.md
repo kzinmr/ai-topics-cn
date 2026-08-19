@@ -1,8 +1,8 @@
 ---
 title: "扣子 (Coze) — ByteDanceのノーコードAI Agentプラットフォーム"
 created: 2026-04-19
-updated: 2026-06-01
-last_crawled: 2026-05-22
+updated: 2026-08-18
+last_crawled: 2026-08-18
 tags: [agent-platform, low-code, bytedance, china, workflow, plugin, openclaw]
 aliases: ["Coze", "扣子", "字节跳动Coze", "Coze平台", "Agent World"]
 source_lang: zh-CN

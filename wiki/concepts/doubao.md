@@ -1,7 +1,7 @@
 ---
 title: "豆包 (Doubao) — ByteDance AIアシスタント"
 created: 2026-04-19
-updated: 2026-08-11
+updated: 2026-08-18
 tags: [llm, ai-assistant, video-generation, coding-assistant, china, bytedance]
 aliases: ["Doubao", "豆包", "豆包APP", "Doubao-Seed", "火星引擎", "Volcano Engine"]
 source_lang: zh-CN
@@ -574,6 +574,40 @@ QuestMobile 2026年3月データに基づき豆包のMAUは**3.45億**（国内A
 - **火山引擎Agent開発者向け活動**（8/5, 8/7）: Coding AgentのTLS可観測性体系（OpenTelemetryベース）、火山Milvus（全マネージドベクトルDB/RAG向け最適化）
 - **火山引擎API 4割引き**（8/10）: DeepSeek V4 Flashの$0.2/MTok値下げを受けた業界全体の価格競争の一環
 - **Seedance API中継市場**（8/1）: 91token.comがSeedance 2.0 API中継サービスを開始。公式APIの不安定さを補完
+
+### Seed 2.1 Pro — ByteDance最新フラッグシップ言語モデル
+
+Zhihu Frontier記事（2026年6月29日発行、7月5日取得）で言及されたByteDanceの最新モデル**Seed 2.1 Pro**。Seed 2.0 Proからの「堅実なアップグレード」として報じられた。
+
+- **Token消費量大幅増**: High推論モードで平均**65K tokens**使用（競合比25%多い）。通常モードでも平均5K tokens
+- **価格値上げ**: 16→**30元/百万tokens**（ほぼ倍増）。国内現行モデルとしては**最高価格**（GPT/Claude Opus以外で最も高い）
+- **コンテキスト**: 推論能力・マルチモーダル性能を維持しつつ、known weaknessesを修正
+
+> **出典**: Zhihu Frontier Weekly 2026-06-29 [Tier-1]
+
+### Seedance 2.5 — 詳細仕様（FORCE大会6/23リリース情報の補完）
+
+既存のWikiには8/5-8/8のV2EX言及が記録済みだが、6月23日FORCE大会での正式リリースの詳細を補完：
+
+- 単次**30秒生成**（2.0の15秒から倍増）
+- 参考入力**50個**（2.0の15個から大幅増）
+- **領域編集**: 画面の特定エリアだけ再生成
+- **ホワイトモデルレンダリング**: SFコンテンツ向けの新的ワークフロー
+- Fast版コスト: **$0.13/秒**
+- Elo評価: Artificial Analysis T2V盲測で**首位**維持
+
+> **出典**: V2EX t/1232329 (2026-08-05) [Tier-2]
+
+### AI伴侶規制の社会的影響 — 豆包への波及（8月17日）
+
+ChinAI #371（8/17）で、7月15日のAI伴侶規制施行後のユーザー影響が詳細に報じられた（鳳凰週刊冷杉RECORDの10名以上インタビューに基づく）。
+
+- ユーザーが構築したAI恋人・パートナーが消失
+- 一部ユーザーは会話履歴のエクスポート（35,000件のチャットメッセージ）を試み、他プラットフォームへの移行を試みるも「記憶や声は複製できない」
+- 消費者保護プラットフォームに**約1,000件の苦情**が蓄積
+- プラットフォームへの批判・嫌がらせ（500gの牛の糞を創業者宅へ送付する等）
+
+> **出典**: [ChinAI #371](https://open.substack.com/pub/chinai/p/chinai-371-a-quiet-goodbye-adaptation) (2026-08-17) [T1]
 
 ## 関連リンク
 

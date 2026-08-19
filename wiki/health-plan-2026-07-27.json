@@ -1,0 +1,257 @@
+{
+  "date": "2026-07-27",
+  "summary_ja": "13のレイヤー2ページ（entities 7件、concepts 6件）がindex.mdのページ一覧セクションに未登録。1482件の生記事はレイヤー2ページから未参照。175ページが30日以上更新なし。source_lang: enの7ページは英語コンテンツで値は正しい。",
+  "actions": [
+    {
+      "id": "orphan-index-alibaba",
+      "category": "orphan_index",
+      "risk": "low",
+      "confidence": 0.95,
+      "target_path": "~/wiki/index.md",
+      "diagnosis_ja": "ページ alibaba はcreated/changelogに記録されるも、エンティティ一覧セクションに未登録",
+      "fix_ja": "index.mdの「エンティティ (Entities)」セクションに [[alibaba|阿里巴巴（Alibaba）— 中国AI大手企業]] を追加",
+      "auto_apply": true
+    },
+    {
+      "id": "orphan-index-claude",
+      "category": "orphan_index",
+      "risk": "low",
+      "confidence": 0.95,
+      "target_path": "~/wiki/index.md",
+      "diagnosis_ja": "ページ claude はcreated/changelogに記録されるも、エンティティ一覧セクションに未登録",
+      "fix_ja": "index.mdの「エンティティ (Entities)」セクションに [[claude|Claude（Anthropic）— 中国AIエコシステムにおける位置付け]] を追加",
+      "auto_apply": true
+    },
+    {
+      "id": "orphan-index-hangzhou-xin-bajun",
+      "category": "orphan_index",
+      "risk": "low",
+      "confidence": 0.95,
+      "target_path": "~/wiki/index.md",
+      "diagnosis_ja": "ページ hangzhou-xin-bajun はcreated/changelogに記録されるも、エンティティ一覧セクションに未登録",
+      "fix_ja": "index.mdの「エンティティ (Entities)」セクションに [[hangzhou-xin-bajun|杭州新八駿 — 杭州のハードウェア中心テック企業8社]] を追加",
+      "auto_apply": true
+    },
+    {
+      "id": "orphan-index-huawei",
+      "category": "orphan_index",
+      "risk": "low",
+      "confidence": 0.95,
+      "target_path": "~/wiki/index.md",
+      "diagnosis_ja": "ページ huawei はcreated/changelogに記録されるも、エンティティ一覧セクションに未登録",
+      "fix_ja": "index.mdの「エンティティ (Entities)」セクションに [[huawei|華為（Huawei）— 中国半導体・通信機器大手、τ法則提唱]] を追加",
+      "auto_apply": true
+    },
+    {
+      "id": "orphan-index-jeff-ding",
+      "category": "orphan_index",
+      "risk": "low",
+      "confidence": 0.95,
+      "target_path": "~/wiki/index.md",
+      "diagnosis_ja": "ページ jeff-ding はcreated/changelogに記録されるも、エンティティ一覧セクションに未登録",
+      "fix_ja": "index.mdの「エンティティ (Entities)」セクションに [[jeff-ding|Jeff Ding — George Washington大学政治学准教授、ChinAI主宰]] を追加",
+      "auto_apply": true
+    },
+    {
+      "id": "orphan-index-meta",
+      "category": "orphan_index",
+      "risk": "low",
+      "confidence": 0.95,
+      "target_path": "~/wiki/index.md",
+      "diagnosis_ja": "ページ meta はcreated/changelogに記録されるも、エンティティ一覧セクションに未登録",
+      "fix_ja": "index.mdの「エンティティ (Entities)」セクションに [[meta|Meta — 中国AIエコシステムにおける位置付け]] を追加",
+      "auto_apply": true
+    },
+    {
+      "id": "orphan-index-modelbest",
+      "category": "orphan_index",
+      "risk": "low",
+      "confidence": 0.95,
+      "target_path": "~/wiki/index.md",
+      "diagnosis_ja": "ページ modelbest はcreated/changelogに記録されるも、エンティティ一覧セクションに未登録",
+      "fix_ja": "index.mdの「エンティティ (Entities)」セクションに [[modelbest|ModelBest (面壁智能) — 中国端側大モデルリーディングカンパニー]] を追加",
+      "auto_apply": true
+    },
+    {
+      "id": "orphan-index-ai-as-general-purpose-technology",
+      "category": "orphan_index",
+      "risk": "low",
+      "confidence": 0.95,
+      "target_path": "~/wiki/index.md",
+      "diagnosis_ja": "ページ ai-as-general-purpose-technology はcreated/changelogに記録されるも、コンセプト一覧セクションに未登録",
+      "fix_ja": "index.mdの「コンセプト (Concepts)」セクションに [[ai-as-general-purpose-technology|AI as General-Purpose Technology — 電気・蒸気機関に続く汎用技術変革]] を追加",
+      "auto_apply": true
+    },
+    {
+      "id": "orphan-index-ai-employment-impact",
+      "category": "orphan_index",
+      "risk": "low",
+      "confidence": 0.95,
+      "target_path": "~/wiki/index.md",
+      "diagnosis_ja": "ページ ai-employment-impact はcreated/changelogに記録されるも、コンセプト一覧セクションに未登録",
+      "fix_ja": "index.mdの「コンセプト (Concepts)」セクションに [[ai-employment-impact|AI雇用影響 — 中国におけるAIの雇用置換懸念と政策対応]] を追加",
+      "auto_apply": true
+    },
+    {
+      "id": "orphan-index-ai-inference-costs",
+      "category": "orphan_index",
+      "risk": "low",
+      "confidence": 0.95,
+      "target_path": "~/wiki/index.md",
+      "diagnosis_ja": "ページ ai-inference-costs はcreated/changelogに記録されるも、コンセプト一覧セクションに未登録",
+      "fix_ja": "index.mdの「コンセプト (Concepts)」セクションに [[ai-inference-costs|AI推論コスト — 業界のAIインフレと推論経済の現実]] を追加",
+      "auto_apply": true
+    },
+    {
+      "id": "orphan-index-apple-gemini-siri-integration",
+      "category": "orphan_index",
+      "risk": "low",
+      "confidence": 0.95,
+      "target_path": "~/wiki/index.md",
+      "diagnosis_ja": "ページ apple-gemini-siri-integration はcreated/changelogに記録されるも、コンセプト一覧セクションに未登録",
+      "fix_ja": "index.mdの「コンセプト (Concepts)」セクションに [[apple-gemini-siri-integration|Apple × Gemini — Siri AIへの統合]] を追加",
+      "auto_apply": true
+    },
+    {
+      "id": "orphan-index-artificial-challenged-intelligence",
+      "category": "orphan_index",
+      "risk": "low",
+      "confidence": 0.95,
+      "target_path": "~/wiki/index.md",
+      "diagnosis_ja": "ページ artificial-challenged-intelligence はcreated/changelogに記録されるも、コンセプト一覧セクションに未登録",
+      "fix_ja": "index.mdの「コンセプト (Concepts)」セクションに [[artificial-challenged-intelligence|人工智障（Artificial Challenged Intelligence）— AI失敗・ハルシネーションの中国ネットスラング]] を追加",
+      "auto_apply": true
+    },
+    {
+      "id": "orphan-index-on-device-ai-agent-security",
+      "category": "orphan_index",
+      "risk": "low",
+      "confidence": 0.95,
+      "target_path": "~/wiki/index.md",
+      "diagnosis_ja": "ページ on-device-ai-agent-security はcreated/changelogに記録されるも、コンセプト一覧セクションに未登録",
+      "fix_ja": "index.mdの「コンセプト (Concepts)」セクションに [[on-device-ai-agent-security|端側AIエージェントセキュリティ（On-Device AI Agent Security）]] を追加",
+      "auto_apply": true
+    },
+    {
+      "id": "index-header-stats",
+      "category": "frontmatter_metadata",
+      "risk": "low",
+      "confidence": 0.9,
+      "target_path": "~/wiki/index.md",
+      "diagnosis_ja": "index.mdヘッダーのページ統計（エンティティ: 66, コンセプト: 126）が実態（65, 124）と乖離。13ページ未登録が原因の可能性",
+      "fix_ja": "13ページ登録後にヘッダー統計を実態に合わせて更新",
+      "auto_apply": true
+    },
+    {
+      "id": "raw-article-curation-batch",
+      "category": "raw_article_curation",
+      "risk": "medium",
+      "confidence": 0.6,
+      "target_path": "~/wiki/raw/",
+      "diagnosis_ja": "1482件の生記事がレイヤー2ページから参照されていない。大部分はNewsletter/クロール由来で、トピックページへの統合待ち",
+      "fix_ja": "優先度の高い生記事（最新20件+人気トピック関連）を選別し、対応するレイヤー2ページの参照セクションにリンク追加。既存ページの更新と併せて実施",
+      "auto_apply": false
+    },
+    {
+      "id": "stale-glm-zhipu",
+      "category": "stale_page",
+      "risk": "medium",
+      "confidence": 0.7,
+      "target_path": "~/wiki/entities/glm-zhipu.md",
+      "diagnosis_ja": "103日間更新なし。アクティブクロール対象外の可能性あり",
+      "fix_ja": "最新動向を調査し、glm-zhipu.mdのupdatedフィールドと関連セクションを更新",
+      "auto_apply": false
+    },
+    {
+      "id": "stale-clipimg-agent-cli-tool",
+      "category": "stale_page",
+      "risk": "medium",
+      "confidence": 0.7,
+      "target_path": "~/wiki/concepts/clipimg-agent-cli-tool.md",
+      "diagnosis_ja": "103日間更新なし。アクティブクロール対象外の可能性あり",
+      "fix_ja": "最新動向を調査し、clipimg-agent-cli-tool.mdのupdatedフィールドと関連セクションを更新",
+      "auto_apply": false
+    },
+    {
+      "id": "stale-mcp",
+      "category": "stale_page",
+      "risk": "medium",
+      "confidence": 0.7,
+      "target_path": "~/wiki/concepts/mcp.md",
+      "diagnosis_ja": "103日間更新なし。アクティブクロール対象外の可能性あり",
+      "fix_ja": "最新動向を調査し、mcp.mdのupdatedフィールドと関連セクションを更新",
+      "auto_apply": false
+    },
+    {
+      "id": "stale-karpathy-obsidian-llm-wiki",
+      "category": "stale_page",
+      "risk": "medium",
+      "confidence": 0.7,
+      "target_path": "~/wiki/concepts/karpathy-obsidian-llm-wiki.md",
+      "diagnosis_ja": "102日間更新なし。アクティブクロール対象外の可能性あり",
+      "fix_ja": "最新動向を調査し、karpathy-obsidian-llm-wiki.mdのupdatedフィールドと関連セクションを更新",
+      "auto_apply": false
+    },
+    {
+      "id": "stale-anthropic",
+      "category": "stale_page",
+      "risk": "medium",
+      "confidence": 0.7,
+      "target_path": "~/wiki/entities/anthropic.md",
+      "diagnosis_ja": "101日間更新なし。アクティブクロール対象外の可能性あり",
+      "fix_ja": "最新動向を調査し、anthropic.mdのupdatedフィールドと関連セクションを更新",
+      "auto_apply": false
+    },
+    {
+      "id": "stale-cursor",
+      "category": "stale_page",
+      "risk": "medium",
+      "confidence": 0.7,
+      "target_path": "~/wiki/entities/cursor.md",
+      "diagnosis_ja": "101日間更新なし。アクティブクロール対象外の可能性あり",
+      "fix_ja": "最新動向を調査し、cursor.mdのupdatedフィールドと関連セクションを更新",
+      "auto_apply": false
+    },
+    {
+      "id": "stale-gemini-google",
+      "category": "stale_page",
+      "risk": "medium",
+      "confidence": 0.7,
+      "target_path": "~/wiki/entities/gemini-google.md",
+      "diagnosis_ja": "101日間更新なし。アクティブクロール対象外の可能性あり",
+      "fix_ja": "最新動向を調査し、gemini-google.mdのupdatedフィールドと関連セクションを更新",
+      "auto_apply": false
+    },
+    {
+      "id": "stale-kimi-moonshot",
+      "category": "stale_page",
+      "risk": "medium",
+      "confidence": 0.7,
+      "target_path": "~/wiki/entities/kimi-moonshot.md",
+      "diagnosis_ja": "101日間更新なし。アクティブクロール対象外の可能性あり",
+      "fix_ja": "最新動向を調査し、kimi-moonshot.mdのupdatedフィールドと関連セクションを更新",
+      "auto_apply": false
+    },
+    {
+      "id": "stale-ai-safety-subconscious",
+      "category": "stale_page",
+      "risk": "medium",
+      "confidence": 0.7,
+      "target_path": "~/wiki/concepts/ai-safety-subconscious.md",
+      "diagnosis_ja": "101日間更新なし。アクティブクロール対象外の可能性あり",
+      "fix_ja": "最新動向を調査し、ai-safety-subconscious.mdのupdatedフィールドと関連セクションを更新",
+      "auto_apply": false
+    },
+    {
+      "id": "stale-daily-digest-2026-04-17",
+      "category": "stale_page",
+      "risk": "medium",
+      "confidence": 0.7,
+      "target_path": "~/wiki/concepts/daily-digest-2026-04-17.md",
+      "diagnosis_ja": "101日間更新なし。ダイジェストページは作成日固定のため更新不要の可能性あり",
+      "fix_ja": "ダイジェストページは過去のスナップショットのため、更新不要と判断。アクティブクロール対象から除外",
+      "auto_apply": false
+    }
+  ],
+  "skip_reason_ja": null
+}

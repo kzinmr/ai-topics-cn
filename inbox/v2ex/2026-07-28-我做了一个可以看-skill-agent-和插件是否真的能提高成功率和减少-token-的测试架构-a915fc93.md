@@ -1,0 +1,27 @@
+---
+title: "我做了一个可以看 skill， agent，和插件是否真的能提高成功率和减少 token 的测试架构"
+source: v2ex
+url: "https://www.v2ex.com/t/1230562"
+author: "yohjisakamoto"
+date: 2026-07-28
+score: 0
+tags: ["AI", "claude", "ai"]
+---
+
+# 我做了一个可以看 skill， agent，和插件是否真的能提高成功率和减少 token 的测试架构
+
+哈喽，这个月早些时候，我发布了 Tura ，并写了几篇博客，探讨了长周期基准评估对 Agent 测试框架的重要性。
+https://turaai.net/blog#token-saving-plugins-are-mostly-stupid-idea
+在过去的两周里，我看到越来越多的科技 KOL 陆续发布了他们对现有 Token 节省插件（比如 RTK 和 Ponytails ）的测试结果：
+https://blog.jetbrains.com/ai/2026/07/rtk-claude-code-token-savings/
+https://github.com/Tura-AI/benchmark/tree/main
+这个 tura-benchmark 框架是和 Tura Agent 一起发布的，但我一直没机会好好介绍它的工作原理。实际上，这个框架可以统一调度基准测试的运行流程，并以相同的结果 schema 导出日志和测试产物。之后，tura-benchmark 网站会通过 CI 自动索引 results 文件夹中发布的所有结果，绘制成图表，并将所有数据直观地展示在前端。
+欢迎大家提供一些想测的插件和测试用例，我会在框架中跟进支持；任何人也都可以直接在本地环境中复现这些基准评估，并通过提交 PR 把结果推送到 GitHub 仓库，CI 流程会自动完成结果的索引。
+大家可以直接回复这篇帖子，或者在 benchmark 仓库里提交 Issue 。
+
+## 涉及话题
+- AI
+- claude
+- ai
+
+[原文链接](https://www.v2ex.com/t/1230562)

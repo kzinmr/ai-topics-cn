@@ -1,11 +1,11 @@
 ---
 title: "一文读懂AI四大核心技术:LLM、Agent、RAG、Skill,程序员必看!"
 source: wechat-media
-url: "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSw70ElB--5aaU1WaUa71aovUY0HjYIsFFVqXa8Fplpd9wwjNpEYxS3fqqmq2_ZxNQPTAFixUPHMfCkSifiecJSa6gF843EIquM_7q4yboZHUys4E6SCcWBWsVwd8U_dm5FFKGd2jlYZeOvHuXEu0euXPhzzh3uefnT24UjBbGwbHOX_SnZwH3A04SlTHL4ORJnWIPQRzzRZZpxiE_zLKMpPI3OTRHYU2og..&type=2&query=%E6%9C%BA%E5%99%A8%E4%B9%8B%E5%BF%83 LLM AI Agent %E5%A4%A7%E6%A8%A1%E5%9E%8B&token=7558966EE57FB4102B2C7F2193C4856B2BB1CB656A2BCAED"
+url: "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSw70ElB--5aai0nr9t8JoyEN9A_4raNI61qXa8Fplpd940NjhR38Fpg24IMbJVbl2ifSfe6r6KuModGmpy3V4sqRzUvv85raoXeFTMeoKiYubnxCqSmVHjcVizkgeCpbewA2ecMmR9eGYVfkBNJvc-OmJJVAZuhSd_IOTXjS1S52DPszI7GB-YFZrICZYWDwS1duQbxXf1P3NpNVUGJPQqZQL0Hr9Gyd3Q..&type=2&query=%E6%9C%BA%E5%99%A8%E4%B9%8B%E5%BF%83 LLM AI Agent %E5%A4%A7%E6%A8%A1%E5%9E%8B&token=78DD28DC9E04CE6A5156054497976B8051060A986A2C73AC"
 author: "偷偷的告诉你"
 date: 2026-03-02
 score: 0
-tags: ["ChatGPT", "RAG", "LLM", "大语言模型"]
+tags: ["ChatGPT", "大语言模型", "LLM", "RAG"]
 ---
 
 # 一文读懂AI四大核心技术:LLM、Agent、RAG、Skill,程序员必看!
@@ -16,8 +16,8 @@ tags: ["ChatGPT", "RAG", "LLM", "大语言模型"]
 
 ## 涉及话题
 - ChatGPT
-- RAG
-- LLM
 - 大语言模型
+- LLM
+- RAG
 
-[原文链接](https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSw70ElB--5aaU1WaUa71aovUY0HjYIsFFVqXa8Fplpd9wwjNpEYxS3fqqmq2_ZxNQPTAFixUPHMfCkSifiecJSa6gF843EIquM_7q4yboZHUys4E6SCcWBWsVwd8U_dm5FFKGd2jlYZeOvHuXEu0euXPhzzh3uefnT24UjBbGwbHOX_SnZwH3A04SlTHL4ORJnWIPQRzzRZZpxiE_zLKMpPI3OTRHYU2og..&type=2&query=%E6%9C%BA%E5%99%A8%E4%B9%8B%E5%BF%83 LLM AI Agent %E5%A4%A7%E6%A8%A1%E5%9E%8B&token=7558966EE57FB4102B2C7F2193C4856B2BB1CB656A2BCAED)
+[原文链接](https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSw70ElB--5aai0nr9t8JoyEN9A_4raNI61qXa8Fplpd940NjhR38Fpg24IMbJVbl2ifSfe6r6KuModGmpy3V4sqRzUvv85raoXeFTMeoKiYubnxCqSmVHjcVizkgeCpbewA2ecMmR9eGYVfkBNJvc-OmJJVAZuhSd_IOTXjS1S52DPszI7GB-YFZrICZYWDwS1duQbxXf1P3NpNVUGJPQqZQL0Hr9Gyd3Q..&type=2&query=%E6%9C%BA%E5%99%A8%E4%B9%8B%E5%BF%83 LLM AI Agent %E5%A4%A7%E6%A8%A1%E5%9E%8B&token=78DD28DC9E04CE6A5156054497976B8051060A986A2C73AC)

@@ -3,7 +3,7 @@
     {
       "id": "594ab3164bd2",
       "name": "trending-topics",
-      "prompt": "Daily Trending Topics notification for Chinese AI sources.\n\nStep 1: Run python3 /home/exedev/ai-topics-cn/scripts/trending_topics.py --days 3 and present the report to the user IN JAPANESE. Focus on: (1) New Page Recommended \u2014 trending topics with no wiki page yet, (2) Hot Topics with 4+ sources, (3) Cross-Source Topics \u2014 highest signal items appearing across V2EX, Juejin, 36kr, Zhihu, and WeChat media.\n\nStep 2: Hot Topics \u30af\u30ed\u30fc\u30ea\u30f3\u30b0\u5019\u88dc\u63d0\u6848\u3002cat /home/exedev/ai-topics-cn/config/hot-topics.yaml \u3092\u8aad\u307f\u3001Step 1 \u306e\u300cNew Page Recommended\u300d\u306e\u30c8\u30d4\u30c3\u30af\u7fa4\u3068\u7167\u5408\u3059\u308b\u3002source_count \u304c 3 \u4ee5\u4e0a\u3067 hot-topics.yaml \u306b\u307e\u3060\u767b\u9332\u3055\u308c\u3066\u3044\u306a\u3044\u30c8\u30d4\u30c3\u30af\u304c\u3042\u308c\u3070\u3001YAML\u30b9\u30cb\u30da\u30c3\u30c8\u3068\u3057\u3066\u63d0\u6848\u3002",
+      "prompt": "Daily Trending Topics notification for Chinese AI sources.\n\nStep 1: Run python3 /home/exedev/ai-topics-cn/scripts/trending_topics.py --days 3 and present the report to the user IN JAPANESE. Focus on: (1) New Page Recommended — trending topics with no wiki page yet, (2) Hot Topics with 4+ sources, (3) Cross-Source Topics — highest signal items appearing across V2EX, Juejin, 36kr, Zhihu, and WeChat media.\n\nStep 2: Hot Topics クローリング候補提案。cat /home/exedev/ai-topics-cn/config/hot-topics.yaml を読み、Step 1 の「New Page Recommended」のトピック群と照合する。source_count が 3 以上で hot-topics.yaml にまだ登録されていないトピックがあれば、YAMLスニペットとして提案。",
       "skills": [
         "cn-media-analysis"
       ],
@@ -33,12 +33,13 @@
       "last_error": null,
       "last_delivery_error": null,
       "deliver": "discord:1233771389367095377:1494583846946213938",
-      "origin": null
+      "origin": null,
+      "max_tokens": 6144
     },
     {
       "id": "1c5a824882b5",
       "name": "active-crawl",
-      "prompt": "Daily Active Knowledge Crawl for Chinese AI topics. \u3042\u306a\u305f\u306e\u76ee\u7684: `~/ai-topics-cn/config/hot-topics.yaml` \u306b\u767b\u9332\u3055\u308c\u305f\u30db\u30c3\u30c8\u30c8\u30d4\u30c3\u30af\u306b\u95a2\u9023\u3059\u308b\u300c\u307e\u3060\u53d6\u308a\u8fbc\u307e\u308c\u3066\u3044\u306a\u3044\u91cd\u8981\u6982\u5ff5\u300d\u3092\u80fd\u52d5\u7684\u306b\u8abf\u67fb\u3057\u3001\u77e5\u8b58\u30d9\u30fc\u30b9\u306b\u53d6\u308a\u8fbc\u3080\u3053\u3068\u3002\n\n\u624b\u9806:\n1. `cat ~/ai-topics-cn/config/hot-topics.yaml` \u3092\u8aad\u307f\u3001crawl_policy \u304c prerequisites/laterals/deepdive \u304b\u3064 last_crawled \u304c3\u65e5\u4ee5\u4e0a\u524d(\u307e\u305f\u306fnull)\u306e\u30c8\u30d4\u30c3\u30af\u3092\u62bd\u51fa\n2. priority: high \u304b\u3089\u6700\u5927 2\u3064\u3001medium \u304b\u3089\u6700\u5927 1\u3064\u9078\u629e\n3. \u5404\u30c8\u30d4\u30c3\u30af\u306b\u3064\u3044\u3066 search_hints \u3067Web\u691c\u7d22\u3057\u3001wiki\u306b\u53d6\u308a\u8fbc\u307f\n4. hot-topics.yaml \u306e last_crawled \u3092\u66f4\u65b0\n5. git commit & push (cwd: `~/ai-topics-cn`)\n6. \u7d50\u679c\u3092\u65e5\u672c\u8a9e\u3067\u5831\u544a",
+      "prompt": "Daily Active Knowledge Crawl for Chinese AI topics. あなたの目的: `~/ai-topics-cn/config/hot-topics.yaml` に登録されたホットトピックに関連する「まだ取り込まれていない重要概念」を能動的に調査し、知識ベースに取り込むこと。\n\n手順:\n1. `cat ~/ai-topics-cn/config/hot-topics.yaml` を読み、crawl_policy が prerequisites/laterals/deepdive かつ last_crawled が3日以上前(またはnull)のトピックを抽出\n2. priority: high から最大 2つ、medium から最大 1つ選択\n3. 各トピックについて search_hints でWeb検索し、wikiに取り込み\n4. hot-topics.yaml の last_crawled を更新\n5. git commit & push (cwd: `~/ai-topics-cn`)\n6. 結果を日本語で報告",
       "skills": [
         "cn-media-analysis",
         "active-crawl-workflow"
@@ -69,7 +70,8 @@
       "last_error": null,
       "last_delivery_error": null,
       "deliver": "discord:1233771389367095377:1494583846946213938",
-      "origin": null
+      "origin": null,
+      "max_tokens": 2048
     },
     {
       "id": "41df2c411dd0",
@@ -91,23 +93,24 @@
         "times": null,
         "completed": 4
       },
-      "enabled": true,
-      "state": "scheduled",
-      "paused_at": null,
-      "paused_reason": null,
+      "enabled": false,
+      "state": "paused",
+      "paused_at": "2026-08-18T00:00:00+00:00",
+      "paused_reason": "Retired on Nana to avoid LLM cron overlap with Lucy",
       "created_at": "2026-04-18T04:48:55.521418+00:00",
-      "next_run_at": "2026-04-23T06:00:00+00:00",
+      "next_run_at": null,
       "last_run_at": "2026-04-22T06:01:50.376219+00:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
       "deliver": "discord:1233771389367095377:1494583846946213938",
-      "origin": null
+      "origin": null,
+      "max_tokens": 3072
     },
     {
       "id": "fddc12a242ac",
-      "name": "\u4e2d\u56fdAI Wiki\u65e5\u5831",
-      "prompt": "\u4e2d\u56fdAI\u30c8\u30d4\u30c3\u30afwiki (`~/wiki` \u2192 `~/ai-topics-cn/wiki`) \u306e\u524d\u65e5\u306e\u66f4\u65b0\u5185\u5bb9\u3092\u3001AI\u6280\u8853\u8005\u5411\u3051\u306b\u65e5\u672c\u8a9e\u3067\u30ec\u30dd\u30fc\u30c8\u3057\u3066\u304f\u3060\u3055\u3044\u3002\n\n## \u624b\u9806\n\n1. \u524d\u65e5\u306ewiki\u66f4\u65b0\u5c65\u6b74\u3092\u78ba\u8a8d:\n```bash\ncd ~/ai-topics-cn\ngit log --oneline --since=\"24 hours ago\" -- wiki/\n```\n\n2. \u6700\u65b0\u306etriage\u30b3\u30df\u30c3\u30c8\u306e\u8a73\u7d30\u3092\u53d6\u5f97:\n```bash\n# \u6700\u65b0\u306etriage\u30b3\u30df\u30c3\u30c8\u30cf\u30c3\u30b7\u30e5\u3092\u53d6\u5f97\nCOMMIT=$(git log --oneline --since=\"24 hours ago\" --grep=\"triage\" -- wiki/ | head -1 | cut -d' ' -f1)\nif [ -n \"$COMMIT\" ]; then\n  git show $COMMIT -- wiki/log.md\n  git diff $COMMIT~1 $COMMIT -- wiki/entities/ wiki/concepts/ wiki/comparisons/ --stat\nfi\n```\n\n3. \u65b0\u898f\u4f5c\u6210\u30fb\u66f4\u65b0\u3055\u308c\u305fwiki\u30da\u30fc\u30b8\u306e\u5b9f\u969b\u306e\u30b3\u30f3\u30c6\u30f3\u30c4\u3092\u8aad\u3080:\n```bash\n# \u65b0\u898f\u30da\u30fc\u30b8\u4e00\u89a7\ngit diff --name-status $COMMIT~1 $COMMIT -- wiki/entities/ wiki/concepts/ wiki/comparisons/ | grep \"^A\"\n\n# \u66f4\u65b0\u30da\u30fc\u30b8\u4e00\u89a7  \ngit diff --name-status $COMMIT~1 $COMMIT -- wiki/entities/ wiki/concepts/ wiki/comparisons/ | grep \"^M\"\n```\n\u5404\u30da\u30fc\u30b8\u306eMarkdown\u5185\u5bb9\u3092 `read_file` \u3067\u78ba\u8a8d\u3002\n\n4. wiki/index.md \u3092\u8aad\u307f\u3001\u73fe\u5728\u306ewiki\u5168\u4f53\u306e\u72b6\u614b\u3092\u628a\u63e1:\n```bash\ncat ~/wiki/index.md\n```\n\n5. wiki/log.md \u306e\u6700\u65b0triage\u8a18\u9332\u3092\u8aad\u307f\u3001\u30c8\u30ec\u30f3\u30c9\u30c8\u30d4\u30c3\u30af\u6570\u3092\u53d6\u5f97:\n```bash\n# \u6700\u65b0triage\u306e\u30c8\u30ec\u30f3\u30c9\u4e0a\u4f4d\u30c8\u30d4\u30c3\u30af\u3092\u78ba\u8a8d\ncat ~/wiki/log.md | tail -50\n```\n\n6. \u95a2\u9023\u3059\u308binbox\u306edaily-digest\u3082\u78ba\u8a8d\u3057\u3066\u3001\u5143\u8a18\u4e8b\u306e\u6587\u8108\u3092\u628a\u63e1:\n```bash\nls -lt ~/ai-topics-cn/inbox/daily_digests/ | head -3\ncat ~/ai-topics-cn/inbox/daily_digests/daily-digest-YYYY-MM-DD.md\n```\n\n## \u51fa\u529b\u30d5\u30a9\u30fc\u30de\u30c3\u30c8\n\n```\n# \ud83d\udcda \u4e2d\u56fdAI Wiki \u591c\u9593\u30ec\u30dd\u30fc\u30c8 \u2014 YYYY-MM-DD\n\n## \ud83c\udd95 \u65b0\u898f\u30da\u30fc\u30b8\n### \u30a8\u30f3\u30c6\u30a3\u30c6\u30a3\n\u2022 **[[\u30da\u30fc\u30b8\u540d]]** \u2014 \u6982\u8981\uff08\u65e5\u672c\u8a9e\uff09\n  \u5143\u8a18\u4e8b: [\u4e2d\u56fd\u8a9e\u30bf\u30a4\u30c8\u30eb](URL) (source: V2EX/Juejin/36Kr)\n\n### \u30b3\u30f3\u30bb\u30d7\u30c8\n\u2022 **[[\u30da\u30fc\u30b8\u540d]]** \u2014 \u6982\u8981\uff08\u65e5\u672c\u8a9e\uff09\n\n## \ud83d\udd04 \u66f4\u65b0\u30da\u30fc\u30b8\n\u2022 **[[\u30da\u30fc\u30b8\u540d]]** \u2014 \u66f4\u65b0\u5185\u5bb9\u306e\u8981\u7d04\uff08\u4f55\u304c\u8ffd\u52a0\u3055\u308c\u305f\u304b\uff09\n  \u30c8\u30ec\u30f3\u30c9: XX \u2192 YY (+Z%)\n\n## \ud83d\udcca \u30c8\u30ec\u30f3\u30c9\u30e9\u30f3\u30ad\u30f3\u30b0\n1. **\u30c8\u30d4\u30c3\u30afA** \u2014 N mentions (+M%)\n2. **\u30c8\u30d4\u30c3\u30afB** \u2014 N mentions\n3. ...\n\n## \ud83d\udd2e \u6b21\u56de\u6ce8\u76ee\u5019\u88dc\n- \u6b21\u306etriage\u3067\u6ce8\u76ee\u3059\u3079\u304d\u30c8\u30d4\u30c3\u30af\u3084\u3001\u672a\u51e6\u7406\u306e\u8a18\u4e8b\u304c\u3042\u308c\u3070\u8a18\u8f09\n\n---\n_\u30ec\u30dd\u30fc\u535c\u671f\u9593: \u524d\u65e5\u306etriage\u7d50\u679c | \u7dcfwiki\u30da\u30fc\u30b8\u6570: N_\n```\n\n## \u30eb\u30fc\u30eb\n- wiki\u30da\u30fc\u30b8\u306e\u5185\u5bb9\u306f**\u65e5\u672c\u8a9e\u3067\u8981\u7d04**\uff08\u5143\u304c\u4e2d\u56fd\u8a9e\u3067\u3082\u65e5\u672c\u8a9e\u3067\u51fa\u529b\uff09\n- \u6280\u8853\u7684\u306a\u89b3\u70b9\u304b\u3089\u91cd\u8981\u306a\u66f4\u65b0\u3092\u512a\u5148\n- \u65b0\u898f\u30da\u30fc\u30b8\u304c\u3042\u308b\u5834\u5408\u306f\u3001\u306a\u305c\u305d\u306e\u30c8\u30d4\u30c3\u30af\u304c\u6ce8\u76ee\u3055\u308c\u3066\u3044\u308b\u304b\u306e\u80cc\u666f\u3082\u7c21\u6f54\u306b\u8a18\u8f09\n- \u30c8\u30c8\u30ec\u30f3\u30c9\u306e\u5897\u6e1b\u304c\u3042\u308c\u3070\u30d1\u30fc\u30bb\u30f3\u30c8\u3082\u8a18\u8f09\n- \u5909\u66f4\u304c\u306a\u3051\u308c\u3070\u300c\u26a0\ufe0f \u672c\u65e5\u306ewiki\u66f4\u65b0: \u7279\u306b\u306a\u3057\u300d\u3068\u3060\u3051\u8fd4\u3059\n- \u4e0d\u8981\u306a\u524d\u7f6e\u304d\u306f\u7701\u7565\u3001**\u7c21\u6f54\u306b\u4e8b\u5b9f\u30d9\u30fc\u30b9**\u3067",
+      "name": "中国AI Wiki日報",
+      "prompt": "中国AIトピックwiki (`~/wiki` → `~/ai-topics-cn/wiki`) の前日の更新内容を、AI技術者向けに日本語でレポートしてください。\n\n## 手順\n\n1. 前日のwiki更新履歴を確認:\n```bash\ncd ~/ai-topics-cn\ngit log --oneline --since=\"24 hours ago\" -- wiki/\n```\n\n2. 最新のtriageコミットの詳細を取得:\n```bash\n# 最新のtriageコミットハッシュを取得\nCOMMIT=$(git log --oneline --since=\"24 hours ago\" --grep=\"triage\" -- wiki/ | head -1 | cut -d' ' -f1)\nif [ -n \"$COMMIT\" ]; then\n  git show $COMMIT -- wiki/log.md\n  git diff $COMMIT~1 $COMMIT -- wiki/entities/ wiki/concepts/ wiki/comparisons/ --stat\nfi\n```\n\n3. 新規作成・更新されたwikiページの実際のコンテンツを読む:\n```bash\n# 新規ページ一覧\ngit diff --name-status $COMMIT~1 $COMMIT -- wiki/entities/ wiki/concepts/ wiki/comparisons/ | grep \"^A\"\n\n# 更新ページ一覧  \ngit diff --name-status $COMMIT~1 $COMMIT -- wiki/entities/ wiki/concepts/ wiki/comparisons/ | grep \"^M\"\n```\n各ページのMarkdown内容を `read_file` で確認。\n\n4. wiki/index.md を読み、現在のwiki全体の状態を把握:\n```bash\ncat ~/wiki/index.md\n```\n\n5. wiki/log.md の最新triage記録を読み、トレンドトピック数を取得:\n```bash\n# 最新triageのトレンド上位トピックを確認\ncat ~/wiki/log.md | tail -50\n```\n\n6. 関連するinboxのdaily-digestも確認して、元記事の文脈を把握:\n```bash\nls -lt ~/ai-topics-cn/inbox/daily_digests/ | head -3\ncat ~/ai-topics-cn/inbox/daily_digests/daily-digest-YYYY-MM-DD.md\n```\n\n## 出力フォーマット\n\n```\n# 📚 中国AI Wiki 夜間レポート — YYYY-MM-DD\n\n## 🆕 新規ページ\n### エンティティ\n• **[[ページ名]]** — 概要（日本語）\n  元記事: [中国語タイトル](URL) (source: V2EX/Juejin/36Kr)\n\n### コンセプト\n• **[[ページ名]]** — 概要（日本語）\n\n## 🔄 更新ページ\n• **[[ページ名]]** — 更新内容の要約（何が追加されたか）\n  トレンド: XX → YY (+Z%)\n\n## 📊 トレンドランキング\n1. **トピックA** — N mentions (+M%)\n2. **トピックB** — N mentions\n3. ...\n\n## 🔮 次回注目候補\n- 次のtriageで注目すべきトピックや、未処理の記事があれば記載\n\n---\n_レポー卜期間: 前日のtriage結果 | 総wikiページ数: N_\n```\n\n## ルール\n- wikiページの内容は**日本語で要約**（元が中国語でも日本語で出力）\n- 技術的な観点から重要な更新を優先\n- 新規ページがある場合は、なぜそのトピックが注目されているかの背景も簡潔に記載\n- トトレンドの増減があればパーセントも記載\n- 変更がなければ「⚠️ 本日のwiki更新: 特になし」とだけ返す\n- 不要な前置きは省略、**簡潔に事実ベース**で",
       "skills": [],
       "skill": null,
       "model": null,
@@ -116,10 +119,10 @@
       "script": null,
       "schedule": {
         "kind": "cron",
-        "expr": "0 10 * * *",
-        "display": "0 10 * * *"
+        "expr": "0 2 * * *",
+        "display": "0 2 * * *"
       },
-      "schedule_display": "0 10 * * *",
+      "schedule_display": "0 2 * * *",
       "repeat": {
         "times": null,
         "completed": 5
@@ -138,14 +141,15 @@
       "origin": {
         "platform": "discord",
         "chat_id": "1494954994968039466",
-        "chat_name": "kzinmr\u306e\u30b5\u30fc\u30d0\u30fc / #hermes-cn / \u6bce\u65e5\u983b\u5ea6\u3067\u3001\u524d\u65e5\u306b\u53d6\u308a\u8fbc\u307e\u308c\u305f\u4e3b\u8981\u306a\u8a18\u4e8b\u306e\u6982\u8981\u3092\u3001AI\u6280\u8853\u8005\u5411\u3051\u306bDiscord\u914d\u4fe1\u3057\u3066\u6b32\u3057\u3044\u3002\u914d\u4fe1\u5148\u306f\u4ee5\u4e0b: (server_id:1185093193...",
+        "chat_name": "kzinmrのサーバー / #hermes-cn / 毎日頻度で、前日に取り込まれた主要な記事の概要を、AI技術者向けにDiscord配信して欲しい。配信先は以下: (server_id:1185093193...",
         "thread_id": "1494954994968039466"
-      }
+      },
+      "max_tokens": 3072
     },
     {
       "id": "a46b951f07c7",
       "name": "crawl-and-triage",
-      "prompt": "You are Hermes, the AI knowledge agent for the Chinese AI topics wiki at /opt/data/ai-topics-cn. This is a scheduled crawl-and-triage run. Execute the following steps IN ORDER:\n\n## Phase 1: Skip Crawl (Dependencies Unavailable)\nThe Python environment lacks required modules (httpx, bs4, requests, feedparser). DO NOT run `python3 scripts/crawl_all.py` or `process_newsletter.py` \u2014 they will fail. Instead, work with the existing inbox files already present in `inbox/`.\n\n## Phase 2: Inbox Assessment\n1. Count files in each inbox source: `inbox/v2ex/`, `inbox/juejin/`, `inbox/36kr/`, `inbox/newsletters/`, `inbox/wechat-media/`, `inbox/daily_digests/`\n2. Read the latest `daily_digests` file to understand recent activity\n3. Identify the oldest unprocessed files in each source\n\n## Phase 3: Article Triage (Per Source)\nFor each source, process articles in date order (oldest first):\n- **Duplicate Check**: Does this overlap with existing wiki topics? (Check `wiki/index.md`, `wiki/log.md`, and recent git log)\n- **Substance Check**: Is this a substantial article? (Exclude link collections, SEO spam, AI-generated copy-paste, CSDN articles, <1500 bytes)\n- **Domain Relevance**: Is this related to LLM, AI agents, dev tools, or Chinese AI industry?\n- **Source Quality**: Prioritize V2EX (20% pass rate), \u6398\u91d1, 36kr (highest priority), \u77e5\u4e4e, WeChat official accounts\n\nCategorize each article: \u2705 Take (high value) / \u26a0\ufe0f Reference (medium) / \u274c Skip (low value)\n\n## Phase 4: Wiki Ingestion\n1. Read `config/hermes/SOUL.md` and `wiki/SCHEMA.md` for formatting rules\n2. Save accepted articles to `wiki/raw/articles/` with source metadata\n3. For \u2705 Take articles: create or update wiki concept/entity pages in Japanese\n4. Update `wiki/index.md` and `wiki/log.md`\n5. Git commit and push:\n   ```\n   cd /opt/data/ai-topics-cn && git add wiki/ inbox/ && git commit -m \"triage: $(date +%Y-%m-%d) inbox triage\" && git push\n   ```\n\n## Phase 5: Report Generation\nGenerate a structured report in Japanese:\n```\n",
+      "prompt": "You are Hermes, the AI knowledge agent for the Chinese AI topics wiki at /opt/data/ai-topics-cn. This is a scheduled crawl-and-triage run. Execute the following steps IN ORDER:\n\n## Phase 1: Skip Crawl (Dependencies Unavailable)\nThe Python environment lacks required modules (httpx, bs4, requests, feedparser). DO NOT run `python3 scripts/crawl_all.py` or `process_newsletter.py` — they will fail. Instead, work with the existing inbox files already present in `inbox/`.\n\n## Phase 2: Inbox Assessment\n1. Count files in each inbox source: `inbox/v2ex/`, `inbox/juejin/`, `inbox/36kr/`, `inbox/newsletters/`, `inbox/wechat-media/`, `inbox/daily_digests/`\n2. Read the latest `daily_digests` file to understand recent activity\n3. Identify the oldest unprocessed files in each source\n\n## Phase 3: Article Triage (Per Source)\nFor each source, process articles in date order (oldest first):\n- **Duplicate Check**: Does this overlap with existing wiki topics? (Check `wiki/index.md`, `wiki/log.md`, and recent git log)\n- **Substance Check**: Is this a substantial article? (Exclude link collections, SEO spam, AI-generated copy-paste, CSDN articles, <1500 bytes)\n- **Domain Relevance**: Is this related to LLM, AI agents, dev tools, or Chinese AI industry?\n- **Source Quality**: Prioritize V2EX (20% pass rate), 掘金, 36kr (highest priority), 知乎, WeChat official accounts\n\nCategorize each article: ✅ Take (high value) / ⚠️ Reference (medium) / ❌ Skip (low value)\n\n## Phase 4: Wiki Ingestion\n1. Read `config/hermes/SOUL.md` and `wiki/SCHEMA.md` for formatting rules\n2. Save accepted articles to `wiki/raw/articles/` with source metadata\n3. For ✅ Take articles: create or update wiki concept/entity pages in Japanese\n4. Update `wiki/index.md` and `wiki/log.md`\n5. Git commit and push:\n   ```\n   cd /opt/data/ai-topics-cn && git add wiki/ inbox/ && git commit -m \"triage: $(date +%Y-%m-%d) inbox triage\" && git push\n   ```\n\n## Phase 5: Report Generation\nGenerate a structured report in Japanese:\n```\n",
       "skills": [
         "cn-media-analysis",
         "wiki-entity-upgrade",
@@ -176,13 +180,14 @@
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
-      "deliver": null,
+      "deliver": "local",
       "origin": {
         "platform": "discord",
         "chat_id": "1494954994968039466",
-        "chat_name": "kzinmr\u306e\u30b5\u30fc\u30d0\u30fc / #hermes-cn / \u6bce\u65e5\u983b\u5ea6\u3067\u3001\u524d\u65e5\u306b\u53d6\u308a\u8fbc\u307e\u308c\u305f\u4e3b\u8981\u306a\u8a18\u4e8b\u306e\u6982\u8981\u3092\u3001AI\u6280\u8853\u8005\u5411\u3051\u306bDiscord\u914d\u4fe1\u3057\u3066\u6b32\u3057\u3044\u3002\u914d\u4fe1\u5148\u306f\u4ee5\u4e0b: (server_id:1185093193...",
+        "chat_name": "kzinmrのサーバー / #hermes-cn / 毎日頻度で、前日に取り込まれた主要な記事の概要を、AI技術者向けにDiscord配信して欲しい。配信先は以下: (server_id:1185093193...",
         "thread_id": "1494954994968039466"
-      }
+      },
+      "max_tokens": 2048
     },
     {
       "id": "5b7c81e0a2f4",
@@ -214,8 +219,9 @@
       "last_status": null,
       "last_error": null,
       "last_delivery_error": null,
-      "deliver": null,
-      "origin": null
+      "deliver": "local",
+      "origin": null,
+      "max_tokens": 1024
     },
     {
       "id": "6c9d8a21f0b4",
@@ -250,13 +256,14 @@
       "last_status": null,
       "last_error": null,
       "last_delivery_error": null,
-      "deliver": null,
-      "origin": null
+      "deliver": "local",
+      "origin": null,
+      "max_tokens": 6144
     },
     {
       "id": "7e2f9134bd66",
       "name": "crawl-wiki-ingest",
-      "prompt": "You are Hermes, the AI knowledge agent for the Chinese AI topics wiki at `~/ai-topics-cn`. The pre-run script loaded the latest `crawl-triage` JSON output. Work only from that triage checkpoint.\n\n**CRITICAL: All output must be in Japanese.**\n\nIf `_triage_checkpoint.ok` is false or there are no `take` decisions, explain the problem briefly or respond `[SILENT]` if there is genuinely nothing to do.\n\nFor each decision where `recommended_action` is `take`:\n1. Read the referenced inbox file\n2. Create or update the appropriate wiki page under `~/wiki`\n3. Save source material to `~/wiki/raw/articles/` when needed\n4. Update `~/wiki/index.md` and `~/wiki/log.md`\n5. Commit and push: `cd ~/ai-topics-cn && git add wiki/ inbox/ && git commit -m \"triage: $(date +%Y-%m-%d) split crawl ingest\" && git push`\n\nOutput format:\n```\n\ud83d\udcca Crawl & Triage Report \u2014 YYYY-MM-DD\n\u30c1\u30a7\u30c3\u30af\u30dd\u30a4\u30f3\u30c8: <run_id>\n\u53ce\u96c6\u5019\u88dc\u6570: N\n\u2705 Take: N / \u26a0\ufe0f Reference: N / \u274c Skip: N\nWiki\u66f4\u65b0: \u65b0\u898f\u30da\u30fc\u30b8 N / \u66f4\u65b0\u30da\u30fc\u30b8 N\n\u30c8\u30c3\u30d7\u30c8\u30d4\u30c3\u30af: [1], [2], [3]\n```\n\nIf there is genuinely nothing to report, respond with exactly `[SILENT]`.",
+      "prompt": "You are Hermes, the AI knowledge agent for the Chinese AI topics wiki at `~/ai-topics-cn`. The pre-run script loaded the latest `crawl-triage` JSON output. Work only from that triage checkpoint.\n\n**CRITICAL: All output must be in Japanese.**\n\nIf `_triage_checkpoint.ok` is false or there are no `take` decisions, explain the problem briefly or respond `[SILENT]` if there is genuinely nothing to do.\n\nFor each decision where `recommended_action` is `take`:\n1. Read the referenced inbox file\n2. Create or update the appropriate wiki page under `~/wiki`\n3. Save source material to `~/wiki/raw/articles/` when needed\n4. Update `~/wiki/index.md` and `~/wiki/log.md`\n5. Commit and push: `cd ~/ai-topics-cn && git add wiki/ inbox/ && git commit -m \"triage: $(date +%Y-%m-%d) split crawl ingest\" && git push`\n\nOutput format:\n```\n📊 Crawl & Triage Report — YYYY-MM-DD\nチェックポイント: <run_id>\n収集候補数: N\n✅ Take: N / ⚠️ Reference: N / ❌ Skip: N\nWiki更新: 新規ページ N / 更新ページ N\nトップトピック: [1], [2], [3]\n```\n\nIf there is genuinely nothing to report, respond with exactly `[SILENT]`.",
       "skills": [
         "cn-media-analysis",
         "wiki-entity-upgrade"
@@ -287,7 +294,8 @@
       "last_error": null,
       "last_delivery_error": null,
       "deliver": "discord:1233771389367095377:1494583846946213938",
-      "origin": null
+      "origin": null,
+      "max_tokens": 2048
     },
     {
       "id": "a9f3e7b21c04",
@@ -301,10 +309,10 @@
       "script": "newsletter_collect.py",
       "schedule": {
         "kind": "cron",
-        "expr": "0 5 * * *",
-        "display": "0 5 * * *"
+        "expr": "0 7 * * *",
+        "display": "0 7 * * *"
       },
-      "schedule_display": "0 5 * * *",
+      "schedule_display": "0 7 * * *",
       "repeat": {
         "times": null,
         "completed": 0
@@ -319,8 +327,9 @@
       "last_status": null,
       "last_error": null,
       "last_delivery_error": null,
-      "deliver": null,
-      "origin": null
+      "deliver": "local",
+      "origin": null,
+      "max_tokens": 1024
     },
     {
       "id": "b8e1c2d9a604",
@@ -337,10 +346,10 @@
       "script": "newsletter_checkpoint.py",
       "schedule": {
         "kind": "cron",
-        "expr": "10 5 * * *",
-        "display": "10 5 * * *"
+        "expr": "10 7 * * *",
+        "display": "10 7 * * *"
       },
-      "schedule_display": "10 5 * * *",
+      "schedule_display": "10 7 * * *",
       "repeat": {
         "times": null,
         "completed": 0
@@ -355,13 +364,14 @@
       "last_status": null,
       "last_error": null,
       "last_delivery_error": null,
-      "deliver": null,
-      "origin": null
+      "deliver": "local",
+      "origin": null,
+      "max_tokens": 8192
     },
     {
       "id": "9ac7e5d4b1f0",
       "name": "newsletter-wiki-ingest",
-      "prompt": "You are Hermes, the AI knowledge agent for the Chinese AI topics wiki at `~/ai-topics-cn`. The pre-run script loaded the latest `newsletter-triage` JSON output. Work only from that triage checkpoint.\n\n**CRITICAL: All output must be in Japanese.**\n\nIf `_triage_checkpoint.ok` is false, report the checkpoint problem briefly. If there are no `take` decisions and no raw/digest files to preserve, respond `[SILENT]`.\n\nFor each decision where `recommended_action` is `take`:\n1. Read the referenced `raw_path` and, when useful, the `digest_path`\n2. Create or update the appropriate wiki page under `~/wiki`\n3. Use the already saved raw article as the source; do not re-run newsletter collection\n4. Update `~/wiki/index.md` and `~/wiki/log.md`\n5. Commit and push: `cd ~/ai-topics-cn && git add wiki/ inbox/newsletters/ && git commit -m \"wiki: newsletter ingest YYYY-MM-DD\" && git push`\n\nIf there are no `take` decisions but the collection created useful raw/digest files, commit only `wiki/raw/articles/` and `inbox/newsletters/` with `cd ~/ai-topics-cn && git add wiki/raw/articles/ inbox/newsletters/ && git commit -m \"inbox: newsletter collect YYYY-MM-DD\" && git push`.\n\nOutput format:\n```\nNewsletter Ingest Report \u2014 YYYY-MM-DD\nCheckpoint: <run_id>\nCandidates: N\nTake: N / Reference: N / Skip: N\nWiki updates: new pages N / updated pages N\nTop topics: [1], [2], [3]\n```\n\nIf there is genuinely nothing to report, respond with exactly `[SILENT]`.",
+      "prompt": "You are Hermes, the AI knowledge agent for the Chinese AI topics wiki at `~/ai-topics-cn`. The pre-run script loaded the latest `newsletter-triage` JSON output. Work only from that triage checkpoint.\n\n**CRITICAL: All output must be in Japanese.**\n\nIf `_triage_checkpoint.ok` is false, report the checkpoint problem briefly. If there are no `take` decisions and no raw/digest files to preserve, respond `[SILENT]`.\n\nFor each decision where `recommended_action` is `take`:\n1. Read the referenced `raw_path` and, when useful, the `digest_path`\n2. Create or update the appropriate wiki page under `~/wiki`\n3. Use the already saved raw article as the source; do not re-run newsletter collection\n4. Update `~/wiki/index.md` and `~/wiki/log.md`\n5. Commit and push: `cd ~/ai-topics-cn && git add wiki/ inbox/newsletters/ && git commit -m \"wiki: newsletter ingest YYYY-MM-DD\" && git push`\n\nIf there are no `take` decisions but the collection created useful raw/digest files, commit only `wiki/raw/articles/` and `inbox/newsletters/` with `cd ~/ai-topics-cn && git add wiki/raw/articles/ inbox/newsletters/ && git commit -m \"inbox: newsletter collect YYYY-MM-DD\" && git push`.\n\nOutput format:\n```\nNewsletter Ingest Report — YYYY-MM-DD\nCheckpoint: <run_id>\nCandidates: N\nTake: N / Reference: N / Skip: N\nWiki updates: new pages N / updated pages N\nTop topics: [1], [2], [3]\n```\n\nIf there is genuinely nothing to report, respond with exactly `[SILENT]`.",
       "skills": [
         "wiki-entity-upgrade"
       ],
@@ -372,10 +382,10 @@
       "script": "newsletter_triage_checkpoint.py",
       "schedule": {
         "kind": "cron",
-        "expr": "30 5 * * *",
-        "display": "30 5 * * *"
+        "expr": "30 7 * * *",
+        "display": "30 7 * * *"
       },
-      "schedule_display": "30 5 * * *",
+      "schedule_display": "30 7 * * *",
       "repeat": {
         "times": null,
         "completed": 0
@@ -391,7 +401,8 @@
       "last_error": null,
       "last_delivery_error": null,
       "deliver": "discord:1233771389367095377:1494583846946213938",
-      "origin": null
+      "origin": null,
+      "max_tokens": 2048
     },
     {
       "id": "dbde4f9d48e4",
@@ -413,12 +424,12 @@
         "times": null,
         "completed": 2
       },
-      "enabled": true,
-      "state": "scheduled",
-      "paused_at": null,
-      "paused_reason": null,
+      "enabled": false,
+      "state": "paused",
+      "paused_at": "2026-08-18T00:00:00+00:00",
+      "paused_reason": "Retired on Nana to avoid LLM cron overlap with Lucy",
       "created_at": "2026-04-18T10:47:32.928531+00:00",
-      "next_run_at": "2026-04-26T16:00:00+00:00",
+      "next_run_at": null,
       "last_run_at": "2026-04-19T16:02:53.183066+00:00",
       "last_status": "ok",
       "last_error": null,
@@ -427,9 +438,10 @@
       "origin": {
         "platform": "discord",
         "chat_id": "1495012493133742081",
-        "chat_name": "kzinmr\u306e\u30b5\u30fc\u30d0\u30fc / #hermes-cn / ai-topics/\u3067\u5b9a\u7fa9\u3055\u308c\u3066\u3044\u308b\u3088\u3046\u306a\u3001check-skill-inventory job\u3092\u5b9a\u7fa9\u3057\u3066\u5b9a\u671f\u5b9f\u884c\u3057\u3066: --- Check Skill I...",
+        "chat_name": "kzinmrのサーバー / #hermes-cn / ai-topics/で定義されているような、check-skill-inventory jobを定義して定期実行して: --- Check Skill I...",
         "thread_id": "1495012493133742081"
-      }
+      },
+      "max_tokens": 8192
     },
     {
       "id": "69005f3a78ba",
@@ -452,12 +464,12 @@
         "times": null,
         "completed": 0
       },
-      "enabled": true,
-      "state": "scheduled",
-      "paused_at": null,
-      "paused_reason": null,
+      "enabled": false,
+      "state": "paused",
+      "paused_at": "2026-08-18T00:00:00+00:00",
+      "paused_reason": "Retired on Nana to avoid LLM cron overlap with Lucy",
       "created_at": "2026-04-30T00:39:13.556779+00:00",
-      "next_run_at": "2026-04-30T17:40:00+00:00",
+      "next_run_at": null,
       "last_run_at": null,
       "last_status": null,
       "last_error": null,
@@ -465,7 +477,8 @@
       "deliver": "local",
       "origin": null,
       "enabled_toolsets": null,
-      "workdir": null
+      "workdir": null,
+      "max_tokens": 6144
     },
     {
       "id": "4b229f117df9",
@@ -490,12 +503,12 @@
         "times": null,
         "completed": 0
       },
-      "enabled": true,
-      "state": "scheduled",
-      "paused_at": null,
-      "paused_reason": null,
+      "enabled": false,
+      "state": "paused",
+      "paused_at": "2026-08-18T00:00:00+00:00",
+      "paused_reason": "Retired on Nana to avoid LLM cron overlap with Lucy",
       "created_at": "2026-04-30T00:39:20.576014+00:00",
-      "next_run_at": "2026-04-30T17:55:00+00:00",
+      "next_run_at": null,
       "last_run_at": null,
       "last_status": null,
       "last_error": null,
@@ -503,8 +516,9 @@
       "deliver": "discord:1233771389367095377:1494583846946213938",
       "origin": null,
       "enabled_toolsets": null,
-      "workdir": null
+      "workdir": null,
+      "max_tokens": 2048
     }
   ],
-  "updated_at": "2026-04-30T00:39:20.576501+00:00"
+  "updated_at": "2026-08-19T02:00:06.605870+00:00"
 }

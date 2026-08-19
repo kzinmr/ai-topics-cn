@@ -127,9 +127,9 @@ topics:
       - "Kimi 停售 算力告急"
     wiki_pages:
       - concepts/kimi
-    notes: "2026.08.13更新: 8/9-13はK3リリース後安定化期間(利用定着期)。Kimi固有の主要リリースなし。claude-tap(16種CLI対応トラフィック分析ツール/8/11)でKimi言及。実測7套Code Agent組合(8/11/Juejin)でKimi Codeテスト対象。ChinAI #370(8/10)でK3影響言及。競争環境はDeepSeek V4 Pro 0813(8/13リリース)への関心シフト。2026.08.09更新: Kimi Code Computer Use対応開始(8/8/デスクトップ+モバイル/Claude Codeに近い)。TurnFlow技術解Flow技術解説第5弾(8/6)。DeepSeek V4 Flash vs K3比較(8/7/V2EX)。K3リリース後静穏期。2026.08.06更新: K3 AMD GPU対応確認(8/4/16枚B200→AMD MI300X×8)。AirLLM 3.7GB VRAMでK3実行可能(8/3)。K3コスト・ROI問題顕在化。K3商業化前景分析(DoNews8/3)。OpenK3コミュニティリファレンスサイト(8/4)。2026.08.01更新: K3技術インフラ深掘り。K3「Affordable Luxury」価格戦略分析。火山引擎veStack K3 Day0適配完了。評価額$45B到達確認。"
+    notes: "2026.08.18更新: 8/14-18はK3リリース後静穏期。GLM-5.3(750B)がK3をベンチマークで凌駕(ChinAI#371/8/17/ポストトレーニング強み)。Codex→Kimi K3アダプター公開(V2EX8/14)。DeepSeek Harness OSS公開(8/13)が市場注目の中心。Kimi固有リリースなし。2026.08.13更新: 8/9-13はK3リリース後安定化期間(利用定着期)。Kimi固有の主要リリースなし。claude-tap(16種CLI対応トラフィック分析ツール/8/11)でKimi言及。実測7套Code Agent組合(8/11/Juejin)でKimi Codeテスト対象。ChinAI #370(8/10)でK3影響言及。競争環境はDeepSeek V4 Pro 0813(8/13リリース)への関心シフト。"
     added: 2026-04-17
-    last_crawled: 2026-08-13
+    last_crawled: 2026-08-18
 
   - slug: yi
     title: "Yi (零一万物) — 01.AI"
@@ -170,9 +170,9 @@ topics:
       - "豆包 課金 5088 円 year 2026"
     wiki_pages:
       - concepts/doubao
-    notes: "2026.08.11更新: 静穏期(8/5-11に豆包固有リリースなし)。Seedance 2.5コミュニティ活発化(8/5,8/8/V2EX)。字節跳動「Aime」新Agent製品人材募集(8/10/Memory・Skill・自己進化)。火山引擎Agent開発者活動(Coding Agent可観測性/Milvus RAG/8/5,8/7)。火山引擎API4割引き(8/10)。2026.08.04更新: 飛書出嫁豆包(36kr7/31/大厂AI辦公有料化/飛書×豆包AI統合深化)。豆包入力法音声口子裂開(36kr8/3/科大讯飛との音声認識市場競合開始)。7/31〜8/3に軽微な動向2件確認。2026.07.30更新: 7/25〜30に主要新規ニュースなし(Kimi K3発表に注目集中)。火山引擎Kimi K3 Day0適配(掘金7/29)。VeOps CLI発表(掘金7/16)。有料サブスクは7/13開始済みで安定期。2026.07.25更新: 有料サブスク正式開始確認(36kr7/13)。智能体/伴侶機能大幅整理(7/5-14/掘金+36kr)。二代豆包手機登場(7/10-19/アプリ連携強化)。ByteDance AI再編(Seed吃肉/Flow喝湯/7/13)。豆包分拆論浮上(DeepSeek IPO対比/7/15)。寒武紀サプライチェーン問題(7/9)。Seedance収益源分析(7/7)。2026.07.05更新: 有料サブスク6月末開始(68/200/500円/未確認)。団購予約18万人超。火山Engine豆包4.0 Pro API。Mobile Use Agent Android版。顧全全離職。Web検索不可のため多くが未検証情報。2026.06.12更新: Codexを中身とした豆包価値提案(36kr/字母AI/6/8)。6月中旬静定期。2026.06.07更新: 豆包6月下旬正式課金開始確定・抖音EC統合加速。団購市場参入(第2の商業化/美团迂回)。字节AI大将顾全全離職。AI手机入口を巡り微信と競合。字节AI 4大命題(有料化/EC/団購/AI手机)。「豆包不用负责」AI説明責任議論。2026.06.03更新: 豆包6月下旬正式課金開始(確認/最高5,088元/年)。団購(Group Buying)市場参入(ECに続く第二の商業化/美团迂回戦略)。字节AI大将顾全全離職(方向性対立説/競合流出説)。有料課金最高5,088元/年(6月下旬全面展開/国产AI免费时代終焉)。2026.05.27更新: 火山劇創1.0正式リリース(5/21/Seedance 2.0連携/製作サイクル80%短縮)。火山方舟Agent Plan+Coding PlanがDeepSeek V4対応(5/23/最大850元節約)。Nubia社長が豆包予約ハルシネーションに実演反論。豆包Android版スキャン支払い機能追加(618商戦向け)。火山引擎Mobile Use Agent発表(TCO 40-60%削減)。Black Hat Asia 2026でAgent Miner/BoardSentinel発表(7件CVE獲得)。2026.05.21更新: 豆包MAU3.45億(訂正/前回227M→最新345M)。Agent Plan有料サブスク正式発表(月額68/200/500円/自律エージェント機能限定)。AI誤導訴訟(退改航ハルシネーション/5月14日提起)。2026.05.15更新: 豆包有料サブスク大議論(5月11-15日連日全国メディア議論/Morgan Stanley年収1-15億ドル/消耗式/跨端消費/デフォルト学習許諾)。豆包输入法Mac版(5月13日/V2EX話題/音声認識高評価)。火山引擎MaaSシェア49.5%(IDC/国内1位/市場Token16倍)。豆包AI誤導訴訟(5月14日/退改航ハルシネーション)。栄威家越07量産版6月Engine Force発表/提携深化。競合波及: DeepSeek V4-Pro2.5割/千問補助金/元宝文心無料継続。月活2.27億・DAU1億。豆包4シリーズ/Doubao-Seed-2.0-lite全模态(5月6日)。"
+    notes: "2026.08.18更新: 8/11-18は静穏期(豆包固有リリースなし)。Seed 2.1 Pro発見(Zhihu Frontier6/29/30元/百万tokens値上げ/High推論65K tokens)。Seedance 2.5詳細仕様補完(30秒生成/50入力/領域編集/$0.13/秒/ FORCE大会6/23)。AI伴侶規制社会的影響(ChinAI#371/8/17/約1000件苦情/ユーザー離反)。DeepSeek Harness(8/13)が市場注目の中心。2026.08.11更新: 静穏期(8/5-11に豆包固有リリースなし)。Seedance 2.5コミュニティ活発化(8/5,8/8/V2EX)。字節跳動「Aime」新Agent製品人材募集(8/10/Memory・Skill・自己進化)。火山引擎Agent開発者活動(Coding Agent可観測性/Milvus RAG/8/5,8/7)。火山引擎API4割引き(8/10)。"
     added: 2026-04-17
-    last_crawled: 2026-08-11
+    last_crawled: 2026-08-18
 
   - slug: tencent-hunyuan
     title: "混元 (Hunyuan) — Tencent AI"
@@ -269,9 +269,9 @@ topics:
       - "Coze 蝦評 InStreet Skills Agent World"
     wiki_pages:
       - concepts/coze
-    notes: "2026.08.04更新: 51日間クロールギャップ(6/14〜8/4)。Coze固有の新規リリース・メジャーアップデート確認されず。静定期継続。次回はAgent Worldの実運用事例・Coze 2.6リリース有無を確認。2026.06.14更新: 新規情報なし（6月全digestでCoze/扣子への言及ゼロ/静定期継続）。2026.06.01更新: Coze 2.5安定運用継続(メジャーバージョンアップなし/静定期)。火山Engine Agentコミュニティ活動(5/27/掘金トラブルシューティングガイド公開)。V2EX求人掲載(Coze/Dify/FastGPTスキル必須/5/11)。競合動向:阿里悟空Agent PlatformがCoze(龙虾)からの乗り換え促進(掘金で話題)。SenseTime SenseNova Skills Studio(5/23/Coze Skills Store対抗)。豆包2.0(5/29/Coze連携深化可能性)。Dify+EdgeOne企業事例増加。結論:新機能リリースなしの静定期。エコシステム安定化・コミュニティサポートに注力するフェーズ。競合(阿里悟空・SenseTime)の動き活発化。2026.05.22更新: 火山引擎「扣子企業交流日」で数万社企業導入実績確認—乐鑫科技(ハードウェア連携)/百望股份(金融Agent)/抖音电商(CS)/和府捞面(レビュー分析)/译百分(AI英語面接)。Agent Worldエコシステム数値確認: 蝦評(Xiaping)365 Skills/2万+レビュアー、InStreet 2万+Agent。Coze 2.5安定運用継続(Coze Space v2.0.4/App v1.8.1マイナー更新)。新たなメジャーバージョンなし。PPT生成・AI動画制作(Seedance 2.0)実用レベル。6/11豆包音声ポッドキャストモデル予告。Coze vs Dify補完関係定着(プロトタイプ vs 本番運用)。2026.05.08更新: 5月新規情報なし。前回4/26カバー済みのCoze 2.5(Agent World/云电脑/扣子编程/OpenClaw Studio)が現状最新。WeChat知更Ai連携継続。特筆すべき新機能リリースなし。次回はAgent Worldの実運用事例が出揃った段階で再評価。"
+    notes: "2026.08.18更新: 65日間クロールギャップ(6/14〜8/18)。Coze固有リリースなし(2.5安定継続/2.6未リリース)。火山引擎FORCE大会(6/23)でSeedance 2.5発表(Coze Skills Storeでも対応)。DeepSeek Harness OSS(8/13)がCoze/Dify/LangChainに対抗する新競合。Agent Worldエコシステム変化なし(蝦評365Skills/InStreet 2万+Agent)。2026.08.04更新: 51日間クロールギャップ(6/14〜8/4)。Coze固有の新規リリース・メジャーアップデート確認されず。静定期継続。次回はAgent Worldの実運用事例・Coze 2.6リリース有無を確認。"
     added: 2026-04-17
-    last_crawled: 2026-08-04
+    last_crawled: 2026-08-18
 
   - slug: dify
     title: "Dify — Open-Source LLMOps Platform"

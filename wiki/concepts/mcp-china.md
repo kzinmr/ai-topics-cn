@@ -237,6 +237,7 @@ Anthropicの明確な立場：「MCPとCLIは対立しない。良いMCPサー�
 - Canva、Notion、SentryがMCPサーバーと同時にSkillsを公開開始
 - MCPコミュニティがSkillsのMCPサーバー直接配布を開発中（API更新時にSkillsも自動アップデート）
 - 中国でも「MCP Server + Skillテンプレート」の組み合わせ配布が始まる可能性
+- **2026年8月19日追記**: Juejin「WorkBuddy + Canva 可画 MCP 技术解析」— 7/30にCanva可画が中国でMCP能力を公開し**Kimi・WorkBuddy・Qoder Work CN**が首批接続と確認。「**図から活稿へ**」（静的画像→編集可能なライブドキュメント）の范式として設計ワークフローのMCP統合を解説。中国国内AIデザインツールにおけるMCP実装の初期事例。
 
 #### Cloudflareの革新的MCP実装
 - わずか**2つのMCPツール**で**2,500以上のエンドポイント**をカバー

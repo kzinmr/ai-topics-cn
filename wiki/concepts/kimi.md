@@ -1,7 +1,7 @@
 ---
 title: "Kimi (月之暗面) — Moonshot AIの旗艦AIアシスタント"
 created: 2026-04-22
-updated: 2026-08-13
+updated: 2026-08-18
 tags: [llm, moonshot, long-context, agent, open-source, chinese-llm, kimi-k3, kimi-k2-7, k3-opensource]
 aliases: ["Kimi", "月之暗面", "Moonshot AI", "Kimi Chat", "Kimi K2"]
 source_lang: zh-CN
@@ -850,3 +850,27 @@ Kimi Codeが**Computer Use（PC操作）機能**をデスクトップ+モバイ�
 
 #### 期間中の静穏性
 8月6-9日はK3リリース後の**利用定着期**。主な動向はKimi Code Computer Use対応と技術解説の継続のみ。大型ニュース（K3 OSS化、AMD GPU対応、$45B評価額）は全て7月末〜8/4に記録済み。
+
+### 2026年8月14日〜18日の動向
+
+#### GLM-5.3がKimi K3をベンチマークで凌駕（8月17日）⭐⭐
+
+**最も重要な新規発見**: ChinAI #371ニュースレター（8月17日配信）で、Z.ai（智譜AI）の**GLM-5.3**がKimi K3の多くのベンチマークで上回ったことが報じられた。
+
+- **GLM-5.3**: 総パラメータ約750B（K3の2.8Tの約1/3）。K3よりも大幅に小さい
+- **性能**: 多くのコーディングベンチマークでK3を上回り、一部ではClaude Fable 5やGPT-5.6-Solにも匹敵
+- **技術**: GLM-5.2ベースにポストトレーニングを大幅拡大（「Scaling post-training is all we did」）
+- **分析**: Kimiは事前学習（pretraining）の名作、Z.aiはポストトレーニングに強み
+- **出典**: [ChinAI #371 — Interconnects by Nathan Lambert](https://open.substack.com/pub/chinai/p/chinai-371-a-quiet-goodbye-adaptation) [T1]
+
+> 「Z.ai seems to have a strength in post-training when compared to Kimi, which is more of a pretraining masterpiece」
+
+#### Codex ↔ Kimi K3 アダプター公開（8月14日）
+
+V2EXで**CodexからKimi K3のResponses APIを利用するオープンソースアダプター**が公開された。中国開発者コミュニティにおける「Codex + 国産モデル」組み合わせの実用化加速を示す。
+
+- 出典: V2EX t/1234505 [T2]
+
+#### 8月14日〜18日はK3リリース後の静穏期
+
+Kimi固有の大型リリース・新規ニュースは確認されなかった。市場全体の注目はDeepSeek Harness OSS公開（8/13）とV4 Pro発表（8/12-13）に向いており、K3の話題は後景化。

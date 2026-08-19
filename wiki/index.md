@@ -2,6 +2,11 @@
 
 最終更新: 2026-08-19
 エンティティ: 65, コンセプト: 120, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-19 Crawl Triage Split #2: DeepSeek Harness 反響/Qwen 3.8 開放権重/GPT Image 2 360°全景/Canva MCP）
+- `concepts/agentic-engineering.md` — **更新**: DeepSeek Harness OSS公開後初の週末の実機体験記事急増追記（9.5万Star/10万突破・源码第4章Sessionログ解説・「普通ユーザーはまだ待て」評価）
+- `entities/qwen.md` — **更新**: Qwen 3.8 **オープンウェイト化**（8/17 Juejin「本地跑一个 Qwen 3.8，你将拥有一个 Opus 4.6」）追記。8/17-19セクション追加
+- `concepts/gpt-image-2.md` — **更新**: 自撮り1枚から360°全景生成+VibeCodingインタラクティブビュー（Juejin 8/19）追記
+- `concepts/mcp-china.md` — **更新**: Canva可画 MCP中国公開（7/30、Kimi/WorkBuddy/Qoder Work CN首批接続、図から活稿范式）追記
 ### 本日更新（2026-08-19 Crawl Triage: DeepSeek値上げ後リアクション）
 - `concepts/deepseek.md` — **更新**: 8/17発動API値上げ後のユーザー実感記録。V2EXで「3問29RMB」報告（値上げ前同パターン最大1.5RMB）。Juejin価格比較記事再浮上。§25の値上げ詳細との整合確認
 ### 本日更新（2026-08-18 Newsletter Triage: ChinAI #371）
