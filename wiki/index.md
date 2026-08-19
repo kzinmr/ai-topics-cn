@@ -1,7 +1,9 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-08-18
+最終更新: 2026-08-19
 エンティティ: 65, コンセプト: 120, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-19 Crawl Triage: DeepSeek値上げ後リアクション）
+- `concepts/deepseek.md` — **更新**: 8/17発動API値上げ後のユーザー実感記録。V2EXで「3問29RMB」報告（値上げ前同パターン最大1.5RMB）。Juejin価格比較記事再浮上。§25の値上げ詳細との整合確認
 ### 本日更新（2026-08-18 Newsletter Triage: ChinAI #371）
 - `concepts/ai-companion-regulation-impact.md` — **新規**: AI擬人化互動服務管理暫行辦法7/15施行後のユーザー影響実態レポート。10余名インタビュー、データ移行問題、ユーザー反発、プラットフォーム対応未確認
 ### 本日更新（2026-08-17 Active Crawl: ChinaAIRegulation/MCP-China/ChinaAICodingAssistants）

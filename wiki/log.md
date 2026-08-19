@@ -43,6 +43,27 @@
 |
 |
 |
+|## [2026-08-19] crawl-triage | DeepSeek値上げ後リアクション
+|
+|### Triage判定
+|- take: 1件（concepts/deepseek.md 値上げ後コミュニティ反応）
+|- skip: 残件 — V2EXは「暫無内容」プレースホルダーまたは短文投げかけ、WeChat 48件は同一記事（机器之心「AI00」十一月榜单、ハッシュaafeba3f）の再収集で処理済み。36kr/juejin/zhihu候補なし
+|
+|### Wiki更新
+|- `concepts/deepseek.md` — **更新**: §25（8/17発動API値上げ）後のユーザー実感追記。V2EX「上午3問で29RMB」報告（値上げ前同パターン最大1.5RMB）。Juejin価格比較記事（8/13投稿）の再浮上。一時的な価格動向として記録
+|
+|## [2026-08-18] active-crawl | Kimi/Doubao/Coze
+|
+|### Wiki更新
+|- `concepts/kimi.md` — **更新**: GLM-5.3(750B)がK3をベンチマークで凌駕(ChinAI#371/8/17)。Codex→Kimi K3アダプター公開(V2EX8/14)。8/14-18は静穏期
+|- `concepts/doubao.md` — **更新**: Seed 2.1 Pro発見(価格値上げ30元/百万tokens)。Seedance 2.5詳細仕様補完(30秒/50入力/領域編集)。AI伴侶規制社会的影響(ChinAI#371/8/17)
+|- `concepts/coze.md` — **更新**: 65日間クロールギャップ。Coze固有リリースなし(2.5安定/2.6未リリース)。DeepSeek Harnessが新競合として台頭
+|
+|### hot-topics.yaml更新
+|- kimi: last_crawled 2026-08-18、notes更新
+|- doubao: last_crawled 2026-08-18、notes更新
+|- coze: last_crawled 2026-08-18、notes更新
+|
 |## [2026-08-17] active-crawl | ChinaAIRegulation/MCP-China/ChinaAICodingAssistants
 |
 |### Wiki更新
