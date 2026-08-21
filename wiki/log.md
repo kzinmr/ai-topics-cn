@@ -43,6 +43,23 @@
 |
 |
 |
+|
+|## [2026-08-21] crawl-triage split #1 | DeepSeek Harnessエコシステム拡大 / V4-Flash視覚モード / Qwen-UI-Agent
+|
+### Triage判定
+- take: 14件（ソース記事14件を wiki/raw/articles/ に保存）
+- 新規トピック3件: (1) DeepSeek V4-Flash API 視覚モード（グレーテスト）公開 8/21, (2) DeepSeek Harness OSS公開(8/13)後1週間のエコシステム拡大（プラグイン15選/Cordisソース解説/Sessionログ単一事実源/実機比較）, (3) 阿里 Qwen-UI-Agent GUI基盤モデル発表（手机操作97.5%）
+- 8/19 split #2以降未処理の inbox 記事は主に 8/18-8/21 の juejin/v2ex 収集分で、大部分が既存トピック(DeepSeek値上げ/Harness)の低付加価値記事またはspamだったため、上級3件のみ反映
+|
+### Wiki更新
+- `concepts/deepseek.md` — **更新**: §27 (V4-Flash API 視覚モード greyscale 公開 8/21, モデル名 deepseek-v4-flash-vision-exp), §28 (Harnessエコシステム拡大と内部設計解読フェーズへの移行 8/19-21)
+- `entities/qwen.md` — **更新**: 2026年8月20日〜21日の状況セクション追加(Qwen 3.8 27B ローカル活用と GUI 基盤モデル Qwen-UI-Agent 発表)
+- `concepts/agentic-engineering.md` — **更新**: 価格階層セクションに 2026年8月21日追記(Harness OSS公開後1週間のエコシステム拡大)
+|
+### ソース内訳
+- 新規ソース記事: 14件 (wiki/raw/articles/ に保存)
+- 収集元: juejin 12, v2ex 1, wechat-media 0 (8/20-8/21 収集分)
+|
 |## [2026-08-19] crawl-triage split #2 | DeepSeek Harness 反響 / Qwen 3.8 開放権重 / GPT Image 2 360°全景 / Canva MCP
 |
 |### Triage判定

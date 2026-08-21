@@ -3,7 +3,7 @@ title: "Agentic Engineering（エージェントエンジニアリング）— �
 type: concept
 tags: [ai-agent, software-engineering, agentic-engineering, paradigm-shift, vibe-coding, harness]
 created: 2026-05-26
-updated: 2026-06-08
+updated: 2026-08-21
 source_lang: zh-CN
 ---
 
@@ -88,6 +88,7 @@ Agentic Engineeringは、2026年半ばに台頭した第2世代AI開発パラダ
 - **36kr分析**: 「氛围编程の時代は終わった。これからはエージェントが主役」
 - **コミュニティ反響**: 開発者間でHarness Engineeringの重要性が急速に認知
 - **2026年8月19日追記**: Harness OSS公開後初の週末、実機体験記事が急増。Juejin「开源两天 9.5万 Star! DeepSeek Harness 到底是个啥」(8/17投稿)では「**开源两天、GitHub Star数10万突破**」が確認され、インストール〜実戦までの完全ガイドとして拡散。同系列の「DeepSeek Harness 强是真的强，普通用户可以再等等」では「**強いが、現行版はまだ一般ユーザー向けでない**」という評価。さらに「源码实战 第4章: Session 会话日志——单一事实源」では会话语の単一事実源設計がソースコードレベルで解説され、コミュニティが表層のスター数から**内部アーキテクチャ解読**フェーズへ移行中。
+- **2026年8月21日追記**: Harness OSS（8/13）公開後1週間、Juejinでエコシステム記事がさらに拡大。実機比較「我把 DeepSeek Harness 跑了一遍，终于知道它和 Codex 差在哪了」は「CodexはAgentを組んで渡す。Harnessは**組立方そのもの**を渡す」と位置づけ、基盤Cordis（TS/Node.jsメタフレームワーク）のソース解説、初期プラグイン15選ガイドが相次ぐ。詳細は [[concepts/deepseek]] §28 参照。
 
 ## 課題と限界
 

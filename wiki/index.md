@@ -1,7 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-08-19
+最終更新: 2026-08-21
 エンティティ: 65, コンセプト: 120, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-21 Crawl Triage Split #1: DeepSeek Harnessエコシステム拡大/V4-Flash視覚モード/Qwen-UI-Agent）
+- `concepts/deepseek.md` — **更新**: §27 V4-Flash API視覚モード（グレーテスト）公開(8/21、deepseek-v4-flash-vision-exp)、§28 Harness OSS公開後1週間のエコシステム拡大（実機比較/Cordisソース解説/Sessionログ単一事実源/プラグイン15選）
+- `entities/qwen.md` — **更新**: 8/20-21セクション追加。Qwen 3.8 27B ローカル活用拡大（Claude Code接続バグをOpus5が自律修正）、Qwen-UI-Agent GUI基盤モデル発表（手机操作97.5%、MobileWorld 82.1%、単一ソースのため公式確認待ち）
+- `concepts/agentic-engineering.md` — **更新**: 8/21追記。Harness OSS（8/13）公開後1週間でJuejinエコシステム記事が拡大、「組立方そのものを渡す」実機比較とCordis基盤解説
 ### 本日更新（2026-08-19 Crawl Triage Split #2: DeepSeek Harness 反響/Qwen 3.8 開放権重/GPT Image 2 360°全景/Canva MCP）
 - `concepts/agentic-engineering.md` — **更新**: DeepSeek Harness OSS公開後初の週末の実機体験記事急増追記（9.5万Star/10万突破・源码第4章Sessionログ解説・「普通ユーザーはまだ待て」評価）
 - `entities/qwen.md` — **更新**: Qwen 3.8 **オープンウェイト化**（8/17 Juejin「本地跑一个 Qwen 3.8，你将拥有一个 Opus 4.6」）追記。8/17-19セクション追加

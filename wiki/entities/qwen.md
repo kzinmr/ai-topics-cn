@@ -1,7 +1,7 @@
 ---
 title: Qwen（通义千问）— 阿里云大模型旗舰
 created: 2026-04-17
-updated: 2026-08-16
+updated: 2026-08-21
 tags: [llm, model, china, open-source-ai, alibaba, qwen, agentic-coding, ai-infrastructure, qwen3.7, qwen3.8, agent-era, qwen-image-3, tts]
 aliases: ["Qwen", "通义千问", "qwen", "Qwen3.5", "Qwen3-Coder", "Qwen3.6", "Qwen3.6-Plus", "Qwen3.6-27B", "Qwen3.6-35B-A3B", "Qwen3.7-Max", "Qwen3.7-Plus", "Qwen3.8-Max", "千问云", "Qianwen Cloud", "千問办公"]
 source_lang: zh-CN
@@ -1077,6 +1077,21 @@ AlibabaはQwenを中核とした**フルスタックAI戦略**を展開：
 - Token Plan/Lingma/Qoderの価格改定なし
 
 **出典**: Juejin 8/17 (cxuanAI) [T1]
+
+### 2026年8月20日〜21日の状況
+
+#### Qwen 3.8 27B のローカル活用と GUI 基盤モデル発表（8月21日）
+
+- **Qwen 3.8 27B のローカル活用拡大**: Juejin「Opus5自主解决Qwen3.8 27B本地接入Claude Code的BUG！」（8/21）で、8/17確認の**オープンウェイト化**（「本地跑一个 Qwen 3.8，你将拥有一个 Opus 4.6」）後、ローカルデプロイした Qwen 3.8 27B を Claude Code 接続時に発生した未知バグを Opus 5 が自律修正した実例が紹介。ローカル Qwen 3.8 を「Opus 4.6 級」として Agent ハーネスに組み込む活用が定着しつつある。
+- **Qwen-UI-Agent 発表（8/21）**: Juejin「阿里新模型手机操作97.5%接近满分，GPT-5.6和Claude都被甩开了」で、阿裏（Alibaba）千問チームの GUI 操作基盤モデル **Qwen-UI-Agent** の報。モバイル / PC / Web / デプシークエリ環境をカバーする「GUIエージェント基盤モデル」とされ、MobileWorld ベンチマーク **82.1%**、実機テスト **92.2%**、Android タスク **97.5%**（近似満点）を報告。タイトル通り GPT-5.6・Claude を上回る操作精度を主張。
+  - **検証メモ**: 単一の Juejin アーティクル（タイトルクリックベイト的表現）に基づくため、公式発表・技術レポートでの確認待ち。既存の Qwen3.7-Max / Qwen3.8-Max とのモデル体系上の関係も不明。
+
+#### 注目すべきAbsent
+- Qwen4.0等の次世代モデルリリースなし
+- Qwen Code v0.17.x安定版リリースなし（プレビュー継続）
+- Token Plan/Lingma/Qoderの価格改定なし
+
+**出典**: Juejin 8/21 [T1]
 
 ### 外部ソース
 
