@@ -1,7 +1,9 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-08-21
+最終更新: 2026-08-22
 エンティティ: 65, コンセプト: 120, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-22 Newsletter Triage: Tech Taiwan TSMC COUPE光エンジン量産）
+- `concepts/ai-infrastructure.md` — **更新**: TSMC COUPE光エンジンの量産開始（2026-08-21）セクション追加。Nvidia Spectrum-X初代スイッチがシリコンフォトニクス+COUPE光エンジンで量産開始、MarvellがGoogleとLPU（超低遅延推論向け）契約+最大5,897万株（約$12.2B相当）ワラントでGoogleを第5位株主化
 ### 本日更新（2026-08-21 Crawl Triage Split #1: DeepSeek Harnessエコシステム拡大/V4-Flash視覚モード/Qwen-UI-Agent）
 - `concepts/deepseek.md` — **更新**: §27 V4-Flash API視覚モード（グレーテスト）公開(8/21、deepseek-v4-flash-vision-exp)、§28 Harness OSS公開後1週間のエコシステム拡大（実機比較/Cordisソース解説/Sessionログ単一事実源/プラグイン15選）
 - `entities/qwen.md` — **更新**: 8/20-21セクション追加。Qwen 3.8 27B ローカル活用拡大（Claude Code接続バグをOpus5が自律修正）、Qwen-UI-Agent GUI基盤モデル発表（手机操作97.5%、MobileWorld 82.1%、単一ソースのため公式確認待ち）

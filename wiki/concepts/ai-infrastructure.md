@@ -1,9 +1,9 @@
 ---
 title: "AIインフラ構造 — AI Rack WarとCopper-to-Optics移行トレンド"
-description: "AIサーバー/ラックインフラの技術トレンド：銅配線から光配線への移行、Compute-Memory-Connectivityの三本柱、MediaTek/Marvell/Foxconnの戦略的ポジショニング"
+description: "AIサーバー/ラックインフラの技術トレンド：銅配線から光配線への移行、Compute-Memory-Connectivityの三本柱、MediaTek/Marvell/Foxconnの戦略的ポジショニング、TSMC COUPEシリコンフォトニクス光エンジン量産"
 created: 2026-06-06
-updated: 2026-06-06
-tags: [AI-infrastructure, datacenter, copper-to-optics, silicon-photonics, Marvell, MediaTek, Foxconn, Computex]
+updated: 2026-08-22
+tags: [AI-infrastructure, datacenter, copper-to-optics, silicon-photonics, Marvell, MediaTek, Foxconn, Computex, TSMC, COUPE, Nvidia-Spectrum-X]
 source_lang: zh-CN
 ---
 
@@ -41,6 +41,14 @@ Copper-to-Optics移行は以下の層で進行中：
 | ラック内接続 | DAC銅ケーブル → 光ケーブル（AOC） | Foxconn, Luxshare |
 | ラック間接続 | 光トランシーバー（800G/1.6T） | Innolight, Coherent, Marvell |
 
+#### TSMC COUPE光エンジンの量産開始（2026-08-21）
+
+シリコンフォトニクス商業化の遅延（2〜3世代に及ぶ停滞）の背景で、TSMCが自社のシリコンフォトニクス光エンジン **COUPE** を実用化。Nvidiaは2026年8月、TSMC製COUPE光エンジンとシリコンフォトニクスを組み込んだ**初代Spectrum-Xスイッチ**が量産開始したと発表（Tech Taiwan 胡說科技、2026-08-21号）。
+
+- **意味**: Copper-to-Optics移行のラック間/ラック内接続層で、TSMCが「フォウンドリ+光エンジン」の一体供給で優位性を獲得。NvidiaとBroadcomの既存光配線サプライチェーンをTSMCが取り込む構造。
+- **TSMCシリコンフォトニクスR&D**: 10年以上同分野R&Dに携わるTSMC顧客へのインタビュー（Tech Taiwanポッドキャスト連携）。シリコンフォトニクスが2〜3世代を経てようやく商業的実用段階に到達した経緯を独自解説。
+- **競合位置づけ**: Marvell（Inphi買収由来のシリコンフォトニクス先行）とTSMC COUPEが、ラック内/チップ間光相互接続で並走する新段階。
+
 ## 主要企業の戦略的ポジショニング
 
 ### Marvell Technology（美満電子）
@@ -51,6 +59,7 @@ Copper-to-Optics移行は以下の層で進行中：
 - **ノード戦略**: 14/16nm→7nmを**スキップ**して5nmへ直接移行
 - **買収戦略**: Avera Semiconductor（旧IBM ASIC設計部門）、Inphi（100億ドル/光相互接続）
 - **Nvidiaとの関係**: 2026年3月、NvidiaがMarvellに**20億ドル**出資。「mini-Broadcom」（ネットワーキング+ASIC両輪）として、AIインフラで台頭するBroadcomへの対抗軸に育成する意図
+- **Google LPU契約（2026-08-21）**: GoogleとTPU関連商業契約を締結。報道では「Marvell製品はGoogle TPUを支援」と曖昧だが、実態は**LPU（超低遅延推論向けニッチAIプロセッサ）**を受託（TPUではない、MediaTekのTPU注文を奪った形跡なし）。MarvellはGoogleに市場価格割安の株式引受（最大5,897万株、全行使で約122億ドル相当）を許容し、Googleを第5位株主にする構造。台湾規制上、Marvellが差し入れたワラントタイプは許可されないとの指摘
 - **時価総額**: MediaTekを明確に上回る
 
 ### MediaTek（聯発科技）
@@ -82,6 +91,8 @@ Copper-to-Optics移行は以下の層で進行中：
 |---|---|---|
 | Marvell Inphi買収額 | $10B（2021年） | Marvell IR |
 | Nvidia→Marvell出資 | $2B（2026年3月） | Tech Taiwan |
+| Marvell→Google LPUワラント | 最大5,897万株・全行使で約$12.2B相当（Google第5位株主、2026-08-21） | Tech Taiwan |
+| TSMC COUPE + Nvidia Spectrum-X | 初代Spectrum-Xスイッチがシリコンフォトニクス+COUPE光エンジンで量産開始（2026-08-21） | Tech Taiwan |
 | Silicon Photonics市場予測 | 2030年に$10B超 | 業界レポート |
 | 800G光トランシーバー需要 | 2026年急増 | Computex 2026 |
 
@@ -109,5 +120,6 @@ T-Glassなどガラス基板技術は、パッケージング層での銅代替�
 ## Sources
 
 - Tech Taiwan（胡說科技）, "Inside the AI Rack War: MediaTek and Foxconn Race Toward the Copper-to-Optics Era" (2026-06-05) — [Substack](https://substack.com/@techtaiwan)
+- Tech Taiwan（胡說科技）, "How TSMC Came From Behind in Silicon Photonics and Won Over Nvidia and Broadcom" (2026-08-21) — [Substack](https://substack.com/@techtaiwan)
 - Marvell Technology Computex 2026 キーノート（Matt Murphy CEO）
 - Nvidia $2B Marvell出資報道（2026年3月）

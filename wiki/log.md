@@ -3571,3 +3571,14 @@ Originating conversation: (scheduled cron)
 
 ### Wiki更新
 - `concepts/ai-companion-regulation-impact.md` — 新規: AI擬人化規制のユーザー影響実態（凤凰周刊冷杉RECORD）
+
+## [2026-08-22] newsletter-triage | Tech Taiwan（胡說科技）TSMC COUPE
+
+### 収集概要
+- **チェックポイント**: 20260822T070005Z
+- **総候補**: 6件
+- **Take**: 1件 — Tech Taiwan（胡說科技）2026-08-21号「How TSMC Came From Behind in Silicon Photonics and Won Over Nvidia and Broadcom」。Nvidia Spectrum-X初代スイッチがTSMC製COUPE光エンジン（シリコンフォトニクス）で量産開始、MarvellがGoogleとLPU（超低遅延推論向け）契約+最大5,897万株（約$12.2B相当）ワラントでGoogleを第5位株主化
+- **Skip**: 5件 — 同一記事のSubstack URLバリアント重複4件、Substackプロフィールページ断片1件
+
+### Wiki更新
+- `concepts/ai-infrastructure.md` — 更新: TSMC COUPE光エンジンの量産開始（2026-08-21）セクション追加、Marvell Google LPU契約詳細追加、市場データ表2行追加、Source追加
