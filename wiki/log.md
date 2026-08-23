@@ -3613,3 +3613,14 @@ Originating conversation: (scheduled cron)
 
 ### Wiki更新
 - `concepts/ai-infrastructure.md` — 更新: TSMC COUPE光エンジンの量産開始（2026-08-21）セクション追加、Marvell Google LPU契約詳細追加、市場データ表2行追加、Source追加
+
+## [2026-08-23] newsletter-ingest | 新着候補なし
+
+### 収集概要
+- **チェックポイント**: 20260823T070013Z
+- **総候補**: 0件（新規メッセージなし、処理済み0件）
+- **Take**: 0件 / Reference: 0件 / Skip: 0件
+
+### 作業
+- wikiページ更新なし
+- 未コミットだった `wiki/raw/articles/` の生記事10件（8/21-22生成、TSMC光シリコン記事5件・DeepSeek Harness/文心一言・复旦Agent論説関連5件）をアーカイブcommit。TSMC記事は2026-08-22 Newsletter Triageで `concepts/ai-infrastructure.md` に反映済み

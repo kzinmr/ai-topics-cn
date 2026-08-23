@@ -2,6 +2,8 @@
 
 最終更新: 2026-08-23
 エンティティ: 65, コンセプト: 120, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-23 Newsletter Ingest: 新着候補なし、未コミット生記事10件をアーカイブ）
+- `wiki/raw/articles/` — 8/21-22に生成済み・未コミットだった生記事10件をcommitのみで保存（take候補はゼロ、TSMC光シリコン記事5件は2026-08-22 Newsletter Triageで`concepts/ai-infrastructure.md`に反映済み、残り5件はDeepSeek Harness/文心一言・复旦Agent論説関連のcrawl由来記事）
 ### 本日更新（2026-08-23 Active Crawl: ChatGLM/VibeCoding）
 - `concepts/chatglm.md` — **更新**: 8/21-23 新規セクション追加。GLM-5.3+ZCode Agent実測記事(Juejin8/22)とZCode第2弾週末100M Tokenキャンペーン(V2EX8/21)確認
 - `concepts/vibe-coding-china.md` — **更新**: 8/21-23 新規セクション追加。Windows フリクション浮上(V2EX8/22)
