@@ -43,26 +43,42 @@
 |
 |
 |
-|
-|## [2026-08-21] crawl-triage split #1 | DeepSeek Harnessエコシステム拡大 / V4-Flash視覚モード / Qwen-UI-Agent
-|
+## [2026-08-22] crawl-triage split #2 | DeepSeek Harness実用段階 / 文心第一梯隊 / 復旦NLP再取り上げ
+
+### Triage判定
+- take: 4件（DeepSeek Harness実用フェーズ3件、ERNIE第一梯隊1件。ソース記事6件を wiki/raw/articles/ に保存）
+- 新規トピック2件: (1) DeepSeek Harnessが「仕組み解読」から「実用展開・業務影響」フェーズへ（アプリチーム役割再定義/Cordisアーキテクチャ解説/視覚モード実用化）, (2) 李彦宏CEOの文心一言「第一梯隊」復帰方針（V2EXコミュニティ情報、公式裏付け未確認）
+- 8/21 split #1以降未処理の inbox 記事は主に 8/21-8/22 の juejin/v2ex/wechat 収集分で、WeChatは復旦NLP综述再取り上げ、Meta長コンテキスト、SpokenWOZ、AI00榜単等が再収集重複。V2EXはspam（住宅IP無料/送码/内推等）と短文投げかけが大半
+
+### Wiki更新
+- `concepts/deepseek.md` — **更新**: §29 Harness実用段階への移行と企業ワークフロー変革（8/21-22）追加。アプリチームの役割再定義、Cordisプラグインアーキテクチャ解説、V4-Flash Vision実用化
+- `concepts/agentic-engineering.md` — **更新**: 8/22追記。Harness関心の実用展開フェーズ移行
+- `entities/baidu-ernie.md` — **更新**: 8/22 ERNIE 5.0「第一梯隊」復帰狙いセクション追加（V2EX、公式裏付け未確認）
+- `entities/fudan-nlp-agent-survey.md` — **更新**: 8/21再取り上げ出典追加、日付更新
+
+### ソース内訳
+- 新規ソース記事: 6件 (wiki/raw/articles/ に保存)
+- 収集元: juejin 3, v2ex 2, wechat-media 1 (8/21-8/22 収集分)
+
+## [2026-08-21] crawl-triage split #1 | DeepSeek Harnessエコシステム拡大 / V4-Flash視覚モード / Qwen-UI-Agent
+
 ### Triage判定
 - take: 14件（ソース記事14件を wiki/raw/articles/ に保存）
 - 新規トピック3件: (1) DeepSeek V4-Flash API 視覚モード（グレーテスト）公開 8/21, (2) DeepSeek Harness OSS公開(8/13)後1週間のエコシステム拡大（プラグイン15選/Cordisソース解説/Sessionログ単一事実源/実機比較）, (3) 阿里 Qwen-UI-Agent GUI基盤モデル発表（手机操作97.5%）
 - 8/19 split #2以降未処理の inbox 記事は主に 8/18-8/21 の juejin/v2ex 収集分で、大部分が既存トピック(DeepSeek値上げ/Harness)の低付加価値記事またはspamだったため、上級3件のみ反映
-|
+
 ### Wiki更新
 - `concepts/deepseek.md` — **更新**: §27 (V4-Flash API 視覚モード greyscale 公開 8/21, モデル名 deepseek-v4-flash-vision-exp), §28 (Harnessエコシステム拡大と内部設計解読フェーズへの移行 8/19-21)
 - `entities/qwen.md` — **更新**: 2026年8月20日〜21日の状況セクション追加(Qwen 3.8 27B ローカル活用と GUI 基盤モデル Qwen-UI-Agent 発表)
 - `concepts/agentic-engineering.md` — **更新**: 価格階層セクションに 2026年8月21日追記(Harness OSS公開後1週間のエコシステム拡大)
-|
+
 ### ソース内訳
 - 新規ソース記事: 14件 (wiki/raw/articles/ に保存)
 - 収集元: juejin 12, v2ex 1, wechat-media 0 (8/20-8/21 収集分)
-|
-|## [2026-08-19] crawl-triage split #2 | DeepSeek Harness 反響 / Qwen 3.8 開放権重 / GPT Image 2 360°全景 / Canva MCP
-|
-|### Triage判定
+
+## [2026-08-19] crawl-triage split #2 | DeepSeek Harness 反響 / Qwen 3.8 開放権重 / GPT Image 2 360°全景 / Canva MCP
+
+### Triage判定
 |- take: 4件（agentic-engineering / qwen / gpt-image-2 / mcp-china）
 |- skip: 41件 — 36kr候補なし。V2EX 15件中4件がspam（BeefAPI中转/Markdown送码/内推/套餐），残りは短文投げかけ・非AI話題。Juejin 15件中8件が既処理トピックの低付加価値記事（OpenClaw MiniClaw/提肛助手/3Dキャンパス/AI編程ワークフロー等）。WeChat 16件中9件がアジェンタ入門リサイクル記事（aed7e3c9/f691ec7c/5c8aef97等ハッシュは既存inbox重複）、1件spam（北京内推）。aafeba3fは4/17以来の再収集で処理済み
 |
@@ -82,6 +98,21 @@
 |### Wiki更新
 |- `concepts/deepseek.md` — **更新**: §25（8/17発動API値上げ）後のユーザー実感追記。V2EX「上午3問で29RMB」報告（値上げ前同パターン最大1.5RMB）。Juejin価格比較記事（8/13投稿）の再浮上。一時的な価格動向として記録
 |
+## [2026-08-23] active-crawl | ChatGLM/VibeCoding
+
+### Wiki更新
+
+- `concepts/chatglm.md` — **更新**: 8/21-23 新規セクション追加。GLM-5.3+ZCode Agent実測記事(Juejin8/22)とZCode第2弾週末100M Tokenキャンペーン(V2EX8/21)確認
+- `concepts/vibe-coding-china.md` — **更新**: 8/21-23 新規セクション追加。Windows フリクション浮上(V2EX8/22)
+
+### hot-topics.yaml更新
+
+- slug: chatglm, last_crawled: 2026-08-23
+- slug: vibe-coding-china, last_crawled: 2026-08-23
+- search_hints: 両トピックに新規キーワード追加
+
+---
+
 |## [2026-08-18] active-crawl | Kimi/Doubao/Coze
 |
 |### Wiki更新

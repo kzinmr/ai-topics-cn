@@ -1,7 +1,16 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-08-22
+最終更新: 2026-08-23
 エンティティ: 65, コンセプト: 120, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-23 Active Crawl: ChatGLM/VibeCoding）
+- `concepts/chatglm.md` — **更新**: 8/21-23 新規セクション追加。GLM-5.3+ZCode Agent実測記事(Juejin8/22)とZCode第2弾週末100M Tokenキャンペーン(V2EX8/21)確認
+- `concepts/vibe-coding-china.md` — **更新**: 8/21-23 新規セクション追加。Windows フリクション浮上(V2EX8/22)
+### 本日更新（2026-08-22 Crawl Triage Split #2: DeepSeek Harness実用段階/文心第一梯隊）
+- `concepts/deepseek.md` — **更新**: §29 Harness実用段階への移行と企業ワークフロー変革（8/21-22）追加。アプリチームの役割再定義、Cordisプラグインアーキテクチャ解説、V4-Flash Vision実用化
+- `concepts/agentic-engineering.md` — **更新**: 8/22追記。Harness関心の実用展開フェーズ移行
+- `entities/baidu-ernie.md` — **更新**: 8/22 ERNIE 5.0「第一梯隊」復帰狙いセクション追加（V2EX、公式裏付け未確認）
+- `entities/fudan-nlp-agent-survey.md` — **更新**: 8/21再取り上げ出典追加、日付更新
+
 ### 本日更新（2026-08-22 Newsletter Triage: Tech Taiwan TSMC COUPE光エンジン量産）
 - `concepts/ai-infrastructure.md` — **更新**: TSMC COUPE光エンジンの量産開始（2026-08-21）セクション追加。Nvidia Spectrum-X初代スイッチがシリコンフォトニクス+COUPE光エンジンで量産開始、MarvellがGoogleとLPU（超低遅延推論向け）契約+最大5,897万株（約$12.2B相当）ワラントでGoogleを第5位株主化
 ### 本日更新（2026-08-21 Crawl Triage Split #1: DeepSeek Harnessエコシステム拡大/V4-Flash視覚モード/Qwen-UI-Agent）

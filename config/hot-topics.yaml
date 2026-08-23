@@ -103,11 +103,12 @@ topics:
       - "AutoClaw iOS アプリ モバイルAgent"
       - "GLM-5.2 リリース GPT-6越獸"
       - "GLM-5.1 降智 思考強度"
+      - "GLM-5.3 ZCode Agent 実測 Zhipu 智譜"
     wiki_pages:
       - concepts/chatglm
-    notes: "2026.08.16更新: 8/11-16にZhipu固有リリースなし(静穏期継続)。DeepSeek V4 Pro(8/12-13/1.6T)とHarness OSS(8/13/MIT)がコミュニティ席巻。GLM-5.2($0.90)はV4 Pro($0.18)比で高コストだがK3($2.30)比では優位。科创板上場申請(150億元)進行中だが新規進展なし。降智問題議論継続。 8/5-11にZhipu固有リリースなし(静穏期継続)。GLM-5.2がKimi K3との頻繁比較で言及継続。UK AISI/CAISI評価:Kimi K3(32%)>GLM-5.2(24%)。コスト:GLM-5.2($0.90)<K3($2.30)。科创板A株上場申請(150億元)進行中。時価総額7,000億HKD超。2026.08.05更新: 7/28〜8/5にZhipu固有の新規リリースなし。GLM-5.2はKimi K3ベンチマーク参照として頻出(UK AISI/CAISI/Zvi Mowshowitz/ChinAI)。GLM-5.2価格$0.90/MTokはKimi K3比でコスト優位。Concordia AIレポートでフロンティア安全方針未公表指摘。AIニュースはKimi K3に集中。2026.05.28更新: GLM-5.1-highspeed API(5/22/400 tokens/s世界記録/TileRTエンジン/DS V4比2.2x)。株価1,468HKD(+19.76%/時価総額6,545億HKD/上場4ヶ月12.6倍)。HSTECH指数6月8日採用発表。AutoClaw iOSアプリ(5/21)。2026.05.21更新: GLM-5.1 8時間自律実行ベンチマーク(最高難度Agentタスク/複数エージェント協調)。ZCubeネットワークアーキテクチャ本格展開(推論スループット15%向上/低レイテンシ)。「Chinese Anthropic」戦略宣言(5月13日CEO張鵬/AI安全・信頼性・エンタープライズ重視路線)。時価総額5000億HKD突破(香港市場/5月中旬)。"
+    notes: "2026.08.23更新: GLM-5.3+ZCode Agentの実プロジェクト実測記事(Juejin8/22/狂師)とZCode第2弾週末100M Tokenキャンペーン(V2EX8/21)確認。GLM-5.3はコーディングプラン提供段階で、API/オープンウェイトは数週間以内予定(ChinAI#371/8/17)。Zhipu固有のメジャーリリースは未確認。 2026.08.16更新: 8/11-16にZhipu固有リリースなし(静穏期継続)。DeepSeek V4 Pro(8/12-13/1.6T)とHarness OSS(8/13/MIT)がコミュニティ席巻。GLM-5.2($0.90)はV4 Pro($0.18)比で高コストだがK3($2.30)比では優位。科创板上場申請(150億元)進行中だが新規進展なし。降智問題議論継続。 8/5-11にZhipu固有リリースなし(静穏期継続)。GLM-5.2がKimi K3との頻繁比較で言及継続。UK AISI/CAISI評価:Kimi K3(32%)>GLM-5.2(24%)。コスト:GLM-5.2($0.90)<K3($2.30)。科创板A株上場申請(150億元)進行中。時価総額7,000億HKD超。2026.08.05更新: 7/28〜8/5にZhipu固有の新規リリースなし。GLM-5.2はKimi K3ベンチマーク参照として頻出(UK AISI/CAISI/Zvi Mowshowitz/ChinAI)。GLM-5.2価格$0.90/MTokはKimi K3比でコスト優位。Concordia AIレポートでフロンティア安全方針未公表指摘。AIニュースはKimi K3に集中。2026.05.28更新: GLM-5.1-highspeed API(5/22/400 tokens/s世界記録/TileRTエンジン/DS V4比2.2x)。株価1,468HKD(+19.76%/時価総額6,545億HKD/上場4ヶ月12.6倍)。HSTECH指数6月8日採用発表。AutoClaw iOSアプリ(5/21)。2026.05.21更新: GLM-5.1 8時間自律実行ベンチマーク(最高難度Agentタスク/複数エージェント協調)。ZCubeネットワークアーキテクチャ本格展開(推論スループット15%向上/低レイテンシ)。「Chinese Anthropic」戦略宣言(5月13日CEO張鵬/AI安全・信頼性・エンタープライズ重視路線)。時価総額5000億HKD突破(香港市場/5月中旬)."
     added: 2026-04-17
-    last_crawled: 2026-08-16
+    last_crawled: 2026-08-23
 
   - slug: kimi
     title: "Kimi — Moonshot AI (月之暗面)"
@@ -501,11 +502,13 @@ topics:
       - "Claude Code 100万行 リライト Bun 9日間 2026"
       - "新パラダイム Claude Code父 龙虾 创始人 プロンプト終焉"
       - "Anthropic 80% AI自写 コード Mythos 5"
+      - "Vibe Coding Windows 衰退 2026"
+      - "Vibe Coding Windows 衰退 2026"
     wiki_pages:
       - concepts/vibe-coding-china
     notes: "2026.08.15更新: 8/6〜8/15に新規メジャーリリースなし(web検索不可のためローカルデータのみ)。8/6以前の動向(Amazon Claude Code 1215万元焼失事件等)は既に掲載済み。2026.08.06更新: Amazon Claude Code 1215万元焼失事件(7/31/予算860%超過)。Claude Code Token消費30倍差比較(7/31/Harness税概念定着)。GitHub AI Agent攻撃(8/4/プロンプトインジェクション)。OpenAI Astra数学証明限界(8/1-4/10題中一部駁回)。AI Engineering五代論(8/3/Prompt→RAG→Agent→Graph)。Agent構築コスト数十倍削減ツール(8/4/LlamaFactory作者OSS)。Anthropic反開源問題(8/3/Meta二軌道)。2026.07.31更新: Karpathy Anthropic離職疑惑(7/26/LinkedIn修改発見)。Kimi K3 OSS化(7/27-28/2.8T/黄仁勳力挺)。DeepSeek Harness Engineering内測開始(7/29/Model+Harness=Agent)。Claude Opus 5リリース(7/26/Fable5半額)。Anthropic Skills 80%削除→Context Engineering宣言(7/29)。Claude Code之父「Harness保質期半年」(7/30)。硅谷反Anthropic(7/30/契約者強制封印)。GCC AI生成コード禁止(7/30)。MCP 4億DL(7/29)。GPT-5.6 HFゼロデイ攻撃(7/27-29)。全球調用Top5が全て中国製品(7/28)。AlphaFoldチーム解散→Anthropic転職(7/29-30)。OpenAI HW路線図リーク(7/29)。2026.07.26更新: SpaceX Cursor買収。Mythos安全版公開。Fable 5。2026.06.09更新: Claude Code 100万行リライト。新パラダイム宣言。Anthropic 80%内製コード。wiki更新済み。"
     added: 2026-04-17
-    last_crawled: 2026-08-15
+    last_crawled: 2026-08-23
 
   - slug: china-ai-coding-assistants
     title: "Chinese AI Coding Assistants (国产AI编程助手)"

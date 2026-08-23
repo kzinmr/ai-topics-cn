@@ -3,7 +3,7 @@ title: "ChatGLM (智谱清言) — Zhipu AI"
 type: concept
 tags: [LLM, chinese-ai, open-source, agent, zhipu, multimodal]
 created: 2026-04-20
-updated: 2026-08-16
+updated: 2026-08-23
 aliases: ["智谱清言", "GLM-4", "GLM-5", "GLM-5.1", "GLM-5.2", "GLM-5-Turbo", "Zhipu AI", "智谱AI"]
 source_lang: zh-CN
 ---
@@ -426,6 +426,15 @@ AutoClaw（澳龙）のiOSアプリ版が正式リリース。PC版のローカ�
 本期間にZhipu AI固有の新規リリース・公式発表は確認されなかった（静穏期の継続）。競合環境ではDeepSeek V4 Pro正式版リリース（8/12-13/1.6T）とDeepSeek Harness OSS公開（8/13/MIT）がコミュニティを席巻。GLM-5.2（$0.90/MTok）はDeepSeek V4 Pro（$0.18/MTok）比で高コストだが、Kimi K3（$2.30/MTok）比では引き続きコスト優位。科创板A株上場申請（150億元調達計画）は進行中だが、対象期間中に新たな進展はなし。コミュニティではGLM-5.1/5.2の降智（性能低下）に関する議論が継続。
 
 - **出典**: daily_digest 2026-08-12/13/14/15 (Juejin/V2EX) [T1]
+
+### 2026年8月21日〜23日の状況
+
+- **GLM-5.3 + ZCode Agent 実測記事（8/22）**: 掘金子「智谱GLM-5.3+ZCode Agent，真实项目第一手实测！」（狂師）— GLM-5.3と智譜のコーディングAgent「ZCode」を実プロジェクトで評価した第一手レポート。GLM-5.3はコーディングプラン限定提供段階（API・HuggingFaceオープンウェイトはChinAI#371（8/17）報道では数週間以内予定）であり、実測記事は正式API公開前の先行利用者評価として重要
+- **ZCode第2弾週末100M Tokenキャンペーン（8/21）**: V2EXで「ZCode 第二轮周末 100M Token 活动开启」— ZhipuのコーディングAgent製品ZCodeが週末1億Tokenの無料/優待キャンペーンを継続実施。GLM-5.3提供拡大に向けたユーザー獲得活動とみられる
+- **位置づけ**: ChinAI #371（8/17）分析ではGLM-5.3がGLM-5.2ベースのポストトレーニング（RL中心）拡張として、Kimi K3やClaude Fable 5、GPT-5.6-Solを複数ベンチマークで凌駕。サイバーセキュリティ特化の段階的リリース戦略が継続
+- **Zhipu固有のメジャーリリース**: 対象期間中に公式新リリースは確認されず。DeepSeek Harnessエコシステム（8/13 OSS公開）がコミュニティ注目の中心
+
+- **出典**: daily_digest 2026-08-21/22 (Juejin/V2EX) [T1]、ChinAI #371 (2026-08-17) [Newsletter]
 
 ## 出典一覧
 

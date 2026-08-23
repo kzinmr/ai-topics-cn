@@ -1,7 +1,7 @@
 ---
 title: "Vibe Coding（氛围编程）— 中国での受容とAgentic Engineeringへの進化"
 created: 2026-04-17
-updated: 2026-08-06
+updated: 2026-08-23
 tags: [vibe-coding, ai-coding, chinese-ai, karpathy, agentic-engineering, paradigm-shift, intent-coding, cognitive-debt]
 aliases: ["氛围编程", "vibe coding", "意图编程", "Wish Coding", "认知债"]
 source_lang: zh-CN
@@ -813,6 +813,14 @@ Anthropicが2026年5月7日に開催したオンライン技術大会「Code w/ 
 | **「AI Engineering五代」論** | 新フレームワーク | Prompt→RAG→Agent→**Graph**時代の到来 |
 
 **出典**: 36kr, juejin, V2EX (2026-07-31〜08-06) [T1]
+
+### 2026年8月21日〜23日の状況（Windows フリクション）
+
+- **Vibe Coding 時代の Windows 衰退論（8/22）**: V2EX「感觉 Vibe Coding 时代，Windows 系统要凉了」— エージェント系開発環境が Windows 上で不利になりつつあるとの開発者議論。Agent 系開発ツール（Claude Code、Codex、DeepSeek Harness など）が macOS/Linux 前提の設計であることが要因
+- **Windows での Agents 並列開発環境設定（8/22）**: V2EX「Windows 下 Agents 并行开发的环境配置建议」— Windows 環境で複数 Agent を並列実行するための環境構築に関する質問が活発。プラットフォーム差が実務上の摩擦要因として定着しつつある
+- **位置づけ（推論）**: 2026年7月末時点で「Vibe Coding → Agentic Engineering」の移行が不可逆とされたばかりだが、中国の Windows 中心開発者層にとってプラットフォーム選択問題が Agentic Engineering 化の次の実務的論点として浮上。macOS/Linux メイキングの Agent ツールチェーンと Windows ユーザー基盤のギャップが今後どう埋められるかが注目点
+
+**出典**: V2EX (2026-08-22) [T1]
 
 ## 出典
 
