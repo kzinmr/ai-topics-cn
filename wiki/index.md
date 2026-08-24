@@ -1,7 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-08-23
+最終更新: 2026-08-24
 エンティティ: 65, コンセプト: 120, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-24 Active Crawl: ChinaCodingAgents/TencentHunyuan/Dify）
+- `concepts/china-coding-agents.md` — **更新**: 8/12-24セクション追加。マルチハーネス統合コンソール台頭(8/23/84.5K Stars)、Harnessプラグイン16個解説(8/21-22)、Open DeepSeek Harness Desktop(8/21/MIT)、Agent Team横断Runtime実践(8/17)、WorkBuddy初日公開チェックリスト(8/17)、GitMCP CAD連携(8/16)
+- `entities/tencent-hunyuan.md` — **更新**: 8/13-24セクション追加。Hy3.0正式版は15週目の延期継続。WorkBuddyエコシステム活発化(Pragma OSS 8/11、WorkDaddy 8/18、Canva MCP解析 8/19)。TDesign AI拡張パッケージOSS公開(8/21-23)
+- `concepts/dify.md` — **更新**: 8/4-24セクション追加。v1.15.0以降の新リリースなし(静的期間)。daily digestでDify記事0件
 ### 本日更新（2026-08-23 Newsletter Ingest: 新着候補なし、未コミット生記事10件をアーカイブ）
 - `wiki/raw/articles/` — 8/21-22に生成済み・未コミットだった生記事10件をcommitのみで保存（take候補はゼロ、TSMC光シリコン記事5件は2026-08-22 Newsletter Triageで`concepts/ai-infrastructure.md`に反映済み、残り5件はDeepSeek Harness/文心一言・复旦Agent論説関連のcrawl由来記事）
 ### 本日更新（2026-08-23 Active Crawl: ChatGLM/VibeCoding）

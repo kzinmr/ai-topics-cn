@@ -1,7 +1,7 @@
 ---
 title: "Dify — オープンソースLLMOpsプラットフォーム"
 created: 2026-04-19
-updated: 2026-07-05
+updated: 2026-08-24
 tags: [llmops, open-source, agent-platform, rag, workflow, china, enterprise, security]
 search_hints:
   - "Dify セキュリティ脆弱性 Imperva 2026"
@@ -318,6 +318,16 @@ app:
 1. **学習曲線**: YAML/API設定は技術者向け。ノンテクニカルユーザーには敷居が高い
 2. **ドキュメント**: 中国語ドキュメントは充実しているが、日本語・英語版は遅れ気味
 3. **サポート**: コミュニティベース。エンタープライズSLAは提供中だが、中国国内中心
+
+## 状況更新（時系列）
+
+### 2026年8月4日〜24日の状況
+
+- **新規リリースなし**: 8/24時点でv1.15.0（6/25リリース）以降の新バージョン・CVE・企業導入ニュースは確認されず。静的期間継続
+- **中国メディアでの言及なし**: daily digest（8/4〜8/23）でDify/LangGenius関連記事は0件。DeepSeek Harness OSS（8/13）がOSS Agent Runtime市場の注目を独占し、Dify系プラットフォームの話題性が相対的に低下
+- **競合環境**: DeepSeek Harness（dsh/8/13）が「LangChainの喪鐘」と言及されるほどOSS Agent Runtime市場の競争構造を変化。DifyはLLMOps/RAGワークフロー特化として差別化維持が課題
+
+**出典**: daily digest 2026-08-04〜2026-08-23（web検索不可のためローカルdigestベース・二次ソース検証付き）
 
 ## 関連リンク
 

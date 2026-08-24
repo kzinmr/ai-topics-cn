@@ -1,7 +1,7 @@
 ---
 title: "中国编程Agent工具 — コーディングAIエージェントの生態系"
 created: 2026-04-19
-updated: 2026-08-11
+updated: 2026-08-24
 tags: [coding-agents, china, ide, automation, software-development, claude-code, cursor, openai]
 aliases: ["中国编程Agent", "编程自动化工具", "AI代码助手", "Chinese coding agents", "AI编程工具"]
 source_lang: zh-CN
@@ -645,6 +645,7 @@ Juejin開発者「吴佳浩Alben」が**Hermes AgentとOpenClawのAgent Loopを�
 ### 2. 中国特有技術スタック対応
 Spring Boot・Vue.js・Uni-app・微信小程序等、中国市場固有のフレームワークへの対応品質がAgent選定の重要な基準。
 
+## 状況更新（時系列）
 
 ### 2026年8月5日〜11日の状況
 
@@ -657,6 +658,20 @@ Spring Boot・Vue.js・Uni-app・微信小程序等、中国市場固有のフ�
 - **Pi + DeepSeek V4 Flash**（8/10）: CLIコーディングAgent「Pi」とDeepSeek V4 Flashの組み合わせが高評価。低コスト・高速推論がCLI Agentの実用性を大きく向上
 - **Agent Skills完全ガイド**（8/8）: Agent Skillsの概念、ディレクトリ構造、漸進的ロードの工程実践に関する包括ガイド
 - **GPT-5.6→Opus 4.8引継ぎ失敗事例**（8/9）: Agent間のコード互換性、コンテキスト連続性の課題を浮き彫りに
+
+### 2026年8月12日〜24日の状況
+
+DeepSeek Harness OSS（8/13）公開後のコミュニティ爆発期。8/12〜24に新規メジャー製品リリースは確認されていないが、周辺エコシステム（マルチハーネス統合ツール、プラグイン、デスクトップ版）が急速に拡大した。
+
+- **マルチハーネス統合コンソール台頭**（8/23）: 「84.5K+ Star」のオープンソースAI CodingコンソールがCodex・Claude Code・DeepSeek Harnessを一元管理（Juejin/JavaGuide）。同一の課題として「AI Codingツールが多すぎて管理不能」とのVoCが浮上
+- **Harnessプラグインエコシステム成熟**（8/21-22）: Juejinで「16個超人気DeepSeek Harnessプラグイン」解説記事（画像認識・ブラウザ操作・マルチAgent協調・スマホ遠隔制御まで）。8/17に「邪修（邪道な使い方）」批判記事も出現し、コミュニティで実用性の議論が活発化
+- **Open DeepSeek Harness Desktop**（8/21）: 非公式コミュニティ製デスクトップ版（MIT/OSS）。Codex統合＋WeChat遠隔タスク発行に対応。WorkBuddy風UI（可視化ワークスペース・永続セッション・ツール呼び出し可視化）
+- **Agent Team「横断Harness統一Runtime」実践記事**（8/17）: Juejin/V2EXで複数Harness（Codex/CC/dsh）をまたぐエージェントチーム構成の実践記事。チーム内メモリ共有・白板共有の設計論が浮上
+- **WorkBuddy初日公開チェックリスト**（8/17）: Juejinで「権限・Workspace・ネットワーク・バージョン整合性」の実運用チェックリスト。腾讯WorkBuddyが正式リリースされた直後の実務ガイド
+- **GitMCP CAD連携実戦ガイド**（8/16）: AI Coding AgentがCAD文書に直接アクセスするMCP実装例。専門ドメイン（製造図面）へのAgent浸透の事例
+- **公式ターミナルAgent「トップに急浮上だが最新版はalphaか」**（8/23）: JuejinでOpenAI Codex CLI等、公式のコーディングAgentがランキングトップに浮上したものの、インストール方式（curl|sh）・ログイン・alphaステータスへの不満が言及
+
+**出典**: 36kr/Juejin/V2EX daily digest 2026-08-14〜2026-08-23（web検索不可のためローカルdigestベース・二次ソース検証付き）
 
 ## 関連リンク
 

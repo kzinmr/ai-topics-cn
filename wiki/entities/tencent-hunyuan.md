@@ -1,7 +1,7 @@
 ---
 title: "混元 (Hunyuan) — 騰訊自研の大規模言語モデルシリーズ"
 created: 2026-04-28
-updated: 2026-08-12
+updated: 2026-08-24
 tags: [company, llm, china, tech-giant, tencent, moe, multimodal]
 aliases: ["Hunyuan", "混元", "Tencent Hunyuan", "腾讯混元", "HY"]
 source_lang: zh-CN
@@ -353,6 +353,25 @@ HY-World 2.0はテキスト/単一画像/多視点画像/動画を入力とし�
 - Q2決算関連の情報はまだ未取得（8月中旬発表予定の可能性あり）
 
 **出典**: daily_digest 2026-08-08/09/10/11 (V2EX/WeChat) [T1]
+
+## 2026年8月13日〜24日の状況
+
+### 静定期継続
+8/13〜8/24に腾讯混元固有の主要リリース・発表は確認されず。Hy3.0正式版は8/24時点で依然として**未リリース**（5-6月予定→延期継続、計**15週目**）。新規モデルリリース（Hy3/TurboS/T1/Hy-MT2/Hy-Memory）なし、価格改定なし。
+
+### WorkBuddyエコシステムの活発化（Agent側）
+- **WorkBuddyオープンソース版コミュニティ拡散**（8/11-18）: V2EXで「Pragma」(github.com/pqpo/pragma)というWorkBuddy風マルチAgentハーネス（gemini+agy/claude+cc/chatgpt+codex/deepseek+ccの専門家チーム構成）が公開・推薦。8/18にはWorkBuddy公式アプリ向けの多アカウント積分ツール「WorkDaddy」(github.com/babygoton/WorkDaddy)も公開され、コミュニティによるWorkBuddy周辺エコシステムが形成されつつある
+- **WorkBuddy Canva可画MCP統合解析**（8/19）: Juejinで「図→活稿（生きたドキュメント）」のWorkBuddy×Canva MCPワークフローの技術解析記事。腾讯がAgent×SaaS統合の方向性を示唆
+
+### 新規オープンソース
+- **TDesign AI拡張パッケージ**（8/21-23）: 腾讯TDesign（UIコンポーネントライブラリ）がCLIスキャフォールディング・MCP・Chatbot知的対話コンポーネントを一体化した新パッケージをOSS公開（Juejin/MacroZheng）。AIコーディングツールとの連携リンクを包括整備
+
+### 注目すべきAbsent
+- Hy3.0正式版リリースなし（15週目の延期）
+- 姚順雨の新発言・新活動なし
+- Q2決算（8月中旬発表予定）のAI関連情報未取得
+
+**出典**: V2EX/Juejin daily digest 2026-08-14〜2026-08-23（web検索不可のためローカルdigestベース・二次ソース検証付き）
 
 ## 課題と展望
 

@@ -43,6 +43,24 @@
 |
 |
 |
+## [2026-08-24] active-crawl | ChinaCodingAgents/TencentHunyuan/Dify
+対象トピック: china-coding-agents (high/13日ギャップ), tencent-hunyuan (high/12日ギャップ), dify (medium/20日ギャップ)
+web検索不可(Exa SDK未インストール) → Tier 2B: ローカルdaily digest (8/14〜8/23) ベース調査
+
+### Wiki更新
+- `concepts/china-coding-agents.md` — **更新**: 「2026年8月12日〜24日の状況」セクション追加。マルチハーネス統合コンソール台頭(8/23/84.5K Stars)、Harnessプラグイン16個解説(8/21-22)、Open DeepSeek Harness Desktop(8/21/MIT)、Agent Team横断Runtime実践(8/17)、WorkBuddy初日公開チェックリスト(8/17)、GitMCP CAD連携(8/16)
+- `entities/tencent-hunyuan.md` — **更新**: 「2026年8月13日〜24日の状況」セクション追加。Hy3.0正式版は15週目の延期継続(未リリース)。WorkBuddyエコシステム活発化(Pragma OSS 8/11、WorkDaddy 8/18、Canva MCP解析 8/19)。TDesign AI拡張パッケージOSS公開(8/21-23)
+- `concepts/dify.md` — **更新**: 「2026年8月4日〜24日の状況」セクション追加。v1.15.0以降の新リリースなし(静的期間)。daily digestでDify記事0件
+
+### hot-topics.yaml更新
+- china-coding-agents: last_crawled 2026-08-24 (notes追記)
+- tencent-hunyuan: last_crawled 2026-08-24 (notes追記)
+- dify: last_crawled 2026-08-24 (notes追記)
+
+### 備考
+- 新規ページ: 0件 / 更新ページ: 3件
+- 主要発見: 中国コーディングAgent市場はDeepSeek Harness OSS(8/13)公開後の「周辺エコシステム拡大期」に入り、Harness本体の新機能よりマルチハーネス統合ツール・プラグイン・デスクトップ版が活発。腾讯混元は静定期継続だがWorkBuddy周辺コミュニティエコシステムが台頭。Difyは静的期間(Digest言及0件)
+
 ## [2026-08-22] crawl-triage split #2 | DeepSeek Harness実用段階 / 文心第一梯隊 / 復旦NLP再取り上げ
 
 ### Triage判定
