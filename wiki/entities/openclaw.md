@@ -1,7 +1,7 @@
 ---
 title: OpenClaw — AI Agentエンドポイントツール
 created: 2026-04-17
-updated: 2026-08-14
+updated: 2026-08-26
 tags: [ai-agents, open-source-ai, tooling, china, releases, safety]
 aliases: [\"openclaw\", \"OpenClaw\"]
 source_lang: zh-CN
@@ -653,6 +653,14 @@ Bing検索結果およびGitHubリリースノートより：
 - **Omnigent登場**: Databricks共同創業者主導のメタオーケストレーションフレームワーク。Claude Code・Codex・Cursorを統一管理（出典: 掘金 8/8）
 - **龍蝦管家（Butler）概念浸透**: 8/5から8/11にかけて再掲され、概念が定着（出典: 微信公众号 8/5-11）
 
+### 2026年8月15日〜24日の状況
+
+- **智譜「免費1ヶ月龍蝦」キャンペーン**: V2EXで智譜がOpenClaw（龍蝦）の1ヶ月無料提供を告知（8/23）。「快来养虾！」という呼びかけで、中国版モデルベンダーがOpenClawエコシステムを自モデル利用促進の足がかりとして活用する動き（出典: V2EX 8/23）。モデル×Harnessの「組わせ販売」がAgent市場の新たなプロモーション様式として定着
+- **マルチHarness統合ツール台頭**: 84.5K Star超えのオープンソース編程AgentコンソールがCodex/Claude Code/DeepSeek Harnessを統一的に管理可能（8/23-24継続言及）。OpenClaw単独から「複数Agentの統合管理レイヤー」への需要シフトを示す（出典: Juejin 8/23, 8/24）
+- **DeepSeek Harnessプラグインエコシステム急拡散**: 公開1週間で16超の超ポピュラーなプラグインが登場（8/23、程序员魚皮）。OpenClawと並ぶ「Agent実行基盤」としての競争がプラグイン数で可視化（出典: Juejin 8/23）
+- **新規リリースなし**: v2026.7.1安定版継続。GitHub Starsは384K台（変動なし）
+- **MiniClaw具身ハードウェア解説連載**: 掘金で「【OpenClaw具身硬件】MiniClaw 阅读笔记」連載（8/19、第4回ファイル入出力まで）。OpenClaw派生ハードウェアの内部機構を段階的に解説する初の体系的コンテンツ（出典: Juejin 8/19、単一ソース）
+
 ## 関連リンク
 
 ### 内部リンク
@@ -673,3 +681,6 @@ Bing検索結果およびGitHubリリースノートより：
 | 掘金 — Agent Loop分析 | [juejin.cn/post/7633526424323391551](https://juejin.cn/post/7633526424323391551) | T1 | Agent Loopの工程論的位置づけ |
 | 掘金 — 小红书自动发帖 | [juejin.cn/post/7615379311402467354](https://juejin.cn/post/7615379311402467354) | T2 | ClawHubスキル活用例 |
 | V2EX — Agent比較議論 | [v2ex.com/t/1209907](https://www.v2ex.com/t/1209907) | T3 | 個人Agent実用性議論 |
+| Juejin — 84.5K Star Agentコンソール | [juejin.cn/post/7676748940241158171](https://juejin.cn/post/7676748940241158171) | T2 | Codex/Claude Code/DSH統一管理 |
+| Juejin — 16個超火DSHプラグイン | [juejin.cn/post/7676098169974292530](https://juejin.cn/post/7676098169974292530) | T2 | Harnessプラグインエコシステム |
+| V2EX — 智譜免費龍蝦 | [v2ex.com/t/1236645](https://www.v2ex.com/t/1236645) | T3 | 智譜1ヶ月無料キャンペーン |

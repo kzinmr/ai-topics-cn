@@ -44,14 +44,14 @@ topics:
       - "DeepSeek 700億元 増資 梁文鋒 自己出資 200億"
       - "DeepSeek Agent Harness 崔添翼 Jane Street"
       - "DeepSeek V4-Flash OpenRouter 週間1位 3.43T"
-      - "DeepSeek V4.1 マルチモーダル 6月リリース 予定"
       - "DeepSeek V4.1 Engram Memory MCP Agent"
       - "DeepSeek テンセント 融資 700億元評価額"
+      - "DeepSeek V4-Flash-Vision-Exp 視覚モデル 8月"
     wiki_pages:
       - concepts/deepseek
-    notes: "2026.08.16更新: Harness(dsh) OSS公開(8/13/MIT/v0.1/一切皆プラグイン/Cordisフレームワーク/595プラグイン)。V4-Pro正式版リリース(8/13/1.6T/1Mコンテキスト/MoE)。API全体値上げ8/17発動(キャッシュヒット6倍/出力2.3倍/ピーク/オフピーク制度)。V4.1未リリース(8/16現在)。 8/9-13に新規メジャーリリースなし(静定期)。V4.1は依然として公式リリース未確認(6月予定)。Harness公式アップデートなし(7/29内測開始以降)。DeepSeek API値上げ公告(8/6)の影響が継続。掘金でV4-Pro vs GLM-5.1比較継続(8/4-8)。2026.08.09更新: API価格全体値上げ公告(8/6/涨幅较大/7/31値下げから6日後の転換)。OpenCode V4 Flash 2倍値上げ(8/7)。V4.1未リリース(8/9現在)。Harness公式アップデートなし。2026.08.04更新: V4 Flash＆V4正式版リリース(7/31)。梁文鋒CUDAモート崩壊論インタビュー(7/31)。三大Agent Token効率30倍差比較(機器之心7/31)。Harness限界論(Claude Code之父「保質期半年」/7/30)。DeepSeek Harness内測開始(7/29)。V4-Flash $0.2/MTok値下げ(7/31)。"
+    notes: "2026.08.26更新: V4-Flash-Vision-Exp(8/21静かな公開/掘金8/22報道)の検証フェーズが深化(8/24視覚モデルテスト記事)。V4.1公式リリースは8/25時点でも未確認。Harnessエコシステムは8/22-23で実運用フェーズ移行(§30記載済み)。 2026.08.16更新: Harness(dsh) OSS公開(8/13/MIT/v0.1/一切皆プラグイン/Cordisフレームワーク/595プラグイン)。V4-Pro正式版リリース(8/13/1.6T/1Mコンテキスト/MoE)。API全体値上げ8/17発動(キャッシュヒット6倍/出力2.3倍/ピーク/オフピーク制度)。V4.1未リリース(8/16現在)。"
     added: 2026-04-17
-    last_crawled: 2026-08-16
+    last_crawled: 2026-08-26
 
   - slug: qwen
     title: "Qwen (通义千问) — Alibaba"
@@ -252,9 +252,9 @@ topics:
       - "Hermes Agent OpenRouter OpenClaw 逆転 2026"
     wiki_pages:
       - entities/openclaw
-    notes: "2026.08.14更新: 8/8〜8/14に新規リリースなし(v2026.7.1安定版継続/GitHub Stars 384K台)。掘金でHermes vs OpenClaw自己進化能力比較記事(8/8)。V2EXでOpenClawコンテキスト圧縮問題報告(8/8)。DeepSeek Harness OSS公開(8/13)が新規競合として台頭。Omnigent(Databricks)メタオーケストレーション登場(8/8)。龍蝦管家(Butler)概念浸透継続(8/5-11)。掘金コミュニティではClaude Code/DeepSeek Harnessが支配的でOpenClaw話題減少。2026.08.08更新: 8/2〜8に新規リリースなし。"
+    notes: "2026.08.26更新: 8/15-26にOpenClaw固有リリースなし(v2026.7.1安定版継続)。新規シグナル1件: 掘金でMiniClaw(OpenClaw派生具身ハードウェア)解説連載「MiniClaw 阅读笔记」(8/19/第4回まで)開始 — OpenClawハードウェア派生の内部構造を段階解説する初の体系的コンテンツ。wiki §8/15〜24に追記済み。 2026.08.14更新: 8/8〜8/14に新規リリースなし(v2026.7.1安定版継続/GitHub Stars 384K台)。掘金でHermes vs OpenClaw自己進化能力比較記事(8/8)。V2EXでOpenClawコンテキスト圧縮問題報告(8/8)。DeepSeek Harness OSS公開(8/13)が新規競合として台頭。Omnigent(Databricks)メタオーケストレーション登場(8/8)。龍蝦管家(Butler)概念浸透継続(8/5-11)。掘金コミュニティではClaude Code/DeepSeek Harnessが支配的でOpenClaw話題減少。"
     added: 2026-05-01
-    last_crawled: 2026-08-14
+    last_crawled: 2026-08-26
 
   - slug: coze
     title: "Coze (扣子) — ByteDance Agent Platform"
@@ -353,9 +353,9 @@ topics:
       - "FlashAttention-NPU Ascend 910C"
     wiki_pages:
       - concepts/vram-optimization
-    notes: "2026.08.06更新: Kimi K3 OSS化(2.8T)でVRAM壁が再認識。AMD MI300X×8でK3動作確認(8/4/「显存开始比算力更重要」)。AirLLM 3.7GB VRAMでK3実行可能(8/3)。DeepSeek V4 Flash正式版(7/31/$0.20 MTok)。ローカルデプロイコスト論争(3000萬元)。新規VRAM最適化技術のブレークスルーなし。2026.07.27更新: 44日間クロールギャップ(6/13〜7/27)。メジャーなVRAM最適化ブレークスルーなし(消化期継続)。KTransformers 18.5K Stars到達(掘金7/20/CPU-GPUスケジューリング/MoE推論)。KVキャッシュ関連記事(掘金7/5-6)。推論価格競争下半場(36kr7/24)。2026.06.13更新: MiniMax M3 Sparse Attention×1Mコンテキスト(掘金6/8)。headroomコンテキスト圧縮層95%削減(6/5)。Autocompact自動圧縮分析(6/6)。vLLM PagedAttention解説(6/9)。GGUF実践議論:DeepSeek V4 Flash vs Qwen3.6-27B(V2EX6/7)。国産GPUローカルデプロイ(V2EX6/8)。cc-switch+Ollama連携(6/12)。LPDDR推論チップ動向(36kr6/10)。新技術リリースなし(消化期)。"
+    notes: "2026.08.26更新: 8/7-25のローカルdigestでVRAM最適化固有の新リリース・ブレークスルーなし(定常期)。関連: 8/18量化原理解説記事(Juejin/蛋先生DX・T2レベルの初歩解説)、8/14 V2EXで100GB前後VRAMでのVerilog生成ローカルデプロイ可能性議論。DeepSeek V4 Pro(1.6T)のローカルデプロイ議論はdeepseekページ側で追跡。2026.08.06更新: Kimi K3 OSS化(2.8T)でVRAM壁が再認識。AMD MI300X×8でK3動作確認(8/4/「显存开始比算力更重要」)。AirLLM 3.7GB VRAMでK3実行可能(8/3)。DeepSeek V4 Flash正式版(7/31/$0.20 MTok)。ローカルデプロイコスト論争(3000萬元)。新規VRAM最適化技術のブレークスルーなし。"
     added: 2026-04-17
-    last_crawled: 2026-08-06
+    last_crawled: 2026-08-26
 
   # =========================================================
   # 4. Chinese Regulatory Landscape (中国AI規制)

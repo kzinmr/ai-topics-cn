@@ -43,6 +43,24 @@
 |
 |
 |
+## [2026-08-26] active-crawl | DeepSeek/OpenClaw/VRAM-Optimization
+対象トピック: deepseek (high/10日ギャップ), openclaw (high/12日ギャップ), vram-optimization (medium/20日ギャップ)
+web検索不可(Exa SDK未インストール) → Tier 2B: ローカルdaily digest (8/15〜8/25) ベース調査
+
+### Wiki更新
+- `concepts/deepseek.md` — **更新**: §31 追加。V4-Flash-Vision-Exp(8/21静かな公開/掘金8/22報道)の検証フェーズ深化(8/24視覚モデルテスト記事)。V4.1公式リリースは8/25時点でも未確認
+- `entities/openclaw.md` — **更新**: 「2026年8月15日〜24日の状況」セクションにMiniClaw具身ハードウェア解説連載(8/19/掘金/第4回まで)追記。OpenClaw固有リリースなし(v2026.7.1安定版継続)
+- `concepts/vram-optimization.md` — **更新なし**: 8/7-25でVRAM固有の新リリース・ブレークスルーなし(定常期)。関連: 8/18量化原理解説(Juejin/初歩レベル)、8/14 V2EXで100GB前後VRAMのVerilog生成デプロイ議論 — digest記録のみ、wikiページ変更不要
+
+### hot-topics.yaml更新
+- deepseek: last_crawled 2026-08-26 (notes: V4-Flash-Vision-Exp検証フェーズ追記)
+- openclaw: last_crawled 2026-08-26 (notes: MiniClaw連載追記)
+- vram-optimization: last_crawled 2026-08-26 (notes: 新規情報なし追記)
+
+### 備考
+- 新規ページ: 0件 / 更新ページ: 2件
+- 主要発見: DeepSeekはV4-Flash-Vision-Expの「静かな公開+コミュニティ検証」パターンが定着。OpenClawはv2026.7.1継続だが派生ハードウェア(MiniClaw)解説コンテンツが初出。VRAM最適化は定常期
+
 ## [2026-08-24] active-crawl | ChinaCodingAgents/TencentHunyuan/Dify
 対象トピック: china-coding-agents (high/13日ギャップ), tencent-hunyuan (high/12日ギャップ), dify (medium/20日ギャップ)
 web検索不可(Exa SDK未インストール) → Tier 2B: ローカルdaily digest (8/14〜8/23) ベース調査

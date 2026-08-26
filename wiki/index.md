@@ -1,7 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-08-24
+最終更新: 2026-08-26
 エンティティ: 65, コンセプト: 120, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-26 Active Crawl: DeepSeek/OpenClaw/VRAM-Optimization）
+- `concepts/deepseek.md` — **更新**: §31追加。V4-Flash-Vision-Exp(8/21静かな公開/掘金8/22報道)の検証フェーズ深化(8/24視覚モデルテスト)。V4.1公式リリースは8/25時点でも未確認
+- `entities/openclaw.md` — **更新**: 8/15〜24セクションにMiniClaw具身ハードウェア解説連載(8/19/掘金)追記。OpenClaw固有リリースなし(v2026.7.1継続)
+- `concepts/vram-optimization.md` — 更新なし(定常期/8/7-25でVRAM固有の新リリースなし)
 ### 本日更新（2026-08-24 Active Crawl: ChinaCodingAgents/TencentHunyuan/Dify）
 - `concepts/china-coding-agents.md` — **更新**: 8/12-24セクション追加。マルチハーネス統合コンソール台頭(8/23/84.5K Stars)、Harnessプラグイン16個解説(8/21-22)、Open DeepSeek Harness Desktop(8/21/MIT)、Agent Team横断Runtime実践(8/17)、WorkBuddy初日公開チェックリスト(8/17)、GitMCP CAD連携(8/16)
 - `entities/tencent-hunyuan.md` — **更新**: 8/13-24セクション追加。Hy3.0正式版は15週目の延期継続。WorkBuddyエコシステム活発化(Pragma OSS 8/11、WorkDaddy 8/18、Canva MCP解析 8/19)。TDesign AI拡張パッケージOSS公開(8/21-23)
