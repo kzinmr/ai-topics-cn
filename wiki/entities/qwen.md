@@ -1,7 +1,7 @@
 ---
 title: Qwen（通义千问）— 阿里云大模型旗舰
 created: 2026-04-17
-updated: 2026-08-21
+updated: 2026-08-27
 tags: [llm, model, china, open-source-ai, alibaba, qwen, agentic-coding, ai-infrastructure, qwen3.7, qwen3.8, agent-era, qwen-image-3, tts]
 aliases: ["Qwen", "通义千问", "qwen", "Qwen3.5", "Qwen3-Coder", "Qwen3.6", "Qwen3.6-Plus", "Qwen3.6-27B", "Qwen3.6-35B-A3B", "Qwen3.7-Max", "Qwen3.7-Plus", "Qwen3.8-Max", "千问云", "Qianwen Cloud", "千問办公"]
 source_lang: zh-CN
@@ -1092,6 +1092,38 @@ AlibabaはQwenを中核とした**フルスタックAI戦略**を展開：
 - Token Plan/Lingma/Qoderの価格改定なし
 
 **出典**: Juejin 8/21 [T1]
+
+### 2026年8月20日〜24日の状況
+
+#### Qwen3.8-Max GAリリース（2026年8月3日）⭐
+
+China AI Bulletin 9（SAIF, 2026-08-24）によると、Alibabaは7月下旬プレビューに代わり**8月3日にQwen3.8-MaxをGA（一般公開）**。APIおよびQwen製品（QwenWork統合含む）で提供開始。
+
+- **総パラメータ**: 2.4兆（2.4T）
+- **位置づけ**: 自律コーディングとコンピュータベースのオフィスワーク（computer-based office work）を軸にしたAgentモデル
+- **API価格**（Alibaba Cloud Model Studio）: 入力$2 / 1Mトークン、出力$6 / 1Mトークン
+- **ベンチマーク**: 8月12日時点でArtificial Analysis Intelligence Index **6位**
+- **オープンウェイト**: 8月3日に「来週ウェイト公開」と予告。8月9日に**Qwen3.8-2.4T-A95B**のウェイトを公開（Qwen3.8-Maxのベースとされるが多くのコア機能を欠く）。Hugging Faceで失望の声も、追加ウェイトの可能性も残る
+
+> **出典**: China AI Bulletin 9（SAIF, Substack 2026-08-24）[T1]; chinai-newsletter raw `substack.com--redirect-a9103d37-3c0e-4817-be5b-554b32fa2462--6a720a64.md`
+
+#### 関連論文動向（本 fortnight 発表分）
+
+Alibaba Qwenチーム関連論文として、China AI Bulletin 9がハイライト：
+
+- **Qwen-CUA**（397B）: スクリーンショット・キーボード・マウスでソフトウェアを操作するネイティブcomputer-useエージェント。4万の検証可能タスク・10万vCPUで訓練。OSWorld-Verified 86.2%、OSWorld 2.0完遂スコア18.5/48.4。1Tパラメータ版は87.6% / 21.2/53.3に向上し、敵対攻撃成功率を36.6%→16.4%に低減
+- **Qwen-UI-Agent**: モバイル/デスクトップ/Web/検索環境をまたぐGUIエージェント。GUI+CLIアクション統合・100ターン超トラジェクトリのオンラインRL・自動データフライホイール。AndroidDaily 97.5%、MobileWorld-Real 92.2%（8/21のJuejin報道の公式レポート裏付け）
+
+> **出典**: China AI Bulletin 9（SAIF, 2026-08-24）[T1]
+
+### 2026年8月25日〜27日の状況
+
+- **Qwen3.5-397B-A17B の大規模エンタープライズ採用（8/26）**: Juejin「汤森路透的座上宾？Qwen3.5-397B-A17B到底有什么本事？」（大厂码农老A、8/26）で、**Thomson Reuters（湯森路透）が4,000万ドル規模のプライベートモデル基盤を構築し、基盤モデルにGPTではなく阿里的 Qwen3.5-397B-A17B を採用**したと報道。グローバル大手情報サービス企業による中国発オープンウェイトMoEモデル（397B/A17B）のエンタープライズ採用事例として、Qwenシリーズの海外B2B展開シグナル。
+  - **検証メモ**: 単一のJuejin記事に基づくため、Thomson Reutersの公式発表での確認待ち。
+- **既存動向の再確認（公式情報）**: OpenLM.ai の Qwen3.8 公式ページ（openlm.ai/qwen3.8/、2026-08-27確認）で、Qwen 3.8-Max（8/2、2.4T、**Qwen-Max級モデルのウェイト公開は初**）と **Qwen3.8-Flash-Next**（125B主モデル＋51B N-gram埋め込み・トークン当たり6B活性・**GDN+QSAハイブリッド注意機構**、Qwen4アーキテクチャの先行プレビュー）を再確認。Qwen-UI-Agent / Qwen-CUA は8/20〜24セクションで既記載。
+- **静穏期の継続**: 上記以外にQwen固有のメジャーリリース・価格改定なし。Qwen4.0・Qwen Code v0.17.x安定版は未リリース（計90日以上）。
+
+**出典**: Juejin 8/26（大厂码农老A）[T1]、OpenLM.ai 公式 Qwen3.8 ページ（2026-08-27確認）[T1]
 
 ### 外部ソース
 

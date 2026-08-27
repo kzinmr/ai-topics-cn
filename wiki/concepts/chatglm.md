@@ -3,8 +3,8 @@ title: "ChatGLM (智谱清言) — Zhipu AI"
 type: concept
 tags: [LLM, chinese-ai, open-source, agent, zhipu, multimodal]
 created: 2026-04-20
-updated: 2026-08-23
-aliases: ["智谱清言", "GLM-4", "GLM-5", "GLM-5.1", "GLM-5.2", "GLM-5-Turbo", "Zhipu AI", "智谱AI"]
+updated: 2026-08-27
+aliases: ["智谱清言", "GLM-4", "GLM-5", "GLM-5.1", "GLM-5.2", "GLM-5.3", "GLM-5.3-Flash", "GLM-5-Turbo", "Zhipu AI", "智谱AI", "ZCode"]
 source_lang: zh-CN
 ---
 
@@ -444,6 +444,21 @@ AutoClaw（澳龙）のiOSアプリ版が正式リリース。PC版のローカ�
 - [GitHub: THUDM/GLM-4](https://github.com/THUDM/GLM-4)
 - [GitHub: THUDM/CogAgent](https://github.com/THUDM/CogAgent)
 - [LLM-Red-Team/glm-free-api](https://github.com/LLM-Red-Team/glm-free-api) — GLM-4-Plus逆向API
+
+### 2026年8月24日〜27日の状況
+
+- **GLM-5.3 正式APIリリース確認（公式ドキュメント、8/27確認）⭐**: 智谱BigModel公式ドキュメント（docs.bigmodel.cn）に**GLM-5.3**（Hot）と**GLM-5.3-Flash**（New）のモデルページが公開され、モデルラインナップにGLM-5.2と並列で掲載。これにより、ChinAI #371（8/17）で「コーディングプラン提供段階・API/オープンウェイトは数週間以内予定」とされたGLM-5.3が、**正式APIとして利用可能段階に移行**したことを確認。「迁移至 GLM-5.3（GLM-5.3への移行）」ガイドも公開済み。
+- **GLM-5.3 技術仕様（公式ドキュメント）**: GLM-5.2と同一ベースモデルを前提とし、**すべて後学習（ポストトレーニング）由来の改善**。主要仕様：
+  - **コンテキスト**: 1M、**最大出力128K**、テキストモダリティのみ
+  - **思考（Thinking）常時オン**: 思考無効化は非サポート（`thinking.type: "disabled"`は非互換、`enabled` + `reasoning_effort: low`へ移行必須）。思考強度は **low / high / max** の3段階（デフォルトmax）。コーディング等の複雑タスクはmax推奨
+  - **コーディング能力**: 智谱内部Z.ai Code BenchでGLM-5.2比**+50%**。Terminal Bench 3.0、Agents' Last Exam (CLI)で**オープンウェイトSOTA**
+  - **サイバーセキュリティ能力の創発（emerging）**: 漏洞発見ベンチ**CyberGymで当時最高**。漏洞利用（exploitation）系ベンチはGLM-5.2比**2倍超**、利用チェーンが深いほど改善幅拡大
+- **ZCode（GLM-5.3公式ハーネス）が公式ハーネスとして確立（zcode.z.ai、8/27確認）**: Zhipuが「GLM-5.3 官方 Harness」を掲げる**ZCode**の公式ページを運営。macOS（Apple Silicon）向けダウンロード提供。マルチAgent開発・Vibe Coding（「简单、迅捷、氛围十足」）を標榜し、GLM-5.3と既存AIコーディングAgent・ツールチェーンを統合して企画→コーディング→レビュー→デプロイを一貫支援。8/21確認の週末100M Tokenキャンペーンと併せ、GLM-5.3のエコシステム（モデル+公式ハーネス）として確立
+- **GLM Coding Plan 全量公開・GLM-5.3適用（z.ai/subscribe、8/27確認）**: GLM Coding Planが**GLM-5.3全量適用**を確認（「GLM Coding Plan 已全量上线 GLM-5.3，编程体感较前代大幅提升50%」）。新版は**ポイント（クレジット）ベースの割当体系**で、週末を含むオフピーク時間帯の呼び出しは割り当て量が減る（透明な割当設計）。GLM-5.3・GLM-5.3-Flash・GLM-5.2・GLM-5-TurboをAgent/IDE向けに提供
+- **位置づけ**: GLM-5.3は「ベースモデル不変・後学習（RL中心）での大幅改善」路線の継続。コーディング+サイバーセキュリティ特化の段階的リリース戦略がAPI全量公開で次のフェーズへ。オープンウェイト（HuggingFace/ModelScope）公開は今回の公式ドキュメントでは確認できず未解決
+
+- **出典**: 智谱BigModel公式ドキュメント docs.bigmodel.cn/cn/guide/models/text/glm-5.3（2026-08-27確認）[T1]、z.ai/model-api [T1]、z.ai/subscribe [T1]、zcode.z.ai/cn [T1]、ChinAI #371 (2026-08-17) [Newsletter]
+
 ### 2026年8月5日〜11日の状況
 
 本期間にZhipu AI固有の主要リリースは確認されなかった（静穏期）。GLM-5.2（7/22リリース）がKimi K3との比較で頻繁に言及される状況が継続。UK AISI/CAISI評価ではKimi K3（32%）がGLM-5.2（24%）を上回るが、コスト面ではGLM-5.2（$0.90/MTok）がKimi K3（$2.30）比で優位。科创板A株上場申請（150億元調達計画）は進行中。時価総額は約7,000億香港ドル超。

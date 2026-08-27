@@ -1,7 +1,7 @@
 ---
 title: "中国AI智能体生态 — 2026年プラットフォーム・アーキテクチャ・市場動向"
 created: 2026-04-19
-updated: 2026-08-14
+updated: 2026-08-27
 tags: [ai-agents, platform, china, ecosystem, low-code, enterprise, openclaw, harness, coding-agent, cli-revival]
 aliases: ["中国AI智能体生态", "中国Agentプラットフォーム", "Baidu AgentBuilder", "腾讯元器", "Coze", "Dify", "OpenClaw-CN", "龙虾大战"]
 source_lang: zh-CN
@@ -1381,3 +1381,10 @@ V2EXで**Pragma**（オープンソース版WorkBuddy）が公開。マルチAge
 | V2EX — Codex額度縮小 | [v2ex.com/t/1233991](https://www.v2ex.com/t/1233991) | T2 | リセット後額度減少 |
 | Juejin — Hermes vs OpenClaw自己進化 | [juejin.cn/post/7671489093491802139](https://juejin.cn/post/7671489093491802139) | T2 | 自己進化能力比較 |
 | daily_digest — 2026-08-13 | [wiki/inbox](~/ai-topics-cn/inbox/daily_digests/) | T1 | 日次45記事まとめ |
+
+### 2026年8月25日〜27日の状況（エコシステム横断）
+
+- **エコシステム横断の大型イベントなし**: daily digest（8/15〜8/26）でAgentエコシステム横断の新規大型イベント（新規プラットフォーム・規制・市場構造変化）は確認されず。DeepSeek Harness OSS公開（8/13）後のコミュニティ消化期が継続。
+- **モデル+公式ハーネスの垂直統合が進む（企業個別）**: 智谱が**GLM-5.3の正式API公開＋公式ハーネス「ZCode」＋GLM Coding Plan全量公開**で「モデル+公式ハーネス+サブスク」の一括エコシステムを確立（8/27公式ドキュメント確認）。詳細は `concepts/chatglm.md` 「2026年8月24日〜27日の状況」を参照。
+- **GUI/computer-use Agent基盤の台頭（企業個別）**: 阿里の**Qwen-UI-Agent / Qwen-CUA**（GUI・computer-use基盤モデル、OSWorld-Verified 86.2%等）が8/21〜24に公式裏付け済み。エージェントの「実行基盤（foundation model for device operation）」軸としてエコシステムに新規競争軸を提示。詳細は `entities/qwen.md` 「2026年8月20日〜24日/25日〜27日の状況」を参照。
+- **位置づけ**: エコシステム全体の競争軸は「ハーネス・ランタイム（DeepSeek Harness等）」から「**特化基盤モデル×公式ハーネスの垂直統合**（智谱ZCode、阿里Qwen-UI-Agent）」へ多様化しつつある。横断的なプラットフォーム戦争の新たな転換点とはなっていない。

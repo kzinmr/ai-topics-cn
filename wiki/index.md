@@ -1,7 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-08-26
+最終更新: 2026-08-27
 エンティティ: 65, コンセプト: 120, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-27 Active Crawl: Qwen/ChatGLM/ChinaAIAgentEcosystem）
+- `concepts/chatglm.md` — **更新**: 「2026年8月24日〜27日」セクション追加。GLM-5.3正式APIリリース確認(8/27公式ドキュメント/GLM-5.3+GLM-5.3-Flash/1Mコンテキスト・最大出力128K・思考常時オン・コーディングGLM-5.2比+50%・CyberGym漏洞発見最高)。ZCode=GLM-5.3公式ハーネス確立。GLM Coding PlanがGLM-5.3全量公開
+- `entities/qwen.md` — **更新**: 「2026年8月25日〜27日」セクション追加。Qwen3.5-397B-A17BをThomson Reutersが4,000万ドル規模プライベート基盤で採用(8/26/Juejin/単一ソース)。OpenLM.ai公式でQwen3.8-Max(2.4T)+Qwen3.8-Flash-Next(GDN+QSA/Qwen4先行プレビュー)再確認
+- `concepts/china-ai-agent-ecosystem.md` — **更新**: 「2026年8月25日〜27日(エコシステム横断)」セクション追加。横断大型イベントなし(消化期継続)。競争軸は「特化基盤モデル×公式ハーネスの垂直統合」へ多様化
 ### 本日更新（2026-08-26 Active Crawl: DeepSeek/OpenClaw/VRAM-Optimization）
 - `concepts/deepseek.md` — **更新**: §31追加。V4-Flash-Vision-Exp(8/21静かな公開/掘金8/22報道)の検証フェーズ深化(8/24視覚モデルテスト)。V4.1公式リリースは8/25時点でも未確認
 - `entities/openclaw.md` — **更新**: 8/15〜24セクションにMiniClaw具身ハードウェア解説連載(8/19/掘金)追記。OpenClaw固有リリースなし(v2026.7.1継続)

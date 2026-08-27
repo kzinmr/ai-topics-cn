@@ -79,9 +79,9 @@ topics:
       - "Qwen Image 3 画像生成"
     wiki_pages:
       - entities/qwen
-    notes: "2026.08.16更新: 8/12-16にQwen固有のメジャーリリースなし(静定期継続/計90日目以上)。DataWorks Data AgentへのQwen3.8-max統合完了(8/14/Juejin)。Qoder IDEAプラグイン実用化事例(8/12-13/Juejin)。Qwen4.0・Qwen Code v0.17.x安定版未リリース。Token Plan/Lingma/Qoder価格改定なし。 8/7〜12にQwen固有のメジャーリリースなし(静定期継続)。Qwen3.8 Maxプレビュー引き続き利用確認(Juejin8/6)。中医ドメインローカル微調整+Dockerデプロイ(Juejin8/8)。VibeCoding活用事例(Juejin8/8-11)。Qwen4.0・Qwen Code v0.17.x安定版未リリース(計85日目)。Token Plan/Lingma/Qoder価格改定なし。2026.08.07更新: 8/1〜7にQwen固有の主要リリースなし。"
+    notes: "2026.08.27更新: Qwen3.5-397B-A17BをThomson Reuters(湯森路透)が4,000万ドル規模のプライベートモデル基盤で採用(8/26/Juejin/単一ソース・公式確認待ち)。OpenLM.ai公式Qwen3.8ページでQwen 3.8-Max(8/2/2.4T/Qwen-Max級初オープンウェイト)+Qwen3.8-Flash-Next(125B+51B N-gram埋め込み/6B活性/GDN+QSAハイブリッド注意/Qwen4先行プレビュー)再確認。Qwen4.0・Qwen Code v0.17.x未リリース。"
     added: 2026-04-17
-    last_crawled: 2026-08-16
+    last_crawled: 2026-08-27
 
   - slug: chatglm
     title: "ChatGLM (智谱清言) — Zhipu AI"
@@ -106,9 +106,9 @@ topics:
       - "GLM-5.3 ZCode Agent 実測 Zhipu 智譜"
     wiki_pages:
       - concepts/chatglm
-    notes: "2026.08.23更新: GLM-5.3+ZCode Agentの実プロジェクト実測記事(Juejin8/22/狂師)とZCode第2弾週末100M Tokenキャンペーン(V2EX8/21)確認。GLM-5.3はコーディングプラン提供段階で、API/オープンウェイトは数週間以内予定(ChinAI#371/8/17)。Zhipu固有のメジャーリリースは未確認。 2026.08.16更新: 8/11-16にZhipu固有リリースなし(静穏期継続)。DeepSeek V4 Pro(8/12-13/1.6T)とHarness OSS(8/13/MIT)がコミュニティ席巻。GLM-5.2($0.90)はV4 Pro($0.18)比で高コストだがK3($2.30)比では優位。科创板上場申請(150億元)進行中だが新規進展なし。降智問題議論継続。 8/5-11にZhipu固有リリースなし(静穏期継続)。GLM-5.2がKimi K3との頻繁比較で言及継続。UK AISI/CAISI評価:Kimi K3(32%)>GLM-5.2(24%)。コスト:GLM-5.2($0.90)<K3($2.30)。科创板A株上場申請(150億元)進行中。時価総額7,000億HKD超。2026.08.05更新: 7/28〜8/5にZhipu固有の新規リリースなし。GLM-5.2はKimi K3ベンチマーク参照として頻出(UK AISI/CAISI/Zvi Mowshowitz/ChinAI)。GLM-5.2価格$0.90/MTokはKimi K3比でコスト優位。Concordia AIレポートでフロンティア安全方針未公表指摘。AIニュースはKimi K3に集中。2026.05.28更新: GLM-5.1-highspeed API(5/22/400 tokens/s世界記録/TileRTエンジン/DS V4比2.2x)。株価1,468HKD(+19.76%/時価総額6,545億HKD/上場4ヶ月12.6倍)。HSTECH指数6月8日採用発表。AutoClaw iOSアプリ(5/21)。2026.05.21更新: GLM-5.1 8時間自律実行ベンチマーク(最高難度Agentタスク/複数エージェント協調)。ZCubeネットワークアーキテクチャ本格展開(推論スループット15%向上/低レイテンシ)。「Chinese Anthropic」戦略宣言(5月13日CEO張鵬/AI安全・信頼性・エンタープライズ重視路線)。時価総額5000億HKD突破(香港市場/5月中旬)."
+    notes: "2026.08.27更新: GLM-5.3正式APIリリース確認(8/27公式ドキュメントdocs.bigmodel.cn/GLM-5.3 Hot+GLM-5.3-Flash New/「迁移至GLM-5.3」ガイド公開)。仕様:1Mコンテキスト/最大出力128K/テキストのみ/思考常時オン(無効化非互換/reasoning_effort low-high-max)/Z.ai Code BenchでGLM-5.2比+50%/Terminal Bench 3.0・Agents Last Exam(CLI)オープンウェイトSOTA/CyberGym漏洞発見最高・漏洞利用系2倍超。ZCode=GLM-5.3公式ハーネス(zcode.z.ai/macOS Apple Silicon/マルチAgent Vibe Coding)確立。GLM Coding PlanがGLM-5.3全量公開(ポイント割当体系)。オープンウェイト公開は未確認。"
     added: 2026-04-17
-    last_crawled: 2026-08-23
+    last_crawled: 2026-08-27
 
   - slug: kimi
     title: "Kimi — Moonshot AI (月之暗面)"
@@ -228,9 +228,9 @@ topics:
       - "百融智能 RaaS 硅基員工"
     wiki_pages:
       - concepts/china-ai-agent-ecosystem
-    notes: "2026.08.14更新: DeepSeek Harness(dsh)正式OSS公開(8/13/MITライセンス/v0.1開発者プレビュー/Cordisフレームワーク)。DeepSeek V4 Pro正式版(8/12-13/1.6T/1Mコンテキスト/MoE)。DeepSeek永久API値下げ(8/10/入力3元/100万Token/旧比1/4)。Kimi Code Computer Use正式対応(8/7-8)。Manus期間限定無料化(8/13/8/25まで)。Pi Agent+DeepSeek V4 Flash Composio 30項目ベンチマークでClaude Code上回る。Codexアカウント額度縮小。2026.08.10更新: DeepSeek API値上げ公告(8/6)。Kimi Code Computer Use対応開始(8/8)。OpenClaw管家(Butler)概念登場(8/5)。2026.08.03更新: DeepSeek V4 Flash正式版＆V4正式版(7/31)。"
+    notes: "2026.08.27更新: エコシステム横断の大型イベントなし(Harness OSS 8/13後消化期継続)。企業個別:智谱GLM-5.3正式API+公式ハーネスZCode+Coding Plan全量公開(垂直統合)、阿里Qwen-UI-Agent/Qwen-CUA(GUI・computer-use基盤)台頭。横断転換点はなし。詳細はchatglm/qwenページ参照。"
     added: 2026-04-17
-    last_crawled: 2026-08-14
+    last_crawled: 2026-08-27
 
   - slug: openclaw
     title: "OpenClaw — オープンソースAI Agentエンドポイントツール"

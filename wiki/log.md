@@ -43,6 +43,24 @@
 |
 |
 |
+## [2026-08-27] active-crawl | Qwen/ChatGLM/ChinaAIAgentEcosystem
+対象トピック: qwen (high/11日ギャップ), chatglm (medium/4日ギャップ), china-ai-agent-ecosystem (high/13日ギャップ)
+web検索: curl+Bing(Tier 3)で公式ソース確認(docs.bigmodel.cn/z.ai/zcode.z.ai/openlm.ai)+ローカルdaily digest (8/15〜8/26) 併用
+
+### Wiki更新
+- `concepts/chatglm.md` — **更新**: 「2026年8月24日〜27日」セクション追加。GLM-5.3正式APIリリース確認(8/27公式ドキュメント/GLM-5.3 Hot+GLM-5.3-Flash New/「迁移至GLM-5.3」ガイド)。仕様:1Mコンテキスト・最大出力128K・テキストのみ・思考常時オン(無効化非互換/reasoning_effort low-high-max)・Z.ai Code BenchでGLM-5.2比+50%・Terminal Bench 3.0/Agents Last Exam(CLI)オープンウェイトSOTA・CyberGym漏洞発見最高(漏洞利用系2倍超)。ZCode=GLM-5.3公式ハーネス確立(zcode.z.ai/macOS)・GLM Coding PlanがGLM-5.3全量公開(ポイント割当)。オープンウェイト公開は未確認
+- `entities/qwen.md` — **更新**: 「2026年8月25日〜27日」セクション追加。Qwen3.5-397B-A17BをThomson Reuters(湯森路透)が4,000万ドル規模プライベートモデル基盤で採用(8/26/Juejin/単一ソース・公式確認待ち)。OpenLM.ai公式Qwen3.8ページでQwen 3.8-Max(8/2/2.4T/Qwen-Max級初オープンウェイト)+Qwen3.8-Flash-Next(125B+51B N-gram埋め込み/6B活性/GDN+QSA/Qwen4先行プレビュー)再確認。静穏期継続
+- `concepts/china-ai-agent-ecosystem.md` — **更新**: 「2026年8月25日〜27日(エコシステム横断)」セクション追加。横断大型イベントなし(Harness OSS 8/13後消化期継続)。企業個別:智谱GLM-5.3+ZCode+Coding Plan(垂直統合)/阿里Qwen-UI-Agent・Qwen-CUA(GUI・computer-use基盤)。競争軸は「特化基盤モデル×公式ハーネスの垂直統合」へ多様化
+
+### hot-topics.yaml更新
+- qwen: last_crawled 2026-08-27 (notes: Thomson Reuters採用・OpenLM公式再確認)
+- chatglm: last_crawled 2026-08-27 (notes: GLM-5.3正式API・ZCode公式ハーネス・Coding Plan全量公開)
+- china-ai-agent-ecosystem: last_crawled 2026-08-27 (notes: 横断大型イベントなし・垂直統合多様化)
+
+### 備考
+- GLM-5.3の公式確認が本ラン最大の発見(8/17のChinAI#371「数週間以内にAPI公開予定」が実現)
+- mcp-chinaトピックのnotes末尾クォート未閉鎖は既存(pre-existing)であり本ランでは修正せず(対象トピック外)
+
 ## [2026-08-26] active-crawl | DeepSeek/OpenClaw/VRAM-Optimization
 対象トピック: deepseek (high/10日ギャップ), openclaw (high/12日ギャップ), vram-optimization (medium/20日ギャップ)
 web検索不可(Exa SDK未インストール) → Tier 2B: ローカルdaily digest (8/15〜8/25) ベース調査
