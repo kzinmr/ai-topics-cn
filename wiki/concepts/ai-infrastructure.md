@@ -2,7 +2,7 @@
 title: "AIインフラ構造 — AI Rack WarとCopper-to-Optics移行トレンド"
 description: "AIサーバー/ラックインフラの技術トレンド：銅配線から光配線への移行、Compute-Memory-Connectivityの三本柱、MediaTek/Marvell/Foxconnの戦略的ポジショニング、TSMC COUPEシリコンフォトニクス光エンジン量産"
 created: 2026-06-06
-updated: 2026-08-22
+updated: 2026-08-29
 tags: [AI-infrastructure, datacenter, copper-to-optics, silicon-photonics, Marvell, MediaTek, Foxconn, Computex, TSMC, COUPE, Nvidia-Spectrum-X]
 source_lang: zh-CN
 ---
@@ -109,6 +109,26 @@ Copper-to-Optics移行は以下の層で進行中：
 
 T-Glassなどガラス基板技術は、パッケージング層での銅代替として注目。MediaTekが供給囲い込みを先行実施（[[mediatek]]参照）。Copper-to-Opticsトレンドと連動する。
 
+### 利益配分の逆転 — 「レール」川湖科技がNvidia超え（2026-08-28）
+
+NvidiaのFY2028（2028年1月末締め）売上成長見通しが**70%**と発表され、アナリスト平均予想45%を大幅に上回った（発表翌日、Nvidia株は一時8.7%急伸）。黄仁勳（Jensen Huang）は「70%はサプライチェーンが支えられる水準に過ぎず、需要ははるかに高い」と説明し、CFOは顧客提示の需要実績値が「倍増」を示唆すると述べた——**需要が供給能力を大幅に超過**している構図が明確になった。
+
+Morgan Stanleyは残るボトルネックを**TSMC 3nm容量**と**ABF基板（T-Glassガラスクロス）**の2点に絞る（HBM要件はNvidia側が既に引き下げ済み）。TSMCの来期値上げ（+5〜10%）を正当化する材料でもある。
+
+利益配分では異例の逆転が起きている：
+
+| 企業 | 品目 | 粗利率 | 出典 |
+|---|---|---|---|
+| 川湖科技（King Slide Works） | サーバー用レール（slides/rails） | **87.4%**（2026年Q2、台湾製造業記録か） | Tech Taiwan 2026-08-28 |
+| Micron（美光） | HBM/メモリ | 86%（2026年Q2） | 同上 |
+| Nvidia | GPU | 71〜72%（今後2四半期はさらに低下見通し） | 同上 |
+| TSMC | フォウンドリ | 68%（Q2、過去最高） | 同上 |
+
+- 川湖は創業者・林聰吉一族がForbes台湾富豪ランキング首位（純資産207億ドル超、張虔生・陳泰銘らを抜く）に浮上。
+- TSMCの魏哲家CEOはMicronの86%粗利率に「うらやましい。うちは68%で十分嬉しい」と発言（7月決算説明会）。
+- **論点**: サプライチェーンの利益は最先端チップ設計（Nvidia）から、代替困難な周辺部品・材料（レール、メモリ、T-Glass）へ移転している。「Why is King Slide so profitable? Will major customers simply stand by while a Taiwanese supplier earns higher margins than they do?」——川湖の粗利率の持続可能性と、サーバーレールがなぜ代替困難かの深掘りは同号の後編に委ねられた（後編未受領）。
+- 川湖の「87%」がNvidiaとTSMCの間で孤立しないよう、Micron/TSMCの数字を併記する形に修正。
+
 ## 関連
 
 - [[mediatek]] — MediaTekのT-Glass戦略とAI半導体ポジショニング
@@ -121,5 +141,6 @@ T-Glassなどガラス基板技術は、パッケージング層での銅代替�
 
 - Tech Taiwan（胡說科技）, "Inside the AI Rack War: MediaTek and Foxconn Race Toward the Copper-to-Optics Era" (2026-06-05) — [Substack](https://substack.com/@techtaiwan)
 - Tech Taiwan（胡說科技）, "How TSMC Came From Behind in Silicon Photonics and Won Over Nvidia and Broadcom" (2026-08-21) — [Substack](https://substack.com/@techtaiwan)
+- Tech Taiwan（胡說科技）, "King Slide's 87% Gross Margin Tops Nvidia's. What Makes Its Server Rails So Hard to Replace?" (2026-08-28) — [Substack](https://substack.com/@techtaiwan)
 - Marvell Technology Computex 2026 キーノート（Matt Murphy CEO）
 - Nvidia $2B Marvell出資報道（2026年3月）

@@ -1,7 +1,9 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-08-27
+最終更新: 2026-08-29
 エンティティ: 65, コンセプト: 120, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-29 Newsletter Ingest: Tech Taiwan 川湖科技87.4%粗利率）
+- `concepts/ai-infrastructure.md` — **更新**: 「利益配分の逆転」セクション追加。Nvidia FY2028売上成長70%見通し（予想45%超、需要は供給能力を大幅超過）、Morgan Stanley指摘のボトルネック（TSMC 3nm・ABF基板/T-Glass）、川湖科技（King Slide）粗利率87.4%がMicron 86%/Nvidia 71-72%/TSMC 68%を上回る利益配分の逆転
 ### 本日更新（2026-08-27 Active Crawl: Qwen/ChatGLM/ChinaAIAgentEcosystem）
 - `concepts/chatglm.md` — **更新**: 「2026年8月24日〜27日」セクション追加。GLM-5.3正式APIリリース確認(8/27公式ドキュメント/GLM-5.3+GLM-5.3-Flash/1Mコンテキスト・最大出力128K・思考常時オン・コーディングGLM-5.2比+50%・CyberGym漏洞発見最高)。ZCode=GLM-5.3公式ハーネス確立。GLM Coding PlanがGLM-5.3全量公開
 - `entities/qwen.md` — **更新**: 「2026年8月25日〜27日」セクション追加。Qwen3.5-397B-A17BをThomson Reutersが4,000万ドル規模プライベート基盤で採用(8/26/Juejin/単一ソース)。OpenLM.ai公式でQwen3.8-Max(2.4T)+Qwen3.8-Flash-Next(GDN+QSA/Qwen4先行プレビュー)再確認

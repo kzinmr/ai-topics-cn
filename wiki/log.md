@@ -3678,3 +3678,14 @@ Originating conversation: (scheduled cron)
 ### 作業
 - wikiページ更新なし
 - 未コミットだった `wiki/raw/articles/` の生記事10件（8/21-22生成、TSMC光シリコン記事5件・DeepSeek Harness/文心一言・复旦Agent論説関連5件）をアーカイブcommit。TSMC記事は2026-08-22 Newsletter Triageで `concepts/ai-infrastructure.md` に反映済み
+
+## [2026-08-29] newsletter-ingest | Tech Taiwan（胡說科技）川湖科技87.4%粗利率
+
+### 収集概要
+- **チェックポイント**: 20260829T070007Z
+- **総候補**: 6件（Tech Taiwan 2026-08-28号）
+- **Take**: 1件 / Reference: 0件 / Skip: 5件（同一記事のURLバリエーション重複4件＋プロフィールページ189バイト1件）
+
+### 作業
+- `concepts/ai-infrastructure.md` — 更新: 「利益配分の逆転 — レール川湖科技がNvidia超え（2026-08-28）」セクション追加。Nvidia FY2028売上成長70%見通し（予想45%超/需要倍増示唆）、Morgan Stanleyボトルネック指摘（TSMC 3nm・ABF基板/T-Glass）、川湖87.4%＞Micron 86%＞Nvidia 71-72%＞TSMC 68%の粗利率比較表、Source追加。updated: 2026-08-22→29
+- 川湖科技は単独entity化するほど情報量なし（前編＝予告編のみ、後編未受領）ためconceptページ内セクションに留める。T-Glass囲い込みはentities/mediatek.mdで既カバー済みのため重複追記なし
