@@ -127,7 +127,6 @@ Morgan Stanleyは残るボトルネックを**TSMC 3nm容量**と**ABF基板（T
 - 川湖は創業者・林聰吉一族がForbes台湾富豪ランキング首位（純資産207億ドル超、張虔生・陳泰銘らを抜く）に浮上。
 - TSMCの魏哲家CEOはMicronの86%粗利率に「うらやましい。うちは68%で十分嬉しい」と発言（7月決算説明会）。
 - **論点**: サプライチェーンの利益は最先端チップ設計（Nvidia）から、代替困難な周辺部品・材料（レール、メモリ、T-Glass）へ移転している。「Why is King Slide so profitable? Will major customers simply stand by while a Taiwanese supplier earns higher margins than they do?」——川湖の粗利率の持続可能性と、サーバーレールがなぜ代替困難かの深掘りは同号の後編に委ねられた（後編未受領）。
-- 川湖の「87%」がNvidiaとTSMCの間で孤立しないよう、Micron/TSMCの数字を併記する形に修正。
 
 ## 関連
 
