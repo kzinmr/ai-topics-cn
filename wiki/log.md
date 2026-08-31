@@ -3708,3 +3708,24 @@ Originating conversation: (scheduled cron)
 ### 作業
 - `concepts/ai-infrastructure.md` — 更新: 「利益配分の逆転 — レール川湖科技がNvidia超え（2026-08-28）」セクション追加。Nvidia FY2028売上成長70%見通し（予想45%超/需要倍増示唆）、Morgan Stanleyボトルネック指摘（TSMC 3nm・ABF基板/T-Glass）、川湖87.4%＞Micron 86%＞Nvidia 71-72%＞TSMC 68%の粗利率比較表、Source追加。updated: 2026-08-22→29
 - 川湖科技は単独entity化するほど情報量なし（前編＝予告編のみ、後編未受領）ためconceptページ内セクションに留める。T-Glass囲い込みはentities/mediatek.mdで既カバー済みのため重複追記なし
+
+
+## [2026-08-31] split-crawl-ingest | V2EX/Juejin 8/30-31
+
+### 背景
+- プレランLLM-triageがcontext-length超過（38,319 tokens）で失敗、decisions配列なし。インボックス直接検査＋git log照合により手動トリアージ実施。
+- 8/31クロール候補60件のうち重複再収集・V2EX「暂无内容」・経営広告等を除外し、6件の実質的新規/再評価候補を確定。
+
+### 作業
+- `entities/glm-zhipu.md` — 更新: GLM-5.3+Codex環境でのrm -rf誤削除事故（V2EX t/1238217、スコア106、8億token喪失）。教訓4点と「跑分谨慎看待」論調を記録。updated 8/18→31
+- `entities/openai.md` — 更新: 「OpenAI断供Cursor」主張（掘金 t/7679222800792338483）。一次ソース未確認のため未検証として明記。updated 6/8→31
+- `entities/cursor.md` — 更新: 同主張をSpaceX買収文脈の供給リスクとして追記。updated 4/17→31
+- `entities/tencent-hunyuan.md` — 更新: 無料Hy3の高評価体験談（V2EX t/1238528、WebMCP収録・麻雀ゲーム逆解析）。updated 8/24→31
+- `concepts/harness-engineering.md` — 更新: Harness/Runtime術語漂移整理記事（掘金 t/7679753075939524623）。updated 6/8→31
+- `concepts/kimi.md` — 更新: K3実運用評価記事（掘金、原記事7/18の再収集である旨明記）。前端/長タスク/OSSの3点评価点
+- 一次記事4本をwiki/raw/articles/へ保存
+
+### 除外
+- V2EX「codex 5h限额回归」等 — 一時的な価格・限额不満、永続的情報価値なし
+- 掘金「700G模型量化蒸馏」「世界模型」「Claude转向Codex」 — 既存conceptページ（quantization.md/world-model.md等）でカバー済みの解説記事
+- 経営・採用広告類、Hermes自社プロモ記事

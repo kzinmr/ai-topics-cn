@@ -1,7 +1,7 @@
 ---
 title: "Harness Engineering — LLM Agentの外化（Externalization）パターン"
 created: 2026-04-18
-updated: 2026-06-08
+updated: 2026-08-31
 tags: [ai-agents, coding-agents, framework, llm, mcp]
 aliases: ["エージェントハーネス", "LLM外化パターン", "Externalization in LLM Agents"]
 source_lang: zh-CN
@@ -110,6 +110,15 @@ Harness Engineering
 ```
 
 Harnessは個別の技術を**統合する実行フレームワーク**。Agent Harness論文は、これらがバラバラに見えたトレンドを「外化」という単一原理で説明する。
+
+## HarnessとRuntimeの用語整理（2026年8月）
+
+掘金（Cosolar）が「**一文弄懂 Agent Harness 与 Agent Runtime 的区别**」を公開。2026年上半期のAI Agent分野における「**術語漂移**（terminology drift）」——同一コミュニティが同一の対象（「Agentの外側に被せるエンジニアリング層」）をHarness/Runtimeと呼び分けて混同していた問題——を整理する解説記事。
+
+- 2026年時点で両語は混在使用されており、境界定義が確立していない状態自体が論点
+- 「造詞炒作」批判（V2EX）に対し、用語の功能的分解を試みる記事群が現れたことは、概念が投資・実装段階から**標準化・教科書化段階**に入った兆候
+
+> **出典**: 掘金（Cosolar）— [一文弄懂 Agent Harness 与 Agent Runtime 的区别](https://juejin.cn/post/7679753075939524623) [T2]、収集: 2026-08-31
 
 ## 中国語圏での議論動向
 

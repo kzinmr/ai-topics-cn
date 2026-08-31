@@ -1,7 +1,7 @@
 ---
 title: Cursor — IDE統合型AIコーディングツール
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-08-31
 tags: [ai-agents, coding-agents, tooling, closed-source, cursor]
 aliases: [\"cursor\", \"Cursor IDE\", \"cursor-ide\"]
 source_lang: zh-CN
@@ -137,6 +137,16 @@ Opus 4.7のCursorBench 70%達成は重要：
 
 > **出典**: 36kr（字母AI）— [SpaceX百亿锁定Cursor](https://36kr.com/p/3777834249564677) [T1]
 > **出典**: 36kr（字母AI）— [开出600亿美元价码](https://36kr.com/p/3777822587777796) [T1]
+
+## 最新動向（2026年8月31日）
+
+### OpenAIによるモデル供給断ちの主張 — SpaceX買収後の供給リスク
+
+掘金（王若風）は**「OpenAI 断供 Cursor：这不是商业决定，是战争行为」**と投稿。SpaceXによるCursor買収発表の同日、OpenAIがCursorへの新モデル供給を停止し、旧モデルのみ11月12日までの利用を許容したと主張（75日倒计时）。上記のSpaceX買収報道と組み合わせると、中国開発者コミュニティでは「**マルチモデル依存の単一化リスク**」（IDEが特定ラボのモデル供給に政治的に左右される構図）として議論されている。
+
+⚠️ **注意**: 本主張の一次ソース（OpenAI/SpaceX/Cursor公式発表）は本クロール範囲内では未確認。単一ソースの未検証情報として扱う。
+
+> **出典**: 掘金（王若風）— [OpenAI 断供 Cursor](https://juejin.cn/post/7679222800792338483) [T3・未検証]、収集: 2026-08-31
 
 ## 関連リンク
 

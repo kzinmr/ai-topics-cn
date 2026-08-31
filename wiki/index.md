@@ -2,6 +2,13 @@
 
 最終更新: 2026-08-31
 エンティティ: 65, コンセプト: 120, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-31 Split Crawl Ingest: GLM事故/OpenAI断供Cursor/Hy3/Harness-Runtime）
+- `entities/glm-zhipu.md` — **更新**: 「開発事故レポート: GLM-5.3 + Codex環境でのrm -rf誤削除（2026-08-30）」セクション追加。V2EXスコア106、8億token喪失、harness承認ゲート・跑分水増し疑念
+- `entities/openai.md` — **更新**: 「OpenAIがCursorへのモデル供給を断ったとされる主張」セクション追加（単一ソース・未検証として記録、11/12期限）
+- `entities/cursor.md` — **更新**: 「最新動向（2026年8月31日）」追加。SpaceX買収後の供給断ち主張とマルチモデル依存リスクの議論
+- `entities/tencent-hunyuan.md` — **更新**: 「開発者実体験: 無料モデルHy3への高評価」追加（V2EX/WebMCP統合・プロトコル逆解析事例）
+- `concepts/harness-engineering.md` — **更新**: 「HarnessとRuntimeの用語整理（2026年8月）」追加。術語漂移の整理＝概念の標準化段階入り
+- `concepts/kimi.md` — **更新**: 「8月31日: K3の実運用評価記事」追加。前端能力世界一梯隊・長タスク安定性・OSSの3点評価。元記事7/18の再収集である旨明記
 ### 本日更新（2026-08-31 Active Crawl: Kimi/Doubao/Coze）
 - `concepts/kimi.md` — **更新**: 「2026年8月19日〜30日」セクション追加。KimiCodeBar(Windows托盘でKimi/KimiCode用量・KV-cache監視/8/23)、「K3でHBM64GBでも可」低ハードル論争、GPT-5.6/Claude Fable5/Gemini3.2/K3 4社比較(Zhihu 8/22)でK3がオープン代表。大型自社リリースなし継続
 - `concepts/doubao.md` — **更新**: 「2026年8月19日〜30日」セクション追加。固有大型リリースなし。注目=「别把豆包当聊天用了」(掘金8/30)が豆包をAgent/MarsCode軸の開発・自動化プラットフォームへ再定位=チャットボット像からの転換論

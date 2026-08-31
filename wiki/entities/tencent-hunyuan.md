@@ -1,7 +1,7 @@
 ---
 title: "混元 (Hunyuan) — 騰訊自研の大規模言語モデルシリーズ"
 created: 2026-04-28
-updated: 2026-08-24
+updated: 2026-08-31
 tags: [company, llm, china, tech-giant, tencent, moe, multimodal]
 aliases: ["Hunyuan", "混元", "Tencent Hunyuan", "腾讯混元", "HY"]
 source_lang: zh-CN
@@ -188,6 +188,18 @@ source_lang: zh-CN
 - 姚順雨の社内権限は継続的に拡大中（2026年3月にAI Lab解消、メンバーを混元チームに統合）
 - 一部メディアは「姚順雨は張龍（WeChat創業者）のような存在になれるか」と論評
 - 課題：限定期間終了後の持続的成長、WeChat Agentの本格展開
+
+## 開発者実体験: 無料モデルHy3への高評価（2026-08-31）
+
+V2EXユーザーunmayxが「**这两个月，我被一个免费 AI 模型反复震惊**」（この2ヶ月、一つの無料AIモデルに繰り返し驚かされた）と報告。腾讯混元Hy3を「完全信任AI」状態で使い込み、以下を構築したという：
+
+- ブログのAPI+WebMCP統合（Google/MicrosoftがサポートするWebMCP协议経由でWebMCP Directoryに収録）
+- サーバ終了予定の麻雀ゲームのオフラインスナップショット（パケットキャプチャ再生→Protobufプロトコル逆解析→JavaScript対局エンジンの自動生成）
+- WASM Linux上で動くPOSIX互換静的サイトジェネレータ、WebRTC P2P組網など
+
+**含意**: 中国個人開発者の間では「無料 or 低価格の国産モデルの実用性が、有料グローバルモデルとの価格差を正当化し始めている」という体感報告が共有されつつある。混元Hy3の無料枠がその代表例として言及された点は価格戦略（上記）と整合的。一次体験談（T3）でありベンチマーク的根拠はない。
+
+> **出典**: V2EX（unmayx）— [我被一个免费 AI 模型反复震惊](https://www.v2ex.com/t/1238528) [T3]、収集: 2026-08-31
 
 ## 競合比較
 

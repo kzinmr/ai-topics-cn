@@ -1,7 +1,7 @@
 ---
 title: OpenAI — AI研究企業
 created: 2026-04-17
-updated: 2026-06-08
+updated: 2026-08-31
 tags: [company, lab, gpt, openai, codex]
 aliases: ["OpenAI", "openai", "GPT", "Codex"]
 source_lang: zh-CN
@@ -55,6 +55,16 @@ OpenAIはセキュリティ特化のGPT-5.4-Cyberも発表。AnthropicのNature�
 | エージェント | Codex「超级龙虾」 | [[claude-code]] |
 | 安全 | GPT-5.4-Cyber | Nature論文「潜意識伝染」 |
 | 中国市場 | Codexで攻勢 | KYCでアクセス制限 |
+
+## OpenAIがCursorへのモデル供給を断ったとされる主張（2026-08-31）
+
+掘金ユーザー王若風が「**OpenAI 断供 Cursor：这不是商业决定，是战争行为**」（OpenAI、Cursorへの供給断ち — これは商業的決定ではなく戦争行為だ）と主張。
+
+- **主張の骨子**: CursorのSpaceX買収が発表された当日、OpenAIはCursorへの新モデル供給を停止。既存モデルは**11月12日**まで利用可、新モデルは提供せず。75日のカウントダウンが始まった、という。
+- **記事の実態**: 掘金の投稿は要約のみ（「国产最贵、速度还慢」等の断片的な論評）で、一次ソース（OpenAI/SpaceX/Cursorいずれの公式発表）は本クロール範囲内では未確認。
+- **扱い**: 単一ソース・未検証の主張として記録。SpaceX–Cursor関係（[[cursor]]参照）とOpenAIの競合戦略を論じる文脈では有意義だが、事実として断定しない。
+
+> **出典**: 掘金（王若風）— [OpenAI 断供 Cursor](https://juejin.cn/post/7679222800792338483) [T3・未検証]、収集: 2026-08-31
 
 ## 中国コミュニティでの反応
 
