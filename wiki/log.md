@@ -43,6 +43,25 @@
 |
 |
 |
+## [2026-08-31] active-crawl | Kimi/Doubao/Coze
+対象トピック: kimi (high/13日ギャップ), doubao (high/13日ギャップ), coze (medium/13日ギャップ)
+web検索: 不可(subagent tool-call障害)。ローカルdaily digest 8/19〜8/30 (Tier 2B/3) で調査
+
+### Wiki更新
+- `concepts/kimi.md` — **更新**: 「2026年8月19日〜30日」セクション追加。KimiCodeBar(Windows托盘でKimi/KimiCode用量・KV-cache監視/V2EX 8/23)。「Kimi K3でHBM64GBでも可/2TB不要」論争(8/23)=オープンウェイト低ハードル訴求。「GPT-5.6 Sol vs Claude Fable5 vs Gemini3.2 vs Kimi K3」4社横断比較(Zhihu 8/22)でK3がオープン代表。WorkBuddy/Canva MCP分析(掘金 8/19)でK3言及。大型自社リリースなし継続
+- `concepts/doubao.md` — **更新**: 「2026年8月19日〜30日」セクション追加。固有大型リリースなし。注目=「别把豆包当聊天用了」(掘金 8/30)が豆包をAgent/MarsCode軸の「開発・自動化プラットフォーム」と再定位=チャットボット像からの転換論。V2EXで音声入力・業務効率エコ系统参照先として散発登場(8/25,27,29)
+- `concepts/coze.md` — **更新**: 「2026年8月19日〜30日」セクション追加。固有リリースなし=安定稼働。企業級Agent平台比較(掘金 8/29,8/30)にCoze継続登場だが新機能・価格変更なし。前サイクル「字节系→中立基盤」「Coze3.0多Agent」が現行到達点
+
+### hot-topics.yaml更新
+- kimi: last_crawled 2026-08-31 (notes: KimiCodeBar・4社比較でK3オープン代表・大型リリースなし)
+- doubao: last_crawled 2026-08-31 (notes: 「别把豆包当聊天用了」Agent/MarsCode再定位論・固有リリースなし)
+- coze: last_crawled 2026-08-31 (notes: 固有リリースなし=安定稼働・Coze3.0が現行到達点)
+
+### 備考
+- web検索がsubagent障害で不可。全所見はローカルdaily digest(8/19〜8/30)ベースであり出典検証はT2扱い
+- 3トピックとも大型リリースはなし。doubaoの「チャット→Agentプラットフォーム」再定位論が本期で唯一の意味ある新規シグナル
+- mcp-chinaトピックのnotes末尾クォート未閉鎖は既存(pre-existing)であり本ランでは修正せず(対象トピック外)
+
 ## [2026-08-27] active-crawl | Qwen/ChatGLM/ChinaAIAgentEcosystem
 対象トピック: qwen (high/11日ギャップ), chatglm (medium/4日ギャップ), china-ai-agent-ecosystem (high/13日ギャップ)
 web検索: curl+Bing(Tier 3)で公式ソース確認(docs.bigmodel.cn/z.ai/zcode.z.ai/openlm.ai)+ローカルdaily digest (8/15〜8/26) 併用

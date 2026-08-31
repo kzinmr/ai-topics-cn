@@ -1,7 +1,7 @@
 ---
 title: "扣子 (Coze) — ByteDanceのノーコードAI Agentプラットフォーム"
 created: 2026-04-19
-updated: 2026-08-18
+updated: 2026-08-31
 last_crawled: 2026-08-18
 tags: [agent-platform, low-code, bytedance, china, workflow, plugin, openclaw]
 aliases: ["Coze", "扣子", "字节跳动Coze", "Coze平台", "Agent World"]
@@ -98,6 +98,22 @@ Coze Agentを個人微信に連携する「**知更Ai**」を使った教程が�
 3. **風控リスク**: WeChat連携は微信のポリシー変更で突然機能しなくなる可能性
 4. **無料枠の制約**: 月100リクエストまで。Enterpriseプランは月額数万元
 
+
+### 2026年8月19日〜30日の動向
+
+この期間、Coze / 扣子固有の新リリース・機能追加・国際化ニュースは local daily digest (8/19〜8/30) で確認されず。エコシステムは安定稼働状態。
+
+#### Agent開発プラットフォーム環境の継続
+
+CozeはT3レベルの参考言及として、中国Agent開発プラットフォーム一覧（Dify、n8n、HiAgent等）の中に継続的に登場。8/30の掘金記事「企业级AI Agent开发平台对比指南」ではCozeを含む主要プラットフォームの機能比較が続いているが、Coze固有の新機能・価格改定は報告されていない。
+
+- 出典: 掘金 7678346000680353827 (8/29)、7679119783602421800 (8/30) [T2]
+
+#### 期間総括
+
+8/19〜30はCoze固有の大きな動きなし。前サイクルで記録した「字节系から中立基盤へ」「Coze 3.0 多Agentモード」が現行の到達点として安定。次回は Coze 3.0 のエンタープライズ採用事例、国際版（Coze Open-source / Coze Studio）の進展、MCP連携の深化を確認。
+
+> 出典: local daily digest 8/19〜8/30 ベース（web検索不可のためローカルソース検証）。
 ## 関連リンク
 
 ### 内部リンク

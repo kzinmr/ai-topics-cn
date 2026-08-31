@@ -1,7 +1,7 @@
 ---
 title: "Kimi (月之暗面) — Moonshot AIの旗艦AIアシスタント"
 created: 2026-04-22
-updated: 2026-08-18
+updated: 2026-08-31
 tags: [llm, moonshot, long-context, agent, open-source, chinese-llm, kimi-k3, kimi-k2-7, k3-opensource]
 aliases: ["Kimi", "月之暗面", "Moonshot AI", "Kimi Chat", "Kimi K2"]
 source_lang: zh-CN
@@ -207,6 +207,34 @@ Kimiは以下の要因で中国市場で大きなシェアを持つ：
 3. **APIアクセスの容易さ**: 火山引擎（ByteDance）と連携し在中国开发者からのアクセスが容易
 4. **Claude規制への対応**: AnthropicのKYC制限によりClaude CodeからKimiへ移行する開発者が増加
 
+
+### 2026年8月19日〜30日の動向
+
+この期間はK3リリース後の**静穏期**が継続。Kimi固有の大型リリース・API変更・資金調達・IPO関連の新規事象はlocal daily digest (8/19〜8/30) で確認されなかった。コミュニティでの散発的な言及のみ。
+
+#### KimiCodeBar Windows版公開（8月23日）
+
+V2EXで**KimiCodeBar**というWindows用システムトレイ常駐ツールが公開された（インストールパッケージ約4MB）。Kimi Codeの利用額度（クォータ）をトレイで監視し、额度が残り僅かになるとアイコンが赤く変わる仕組み。Kimi Code課金モデル（従量課金）に対するユーザー側の実用ツールとして注目。
+
+- 出典: [V2EX t/1236646](https://www.v2ex.com/t/1236646)（2026-08-23）[T2]
+
+#### WorkBuddy + Canva MCP解析でKimi参照（8月19日）
+
+掘金で「WorkBuddy + Canva可画 MCP 技術解析：从"图"到"活稿"」が公開。MCP連携の実装解説中でKimiが対応モデルの一つとして言及された。Kimi固有のリリースではなく、エコシステム内での参照。
+
+- 出典: [掘金](https://juejin.cn/post/7675556948210204698)（2026-08-19）[T2]
+
+#### 「牛来」モデル登場で競合評価が変動（8月28日〜30日）
+
+爆発的人気を集めた新モデル「牛来」が正式リリースされ、DeepSeekのランキング低下が報じられた記事（程序员鱼皮）でKimiはベンチマーク比較対象として言及。Kimi固有の動きではないが、国产モデル間の競争順位が流動化している環境を示す。
+
+- 出典: [掘金](https://juejin.cn/post/7678618274796961843)（2026-08-28〜30）[T2]
+
+#### 期間総括
+
+8/19〜30はKimi固有の新規情報が乏しい静穏期。市場の関心は競合（DeepSeek V4、GLM-5.3、新モデル「牛来」）のリリースに集中しており、K3後のKimiは利用定着・消化フェーズにある。次回はK3のOSS化進展、K2.7 Code系の追加リリース、算力（計算資源）逼迫の続報の有無を確認。
+
+> 出典: local daily digest 8/19〜8/30 ベース（web検索不可のためローカルソース検証）。個別アイテムは上記URLで一次確認可。
 ## 関連リンク
 
 ### 内部リンク

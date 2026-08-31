@@ -1,7 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-08-29
+最終更新: 2026-08-31
 エンティティ: 65, コンセプト: 120, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-08-31 Active Crawl: Kimi/Doubao/Coze）
+- `concepts/kimi.md` — **更新**: 「2026年8月19日〜30日」セクション追加。KimiCodeBar(Windows托盘でKimi/KimiCode用量・KV-cache監視/8/23)、「K3でHBM64GBでも可」低ハードル論争、GPT-5.6/Claude Fable5/Gemini3.2/K3 4社比較(Zhihu 8/22)でK3がオープン代表。大型自社リリースなし継続
+- `concepts/doubao.md` — **更新**: 「2026年8月19日〜30日」セクション追加。固有大型リリースなし。注目=「别把豆包当聊天用了」(掘金8/30)が豆包をAgent/MarsCode軸の開発・自動化プラットフォームへ再定位=チャットボット像からの転換論
+- `concepts/coze.md` — **更新**: 「2026年8月19日〜30日」セクション追加。固有リリースなし=安定稼働。企業級Agent平台比較(掘金8/29,8/30)に継続登場だが新機能・価格変更なし。Coze3.0多Agentが現行到達点
 ### 本日更新（2026-08-29 Newsletter Ingest: Tech Taiwan 川湖科技87.4%粗利率）
 - `concepts/ai-infrastructure.md` — **更新**: 「利益配分の逆転」セクション追加。Nvidia FY2028売上成長70%見通し（予想45%超、需要は供給能力を大幅超過）、Morgan Stanley指摘のボトルネック（TSMC 3nm・ABF基板/T-Glass）、川湖科技（King Slide）粗利率87.4%がMicron 86%/Nvidia 71-72%/TSMC 68%を上回る利益配分の逆転
 ### 本日更新（2026-08-27 Active Crawl: Qwen/ChatGLM/ChinaAIAgentEcosystem）
