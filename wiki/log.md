@@ -3770,3 +3770,25 @@ Originating conversation: (scheduled cron)
 - 马年中国 disclaimer PDF (dc72337e) — Morgan资产管理 legal boilerplate only
 - STRIKE/CVE item relevance note: mentions "Hermes Agent gateway" exposure; logged here only, no
   wiki claim (single-source security-scanner dashboard, unverified).
+
+## [2026-09-01] split-crawl-ingest | Juejin 9/1 (WeMM-Embedding / 豆包工作Agent)
+
+### Background
+- Pre-run LLM-triage failed: RuntimeError "Context length exceeded (32,038 tokens). Cannot compress
+  further." -> case (b): no triage decisions exist. Manual triage run against checkpoint
+  20260901T210214Z (60 candidates).
+
+### Manual triage split (take 2 / reference ~8 / skip ~50)
+- Take: WeMM-Embedding OSS report (juejin 0784676e) -> entities/tencent-hunyuan.md new section,
+  recorded as unverified (preview-only summary, no weights/license primary source).
+- Take: 豆包工作Agent正式发布 (juejin 2c9d0cd9) -> concepts/doubao.md subsection; corroborates the
+  8/30 "chat -> Agent platform" repositioning thesis with an actual product launch.
+- Reference/skip: 20x wechat re-crawls of the same aafeba3f content hash (机器之心 AI00 list, May);
+  V2EX promo/airline-proxy/job posts; juejin tutorials (Prompt Chaining, InMemoryChatMessageHistory,
+  RAG/ICL explainers) already covered by existing concept pages; LoopX / CodeGraph / DeepSeek Harness
+  plugin lists = single-source low-engagement OSS notes with no durable durable facts;
+  Harness-vs-Runtime article (82877fde) already ingested on 8/31.
+
+### Verification against git
+- 8/31 triage commit 2f488d8 and 9/1 newsletter commit 37cdbe6 confirmed; no overlap with the two
+  take items above.

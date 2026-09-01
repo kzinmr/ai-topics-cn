@@ -2,6 +2,9 @@
 
 最終更新: 2026-09-01
 エンティティ: 65, コンセプト: 121, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-09-01 Split Crawl Ingest: WeMM-Embedding开源 / 豆包工作Agent）
+- `entities/tencent-hunyuan.md` — **更新**: 「WeMM-Embedding オープンソース化」セクション追加。微信生産環境（视频号/公众号/朋友圈）使用の多モーダル埋め込みモデルWeMM-EmbeddingのOSS化報告（2B版が阿里8Bと互角とされる、未検証）。騰訊のモデル群多様化と「微信×AI」開放の兆候として記録
+- `concepts/doubao.md` — **更新**: 「豆包工作Agent正式发布」言及を追加。豆包のAgent/オフィス用途製品化を8/30「チャット→Agentプラットフォーム転換論」の続報として補強
 ### 本日更新（2026-09-01 Newsletter Ingest: ChinAI #373 OpenClaw hype / ChinAI #355 MiniMax+阿里云）
 - `concepts/openclaw.md` — **更新**: 「时代的眼泪化と拡散優位論の反証」セクション追加。Star推移（38万+/Fork8万）と集体悼念化、派生30+款（腾讯WorkBuddy/QClaw・百度DuMate・有道LobsterAI・智谱AutoClaw・火山ArkClaw）、衰退要因4点（token烧钱/权限安全ジレンマ/原厂harness置換/遗产论）、Peter SteinbergerのOpenAI加入とOmacom Foundation、SecurityScorecard実データ（米18.7k/中17.0k）による「中国利用2倍」論の反証、JPMorganのクラウド成長減速予測
 - `entities/minimax.md` — **更新**: 「MaxClaw × Alibaba Cloud 四条鸿沟」セクション追加。安全边界（ACS Agent Sandbox）/状态波动/多头调度/成本张力の4課題とACK/ACS=「AI超级计算机のクラウドネイティブOS」論、IDC調査（推論がtoken使用47%）
