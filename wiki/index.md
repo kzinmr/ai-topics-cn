@@ -1,7 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-08-31
-エンティティ: 65, コンセプト: 120, ダイジェスト: 7, 比較: 2, ページ: 9
+最終更新: 2026-09-01
+エンティティ: 65, コンセプト: 121, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-09-01 Newsletter Ingest: ChinAI #373 OpenClaw hype / ChinAI #355 MiniMax+阿里云）
+- `concepts/openclaw.md` — **更新**: 「时代的眼泪化と拡散優位論の反証」セクション追加。Star推移（38万+/Fork8万）と集体悼念化、派生30+款（腾讯WorkBuddy/QClaw・百度DuMate・有道LobsterAI・智谱AutoClaw・火山ArkClaw）、衰退要因4点（token烧钱/权限安全ジレンマ/原厂harness置換/遗产论）、Peter SteinbergerのOpenAI加入とOmacom Foundation、SecurityScorecard実データ（米18.7k/中17.0k）による「中国利用2倍」論の反証、JPMorganのクラウド成長減速予測
+- `entities/minimax.md` — **更新**: 「MaxClaw × Alibaba Cloud 四条鸿沟」セクション追加。安全边界（ACS Agent Sandbox）/状态波动/多头调度/成本张力の4課題とACK/ACS=「AI超级计算机のクラウドネイティブOS」論、IDC調査（推論がtoken使用47%）
+### 本日更新（2026-09-01 蒸留争点の集約）
+- `concepts/model-distillation.md` — **新規**: モデル蒸留の技術・商業・地政学三重の争点を横断整理。R1蒸留の先例効果（RL 47.0% vs 蒸留SFT 72.6%）、Anthropic「工業規模蒸留攻撃」主張、晚点LatePost実務者約10名インタビューの反論、跑分（ベンチマーク）水増し疑念。deepseek/minimax/glm-zhipu/kimi/china-ai-regulation のworking tree更新で[[model-distillation]]参照リンクが多数先行していたため、実体ページを作成して収束
 ### 本日更新（2026-08-31 Split Crawl Ingest: GLM事故/OpenAI断供Cursor/Hy3/Harness-Runtime）
 - `entities/glm-zhipu.md` — **更新**: 「開発事故レポート: GLM-5.3 + Codex環境でのrm -rf誤削除（2026-08-30）」セクション追加。V2EXスコア106、8億token喪失、harness承認ゲート・跑分水増し疑念
 - `entities/openai.md` — **更新**: 「OpenAIがCursorへのモデル供給を断ったとされる主張」セクション追加（単一ソース・未検証として記録、11/12期限）

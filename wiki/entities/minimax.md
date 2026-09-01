@@ -1,8 +1,8 @@
 ---
 title: "MiniMax Group（稀宇科技）— 中国AIユニコーン、Talkie・Hailuo AIでグローバル展開"
 created: 2026-06-02
-updated: 2026-06-02
-tags: [company, ai, llm, china, text-to-video, ai-character, generative-ai, stock-100]
+updated: 2026-09-01
+tags: [company, ai, llm, china, text-to-video, ai-character, generative-ai, stock-100, video-generation]
 aliases: ["MiniMax", "稀宇科技", "Xīyǔ Kējì", "MiniMax Group Inc."]
 source_lang: zh-CN
 ---
@@ -65,6 +65,23 @@ MiniMaxの最初の製品は2022年10月にリリースされた**Glow**。AI仮
 | MiniMax-M2.7 | 2026年3月 | 自己改善型モデル |
 | MiniMax-M3.0 | 2026年6月 | フロントティア・コーディング、100万コンテキスト、ネイティブマルチモーダル |
 
+### MiniMax H3 — オーディオビデオ生成モデル（2026年7月〜8月）
+
+China AI Bulletin 9（SAIF, 2026-08-24）が報告した**33Bパラメータ・dense型ビデオ生成モデル**。テキスト・画像・ビデオ・音声を1ストリームで処理し、4〜15秒クリップを**ネイティブ32kHzステレオ音声付き**で生成。最大9枚の参照画像または3本のビデオクリップを受け付ける。
+
+**部分的オープンソース**（Community License・ダウンロード可能チェックポイントは2種）：
+- 1種はクリップの最初・最後のフレームから生成、もう1種はマルチモーダル参照から生成
+- 両方ともローカル実行可能だが、**最高768p（標準画質程度）**で頭打ち
+- 宣伝されている**2K出力**にはMiniMaxサーバー上でのみ実行される2つのサービスが必要（複雑プロンプトの書き換え＋768pクリップの2K再レンダリング）
+
+つまりMiniMaxがオープンソース化したのはベース生成器であり、マーケティングしている高画質システム全体ではない。
+
+**競合動向（同一周期）**:
+- **ByteDance Seedance 2.5**: 閉じたオーディオビデオ生成モデル。1パス出力を15秒→30秒に倍増し、多ラウンド延長に対応。最大30画像・10ビデオ・10音声クリップを参照に、指定タイムスタンプでキャラクター・動作・カメラワーク・プロット要素を編集可能。即夢AI（Jimeng）と豆包Proで展開、APIはBytePlus ModelArk経由で予定。**ダウンロード可能ウェイトなし**
+- **ByteDance SeedRealtime**: 閉じたフルデュプレックスモデル。連続音声・ビデオ・テキストを処理し、独立したVAD（発話検出）システムに頼らず応答タイミングを決定。製品に展開済みだがウェイト・リポジトリ未公開
+
+> **出典**: China AI Bulletin 9（SAIF, Substack 2026-08-24）[T1]; chinai-newsletter raw `substack.com--redirect-a9103d37-3c0e-4817-be5b-554b32fa2462--6a720a64.md`
+
 ### その他AI製品
 
 | 製品 | バージョン | 概要 |
@@ -111,6 +128,10 @@ Disney、Universal Pictures、Warner Bros. Discoveryが米国でHailuo AIを相�
 ### Anthropicデータ収集疑惑（2026年2月）
 
 AnthropicがMiniMax他2社の中国AI企業を非難。数千の不正アカウントを通じてClaudeと1,600万件以上のインタラクションを生成し、自社LLMの改善に「蒸留（distillation）」を使用したと主張。
+
+### 蒸留争点の発展（2026年8月）
+
+ChinAI #372（2026-08-24）併載の晩点LatePost翻訳記事（実務者約10名インタビュー）で、MiniMaxは「工業規模蒸留攻撃」の被名指称先として再言及。Anthropicの主張は2月に「約5万の虚偽アカウント・Claudeとの4,480万以上のインタラクション」、6月には米国上院への書簡で再提起されており、名指し企業は直接応答していない。実務者側の見解としては「ブラックボックス蒸留はモデル使用生成物であり、米国側（OpenAI/Anthropic）もプレトレインに同種のデータを使っている」という反論が示される。蒸留技術・コスト（年間$100M〜$1B）・データフライホイール論の整理は [[model-distillation]] を参照。
 
 ## 競合比較
 
@@ -159,6 +180,19 @@ MiniMaxは以下の5社と共に「中国AI六小龍（Six AI Tigers）」の一
 | 音楽 | Music 2.5+ | Suno, Udio, Eleven Music |
 | エージェント | MiniMax Agent | Claude Code, Devin AI, Manus |
 | キャラクター | Talkie | Character.ai |
+
+## 2026年9月: MaxClaw × Alibaba Cloud — Agent大規模稼働の「四条鸿沟」（ChinAI #355 / 机器之心Synced 再録 2026-08-31）
+
+MaxClaw（OpenClaw系第一梯隊適応）と阿里云 ACK/ACS の連携が、Agentの本番環境導入を妨げる4つの構造的課題として整理された:
+
+1. **安全边界**: AgentがOS直上で高リスク権限を持つ（重要ファイル削除等）→ **ACS Agent Sandbox**で隔離、prompt injection/特権昇格のリスクはインスタンス内に閉じ込め「横向移动・容器逃逸は極難」
+2. **状态波动**: 長時間タスク実行中の状態不安定
+3. **多头调度**: 複数Agentのスケジューリング要求
+4. **成本张力**:  workload急変動とコスト消費の緊張 → 阿里云の弾性スケジューリングで対応
+
+IDC調査: AI推論が全token使用量・API呼び出しの47%。計算力の重心は「大規模post-training・inference実行＝Agent中心シナリオ」へ移行中。数十万Agentを7×24で collective 稼働する世界では、ACK/ACS等のコンテナサービスが「AI超级计算机のクラウドネイティブOS」になる、という位置づけ。
+
+**出典**: ChinAI #355（Jeff Ding、Synced/机器之心記事翻訳）— raw: `wiki/raw/articles/substack.com--redirect-070ac3dd-...--5315241b.md`
 
 ## Sources
 

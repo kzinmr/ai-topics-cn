@@ -43,12 +43,23 @@
 |
 |
 |
-## [2026-08-31] active-crawl | Kimi/Doubao/Coze
-対象トピック: kimi (high/13日ギャップ), doubao (high/13日ギャップ), coze (medium/13日ギャップ)
-web検索: 不可(subagent tool-call障害)。ローカルdaily digest 8/19〜8/30 (Tier 2B/3) で調査
+## [2026-09-01] nightly-report-fix | 蒸留争点の集約と欠損ページ補完
 
-### Wiki更新
-- `concepts/kimi.md` — **更新**: 「2026年8月19日〜30日」セクション追加。KimiCodeBar(Windows托盘でKimi/KimiCode用量・KV-cache監視/V2EX 8/23)。「Kimi K3でHBM64GBでも可/2TB不要」論争(8/23)=オープンウェイト低ハードル訴求。「GPT-5.6 Sol vs Claude Fable5 vs Gemini3.2 vs Kimi K3」4社横断比較(Zhihu 8/22)でK3がオープン代表。WorkBuddy/Canva MCP分析(掘金 8/19)でK3言及。大型自社リリースなし継続
+### 背景
+- 夜間レポート生成時に、working tree の triage 成果（China AI Bulletin 9 / ChinAI #372 ベース、2026-08-22〜25 付）で `[[model-distillation]]` への参照リンクが多数先行している一方、実体ページが未作成（dangling link）であることを検出。
+- 同時に `wiki/entities/unitree-robotics.md` のバブル検証セクションが HEAD に存在しないことも確認。
+
+### 作業
+- `concepts/model-distillation.md` — **新規作成**: 蒸留の技術（RL 47.0% vs 蒸留SFT 72.6%）／商業（Anthropic「工業規模蒸留攻撃」主張、5万虚偽アカウント・4,480万インタラクション）／地政学（求是反論、WAICO 37カ国）の三重争点を横断整理。晚点LatePost 実務者約10名インタビュー、跑分水増し疑念（V2EX GLM事故スレ）を統合。先行リンクを収束。
+- `entities/unitree-robotics.md` — **再作成**: IPO招股書（2025年売上16.99億元・人形5,215台・科研教育70%超・明確シーン収入1,570万元）、数采工場エコシステム、市場バブル検証ギャップ（ChinAI #372 / 晚点LatePost）。参照リンクを解決。
+- `index.md` — 更新: エンティティ 65 / コンセプト 121、本日更新セクション追加。
+
+### 備考
+- 本セッションでは working tree の他13ページの triage 追記分は**コミットせず**。他セッションの同時編集が進行中のため、意図的な競合・データ損失を避ける。レポートは working tree の最新状態を反映して作成。
+
+## [2026-08-31] active-crawl | Kimi/Doubao/Coze
+
+### 背景: 「2026年8月19日〜30日」セクション追加。KimiCodeBar(Windows托盘でKimi/KimiCode用量・KV-cache監視/V2EX 8/23)。「Kimi K3でHBM64GBでも可/2TB不要」論争(8/23)=オープンウェイト低ハードル訴求。「GPT-5.6 Sol vs Claude Fable5 vs Gemini3.2 vs Kimi K3」4社横断比較(Zhihu 8/22)でK3がオープン代表。WorkBuddy/Canva MCP分析(掘金 8/19)でK3言及。大型自社リリースなし継続
 - `concepts/doubao.md` — **更新**: 「2026年8月19日〜30日」セクション追加。固有大型リリースなし。注目=「别把豆包当聊天用了」(掘金 8/30)が豆包をAgent/MarsCode軸の「開発・自動化プラットフォーム」と再定位=チャットボット像からの転換論。V2EXで音声入力・業務効率エコ系统参照先として散発登場(8/25,27,29)
 - `concepts/coze.md` — **更新**: 「2026年8月19日〜30日」セクション追加。固有リリースなし=安定稼働。企業級Agent平台比較(掘金 8/29,8/30)にCoze継続登場だが新機能・価格変更なし。前サイクル「字节系→中立基盤」「Coze3.0多Agent」が現行到達点
 
@@ -3729,3 +3740,33 @@ Originating conversation: (scheduled cron)
 - V2EX「codex 5h限额回归」等 — 一時的な価格・限额不満、永続的情報価値なし
 - 掘金「700G模型量化蒸馏」「世界模型」「Claude转向Codex」 — 既存conceptページ（quantization.md/world-model.md等）でカバー済みの解説記事
 - 経営・採用広告類、Hermes自社プロモ記事
+
+## [2026-09-01] newsletter-triage | ChinAI #373 (Jeff Ding / 量子位)
+
+### Background
+- Pre-run LLM-triage failed with HTTP 503 (local LLM busy), decisions array unavailable.
+- Ran manual triage directly against the injected checkpoint (run 20260901T070024Z, 8 candidates).
+- All 8 candidates come from the single ChinAI #373 email (2026-08-31). 4 are URL-variant
+  duplicates of the same #373 page (item ids ac9e.../c422.../ce83.../1c57...); 1 is a JP/EN
+  disclaimer-only asset (a47a63dc, Morgan资产管理法律文面, no durable facts); 1 is an
+  exposed-gateway CVE tracking page (00634ae6, no Chinese-AI durable content); these 6 were skipped.
+
+### Take (2 substantive articles)
+- `concepts/openclaw.md` — updated: new section "2026年9月: 时代的眼泪化と拡散優位論の反証".
+  Star trajectory (25万+ in 100 days -> 38万+ by Aug, Fork 8万+), 集体悼念 phase, 30+ derivative
+  products (腾讯WorkBuddy/QClaw, 百度DuMate, 网易有道LobsterAI, 智谱AutoClaw, 火山ArkClaw, MiniMax MaxClaw),
+  4 decline causes (token cost / permission-security dilemma /原厂harness displacement / legacy framing),
+  Peter Steinberger joined OpenAI (Feb 2026) + Omacom Foundation ($1M each with Drew Houston),
+  SecurityScorecard data (US 18.7k vs CN 17.0k as of 8/29) refuting "China usage 2x US" claim,
+  JPMorgan cloud revenue growth deceleration forecast. updated: 2026-05-31 -> 2026-09-01
+- `entities/minimax.md` — updated: new section "MaxClaw × Alibaba Cloud 四条鸿沟" (from ChinAI #355
+  re-feature / Synced article): 安全边界 (ACS Agent Sandbox isolation), 状态波动, 多头调度, 成本张力;
+  ACK/ACS as "cloud-native OS for AI supercomputer"; IDC: inference = 47% of token usage/API calls.
+  updated: 2026-08-25 -> 2026-09-01
+
+### Skip
+- 4x ChinAI #373 page URL variants (ac9e0250 / c422a547 / ce83e96d / 1c57f3fd) — same content hash
+- STRIKE exposed-instance tracking page (6e00b328) — live dashboard, no durable Chinese-AI facts
+- 马年中国 disclaimer PDF (dc72337e) — Morgan资产管理 legal boilerplate only
+- STRIKE/CVE item relevance note: mentions "Hermes Agent gateway" exposure; logged here only, no
+  wiki claim (single-source security-scanner dashboard, unverified).
