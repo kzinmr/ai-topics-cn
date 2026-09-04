@@ -1,7 +1,9 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-09-01
+最終更新: 2026-09-04
 エンティティ: 65, コンセプト: 121, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-09-04 Active Crawl: Qwen 静穏期確認）
+- `entities/qwen.md` — **更新**: 「2026年8月28日〜9月3日の状況」節追加。OpenLM.ai公式ページ直接取得でQwen3.8記述が8/2のまま無更新=Qwen4.0正式版未リリースを一次確認。掘金のQwen3.8-Max EC資料チェック実用例（3日連続再収集）とV2EX DGX SparkローカルLLM比較（9/3）を記録
 ### 本日更新（2026-09-01 Split Crawl Ingest: WeMM-Embedding开源 / 豆包工作Agent）
 - `entities/tencent-hunyuan.md` — **更新**: 「WeMM-Embedding オープンソース化」セクション追加。微信生産環境（视频号/公众号/朋友圈）使用の多モーダル埋め込みモデルWeMM-EmbeddingのOSS化報告（2B版が阿里8Bと互角とされる、未検証）。騰訊のモデル群多様化と「微信×AI」開放の兆候として記録
 - `concepts/doubao.md` — **更新**: 「豆包工作Agent正式发布」言及を追加。豆包のAgent/オフィス用途製品化を8/30「チャット→Agentプラットフォーム転換論」の続報として補強

@@ -43,7 +43,20 @@
 |
 |
 |
-## [2026-09-01] nightly-report-fix | 蒸留争点の集約と欠損ページ補完
+|## [2026-09-04] active-crawl | Qwen deepdive (静穏期確認) + Tencent-Hunyuan/DeepSeek 見送り判断
+|
+|### Wiki更新
+|- `entities/qwen.md` — **更新**: 「2026年8月28日〜9月3日の状況」節を追加。OpenLM.ai公式ページ直接取得(9/4)でQwen3.8ページが8/2日付のまま無更新=Qwen4.0正式版未リリースを一次確認。掘金のQwen3.8-Max EC資料チェック事例(3日連続再収集)とV2EX DGX SparkローカルLLM比較(9/3)を記録。frontmatter updated→2026-09-04
+|
+|### 調査・見送り判断
+|- `tencent-hunyuan` — **更新なし(新規情報なし)**: last_crawled 8/30(4日前)で3日ルール未達+Hy3.正式版リリース確認できず。Bing検索が外国語フォーラム混入で無効化(クエリ汚染)。9/1〜3クロールdigestに混元新規なし。
+|- `deepseek` — **対象外**: last_crawled 9/1(3日未満)。9/3 V2EXのDGX Sparkローカル比較はdeepseekではなくqwen側で記録済み。
+|- `china-ai-regulation`(medium) — **対象外**: 同日06:00のcrawl-triage cronが既にdeep-dive済み(china-ai-regulation.md 58行更新・commit 9f2f36d)。重複回避。
+|
+|### hot-topics.yaml更新
+|- `qwen`: last_crawled 2026-08-27→2026-09-04、notesに静穏期確認を prepend
+|
+|## [2026-09-01] nightly-report-fix | 蒸留争点の集約と欠損ページ補完
 
 ### 背景
 - 夜間レポート生成時に、working tree の triage 成果（China AI Bulletin 9 / ChinAI #372 ベース、2026-08-22〜25 付）で `[[model-distillation]]` への参照リンクが多数先行している一方、実体ページが未作成（dangling link）であることを検出。

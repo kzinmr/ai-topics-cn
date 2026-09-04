@@ -1,7 +1,7 @@
 ---
 title: Qwen（通义千问）— 阿里云大模型旗舰
 created: 2026-04-17
-updated: 2026-08-27
+updated: 2026-09-04
 tags: [llm, model, china, open-source-ai, alibaba, qwen, agentic-coding, ai-infrastructure, qwen3.7, qwen3.8, agent-era, qwen-image-3, tts]
 aliases: ["Qwen", "通义千问", "qwen", "Qwen3.5", "Qwen3-Coder", "Qwen3.6", "Qwen3.6-Plus", "Qwen3.6-27B", "Qwen3.6-35B-A3B", "Qwen3.7-Max", "Qwen3.7-Plus", "Qwen3.8-Max", "千问云", "Qianwen Cloud", "千問办公"]
 source_lang: zh-CN
@@ -1124,6 +1124,14 @@ Alibaba Qwenチーム関連論文として、China AI Bulletin 9がハイライ�
 - **静穏期の継続**: 上記以外にQwen固有のメジャーリリース・価格改定なし。Qwen4.0・Qwen Code v0.17.x安定版は未リリース（計90日以上）。
 
 **出典**: Juejin 8/26（大厂码农老A）[T1]、OpenLM.ai 公式 Qwen3.8 ページ（2026-08-27確認）[T1]
+
+### 2026年8月28日〜9月3日の状況
+
+- **公式一次情報による静穏期確認（9/4・OpenLM.ai 直接取得）**: OpenLM.ai の Qwen3.8 公式ページ（9/4再取得）の日付は依然 **2026-08-02** のまま更新なし。Qwen 3.8-Max（2.4T、Qwen-Max級ウェイト公開は初）および **Qwen3.8-Flash-Next**（Qwen4アーキテクチャの先行プレビュー・ハイブリッド Gated DeltaNet + Gated Attention 設計・`reasoning_effort`/`preserve_thinking` による思考制御）の公式記述に8月下旬以降の変更はなし。**Qwen4.0 正式版は 9/4 時点でも未リリース**。
+- **開発者コミュニティでの適用事例（9/1〜3・継続報道）**: 掘金「我用 Qwen3.8-Max 搭了一个电商商品资料包体检助手，6 份资料和 1 张商品图一次查出 27 个问题」（一只牛博、9/1〜3に3日連続でクロール再収集）——6資料+商品画像1枚から27件の問題を検出するEC商品資料チェック事例。Qwen3.8-Maxリリース後のマルチモーダル実用事例としてコミュニティに浸透中。
+- **ローカル推論比較での継続登場（9/3・V2EX）**: 「2 台 DGX Spark 上运行的本地 LLM 横向对比」(ldm0, v2ex.com/t/1239350) で DeepSeek と並び Qwen 系がローカル比較対象として言及。固有の大型リリース・価格改定は上記期間なし。
+
+**出典**: OpenLM.ai 公式 Qwen3.8 ページ（2026-09-04直接取得）[T1]、daily-digest 2026-09-01〜09-03（掘金・V2EX）[T1]
 
 ### 外部ソース
 
