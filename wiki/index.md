@@ -2,6 +2,9 @@
 
 最終更新: 2026-09-05
 エンティティ: 65, コンセプト: 121, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-09-05 Crawl Triage: GPT-6 Astra）
+- `entities/openai.md` — **更新**: 「GPT-6（Astra）リリースと中国開発者コミュニティの反応（2026-09-05）」節追加。思維鎖効率路線への転換（V2EX実測「新的O1时刻」、未検証）、发布当晚三方宕機、Scout語彙ロックイン事例
+- `concepts/gpt.md` — **更新**: バージョン表・トレンド表にGPT-6 (Astra)反映。LLM-triage失敗（context長超過）のため人手トリアージ。候補60件のうちtake実質2クラスタ（GPT-6反応群）、残りは重複再収集・暂无内容为無きskip
 ### 本日更新（2026-09-05 Active Crawl: DeepSeek/Local-Deploy）
 - `entities/deepseek.md` — **更新**: 9/1-4状況セクション（Harnessプラグイン実運用、DGX Spark比較、V4 Flash未検証報告）
 - `concepts/china-local-deployment.md` — **更新**: 8/22-24トレンド（Qwen3.8-27Bローカル、ANTE GGUF-native Coding Agent、EvoX）

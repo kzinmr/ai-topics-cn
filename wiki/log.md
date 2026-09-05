@@ -44,6 +44,23 @@
 |
 |
 |
+|## [2026-09-05] crawl-triage | GPT-6 (Astra) release reaction — manual triage (LLM-triage failed)
+|
+|### 経緯
+|- LLM-triage失敗（Context length exceeded 31,864 tokens / case b、triageデータなし）。チェックポイント20260905T210220Zの候補60件を人手トリアージ
+|- wechat-media 53件は大半が09-04/09-05の相互重複（同一content hash 2部ずつ）+ 旧記事再収集（AI00榜単=2017年記事、AI闪讯=3月分、AI每日摘要=3月分等、本文なしプレビューのみ）。v2ex 7件は暂无内容/代充相談/軽微スレッドで新規性なし
+|
+|### Wiki更新
+|- `entities/openai.md` — **更新**: 「GPT-6（Astra）リリースと中国開発者コミュニティの反応」節追加。Astraの思維鎖効率転換（V2EX実測: 40分/reasoning 2万token未満、「新的O1时刻」論、未検証）、发布当晚三方宕機4時間、Scout語彙ロックイン事例
+|- `concepts/gpt.md` — **更新**: バージョン表にGPT-6 (Astra)行、トレンド表に09-04/09-05行追加。aliasesにGPT-6/Astra追加
+|
+|### Skip内訳
+|- wechat-media 53: 重複再収集（AI00榜単2017/LiteLLM闪讯3月/AI每日摘要3月/達摩院SpokenWOZ・复旦NLP综述等は既存ページカバー済みかプレビューのみ）
+|- v2ex 7: 暂无内容・代充相談・軽微雑談
+|- juejin候補外: GPT6反応記事群はopenai.md側で集約記録（個別ページ化不要、個人実感ベースのため）
+|
+|
+|
 |## [2026-09-05] active-crawl | DeepSeek / China-Local-Deployment / Vibe-Coding
 |
 |### Wiki更新
