@@ -1,7 +1,7 @@
 ---
 title: "中国大模型本地部署 — 量子化・VRAM最適化・消費者GPUでの推論"
 created: 2026-04-19
-updated: 2026-08-15
+updated: 2026-08-25
 tags: [inference, quantization, local-deployment, hardware, vram-optimization, china]
 aliases: ["本地部署", "国产模型本地运行", "VRAM优化", "量化技术", "GGUF", "GPTQ", "AWQ"]
 source_lang: zh-CN
@@ -650,3 +650,30 @@ V2EXで「公司本地部署开源模型」スレッド（スコア54）。20〜
 AI閃訊ニュースレターで「AI推理走向分布式」が報道。大規模モデル推論の分散化ニーズが増加。DeepSeek API値上げ（8/6）がローカルデプロイ加速の追い風に。
 
 > **出典**: WeChat — AI閃讯ニュースレター（2026-08-08）[T3]
+
+## 2026年8月22日〜24日の動向
+
+### Qwen3.8-27B — 個人PCで「token自由」を実現するローカルモデル（8月22-23日）⭐
+
+stormzhangV（張志軍系）が「这个本地模型，让我 token 自由了」で、Qwen3.8-27Bをローカル実行してAPI費用をゼロにする実践レポートを公開（8/22）。
+
+- **要点**: 旗艦級Agent能力が個人PCに。ローカル実行でAPIコストゼロだが、速度・メモリ・長時間タスク体験には依然として明確なハードル
+- **補足**: 別スレ（甲维斯、8/23）では「Opus5がQwen3.8 27BのClaude Codeローカル接入BUGを自律解決」という報告も。ローカル27Bモデル×Coding Agentの相性がコミュニティで検証フェーズに
+- **位置づけ**: DeepSeek V4 Flash（80GB Q4、RTX 5090単体圏内、8/10 Pi実践報告）に続く、27Bクラス「個人PCローカル」の主流化事例
+
+> **出典**: Juejin — [这个本地模型，让我 token 自由了](https://juejin.cn/post/7676709710489419786)（2026-08-22）[T2]; Juejin — [Opus5自主解决Qwen3.8 27B本地接入Claude Code的BUG](https://juejin.cn/post/7676110932394082347)（2026-08-23）[T2]
+
+### ANTE — ローカルGGUFネイティブ対応Coding Agent（8月22日）
+
+V2EXで**ANTE**（ローカルGGUFをネイティブサポートするCoding Agent）が言及。
+
+- **実績**: Qwen3.6 27Bで「TB 2.1」ベンチマーク56.2%を達成
+- **意義**: llama.cpp系GGUFを「推論用」ではなく「Coding Agent用」として第一級市民扱いする方向性。ローカル推論フレームとAgent Harnessの境界が融合
+
+> **出典**: V2EX — [ANTE：原生支持本地 GGUF 的 Coding Agent](https://www.v2ex.com/t/1236484)（2026-08-22）[T2]
+
+### 総合モデル比較のローカル/セルフホスト文脈（8月24日）
+
+「爽用 DeepSeek V4 Flash、GLM-5.2、Qwen3.8 Max、GPT-5.6 Sol，EvoX 够猛」— 複数モデル×EvoX（統合ツール）での使い心地比較。ローカル/セルフホスト環境でのモデル選択が「価格比較」から「体験比較」へ移行。
+
+> **出典**: Juejin — [爽用 DeepSeek V4 Flash、GLM-5.2、Qwen3.8 Max、GPT-5.6 Sol，EvoX 够猛](https://juejin.cn/post/7677124067654893622)（2026-08-24）[T2]

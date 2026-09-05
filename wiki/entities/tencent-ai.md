@@ -1,7 +1,7 @@
 ---
 title: Tencent AI (騰訊AI) — 中国テック巨人のAI戦略
 created: 2026-04-18
-updated: 2026-04-28
+updated: 2026-08-23
 tags: [company, ai, china, tech-giant, tencent]
 aliases: ["Tencent AI", "騰訊AI", "Tencent", "腾讯"]
 source_lang: zh-CN
@@ -43,6 +43,7 @@ Tencent（騰讯）は中国最大のソーシャルメディア・ゲーム企�
 - 長文要約、コード生成、画像理解、会議サポート
 
 ### B端/開発者向け
+- **TDesign（AI開発者向け統合パッケージ, 2026-08-22）**: 前端コンポーネント群（TDesign）が、CLIスキャフォールディング＋MCP＋Chatbotスマート対話コンポーネントを一体化したパッケージを開源。AIコーディングツール（Cursor等）と連携する「UI生成〜Agent連携」までのチェーンを揃えた、中国前端フレームワーク群の中でも差別化される構成。Juejin「腾讯又开源了一个新项目，用起来真优雅！」（MacroZheng、8/21）。
 - **CodeBuddy**: AIコーディングアシスタント
 - **WorkBuddy**: 企業向けAIワークフロー
 - **腾讯云TokenHub**: 混元APIプラットフォーム（¥1.2/百万tokens〜）

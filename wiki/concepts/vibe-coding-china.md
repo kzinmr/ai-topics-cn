@@ -223,6 +223,9 @@ Claude Code・Cursor API・Gemini CLIのデフォルトエンドポイントは�
 
 **解決策**: API仲介プラットフォームは公式より寛容なRPM/TPM制限を提供。
 
+### 3. OS/プラットフォーム摩擦（2026年8月追加）
+- **Windowsが不利という議論（2026-08-22）**: V2EX「感觉 Vibe Coding 时代，Windows 系统要凉了」（LimaEcho、8/22、DeepSeek/claudeタグ）— 中国開発者コミュニティで、AIコーディングAgent（Claude Code・DeepSeek Harness等）のエコシステムがmacOS/Linux（ターミナル・開発者ワークフロー前提）に最適化されているため、**Vibe Coding時代のWindowsが相対的に不利になる**という指摘が浮上。Agent基盤（Cordis/TS・Node系）やCLI中心のツール群がLinux/macOSに寄り添う設計のため、Windowsユーザは互換レイヤ（WSL等）を挟む摩擦が大きいとされる。プラットフォーム選好の分岐として継続追跡。
+
 ## Vibe Codingの課題と将来
 
 ### 中国開発者コミュニティで指摘される課題

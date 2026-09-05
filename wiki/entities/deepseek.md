@@ -1,7 +1,7 @@
 ---
 title: DeepSeek — 中国オープンソースLLM企業
 created: 2026-04-17
-updated: 2026-06-04
+updated: 2026-09-05
 tags: [company, llm, model, china, open-source-ai, deepseek, v4, ascend, funding, series-a, huawei, coding-plan]
 aliases: ["DeepSeek", "深度求索", "deepseek"]
 source_lang: zh-CN
@@ -241,6 +241,26 @@ ChinAI #356は2つの技術的要素に注目:
 > **出典**: Juejin — [DeepSeek V4来了](https://juejin.cn/post/7632479254718971955) [T1]
 > **出典**: 36kr — [算力通胀元年](https://36kr.com/p/3770191910208001) [T1]
 
+## DeepSeek V4-Flash-0731 — 正式GAリリース（2026年7月31日）
+
+China AI Bulletin 9（SAIF, 2026-08-24）によると、DeepSeekは7月31日にV4-Flashプレビューを**DeepSeek-V4-Flash-0731**として正式公開。304BパラメータMoE（トークンごとに一部のパラメータのみ活性化）、**MITライセンス**のオープンウェイト、パブリックベータAPI。アーキテクチャはプレビュー版から変更なしで**DSparkスペキュラティブデコーディングモジュール**を維持するが、追加のポストトレーニングによりエージェント性能が大幅向上。
+
+- **Terminal-Bench 2.1**（ターミナルベースエージェントタスク）: V4-Flash-0731 = **82.7** vs Flashプレビュー 61.8 / V4-Proプレビュー 72.1 / Claude Opus 4.8 = 85.0
+- API更新はV4-Flashのみ。V4-ProやWeb/モバイルアプリのモデルは更新されない
+- V4-Flash系は昇騰950対応路線の小型高速モデルとして、エージェント実務向けの主力候補に
+
+> **出典**: China AI Bulletin 9（SAIF, Substack 2026-08-24）[T1]; chinai-newsletter raw `substack.com--redirect-a9103d37-3c0e-4817-be5b-554b32fa2462--6a720a64.md`
+
+## 蒸留（distillation）争点とR1の蒸留実績（2026年8月）
+
+晩点LatePost（程曼祺、2026-08-13、Jeff Ding翻訳版をChinAI #372が併載）が中国AI企業約10社の実務者インタビューで再構築した蒸留論争の中で、DeepSeekは二つの重要な位置にいる（詳細は [[model-distillation]]）：
+
+- **R1蒸留の先例効果**: 2025年初のDeepSeek-R1リリースで671B教師モデルから6つの小型蒸留モデル（Qwen2.5ベース4・Llama 3ベース2、1.5B〜70B）を公開し、「社区がより良い小型モデルを蒸留することを助ける」と全Chain of Thoughtを公開。その後「誰が誰のChain of Thoughtを解読したか」が蒸留論争の常套句に
+- **RLより蒸留が効くという実証**: R1技術報告の制御実験（Qwen2.5-32Bベース）で、1万ステップ超の大型RLはAIME 2024で**47.0%**だが、R1生成データ80万件でSFTしたモデルは**72.6%**（+25.6pt）。「より大きなモデルの推論パターンをより小さいモデルに蒸留できる」ことは、小型・弱小型モデルの推論能力を向上させる経済的・決定論的な経路として提示
+- **「工業規模蒸留攻撃」の被名指称先**: Anthropicは2026年2月・6月にDeepSeek・Moonshot・MiniMax・Alibaba Qwenが約5万の虚偽アカウントでClaudeと4,480万以上のインタラクションを行い能力抽出を試みたと主張。米側はこれを知財窃取（Google GTIG）/国家安全問題として位置づけ、Qiushi（求是）系論文が反論。関連する規制・外交動向は [[china-ai-regulation]]「2026年8月」セクションを参照
+
+> **出典**: 晚点LatePost「How (some) Chinese AI Practitioners View Model Distillation」（ChinAI #372 翻訳併載, 2026-08-24）raw `substack.com--redirect-e9e590d1-7a6e-4173-835a-141fe1b5224c--6bfb2968.md`; China AI Bulletin 9 raw `substack.com--redirect-a9103d37-3c0e-4817-be5b-554b32fa2462--6a720a64.md`
+
 ## DeepSeek多モーダル技術 — Thinking with Visual Primitives（2026年5月）
 
 ### 概要
@@ -371,6 +391,16 @@ ChinAI #356は2つの技術的要素に注目:
 > **出典**: Zhihu Frontier Weekly (2026-06-02) — [700亿元资金調達](https://www.zhihu.com/question/2041154123677126717)
 > **出典**: Zhihu — @李明殊: キャッシュヒット率99%分析
 > **出典**: Zhihu — @AI解码师: 梁文鋒200億元出資分析
+
+## 2026年9月1日〜4日の状況（Active Crawl 2026-09-05）
+
+大型リリースはなし（V4-Flash-0731 / V4-Pro 体制が継続）。コミュニティ側の運用知見が中心。
+
+- **Harness插件（プラグイン）エコシステムの実践記事**: 掘金で Harness プラグイン一覧・Agent ルーティング・sandbox 隔離戦略・sub-agent ワークフローを扱う実務記事が複数共有され、8/13 の dsh OSS 公開後の「実運用フェーズ」が定着しつつあることを示唆。
+- **ローカル比較での存在感**: V2EX（9/3）の DGX Spark 環境でのローカル LM 比較で DeepSeek が代表モデルとして言及（Qwen と並列）。K3 開放後の低ハードル路線の一環。
+- **V4 Flash 品質報告（未検証）**: V2EX で V4 Flash の挙動不安定を指摘する報告あり。単一ソース・公式確認なしのため事実として断定しない。
+
+> **出典**: 日次ダイジェスト 2026-09-01〜09-04（v2ex / juejin）— ローカルクロールデータに基づく（ライブ Web 検証は行わず）
 
 ## 関連リンク
 

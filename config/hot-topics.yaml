@@ -49,9 +49,9 @@ topics:
       - "DeepSeek V4-Flash-Vision-Exp 視覚モデル 8月"
     wiki_pages:
       - concepts/deepseek
-    notes: "2026.08.26更新: V4-Flash-Vision-Exp(8/21静かな公開/掘金8/22報道)の検証フェーズが深化(8/24視覚モデルテスト記事)。V4.1公式リリースは8/25時点でも未確認。Harnessエコシステムは8/22-23で実運用フェーズ移行(§30記載済み)。 2026.08.16更新: Harness(dsh) OSS公開(8/13/MIT/v0.1/一切皆プラグイン/Cordisフレームワーク/595プラグイン)。V4-Pro正式版リリース(8/13/1.6T/1Mコンテキスト/MoE)。API全体値上げ8/17発動(キャッシュヒット6倍/出力2.3倍/ピーク/オフピーク制度)。V4.1未リリース(8/16現在)。"
+    notes: "2026.09.05更新: 9/1-4大型リリースなし。Harnessプラグイン実運用記事複数(掘金)、V2EX DGX Sparkローカル比較で言及(9/3)、V4 Flash挙動不安定報告(V2EX/未検証)。wiki §9月1-4日状況追記。 2026.08.26更新: V4-Flash-Vision-Exp(8/21静かな公開/掘金8/22報道)の検証フェーズが深化(8/24視覚モデルテスト記事)。V4.1公式リリースは8/25時点でも未確認。Harnessエコシステムは8/22-23で実運用フェーズ移行(§30記載済み)。 2026.08.16更新: Harness(dsh) OSS公開(8/13/MIT/v0.1/一切皆プラグイン/Cordisフレームワーク/595プラグイン)。V4-Pro正式版リリース(8/13/1.6T/1Mコンテキスト/MoE)。API全体値上げ8/17発動(キャッシュヒット6倍/出力2.3倍/ピーク/オフピーク制度)。V4.1未リリース(8/16現在)。"
     added: 2026-04-17
-    last_crawled: 2026-08-26
+    last_crawled: 2026-09-05
 
   - slug: qwen
     title: "Qwen (通义千问) — Alibaba"
@@ -319,9 +319,9 @@ topics:
       - "TriAttention v0.2.0 GA"
     wiki_pages:
       - concepts/china-local-deployment
-    notes: "2026.08.15更新: DeepSeek V4 Pro正式版(8/12-13/1.6T/MoE/1Mコンテキスト)。DeepSeek Harness OSS公開(8/13/MIT/プラグイン型)。Pi+V4 Flash実践(8/10/RTX5090動作可)。KV Cache技術解説(8/10)。企業ローカルデプロイ議論(8/14/V2EX)。AI推論分散化トレンド(8/8)。2026.08.09更新: Kimi K3×AMD MI300Xデプロイ実証(8/4/8枚で動作/VRAM>算力)。AirLLM 3.7GB VRAMでK3実行(8/3)。DeepSeek V4 Flashローカル構成議論(8/6/V2EX)。DeepSeek API値上げ予告(8/6/ローカルデプロイ加速)。Kimi Code Computer Use対応(8/8)。Qwen3ローカル微調+Docker(8/8)。MiniMax H3オープンソース化(8/3)。LiteLLM脆弱性警告(8/2)。2026.08.02更新: Kimi K3 OSS化(2.8T)。DeepSeek V4 Flash正式版(7/31)＆V4正式版。梁文鋒秘録。ローカルデプロイコスト論争。火山引擎veStack K3 Day0適配。"
+    notes: "2026.09.05更新: 8/22-24トレンド(Qwen3.8-27Bローカル/token自由/ANTE GGUF-native Coding Agent TB2.1 56.2%/EvoX比較)をwiki追記済み。9/1-4ダイジェストはDGX Spark比較等の散発言及のみで大型新規なし。 2026.08.15更新: DeepSeek V4 Pro正式版(8/12-13/1.6T/MoE/1Mコンテキスト)。DeepSeek Harness OSS公開(8/13/MIT/プラグイン型)。Pi+V4 Flash実践(8/10/RTX5090動作可)。KV Cache技術解説(8/10)。企業ローカルデプロイ議論(8/14/V2EX)。AI推論分散化トレンド(8/8)。2026.08.09更新: Kimi K3×AMD MI300Xデプロイ実証(8/4/8枚で動作/VRAM>算力)。AirLLM 3.7GB VRAMでK3実行(8/3)。DeepSeek V4 Flashローカル構成議論(8/6/V2EX)。DeepSeek API値上げ予告(8/6/ローカルデプロイ加速)。Kimi Code Computer Use対応(8/8)。Qwen3ローカル微調+Docker(8/8)。MiniMax H3オープンソース化(8/3)。LiteLLM脆弱性警告(8/2)。2026.08.02更新: Kimi K3 OSS化(2.8T)。DeepSeek V4 Flash正式版(7/31)＆V4正式版。梁文鋒秘録。ローカルデプロイコスト論争。火山引擎veStack K3 Day0適配。"
     added: 2026-04-17
-    last_crawled: 2026-08-15
+    last_crawled: 2026-09-05
 
   - slug: censorship-bypass
     title: "Censorship Bypass & Uncensored Models (审查绕过/去审查模型)"
@@ -508,7 +508,7 @@ topics:
       - concepts/vibe-coding-china
     notes: "2026.08.15更新: 8/6〜8/15に新規メジャーリリースなし(web検索不可のためローカルデータのみ)。8/6以前の動向(Amazon Claude Code 1215万元焼失事件等)は既に掲載済み。2026.08.06更新: Amazon Claude Code 1215万元焼失事件(7/31/予算860%超過)。Claude Code Token消費30倍差比較(7/31/Harness税概念定着)。GitHub AI Agent攻撃(8/4/プロンプトインジェクション)。OpenAI Astra数学証明限界(8/1-4/10題中一部駁回)。AI Engineering五代論(8/3/Prompt→RAG→Agent→Graph)。Agent構築コスト数十倍削減ツール(8/4/LlamaFactory作者OSS)。Anthropic反開源問題(8/3/Meta二軌道)。2026.07.31更新: Karpathy Anthropic離職疑惑(7/26/LinkedIn修改発見)。Kimi K3 OSS化(7/27-28/2.8T/黄仁勳力挺)。DeepSeek Harness Engineering内測開始(7/29/Model+Harness=Agent)。Claude Opus 5リリース(7/26/Fable5半額)。Anthropic Skills 80%削除→Context Engineering宣言(7/29)。Claude Code之父「Harness保質期半年」(7/30)。硅谷反Anthropic(7/30/契約者強制封印)。GCC AI生成コード禁止(7/30)。MCP 4億DL(7/29)。GPT-5.6 HFゼロデイ攻撃(7/27-29)。全球調用Top5が全て中国製品(7/28)。AlphaFoldチーム解散→Anthropic転職(7/29-30)。OpenAI HW路線図リーク(7/29)。2026.07.26更新: SpaceX Cursor買収。Mythos安全版公開。Fable 5。2026.06.09更新: Claude Code 100万行リライト。新パラダイム宣言。Anthropic 80%内製コード。wiki更新済み。"
     added: 2026-04-17
-    last_crawled: 2026-08-23
+    last_crawled: 2026-09-05
 
   - slug: china-ai-coding-assistants
     title: "Chinese AI Coding Assistants (国产AI编程助手)"
