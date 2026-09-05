@@ -43,6 +43,21 @@
 |
 |
 |
+|
+|## [2026-09-05] active-crawl | DeepSeek / China-Local-Deployment / Vibe-Coding
+|
+|### Wiki更新
+|- `entities/deepseek.md` — **更新**: 9/1-4状況セクション追加(Harnessプラグイン実運用/DGX Spark比較/V4 Flash未検証報告)
+|- `concepts/china-local-deployment.md` — **更新**: 8/22-24トレンド(Qwen3.8-27B/ANTE/EvoX)セクション追加
+|- `concepts/vibe-coding-china.md` — **更新**: 軽微追記
+|- `entities/tencent-ai.md` — **更新**: TDesign AI統合パッケージOSS(8/21-23)追記
+|
+|### hot-topics.yaml更新
+|- deepseek: last_crawled 2026-09-05
+|- china-local-deployment: last_crawled 2026-09-05
+|- vibe-coding-china: last_crawled 2026-09-05
+|- tencent-hunyuan: 見送り（混元memory workshop言及は単一事象の反復/新規情報薄）
+|
 |## [2026-09-04] active-crawl | Qwen deepdive (静穏期確認) + Tencent-Hunyuan/DeepSeek 見送り判断
 |
 |### Wiki更新

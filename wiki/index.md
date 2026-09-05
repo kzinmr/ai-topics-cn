@@ -1,7 +1,13 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-09-04
+最終更新: 2026-09-05
 エンティティ: 65, コンセプト: 121, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-09-05 Active Crawl: DeepSeek/Local-Deploy）
+- `entities/deepseek.md` — **更新**: 9/1-4状況セクション（Harnessプラグイン実運用、DGX Spark比較、V4 Flash未検証報告）
+- `concepts/china-local-deployment.md` — **更新**: 8/22-24トレンド（Qwen3.8-27Bローカル、ANTE GGUF-native Coding Agent、EvoX）
+- `concepts/vibe-coding-china.md` — **更新**: 軽微追記
+- `entities/tencent-ai.md` — **更新**: TDesign AI統合パッケージOSS追記
+- `config/hot-topics.yaml` — **last_crawled更新**: deepseek / china-local-deployment / vibe-coding-china
 ### 本日更新（2026-09-04 Active Crawl: Qwen 静穏期確認）
 - `entities/qwen.md` — **更新**: 「2026年8月28日〜9月3日の状況」節追加。OpenLM.ai公式ページ直接取得でQwen3.8記述が8/2のまま無更新=Qwen4.0正式版未リリースを一次確認。掘金のQwen3.8-Max EC資料チェック実用例（3日連続再収集）とV2EX DGX SparkローカルLLM比較（9/3）を記録
 ### 本日更新（2026-09-01 Split Crawl Ingest: WeMM-Embedding开源 / 豆包工作Agent）
