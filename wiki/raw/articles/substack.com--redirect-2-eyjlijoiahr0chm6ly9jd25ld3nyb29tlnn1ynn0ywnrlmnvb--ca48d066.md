@@ -1,0 +1,19 @@
+---
+title: "Semicon Series 1 | Google Is Building Its Own Nvidia. Its Chief Technologist Has Two Words for Taiwan"
+url: "https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9jd25ld3Nyb29tLnN1YnN0YWNrLmNvbS9wL3NlbWljb24tc2VyaWVzMS1nb29nbGUtaXMtYnVpbGRpbmctaXRzLW93bi1udmlkaWEtaXRzLWNoaWVmLXRlY2hub2xvZ2lzdC1oYXMtdHdvLXdvcmRzLWZvci10YWl3YW4_dXRtX2NhbXBhaWduPWVtYWlsLWhhbGYtcG9zdCZyPTJmbHg2JnRva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3lNVFF4TXpVek1UZ3NJbWxoZENJNk1UYzRPRFV4T1RVNU9Dd2laWGh3SWpveE56a3hNVEV4TlRrNExDSnBjM01pT2lKd2RXSXRNelF5TXpRd09DSXNJbk4xWWlJNkluQnZjM1F0Y21WaFkzUnBiMjRpZlEueXY1VkM3QmpnY2RHVXVqX2I4M09WazVwYXFuUlFBMjlJSTR1d1p0U0g1NCIsInAiOjIxNDEzNTMxOCwicyI6MzQyMzQwOCwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzg4NTE5NTk4LCJleHAiOjIxMDQwOTU1OTgsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.K4erb8PnZkxmE7N8pC8jHxlVsc-U5p6tNdz_FpLAknY?"
+fetched_at: 2026-09-05T07:00:51.520705+00:00
+source_date: 2026-09-04
+tags: [newsletter, auto-ingested]
+source_lang: zh-CN
+---
+
+# Semicon Series 1 | Google Is Building Its Own Nvidia. Its Chief Technologist Has Two Words for Taiwan
+
+Source: https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9jd25ld3Nyb29tLnN1YnN0YWNrLmNvbS9wL3NlbWljb24tc2VyaWVzMS1nb29nbGUtaXMtYnVpbGRpbmctaXRzLW93bi1udmlkaWEtaXRzLWNoaWVmLXRlY2hub2xvZ2lzdC1oYXMtdHdvLXdvcmRzLWZvci10YWl3YW4_dXRtX2NhbXBhaWduPWVtYWlsLWhhbGYtcG9zdCZyPTJmbHg2JnRva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3lNVFF4TXpVek1UZ3NJbWxoZENJNk1UYzRPRFV4T1RVNU9Dd2laWGh3SWpveE56a3hNVEV4TlRrNExDSnBjM01pT2lKd2RXSXRNelF5TXpRd09DSXNJbk4xWWlJNkluQnZjM1F0Y21WaFkzUnBiMjRpZlEueXY1VkM3QmpnY2RHVXVqX2I4M09WazVwYXFuUlFBMjlJSTR1d1p0U0g1NCIsInAiOjIxNDEzNTMxOCwicyI6MzQyMzQwOCwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzg4NTE5NTk4LCJleHAiOjIxMDQwOTU1OTgsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.K4erb8PnZkxmE7N8pC8jHxlVsc-U5p6tNdz_FpLAknY?
+
+Hello everyone,
+The biggest event in Taiwan’s semiconductor industry this week was Semicon Taiwan 2026, Asia’s largest semiconductor equipment show, held in Nangang. This year’s event was bigger than ever.
+Over the course of just five days, a number of important figures who had rarely, if ever, appeared publicly took the stage, while significant developments that had never previously been disclosed came to light.
+With so much happening at once, I decided to break with my usual routine and publish three newsletters in succession after Semicon.
+Each will examine Google, MediaTek, and TSMC, respectively, drawing on what senior executives from the three companies revealed across technical forums and keynote speeches
+—both the major trends they highlighted and the little-known industry dynamics behind them.
