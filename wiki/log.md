@@ -3820,3 +3820,11 @@ Originating conversation: (scheduled cron)
 ### Verification against git
 - 8/31 triage commit 2f488d8 and 9/1 newsletter commit 37cdbe6 confirmed; no overlap with the two
   take items above.
+
+## [2026-09-05] newsletter-triage | Tech Taiwan (Semicon Series 1)
+
+- 全6件skip: Tech Taiwan(陳良榕コラム)の同一記事をSubstackリダイレクトURL違いで6件再収集。
+  1件はプロフィールページ(139文字)のみ。スクレイプ本文は3部作の予告パートだけで本編データなし。
+- 永続トピック(Google TPU vs Nvidia戦略)は concepts/semiconductor-packaging と entities/mediatek に既存カバー。
+- 後続のSeries 2以降が本文付きで配信された時点で再評価。
+- raw/digest 7ファイルを inbox コミット 9757e52 として保存。
