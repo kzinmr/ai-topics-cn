@@ -1,7 +1,7 @@
 ---
 title: OpenAI — AI研究企業
 created: 2026-04-17
-updated: 2026-08-31
+updated: 2026-09-05
 tags: [company, lab, gpt, openai, codex]
 aliases: ["OpenAI", "openai", "GPT", "Codex"]
 source_lang: zh-CN
@@ -404,3 +404,21 @@ GPT-5.5とDeepSeekは**全く異なる競争カテゴリ**に位置すると分�
 
 > **出典**: 知乎 Frontier Weekly — [AI Reasoning, Agents, and Infrastructure Race](https://substack.com/@zhihufrontier) [T2]
 > **出典**: 知乎 — chenqin分析](https://www.zhihu.com/question/2037925163765691524) [T2]
+
+
+## GPT-6（Astra）リリースと中国開発者コミュニティの反応（2026-09-05）
+
+2026年9月4日前後、OpenAIが**GPT-6**（代号 **Astra**）をリリースした。バージョン番号はGPT-5.6から直接6へ飛び、中国コミュニティでは「AGI」発言と併せて大きな話題となった。リリース当晚にChatGPT・Claude・Grokが同時に約4時間宕機したことも報じられている（単点故障への警戒論、未検証）。
+
+**V2EXでの「新しいO1時刻」論争（2026-09-05、スコア24）**:
+- ユーザーmaolonの実測レポートによれば、Astraは複雑なゲーム生成プロジェクトを**約40分・総トークン約835万（うちreasoningトークン2万未満）**で完了。コンテキスト258kでcompact2回のみ
+- 結論: 「GPT-5.4以来続いた長思維鎖依存で性能を高める路線が完全に変わった」。O1のTest-Time Scaling則以来、**思維鎖効率が最も高いモデル**であり、「線形に思維鎖を伸ばさなくても大幅な性能向上を達成できる」ことを実証した、との評価
+- 単一ソースの実測報告であり、ベンチマーク的な検証は未確認（未検証）
+
+**周辺反応**:
+- 掘金では「GPT6真的是AGI」「我要吹爆GPT6」「Gemini锐评GPT6（泼冷水）」等多数の実測・反応記事が短期間に集中（全て個人実感ベース）
+- V2EXでは「Scout 是不是一个常用语」スレッドが話題に: GPT系ツールが使う「scout（仓库扫描）」という隠語をDeepSeek flashが理解できず10分間空回りした体験談で、**モデル固有の語彙依存＝ツールエコシステムへのロックイン**の具体例として注目
+
+> **出典**: V2EX — [GPT-6 Astra - 新的 O1 时刻](https://www.v2ex.com/t/1239617) [T1]
+> **出典**: V2EX — [Scout 是不是一个常用语](https://www.v2ex.com/t/1239571) [T1]
+> **出典**: 掘金 — [GPT-6 发布当晚，三大 AI 集体宕机 4 小时](https://juejin.cn/post/7681475476906950691) [T1]

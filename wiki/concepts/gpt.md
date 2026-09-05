@@ -1,9 +1,9 @@
 ---
 title: "GPT — OpenAIの言語モデルシリーズ"
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-09-05
 tags: [concept, model, llm, gpt, openai, chatgpt]
-aliases: ["GPT", "gpt", "ChatGPT", "chatgpt", "GPT-5", "GPT-5.5", "GPT-4", "GPT-4o", "GPT-3.5", "GPT Image"]
+aliases: ["GPT", "gpt", "ChatGPT", "chatgpt", "GPT-5", "GPT-5.5", "GPT-6", "Astra", "GPT-4", "GPT-4o", "GPT-3.5", "GPT Image"]
 source_lang: zh-CN
 ---
 
@@ -30,6 +30,7 @@ GPT（Generative Pre-trained Transformer）はOpenAIが開発する大規模言�
 | **GPT-4.5** | 2026年 | 推論特化モデル。GPT-5の技術検証 |
 | **GPT-5** | 2026年（推定） | 次の次世代フラグシップ |
 | **GPT-5.5** | 2026年4月（漏洩） | Codex内部テスト環境からリーク |
+| **GPT-6 (Astra)** | 2026年9月 | 思維鎖効率路線へ転換。「新しいO1時刻」と評価（V2EX実測、未検証） |
 
 ### GPT-5.5漏洩事件（2026-04-23）
 
@@ -170,6 +171,8 @@ GPT-4o以降、画像・音声入力・出力をネイティブにサポート�
 | 04-23 | **GPT-5.5漏洩事件** — Arcanine, 海森堡, Glacier |
 | 04-24 | **GPT-5.5正式評価** — 全榜第一、Opus 4.7を圧倒 |
 | 04-24 | **GPT 6.0待機議論** — V2EXで「gpt 6.0到底什么时候发布」 |
+| 09-04 | **GPT-6（Astra）リリース** — 5.6→6のダイレクトジャンプ、发布当晚三方宕機 |
+| 09-05 | **Astra「新的O1时刻」论争** — reasoning token效率での路线転換（V2EX実測） |
 
 ## 関連概念
 
