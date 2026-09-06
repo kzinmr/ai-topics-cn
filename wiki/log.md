@@ -44,6 +44,24 @@
 |
 |
 |
+|## [2026-09-06] crawl-triage | GPT-6 Astra続報 / DeepSeek Harnessエコシステム — manual triage (LLM-triage failed)
+|
+|### 経緯
+|- LLM-triage失敗（Context length exceeded 32,538 tokens / case b、triageデータなし）。チェックポイント20260906T090159Zの候補60件を人手トリアージ
+|- 候補60件はcontent hash重複排除で実質8unique。wechat-media 53件は全て同一旧記事（AI00榜単=2017年記事、hash aafeba3f）の再収集、v2ex 7件は04月〜07月の旧スレッドで新規性なし
+|- 当日inbox（juejin/v2ex 2026-09-06、45ファイル、重複除き約25unique）を直接列挙して自前トリアージ
+|
+|### Wiki更新
+|- `entities/openai.md` — **更新**: 「続報（2026-09-06）: 混乱への公式対応とBYOK封鎖」節追加。奥特曼謝罪・全プラン提供完了（本文プレビューのみ=未検証）、Pro 20x OSS貢献者無料提供と破甲封鎖（V2EX）
+|- `concepts/harness-engineering.md` — **更新**: 「DeepSeek Harness周辺エコシステムの成熟」追記。源码解读シリーズ8+回連続・15款プラグイン・Demo→生産記事の集中＝概念論争→実装文化への移行兆候
+|
+|### Skip内訳
+|- wechat-media 53: 同一旧記事（2017年AI00榜単）の重複再収集
+|- v2ex候補7: 04〜07月旧スレッド（暂无内容・軽微雑談）
+|- juejin/v2ex当日分の大半: GPT-6反応（AGI論争・小遊戯実測・22h3reset科普サイト等）は個人実感ベースでopenai.md既存節に集約済み、個別化不要。求職/面接・量化入門・学習路線等のチュートリアル・雑談類
+|- Kimi K3ローカル導入（三千万円）記事: frontmatter日付7/27の旧記事再収集かつジョーク記事のためskip
+|
+|
 |## [2026-09-05] crawl-triage | GPT-6 (Astra) release reaction — manual triage (LLM-triage failed)
 |
 |### 経緯
