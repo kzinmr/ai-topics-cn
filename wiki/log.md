@@ -60,6 +60,21 @@
 |- v2ex候補7: 04〜07月旧スレッド（暂无内容・軽微雑談）
 |- juejin/v2ex当日分の大半: GPT-6反応（AGI論争・小遊戯実測・22h3reset科普サイト等）は個人実感ベースでopenai.md既存節に集約済み、個別化不要。求職/面接・量化入門・学習路線等のチュートリアル・雑談類
 |- Kimi K3ローカル導入（三千万円）記事: frontmatter日付7/27の旧記事再収集かつジョーク記事のためskip
+
+
+|## [2026-09-06] crawl-triage(2) | GPT-6 Astra 安全性・課金・ベンチマーク続報 — manual triage (LLM-triage failed)
+|
+|### 経緯
+|- LLM-triage失敗（Context length exceeded 34,383 tokens / case b、triageデータなし）。チェックポイント20260906T210132Zの候補60件を人手トリアージ
+|- 候補60件はcontent hash重複排除で実質8unique。wechat-media 53件は全て同一旧記事（AI00榜単=2017年記事、hash aafeba3f）の再収集、v2ex 7件は旧スレッドで新規性なし
+|- 当日inbox（73ファイル）を直接列挙。大半は同日午前の手動トリアージ（コミット00065b9）でopenai.md/harness-engineering.mdに集約済みのGPT-6 Day-2反応・チュートリアル・雑談
+|
+|### Wiki更新
+|- `entities/openai.md` — **更新**: 「続報（2026-09-06その2）」節追加。cybersecurity能力Critical閾値到達の公式報道言及（未検証）、幻觉率9.4%→2.0%と多輪対抗攻撃で防御率67%への下落（単一ソース未検証）、単価2.5倍化の実効コスト分析（参考）
+|
+|### Skip内訳
+|- wechat-media候補53: 同一旧記事（2017年AI00榜単）の重複再収集。wechat-media当日分16件もfrontmatter日付2023〜2026年3月の旧記事再収集（Agent入門・SpokenWOZ=2023・招聘広告等）で永続性なし
+|- juejin/v2ex当日分の大半: GPT-6 Day-2反応（吹爆・潑冷水・AGI論争・実測）は午前コミット集約済みで新規性なし。Cursor→Codex移行感想・LangChainエラー処理・量化入門・学習路線・招聘/副業広告・Pro 20x封鎖（既記録）等
 |
 |
 |## [2026-09-05] crawl-triage | GPT-6 (Astra) release reaction — manual triage (LLM-triage failed)
