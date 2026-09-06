@@ -1,7 +1,7 @@
 ---
 title: "Harness Engineering — LLM Agentの外化（Externalization）パターン"
 created: 2026-04-18
-updated: 2026-08-31
+updated: 2026-09-06
 tags: [ai-agents, coding-agents, framework, llm, mcp]
 aliases: ["エージェントハーネス", "LLM外化パターン", "Externalization in LLM Agents"]
 source_lang: zh-CN
@@ -126,6 +126,7 @@ Harnessは個別の技術を**統合する実行フレームワーク**。Agent 
 - 李開復（創新工場）、陸奇（奇绩創壇）がHarness関連プロジェクトに投資 reportedly
 - 36kr報道によれば「小氷（Xiaoice）元チーム」がHarnessベースの「小蘭島」プロジェクトを発表予定
 - **MiniMax**: MaxClaw・MaxHermesをAlibaba ACK/ACS上にデプロイし、エージェントのクラウド実行基盤を構築（2026年4月）
+- **DeepSeek Harness周辺エコシステムの成熟（2026-09-05/06）**: 掘金で「DeepSeek Harness源码解读」シリーズ（Provider-Consumer/会話ログ=唯一真相源/ファイル・命令・審批・沙箱の協働など、8+回に及ぶ内部実装解説）が連続公開され、「值得安装的15款插件」プラグイン紹介や「从Demo到生产：Agent Harness如何把AI真正'接'进项目」（LangChain/LangGraph実務でのDemo→本番移行の観点）も登場。概念論争から**ソースコード級の解説とプラグイン文化**へ移行した兆候
 
 ## CLI vs MCP vs GUI の関係
 

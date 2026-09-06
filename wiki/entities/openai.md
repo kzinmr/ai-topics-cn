@@ -1,7 +1,7 @@
 ---
 title: OpenAI — AI研究企業
 created: 2026-04-17
-updated: 2026-09-05
+updated: 2026-09-06
 tags: [company, lab, gpt, openai, codex]
 aliases: ["OpenAI", "openai", "GPT", "Codex"]
 source_lang: zh-CN
@@ -422,3 +422,12 @@ GPT-5.5とDeepSeekは**全く異なる競争カテゴリ**に位置すると分�
 > **出典**: V2EX — [GPT-6 Astra - 新的 O1 时刻](https://www.v2ex.com/t/1239617) [T1]
 > **出典**: V2EX — [Scout 是不是一个常用语](https://www.v2ex.com/t/1239571) [T1]
 > **出典**: 掘金 — [GPT-6 发布当晚，三大 AI 集体宕机 4 小时](https://juejin.cn/post/7681475476906950691) [T1]
+
+### 続報（2026-09-06）: 混乱への公式対応とBYOK封鎖
+
+- 掘金の見出し報道（本文はプレビューのみ）によれば、**GPT-6 Astraリリース直後の混乱（配信遅延・提供範囲の混乱）について奥特曼（Sam Altman）が謝罪**し、Plus/Pro等全プランへの提供を完了したとされる（未検証、本文未取得）
+- V2EX: OpenAIが**Pro 20xをOSS貢献者に無料提供**するプログラムが存在したことがユーザー実体験経由で確認された。ただし「破甲（jailbreak・悪用）」を理由に1ヶ月でアカウント封鎖された報告があり、無料提供と濫用対策の緊張が顕在化
+- 09-05〜06の掘金/V2EX反応（「到底强在哪」「AGI」論争、小遊戯実測、22時間で3リセット活用の科普サイト等）は個人実感ベースが中心で、openai.md既存のAstra反応セクションに集約、個別ページ化不要と判断
+
+> **出典**: 掘金 — [奥尔特曼致歉 GPT-6 Astra 发布混乱](https://juejin.cn/post/7681733440023183414) [T1]、収集: 2026-09-06
+> **出典**: V2EX — [我把 OpenAI 给 Pro 20x 免费给贡献者使用，一个月后因为破甲被封号了](https://www.v2ex.com/t/1239825) [T1]
