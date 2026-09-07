@@ -1,7 +1,7 @@
 ---
 title: "Agent Skills — AIエージェントのモジュール型能力システム"
 created: 2026-04-18
-updated: 2026-06-10
+updated: 2026-09-07
 tags: [ai-agents, coding-agents, concept, technique, skills]
 aliases: ["Agent Skills", "Skills", "スキル", "agent-skills"]
 source_lang: zh-CN
@@ -189,6 +189,15 @@ Prompt、Agent、Function Call、Skill、MCPといった概念の乱立に対し
 Skillsは**再利用可能な能力モジュール**として、MemoryやProtocols（[[mcp]]等）と並ぶ外化メカニズムの一要素である。Harnessはこれら全てを統合する最上位の実行環境・制御層として機能する。
 
 
+
+## GPT-6時代のSkills棚卸し要請（2026-09-07、掘金）
+
+GPT-6（Astra）リリースに伴い、既存のSkills／`AGENTS.md`設定を再点検すべきだという投稿が掘金に出た（恋猫de小郭、8いいね、本文プレビューのみ）。
+
+- **主張の要旨**: 「GPT-6 から Skill と AGENTS.md の大掃除が必要」。GPT 5.6 sol や Anthropic Fable 5 の時期から同様の指摘が出ており、**強モデル下では既存のSkill定義（例: Superpower）が『負優化』（マイナス最適化）になり、Tokenを浪費するだけ**という論点（本文未受領・単一ソース・未検証）。
+- **構図**: 「Prompt已死、Skill当立」（2026-04）でSkills積み上げを推進した同じコミュニティが、モデル性能向上に伴い**今度はSkill過多の逆効果**を議論し始めた点は方向転換のシグナル。モデル能力↑→ルール注入↓という振れ幅がSkills運用の実務課題として浮上（推論）。
+
+**出典**: 掘金 — [OpenAI：GPT-6 开始你需要给 Skill 和 AGENTS.md 做一次大扫除了](https://juejin.cn/post/7681931232724860970) [T1]、収集: 2026-09-07
 
 ## 「Prompt已死、Skill当立」パラダイムシフト（2026-04-28更新）
 
