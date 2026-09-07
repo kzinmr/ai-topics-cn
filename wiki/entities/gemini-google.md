@@ -1,7 +1,7 @@
 ---
 title: "Gemini/Google — Google AI基盤モデルとオープンソースGemma"
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-09-07
 tags: [llm, model, google, gemini, gemma, inference, open-source-ai]
 aliases: ["Gemini", "Google AI", "Gemma"]
 source_lang: zh-CN
@@ -79,6 +79,15 @@ Geminiは[[openai|OpenAI]]のGPTシリーズ、[[anthropic|Anthropic]]のClaude�
 
 > **出典**: 知乎 — [Gemini 3.5 Flash失望](https://www.zhihu.com/question/2040145697911956151) [T2]
 > **出典**: 知乎 Frontier Weekly — [AI Reasoning, Agents, and Infrastructure Race](https://substack.com/@zhihufrontier) [T2]
+
+### Gemini 3.8 Flash 発表と「又被嘲」反応（2026-09-07、掘金）
+
+谷歌が**Gemini 3.8 Flash**を発表。公式跑分（ベンチマーク）は高いが、中国開発者コミュニティでは皮肉をもって受け止められた（見出しのみ・本文プレビューなし、未検証）。
+
+- **6週連続でFlash世代3世代**を投入し、迭代頻度が過去最高に。中国メディアは「比生产队的驴还能干」（生産隊のロバより働ける）と表現
+- 2026年4月のGemini 3.5 Flash発表時（「跑分と実体験の乖離」「降智」論争）と同じ構造が再現されるかが焦点。跑分先行 vs 実体験・価格への失望という中国語圏特有の評価バイアスが継続していることを示すシグナル（単一ソース・見出しベース、未検証）
+
+**出典**: 掘金 — [谷歌发布 Gemini 3.8 Flash，官方跑分很厉害，但又被嘲了？](https://juejin.cn/post/7682246148138057747) [T1]、収集: 2026-09-07
 
 ## ソース信頼性
 
