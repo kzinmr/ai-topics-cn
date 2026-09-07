@@ -3894,3 +3894,16 @@ Originating conversation: (scheduled cron)
   教程解説）、掘金の旧記事再収集（Cursor→Codex 2026-05-10/Qoder 2026-05-19/SKILL.md 2026-06-03、
   いずれも高スコアだが日付旧）、Kimi K3三千万ネタ（風刺・既知）、LiteLLM闪讯(2026-03-26再収集)、
   Sora2 API/邀请码/车队/指纹ブラウザ等の宣伝・求人类。
+
+## [2026-09-07] crawl-triage(2) | split crawl (run 20260907T210206Z、LLM-triage context長超過のため手動判定)
+
+- LLM-triageが context length exceeded (32,691 tokens) で失敗（case b、## Response 空・エラー尾読み確認）。
+  チェックポイント候補60件は内容ハッシュ重複排除で実質8ユニーク（aafeba3f 2017年記事53複製＋v2ex旧スレッド7件）、
+  triage_latest.json 自体が08-27のstale（全件skip判定済み）。dedup基準は当日朝の commit 854dcc3。
+- 当日 inbox 直接クロール（80件）からの手動トリアージ。Day-3の朝トリアージ済み内容を差し引くと残る恒久情報は1件。
+- take 1: 掘金「OpenAI：GPT-6 开始你需要给 Skill 和 AGENTS.md 做一次大扫除了」(スコア8、当日物) →
+  concepts/agent-skills.md に「GPT-6時代のSkills棚卸し要請」節追加。強モデル下でSkill定義が「負優化」に
+  なるという大掃除論（本文プレビューのみ・単一ソース・未検証と明記）。「Prompt已死Skill当立」からの方向転換兆候として記録。
+- skip: GPT-6反応類（吹爆/実測/AGI論争/站点共有/Opus5比較/juejin・v2ex計10+件）は朝の続報その3集約でカバー済み、
+  车队・拼车・邀请码・zooapi等の宣伝/求人类、暂无内容スレッド、grok4.6作弊出力（スコア2・細部体験）、
+  wechat-media 全23件（frontmatter date が2017〜2026-03のsogou再収集・教程・会議告知・採用広告）。
