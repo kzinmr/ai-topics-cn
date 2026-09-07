@@ -3878,3 +3878,19 @@ Originating conversation: (scheduled cron)
 - 永続トピック(Google TPU vs Nvidia戦略)は concepts/semiconductor-packaging と entities/mediatek に既存カバー。
 - 後続のSeries 2以降が本文付きで配信された時点で再評価。
 - raw/digest 7ファイルを inbox コミット 9757e52 として保存。
+
+## [2026-09-07] crawl-triage | split crawl (run 20260907T090218Z、LLM-triage context長超過のため手動判定)
+
+- LLM-triageが context length exceeded (33,569 tokens) で失敗（case b）。チェックポイント候補60件は
+  内容ハッシュ重複排除で実質8ユニーク（aafeba3f の2017年記事53複製＋v2ex旧スレッド7件）と判明、
+  全件重複・旧記事のためチェックポイント経由の take はゼロ。当日 inbox 直接クロールからの手動トリアージ。
+- take 1: V2EX「火山方舟的 agent plan 体验太差了」→ concepts/coding-plan.md に運用不満セクション追加
+  （モデル兜底濫用・用量統計不整合・限额・¥15代金券対応。単一ソース未検証と明記）。
+- take 2: 掘金「谷歌发布 Gemini 3.8 Flash…又被嘲了」→ entities/gemini-google.md（見出しプレビューのみ、
+  6週3世代の迭代頻度と跑分vs実体験乖離の構図のみ記録、未検証）。
+- take 3(集約): GPT-6 Astra Day-3反応のうち企業内代理禁止スレッド(スコア13)と大コンテキスト実用議論のみ
+  entities/openai.md 続報その3として記録。吹爆/站点共有/AGI論争は個人実感のため集約のみ。
+- skip: wechat-media 全12件（frontmatter date が2023年〜2026-03のsogou再収集・会議告知・採用広告・
+  教程解説）、掘金の旧記事再収集（Cursor→Codex 2026-05-10/Qoder 2026-05-19/SKILL.md 2026-06-03、
+  いずれも高スコアだが日付旧）、Kimi K3三千万ネタ（風刺・既知）、LiteLLM闪讯(2026-03-26再収集)、
+  Sora2 API/邀请码/车队/指纹ブラウザ等の宣伝・求人类。
