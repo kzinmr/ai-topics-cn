@@ -1,7 +1,7 @@
 ---
 title: DeepSeek — 中国オープンソースLLM企業
 created: 2026-04-17
-updated: 2026-09-05
+updated: 2026-09-08
 tags: [company, llm, model, china, open-source-ai, deepseek, v4, ascend, funding, series-a, huawei, coding-plan]
 aliases: ["DeepSeek", "深度求索", "deepseek"]
 source_lang: zh-CN
@@ -401,6 +401,17 @@ China AI Bulletin 9（SAIF, 2026-08-24）によると、DeepSeekは7月31日にV
 - **V4 Flash 品質報告（未検証）**: V2EX で V4 Flash の挙動不安定を指摘する報告あり。単一ソース・公式確認なしのため事実として断定しない。
 
 > **出典**: 日次ダイジェスト 2026-09-01〜09-04（v2ex / juejin）— ローカルクロールデータに基づく（ライブ Web 検証は行わず）
+
+## DeepSeek V4.1 Flash 中間版内测（2026年9月8日、未検証）
+
+V2EX に非公式渠道の告知が投稿され、同日中に複数スレッドで言及された。公式発表は未確認のため単一ソース扱い。
+
+- **モデル**: 「V4.1 Flash」中間版が内测開始。新しいモデル構造を採用し、**原生多模态（ネイティブ・マルチモーダル）対応**、能力強化、速度向上、低コストを謳う。
+- **呼び出し方法**: `base_url` は変更なし。モデル名を `deepseek-v4.1-flash-expires-on-0910` に設定すると呼び出し可能（名称通り **9/10 に期限切れ**の暂时内测）。
+- **課金・制限**: 現行 `deepseek-v4-flash` と同一課金、アカウントあたり **20 並発**にレート制限。
+- **信頼性**: 投稿者本人が「非公式渠道で知った」「求核実（真偽を問う）」と明記。他の V2EX スレッドも同一文言のテスト告知を貼るのみで、独立した裏付けなし。事実として断定しない。
+
+> **出典**: V2EX t/1240438（score 7、2026-09-08）— [求核实 Deepseek 发布 V4.1Flash](https://www.v2ex.com/t/1240438) / V2EX t/1240422（score 3）— [deepseek v4.1 flash 测试](https://www.v2ex.com/t/1240422) [T1・単一ソース・未検証]
 
 ## 関連リンク
 
