@@ -3907,3 +3907,18 @@ Originating conversation: (scheduled cron)
 - skip: GPT-6反応類（吹爆/実測/AGI論争/站点共有/Opus5比較/juejin・v2ex計10+件）は朝の続報その3集約でカバー済み、
   车队・拼车・邀请码・zooapi等の宣伝/求人类、暂无内容スレッド、grok4.6作弊出力（スコア2・細部体験）、
   wechat-media 全23件（frontmatter date が2017〜2026-03のsogou再収集・教程・会議告知・採用広告）。
+
+## [2026-09-08] crawl-triage | split crawl (run 20260908T090128Z、LLM-triage context長超過のため手動判定)
+
+- LLM-triageが context length exceeded (33,575 tokens) で失敗（case b、## Response 空・## Error 尾読みで確認）。
+  チェックポイント候補60件は内容ハッシュ重複排除で実質8ユニーク（aafeba3f 2017年机器之心榜単53複製＋v2ex旧スレッド7件）、
+  triage_latest.json は checkpoint_run_id=20260827 の stale（全件skip判定済み）。dedup基準は前日 commit 71312d9/7d2cd63。
+- 当日 inbox 直接クロール（juejin15+v2ex15+wechat-media15=45件）からの手動トリアージ。恒久情報は1件。
+- take 1: V2EX「求核实 Deepseek 发布 V4.1Flash」(score7) +「deepseek v4.1 flash 测试」(score3) の2スレッドが
+  同一告知 → entities/deepseek.md に「DeepSeek V4.1 Flash 中間版内测」節追加。原生多模态・モデル名
+  deepseek-v4.1-flash-expires-on-0910(9/10失効)・v4-flash同一課金・20並発制限。投稿者自身が非公式渠道と明記、
+  独立裏付けなしのため単一ソース・未検証と明示。
+- skip: wechat-media 15件中13件が sogou再収集（复旦80页综述=2023-09-17、上下文污染=2026-03-17、
+  AI每日摘要=2026-03-21 等、frontmatter date 旧）、教程解説・会議告知・採用広告。掘金の旧記事再収集
+  （Kimi K3三千万=2026-07-27風刺・score87、Qwen毕业=2026-09-07 score1、OpenAI Codex Security=score0 body無）。
+  v2exは宣伝/求生存/無内容スレッド中心（生図网站宣伝 score109 含む宣伝類、GPT6代充宣伝）。

@@ -1,7 +1,9 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-09-07
+最終更新: 2026-09-08
 エンティティ: 65, コンセプト: 121, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-09-08 Crawl Triage: DeepSeek V4.1 Flash 内测）
+- `entities/deepseek.md` — **更新**: 「DeepSeek V4.1 Flash 中間版内测（2026-09-08）」節追加。原生多模态・`deepseek-v4.1-flash-expires-on-0910`（9/10失効）・v4-flash同一課金・20並発制限。V2EX2スレッド同一文言・投稿者自身が非公式渠道と明記のため単一ソース・未検証
 ### 本日更新（2026-09-07 Crawl Triage run 2: GPT-6 Skills棚卸し）
 - `concepts/agent-skills.md` — **更新**: 「GPT-6時代のSkills棚卸し要請（2026-09-07）」節追加。強モデル下でのSkill過多が「負優化」となるという大掃除論（単一ソース・本文プレビューのみ・未検証）
 ### 本日更新（2026-09-07 Crawl Triage: GPT-6 Astra Day-3 / 火山Agent Plan / Gemini 3.8 Flash）
