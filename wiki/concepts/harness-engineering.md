@@ -1,7 +1,7 @@
 ---
 title: "Harness Engineering — LLM Agentの外化（Externalization）パターン"
 created: 2026-04-18
-updated: 2026-09-06
+updated: 2026-09-08
 tags: [ai-agents, coding-agents, framework, llm, mcp]
 aliases: ["エージェントハーネス", "LLM外化パターン", "Externalization in LLM Agents"]
 source_lang: zh-CN
@@ -127,6 +127,7 @@ Harnessは個別の技術を**統合する実行フレームワーク**。Agent 
 - 36kr報道によれば「小氷（Xiaoice）元チーム」がHarnessベースの「小蘭島」プロジェクトを発表予定
 - **MiniMax**: MaxClaw・MaxHermesをAlibaba ACK/ACS上にデプロイし、エージェントのクラウド実行基盤を構築（2026年4月）
 - **DeepSeek Harness周辺エコシステムの成熟（2026-09-05/06）**: 掘金で「DeepSeek Harness源码解读」シリーズ（Provider-Consumer/会話ログ=唯一真相源/ファイル・命令・審批・沙箱の協働など、8+回に及ぶ内部実装解説）が連続公開され、「值得安装的15款插件」プラグイン紹介や「从Demo到生产：Agent Harness如何把AI真正'接'进项目」（LangChain/LangGraph実務でのDemo→本番移行の観点）も登場。概念論争から**ソースコード級の解説とプラグイン文化**へ移行した兆候
+- **沙箱隔離が解説シリーズの章として定着（2026-09-08）**: 掘金で「AI Agent 的安全围栏：DeepSeek Harness 沙箱隔离策略全解析」（第13章・進程隔離戦略とプラットフォーム実装、本文プレビューのみ）が公開。ソースコード級解説シリーズが**セキュリティ境界（沙箱・隔離）章に到達**したことは、Harness議論が機能実装から運用安全へ拡張している兆候。ただし同一日の「值得安装的15款插件」は2026-08-19の記事再収集（スコア51だが日付旧）であり、プラグインエコシステム自体の新情報はない（参考情報・単一ソース）
 
 ## CLI vs MCP vs GUI の関係
 
