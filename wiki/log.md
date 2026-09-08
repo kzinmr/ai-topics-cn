@@ -3922,3 +3922,21 @@ Originating conversation: (scheduled cron)
   AI每日摘要=2026-03-21 等、frontmatter date 旧）、教程解説・会議告知・採用広告。掘金の旧記事再収集
   （Kimi K3三千万=2026-07-27風刺・score87、Qwen毕业=2026-09-07 score1、OpenAI Codex Security=score0 body無）。
   v2exは宣伝/求生存/無内容スレッド中心（生図网站宣伝 score109 含む宣伝類、GPT6代充宣伝）。
+
+## [2026-09-08] crawl-triage(2) | split crawl (run 20260908T210214Z、LLM-triage context長超過のため手動判定)
+
+- LLM-triageが context length exceeded (35,219 tokens) で失敗（case b、## Response 空・## Error 尾読みで確認）。6日連続のcase b。
+  チェックポイント候補60件は内容ハッシュ重複排除で実質8ユニーク（aafeba3f 2017年机器之心榜単53複製＋v2ex旧スレッド7件、既知の定型崩壊）。
+  dedup基準は当日朝の commit 187e9ac/966cd06（DeepSeek V4.1 Flash 内测）。
+- 当日 inbox 直接クロール（juejin+v2ex+wechat-media 計79件）からの手動トリアージ。take 3件（うち小項目2件）/ reference 多数 / skip 中心。
+- take 1: 掘金「Gemini 3.8 Flash 没涨价，干活却贵了 40%？」(当日物) → entities/gemini-google.md 続報節追加。
+  独立評測「AA」経由で総合タスク均价が3.7比+40%、牌価 $0.75/1M は未改訂という実効コスト乖離 claim（単一ソース・未検証）。
+  併せて「一周AI观察」記事の CNBC「模型疲劳」語紹介（見出しプレビューのみ）を同節に参考記録。
+- take 2: V2EX t/1240537「最新 DeepSeek v4.1 Flash 模型 API 上线」→ entities/deepseek.md の内测節に同日続報として追記。
+  第三者API代理 tokenra.io への誘導付き拡散であり公式裏付けにはならない旨を明記、未検証扱い維持。
+- take 3(小): 掘金「DeepSeek Harness 沙箱隔离策略全解析」(第13章、当日物) → concepts/harness-engineering.md の中国語圏議論動向に追記。
+  解説シリーズが沙箱・隔離章に到達したことを運用安全への拡張兆候として記録。同日見えた「15款插件」は2026-08-19の再収集と確認。
+- skip: Wan 3.0 宣伝スレッド（score 0・wan30.io 誘導のプロモ）、四大模型一週連発×95%試点不赚钱・Qwen毕业・
+  OpenAI Codex Security・prime-agent 等の見出しプレビューのみ教程/週評（恒久事実なし）、GPT-6吹爆系（09-05〜07集約済み）、
+  生図/代充/送送送/车队宣伝、求職・無内容スレッド、wechat-media sogou再収集（AI每日摘要=2026-03もの）、
+  高スコア旧記事再収集（Qoder=2026-05-19、Kimi K3三千万風刺=既知）。

@@ -2,6 +2,10 @@
 
 最終更新: 2026-09-08
 エンティティ: 65, コンセプト: 121, ダイジェスト: 7, 比較: 2, ページ: 9
+### 本日更新（2026-09-08 Crawl Triage run 2: Gemini 3.8 Flash実効コスト / 沙箱隔離）
+- `entities/gemini-google.md` — **更新**: 「続報（2026-09-08）」節追加。独立評測「AA」経由の実効タスクコスト+40% claim（牌価$0.75/1Mは未改訂、単一ソース・未検証）とCNBC「模型疲劳」語の流通（見出しプレビューのみ）
+- `entities/deepseek.md` — **更新**: V4.1 Flash内测節に同日続報追記。V2EX t/1240537 が第三者API代理 tokenra.io への誘導付きで同文言告知を拡散、公式裏付けなしのため未検証扱い維持
+- `concepts/harness-engineering.md` — **更新**: 中国語圏議論動向に「沙箱隔離が解説シリーズ第13章として定着」追記。Harness議論の機能実装→運用安全への拡張兆候（単一ソース）
 ### 本日更新（2026-09-08 Crawl Triage: DeepSeek V4.1 Flash 内测）
 - `entities/deepseek.md` — **更新**: 「DeepSeek V4.1 Flash 中間版内测（2026-09-08）」節追加。原生多模态・`deepseek-v4.1-flash-expires-on-0910`（9/10失効）・v4-flash同一課金・20並発制限。V2EX2スレッド同一文言・投稿者自身が非公式渠道と明記のため単一ソース・未検証
 ### 本日更新（2026-09-07 Crawl Triage run 2: GPT-6 Skills棚卸し）
