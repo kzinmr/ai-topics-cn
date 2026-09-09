@@ -1,7 +1,7 @@
 ---
 title: DeepSeek — 中国オープンソースLLM企業
 created: 2026-04-17
-updated: 2026-09-08
+updated: 2026-09-09
 tags: [company, llm, model, china, open-source-ai, deepseek, v4, ascend, funding, series-a, huawei, coding-plan]
 aliases: ["DeepSeek", "深度求索", "deepseek"]
 source_lang: zh-CN
@@ -413,6 +413,15 @@ V2EX に非公式渠道の告知が投稿され、同日中に複数スレッド
 
 > **出典**: V2EX t/1240438（score 7、2026-09-08）— [求核实 Deepseek 发布 V4.1Flash](https://www.v2ex.com/t/1240438) / V2EX t/1240422（score 3）— [deepseek v4.1 flash 测试](https://www.v2ex.com/t/1240422) [T1・単一ソース・未検証]
 > **続報（同日）**: V2EX t/1240537「最新 DeepSeek v4.1 Flash 模型 API 上线」（score 0、2026-09-08）は同一文言の告知を **tokenra.io（第三者API代理）** への誘導付きで投稿。DeepSeek公式の配信告知は依然確認できず、内测渠道が第三者経由に拡散している状態。公式発表としての裏付けにはならないため、単一ソース・未検証の扱いを維持。
+> **続報（2026-09-09）**: V2EX t/1240743「避雷这个站，pro 模型路由到 flash」（score 1、2026-09-09、単一ソース・未検証）が、platform.deepseek.com 公式API経由の呼び出しで **pro モデルが flash にルーティングされている**と主張（「所以 v4pro 真的是区」＝区別がつかない意のslang）。内测の `...-expires-on-0910` 期限と時期が重なるが、因果は不明。V4.1内测・拡散・本件のいずれも独立裏付けなし。
+
+## 続報（2026-09-09）: 公式API「pro→flash ルーティング」疑い（単一ソース・未検証）
+
+- V2EX ユーザーが platform.deepseek.com を「避雷」として投稿。pro 指定なのに実体が flash に振り分けられている体感を報告（score 1、本文短・証拠提示なし）。
+- 位置づけ: 8月17日の API 全体値上げ・8月21日の V4-Flash-Vision-Exp グレースケール（concepts/deepseek.md §27/§31 参照）・9/8〜10 の V4.1 Flash 暂时内测と続くリソース逼迫期の末端観察として記録するが、断定は避ける。
+
+> **出典**: V2EX t/1240743（2026-09-09）[T1・単一ソース・未検証]
+
 
 ## 関連リンク
 

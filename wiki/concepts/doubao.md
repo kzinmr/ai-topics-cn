@@ -1,7 +1,7 @@
 ---
 title: "豆包 (Doubao) — ByteDance AIアシスタント"
 created: 2026-04-19
-updated: 2026-08-31
+updated: 2026-09-09
 tags: [llm, ai-assistant, video-generation, coding-assistant, china, bytedance]
 aliases: ["Doubao", "豆包", "豆包APP", "Doubao-Seed", "火星引擎", "Volcano Engine"]
 source_lang: zh-CN
@@ -639,6 +639,13 @@ ChinAI #371（8/17）で、7月15日のAI伴侶規制施行後のユーザー影
 - 特徴として言及された機能: 多端同期、云电脑、Skill调用、Seedance創作統合
 - 記事はプレビュー要約のみで詳細仕様は今回のクロールでは未確認
 - 出典: [掘金](https://juejin.cn/post/7679623224678613034)（2026-08-30）[T2]、収集: 2026-09-01
+
+### 9. 2026年9月9日 — 豆包输入法 Windows版リリース
+
+V2EXで豆包输入法（Doubao IME）の **Windows版** がダウンロード可能になったと報告（score 58）。2026年5月13日のMac版リリース（本ページ「豆包输入法 Mac版リリース」節）に続く桌面展開で、ByteDanceの入力ツールが Mac→Windows に拡がり主要OSをカバー。本文は簡潔な告知＋WeChat跨设备复制対応への言及のみで、機能詳細・公式アナウンスは今回のクロールでは未確認。
+
+- 出典: [V2EX t/1240545](https://www.v2ex.com/t/1240545)（2026-09-09）[T1]
+
 
 ## 関連リンク
 

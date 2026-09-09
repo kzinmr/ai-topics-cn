@@ -1,7 +1,7 @@
 ---
 title: "GPT Image 2 — OpenAIの次世代画像生成モデル"
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-09-09
 tags: [openai, image-generation, gpt, multimodal, aigc, benchmark]
 aliases: ["GPT Image 2", "GPT Image 2.0", "GPT-Image-2"]
 source_lang: zh-CN
@@ -56,6 +56,22 @@ V2EXでは「**最近GPT Image 2挺火，顺手撸了个小工具站**」など�
 > **出典**: 36kr（新智元）— [GPT Image 2屠榜](https://36kr.com/p/3784950967376900) [T1]
 > **出典**: 36kr（AIX財經）— [实测Claude Design与GPT Image 2.0](https://36kr.com/p/3784987260547593) [T1]
 > **出典**: 36kr（多鯨）— [全网7大教育场景实测 ChatGPT Images 2.0](https://36kr.com/p/3786425412099073) [T1]
+
+## GPT Image 2.5 — 速度/精度の2モデル分割（2026-09-08発表・単一ソース・未検証）
+
+V2EXの実測投稿（Wenwener、2026-09-09収集）によれば、OpenAIは2026年9月8日に **GPT Image 2.5** を発表し、GPT Image 2から一転して**2つの独立モデルに分割**した。
+
+| モデル | 位置づけ | 特徴 |
+|--------|---------|------|
+| **Flare** | 速度型 | GPT Image 2比でスループット2〜4倍、API既定推奨。バッチ生成（EC主画像・SNS素材）で秒級応答と報告 |
+| **Sunburst** | 精度型 | 画質はGPT Image 2超。多輪編集で「変えるべき場所だけ変える」主体保持。パートナーHiggsfield AIの「什么不该动を理解する」という評を引用 |
+
+その他主張された変更点（いずれも同投稿 singlesource・本文截断あり・未検証）:
+- **@Sketch 涂鸦ツール**: ChatGPT内で草図を描くとAIが成品図化。プロンプト記述の曖昧性回避
+- **透明背景の正式対応**: preview状態から脱し、Flare/Sunburstとも真alphaチャネルPNG出力に対応（製品図・ロゴの切り抜き工程が不要に）
+- **4K対応**: 最大3840×2160、カスタムサイズは16の倍数、アスペクト比1:3〜3:1、quality 5段階（low/medium/high/xhigh/max）
+
+> **出典**: V2EX t/1240850 — [GPT Image 2.5 正式发布](https://www.v2ex.com/t/1240850)（2026-09-09収集、実測投稿・単一ソース・未検証）
 
 ## 関連リンク
 
