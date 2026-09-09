@@ -3940,3 +3940,17 @@ Originating conversation: (scheduled cron)
   OpenAI Codex Security・prime-agent 等の見出しプレビューのみ教程/週評（恒久事実なし）、GPT-6吹爆系（09-05〜07集約済み）、
   生図/代充/送送送/车队宣伝、求職・無内容スレッド、wechat-media sogou再収集（AI每日摘要=2026-03もの）、
   高スコア旧記事再収集（Qoder=2026-05-19、Kimi K3三千万風刺=既知）。
+
+## [2026-09-09] crawl-triage | split crawl (run 6c9d8a21f0b4、LLM-triage context長超過のため手動判定)
+
+- LLM-triageが context length exceeded (33,024 tokens) で失敗（case b、## Response 空・## Error 尾読みで確認）。7日連続のcase b。
+  triage_latest.json は 08-27 時点の stale。チェックポイント候補60件は既知の定型崩壊（aafeba3f 2017年机器之心榜単複製群中心）。
+- 当日 inbox 直接クロール（v2ex 26件 / juejin 15件 / wechat-media 30数件、後二者は大半が旧記事再収录）からの手動トリアージ。take 2件 / skip 中心。
+- take 1: V2EX t/1240743「【避雷】这个站 pro 模型路由到 flash」(score 10、2026-09-09) → entities/deepseek.md 続報(2026-09-09)節追加。
+  platform.deepseek.com のPro→Flash無断ルーリング疑惑（FlashはProの1/10価格）。V4.1 Flash expires-on-0910期限前日という文脈を付記、単一ソース・未検証。
+- take 2: V2EX t/1240545「豆包输入法 WIN 端可以下载了」(score 0、2026-09-09) → concepts/doubao.md に第9節「豆包输入法 Windows版リリース」追加。
+  5月のMac版に続くWindows版提供開始でデスクトップ展開がほぼ完了（単一ソース・未検証）。
+- take 3(当run): V2EX t/1240850「GPT Image 2.5 正式发布」(2026-09-09収集の実測投稿) → concepts/gpt-image-2.md に「GPT Image 2.5」節追加。
+  2026-09-08発表とされる速度型 Flare（スループット2〜4倍・API既定）／精度型 Sunburst（多輪編集の主体保持）への2モデル分割、@Sketch・真alpha透明背景・4K・quality5段階（単一ソース・未検証）。
+- skip: juejin 高スコア「Cursor转Codex」(score 405だがdate 2026-05-10再収录)、「Kimi K3太牛了」(08-24再収录)、「IDEA阿里Qoder」(05-19再収录)、
+  「DeepSeek Harness 15款插件」(08-19再収录)、RAG第10章/温度とは/内存记忆等のチュートリアル類、v2ex餽贈広告（終身会员送付=144、中转站避雷=165）等。

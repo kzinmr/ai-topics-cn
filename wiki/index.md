@@ -1,6 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-09-08
+最終更新: 2026-09-09
+
+### 本日更新（2026-09-09 Crawl Triage: DeepSeek pro→flash疑い / 豆包输入法Win版 / GPT Image 2.5）
+- `entities/deepseek.md` — **更新**: V4.1 Flash 内测節に「続報（2026-09-09）」＋独立節追加。platform.deepseek.com で pro が flash にルーティングされているという避雷報告（V2EX t/1240743、単一ソース・未検証）
+- `concepts/doubao.md` — **更新**: 「豆包输入法 Windows版リリース（2026-09-09）」節追加。5月のMac版に続くWindows対応（V2EX t/1240545、score 58）
+- `concepts/gpt-image-2.md` — **更新**: 「GPT Image 2.5（2026-09-08発表）」節追加。速度型 Flare／精度型 Sunburst の2モデル分割、@Sketch・真alpha透明背景・4K対応（V2EX実測投稿、単一ソース・未検証）
 エンティティ: 65, コンセプト: 121, ダイジェスト: 7, 比較: 2, ページ: 9
 ### 本日更新（2026-09-08 Crawl Triage run 2: Gemini 3.8 Flash実効コスト / 沙箱隔離）
 - `entities/gemini-google.md` — **更新**: 「続報（2026-09-08）」節追加。独立評測「AA」経由の実効タスクコスト+40% claim（牌価$0.75/1Mは未改訂、単一ソース・未検証）とCNBC「模型疲劳」語の流通（見出しプレビューのみ）
