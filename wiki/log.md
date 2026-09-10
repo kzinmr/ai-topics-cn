@@ -3968,3 +3968,16 @@ Originating conversation: (scheduled cron)
 - skip: v2ex 代充/中转/充值広告（Pro20x代充=1150、claude-max20x中转、如何充值chatgpt）、5.6sol降智スレッド（score 1・証拠なし・本文空）、
   「GPT6 Token太快」等、juejin 再収录（IDEA阿里Qoder=05-19、Kimi K3三千万風刺=旧日付、Cursor转Codex）、AI Agent学習路線/復旦NLP綜述80頁等のチュートリアル・綜述類、
   wechat-media 旧記事再収录（Meta版ChatGPT=2023-11-27、LiteLLM/招聘/毎日摘要等）、非AI系v2ex（AirPods/iPhone/東京夜生活/职位招聘）。
+
+## [2026-09-10] crawl-triage(2) | split crawl (run 20260910T210129Z、LLM-triage context長超過のため手動判定、重複基準=581d870)
+
+- LLM-triage が context length exceeded (32,497 tokens) で失敗（case b、## Response 空・## Error 尾読みで確認）。8日連続のcase b。プリラン ok:false。
+  triage_latest.json は stale のまま。チェックポイント候補60件は既知の定型崩壊（aafeba3f 複製53件＋v2ex 旧候補7件、一意8件）。
+- 当日 inbox 直接クロール（v2ex 15件 / juejin 15件 / wechat-media 15件超）からの手動トリアージ。朝のrun（581d870）でtake済みの V4.1 Flash 正式版観測・GPT Image 2.5 局所編集不満は再集約せず、同日run2として新規項目のみ抽出。take 1 / reference 1 / skip 中心。
+- take 1: V2EX t/1241191「Codex $200 Pro plan 暂停供应」(score 5、2026-09-10) → entities/openai.md に「Codex $200 Pro プラン供給停止観測」節追加。
+  Codex責任者 Tibo（Thibault Sottiaux）が X 上で Pro プラン供給停止を認めたとの伝聞。供給枠逼迫の末端観察、伝聞＋単一ソースのため未検証。同日のclaude-max20x中转等の中転広告活性と関連付け。
+- reference 1: juejin「DeepSeek Harness 系列（02）万物皆插件—Cordis核心设计」「Agent 编排 Agent 第14章子代理与工作流」「云沙箱的一次进化」（いずれもscore 0・プレビューのみ）
+  → concepts/harness-engineering.md 中国語圏議論動向に2026-09-10条目として統合。解説シリーズが插件框架→運用安全（09-08沙箱章）→マルチエージェント編排へ拡張中の傾向記録。新事実の断定なし。
+- skip: V2EX「GPT Image 2.5 提示词合集开源」(score 0、image-2-5.com プロモ併走のコレクション共有)、V2EX 代充/中转/卖token/养号広告類、
+  juejin「DeepSeek 明天又降价」(09-09、価格数値は朝のrunの「価格引き下げ」主張と同一単一ソース系列のため据え置き)、「浪费时间！DeepSeek 4.1 Flash」(朝のrunで感情反応として記録済み)、「幻觉率4.2%→2%」(09-07物・09-06run記録済み)、
+  「GPT6酷炫动效教学」「三年了AI为何没抢走饭碗」(09-07・汎論)、「Milvus长期记忆」等チュートリアル類、wechat-media 旧記事再収录（AI00榜单=aafeba3f複製群、毎日摘要=3月物、復旦NLP綜述=4月物再収录、招聘/初识Agent等）。
