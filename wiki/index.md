@@ -1,7 +1,11 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-09-09
+最終更新: 2026-09-10
 
+### 本日更新（2026-09-10 Crawl Triage: DeepSeek V4.1 Flash 正式版観測 / GPT Image 2.5 局所編集不満）
+- `entities/deepseek.md` — **更新**: 「続報（2026-09-10）」節追加。内测期限当日に V4.1 Flash 正式上線観測（5,520億パラメータ・視覚統合・価格引き下げ・9/14 V4 Pro下线主張、第三者経由・単一ソース・未検証）
+- `concepts/gpt-image-2.md` — **更新**: GPT Image 2.5 節に続報その2追加。「只改这里」指示で他レイアウトが壊れるという局所編集の制御性不満（V2EX t/1241077、単一ソース）
+エンティティ: 65, コンセプト: 121, ダイジェスト: 7, 比較: 2, ページ: 9
 ### 本日更新（2026-09-09 Crawl Triage: DeepSeek pro→flash疑い / 豆包输入法Win版 / GPT Image 2.5）
 - `entities/deepseek.md` — **更新**: V4.1 Flash 内测節に「続報（2026-09-09）」＋独立節追加。platform.deepseek.com で pro が flash にルーティングされているという避雷報告（V2EX t/1240743、単一ソース・未検証）
 - `concepts/doubao.md` — **更新**: 「豆包输入法 Windows版リリース（2026-09-09）」節追加。5月のMac版に続くWindows対応（V2EX t/1240545、score 58）

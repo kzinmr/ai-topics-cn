@@ -3954,3 +3954,17 @@ Originating conversation: (scheduled cron)
   2026-09-08発表とされる速度型 Flare（スループット2〜4倍・API既定）／精度型 Sunburst（多輪編集の主体保持）への2モデル分割、@Sketch・真alpha透明背景・4K・quality5段階（単一ソース・未検証）。
 - skip: juejin 高スコア「Cursor转Codex」(score 405だがdate 2026-05-10再収录)、「Kimi K3太牛了」(08-24再収录)、「IDEA阿里Qoder」(05-19再収录)、
   「DeepSeek Harness 15款插件」(08-19再収录)、RAG第10章/温度とは/内存记忆等のチュートリアル類、v2ex餽贈広告（終身会员送付=144、中转站避雷=165）等。
+
+## [2026-09-10] crawl-triage | split crawl (run 20260910T090154Z、LLM-triage context長超過のため手動判定)
+
+- LLM-triage が context length exceeded (33,359 tokens) で失敗（case b、6日連続）。プリラン ok:false。
+  triage_latest.json は stale のまま。チェックポイント候補60件は既知の定型崩壊（aafeba3f 複製53件＋v2ex 旧候補7件、一意8件）。
+- 当日 inbox 直接クロール（v2ex/juejin/wechat-media 計45件、wechat-media は 2023年・2026年3月記事等の再収录中心）からの手動トリアージ。take 2件 / skip 中心。
+- take 1: V2EX t/1241067「deepseek v4.1 flash 上线了！终于支持多模态!」(2026-09-10) → entities/deepseek.md 続報(2026-09-10)節追加。
+  内测期限（expires-on-0910）当日の正式上線観測: 5,520億パラメータ・視覚理解統合（ネイティブ多モーダル）・API価格引き下げ・9/14 V4 Pro下线主張。
+  投稿は第三者サイト aisaasgo.org 誘導付き、公式告知未確認のため単一ソース・未検証。juejin「浪费时间！」(score 22) の不満反応も併記。
+- take 2: V2EX t/1241077「GPT Image 2.5 最大的槽点」(2026-09-10) → concepts/gpt-image-2.md に続報その2追加。
+  「只改这里」指示での他レイアウト破綻＝局所編集の制御性不満。Sunburst の主体保持主張と相反する末端観察（単一ソース・未検証）。
+- skip: v2ex 代充/中转/充值広告（Pro20x代充=1150、claude-max20x中转、如何充值chatgpt）、5.6sol降智スレッド（score 1・証拠なし・本文空）、
+  「GPT6 Token太快」等、juejin 再収录（IDEA阿里Qoder=05-19、Kimi K3三千万風刺=旧日付、Cursor转Codex）、AI Agent学習路線/復旦NLP綜述80頁等のチュートリアル・綜述類、
+  wechat-media 旧記事再収录（Meta版ChatGPT=2023-11-27、LiteLLM/招聘/毎日摘要等）、非AI系v2ex（AirPods/iPhone/東京夜生活/职位招聘）。
