@@ -1,7 +1,7 @@
 ---
 title: OpenAI — AI研究企業
 created: 2026-04-17
-updated: 2026-09-07
+updated: 2026-09-10
 tags: [company, lab, gpt, openai, codex]
 aliases: ["OpenAI", "openai", "GPT", "Codex"]
 source_lang: zh-CN
@@ -133,6 +133,14 @@ Anthropicが優位に立つ主要因は**Coding能力**。エンタープライ�
 > **出典**: Stanford HAI — [2026 AI Index Report](https://aiindex.stanford.edu) [T1]
 > **出典**: Similarweb — Claude DAU推移 [T2]
 > **出典**: OpenRouter — Token消耗統計 [T2]
+
+## Codex $200 Pro プラン供給停止観測（2026-09-10、単一ソース・未検証）
+
+- V2EX に「Codex $200 Pro plan 暂停供应」投稿（t/1241191、score 5、2026-09-10）。Codex 責任者 **Thibault Sottiaux（Tibo）** が X 上で Pro プランの供給停止を認めたとの伝聞。投稿者は「今日新たに Pro を開設したので当面は断供しない」と自身の状況を付記。
+- 位置づけ: 既往の「Tibo 手動リセット」言及（GPT-6 反応スレッド群）と整合する **Pro プラン枠の逼迫・供給調整**の末端観察。供給停止の範囲・恒久性・理由は不明。伝聞＋単一ソースのため未検証として記録。
+- 関連: 同一日の V2EX には Claude Max 20x 中転・代充系の広告スレッドも複数確認されており、有料プラン供給逼迫期に第三者経由のアクセス仲介が活性化する Pattern（09-07 の企業内プロキシ禁止スレッドと同系列）が続いている。
+
+> **出典**: V2EX t/1241191（2026-09-10）[T1・単一ソース・未検証]
 
 ## 関連リンク
 
