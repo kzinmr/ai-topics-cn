@@ -1,7 +1,7 @@
 ---
 title: "GPT Image 2 — OpenAIの次世代画像生成モデル"
 created: 2026-05-02
-updated: 2026-09-09
+updated: 2026-09-10
 tags: [openai, image-generation, gpt, multimodal, aigc, benchmark]
 aliases: ["GPT Image 2", "GPT Image 2.0", "GPT-Image-2"]
 source_lang: zh-CN
@@ -72,6 +72,12 @@ V2EXの実測投稿（Wenwener、2026-09-09収集）によれば、OpenAIは2026
 - **4K対応**: 最大3840×2160、カスタムサイズは16の倍数、アスペクト比1:3〜3:1、quality 5段階（low/medium/high/xhigh/max）
 
 > **出典**: V2EX t/1240850 — [GPT Image 2.5 正式发布](https://www.v2ex.com/t/1240850)（2026-09-09収集、実測投稿・単一ソース・未検証）
+
+### 続報（2026-09-10）: 局所編集の制御性への不満（単一ソース）
+
+- V2EX 投稿（score 0）: 「只改这里（ここだけ直して）」と指示しても GPT Image 2.5 は他のレイアウトを勝手に作り替える、という体感不満。「改修工数より検収工数が増える」構造を指摘し、多輪連続編集での細部保持を実運用のボトルネックに挙げる。上記 Sunburst の「主体保持」主張とは逆に、実際には制御が甘いという末端観察。冒頭に第三者画像生成サイトの誘導リンクを含む点に留意。全体評価は「進歩はあるが Image 2 初出時の感動は薄い、Image 3 に期待」＝期待値の平常化シグナル。
+
+> **出典**: V2EX t/1241077 — [GPT Image 2.5 最大的槽点](https://www.v2ex.com/t/1241077)（2026-09-10収集・単一ソース・未検証）
 
 ## 関連リンク
 
