@@ -1,6 +1,14 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-09-10
+最終更新: 2026-09-11
+
+### 本日更新（2026-09-11 Crawl Triage: Anthropic 9月脅威報告 / Kimi K2.8 Preview / V4.1 Flash続報）
+- `concepts/model-distillation.md` — **大幅更新**: Anthropic「September 2026 threat intelligence report」詳細追記（社名入り5社名指し、Qwen抽出規模、Kimi転送経由の敏感情報露出——監視映像解析依頼・内部コード曝出、「16人連座」伝聞、跨会話重放への防衛策）。中国コミュニティ反応は分裂（震怒/政治献上文論 t/1241356、プライバシー逆論点 t/1241443）
+- `entities/anthropic.md` — 9月報告と中国生態反響の節を追加
+- `entities/kimi-moonshot.md` — 最新動向セクション新設（報告名指し＋K2.8 Preview観測）
+- `entities/qwen.md` / `entities/glm-zhipu.md` / `entities/minimax.md` / `entities/xiaomi-mimo.md` — 9月報告名指し観測を追記（単一ソース・未検証）
+- `entities/deepseek.md` — V4.1 Flash 正式版観測の続報（V4 Pro 9/14撤去主張、単一ソース・未検証維持）
+- `concepts/kimi.md` — K2.8 Preview（Kimi Code登場、K3接近、番号降格に混乱）追記
 
 ### 本日更新（2026-09-10 Crawl Triage run 2: Codex Pro断供観測 / Harness解説シリーズ深化）
 - `entities/openai.md` — **更新**: 「Codex $200 Pro プラン供給停止観測（2026-09-10）」節追加。Tibo が供給停止を認めたとの伝聞（V2EX t/1241191、単一ソース・未検証）

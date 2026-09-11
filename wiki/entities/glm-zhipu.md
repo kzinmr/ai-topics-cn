@@ -186,6 +186,9 @@ V2EXユーザーIC0ZBが「**记一次 GLM 开发严重事故，花了 8 亿 tok
 
 > **出典**: V2EX（IC0ZB）— [记一次 GLM 开发严重事故](https://www.v2ex.com/t/1238217) [T3]、収集: 2026-08-31
 
+
+> **2026-09-11追記**: Anthropic「September 2026 threat intelligence report」で智譜（GLM）が名指し（詳細は [[model-distillation]] の同日節）。単一ソース経由のため未検証。
+
 ## 関連リンク
 
 ### 一次ソース（中国語）

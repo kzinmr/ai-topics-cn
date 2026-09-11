@@ -3,7 +3,7 @@ title: "Agentic Engineering（エージェントエンジニアリング）— �
 type: concept
 tags: [ai-agent, software-engineering, agentic-engineering, paradigm-shift, vibe-coding, harness]
 created: 2026-05-26
-updated: 2026-08-21
+updated: 2026-08-22
 source_lang: zh-CN
 ---
 
@@ -89,6 +89,8 @@ Agentic Engineeringは、2026年半ばに台頭した第2世代AI開発パラダ
 - **コミュニティ反響**: 開発者間でHarness Engineeringの重要性が急速に認知
 - **2026年8月19日追記**: Harness OSS公開後初の週末、実機体験記事が急増。Juejin「开源两天 9.5万 Star! DeepSeek Harness 到底是个啥」(8/17投稿)では「**开源两天、GitHub Star数10万突破**」が確認され、インストール〜実戦までの完全ガイドとして拡散。同系列の「DeepSeek Harness 强是真的强，普通用户可以再等等」では「**強いが、現行版はまだ一般ユーザー向けでない**」という評価。さらに「源码实战 第4章: Session 会话日志——单一事实源」では会话语の単一事実源設計がソースコードレベルで解説され、コミュニティが表層のスター数から**内部アーキテクチャ解読**フェーズへ移行中。
 - **2026年8月21日追記**: Harness OSS（8/13）公開後1週間、Juejinでエコシステム記事がさらに拡大。実機比較「我把 DeepSeek Harness 跑了一遍，终于知道它和 Codex 差在哪了」は「CodexはAgentを組んで渡す。Harnessは**組立方そのもの**を渡す」と位置づけ、基盤Cordis（TS/Node.jsメタフレームワーク）のソース解説、初期プラグイン15選ガイドが相次ぐ。詳細は [[concepts/deepseek]] §28 参照。
+- **2026年8月22日追記**: 関心は「仕組み解読」から「実用展開・業務影響」フェーズへ。V2EX「迁到 DeepSeek Harness 后，我发现开发团队可以裁掉了」（wolfhts、8/21）は、アプリチームがフロントエンド生成をHarness＋プラグイン市場に委譲し、役割は後端定義・データ蓄積・インターフェース提供に収斂したとする企業事例。Juejin「DeepSeek Harness 架构拆解：一切皆插件的 Agent 框架是怎么实现的」（Pika、8/22）はCordisプラグインライフサイクル管理に基づく「一切皆プラグイン」アーキテクチャを解説。詳細は [[concepts/deepseek]] §29 参照。
+- **2026年8月23日追記**: 関心は「実用展開」から「実運用の設計・統合・障害運用」フェーズへ。火山引擎Agentコミュニティが連日で Harness の Agent Plan 実践ガイド・AgentKit によるクラウド安全隔離デプロイ・schedule（定时任务）ドメイン実装・「vs Codex CLI vs Claude Code 使い分け」を量産。Juejin「84.5K+ Star！开源编程 Agent 控制台」（JavaGuide、8/23）は Codex・Claude Code・DeepSeek Harness を単一コンソールで一元管理する開源自制統合ツールで、ツール肥大化に対する「統制レイヤ」需要を示す。本番障害の教訓として「7 Agent 並列で 5 タスク同時 429 クォータ枯渇全滅」のポストモーテム（Juejin 8/22）と、本番シグナル設計論（V2EX「一个生产事件，怎样被 Agent 组织真正“看见”」、8/22）が並ぶ。詳細は [[concepts/deepseek]] §30 参照。
 
 ## 課題と限界
 

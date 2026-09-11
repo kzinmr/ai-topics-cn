@@ -1,7 +1,7 @@
 ---
 title: "Kimi（月之暗面/Moonshot AI）— Claude Code代替として急成長する中国国産LLM"
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-09-11
 tags: [llm, model, china, coding-agents, company]
 aliases: ["Kimi", "月之暗面", "Moonshot AI", "Kimi K2.5", "Kimi K2.6", "kimi-moonshot"]
 source_lang: zh-CN
@@ -12,6 +12,11 @@ source_lang: zh-CN
 > **トレンド順位**: #11（2026-04-17集計、11言及）
 > **ソース**: Juejin, V2EX
 > **注目度**: 🔥🔥🔥 — 身分認証問題を背景にClaude代替として急浮上
+
+## 最新動向
+
+- 2026-09-11: Anthropic「9月脄警インテリジェンス報告」でMoonshotが社名入り再名指。転送経由の敏感情報露出セース（監視映像解析依頼・内部コード曝出）や「16人連座」議論は [[model-distillation]] 参照（単一ソース・未検証）。
+- 2026-09-11: **Kimi K2.8 Preview** が Kimi Code に登場、性能は K3 に近との観察。番号が K3 から下がったように見えることにコミュニティで混乱（命名規約は不明、単一ソース）。
 
 ## 概要
 

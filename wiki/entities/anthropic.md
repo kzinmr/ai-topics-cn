@@ -1,7 +1,7 @@
 ---
 title: Anthropic — AI研究企業
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-09-11
 tags: [company, lab, ai-safety, claude, anthropic]
 aliases: ["Anthropic", "anthropic"]
 source_lang: zh-CN
@@ -75,6 +75,10 @@ AnthropicはClaude Codeに**Routines**（定时任务）と**Hooks**（フック
 | 中国市場 | KYCでアクセス制限 | Codex「超级龙虾」で攻勢 |
 
 36krの分析では「奥特曼又得失眠」（Sam Altmanはまた眠れない）と評され、Opus 4.7の性能向上がOpenAIを脅かしている状況が描かれている。
+
+### 2026年9月脅威インテリジェンス報告と中国生態の反響（2026-09-11）
+
+Anthropicが中国5社（Alibaba/Qwen、Moonshot/Kimi、DeepSeek、Zhipu/GLM、Xiaomi MiMo）の蒸留攻撃を社名入りで再名指した「September 2026 threat intelligence report」を公開。詳細は [[model-distillation]] 参照。中国コミュニティ反応は「震怒」「政治獻上文」「隠ましい事実」に分裂（V2EX t/1241356 など、単一ソース・未検証）。この報告は、自社モデルを経由した中国ユーザーにおける敏感情報漏出（PLA関連ユーザーの監視映像解析依頼、央国企エンジニアの内部コード・証明書曝出、バイト代ためのジャーナルツール活用）まで公表しており、「これほどの情報を公表しても米欧プライバシー法に触れないのか」という逆論点も台となっている（V2EX t/1241443）。
 
 ## 関連リンク
 

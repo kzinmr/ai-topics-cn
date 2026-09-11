@@ -1,7 +1,7 @@
 ---
 title: "Baidu（百度）— 文心一言/ERNIEと中国AI検索大手"
 created: 2026-04-18
-updated: 2026-04-28
+updated: 2026-08-22
 tags: [china, llm, company, search, multimodal, erenie, open-source-ai]
 aliases: ["百度", "文心一言", "ERNIE", "Wenxin", "WenXin Yiyan", "文心", "文小言", "Baidu AI"]
 source_lang: zh-CN
@@ -191,6 +191,18 @@ ERNIE（Enhanced Representation through kNowledge IntEgration）は、Baiduが20
 | Qwen3-235B | 阿里雲 | 235B（MoE） | 多言語対応 |
 | Claude Opus 4.7 | Anthropic | — | 推論スケーリング |
 | GLM-5 | 智譜AI | 744B（MoE） | SWE-bench 77.8 |
+
+## 最新動向（2026年8月）
+
+### ERNIE 5.0「第一梯隊」への復帰狙い（8月22日）
+
+V2EX（2026-08-22、[t/1236348](https://www.v2ex.com/t/1236348)）で、李彦宏（Robin Li）CEOが**文心一言（文心/ERNIE）を「第一梯隊（first tier）」に戻す**方針を提示したとの言及が確認された。
+
+- **文脈**: 2026年上半期はDeepSeek V4/Harness、Kimi K3、Qwen 3.8、GLM-5.2等の中国勢LLMがコーディング・Agent・オープンウェイトで急成長し、文心（Wenxin）は相対的に話題性の面で後退していた。
+- **位置づけ**: ERNIE 5.0（2026年1月/2.4T原生全模態）の技術優位性を再強調し、中国トップクラスLLM群への復帰を掲げる経営方針と読む。
+- **留意**: 本情報はV2EXコミュニティ投稿に由来し、公式発表（文心一言・百度AI開発者大会等）での裏付けは未確認。公式アナウンスを追跡する。
+
+**出典**: V2EX 2026-08-22 [T2]
 
 ## 関連リンク
 

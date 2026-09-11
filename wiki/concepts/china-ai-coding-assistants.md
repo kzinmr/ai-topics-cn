@@ -1,7 +1,7 @@
 ---
 title: "中国AIコーディングアシスタント — Trae・MarsCode・通义灵码・CodeGeeX"
 created: 2026-04-28
-updated: 2026-08-17
+updated: 2026-09-11
 tags: [coding-agents, tooling, china, product-comparison, ide]
 aliases: ["中国AI编程助手", "China AI Coding Assistants", "Trae", "MarsCode", "通义灵码", "CodeGeeX", "Lingma", "Qoder CN"]
 source_lang: zh-CN
@@ -320,6 +320,17 @@ Alibabaの通义灵码が2026年5月に主要アップデートを実施：
 - **Trae/CodeGeeX/腾讯CodeBuddy**: 期間中にメジャーアップデートなし。DeepSeek Harnessとの比較で言及されるのみ
 
 > **出典**: juejin（8/5-8/16）、V2EX（8/6-8/16）、日次ダイジェスト（8/9,11,13,15,16）
+
+### 2026年8月18日〜9月10日の状況
+
+期間中に Trae・CodeGeeX・MarsCode・CodeBuddy のメジャーアップデートはクロール上確認できず。DeepSeek Harness 関連の解説連載が juejin で継続（サブエージェント/プラグイン設計解説、参考レベル）。目立つのはグローバルツールの中国開発者コミュニティへの浸透観察のみ。
+
+- **Cursor → Codex 移行体験記（juejin、frontmatter 日付 2026-05-10 の再収載、score 420）**: 「大半个月」の乗り換え実感を語る高評価記事。旧記事だが再クロールで毎日のように上位再浮上しており、Cursor 課金不満→Codex 移行というナラティブの持続的トラクション自体をシグナルとして記録。個々の主張は日付どおり 5 月時点のもの。
+- **Claude Code 実践記事の再収載（juejin 2026-09-10 に収集）**: 「32 Skills + 8 MCP」実践記（frontmatter 2026-03-23）、「3D 智慧校园数据大屏」生成全記録（同 2026-06-02）はいずれも旧記事の再浮上。ただし 7 月の CNNVD 警告・Alibaba 社内禁止以降も Claude Code 実践記事が繰り返し上位再浮上すること自体を、禁止措置後も利用実践が消えていないシグナルとして記録。記事内の個々の主張は frontmatter 日付時点のもの。
+- **Qoder 関連新規なし**: IDEA + Qoder 記事（frontmatter 2026-05-19）の再収載のみ。8/17 記録の IDC 47.6% シェア確認後に新データなし。
+
+> **出典**: Juejin post/7637856870833635343（旧記事再収載）, post/7620060655607857178・post/7646369339936096299（2026-09-10 収集の Claude Code 実践記事 2 本）— ローカルクロールデータに基づく
+
 
 ## 出典
 - ByteDance Trae公式: [trae.ai](https://www.trae.ai) [T1]

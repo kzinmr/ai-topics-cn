@@ -963,6 +963,9 @@ AlibabaはQwenを中核とした**フルスタックAI戦略**を展開：
 - ABot-Worldロボティクスモデルの展望
 - Zhenwuチップと中国电信のデータセンター連携
 
+
+> **2026-09-11追記**: Anthropic「September 2026 threat intelligence report」で Qwen が名指し（詳細は [[model-distillation]] の同日節）。中国コミュニティ経由の要約ベースで個別数値は未検証。
+
 ## 関連リンク
 
 ### 内部リンク

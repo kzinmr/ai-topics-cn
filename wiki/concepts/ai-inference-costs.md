@@ -1,7 +1,7 @@
 ---
 title: AI推論コスト — 業界のAIインフレと推論経済の現実
 created: 2026-06-03
-updated: 2026-06-03
+updated: 2026-08-25
 tags: [economics, inference-cost, ai-inflation, pricing, market-trend]
 aliases: ["AI推論コスト", "Inference Cost", "AI Economics", "AIコスト現実"]
 source_lang: zh-CN

@@ -144,6 +144,9 @@ ChinAI #372（2026-08-24）併載の晩点LatePost翻訳記事（実務者約10�
 | **Kuaishou (快手)** | Kling AI | テキストtoビデオ |
 | **ByteDance** | Seedance / 豆包 | テキストtoビデオ + AIアシスタント |
 
+
+> **2026-09-11追記**: Anthropic「September 2026 threat intelligence report」で MiniMax が再名指し（詳細は [[model-distillation]] の同日節）。未検証。
+
 ## 関連
 
 - [[Anthropic]] — 2026年2月にデータ蒸留疑惑で非難

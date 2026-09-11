@@ -3981,3 +3981,13 @@ Originating conversation: (scheduled cron)
 - skip: V2EX「GPT Image 2.5 提示词合集开源」(score 0、image-2-5.com プロモ併走のコレクション共有)、V2EX 代充/中转/卖token/养号広告類、
   juejin「DeepSeek 明天又降价」(09-09、価格数値は朝のrunの「価格引き下げ」主張と同一単一ソース系列のため据え置き)、「浪费时间！DeepSeek 4.1 Flash」(朝のrunで感情反応として記録済み)、「幻觉率4.2%→2%」(09-07物・09-06run記録済み)、
   「GPT6酷炫动效教学」「三年了AI为何没抢走饭碗」(09-07・汎論)、「Milvus长期记忆」等チュートリアル類、wechat-media 旧記事再収录（AI00榜单=aafeba3f複製群、毎日摘要=3月物、復旦NLP綜述=4月物再収录、招聘/初识Agent等）。
+
+|## [2026-09-11] crawl-triage | split crawl (run 20260911T210142Z、LLM-triage context長超過のため手動判定)
+|
+|- LLM-triage が context length exceeded (33,187 tokens) で失敗（case b、## Response 空・## Error 尾読みで確認）。プリラン ok:false。triage_latest.json は stale のまま。チェックポイント候補60件は既知の定型崩壊（aafeba3f 複製53件＋v2ex 旧候補7件、一意8件）。
+|- 当日 inbox 直接クロール（v2ex/juejin 計74件のうち 2026-09-11日付物）からの手動トリアージ。同日朝の active-crawl（09:43-09:46 UTC 作業ツリー分、未コミット）が Anthropic 9月報告の続報節・K2.8 Preview 節・V4.1 Flash 詳細補強を既に記録済みのため、重複再集約は行わない。
+|- take 1: V2EX t/1241456「求真: Kimi 被带走 16 个人」(score 7、2026-09-11) → concepts/model-distillation.md 続報（2026-09-11）節に Moonshot 個別数値（5〜7月に2,300万件超交互・16人連座含め上級幹部との主張）と报告149ページの敏感情報記載（PLA関連監視映像分析・国企エンジニアの内部コード/凭据露出）を追記。t/1241443（score 3）の「違規使用内容の公開は米欧プライバシー法に抵触しないか」という反論も-community反応として併記。
+|- take 2: entities/anthropic.md に「Anthropic 9月脅威インテリジェンス報告（2026-09-11）」節をページ末尾へ昇格。t/1241298（score 221・同日最大）の主報導として、名指し5社＋手口内訳公表を Anthropic 側一次アクションとして記録（詳細本体は model-distillation）。
+|- reference: entities/{qwen,glm-zhipu,minimax,xiaomi-mimo}.md に名指し事実の一行日付追記（本体は model-distillation を参照、各社公式反応は未確認のため未検証維持）。
+|- skip: V2EX 代充/续费/中转広告（Pro20x代续费、独享梦、中转站有福了、橙枢充值）、求職/給与スレ（携程4年月薪3万）、股票焦虑、个人项目 Showcase（台风网站/Whisper播放器/Suno站/微信小游戏/vibe-coding待办）、juejin 再収录（Kimi K3三千万足矣=風刺旧物、Cursor转Codex、IDEA阿里Qoder、RAG教程、Anthropic正义论=感情反応）、GPT Image 2.5 一手实测=09-09物で既集約済み、DeepSeek V4.1 Flash 系列（鬼故事/浪费时间/明天又降价=既記録の同チェーンまたは感情反応）、AgentWork蓝皮书/豆包录Skill（プロモ併走・previewのみ）。
+|- note: 同日朝の active-crawl 分（deepseek/kimi/model-distillation の 09-11 節）は兄弟セッションの作業ツリー改変として残置、本 run のコミット対象にしない。（後記）この朝分セッションは作業ツリーのみ残しコミットしていなかったため、本 run（21:10 UTC）で model-distillation / anthropic / kimi-moonshot / 名指し4社 / kimi の 09-11 分を含めトリアジセットとしてコミットした。
