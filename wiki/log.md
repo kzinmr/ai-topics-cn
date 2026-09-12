@@ -3991,3 +3991,20 @@ Originating conversation: (scheduled cron)
 |- reference: entities/{qwen,glm-zhipu,minimax,xiaomi-mimo}.md に名指し事実の一行日付追記（本体は model-distillation を参照、各社公式反応は未確認のため未検証維持）。
 |- skip: V2EX 代充/续费/中转広告（Pro20x代续费、独享梦、中转站有福了、橙枢充值）、求職/給与スレ（携程4年月薪3万）、股票焦虑、个人项目 Showcase（台风网站/Whisper播放器/Suno站/微信小游戏/vibe-coding待办）、juejin 再収录（Kimi K3三千万足矣=風刺旧物、Cursor转Codex、IDEA阿里Qoder、RAG教程、Anthropic正义论=感情反応）、GPT Image 2.5 一手实测=09-09物で既集約済み、DeepSeek V4.1 Flash 系列（鬼故事/浪费时间/明天又降价=既記録の同チェーンまたは感情反応）、AgentWork蓝皮书/豆包录Skill（プロモ併走・previewのみ）。
 |- note: 同日朝の active-crawl 分（deepseek/kimi/model-distillation の 09-11 節）は兄弟セッションの作業ツリー改変として残置、本 run のコミット対象にしない。（後記）この朝分セッションは作業ツリーのみ残しコミットしていなかったため、本 run（21:10 UTC）で model-distillation / anthropic / kimi-moonshot / 名指し4社 / kimi の 09-11 分を含めトリアジセットとしてコミットした。
+
+|## [2026-09-12] newsletter-triage | Tech Taiwan (Semicon Series 2)
+
+|-　プリラン ok:false（failed to parse JSON）だが、output_path の ## Response にパース可能な完全な decisions JSON が存在（case a、parse-only）。checkpoint_run_id=20260912T070032Z として恢復。
+|-　候補6件はすべて Tech Taiwan ネュースレター単1本（Semicon Series 2）のアドレスが違う配信リンクバージョンと profile ページプレビュー。take 1（f4e273f7）/ reference 1（open.substack版、同内容）/ skip 4（app-link×2、read-in-app、profile 139文字）。
+|-　take: entities/mediatek.md に「AI時代向け組織再編 — Intel/Apple出身幹部の新チーム（2026-09-11）」節追記。本編全文は会員限定でクロールは預告パートのみ、組織規模は未検証。
+|-　同一ネュースレター内の追取材: entities/huawei.md に「Kirin 9050 Pro / Mate XT2 — Tao's Law チップ初の搬載（2026-09-11）」節追記。hybrid bonding での7nm垂直スタック、密度+55%/性能+42%は華為公式主張として未検証。量産歩留は海外アナリストコメントも含め主張扱い。
+|-　note: 半導体主体でAI本体ニュースは薄いが、中国AI半導体サプライチェーン（搬載チップの国産化、米国の出口制裁下の先端チップ）文脈で参照価値。ポータルプレビュー（139文字）と4つの重複URLはスキップ。
+
+|## [2026-09-12] crawl-triage | split crawl (run 20260912T090136Z、LLM-triage context長超過のため手動判定)
+|
+|- LLM-triage が context length exceeded (33,192 tokens) で失敗（case b、## Response 空・## Error 尾読みで確認）。プリラン ok:false。triage_latest.json は stale のまま。チェックポイント候補60件は既知の定型崩壊（aafeba3f 複製53件＋v2ex 旧候補7件、一意8件）。
+|- 当日 inbox 直接クロール（juejin 15件 / v2ex 15件 / wechat-media 11件）からの手動トリアージ。同日朝の newsletter-triage（Tech Taiwan 分）とは対象が重複しない。take 2 / reference 0 / skip 中心。
+|- take 1: entities/openai.md に「OpenAI 基盤インフラ・マルチモーダルAPIの動向（2026-09-12）」節追加。juejin「蜗牛聊AI」2本（Habitat=週次10億ユーザーでのメタデータ系ボトルネック論点 / GPT-Live-1 API=全二重音声）がいずれもプレビューのみの受領のため未検証シグナルとして記録。V2EX「你们ChatGPT重置了吗」「三点了我还没重置」は供給逼迫系列の末端観察として同節に集約。
+|- take 2: entities/anthropic.md の9月脅威報告に続報（2026-09-12）小节追加。V2EX t/1241538（score 10）「没人管管 Anthropic 一直骂街吗」— 密钥/涉密情報の公表主張をうけて中国側の規制・対抗措置への波及を注視する世論（単一ソース・未検証、当局反応なし）。
+|- skip: wechat-media 旧記事再収录（Meta版ChatGPT=2023-11物、AI闪讯まとめ=2026-03物、aafeba3f複製群）、juejin 再収录・風刺（Kimi K3三千万足矣=07-27物score93、32个Skills=03-23物score849でagent-skills参照済み、Cursor转Codex、IDEA阿里Qoder、面试経験談2件）、DeepSeek V4.1 Flash 解説（09-10物・既記録の拡散チェーン同一物）、V2EX 代充/抽送/中转広告（ChatGPT Plus代充、智友社抽送、Codex Pro池）、求職2件、個人Showcase（微信小游戏/台风网站/FSRS英語/Youtube文字化/FlowDesk/nix論戦/vibe-coding論戦/IM発明議論/二手AI主機）、PolyWorkBench（09-08 PaperWeekly・プレビューのみ・新事実抽出できず）、DeepSeek Harness 插件15款（解説シリーズ続編・新事実なし）。
+|- note: 兄弟セッションの作業ツリー改変（config/hermes/skills 配下、config/hot-topics.yaml、huawei/mediatek の newsletter 分）は本 run のコミット対象にしない（ページ分と index/log 分のみ個別 stage）。

@@ -1,6 +1,14 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-09-11
+最終更新: 2026-09-12
+
+### 本日更新（2026-09-12 Crawl Triage: OpenAI 基盤動向 Habitat/GPT-Live-1 / Anthropic報告続報）
+- `entities/openai.md` — **更新**: 「OpenAI 基盤インフラ・マルチモーダルAPIの動向（2026-09-12）」節追加。Habitat（週次10億ユーザーのメタデータ系ボトルネック論点）・GPT-Live-1 API（全二重音声）をプレビューのみ・未検証で記録。ChatGPTリセット依存スレッド2件は供給逼迫系列として集約
+- `entities/anthropic.md` — **更新**: 9月脅威報告続報（2026-09-12）小节追加。V2EX t/1241538「没人管管 Anthropic 一直骂街吗」— 密钥/涉密情報公表をうけて中国側の規制反応が出るかという法制度論への波及（単一ソース・未検証）
+
+### 本日更新（2026-09-12 Newsletter Ingest: Tech Taiwan Semicon Series 2 — MediaTek組織再編 / Kirin 9050 Pro）
+- `entities/mediatek.md` — **更新**: 「AI時代向け組織再編 — Intel/Apple出身幹部の新チーム（2026-09-11）」節追加。Nvidia $3.5B を背景に Intel/Apple 出身幹部2名登用の布陣（Tech Taiwan独占・予告段階・単一ソース・未検証）
+- `entities/huawei.md` — **更新**: 「Kirin 9050 Pro / Mate XT2 — 『Tao's Law』チップ初の搭載（2026-09-11）」節追加。hybrid bonding による7nm垂直スタック、密度+55%/性能+42%は華為主張扱い・未検証。Apple iPhone Duo（TSMC 2nm）との中国市場対決構図も記録
 
 ### 本日更新（2026-09-11 Crawl Triage: Anthropic 9月脅威報告 / Kimi K2.8 Preview / V4.1 Flash続報）
 - `concepts/model-distillation.md` — **大幅更新**: Anthropic「September 2026 threat intelligence report」詳細追記（社名入り5社名指し、Qwen抽出規模、Kimi転送経由の敏感情報露出——監視映像解析依頼・内部コード曝出、「16人連座」伝聞、跨会話重放への防衛策）。中国コミュニティ反応は分裂（震怒/政治献上文論 t/1241356、プライバシー逆論点 t/1241443）
