@@ -4017,3 +4017,9 @@ Originating conversation: (scheduled cron)
 |- take 3（reference 寄りの小トピック）: concepts/gpt-image-2.md に「続報（2026-09-12）」追記。GPT Image 2.5 オープンプロンプト集（30事例・20編集指示・MIT・gptimage25.ai 運営者本人申告）公開——画面推导/編集改写の区別という整理論点とともに、プロンプト再利用資産の生態系定着シグナルとして記録。
 |- skip: 朝 run の skip 記録済み items の再収录（鬼故事=皮肉記事、一次把自家旗舰送走=09-11記録済みの同一記事、语音AI边听边说=朝 take 1 で記録済みの本文受領版だが新事実なし、ChatGPT服务10亿周用户=同上）、checkpoint 旧 v2ex 候補7件（すべて暂无内容）、V2EX 代充/抽送広告（Plus代充、智友社抽送、Codex Pro池、现在怎么买plus）、claude被封5天（単発被害報告・恒久性なし）、個人Showcase（Brosis=スコア0新ツール宣伝、dsh、RED、FlowDesk、Todo、FSRS英語、Ozon、威海游记）、解説・チュートリアル類（Agent流程图、vllm教程19、Langflow、Prompt设计、ADE浅析=用語紹介のみ、结构化表格、携程面试题）、nix/vibe-coding/IM発明の議論戦、求職2件、二手AI主機、top域名扯皮、Anthropic骂街=朝 take 2 で記録済みの再収录、微信小游戏、PolyWorkBench（09-08物・プレビューのみ）、wechat-media 旧記事（date: が 2017〜2026-03 の sogou 再収录群）。
 |- note: 兄弟セッションの作業ツリー改変（config/、skills、huawei/mediatek、distillation 分）はコミット対象にしない。ページ分（deepseek/openai/gpt-image-2）と index/log 分を個別 stage して2コミット。
+
+|## [2026-09-13] newsletter-triage | （空振り／no-op）
+|
+|- プリラン ok:false（failed to parse JSON）だが、output_path の ## Response にパース可能な完全な JSON が存在（case a、parse-only）。checkpoint_run_id=20260913T070035Z として恢復。
+|- 収集結果は新規候補0件（candidates=[]、processed_count=0）。前日の Tech Taiwan Semicon Series 2（09-11配信分）は既に対象済みで、Maildirに新規ニュースレターなし。take、reference、skip いずれも発生せず、Wiki更新なし。
+|- 作業ツリーに残存していた09-12収集分の未追跡ファイル（digest 1件 + raw記事重複5件、すべてSemicon Series 2の配信リンク違い）のみを inbox コミット（8dfac6d）として保存。ページ改変なし。
