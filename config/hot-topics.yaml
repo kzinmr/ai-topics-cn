@@ -104,11 +104,13 @@ topics:
       - "GLM-5.2 リリース GPT-6越獸"
       - "GLM-5.1 降智 思考強度"
       - "GLM-5.3 ZCode Agent 実測 Zhipu 智譜"
+      - "GLM-5.3-Flash 原生多模态 320B 18B 稀疏注意力 线性注意力"
+      - "Zcode glm-5.3-flash 免费时间 定时任务"
     wiki_pages:
       - concepts/chatglm
-    notes: "2026.08.27更新: GLM-5.3正式APIリリース確認(8/27公式ドキュメントdocs.bigmodel.cn/GLM-5.3 Hot+GLM-5.3-Flash New/「迁移至GLM-5.3」ガイド公開)。仕様:1Mコンテキスト/最大出力128K/テキストのみ/思考常時オン(無効化非互換/reasoning_effort low-high-max)/Z.ai Code BenchでGLM-5.2比+50%/Terminal Bench 3.0・Agents Last Exam(CLI)オープンウェイトSOTA/CyberGym漏洞発見最高・漏洞利用系2倍超。ZCode=GLM-5.3公式ハーネス(zcode.z.ai/macOS Apple Silicon/マルチAgent Vibe Coding)確立。GLM Coding PlanがGLM-5.3全量公開(ポイント割当体系)。オープンウェイト公開は未確認。"
+    notes: "2026.09.11更新: GLM-5.3-Flash公式ドキュメントページ(/cn/guide/models/vlm/glm-5.3-flash/9/9更新stamp)確認—GLM-5系列首个原生多模态(動画・画像・テキスト・ファイル入力/1M/128K)/総320B激活18B/稀疏+線形注意力混合アーキテクチャ首个开源前沿模型(注意力計算量1/3.01・KV cache 1/4.44)/視覚Coding/GLM Coding Plan全量上線・額度3倍/跑在国产芯片上。V2EX(9/7)Zcode定時タスクでglm-5.3-flash無料時間帯を搾る実務=free tier定着シグナル。固有メジャーリリースなし=静穏。9/4-9/11。2026.08.27更新: GLM-5.3正式APIリリース確認(8/27公式ドキュメントdocs.bigmodel.cn/GLM-5.3 Hot+GLM-5.3-Flash New/「迁移至GLM-5.3」ガイド公開)。仕様:1Mコンテキスト/最大出力128K/テキストのみ/思考常時オン(無効化非互換/reasoning_effort low-high-max)/Z.ai Code BenchでGLM-5.2比+50%/Terminal Bench 3.0・Agents Last Exam(CLI)オープンウェイトSOTA/CyberGym漏洞発見最高・漏洞利用系2倍超。ZCode=GLM-5.3公式ハーネス(zcode.z.ai/macOS Apple Silicon/マルチAgent Vibe Coding)確立。GLM Coding PlanがGLM-5.3全量公開(ポイント割当体系)。オープンウェイト公開は未確認。"
     added: 2026-04-17
-    last_crawled: 2026-08-27
+    last_crawled: 2026-09-11
 
   - slug: kimi
     title: "Kimi — Moonshot AI (月之暗面)"
@@ -195,9 +197,9 @@ topics:
     wiki_pages:
       - entities/tencent-ai
       - entities/tencent-hunyuan
-    notes: "2026.08.24更新: 8/13-24は静定期継続。Hy3.0正式版は8/24時点で依然未リリース(15週目の延期)。WorkBuddyエコシステム活発化: Pragma OSSマルチAgentハネス(V2EX8/11)+WorkDaddy多アカウントツール(8/18)+WorkBuddy×Canva可画MCP解析(Juejin8/19)。Tencent TDesign AI拡張パッケージOSS公開(8/21-23/CLI+MCP+Chatbot)。姚順雨新活動なし。Q2決算AI関連未取得。web検索不可のためローカルdigestベース。 8/7〜12に腾讯固有の主要リリースなし(静定期継続)。Hy3.0正式版は8/12時点で未リリース(計13週目)。WorkBuddyオープンソース版推薦がV2EX(8/11)で確認(コミュニティ言及のみ)。新規モデル・価格改定なし。姚順雨新活動なし。Q2決算は8月中旬発表予定。2026.08.07更新: 8/1〜7に腾讯固有の主要リリースなし。"
+    notes: "2026.09.15更新: 9/11〜15静穏期(混元/元宝/WorkBuddy言及ゼロ)、Hy3.0正式版未リリース継続→entities/tencent-hunyuan.mdに静穏期節追加。2026.08.24更新: 8/13-24は静定期継続。Hy3.0正式版は8/24時点で依然未リリース(15週目の延期)。WorkBuddyエコシステム活発化: Pragma OSSマルチAgentハネス(V2EX8/11)+WorkDaddy多アカウントツール(8/18)+WorkBuddy×Canva可画MCP解析(Juejin8/19)。Tencent TDesign AI拡張パッケージOSS公開(8/21-23/CLI+MCP+Chatbot)。姚順雨新活動なし。Q2決算AI関連未取得。web検索不可のためローカルdigestベース。 8/7〜12に腾讯固有の主要リリースなし(静定期継続)。Hy3.0正式版は8/12時点で未リリース(計13週目)。WorkBuddyオープンソース版推薦がV2EX(8/11)で確認(コミュニティ言及のみ)。新規モデル・価格改定なし。姚順雨新活動なし。Q2決算は8月中旬発表予定。2026.08.07更新: 8/1〜7に腾讯固有の主要リリースなし。"
     added: 2026-04-29
-    last_crawled: 2026-08-24
+    last_crawled: 2026-09-15
 
   # =========================================================
   # 2. Chinese AI Agent Ecosystem (中国AIエージェント)
@@ -443,8 +445,8 @@ topics:
       - "AAIF 43新メンバー 2026"
     wiki_pages:
       - concepts/mcp-china
-    notes: "2026.08.17更新: 8/10-17にMCP固有の大規模リリースなし。GitMCP(CAD連携/掘金8/16)確認。DeepSeek Harness MCP対応。Stateless仕様未リリース。理解深化期継続。2026.08.10更新: 7/28〜8/2期間にMCP固有の主要リリース・新規CVE・AAIF新メンバーなし。MCP SDK月間3億DL/公開サーバー9,400+維持。掘金でMCP+Claude Code連携チュートリアル多数(32 Skills+8 MCP等)。MCP無状態仕様は7/28リリース予定→実装状況不明。静定期継続。2026.08.10更新: MCP理解深化期(8/3-10)。Tool/Resource/Prompt三機能の理解拡大。新規MCPサーバー: iOS SandboxServer(V2EX8/4)、DataZen v0.0.8(V2EX8/7)、codebase-memory-mcp(掘金8/7)。Agent Skills完全指南(Juejin8/8)。LiteLLM脆弱性警告(36kr8/4)。新規CVEなし。2026.07.28更新: 45日間クロールギャップ。MCP Stateless最終仕様7/28リリース予定(Google共同開発)。    added: 2026-04-17
-    last_crawled: 2026-08-17
+    notes: "2026.09.15更新: 8/18〜9/14静穏期継続(新規発表/CVEなし)、32Skills+8MCP解説の長期トラクション(score 846→850)をconcepts/mcp-china.md§11に記録。2026.08.17更新: 8/10-17にMCP固有の大規模リリースなし。GitMCP(CAD連携/掘金8/16)確認。DeepSeek Harness MCP対応。Stateless仕様未リリース。理解深化期継続。2026.08.10更新: 7/28〜8/2期間にMCP固有の主要リリース・新規CVE・AAIF新メンバーなし。MCP SDK月間3億DL/公開サーバー9,400+維持。掘金でMCP+Claude Code連携チュートリアル多数(32 Skills+8 MCP等)。MCP無状態仕様は7/28リリース予定→実装状況不明。静定期継続。2026.08.10更新: MCP理解深化期(8/3-10)。Tool/Resource/Prompt三機能の理解拡大。新規MCPサーバー: iOS SandboxServer(V2EX8/4)、DataZen v0.0.8(V2EX8/7)、codebase-memory-mcp(掘金8/7)。Agent Skills完全指南(Juejin8/8)。LiteLLM脆弱性警告(36kr8/4)。新規CVEなし。2026.07.28更新: 45日間クロールギャップ。MCP Stateless最終仕様7/28リリース予定(Google共同開発)。    added: 2026-04-17
+    last_crawled: 2026-09-15
 
   - slug: mcp-chinese-tools
     title: "Chinese MCP Tools & Servers (中国MCP工具)"
