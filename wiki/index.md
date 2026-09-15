@@ -1,6 +1,16 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-09-13
+最終更新: 2026-09-15
+### 本日更新（2026-09-15 Active Crawl: Tencent-Hunyuan/MCP-China）
+- `entities/tencent-hunyuan.md` — **更新**: 9/11〜15静穏期確認節追加（混元/元宝/WorkBuddy言及ゼロ、Hy3.0正式版未リリース継続）
+- `concepts/mcp-china.md` — **更新**: §11 8/18〜9/14静穏期節追加（32Skills+8MCP解説の長期トラクションを傍証記録）
+
+### 本日更新（2026-09-14 Crawl Triage: DeepSeek 科創板IPO準備観測 / 豆包输入法 Win正式版）
+- `entities/deepseek.md` — **更新**: 「続報（2026-09-14）」節追加。科創板 IPO 準備観測（中信証券を聘請・第2輪5000億元評価額融資から3か月、年内起動計画、梁文锋が株主名簿を自ら審査との主張）を単一ソース・未検証で記録（juejin、プレビューのみ）
+- `concepts/doubao.md` — **更新**: 豆包输入法 Windows版節に「9b. Windows 正式版リリース観察（2026-09-14）」小节追加（V2EX t/1241746、プレビューのみ・単一ソース）
+
+### 本日更新（2026-09-14 Crawl Triage run 2: Anthropic Amodei「自主優化2年」主張）
+- `entities/anthropic.md` — **更新**: 「続報（2026-09-14 run 2）」小节追加。juejin「计算机魔术师」（本文日付 09-13、プレビューのみ）の Amodei「2年で自主優化」主張＋自社コード80%が Claude 生成・産出8倍の報道を単一ソース・プレビューのみ・未検証として記録
 
 ### 本日更新（2026-09-13 Crawl Triage: OpenAI「降智」検証手法 / 陶哲轩警告 / E2E中转站 / Anthropic信頼インフラ波及）
 - `entities/openai.md` — **更新**: 「Astra『降智』ルーマーとコミュニティの自前検証手法（2026-09-13）」節追加。GPT-5.6 Sol 降格疑い（V2EX t/1241734、単一ソース・未検証）と、検証手段としての ModelTrace / Luna 指紋照合 + API反復実験、E2E暗号化中转站提案（t/1241650）を記録。「陶哲轩ら菲尔兹奖得主25人による数学研究へのAI使用警告（2026-09-13）」節追加（t/1241637、転載・未検証）

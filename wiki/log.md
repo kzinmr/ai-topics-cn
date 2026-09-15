@@ -4023,3 +4023,30 @@ Originating conversation: (scheduled cron)
 |- プリラン ok:false（failed to parse JSON）だが、output_path の ## Response にパース可能な完全な JSON が存在（case a、parse-only）。checkpoint_run_id=20260913T070035Z として恢復。
 |- 収集結果は新規候補0件（candidates=[]、processed_count=0）。前日の Tech Taiwan Semicon Series 2（09-11配信分）は既に対象済みで、Maildirに新規ニュースレターなし。take、reference、skip いずれも発生せず、Wiki更新なし。
 |- 作業ツリーに残存していた09-12収集分の未追跡ファイル（digest 1件 + raw記事重複5件、すべてSemicon Series 2の配信リンク違い）のみを inbox コミット（8dfac6d）として保存。ページ改変なし。
+|
+|## [2026-09-15] active-crawl | Tencent-Hunyuan/MCP-China（deepdive・リレー観察）
+||
+|### Wiki更新
+|- `entities/tencent-hunyuan.md` — **更新**: 「2026年9月11日〜15日の状況」節追加。9/11〜15のdigest/inboxgrepで混元/元宝/WorkBuddy言及ゼロ=静穏期継続、Hy3.0正式版未リリース継続を確認。
+|- `concepts/mcp-china.md` — **更新**: §11「8/18〜9/14静穏期」節追加。新規発表/CVE/仕様動きなし。「32Skills+8MCP」解説(本文3/23)の連日再収載とscore 846→850微増を長期トラクションの傍証として記録。Java版精简MCP Client実装(9/13, score 0)は低反響。
+||
+|### hot-topics.yaml更新
+|- slug: tencent-hunyuan — last_crawled 2026-08-24 → 2026-09-15（high/deepdive、22日ぶり）
+|- slug: mcp-china — last_crawled 2026-08-17 → 2026-09-15（high/deepdive、29日ぶり）
+||
+|### 見送りトピック
+|- qwen(09-04更新済・11日), deepseek(09-05更新済+09-13/14 triageで継続中), kimi(09-11更新済・4日): 3日ルール未達または同日朝近傍のtriage対象と重複するため見送り。
+|- web検索(web_search/web_extract)はcron環境で不可のため未使用。ローカルdigest/inbox直接grepによるリレー観察のみ。
+||
+|## [2026-09-14] crawl-triage | split crawl (run 6c9d8a21f0b4、LLM-triage context長超過のため手動判定)
+|
+|- プリラン ok:false。output_path の ## Response が空・末尾 ## Error に context length exceeded（case b、9日連続のcase b）。triage_latest.json は stale のまま。チェックポイント候補60件は既知の定型崩壊（aafeba3f 複製群＋旧 v2ex 候補、一意8件・すべて stale/暂无内容）。
+|- 当日 inbox 直接クロール（v2ex 09-13/14 計40件・juejin 09-13/14 計45件のうち content-hash 重複排除後の実質ユニーク物）からの手動トリアージ。09-13 朝分の openai/anthropic（降智検証手法・陶哲轩警告）は take 済みなので再集約しない。take 2 / skip 中心。
+|- take 1: entities/deepseek.md に「続報（2026-09-14）」節追加。juejin「计算机魔术师」（本文日付 2026-09-11、score 4、プレビューのみ）の「梁文锋が株主名簿を自ら審査」を含む科創板 IPO 準備観測（第2輪5000億元評価額融資から3か月、年内起動計画）を単一ソース・未検証として記録。
+|- take 2: concepts/doubao.md の豆包输入法 Windows版節に「9b. Windows 正式版リリース観察（2026-09-14）」小节追加。V2EX t/1241746 の正式版リリース観察（プレビューのみ・単一ソース）を 09-09 のリリース観察に対する継続観察として記録。
+|- skip: V2EX t/1241918「Fable 5.1 和 Astra 都画不出一个 SVG」(score 0、単発愚痴・恒久性なし)、V2EX t/1241919「AI 中转站都已经跑路或者关站了」(score 0、正文「不知道是什么原因」のみ・恒久性なし)、juejin「多智能体不是越多越好（Google Towards a Science of Scaling Agent Systems）」(スコア0・プレビューのみ・论文解説)、juejin「滴滴面试官 SKILL.md 按需加载」(プレビューのみ・agent-skills 既存論点の反復)、juejin「AI Agent 的边缘困境」(score 0・正文数行のみ)、juejin「用 Deepseek 复刻 V2EX Codex 皮肤」(showcase)、V2EX「整理 MiniMax H3 Max 视频 Prompt 合集」(showcase 系)、09-13 分の再収录（降智検証/陶哲轩中转站=朝 take 済み、Cursor转Codex/IDEA Qoder/Kimi K3三千万=既知の再収录・風刺）、checkpoint 旧候補（暂无内容・aafeba3f 複製群）。
+|- note: 兄弟セッションによる index/log の同時改変に注意。ページ分（deepseek/doubao）と index/log 分を個別 stage して2コミット。
+
+|## [2026-09-14] crawl-triage(2) | split crawl run 2（run 6c9d8a21f0b4、LLM-triage context長超過のため手動判定、重複基準=6707113）
+|- プリラン ok:false（case b、context length exceeded 35,724 tokens）。triage_latest.json は stale のまま。チェックポイント候補60件は既知の定型崩壊（aafeba3f 複製群＋旧 v2ex 候補、一意8件・すべて stale/暂无内容）。朝のコミット 6707113（DeepSeek IPO / 豆包 Win）を重複基準として今日の inbox を手動トリアジ。v2ex はポスター/警告スレ/FRP転用/衝撃の語兆スレ（恒久事実なし）、wechat はシリアルニュース/解説系（いずれも既存論題の返し）、AI 中转站モデル低下の話題（一時的な話題・恒久性なし）は skip。
+|- take 1: entities/anthropic.md に「続報（2026-09-14 run 2）」小節追加。juejin「计算机魔术师」（本文日付 2026-09-13、score 4、プレビューのみ）の Amodei「2年以内に人間介入なしの自主優化」主張 + 自社コード80%が Claude 生成（エンジニア産出8倍化）という新サブジェクトを単一ソース・プレビューのみ・未検証として記録。朝の anthropic 節（中转站 E2E 波及）とは対象が重ならない。
