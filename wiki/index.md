@@ -1,6 +1,14 @@
 # AI Topics China Wiki — Index
 
 最終更新: 2026-09-15
+
+### 本日更新（2026-09-15 Crawl Triage run 2: Amodei「We Must Pace the Frontier」公表+黄仁勲×特朗普電話 / DeepSeek V4.1 Flash 実測分岐）
+- `entities/anthropic.md` — **更新**: 「続報（2026-09-15 run 2）」節追加。Amodei 本人名義長文『我们必须给前沿踩刹车』（9/12付）の公表確定と、9/14 All-In Summit での黄仁勲×特朗普電話（「AI は減速しない」）を単一ソース・プレビューのみ・未検証として記録。09-14 run 2 の呼吁報道の続報
+- `entities/deepseek.md` — **更新**: 「続報（2026-09-15 run 2）」節追加。V2EX 実測「1日20元・agent/コード能力大幅向上」（score 69）を 09-12 の不満蓄積反応に対する逆向き反応＝用途層分岐の兆しとして記録（単一ソース・未検証）
+### 本日更新（2026-09-15 Crawl Triage: Iris（小红书 AllSpark）検索エージェント公開 / RAG「整合」論 / LLM API リトライチェーン）
+- `entities/iris-allspark.md` — **新規**: 小红书 AllSpark の検索エージェント Iris を単独ページ化（run_id 20260915T090035Z の case-(b) 手動トリアージ、LLM段 context-length 失敗・インジェクト checkpoint は完全）。Iris-mini 35B/3B vs Iris-pro 397B/17B、BrowseComp-ZH 差0.3、核心理論「コンテキスト管理>パラメータ」、Apache 2.0。全ベンチはチーム自報・未検証
+- `concepts/rag.md` — **更新**: 「続報（2026-09-15）」節追加。pgvector 実戦連載第04章の「RAGの難点は検索でなく整合」論 + n-gram-hash 決定論的擬似ベクトルによる完全オフライン fallback
+- `concepts/agent.md` — **更新**: 「LLM API リトライ設計チェーン（2026-09-15）」節追加。OpenAI/Anthropic/AWS 公式ドキュメント統合 — 分類→ヘッダ優先→指数バックオフ+jitter→2次上限、429 の「限流 vs 欠費」区分
 ### 本日更新（2026-09-15 Active Crawl: Tencent-Hunyuan/MCP-China）
 - `entities/tencent-hunyuan.md` — **更新**: 9/11〜15静穏期確認節追加（混元/元宝/WorkBuddy言及ゼロ、Hy3.0正式版未リリース継続）
 - `concepts/mcp-china.md` — **更新**: §11 8/18〜9/14静穏期節追加（32Skills+8MCP解説の長期トラクションを傍証記録）
