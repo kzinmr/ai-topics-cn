@@ -4050,3 +4050,9 @@ Originating conversation: (scheduled cron)
 |## [2026-09-14] crawl-triage(2) | split crawl run 2（run 6c9d8a21f0b4、LLM-triage context長超過のため手動判定、重複基準=6707113）
 |- プリラン ok:false（case b、context length exceeded 35,724 tokens）。triage_latest.json は stale のまま。チェックポイント候補60件は既知の定型崩壊（aafeba3f 複製群＋旧 v2ex 候補、一意8件・すべて stale/暂无内容）。朝のコミット 6707113（DeepSeek IPO / 豆包 Win）を重複基準として今日の inbox を手動トリアジ。v2ex はポスター/警告スレ/FRP転用/衝撃の語兆スレ（恒久事実なし）、wechat はシリアルニュース/解説系（いずれも既存論題の返し）、AI 中转站モデル低下の話題（一時的な話題・恒久性なし）は skip。
 |- take 1: entities/anthropic.md に「続報（2026-09-14 run 2）」小節追加。juejin「计算机魔术师」（本文日付 2026-09-13、score 4、プレビューのみ）の Amodei「2年以内に人間介入なしの自主優化」主張 + 自社コード80%が Claude 生成（エンジニア産出8倍化）という新サブジェクトを単一ソース・プレビューのみ・未検証として記録。朝の anthropic 節（中转站 E2E 波及）とは対象が重ならない。
+
+|## [2026-09-15] newsletter-triage | ChinAI #374（パイプライン case b、生存ファイルのみ commit）
+|
+|-　プリラン ok:false。output_path（b8e1c2d9a604/2026-09-15_07-14-46）の ## Response は空、末尾 ## Error に HTTP 503 「Local LLM server is busy」（case b、10日連続の case b）。LLM トリアジ未実行のため回収可能な decisions は存在せず。
+|-　注入チェックポイント（ok:true、run_id 20260915T070025Z）は ChinAI #374：中国初の AI 生成長編 TV シリーについての収集 10 件（多くは同一記事の multi-URL 注意ポイント）。しかしこのジョブ（LLM トリアジ実行パイプライン）は wiki 編集禁止のため、take 判定を自前で行わない。
+|-　参考 skip 候補：「泥流后，消失在吉隆口岸的人」（非 AI テーマ）、Chinese Text Project、Why We Like Things（AI 関連性薄い）。本日の wiki 編集なし、ChinAI #374 digest + raw 11 ファイル（定形の multi-URL 重複群含む）のみ commit（inbox: newsletter collect 2026-09-15）。
