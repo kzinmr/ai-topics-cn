@@ -7,7 +7,7 @@
 
 ### 本日更新（2026-09-16 Crawl Triage run 2: DeepSeek Harness「200k+ star」主張 / Skill 監査再クロール）
 - `entities/deepseek.md` — **更新**: 「続報（2026-09-16）」節追加。Harness「数週間で GitHub 200k+ star」主張（本文受領部由来・単一ソース・未検証）と解説シリーズ ch.08・8/13 解説の再クロールを記録。解説の三層化を観測
-- `concepts/agent-skills.md` — **更新**: 「続報（2026-09-16）」節追加。「滴滴面试官…Skill 監查」記事（09-06 既録）の再クロール受領を新事実なし・トピック常態化の傍証として記録
+- `concepts/agent-skills.md` — **更新**: 「続報（2026-09-16）」節追加。「滴滴面试官…Skill 監査」記事（09-06 既録）の再クロール受領を新事実なし・トピック常態化の傍証として記録
 
 ### 本日更新（2026-09-15 Crawl Triage run 2: Amodei「We Must Pace the Frontier」公表+黄仁勲×特朗普電話 / DeepSeek V4.1 Flash 実測分岐）
 - `entities/anthropic.md` — **更新**: 「続報（2026-09-15 run 2）」節追加。Amodei 本人名義長文『我们必须给前沿踩刹车』（9/12付）の公表確定と、9/14 All-In Summit での黄仁勲×特朗普電話（「AI は減速しない」）を単一ソース・プレビューのみ・未検証として記録。09-14 run 2 の呼吁報道の続報
