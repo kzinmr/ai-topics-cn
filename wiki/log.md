@@ -4082,3 +4082,11 @@ Originating conversation: (scheduled cron)
 |- 新規受信なし。直近の未処理は 2026-09-14 ChinAI #374（既に inbox 保存済み）。take/reference/skip とも 0 件。
 |- collect-only コミット bdae7e0: wiki/raw/articles/substack.com--techtaiwan--0674ce3b.md の再取得タイムスタンプ更新のみ（本文なし、profile ページ）。wiki ページ変更なし。push 済み。
 
+
+| ## [2026-09-16] crawl-triage(2) | manual triage (case-(b), LLM context-length fail 33,666 tok)
+|- run_id 2026-09-16T12:00:00Z（latest.json）。pre-run parse failure は case-(b)（コンテキスト超過・トリアージデータなし）→ 手動トリアージへ。
+|- 候補 150 件（生）→ 重複排除後 44 件ユニーク。朝の run（Codex 続報、openai.md）で covered 済みの v2ex/juejin 反響群を除外。
+|- take 1: entities/deepseek.md —「続報（2026-09-16）」節追加。Harness「数週間で GitHub 200k+ star」主張（古茗前端团队・本文日付 09-14・本文受領部に含む・単一ソース未検証）、解説シリーズ ch.08（多Agent）、8/13 解説の再クロール（新事実なし・参照のみ）。
+|- reference 1: concepts/agent-skills.md —「続報（2026-09-16）」節追加。滴滴面试官 Skill 監査記事（09-06 既録）の再クロール本文受領を新事実なし・トピック常態化の傍証として記録。
+|- skip（主）: Codex 无限上下文は朝 take 済みの本文受領版だが新事実なし、GPT-5.6/Sol/terra 型落ち解説、LangChain 実戦連載 ch.05・AI Coding 教程 ch.03（解説続章）、Agent 安全/权限/Harness 解説群、随机数/AGI 実装/1M context 実測スレッド等。
+|- 同日朝の Crawl Triage（Codex 続報）とは対象が重複しない（DeepSeek/Skills 側のみ）。index.md run 2 セクション追加。skills/ 配下の修正は他セッションの作業のため本コミットに含めず、wiki/ のみ stage。
