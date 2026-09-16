@@ -7,7 +7,7 @@
 
 ### 本日更新（2026-09-16 Crawl Triage run 2: DeepSeek Harness「200k+ star」主張 / Skill 監査再クロール）
 - `entities/deepseek.md` — **更新**: 「続報（2026-09-16）」節追加。Harness「数週間で GitHub 200k+ star」主張（本文受領部由来・単一ソース・未検証）と解説シリーズ ch.08・8/13 解説の再クロールを記録。解説の三層化を観測
-- `concepts/agent-skills.md` — **更新**: 「続報（2026-09-16）」节追加。「滴滴面试官…Skill 监査」記事（09-06 既録）の再クロール受領を新事実なし・トピック常態化の傍証として記録
+- `concepts/agent-skills.md` — **更新**: 「続報（2026-09-16）」節追加。「滴滴面试官…Skill 監查」記事（09-06 既録）の再クロール受領を新事実なし・トピック常態化の傍証として記録
 
 ### 本日更新（2026-09-15 Crawl Triage run 2: Amodei「We Must Pace the Frontier」公表+黄仁勲×特朗普電話 / DeepSeek V4.1 Flash 実測分岐）
 - `entities/anthropic.md` — **更新**: 「続報（2026-09-15 run 2）」節追加。Amodei 本人名義長文『我们必须给前沿踩刹车』（9/12付）の公表確定と、9/14 All-In Summit での黄仁勲×特朗普電話（「AI は減速しない」）を単一ソース・プレビューのみ・未検証として記録。09-14 run 2 の呼吁報道の続報
@@ -22,23 +22,23 @@
 
 ### 本日更新（2026-09-14 Crawl Triage: DeepSeek 科創板IPO準備観測 / 豆包输入法 Win正式版）
 - `entities/deepseek.md` — **更新**: 「続報（2026-09-14）」節追加。科創板 IPO 準備観測（中信証券を聘請・第2輪5000億元評価額融資から3か月、年内起動計画、梁文锋が株主名簿を自ら審査との主張）を単一ソース・未検証で記録（juejin、プレビューのみ）
-- `concepts/doubao.md` — **更新**: 豆包输入法 Windows版節に「9b. Windows 正式版リリース観察（2026-09-14）」小节追加（V2EX t/1241746、プレビューのみ・単一ソース）
+- `concepts/doubao.md` — **更新**: 豆包输入法 Windows版節に「9b. Windows 正式版リリース観察（2026-09-14）」小節追加（V2EX t/1241746、プレビューのみ・単一ソース）
 
 ### 本日更新（2026-09-14 Crawl Triage run 2: Anthropic Amodei「自主優化2年」主張）
-- `entities/anthropic.md` — **更新**: 「続報（2026-09-14 run 2）」小节追加。juejin「计算机魔术师」（本文日付 09-13、プレビューのみ）の Amodei「2年で自主優化」主張＋自社コード80%が Claude 生成・産出8倍の報道を単一ソース・プレビューのみ・未検証として記録
+- `entities/anthropic.md` — **更新**: 「続報（2026-09-14 run 2）」小節追加。juejin「计算机魔术师」（本文日付 09-13、プレビューのみ）の Amodei「2年で自主優化」主張＋自社コード80%が Claude 生成・産出8倍の報道を単一ソース・プレビューのみ・未検証として記録
 
 ### 本日更新（2026-09-13 Crawl Triage: OpenAI「降智」検証手法 / 陶哲轩警告 / E2E中转站 / Anthropic信頼インフラ波及）
 - `entities/openai.md` — **更新**: 「Astra『降智』ルーマーとコミュニティの自前検証手法（2026-09-13）」節追加。GPT-5.6 Sol 降格疑い（V2EX t/1241734、単一ソース・未検証）と、検証手段としての ModelTrace / Luna 指紋照合 + API反復実験、E2E暗号化中转站提案（t/1241650）を記録。「陶哲轩ら菲尔兹奖得主25人による数学研究へのAI使用警告（2026-09-13）」節追加（t/1241637、転載・未検証）
-- `entities/anthropic.md` — **更新**: 「続報（2026-09-13）: 信頼インフラ論への波及 — 中转站E2E暗文化構想」小节追加。t/1241650 の E2E 提案が Anthropic の信頼/検閲规避インフラ論に波及する論点として相互参照
+- `entities/anthropic.md` — **更新**: 「続報（2026-09-13）: 信頼インフラ論への波及 — 中转站E2E暗文化構想」小節追加。t/1241650 の E2E 提案が Anthropic の信頼/検閲规避インフラ論に波及する論点として相互参照
 
 ### 本日更新（2026-09-12 Crawl Triage run 2: DeepSeek V4.1 Flash 実測反応 / Astra Day-4 / GPT Image 2.5 プロンプト集）
 - `entities/deepseek.md` — **更新**: 「続報（2026-09-12 run 2）」節追加。正式版後の初期実測反応（V2EX score 33/31）— 約300 tok/s の速度は達標も高難度タスクで堂々巡り・文本产出品質不満。0.02元降价主張は reseller チェーン継続として据え置き（単一ソース・未検証）
-- `entities/openai.md` — **更新**: Astra 続報（2026-09-12）Day-4 小节追加。「蜗牛聊AI」— Astra の本質はデスクトップ直接操作、競争軸はタスク分解・権限境界・検収・監査へ（プレビューのみ・未検証）
+- `entities/openai.md` — **更新**: Astra 続報（2026-09-12）Day-4 小節追加。「蜗牛聊AI」— Astra の本質はデスクトップ直接操作、競争軸はタスク分解・権限境界・検収・監査へ（プレビューのみ・未検証）
 - `concepts/gpt-image-2.md` — **更新**: 続報（2026-09-12）追加。GPT Image 2.5 オープンプロンプト集（30事例・MIT）公開＝プロンプト資産の生態系定着シグナル（利害関係者本人申告あり）
 
 ### 本日更新（2026-09-12 Crawl Triage: OpenAI 基盤動向 Habitat/GPT-Live-1 / Anthropic報告続報）
 - `entities/openai.md` — **更新**: 「OpenAI 基盤インフラ・マルチモーダルAPIの動向（2026-09-12）」節追加。Habitat（週次10億ユーザーのメタデータ系ボトルネック論点）・GPT-Live-1 API（全二重音声）をプレビューのみ・未検証で記録。ChatGPTリセット依存スレッド2件は供給逼迫系列として集約
-- `entities/anthropic.md` — **更新**: 9月脅威報告続報（2026-09-12）小节追加。V2EX t/1241538「没人管管 Anthropic 一直骂街吗」— 密钥/涉密情報公表をうけて中国側の規制反応が出るかという法制度論への波及（単一ソース・未検証）
+- `entities/anthropic.md` — **更新**: 9月脅威報告続報（2026-09-12）小節追加。V2EX t/1241538「没人管管 Anthropic 一直骂街吗」— 密钥/涉密情報公表をうけて中国側の規制反応が出るかという法制度論への波及（単一ソース・未検証）
 
 ### 本日更新（2026-09-12 Newsletter Ingest: Tech Taiwan Semicon Series 2 — MediaTek組織再編 / Kirin 9050 Pro）
 - `entities/mediatek.md` — **更新**: 「AI時代向け組織再編 — Intel/Apple出身幹部の新チーム（2026-09-11）」節追加。Nvidia $3.5B を背景に Intel/Apple 出身幹部2名登用の布陣（Tech Taiwan独占・予告段階・単一ソース・未検証）
