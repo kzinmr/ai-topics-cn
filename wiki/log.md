@@ -4090,3 +4090,8 @@ Originating conversation: (scheduled cron)
 |- reference 1: concepts/agent-skills.md —「続報（2026-09-16）」節追加。滴滴面试官 Skill 監査記事（09-06 既録）の再クロール本文受領を新事実なし・トピック常態化の傍証として記録。
 |- skip（主）: Codex 无限上下文は朝 take 済みの本文受領版だが新事実なし、GPT-5.6/Sol/terra 型落ち解説、LangChain 実戦連載 ch.05・AI Coding 教程 ch.03（解説続章）、Agent 安全/权限/Harness 解説群、随机数/AGI 実装/1M context 実測スレッド等。
 |- 同日朝の Crawl Triage（Codex 続報）とは対象が重複しない（DeepSeek/Skills 側のみ）。index.md run 2 セクション追加。skills/ 配下の修正は他セッションの作業のため本コミットに含めず、wiki/ のみ stage。
+
+| ## [2026-09-17] newsletter-triage | no-op (case-(a), empty checkpoint)
+|- pre-run parse failure ("failed to parse JSON response") は case-(a)：## Response 内の JSON が完全に整形（decisions:[]）であったため正しい queue として采用。
+|- run_id 20260917T070004Z（_checkpoint.ok=true、candidate_count=0）。新規受信なし。直近の未処理は 2026-09-14 ChinAI #374（既に inbox 保存、09-15 コミット済み）。
+|- take/reference/skip とも 0 件。inbox/newsletters/ も wiki/raw/articles/ も git status 上未追跡なし（09-15 以降の新規ファイルなし）。wiki ページ変更なし、index.md 変更なし。ログのみ追加。
