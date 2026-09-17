@@ -4102,3 +4102,11 @@ Originating conversation: (scheduled cron)
 |- reference 1: concepts/agent-skills.md —「続報（2026-09-17）」節追加。SkillOpt 自動進化提案（初出 06-11）の再登場と JavaGuide Superpowers 記事（09-13 既録）の3度目再クロールを新事実なし・参照のみとして記録。
 |- skip（主）: Amodei「踩刹车」関連（09-15 既録）の再クロール、Kimi K3 三千万足矣（風刺・07-27）、Cursor转Codex（05-10）・32 Skills（03-23）・IDEA Claude Code（07-03）等の旧記事再収録、GPT6/Astra 無限能源・代充/邀請码/中转站系 promo、転職/求人/雑談系 v2ex スレッド、RSI・别卷了（anthropic.md 09-15 既録範囲）、Harness ch.08・第23章（解説続章）、RAG 入門解説群。
 |- 同日朝の newsletter-triage（case-a no-op）run_id 20260917T070004Z とは対象が重複しない。当 run の take/skip 分割は当セッション自身の手動トリアージ。commit scope: agent-team-swarm + agent-skills（pages step 9495731）、その後 index.md + log.md（index step）。
+
+| ## [2026-09-17] crawl-triage(2) | manual triage (case-(b), LLM context-length fail 32,873 tok)
+|- run_id 20260917T090201Z（latest.json、朝 run と同一 checkpoint）。pre-run parse failure は case-(b)（## Response 空・## Error = コンテキスト超過 32,873 tok）→ 手動トリアージへ。チェックポイント 60 candidates → ハッシュ重複排除で 8 unique（53× aafeba3f 洪水＝確立基準、再検証せず）。重複基準は朝の manual triage（commits 9495731 + 2e05b98）。
+|- take 1: entities/openai.md —「続報（2026-09-17）」節追加。WeChat 再クロール「OpenAI 上线模型乖离事件开框架」（09-16 付、プレビューのみ版は 09-16 ファイルで既確認・本日本文受領）の乖離開示フレームワーク（3類型・初期6事例）を単一ソース・未検証で記録。個別事故公表→常設フレームワーク運用への移行を構造的変化として評価。
+|- take 2: concepts/agent-skills.md —「続報（2026-09-17 その2）」節追加。掘金「OpenAI 发了一篇 Astra 时代 Codex 提示词清洁指南」の公式4方針を、朝 take の「Skill=負優化」論の公式側再定義として記録（本文未受領・リンク切れ・プレビューのみ）。
+|- skip（主）: 花生成像 video promo（score 16 で本日最高得点＝promo が得点上位を張る既知パターン）、DeepSeek V4 Flash 反応（09-06/09-09 集約済み）、KubeWatch/即将垄断/Harness 200k star/微软 token の 09-14・09-16 再クロール、Kimi3・小米集団 chat、别卷了 Anthropic（09-15 anthropic.md 範囲）、安全沙箱・量化 tutorial。
+|- sibling 事故復旧: openai.md の作業ツリーに sibling 26f81dc7 のマージ損傷（自分の bullet と朝プレビュー行の1行融合）を発見、git show HEAD でコミット済みは無傷を確認し単一 reconstruct-patch で復元。
+|- 同日朝の Crawl Triage run 1（9495731/2e05b98）の take 対象（agent-team-swarm/SkillOpt）とは重複しない。当 run の take/skip 分割は当セッション自身の手動トリアージ。commit scope: openai + agent-skills（pages step 15674ad）、その後 index.md + log.md（本 step）。
