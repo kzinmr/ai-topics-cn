@@ -124,3 +124,55 @@ resurface, promo/daichong/invite threads, RSI/别卷了 within anthropic.md 09-1
 Commit hygiene: pages committed immediately after patching (sibling warning seen on
 agent-skills.md + index.md + log.md, same-day), then index+log as second commit
 (9495731 pages, 2e05b98 index+log). Two-step narrow staging worked clean again.
+
+
+## 2026-09-17 run 2 (crawl-triage, 21:02 UTC) — case (b) ninth+ consecutive, same-day rerun
+
+LLM-triage stage failed again: pre-run reported ok:false "failed to parse JSON
+response from crawl-triage output"; output file tail showed RuntimeError: Context
+length exceeded (32,873 tokens). Case (b) confirmed via the `## Response` check
+(empty). triage_latest.json stale (08-27, decisions:[]). Checkpoint run_id
+20260917T090201Z, 60 candidates -> 8 unique after hash-dedupe (53x aafeba3f
+flood, 12x 52691b70 Amodei re-crawl, 8x 6b8434d4 Codex-guide dupes) — the
+established fixed baseline, not re-investigated.
+
+Same-day rerun context: morning run had already committed 9495731 (pages:
+agent-team-swarm + agent-skills) + 2e05b98 (index+log). Dedup baseline = that
+pair.
+
+Fresh-day scan (juejin+v2ex 09-17 files, ~30 unique bodies): the durable takes
+were BOTH OpenAI-side items structurally invisible to the morning commit's scope:
+1. WeChat 09-16 re-crawl "OpenAI 上线模型乘离事件开框架" (model
+   misalignment disclosure framework, 3 categories, initial 6 cases) -> take as
+   dated preview-only/unverified section on entities/openai.md. First preview hit
+   was 09-16 file (title-only), body arrived today = legit evening take per the
+   preview-body-later rule.
+2. juejin "OpenAI 发了一篇 Astra 时代 Codex 提示词清洁指南" — official
+   4-direction prompt-cleanup guidance = the official-side redefinition of the
+   morning's recorded "skill = 负優化" thesis -> take on agent-skills.md as
+   続報その2 (body not scraped, external link dead -> preview-only).
+
+Skip list: 花生 video ad (score 16, highest-scored fresh item — promo-overrides-score
+again), DeepSeek V4 Flash release-reaction posts (09-06/09-09 aggregated), 09-14/09-16
+re-crawls (KubeWatch, "即将垄断", Harness 200k-star, 微软 token), Kimi3/小米集团 chat
+noise, 别卷了 Anthropic thread (09-15 anthropic.md scope), 安全沙箱 quantization
+tutorials.
+
+Sibling-conflict incident (new archetype): openai.md had a working-tree edit from
+sibling 26f81dc7 that MERGED the sibling's own bullet and my morning preview line
+into one line ("- 发布/翻译节点可能...- 09-16...") — likely the same
+trailing-newline patch merge the 09-12 pitfall describes, happening in the
+sibling's own commit window. Recovery: verified via `git show HEAD~1` that HEAD's
+committed openai.md does NOT contain the merged Chinese line (sibling only
+committed 3 lines), so the corruption was working-tree-only; rebuilt the merged
+line + my new section in ONE patch (old_string = the corrupted merged line,
+new_string = two clean lines + new section). Lesson: when a page shows BOTH
+sibling-bullet text AND your own recorded text on a single merged line, check
+`git show HEAD:<page>` first — if committed is clean, a single reconstruct-patch
+fixes both the merge and the insertion.
+
+Typo note: post-patch `+`-line proofread caught a halfwidth-digit leak in a patched bullet (rendered like "2026" with fullwidth digits) and fixed it; CN-glyph intrusion into Japanese prose remains the standing risk — always re-read `+` lines as prose.
+
+Commits: 15674ad pages-only (openai + agent-skills), then index+log second
+commit. Two-step narrow staging again (siblings dirty: kimi, huawei, rag,
+openclaw, mediatek, qwen, mcp-security, china-ai-agent-ecosystem — left alone).
