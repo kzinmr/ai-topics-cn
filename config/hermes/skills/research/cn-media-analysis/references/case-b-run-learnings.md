@@ -99,3 +99,28 @@ no-op entry to `wiki/log.md` via an ASCII `/tmp` Python script (pipe-table `|` b
 LESSON: run the post-commit CN-codepoint typo-scan as
 `git show <sha> -- file | grep '^+' | grep -nE '<CN codepoints>'` — grepping raw `git diff`
 output matches context lines too and gave a false-positive count of 3 on this run.
+
+
+## 2026-09-17 crawl-triage run (case b, context-length fail 34,533 tok)
+
+run_id 20260917T090201Z. Checkpoint 60 candidates -> 8 unique by content hash
+(53x aafeba3f flood, established baseline; 7 stale old v2ex threads from Apr-Jul
+kept as-is). Straight to manual inbox triage after the `## Response` check per
+the settled operating norm.
+
+Fresh-day take that qualified: juejin 米小虾「拆给 8 个子智能体，只拿回 2-3 倍信息：多智能体分解的产出守恒律」
+(body 09-16, score 0) — a quantitative claim (8 sub-agents yield only ~2.3x info
+vs single agent, "output conservation law"). Went to concepts/agent-team-swarm/
+index.md as a falsification-flavored counterpart to the page's Apr 2026 optimistic
+4-agent exemplar. Lesson: fresh-day SCORE-0 research-style posts can be the real
+durable take — do not let the score-sort hide them; judge by durable-facts test.
+
+Reference: SkillOpt auto-evolution proposal (first 06-11) re-crawled + JavaGuide
+Superpowers piece third re-crawl -> one dated reference bullet on agent-skills.md.
+
+Skips confirmed: Amodei items (09-15 recorded), Kimi K3 satire, Cursor转Codex 05-10
+resurface, promo/daichong/invite threads, RSI/别卷了 within anthropic.md 09-15 scope.
+
+Commit hygiene: pages committed immediately after patching (sibling warning seen on
+agent-skills.md + index.md + log.md, same-day), then index+log as second commit
+(9495731 pages, 2e05b98 index+log). Two-step narrow staging worked clean again.
