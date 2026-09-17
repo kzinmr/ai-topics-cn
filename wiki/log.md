@@ -4095,3 +4095,10 @@ Originating conversation: (scheduled cron)
 |- pre-run parse failure ("failed to parse JSON response") は case-(a)：## Response 内の JSON が完全に整形（decisions:[]）であったため正しい queue として采用。
 |- run_id 20260917T070004Z（_checkpoint.ok=true、candidate_count=0）。新規受信なし。直近の未処理は 2026-09-14 ChinAI #374（既に inbox 保存、09-15 コミット済み）。
 |- take/reference/skip とも 0 件。inbox/newsletters/ も wiki/raw/articles/ も git status 上未追跡なし（09-15 以降の新規ファイルなし）。wiki ページ変更なし、index.md 変更なし。ログのみ追加。
+
+| ## [2026-09-17] crawl-triage | manual triage (case-(b), LLM context-length fail 34,533 tok)
+|- run_id 20260917T090201Z（latest.json）。pre-run parse failure は case-(b)（## Error = コンテキスト超過 34,533 tok・トリアージデータなし）→ 手動トリアージへ。チェックポイント 60 candidates → ハッシュ重複排除で 8 unique（53× aafeba3f 2017年記事洪水＝確立基準）、うち 7 件は 4-7 月の旧 v2ex スレッドで重複据え置き。
+|- take 1: concepts/agent-team-swarm/index.md —「実測データ：多Agent分解的产出守恒律」節追加。掘金・米小虾「拆给 8 个子智能体，只拿回 2-3 倍信息」（本文日付 09-16、score 0）の 8子Agent=情報回収2.3倍頭打ちという定量主張を、4月の楽観的実証（yezannnnnn 4Agent例）に対する反証寄りの初期事例として記録（単一ソース・プレビューのみ・未検証）。
+|- reference 1: concepts/agent-skills.md —「続報（2026-09-17）」節追加。SkillOpt 自動進化提案（初出 06-11）の再登場と JavaGuide Superpowers 記事（09-13 既録）の3度目再クロールを新事実なし・参照のみとして記録。
+|- skip（主）: Amodei「踩刹车」関連（09-15 既録）の再クロール、Kimi K3 三千万足矣（風刺・07-27）、Cursor转Codex（05-10）・32 Skills（03-23）・IDEA Claude Code（07-03）等の旧記事再収録、GPT6/Astra 無限能源・代充/邀請码/中转站系 promo、転職/求人/雑談系 v2ex スレッド、RSI・别卷了（anthropic.md 09-15 既録範囲）、Harness ch.08・第23章（解説続章）、RAG 入門解説群。
+|- 同日朝の newsletter-triage（case-a no-op）run_id 20260917T070004Z とは対象が重複しない。当 run の take/skip 分割は当セッション自身の手動トリアージ。commit scope: agent-team-swarm + agent-skills（pages step 9495731）、その後 index.md + log.md（index step）。

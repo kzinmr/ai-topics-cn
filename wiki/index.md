@@ -1,6 +1,10 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-09-16
+最終更新: 2026-09-17
+
+### 本日更新（2026-09-17 Crawl Triage: 多Agent「产出守恒律」実測 / SkillOpt 再登場）
+- `concepts/agent-team-swarm/index.md` — **更新**: 「実測データ：多Agent分解的产出守恒律」節追加。掘金・米小虾（09-16）の「8子Agentで情報回収は単Agent比2.3倍まで」定量主張を反証寄りの初期事例として記録（単一ソース・未検証）
+- `concepts/agent-skills.md` — **更新**: 「続報（2026-09-17）」節追加。SkillOpt 自動進化提案（初出 06-11）の再登場と JavaGuide Superpowers 記事3度目の再クロールを新事実なし・参照のみとして記録
 
 ### 本日更新（2026-09-16 Crawl Triage: Codex「近乎无限上下文」報道）
 - `entities/openai.md` — **更新**: 「続報（2026-09-16）」節追加。掘金プレビューのみの「Codex 支持近乎无限上下文」報道（本文日付 09-14・単一ソース・未検証）と Codex 実務摩擦の集約を観測
