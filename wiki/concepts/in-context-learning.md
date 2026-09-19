@@ -1,7 +1,7 @@
 ---
 title: In-context Learning（ICL）— コンテキスト内学習
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-09-19
 tags: [concept, llm, prompt-engineering, icl]
 aliases: ["In-context Learning", "ICL", "コンテキスト内学習", "内文学習", "In-Context Learning"]
 source_lang: zh-CN
@@ -47,6 +47,11 @@ In-context Learning（ICL、コンテキスト内学習）は、大規模言語�
 - **GPT-3 Paper** (2020): In-context Learningの概念を初めて体系的に記述
 - **Learning to Prompt** (2021): 自動few-shot exemplar selection
 - **Chain-of-Thought Prompting** (2022): ICLに推論ステップを付加
+- **Few-Shot Degradation Is Not What It Seems** (arXiv:2609.15990、2026-09 掘金経由で紹介): few-shot 例追加の効果の一部は例そのものではなくプロンプト長増加の副作用だという再検証論文（下記2026-09-18節参照）
+
+## 中国語圏での再検証動向（2026-09-18追加）
+
+掘金の解説者「米小虾」（多エージェント「产出守恒律」実測で既出、2026-09-17に [[agent-team-swarm]] 収録）が論文《Few-Shot Degradation Is Not What It Seems》（arXiv:2609.15990）を解説した記事「加了 20 条示例反而变差：你的 few-shot 提升，可能只是 prompt 变长的功劳」を公開（score 0、本文プレビューのみ）。同一モデル群でタスクにより few-shot 追加効果が +24pp と +3.4pp に分かれる事例を引き、**改善の内分が「例の質」でなく「プロンプト長増加」にある**可能性を指摘する論旨。ICL の「例の質が出力品質に直接影響」という本ページの記述に対する条件付きの反証シグナル。プレビューのみで論文の検証設計詳細は未受領のため**未検証・単一ソース**。
 
 ## 関連リンク
 
