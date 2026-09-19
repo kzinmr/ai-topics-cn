@@ -32,3 +32,7 @@ A single newsletter article generated 5 raw files (redirect/app-link/share/resta
   evening), and label the report as the second run.
 - **log.md anchoring**: patch on the previous entry's distinctive final line —
   appends cleanly with no pipe corruption.
+
+# Case-(a) recovery exemplar — Semicon Series 3 (2026-09-19, run_id 20260919T070045Z)
+
+Pre-run reported `ok: false` ("failed to parse JSON response") but `## Response` held the complete triage JSON (decisions: take 1 / reference 1 / skip 4) — confirmed case-(a) parse-only failure; the `## Prompt` section above it is instructions, not data. The 6 candidates were one Tech Taiwan article in 5 Substack redirect variants + a 139-char profile page (same archetype as 09-12 Semicon Series 2). The take article's body was again preview-only (membership-gated main text): its two durable signals split across two concept pages — TSMC Baipu (bai-pu) no-commercial-output CoWoS validation line -> `concepts/semiconductor-packaging`; Trump-Huang All-In call + AI-slowdown politicization -> `concepts/ai-infrastructure` (cross-ref anthropic.md Amodei 09-15). Logged the preview-only status in both pages and log.md so the next ingest extends when the full text arrives. Two-step commit (pages+raw/digest, then index+log) worked cleanly; log.md patch anchored on the previous entry's unique final line, no pipe corruption, zero CN-glyph leaks in the `+`-line simplified-Chinese scan.
