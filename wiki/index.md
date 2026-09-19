@@ -1,6 +1,15 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-09-17
+最終更新: 2026-09-19
+
+### 本日更新（2026-09-19 Newsletter Triage: Tech Taiwan Semicon Series 3 — TSMC白埔CoWoS検証ライン / AI減速論争の政治化）
+- `concepts/semiconductor-packaging.md` — **更新**: 「TSMC白埔 CoWoS検証ライン計画」節追加。高雄・旧糖業白埔農場に「商用品を生産しないCoWoS検証ライン」を新設し装置サプライヤーと共同検証する未踏のR&Dモデル（秦永沛COO発言、Semicon Taiwan 2026が発端）を記録。本編は会員限定・予告パートのみ受領
+- `concepts/ai-infrastructure.md` — **更新**: 「All-Inサミット電話とAI減速論争の政治化」節追加。黄仁勳×Trump公衆電話、Anthropic/OpenAI/xAI CEOの減速発言→Nvidia株急落、「AIデータセンター制限」の中間選挙争点化、騰旭程正樺の「来年の暴落の分岐点」警告を単一ソース・未検証で記録
+
+### 本日更新（2026-09-18 Crawl Triage run 2: ZCode「.git全量アップロード」疑惑 / Tencent BrowserSkill）
+- `concepts/chatglm.md` — **更新**: 「2026年9月18日の状況」節追加。ZCodeの暗号化アップロードに.git全量+Prompt全文が含まれるとの逆向報告（V2EX）と深圳/香港/米法域の投訴信動きを単一ソース・未検証で記録
+- `concepts/agent-skills.md` — **更新**: 「継報（2026-09-18）」節追加。Tencent OSS BrowserSkill（ログイン済み実ブラウザセッション接続、4.7K⭐主張）をSkill対象の拡張事例として記録（プレビューのみ・未検証）
+- `concepts/browser-use.md` — **更新**: BrowserSkill関連節追加（DOM再構築路線と実セッション借用路線の対照的設計軸）
 
 ### 本日更新（2026-09-17 Crawl Triage run 2: OpenAI「モデル乖離開示フレームワーク」公表 / Astra 時代プロンプト掃除指針）
 - `entities/openai.md` — **更新**: 「続報（2026-09-17）」節追加。OpenAI の乖離事例開示フレームワーク（3類型・初期6事例）公表を WeChat 単一ソース・プレビューのみ・未検証で記録。個別事故公表から常設フレームワーク運用への移行を観測

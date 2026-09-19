@@ -4110,3 +4110,19 @@ Originating conversation: (scheduled cron)
 |- skip（主）: 花生成像 video promo（score 16 で本日最高得点＝promo が得点上位を張る既知パターン）、DeepSeek V4 Flash 反応（09-06/09-09 集約済み）、KubeWatch/即将垄断/Harness 200k star/微软 token の 09-14・09-16 再クロール、Kimi3・小米集団 chat、别卷了 Anthropic（09-15 anthropic.md 範囲）、安全沙箱・量化 tutorial。
 |- sibling 事故復旧: openai.md の作業ツリーに sibling 26f81dc7 のマージ損傷（自分の bullet と朝プレビュー行の1行融合）を発見、git show HEAD でコミット済みは無傷を確認し単一 reconstruct-patch で復元。
 |- 同日朝の Crawl Triage run 1（9495731/2e05b98）の take 対象（agent-team-swarm/SkillOpt）とは重複しない。当 run の take/skip 分割は当セッション自身の手動トリアージ。commit scope: openai + agent-skills（pages step 15674ad）、その後 index.md + log.md（本 step）。
+
+| ## [2026-09-18] crawl-triage | manual triage (case-(b), LLM context-length fail 35,302 tok)
+|- run_id 20260918T210206Z（latest.json、当日夜 run）。pre-run parse failure は case-(b)（## Error = コンテキスト超過 35,302 tok・トリアージデータなし）→ 手動トリアージへ。チェックポイント 60 candidates → ハッシュ重複排除で 8 unique（53× aafeba3f 洪水＝確立基準、再検証せず）。
+|- 重複基準: 同日夕方の Crawl Triage run 2（未コミットの作業ツリー edit＋index.md「本日更新（2026-09-18 run 2）」節）が ZCode .git アップロード疑惑（chatglm.md）と Tencent BrowserSkill（agent-skills.md / browser-use.md）を既に記録済み → 本 run では再オープンせず。
+|- take 1: entities/openai.md —「続報（2026-09-18）」節追加。V2EX t/1243079「gpt 20x 在逐步恢复？」の Pro 20x 供給回復観測（reset 卡消化説を含む）を、09-12〜09-16 の供給逼迫アーキュに対する回復シグナルとして単一ソース・未検証で記録。併走の Codex Pro 池宣伝・六折 GPT 宣伝・Claude 養号心得（score 70）は archetype 再出現として集約のみ。
+|- take 2: concepts/doubao.md —「9c.（2026-09-18）」節追加。V2EX t/1242930（score 59）による豆包手机 9/16 正式発売と開発者コミュニティ反響の薄さの観察を記録。発売スペックは未受領・単一ソース・未検証。glory-ai-phone.md との併走参照。
+|- skip（主）: 复旦NLP 80页Agent综述（frontmatter date 2023-09-17 の sogou 再クロール）、AI每日摘要 2026-03-12（旧 digest 再収録）、Kimi K3 三千万足矣（風刺）、面试/求人/摸鱼/沙龙/量化 tutorial、代充/送会员/中转 promo（Termind 終身会员・GPT代充）、volcano AgentKit 信通院銀弹（自社宣伝稿）、Cursor转Codex 等旧記事再収録。
+|- sibling 事故修復: chatglm.md 先頭 frontmatter が「--＋泄漏グリフ」に損傷していたのを復元（git show HEAD で無傷を確認、単一行修復）。当 run の take/skip 分割は当セッション自身の手動トリアージ。同日朝の newsletter-triage とは対象が重複しない。
+
+| ## [2026-09-19] newsletter-triage | Tech Taiwan Semicon Series 3（TSMC白埔CoWoS検証ライン）
+|- run_id 20260919T070045Z（_checkpoint.ok=true、candidate_count=6）。pre-run parse failure は case-(a)：## Response に decisions 配列（take1/reference1/skip4）が完全な JSON として残存しており、これを作業キューとして採用。
+|- 候補6件は同一 message_id の単一記事（Tech Taiwan Semicon Series 3、2753字）の Substack 配信リンク違い5種＋profileページ139字で、multi-URL digest dedup 確立基準により単一トリアージ対象に集約（09-12 Semicon Series 2 と同アーキタイプ）。
+|- take 1: concepts/semiconductor-packaging.md —「TSMC白埔 CoWoS検証ライン計画」節追加。高雄・旧糖業白埔農場に「商用品を生産しないCoWoS検証ライン」＋装置サプライヤー同址共同検証（秦永沛COO発言、Semicon Taiwan 2026 の议程外会合が発端）を記録。本編は会員限定・予告パートのみ受領。
+|- take 1（同記事の第2シグナル）: concepts/ai-infrastructure.md —「All-Inサミット電話とAI減速論争の政治化」節追加。黄仁勳×Trump公衆電話、Anthropic/OpenAI/xAI CEO減速発言→Nvidia株急落、「AIデータセンター制限」の中間選挙争点化、騰旭程正樺の「来年の暴落の分岐点」警告を単一ソース・未検証で記録（09-15 anthropic.md の Amodei 表明の市場側帰結として併走参照）。
+|- reference 1: open.substack restack-comment 版（a79b76fc）は take 本文（0bfe47dc）の検証用パスとしてのみ記録。skip 4: app-link×2・read-in-app・profileページ（0674ce3b は 09-15 既知ファイルの再取得）。
+|- commit scope: semiconductor-packaging + ai-infrastructure + raw/digest 新規6点（pages step）、その後 index.md + log.md（index step、同一領域の他セッションエントリを含む可能性あり）。
