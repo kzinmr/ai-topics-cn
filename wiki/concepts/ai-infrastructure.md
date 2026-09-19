@@ -2,7 +2,7 @@
 title: "AIインフラ構造 — AI Rack WarとCopper-to-Optics移行トレンド"
 description: "AIサーバー/ラックインフラの技術トレンド：銅配線から光配線への移行、Compute-Memory-Connectivityの三本柱、MediaTek/Marvell/Foxconnの戦略的ポジショニング、TSMC COUPEシリコンフォトニクス光エンジン量産"
 created: 2026-06-06
-updated: 2026-08-29
+updated: 2026-09-19
 tags: [AI-infrastructure, datacenter, copper-to-optics, silicon-photonics, Marvell, MediaTek, Foxconn, Computex, TSMC, COUPE, Nvidia-Spectrum-X]
 source_lang: zh-CN
 ---
@@ -128,6 +128,16 @@ Morgan Stanleyは残るボトルネックを**TSMC 3nm容量**と**ABF基板（T
 - TSMCの魏哲家CEOはMicronの86%粗利率に「うらやましい。うちは68%で十分嬉しい」と発言（7月決算説明会）。
 - **論点**: サプライチェーンの利益は最先端チップ設計（Nvidia）から、代替困難な周辺部品・材料（レール、メモリ、T-Glass）へ移転している。「Why is King Slide so profitable? Will major customers simply stand by while a Taiwanese supplier earns higher margins than they do?」——川湖の粗利率の持続可能性と、サーバーレールがなぜ代替困難かの深掘りは同号の後編に委ねられた（後編未受領）。
 
+## All-Inサミット電話と「AI減速」論争の政治化（2026-09-19 受信・予告パートのみ）
+
+Tech Taiwan Semicon Series 3（2026-09-18号、**本編は会員限定・予告パートのみの受領**、単一ソース・未検証）より。AI投資循環の政治リスクに関する3点：
+
+- **黄仁勳×Trump 公衆電話**: All-In Podcast 年次サミットの登壇中に Trump 大統領から電話がかかり、スピーカー化。Trump は AI 脅威警告を公に糾弾し、反対は政治的動機（中国関与示唆）と主張。
+- **CEOたちの「減速」発言とNvidia株急落**: Anthropic / OpenAI / xAI の三社首脳がいずれもモデル開発の減速を訴え、Nvidia 株は一時急落（09-15 に Anthropic.md で記録の Amodei『前沿にブレーキを』表明の市場側帰結と符合）。
+- **中間選挙への波及**: 「AIデータセンター制限」が連邦中間選挙の中心争点化し、AI 拡張に反対する民主党が勢力争中。Trump はデータセンターを「今後20〜25年の石油」と呼んで反論。騰旭投資CIO 程正樺（「船長」）は本作 subscriber video で、米大統領選が現AI強気相場の**来年の暴落の分岐点**になり得ると警告（台湾テック産業への影響は2年前の大統領選超えの可能性）。
+
+※ いずれも予告範囲で述べられた事実のみ。後編（白埔計画の本編と同じ号）未受領。
+
 ## 関連
 
 - [[mediatek]] — MediaTekのT-Glass戦略とAI半導体ポジショニング
@@ -143,3 +153,4 @@ Morgan Stanleyは残るボトルネックを**TSMC 3nm容量**と**ABF基板（T
 - Tech Taiwan（胡說科技）, "King Slide's 87% Gross Margin Tops Nvidia's. What Makes Its Server Rails So Hard to Replace?" (2026-08-28) — [Substack](https://substack.com/@techtaiwan)
 - Marvell Technology Computex 2026 キーノート（Matt Murphy CEO）
 - Nvidia $2B Marvell出資報道（2026年3月）
+- Tech Taiwan（胡說科技）, "Semicon Series 3 | Inside TSMC's 'Baipu Plan' and the Hidden Agenda That Revealed It" (2026-09-18) — All-Inサミット電話・AI減速論争部分。予告パートのみ受領
