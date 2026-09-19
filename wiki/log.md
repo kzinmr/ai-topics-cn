@@ -4126,3 +4126,11 @@ Originating conversation: (scheduled cron)
 |- take 1（同記事の第2シグナル）: concepts/ai-infrastructure.md —「All-Inサミット電話とAI減速論争の政治化」節追加。黄仁勳×Trump公衆電話、Anthropic/OpenAI/xAI CEO減速発言→Nvidia株急落、「AIデータセンター制限」の中間選挙争点化、騰旭程正樺の「来年の暴落の分岐点」警告を単一ソース・未検証で記録（09-15 anthropic.md の Amodei 表明の市場側帰結として併走参照）。
 |- reference 1: open.substack restack-comment 版（a79b76fc）は take 本文（0bfe47dc）の検証用パスとしてのみ記録。skip 4: app-link×2・read-in-app・profileページ（0674ce3b は 09-15 既知ファイルの再取得）。
 |- commit scope: semiconductor-packaging + ai-infrastructure + raw/digest 新規6点（pages step）、その後 index.md + log.md（index step、同一領域の他セッションエントリを含む可能性あり）。
+
+## [2026-09-19] crawl-triage | manual triage (case-(b), LLM context-length fail 35,302 tok)
+|- run_id 20260919T090149Z（latest.json、当日朝 run）。pre-run parse failure は case-(b)（## Response 空・## Error = コンテキスト超過 35,302 tok・トリアージデータなし）→ 手動トリアージへ。チェックポイント 60 candidates → ハッシュ重複排除で 8 unique（53× aafeba3f 洪水＝確立基準、再検証せず）。v2ex 候補 7 件はすべて無内容 or 過去集約済み。
+|- take 1: concepts/harness-engineering.md —「中国語圏での議論動向」に「検索バックエンド実測: LSP vs grep（2026-09-19）」bullet 追加。V2EX t/1243146 の個人定量実測（LSP 自発選択率 0〜6%・強制で成功率 100→89%、精确率 0.76→1.00 だが召回率不変、同名多リポジトリで F1 +0.246、最大改善は返却フォーマット変更で pass@1 0.67→0.83・読み出し 15.2→3.2 回）を認知制品理論の実測側裏付けとして単一ソース・未検証で記録。
+|- take 2: concepts/in-context-learning.md —「中国語圏での再検証動向（2026-09-18追加）」節＋研究文献 1 行追加。掘金「米小虾」（09-17 产出守恒律の続投筆者）による論文《Few-Shot Degradation Is Not What It Seems》(arXiv:2609.15990) 解説「加了 20 条示例反而变差」の論旨（few-shot 改善のプロンプト長混入）を、本ページの「例の質」記述への条件付き反証シグナルとしてプレビューのみ・未検証で記録。
+|- reference: V2EX t/1243087「TypeSafe Jev」（構造化決定特化の別枠モデル、250K tok/s・1,200 RPM 主張）は関連ページ未存在のためエンティティ化見送り（単一ソース・一次情報不明）。
+|- skip（主）: Skills 系紹介洪水（Claude Code 9 大神/32 個亲测/27 外挂/商汤 skills/boss-call-skills＝agent-skills.md 集約済みアーキタイプ反復）、TypeSafe Jev 派生（Jev 目録 433/无福-X プラグイン）、DeepSeek Harness 03・15款插件（03 章はプレビューのみ・シリーズは 09-10 節で集約済み、插件記事は 09-08 再収録既知）、别卷了 Anthropic（date 09-14＝anthropic.md 09-15 続報節の範囲）、面试/求人/摸鱼/台風のwebsite/量化/教程、代充・六折 GPT・Pro 池・倍率 0.24 等 promo、豆包手机/gpt 20x/ZCode（09-17・09-18 run 集約済み）、Cursor转Codex 旧記事再収録。
+|- 重複基準: 同日朝の newsletter-triage（0d23de8/ab637e3、Tech Taiwan）とは対象が重複しない。当 run の take/skip 分割は当セッション自身の手動トリアージ。commit scope: harness-engineering + in-context-learning（pages step）、その後 index.md + log.md（本 step）。

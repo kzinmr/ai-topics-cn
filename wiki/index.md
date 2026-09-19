@@ -2,6 +2,10 @@
 
 最終更新: 2026-09-19
 
+### 本日更新（2026-09-19 Crawl Triage: LSP vs grep 検索バックエンド実測 / Few-Shot劣化論文の再解釈）
+- `concepts/harness-engineering.md` — **更新**: 「検索バックエンド実測: LSP vs grep（2026-09-19）」bullet追加。V2EX個人定量実測（LSP自発選択率0〜6%・強制で成功率低下・召回率不変・返却フォーマット変更が最大改善）を認知制品理論の実測側裏付けとして単一ソース・未検証で記録
+- `concepts/in-context-learning.md` — **更新**: 「中国語圏での再検証動向」節追加。論文《Few-Shot Degradation Is Not What It Seems》(arXiv:2609.15990) 解説の「few-shot改善はプロンプト長混入」論旨を本ページ「例の質」記述への条件付き反証シグナルとしてプレビューのみ・未検証で記録
+
 ### 本日更新（2026-09-19 Newsletter Triage: Tech Taiwan Semicon Series 3 — TSMC白埔CoWoS検証ライン / AI減速論争の政治化）
 - `concepts/semiconductor-packaging.md` — **更新**: 「TSMC白埔 CoWoS検証ライン計画」節追加。高雄・旧糖業白埔農場に「商用品を生産しないCoWoS検証ライン」を新設し装置サプライヤーと共同検証する未踏のR&Dモデル（秦永沛COO発言、Semicon Taiwan 2026が発端）を記録。本編は会員限定・予告パートのみ受領
 - `concepts/ai-infrastructure.md` — **更新**: 「All-Inサミット電話とAI減速論争の政治化」節追加。黄仁勳×Trump公衆電話、Anthropic/OpenAI/xAI CEOの減速発言→Nvidia株急落、「AIデータセンター制限」の中間選挙争点化、騰旭程正樺の「来年の暴落の分岐点」警告を単一ソース・未検証で記録
