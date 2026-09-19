@@ -176,3 +176,35 @@ Typo note: post-patch `+`-line proofread caught a halfwidth-digit leak in a patc
 Commits: 15674ad pages-only (openai + agent-skills), then index+log second
 commit. Two-step narrow staging again (siblings dirty: kimi, huawei, rag,
 openclaw, mediatek, qwen, mcp-security, china-ai-agent-ecosystem — left alone).
+
+
+## 2026-09-19 crawl-triage run (case b, context-length fail 35,302 tok)
+
+run_id 20260919T090149Z (latest.json, morning run). Pre-run ok:false; `## Response` empty;
+`## Error` = context-length 35,302 tokens. Checkpoint 60 candidates → 8 unique by content
+hash (53x aafeba3f flood, fixed baseline, not re-investigated). Same-day morning
+newsletter-triage (Tech Taiwan, commits 0d23de8/ab637e3) was the dedup baseline - subjects
+did not overlap with the crawl run.
+
+Fresh-day takes (manual triage, both went to concept pages, committed immediately per the
+sibling-wipe rule):
+1. concepts/harness-engineering.md - V2EX t/1243146 personal quantitative LSP-vs-grep
+   retrieval-backend measurement (LSP voluntary-selection 0-6%, forcing lowers success rate
+   100→89%, recall unchanged, biggest win from output-format change pass@1 0.67→0.83).
+   Recorded single-source/unverified as an empirical counterpart to the page's
+   Externalization (cognitive artifact) framing.
+2. concepts/in-context-learning.md - juejin commentary on arXiv:2609.15990
+   "Few-Shot Degradation Is Not What It Seems" (thesis: few-shot gains confounded by
+   prompt-length effect) as a conditional falsification signal against the page's
+   example-quality claim; preview-only/unverified. Author is the same 09-17 output-
+   conservation-law poster - low-score research posts keep being the durable take.
+
+New skip archetype: V2EX "TypeSafe Jev" (structured-decision model, 250K tok/s claim)
+reference-only - no existing page, single source, primary info unknown; entity-ization
+deferred. Its derivative posts (Jev catalog 433 / plugin) skipped as a same-source chain.
+Skills-series flood (Claude Code 9大神/32亲测/27外挂/商汤 skills/boss-call-skills) =
+agent-skills.md already-aggregated archetype recurrence, skipped wholesale.
+
+Hygiene: two-step narrow staging (e39a62 pages, 365953d index+log) worked clean; log.md
+appended via ASCII /tmp script; post-commit CN-codepoint scan on `git show` + lines was
+clean. Sibling warnings on index.md present but diffs were clean.
