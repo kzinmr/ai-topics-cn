@@ -208,3 +208,26 @@ agent-skills.md already-aggregated archetype recurrence, skipped wholesale.
 Hygiene: two-step narrow staging (e39a62 pages, 365953d index+log) worked clean; log.md
 appended via ASCII /tmp script; post-commit CN-codepoint scan on `git show` + lines was
 clean. Sibling warnings on index.md present but diffs were clean.
+
+
+## 2026-09-20 newsletter-triage run (case-a empty queue + modified-file tail commit)
+
+Job: newsletter wiki-ingest cron (wiki-entity-upgrade invoked). Pre-run reported
+`ok:false, "failed to parse JSON response from newsletter-triage output"` - case-(a)
+discriminator applied: `## Response` held a fully intact JSON (`checkpoint_run_id
+20260920T070053Z`, `decisions:[]`) -> parse failure is a red herring, the empty queue is
+legitimate. `_checkpoint.ok:true`, `candidate_count:0` - no new newsletter emails since
+Semicon Series 3 (09-18, triaged + committed 09-19 via 0d23de8/ab637e3).
+
+The ONLY working-tree item in scope paths was a MODIFIED (not untracked) file:
+`wiki/raw/articles/substack.com--techtaiwan--0674ce3b.md` - Tech Taiwan profile-page
+re-fetch, diff = fetched_at 09-12->09-19 / source_date 09-11->09-18 only, zero content
+change. Exactly the 09-16 precedent (commit bdae7e0 "empty checkpoint; profile re-fetch
+timestamp update only"), so committed it alone as `inbox: newsletter collect 2026-09-20`
+(timestamp-update-only). All other dirty files (skills/, wiki pages, hot-topics.yaml,
+daily_digests/) belong to sibling sessions and were left untouched - narrow pathspec
+staging, no `git add wiki/`.
+
+Report delivered in the structured Newsletter Ingest Report format (checkpoint
+20260920T070053Z, 0/0/0/0). No wiki edits, no index.md change; this learnings section is
+the only other file the run touched.
