@@ -4134,3 +4134,8 @@ Originating conversation: (scheduled cron)
 |- reference: V2EX t/1243087「TypeSafe Jev」（構造化決定特化の別枠モデル、250K tok/s・1,200 RPM 主張）は関連ページ未存在のためエンティティ化見送り（単一ソース・一次情報不明）。
 |- skip（主）: Skills 系紹介洪水（Claude Code 9 大神/32 個亲测/27 外挂/商汤 skills/boss-call-skills＝agent-skills.md 集約済みアーキタイプ反復）、TypeSafe Jev 派生（Jev 目録 433/无福-X プラグイン）、DeepSeek Harness 03・15款插件（03 章はプレビューのみ・シリーズは 09-10 節で集約済み、插件記事は 09-08 再収録既知）、别卷了 Anthropic（date 09-14＝anthropic.md 09-15 続報節の範囲）、面试/求人/摸鱼/台風のwebsite/量化/教程、代充・六折 GPT・Pro 池・倍率 0.24 等 promo、豆包手机/gpt 20x/ZCode（09-17・09-18 run 集約済み）、Cursor转Codex 旧記事再収録。
 |- 重複基準: 同日朝の newsletter-triage（0d23de8/ab637e3、Tech Taiwan）とは対象が重複しない。当 run の take/skip 分割は当セッション自身の手動トリアージ。commit scope: harness-engineering + in-context-learning（pages step）、その後 index.md + log.md（本 step）。
+
+| ## [2026-09-21] newsletter-triage | no-op (case-(a), empty checkpoint)
+|- run_id 20260921T070011Z（checkpoint ok: true、candidate_count=0）。pre-run parse failure は case-(a)：## Response に JSON 完全（decisions=[]・processed_count=0）→ 回収済みの空キューが正当な作業キュー。チェックポイント candidates=[] 本体と一致。
+|- ChinAI は #374（9/14）、Tech Taiwan Semicon は Series 3（9/18、09-19 take 済み）以降の新着メール未着信。本日はトリアージ対象となるニュースレター信号なし＝完全なノープラン。
+|- 09-20 run（20260920T070053Z、commit 28a362b）と同型の empty-checkpoint no-op。wiki 生ファイル・digest 生ファイルとも新規なし（git status 確認済み）→ collect-only commit 対象もゼロ。当 run は読み取り専用 no-op。
