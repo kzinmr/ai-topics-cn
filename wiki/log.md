@@ -4139,3 +4139,8 @@ Originating conversation: (scheduled cron)
 |- run_id 20260921T070011Z（checkpoint ok: true、candidate_count=0）。pre-run parse failure は case-(a)：## Response に JSON 完全（decisions=[]・processed_count=0）→ 回収済みの空キューが正当な作業キュー。チェックポイント candidates=[] 本体と一致。
 |- ChinAI は #374（9/14）、Tech Taiwan Semicon は Series 3（9/18、09-19 take 済み）以降の新着メール未着信。本日はトリアージ対象となるニュースレター信号なし＝完全なノープラン。
 |- 09-20 run（20260920T070053Z、commit 28a362b）と同型の empty-checkpoint no-op。wiki 生ファイル・digest 生ファイルとも新規なし（git status 確認済み）→ collect-only commit 対象もゼロ。当 run は読み取り専用 no-op。
+
+| ## [2026-09-22] newsletter-triage | case-(b) 503 no-op / collect-only (ChinAI #375)
+|-　run_id 20260922T070006Z（checkpoint ok: true）。pre-run は case-(b)：## Response 空、## Error に HTTP 503（Local LLM server is busy）。triage LLM は不認のため take 判定なし。
+|-　対象：ChinAI #375 "Critiquing Anthropic’s Variant of Pacing the Frontier"（Jeffrey Ding，Anthropic の Pacing the Frontier 論集への反論 + Trump AI 白紙/安全論、Chip War #280 再挿入、マレア進步論文など 13 リンク）。digest 1 + raw 13（マルチ URL 重複含む）を commit 7a93ef8 で collect-only 保存。
+|-　take 判定は次回の triage ジョブに延期（case-b 規則：自前 take を行わない）。wiki ページは本 run では未変更。
