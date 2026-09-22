@@ -231,3 +231,31 @@ staging, no `git add wiki/`.
 Report delivered in the structured Newsletter Ingest Report format (checkpoint
 20260920T070053Z, 0/0/0/0). No wiki edits, no index.md change; this learnings section is
 the only other file the run touched.
+
+## 2026-09-22 crawl-triage (run 09:10 UTC) — case-(b) context-length, manual triage
+
+- Failure mode: `## Response` empty, `## Error` = RuntimeError: Context length exceeded
+  (35,467 tokens). Injected `_checkpoint` intact (run_id 20260922T090151Z, candidate_count=60).
+  60 -> 8 hash-dedup (aafeba3f flood x53 + 7 stale old v2ex), all stale — the settled daily
+  baseline, not re-investigated. Went straight to manual inbox triage of the day's 45 fresh files.
+- Take-equivalent 1: harness-engineering.md dated bullet for the JavaGuide Pi/OMP migration
+  piece (first seen 09-20, re-collected 09-22; body preview-only). Decision: NO dedicated Pi
+  entity page — a preview-only third-party migration argument is managed on the harness concept
+  side until a full body or second source arrives. Label: preview-only, single-source.
+- Reference 1: agent-skills.md dated section recording the Superpowers uninstall article
+  (07-16 origin, score 101, third+ re-crawl) as continued circulation, no new facts.
+- Jev rumor trio (Jev是什么 / 别吹 Jev / jev-ultrafast 深度解析): all bodies preview-only, no
+  verifiable durable facts — skipped as an un-landed scoop. Archetype: multi-item same-day
+  hype cluster with no scraped body = skip entirely, do not record the rumor.
+- New skip archetype: side-project promo with legit-looking titles (零配置 CLI+MCP for NAS,
+  降智监测站) — read body; if it's author's own project showcase without durable ecosystem
+  facts, skip even when the topic (MCP tooling) is otherwise wiki-relevant.
+- Same-day hygiene: morning newsletter-triage run had already committed a case-b no-op log
+  (c737852, ChinAI #375 collect-only). Stated non-overlap in log entry per convention.
+- Sibling-heavy tree (2500+ dirty inbox files, sibling-modified skills/wiki pages): three
+  narrow commits — pages (b79ba24), index+log (67c874e), take-inbox-files-by-explicit-path
+  (64b969b). In this cron session the Pi inbox file existed under BOTH 09-21 and 09-22
+  filenames (same 37fc13f4 hash) — commit both paths when taking.
+- log.md append via /tmp ASCII script (lines-list join, |-prefix style): zero deletions in
+  git diff, one-shot clean. [SKIP→manual-triage] record appended to output_path file the
+  same way (append mode, preserves pre-run prompt + raw JSON).
