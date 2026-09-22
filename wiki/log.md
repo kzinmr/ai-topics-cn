@@ -4144,3 +4144,9 @@ Originating conversation: (scheduled cron)
 |-　run_id 20260922T070006Z（checkpoint ok: true）。pre-run は case-(b)：## Response 空、## Error に HTTP 503（Local LLM server is busy）。triage LLM は不認のため take 判定なし。
 |-　対象：ChinAI #375 "Critiquing Anthropic’s Variant of Pacing the Frontier"（Jeffrey Ding，Anthropic の Pacing the Frontier 論集への反論 + Trump AI 白紙/安全論、Chip War #280 再挿入、マレア進步論文など 13 リンク）。digest 1 + raw 13（マルチ URL 重複含む）を commit 7a93ef8 で collect-only 保存。
 |-　take 判定は次回の triage ジョブに延期（case-b 規則：自前 take を行わない）。wiki ページは本 run では未変更。
+| ## [2026-09-22] crawl-triage | case-(b) context-length 失败 / 手動トリアージ
+|-　run_id 20260922T090151Z（_checkpoint.ok=true、candidate_count=60）。pre-run は case-(b)：## Response 空、## Error に RuntimeError: Context length exceeded (35,467 tokens)。確立基準どおり 60→8 ハッシュ重複排除（aafeba3f 氾濫 53 部＋旧 v2ex 7 件、全件 stale）。
+|-　当日 inbox 45 件を直接スキャンして手動トリアージ（take 判定は当セッション自身のもの）。take 相当 1（参考記録含む）: concepts/harness-engineering.md に「Claude Code から Pi への移行論（2026-09-22）」bullet 追加 — JavaGuide の Pi/OMP 転移論（初出 09-20、本文冒頭のみ・単一ソース・未検証）。
+|-　agent-skills.md に Superpowers 集団卸载記事（初出 07-16、score 101 の再クロール）の続報節を追加（参照のみ・新事実なし）。
+|-　skip（主）: Jev「哑巴模型」騒動 3 本（Jev是什么/别吹 Jev/jev-ultrafast 深度解析 — 本文いずれもプレビューのみで新事実の裏付けなし、スクープ未成立として送り）、Kimi K3 三千万足矣（風刺・再クロール）、复旦NLP 80页综述（sogou 再クロール）、AI每日摘要 2/26・3/21（旧 digest 再収録）、SpokenWOZ（既存 concept カバー済み）、面试/求人/内推、代充/代理/码/promo（ZooProxy・Setapp 车位・播放器送码）、32 Skills+8 MCP（初出 03-23 の再クロール）、Cursor转Codex（初出 05-10 の再クロール）、IDEA CC GUI（07-03 再クロール）、LangGraph RAG 解説、鹈鹕绘画 meme、NAS MCP・降智监测站（side project 宣伝、durable な新事実なし）。
+|-　sibling 併走注意: index.md と大半の wiki ページに別セッションの未コミット変更が作業ツリーに存在（git status で確認）。当 run のコミットは対象ページ 2 点のみ狭く stage する。同日朝の newsletter-triage（503、ChinAI #375 collect-only 7a93ef8）とは対象が重複しない。

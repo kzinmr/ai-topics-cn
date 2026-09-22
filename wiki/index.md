@@ -1,6 +1,18 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-09-19
+最終更新: 2026-09-22
+
+### 本日更新（2026-09-22 Crawl Triage: Claude Code→Pi 移行論 / Superpowers 卸载論の継続流通）
+- `concepts/harness-engineering.md` — **更新**: 「Claude Code から Pi への移行論（2026-09-22）」bullet追加。JavaGuide 発（初出 09-20）の Pi/OMP 転移論 — 公式の機能追加競争では Anthropic に勝てないため移行を選ぶ、という主軸論旨をプレビューのみ・単一ソース・未検証で記録（専用 Pi エンティティは作らず概念側で管理）
+- `concepts/agent-skills.md` — **更新**: 「続報（2026-09-22）」節追加。Superpowers 集団卸载記事（初出 07-16、score 101 の再クロール）の継続流通を新事実なし・参照のみとして記録
+
+### 本日更新（2026-09-21 Crawl Triage run 2: Grok 4.7 CursorBench 記録主張 / C2C KV-Cache 直転送解説）
+- `entities/cursor.md` — **更新**: 「最新動向（2026年9月21日）」節追加。V2EX 転載の「Grok 4.7 CursorBench Extra High 46.3% > Opus 5 EH 46.1%」主張を中转販促混在・単一ソース・未検証で記録。CursorBench の陣営対決インフラ化（推論）を併記
+- `concepts/agent-team-swarm/index.md` — **更新**（朝の active-crawl 側で追記済みの C2C KV-Cache 直転送「五つの死結」節と重複なし、当 triage run では新規 take なしとして確認のみ）
+
+### 本日更新（2026-09-20 Crawl Triage: Pro 20X「限時回归」動的容量管理主張 / Step Fun 5 429観測）
+- `entities/openai.md` — **更新**: 「続報（2026-09-20）」節追加。掘金ServBay記事による「$200档位新規停止後、Pro 20X に動的容量管理方案開始」主張（プレビューのみ）を09-10供給停止→09-18回復観測アークの続報としてプレビューのみ・未検証で記録。V2EX额度減体感（t/1243391）等の併走観察を集約
+- `entities/stepfun.md` — **更新**: 「Step Fun 5 利用状況（2026-09-20）」節追加。V2EXでのstepfun5公開利用下の429 Rate limit継続報告を単一ソース・未検証で記録（アフィリエイト混在注意）
 
 ### 本日更新（2026-09-19 Crawl Triage: LSP vs grep 検索バックエンド実測 / Few-Shot劣化論文の再解釈）
 - `concepts/harness-engineering.md` — **更新**: 「検索バックエンド実測: LSP vs grep（2026-09-19）」bullet追加。V2EX個人定量実測（LSP自発選択率0〜6%・強制で成功率低下・召回率不変・返却フォーマット変更が最大改善）を認知制品理論の実測側裏付けとして単一ソース・未検証で記録
