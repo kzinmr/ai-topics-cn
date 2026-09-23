@@ -4150,3 +4150,10 @@ Originating conversation: (scheduled cron)
 |-　agent-skills.md に Superpowers 集団卸载記事（初出 07-16、score 101 の再クロール）の続報節を追加（参照のみ・新事実なし）。
 |-　skip（主）: Jev「哑巴模型」騒動 3 本（Jev是什么/别吹 Jev/jev-ultrafast 深度解析 — 本文いずれもプレビューのみで新事実の裏付けなし、スクープ未成立として送り）、Kimi K3 三千万足矣（風刺・再クロール）、复旦NLP 80页综述（sogou 再クロール）、AI每日摘要 2/26・3/21（旧 digest 再収録）、SpokenWOZ（既存 concept カバー済み）、面试/求人/内推、代充/代理/码/promo（ZooProxy・Setapp 车位・播放器送码）、32 Skills+8 MCP（初出 03-23 の再クロール）、Cursor转Codex（初出 05-10 の再クロール）、IDEA CC GUI（07-03 再クロール）、LangGraph RAG 解説、鹈鹕绘画 meme、NAS MCP・降智监测站（side project 宣伝、durable な新事実なし）。
 |-　sibling 併走注意: index.md と大半の wiki ページに別セッションの未コミット変更が作業ツリーに存在（git status で確認）。当 run のコミットは対象ページ 2 点のみ狭く stage する。同日朝の newsletter-triage（503、ChinAI #375 collect-only 7a93ef8）とは対象が重複しない。
+
+|
+|## [2026-09-23] newsletter-triage | no-op (case-a)
+|
+|-　チェックポイント 20260923T070043Z（ok: true）は正常だが candidate_count: 0 のクリーンな空候補。Maildir未処理なし、最新ダイジェスト ChinAI #375 は 09-22 に collect-only コミット済み（7a93ef8）。take 対象なし、ウィキ編集なしの正当なノープン。
+|-　プリランスクリプトの ok: false エラーはペイスリーダエラー（case-a）。output_path の ## Response には正常な decisions: [] JSON が整然と残っており、上流 LLM は成功している。新規・既存ページ変更どちらもなし。
+|
