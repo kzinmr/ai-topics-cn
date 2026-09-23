@@ -259,3 +259,26 @@ the only other file the run touched.
 - log.md append via /tmp ASCII script (lines-list join, |-prefix style): zero deletions in
   git diff, one-shot clean. [SKIP→manual-triage] record appended to output_path file the
   same way (append mode, preserves pre-run prompt + raw JSON).
+
+
+## 2026-09-23 newsletter-triage: case-(a) clean empty-candidate run (no-op, no error)
+
+- Run: run_id 20260923T070043Z. Pre-run script reported `ok: true` with
+  `candidate_count: 0` and an empty `candidates` array — a legitimate
+  empty-candidate run, NOT a case-(b) LLM failure and NOT a stale checkpoint.
+- Verification before declaring no-op: (1) `~/Maildir/new/` and `cur/` both empty
+  (no new newsletter emails since the 09-22 wave), (2) newest digest in
+  `inbox/newsletters/` is ChinAI #375 (file dated 09-22, already committed
+  collect-only in the 09-22 run; see 09-22 section above and log commit c737852),
+  (3) `latest.json` checkpoint itself has no candidates field content beyond the
+  empty list. Conclusion: zero fresh newsletter signal today.
+- Distinction worth recording: case-(a) exemplar for a NO-OP recovery — prior
+  case-(a) sections covered parse-only failures with intact JSON to recover.
+  This is the sub-variant where `ok:true` + empty candidates is genuine: the
+  email-watcher inotify pipeline simply had nothing to process. Correct action
+  is an empty-decisions JSON report, NOT manual inbox triage (the raw articles
+  dir newest files are the 09-22 ChinAI #375 batch already covered — checking
+  Maildir + digest mtimes is the fast discriminator between 'genuinely nothing
+  new' and 'collection gap').
+- No wiki edits, no commits (job type forbids wiki edits anyway). Git tree
+  unchanged from 09-22 state (HEAD 6c54695).
