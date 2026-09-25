@@ -4157,3 +4157,9 @@ Originating conversation: (scheduled cron)
 |-　チェックポイント 20260923T070043Z（ok: true）は正常だが candidate_count: 0 のクリーンな空候補。Maildir未処理なし、最新ダイジェスト ChinAI #375 は 09-22 に collect-only コミット済み（7a93ef8）。take 対象なし、ウィキ編集なしの正当なノープン。
 |-　プリランスクリプトの ok: false エラーはペイスリーダエラー（case-a）。output_path の ## Response には正常な decisions: [] JSON が整然と残っており、上流 LLM は成功している。新規・既存ページ変更どちらもなし。
 |
+|
+|## [2026-09-25] newsletter-triage | no-op (case-a)
+|
+|-　チェックポイント 20260925T070015Z（ok: true）は正常だが candidate_count: 0 のクリーンな空待選。Maildir未処理なし、inbox/newsletters・wiki/raw/articlesともに 9/24 以降の新着なし。最新ダイジェスト ChinAI #375（9/21）は 09-22 に collect-only コミット済み（7a93ef8）。take 対象なし。
+|-　プリランスクリプトの ok: false エラーはパーサーリーターエラー（case-a）。output_path（2026-09-25_07-12-38.md）の ## Response には正常な decisions: [] JSON（checkpoint_run_id 20260925T070015Z、summary_ja 付き）が整然と残っており、上流 LLM は成功している。ウィキ編集なしの正当なノープン。
+|
