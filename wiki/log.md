@@ -4172,3 +4172,9 @@ Originating conversation: (scheduled cron)
 |-　ホット(4+ソース)15件はすべて hot-topics に slug または間接カバー（claude/anthropic=anthropic.md、cursor=cursor-china-adoption、豆包=doubao、混元=tencent-hunyuan、微調整=サイドストリーム）。新規YAML提案なし。
 |-　36kr=0、zhihu=0は 09-23に続く再現（ウォッチ項目、T2パイプライン観察対象）。v2ex/juejin/wechat は正常。
 |-　wikiページ変更なし（レポートのみ）。
+|
+||## [2026-09-26] newsletter-triage | 収集のみ（case-a、takeなし）
+|
+|-　チェックポイント 20260926T070006Z（ok: true、ニュースレター Tech Taiwan）。応選6件はすべて同一 message_id（<20260925102740.3.f3cdae5fc994b046@mg-d1.substack.com>）の単一記事「Did Jensen Huang Fool Everyone?（抄録版）」の Substack 配信リンク違い5条 + profileページ139字。multi-URL digest dedup 基準で単一トリアージ対象に集約。
+|-　LLMトリアージは成功（case-a、output_path 2026-09-26_07-15-54.md の ## Response に decisions 配列整然）。reference 1件（semiconductor-packaging の参考、半導体センティメントシグナルのみ）+ 重複skip 5件。本文は1041字プレビューのみで正文未受領、恒久事実なし。新規takeなし、wikiページ編集なし。
+|-　今日の収集ファイル（digest f9d9fda5 + raw 6件、うち5件新規、techtaiwan profileは既存ファイルの再取得）を inbox: newsletter collect としてコミット。
