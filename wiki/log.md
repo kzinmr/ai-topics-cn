@@ -4163,3 +4163,12 @@ Originating conversation: (scheduled cron)
 |-　チェックポイント 20260925T070015Z（ok: true）は正常だが candidate_count: 0 のクリーンな空待選。Maildir未処理なし、inbox/newsletters・wiki/raw/articlesともに 9/24 以降の新着なし。最新ダイジェスト ChinAI #375（9/21）は 09-22 に collect-only コミット済み（7a93ef8）。take 対象なし。
 |-　プリランスクリプトの ok: false エラーはパーサーリーターエラー（case-a）。output_path（2026-09-25_07-12-38.md）の ## Response には正常な decisions: [] JSON（checkpoint_run_id 20260925T070015Z、summary_ja 付き）が整然と残っており、上流 LLM は成功している。ウィキ編集なしの正当なノープン。
 |
+
+|## [2026-09-26] trending-topics | 日次レポート（新規ページなし・クロール再提案のみ）
+|
+|-　分析期間 2026-09-23→26（3日間）、trending_topics.py --days 3。独立2ソース以上のトットィク23件。集中量: v2ex 79 / juejin 82 / wechat 49 / 36kr 0 / zhihu 0。
+|-　新規Wikiページ推奨: なし。全24トレンディングトットィクに既存ページ（ai-agent/claude/openai/deepseek/gpt/mcp/gemini-google/vibe-coding/llama-meta/anthropic/cursor/kimi-moonshot/rag/tencent-hunyuan/qwen/minimax/fine-tuning/doubao/ai-safety/function-calling/openclaw/rlhf-alignment、規制=china-ai-regulation）。
+|-　クロー候補: 文心一言/Baidu（entities/baidu-ernie.md、hot-topics未登録）は再提案・要判断として記録。今回はトレンディングリスト未登録、かつ china-ai-agent-ecosystemの search_hintsに「百度文心5.1 DAA」「百度Create2026」が既に存在=間接カバー済み。再提案履歴 09-07/09-09/09-23。
+|-　ホット(4+ソース)15件はすべて hot-topics に slug または間接カバー（claude/anthropic=anthropic.md、cursor=cursor-china-adoption、豆包=doubao、混元=tencent-hunyuan、微調整=サイドストリーム）。新規YAML提案なし。
+|-　36kr=0、zhihu=0は 09-23に続く再現（ウォッチ項目、T2パイプライン観察対象）。v2ex/juejin/wechat は正常。
+|-　wikiページ変更なし（レポートのみ）。
