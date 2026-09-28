@@ -4191,3 +4191,18 @@ Originating conversation: (scheduled cron)
 |　LLM stage succeeded (case-a): pre-run parser reported ok:false, but the output file's ## Response holds a parseable decisions:[] JSON. Checkpoint 20260928T070014Z is intact with candidate_count:0 — a genuine empty-candidate run (no new newsletter mail today), not a case-(b) failure.
 |　No take/reference decisions; no new newsletter collection files in inbox/newsletters/ or wiki/raw/articles/ today (untracked raw files are 09-24/25 leftovers already logged on 09-26/27). Nothing to ingest — logged no-op only.
 |
+
+|## [2026-09-28] crawl-triage | no-op (case-b 7th, manual triage: zero durable takes)
+|
+|-　LLM stage failure (case-b, settled operating norm): context-length RuntimeError ~31,675 tokens in output_path (6c9d8a21f0b4 / 2026-09-28_21-10-35.md). ## Response is empty (no decisions JSON), ## Error holds the context-length traceback. No re-investigation per skill norm.
+|
+|-　Checkpoint 20260928T210135Z (latest.json, candidate_count=60): fingerprint confirmed again 60 -> 8 unique (53 copies of the aafeba3f flood). triage_latest.json remains stale from 08-27. Judged via manual inbox triage.
+|
+|-　Fresh inbox (09-27 09:10 -> 09-28, juejin + v2ex, no new wechat) triaged manually. Take judgement in this entry is this session's own (no LLM decisions existed). Take 0 / Reference 4 / Skip: the rest.
+|
+|-　Reference (no durable facts, preview-only): (1) juejin dbb2f4e8 「推理配置漂移比报错更危险」 (09-28, score 0) — inference-config-drift explainer, analogies only, no named harness design; concepts/harness-engineering.md left unchanged. (2) juejin 5f042f6d 「大模型会规划但机器人不会行动」 (09-28, score 0) — VLA/humanoid control explainer, preview-only. (3) juejin 8a939559 「Hindsight experience layer」 + 0487967d 「OpenRig」 (09-28, score 0) — side-project showcases adjacent to harness/memory themes.
+|
+|-　Skip highlights: JavaGuide 「再见 Superpowers」 (07-24 original, 4th+ recrawl, already recorded 09-13/17/22 in concepts/agent-skills.md as no-new-facts); 「多智能体失败根因」 (2c35772b, 09-03 old, saturation-recollection of the 09-17 output-conservation take on concepts/subagent-orchestration.md); Anthropic bio-discovery (preview-only re-collection of the 09-24 news already in entities/anthropic.md 09-26 entry); Claude-Opus-5.5/KYC posts (chains recorded 09-25/27); V2EX promo/carpool/account-farming threads; old-date resurfaces (再见百度 05-13, GPT-5.6 07-09, draw.io Skill 08-27).
+|
+|-　Result: zero wiki page edits, zero new pages. Committed this no-op log entry only (narrow pathspec). Dedup baseline: HEAD c902cd (09-28 newsletter no-op) and the 09-27 crawl no-op (2749534) covering the 09-26 takes.
+|
