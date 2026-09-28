@@ -282,3 +282,28 @@ the only other file the run touched.
   new' and 'collection gap').
 - No wiki edits, no commits (job type forbids wiki edits anyway). Git tree
   unchanged from 09-22 state (HEAD 6c54695).
+
+
+## 2026-09-28 crawl-triage: case-(b) 7th, manual triage with ZERO durable takes
+
+- Run: checkpoint run_id 20260928T210215Z, candidate_count=60 -> 8 unique
+  (53x aafeba3f flood, settled fingerprint, not re-investigated). LLM stage:
+  context-length RuntimeError ~31,675 tokens; `## Response` empty -> case-(b).
+  `triage_latest.json` still stale from 08-27.
+- Fresh inbox (juejin + v2ex, 09-27->09-28, 112 files) triaged manually.
+  Outcome: Take 0 / Reference 4 / Skip rest — the FIRST case-(b) manual
+  triage in this streak with zero durable takes. All fresh-day items were
+  score-0 preview-only explainers (config-drift, VLA/humanoid, Hindsight,
+  OpenRig side projects) or old-date resurfaces (Superpowers 07-24 4th+
+  recrawl, multi-agent-failure 09-03 = saturation-recollection of the 09-17
+  output-conservation take).
+- New skip archetype recorded: SATURATION-RECOLLECTION — an old article whose
+  thesis was already taken once (e.g. the 09-17 8-sub-agent 2-3x conservation
+  law on concepts/subagent-orchestration.md) keeps being re-crawled under new
+  filenames; once the take exists, further recrawls are skip regardless of
+  body availability, because the durable fact is already in the wiki.
+- Notes: (1) run_id in latest.json updates per crawl wave (210135Z seen mid-run
+  vs 210215Z final) — verify the CURRENT latest.json before reporting the
+  run_id; this run had to correct the log entry post-commit (6178af5).
+  (2) No wiki page edits; committed no-op log entry only via /tmp append
+  script (append-only invariant: `git diff | grep -c '^-[^-]'` == 0).
