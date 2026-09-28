@@ -4178,3 +4178,16 @@ Originating conversation: (scheduled cron)
 |-　チェックポイント 20260926T070006Z（ok: true、ニュースレター Tech Taiwan）。応選6件はすべて同一 message_id（<20260925102740.3.f3cdae5fc994b046@mg-d1.substack.com>）の単一記事「Did Jensen Huang Fool Everyone?（抄録版）」の Substack 配信リンク違い5条 + profileページ139字。multi-URL digest dedup 基準で単一トリアージ対象に集約。
 |-　LLMトリアージは成功（case-a、output_path 2026-09-26_07-15-54.md の ## Response に decisions 配列整然）。reference 1件（semiconductor-packaging の参考、半導体センティメントシグナルのみ）+ 重複skip 5件。本文は1041字プレビューのみで正文未受領、恒久事実なし。新規takeなし、wikiページ編集なし。
 |-　今日の収集ファイル（digest f9d9fda5 + raw 6件、うち5件新規、techtaiwan profileは既存ファイルの再取得）を inbox: newsletter collect としてコミット。
+|
+|## [2026-09-27] crawl-triage | no-op (case-b 6th, prior-session take commit)
+|
+|-　LLM stage failure (case-b): context-length RuntimeError ~31,417 tokens in output_path (6c9d8a21f0b4 / 2026-09-27_09-10-33.md). Checkpoint 20260927T090219Z fingerprint confirmed again: 60 candidates -> 8 unique (53 copies of aafeba3f). Settled operating norm, no re-investigation.
+|-　Fresh inbox (09-26 09:10 → 09-27, juejin 105 + v2ex 15, no new wechat) triaged manually by a prior session of this pipeline. Durable takes were already committed as 2e0e6c0 (wiki: crawl-triage 2026-09-26 — OpenAI sandbox-breach + Claude bio-discovery + Jev concept page): entities/openai.md + entities/anthropic.md + concepts/jev-decision-engine.md (new) + claude-code-router link. This run verified those commits, completed the index.md 09-26 section that had been left behind, and committed wiki files + 4 take inbox sources as 2749534. No new durable facts on re-read; no re-aggregation.
+|-　Skip: GPT-6 Sol / Claude Opus 5.5 / Claude Cowork comparison posts (hashes 0f4a7654, 271c864e, 2f99a09f, 8363e28f, 37fc13f4, 3509d4d8) = release-arc reactions, already aggregated; editor-shift set (C4LLLM, Zed, terminal agents) = low-score personal threads; tutorial/SEO explainer flood (MCP, RAG, Agent, Harness glosses etc. ~50 items); promo/satire (Claude Code 100M Star absurd post); V2EX empty-body; Pi/Claude Code comparison = subjective.
+|
+|
+|## [2026-09-28] newsletter-triage | no-op (case-a empty-candidate)
+|
+|　LLM stage succeeded (case-a): pre-run parser reported ok:false, but the output file's ## Response holds a parseable decisions:[] JSON. Checkpoint 20260928T070014Z is intact with candidate_count:0 — a genuine empty-candidate run (no new newsletter mail today), not a case-(b) failure.
+|　No take/reference decisions; no new newsletter collection files in inbox/newsletters/ or wiki/raw/articles/ today (untracked raw files are 09-24/25 leftovers already logged on 09-26/27). Nothing to ingest — logged no-op only.
+|
