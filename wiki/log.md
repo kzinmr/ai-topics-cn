@@ -4214,3 +4214,9 @@ Originating conversation: (scheduled cron)
 |- 36kr=0、zhihu=0は 09-23、09-26に続く再現（3回目、2週間ペース）。まだウォッチ項目として観察を続けるが、T2パイプラインの異常確認を検討する段階しつつある。v2ex/juejin/wechatは正常。
 |- wikiページ変更なし（レポートのみ）。
 |
+|
+|## [2026-09-29] newsletter-triage | no-op (case-a empty-candidate)
+|
+|　LLM stage succeeded (case-a): pre-run parser reported ok:false, but the output file's ## Response holds a parseable decisions:[] JSON (b8e1c2d9a604 / 2026-09-29_07-11-51.md). Checkpoint 20260929T070054Z is intact with candidate_count:0 「今日は新規ニュースレターメイルなし」 — a genuine empty-candidate run, not a case-(b) failure (same pattern as 09-28, run 20260928T070014Z).
+|　No take/reference decisions. inbox/newsletters/ newest arrival is 09-25 (Tech Taiwan, already committed as 47bf850); no new collection files today. Untracked raw files (cdd6e9a7 Step-5, a9242937 Opus-5.5, 8de6785a Shopify) are 09-24/25 leftovers already logged on 09-26/27. Working-tree dirty wiki pages belong to sibling sessions 「別セッション」 — left untouched. Nothing to ingest 　— logged no-op only.
+|
