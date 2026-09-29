@@ -4206,3 +4206,11 @@ Originating conversation: (scheduled cron)
 |
 |-　Result: zero wiki page edits, zero new pages. Committed this no-op log entry only (narrow pathspec). Dedup baseline: HEAD c902cd (09-28 newsletter no-op) and the 09-27 crawl no-op (2749534) covering the 09-26 takes.
 |
+|## [2026-09-29] trending-topics | 日次レポート（新規ページなし・新規YAML提案なし）
+|
+|- 分析期間 2026-09-26→29（3日間）、trending_topics.py --days 3。独立2ソース以上のトレンディングトピク19件。収集量: v2ex 81 / juejin 86 / wechat 59 / 36kr 0 / zhihu 0。
+|- 新規Wikiページ推奨: なし。全19トレンディングトピクに既存ページ（ai-agent/claude/mcp/openai/vibe-coding/gpt/deepseek/rag/cursor/anthropic/gemini-google/doubao/llama-meta/qwen/kimi-moonshot/tencent-hunyuan/multimodal/china-local-deployment/quantization）。
+|- クロール候補: なし。source_count>=3の16件はすべて hot-topics.yamlの slugまたは間接カバー（claude/anthropic=anthropic.md、cursor=cursor-china-adoption、豆包=doubao、混元=tencent-hunyuan、量化=vram-optimization間接、ローカルデプロイ=china-local-deployment、GPT/OpenAI/全球エンティティ=wikiページのみ・意图的未登録）。文心一言/Baiduは今回もトレンディング未登録（間接カバー済み・要判断据え置き、再提案履歴 09-07/09-09/09-23/09-26）。
+|- 36kr=0、zhihu=0は 09-23、09-26に続く再現（3回目、2週間ペース）。まだウォッチ項目として観察を続けるが、T2パイプラインの異常確認を検討する段階しつつある。v2ex/juejin/wechatは正常。
+|- wikiページ変更なし（レポートのみ）。
+|
