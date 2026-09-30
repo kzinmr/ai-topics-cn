@@ -4220,3 +4220,20 @@ Originating conversation: (scheduled cron)
 |　LLM stage succeeded (case-a): pre-run parser reported ok:false, but the output file's ## Response holds a parseable decisions:[] JSON (b8e1c2d9a604 / 2026-09-29_07-11-51.md). Checkpoint 20260929T070054Z is intact with candidate_count:0 「今日は新規ニュースレターメイルなし」 — a genuine empty-candidate run, not a case-(b) failure (same pattern as 09-28, run 20260928T070014Z).
 |　No take/reference decisions. inbox/newsletters/ newest arrival is 09-25 (Tech Taiwan, already committed as 47bf850); no new collection files today. Untracked raw files (cdd6e9a7 Step-5, a9242937 Opus-5.5, 8de6785a Shopify) are 09-24/25 leftovers already logged on 09-26/27. Working-tree dirty wiki pages belong to sibling sessions 「別セッション」 — left untouched. Nothing to ingest 　— logged no-op only.
 |
+
+|## [2026-09-29] crawl-triage | manual triage (case-b context-length, 9th consecutive)
+|
+|　LLM-triage failed: RuntimeError Context length exceeded (37,067 tokens) at output 2026-09-29_09-10-49 (6c9d8a21f0b4). Case-(b) — no decisions exist; manual inbox triage performed by this agent. Checkpoint 20260929T090135Z intact: 60 candidates -> 8 unique after hash dedup (aafeba3f 2017 flood x53 unchanged, daily-collapse baseline holding).
+|　Fresh-day scan: 45 inbox files carry 2026-09-29 in the filename; only 21 have date: 2026-09-29 in frontmatter (24 are sogou/juejin re-crawls dated 2017–2026-03, skipped).
+|　Take 1: V2EX t/1245566 「谈谈对 ChatGPT 订阅额度砍半的看法」(score 7) — tibo の主張: $200 Pro は额度减半で復活、OpenAI は API 価格低下継続下で契約者別 compute を正式に上限化し始めた、という推論。09-20/09-23 の動的容量管理アークを継続する単一ソース・未検証の durable 変更として entities/openai.md に日付節で記録。
+|　Take 2 (same dated section): juejin preview-only 「OpenAI DevDay 今晚开场」(score 0) — DevDay 2026 開幕直前のリーク: 常駐アシスタント「o」と $500/月プランの事前リーク。プレビューのみ・未検証。supply/pricing アーク上の durable-name シグナルとして同ページに記録。
+|　Reference (no edit): v2ex t/1245567 阿里云 token plan の API 悪用と約款スレッド(score 1) — 既知の plan 制限アーキタイプ以上の新 durable 事実なし。
+|　Skip: juejin 「旗舰被小弟反超 Sonnet 5.5 > Opus 5.5」(プレビューのみ・単一ソース・本文なし); 再见 Superpowers 13a29a98 = 07-24 記事の saturation-recollection (4回目+ の再クロール、take は agent-skills.md に既存); Cursor->Codex 92b6bcfa = 2026-05-10 記事の再クロール (raw は 08-20 に wiki 済); Pi 37fc13f4 = 09-20 再クロール (09-21/22 take commit 済); Kimi K3 三千万足矣 = satire (frontmatter 08-17); 阿里一面/携程 の給与・面接 promo; muse-ai 注册方案 promo; v2ex の生活系/非AIスレッド; side-project promo (漫画生成器/Hotel Lobby/MCP长记忆/台风网站); 日付不一致の wechat 再クロール24件 (SpokenWOZ, LiteLLM-digest など)。
+|　Skip cont.: 复旦NLP综述 357bad68 = saturation-recollection — raw 記事はすでに wiki の raw/articles/2026-04-17-...-357bad68.md として存在 (index 登録済)、frontmatter 日付は 2023。
+|　Wiki: entities/openai.md 更新 (frontmatter updated 2026-09-23 -> 2026-09-29)、index.md に本日セクション追加。run_id はレポート作成時点で latest.json を再読。
+|
+|## [2026-09-30] trending-topics | 日次レポート（新規ページなし・クロール候補なし）
+|
+|- 期間 09-27→09-30：18件トレンディング。36kr=0・zhihu=0（09-23/09-26に続く3回目、watch item、まだパイプラインフラグ門矢ではない）。v2ex 85 / juejin 87 / wechat 62。
+|- 新規ページ推奨：なし（全18件すべてにentities/conceptsページ存在）。
+|- クロール候補：なし。source_count>=3の16件はすべて slug直接登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/china-ai-agent-ecosystem/china-local-deployment/mcp-china/vibe-coding-china/cursor-china-adoption）または間接カバー（RAG=dify search_hints、多模态=deepseek/chatglm hints）。全球エンティティ（Claude/Anthropic/OpenAI/GPT/Cursor/Gemini/Llama）は意図的未登録。文心一言/Baiduは今回もトレンディング未登録（間接カバー済み・要判定据え置き、再提案履歴 09-07/09-09/09-23/09-26）。
