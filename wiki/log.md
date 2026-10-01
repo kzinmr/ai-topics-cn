@@ -4246,3 +4246,11 @@ Originating conversation: (scheduled cron)
 |-　Skip: Microsoft Agensh juejin preview = 09-30 morning preview-only signal on concepts/agent-team-swarm.md already committed in active-crawl 316a760 (no body, skip on rerun); DeepSeek Harness Desktop pair (t/1245836 + juejin 60388b6f) = already taken same day in active-crawl 316a760 (deepseek.md 09-30 section exists); Anthropic Claude-arrange = 09-29 active-crawl take (anthropic.md 09-30 section exists); Kimi x100 promo (score 20); DevDay reaction posts without new specs (Dots 不用白不用、Codex自动化Vibe白盯、AI公司的组织形态); side-project promos (chat-ui/CLI/SSH工具/模型监控MCP/日历组件/手机求助); V2EX 脑洞+软件开发 2nd thread; juejin daily-checkin spam; date-mismatched wechat re-crawls.
 |-　Wiki: entities/openai.md updated (frontmatter updated 2026-09-17 -> 2026-09-30, new dated section at EOF after the 09-30 preview section). Note: working tree also carries sibling-session uncommitted enrichments (active-crawl 316a760 take bodies on anthropic.md / agent-team-swarm.md, plus ~20 other pages) - left in the tree for their own sessions to commit; this commit is openai.md only. Same-day active-crawl (316a760) and trending-topics (3c3a825) commits have no subject overlap with this take.
 |
+
+|## [2026-10-01] trending-topics | 日次トレンディングレポート（新規ページなし・新規YAML提案なし）
+|-分析期間 2026-09-28→10-01、2ソース以上言及 19件。ソース別報告: v2ex 87 / juejin 87 / wechat 59 / 36kr 0 / zhihu 0。
+|-新規Wikiページ推徵: なし。全19トレンディングトピクに既存ページ（ai-agent/claude/openai/gpt/mcp/vibe-coding/deepseek/anthropic/rag/cursor/gemini-google/doubao/kimi-moonshot/tencent-hunyuan/llama-meta/function-calling/qwen/china-local-deployment/fine-tuning）。
+|-クロール候補: なし。source_count>=3の15件はすべて slug直接登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/china-ai-agent-ecosystem/mcp-china/vibe-coding-china/cursor-china-adoption）または間接カバー（Function Calling=concepts/function-calling、ローカルデプロイ=china-local-deployment、RAG=concepts/rag、微調=fine-tuning）。全球エンティティ（Claude/Anthropic/OpenAI/GPT/Cursor/Gemini/Llama）は意図的未登録。
+|-文心一言/Baiduは今回もトレンディング未登録（間接カバー済み・要判定据え置き、再提案履歴 09-07/09-09/09-23/09-26）。
+|-36kr=0 AND zhihu=0 のペアゼロは 09-23/09-26/09-29 に続き再び確認。T2パイプラインは watch item として引き続きチェック。
+|$
