@@ -1,7 +1,7 @@
 ---
 title: "Gemini/Google — Google AI基盤モデルとオープンソースGemma"
 created: 2026-04-17
-updated: 2026-09-08
+updated: 2026-10-01
 tags: [llm, model, google, gemini, gemma, inference, open-source-ai]
 aliases: ["Gemini", "Google AI", "Gemma"]
 source_lang: zh-CN
@@ -96,6 +96,14 @@ Geminiは[[openai|OpenAI]]のGPTシリーズ、[[anthropic|Anthropic]]のClaude�
 
 **出典**: 掘金 — [Gemini 3.8 Flash 没涨价，干活却贵了 40%？](https://juejin.cn/post/7683051207535083526) [T1]、収集: 2026-09-08
 **出典**: 掘金 — [一周 AI 观察：模型层在「周更」，钱却全流进了机房](https://juejin.cn/post/7683016577462616099) [T1]（見出しプレビューのみ）、収集: 2026-09-08
+
+## 続報（2026-10-01）: Gemini 4 Argon 発表観測（単一ソース・未検証）
+
+- **「Gemini 4 Argon 已宣布」（V2EX street000、09-30〜10-01、score 19、単一ソース・未検証）**: 見出しによれば Google が **Gemini 4 Argon** を発表。ただし一般公開ではなく**米国政府とトラステッドテスター限定の先行提供**という。主張されるベンチマーク: AAI Index 53（GPT 6.1 Sol と GPT 6 Astra の間）、Text Arena #1（Opus 4.6 超え）、WebDev Arena #8（Opus とは大きな差）。初期 API 価格は入力 $2 / 出力 $10（100万トークン）、正式価格はその倍額、初期提供対象は有料 API と Ultra ユーザーで Pro は含まれないとされる。公式ブログ URL（blog.google/.../gemini-4-argon/）が本文中に示されているが、本文は V2EX 経由の一次転載で独立確認なし。
+- **中国語圏での評価バイアス（参照のみ・プレビューのみ）**: 掘金「Gemini 4 Argon 对比 GPT-6 Astra：百万 Token 输出很诱人，但我劝你先别迁编程工作流」（孟健AI编程、10-01、score 0）は、出力 100万トークンと初期コスト低下を認めつつ、SWE ターミナル系基準と Fairwind 制約アクセスの実態を踏まえ「主力プログラミングワークフローの安易な移行は否」と主張。見出しプレビューのみで本文未受領。2026年4月（3.5 Flash）以降続いている「跑分先行 vs 実体験」評価構図の継続例として参照のみ。
+- **構図（推論）**: 3.8 Flash（09-07）→ 4 Argon（10-01）とフラッグシップ世代の更新が続くが、限定先行提供＋Pro 対象外という供給設計は、GPT-6 系における Pro 除外と同型の「先行層限定リリース」パターン。単一ソースのため全項目未検証据え置き。
+
+**出典**: V2EX — [Gemini 4 Argon 已宣布](https://www.v2ex.com/t/1245947) [T1]、収集: 2026-10-01。掘金 — [Gemini 4 Argon 对比 GPT-6 Astra](https://juejin.cn/post/7691219326316380175) [T1]（プレビューのみ）、収集: 2026-10-01
 
 ## ソース信頼性
 
