@@ -4262,3 +4262,12 @@ Originating conversation: (scheduled cron)
 |- inbox/newsletters/ wiki/raw/articles/ に今日の新規ファイルなし（git status は sibling セッションの既存 working-tree 変更のみ、触れていない）。Wiki 編集なし、コミットなし。
 |-　スキル更新: wiki-entity-upgrade に /tmp アプデン後の hex-dump ベリフィケーションゲートを追加（今回「スキル」が「スキピル」に乱入したものを tail が見逃した教練）。check-skill-inventory にも cron パッチ記録規約を記述。
 |
+|
+|## [2026-10-01] crawl-triage | case-(b) manual triage (checkpoint 20261001T090157Z)
+|
+|-　LLM-triage failed: RuntimeError Context length exceeded (37,615 tokens) at output 2026-10-01_09-10-10 (6c9d8a21f0b4). Case-(b) - no decisions exist; manual inbox triage by this agent. Checkpoint 20261001T090157Z intact: 60 candidates -> 8 unique after hash dedup (aafeba3f flood x53 unchanged, daily-collapse baseline holding). triage_latest.json stale.
+|-　Fresh-day scan: 45 inbox files dated 2026-10-01 (juejin+v2ex); 1 durable take total.
+|-　Take: V2EX t/1245947 「Gemini 4 Argon 已宣布」(score 19) - Gemini 4 Argon announcement claims: US-gov + trusted-tester early access only; AAI Index 53 (between GPT 6.1 Sol and GPT 6 Astra), Text Arena #1 (>Opus 4.6), WebDev Arena #8; launch API $2/$10 per M tokens (official price 2x), initial cohort = paid API + Ultra, Pro excluded. Recorded as dated section 「続報（2026-10-01）」 on entities/gemini-google.md, single-source unverified. Juejin preview-only caution piece (f6d4b8b3, score 0) attached as reference bullet.
+|-　Skip: DeepSeek Harness Desktop trio (c43eb108 re-crawl + ec310824 08-13 tutorial re-crawl + 27801ae3 plugin list) = saturation-recollection of 09-30 take already on deepseek.md; GPT credits threads (02c8df05 / bd5cadf5 / 1652f8e3) = reaction noise on already-recorded DevDay comp; GPT downgrade post (358d09c3) = reseller channel-status promo, not durable; 01x01 promo/ads (代充 8a47845b, 不降智倍率 13ea5bdf, 送码 a66756f8, Zooproxy 51808b79); side-project showcases (台风网站 4db371af, 表情厨房 85d98672, Vidily b1262e2f, muse-ai Turnstile ee27b947); 暂无内容 v2ex (6bbdb523); interview/personal-story posts (携程 dfd4890c, 阿里一面 586e4548); explainer re-crawls (3653f445, 0b9780ef, 5fe48c64, 014ece8c, 3155c7a0, SkillOpt 0464c1b7 = SkillOpt chain preview-only, no body); Kimi local-deploy satire (5c8e3320, same archetype as prior skip).
+|-　Wiki: entities/gemini-google.md updated (frontmatter updated 2026-09-08 -> 2026-10-01, new dated section before 「ソース信頼性」). Working tree carries sibling-session uncommitted changes on ~25 pages - left alone; this commit stages gemini-google.md only. Same-day trending-topics (7d5e678) and newsletter-triage (9a25c73) commits have no subject overlap with this take.
+|
