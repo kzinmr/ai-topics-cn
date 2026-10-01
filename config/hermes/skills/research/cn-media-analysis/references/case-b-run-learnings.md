@@ -307,3 +307,11 @@ the only other file the run touched.
   run_id; this run had to correct the log entry post-commit (6178af5).
   (2) No wiki page edits; committed no-op log entry only via /tmp append
   script (append-only invariant: `git diff | grep -c '^-[^-]'` == 0).
+
+## 2026-10-01 (crawl-triage, case-b manual triage, run_id 20261001T090157Z)
+
+- Context-length failure at 37,615 tokens; checkpoint intact, 60 candidates -> 8 unique (aafeba3f flood x53, daily-collapse baseline still holding).
+- Fresh-day scan (45 files dated 10-01) yielded exactly 1 durable take: V2EX t/1245947 Gemini 4 Argon announcement (score 19) -> dated section on entities/gemini-google.md, single-source unverified (US-gov/trusted-tester early access, AAI 53, Text Arena #1, launch $2/$10, Pro excluded).
+- Saturation-recollection skip archetype confirmed again: DeepSeek Harness Desktop trio (c43eb108 re-crawl, ec310824 08-13 tutorial re-crawl, 27801ae3 plugin list) all recycles of the 09-30 take already on deepseek.md - skipped without re-reading bodies beyond titles+hashes.
+- Two-direction score rule held: the take was score 19 (not the day's highest; promos topped it) and the reference bullet was score 0.
+- /tmp append-log script (ASCII frame + escapes only for short CJK spans) landed first try; git diff deletion-line count == 0; narrow two-step commit (1189dec page, b8ac04d log) clean.
