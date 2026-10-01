@@ -4254,3 +4254,11 @@ Originating conversation: (scheduled cron)
 |-文心一言/Baiduは今回もトレンディング未登録（間接カバー済み・要判定据え置き、再提案履歴 09-07/09-09/09-23/09-26）。
 |-36kr=0 AND zhihu=0 のペアゼロは 09-23/09-26/09-29 に続き再び確認。T2パイプラインは watch item として引き続きチェック。
 |$
+|
+|## [2026-10-01] newsletter-triage | ChinAI digest (no-op)
+|
+|- run_id 20261001T070036Z: checkpoint ok:true / candidate_count=0 / candidates=空[].　新規候補なし　(case-a empty-candidate no-op).
+|- Preflight ok:false was a parse-only failure; ## Response intact with the LLM's no-op verdict (no 5xx). [SKIP] record appended to cron output file.
+|- inbox/newsletters/ wiki/raw/articles/ に今日の新規ファイルなし（git status は sibling セッションの既存 working-tree 変更のみ、触れていない）。Wiki 編集なし、コミットなし。
+|-　スキル更新: wiki-entity-upgrade に /tmp アプデン後の hex-dump ベリフィケーションゲートを追加（今回「スキル」が「スキピル」に乱入したものを tail が見逃した教練）。check-skill-inventory にも cron パッチ記録規約を記述。
+|
