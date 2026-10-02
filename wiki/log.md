@@ -4287,3 +4287,9 @@ Originating conversation: (scheduled cron)
 |-新規ページ推奨：なし（全22件にentities/conceptsページ存在：AI安全=ai-safety-subconscious、RLHF/対齐=rlhf-alignment、MiniMax=minimax、微調=fine-tuning、ローカルデプロイ=china-local-deployment、ChatGLM=glm-zhipu）。
 |-クロール候補：なし。source_count>=3の19件はすべて slug直接登録（deepseek/kimi/doubao/tencent-hunyuan/china-ai-agent-ecosystem/china-local-deployment/mcp-china/vibe-coding-china/cursor-china-adoption/chatglm）または間接カバー（AI安全・RLHF=安全对齐/伦理安全指引 hints、RAG=dify hints、微調=サイドストリーム、MiniMax=価格比較hints）。全球エンティティ（Claude/Anthropic/OpenAI/GPT/Cursor/Gemini/Llama）は意図的未登録。文心一言/Baiduは今回もトレンディング未登録（間接カバー済み・要判定据え置き、再提案履歴 09-07/09-09/09-23/09-26）。
 |-ウォッチ: 36kr=0・zhihu=0は 09-23/09-26に続き3回目。数カ日定期再発となっておりT2パイプラインともに後追いで観察。
+
+|## [2026-10-02] newsletter-triage | case-a empty-collection no-op
+|- run_id 20261002T070043Z: checkpoint ok=true, candidates=0 (394-byte checkpoint, same fingerprint as 10-01 empty day).
+|- Pre-run reported ok=false 「failed to parse JSON response」 but ## Response held an intact ```json block with decisions:[] — case (a) parse-only failure, no triage data lost.
+|- take/reference/skip decisions: 0/0/0. No new digest/raw files in inbox/newsletters/ or wiki/raw/articles/ since the 10-01 batch (4 untracked files are Sep-25-era crawl leftovers, not this run's collection).
+|- Wiki edits: none. Standalone 0-candidate day requires neither a collect commit nor [SILENT] suppression because this log entry is the record.
