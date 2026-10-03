@@ -4309,3 +4309,10 @@ Originating conversation: (scheduled cron)
 |- クロール候補：なし。source_count>=3の18件はすべて slug直接登録（deepseek/kimi/doubao/tencent-hunyuan/chatglm/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem）または間接カバー（AI Agent=china-ai-agent-ecosystem hints、AI安全=安全対斉/伦理安全指引 hints、RLHF/対斉=安全対斉 hints、MCP=mcp-china/mcp-chinese-tools、多模态=doubao hints）。全球エンティティ（Claude/OpenAI/GPT/Anthropic/Gemini/Cursor/Llama/MiniMax）は意図的未登録。文心一言/Baiduは今回もトレンディング未登録（間接カバー済み・要判定据わり置き、再提案履歴 09-07/09-09/09-23/09-26）。
 |- ウォッチ: 36kr=0・zhihu=0は 09-23/09-26/10-02に続き4回目。数カ日定期再発。
 |- 新規ページなし・新規YAML提案なし。log.mdのみコミット（トレンディングレポートはページ編集なし）。
+
+|## [2026-10-03] newsletter-triage | case-(a) recoverable parse-fail | collect-only | run 20261003T070010Z
+|-
+|- Pre-run ok=false "failed to parse JSON response" = case (a) parse-only failure: output tail held an intact fenced ```json block with 6 well-formed decisions (take 0 / reference 1 / skip 5). No triage data lost.
+|- Single logical article: Tech Taiwan (陈良榕) 2026-10-02 Chroma ATE (致茂電子) CEO 曾一士 exclusive interview, 6 candidates = 5 Substack redirect-URL variants + profile page (same message_id, multi-URL dedup archetype). Representative body 7edcbeea = 3005B preview-only, full text not scraped.
+|- reference 1 (Chroma/致茂 wiki 未カバー・単一ソース・プレビューのみのため take適用見送り)、skip 5 (URL dup + profile 139 chars). Zero wiki edits: this run ingests nothing new.
+|- Collect-only commit: digest 7043c9ff + 6 raw files (7edcbeea / f0c4ceb3 / 1b719919 / a562aa1e / a486a9b0 / 0674ce3b) committed as "inbox: newsletter collect 2026-10-03". Working-tree Sep-24/25-era leftovers NOT staged (not this run's collection).
