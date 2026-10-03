@@ -4293,3 +4293,19 @@ Originating conversation: (scheduled cron)
 |- Pre-run reported ok=false 「failed to parse JSON response」 but ## Response held an intact ```json block with decisions:[] — case (a) parse-only failure, no triage data lost.
 |- take/reference/skip decisions: 0/0/0. No new digest/raw files in inbox/newsletters/ or wiki/raw/articles/ since the 10-01 batch (4 untracked files are Sep-25-era crawl leftovers, not this run's collection).
 |- Wiki edits: none. Standalone 0-candidate day requires neither a collect commit nor [SILENT] suppression because this log entry is the record.
+|## [2026-10-02] crawl-triage | case-(b) manual triage | run 20261002T210135Z (latest.json) | LLM stage: Context length exceeded 37,067 tokens
+|-
+|- Checkpoint 8 candidates = 100% saturation-recollection (aafeba3f x53 flood + Anthropic 7-company / pi IDE / Mollick / Agent OS recap / OpenAI quota-halving, all recorded on 10-02 morning run; a64e059e OpenAI body-arrived version = same 9/29 chain, verification status governs).
+|- Fresh-day inbox scan: 77 new files under juejin(35)/v2ex(42)/wechat-media, 08:48 wave, no same-hash re-collection. T1/T2 volume items (Claude Code Mods ecosystem ccmods.dev / OpenAI Pro quota-halving / SkillOpt / Superpowers 4th recrawl) all covered by morning commits - saturation skips.
+|- take 1: juejin f03aec9f 'qwen token plan reset-cycle change' complaint (dated 9/30, score 3) -> new dated subsection on wiki/entities/qwen.md, single-source unverified, parallel to the OpenAI 9/29 billing arc. Source file committed alongside the page.
+|- reference 0, skip ~76: promo/saturation/preview-only explainer split - 10+ Claude Code vs pi IDE opinion posts (pi take exists 10-02 morning), Agent Skills explainer series (agent-skills.md 10-02 morning), Context Mode / OpenClaw hardening / Harness / MiniMax MASA recrawls, Claude Code account-ban promo threads, WeChat sogou dailies (2019/2021/2023/2026-08 backdates), tutorial explainers.
+|- Dedup baseline: morning commit c985f209 (crawl-triage 33-file take/reference) + 44b3400 / 8205596 / 9a9f85b (claude-code Mods ecosystem, updated 10-02). Same-day morning newsletter-triage (Tech Taiwan) targets do not overlap.
+|- 36kr/zhihu zero-volume: N/A here (trending-report pipeline), noted separately in today's trending log entry (3rd occurrence 09-23/09-26/10-02).
+|- No new wiki pages. Page-only commit: c0a57bc (qwen.md + inbox source file). This index.md/log.md commit is the second of the two-step narrow-staging pattern.
+
+|## [2026-10-03] trending-topics | 日次トレンディングレポート（新規ページなし・新規YAML提案なし）
+|- 分析期間 09-30→10-03（3日間）。v2ex 86 / juejin 80 / wechat 59 / 36kr 0 / zhihu 0。2ソース以上トレンディング 23件。
+|- 新規ページ推奨：なし（全23件にentities/conceptsページ存在：AI Agent=ai-agent、Claude=claude、OpenAI=openai、GPT=gpt、DeepSeek=deepseek、MCP=mcp、Anthropic=anthropic、Gemini=gemini-google、Vibe Coding=vibe-coding、Cursor=cursor、MiniMax=minimax、豆包=doubao-bytedance、Function Calling=function-calling、Kimi=kimi-moonshot、ChatGLM=glm-zhipu、Llama=llama-meta、RAG=rag、混元=tencent-hunyuan、AI安全=ai-safety-subconscious、RLHF/対斉=rlhf-alignment、Qwen=qwen、オープンソースモデル=china-open-source-ai、多模态=multimodal）。
+|- クロール候補：なし。source_count>=3の18件はすべて slug直接登録（deepseek/kimi/doubao/tencent-hunyuan/chatglm/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem）または間接カバー（AI Agent=china-ai-agent-ecosystem hints、AI安全=安全対斉/伦理安全指引 hints、RLHF/対斉=安全対斉 hints、MCP=mcp-china/mcp-chinese-tools、多模态=doubao hints）。全球エンティティ（Claude/OpenAI/GPT/Anthropic/Gemini/Cursor/Llama/MiniMax）は意図的未登録。文心一言/Baiduは今回もトレンディング未登録（間接カバー済み・要判定据わり置き、再提案履歴 09-07/09-09/09-23/09-26）。
+|- ウォッチ: 36kr=0・zhihu=0は 09-23/09-26/10-02に続き4回目。数カ日定期再発。
+|- 新規ページなし・新規YAML提案なし。log.mdのみコミット（トレンディングレポートはページ編集なし）。
