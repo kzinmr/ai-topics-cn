@@ -4324,3 +4324,11 @@ Originating conversation: (scheduled cron)
 |- クロール候補：なし。source_count>=3の17件はすべて slug直接登録（deepseek/qwen/chatglm/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem）または間接カバー（AI Agent=china-ai-agent-ecosystem hints、MCP=mcp-china/mcp-chinese-tools、多模态=deepseek/chatglm/doubao hints）。全球エンティティ（Claude/GPT/OpenAI/Anthropic/Gemini/Cursor/Llama/MiniMax）は意図的未登録。文心一言/Baiduは今回もトレンディング未登録（間接カバー済み・要判定据え置き、再提案履歴 09-07/09-09/09-23/09-26）。
 |- ウォッチ: 36kr=0・zhihu=0は 09-23/09-26/10-02に続き5回目。数カ日定期再発。
 |- 新規ページなし・新規YAML提案なし。log.mdのみコミット（トレンディングレポートはページ編集なし）。
+|
+|## [2026-10-04] newsletter-triage | case-(a) empty-candidate no-op (run 20261004T070011Z)
+|
+|-　Pre-run 「case-(a)」回復：「parsed-fail」とも `## Response` の ```json``` ブロックは完全で、`decisions: []` を正しく回取。
+|-　Checkpoint：`_checkpoint.ok=true`、run_id 20261004T070011Z、`candidate_count=0`（正常な空キュー、収集モレではない）。
+|-　Maildir（new/cur）とも空、`wiki/raw/articles/` と `inbox/newsletters/` に今日以降の新規ファイルなし（`find -newermt 2026-10-04` 空）。最新ダイジェストは 10-02 着の Tech Taiwan Chroma ATE（10-03 コミット 7a56de3/73adafb 済み）。
+|-　Wiki編集なし：take 0件、「inbox: newsletter collect」コミットもステージ対象なし。今日の trending-topics コミット 8a4db55 とは対象が重複しない（こっちはニュースレター系、あっちはクロール系）。
+|-　作業ツリー：no-op 1件、commit 1。
