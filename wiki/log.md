@@ -4316,3 +4316,11 @@ Originating conversation: (scheduled cron)
 |- Single logical article: Tech Taiwan (陈良榕) 2026-10-02 Chroma ATE (致茂電子) CEO 曾一士 exclusive interview, 6 candidates = 5 Substack redirect-URL variants + profile page (same message_id, multi-URL dedup archetype). Representative body 7edcbeea = 3005B preview-only, full text not scraped.
 |- reference 1 (Chroma/致茂 wiki 未カバー・単一ソース・プレビューのみのため take適用見送り)、skip 5 (URL dup + profile 139 chars). Zero wiki edits: this run ingests nothing new.
 |- Collect-only commit: digest 7043c9ff + 6 raw files (7edcbeea / f0c4ceb3 / 1b719919 / a562aa1e / a486a9b0 / 0674ce3b) committed as "inbox: newsletter collect 2026-10-03". Working-tree Sep-24/25-era leftovers NOT staged (not this run's collection).
+
+|## [2026-10-04] trending-topics | 日次レポート（新規ページなし・新規YAML提案なし）
+|-
+|- 分析期間 10-01→10-04（3日間）。v2ex 83 / juejin 77 / wechat 62 / 36kr 0 / zhihu 0。2ソース以上トレンディング 22件。
+|- 新規ページ推奨：なし（全22件に entities/concepts ページ存在：AI Agent=ai-agent、Claude=claude、GPT=gpt、OpenAI=openai、MCP=mcp、Gemini=gemini-google、DeepSeek=deepseek、Anthropic=anthropic、Cursor=cursor、Vibe Coding=vibe-coding、MiniMax=minimax、RAG=rag、Kimi=kimi-moonshot、豆包=doubao-bytedance、Function Calling=function-calling、Llama=llama-meta、ChatGLM=glm-zhipu、多模态=multimodal、混元=tencent-hunyuan、AI安全=ai-safety-subconscious、Qwen=qwen、RLHF/対齐=rlhf-alignment）。
+|- クロール候補：なし。source_count>=3の17件はすべて slug直接登録（deepseek/qwen/chatglm/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem）または間接カバー（AI Agent=china-ai-agent-ecosystem hints、MCP=mcp-china/mcp-chinese-tools、多模态=deepseek/chatglm/doubao hints）。全球エンティティ（Claude/GPT/OpenAI/Anthropic/Gemini/Cursor/Llama/MiniMax）は意図的未登録。文心一言/Baiduは今回もトレンディング未登録（間接カバー済み・要判定据え置き、再提案履歴 09-07/09-09/09-23/09-26）。
+|- ウォッチ: 36kr=0・zhihu=0は 09-23/09-26/10-02に続き5回目。数カ日定期再発。
+|- 新規ページなし・新規YAML提案なし。log.mdのみコミット（トレンディングレポートはページ編集なし）。
