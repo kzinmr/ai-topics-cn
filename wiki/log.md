@@ -4341,3 +4341,11 @@ Originating conversation: (scheduled cron)
 |- ウォッチ: 36kr=0・zhihu=0は 09-23/09-26/10-02に続き4回目。数カ日定期再発。
 |- 新規ページなし・新規YAML提案なし。log.mdのみコミット（トレンディングレポートはページ編集なし）。
 |
+|## [2026-10-05] newsletter-triage | case-(a) empty-candidate no-op (20261005T070048Z)
+|
+|-　pre-run は `"ok": false`(「failed to parse JSON response」)だが、output ファイル尾部の `## Response` に有効 JSON が整然残っている case-(a)(パースのみの失敗)と判定。
+|-　checkpoint `run_id=20261005T070048Z` は `_checkpoint.ok=true`、`candidate_count=0`、`decisions=[]`。IMAPに新規未処理メッセージなしの空収集。
+|-　`wiki/raw/articles/`、`inbox/newsletters/` に今日以降の新規ファイルなし(find -newermt '確認、空)。「inbox: newsletter collect」フォールバックは stage 対象なし。
+|-　今日の take 判定なし・Wikiページ編集なし。log.md のみコミット。
+|-　インスタンス: 6件目の同形の空チェックポイント no-op(10-01/10-02/10-04 に続く)。
+|
