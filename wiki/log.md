@@ -4332,3 +4332,12 @@ Originating conversation: (scheduled cron)
 |-　Maildir（new/cur）とも空、`wiki/raw/articles/` と `inbox/newsletters/` に今日以降の新規ファイルなし（`find -newermt 2026-10-04` 空）。最新ダイジェストは 10-02 着の Tech Taiwan Chroma ATE（10-03 コミット 7a56de3/73adafb 済み）。
 |-　Wiki編集なし：take 0件、「inbox: newsletter collect」コミットもステージ対象なし。今日の trending-topics コミット 8a4db55 とは対象が重複しない（こっちはニュースレター系、あっちはクロール系）。
 |-　作業ツリー：no-op 1件、commit 1。
+|## [2026-10-05] trending-topics | 日次トレンディングレポート（新規ページなし・新規YAML提案なし）
+|-
+|- 分析期間 10-02→10-05（3日間）。v2ex 81 / juejin 81 / wechat 58 / 36kr 0 / zhihu 0。2ソース以上トレンディング 21件。
+|- 新規ページ推奨：なし（全21件に entities/concepts ページ存在：AI Agent=ai-agent、Claude=claude、GPT=gpt、OpenAI=openai、MCP=mcp（mcp-china 等）、RAG=rag、Anthropic=anthropic、DeepSeek=deepseek、Gemini=gemini-google、Qwen=qwen、Vibe Coding=vibe-coding、Cursor=cursor、Function Calling=function-calling、Kimi=kimi-moonshot、Llama=llama-meta、MiniMax=minimax、豆包=doubao-bytedance、混元=tencent-hunyuan、ローカルデプロイ=china-local-deployment、多模ディア=multimodal、文心一言=baidu-ernie）。
+|- クロール候補：なし。source_count>=3の17件はすべて slug直接登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem）または間接カバー。全球エンティティ（Claude/OpenAI/Anthropic/Gemini/GPT/Llama/Function Calling）は意図的未登録。
+|- 文心一言/Baiduは source_count=2 に後退（間接カバー済み・要判定据え置き、再提案履歴 09-07/09-09/09-23/09-26。今回は3未満のため再提案なし）。
+|- ウォッチ: 36kr=0・zhihu=0は 09-23/09-26/10-02に続き4回目。数カ日定期再発。
+|- 新規ページなし・新規YAML提案なし。log.mdのみコミット（トレンディングレポートはページ編集なし）。
+|
