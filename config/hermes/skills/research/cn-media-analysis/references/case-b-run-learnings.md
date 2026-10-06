@@ -315,3 +315,11 @@ the only other file the run touched.
 - Saturation-recollection skip archetype confirmed again: DeepSeek Harness Desktop trio (c43eb108 re-crawl, ec310824 08-13 tutorial re-crawl, 27801ae3 plugin list) all recycles of the 09-30 take already on deepseek.md - skipped without re-reading bodies beyond titles+hashes.
 - Two-direction score rule held: the take was score 19 (not the day's highest; promos topped it) and the reference bullet was score 0.
 - /tmp append-log script (ASCII frame + escapes only for short CJK spans) landed first try; git diff deletion-line count == 0; narrow two-step commit (1189dec page, b8ac04d log) clean.
+
+
+## 2026-10-06 trending-topics run (no-op, steady state)
+
+- Trending pipeline (not crawl triage): 23 topics, all covered by existing pages; 17 with source_count>=3 all slug-registered or indirect-covered. Zero new pages, zero new YAML. Committed log.md only (msg: 'log: trending-topics 2026-10-06 daily report').
+- 36kr=0 AND zhihu=0 fourth occurrence (09-23/09-26/10-02/10-06) - still below multi-week flag threshold, keep as numbered watch item.
+- CJK hygiene followed pitfall #10 order: built entry as ASCII-escape /tmp file, ran cjk_audit on the TEMP file BEFORE append, then post-append tail audit, then blob verify via git show HEAD:wiki/log.md -> /tmp + codepoint check. Zero fix rounds needed this run - first clean CJK log append in the streak.
+- Baidu re-proposal lineage: 09-07/09-09/09-23/09-26; fell to source_count=2 on 10-05 and 10-06, so no re-pitch (below threshold, indirect cover intact).
