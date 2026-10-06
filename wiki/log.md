@@ -4349,3 +4349,8 @@ Originating conversation: (scheduled cron)
 |-　今日の take 判定なし・Wikiページ編集なし。log.md のみコミット。
 |-　インスタンス: 6件目の同形の空チェックポイント no-op(10-01/10-02/10-04 に続く)。
 |
+|## [2026-10-06] trending-topics | 日次トレンディングレポート（新規ページなし・新規YAML提案なし）
+|- 期間 10-03→10-06。内訳: v2ex 80 / juejin 83 / 36kr 0 / zhihu 0 / wechat 59。36kr+zhihu ゼロは 09-23/09-26/10-02 に続き4回目（閾値未達のため継続監視）。
+|- 新規ページ推奨：なし（全23件に entities/concepts ページ存在：AI Agent=ai-agent、Claude=claude、OpenAI=openai、MCP=mcp、RAG=rag、GPT=gpt、Anthropic=anthropic、Gemini=gemini-google、Qwen=qwen、DeepSeek=deepseek、Kimi=kimi-moonshot、Vibe Coding=vibe-coding、Cursor=cursor、Function Calling=function-calling、Llama=llama-meta、混元=tencent-hunyuan、豆包=doubao-bytedance、Prompt Engineering=prompt-agent-function-call-skill-mcp、Vector DB=vector-db、ローカルデプロイ=china-local-deployment、多模态=multimodal、文心一言=baidu-ernie、量化=quantization）。
+|- クロール候補：なし。source_count>=3の17件はすべて slug直接登録（deepseek/qwen/chatglm/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem/china-local-deployment）または間接カバー（AI Agent=china-ai-agent-ecosystem hints、RAG=dify hints、多模态=deepseek/chatglm/doubao hints）。全球エンティティ（Claude/OpenAI/GPT/Anthropic/Gemini/Cursor/Llama）は意図的未登録。文心一言/Baiduは source_count=2（3未満のため再提案なし。間接カバー済み、再提案履歴 09-07/09-09/09-23/09-26）。
+|- 新規ページなし・新規YAML提案なし。log.mdのみコミット（トレンディングレポートはページ編集なし）。
