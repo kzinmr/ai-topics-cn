@@ -4368,3 +4368,6 @@ Originating conversation: (scheduled cron)
 |-　今日の take 判定なし・Wikiページ編集なし。log.md のみコミット。
 |-　インスタンス: 7件目の同形の空チェックポイント no-op（09-17/09-20/09-21/10-01/10-02/10-04/10-05 に続く）。
 |
+|
+|-　スキル更新(今ジョブ): wiki-entity-upgrade の同形空チェックポイント no-op 件数を 5→7 に更新（10-05/10-07 インスタンス追記、commit 51d20bc）。
+|-　収集フォールバック条件: find -newermt 2026-10-07 は空だが、mtime 2026-10-06 07:00-07:01 の未追跡ファイルが残存（ChinAI #376 digest a7401901 + raw 10件、Substack redirect/app-link の多URL重複含み）。前回 10-06 のジョブは自身の trending log み commit し collect は未実施。今チェックポイント（10-07）は後継の空収集だが、06 の未処理コレクションを stage し、take 判定は次回 triage に保留（case-b 例外と同じく今チェックポイントでは判定を作らない）。
