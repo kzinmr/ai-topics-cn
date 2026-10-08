@@ -4384,3 +4384,4 @@ Originating conversation: (scheduled cron)
 |-　`wiki/raw/articles/`、`inbox/newsletters/` に今日以降の新規ファイルなし（find -newermt 確認、空）。未追跡の前日収集もなし（10-06 分は 10-07 の c012033 で stage 済み）。inbox: newsletter collect フォールバックは stage 対象なし。
 |-　今日の take 判定なし・Wikiページ編集なし。log.md のみコミット。
 |-　インスタンス: 8件目の同形の空チェックポイント no-op（09-17/09-20/09-21/10-01/10-02/10-04/10-05/10-07 に続く）。
+|-　スキル更新(今ジョブ): wiki-entity-upgrade の同形空チェックポイント no-op 件数を 7→8 に更新（10-08 インスタンス追記、commit 11a42fe）。また、前セッション来の未コミット SKILL.md 追記（codepoint-tuple 検証 + carry-over 規約）を独自コミット（a303e35、carry-over 規約遵守）。
