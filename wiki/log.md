@@ -4377,3 +4377,10 @@ Originating conversation: (scheduled cron)
 |-　ホットトピック(4+ソース)18件・クロスソース最高シグナル: AI Agent(107)/Claude(47)/OpenAI(24)/RAG(13)/Gemini(12)/DeepSeek(10)/MCP(10)。
 |-　クロール候補：なし。source_count>=3の19件はすべて slug直接登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption）または間接カバー（AI Agent=china-ai-agent-ecosystem hints、RAG=dify hints、多模态=deepseek/chatglm/doubao hints、Function Calling=prompt-agent-function-call-skill-mcp系、量化=vram-optimization hints、微調=fine-tuning系、対斉=rlhf-alignment、規制=china-ai-regulation、Manus=china-open-source-ai notes）。全球エンティティ（Claude/OpenAI/GPT/Anthropic/Gemini/Cursor/Llama）は意図的未登録。
 |-　新規ページなし・新規YAML提案なし。log.mdのみコミット（トレンディングレポートはページ編集なし）。
+|## [2026-10-08] newsletter-triage | case-(a) empty-candidate no-op (20261008T070040Z)
+|
+|-　pre-run は `"ok": false`(failed to parse JSON response)だが、output ファイル尾部の `## Response` に有効 JSON が整然残っている case-(a)（パースのみの失敗）と判定。
+|-　checkpoint `run_id=20261008T070040Z` は `_checkpoint.ok=true`、`candidates=[]`、`decisions=[]`。新規配信なしの空収集（直近の配信は 10-05 ChinAI #376、10-07 の catch-up collect commit c012033 で既に取り込み済み）。
+|-　`wiki/raw/articles/`、`inbox/newsletters/` に今日以降の新規ファイルなし（find -newermt 確認、空）。未追跡の前日収集もなし（10-06 分は 10-07 の c012033 で stage 済み）。inbox: newsletter collect フォールバックは stage 対象なし。
+|-　今日の take 判定なし・Wikiページ編集なし。log.md のみコミット。
+|-　インスタンス: 8件目の同形の空チェックポイント no-op（09-17/09-20/09-21/10-01/10-02/10-04/10-05/10-07 に続く）。
