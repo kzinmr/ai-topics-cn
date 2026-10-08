@@ -323,3 +323,35 @@ the only other file the run touched.
 - 36kr=0 AND zhihu=0 fourth occurrence (09-23/09-26/10-02/10-06) - still below multi-week flag threshold, keep as numbered watch item.
 - CJK hygiene followed pitfall #10 order: built entry as ASCII-escape /tmp file, ran cjk_audit on the TEMP file BEFORE append, then post-append tail audit, then blob verify via git show HEAD:wiki/log.md -> /tmp + codepoint check. Zero fix rounds needed this run - first clean CJK log append in the streak.
 - Baidu re-proposal lineage: 09-07/09-09/09-23/09-26; fell to source_count=2 on 10-05 and 10-06, so no re-pitch (below threshold, indirect cover intact).
+# 2026-10-08 trending-report run (09:02 UTC cron)
+
+Case type: standard trending-report path (no LLM-triage failure involved).
+
+Outcome: no-new-page / no-new-YAML daily report (the pipeline steady state).
+- Stats (3d, 10-05..10-08): v2ex 81 / juejin 87 / 36kr 0 / zhihu 0 / wechat 57.
+  36kr=0 AND zhihu=0 = 5th occurrence (09-23, 09-26, 10-02, 10-07, today) - still below the
+  multi-week-streak threshold for flagging the pipeline; report as a numbered watch item.
+- All 25 trending topics have existing pages. One slug-gap: Manus (source_count=3 but a SINGLE
+  source, juejin) -> entities/manus page missing but low signal; the Manus free-for-a-limited-time
+  item is already covered in hot-topics.yaml china-open-source-ai notes. No new page, no new YAML
+  (source_count>=3 x19 items are all directly registered or indirectly covered; global entities
+  Claude/OpenAI/GPT/Anthropic/Gemini/Cursor/Llama intentionally unregistered).
+- Cross-source top signals: AI Agent 107 / Claude 47 / OpenAI 24 / RAG 13 / Gemini 12 /
+  DeepSeek 10 / MCP 10.
+
+## New lesson: post-commit verification false alarms (fixed in SKILL.md pitfall #11)
+After committing the CJK log entry, my inline `git show HEAD:wiki/log.md` word-existence check
+flagged 4 "MISSING" words - but the commit was actually CLEAN. Root cause: the CHECK LITERALS were
+recalled CJK strings and were themselves wrong-homoglyph forms (JP shuu vs CN shou are different
+strings; my typed literals matched neither). The final int-tuple check
+(chr(0x53CE)+chr(0x96C6) etc., codepoints copied from a prior committed entry, x89 occurrences)
+came back clean and the blob was confirmed correct. Rule now in the skill: post-commit verification
+must use codepoint INT TUPLES, never recalled word literals - typing the word into the check script
+is the same leak-birth site as typing it into the build script.
+
+## Housekeeping
+- Committed d0fbcf9: log.md only (6 lines, narrow pathspec). Pushed clean.
+- Working tree is sibling-dirty (18+ wiki pages, hot-topics.yaml, 22 skills) - left untouched
+  per standing 10-06 policy.
+- Skill patch (8d9c32e) carried 52 insertions / 5 deletions vs HEAD (root cause verified via git show: HEAD blob 15308f0 was the OLD v1.1.0 commit; the working tree carried the entire v1.2.0 rewrite - the 09-xx session-series consolidation plus 10-04/10-05 pitfall additions - which was NEVER committed; my /tmp whole-file write swallowed it all. The skill_view-loaded 1.2.0 text IS the working tree, not HEAD - that is why loaded-text anchors "not found" against HEAD greps. Lesson: `git diff HEAD -- <SKILL.md>` before patching; if a large prior-session rewrite is pending, commit it as its own commit first, then apply your patch separately - skills/ belongs to the carry-over set too)
+ 
