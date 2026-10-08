@@ -4371,3 +4371,9 @@ Originating conversation: (scheduled cron)
 |
 |-　スキル更新(今ジョブ): wiki-entity-upgrade の同形空チェックポイント no-op 件数を 5→7 に更新（10-05/10-07 インスタンス追記、commit 51d20bc）。
 |-　収集フォールバック条件: find -newermt 2026-10-07 は空だが、mtime 2026-10-06 07:00-07:01 の未追跡ファイルが残存（ChinAI #376 digest a7401901 + raw 10件、Substack redirect/app-link の多URL重複含み）。前回 10-06 のジョブは自身の trending log み commit し collect は未実施。今チェックポイント（10-07）は後継の空収集だが、06 の未処理コレクションを stage し、take 判定は次回 triage に保留（case-b 例外と同じく今チェックポイントでは判定を作らない）。→ commit c012033 で18件 stage 済み。
+|## [2026-10-08] trending-topics | 日次トレンディングレポート（新規ページなし・新規YAML提案なし）
+|-　収集: v2ex 81 / juejin 87 / 36kr 0 / zhihu 0 / wechat 57（3日間: 10-05→10-08）。36kr=0かつzhihu=0は09-23/09-26/10-02/10-07に続き5回目（パイプライン watch 継続、しきい値未達）。
+|-　新規ページ推奨：なし（全25件に entities/concepts ページ存在。例外1件：Manus=entities/manus ページ未作成、ただしsource_count=3だがjuejin単一ソースのため低シグナル。Manus期間限定無料化はhot-topics.yaml china-open-source-ai notesに記録済み、再調整は保留）。
+|-　ホットトピック(4+ソース)18件・クロスソース最高シグナル: AI Agent(107)/Claude(47)/OpenAI(24)/RAG(13)/Gemini(12)/DeepSeek(10)/MCP(10)。
+|-　クロール候補：なし。source_count>=3の19件はすべて slug直接登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption）または間接カバー（AI Agent=china-ai-agent-ecosystem hints、RAG=dify hints、多模态=deepseek/chatglm/doubao hints、Function Calling=prompt-agent-function-call-skill-mcp系、量化=vram-optimization hints、微調=fine-tuning系、対斉=rlhf-alignment、規制=china-ai-regulation、Manus=china-open-source-ai notes）。全球エンティティ（Claude/OpenAI/GPT/Anthropic/Gemini/Cursor/Llama）は意図的未登録。
+|-　新規ページなし・新規YAML提案なし。log.mdのみコミット（トレンディングレポートはページ編集なし）。
