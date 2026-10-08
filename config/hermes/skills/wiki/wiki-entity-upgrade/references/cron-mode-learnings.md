@@ -1,4 +1,4 @@
-# Cron-mode newsletter ingest — session learnings (2026-08-29)
+# Cron-mode newsletter ingest — session learnings (2026-08-29; last updated 2026-09-21)
 
 ## execute_code fully blocked in cron profile
 `execute_code` returns "BLOCKED: ... Cron jobs run without a user present to approve it" (approvals.cron_mode not set to approve). Do not attempt it; use `terminal` + `python3` (scripts written via write_file) or plain `read_file`/`search_files`/`patch` instead. Note: `terminal('python3 -c ...')` one-liners are fine — the homoglyph gate only fires on heredocs with CJK.
@@ -36,3 +36,18 @@ A single newsletter article generated 5 raw files (redirect/app-link/share/resta
 # Case-(a) recovery exemplar — Semicon Series 3 (2026-09-19, run_id 20260919T070045Z)
 
 Pre-run reported `ok: false` ("failed to parse JSON response") but `## Response` held the complete triage JSON (decisions: take 1 / reference 1 / skip 4) — confirmed case-(a) parse-only failure; the `## Prompt` section above it is instructions, not data. The 6 candidates were one Tech Taiwan article in 5 Substack redirect variants + a 139-char profile page (same archetype as 09-12 Semicon Series 2). The take article's body was again preview-only (membership-gated main text): its two durable signals split across two concept pages — TSMC Baipu (bai-pu) no-commercial-output CoWoS validation line -> `concepts/semiconductor-packaging`; Trump-Huang All-In call + AI-slowdown politicization -> `concepts/ai-infrastructure` (cross-ref anthropic.md Amodei 09-15). Logged the preview-only status in both pages and log.md so the next ingest extends when the full text arrives. Two-step commit (pages+raw/digest, then index+log) worked cleanly; log.md patch anchored on the previous entry's unique final line, no pipe corruption, zero CN-glyph leaks in the `+`-line simplified-Chinese scan.
+
+# Case-(a) empty-queue no-op exemplar (2026-09-21, run_id 20260921T070011Z)
+
+Pre-run reported `ok: false` but `## Response` held a complete JSON with `decisions: []`, `processed_count: 0`, and checkpoint `candidates: []` / `ok: true` — collection succeeded with zero new candidates (ChinAI quiet since #374 9/14, Semicon quiet since Series 3 9/18). This is the minimal case-(a): nothing to triage, and (verified via `git status --porcelain -- wiki/raw/articles/ inbox/newsletters/`) zero new raw/digest files, so the `inbox: newsletter collect` fallback had nothing to stage either. Fastest path, ~6 tool calls:
+1. `grep -n "## Response\|## Error\|_checkpoint\|decisions"` on the output file jumps straight to the response tail (avoids reading the ~55KB prompt body).
+2. `tail -c 1500` confirms the `## Response` JSON and injected `_checkpoint` block (no `## Error` heading = not case-b).
+3. `git status --porcelain` on the inbox dirs — nothing new to collect.
+4. log.md no-op entry appended via an ASCII-only `/tmp` script (lines-list join, `|`-prefixed to mirror neighbors) — NOT via `patch`; verified `git diff -- wiki/log.md | grep -c "^-[^-]"` == 0 and tail-proofread the Japanese. Commit message: `wiki: newsletter-triage no-op log YYYY-MM-DD (case-a empty checkpoint <run_id>)` (579b337).
+5. `[SKIP]` record appended to the `output_path` file with a second `/tmp` script using `open(path, "a")` — append mode, never `write_file` overwrite.
+6. Report normally (the prompt's output contract requires the report; `[SILENT]` is wrong once a log entry is committed).
+Tail-anchor lesson: `grep -n "2026-09-2"` on log.md returned nothing even though recent entries existed — date strings sit inside `| ## [date]` headers with pipe prefixes; grep for the entry TYPE (`newsletter-triage`) instead when locating the tail anchor.
+
+# Case-(a) collect-only exemplar — reference-only day, zero takes (2026-10-03, run_id 20261003T070010Z)
+
+Pre-run `ok: false` parse-only failure; `## Response` tail held an intact ```json block with 6 decisions (take 0 / reference 1 / skip 5) — one Tech Taiwan article (Chroma ATE 致茂電子 CEO 曾一士 interview) in 5 Substack redirect variants + 139-char profile page (same multi-URL archetype as 09-12/09-19). The reference item was preview-only (3005B teaser) AND the subject company had no wiki coverage, so the upstream triage itself deferred take → zero wiki edits, and this run correctly stopped at the collect-only commit (digest 7043c9ff + 6 raw files, 7a56de3) + no-op log entry (73adafb) + `[SKIP]`-style record appended to the output file. Rule confirmed: a case-(a) day whose decisions contain zero `take` items is NOT case-(b) — honor the queue as-is, do not self-promote a reference item to take. CJK lesson re-confirmed the hard way: hand-typed 榕 in the log append landed as 栠 then 椕 across two fix scripts; the converged fix `find()`-located an existing committed 榕 (U+6995) elsewhere in log.md and copied that exact codepoint — retrieve rare CJK glyphs from committed text, never from recall (matches the 2026-10-03 trending pitfall in cn-media-analysis).
