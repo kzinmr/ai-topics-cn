@@ -355,3 +355,14 @@ is the same leak-birth site as typing it into the build script.
   per standing 10-06 policy.
 - Skill patch (8d9c32e) carried 52 insertions / 5 deletions vs HEAD (root cause verified via git show: HEAD blob 15308f0 was the OLD v1.1.0 commit; the working tree carried the entire v1.2.0 rewrite - the 09-xx session-series consolidation plus 10-04/10-05 pitfall additions - which was NEVER committed; my /tmp whole-file write swallowed it all. The skill_view-loaded 1.2.0 text IS the working tree, not HEAD - that is why loaded-text anchors "not found" against HEAD greps. Lesson: `git diff HEAD -- <SKILL.md>` before patching; if a large prior-session rewrite is pending, commit it as its own commit first, then apply your patch separately - skills/ belongs to the carry-over set too)
  
+
+# 2026-10-08 newsletter-triage (case-a clean empty-candidate run, no-op)
+
+- run_id 20261008T070040Z. Pre-run `ok:true`, `candidate_count:0`, empty `candidates`,
+  `_checkpoint.ok:true` - the genuine empty-queue sub-variant (same exemplar as 2026-09-23),
+  NOT a case-(b) LLM failure, NOT a stale checkpoint.
+- Fast discriminators: latest Maildir activity is the 10-06 ChinAI #376 wave ALREADY committed
+  as collect catch-up c012033 by the 10-07 job; newest digest in inbox/newsletters is
+  ChinAI #376 (a7401901); HEAD 7e33fb4 contains no newsletter ingest for today.
+- No new emails since #376 -> zero fresh newsletter signal. Job forbids wiki edits; reported
+  decisions:[] JSON, no commits, no log edits (empty-queue no-op lineage is kept in this file).
