@@ -4385,3 +4385,10 @@ Originating conversation: (scheduled cron)
 |-　今日の take 判定なし・Wikiページ編集なし。log.md のみコミット。
 |-　インスタンス: 8件目の同形の空チェックポイント no-op（09-17/09-20/09-21/10-01/10-02/10-04/10-05/10-07 に続く）。
 |-　スキル更新(今ジョブ): wiki-entity-upgrade の同形空チェックポイント no-op 件数を 7→8 に更新（10-08 インスタンス追記、commit 11a42fe）。また、前セッション来の未コミット SKILL.md 追記（codepoint-tuple 検証 + carry-over 規約）を独自コミット（a303e35、carry-over 規約遵守）。
+|## [2026-10-09] newsletter-triage | case-(a) empty-candidate no-op (20261009T070025Z)
+|
+|-　pre-run は `"ok": false`(failed to parse JSON response)だが、output ファイル尾部の `## Response` に有効 JSON が整然残っている case-(a)（パースのみの失敗）と判定。
+|-　checkpoint `run_id=20261009T070025Z` は `_checkpoint.ok=true`、`candidates=[]`、`decisions=[]`。新規配信なしの空収集（直近の配信は ChinAI #376、10-07 の catch-up collect commit c012033 で既に取り込み済み）。
+|-　`wiki/raw/articles/`、`inbox/newsletters/` に今日以降の新規ファイルなし（find -newermt 確認、空）。未追跡の前日以降の収集もなし（git status 確認、空）。inbox: newsletter collect ポールバックは stage 対象なし。
+|-　今日の take 判定なし・Wikiページ編集なし。log.md のみコミット。
+|-　インスタンス: 9件目の同形の空チェックポイント no-op（09-17/09-20/09-21/10-01/10-02/10-04/10-05/10-07/10-08 に続く）。
