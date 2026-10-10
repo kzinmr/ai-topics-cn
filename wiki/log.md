@@ -4392,3 +4392,10 @@ Originating conversation: (scheduled cron)
 |-　`wiki/raw/articles/`、`inbox/newsletters/` に今日以降の新規ファイルなし（find -newermt 確認、空）。未追跡の前日以降の収集もなし（git status 確認、空）。inbox: newsletter collect ポールバックは stage 対象なし。
 |-　今日の take 判定なし・Wikiページ編集なし。log.md のみコミット。
 |-　インスタンス: 9件目の同形の空チェックポイント no-op（09-17/09-20/09-21/10-01/10-02/10-04/10-05/10-07/10-08 に続く）。
+
+|## [2026-10-10] trending-topics | （新規ページなし・新規YAML提案なし）
+|-　収集: v2ex 84 / juejin 86 / 36kr 0 / zhihu 0 / wechat 57（3日間: 10-07→10-10）。36kr=0かつzhihu=0は09-23/09-26/10-02/10-07に続き6回目（パイプライン watch 継続、しきい値未達）。
+|-　新規ページ推奨：なし（全23件に entities/concepts ページ存在。例外1件：Manus=entities/manus ページ未登録、ただし source_count=2で juejin単一ソースのため≥3 ゲート未満の低シグナル。Manus無料化は hot-topics.yaml china-open-source-ai notesに記録済み、保留）。
+|-　ホットトピック(4+ソース)19件・クロスソース最高シグナル: AI Agent(109)/Claude(47)/OpenAI(21)/DeepSeek(14)/RAG(14)/Gemini(12)/MCP(12)/Vibe Coding(11)。
+|-　クロール候補：なし。source_count>=3の19件はすべて slug直接登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/openclaw）または間接カバー（AI Agent=china-ai-agent-ecosystem hints、RAG=dify hints、多模态=deepseek/chatglm/doubao hints、Function Calling=prompt-agent-function-call-skill-mcp系、量化=vram-optimization hints、AI安全=ai-safety-subconscious、RLHF/対齐=rlhf-alignment）。全球エンティティ（Claude/OpenAI/GPT/Anthropic/Gemini/Cursor/Llama）は意図的未登録。
+|-　新規ページなし・新規YAML提案なし。log.mdのみコミット（トレンディングレポートはページ編集なし）。
