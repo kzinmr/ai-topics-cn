@@ -4399,3 +4399,9 @@ Originating conversation: (scheduled cron)
 |-　ホットトピック(4+ソース)19件・クロスソース最高シグナル: AI Agent(109)/Claude(47)/OpenAI(21)/DeepSeek(14)/RAG(14)/Gemini(12)/MCP(12)/Vibe Coding(11)。
 |-　クロール候補：なし。source_count>=3の19件はすべて slug直接登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/openclaw）または間接カバー（AI Agent=china-ai-agent-ecosystem hints、RAG=dify hints、多模态=deepseek/chatglm/doubao hints、Function Calling=prompt-agent-function-call-skill-mcp系、量化=vram-optimization hints、AI安全=ai-safety-subconscious、RLHF/対齐=rlhf-alignment）。全球エンティティ（Claude/OpenAI/GPT/Anthropic/Gemini/Cursor/Llama）は意図的未登録。
 |-　新規ページなし・新規YAML提案なし。log.mdのみコミット（トレンディングレポートはページ編集なし）。
+
+|## [2026-10-10] newsletter-triage | Tech Taiwan (陳良榕) 2026-10-09号
+|-　ケース: case-(a) パースのみ失敗。パーサーは `failed to parse JSON response` を報告したが、output ファイル末尾の `## Response` にまだある ```json ブロック（run_id 20261010T070009Z、decisions 6件）が整形する形で、これを作業キューとして掲載。
+|-　内容: 6候補のいずれも同一記事（AblePrint印能のCoWoS反り問題解決・時価総額2オクードル超え）のURL違い重複 5件 + ニュースレターヘッダー 1件。取得本文は予告パートのみ 1,556字、本編は会員限定未受領。
+|-　判定: take 0 / reference 1 / skip 5。referenceは代表URL 1件のみ（残り 4件は重複、1件はヘッダー）。予告シグナルとして concepts/semiconductor-packaging.md（2026-09-19 TSMC白埔 CoWoSグレード take）の係譜に関連するが、恒久事実に欠けるため wiki ページ編集なし。本編受領時に take 昇格待機。
+|-　コミット: 今日収集分（digest 1 + raw 6）を `inbox: newsletter collect 2026-10-10` としてコミット。
