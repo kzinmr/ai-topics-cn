@@ -4421,3 +4421,7 @@ Originating conversation: (scheduled cron)
 |- 新規ページ推奨: なし（全22件に entities/concepts ページ存在: AI Agent=ai-agent、Claude=claude、OpenAI=openai、GPT=gpt、DeepSeek=deepseek、Gemini=gemini-google、Vibe Coding=vibe-coding、Cursor=cursor、MCP=mcp、Qwen=qwen、RAG=rag、混元=tencent-hunyuan、Kimi=kimi-moonshot、Llama=llama-meta、Anthropic=anthropic、OpenClaw=openclaw、RLHF/对齐=rlhf-alignment、AI安全=ai-safety-subconscious、Function Calling=function-calling、多模态=multimodal、豆包=doubao-bytedance、MiniMax=minimax）。
 |- クロール候補: なし。source_count>=3の17件はすべて slug直接登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/openclaw/china-ai-agent-ecosystem）または間接カバー済み（AI Agent=china-ai-agent-ecosystem hints、RLHF/对齐=censorship-bypass 安全对齐 hints、AI安全=伦理安全指引 hints、多模态=deepseek/chatglm hints、Function Calling=prompt-agent-function-call-skill-mcp系）。全球エンティティ（Claude/OpenAI/GPT/Anthropic/Gemini/Cursor/Llama）は意図的未登録。文心一言/Baiduは今回もトレンディング未登録（間接カバー済み・要判定据え置き、再提案履歴 09-07/09-09/09-23/09-26）。
 |- 判定: 新規ページなし・新規YAML提案なし（steady state）。log.mdのみコミット。
+|## [2026-10-12] newsletter-triage | ニュースレターなし（空キュー・no-op）
+|-　ケース: case-(a) パースのみ失敗。パーサーは `failed to parse JSON response` を報告したが、output ファイル末尾の `## Response` に ```json ブロック（run_id 20261012T070039Z、decisions 0件）が整形して存在。
+|-　内容: チェックポイントは整形（ok=true、candidate_count=0）。直近のダイジェストは 10-09 Tech Taiwan（AblePrint印能 CoWoS）で、既に 10-10 triage（commit 286ffd9）で reference 完了。
+|-　判定: take 0 / reference 0 / skip 0。wikiページ編集なし、collect対象もなし（エビデンスケースチェック: find -newermt 10-12 でマッチ0件、git statusの未追跡はなし、残存は別セッションのtrendingワークツリー変更としてそのまま）
