@@ -4405,3 +4405,19 @@ Originating conversation: (scheduled cron)
 |-　内容: 6候補のいずれも同一記事（AblePrint印能のCoWoS反り問題解決・時価総額2オクードル超え）のURL違い重複 5件 + ニュースレターヘッダー 1件。取得本文は予告パートのみ 1,556字、本編は会員限定未受領。
 |-　判定: take 0 / reference 1 / skip 5。referenceは代表URL 1件のみ（残り 4件は重複、1件はヘッダー）。予告シグナルとして concepts/semiconductor-packaging.md（2026-09-19 TSMC白埔 CoWoSグレード take）の係譜に関連するが、恒久事実に欠けるため wiki ページ編集なし。本編受領時に take 昇格待機。
 |-　コミット: 今日収集分（digest 1 + raw 6）を `inbox: newsletter collect 2026-10-10` としてコミット。
+|## [2026-10-11] trending-topics | 〈新規ページ推奨なし・新規YAML提案なし〉
+|　収集: v2ex 84 / juejin 83 / 36kr 0 / zhihu 0 / wechat 63（3日間: 10-08→10-11）。36kr=0かつzhihu=0は09-23/09-26/10-02/10-07に続き7回目（パイプライン watch 継続、しきい値未達）。
+|　新規ページ推奨なし（全25件 entities/concepts ページ存在。例外1件：Manus=entities/manus ページ未登録、ただし source_count=2 で juejin単一ソースのため≥3 ゲート未満の低シグナル。Manus無料化は hot-topics.yaml china-open-source-ai notesに記録済み）。
+|　ホットトピック(4+ソース)19件・クロスソース最高シグナル: AI Agent(113)/Claude(42)/OpenAI(23)/DeepSeek(18)/MCP(14)/Vibe Coding(14)/RAG(13)/Cursor(11)。OpenClaw(4/wechat)は slug 直接登録済み。
+|　クロール候補：なし。source_count>=3の19件はすべて slug直接登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/openclaw/china-local-deployment）または間接カバー済み（AI Agent=china-ai-agent-ecosystem hints、RAG=dify hints、多模态=deepseek/chatglm/doubao hints、Function Calling=prompt-agent-function-call-skill-mcp係、量化=vram-optimization hints、AI安全=ai-safety-subconscious、RLHF/対齐=rlhf-alignment）。全球エンティティ（Claude/OpenAI/GPT/Anthropic/Gemini/Cursor/Llama）は意図的未登録。文心一言/Baiduは今回もトレンディング未登録（間接カバー済み・要判定据え置き、再提案履歴 09-07/09-09/09-23/09-26）。
+|　新規ページなし・新規YAML提案なし。log.mdのみコミット（トレンディングレポートはページ編集なし）。
+|## [2026-10-11] newsletter-triage | ニュースレテーーなし（空キュー・no-op）
+|-　ケース: case-(a) ハースのみ失敗。ハーサーは `failed to parse JSON response` を報告したが、output ファイル末尾の `## Response` に ```json ブロッ¯（run_id 20261011T070019Z、decisions 0件）が整形して存在。
+|-　内容: チェッ¯ポイントは整形（ok=true、candidate_count=0）。inbox/newsletters、wiki/raw/articles、Maildirにどれも新規なし。前日のAblePrint（イン能）CoWoS予告は10-10にreference済み。
+|-　判定: take 0 / reference 0 / skip 0。wikiページ編集なし、collect対象もなし（エビデンスケースチェッ¯: find -newermt 10-11 でマッÏ0件、Maildirは空、git statusの残存は別セッ·ョンとなるtrendingワークツリーとして統合待ち）。
+|## [2026-10-12] trending-topics | shelley-trending-topics.timer
+|- 期間: 10-09〜10-12（3日間）。内訳: v2ex 82 / juejin 82 / wechat 58 / 36kr 0 / zhihu 0。
+|- 36kr+zhihu ゼロVolumeは 09-23/09-26/10-02 に続き4回目（still watch item、複数週連続まで据え置き）。
+|- 新規ページ推奨: なし（全22件に entities/concepts ページ存在: AI Agent=ai-agent、Claude=claude、OpenAI=openai、GPT=gpt、DeepSeek=deepseek、Gemini=gemini-google、Vibe Coding=vibe-coding、Cursor=cursor、MCP=mcp、Qwen=qwen、RAG=rag、混元=tencent-hunyuan、Kimi=kimi-moonshot、Llama=llama-meta、Anthropic=anthropic、OpenClaw=openclaw、RLHF/对齐=rlhf-alignment、AI安全=ai-safety-subconscious、Function Calling=function-calling、多模态=multimodal、豆包=doubao-bytedance、MiniMax=minimax）。
+|- クロール候補: なし。source_count>=3の17件はすべて slug直接登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/openclaw/china-ai-agent-ecosystem）または間接カバー済み（AI Agent=china-ai-agent-ecosystem hints、RLHF/对齐=censorship-bypass 安全对齐 hints、AI安全=伦理安全指引 hints、多模态=deepseek/chatglm hints、Function Calling=prompt-agent-function-call-skill-mcp系）。全球エンティティ（Claude/OpenAI/GPT/Anthropic/Gemini/Cursor/Llama）は意図的未登録。文心一言/Baiduは今回もトレンディング未登録（間接カバー済み・要判定据え置き、再提案履歴 09-07/09-09/09-23/09-26）。
+|- 判定: 新規ページなし・新規YAML提案なし（steady state）。log.mdのみコミット。
