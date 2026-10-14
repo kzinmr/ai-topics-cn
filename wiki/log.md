@@ -4431,3 +4431,8 @@ Originating conversation: (scheduled cron)
 |- 新規ページ推奨: なし（全22件に entities/concepts ページ存在: AI Agent=ai-agent、Claude=claude、OpenAI=openai、GPT=gpt、DeepSeek=deepseek、Gemini=gemini-google、Vibe Coding=vibe-coding、Cursor=cursor、MCP=mcp、Qwen=qwen、RAG=rag、混元=tencent-hunyuan、Kimi=kimi-moonshot、Llama=llama-meta、Anthropic=anthropic、OpenClaw=openclaw、RLHF/对齐=rlhf-alignment、AI安全=ai-safety-subconscious、Function Calling=function-calling、多模态=multimodal、豆包=doubao-bytedance、ローカルデプロイ=china-local-deployment）。
 |- クロール候補: なし。source_count>=3の18件はすべて slug直接登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/openclaw/china-ai-agent-ecosystem/china-local-deployment）または間接カバー済み（AI Agent=china-ai-agent-ecosystem hints、RLHF/对齐=censorship-bypass 安全对齐 hints、AI安全=伦理指引 hints、多模态=deepseek/chatglm hints、Function Calling=prompt-agent-function-call-skill-mcp係）。全球エンティティ（Claude/OpenAI/GPT/Anthropic/Gemini/Cursor/Llama）は意図未登録。文心一言/Baiduは今回もトレンディング未登録（間接カバー済み・要判定据え置、再提案履歴 09-07/09-09/09-23/09-26）。
 |- 判定: 新規ページなし・新規YAML提案なし（steady state）。log.mdのみコミット。
+|## [2026-10-14] newsletter-triage | ニュースレターなし（空キュー・no-op＋追いこみ collect）
+|-　ケース: case-(a) パースのみ失敗。パーサーは `failed to parse JSON response` を報告したが、output ファイル末尾の `## Response` に ```json ブロック（run_id 20261014T070032Z、decisions 0件）が整形して存在。
+|-　内容: チェックポイントは整形（ok=true、candidate_count=0）。今日の収集ウィンドウで新規なし。
+|-　追いこみ collect: 10-13 ウェーブの未追跡収集ファイル11件（ChinAI #377 digest f624cec6 + raw 10件）を確認。直近の collect コミットは 10-10（AblePrint）で、10-12/10-13 ランは log のみ。親コミット未カバーを git log で確認し、`inbox: newsletter collect 2026-10-14`（追いこみ含み）として stage。take 判定なし、wiki ページ編集はなし（次のランへリレー。#377 は従来と同じ multi-URL Substack 重複を含む）。
+|-　判定: take 0 / reference 0 / skip 0。wikiページ編集なし、collect コミット（追いこみ）1件。
