@@ -4436,3 +4436,7 @@ Originating conversation: (scheduled cron)
 |-　内容: チェックポイントは整形（ok=true、candidate_count=0）。今日の収集ウィンドウで新規なし。
 |-　追いこみ collect: 10-13 ウェーブの未追跡収集ファイル11件（ChinAI #377 digest f624cec6 + raw 10件）を確認。直近の collect コミットは 10-10（AblePrint）で、10-12/10-13 ランは log のみ。親コミット未カバーを git log で確認し、`inbox: newsletter collect 2026-10-14`（追いこみ含み）として stage。take 判定なし、wiki ページ編集はなし（次のランへリレー。#377 は従来と同じ multi-URL Substack 重複を含む）。
 |-　判定: take 0 / reference 0 / skip 0。wikiページ編集なし、collect コミット（追いこみ）1件。
+|## [2026-10-15] newsletter-triage | ニュースレターなし（空キュー・no-op）
+|-　ケース: case-(a) パースのみ失敗。パーサーは `failed to parse JSON response` を報告したが、output ファイル末尾の `## Response` に ```json ブロック（run_id 20261015T070018Z、decisions 0件）が整形して存在。
+|-　内容: チェックポイントは整形（ok=true、candidate_count=0）。今日の収集ウィンドウで新規なし（find -newermt 10-15 でマッチ 0件、inbox/newslettersとwiki/raw/articlesに未追跡なし、追いこみ collect 必要なし）。
+|-　判定: take 0 / reference 0 / skip 0。wikiページ編集なし、collect対象もなし。10-12/10-14と同様の空キューノーオペストリー（第12回）。
