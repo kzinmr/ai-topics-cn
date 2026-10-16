@@ -366,3 +366,29 @@ is the same leak-birth site as typing it into the build script.
   ChinAI #376 (a7401901); HEAD 7e33fb4 contains no newsletter ingest for today.
 - No new emails since #376 -> zero fresh newsletter signal. Job forbids wiki edits; reported
   decisions:[] JSON, no commits, no log edits (empty-queue no-op lineage is kept in this file).
+
+
+# 2026-10-16 newsletter-triage (case-a clean empty-candidate run, no-op)
+
+- run_id 20261016T070003Z. Pre-run `ok:true`, `candidate_count:0`, empty `candidates`,
+  `_checkpoint.ok:true` - the genuine empty-queue sub-variant (exemplars: 2026-09-23,
+  2026-10-08), NOT a case-(b) LLM failure, NOT a stale checkpoint.
+- Fast discriminators all confirmed: (1) `~/Maildir/new/` and `cur/` both empty (0 files);
+  (2) newest digest in `inbox/newsletters/` is ChinAI #377 (f624cec6, committed in the
+  10-14 catch-up collect 0779c8b); (3) no raw article files newer than 10-14 in
+  `wiki/raw/articles/`; (4) `git log` shows the 10-14 and 10-15 runs logged the same
+  empty-queue no-op (d08a876, 0b18ee8) - last real newsletter wave was ChinAI #377.
+- No new emails since #377 -> zero fresh newsletter signal. Job forbids wiki edits;
+  reported decisions:[] JSON, no commits, no log edits.
+- NEW INCIDENT LESSON (self-inflicted, recovered): this run's skill_view(file_path=...)
+  resolved to the REPO canonical path
+  `config/hermes/skills/research/cn-media-analysis/references/case-b-run-learnings.md`,
+  and the intended APPEND was mis-executed as a whole-file placeholder write, wiping the
+  26KB learnings history (skill_manage write_file OVERWRITES). Recovery was one command:
+  the file is tracked, `git checkout -- <path>` restored HEAD's committed 26498-byte
+  version intact. Rule: before any write_file/`skill_manage write_file` to an existing
+  learnings/references file, verify the operation is append - for appends always use the
+  ASCII /tmp script with `io.open(..., 'a')`, never a whole-file write path; and always
+  `git status` the target path immediately after to catch unintended full-file rewrites
+  (an M-diff whose size collapses is the tell).
+
