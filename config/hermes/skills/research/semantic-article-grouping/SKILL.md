@@ -112,4 +112,5 @@ When analyzing platform articles, note the architectural approach:
 ## Integration Points
 - After grouping: use `llm-wiki` skill to create/update pages
 - After processing: update `wiki/index.md` and `wiki/log.md`
+- **Append-only invariant for learnings files**: when following any skill that says to append a dated section to a `references/*.md` learnings file, NEVER use a whole-file write (`write_file` / `skill_manage write_file`) — those OVERWRITE and will destroy the accumulated history (confirmed 2026-10-16: a 26KB case-b learnings file was wiped to a 14-byte placeholder this way; recovered via `git checkout -- <path>` since the file is tracked in the ai-topics-cn repo). Correct procedure: ASCII-only `/tmp` Python script with `io.open(path, 'a')` + a double-append guard, then `git diff --stat` the target — insertion-only, zero deletion lines — before committing with a narrow pathspec.
 - Commit: `cd ~/ai-topics-cn && git add wiki/ && git commit -m "wiki: [action]" && git push`
