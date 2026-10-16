@@ -4440,3 +4440,14 @@ Originating conversation: (scheduled cron)
 |-　ケース: case-(a) パースのみ失敗。パーサーは `failed to parse JSON response` を報告したが、output ファイル末尾の `## Response` に ```json ブロック（run_id 20261015T070018Z、decisions 0件）が整形して存在。
 |-　内容: チェックポイントは整形（ok=true、candidate_count=0）。今日の収集ウィンドウで新規なし（find -newermt 10-15 でマッチ 0件、inbox/newslettersとwiki/raw/articlesに未追跡なし、追いこみ collect 必要なし）。
 |-　判定: take 0 / reference 0 / skip 0。wikiページ編集なし、collect対象もなし。10-12/10-14と同様の空キューノーオペストリー（第12回）。
+## [2026-10-16] trending-topics | shelley-trending-topics.timer
+|- 期間: 10-13〜10-16（3日間）。内訳: v2ex 83 / juejin 83 / wechat 51 / 36kr 0 / zhihu 0。
+|- 36kr+zhihu ゼロVolumeは 09-23/09-26/10-02/10-13に続き6回目（still watch item、複数週連続まで据え置）。
+|- 新規ページ推奨: なし（全22件に entities/concepts ページ存在: AI Agent=ai-agent、Claude=claude、OpenAI=openai、GPT=gpt、DeepSeek=deepseek、Gemini=gemini-google、Vibe Coding=vibe-coding、Cursor=cursor、MCP=mcp、Qwen=qwen、RAG=rag、混元=tencent-hunyuan、Kimi=kimi-moonshot、Llama=llama-meta、Anthropic=anthropic、OpenClaw=openclaw、ChatGLM/智谱=glm-zhipu、微调=fine-tuning、量化=quantization、Function Calling=function-calling、多模态=multimodal、豆包=doubao-bytedance）。
+|- クロール候補: なし。source_count>=3の16件はすべて slug直接登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/openclaw/china-ai-agent-ecosystem）または間接カバー済み（AI Agent=china-ai-agent-ecosystem hints、多模态=deepseek/chatglm hints、Function Calling=prompt-agent-function-call-skill-mcp係、微调=vram-optimization 系hints）。全球エンティティ（Claude/OpenAI/GPT/Anthropic/Gemini/Cursor/Llama）は意図未登録。文心一言/Baiduは今回もトレンディング未登録（間接カバー済み・要判定据え置、再提案履歴 09-07/09-09/09-23/09-26）。
+|- 判定: 新規ページなし・新規YAML提案なし（steady state）。log.mdのみコミット。
+|## [2026-10-16] newsletter-triage | ニュースレターなし（空キュー・no-op）
+|-　判定: case-(a) モデル側の失敗。プレランスクリプトは `failed to parse JSON response` を報告したが、output ファイル末尾に正常な checkpoint（run_id 20261016T070003Z、ok=true、candidate_count=0）が残っており、上流側は `Context length exceeded (46,035 tokens)` で失敗したことを確認。
+|-　内容: チェックポイントは空（candidates=[]）。今日の収集はなく、`find -newermt 10-15` で新規ファイル 0件、inbox/newsletters と wiki/raw/articles に未追跡残りもなく、追いこみ collect も不要。
+|-　判定: take 0 / reference 0 / skip 0。wiki ページ編集なし。10-12 以降の空キュー no-op 連続（第13回）。
+|-　スキル更新: なし（今ランでは context-length 失敗の新たな型だが、既存の case-(a)/(b) 判定規程で処理可能であった）。
