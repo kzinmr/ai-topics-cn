@@ -392,3 +392,11 @@ is the same leak-birth site as typing it into the build script.
   `git status` the target path immediately after to catch unintended full-file rewrites
   (an M-diff whose size collapses is the tell).
 
+
+
+## 2026-10-18 newsletter-triage case-(a) empty-queue no-op (run_id 20261018T070044Z)
+
+- Pre-run script `ok: true`, `_checkpoint.ok: true`, but `candidate_count: 0` and `candidates: []`. No new newsletter email collected since the 2026-10-16 batch (latest inbox file `2026-10-16--Nvidia-May-Be-Bankrolling...461cdca2.md`, already triaged in commit cc95544).
+- Clean case-(a) empty-queue no-op, NOT a case-(b) 5xx/context-length failure: the checkpoint is intact and simply reports zero candidates. No `## Error` section, no upstream failure fingerprint this run.
+- Job-type: newsletter triage pipeline job forbids wiki edits and IMAP collection; output contract is strict JSON. Returned `decisions: []` with `processed_count: 0` and a short Japanese summary. No wiki writes, no collect, no log.md append (that belongs to the wiki-ingest job type, not this JSON-only job).
+- No action taken beyond verification via `git log` + `latest.json` read.
