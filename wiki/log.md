@@ -4451,3 +4451,15 @@ Originating conversation: (scheduled cron)
 |-　内容: チェックポイントは空（candidates=[]）。今日の収集はなく、`find -newermt 10-15` で新規ファイル 0件、inbox/newsletters と wiki/raw/articles に未追跡残りもなく、追いこみ collect も不要。
 |-　判定: take 0 / reference 0 / skip 0。wiki ページ編集なし。10-12 以降の空キュー no-op 連続（第13回）。
 |-　スキル更新: なし（今ランでは context-length 失敗の新たな型だが、既存の case-(a)/(b) 判定規程で処理可能であった）。
+## [2026-10-18] trending-topics | shelley-trending-topics.timer
+|- 期間: 10-16の間10-18（3日）。
+|- 内訳: v2ex 85 / juejin 86 / 36kr 0 / zhihu 0 / wechat 48。
+|- 36kr+zhihu ゼロ Volumeは 09-23/09-26/10-02/10-13続きに8目（still watch item、据え置）。
+|- 新規ページスイ: なし（全件19件 entities/concepts ページ存在: AI Agent=ai-agent、Claude=claude、OpenAI=openai、GPT=gpt、DeepSeek=deepseek、Gemini=gemini-google、Vibe Coding=vibe-coding、Cursor=cursor、MCP=mcp、RAG=rag、混元=tencent-hunyuan、Kimi=kimi-moonshot、Anthropic=anthropic、微调=fine-tuning、Function Calling=function-calling、多模态=multimodal、RLHF/对齐=rlhf-alignment、安全=ai-safety-subconscious）。
+|- クローリング候補: なし。 source_count>=3に14件はすべて slug直接登録（deepseek/kimi/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem） まため間接カバー済み（AI Agent=china-ai-agent-ecosystem hints、多模态=deepseek/chatglm hints、Function Calling=prompt-agent-function-call-skill-mcp係、微调=vram-optimization 系hints、RLHF/对齐=censorship-bypass 安全对齐 hints、安全=TC260 伦理指引 hints、規制=china-ai-regulation slug系）。 全球エンティティ（Claude/OpenAI/GPT/Anthropic/Gemini/Cursor）意図未登録。 文心一言/Baidu今回もトレンディング未登録（間接カバー済み、要判断据え置、再提案履歴 09-07/09-09/09-23/09-26）。
+|- 判定: 新規ページなし、新規 YAML再提案なし（steady state）。 log.mdのみコミット。
+|## [2026-10-18] newsletter-triage | ネニュースレーター空キュー no-op + 追いのし collect
+|-　判定: case-(a) 空キュー。プリスクリプトは parse 失敗を報告したが、output ファイル末尾の checkpoint（run_id 20261018T070044Z、ok=true、candidate_count=0）は正常で、LLM 段も decisions:[] を正常生成していた（第14回目の空キュー isomorphic インスタンス）。
+|-　内容: 今日新規のネニュースレーター収集はなし。取得判定 take 0 / reference 0 / skip 0。wiki ページ編集なし。
+|-　追いのし collect: 10-16 ウェーブの ChinAI digest（461cdca2）+ raw 6件（multi-URL Substack dupes 含む）が未追跡で残っていたため、本ランで inbox: newsletter collect として catch-up コミット。
+|-　スキル更新: なし。
