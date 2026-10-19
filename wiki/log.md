@@ -4463,3 +4463,10 @@ Originating conversation: (scheduled cron)
 |-　内容: 今日新規のネニュースレーター収集はなし。取得判定 take 0 / reference 0 / skip 0。wiki ページ編集なし。
 |-　追いのし collect: 10-16 ウェーブの ChinAI digest（461cdca2）+ raw 6件（multi-URL Substack dupes 含む）が未追跡で残っていたため、本ランで inbox: newsletter collect として catch-up コミット。
 |-　スキル更新: なし。
+## [2026-10-19] trending-topics | shelley-trending-topics.timer
+|- 期間: 10-16〜10-19(3日)。
+|- 内訳: v2ex 84 / juejin 87 / 36kr 0 / zhihu 0 / wechat 52。
+|- 36kr+zhihu ゼロVolumeは 09-23/09-26/10-02/10-13/10-16/10-18続き9目（still watch item、据え置）。
+|- 新規ページ推奨: なし（全件22件に entities/concepts ページ存在: AI Agent=ai-agent、Claude=claude、OpenAI=openai、GPT=gpt、DeepSeek=deepseek、Gemini=gemini-google、Vibe Coding=vibe-coding、MCP=mcp、Cursor=cursor、Kimi=kimi-moonshot、RAG=rag、混元=tencent-hunyuan、AI安全=ai-safety-subconscious、微調=fine-tuning、Function Calling=function-calling、OpenClaw=openclaw、RLHF/対齐=rlhf-alignment、オープンソースモデル=china-open-source-ai、多模态=multimodal、規制=china-ai-regulation、豆包=doubao-bytedance）。
+|- クローリング候補: なし。source_count>=3の13件はすべて slug直接登録または間接カバー済み。全球エンティティ(Claude/OpenAI/GPT/Anthropic/Gemini/Cursor)は意図未登録。文心一言/Baiduは今回もトレンディング未登録。
+|- 判定: 新規ページなし、新規 YAMLなし（steady state）。log.mdのみコミット。
