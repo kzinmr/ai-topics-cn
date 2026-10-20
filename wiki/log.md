@@ -4475,3 +4475,11 @@ Originating conversation: (scheduled cron)
 |- 内容: 今日の新規ニュースレーター収集は 0 件、対象メール 0 件。取得判定 take 0 / reference 0 / skip 0。wiki ページ編集なし。
 |- 新規ファイル確認: inbox/newsletters、wiki/raw/articles に 2026-10-18 以降の新規/未追跡ファイルなし（find -newermt、git status とも空）。追いこみ collect は不要（10-17 収集分はすでに 87732d8 でコミット済み）。
 |- スキル更新: なし。
+
+## [2026-10-20] trending-topics | shelley-trending-topics.timer
+|- 期間：10-17〜10-20（3日）
+|- 内訳: v2ex 84 / juejin 86 / 36kr 0 / zhihu 0 / wechat 51。
+|- 36kr+zhihu ゼロボリュームは 09-23/09-26/10-02/10-13/10-16/10-18に続き10回目（watch item、据え置き）。
+|- 新規ページ推奨：なし（全件23件に entities/concepts ページ存在: AI Agent=ai-agent、Claude=claude、OpenAI=openai、GPT=gpt、DeepSeek=deepseek、Gemini/Google=gemini-google、Vibe Coding=vibe-coding、MCP=mcp、Cursor=cursor、RAG=rag、Kimi/Moonshot=kimi-moonshot、Anthropic=anthropic、混元/Tencent=tencent-hunyuan、Function Calling=function-calling、多模态=multimodal、微調/Fine-tuning=fine-tuning、AI安全=ai-safety-subconscious、Llama/Meta=llama-meta、豆包/ByteDance=doubao-bytedance、Qwen/通义千问=qwen、RLHF/対齐=rlhf-alignment、オープンソースモデル=china-open-source-ai、量化/Quantization=quantization）。
+|- クローリング候補: なし。source_count>=3の19件はすべてslug直接登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem/china-local-deployment/china-open-source-ai）または間接カバー済み（AI Agent=china-ai-agent-ecosystem hints、多模态=deepseek/chatglm hints、Function Calling=prompt-agent-function-call-skill-mcp係、微調=vram-optimization 系 hints、RLHF/対齐=censorship-bypass 安全対齐 hints、AI安全=TC260 伦理指引 hints、量化=vram-optimization hints）。全球エンティティ（Claude/OpenAI/GPT/Anthropic/Gemini/Cursor/Llama）は意図的未登録。文心一言/Baiduは今回もトレンディング未登録（間接カバー済み・要判定据え置き、再提案履歴 09-07/09-09/09-23/09-26）。
+|- 判定: 新規ページなし、新規 YAML提案なし（steady state）。log.mdのみコミット。
