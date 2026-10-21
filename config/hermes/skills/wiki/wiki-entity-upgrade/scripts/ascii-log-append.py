@@ -30,7 +30,8 @@ bad = []
 for ch in region:
     # CN simplified glyphs that never belong in Japanese prose:
     # 节 U+8282, 实 U+5B9E, 监 U+76D1, 查 U+67E5, 侧 U+4FA7 (confirmed 2026-10-16 leak)
-    if ch in "\u8282\u5b9e\u76d1\u67e5\u4fa7":
+    # 応 U+5FDC also flagged: leaks where 前 U+524D intended (confirmed 2026-10-21 log append: 応先 for 前日, caught by tail prose read, invisible to codepoint scan)
+    if ch in "\u8282\u5b9e\u76d1\u67e5\u4fa7\u5fdc":
         bad.append("U+%04X %s" % (ord(ch), ch))
 print("CN-leak scan:", bad if bad else "clean")
 print("--- CJK inventory (proofread these against intended prose) ---")
