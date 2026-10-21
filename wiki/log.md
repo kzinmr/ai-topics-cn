@@ -4491,3 +4491,11 @@ Originating conversation: (scheduled cron)
 |- 新規ペイジ推奨：なし（全件26件ペイジが存在: AI Agent=ai-agent, Claude=claude, OpenAI=openai, GPT=gpt, DeepSeek=deepseek, Gemini/Google=gemini-google, Vibe Coding=vibe-coding, MCP=mcp, Cursor=cursor, RAG=rag, Kimi/Moonshot=kimi-moonshot, Anthropic=anthropic, Hunyuan/Tencent=tencent-hunyuan, Function Calling=function-calling, multimodal=multimodal, Fine-tuning=fine-tuning, AI safety=ai-safety-subconscious, Llama/Meta=llama-meta, Doubao/ByteDance=doubao-bytedance, Qwen=qwen, RLHF=rlhf-alignment, OSS model=china-open-source-ai, Quantization=quantization）。
 |- クローリング候補：なし。source_count>=3の19件すべて直接登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem/china-local-deployment/china-open-source-ai）、間接カバー済み（AI Agent=china-ai-agent-ecosystem hints, multimodal=deepseek/chatglm hints, Function Calling=prompt-agent-function-call-skill-mcp, Fine-tuning=vram-optimization hints, RLHF/alignment=censorship-bypass hints, AI safety=TC260 hints, Quantization=vram-optimization hints）。全球エンティティ（Claude/OpenAI/GPT/Anthropic/Gemini/Cursor/Llama）に意図的未登録。文心一言/Baidu 今回もトレンディング未登録（間接カバー済み、要判定据え置き、再提案履歴 09-07/09-09/09-23/09-26）。
 |- 判定：新規ペイジなし、新規 YAML提案なし（steady state）。log.mdのみコミット。
+|
+|## [2026-10-21] newsletter-triage | ChinAI (case-a empty-queue no-op + catch-up collect)
+|
+|- ケース: case-(a) パースのみの失敗（pre-run ok=false、「failed to parse JSON response」）。チェックポイントは整然（ok=true, run_id 20261021T070035Z, candidates=0）、outputファイル尾部の ## Response に正しい decisions:[] JSONを確認し、これを作業ファイルとして扱う（10-19前例と同型）。zero-mail日。
+|- コレクションキャッチアップ: ChinAI #378（2026-10-19取得、digest 61a8ef4f + raw 7件、前日ジョブがログのみコミットしたことで未追跡状態で残置）を inbox: newsletter collect でキャッチアップコミット。全て本日コレクションではないが未コミットの取得物として 10-14/10-18 前例規則に従う。
+|- 技術ノート: techtaiwan raw（0674ce3b）のfetched_at更新のみの変更は未処理のまま（こちらの対象外）。ChinAI #378の次回トリアージへ委ねる。
+|- 判定: take 0 / reference 0 / skip 0（チェックポイント空）。wikiページへの変更なし。
+|
