@@ -4506,3 +4506,9 @@ Originating conversation: (scheduled cron)
 |- 新規ページ推奨：なし（全25件ページが存在: AI Agent=ai-agent, Claude=claude, OpenAI=openai, GPT=gpt, DeepSeek=deepseek, Gemini/Google=gemini-google, Vibe Coding=vibe-coding, MCP=mcp, Cursor=cursor, RAG=rag, Kimi/Moonshot=kimi-moonshot, Anthropic=anthropic, 混元/Tencent=tencent-hunyuan, Qwen=qwen, Llama/Meta=llama-meta, 豆包/ByteDance=doubao-bytedance, AI安全=ai-safety-subconscious, ChatGLM/智谱=glm-zhipu, Function Calling=function-calling, MiniMax=minimax, RLHF/対齐=rlhf-alignment, Vector DB=vector-db, 多模态=multimodal, 微調=fine-tuning, 量化=quantization）。
 |- クローリング候補：なし（source_count>=3の15件すべて直接登録（deepseek/qwen/chatglm/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem）または間接カバー済み（AI Agent=china-ai-agent-ecosystem hints, RAG=dify hints, 多模态=deepseek/chatglm hints）、全球エンティティ（Claude/OpenAI/GPT/Gemini/Llama）は意図的未登録、文心一言/Baidu今回もトレンディング未登録（間接カバー済み、要判定据え置き、再提案履歴 09-07/09-09/09-23/09-26）。
 |- 判定：新規ページなし、新規 YAML提案なし（steady state）。 log.mdログのみコミット。
+|## [2026-10-22] newsletter-triage | ニュースレターなし（空キュー・no-op）
+|- ケース: case-(a) パースのみの失敗（pre-run ok=false、「failed to parse JSON response」）。チェックポイントは整然（ok=true, run_id 20261022T070042Z, candidates=0）、outputファイル尾部の ## Response に正しい decisions:[] JSONを確認し、これを作業ファイルとして抱える（10-21前例と同型）。zero-mail日。
+|- コレクション: 今日コレクションは0件（inbox/newsletters・wiki/raw/articlesに今日取得ファイルなし）。最近の未解決コレクションはなし（ChinAI #378は10-21にcatch-upコミット済み）。collectコミットなし。
+|- 技術ノート: techtaiwan raw（0674ce3b）のfetched_at更新のみの変更は未処理のまま（こちらの対象外、10-21と同様）。
+|- 判定: take 0 / reference 0 / skip 0（チェックポイント空）。wikiページへの変更なし。
+|
