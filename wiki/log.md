@@ -4499,3 +4499,10 @@ Originating conversation: (scheduled cron)
 |- 技術ノート: techtaiwan raw（0674ce3b）のfetched_at更新のみの変更は未処理のまま（こちらの対象外）。ChinAI #378の次回トリアージへ委ねる。
 |- 判定: take 0 / reference 0 / skip 0（チェックポイント空）。wikiページへの変更なし。
 |
+|## [2026-10-22] trending-topics | shelley-trending-topics.timer
+|- 期間：10-19〜10-22（3日）。
+|- 内訳: v2ex 80 / juejin 79 / 36kr 0 / zhihu 0 / wechat 46。
+|- 36kr+zhihu ゼロボリューム 09-23/09-26/10-02/10-13/10-16/10-18に続き12回目（監視アイテム、据え置き）。
+|- 新規ページ推奨：なし（全25件ページが存在: AI Agent=ai-agent, Claude=claude, OpenAI=openai, GPT=gpt, DeepSeek=deepseek, Gemini/Google=gemini-google, Vibe Coding=vibe-coding, MCP=mcp, Cursor=cursor, RAG=rag, Kimi/Moonshot=kimi-moonshot, Anthropic=anthropic, 混元/Tencent=tencent-hunyuan, Qwen=qwen, Llama/Meta=llama-meta, 豆包/ByteDance=doubao-bytedance, AI安全=ai-safety-subconscious, ChatGLM/智谱=glm-zhipu, Function Calling=function-calling, MiniMax=minimax, RLHF/対齐=rlhf-alignment, Vector DB=vector-db, 多模态=multimodal, 微調=fine-tuning, 量化=quantization）。
+|- クローリング候補：なし（source_count>=3の15件すべて直接登録（deepseek/qwen/chatglm/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem）または間接カバー済み（AI Agent=china-ai-agent-ecosystem hints, RAG=dify hints, 多模态=deepseek/chatglm hints）、全球エンティティ（Claude/OpenAI/GPT/Gemini/Llama）は意図的未登録、文心一言/Baidu今回もトレンディング未登録（間接カバー済み、要判定据え置き、再提案履歴 09-07/09-09/09-23/09-26）。
+|- 判定：新規ページなし、新規 YAML提案なし（steady state）。 log.mdログのみコミット。
