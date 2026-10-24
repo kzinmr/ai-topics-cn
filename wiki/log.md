@@ -4532,3 +4532,13 @@ Originating conversation: (scheduled cron)
 |- 新規ページ推奨：なし。全18件ページが存在: AI Agent=ai-agent、Claude=claude、OpenAI=openai、GPT=gpt、DeepSeek=deepseek、Gemini/Google=gemini-google、Vibe Coding=vibe-coding、MCP=mcp、Cursor=cursor、RAG=rag、Kimi/Moonshot=kimi-moonshot、Anthropic=anthropic、MiniMax=minimax、混元/Tencent=tencent-hunyuan、Qwen=qwen、豆包/ByteDance=doubao-bytedance、微調=fine-tuning、量化=quantization。
 |- クローリング候補：なし（source_count>=3の16件はすべて直接登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem/china-open-source-ai/china-local-deployment）または間接カバー済み（AI Agent=china-ai-agent-ecosystem hints、RAG=dify hints、Anthropic=claude系、微調=vram-optimization 系 hints、量化=vram-optimization hints）。全球エンティティ（Claude/OpenAI/GPT/Gemini/Cursor/MiniMax）は意図的未登録。文心一言/Baiduは今回もトレンディング未登録（間接カバー済み、要判定据え置き、再提案履歴 09-07/09-09/09-23/09-26）。
 |- 判定：新規ページなし、新規 YAML提案なし（steady state）。log.mdのみコミット。
+
+
+|
+|## [2026-10-24] newsletter-triage | shelley-newsletter-triage.timer
+|-　ケース: case-(b) upstream LLM failure. pre-run ok=false ("failed to parse JSON response"), ## Response is empty, ## Error holds HTTP 503 (Local LLM server is busy). チェックポイントは整然 (ok=true, run_id 20261024T070035Z, candidates=12)。トリアージLLMの応答なし、回収できない。
+|-　コレクション: Tech Taiwan (Liang-rong Chen)「Nvidia Turns to Samsung to Shake Up the AI Substrate Market」 digest f2253083 + raw 12件。すべて未追跡。
+|-　dedup: 12 candidates = 実質 5 unique articles (main 13782B の multi-URL Substack dupes 6件、TSMC決算/サブストレート補足 1713B の dupes 3件、AblePrint、CEOインタビュー、Black Swan interview highlight)。multi-URL digest dedup 手順通り。
+|-　判定: ジョブコントロールにより case-(b)で自前の take 判定はしない。wikiページへの変更なし、チェックポイントの take 判定なし。本日は collect-only コミット (inbox: newsletter collect)のみ。
+|-　次ジョブへ: 未トリアージの 5 unique 件は次回の正規トリアージに回す(エヌビディア・サムスン・ユニマクロンのサブストレート構造変革が主題)。
+|-　技術ノート: techtaiwan raw (0674ce3b)の fetched_at 更新のみの変更は本コミットに含める(今日のコレクションの一部)。
