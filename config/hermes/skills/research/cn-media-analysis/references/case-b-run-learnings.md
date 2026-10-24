@@ -400,3 +400,10 @@ is the same leak-birth site as typing it into the build script.
 - Clean case-(a) empty-queue no-op, NOT a case-(b) 5xx/context-length failure: the checkpoint is intact and simply reports zero candidates. No `## Error` section, no upstream failure fingerprint this run.
 - Job-type: newsletter triage pipeline job forbids wiki edits and IMAP collection; output contract is strict JSON. Returned `decisions: []` with `processed_count: 0` and a short Japanese summary. No wiki writes, no collect, no log.md append (that belongs to the wiki-ingest job type, not this JSON-only job).
 - No action taken beyond verification via `git log` + `latest.json` read.
+
+## 2026-10-24 newsletter-triage case-(b) 503 (run_id 20261024T070035Z)
+- pre-run ok=false (failed to parse JSON) + ## Error = HTTP 503 (Local LLM busy), ## Response empty -> case-(b), no triage data to recover.
+- injected checkpoint INTACT: ok=true, candidates=12 (Tech Taiwan Nvidia/Samsung substrate digest f2253083 + 12 raw).
+- job-type rule honored: no self-made take decisions. Two-commit discipline: b164db1 (inbox: newsletter collect, 13 paths incl. techtaiwan 0674ce3b fetched_at touch) then 27ef876 (log.md no-op entry only, zero deletion lines).
+- dedup: 12 -> 5 unique (main 13782B x6 multi-URL Substack dupes, 1713B TSMC-earnings follow-up x3, AblePrint, CEO interview, Black Swan highlight).
+- leak fingerprint: ASCII-frame append shipped 8 valid-glyph defects (回取/回収, 応答 initially ASCII, ジョブコントルール, ネンダロッシュ, サムスング, ウニマクロン, 未トリアジ, 定式) - all caught by flowing-prose tail read, none by CN denylist. Converged in 2 fix rounds via chr() tuple rebuild (no hand-typed katakana). The [SKIP] output-file append leaked 未トリアジ once more, fixed in 1 round.
