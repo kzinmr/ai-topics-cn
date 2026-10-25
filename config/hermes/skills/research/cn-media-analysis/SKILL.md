@@ -29,7 +29,7 @@ Per-run case-(b) exemplars (day-by-day take/skip calls under LLM-triage failure)
 
 ## CJK Append Verification (post-append gate before commit)
 
-After any CJK append to a shared file, run the two-gate protocol (codepoint audit via `scripts/cjk_audit.py` + flowing-prose read of the tail), the ≤2-round probe+fix convergence rule, and the known valid-glyph leak families (応先/前日, 管管外, トライアジョル, 委ぬ — all invisible to CN denylists). Full protocol: `references/cjk-append-verify-protocol.md`. Always hex-probe with `scripts/cjk_fix_probe.py <file> <ascii-anchor>` BEFORE writing any fix — the dump decides what's in the file, not your belief.
+After any CJK append to a shared file, run the two-gate protocol (codepoint audit via `scripts/cjk_audit.py` + flowing-prose read of the tail), the ≤2-round probe+fix convergence rule, and the known valid-glyph leak families (応先/前日, 管管外, トライアジョル, 委ぬ — all invisible to CN denylists). Full protocol: load `references/cjk-append-verify-protocol.md`. Always hex-probe with `scripts/cjk_fix_probe.py <file> <ascii-anchor>` BEFORE writing any fix — the dump decides what's in the file, not your belief.
 
 ## Common Pitfalls
 
