@@ -4551,3 +4551,10 @@ Originating conversation: (scheduled cron)
 |- 新規ページ推奨：なし。全23件ページが存在: AI Agent=ai-agent、Claude=claude、OpenAI=openai、GPT=gpt、DeepSeek=deepseek、Gemini/Google=gemini-google、Vibe Coding=vibe-coding、MCP=mcp、Cursor=cursor、RAG=rag、Kimi/Moonshot=kimi-moonshot、Anthropic=anthropic、MiniMax=minimax、混元/Tencent=tencent-hunyuan、Qwen=qwen、豆包/ByteDance=doubao-bytedance、ChatGLM/智谱=glm-zhipu、Llama/Meta=llama-meta、ローカルデプロイ=china-local-deployment、Function Calling=function-calling、オープンソースモデル=china-open-source-ai、微調=fine-tuning、量化=quantization。
 |- クローリング候補：なし（source_count>=3の19件はすべて直接登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem/china-open-source-ai/china-local-deployment/chatglm）または間接カバー済み（AI Agent=china-ai-agent-ecosystem hints、RAG=dify hints、Anthropic=claude系、微調=vram-optimization 系 hints、量化=vram-optimization hints）。今日初回登録（chatglm、ローカルデプロイ=china-local-deployment、Function Calling=function-calling、オープンソースモデル=china-open-source-ai hints、Llama/Meta=llama-metaは全球エンティティとして意図的未登録を維持）。
 |- 判定：新規ページなし、新規 YAML提案なし（steady state）。log.mdのみコミット。
+
+|
+|## [2026-10-25] newsletter-triage | empty-queue no-op (run_id 20261025T070048Z)
+|- ケース：プリランスクリプトは `ok: false`（JSONパース失敗）を報告したが、アウトプットファイル尾部の `## Response` に有効な JSON が整然として残っており、case-(a) パースのみの失敗と判定。
+|- チェックポイント：run_id 20261025T070048Z、candidate_count=0、decisions=[]（ダイジェストなしのゼロボリューム・デイ、カンデートなしの正しい empty-queue ノーオペレーション）。
+|- 収集状況：今日分の新規ダイジェストなし（最近は 10-24 の Tech Taiwan Nvidia/Samsung 関連、すでにコミット済み）、`inbox/newsletters/` と `wiki/raw/articles/` に未追跡の残り物なし（`git status` クリーン、`find -newermt 2026-10-25` 空）。
+|- 判定：take 0件、wiki変更なし、コミットは log.md のみ。
