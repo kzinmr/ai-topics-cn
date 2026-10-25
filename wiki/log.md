@@ -4542,3 +4542,12 @@ Originating conversation: (scheduled cron)
 |-　判定: ジョブコントロールにより case-(b)で自前の take 判定はしない。wikiページへの変更なし、チェックポイントの take 判定なし。本日は collect-only コミット (inbox: newsletter collect)のみ。
 |-　次ジョブへ: 未トリアージの 5 unique 件は次回の正規トリアージに回す(エヌビディア・サムスン・ユニマクロンのサブストレート構造変革が主題)。
 |-　技術ノート: techtaiwan raw (0674ce3b)の fetched_at 更新のみの変更は本コミットに含める(今日のコレクションの一部)。
+
+|
+## [2026-10-25] trending-topics | shelley-trending-topics.timer
+|期間：10-22〜10-25（3日）。
+|内訳: v2ex 83 / juejin 82 / 36kr 0 / zhihu 0 / wechat 47。
+|- 36kr+zhihu ゼロボリュームは 09-23/09-26/10-02/10-13/10-16/10-18 / 10-19/10-20/10-21/10-22/10-23/10-24に続き15回目（監視アイテム、据え置き）。
+|- 新規ページ推奨：なし。全23件ページが存在: AI Agent=ai-agent、Claude=claude、OpenAI=openai、GPT=gpt、DeepSeek=deepseek、Gemini/Google=gemini-google、Vibe Coding=vibe-coding、MCP=mcp、Cursor=cursor、RAG=rag、Kimi/Moonshot=kimi-moonshot、Anthropic=anthropic、MiniMax=minimax、混元/Tencent=tencent-hunyuan、Qwen=qwen、豆包/ByteDance=doubao-bytedance、ChatGLM/智谱=glm-zhipu、Llama/Meta=llama-meta、ローカルデプロイ=china-local-deployment、Function Calling=function-calling、オープンソースモデル=china-open-source-ai、微調=fine-tuning、量化=quantization。
+|- クローリング候補：なし（source_count>=3の19件はすべて直接登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem/china-open-source-ai/china-local-deployment/chatglm）または間接カバー済み（AI Agent=china-ai-agent-ecosystem hints、RAG=dify hints、Anthropic=claude系、微調=vram-optimization 系 hints、量化=vram-optimization hints）。今日初回登録（chatglm、ローカルデプロイ=china-local-deployment、Function Calling=function-calling、オープンソースモデル=china-open-source-ai hints、Llama/Meta=llama-metaは全球エンティティとして意図的未登録を維持）。
+|- 判定：新規ページなし、新規 YAML提案なし（steady state）。log.mdのみコミット。
