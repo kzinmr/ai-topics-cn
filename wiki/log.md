@@ -4558,3 +4558,11 @@ Originating conversation: (scheduled cron)
 |- チェックポイント：run_id 20261025T070048Z、candidate_count=0、decisions=[]（ダイジェストなしのゼロボリューム・デイ、カンデートなしの正しい empty-queue ノーオペレーション）。
 |- 収集状況：今日分の新規ダイジェストなし（最近は 10-24 の Tech Taiwan Nvidia/Samsung 関連、すでにコミット済み）、`inbox/newsletters/` と `wiki/raw/articles/` に未追跡の残り物なし（`git status` クリーン、`find -newermt 2026-10-25` 空）。
 |- 判定：take 0件、wiki変更なし、コミットは log.md のみ。
+
+|## [2026-10-26] trending-topics | shelley-trending-topics.timer
+|期間：10-22〜10-25（3日）。
+|内訳: v2ex 83 / juejin 82 / 36kr 0 / zhihu 0 / wechat 47。
+|- 36kr+zhihu ゼロボリューム 09-23/09-26/10-02/10-13/10-16/10-18 / 10-19/10-20/10-21/10-22/10-23/10-24/10-25に続き16回目（監視アイテム、据え置き）。
+|- 新規ページ推奨：なし。全24件ページが存在: AI Agent=ai-agent、Claude=claude、OpenAI=openai、GPT=gpt、DeepSeek=deepseek、Gemini/Google=gemini-google、Vibe Coding=vibe-coding、MCP=mcp、Cursor=cursor、RAG=rag、Kimi/Moonshot=kimi-moonshot、Anthropic=anthropic、MiniMax=minimax、混元/Tencent=tencent-hunyuan、Qwen=qwen、豆包/ByteDance=doubao-bytedance、ChatGLM/智谱=glm-zhipu、Llama/Meta=llama-meta、ローカルデプロイ=china-local-deployment、Function Calling=function-calling、オープンソースモデル=china-open-source-ai、多模态=multimodal、AI安全=ai-safety-subconscious、RLHF/対齐=rlhf-alignment、Vector DB=vector-db。
+|- クローリング候補：なし（source_count>=3の20件はすべて直接登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem/china-open-source-ai/china-local-deployment/chatglm）または間接カバー済み（AI Agent=china-ai-agent-ecosystem hints、RAG=dify hints、Anthropic=claude系、量化=vram-optimization hints、AI安全=china-ai-regulation系 hints、RLHF/対齐=china-ai-regulation hints、多模态=deepseek/chatglm マルチモーダル hints）。全球エンティティ（Claude/OpenAI/GPT/Gemini/Cursor/MiniMax/Llama/Meta）意図的未登録を維持。文心一言/Baidu今回もAIトレンディング未登録（間接カバー済み、要判定据え置き、再提案履歴 09-07/09-09/09-23/09-26）。今日はfine-tuning概念がAIトレンディングから外れた。
+|- 判定：新規ページなし、新規 YAML提案なし（steady state）。log.mdのみコミット。
