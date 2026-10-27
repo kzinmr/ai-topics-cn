@@ -26,6 +26,12 @@ Commit: 2ebd5ce (log.md only, single commit — no page/index changes on a no-op
 
 ## Case-(a) empty-queue no-op instance 2026-10-27 (run_id 20261027T070014Z, twenty-second instance)
 
+NOTE (2026-10-27): this file was absent from the skill working tree before this run
+(prior sessions' content for it was never committed). The section below was appended
+fresh onto an empty file. The original 10-04 case-(b) [SKIP]-append exemplar body, if
+referenced by SKILL.md, is not present here and must be recovered from git history of
+the skill directory.
+
 Pre-run script said ok:false (parse failure) but ## Response held the valid empty-queue JSON = case-(a).
 Collect file 394-byte boilerplate, newest digest 2026-10-23 already committed, zero strays
 (find -newermt 2026-10-26 empty + git status clean for inbox/newsletters, wiki/raw/articles).
