@@ -4586,3 +4586,12 @@ Originating conversation: (scheduled cron)
 |
 |\- カンデデート 0, no take/reference/skip. ノーオペレーション. No untracked strays (git status clean for inbox/newsletters, wiki/raw/articles). Commit is log.md only.
 |
+
+|
+||## [2026-10-28] trending-topics | shelley-trending-topics.timer
+||期間：10-25〜10-28
+||内訳: v2ex 82件 / juejin 81件 / 36kr 0件 / zhihu 0件 / wechat 45件
+||- 36kr+zhihu ゼロボリューム 10-25/10-26/10-27に続き18回目（監視アイテム、据え置き）。
+||- 新規ページ推奨：なし。全24件ページが存在: AI Agent=ai-agent, Claude=claude, OpenAI=openai, GPT=gpt, DeepSeek=deepseek, Gemini/Google=gemini-google, Vibe Coding=vibe-coding, MCP=mcp, Cursor=cursor, RAG=rag, Kimi/Moonshot=kimi-moonshot, Anthropic=anthropic, MiniMax=minimax, HunYuan/Tencent=tencent-hunyuan, Qwen=qwen, DouBao/ByteDance=doubao-bytedance, ChatGLM=glm-zhipu, Llama/Meta=llama-meta, local-deploy=china-local-deployment, Function Calling=function-calling, OSS-model=china-open-source-ai, multimodal=multimodal, AI-safety=ai-safety-subconscious, RLHF=rlhf-alignment, Vector DB=vector-db。
+||- クローリング候補：なし（source_count>=3の20件はすべて直接登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem/china-open-source-ai/china-local-deployment/chatglm）または間接カバー済み（AI Agent=china-ai-agent-ecosystem hints, RAG=dify hints, Anthropic=claude系, quantization=vram-optimization hints, AI-safety=china-ai-regulation系 hints, RLHF=china-ai-regulation hints, multimodal=deepseek/chatglm hints）。全球エンティティ（Claude/OpenAI/GPT/Gemini/Cursor/MiniMax/Llama/Meta）は意図的未登録を維持。
+||- 判定：新規ページなし、新規 YAML提案なし（steady state）。log.mdのみコミット。
