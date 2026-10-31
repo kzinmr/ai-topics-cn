@@ -426,3 +426,32 @@ is the same leak-birth site as typing it into the build script.
 - Lesson: for the recurring zero-take summary, treat the WHOLE sentence as one template copied from the 10-23/10-25 committed summaries (see those sections for the exact wording), not a fragment composition -- fragment splicing at clause heads is where the particle drops.
 - Expects shipped with lowercase hex letters twice this run (ari, deari) even with the table in use -- the one-time uppercase re.sub normalization pass over the script text BEFORE running is mandatory every time (11i(i)).
 - No log.md append, no learnings-from-wiki step, no commit. Learnings file append is ASCII-only via this script (io.open 'a', double-append guard on the dated heading).
+
+## 2026-10-31 — crawl-triage evening skip-only run (run_id 20261031T210210Z, 25th isomorphic)
+
+Case (b) — LLM triage stage produced the injected checkpoint only; strict-JSON
+contract job, zero repo writes, no log.md append.
+
+- Checkpoint: 60 raw candidates -> 8 unique by (source, 8-char hash): 53x
+  aafeba3f (2017-12-06 机器之心 saturation recollection) + 7x body-less V2EX.
+  The 60->8 fingerprint is unchanged (25th confirmation).
+- Tally: take 0 / reference 0 / skip 8 (own triage, all skip). No durable facts.
+- Today's morning commits (trending-topics 10-31, newsletter case-a no-op) do
+  not overlap this checkpoint.
+- NEW leak-birth site (copula de+copula splice): four de fragments
+  (all = U+3067) were spliced BEFORE desu/deshita, shipping
+  「60件でです」/「でした」-style copulas twice through two fix rounds
+  before the flow readback forced the de-drop. The put() asserts cannot see it
+  (each fragment individually correct). Rule: copula sites take WHOLE-SENTENCE
+  register entries or a bare N+件+desu/deshita with NO de fragment preceding;
+  if a de-fragment is needed mid-sentence (で+noun), give it its own key and
+  never reuse it at a copula site. This is the 11k(ii) overloaded-fragment rule
+  specialized to the copula.
+- Also caught pre-delivery: date 「12月日」 (dropped 「6」 digit before
+  nichi) — date digits are tuple-blind; flow-read all numeric tokens inside
+  CJK phrases.
+- Register words re-used from committed log.md counts: チェックポイント x76, 再収集 x44,
+  未取得 x3, 本文 x28, から x34, 価値 x24 all verified live;
+  サチュレーション and 旧文 have ZERO committed occurrences but are established
+  register forms in this references file (10-23/10-25 runs) — keep them, do
+  not downgrade to ASCII to dodge the zero count.
