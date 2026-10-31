@@ -58,3 +58,31 @@ Pre-run `ok: false` parse-only failure; `## Response` tail held an intact ```jso
 # Case-(a) empty-queue no-op — 2026-10-12 (run_id 20261012T070039Z)
 
 Ninth-plus isomorphic empty-checkpoint instance (checkpoint ok=true, candidate_count=0, decisions 0). Log no-op entry + [SKIP] record converged EXCEPT the FINAL long CJK clause of the last bullet, which carried three escape typos in one run: a kana slip, a kanji slip, and a CN 记 (U+8BB0) leak inside the word for 「追記」. All SHORT escape spans were clean; the long trailing parenthetical was the sole leak-birth site. Two lessons: (1) split long evidence clauses into multiple short `|-` bullets — escape-typo density scales with span length; (2) add U+8BB0 (CN 记) to the CN-leak denylist alongside 6536/7EE7/5BF9/91C7/8282/67E5/5BE6/9A12 — the 2026-10-12 codepoint scan missed it. Recovery both times: one extracted-string /tmp replace, verified with repr() tail read. Commits: log no-op 301a876.
+
+
+## 2026-10-31 (run_id 20261031T070055Z, 27th isomorphic empty-queue no-op, commit 07527e0)
+
+Case-(a) parse-only failure: pre-run script said ok:false ("failed to parse JSON
+response from newsletter-triage output") but the output file's ## Response held the
+valid empty-queue JSON (decisions=[], checkpoint ok=true, candidate_count=0). Collect
+file 394-byte boilerplate; newest digest 2026-10-23 already committed; find -newermt
+2026-10-30 + git status -- inbox/newsletters wiki/raw/articles both zero strays;
+trending job had fired earlier the same day (8aec14f), so the 07:15 wave is not collect
+strays. ASCII-frame copy-derive log append + [SKIP] record to output_path; log-only
+narrow commit, zero katakana typo rounds (all CJK copy-derived from the committed
+10-30 entry by line slicing, zero hand-typed CJK).
+
+NEW defect class (grab/slice site): a lazy-quantifier regex
+r"run_id ..., (case-\(a\).*?instance\.)\. " silently FAILED to match the committed
+10-30 line even though "case-(a)", "instance", and "pre-run" were each individually
+findable via separate probes. Rule: do not chain lazy .*? across a line containing
+numeric run_ids (the digits confuse boundary matching); split on a literal ASCII anchor
+(s.split("pre-run script is", 1)) and slice with str.index, which cannot backtrack.
+Also: when slicing a sentence tail apart, keep the sentence-final period INSIDE the
+grabbed token -- dropping it and re-adding at composition shipped
+"instance) pre-run" (period lost) and cost one fix round, caught only by the mandatory
+flow readback, not by any tuple check (tuple-blind structural class, 11e(ii) family).
+Second confirmation of the 10-30 lesson: the live committed register said
+(U+30AB U+30F3 U+30C7 U+30A4 U+30C8) where the canonical lexicon says -- an exact
+canonical-tuple grab asserted-false while the copy-derived slice succeeded. Always
+slice the live text, never match against a remembered canonical form.
