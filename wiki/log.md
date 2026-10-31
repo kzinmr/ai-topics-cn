@@ -4634,3 +4634,12 @@ Originating conversation: (scheduled cron)
 |- ニュースレターカンデイト wa 394-byte ボイラープレート変種 de kakunin, 新規ダイジェスト未着信 (latest digest 2026-10-23 すでにコミット済み。)
 |- カンデイト 0, take/reference/skip nashi, git status wa 全件 クリーン (inbox/newsletters / wiki/raw/articles), 滞留 nashi. log.md only commit.
 |
+
+|## [2026-10-31] trending-topics | shelley-trending-topics.timer
+|期間：10-28〜10-31
+|内訳: v2ex 80件 / juejin 78件 / 36kr 0件 / zhihu 0件 / wechat 46件
+|- 36kr+zhihu ゼロボリューム 10-25/10-26/10-27/10-28/10-29/10-30に続き21回目（監視アイテム、据え置き）。
+|- 新規ページ推奨：なし。全20件ページが存在: AI Agent=ai-agent, Claude=claude, OpenAI=openai, GPT=gpt, DeepSeek=deepseek, Gemini/Google=gemini-google, Vibe Coding=vibe-coding, MCP=mcp, Cursor=cursor, RAG=rag, Kimi/Moonshot=kimi-moonshot, Anthropic=anthropic, MiniMax=minimax, HunYuan/Tencent=tencent-hunyuan, Qwen=qwen, DouBao/ByteDance=doubao-bytedance, ChatGLM=glm-zhipu, Llama/Meta=llama-meta, local-deploy=china-local-deployment, Function Calling=function-calling, OSS-model=china-open-source-ai, multimodal=multimodal, AI-safety=ai-safety-subconscious, RLHF=rlhf-alignment。
+|- クローリング候補：なし（source_count>=3の13件はすべて直接登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem/china-open-source-ai/china-local-deployment/chatglm）または間接カバー済み（AI Agent=china-ai-agent-ecosystem hints, RAG=dify hints, Anthropic=claude系, quantization=vram-optimization hints, AI-safety=china-ai-regulation系 hints, RLHF=china-ai-regulation hints, 混元=tencent-hunyuan登録済み）。全球エンティティ（Claude/OpenAI/GPT/Gemini/Cursor/Llama/Meta）は意図的未登録を維持。
+|-判定：新規ページなし、新規 YAML提案なし（steady state）。log.mdのみコミット。
+|
