@@ -455,3 +455,28 @@ contract job, zero repo writes, no log.md append.
   サチュレーション and 旧文 have ZERO committed occurrences but are established
   register forms in this references file (10-23/10-25 runs) — keep them, do
   not downgrade to ASCII to dodge the zero count.
+
+
+## 2026-11-03 crawl-triage (run_id 20261103T090141Z, case-(b) manual triage)
+
+- Pre-run `ok:false` parse-only, but `## Response` held a fully skip-only
+  decisions array (take 0). Not honored as queue (all items body-less V2EX /
+  saturation recollection); manual fresh-day triage per crawl-triage job type.
+- Checkpoint 60 -> 8 unique (53x aafeba3f 2017-12 flood + 7x body-less V2EX).
+  Steady-state fingerprint reconfirmed (N-th isomorphic, not recounted).
+- Take 1: concepts/longcat.md - LongCat-2.5 body verified against the 11-02
+  trending-run section (numbers internally consistent, Meituan official juejin
+  account). Verification status upgraded to official-account-sourced; still
+  single-source, no independent confirmation. Page patch + updated date.
+- Skips: DeepSeek Harness pair (09-29 desktop + 08-13 tutorial = saturation
+  recollection of entities/deepseek.md 09-30/09-16 sections), Superpowers pair
+  (hash af80a16b), Kimi K3 3000-man satire (old date 07-27, absurd framing),
+  Claude Code cost-measurement preview (body not scraped), Alibaba AgentCore /
+  AI-search / ADA thin official previews.
+- No inbox commit: today-dated files are same-hash re-collections; no new
+  unique raw material. Commits 83f7d7a (page) + 2e19e89 (log), narrow staging.
+- Clean run: log entry built ASCII-frame via chr()-tuple put() with dump-derived
+  expects; ZERO typo-fix rounds. Note: put() expect restore must split on '+'
+  (`int(t.split('+')[1],16)`), not `int(t,16)` - a 1-round script bug, no CJK
+  damage. /tmp filename collision with sibling sessions is endemic today
+  (many *_1103* files) - always suffix scripts uniquely.
