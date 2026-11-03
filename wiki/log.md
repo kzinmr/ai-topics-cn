@@ -4700,3 +4700,14 @@ Originating conversation: (scheduled cron)
 |- ニュースレターカンデイト wa 394-byte ボイラープレート 変種 de 確認, 新規 digest 未着信 (最近 digest 2026-10-23 コミット済み).
 |- カンデイト 0, take/reference/skip なし, git status では 全件 クリーン (inbox/newsletters / wiki/raw/articles), 滞留 なし. ウィキ編集するポイントなし. log.md only commit.
 |
+
+|
+|## [2026-11-03] crawl-triage | shelley-triage
+|
+|- run_id 20261103T090141Z, case-(b) manual triage. pre-run script ok:false (parse failure) but ## Response held a fully skip-only decisions array (take 0, all body-less V2EX / saturation recollection) - not honored as queue; manual fresh-day triage instead (job type = crawl-triage, manual takes permitted).
+|- checkpoint: 60 raw candidates -> hash dedupe 60->8 (53x aafeba3f saturation recollection of 2017-12 article + 7x body-less V2EX), steady-state fingerprint. Fresh-day inbox scan (11-01..11-03, juejin/v2ex/wechat) judged the durable set.
+|- take 1: concepts/longcat.md - LongCat-2.5 section already recorded by the 11-02 trending run (1.6T params / ~48B active sparse MoE, native multimodal for long-horizon agent tasks). This run verified the raw body (Meituan official juejin account, hash b40f612d) and upgraded verification status to official-account-sourced (still no independent confirmation). No new page (concepts/longcat.md), updated date -> 2026-11-03.
+|- skip (saturation-recollection): DeepSeek Harness pair - 09-29 official desktop article (already covered on entities/deepseek.md 09-30 section) and 08-13 launch tutorial re-crawl (covered 09-16 section); Superpowers uninstall pair (hash af80a16b, 6th+ recrawl, covered on concepts/agent-skills.md); Kimi K3 local-deploy satire (K3 local-deploy three-ten-million joke, old-date absurd framing).
+|- skip (preview-only / low durability): Claude Code 6-setting cost measurement (Opus 0.69 -> Haiku 0.02 USD, preview only, no body), Alibaba Cloud AgentCore interview + AI-search new engine + ADA product launches (thin previews, single official post each), tool-surface explainer series additions, promo/showcase posts, tutorial explainers of covered themes.
+|- inbox commit path not exercised: today-dated inbox files are re-collections of previously processed content (same content hashes across dates); no new unique source material to stage to wiki/raw/articles/.
+|- wiki index no structural change (no new page). log.md + longcat.md only; narrow staging.
