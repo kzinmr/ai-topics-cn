@@ -4727,3 +4727,6 @@ Originating conversation: (scheduled cron)
 |- ニュースレターカンデイト wa 394-byte ボイラープレート 変種 de 確認, 新規 digest 未着信 (最近 digest 2026-10-23 コミット済み).
 |- カンデイト 0, take/reference/skip なし, git status では 全件 クリーン (inbox/newsletters / wiki/raw/articles), 滞留 なし. ウィキ編集するポイントなし. log.md only commit.
 |
+|
+|-注記: run_id 20261104T070031Z [SKIP] レコード de, ひらがな 「みちびき」 を「みちびい」 (U+3044 終結) de 出力 した。全て 有効 なひらがな のため CN-denylist と CJK インベントリ はクリーン、発見 は flow read のみ。修正 1 ラウンド (probe: per-char hex + unicodedata.name -> chr()-tuple good 形 で extracted-string replace, assert count==1)。パトン: みちびき = U+307F U+3061 U+3073 U+304D.
+|
