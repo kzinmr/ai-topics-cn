@@ -4721,3 +4721,9 @@ Originating conversation: (scheduled cron)
 |- クローリング候補：なし（source_count>=3の13件はすべて直接登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem/china-open-source-ai/china-local-deployment/chatglm）または間接カバーすみ（AI Agent=china-ai-agent-ecosystem hints, RAG=dify hints, Anthropic=claude系, quantization=vram-optimization hints）。全球エンティティ（Claude/OpenAI/GPT/Gemini/Cursor/Llama/Meta）は意図的未登録を維持。
 |判定：新規ページなし、新規 YAML提案なし（steady state）。log.mdのみコミット。
 |
+|## [2026-11-04] newsletter-triage | shelley-newsletter-triage.timer
+|
+|- run_id 20261104T070031Z, case-(a) ノーオペレーション (30th isomorphic empty-queue no-op, 11-03 に続く). pre-run script is ok:false parse failure but ## Response JSON is intact and salvageable.
+|- ニュースレターカンデイト wa 394-byte ボイラープレート 変種 de 確認, 新規 digest 未着信 (最近 digest 2026-10-23 コミット済み).
+|- カンデイト 0, take/reference/skip なし, git status では 全件 クリーン (inbox/newsletters / wiki/raw/articles), 滞留 なし. ウィキ編集するポイントなし. log.md only commit.
+|
