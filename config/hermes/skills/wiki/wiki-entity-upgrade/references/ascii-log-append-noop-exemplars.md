@@ -57,3 +57,30 @@ the standing zero-mail-day fingerprint.
 Case-(a): pre-run ok:false parse-only, ## Response JSON intact with decisions: []. Collect file 394-byte boilerplate, no new digest since 2026-10-23, -newermt 2026-11-03 and git status both zero strays, trending job fired earlier same day (520b7a1). ASCII-frame log append with chr()-tuple katakana + denylist + good-tuple asserts + flow read.
 
 NEW leak fingerprint - valid-but-wrong HIRAGANA word via wrong tuple: the tsuzuku counter/particle word shipped in a wrong 3-char hiragana form (tsu+gi instead of i+go+to) - all valid hiragana, invisible to the CN denylist, caught by the tail prose read. This extends the 10-25 katakana-shortening family to hiragana: build hiragana counter/particle words via full chr() tuples with a per-char unicodedata.name() dump. Also leaked: a copula splice (extra copula tail appended after a nashi phrase) and the completed/sumi kanji U+6E08 mis-shipped as the rare water-name kanji U+6E1F - all three fixed in one probe+fix round (within the 2-round budget), then the flow read flagged awkward spacing, cleaned by one final full-line patch quote. Grab-of-committed-form failed because the previous (11-02) entry carried no such token - probe grab targets for existence before relying on copy-derivation. Converged: log-only narrow commit 28b11fd, [SKIP] record appended to output_path file. Sibling dirty working tree carried 09-04-era v2ex files unrelated to this run - left alone.
+
+## 2026-11-04 (run_id 20261104T070031Z) - 30th isomorphic empty-queue no-op
+
+Case-(a): pre-run ok:false parse-only, ## Response JSON intact with decisions: [].
+Collect file 394-byte boilerplate, no new digest since 2026-10-23, -newermt
+2026-11-04 and git status both zero strays, trending job fired earlier same day
+(ebd1919 + f54f439 + eb0ae18). ASCII-frame log append via repo ascii-log-append.py
++ chr()-tuple katakana + CN-denylist + CJK inventory + flow read.
+
+NEW leak fingerprint (first occurrence on the INGEST-side log; same family as the
+10-19/10-10 report-side leaks): NEWSLETTER shipped NE-first (U+30CD where NI
+U+30CB intended) in the second bullet. The CN-denylist scan AND the CJK inventory
+both passed CLEAN (NE is a legitimate katakana char) and the tail prose read read
+plausibly; caught only by the per-token good-tuple assert
+region.count(T(0x30CB,0x30E5,0x30FC,0x30B9,0x30EC,0x30BF,0x30FC))==1 run over the
+WRITTEN region. CONVERGENCE RULE: good-tuple presence asserts over the appended
+region are mandatory for EVERY katakana word in ingest-side log appends too, not
+just report-side JSON builds -- immediately post-append, before the flow read.
+Scoped replace caution: the same NE-first word has 3 prior occurrences in
+committed log.md history (good:bad tuple counts 25:3 file-wide) -- never do a
+file-wide replace; anchor via s.rfind(run_id) and repair the tail region only.
+
+Converged in 1 fix round (extracted-string replace, chr()-built bad/good tuples,
+assert count==1 on bad then 0 after): log-only narrow commit 482b61e (append-only
+invariant git diff ^-[^-] == 0, marker grep count 1) + [SKIP] record appended to
+the output_path file (converged first try, zero fix rounds).
+
