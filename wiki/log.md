@@ -4711,3 +4711,13 @@ Originating conversation: (scheduled cron)
 |- skip (preview-only / low durability): Claude Code 6-setting cost measurement (Opus 0.69 -> Haiku 0.02 USD, preview only, no body), Alibaba Cloud AgentCore interview + AI-search new engine + ADA product launches (thin previews, single official post each), tool-surface explainer series additions, promo/showcase posts, tutorial explainers of covered themes.
 |- inbox commit path not exercised: today-dated inbox files are re-collections of previously processed content (same content hashes across dates); no new unique source material to stage to wiki/raw/articles/.
 |- wiki index no structural change (no new page). log.md + longcat.md only; narrow staging.
+
+|## [2026-11-04] trending-topics | shelley-trending-topics.timer
+|
+|期間：11-01〜11-04
+|内訳: v2ex 82件 / juejin 81件 / 36kr 0件 / zhihu 0件 / wechat 47件
+|- 36kr+zhihu ゼロボリューム 10-25/10-26/10-27/10-28/10-29/10-30/10-31/11-01/11-02/11-03に続き25回目（監視アイテム、据え置き）。
+|- 新規ページ推奨：なし。全23件ページが存在: AI Agent=ai-agent, Claude=claude, OpenAI=openai, GPT=gpt, DeepSeek=deepseek, Gemini/Google=gemini-google, Vibe Coding=vibe-coding, MCP=mcp, Cursor=cursor, RAG=rag, Kimi/Moonshot=kimi-moonshot, Anthropic=anthropic, DouBao/ByteDance=doubao-bytedance, Qwen=qwen, Vector DB=vector-db, Llama/Meta=llama-meta, 多模态=multimodal, Function Calling=function-calling, 量化=quantization。
+|- クローリング候補：なし（source_count>=3の13件はすべて直接登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem/china-open-source-ai/china-local-deployment/chatglm）または間接カバーすみ（AI Agent=china-ai-agent-ecosystem hints, RAG=dify hints, Anthropic=claude系, quantization=vram-optimization hints）。全球エンティティ（Claude/OpenAI/GPT/Gemini/Cursor/Llama/Meta）は意図的未登録を維持。
+|判定：新規ページなし、新規 YAML提案なし（steady state）。log.mdのみコミット。
+|
