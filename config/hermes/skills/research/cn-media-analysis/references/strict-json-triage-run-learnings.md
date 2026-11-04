@@ -223,3 +223,21 @@ file works.
 (3) Grabbed verdict line already ENDED with the log.md-only-commit clause; appending a separate logonly put() duplicated the whole clause. When grabbing a whole verdict line, flow-read for what the template re-adds.
 Also: lowercase-hex expect fired once more (U+306e vs U+306E) - the uppercase re.sub normalization now lives INSIDE put(), not as a separate pre-run pass.
 Clean steady state: 19 topics, 23 pages, zero new YAML, 36kr+zhihu zero-volume 25th consecutive (date list extended by appending 11-03 only, never retyped).
+
+## 2026-11-04 evening crawl-triage case-(b) truncation variant (run_id 20261104T210204Z)
+
+Pre-run error was `RuntimeError: Response truncated due to output length limit`
+(NEW cause vs the 503/context-length family) with `## Response` EMPTY => case (b).
+Injected tail checkpoint INTACT (ok=true, 60 candidates) but the job prompt forbids
+wiki editing => report-only manual triage, no repo writes.
+
+Fingerprint unchanged (31st isomorphic): 60 -> 8 hash-dedupe, 53x wechat aafeba3f
+2017-12 saturation recollection + 7x body-less V2EX (all jisan- nai- nai- you,
+score 0, date 1970-01-01, April/July stale dates). Zero durable takes, zero repo
+writes. triage_latest.json still stale from 08-27 (not consulted for decisions).
+Fresh-day juejin 11-04 inbox files checked against git log: trending + newsletter
+no-op already committed earlier today (ebd1919 / 482b61e), no untracked strays.
+
+NEW gotcha: two same-day sibling sessions left dirty wiki/concepts/* pages in the
+working tree. For a report-only case-(b) run, do NOT commit anything - leave sibling
+pages alone entirely (narrow-staging rules only apply when YOU write files).
