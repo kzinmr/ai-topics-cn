@@ -72,3 +72,10 @@ Register additions confirmed this run:
   pre-grep + octal pre-grep all green on the written JSON.
 
 Delivered JSON verbatim from /tmp/newsletter_report_20261104T070031Z.json.
+## 2026-11-05 run_id 20261105T070012Z (empty-day no-op, DELIVERED CLEAN after a rare-kanji expect-side fix cascade)
+
+Facts: script JSON ok:true, candidate_count 0; collect file 394-byte boilerplate (wc -c); last inbox/newsletters/ entry 2026-10-23 -- no new digest. Case-a no-op: contracted JSON, decisions [], no repo writes, no commit.
+
+New leak class (expect-side, val-clean every round): hand-recalled rare-kanji expect U+8987 for shinki. The assert fired every round (got U+8987 vs hand-typed expect), and THREE successive fix rounds re-typed U+8987 from visual memory (patch tool and /tmp replace both) -- expect side stayed identically wrong while the val was always perfect (11e(i) family, rare-kanji mutation).
+RULES: (a) a recurring lexicon word that is rare-kanji (shinki/REGUI class) must have its expect cp()-derived from the val expression (_v=...; _e=" ".join("U+%04X"%ord(c) for c in _v); put(k,_v,_e)) -- the expect literal itself is a recall event; (b) when the SAME assert fires identically 2+ times, stop re-typing and live-probe a committed sample: git show HEAD:wiki/log.md blob, regex U+65B0 + one CJK char -> U+898F x329 was the answer in one probe; (c) unicodedata.name() on the suspect cp returns CJK-UNIFIED-IDEOGRAPH-XXXX (no semantic hint) -- it cannot adjudicate rare kanji; only a committed-text sample can; (d) ascii-decl guard fired 3 more times on raw CJK inside FIX-script comments (11m(5) class persists); (e) a regex strip-patch on the build script also ate the adjacent "summary =" line -- after any strip, re-grep dependent lines before rerunning.
+Final summary_ja verified clean: 4 sentences, deny list green, surrogate/octal pre-grep green, flow readback green.
