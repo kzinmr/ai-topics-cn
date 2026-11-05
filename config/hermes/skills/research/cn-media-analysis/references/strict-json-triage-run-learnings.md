@@ -224,7 +224,16 @@ file works.
 Also: lowercase-hex expect fired once more (U+306e vs U+306E) - the uppercase re.sub normalization now lives INSIDE put(), not as a separate pre-run pass.
 Clean steady state: 19 topics, 23 pages, zero new YAML, 36kr+zhihu zero-volume 25th consecutive (date list extended by appending 11-03 only, never retyped).
 
-## 2026-11-04 evening crawl-triage case-(b) truncation variant (run_id 20261104T210204Z)
+## Case-(b) cause register (all causes = same handling: ## Response empty -> manual hash-dedupe triage)
+
+1. HTTP 502/503 "Local LLM server is busy" (many runs, e.g. 2026-09-15 ChinAI #374).
+2. RuntimeError: Context length exceeded (~32-46k tokens). Cannot compress further. (daily norm during the aafeba3f flood, 09-04+).
+3. RuntimeError: Response truncated due to output length limit (2026-11-04 evening run_id 20261104T210204Z, committed 8047696 - 31st isomorphic 60->8 fingerprint, zero takes, zero repo writes).
+
+NEW causes only need a one-line entry here; do not re-investigate a new error string as a new failure class. The real cause always sits under "## Error" at the output-file tail, AFTER the injected checkpoint JSON. Report-only case-(b) runs commit NOTHING wiki-side even when sibling sessions left dirty wiki/* pages in the working tree - narrow-staging rules apply only when YOU write files (2026-11-04).
+
+## 2026-11-04 evening crawl-triage case-(b) truncation variant (run_id 20261104T210204Z) — SKILL.md pointer note
+SKILL.md is at the 100k hard cap — this run's NEW learning (cause #3 truncation, see register below) must live in this references file only; do not attempt SKILL.md patches on cn-media-analysis until content is relocated out.
 
 Pre-run error was `RuntimeError: Response truncated due to output length limit`
 (NEW cause vs the 503/context-length family) with `## Response` EMPTY => case (b).
@@ -241,3 +250,33 @@ no-op already committed earlier today (ebd1919 / 482b61e), no untracked strays.
 NEW gotcha: two same-day sibling sessions left dirty wiki/concepts/* pages in the
 working tree. For a report-only case-(b) run, do NOT commit anything - leave sibling
 pages alone entirely (narrow-staging rules only apply when YOU write files).
+
+
+## 2026-11-05 run 20261105T090212Z (isomorphic skip-only, clean; 29th consecutive same-fingerprint run)
+
+Run shape: 60 -> 8 unique via (source, path-hash) dedupe (53x aafeba3f 2017-12
+saturation recollection + 7x body-less V2EX, 2 sampled files confirmed (zan-wu-
+nei-rong, score 0, date 1970-01-01)). Zero takes, no repo writes (strict-JSON
+contract). Same-day morning commits (newsletter no-op 68e785f, trending 5191f4e)
+did not overlap. semantic-article-grouping missing-skill banner expected per
+11-04 register.
+
+New leak-birth site:
+1. E()-copy-derive does NOT protect the U() CALL SITE. Replaced hand-typed
+   expect literals with expect=E(val) (zero expect-side recall events this run),
+   but s1 still shipped the CN-lookalike pair (U+5F8C U+7E7A) for the intended
+   katakana word because the CODEPOINTS themselves were recalled at the U()
+   literals. E() only mirrors the wrong val. Caught by the flow readback; fixed
+   in one round from the canonical tuple in the 10-21 SKILL.md bullet. RULE: the
+   canonical tuple for each recurring lexicon word must be COPIED from a register
+   / committed sample into the U() literals; E() removes expect-side recall but
+   converts val-side recall into a silent green assert.
+2. Archive-vs-inbox filename equality: the aafeba3f archive page lives under
+   archive/integrated with a DIFFERENT date prefix than the inbox candidate
+   (2026-04-26 vs 2026-05-03), so the 11m endswith() equality assert must compare
+   only the slug+hash tail (split('-',3)[-1]), not the whole basename.
+
+Protocol wins to keep: run-id-suffixed /tmp script names (no sibling collision),
+astral-emoji whitelist in the range audit (U+1F60E echoed verbatim, safe), filter-by-
+path-hash for representative picks, run_id re-read at report time (unchanged
+20261105T090212Z).
