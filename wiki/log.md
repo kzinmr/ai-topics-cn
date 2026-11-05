@@ -4730,3 +4730,12 @@ Originating conversation: (scheduled cron)
 |
 |-注記: run_id 20261104T070031Z [SKIP] レコード de, ひらがな 「みちびき」 を「みちびい」 (U+3044 終結) de 出力 した。全て 有効 なひらがな のため CN-denylist と CJK インベントリ はクリーン、発見 は flow read のみ。修正 1 ラウンド (probe: per-char hex + unicodedata.name -> chr()-tuple good 形 で extracted-string replace, assert count==1)。パトン: みちびき = U+307F U+3061 U+3073 U+304D.
 |
+|## [2026-11-05] trending-topics | shelley-trending-topics.timer
+|
+|期間：11-02〜11-05
+|内訳: v2ex 85件 / juejin 81件 / 36kr 0件 / zhihu 0件 / wechat 48件
+|- 36kr+zhihu ゼロボリューム 10-25/10-26/10-27/10-28/10-29/10-30/10-31/11-01/11-02/11-03/11-04に続き26回目（監視アイテム、据え置き）。
+|- 新規ページ推奨：なし。全22件ページが存在: AI Agent=ai-agent, Claude=claude, OpenAI=openai, GPT=gpt, DeepSeek=deepseek, Gemini/Google=gemini-google, Vibe Coding=vibe-coding, MCP=mcp, Cursor=cursor, RAG=rag, Kimi/Moonshot=kimi-moonshot, Anthropic=anthropic, DouBao/ByteDance=doubao-bytedance, Qwen=qwen, Vector DB=vector-db, Llama/Meta=llama-meta, 多模态=multimodal, Function Calling=function-calling, 量化=quantization。
+|- クローリング候補：なし（source_count>=3の13件はすべて直接登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem/china-open-source-ai/china-local-deployment/chatglm）または間接カバーすみ（AI Agent=china-ai-agent-ecosystem hints, RAG=dify hints, Anthropic=claude系, quantization=vram-optimization hints）。全球エンティティ（Claude/OpenAI/GPT/Gemini/Cursor/Llama/Meta）は意図的未登録を維持。
+|判定：新規ページなし、新規 YAML提案なし（steady state）。log.mdのみコミット。
+|
