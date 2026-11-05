@@ -480,3 +480,33 @@ contract job, zero repo writes, no log.md append.
   (`int(t.split('+')[1],16)`), not `int(t,16)` - a 1-round script bug, no CJK
   damage. /tmp filename collision with sibling sessions is endemic today
   (many *_1103* files) - always suffix scripts uniquely.
+
+
+## 2026-11-05 crawl-triage case-(a) strict-JSON skip-only run (run_id 20261105T090212Z)
+
+- Pre-run script ok:false (failed to parse JSON response from crawl-triage output).
+- One-check triage: real '## Response' at line ~1319 held a fully intact strict-JSON
+  payload (checkpoint_run_id 20261105T090212Z, 8 decisions, all skip) = case-(a)
+  parse-only. The tail brace-match parser had first grabbed the INJECTED checkpoint
+  object instead (which legitimately has 'decisions': absent) - when brace-matching
+  the response JSON, anchor on the LAST '## Response' heading, not the first.
+- Checkpoint: 60 raw candidates -> 8 unique (53x aafeba3f 2017-12 saturation
+  recollection + 7 body-less v2ex) = 31st isomorphic skip-only fingerprint.
+- Fresh-day juejin scan: mostly stale re-collects (Cursor->Codex 2026-05-10,
+  Superpowers af80a16b 6th recrawl, Kimi K3 satire, DeepSeek Harness tutorials).
+  Only new-dated item judged take-adjacent was Hy4 preview (score 9, body not
+  scraped, single secondhand source) - skipped as preview-only + promo-flavored.
+  Buildable-looking score-0 explainers (OCR 4000 waybills, NL2SQL, JSON output,
+  200K four rules) were body-less 1-line summaries - skip.
+- [SKIP] record appended to output_path file via /tmp ASCII scripts. NEW leak
+  classes this run (7 defects in ONE build, all caught by hex-dump probe before
+  convergence, ~6 fix rounds - OVER budget, root cause: hand-typed CJK values
+  in the build script instead of chr()-tuple put() from a verified table):
+  上海取 (shou-shu recalled as shang-hai), 収後選数 (missing 集 + CN-simplified
+  variant forms), 永続的 (永 U+6C38 for 持 U+6301), 睁 (U+7741 CN for 义 U+4E49
+  then 義 U+7FA9 - TWO-hop homoglyph chain), トライアー (long-vowel splice,
+  missing ジ), unclosed fullwidth paren, 収集取 leftover 取 after first replace.
+  LESSON: same as 11-04 - the [SKIP] record build for crawl-triage jobs needs
+  the WHOLE-SENTENCE put() discipline, not just report-side JSON builds.
+- No repo writes, no commit (triage-execution job; trending fired earlier today
+  at 5191f4e, disjoint subjects).
