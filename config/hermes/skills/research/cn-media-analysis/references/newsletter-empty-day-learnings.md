@@ -79,3 +79,29 @@ Facts: script JSON ok:true, candidate_count 0; collect file 394-byte boilerplate
 New leak class (expect-side, val-clean every round): hand-recalled rare-kanji expect U+8987 for shinki. The assert fired every round (got U+8987 vs hand-typed expect), and THREE successive fix rounds re-typed U+8987 from visual memory (patch tool and /tmp replace both) -- expect side stayed identically wrong while the val was always perfect (11e(i) family, rare-kanji mutation).
 RULES: (a) a recurring lexicon word that is rare-kanji (shinki/REGUI class) must have its expect cp()-derived from the val expression (_v=...; _e=" ".join("U+%04X"%ord(c) for c in _v); put(k,_v,_e)) -- the expect literal itself is a recall event; (b) when the SAME assert fires identically 2+ times, stop re-typing and live-probe a committed sample: git show HEAD:wiki/log.md blob, regex U+65B0 + one CJK char -> U+898F x329 was the answer in one probe; (c) unicodedata.name() on the suspect cp returns CJK-UNIFIED-IDEOGRAPH-XXXX (no semantic hint) -- it cannot adjudicate rare kanji; only a committed-text sample can; (d) ascii-decl guard fired 3 more times on raw CJK inside FIX-script comments (11m(5) class persists); (e) a regex strip-patch on the build script also ate the adjacent "summary =" line -- after any strip, re-grep dependent lines before rerunning.
 Final summary_ja verified clean: 4 sentences, deny list green, surrogate/octal pre-grep green, flow readback green.
+
+
+## 2026-11-09 (run_id 20261109T070021Z, clean no-op, 3 fix rounds)
+
+Empty-mail day confirmed: collect file 394-byte boilerplate, inbox/newsletters
+latest = 2026-11-06, candidates [] with _checkpoint.ok true. Contracted JSON
+(decisions [], processed_count 0) emitted, no repo writes.
+
+NEW LEAK CLASS -- corrupted COMPOUND lexicon key poisons every prefix site:
+put("nl", <7-char news-letter>) shipped missing long vowel (U+30FC after U+30EC),
+put("triage", <5-char tri-age>) shipped missing U+30A2. Every composition
+prefixing the key (news-letter+triage, shin-ki+news-letter, triage+taishou)
+inherited the corruption -- 3 shipped defects from 2 bad atoms. put() asserts
+blind because expect was val (copy-of-copy). Fix: drop word-level keys for
+multi-mora compounds; build WHOLE SENTENCES from single-mora U() chains
+(11-04 whole-sentence rule extended: also applies to KATAKANA COMPOUNDS, not
+just rare-kanji lexicon words). FLOWREAD caught all three; codepoint dump of
+the WRITTEN json distinguished them from render glitches (the 10-21 page/peiji
+lesson in reverse -- dump said REAL).
+
+RECURRING: ascii coding decl died on CJK in COMMENT lines (2nd confirmation of
+11-04 class) -- strip non-ASCII from comments too, scan whole file.
+
+Deny-list additions for this report type: the short katakana forms
+(tri-age-no-a, boi-la-no-longvowel-tail-splice patterns) -- codepoints in the
+v5 script; assert ABSENT over the composed summary.
