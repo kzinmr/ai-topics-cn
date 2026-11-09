@@ -510,3 +510,29 @@ contract job, zero repo writes, no log.md append.
   the WHOLE-SENTENCE put() discipline, not just report-side JSON builds.
 - No repo writes, no commit (triage-execution job; trending fired earlier today
   at 5191f4e, disjoint subjects).
+
+## 2026-11-09 trending-log build run (steady state, clean commit 29e8573)
+
+- Builder shape: grab() live tokens from the immediately-preceding [YYYY-MM-DD]
+  trending entry + put() lexicon with uppercase copy-derived expects + pre-write
+  deny-assert + flowing-prose readback. 2 fix rounds, all on the EXPECT/composition
+  side; zero post-commit repair.
+- NEW leak-birth site (composition side, tuple-blind): dropped possessive no at the
+  sc3-counter seam. Hand-composed 'source_count>=3' + '17' + counter shipped
+  '>=317' because the committed register is 'source_count>=3 no 17 counter'
+  (U+306E between them). Rule: every numeral that follows a grabbed ASCII token must
+  be probed in committed context (re.search on the anchor) before hand-typing the
+  key -- the particle at the seam is the leak.
+- Confirm prior-run register facts by direct str.count, not by eyeballing the tail:
+  'cover sumi' (hiragana) vs 'cover SUMI' (kanji) both exist in log.md (7 vs 54);
+  the immediately-preceding entry ships the HIRAGANA form while the global majority
+  is kanji. Copy-derive per-region, not globally.
+- Committed-register variants to keep in the table: 'matawa indirect cover(' with
+  kanji SUMI is NOT always the shape -- check the neighboring entry's own form;
+  'zenbu N-counter page' vs 'zen N-counter page' both appear; the ga-particle in
+  'page ga sonzai' is grab-verified, do not recall.
+- Deny-list pitfall (repeat of 10-23 rule): U+56FE is NOT globally bad -- it is
+  inside the committed word 'gijiteki-mi-touroku'. Scope BAD checks to the bare
+  CN-lookalike forms that never legitimately occur in the entry region.
+- 30th consecutive 36kr+zhihu zero-volume; 18 trending topics, all paged, zero new
+  YAML (steady state). Function Calling dropped out of trending vs 11-08.
