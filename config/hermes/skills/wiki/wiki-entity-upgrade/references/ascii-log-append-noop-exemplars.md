@@ -88,3 +88,34 @@ SECOND leak this run (the residual vector is now HIRAGANA, not katakana): the [S
 
 NOTE on the fix-round itself: while writing the skill-patch bullet I leaked FIVE more valid-but-wrong tokens in that SAME bullet (a loanword shortening for "round", a wrong katakana for "pattern", a katakana-mixed rendering of the hiragana word, plus a duplicated append from two scripts racing the same file). Recovery path that WORKED: git checkout -- the file (only the uncommitted fix-round bullet was lost, not the prior committed entry), then re-append via an ASCII-frame script whose hiragana tokens are grabbed from the committed log.md (grab() helper) rather than typed. NEW TOOL: scripts/skip_record_builder.py -- copy-derives NEWSLETTER/CANDIDATE/BOILERPLATE/NOOP/RECORD/HIRAGANA/MICHIBIKI from the committed log.md tail via single-backslash grab() patterns, appends the [SKIP] record, runs per-token good-tuple + CN-denylist asserts over the written region, prints the tail repr for the flow read. RULE: every katakana AND hiragana token in a build script must be (a) copied from a committed ancestor via grab() or (b) chr()-tuple built with a unicodedata.name() printout, NEVER typed directly, including inside comment/explanation text.
 
+
+## 2026-11-10 (run_id 20261110T070035Z) - 31st isomorphic empty-queue no-op
+
+Case-(a): pre-run ok:false parse-only, output-file tail `## Response` JSON intact
+with decisions: [], candidate_count=0, checkpoint ok=true. 394-byte collect
+boilerplate; Maildir empty; trending job already committed (2eac622).
+
+NEW variant this run: prior-wave untracked strays (second occurrence of the
+10-07/10-14 counter-example) -- Tech Taiwan 2026-11-06 digest 70feb9df (Mark Liu
+TSMC US capacity) + 6 raw (multi-URL Substack dupes, fetched_at 2026-11-07) sat
+untracked because the 11-05 collect commit (33d3c1e) covered only the 11-05
+MediaTek EMIB-T digest. Catch-up `inbox: newsletter collect 2026-11-10` (858faed)
++ no-op log entry, two-commit discipline.
+
+NEW build-script corruption class: the ascii-log-append.py lines JSON was written
+with DOUBLE-escaped \\uXXXX, so json.load emitted LITERAL backslash-u text into
+log.md -- all 11 good-tuple asserts fired count=0 simultaneously (the corruption
+signature: uniform count=0 across every token, vs typos which fail one or two),
+while the CN-denylist/inventory passed VACUOUSLY (no CJK present at all).
+Recovery in 1 round: /tmp decode script scoped to find(marker)..find("\n",
+find(next-bullet-anchor)), pre-check on escape-form tokens, re.sub(r"\\u([0-9a-fA-F]{4})")
+decode over the region only, re-assert decoded tuples, no residue. THEN the usual
+valid-but-wrong-word class appeared in the decoded text (3 tokens: wrong kanji
+for the operator word, truncated verb, wrong two-kanji compound for "this run")
+-- all caught by tail prose read, fixed in 1 chr()-tuple extracted-string round.
+Total 2 fix rounds on log.md, within budget. Log-only commit 2983932, append-only
+invariant 0 deletions, [SKIP] record appended to the cron output file (ASCII-only,
+converged first try). RULE: after ANY ascii-log-append.py run, the good-tuple
+assert is the FIRST gate -- uniform count=0 across all tokens means the lines
+JSON was double-escaped; write single-backslash \\uXXXX escapes (valid JSON) or
+copy-derived literals, never \\\\u.
