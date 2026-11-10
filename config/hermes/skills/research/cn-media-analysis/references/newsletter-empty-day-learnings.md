@@ -105,3 +105,27 @@ RECURRING: ascii coding decl died on CJK in COMMENT lines (2nd confirmation of
 Deny-list additions for this report type: the short katakana forms
 (tri-age-no-a, boi-la-no-longvowel-tail-splice patterns) -- codepoints in the
 v5 script; assert ABSENT over the composed summary.
+
+## 2026-11-10 run_id 20261110T070035Z (empty-day no-op, clean delivery, 1 pre-commit fix round)
+
+Facts: script JSON ok:true, candidate_count 0; collect file 394-byte boilerplate
+(wc -c); latest inbox/newsletters/ entry 2026-11-06 (TSMC) -- no new digest today.
+Case-a no-op: contracted JSON emitted from /tmp file (decisions [], processed_count 0),
+no triage_latest.json read, no repo writes, no commit.
+
+NEW LEAK SITE -- rare/lookalike kanji inside a hand-composed WHOLE SENTENCE:
+ikken shipped as U+4E00 U+8A72 (gai, a valid kanji) instead of U+4E00 U+4EF6 (ken).
+put() asserts blind because expect was cp()-derived from the same faulty val
+(phantom-lexicon class, 11-09 morning register). Caught ONLY by the mandated flow
+readback before delivery; fixed with a single-token patch on the /tmp build script
+(U+4EF6 landed), zero log/repo fix rounds. RULE: for counter words (iken, 1-ken)
+inside whole-sentence put() entries, live-probe a committed sample of the counter
+form before shipping -- the whole-sentence rule removes fragment seams but not the
+kanji-recall event itself.
+
+Everything else green on first build: s1..s4 whole sentences from single-mora U()
+chains, cp()-derived expects, uppercase normalization inside put(), deny asserts
+(toraiatoru / no-o-pa / dejisuto / boira / nono / copula-splice / to-to-shite /
+nakattadeshita / toriaru) + CN shuu U+6536 absent + good tuples present
+(news-letter 7-char, shuushuu U+53CE U+96C6, boiler-plate 8-char) + surrogate and
+octal pre-greps. ascii-decl guard did NOT fire this run (comments pure ASCII).
