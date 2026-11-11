@@ -4796,3 +4796,12 @@ Originating conversation: (scheduled cron)
 |　catch-up collect：`git status` で 2026-11-06 着の Tech Taiwan「Is 30% of TSMC's Advanced Chip Capacity in the U.S. Enough? Former Chairman Mark Liu Weighs In」ダイジェスト 70feb9df + raw 6件（同一記事の multi-URL Substack 重複、fetched_at 2026-11-07）が未追跡。直近の collect commit（33d3c1e）は 11-05 号 MediaTek EMIB-T（e0c71776）のみで 11-06 号を欠いている。`inbox: newsletter collect 2026-11-10` としてキャッチアップコミット。取りこみ判定は次回の運営者 triage に委ねる（今回のランではいかなる wiki ページも未編集）。
 |
 |　その他：Maildir は空、trending-topics 今日分（2eac622）はすでにコミット済み。[SKIP] レコードを cron output ファイルに追記。
+|## [2026-11-11] trending-topics | shelley-trending-topics.timer
+|
+|期間：11-08〜11-11
+|内訳: v2ex 86件 / juejin 81件 / 36kr 0件 / zhihu 0件 / wechat 46件。
+|- ゼロボリューム 10-25/10-26/10-27/10-28/10-29/10-30/10-31/11-01/11-02/11-03/11-04/11-05/11-06/11-07/11-08/11-09/11-10に続き32回目（監視アイテム、据え置き）。
+|- 新規ページ推奨：なし。全23件ページが存在：AI Agent=ai-agent, Claude=claude, OpenAI=openai, GPT=gpt, DeepSeek=deepseek, Gemini/Google=gemini-google, Vibe Coding=vibe-coding, MCP=mcp, Cursor=cursor, RAG=rag, Kimi/Moonshot=kimi-moonshot, Anthropic=anthropic, DouBao/ByteDance=doubao-bytedance, Qwen=qwen, 混元/Tencent=tencent-hunyuan, 多模态=multimodal, AI安全=ai-safety-subconscious, RLHF/対齐=rlhf-alignment, Function Calling=function-calling、Fine-tuning=fine-tuning、Llama/Meta=llama-meta。
+|- クローリング候補：なし（source_count>=3の17件はすべて直接ページ登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem/china-open-source-ai/china-local-deployment/chatglm）または間接カバー済み（AI Agent=china-ai-agent-ecosystem hints, RAG=dify hints, Anthropic=claude系，量化=vram-optimization hints, AI安全/対齐=各コンセプトページ）。全球エンティティ（Claude/OpenAI/GPT/Gemini/Cursor）は意図的未登録を維持）
+|判定：新規ページなし、新規 YAML提案なし（steady state）。log.mdのみコミット。
+|
