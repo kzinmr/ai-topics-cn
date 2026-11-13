@@ -4826,3 +4826,10 @@ Originating conversation: (scheduled cron)
 |- クローリング候補：なし（source_count>=3の19件はすべて直接ページ登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem/china-open-source-ai/china-local-deployment/chatglm）または間接カバー済み（AI Agent=china-ai-agent-ecosystem hints, RAG=dify hints, Anthropic=claude系，量化=vram-optimization hints, AI安全/対齐=各コンセプトページ），全球エンティティ（Claude/OpenAI/GPT/Gemini/Cursor）は意図的未登録を維持）
 判定：新規ページなし、新規 YAML提案なし（steady state）。log.mdのみコミット。
 |
+|## [2026-11-13] newsletter-triage | no-op (empty queue)
+|
+|- pre-run script is ok:false (parse error), but ## Response holds the valid empty-queue JSON, so case-(a) parse-only recovery. チェックポイント is normal (ok:true), run_id 20261113T070035Z.
+|- collect file newsletter_collect_20261113T070035Z.json is the 394-byte ボイラープレート variant, カンデデート 0, 新規 ダイジェスト なし (latest digest = 2026-11-10 issue eba16501, committed). Zero-mail day, ノーオペレーション.
+|- catch-up collect: git status shows the 2026-11-11 wave digest eba16501 (Jensen Huang suspected-spy) + 6 raw (same-article multi-URL Substack duplicates) still untracked. The 11-11/11-12 runs committed trending-topics log only and did not run the コレクト commit. Commit as `inbox: newsletter collect 2026-11-13` and leave 取り込み decisions to the next 運営者 トリアージ (this run edits zero wiki pages).
+|- トリアージ result: decisions [], take 0 / reference 0 / skip 0. 一時 ウィキページ 未取得 全て非.
+|
