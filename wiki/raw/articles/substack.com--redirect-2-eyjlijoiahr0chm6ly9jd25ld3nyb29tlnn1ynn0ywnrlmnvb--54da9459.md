@@ -1,0 +1,17 @@
+---
+title: "Can Nvidia and Its Taiwanese Suppliers Keep Soaring Without Jensen Huang? CPO Holds the Key"
+url: "https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9jd25ld3Nyb29tLnN1YnN0YWNrLmNvbS9wL2Nhbi1udmlkaWEtYW5kLWl0cy10YWl3YW5lc2Utc3VwcGxpZXJzLWtlZXAtc29hcmluZy13aXRob3V0LWplbnNlbi1odWFuZy1jcG8taG9sZHMtdGhlLWtleT91dG1fY2FtcGFpZ249ZW1haWwtaGFsZi1wb3N0JnI9MmZseDYmdG9rZW49ZXlKMWMyVnlYMmxrSWpvME1EZzNORGd5TENKd2IzTjBYMmxrSWpveU1qUTNNalV3TURFc0ltbGhkQ0k2TVRjNU5EVTJOVFl4T0N3aVpYaHdJam94TnprM01UVTNOakU0TENKcGMzTWlPaUp3ZFdJdE16UXlNelF3T0NJc0luTjFZaUk2SW5CdmMzUXRjbVZoWTNScGIyNGlmUS5zZ2x4WFV6cDJYeGJhYVFpZW1taEY4UTJvME1nM2ItZFBJTjM2LW44NUNVIiwicCI6MjI0NzI1MDAxLCJzIjozNDIzNDA4LCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3OTQ1NjU2MTgsImV4cCI6MjExMDE0MTYxOCwiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0.kJSoDNDKNLgJTMk0-eA43x7-cN7uyn7n5IRLFimK_Oc?"
+fetched_at: 2026-11-14T07:00:42.098196+00:00
+source_date: 2026-11-13
+tags: [newsletter, auto-ingested]
+source_lang: zh-CN
+---
+
+# Can Nvidia and Its Taiwanese Suppliers Keep Soaring Without Jensen Huang? CPO Holds the Key
+
+Source: https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9jd25ld3Nyb29tLnN1YnN0YWNrLmNvbS9wL2Nhbi1udmlkaWEtYW5kLWl0cy10YWl3YW5lc2Utc3VwcGxpZXJzLWtlZXAtc29hcmluZy13aXRob3V0LWplbnNlbi1odWFuZy1jcG8taG9sZHMtdGhlLWtleT91dG1fY2FtcGFpZ249ZW1haWwtaGFsZi1wb3N0JnI9MmZseDYmdG9rZW49ZXlKMWMyVnlYMmxrSWpvME1EZzNORGd5TENKd2IzTjBYMmxrSWpveU1qUTNNalV3TURFc0ltbGhkQ0k2TVRjNU5EVTJOVFl4T0N3aVpYaHdJam94TnprM01UVTNOakU0TENKcGMzTWlPaUp3ZFdJdE16UXlNelF3T0NJc0luTjFZaUk2SW5CdmMzUXRjbVZoWTNScGIyNGlmUS5zZ2x4WFV6cDJYeGJhYVFpZW1taEY4UTJvME1nM2ItZFBJTjM2LW44NUNVIiwicCI6MjI0NzI1MDAxLCJzIjozNDIzNDA4LCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3OTQ1NjU2MTgsImV4cCI6MjExMDE0MTYxOCwiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0.kJSoDNDKNLgJTMk0-eA43x7-cN7uyn7n5IRLFimK_Oc?
+
+Hello everyone,
+Jensen Huang has indeed resigned. As expected, Nvidia’s CFO has stepped in as interim CEO.
+He did not “fight to the bitter end,” as some had anticipated, nor did he attempt to retain control from behind the scenes. Instead, he readily gave up his board seat as well, walking away from the company he co-founded.
+“Nvidia is Jensen Huang, and Jensen Huang is Nvidia. It’s hard to imagine Nvidia without Jensen Huang,” a former Nvidia executive once told me.
