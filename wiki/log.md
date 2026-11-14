@@ -4833,3 +4833,15 @@ Originating conversation: (scheduled cron)
 |- catch-up collect: git status shows the 2026-11-11 wave digest eba16501 (Jensen Huang suspected-spy) + 6 raw (same-article multi-URL Substack duplicates) still untracked. The 11-11/11-12 runs committed trending-topics log only and did not run the コレクト commit. Commit as `inbox: newsletter collect 2026-11-13` and leave 取り込み decisions to the next 運営者 トリアージ (this run edits zero wiki pages).
 |- トリアージ result: decisions [], take 0 / reference 0 / skip 0. 一時 ウィキページ 未取得 全て非.
 |
+
+|
+
+|## [2026-11-14] trending-topics | shelley-trending-topics.timer
+|
+|期間：11-11〜11-14
+|内訳: v2ex 86件 / juejin 80件 / 36kr 0件 / zhihu 0件 / wechat 47件。
+|- ゼロボリューム 10-25/10-26/10-27/10-28/10-29/10-30/10-31/11-01/11-02/11-03/11-04/11-05/11-06/11-07/11-08/11-09/11-10/11-11/11-12/11-13に続き35目（監視アイテム、据え置き）。
+|- 新規ページ推奨：なし。全25件ページが存在：AI Agent=ai-agent, Claude=claude, OpenAI=openai, GPT=gpt, DeepSeek=deepseek, Gemini/Google=gemini-google, Vibe Coding=vibe-coding, MCP=mcp, Cursor=cursor, RAG=rag, Kimi/Moonshot=kimi-moonshot, Anthropic=anthropic, DouBao/ByteDance=doubao-bytedance, Qwen=qwen, 混元/Tencent=tencent-hunyuan, 多模态=multimodal, AI安全=ai-safety-subconscious, RLHF/対齐=rlhf-alignment, Function Calling=function-calling, Fine-tuning=fine-tuning, Llama/Meta=llama-meta, Vector DB=vector-db。
+|クローリング候補：なし（source_count>=3の19件はすべて直接ページ登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem/china-open-source-ai/china-local-deployment/chatglm）または間接カバー済み（AI Agent=china-ai-agent-ecosystem hints, RAG=dify hints, Anthropic=claude系，量化=vram-optimization hints, AI安全/対齐=各コンセプトページ），全球エンティティ（Claude/OpenAI/GPT/Gemini/Cursor）は意図的未登録を維持）
+判定：新規ページなし、新規 YAML提案なし（steady state）。log.mdのみコミット。
+|
