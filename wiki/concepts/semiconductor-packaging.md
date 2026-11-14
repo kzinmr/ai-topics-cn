@@ -124,6 +124,10 @@ Tech Taiwan（陈良玲/胡說科技）Semicon Series 3「Inside TSMC's "Baipu P
 - **中核**: そこに建てる2つの設備のうち、目玉は**商用品を生産しない CoWoS 生産ライン**。装置サプライヤーを入居させて共同開発・製品検証を行うもので、「台湾で前例のない R&D モデル」と位置づけられる。動機の解説は Semicon Taiwan 2026 の「议程外会合」に始まるとされるが、その本編は未受領。
 - **含意（当ウィキ側の評価）**: CoWoS 供給链の検証能力を TSMC が垂直統合から「サプライヤー同址共同検証」へ開く転換点の可能性。後編受領後に本節を改訂すること。
 
+## 連係: Tech Taiwan Jensen Huang 辞任報道と CPO（2026-11-14）
+
+Tech Taiwan 2026-11-13 号「Can Nvidia and Its Taiwanese Suppliers Keep Soaring Without Jensen Huang? CPO Holds the Key」は、CPO（Co-Packaged Optics）を含む台湾サプライチェーンの上昇持続性を Jensen Huang 辞任報道（単一ソース・未検証）と結びつけて論じた。詳細と検証状況は [[nvidia]] を参照。当ページのパッケージング競争論点（CoWoS/CPO）の需要側前提として関連。
+
 ## 関連
 
 - [[mediatek]] — Google TPU受託で台頭。T-Glass供給囲い込み戦略
