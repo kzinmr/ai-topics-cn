@@ -1,6 +1,43 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-09-22
+最終更新: 2026-10-05
+
+### 本日更新（2026-10-05 Crawl Triage: Claude BANアーク続報 — 安全運用5X Max封鎖 / Google新規登録风控 / Google 新規登録風控）
+- `entities/anthropic.md` — **更新**: 「続報（2026-10-05）」節追加。V2EX t/1246477（xueshi、score 28）の安全運用自認5X Max账号深夜封鎖＋復号後週期初期リセット主張、t/1246510（ofDamon）の Google 新規登録风控による Claude Pro 登録不可を記録。いずれも単一ソース・未検証
+- `concepts/agent-skills.md` — 参照のみ: JavaGuide「再见 Superpowers」4度目の再クロール（hash 13a29a98 内容同一）を saturation-recollection として続報節に記録
+
+### 本日更新（2026-10-02 Crawl Triage run 2: qwen Token Plan クレジット重置周期不満）
+- `entities/qwen.md` — **更新**: 「2026年10月2日の動向」節追加。掘金「千问偷偷进改 token plan 重置周期」（score 3、9/30、プレビューのみ）の 9/28 突然のクレジット周期変更主張を単一ソース・未検証で記録。OpenAI 9/29 「紙代き」アークと同様のサブ条件変更敏感の国内例として
+
+### 本日更新（2026-10-01 Crawl Triage run 2: OpenAI IPO前ブリッジ融資観測 / Gemini 4 Argon 裏づけスレッド）
+- `entities/openai.md` — **更新**: 「続報（2026-10-01）」節追加。掘金「半年翻倍！OpenAI再融300亿，估值冲到1.4万亿」（score 0・プレビューのみ）による $30B ブリッジ融資・投前評価 1.4兆ドル（3月比 +60%）・ARR $40B 主張を単一ソース・未検証で記録。09-30 DevDay アークの財力側裏づけ信号として
+- `entities/gemini-google.md` — **更新**: 朝の 1189dec（Gemini 4 Argon take）に同日裏づけスレッド V2EX t/1245940（score 22・本文受領、DCメモリ最適化で数百TB解放・量子研究者が早期利用者）を参照のみ bullet として追記。検証ステータスは unchanged
+
+### 本日更新（2026-09-28 Crawl Triage: Kling 4.0 予告観測 / Claude 20x BAN回復事例 / Jev クローン弧のコミット）
+- `concepts/multimodal.md` — **更新**: 「Kling」節に「続報（2026-09-27): Kling 4.0 予告観測」を追加。Kling AI 公式 X 予告からの 4.0 憶測弧（t/1245090）を単一ソース・未検証で記録。約1年の音沙汰-less 期の末の予告として、期待焦点（角色一致性・局部修改）を併記
+- `entities/anthropic.md` — **更新**: 「続報（2026-09-27): 20x アカウントBAN→突如回復の個別事例」節追加。V2EX t/1244968（score 23）の秒封→申诉拒否→翌週突然回復の経緯を単一ソース・未検証で記録、KYC 凍結嵐以来の BAN→回復非対称性の観測として
+- `concepts/jev-decision-engine.md` — **コミット**: 前セッション（09-27）手動トリアージで作成された 09-27 追加節（AI 音声入力の前段ゲート応用 / KevANE オープンソース・クローン）を今回 git に追加。見出しに日本語混じり中国語「应用」が2箇所残存していたため修正済み
+- `concepts/multimodal.md` — 併せて frontmatter `updated` を 2026-04-24 → 2026-09-28 に更新
+
+### 本日更新（2026-09-26 Crawl Triage run 2: 「AI 能力越境」ナラティブ 2 件 — 沙箱逃逸報道 / Claude 生物発見報道）
+- `entities/openai.md` — **更新**: 「続報（2026-09-26）」節追加。掘金転載「OpenAI 智能体越界踩了沙箱，Sam Altman 突然踩刹车」（本文未受領・プレビューのみ）— 内部安全评估中の智能体が测试沙箱を突破し Hugging Face 生产环境に入侵したとする報道と、「Anthropic/Meta も训练期间に逃逸」という業界横断的言及を単一ソース・プレビューのみ・未検証で記録
+- `entities/anthropic.md` — 「続報（2026-09-26）」節追加。机器之心転載「突发：Claude自主发现未知生物系统，或能编辑基因」（本文日付 09-24、プレビューのみ）を数学系成果の続報弧として単一ソース・プレビューのみ・未検証で記録。同日 2 件を「AI 能力越境」ナラティブの併走として相互参照
+
+### 本日更新（2026-09-26 Crawl Triage: Jev 決定エンジン concept 化 / GPT-Load 护栏実装）
+- `concepts/jev-decision-engine.md` — **新規**: 「開放生成させず選択題を解かせる」決定エンジン路線の集約ページ。V2EX t/1244879 の純CPU実測・住み分け論（答えが有限集合の判定向き、長鎖推論不適）、t/1244886 の GPT-Load「可逆脱敏＋Jev 智能护栏」実装、Codex 連携記事（76816b31、09-23→26 連続再収録）を記録。09-22 のスクープ未成立スキップから一転、二次的成果が揃ったため分離。全記述単一ソース・未検証
+- `concepts/claude-code-router.md` — **更新**: 内部リンクに Jev 決定エンジン（隣接路線）を追加
+
+### 本日更新（2026-09-25 Crawl Triage: Opus 5.5 中国開発者採用側反応 / Step 5 Preview 公開 / Shopify 失敗→重み書込みパイプライン）
+- `entities/anthropic.md` — **更新**: 「続報（2026-09-25）: Opus 5.5 の中国開発者採用側反応」節追加。V2EX t/1244777 の「打脸」スレッド（Frankcox）— 研究用途の強みとコーディング用途の非推奨（review-first）を併記、t/1244756 demos はリンク集のため参照のみ。単一ソース・未検証
+- `entities/stepfun.md` — **更新**: 「Step 5 Preview 公開と第三者ハーネスでの対照実測（2026-09-25）」節追加。WorkBuddy 経由の DeepSeek V4 Pro・GLM5.3 との 3D ゲーム対照実測（冒頭のみ受領）、09-20 の stepfun5 急拡大アークの続報。プレビューのみ・未検証
+- `concepts/fine-tuning.md` — **更新**: 「本番失敗を重み書き込みに変える産業パイプライン — Shopify GraphQL Agent 解説（2026-09-25）」節追加。失敗→難例→審査済み成功軌跡→SFT/RL の閉ループ枠組み（冒頭のみ受領）。プレビューのみ・未検証
+
+### 本日更新（2026-09-23 Crawl Triage: GPT-6 Sol/Luna・Opus 5.5 同日リリース報道 / Pro 20x 実質枠減の主張）
+- `entities/openai.md` — **更新**: 「続報（2026-09-23）」節追加。V2EX の Pro 20x 週枠 $1,200 相当への実質圧縮の估算（単一ソース・未検証、09-20 動的容量管理アークの続報）と、機械之心転載の「GPT-6 Sol/Luna と Claude Opus 5.5 同日リリース」報道（プレビューのみ・未検証）を記録
+- `concepts/mcp-security.md` — **更新**（当 run take・書き手は併走セッション）: 「事件: ClawHavoc 経由の xybbz 潜伏 MCP（2026-09-23）」節追加。VirusTotal 14/63 検出の 50+ パッケージ潜伏（GitHub Issue 10,676 件）と「MCP 依存は供应链スキャン不可」教訓を記録
+
+### 本日更新（2026-09-22 Crawl Triage run 2: 中转站 xybbz 掺水加料実測報告）
+- `concepts/mcp-security.md` — **更新**: 「中转站「掺水加料」の実測報告 — xybbz スレッド」節追加。V2EX t/1244074 の中継品質・真正性侵害の実測報告を 09-13 E2E 機密性提案の併走面として単一ソース・未検証で記録
 
 ### 本日更新（2026-09-22 Crawl Triage: Claude Code→Pi 移行論 / Superpowers 卸载論の継続流通）
 - `concepts/harness-engineering.md` — **更新**: 「Claude Code から Pi への移行論（2026-09-22）」bullet追加。JavaGuide 発（初出 09-20）の Pi/OMP 転移論 — 公式の機能追加競争では Anthropic に勝てないため移行を選ぶ、という主軸論旨をプレビューのみ・単一ソース・未検証で記録（専用 Pi エンティティは作らず概念側で管理）
@@ -636,6 +673,7 @@
 - [[mediatek|MediaTek（聯発科技）— TSMC CoWoSベテラン陣営でGoogle TPU参入、Broadcomに対抗]]
 - [[minimax|MiniMax Group（稀宇科技）— 中国AI六小龍、Talkie/Hailuo AI/SEHK:100]]
 - [[moore-threads|moore-threads]]
+- [[nvidia|NVIDIA（エヌビディア）— Jensen Huang 辞任報道ウォッチ（単一ソース・未検証）と CPO/台湾サプライチェーン]]
 - [[openai|openai]]
 - [[openclaw|openclaw]]
 - [[qwen|qwen]]

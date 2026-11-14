@@ -4845,3 +4845,12 @@ Originating conversation: (scheduled cron)
 |クローリング候補：なし（source_count>=3の19件はすべて直接ページ登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem/china-open-source-ai/china-local-deployment/chatglm）または間接カバー済み（AI Agent=china-ai-agent-ecosystem hints, RAG=dify hints, Anthropic=claude系，量化=vram-optimization hints, AI安全/対齐=各コンセプトページ），全球エンティティ（Claude/OpenAI/GPT/Gemini/Cursor）は意図的未登録を維持）
 判定：新規ページなし、新規 YAML提案なし（steady state）。log.mdのみコミット。
 |
+
+|## [2026-11-14] newsletter-ingest | Tech Taiwan (run_id 20261114T070038Z)
+|
+|- pre-run script ok:false (parse error) but ## Response holds intact decisions JSON = case-(a) parse-only recovery. 7 candidates = 1 article (multi-URL Substack dupes + 2 stubs): take 1 / reference 1 / skip 5.
+|- take: entities/nvidia.md (NEW, watch-skeleton). ジェンスン・ファン (黄仁勲) resignation report escalated from the 11-10 suspected-spy chain (digest eba16501, collect da47c48) to an assertive claim on 11-13: CFO interim CEO + board seat surrendered. Single-source, preview-only body (471 chars), marked 単一ソース・未検証 — never assert as fact until mainstream confirmation.
+|- reference: open.substack 2739c563 raw kept as secondary evidence copy.
+|- CPO / Taiwan supply-chain angle cross-referenced from concepts/semiconductor-packaging.md (連携 note added there).
+|- index.md: new entity line under エンティティ (nvidia, between moore-threads and openai).
+|
