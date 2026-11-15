@@ -305,3 +305,34 @@ U+6E08 U+307F; 未取得本文 U+672A U+53D6 U+5F97 U+672C U+6587. Wechat repres
 path sliced verbatim from the candidate (11m-ext equality held - no CJK re-typed);
 candidate_wiki_path reused verbatim from existing_wiki_pages. semantic-article-grouping
 missing-skill banner: 4th+ confirmation, expected permanent.
+
+
+## 2026-11-15 morning crawl-triage variant (run_id 20261115T090206Z, ~34th isomorphic skip-only)
+
+Case-(a) parse-only (ok:false, ## Response intact skip-only decisions take0/ref0/skip60) BUT
+this delivery prompt requires the structured report, so unlike the strict-JSON siblings:
+[SKIP] record appended to the output file + log.md-only narrow commit (32d0cce), zero wiki
+page writes, zero index.md writes. Fingerprint unchanged (60->8, 53x aafeba3f + 7x body-less
+V2EX). Same-day morning newsletter no-op (16b87a0) / trending (fd684fd) did not overlap.
+
+NEW leak-birth sites (first two shipped in the SAME build, both flow-readback-caught):
+1. PURE romaji fallbacks shipped mid-sentence in the [SKIP] record - "(body-less)" and
+   "no eizoku-kachi" rendered as garbage inside otherwise-CJK lines. RULE: the romaji
+   fallback is safe only as a WHOLE replacement for a short label, never for a content
+   word inside a Japanese sentence; on pick() count==0 for a content word, hex-probe a
+   committed sample first (the skill inline lexicon already carried 0x672A 0x53D6 0x5F97
+   0x672C 0x6587 - check the inline table BEFORE falling back to romaji).
+2. Hand-typed T() tuples for words OUTSIDE the sanctioned inline lexicon shipped
+   valid-but-wrong glyphs: 0x30DE+0x4E8E for saturation and 0x4E0D+0x6C38+0x7D9A+0x4FA1+0x5024
+   for durable-value - both passed the CN denylist (all valid kanji/kana) and the asserts
+   (val==expect same-recall blindness), caught only by reading the rendered region. RULE:
+   any token not copy-verified via s.count(tok)>0 over committed wiki/log.md goes straight
+   to an ASCII paraphrase ("stale/duplicate", "no durable facts") - a valid-but-wrong CJK
+   word is WORSE than ASCII because the prose read finds it plausible.
+3. Dead-token class reconfirmed on the output-file record (not just log.md): every T()
+   constant must be referenced by an emitted line; the region good-tuple assert over the
+   WRITTEN region is the only gate that caught the 0x30DE residue (post truncation+rebuild,
+   never sequential replaces per 11f(a)).
+Wins to keep: pick() copy-derivation from committed log.md (checkpoint x79, triage x4,
+noop x17, page x395 - all first-try clean), [SKIP]-record truncation-and-rebuild from the
+HEAD marker, blob verify via git show + chr()-tuple ints + unicodedata.name dump.
