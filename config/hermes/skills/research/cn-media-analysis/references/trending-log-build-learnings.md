@@ -61,3 +61,31 @@ verbatim-copy habit in (iii) nearly smuggled yesterday's numbers in too.
    (MISSING false alarm, commit clean). Build each check word as its OWN full cp tuple; never splice two tuples.
 Counter increment: 33rd -> 34th consecutive 36kr+zhihu zero-volume (date list copied from committed entry + append
 11-12). 25 topics, all paged; zero new pages, zero new YAML; log.md-only commit.
+
+
+## 2026-11-15 trending log.md append (commit fd684fd) - one real leak, caught pre-commit
+
+Run: shelley-trending-topics.timer, 22 topics, 36kr+zhihu zero 36th consecutive,
+steady state (zero new pages, zero new YAML), single log.md-only commit.
+
+NEW LEAK CLASS (per-char live probe needed even for a 2-char word you "know"):
+the intent word shipped as U+610F U+56FE (CN form) instead of the committed
+register U+610F U+5716 (JP form). Two mistakes compounded:
+(1) the build script typed the escape from recall (never copied from register);
+(2) the first verification probe searched HEAD with the SAME wrong pair, and a
+second probe also built its pair from re-typed escapes - both returned NOT
+FOUND and I nearly read that as "no committed sample exists" (11j(i)
+recurrence). Converged only by locating the clause positionally in the HEAD
+blob (find on a chr()-built landmark) and dumping codepoints from the FILE.
+RULE: codepoint probes must be built with chr(0x....) INT literals or
+positional extraction from the blob - never re-typed escape pairs; when a probe
+returns 0 hits, suspect the probe before concluding "no sample".
+DEFENSE ADDED: deny-list now includes CN form U+610F U+56FE (entry-region
+scoped), same family as the collect/collect-homoglyph guard.
+
+Other notes: the inward-token grab pattern needed the right kanji (U+8A33;
+first attempt used U+8A73 and the grab assert fired - the assert caught it,
+zero fix rounds: failed grab = codepoint-probe region, never re-type, 10-31
+rule held). Counter line copied from committed register + appended 11-14,
+35->36. Flow readback green on first rebuild after the intent-kanji fix; zero
+post-commit log.md fix rounds; blob verify via chr(0x) INT tuples clean.
