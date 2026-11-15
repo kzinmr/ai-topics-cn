@@ -280,3 +280,28 @@ Protocol wins to keep: run-id-suffixed /tmp script names (no sibling collision),
 astral-emoji whitelist in the range audit (U+1F60E echoed verbatim, safe), filter-by-
 path-hash for representative picks, run_id re-read at report time (unchanged
 20261105T090212Z).
+
+
+## 2026-11-15 (run 20261115T090206Z) - 20th isomorphic skip-only, clean skip+skip
+
+60 -> 8 hash-dedupe (53x aafeba3f 2017-12 sogou recollection + 7x zanmu V2EX), zero
+takes, zero repo writes, no commit (strict-JSON contract). NEW leak-birth sites this
+run (ALL caught by the mandated flow readback, zero post-delivery): (i) T() helper
+row-shape - a single-codepoint row written as (0xFF1A) (no trailing comma) crashes
+with "int not iterable", and a missing moraic ー shipped as "ko-n-ten-tsu" while
+val==expect-blind asserts pass when the expect is built from the SAME cps list -
+rule: expect MUST be the " ".join("U+%%04X"%%c) render of the codepoint list, never
+re-typed; single-cp rows need the trailing comma; (ii) double-colon splice at the
+composition seam (a U(0xFF1A) prefix prepended to a head that already carried a
+colon row) - flow-readback only; (iii) a hand-patched helper argument re-introduced
+the leading colon - fix rounds on composition seams should rewrite the WHOLE
+composition line, not splice (11f(a) extends to reason strings); (iv) ascii-decl
+gate fired on bracket/quote glyphs inside trailing COMMENTS of escape rows - the
+ord>127 comment-strip pass (split('#')[0] if code part ascii) is now a standard
+pre-run step. Canonical verified tuples reused: サーチエンジン U+30B5 U+30FC U+30C1
+U+30A8 U+30F3 U+30B8 U+30F3; コンテンツ U+30B3 U+30F3 U+30C6 U+30F3 U+30C4;
+再収集 U+518D U+53CE U+96C6; アーカイブ済み U+30A2 U+30FC U+30AB U+30A4 U+30D6
+U+6E08 U+307F; 未取得本文 U+672A U+53D6 U+5F97 U+672C U+6587. Wechat representative
+path sliced verbatim from the candidate (11m-ext equality held - no CJK re-typed);
+candidate_wiki_path reused verbatim from existing_wiki_pages. semantic-article-grouping
+missing-skill banner: 4th+ confirmation, expected permanent.
