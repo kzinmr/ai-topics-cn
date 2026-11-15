@@ -4870,3 +4870,10 @@ Originating conversation: (scheduled cron)
 |- pre-run script is ok:false (parse error), but ## Response holds the valid empty-queue JSON, so case-(a) parse-only recovery. チェックポイント is normal (ok:true), run_id 20261115T070038Z.
 |- collect file newsletter_collect_20261115T070038Z.json is the 394-byte ボイラープレート variant, カンデデート 0, 新規 ダイジェスト なし (latest digest = 2026-11-13 issue 46a1efd6, committed). Zero-mail day, ノーオペレーション.
 |- トリアージ result: コレクト side zero strays (latest untracked working-tree change is a standing fetched_at touch only). decisions [], take 0 / reference 0 / skip 0, ウィキページ 取り込み なし (this run edits zero wiki pages).
+|
+|## [2026-11-15] crawl-triage | shelley-triage
+|
+|- run_id 20261115T090206Z, トリアジ case-(a) parse-only. pre-run script ok:false (parse failure) but ## Response held a fully skip-only decisions array (take 0 / reference 0 / skip 60) - honored as queue as-is.
+|- チェックポイント: 60 raw candidates -> hash dedupe 60->8 (53x aafeba3f 再収集 of 2017-12 article + 7x 未取得本文 V2EX), steady-state fingerprint unchanged.
+|- take 0 / reference 0 - 永続価値 なし, wiki カンデデート writes なし (new 0 / update 0). Same-day morning newsletter-triage (16b87a0) and trending-topics (fd684fd) do not overlap.
+|- digest/collect strays 0, ノーオペレーション, log.md only commit. [SKIP] record appended to cron output file 2026-11-15_09-21-18.md.
