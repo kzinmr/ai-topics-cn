@@ -4877,3 +4877,14 @@ Originating conversation: (scheduled cron)
 |- チェックポイント: 60 raw candidates -> hash dedupe 60->8 (53x aafeba3f 再収集 of 2017-12 article + 7x 未取得本文 V2EX), steady-state fingerprint unchanged.
 |- take 0 / reference 0 - 永続価値 なし, wiki カンデデート writes なし (new 0 / update 0). Same-day morning newsletter-triage (16b87a0) and trending-topics (fd684fd) do not overlap.
 |- digest/collect strays 0, ノーオペレーション, log.md only commit. [SKIP] record appended to cron output file 2026-11-15_09-21-18.md.
+
+|
+|## [2026-11-16] trending-topics | shelley-trending-topics.timer
+|
+|期間：11-13〜11-16
+|内訳: v2ex 82件 / juejin 76件 / 36kr 0件 / zhihu 0件 / wechat 47件。
+|- ゼロボリューム 10-25/10-26/10-27/10-28/10-29/10-30/10-31/11-01/11-02/11-03/11-04/11-05/11-06/11-07/11-08/11-09/11-10/11-11/11-12/11-13/11-14/11-15に続き37目（監視アイテム、据え置き）。
+|- 新規ページ推奨：なし。全22件ページが存在：AI Agent=ai-agent, Claude=claude, OpenAI=openai, GPT=gpt, DeepSeek=deepseek, Gemini/Google=gemini-google, Vibe Coding=vibe-coding, MCP=mcp, Cursor=cursor, RAG=rag, Kimi/Moonshot=kimi-moonshot, Anthropic=anthropic, DouBao/ByteDance=doubao-bytedance, Qwen=qwen, 混元/Tencent=tencent-hunyuan, AI安全=ai-safety-subconscious, RLHF/対齐=rlhf-alignment, Function Calling=function-calling, Llama/Meta=llama-meta, Vector DB=vector-db。
+クローリング候補：なし（source_count>=3の15件はすべて直接ページ登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem/china-open-source-ai/china-local-deployment/chatglm）または間接カバー済み（AI Agent=china-ai-agent-ecosystem hints, RAG=dify hints, Anthropic=claude系，量化=vram-optimization hints, AI安全/対齐=各コンセプトページ），全球エンティティ（Claude/OpenAI/GPT/Gemini/Cursor）は意圖的未登録を維持）
+判定：新規ページなし、新規 YAML提案なし（steady state）。log.mdのみコミット。
+|
