@@ -3,7 +3,7 @@ title: "DeepSeek（深度求索）— 2026年最新動向"
 type: concept
 tags: [LLM, chinese-ai, open-source, MoE, reasoning, coding-agent]
 created: 2026-04-17
-updated: 2026-08-26
+updated: 2026-11-17
 source_lang: zh-CN
 ---
 
@@ -1045,5 +1045,17 @@ OSS公開（§23）と内部設計解読（§28）の後、コミュニティの
 - **評価**: 公式アナウンスなき「静かな公開」＋コミュニティ検証の組み合わせが、DeepSeekの多モーダル展開の現行パターンとして記録。V4.1公式リリースの有無・時期は引き続き未確定（出典: Juejin 2026-08-22, 8/24 [T2]）。
 
 **出典**: Juejin 2026-08-22〜24 [T2]
+
+### 32. Active Crawl 2026-11-17（11月13日〜16日：GitHub公式確認・dsh v0.2.x系列・Web版・全家桶API）
+
+前回クロール（8/26記録）以降のHarnessエコシステム展開。GitHub APIで1次確認した公式事実と、ローカルinbox（11/14〜16）のコミュニティ反応を分けて記録する。
+
+- **GitHub公式確認（Verified、2026-11-17 API直接取得）**: `deepseek-ai/deepseek-harness` — Stars **282,481**、ライセンスMIT、tagline「Everything is a Plugin」維持。リリースはv0.2.1（10/30 rc.5）→ **v0.2.2-rc.1（11/4）→ rc.2（11/11）→ rc.3（11/13）** とv0.2.2系RCが週次ペースで継続。8/13のOSS公開（v0.1）から約3ヶ月でv0.2.x安定化フェーズにある。
+- **Web版・ローカルOllama接続の実用化**: 掘金「DeepSeek Harness Web 版从装到用：dsh web 启动、接入本地 Ollama 全流程」（敖老师、11/16）— dsh web の起動と局域网環境でのOllama 0.40.16接続を桌面版/Web版ダブルprofileで実測した初の本格的Web版チュートリアル（score 0、単一ソース）。桌面版中心だった運用形態にWeb版が加わったことを示す。
+- **全家桶APIの正式開放（主張・未検証）**: 掘金「格局！刚刚 DeepSeek 正式开放全家桶 API」（程序员鱼皮、11/14、score 3、本文プレビューのみ）— 联网搜索・深度思考搜索・阅读链接・文件上传・语音输入/朗读などのAppバックエンドAPIが開放され「DeepSeek App を1:1で復刻可能」という主張。公式アナウンス未確認のため単一ソース・未検証扱い。
+- **コミュニティ評価の高まり**: V2EX「deepseek harness 的实际能力远超大多数人的认知」（ttkit、11/15、score 75）— Codex降智・Claude Code KYC弾幕を契機にdshへ移行し、UI还原からECSデプロイ・障害対応まで一気通貫で完遂したと報告。「梁圣」称賛・無降智/無封号を卖点とする体験談（単一ユーザー・主張ベース）。掘金「DeepSeek Harness 实战与架构解析：让 Agent 从'会聊'到'能交付'」（编程干货铺、11/15〜16 連日再収拾、hash 51b22c0b）もアーキテクチャ解説としてトラクション継続。
+- **評価**: Harnessは「実運用基盤」フェーズ（§30）から、公式リリースサイクル定着＋Web版追加＋App機能API開放（未検証）による「プラットフォーム化」フェーズへ移行した。Stars 28万超はOSSコーディングAgentとして最大級。
+
+**出典**: GitHub API deepseek-ai/deepseek-harness（2026-11-17 直接取得・Verified）、Juejin 2026-11-14〜16 [T1]、V2EX 2026-11-15 [T2]
 
 ## 出典

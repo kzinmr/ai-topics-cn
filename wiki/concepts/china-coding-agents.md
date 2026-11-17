@@ -1,7 +1,7 @@
 ---
 title: "中国编程Agent工具 — コーディングAIエージェントの生態系"
 created: 2026-04-19
-updated: 2026-08-24
+updated: 2026-11-17
 tags: [coding-agents, china, ide, automation, software-development, claude-code, cursor, openai]
 aliases: ["中国编程Agent", "编程自动化工具", "AI代码助手", "Chinese coding agents", "AI编程工具"]
 source_lang: zh-CN
@@ -672,6 +672,41 @@ DeepSeek Harness OSS（8/13）公開後のコミュニティ爆発期。8/12〜2
 - **公式ターミナルAgent「トップに急浮上だが最新版はalphaか」**（8/23）: JuejinでOpenAI Codex CLI等、公式のコーディングAgentがランキングトップに浮上したものの、インストール方式（curl|sh）・ログイン・alphaステータスへの不満が言及
 
 **出典**: 36kr/Juejin/V2EX daily digest 2026-08-14〜2026-08-23（web検索不可のためローカルdigestベース・二次ソース検証付き）
+
+### 2026年9月26日 Active Crawl 詳細調査（Pi移行・ツール勢力図の再編）
+
+> 出典: inbox/juejin・daily_digests ローカル一次収集（2026-09-21〜22）+ Qoder 公式サイト直接取得。当日の外部検索は DDG レート制限・Bing 無関係結果のためローカルデータ主導。
+
+#### JavaGuide「为什么越来越多人放弃 Claude Code 转而用 Pi」（2026-09-21 掘金、09-22 再収拾も同一ハッシュ 37fc13f4）
+- Claude Code 離れの理由として「重すぎるハーネス」（コンテキスト占有・設定複雑・課金）を挙げる。軽量ハーネス **Pi** および **Pi のフォーク OMP** への移行を実践論として論じる個人開発者発の記事（単一ソース・主張ベース）。
+- 「モデル実力よりハーネスのコンテキスト経済性が開発体験を決める」という論点は、同日の vibe-coding-china 側「重ハーネス vs 軽量 CLI」争点と同時進行（相互参照）。
+
+#### Qoder 製品体系の再編（公式サイト qoder.com、2026-09-26 直接取得・Verified）
+- **Quest モードが Qoder IDE から独立デスクトップ製品「New Qoder」に昇格**。IDE 版と並行提供・互いに代替しない二製品体制。
+- 製品ラインナップ（公式 HTML から直接列挙）: Qoder IDE / New Qoder / Qoder CLI / Qoder Mobile / Qoder Cloud / Qoder Enterprise / JetBrains プラグイン。
+- 位置づけは「agentic platform for real work」— 補完ツールからエージェント実行基盤（マネージド・クラウド実行を含む）への転換。
+
+#### Codex 移行シグナル（daily_digests 2026-09-22、反応系・個別スレッドは未検証）
+- 「Cursor → Codex」移行報告（高スコア 145）、「GPT-6 Sol が Codex で利用可」など、米国製 CLI への中国開発者流出を示す断片的言及が継続。前回 8/24 記録の Claude Code バン記録と併せ「米国 CLI 相対優位 → 国産ベンダーのハーネス再編圧力」という構図が強化。
+
+#### 継続争点
+- 国産 CLI（OpenCode/CodeFree）の米国製モデル依存（8/19 データレバレッジ記録）— 依存先が Claude から GPT-6 系 Codex へ移る可能性が上記シグナルと接続。監視継続。
+
+
+### 2026年11月17日 Active Crawl 詳細調査（京东云 JoyCode 正式版 / DeepSeek Harness 公式確認）
+
+> 出典: 掘金 2026-11-16 公式発記事 + JD Cloud 公式サイト直接取得（2026-11-17）+ GitHub API（Verified）。外部検索は使わずローカル一次データ主導。
+
+#### 京东云 JoyCode 正式版リリース（2026-11-16、出典: 掘金「京东云推出全新JoyCode智能编码工具」京东云开发者公式アカウント + jdcloud.com 直接取得）
+- 京东云が知能編码ツール **JoyCode** を正式リリース・全面刷新。**端到端自主決策**を中核とする「Code Agentプラットフォーム」を標榜し、プロジェクト背景とタスク目標を踏まえた **Agent Loop（計画→実行→検証）** の継続ループで「コード生成」から「成果交付（成果物の納品）」へ軸足を移すと主張。
+- JD Cloud 公式サイトにも「JoyCode 智能编码助手」が現行製品として確認済み（2026-11-17 直接取得・Verified）。京东系初の本格Code Agentプラットフォーム。
+- 位置づけ: 阿里Qoder、智谱ZCode、DeepSeek Harness、字节Traeに並ぶ**ベンダー純正Agentループ型IDE/CLI**の増加は、9/26記録の「ツール勢力図再編」アークの続報。JDクラウドのEC/物流ドメイン資産との結合が差別化候補（現時点では公式プロモーション文のみ・実力は未検証）。
+
+#### DeepSeek Harness — GitHub APIで公式確認（2026-11-17、Verified）
+- Stars **282,481** / MIT / 「Everything is a Plugin」。v0.2.2-rc.3（11/13）まで週次RC継続。詳細は concepts/deepseek.md §32 に記録（相互参照、当ページでは重複記載せず）。
+
+#### 継続争点
+- 米国製CLI（Codex/Claude Code）への依存と国産ハーネス再編（8/19・9/26記録）— 11/15時点でもV2EXで「codex 降智」不満スレッド（score低めながら散発）、Claude KYC弾幕への回避需要がdsh体験記（deepseek.md §32）へ流れる構図が継続。
 
 ## 関連リンク
 
