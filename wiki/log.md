@@ -44,6 +44,26 @@
 |
 |
 |
+|## [2026-11-17] active-crawl | DeepSeek-Harness / China-Coding-Agents(JoyCode)
+|
+|### 対象トピック
+|- deepseek (high, deepdive, last_crawled 9/5→11/17): 選択。対象期間 9/5〜11/17。
+|- china-coding-agents (high, deepdive, last_crawled 8/24→11/17): 選択。対象期間 8/24〜11/17。
+|- china-ai-coding-assistants (medium, laterals, last_crawled 10/6): 3日ルール未達（41日前=10/6時点）のため見送り。
+|- 見送り（3日ルール未達 or 直近クロール済み）: chatglm(9/17), tencent-hunyuan(9/15), mcp-china(9/15), china-ai-coding-assistants(10/6), china-ai-landscape(10/6), kimi(8/31)等はhigh2+medium1上限により非選定。
+|
+|### Wiki更新
+|- `concepts/deepseek.md` — **更新**: §32追加。GitHub API直接取得でHarness公式確認（Stars 282,481/MIT/v0.2.2-rc.3=11/13、週次RC）。dsh Web版+Ollama接続チュートリアル（掘金11/16）、全家桶API開放主張（掘金11/14・プレビューのみ・単一ソース未検証）、V2EX score75 dsh体験記（11/15）を記録。updated→2026-11-17。
+|- `concepts/china-coding-agents.md` — **更新**: 「2026年11月17日 Active Crawl 詳細調査」節追加。京东云 JoyCode 正式版リリース（11/16、掘金公式発+jdcloud.com直接取得・Verified、端到端自主決策Code Agent平台/Agent Loop/コード生成→成果交付）。Harnessはdeepseek.md §32へ相互参照。updated→2026-11-17。
+|
+|### 調査方法・注記
+|- web_search（Exa SDK）は使わず、ローカル一次データ（inbox 11/14-16 + daily_digests 11/15-16）+ GitHub API + JD Cloud公式サイト curl で検証。Harness Stars/リリースとJoyCode製品掲載は Verified、全家桶APIとJoyCode実力評価は 未検証 ラベル。
+|- wechat側のSpokenWOZ（2023-08再クロール）・AI00榜単等はsogou再クロールと判定しスキップ。Promo/代充/求職スレッドは定型除外。
+|
+|### hot-topics.yaml更新
+|- slug: deepseek — last_crawled 2026-11-17、notes先頭に11/17エントリ追記
+|- slug: china-coding-agents — last_crawled 2026-11-17、notes先頭に11/17エントリ追記
+|
 |## [2026-09-06] crawl-triage | GPT-6 Astra続報 / DeepSeek Harnessエコシステム — manual triage (LLM-triage failed)
 |
 |### 経緯
