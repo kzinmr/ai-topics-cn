@@ -4918,3 +4918,9 @@ Originating conversation: (scheduled cron)
 クローリング候補：なし（source_count>=3の14件はすべて直接ページ登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem/china-open-source-ai/china-local-deployment/chatglm）または間接カバー済み（AI Agent=china-ai-agent-ecosystem hints, RAG=dify hints, Anthropic=claude系，量化=vram-optimization hints, AI安全/対齐=各コンセプトページ），全球エンティティ（Claude/OpenAI/GPT/Gemini/Cursor）は意圖的未登録を維持）
 判定：新規ページなし、新規 YAML提案なし（steady state）。log.mdのみコミット。
 |
+|## [2026-11-17] トリアジ | no-op (empty queue)
+|
+|- pre-run script ok:false (parse error), but ## Response holds the valid empty-queue JSON = case-(a) parse-only recovery. チェックポイント is normal (ok:true), run_id 20261117T070039Z.
+|- collect file newsletter_collect_20261117T070039Z.json is the 394-byte ボイラープレート variant, カンデデート 0, 新規ダイジェスト なし (latest digest = 2026-11-13 issue 46a1efd6, committed). Zero-mail day, ノーオペレーション.
+|- 取り込み side zero strays (find -newermt + git status both empty). decisions [], take 0 / reference 0 / skip 0, コミット is log.md only (this run edits zero wiki pages).
+|
