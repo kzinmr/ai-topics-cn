@@ -44,7 +44,29 @@
 |
 |
 |
-|## [2026-11-17] active-crawl | DeepSeek-Harness / China-Coding-Agents(JoyCode)
+|## [2026-11-18] active-crawl | Kimi(K3.1 Pro) / Doubao(SuperCLUE-Office)
+|
+|### 対象トピック
+|- kimi (high, deepdive, last_crawled 8/31->11/18): 選択。対象期間 8/31〜11/17。
+|- doubao (high, deepdive, last_crawled 8/31->11/18): 選択。対象期間 8/31〜11/17。
+|- mcp-chinese-tools (medium, laterals, last_crawled 8/12): 選択。11/10〜17ダイジェスト+inbox走査の結果、MCP固有の新規発表/CVE/新サーバーなし=静穏期確認。last_crawledのみ更新（wikiページは変更なし）。
+|- 見送り: qwen(9/4, 75日)はhigh2+medium1上限により非選定（次回候補）。chatglm(9/17), tencent-hunyuan(9/15), mcp-china(9/15), china-ai-coding-assistants(10/6), china-ai-landscape(10/6)はmedium上限/優先度順で非選定。censorship-bypass/china-gpu-restrictions/cursor-china-adoptionはcrawl_policy=monitorのため対象外。
+|
+|### Wiki更新
+|- `concepts/kimi.md` — **更新**: 「2026年11月18日 Active Crawl（9/27〜11/17期間）」節追加。Kimi K3.1 Pro の DigitalOcean Serverless Inference 着陸（掘金11/11・DigitalOcean公式発・単一ソース未検証、entities/kimi-moonshot.md 11/11記録と整合）、「轻量化复刻大模型 / KIMI K3」解説連載8本（AttnRes/Stable LatentMoE/MoonEP/MTP-EAGLE-3、11/10〜17、新規コンテンツ＝再収集でないことをdate検証で確認）を記録。satire三千万足矣（5c8e3320・7/27付け）・Qoder比較（40fc748f）の毎日再収集はsaturation-recollectionとしてスキップ。updated->11/18。
+|- `concepts/doubao.md` — **更新**: 「9g. 2026年11月18日」節追加。SuperCLUE-Office 2026年10月測評で豆包工作が総合85.33分で総榜第1位（掘金・苍何11/11・プレビューのみ・単一ソース未検証）。V2EX 11/17「AI手机操作」31プロジェクト整理を参照記録。美版豆包G3.7Flash（8/15付け再収集）はスキップ。updated->11/18。
+|- `concepts/mcp-chinese-tools.md` — 変更なし（静穏期確認、hot-topics.yaml notesに記録）。
+|
+|### 調査方法・注記
+|- web_search（Exa SDK）不使用。daily_digests 11/10〜17 + inbox/{juejin,v2ex,wechat-media} のフロントマター date: 検証で再収集/新規を判別。K3.1 Pro は Moonshot 公式発表の一次取得ができず単一ソース・未検証ラベル（entities/kimi-moonshot.md の同時点記録と相互補完）。
+|- 11月期の豆包/火山言及記事は代購・値引き広告（CDN3900U、Seedance官转渠道折販売）が大半で定型除外。
+|
+|### hot-topics.yaml更新
+|- slug: kimi — last_crawled 2026-11-18、notes先頭に11/18エントリ追記
+|- slug: doubao — last_crawled 2026-11-18、notes先頭に11/18エントリ追記
+|- slug: mcp-chinese-tools — last_crawled 2026-11-18、notes先頭に11/18静穏期確認追記
+|
+||## [2026-11-17] active-crawl | DeepSeek-Harness / China-Coding-Agents(JoyCode)
 |
 |### 対象トピック
 |- deepseek (high, deepdive, last_crawled 9/5→11/17): 選択。対象期間 9/5〜11/17。

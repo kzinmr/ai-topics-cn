@@ -1,6 +1,12 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-10-05
+最終更新: 2026-11-18
+
+### 本日更新（2026-11-18 Active Crawl: Kimi K3.1 Pro / 豆包 SuperCLUE-Office 1位）
+- `concepts/kimi.md` — **更新**: 「2026年11月18日 Active Crawl」節追加。Kimi K3.1 Pro の DigitalOcean Serverless Inference 着陸（11/11・単一ソース未検証）と「轻量化复刻 KIMI K3」解説連載8本（AttnRes/LatentMoE/MoonEP/MTP）を記録
+- `concepts/doubao.md` — **更新**: 9g節追加。SuperCLUE-Office 2026年10月測評で豆包工作が85.33分で総榜第1位（単一ソース未検証）。AI手机操作エコシステム拡大シグナルを参照記録
+- `config/hot-topics.yaml` — **last_crawled更新のみ**: kimi / doubao / mcp-chinese-tools（MCP中国ツールは静穏期確認、ページ変更なし）
+
 
 ### 本日更新（2026-10-05 Crawl Triage: Claude BANアーク続報 — 安全運用5X Max封鎖 / Google新規登録风控 / Google 新規登録風控）
 - `entities/anthropic.md` — **更新**: 「続報（2026-10-05）」節追加。V2EX t/1246477（xueshi、score 28）の安全運用自認5X Max账号深夜封鎖＋復号後週期初期リセット主張、t/1246510（ofDamon）の Google 新規登録风控による Claude Pro 登録不可を記録。いずれも単一ソース・未検証
