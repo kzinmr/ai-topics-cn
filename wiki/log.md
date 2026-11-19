@@ -44,6 +44,26 @@
 |
 |
 |
+|## [2026-11-19] active-crawl | Qwen(Qwen4-Max) / Tencent-Hunyuan(Hy4)
+|
+|### 対象トピック
+|- qwen (high, deepdive, last_crawled 9/4→11/19): 選択。対象期間 9/5〜11/18。
+|- tencent-hunyuan (high, deepdive, last_crawled 9/15→11/19): 選択。対象期間 9/16〜11/18。
+|- 見送り: chatglm(9/17), china-ai-agent-ecosystem(8/27), mcp-china(9/15), china-ai-coding-assistants(10/6), china-ai-landscape(10/6)等はhigh2+medium1上限（high枠がqwen/tencent-hunyuanで満席）により非選定。deepseek/china-coding-agents/kimi/doubao/mcp-chinese-toolsは11/17-18の兄弟active-crawlで直近クロール済み。
+|
+|### Wiki更新
+|- `entities/qwen.md` — **更新**: 「2026年11月12日〜18日の状況（Qwen4-Max リリース報道）」節追加。Qwen4-Maxリリース報道（墨林陌日報11/17/単任務成本58%減）、Qwen4有料転換批判（甲维斯11/12/Hy4限时免费比較）、Qwen3.8-Max旧記事の毎日再収集（40fc748f・saturation-recollection）を記録。全て単一ソース・未検証。updated→11/19。
+|- `entities/tencent-hunyuan.md` — **更新**: 「2026年11月4日〜18日の状況（Hy4 正式版リリース）」節追加。Hy4正式版（码事漫谈11/4/WorkBuddy倍率0.00x）、发布即开源+視覚理解/Computer Use（墨林陌11/6/乌镇峰会）、一手実測（沉默王二11/9/98c9fb7e毎日再収集）を記録。全て単一ソース・未検証。updated→11/19。
+|
+|### 調査方法・注記
+|- web_search（Exa SDK）不使用。daily_digests 11/3〜18 + inbox juejin の frontmatter date: 検証で新規/再収集を判別。OpenLM.aiはSPA化で旧静的ページ404、hunyuan公式はJSシェルでHy4文言0ヒットのため、単一ソース・未検証ラベル統一。
+|- Qwen4-MaxとHy4は11/17日報で同日発表として相互言及（墨林陌）— 両ページで相互補完。
+|- BingのHy3正式版クエリはスパム汚染（既知パターン）のため追試せず。
+|
+|### hot-topics.yaml更新
+|- slug: qwen — last_crawled 2026-11-19、notes先頭に11/19エントリ追記
+|- slug: tencent-hunyuan — last_crawled 2026-11-19、notes先頭に11/19エントリ追記
+|
 |## [2026-11-18] active-crawl | Kimi(K3.1 Pro) / Doubao(SuperCLUE-Office)
 |
 |### 対象トピック

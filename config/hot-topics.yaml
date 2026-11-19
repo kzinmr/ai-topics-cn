@@ -79,9 +79,9 @@ topics:
       - "Qwen Image 3 画像生成"
     wiki_pages:
       - entities/qwen
-    notes: "2026.09.04更新: 公式一次情報で静穏期確認(OpenLM.ai 9/4取得/Qwen3.8ページは8/2日付のまま/Qwen4.0未リリース)。掘金でQwen3.8-Max EC資料チェック事例が3日連続再収集(9/1-3)。V2EX 9/3 DGX SparkローカルLLM比較にDeepSeekと並ぶ。 2026.08.27更新: Qwen3.5-397B-A17BをThomson Reuters(湯森路透)が4,000万ドル規模のプライベートモデル基盤で採用(8/26/Juejin/単一ソース・公式確認待ち)。OpenLM.ai公式Qwen3.8ページでQwen 3.8-Max(8/2/2.4T/Qwen-Max級初オープンウェイト)+Qwen3.8-Flash-Next(125B+51B N-gram埋め込み/6B活性/GDN+QSAハイブリッド注意/Qwen4先行プレビュー)再確認。Qwen4.0・Qwen Code v0.17.x未リリース。"
+    notes: "2026.11.19更新: 9/5〜11/18ギャップ調査。Qwen4-Maxリリース報道（墨林陌日報11/17/単任務成本58%減・単一ソース未検証）、Qwen4有料転換批判（甲维斯11/12/Hy4限时免费と比較）。OpenLM.ai SPA化で旧静的ページ404・公式一次未取得。Qoder+Qwen3.8Max白嫖（40fc748f/8/4付け）の毎日再収集はsaturation-recollectionとしてスキップ。entities/qwen.mdに11月節追加。 2026.09.04更新: 公式一次情報で静穏期確認(OpenLM.ai 9/4取得/Qwen3.8ページは8/2日付のまま/Qwen4.0未リリース)。掘金でQwen3.8-Max EC資料チェック事例が3日連続再収集(9/1-3)。V2EX 9/3 DGX SparkローカルLLM比較にDeepSeekと並ぶ。 2026.08.27更新: Qwen3.5-397B-A17BをThomson Reuters(湯森路透)が4,000万ドル規模のプライベートモデル基盤で採用(8/26/Juejin/単一ソース・公式確認待ち)。OpenLM.ai公式Qwen3.8ページでQwen 3.8-Max(8/2/2.4T/Qwen-Max級初オープンウェイト)+Qwen3.8-Flash-Next(125B+51B N-gram埋め込み/6B活性/GDN+QSAハイブリッド注意/Qwen4先行プレビュー)再確認。Qwen4.0・Qwen Code v0.17.x未リリース。"
     added: 2026-04-17
-    last_crawled: 2026-09-04
+    last_crawled: 2026-11-19
 
   - slug: chatglm
     title: "ChatGLM (智谱清言) — Zhipu AI"
@@ -197,9 +197,9 @@ topics:
     wiki_pages:
       - entities/tencent-ai
       - entities/tencent-hunyuan
-    notes: "2026.09.15更新: 9/11〜15静穏期(混元/元宝/WorkBuddy言及ゼロ)、Hy3.0正式版未リリース継続→entities/tencent-hunyuan.mdに静穏期節追加。2026.08.24更新: 8/13-24は静定期継続。Hy3.0正式版は8/24時点で依然未リリース(15週目の延期)。WorkBuddyエコシステム活発化: Pragma OSSマルチAgentハネス(V2EX8/11)+WorkDaddy多アカウントツール(8/18)+WorkBuddy×Canva可画MCP解析(Juejin8/19)。Tencent TDesign AI拡張パッケージOSS公開(8/21-23/CLI+MCP+Chatbot)。姚順雨新活動なし。Q2決算AI関連未取得。web検索不可のためローカルdigestベース。 8/7〜12に腾讯固有の主要リリースなし(静定期継続)。Hy3.0正式版は8/12時点で未リリース(計13週目)。WorkBuddyオープンソース版推薦がV2EX(8/11)で確認(コミュニティ言及のみ)。新規モデル・価格改定なし。姚順雨新活動なし。Q2決算は8月中旬発表予定。2026.08.07更新: 8/1〜7に腾讯固有の主要リリースなし。"
+    notes: "2026.11.19更新: 9/15〜11/18ギャップ調査。Hy4正式版リリース確認（码事漫谈11/4/WorkBuddy限时免费倍率0.00x）、发布即开源+視覚理解/Computer Use新規（乌镇峰会/墨林陌11/6）、一手実測（沉默王二11/9/98c9fb7e/毎日再収集=トラクション持続）。11/15以降沈静化。全て単一ソース・未検証。entities/tencent-hunyuan.mdに11月節追加。 2026.09.15更新: 9/11〜15静穏期(混元/元宝/WorkBuddy言及ゼロ)、Hy3.0正式版未リリース継続→entities/tencent-hunyuan.mdに静穏期節追加。2026.08.24更新: 8/13-24は静定期継続。Hy3.0正式版は8/24時点で依然未リリース(15週目の延期)。WorkBuddyエコシステム活発化: Pragma OSSマルチAgentハネス(V2EX8/11)+WorkDaddy多アカウントツール(8/18)+WorkBuddy×Canva可画MCP解析(Juejin8/19)。Tencent TDesign AI拡張パッケージOSS公開(8/21-23/CLI+MCP+Chatbot)。姚順雨新活動なし。Q2決算AI関連未取得。web検索不可のためローカルdigestベース。 8/7〜12に腾讯固有の主要リリースなし(静定期継続)。Hy3.0正式版は8/12時点で未リリース(計13週目)。WorkBuddyオープンソース版推薦がV2EX(8/11)で確認(コミュニティ言及のみ)。新規モデル・価格改定なし。姚順雨新活動なし。Q2決算は8月中旬発表予定。2026.08.07更新: 8/1〜7に腾讯固有の主要リリースなし。"
     added: 2026-04-29
-    last_crawled: 2026-09-15
+    last_crawled: 2026-11-19
 
   # =========================================================
   # 2. Chinese AI Agent Ecosystem (中国AIエージェント)
