@@ -89,3 +89,29 @@ zero fix rounds: failed grab = codepoint-probe region, never re-type, 10-31
 rule held). Counter line copied from committed register + appended 11-14,
 35->36. Flow readback green on first rebuild after the intent-kanji fix; zero
 post-commit log.md fix rounds; blob verify via chr(0x) INT tuples clean.
+
+
+## 2026-11-19 trending log.md append (commit 6fd6dc7) - counter-grab and grab-boundary classes
+
+Three new leak/gotcha sites, all caught pre-commit, zero log.md fix rounds after append:
+
+1. COUNTER-GRAB STRADDLE: the zero-volume counter token is one contiguous string
+   'ZEROWORD <dates>CONT40ME' (no space between the date list and the connector).
+   A grab pattern anchored on the connector alone (connector + dates + n + ME) FAILS
+   silently because the connector sits AFTER the date list, not before it. Converge
+   by grabbing the whole counter clause first (zero-word class through ME) then
+   splitting with dates-then-connector-then-digits. Also: raw-string r".." patterns
+   with backslash-u escapes are NOT decoded by re - use non-raw strings (or chr-built
+   literals) for CJK classes inside re.search, otherwise the class matches the literal
+   backslash-u text and returns None.
+2. GRAB-BOUNDARY DOUBLE-KEN CLASS (11b family, new mutation): grabbing 'source_count>=3nXXken'
+   INCLUDING the counter char then appending a template ken ships 'kenken'. Fix = grab
+   WITHOUT the counter char and let the template supply it exactly once. Same root as
+   the 11-01 13ken+ken line: counter char must live on ONE side of the composition seam.
+3. GRAB-TOKEN SHAPE: the committed inner source list has ken only after the 36kr 0 /
+   zhihu 0 / wechat tail numbers, NOT after v2ex/juejin numbers. Composing the new
+   day's inner list by hand must match that shape exactly - adding ken after every
+   source is a plausible-looking but wrong rewrite; flow-readback caught it.
+Also: the verify script's own em-dash in a print() string tripped the ascii-decl gate
+(ord>127 scan of the WHOLE script incl. print strings, per the 11-17 recipe, is the
+first-run gate). Blob verify passed on first try via chr(0x) int-tuple good/bad checks.
