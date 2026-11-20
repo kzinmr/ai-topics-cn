@@ -108,9 +108,9 @@ topics:
       - "Zcode glm-5.3-flash 免费时间 定时任务"
     wiki_pages:
       - concepts/chatglm
-    notes: "2026.09.11更新: GLM-5.3-Flash公式ドキュメントページ(/cn/guide/models/vlm/glm-5.3-flash/9/9更新stamp)確認—GLM-5系列首个原生多模态(動画・画像・テキスト・ファイル入力/1M/128K)/総320B激活18B/稀疏+線形注意力混合アーキテクチャ首个开源前沿模型(注意力計算量1/3.01・KV cache 1/4.44)/視覚Coding/GLM Coding Plan全量上線・額度3倍/跑在国产芯片上。V2EX(9/7)Zcode定時タスクでglm-5.3-flash無料時間帯を搾る実務=free tier定着シグナル。固有メジャーリリースなし=静穏。9/4-9/11。2026.08.27更新: GLM-5.3正式APIリリース確認(8/27公式ドキュメントdocs.bigmodel.cn/GLM-5.3 Hot+GLM-5.3-Flash New/「迁移至GLM-5.3」ガイド公開)。仕様:1Mコンテキスト/最大出力128K/テキストのみ/思考常時オン(無効化非互換/reasoning_effort low-high-max)/Z.ai Code BenchでGLM-5.2比+50%/Terminal Bench 3.0・Agents Last Exam(CLI)オープンウェイトSOTA/CyberGym漏洞発見最高・漏洞利用系2倍超。ZCode=GLM-5.3公式ハーネス(zcode.z.ai/macOS Apple Silicon/マルチAgent Vibe Coding)確立。GLM Coding PlanがGLM-5.3全量公開(ポイント割当体系)。オープンウェイト公開は未確認。"
+    notes: "2026.11.20更新: 9/12〜11/19ギャップ調査。HF直接取得でGLM-5.3/GLM-5.3-Flash/BF16の4リポジトリ確認（作成8/25、最終更新10/15）=APIのみだったオープンウェイト悬案がクローズ（一次検証済み）。docs.bigmodel.cn GLM-5.3ページdateModified 11/11で漏洞利用链段階推論と269プロジェクト/2,436漏洞/中高危1,097の安全協働実績を公式明記。GLM-5.4未確認、ZCode記述不変、ダイジェストに智譜関連エントリーゼロ。wiki concepts/chatglm.mdに11/20節追記。 2026.09.11更新: GLM-5.3-Flash公式ドキュメントページ(/cn/guide/models/vlm/glm-5.3-flash/9/9更新stamp)確認—GLM-5系列首个原生多模态(動画・画像・テキスト・ファイル入力/1M/128K)/総320B激活18B/稀疏+線形注意力混合アーキテクチャ首个开源前沿模型(注意力計算量1/3.01・KV cache 1/4.44)/視覚Coding/GLM Coding Plan全量上線・額度3倍/跑在国产芯片上。V2EX(9/7)Zcode定時タスクでglm-5.3-flash無料時間帯を搾る実務=free tier定着シグナル。固有メジャーリリースなし=静穏。9/4-9/11。2026.08.27更新: GLM-5.3正式APIリリース確認(8/27公式ドキュメントdocs.bigmodel.cn/GLM-5.3 Hot+GLM-5.3-Flash New/「迁移至GLM-5.3」ガイド公開)。仕様:1Mコンテキスト/最大出力128K/テキストのみ/思考常時オン(無効化非互換/reasoning_effort low-high-max)/Z.ai Code BenchでGLM-5.2比+50%/Terminal Bench 3.0・Agents Last Exam(CLI)オープンウェイトSOTA/CyberGym漏洞発見最高・漏洞利用系2倍超。ZCode=GLM-5.3公式ハーネス(zcode.z.ai/macOS Apple Silicon/マルチAgent Vibe Coding)確立。GLM Coding PlanがGLM-5.3全量公開(ポイント割当体系)。オープンウェイト公開は未確認。"
     added: 2026-04-17
-    last_crawled: 2026-09-17
+    last_crawled: 2026-11-20
 
   - slug: kimi
     title: "Kimi — Moonshot AI (月之暗面)"

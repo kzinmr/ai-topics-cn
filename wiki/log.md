@@ -44,6 +44,17 @@
 |
 |
 |
+|
+|## [2026-11-20] active-crawl | ChatGLM (chatglm deepdive)
+|
+|### Wiki更新
+|- `concepts/chatglm.md` — **更新**: 「2026年11月20日 Active Crawl」節追加。GLM-5.3/GLM-5.3-Flash のオープンウェイト化を Hugging Face で一次確認（zai-org 4リポジトリ、作成 8/25・更新 10/15）。公式ドキュメント（dateModified 11/11）の漏洞利用链段階推論＋269プロジェクト/2,436漏洞/中高危1,097 の安全協働実績を記録。GLM-5.4 未確認
+|
+|### hot-topics.yaml更新
+|- slug: chatglm — last_crawled 2026-09-17 → 2026-11-20、notes に 11/20 節追記
+|- 見送り: qwen/tencent-hunyuan（11/19 クロール済み・3日ルール未達）、kimi/doubao/mcp-chinese-tools/china-coding-agents（11/17-18 クロール済み）、yi（medium・8/14 以来だが 9/12〜11/19 の全ダイジェストに零一万物/01.AI 言及ゼロ＋Tier3 一次ソース不在のため新規情報なし=last_crawled 更新のみも対象外として次回に据え置き）
+|
+||
 |## [2026-11-19] active-crawl | Qwen(Qwen4-Max) / Tencent-Hunyuan(Hy4)
 |
 |### 対象トピック

@@ -1,6 +1,10 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-11-18
+最終更新: 2026-11-20
+
+### 本日更新（2026-11-20 Active Crawl: ChatGLM オープンウェイト化確認）
+- `concepts/chatglm.md` — **更新**: 「2026年11月20日 Active Crawl」節追記。GLM-5.3/GLM-5.3-FlashのHugging Faceオープンウェイト化（zai-org 4リポジトリ、一次確認）、公式docs（dateModified 11/11）の漏洞利用链段階推論と安全協働実績（269プロジェクト/2,436漏洞/中高危1,097）を記録。GLM-5.4未確認
+- `config/hot-topics.yaml` — **last_crawled更新のみ**: chatglm（2026-09-17 → 2026-11-20）
 
 ### 本日更新（2026-11-18 Active Crawl: Kimi K3.1 Pro / 豆包 SuperCLUE-Office 1位）
 - `concepts/kimi.md` — **更新**: 「2026年11月18日 Active Crawl」節追加。Kimi K3.1 Pro の DigitalOcean Serverless Inference 着陸（11/11・単一ソース未検証）と「轻量化复刻 KIMI K3」解説連載8本（AttnRes/LatentMoE/MoonEP/MTP）を記録
