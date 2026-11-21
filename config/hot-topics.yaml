@@ -145,9 +145,9 @@ topics:
       - "李开复 零一万物 海外 展開"
     wiki_pages:
       - concepts/yi
-    notes: "2026.08.14更新: 8/8〜8/14に新規動向なし(静黙期継続/IPO準備期間)。Bloomberg IPO表明(7/27)が最新。ChinAI #370(8/10)で01.AI「モデル構築競争から撤退」と言及。日次ダイジェストで零一万物言及ゼロ。2026.08.08更新: 8/1〜8/7に新規動向なし。Bloomberg IPO表明(7/27)が最新。"
+    notes: "2026.11.21更新: 公式サイト(lingyiwanwu.com)直接取得+GitHub API検証。万策AI平台入选沙利文2026最具商业价值潜力Agent TOP10(公式サイト・単一ソース)。langcrew(LangGraph系multi-agent FW/stars117/push 2026-10-15)が唯一の活発リポジトリ、Yi系列repoは2024年末で完全凍結(Yi stars7828/最終push 2024-11-27)=OSS終了を一次確認。公式サイトは一号位工程+ enterprise Agent全面展開運用に変化。wiki concepts/yi.mdに11/21節追記。 2026.08.14更新: 8/8〜8/14に新規動向なし(静黙期継続/IPO準備期間)。Bloomberg IPO表明(7/27)が最新。ChinAI #370(8/10)で01.AI「モデル構築競争から撤退」と言及。日次ダイジェストで零一万物言及ゼロ。2026.08.08更新: 8/1〜8/7に新規動向なし。Bloomberg IPO表明(7/27)が最新。"
     added: 2026-04-17
-    last_crawled: 2026-08-14
+    last_crawled: 2026-11-21
 
   - slug: doubao
     title: "Doubao (豆包) — ByteDance"
@@ -230,9 +230,9 @@ topics:
       - "百融智能 RaaS 硅基員工"
     wiki_pages:
       - concepts/china-ai-agent-ecosystem
-    notes: "2026.08.27更新: エコシステム横断の大型イベントなし(Harness OSS 8/13後消化期継続)。企業個別:智谱GLM-5.3正式API+公式ハーネスZCode+Coding Plan全量公開(垂直統合)、阿里Qwen-UI-Agent/Qwen-CUA(GUI・computer-use基盤)台頭。横断転換点はなし。詳細はchatglm/qwenページ参照。"
+    notes: "2026.11.21更新: 豆包工作上线3ヶ月でDAU800万/企業ARR20億元(火山引擎Agent社区・掘金11/20・単一ソース・未検証)。8/30正式版→SuperCLUE-Office10月総榜1位→事業数値公表の3段シグナル=办公Agent収益化フェーズ突入。FORCE原動力大会12/16-18上海定档(11/19)。wiki concepts/china-ai-agent-ecosystem.mdに11/21節追記。規制トピック(china-ai-regulation)はダイジェスト11/13-20に監管キーワード0件=新規情報なし据え置き。 2026.08.27更新: エコシステム横断の大型イベントなし(Harness OSS 8/13後消化期継続)。企業個別:智谱GLM-5.3正式API+公式ハーネスZCode+Coding Plan全量公開(垂直統合)、阿里Qwen-UI-Agent/Qwen-CUA(GUI・computer-use基盤)台頭。横断転換点はなし。詳細はchatglm/qwenページ参照。"
     added: 2026-04-17
-    last_crawled: 2026-08-27
+    last_crawled: 2026-11-21
 
   - slug: openclaw
     title: "OpenClaw — オープンソースAI Agentエンドポイントツール"

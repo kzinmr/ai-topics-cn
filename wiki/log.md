@@ -45,6 +45,20 @@
 |
 |
 |
+|
+|## [2026-11-21] active-crawl | Yi(零一万物)/China AI Agent Ecosystem
+|
+|### Wiki更新
+|- `concepts/yi.md` — **更新**: 11/21 Active Crawl節追記。万策AI平台入选沙利文2026最具商业价值潜力Agent TOP10(公式サイト直接取得)、GitHub API検証で langcrew(LangGraph系・唯一の活発repo/push 2026-10-15)とYi系列repo凍結(最終push 2024-11)を一次確認=OSS終了と企業Agent転向の整合。
+|- `concepts/china-ai-agent-ecosystem.md` — **更新**: 豆包工作3ヶ月DAU800万/企業ARR20億元(単一ソース・未検証)=办公Agent収益化フェーズ。FORCE大会12/16-18定档。
+|
+|### 見送り
+|- china-ai-regulation(high/8/17): ダイジェスト11/13-20に監管/备案/清朗キーワード0件、規制系inboxなし=新規情報なし、last_crawled据え置き。
+|
+|### hot-topics.yaml更新
+|- slug: yi → last_crawled 2026-11-21
+|- slug: china-ai-agent-ecosystem → last_crawled 2026-11-21
+|
 |## [2026-11-20] active-crawl | ChatGLM (chatglm deepdive)
 |
 |### Wiki更新
