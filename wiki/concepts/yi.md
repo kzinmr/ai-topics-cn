@@ -3,7 +3,7 @@ title: "Yi（零一万物）— 01.AI"
 type: concept
 tags: [LLM, chinese-ai, open-source, MoE, enterprise-ai]
 created: 2026-04-23
-updated: 2026-08-01
+updated: 2026-11-21
 source_lang: zh-CN
 ---
 
@@ -351,6 +351,23 @@ FDE（Frontier Deployment Engineer）モデルを採用。「コンパニオン�
 - 「六小虎」時代の終了が確定（零一万物と百川智能が脱落）
 - 新たな「AGI五小龙」（智譜AI、MiniMax、月之暗面、階躍星辰、面壁智能）が登場
 - 零一万物は**B端（企業向け）特化・Palantir対标**のポジションで再定位
+
+### 2026年11月21日 Active Crawl（公式サイト直接取得 + GitHub API）
+
+#### 万策AI平台が沙利文（Frost & Sullivan）2026「最具商業価値潜力Agent TOP10」入選
+- 公式サイト lingyiwanwu.com のニュース枠で確認: 「零一万物万策AI平台入选沙利文2026『最具商业价值潜力Agent TOP10』榜单」
+- **万策AI平台**は万智平台（WorldWise）系列の経営分析系プロダクト。公式サイト説明では「全球头部企業の経営管理経験を深掘りし、経営の事実を統合し、重要なリスクを識別し、実行可能・追跡可能な行動閉環を形成する」経営Agent。
+- B端Agent戦略（「中国のPalantir」転換、2026/7/27 Bloomberg IPO表明）の延長線上にある第三者評価シグナル。単一ソース（公式サイト）・入選日付不明・未検証。
+- 公式サイトは「一号位工程」（CEO直轄プロジェクト）牽引による「AI転換を計測可能な経営結果に」を全面展開 — 2026.08.14時点の「静黙期」記述から、サイト自体が企業変換を前面に出す運用へ変化。
+
+#### GitHub アカウントの沈黙と LangGraph 系 Agent フレームワーク転向（一次検証済み）
+- GitHub API 直接取得（api.github.com/orgs/01-ai/repos、2026-11-21）:
+  - **langcrew**: Stars 117、最終push **2026-10-15** — LangGraph 基盤の multi-agent 開発フレームワーク（「CrewAI の直感性を統合」と自称）。01-ai の唯一の活発リポジトリ。
+  - **open-agentkit**: Stars 23、最終push 2025-10-31 — OpenAI AgentKit のオープンソース代替。
+  - **Yi**（Stars 7,828）最終push 2024-11-27、**Yi-1.5** 2024-11-11、**Yi-Coder** 2024-09-18 — Yi モデル系列リポジトリは2024年末で完全に凍結。
+- 意味: OSS 面では Yi 系列が完全に終了し、コード上の残存活動は LangGraph 系 enterprise Agent（langcrew）のみ。事前学習放棄（2026年1月の阿里雲統合）→ 企業Agent転向という wiki 既存の戦略記述と GitHub 実体が初めて整合して確認された。
+
+- 出典: [lingyiwanwu.com](https://www.lingyiwanwu.com/)（直接取得・出典: 公式サイト (直接取得)）; [github.com/orgs/01-ai](https://github.com/01-ai)（GitHub API 直接取得・Verified）
 
 ## 関連エンティティ
 

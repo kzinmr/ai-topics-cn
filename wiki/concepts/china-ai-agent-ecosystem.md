@@ -1,7 +1,7 @@
 ---
 title: "中国AI智能体生态 — 2026年プラットフォーム・アーキテクチャ・市場動向"
 created: 2026-04-19
-updated: 2026-08-27
+updated: 2026-11-21
 tags: [ai-agents, platform, china, ecosystem, low-code, enterprise, openclaw, harness, coding-agent, cli-revival]
 aliases: ["中国AI智能体生态", "中国Agentプラットフォーム", "Baidu AgentBuilder", "腾讯元器", "Coze", "Dify", "OpenClaw-CN", "龙虾大战"]
 source_lang: zh-CN
@@ -448,6 +448,14 @@ Agentの自律的な外部データ処理に対する法解釈が追いついて
 - Claude Code・Cursor API・Gemini CLIの**国内ネットワーク接続**の問題
 - 高強度Vibe Coding時の**Rate Limit**が心流を中断
 - 解決策：API仲介プラットフォーム（ofox.ai等）の利用
+
+### 最新状況（2026-09-01〜09-15、active-crawl digest 由来）
+
+- **網易「LongChat」登場（9/9 digest 言及）**: 「龙虾」（OpenClaw 系）派生として網易が LongChat を発表・披露した旨が digest に単発出現（出典: daily-digest-2026-09-09、36kr 系統・単発・名称以外の詳細未検証）。龍蝦戦争への新たな大手参入候補として監視対象
+- **Dify 1.16.0 リリース（9/4）**: オープンソース系 Agent プラットフォーム Dify の新バージョンが digest に確認。バージョン番号以外の changelog 詳細は digest 上なし（出典: daily-digest-2026-09-04）
+- **HuggingFace Face 参入報道（9/9）**: 網易 LongChat と同文脈で HuggingFace の Face 参入が digest に単発言及（詳細未検証・単一ソース）
+- **AgentWork 開源コミュニティ + 豆包工作蓝皮书（16.4万字）开源（9/11）**: 掘金発。ByteDance 系エコシステム側での藍皮書オープンソース化（出典: Juejin 9/11、プロモ併走・単一ソース）
+
 
 ## 関連リンク
 
@@ -1388,3 +1396,10 @@ V2EXで**Pragma**（オープンソース版WorkBuddy）が公開。マルチAge
 - **モデル+公式ハーネスの垂直統合が進む（企業個別）**: 智谱が**GLM-5.3の正式API公開＋公式ハーネス「ZCode」＋GLM Coding Plan全量公開**で「モデル+公式ハーネス+サブスク」の一括エコシステムを確立（8/27公式ドキュメント確認）。詳細は `concepts/chatglm.md` 「2026年8月24日〜27日の状況」を参照。
 - **GUI/computer-use Agent基盤の台頭（企業個別）**: 阿里の**Qwen-UI-Agent / Qwen-CUA**（GUI・computer-use基盤モデル、OSWorld-Verified 86.2%等）が8/21〜24に公式裏付け済み。エージェントの「実行基盤（foundation model for device operation）」軸としてエコシステムに新規競争軸を提示。詳細は `entities/qwen.md` 「2026年8月20日〜24日/25日〜27日の状況」を参照。
 - **位置づけ**: エコシステム全体の競争軸は「ハーネス・ランタイム（DeepSeek Harness等）」から「**特化基盤モデル×公式ハーネスの垂直統合**（智谱ZCode、阿里Qwen-UI-Agent）」へ多様化しつつある。横断的なプラットフォーム戦争の新たな転換点とはなっていない。
+
+
+### 2026年11月21日 Active Crawl — 豆包工作3个月実績（事業数値シグナル）
+
+- 火山引擎Agent社区（掘金、2026-11-20、score 1）が **豆包工作（Doubao Work）上线3ヶ月** の実績数値を公表: **DAU 800万突破 / 企業顧客 ARR 20億元突破**。出典: [掘金 post/7710069393502683178](https://juejin.cn/post/7710069393502683178)
+- 文脈: 豆包工作は 8/30 正式版リリース（concepts/doubao.md §8）、10月 SuperCLUE-Office 総榜1位（85.33分、doubao.md §9g）に続く第3の公式系シグナル。ベンダー系コミュニティ発の公表値のため **単一ソース・未検証** だが、Work Agent 製品がリリース3ヶ月で ARR 20億元に到達したという数値は、中国 Agent エコシステムの「プラットフォーム戦争」が **办公Agent の有料転換・収益化フェーズ** に入ったことを示す事業データとして記録価値がある。
+- 関連して FORCE原動力大会（火山引擎年次大会）が **12/16–18 上海世博中心** に定档（掘金 11/19）— Seedance/Agent 系の年内最大発表イベントとして次回クロールで結果確認要。
