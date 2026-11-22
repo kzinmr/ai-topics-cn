@@ -254,9 +254,9 @@ topics:
       - "Hermes Agent OpenRouter OpenClaw 逆転 2026"
     wiki_pages:
       - entities/openclaw
-    notes: "2026.08.26更新: 8/15-26にOpenClaw固有リリースなし(v2026.7.1安定版継続)。新規シグナル1件: 掘金でMiniClaw(OpenClaw派生具身ハードウェア)解説連載「MiniClaw 阅读笔记」(8/19/第4回まで)開始 — OpenClawハードウェア派生の内部構造を段階解説する初の体系的コンテンツ。wiki §8/15〜24に追記済み。 2026.08.14更新: 8/8〜8/14に新規リリースなし(v2026.7.1安定版継続/GitHub Stars 384K台)。掘金でHermes vs OpenClaw自己進化能力比較記事(8/8)。V2EXでOpenClawコンテキスト圧縮問題報告(8/8)。DeepSeek Harness OSS公開(8/13)が新規競合として台頭。Omnigent(Databricks)メタオーケストレーション登場(8/8)。龍蝦管家(Butler)概念浸透継続(8/5-11)。掘金コミュニティではClaude Code/DeepSeek Harnessが支配的でOpenClaw話題減少。"
+    notes: "2026.11.22更新: GitHub API直接取得で開発継続を一次確認—Stars 395,001/MIT/pushed 11-22当日。直近5リリースが11/16-19に集中(v2026.11.4/11.5/10.33/11.6=406commits・157contributors/11.10-beta.1)。beta.1はClawHubエージェントテンプレート(CLAW.mdマニフェスト+trust flow)、OpenClaw IDトンネル、ブラウザhandoff、durable execution等=信頼境界・永続実行のエンタープライズ化路線。concepts/openclaw.mdに11月節追記。 2026.08.26更新: 8/15-26にOpenClaw固有リリースなし(v2026.7.1安定版継続)。新規シグナル1件: 掘金でMiniClaw(OpenClaw派生具身ハードウェア)解説連載「MiniClaw 阅读笔记」(8/19/第4回まで)開始 — OpenClawハードウェア派生の内部構造を段階解説する初の体系的コンテンツ。wiki §8/15〜24に追記済み。 2026.08.14更新: 8/8〜8/14に新規リリースなし(v2026.7.1安定版継続/GitHub Stars 384K台)。掘金でHermes vs OpenClaw自己進化能力比較記事(8/8)。V2EXでOpenClawコンテキスト圧縮問題報告(8/8)。DeepSeek Harness OSS公開(8/13)が新規競合として台頭。Omnigent(Databricks)メタオーケストレーション登場(8/8)。龍蝦管家(Butler)概念浸透継続(8/5-11)。掘金コミュニティではClaude Code/DeepSeek Harnessが支配的でOpenClaw話題減少。"
     added: 2026-05-01
-    last_crawled: 2026-08-26
+    last_crawled: 2026-11-22
 
   - slug: coze
     title: "Coze (扣子) — ByteDance Agent Platform"
@@ -293,9 +293,9 @@ topics:
       - "Dify IBTimes みずほ 2026年5月"
     wiki_pages:
       - concepts/dify
-    notes: "2026.08.24更新: 20日間クロールギャップ(8/4〜8/24)。v1.15.0以降の新リリース・CVE・企業導入なし。daily digestでDify/LangGenius記事0件(静的期間)。競合環境: DeepSeek Harness OSS(8/13)がOSS Agent Runtime市場の注目独占。web検索不可のためローカルdigestベース。 7日間クロールギャップ(7/28〜8/4)。v1.15.0以降の新リリース確認されず。静定期継続。2026.07.28更新: 23日間クロールギャップ(7/5〜7/28)。v1.15.0以降の新リリースなし。静定期継続。2026.07.05更新: v1.15.0リリース(6/25/GitHub確認/UX刷新)。Stars 147K+(+4K/5週)。v1.14.3は存在せず(サブエージェント誤報告)。Mizuho第2フェーズ等はWeb検索不可のため未確認。"
+    notes: "2026.11.22更新: 静穏期判定が覆り活発リリース確認(GitHub API・Verified)。v1.20.0(11/18)=HITL承認のIM統合(Slack/Feishu/Teams/DingTalk/WeCom)+OTelトレースエクスポート+Langfuse v4+ナレッジマルウェアスキャン+PAT、CVE-2026-116591修正。v1.19.0(11/4)=ネステッドワークフロー追跡+difyctl Skills OpenAPI管理+App移植性。v1.18.0(10/23)=Agentルーティング強化。Stars 161,639。concepts/dify.mdに11/22節追記。 2026.08.24更新: 20日間クロールギャップ(8/4〜8/24)。v1.15.0以降の新リリース・CVE・企業導入なし。daily digestでDify/LangGenius記事0件(静的期間)。競合環境: DeepSeek Harness OSS(8/13)がOSS Agent Runtime市場の注目独占。web検索不可のためローカルdigestベース。 7日間クロールギャップ(7/28〜8/4)。v1.15.0以降の新リリース確認されず。静定期継続。2026.07.28更新: 23日間クロールギャップ(7/5〜7/28)。v1.15.0以降の新リリースなし。静定期継続。2026.07.05更新: v1.15.0リリース(6/25/GitHub確認/UX刷新)。Stars 147K+(+4K/5週)。v1.14.3は存在せず(サブエージェント誤報告)。Mizuho第2フェーズ等はWeb検索不可のため未確認。"
     added: 2026-04-17
-    last_crawled: 2026-08-24
+    last_crawled: 2026-11-22
 
   # =========================================================
   # 3. Local Deployment & Quantization (ローカル展開・量子化)
@@ -321,9 +321,9 @@ topics:
       - "TriAttention v0.2.0 GA"
     wiki_pages:
       - concepts/china-local-deployment
-    notes: "2026.09.05更新: 8/22-24トレンド(Qwen3.8-27Bローカル/token自由/ANTE GGUF-native Coding Agent TB2.1 56.2%/EvoX比較)をwiki追記済み。9/1-4ダイジェストはDGX Spark比較等の散発言及のみで大型新規なし。 2026.08.15更新: DeepSeek V4 Pro正式版(8/12-13/1.6T/MoE/1Mコンテキスト)。DeepSeek Harness OSS公開(8/13/MIT/プラグイン型)。Pi+V4 Flash実践(8/10/RTX5090動作可)。KV Cache技術解説(8/10)。企業ローカルデプロイ議論(8/14/V2EX)。AI推論分散化トレンド(8/8)。2026.08.09更新: Kimi K3×AMD MI300Xデプロイ実証(8/4/8枚で動作/VRAM>算力)。AirLLM 3.7GB VRAMでK3実行(8/3)。DeepSeek V4 Flashローカル構成議論(8/6/V2EX)。DeepSeek API値上げ予告(8/6/ローカルデプロイ加速)。Kimi Code Computer Use対応(8/8)。Qwen3ローカル微調+Docker(8/8)。MiniMax H3オープンソース化(8/3)。LiteLLM脆弱性警告(8/2)。2026.08.02更新: Kimi K3 OSS化(2.8T)。DeepSeek V4 Flash正式版(7/31)＆V4正式版。梁文鋒秘録。ローカルデプロイコスト論争。火山引擎veStack K3 Day0適配。"
+    notes: "2026.11.22更新: 9/5以来の静穏確認—ダイジェスト11/14-21に本地部署・量子化の大型新規なし。Ollama v0.30/SGLang HiCache/TriAttention追跡項目据え置き。concepts/china-local-deployment.mdに静穏確認節追記。 2026.09.05更新: 8/22-24トレンド(Qwen3.8-27Bローカル/token自由/ANTE GGUF-native Coding Agent TB2.1 56.2%/EvoX比較)をwiki追記済み。9/1-4ダイジェストはDGX Spark比較等の散発言及のみで大型新規なし。 2026.08.15更新: DeepSeek V4 Pro正式版(8/12-13/1.6T/MoE/1Mコンテキスト)。DeepSeek Harness OSS公開(8/13/MIT/プラグイン型)。Pi+V4 Flash実践(8/10/RTX5090動作可)。KV Cache技術解説(8/10)。企業ローカルデプロイ議論(8/14/V2EX)。AI推論分散化トレンド(8/8)。2026.08.09更新: Kimi K3×AMD MI300Xデプロイ実証(8/4/8枚で動作/VRAM>算力)。AirLLM 3.7GB VRAMでK3実行(8/3)。DeepSeek V4 Flashローカル構成議論(8/6/V2EX)。DeepSeek API値上げ予告(8/6/ローカルデプロイ加速)。Kimi Code Computer Use対応(8/8)。Qwen3ローカル微調+Docker(8/8)。MiniMax H3オープンソース化(8/3)。LiteLLM脆弱性警告(8/2)。2026.08.02更新: Kimi K3 OSS化(2.8T)。DeepSeek V4 Flash正式版(7/31)＆V4正式版。梁文鋒秘録。ローカルデプロイコスト論争。火山引擎veStack K3 Day0適配。"
     added: 2026-04-17
-    last_crawled: 2026-09-05
+    last_crawled: 2026-11-22
 
   - slug: censorship-bypass
     title: "Censorship Bypass & Uncensored Models (审查绕过/去审查模型)"
@@ -381,9 +381,9 @@ topics:
       - "2026年高考 AI使用禁止 教育部"
     wiki_pages:
       - concepts/china-ai-regulation
-    notes: "2026.08.17更新: 8/8-17に規制発表なし。第18批备案未発表継続。清朗行動新規執行なし。AI擬人化管理辦法実施細則未公表。7/15施行影響:豆包/千問智能体機能下線・Apple Intelligence备案(Qwen)。Concordia AIレポート:Agent安全論文27%。2026.08.08更新: 8/1〜8/7に規制発表・執行事例なし。日次ダイジェストに監管キーワード記事は皆無。第18批备案未発表継続、清朗行動新規執行なし。総合AI法草案公表されず。話題はモデルリリースとAgent技術に集中。2026.07.31更新: AI擬人化互動服務管理暫行辦法7/15施行確認(実施細則未公表)。信通院Clawテスト(行為有害率36%)。Claude Codeバックドア問題。Concordia AI年次レポート(7/27)。第18批备案未発表。2026.06.14更新: 新規情報なし。2026.05.29更新: 光明日报AI訓練データ論。wiki更新済み。"
+    notes: "2026.11.22更新: 8/17以来の静穏確認—日次ダイジェスト11/14-21に監管キーワード0件、第18批备案未発表・清朗行動新規執行なし・拟人化弁法実施細則未公表継続。concepts/china-ai-regulation.mdに静穏確認節追記。 2026.08.17更新: 8/8-17に規制発表なし。第18批备案未発表継続。清朗行動新規執行なし。AI擬人化管理辦法実施細則未公表。7/15施行影響:豆包/千問智能体機能下線・Apple Intelligence备案(Qwen)。Concordia AIレポート:Agent安全論文27%。2026.08.08更新: 8/1〜8/7に規制発表・執行事例なし。日次ダイジェストに監管キーワード記事は皆無。第18批备案未発表継続、清朗行動新規執行なし。総合AI法草案公表されず。話題はモデルリリースとAgent技術に集中。2026.07.31更新: AI擬人化互動服務管理暫行辦法7/15施行確認(実施細則未公表)。信通院Clawテスト(行為有害率36%)。Claude Codeバックドア問題。Concordia AI年次レポート(7/27)。第18批备案未発表。2026.06.14更新: 新規情報なし。2026.05.29更新: 光明日报AI訓練データ論。wiki更新済み。"
     added: 2026-04-17
-    last_crawled: 2026-08-17
+    last_crawled: 2026-11-22
 
   # =========================================================
   # 5. Chinese-Origin Frameworks & Tools (中国発フレームワーク)

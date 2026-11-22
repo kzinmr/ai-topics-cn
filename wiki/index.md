@@ -1,6 +1,13 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-11-20
+最終更新: 2026-11-22
+
+### 本日更新（2026-11-22 Active Crawl: OpenClaw/Dify 開発活性をGitHub一次確認）
+- `concepts/openclaw.md` — **更新**: 11月節追記。GitHub APIで開発継続を一次確認（Stars 395,001/pushed 11-22、直近5リリース11/16-19集中）。9月の「集体悼念」報道後も信頼境界・永続実行路線で進化継続。
+- `concepts/dify.md` — **更新**: 11/22節追記。静穏期判定が覆り v1.18.0〜v1.20.0（10/23〜11/18）を確認。HITL承認IM統合（Feishu/DingTalk/WeCom）、OTelトレース、CVE-2026-116591修正。
+- `concepts/china-ai-regulation.md` — **更新**: 静穏確認節（8/17以来、第18批备案未発表継続）。
+- `concepts/china-local-deployment.md` — **更新**: 静穏確認節（9/5以来、大型新規なし）。
+- `config/hot-topics.yaml` — **last_crawled更新**: openclaw/dify/china-ai-regulation/china-local-deployment
 
 ### 本日更新（2026-11-20 Active Crawl: ChatGLM オープンウェイト化確認）
 - `concepts/chatglm.md` — **更新**: 「2026年11月20日 Active Crawl」節追記。GLM-5.3/GLM-5.3-FlashのHugging Faceオープンウェイト化（zai-org 4リポジトリ、一次確認）、公式docs（dateModified 11/11）の漏洞利用链段階推論と安全協働実績（269プロジェクト/2,436漏洞/中高危1,097）を記録。GLM-5.4未確認

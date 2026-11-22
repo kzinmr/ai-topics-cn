@@ -46,6 +46,24 @@
 |
 |
 |
+|## [2026-11-22] active-crawl | OpenClaw/Dify/規制/ローカルデプロイ
+|
+|### Wiki更新
+|- `concepts/openclaw.md` — **更新**: 11月節追記。GitHub API直接取得で開発継続を一次確認(Stars 395,001/MIT/pushed 11-22当日、直近5リリースが11/16-19集中、v2026.11.6=406commits/157contributors)。beta路線=ClawHubテンプレート(CLAW.md)、OpenClaw ID、ブラウザhandoff、durable execution=信頼境界・永続実行のエンタープライズ化。
+|- `concepts/dify.md` — **更新**: 11/22節追記。8/24の静穏期判定が覆る—v1.18.0(10/23)/v1.19.0(11/4)/v1.20.0(11/18)をGitHub APIでVerified確認。HITL承認IM統合(Feishu/DingTalk/WeCom対応)、OTelトレース、Langfuse v4、マルウェアスキャン、CVE-2026-116591修正、difyctl Skills管理。Stars 161,639。
+|- `concepts/china-ai-regulation.md` — **更新**: 静穏確認節(8/17以来)。ダイジェスト11/14-21に監管キーワード0件、第18批备案・実施細則とも未公表継続。
+|- `concepts/china-local-deployment.md` — **更新**: 静穏確認節(9/5以来)。本地部署・量子化の大型新規なし、追跡項目据え置き。
+|
+|### hot-topics.yaml更新
+|- openclaw: last_crawled 2026-11-22(GitHub一次確認)
+|- dify: last_crawled 2026-11-22(リリース3件Verified)
+|- china-ai-regulation: last_crawled 2026-11-22(新規情報なし)
+|- china-local-deployment: last_crawled 2026-11-22(新規情報なし)
+|
+|### 見送り
+|- deepseek/qwen/kimi/doubao/tencent-hunyuan/china-coding-agents/mcp-chinese-tools/china-ai-agent-ecosystem/yi: last_crawled 11/17-21で3日ルール未達。
+|- coze: last_crawled 8/31で対象候補だったがmedium上限1枠をdifyが優先(直近リリース活性あり)。cozeは次回候補。
+|
 |## [2026-11-21] active-crawl | Yi(零一万物)/China AI Agent Ecosystem
 |
 |### Wiki更新
