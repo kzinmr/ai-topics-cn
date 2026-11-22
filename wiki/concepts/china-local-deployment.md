@@ -1,7 +1,7 @@
 ---
 title: "中国大模型本地部署 — 量子化・VRAM最適化・消費者GPUでの推論"
 created: 2026-04-19
-updated: 2026-08-25
+updated: 2026-11-22
 tags: [inference, quantization, local-deployment, hardware, vram-optimization, china]
 aliases: ["本地部署", "国产模型本地运行", "VRAM优化", "量化技术", "GGUF", "GPTQ", "AWQ"]
 source_lang: zh-CN
@@ -209,6 +209,12 @@ Kimi K3 OSS化を契機に、中国大模型市場の構造的変化が顕著に
 - **市場転換点**: 国産モデルが「NVIDIA/CUDA依存」から「多様化エコシステム」へ、かつ「API主導」から「ローカル+APIハイブリッド」へ
 
 > **出典**: 掘金・V2EX議論（2026-07下旬〜8月）[T2]; 火山引擎LLM Space公式 [T1]
+
+### 2026-11-22 active-crawl: 静穏期確認（9/5以来）
+
+2026-09-05の前回クロール以降、日次ダイジェスト（11/14〜11/21）に本地部署・量子化の大型新規トピックなし。Ollama v0.30 の llama.cpp 移行、SGLang HiCache、TriAttention GA などの追跡項目はステータス据え置き。ローカル推論系の話題は Qwen/Harness 側のページで吸収されている。
+
+> 出典: inbox/daily_digests 2026-11-14〜21 ローカル走査（新規情報なしの確認）
 
 ## 関連リンク
 

@@ -1,7 +1,7 @@
 ---
 title: "Dify — オープンソースLLMOpsプラットフォーム"
 created: 2026-04-19
-updated: 2026-08-24
+updated: 2026-11-22
 tags: [llmops, open-source, agent-platform, rag, workflow, china, enterprise, security]
 search_hints:
   - "Dify セキュリティ脆弱性 Imperva 2026"
@@ -328,6 +328,18 @@ app:
 - **競合環境**: DeepSeek Harness（dsh/8/13）が「LangChainの喪鐘」と言及されるほどOSS Agent Runtime市場の競争構造を変化。DifyはLLMOps/RAGワークフロー特化として差別化維持が課題
 
 **出典**: daily digest 2026-08-04〜2026-08-23（web検索不可のためローカルdigestベース・二次ソース検証付き）
+
+### 2026年11月22日クロール（GitHub API直接取得・静穏期8/24以来の大型リリース多数）
+
+8/24のクロール以降、Difyは3つのマイナーリリースを連続公開（GitHub APIで検証済み・出典: github.com/langgenius/dify リリースノート直接取得）。Stars 161,639（11/22時点）。
+
+- **v1.20.0（11/18）**: HITL（Human-in-the-Loop）承認のIM統合が目玉。Slack / Feishu=Lark / Microsoft Teams / **DingTalk / WeCom** 経由のワークフロー承認リクエスト配信、共通コンタクト同期、カード/フォーム承認を既定有効化。OpenTelemetryコレクターへのトレースエクスポート、Langfuse v4対応、ナレッジアップロードのマルウェアスキャン、Personal Access TokenによるOpenAPI自動化。セキュリティ面では CVE-2026-116591（klauspost/compress、dify-agent-runtime）修正と Node.js 24.22.3 への更新を含む。
+- **v1.19.0（11/4）**: ネステッドワークファローシング（Workflow Tool内部の実行ツリーをLangfuse等でLLM呼び出しまで追跡）。Appパッケージの移植性強化（転移依存するWorkflow Toolsを最大20本バンドル）、difyctl による Skills の OpenAPI 管理（draft公開/インポート/発行）。
+- **v1.18.0（10/23）**: Agentルーター強化、App移植性、ワークフロー可視化強化。
+
+**分析**: 企業導入が進行する中国市場向けに「承認フローのIM統合（DingTalk/WeCom/Feishuネイティブ対応）」と「トレース観測性」を前面に出した方向性は、エンタープライズAgent運用の監査・統制要求に応えるもの。8/24時点の「静穏期」判定は覆り、10〜11月は活発なリリースサイクルだった。
+
+> 出典: GitHub langgenius/dify Releases（11/22直接取得・Verified）
 
 ## 関連リンク
 

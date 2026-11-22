@@ -1,7 +1,7 @@
 ---
 title: "中国AI监管政策 — 生成AI管理弁法、算法备案、データ安全規制"
 created: 2026-04-19
-updated: 2026-08-25
+updated: 2026-11-22
 tags: [regulation, compliance, china, policy, data-security, algorithm-filing]
 aliases: ["中国AI监管", "生成式AI管理办法", "大模型备案", "算法推荐管理规定", "数据安全法"]
 source_lang: zh-CN
@@ -602,6 +602,12 @@ China AI Bulletin 9（2026-08-24）とChinAI #372併載の晩点LatePost翻訳�
 - **未実施だが進行中の措置**: 米側では中国製オープンウェイトモデルへの制限・禁止の検討（Kimi K3 release後）、中国側ではWAICO（29+8=37カ国署名）による代替ガバナンス基盤建設
 
 **出典**: China AI Bulletin 9（SAIF, Substack 2026-08-24）[T1]; raw `substack.com--redirect-a9103d37-3c0e-4817-be5b-554b32fa2462--6a720a64.md`; 晚点LatePost翻訳 ChinAI #372併載 raw `substack.com--redirect-e9e590d1-7a6e-4173-835a-141fe1b5224c--6bfb2968.md`
+
+### 2026-11-22 active-crawl: 静穏期確認（8/17以来）
+
+2026-08-17の前回クロール以降、日次ダイジェスト（11/14〜11/21）に監管キーワードの記事は0件。第18批备案の公表、清朗行動の新規執行、拟人化弁法実施細則の公表いずれも確認できず。規制面の大型イベント absent は8月からの静穏が継続している状態。次回も第18批备案・実施細則を優先確認事項として維持。
+
+> 出典: inbox/daily_digests 2026-11-14〜21 ローカル走査（新規情報なしの確認）
 
 ## 関連リンク
 

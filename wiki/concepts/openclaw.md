@@ -1,7 +1,7 @@
 ---
 title: OpenClaw — オープンソースAIエージェント
 created: 2026-05-02
-updated: 2026-09-01
+updated: 2026-11-22
 tags: [concept, agent, open-source, openclaw, china]
 aliases: ["OpenClaw", "open-claw", "オープンクロー"]
 source_lang: zh-CN
@@ -52,6 +52,18 @@ OpenClawは、2026年4〜5月に中国で急成長したオープンソースAI�
 > **出典**: Juejin — [阿里出手了！终于不怕OpenClaw烧token啦](https://juejin.cn/post/7610637031321698330) [T1]
 > **出典**: Juejin — [用OpenClaw实现小红书自动发帖](https://juejin.cn/post/7615379311402467354) [T1]
 > **出典**: V2EX — [OpenClaw, Hermes, Mercury或其他](https://www.v2ex.com/t/1209907) [T2]
+
+## 2026年11月: 「集体悼念」後も開発は継続 — GitHub一次確認（2026-11-22 active-crawl）
+
+前節（8月末の量子位/ChinAI #373による「时代的眼泪」化報道）の後、プロジェクト自体の存活をGitHub API直接取得で確認（11/22時点）。
+
+- **Stars 395,001 / MIT / pushed_at 2026-11-22**: 8月時点の38万+から約1.5万増、pushは当日時点で行われており開発は継続中。「集体悼念」は話題性の報道であってプロジェクト死ではないことが一次確認できた。
+- **リリースペース**: 直近5リリースが 11/16〜11/19 に集中（v2026.11.4 / v2026.11.5 / v2026.10.33 / v2026.11.6 / v2026.11.10-beta.1）。v2026.11.6 は 406 commits / 386 PR / 157 contributors の大型統合リリース。
+- **v2026.11.10-beta.1（11/19）の方向性**: ClawHubパッケージからのエージェント直接追加（CLAW.md マニフェスト+ネイチャストトラストフロー）、OpenClaw IDによるノード接続とオーナーデバイスリンク、エージェント実行中のブラウザ引き継ぎ（handoff）、実行を止めないステアリングメッセージ、自動アップデートスケジューラ、macOSでのGateway再起動を跨ぐ durable execution。
+- **意義**: 関心が派生品（WorkBuddy/AutoClaw等）へ移転した後も、コアプロジェクトは「信頼境界（ID・サンドボックス・承認フロー）と永続実行」のエンタープライズ化路線で進化を続けている。9月節の「原厂harnessへの置換」論 against 独自路線の生存验证と言える。
+
+> 出典: GitHub openclaw/openclaw repository API + Releases（2026-11-22直接取得・Verified）
+
 
 ## 関連リンク
 
