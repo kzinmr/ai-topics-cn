@@ -115,3 +115,29 @@ Three new leak/gotcha sites, all caught pre-commit, zero log.md fix rounds after
 Also: the verify script's own em-dash in a print() string tripped the ascii-decl gate
 (ord>127 scan of the WHOLE script incl. print strings, per the 11-17 recipe, is the
 first-run gate). Blob verify passed on first try via chr(0x) int-tuple good/bad checks.
+
+## 2026-11-22 trending log.md append (steady state, 43rd zero-volume, counter 43)
+
+Clean-ish run: 2 grab rounds failed before converging, 1 corrupt-escape shipped
+in the FIRST build and was caught pre-commit by the char-diff audit.
+
+Real defect classes hit:
+- (a) raw-CJK-in-r-string grab patterns: r"\u30bb..." inside a raw string is NOT
+  a unicode escape -- it stays literal backslash-u and matches nothing (also fires
+  SyntaxWarning invalid-escape). Converged by building ALL anchors as
+  C(0xXXXX,...) chr()-int tuples + re.escape() (11-11 rule, reconfirmed).
+- (b) wrong hex digit in a chr() anchor: NEWPAGE anchor typed 0x8846 (visually
+  plausible) while the committed token is 0x884C -> anchor not found. Rule: on
+  any failed grab, hex-dump the committed line (probe script, " ".join("%04X"))
+  and copy the ints -- never repair the anchor by re-typing another guess.
+- (c) corrupt-escape-on-disk in a CONSTRUCTED fragment (not just grab side):
+  the hand-composed candidate line shipped U+9F48 for intended 0x9F50, caught
+  only by diffing the composed line char-by-char against the committed neighbor
+  line (zip diff printing pos + both codepoints). This char-diff-vs-neighbor is
+  now a mandatory gate for any line copied-but-edited from the previous entry.
+- (d) flow readback caught 0 further defects this run (good).
+
+New gate adopted: for lines that are "copy previous entry + bump counter", the
+audit script must do a positional zip char-diff vs the committed reference line
+and only the intended diffs (counter digits) may appear. Zero-cost, caught (c).
+
