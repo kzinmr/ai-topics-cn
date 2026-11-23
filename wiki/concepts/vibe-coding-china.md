@@ -1,7 +1,7 @@
 ---
 title: "Vibe Coding（氛围编程）— 中国での受容とAgentic Engineeringへの進化"
 created: 2026-04-17
-updated: 2026-08-23
+updated: 2026-11-23
 tags: [vibe-coding, ai-coding, chinese-ai, karpathy, agentic-engineering, paradigm-shift, intent-coding, cognitive-debt]
 aliases: ["氛围编程", "vibe coding", "意图编程", "Wish Coding", "认知债"]
 source_lang: zh-CN
@@ -824,6 +824,21 @@ Anthropicが2026年5月7日に開催したオンライン技術大会「Code w/ 
 - **位置づけ（推論）**: 2026年7月末時点で「Vibe Coding → Agentic Engineering」の移行が不可逆とされたばかりだが、中国の Windows 中心開発者層にとってプラットフォーム選択問題が Agentic Engineering 化の次の実務的論点として浮上。macOS/Linux メイキングの Agent ツールチェーンと Windows ユーザー基盤のギャップが今後どう埋められるかが注目点
 
 **出典**: V2EX (2026-08-22) [T1]
+
+
+### 2026年8月24日〜11月23日の状況（長期静穏の確認）
+
+前回クロール（8/15）以降の約3ヶ月間、日次ダイジェスト（11/14〜11/22 実測分＋それ以前）を走査した限り、Vibe Coding／Agentic Engineering 言及は以下に限定され、パラダイム論そのものの展開は停止している。
+
+- **「Qoder+Qwen3.8Max白嫖测试」（甲维斯、掘金・8/4付けの毎日再収集）**: 免费试用比较記事だが連日再収載されており、Qoder＋Qwen の無料帯組み合わせたどり着き実践への需要が持続していることの傍証（本文は8月時点、新規情報なし＝saturation-recollection）。
+- **「腾讯这波上大分，Hy4-flash值得你猛蹬。」（沉默王二、掘金 11/20・score 1）**: 混元 Hy4-flash と WorkBuddy の同題横評（预算表・会议纪要・前端动画・复杂工程续写の4課題）。「VibeCoding」タグ付きだが実体は低価格モデルの生産性比較＝vibe-coding 実践の「コスト軸」への沈静化を示唆（単一ソース・未検証）。
+- **「求问 MacOS Vibe Coding 怎么设置网络」（V2EX 11/22・低スコア）**: macOS 上の Vibe Coding 環境のネットワーク設定質問。8月の Windows フリクション論に続く、プラットフォーム別実務摩擦の散発的出現。
+- 「vibe 了一个符号翻译器英文站」（V2EX 11/13）など、vibe が一般動詞化した小規模副業事例の散発出現。
+
+**評価**: 2026年7月末の「Vibe Coding 已死→Agentic Engineering」宣言以降、概念論の更新は止まり、実践記事（Cursor→Codex 移行体験の毎日再収載、Qoder 白嫖比較の連日再浮上）だけがトラクションを維持する長期定着期。8/24〜11/23 に新概念・新大型イベントなしを静穏確認として記録。
+
+> **出典**: 日次ダイジェスト 2026-11-14〜11-22 / inbox 掘金・V2EX 2026-11 実ファイル（active-crawl リレー観察）
+
 
 ## 出典
 
