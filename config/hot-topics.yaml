@@ -272,9 +272,9 @@ topics:
       - "Coze 蝦評 InStreet Skills Agent World"
     wiki_pages:
       - concepts/coze
-    notes: "2026.08.31更新: 8/19-30。Coze固有リリースなし＝安定稼働。企業級Agent平台比較(掘金8/29,8/30)にCoze継続登場だが新機能・価格変更なし。前サイクル「字节系→中立基盤」「Coze3.0多Agent」が現行到達点。Coze3.0エンタープライズ採用/Coze Studio国際版/MCP連携深化を次回確認。2026.08.18更新: 65日間クロールギャップ(6/14〜8/18)。Coze固有リリースなし(2.5安定継続/2.6未リリース)。火山引擎FORCE大会(6/23)でSeedance 2.5発表(Coze Skills Storeでも対応)。DeepSeek Harness OSS(8/13)がCoze/Dify/LangChainに対抗する新競合。Agent Worldエコシステム変化なし(蝦評365Skills/InStreet 2万+Agent)。2026.08.04更新: 51日間クロールギャップ(6/14〜8/4)。Coze固有の新規リリース・メジャーアップデート確認されず。静定期継続。次回はAgent Worldの実運用事例・Coze 2.6リリース有無を確認。"
+    notes: "2026.11.23更新: 8/31〜11/23長期静穏—ダイジェスト11/14-22にCoze/扣子0件。字节系話題は豆包工作DAU800万/ARR20億(11/20・単一ソース)とFORCE大会12/16-18に移行。追跡項目(Coze Studio国際版/MCP連携深化)据え置き。concepts/coze.mdに静穏確認節追記。 2026.08.31更新: 8/19-30。Coze固有リリースなし＝安定稼働。企業級Agent平台比較(掘金8/29,8/30)にCoze継続登場だが新機能・価格変更なし。前サイクル「字节系→中立基盤」「Coze3.0多Agent」が現行到達点。Coze3.0エンタープライズ採用/Coze Studio国際版/MCP連携深化を次回確認。2026.08.18更新: 65日間クロールギャップ(6/14〜8/18)。Coze固有リリースなし(2.5安定継続/2.6未リリース)。火山引擎FORCE大会(6/23)でSeedance 2.5発表(Coze Skills Storeでも対応)。DeepSeek Harness OSS(8/13)がCoze/Dify/LangChainに対抗する新競合。Agent Worldエコシステム変化なし(蝦評365Skills/InStreet 2万+Agent)。2026.08.04更新: 51日間クロールギャップ(6/14〜8/4)。Coze固有の新規リリース・メジャーアップデート確認されず。静定期継続。次回はAgent Worldの実運用事例・Coze 2.6リリース有無を確認。"
     added: 2026-04-17
-    last_crawled: 2026-08-31
+    last_crawled: 2026-11-23
 
   - slug: dify
     title: "Dify — Open-Source LLMOps Platform"
@@ -445,8 +445,8 @@ topics:
       - "AAIF 43新メンバー 2026"
     wiki_pages:
       - concepts/mcp-china
-    notes: "2026.09.15更新: 8/18〜9/14静穏期継続(新規発表/CVEなし)、32Skills+8MCP解説の長期トラクション(score 846→850)をconcepts/mcp-china.md§11に記録。2026.08.17更新: 8/10-17にMCP固有の大規模リリースなし。GitMCP(CAD連携/掘金8/16)確認。DeepSeek Harness MCP対応。Stateless仕様未リリース。理解深化期継続。2026.08.10更新: 7/28〜8/2期間にMCP固有の主要リリース・新規CVE・AAIF新メンバーなし。MCP SDK月間3億DL/公開サーバー9,400+維持。掘金でMCP+Claude Code連携チュートリアル多数(32 Skills+8 MCP等)。MCP無状態仕様は7/28リリース予定→実装状況不明。静定期継続。2026.08.10更新: MCP理解深化期(8/3-10)。Tool/Resource/Prompt三機能の理解拡大。新規MCPサーバー: iOS SandboxServer(V2EX8/4)、DataZen v0.0.8(V2EX8/7)、codebase-memory-mcp(掘金8/7)。Agent Skills完全指南(Juejin8/8)。LiteLLM脆弱性警告(36kr8/4)。新規CVEなし。2026.07.28更新: 45日間クロールギャップ。MCP Stateless最終仕様7/28リリース予定(Google共同開発)。    added: 2026-04-17
-    last_crawled: 2026-09-15
+    notes: "2026.11.23更新: 11/11〜22走査。掘金で「ツール過剰」期の按需加载記事群をクラスター化—泯泷11/15(上百個工具で逆に見せる量が勝負・小標本で検索は精度向上せず/未検証)、Gemini Tool Retrieval解説2本(11/20・11/22)、BM25+依存補完実装(11/14)、153サーバー工具数実測(11/11・プレビューのみ)、MCP協議入門(11/22)。AG-UI紹介連載(冬奇Lab11/17/第262篇)。GitHub一次確認: ag-ui-protocol/ag-ui Stars 21,241/pushed 11-22、CopilotKit 38,898。プロトコル新仕様・CVEなし=静穏期継続。concepts/mcp-china.mdに§12追記。 2026.09.15更新: 8/18〜9/14静穏期継続(新規発表/CVEなし)、32Skills+8MCP解説の長期トラクション(score 846→850)をconcepts/mcp-china.md§11に記録。2026.08.17更新: 8/10-17にMCP固有の大規模リリースなし。GitMCP(CAD連携/掘金8/16)確認。DeepSeek Harness MCP対応。Stateless仕様未リリース。理解深化期継続。2026.08.10更新: 7/28〜8/2期間にMCP固有の主要リリース・新規CVE・AAIF新メンバーなし。MCP SDK月間3億DL/公開サーバー9,400+維持。掘金でMCP+Claude Code連携チュートリアル多数(32 Skills+8 MCP等)。MCP無状態仕様は7/28リリース予定→実装状況不明。静定期継続。2026.08.10更新: MCP理解深化期(8/3-10)。Tool/Resource/Prompt三機能の理解拡大。新規MCPサーバー: iOS SandboxServer(V2EX8/4)、DataZen v0.0.8(V2EX8/7)、codebase-memory-mcp(掘金8/7)。Agent Skills完全指南(Juejin8/8)。LiteLLM脆弱性警告(36kr8/4)。新規CVEなし。2026.07.28更新: 45日間クロールギャップ。MCP Stateless最終仕様7/28リリース予定(Google共同開発)。    added: 2026-04-17
+    last_crawled: 2026-11-23
 
   - slug: mcp-chinese-tools
     title: "Chinese MCP Tools & Servers (中国MCP工具)"
@@ -508,9 +508,9 @@ topics:
       - "Vibe Coding Windows 衰退 2026"
     wiki_pages:
       - concepts/vibe-coding-china
-    notes: "2026.08.15更新: 8/6〜8/15に新規メジャーリリースなし(web検索不可のためローカルデータのみ)。8/6以前の動向(Amazon Claude Code 1215万元焼失事件等)は既に掲載済み。2026.08.06更新: Amazon Claude Code 1215万元焼失事件(7/31/予算860%超過)。Claude Code Token消費30倍差比較(7/31/Harness税概念定着)。GitHub AI Agent攻撃(8/4/プロンプトインジェクション)。OpenAI Astra数学証明限界(8/1-4/10題中一部駁回)。AI Engineering五代論(8/3/Prompt→RAG→Agent→Graph)。Agent構築コスト数十倍削減ツール(8/4/LlamaFactory作者OSS)。Anthropic反開源問題(8/3/Meta二軌道)。2026.07.31更新: Karpathy Anthropic離職疑惑(7/26/LinkedIn修改発見)。Kimi K3 OSS化(7/27-28/2.8T/黄仁勳力挺)。DeepSeek Harness Engineering内測開始(7/29/Model+Harness=Agent)。Claude Opus 5リリース(7/26/Fable5半額)。Anthropic Skills 80%削除→Context Engineering宣言(7/29)。Claude Code之父「Harness保質期半年」(7/30)。硅谷反Anthropic(7/30/契約者強制封印)。GCC AI生成コード禁止(7/30)。MCP 4億DL(7/29)。GPT-5.6 HFゼロデイ攻撃(7/27-29)。全球調用Top5が全て中国製品(7/28)。AlphaFoldチーム解散→Anthropic転職(7/29-30)。OpenAI HW路線図リーク(7/29)。2026.07.26更新: SpaceX Cursor買収。Mythos安全版公開。Fable 5。2026.06.09更新: Claude Code 100万行リライト。新パラダイム宣言。Anthropic 80%内製コード。wiki更新済み。"
+    notes: "2026.11.23更新: 8/24〜11/23長期静穏確認—新概念・大型イベントなし。Qoder+Qwen3.8Max白嫖(40fc748f/8/4付け)とCursor→Codex移行記の毎日再収載=トラクション持続。Hy4-flash×WorkBuddy横評(沉默王二11/20/VibeCodingタグ/低価格生産性軸)、MacOS Vibe Coding網絡設定(V2EX11/22)、vibe一般動詞化(V2EX11/13)の散発のみ。concepts/vibe-coding-china.mdに静穏確認節追記。 2026.08.15更新: 8/6〜8/15に新規メジャーリリースなし(web検索不可のためローカルデータのみ)。8/6以前の動向(Amazon Claude Code 1215万元焼失事件等)は既に掲載済み。2026.08.06更新: Amazon Claude Code 1215万元焼失事件(7/31/予算860%超過)。Claude Code Token消費30倍差比較(7/31/Harness税概念定着)。GitHub AI Agent攻撃(8/4/プロンプトインジェクション)。OpenAI Astra数学証明限界(8/1-4/10題中一部駁回)。AI Engineering五代論(8/3/Prompt→RAG→Agent→Graph)。Agent構築コスト数十倍削減ツール(8/4/LlamaFactory作者OSS)。Anthropic反開源問題(8/3/Meta二軌道)。2026.07.31更新: Karpathy Anthropic離職疑惑(7/26/LinkedIn修改発見)。Kimi K3 OSS化(7/27-28/2.8T/黄仁勳力挺)。DeepSeek Harness Engineering内測開始(7/29/Model+Harness=Agent)。Claude Opus 5リリース(7/26/Fable5半額)。Anthropic Skills 80%削除→Context Engineering宣言(7/29)。Claude Code之父「Harness保質期半年」(7/30)。硅谷反Anthropic(7/30/契約者強制封印)。GCC AI生成コード禁止(7/30)。MCP 4億DL(7/29)。GPT-5.6 HFゼロデイ攻撃(7/27-29)。全球調用Top5が全て中国製品(7/28)。AlphaFoldチーム解散→Anthropic転職(7/29-30)。OpenAI HW路線図リーク(7/29)。2026.07.26更新: SpaceX Cursor買収。Mythos安全版公開。Fable 5。2026.06.09更新: Claude Code 100万行リライト。新パラダイム宣言。Anthropic 80%内製コード。wiki更新済み。"
     added: 2026-04-17
-    last_crawled: 2026-09-05
+    last_crawled: 2026-11-23
 
   - slug: china-ai-coding-assistants
     title: "Chinese AI Coding Assistants (国产AI编程助手)"
@@ -531,9 +531,9 @@ topics:
       - "Qwen3.7-Max Alibaba Cloud Summit 2026"
     wiki_pages:
       - concepts/china-ai-coding-assistants
-    notes: "2026.08.17更新: 8/5-17にDeepSeek Harness OSS(8/13/MIT/112KStars)が最大イベント。Meta Muse Code(8/5)低価格参入。華為CodeArts Spec-First移行(8/11)。DeepSeek V4-Proベンチマーク(8/12-13)。DeepSeek料金改定議論。Trae/CodeGeeX/CodeBuddy目立ったアップデートなし。2026.08.05更新:  Qoder市場シェア47.6%(IDC公式/国内1位/智譜+商湯+腾讯+百度合計超)。Claude Codeバックドア問題(中国ユーザー識別コード/Alibaba社内禁止/CNNVD警告)。7/24〜8/5にTrae・CodeGeeX・MarsCodeの目立ったメジャーアップデートなし。Agent Orchestrationパラダイム・Kimi Work型知識ワーカーツールなど競争軸多様化。2026.05.25更新: 通义灵码→QoderCNリブランド(5/20/Alibaba Cloud Summit)。Qwen3.7-Max発表(Agent-first/80B MoE)。前回(5/17): Trae SOLO Mobile三端同期。"
+    notes: "2026.11.23更新: 9/11〜11/23静穏確認—Trae/CodeGeeX/MarsCode/CodeBuddy固有アップデートなし。Qoder白嫖・Cursor→Codex再収載の持続のみ。IDCシェア後継データなし。追跡項目据え置き(IDC後継/Trae SOLO/CodeBuddy課金改定)。concepts/china-ai-coding-assistants.mdに9-11月節追記。 2026.08.17更新: 8/5-17にDeepSeek Harness OSS(8/13/MIT/112KStars)が最大イベント。Meta Muse Code(8/5)低価格参入。華為CodeArts Spec-First移行(8/11)。DeepSeek V4-Proベンチマーク(8/12-13)。DeepSeek料金改定議論。Trae/CodeGeeX/CodeBuddy目立ったアップデートなし。2026.08.05更新:  Qoder市場シェア47.6%(IDC公式/国内1位/智譜+商湯+腾讯+百度合計超)。Claude Codeバックドア問題(中国ユーザー識別コード/Alibaba社内禁止/CNNVD警告)。7/24〜8/5にTrae・CodeGeeX・MarsCodeの目立ったメジャーアップデートなし。Agent Orchestrationパラダイム・Kimi Work型知識ワーカーツールなど競争軸多様化。2026.05.25更新: 通义灵码→QoderCNリブランド(5/20/Alibaba Cloud Summit)。Qwen3.7-Max発表(Agent-first/80B MoE)。前回(5/17): Trae SOLO Mobile三端同期。"
     added: 2026-04-17
-    last_crawled: 2026-10-06
+    last_crawled: 2026-11-23
 
   # =========================================================
   # 7. Chinese Coding Agent Tools (中国コーディングエージェント)

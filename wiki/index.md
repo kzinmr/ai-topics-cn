@@ -1,6 +1,13 @@
 # AI Topics China Wiki — Index
 
-最終更新: 2026-11-22
+最終更新: 2026-11-23
+
+### 本日更新（2026-11-23 Active Crawl: MCP-China ツール過剰期の按需加载クラスター）
+- `concepts/mcp-china.md` — **更新**: §12追記。11月中旬掘金の「ツール過剰」記事群（泯泷/Gemini Tool Retrieval/BM25実装/153サーバー実測/AG-UI紹介）をクラスター化。ag-ui Stars 21,241 をGitHub一次確認。
+- `concepts/vibe-coding-china.md` — **更新**: 8/24〜11/23長期静穏確認節（新概念なし・トラクション記事の再収載のみ）。
+- `concepts/china-ai-coding-assistants.md` — **更新**: 9/11〜11/23静穏確認節（国産助手固有アップデートなし）。
+- `concepts/coze.md` — **更新**: 8/31〜11/23長期静穏確認節（digest 0件）。
+- `config/hot-topics.yaml` — **last_crawled更新**: mcp-china / vibe-coding-china / china-ai-coding-assistants / coze
 
 ### 本日更新（2026-11-22 Active Crawl: OpenClaw/Dify 開発活性をGitHub一次確認）
 - `concepts/openclaw.md` — **更新**: 11月節追記。GitHub APIで開発継続を一次確認（Stars 395,001/pushed 11-22、直近5リリース11/16-19集中）。9月の「集体悼念」報道後も信頼境界・永続実行路線で進化継続。

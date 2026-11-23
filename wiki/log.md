@@ -46,6 +46,17 @@
 |
 |
 |
+|## [2026-11-23] active-crawl | MCP-China(ツール過剰期) / Vibe-Coding / CodingAssistants / Coze(静穏確認)
+|
+|### Wiki更新
+|- `concepts/mcp-china.md` — **更新**: §12追記。11月中旬掘金の「ツール過剰」記事群をクラスター化—泯泷11/15(上百個工具/小標本で検索は精度向上せず・未検証)、Gemini Tool Retrieval解説2本(11/20・22)、BM25+依存補全(11/14)、153サーバー工具数実測(11/11・プレビューのみ)、AG-UI紹介(冬奇Lab11/17)。GitHub一次確認: ag-ui Stars 21,241/pushed 11-22、CopilotKit 38,898。新仕様・CVEなし。
+|- `concepts/vibe-coding-china.md` — **更新**: 8/24〜11/23長期静穏確認節。Qoder白嫖/Cursor→Codex再収載持続、Hy4-flash×WorkBuddy横評(11/20)、MacOS網絡質問(11/22)のみ。updated 11/23。
+|- `concepts/china-ai-coding-assistants.md` — **更新**: 9/11〜11/23静穏確認節。国産助手固有アップデートなし、IDC後継データなし。
+|- `concepts/coze.md` — **更新**: 8/31〜11/23長期静穏確認節(digest 0件)。字节系話題は豆包工作/FORCEへ移行。frontmatter updated/last_crawled 11/23。
+|
+|### hot-topics.yaml更新
+|- slug: mcp-china / vibe-coding-china / china-ai-coding-assistants / coze — last_crawled 2026-11-23
+|
 |## [2026-11-22] active-crawl | OpenClaw/Dify/規制/ローカルデプロイ
 |
 |### Wiki更新
