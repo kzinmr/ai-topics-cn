@@ -5103,3 +5103,9 @@ Originating conversation: (scheduled cron)
 |- 新規ページ推奨：なし。AI Agent=ai-agent, Claude=claude, OpenAI=openai, GPT=gpt, DeepSeek=deepseek, Gemini/Google=gemini-google, Vibe Coding=vibe-coding, MCP=mcp, Cursor=cursor, RAG=rag, Kimi/Moonshot=kimi-moonshot, Anthropic=anthropic, DouBao/ByteDance=doubao-bytedance, Qwen=qwen, 混元/Tencent=tencent-hunyuan, AI安全=ai-safety-subconscious, RLHF/対齐=rlhf-alignment, Function Calling=function-calling, Llama/Meta=llama-meta, Vector DB=vector-db, ローカルデプロイ=china-local-deployment, 多模态=multimodal, 微調=fine-tuning。
 |クローリング候補：なし（source_count>=3の19件はすべて直接ページ登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem/china-open-source-ai/china-local-deployment/chatglm）または間接カバーすみ（AI Agent=china-ai-agent-ecosystem hints, RAG=dify hints, Anthropic=claude系，量化=vram-optimization hints, AI安全/対齐=各コンセプトページ, 多模态=各モデルエンティティ hints），全球エンティティ（Claude/OpenAI/GPT/Gemini/Cursor）は意圖的未登録を維持）
 |判定：新規ページなし、新規 YAML提案なし（steady state）。log.mdのみコミット。
+|## [2026-11-24] newsletter-triage | shelley-newsletter-triage.timer
+|
+|- run_id 20261124T071330Z - case-(a) ノーオペレーション.
+|- pre-run script 新規 ダイジェスト なし: チェックポイント ok=true, candidate 0, トリアージ なし.
+|- collect archive ボイラープレート 394 bytes, latest digest 2026-11-20 (e76ef742, committed 43b9e0f).
+|- ウィキページ なし, ニュースレター カンデデート take なし (decisions []) - case-(a) ノーオペレーション.
