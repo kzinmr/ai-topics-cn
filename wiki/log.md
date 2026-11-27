@@ -5148,3 +5148,12 @@ Originating conversation: (scheduled cron)
 |クローリング候補：なし（source_count>=3の17件はすべて直接ページ登録（deepseek/qwen/kimi/doubao/tencent-hunyuan/mcp-china/vibe-coding-china/cursor-china-adoption/china-ai-agent-ecosystem/china-open-source-ai/china-local-deployment/chatglm）または間接カバーすみ（AI Agent=china-ai-agent-ecosystem hints, RAG=dify hints, Anthropic=claude系，量化=vram-optimization hints, AI安全/対齐=各コンセプトページ, 多模态=各モデルエンティティ hints），全球エンティティ（Claude/OpenAI/GPT/Gemini/Cursor）は意圖的未登録を維持）
 |判定：新規ページなし、新規 YAML提案なし（steady state）。log.mdのみコミット。
 |
+|
+|## [2026-11-27] newsletter-triage | shelley-newsletter-triage.timer
+|
+|- run_id 20261127T070025Z - case-(a) ノーオペレーション.
+|- pre-run script 新規 ダイジェスト なし: checkpoint ok=true, カンデデート 0, トリアージ なし.
+|- collect アーカイブ ボイラープレート 394 バイト, 最新 ダイジェスト 2026-11-24 (16f1d970, commit 7fb37b0).
+|- ウィキ page なし, newsletter カンデデート take なし (decisions []) - case-(a) ノーオペレーション.
+|- 保存 collect なし: 2026-11-24 digest 16f1d970 + raw 5 files commit すみ, prior-wave strays なし (-newermt + git status verified, steady state).
+|
