@@ -1,7 +1,7 @@
 ---
 title: DeepSeek — 中国オープンソースLLM企業
 created: 2026-04-17
-updated: 2026-11-19
+updated: 2026-11-27
 tags: [company, llm, model, china, open-source-ai, deepseek, v4, ascend, funding, series-a, huawei, coding-plan]
 aliases: ["DeepSeek", "深度求索", "deepseek"]
 source_lang: zh-CN
@@ -506,6 +506,16 @@ V2EX に非公式渠道の告知が投稿され、同日中に複数スレッド
 - **併走する転売系スレッド（skip 相当・参照のみ）**: 同日 V2EX「DeepSeek 官方资源 6 折接口、注册账号送 1 美元体验额度」（t/1258383、score 0、1dc634fc）は中転站（api.omymodel.net）のプロモ投稿であり不採用。ただし「公式資源の 6 折」という切り口の出现自体は、全家桶開放アークの需給側に薄く対応する参考観察に留める。
 
 > **出典**: 掘金 post/7708954185542172710（沉默王二）、収集: 2026-11-19 [T1・単一ソース・プレビューのみ・未検証]
+
+## 続報（2026-11-27 crawl-triage・reference）: super-agent 原型 dsh-superagent の router/worker 分工解説（単一ソース・未検証）
+
+- **解説**: V2EX（lordmanderly、2026-11-26、score 0、t/1260050）が DeepSeek の **10-31 オープンソース super-agent 原型「dsh-superagent」** のコード読解メモを投稿（Grok Bot / Claude Duet との対比付き）。要点：
+  - 「收消息・判断归属」（受信と帰属判断）を担う **router（コード上は orchestrator）** と、独立文脈で作業を進める **worker** に分離する third-pattern を採用。中心オブジェクトは **Ticket（一件の作業）・Trigger（受信イベント）・Thread（同一 PR/IM 話題内の連続イベント）** の 3 つ。
+  - 状態は全量 **SQLite** に永続化し router のコンテキストで暗記させない。router は分頁読み取りツールで資源パスから必要文脈だけ取得、超過長の worker 報告は切り詰えて読取ポインタを添付 — **コンテキストウィンドウを cache のように管理**する設計。
+  - router/worker の前台コマンドとタスク待機は **5 秒で自動バックグラウンド化**、終了時に新メッセージで唤醒。コードは router による `sleep` 実行を直接遮断。
+- **位置づけ**: 08-13 の dsh OSS 公開 → 09-16「200k+ star」→ 09-30 公式デスクトップ版と続く dsh/Harness アークの**実装解剖**層に当たる記録。always-on agent の router/worker 分工は本页既存の [[agent-team-swarm]] 論点（11-25 antigravity /swarm 採用）の DeepSeek 側具体実装として参考価値あり。本文は途中で截断、単一ソース・未検証。
+
+> **出典**: V2EX [t/1260050](https://www.v2ex.com/t/1260050)（lordmanderly、収集 2026-11-26）[T1・単一ソース・未検証]
 
 ## 関連リンク
 
