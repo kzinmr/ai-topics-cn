@@ -58,6 +58,16 @@ Case-(a): pre-run ok:false parse-only, ## Response JSON intact with decisions: [
 
 NEW leak fingerprint - valid-but-wrong HIRAGANA word via wrong tuple: the tsuzuku counter/particle word shipped in a wrong 3-char hiragana form (tsu+gi instead of i+go+to) - all valid hiragana, invisible to the CN denylist, caught by the tail prose read. This extends the 10-25 katakana-shortening family to hiragana: build hiragana counter/particle words via full chr() tuples with a per-char unicodedata.name() dump. Also leaked: a copula splice (extra copula tail appended after a nashi phrase) and the completed/sumi kanji U+6E08 mis-shipped as the rare water-name kanji U+6E1F - all three fixed in one probe+fix round (within the 2-round budget), then the flow read flagged awkward spacing, cleaned by one final full-line patch quote. Grab-of-committed-form failed because the previous (11-02) entry carried no such token - probe grab targets for existence before relying on copy-derivation. Converged: log-only narrow commit 28b11fd, [SKIP] record appended to output_path file. Sibling dirty working tree carried 09-04-era v2ex files unrelated to this run - left alone.
 
+## 2026-11-24 — run_id 20261124T071330Z (35th isomorphic empty-queue no-op, log-only commit 4f5efb4)
+
+**Case**: case-(a) parse-only — pre-run `ok:false` but `## Response` held intact empty-decisions JSON. Collect 394-byte boilerplate, latest digest 2026-11-20 (e76ef742, committed 43b9e0f), `find -newermt` + `git status` zero strays, trending fired earlier same day (dc321a0). No catch-up collect needed.
+
+**FIRST REAL NEW-LEXICON PROBE REJECTION**: the no-op katakana word is NOT in the skill's inline hex lexicon. A recall-built tuple emitted the short-vowel-with-イ form (NO U+30CE + イ U+30A4 + ō U+30FC + オ U+30DA …) — count 0 across committed log.md. The 4th gate (grep the WORD in committed log.md, take the committed variant) caught it pre-append: canonical committed form is the long-Ō-NO-オ form U+30CE U+30FC U+30AA U+30DA U+30EC U+30FC U+30B7 U+30E7 U+30F3 (×22). RULE: probe-REJECT → consult corpus, never emit the un-vetted tuple; katakana long-vowel + small-kana insertion is the dominant phantom-token class.
+
+**TOKEN-WISE GATES ARE WORD-ORDER-BLIND**: initial build passed good-tuple counts, CN denylist, and the CJK inventory dump — yet the last line spliced tokens into an incoherent order (news-leader + candidate + triage where triage was the verb). Machine gates verify each token is a valid committed word; ONLY the flowing-prose read validates sentence grammar. Keep the ASCII frame as the grammatical backbone and splice CJK tokens as single noun/modifier units.
+
+**FIX BUDGET COVERS GRAMMAR, NOT ONLY TYPOS**: both ≤2 fix rounds were spent re-ordering one line (round 1 word order, round 2 inverted modifier → explicit ASCII "take" for the empty-decisions meaning). Committed within budget. [SKIP] record to output_path needed one extra 1-round fix (dropped なし particle) — budget is per target file.
+
 ## 2026-11-04 (run_id 20261104T070031Z) - 30th isomorphic empty-queue no-op
 
 Case-(a): pre-run ok:false parse-only, ## Response JSON intact with decisions: [].
@@ -119,3 +129,11 @@ converged first try). RULE: after ANY ascii-log-append.py run, the good-tuple
 assert is the FIRST gate -- uniform count=0 across all tokens means the lines
 JSON was double-escaped; write single-backslash \\uXXXX escapes (valid JSON) or
 copy-derived literals, never \\\\u.
+
+## 2026-11-27 (run_id 20261127T070025Z, 37th isomorphic empty-queue no-op, case-(a) parse-only)
+
+- pre-run ok:false parse-only; ## Response held intact empty-queue JSON = case-(a).
+- collect 394-byte boilerplate; latest digest 2026-11-24 (16f1d970) committed 7fb37b0; -newermt + git status zero strays (prior-wave catch-up 7fb37b0 already covered them).
+- NEW-LEXICON PROBE rejected the hand-built katakana 'sudu-no' (count 0 in committed corpus) -> romaji '(sudu)' fallback shipped; fix round 1 removed the parenthetical because committed hiragana SUMI (U+3059 U+307F) already sat before it = composition redundancy machine gates cannot see (token-wise), flow-read only.
+- builder v1 carried a lone katakana in an assert MESSAGE string -> SyntaxError: encoding problem: ascii. Message/COMMENT strings count as non-ascii sources same as identifiers; recovery = ord>127 line-dump scan script, never hand-edit the dying builder.
+- commits: log-only 040df38 (append-only invariant 0 deletions, push clean); [SKIP] record first-try to output_path; exemplar append converged first-try.
