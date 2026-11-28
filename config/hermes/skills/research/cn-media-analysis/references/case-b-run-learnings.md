@@ -536,3 +536,29 @@ contract job, zero repo writes, no log.md append.
   CN-lookalike forms that never legitimately occur in the entry region.
 - 30th consecutive 36kr+zhihu zero-volume; 18 trending topics, all paged, zero new
   YAML (steady state). Function Calling dropped out of trending vs 11-08.
+
+
+## 2026-11-28 strict-JSON triage (run_id 20261128T090611Z)
+
+Case: strict-JSON crawl-triage job (no wiki edits). Checkpoint intact (ok:true).
+60 candidates -> hash-dedupe (8-char suffix + source) -> 8 unique: 1 aafeba3f
+2017-12 ranking recollection (archive/integrated/...aafeba3f.md confirmed on
+disk, committed take exists) + 7 body-less V2EX (2026-04/07 stale seq). All
+8 = skip. Take=0, zero repo writes. 22nd-isomorphic aafeba3f run.
+
+NEW leak-birth sites (this run):
+(1) fix-script COMMENT non-ASCII: a fix script carrying a CJK token in parentheses in a comment
+    died SyntaxError encoding problem: ascii. Rule: ord>127 pre-scan of EVERY
+    /tmp script incl. comments, before running (extends 11g ascii-decl rule
+    to helper fix scripts, not just build scripts).
+(2) summary-skeleton drift class (put()-blind): hand-composed TOK concat
+    "8ken NI kasan sai syuukei NO zenbu ga" (no->comma splice fix) and
+    "takeha 0ken DE desu" (zeroken helper carried a trailing de copula ->
+    drop the trailing U+3067 from compound helpers whose next token is desu).
+    Also S2 double-topic-particle "53ken HA 2017..." -> second ha->ga;
+    S3 "zanju HA 7ken HA" -> first->no. All caught only by flow readback;
+    each round of fix cost 1 rebuild (never line-patch CJK lines, 11f(a)).
+(3) pattern that worked: whole-script rewrite (v7) after a broken patch
+    rather than patching a broken patch; TOK dict + put() asserts caught all
+    codepoint-level typos (itiran U+699C, kuraisu U+30AF) pre-run.
+
